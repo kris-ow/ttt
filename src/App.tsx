@@ -311,32 +311,6 @@ function StockWidget({ quote, loading, error, lastUpdated }: ReturnType<typeof u
 }
 
 
-// ── Tracked Sources ──────────────────────────────────────
-
-function SourcesSection() {
-  const channelStats = useMemo(() => {
-    const stats: Record<string, number> = {}
-    for (const a of data.articles) {
-      stats[a.channel] = (stats[a.channel] || 0) + 1
-    }
-    return stats
-  }, [])
-
-  return (
-    <div className="border border-border bg-surface p-4">
-      <div className="space-y-1">
-        {Object.entries(CHANNEL_META).map(([key, ch]) => (
-          <div key={key} className="flex items-center gap-3 text-xs py-1 border-b border-border last:border-0">
-            <span className="text-text-dim w-8">{ch.platform === 'X' ? '[X]' : '[YT]'}</span>
-            <span className="text-text-bright flex-1">{ch.name}</span>
-            <span className="text-text-dim">{channelStats[key] || 0} posts</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 // ── Main Dashboard ───────────────────────────────────────
 
 type Section = 'feed' | 'knowledge'
@@ -387,92 +361,59 @@ export default function App() {
           ))}
         </nav>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-6">
-          {/* ── Main panel ──────────────────────────── */}
+        {/* ── Top bar: Stock + Catalysts (stacks on narrow, inline on wide) ── */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <div>
-            {activeSection === 'feed' && (
-              <>
-                {/* Channel filter */}
-                <div className="flex items-center gap-1 mb-4 flex-wrap">
-                  <span className="text-text-dim text-xs mr-2">FILTER:</span>
+            <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
+            <StockWidget {...stockData} />
+          </div>
+          <div>
+            <h3 className="text-green text-xs font-bold mb-2">NEXT CATALYSTS</h3>
+            <div className="border border-border bg-surface p-4 space-y-1 text-xs">
+              {CATALYSTS.map((c, i) => (
+                <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
+                  <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
+                    {c.date}
+                  </span>
+                  <span className="text-text flex-1">{c.event}</span>
+                  {c.hot && <span className="text-green flex-shrink-0">◄</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ── Main content ──────────────────────────── */}
+        <div>
+          {activeSection === 'feed' && (
+            <>
+              {/* Channel filter */}
+              <div className="flex items-center gap-1 mb-4 flex-wrap">
+                <span className="text-text-dim text-xs mr-2">FILTER:</span>
+                <button
+                  onClick={() => setSelectedChannel(null)}
+                  className={`px-2 py-1 text-xs cursor-pointer transition-colors ${
+                    !selectedChannel ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
+                  }`}
+                >
+                  ALL
+                </button>
+                {channels.map(ch => (
                   <button
-                    onClick={() => setSelectedChannel(null)}
+                    key={ch}
+                    onClick={() => setSelectedChannel(ch === selectedChannel ? null : ch)}
                     className={`px-2 py-1 text-xs cursor-pointer transition-colors ${
-                      !selectedChannel ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
+                      selectedChannel === ch ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
                     }`}
                   >
-                    ALL
+                    {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
                   </button>
-                  {channels.map(ch => (
-                    <button
-                      key={ch}
-                      onClick={() => setSelectedChannel(ch === selectedChannel ? null : ch)}
-                      className={`px-2 py-1 text-xs cursor-pointer transition-colors ${
-                        selectedChannel === ch ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
-                      }`}
-                    >
-                      {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
-                    </button>
-                  ))}
-                </div>
-                <FeedSection selectedChannel={selectedChannel} onSelectArticle={setSelectedArticle} />
-              </>
-            )}
-            {activeSection === 'knowledge' && <KnowledgeSection />}
-
-          </div>
-
-          {/* ── Sidebar ─────────────────────────────── */}
-          <aside className="space-y-4">
-            <div>
-              <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
-              <StockWidget {...stockData} />
-            </div>
-
-            <div>
-              <h3 className="text-green text-xs font-bold mb-2">NEXT CATALYSTS</h3>
-              <div className="border border-border bg-surface p-4 space-y-1 text-xs">
-                {CATALYSTS.map((c, i) => (
-                  <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
-                    <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
-                      {c.date}
-                    </span>
-                    <span className="text-text flex-1">{c.event}</span>
-                    {c.hot && <span className="text-green flex-shrink-0">◄</span>}
-                  </div>
                 ))}
               </div>
-            </div>
-
-            <div>
-              <h3 className="text-green text-xs font-bold mb-2">TRACKED SOURCES</h3>
-              <SourcesSection />
-            </div>
-
-            <div>
-              <h3 className="text-green text-xs font-bold mb-2">QUICK STATS</h3>
-              <div className="border border-border bg-surface p-4 space-y-2 text-xs">
-                <div className="flex justify-between">
-                  <span className="text-text-dim">Total articles</span>
-                  <span className="text-green">{data.articles.length}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-text-dim">Date range</span>
-                  <span className="text-text-bright">
-                    {data.articles[0]?.date} — {data.articles[data.articles.length - 1]?.date}
-                  </span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-text-dim">Sources</span>
-                  <span className="text-text-bright">{Object.keys(CHANNEL_META).length}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-text-dim">Platforms</span>
-                  <span className="text-text-bright">YouTube, X</span>
-                </div>
-              </div>
-            </div>
-          </aside>
+              <FeedSection selectedChannel={selectedChannel} onSelectArticle={setSelectedArticle} />
+            </>
+          )}
+          {activeSection === 'knowledge' && <KnowledgeSection />}
         </div>
       </div>
 
