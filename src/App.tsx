@@ -220,80 +220,162 @@ const CATALYSTS = [
 
 const FINNHUB_KEY = import.meta.env.VITE_FINNHUB_KEY
 
-interface FinnhubQuote {
-  c: number   // current price
-  d: number   // change
-  dp: number  // percent change
-  h: number   // high
-  l: number   // low
-  o: number   // open
-  pc: number  // previous close
-  t: number   // timestamp
+interface StockState {
+  price: number | null
+  prevClose: number | null
+  open: number | null
+  high: number | null
+  low: number | null
+  lastUpdated: Date | null
+  loading: boolean
+  error: string | null
+  session: 'PRE' | 'OPEN' | 'POST' | 'CLOSED'
+}
+
+function getMarketSession(): StockState['session'] {
+  const now = new Date()
+  const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }))
+  const h = et.getHours()
+  const m = et.getMinutes()
+  const day = et.getDay()
+  const mins = h * 60 + m
+
+  if (day === 0 || day === 6) return 'CLOSED'
+  if (mins >= 240 && mins < 570) return 'PRE'       // 4:00 - 9:30 ET
+  if (mins >= 570 && mins < 960) return 'OPEN'       // 9:30 - 16:00 ET
+  if (mins >= 960 && mins < 1200) return 'POST'      // 16:00 - 20:00 ET
+  return 'CLOSED'
 }
 
 function useStockQuote() {
-  const [quote, setQuote] = useState<FinnhubQuote | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
-  const [lastUpdated, setLastUpdated] = useState<Date | null>(null)
+  const [state, setState] = useState<StockState>({
+    price: null, prevClose: null, open: null, high: null, low: null,
+    lastUpdated: null, loading: true, error: null, session: getMarketSession(),
+  })
 
   useEffect(() => {
     if (!FINNHUB_KEY) {
-      setError('VITE_FINNHUB_KEY not set')
-      setLoading(false)
+      setState(s => ({ ...s, error: 'VITE_FINNHUB_KEY not set', loading: false }))
       return
     }
 
-    async function fetchQuote() {
+    // Fetch REST quote first for open/high/low/prevClose baseline
+    async function fetchBaseline() {
       try {
         const res = await fetch(
           `https://finnhub.io/api/v1/quote?symbol=TSLA&token=${FINNHUB_KEY}`
         )
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        const data: FinnhubQuote = await res.json()
-        if (data.c === 0) throw new Error('Market may be closed — no data')
-        setQuote(data)
-        setLastUpdated(new Date())
-        setError(null)
+        const q = await res.json()
+        setState(s => ({
+          ...s,
+          price: q.c || s.price,
+          prevClose: q.pc,
+          open: q.o,
+          high: q.h,
+          low: q.l,
+          lastUpdated: new Date(),
+          loading: false,
+          error: null,
+        }))
       } catch (e) {
-        setError(e instanceof Error ? e.message : 'Failed to fetch')
-      } finally {
-        setLoading(false)
+        setState(s => ({ ...s, error: e instanceof Error ? e.message : 'Failed to fetch', loading: false }))
       }
     }
 
-    fetchQuote()
-    const interval = setInterval(fetchQuote, 30_000) // refresh every 30s
-    return () => clearInterval(interval)
+    fetchBaseline()
+
+    // Connect WebSocket for real-time + extended hours
+    const ws = new WebSocket(`wss://ws.finnhub.io?token=${FINNHUB_KEY}`)
+
+    ws.onopen = () => {
+      ws.send(JSON.stringify({ type: 'subscribe', symbol: 'TSLA' }))
+    }
+
+    ws.onmessage = (event) => {
+      const msg = JSON.parse(event.data)
+      if (msg.type === 'trade' && msg.data?.length > 0) {
+        // Use the last trade in the batch
+        const lastTrade = msg.data[msg.data.length - 1]
+        const tradePrice = lastTrade.p
+
+        setState(s => ({
+          ...s,
+          price: tradePrice,
+          high: s.high ? Math.max(s.high, tradePrice) : tradePrice,
+          low: s.low ? Math.min(s.low, tradePrice) : tradePrice,
+          lastUpdated: new Date(),
+          loading: false,
+          error: null,
+          session: getMarketSession(),
+        }))
+      }
+    }
+
+    ws.onerror = () => {
+      setState(s => ({ ...s, error: 'WebSocket error' }))
+    }
+
+    ws.onclose = () => {
+      // Reconnect after 5s if connection drops
+      setTimeout(() => {
+        setState(s => ({ ...s, error: 'Reconnecting...' }))
+      }, 5000)
+    }
+
+    // Update session label every minute
+    const sessionInterval = setInterval(() => {
+      setState(s => ({ ...s, session: getMarketSession() }))
+    }, 60_000)
+
+    return () => {
+      ws.close()
+      clearInterval(sessionInterval)
+    }
   }, [])
 
-  return { quote, loading, error, lastUpdated }
+  return state
 }
 
-function StockWidget({ quote, loading, error, lastUpdated }: ReturnType<typeof useStockQuote>) {
-  const isPositive = (quote?.d ?? 0) >= 0
+const SESSION_LABELS: Record<StockState['session'], { label: string; cls: string }> = {
+  PRE: { label: 'PRE-MARKET', cls: 'text-amber' },
+  OPEN: { label: 'MARKET OPEN', cls: 'text-green' },
+  POST: { label: 'AFTER-HOURS', cls: 'text-amber' },
+  CLOSED: { label: 'MARKET CLOSED', cls: 'text-text-dim' },
+}
+
+function StockWidget(state: StockState) {
+  const { price, prevClose, open, high, low, lastUpdated, loading, error, session } = state
+  const change = price && prevClose ? price - prevClose : 0
+  const changePct = prevClose ? (change / prevClose) * 100 : 0
+  const isPositive = change >= 0
   const priceColor = isPositive ? 'text-green' : 'text-red'
+  const sess = SESSION_LABELS[session]
 
   return (
     <div className="border border-border bg-surface p-4">
-      {loading && !quote ? (
-        <div className="text-text-dim text-xs animate-pulse">FETCHING TSLA...</div>
-      ) : error && !quote ? (
+      {loading && !price ? (
+        <div className="text-text-dim text-xs animate-pulse">CONNECTING...</div>
+      ) : error && !price ? (
         <div className="text-red text-xs">ERR: {error}</div>
-      ) : quote ? (
+      ) : price ? (
         <>
-          <div className="flex items-baseline gap-2 mb-2">
-            <span className={`text-xl font-bold ${priceColor}`}>${quote.c.toFixed(2)}</span>
+          <div className="flex items-baseline gap-2 mb-1">
+            <span className={`text-xl font-bold ${priceColor}`}>${price.toFixed(2)}</span>
             <span className={`text-xs ${priceColor}`}>
-              {isPositive ? '+' : ''}{quote.d.toFixed(2)} ({isPositive ? '+' : ''}{quote.dp.toFixed(2)}%)
+              {isPositive ? '+' : ''}{change.toFixed(2)} ({isPositive ? '+' : ''}{changePct.toFixed(2)}%)
             </span>
+          </div>
+          <div className="flex items-center gap-2 mb-2 text-xs">
+            <span className={sess.cls}>{sess.label}</span>
+            {error && <span className="text-amber">// {error}</span>}
           </div>
           <div className="grid grid-cols-2 gap-2 text-xs">
             {[
-              ['O', `$${quote.o.toFixed(2)}`],
-              ['PC', `$${quote.pc.toFixed(2)}`],
-              ['H', `$${quote.h.toFixed(2)}`],
-              ['L', `$${quote.l.toFixed(2)}`],
+              ['OPEN', open != null ? `$${open.toFixed(2)}` : '—'],
+              ['PREV CLOSE', prevClose != null ? `$${prevClose.toFixed(2)}` : '—'],
+              ['HIGH', high != null ? `$${high.toFixed(2)}` : '—'],
+              ['LOW', low != null ? `$${low.toFixed(2)}` : '—'],
             ].map(([label, value]) => (
               <div key={label} className="flex justify-between">
                 <span className="text-text-dim">{label}</span>
@@ -302,7 +384,7 @@ function StockWidget({ quote, loading, error, lastUpdated }: ReturnType<typeof u
             ))}
           </div>
           <div className="text-text-dim text-xs mt-2">
-            {lastUpdated?.toLocaleTimeString()} // 30s refresh
+            {lastUpdated?.toLocaleTimeString()} // live
           </div>
         </>
       ) : null}
