@@ -1,0 +1,723 @@
+Channel:     futureaza
+Title:       Elon Musk's SpaceX Solves Another “Impossible” Problem
+Published:   2026-02-13 13:00:00 UTC
+Fetched:     2026-03-10 15:15:45 UTC
+────────────────────────────────────────────────────────────
+
+[00:00:00] Data centers in space will never work.
+[00:00:02] Well, I mean, actually, I guess they
+[00:00:04] kind of already do. We already have
+[00:00:06] satellites that have computers on them.
+[00:00:07] Why not just make them a little bit
+[00:00:09] bigger? Well, a couple weeks ago, we had
+[00:00:11] uh Quincy from Electric Era, former
+[00:00:14] SpaceX [music] engineer, come on to tell
+[00:00:15] us what is going on. Is this even
+[00:00:18] possible? Is it even feasible? And uh
+[00:00:20] you guys had a lot of feedback in the
+[00:00:22] comments. We would like to address some
+[00:00:24] of it uh because there were some great
+[00:00:26] things there. Uh I'm Brian. Welcome to
+[00:00:28] Futurza,
+[00:00:34] >> Quincy. Thank you for coming back. Uh
+[00:00:36] this has been an exciting couple weeks
+[00:00:38] in the SpaceX world. Uh and we've also,
+[00:00:42] for that matter, seen some impressive uh
+[00:00:45] demonstrations out of China with their
+[00:00:47] superheavy booster coming in for a
+[00:00:50] splashdown, a guided apparel like a
+[00:00:54] successful splashdown to me. Uh, so
+[00:00:56] that's pretty pretty exciting.
+[00:00:58] >> Yeah, I've been following the SpaceX
+[00:01:00] story since 2012 before I even started
+[00:01:02] working there. And this is by far and
+[00:01:04] away the most exciting time I've ever
+[00:01:06] lived through as a SpaceX fan and former
+[00:01:08] SpaceX employee. So, yeah, lots to lots
+[00:01:10] to cover today.
+[00:01:11] >> Lots to cover. And we were going to have
+[00:01:13] you back tomorrow to talk about uh the
+[00:01:15] SpaceX XAI merger. Uh, this is the video
+[00:01:18] that was two weeks ago. Did pretty well.
+[00:01:21] Uh, I didn't like it. There. Now I like
+[00:01:23] it. It's official. You guys are also
+[00:01:25] free to like the video. I thought chip
+[00:01:27] proximity to each other was key and that
+[00:01:29] the solution to high performance, low
+[00:01:31] latency was a single data center
+[00:01:33] building in space. Was surprised to hear
+[00:01:35] that a constellation was being
+[00:01:37] considered. What am I missing?
+[00:01:38] >> What the person's talking about is
+[00:01:40] having everything wired up together
+[00:01:42] inside the data center for training
+[00:01:44] purposes, which does really require low
+[00:01:47] latency connections. And that's like a
+[00:01:50] huge differentiator that has that Nvidia
+[00:01:52] has in their product stack. They have
+[00:01:53] this whole product called Infiniband and
+[00:01:55] it basically allows them to run all of
+[00:01:58] the chips synchronously
+[00:02:00] that is uh I think less of a constraint
+[00:02:03] for inference applications and um I
+[00:02:07] believe SpaceX's plan is to link
+[00:02:09] everything together with ISLs which are
+[00:02:12] laser links which travel super fast
+[00:02:14] lasers in space and travel actually
+[00:02:16] faster than the speed of lasers inside
+[00:02:18] of fiber optic cables on Earth just
+[00:02:20] because you don't have the signal
+[00:02:21] bouncing around inside the fiber cable.
+[00:02:24] So, the satellites, if they need to be
+[00:02:28] linked up, they can do that with ISLs,
+[00:02:30] and I believe that they're going to have
+[00:02:32] a really good path to doing that. I am
+[00:02:34] skeptical that this will be used for
+[00:02:36] training purposes for the reasons I
+[00:02:37] mentioned earlier. So, think of this as
+[00:02:39] an inference constellation, not
+[00:02:40] necessarily a training cluster. My guess
+[00:02:42] is that that's a much harder, further
+[00:02:44] thing to do, uh, that they probably
+[00:02:47] won't start off with.
+[00:02:48] >> All All good points. And you know, uh,
+[00:02:51] lasers are pretty fast, uh, in a vacuum.
+[00:02:54] >> Laser beams, as they say,
+[00:02:57] >> lasers. So, the Hivemind data center,
+[00:02:59] Starlink, already has the foundation to
+[00:03:01] do this. All he want us to do uh, to do
+[00:03:04] this is when you replace each Starlink,
+[00:03:07] replace it with an AI capable node to be
+[00:03:10] both a link in the Starlink satellite
+[00:03:12] system, but also an AI data pod. Would
+[00:03:15] that work? Yeah, I mean I I guess you
+[00:03:17] could do something like that, but
+[00:03:18] there's a bunch of reasons you wouldn't.
+[00:03:20] Um, so
+[00:03:22] like first of all, I think Starlink, the
+[00:03:24] existing constellation and the new
+[00:03:27] orbital AI cluster or constellation will
+[00:03:30] complement each other. You wouldn't want
+[00:03:32] to replace one with the other. You
+[00:03:33] actually want them to coexist because in
+[00:03:35] a perfect world, you would have an AI
+[00:03:37] satellite just be an AI satellite as
+[00:03:39] opposed to all the other functionality
+[00:03:41] that a Starlink satellite has. And you
+[00:03:43] would use the Starlink constellation to
+[00:03:45] down link data back down to Earth from
+[00:03:48] the AI constellation. So you want both.
+[00:03:50] Um and you certainly don't want to
+[00:03:52] replace one with the other because
+[00:03:54] Starlink's growing like crazy, right?
+[00:03:56] They just announced today I think
+[00:03:57] they're up to 10 million users. Um so
+[00:03:59] that existing business needs to keep
+[00:04:01] going. Uh they're adding like 19,000
+[00:04:03] users per day or something like that and
+[00:04:06] they're going to have more and more
+[00:04:07] growth for years thereafter. Um, the
+[00:04:10] other reason that that doesn't make
+[00:04:11] sense is like the Starling
+[00:04:12] constellations are uh on what would be
+[00:04:15] like a much lower inclination orbit. I
+[00:04:18] think it's like 53 degrees inclination.
+[00:04:21] In that orbital plane, it covers the
+[00:04:22] majority of where people live. For the
+[00:04:24] AI satellite constellation, it's going
+[00:04:27] to go over the top of the Earth where
+[00:04:28] you get continuous sun exposure. You
+[00:04:30] need the sun to power the solar rays to
+[00:04:32] power the AI compute. If you do it
+[00:04:35] around the belt of the earth, you have
+[00:04:38] long periods of eclipses, which means
+[00:04:39] you have to add energy storage system.
+[00:04:41] So, it's not an optimal solution.
+[00:04:43] >> Or just power down and not use the dark
+[00:04:46] ones. That's uh also not a great
+[00:04:48] solution. Joe had the same question. We
+[00:04:50] can uh consider that also answered. Uh
+[00:04:53] now we know why it's called Skynet with
+[00:04:55] the current power requirement. I think
+[00:04:57] it needs a very large solar panel and
+[00:05:00] radiative cooler. How much better is the
+[00:05:02] solar energy uh when it doesn't have to
+[00:05:05] filter through the atmosphere? It's
+[00:05:07] quite a bit stronger, isn't it?
+[00:05:08] >> It is. Yeah. There's like this thing
+[00:05:10] called the Aridians curve, if I recall
+[00:05:11] correctly uh the name, but effectively
+[00:05:14] because you send uh light through the
+[00:05:16] atmosphere, it like um attenuates away.
+[00:05:19] If you're in space, there's no
+[00:05:20] atmosphere. So, you get a lot more
+[00:05:21] direct high aridians, so higher wattage
+[00:05:24] per square meter or square foot. And
+[00:05:27] then on top of that, there's this other
+[00:05:29] little advantage you have, which I
+[00:05:30] believe, if I'm remembering correctly,
+[00:05:32] you get better power output from
+[00:05:35] satellites that are at uh ideal
+[00:05:38] temperature state. And you can achieve
+[00:05:39] that temperature state on orbit. So
+[00:05:42] there's multiplicative effects there
+[00:05:44] that translate to higher power outputs
+[00:05:47] per square foot. And this is of course
+[00:05:49] something SpaceX Starlink already takes
+[00:05:51] advantage of. Um, so there's going to be
+[00:05:53] plenty of power, you know, about 100
+[00:05:55] kilowatts per satellite, which is a lot.
+[00:05:57] These are big, big solar arrays. So that
+[00:05:58] is a big challenge, but I'm confident
+[00:06:00] the team over there can pull that off.
+[00:06:02] And then on the radiator perspective,
+[00:06:04] what people need to remember is for
+[00:06:06] radiation with which is a form of
+[00:06:08] heating or cooling depending on the
+[00:06:10] direction of travel of the heat. The
+[00:06:13] amount of heat rejection is proportional
+[00:06:16] to the uh temperature difference to the
+[00:06:18] power to the fourth power. So the the
+[00:06:22] real the back of the satellite is going
+[00:06:23] to be really hot. Space is going to be
+[00:06:24] really really cold. There's a massive
+[00:06:26] temperature difference between those and
+[00:06:28] then you multiply that four times over.
+[00:06:30] So there's just gobs of heat being
+[00:06:32] rejected into space. From a solar
+[00:06:34] perspective, that would mean if you
+[00:06:36] looked in the right IR spectrum, you
+[00:06:38] would actually be able to see Earth
+[00:06:39] because it would start to light up and
+[00:06:40] generate basically infrared radiation as
+[00:06:43] a result of that, which is pretty cool
+[00:06:44] to think about. So people might be
+[00:06:46] taking a or aliens in the future would
+[00:06:47] be taking a telescope and looking at the
+[00:06:49] earth and eventually as this thing grows
+[00:06:50] would actually see a radiative signature
+[00:06:52] which is pretty wild to think about.
+[00:06:54] >> That is pretty crazy.
+[00:06:55] >> Yeah.
+[00:06:55] >> Uh so picture one data center server
+[00:06:59] rack packaged as a huge Starlink
+[00:07:01] satellite. Now again we not literally a
+[00:07:04] Starlink satellite but
+[00:07:06] >> instead of the communication computer it
+[00:07:09] just has AI compute. So yeah, I mean the
+[00:07:13] the big racks are like tall and vertical
+[00:07:15] and wide and stuff. So it won't look
+[00:07:18] like that. Basically to optimize uh like
+[00:07:22] inferns chips to space, you would want
+[00:07:24] to flatten everything out. This is like
+[00:07:26] a whole concept we came up with at
+[00:07:28] SpaceX back in the day called flats. Um
+[00:07:31] so everything's just like flat and it's
+[00:07:33] all stitched together on top of each
+[00:07:35] other and that way you can stack them up
+[00:07:36] like a flap uh flapjacks on a pancake
+[00:07:39] for pancakes. Um, same idea here. So, I
+[00:07:43] don't know how they're going to do it. I
+[00:07:44] don't have any insider information
+[00:07:45] obviously on that, but I wouldn't I
+[00:07:47] would not definitely do it the way that
+[00:07:49] uh the current racks are designed. I
+[00:07:50] would take the inference chips and like
+[00:07:52] flatten them down directly to the radio
+[00:07:54] radiator. I would put thermal interface
+[00:07:57] material so that the heat coupling
+[00:07:59] between the chip and the radiator is
+[00:08:01] like super strong and it just wicks heat
+[00:08:03] out. And I would put a bunch of those on
+[00:08:05] top of a very flat like a large aluminum
+[00:08:08] panel. I'd pack a solar array on top of
+[00:08:10] that that can then deploy when you get
+[00:08:12] to orbit. And then I'd send a bunch of
+[00:08:13] those up. Like SpaceX is super smart.
+[00:08:15] They understand the flat sat
+[00:08:17] architecture better than anyone in the
+[00:08:18] world. And that's what I would suspect
+[00:08:19] they do. But time will tell.
+[00:08:21] >> It's IKEA. I mean, the whole point of
+[00:08:24] IKEA furniture is that you can fit so
+[00:08:27] much more of it in a shipping container.
+[00:08:29] What is Starship if not a shipping
+[00:08:31] container to the stars? Um, don't need
+[00:08:34] to make it huge. I would very much like
+[00:08:38] to see a uh telescope, a space telescope
+[00:08:42] that utilizes the new payload capacity
+[00:08:45] to the fullest. I wonder how far we
+[00:08:48] would see uh de-orbit larger satellites
+[00:08:52] uh starts with more difficulty in
+[00:08:53] burning up in re-entry. I assume this
+[00:08:55] means if they're going to be bigger,
+[00:08:57] will they still burn up completely on
+[00:08:58] re-entry?
+[00:08:59] >> Yes. Um basically there's like this
+[00:09:02] whole concept of abilative like an
+[00:09:04] abalative constant on a material basis
+[00:09:07] like if you have uh certain materials
+[00:09:10] that are like really densely packed and
+[00:09:13] they have a high surface area to volume
+[00:09:16] ratio or yeah high surface area to
+[00:09:19] volume ratio meaning like it's a really
+[00:09:21] big uh like basketball with a bunch of
+[00:09:24] internal volume that only has a a
+[00:09:26] limited amount of surface area on the
+[00:09:28] outside to wick away heat that type of
+[00:09:30] object like is is hard to burn up, but
+[00:09:32] that isn't what the satellites are like.
+[00:09:34] They're long big plates like we've
+[00:09:36] discussed. And when that thing comes
+[00:09:38] back in, there's a ton of surface area
+[00:09:40] for it to uh burn up and be exposed to
+[00:09:43] the thermal re-entry. And the materials
+[00:09:45] are relatively low, relatively easier to
+[00:09:48] like actually disintegrate. So, I don't
+[00:09:51] think it's going to be a big issue.
+[00:09:52] They'll it'll just burn up in the sky
+[00:09:53] when they come in and that'll be the end
+[00:09:55] of it.
+[00:09:55] >> I would agree. It's even if they're
+[00:09:57] larger, their ratio of surface area to
+[00:10:01] volume is probably comparable. Uh we've
+[00:10:04] got I know we addressed this uh but
+[00:10:07] constant radiation impact on nanoiz
+[00:10:09] microchips. Uh you said less precision
+[00:10:13] uh solves this. Is that is that am I
+[00:10:15] understanding that right?
+[00:10:17] >> Uh so I think what they're asking is
+[00:10:19] like what is what are they going to do
+[00:10:21] about the radiation? And um there's a
+[00:10:24] couple important things. So radiation is
+[00:10:25] isn't that bad until you get up to I
+[00:10:28] think roughly around 1,200 kilometers
+[00:10:29] where the Van Allen belts are. Um that's
+[00:10:32] when it gets pretty bad. And then
+[00:10:33] there's actually a another zone above
+[00:10:36] that that's not as bad as the radiation
+[00:10:39] that you would see in the Van Allen
+[00:10:40] belts. The other part of this is like
+[00:10:43] you can just radiation hard harden
+[00:10:45] material or harden your uh PCBAs. So
+[00:10:48] basically um this gives you the
+[00:10:51] opportunity to desensitize it from
+[00:10:53] inbound radiation and that can prevent
+[00:10:56] it from having bit flips or any sort of
+[00:10:58] faults that might occur from being
+[00:11:00] exposed to that environment. And as a
+[00:11:02] reminder for everybody, SpaceX already
+[00:11:03] does this. There's tons of satellites up
+[00:11:05] there already and they're constantly
+[00:11:06] being bombarded with radiation. And it
+[00:11:08] seems to be going fine.
+[00:11:09] >> It does seem to be going fine. A lot of
+[00:11:11] the skepticism I've seen, not so much in
+[00:11:12] the comments, but on social media,
+[00:11:15] revolves around people who have never
+[00:11:17] played Kerbal and think that this is
+[00:11:19] some bold experiment that no one is has
+[00:11:22] any like we're going to have to start
+[00:11:24] from scratch. And uh I don't think we
+[00:11:26] are. I think we're going to use existing
+[00:11:28] technology.
+[00:11:29] >> That's right.
+[00:11:29] >> The real question to me is at what price
+[00:11:32] uh does it make sense? Because if if you
+[00:11:35] can get your launch uh capacity and your
+[00:11:39] and your satellites cheaper than the
+[00:11:41] cost of 10 years of property taxes, I
+[00:11:44] mean, right there, you're done.
+[00:11:46] >> Can it? I I don't know. That's not up to
+[00:11:48] me. We need to talk about the orbits,
+[00:11:50] which are limited.
+[00:11:51] >> Definitely. There's only so much space
+[00:11:53] in space, but there's a lot of space in
+[00:11:56] space. Um, you know, I mean, like, space
+[00:11:59] is so big. It's it's it boggles the
+[00:12:02] mind. impossible for people to really
+[00:12:03] imagine. I I did the math on this and
+[00:12:06] you know, effectively you can fit like a
+[00:12:08] million satellites in uh sun-synchronous
+[00:12:11] orbit from like 90 degrees beta angle to
+[00:12:15] 80 degrees b angle if you just keep
+[00:12:18] stacking them on top of each other. So
+[00:12:20] imagine you have like a hula hoop and
+[00:12:22] then a slightly larger hula hoop and
+[00:12:23] then a slightly larger hula hoop and
+[00:12:25] then on that hula hoop there's a bunch
+[00:12:26] of different satellites and the hula
+[00:12:28] hoops are moving around the top of the
+[00:12:29] earth. You just keep stacking that
+[00:12:31] outward and outward and outward. There's
+[00:12:33] a couple good videos online of this
+[00:12:35] happening or that show this, but yeah,
+[00:12:38] it's there's plenty of plenty of space
+[00:12:40] for the initial large cluster and um
+[00:12:44] that by itself will make a lot of money
+[00:12:45] and then you can just keep going above
+[00:12:47] and beyond that and eventually you could
+[00:12:49] go out to like the the garage points and
+[00:12:52] um put a bunch of additional satellites
+[00:12:54] out there if you needed to and then beam
+[00:12:56] the data back down to Earth from those
+[00:12:58] points and that's even more space. So
+[00:13:00] space is big, you know, that's the short
+[00:13:02] answer.
+[00:13:03] >> This is where I learned most of my space
+[00:13:05] uh information is from this documentary
+[00:13:08] series right here. Uh which is pretty
+[00:13:10] has been pretty valuable to me. What
+[00:13:12] I've found is people have a very uh
+[00:13:15] linear way of thinking, a very
+[00:13:17] two-dimensional way of thinking about
+[00:13:19] space. They don't realize that it's
+[00:13:21] floors on a building. If I asked you to
+[00:13:24] find something somewhere in the world
+[00:13:26] and you thought of just the surface area
+[00:13:28] as places to look without digging,
+[00:13:31] without going into trees or skyscrapers,
+[00:13:34] uh you would not find what you're
+[00:13:35] looking for uh because I would hide it
+[00:13:37] better than that. So this is uh you know
+[00:13:41] something to think about. While nothing
+[00:13:44] is infinite except perhaps the universe,
+[00:13:46] we can still uh you know measure that.
+[00:13:50] So it is not infinite but the numbers
+[00:13:52] I've seen are in the million to three
+[00:13:54] million range. There is plenty of space
+[00:13:58] >> and you can put satellites in the exact
+[00:14:01] same orbit as they do with Starlink
+[00:14:05] >> where it's a I mean how many is it
+[00:14:08] around the world in the same line?
+[00:14:11] >> Yeah. I I don't know off the top of my
+[00:14:13] head but it's a lot. And basically like
+[00:14:16] if you think about like the
+[00:14:17] circumference of a circle the outside
+[00:14:19] area that is
+[00:14:22] >> proportional to the diameter times pi
+[00:14:25] and the diameter of the earth is huge
+[00:14:27] and then you increase the diameter as
+[00:14:29] you keep going higher and higher up in
+[00:14:31] terms of orbital altitude. So you have
+[00:14:33] the diameter of the earth plus 500 km on
+[00:14:36] each side for a 500 km altitude
+[00:14:39] constellation. That's a massive
+[00:14:41] diameter. And then you multiply that by
+[00:14:42] pi and that's your circumference. And
+[00:14:44] then you just keep sticking satellites
+[00:14:46] spaced about 10 kilometers apart or
+[00:14:48] something like that, maybe 50. Um, and
+[00:14:50] then that represents the entire band of
+[00:14:53] satellites. And you can do multiple of
+[00:14:55] those bands over and over and over
+[00:14:57] again. And then kind of stagger them and
+[00:14:59] stitch them together to put a ton of
+[00:15:00] satellites up there. And they each have
+[00:15:02] tons of space around them. So orbital
+[00:15:04] collision avoidance isn't an issue even
+[00:15:06] if you do it like that.
+[00:15:07] >> Yes. I question the guy being
+[00:15:10] interviewed as wearing a winter coat
+[00:15:12] indoors. What is that? Why is that
+[00:15:14] necessary? Ruins the credibility of the
+[00:15:17] person. He was referring to both of us.
+[00:15:19] Uh to which I said, uh it's a big old
+[00:15:22] factory they've got there. I imagine
+[00:15:24] keeping it at 72 degrees in the winter
+[00:15:28] is probably not a priority. [laughter]
+[00:15:30] >> Yeah, you know, I run cold, so uh I uh
+[00:15:33] you know, I like to stay warm in the
+[00:15:34] winter and it's like February in
+[00:15:36] Seattle, so it's pretty cold here. Um,
+[00:15:39] and yeah, we don't want to we don't want
+[00:15:40] to blast the heater in all of the uh
+[00:15:42] factory.
+[00:15:43] >> It's a very tall space you have. Uh,
+[00:15:46] >> it's what is that 30 feet?
+[00:15:48] >> Well, the good news is today I'm wearing
+[00:15:50] instead of a winter jacket, I'm wearing
+[00:15:52] a Teddy Roosevelt t-shirt. Uh, one of my
+[00:15:55] favorite presidents. So, and it's short
+[00:15:57] sleeve to be to be extra safe.
+[00:15:59] >> Not for me. I am uh it's about 50
+[00:16:02] degrees in my studio. Uh so even though
+[00:16:06] we brought this up last time, people who
+[00:16:09] have heard of the Kesler syndrome and
+[00:16:11] really want to freak out about it did
+[00:16:13] not hesitate to assume that we hadn't
+[00:16:16] talked about it and freak out. Uh so a
+[00:16:19] quick reminder, Kesler syndrome is a
+[00:16:21] hypothesized situation where space
+[00:16:24] debris could begin uh a runaway cycle
+[00:16:28] where bits crash into other bits,
+[00:16:30] creating more and more space debris,
+[00:16:33] making uh certain parts of the Earth's
+[00:16:36] orbit uh less than hospitable in terms
+[00:16:39] of how much debris there is. Is it safe
+[00:16:41] to say that rocket scientists know what
+[00:16:43] they're doing?
+[00:16:44] >> Absolutely. Uh I mean obviously nobody
+[00:16:47] wants that to happen. Most of all the
+[00:16:49] people at SpaceX who basically gave
+[00:16:51] their entire career to putting you know
+[00:16:54] people on the moon and on Mars you know
+[00:16:56] kind of humanity's ascent into the
+[00:16:58] cosmos is of like the utmost important
+[00:17:01] criteria for the company SpaceX. So
+[00:17:04] there's an intense focus on safety and
+[00:17:09] operational reliability to avoid things
+[00:17:11] like that happening and tons of fault
+[00:17:14] correction systems that they've put into
+[00:17:15] place to avoid exactly this. So you know
+[00:17:19] anything's possible of course but there
+[00:17:21] is a massive incentive alignment to not
+[00:17:24] let this happen for every single
+[00:17:26] engineer at SpaceX. Yes, this is no
+[00:17:30] company would be harmed more by this
+[00:17:32] than SpaceX.
+[00:17:33] >> Yeah, sure.
+[00:17:34] >> So, it it's a understood issue and one
+[00:17:38] that is constantly being mitigated. I
+[00:17:41] wonder whether SpaceX gets nimi problems
+[00:17:43] because of the constant noise of
+[00:17:44] launches if they're going to be
+[00:17:46] launching a Starship every hour or so.
+[00:17:50] That's a fantastic question.
+[00:17:52] >> Yeah, good question. I mean, generally
+[00:17:54] they put those rockets pretty darn far
+[00:17:56] away from major city centers. So, um, it
+[00:17:59] doesn't seem to be an issue today, but
+[00:18:02] we'll see what happens.
+[00:18:03] >> We will see what happens. And, uh, you
+[00:18:06] know, maybe they'll put them offshore a
+[00:18:08] bit. I assume there's very strict re
+[00:18:11] regulation on where you can launch from
+[00:18:14] in terms of national security. Don't
+[00:18:17] want to have our rockets just parked in
+[00:18:19] a potentially hostile place. Um, but
+[00:18:21] anywhere you go, a Starship is real
+[00:18:24] loud. It's real loud. So, even offshore,
+[00:18:28] I suspect you might hear it because it's
+[00:18:32] big. It's a big one.
+[00:18:33] >> Yep.
+[00:18:34] >> When it comes to possibility of the
+[00:18:35] orbiting, would Tesla try to bring it
+[00:18:37] back for an atmospheric burn or fly them
+[00:18:40] into out into deep space?
+[00:18:42] >> No. Uh, there I mean there there are
+[00:18:45] things called graveyard orbits, which is
+[00:18:47] pretty crazy. Um, but those are
+[00:18:51] typically done out in geocynchronous
+[00:18:53] orbit where it's actually hard to get
+[00:18:54] the satellite back. There's also, yeah,
+[00:18:57] graveyard orbits where from the Apollo
+[00:19:00] eras where they'll just like chuck a
+[00:19:02] second stage out and it's on some random
+[00:19:04] orbit and every once in a while it comes
+[00:19:05] back out and jeopardizes a bunch of
+[00:19:08] satellites. Um, that's like really
+[00:19:10] sloppy behavior. I think that that's
+[00:19:13] that was like an old era legacy thing
+[00:19:16] that won't be persistent into the
+[00:19:18] future. I think, you know, SpaceX, not
+[00:19:20] obviously not speaking for them, but if
+[00:19:22] I was to put myself in their shoes, they
+[00:19:24] want to be a good steward of the
+[00:19:26] universe. Like truly, um they don't want
+[00:19:28] to, you know, dispose of their trash in
+[00:19:30] a unproductive way and clog up the
+[00:19:32] orbits because that can contribute to
+[00:19:34] things like the Kesler syndrome. So, I'm
+[00:19:36] guessing they just de-orbit those bad
+[00:19:37] boys. My guess would be de-orbit is
+[00:19:40] always preferred. Um the amount of fuel
+[00:19:43] needed to get to the graveyard versus
+[00:19:45] de-orbit is about onetenth as much fuel
+[00:19:49] because just need you just need a little
+[00:19:51] bit of push to get up to that spot
+[00:19:53] versus a whole lot of push to slow down.
+[00:19:56] And deep space is not in the cards. Deep
+[00:19:58] space would require an amount of fuel
+[00:20:00] that none of the satellites have. Uh
+[00:20:02] getting out of Earth's orbit, I did see
+[00:20:04] someone say, could they just fly him
+[00:20:06] into the sun? Definitely not. the sun is
+[00:20:08] a really really tough target to hit
+[00:20:11] despite being as big as it is because
+[00:20:13] we're all hustling. We're moving real
+[00:20:15] fast.
+[00:20:16] >> I would encourage people to look at um
+[00:20:18] the delta V map. Uh I don't know if
+[00:20:21] you've ever heard of this. This is super
+[00:20:22] cool, but it's uh let me share my screen
+[00:20:25] here.
+[00:20:26] >> Sure. So this is this is a delta v map
+[00:20:28] and it basically describes how much uh
+[00:20:32] delta v which is change in velocity or
+[00:20:34] acceleration you need to go to various
+[00:20:36] different parts of the solar system. Um
+[00:20:39] so as you go uh out further and further
+[00:20:44] and further you need to use more and
+[00:20:45] more ultimately propellant to go to
+[00:20:48] those distances and then when you get to
+[00:20:50] those distance when you get to those
+[00:20:51] locations you have to use more
+[00:20:53] propellant to actually slow down. So,
+[00:20:56] um, the propellant budget is kind of a,
+[00:20:59] you know, it's like the fuel in your g
+[00:21:00] it's the fuel in your gas tank for your
+[00:21:02] or your the the energy in your battery
+[00:21:04] if we're talking about electric era. Um,
+[00:21:06] for a trip, right? You you fill it up
+[00:21:08] and then you use it and you kind of
+[00:21:10] program your trip to go uh to use that
+[00:21:13] amount of energy or gas if you're
+[00:21:15] driving a gas car. It's the same thing
+[00:21:17] with a a satellite. So they only have a
+[00:21:19] fixed amount of propellant to go to like
+[00:21:21] a specific destination and then the you
+[00:21:24] know and then they'll de-orbit with the
+[00:21:26] remaining amount. But if they wanted to
+[00:21:29] go out into deep space it would require
+[00:21:30] way too much propellant. So it doesn't
+[00:21:31] make a whole lot of sense to do that for
+[00:21:33] just basic propellant management
+[00:21:35] reasons.
+[00:21:36] >> Yes. All all correct. Uh so we've got um
+[00:21:40] this one here. Another thing that can be
+[00:21:42] done is refueling the satellites. Uh, if
+[00:21:45] you have a thousand shells with a
+[00:21:46] million satellites all doing comput
+[00:21:51] like a like a AAA advisor. Um, I don't
+[00:21:55] think that's possible because getting
+[00:22:00] pairing up with one satellite is not
+[00:22:02] that difficult, but then to leave that
+[00:22:04] satellite and go to the next satellite
+[00:22:07] would require uh, unless I'm mistaken an
+[00:22:11] outrageous amount of fuel.
+[00:22:12] >> Yeah. that and it's just so much
+[00:22:14] operational complexity because now you
+[00:22:16] have to like manage that whole
+[00:22:17] operation. You got to dock, you got to
+[00:22:19] make sure you know the propellant
+[00:22:21] transfer is done safely and temperatures
+[00:22:23] are you know adhered to uh during the
+[00:22:26] operation and then you do that a million
+[00:22:28] different times. It's bound to go wrong
+[00:22:30] once. It just makes way more sense to
+[00:22:32] de-orbit and send a new one up. That's
+[00:22:34] like the operational cadence that is
+[00:22:36] that people should have in their minds.
+[00:22:38] Think of SpaceX as like a big production
+[00:22:40] line. you don't want to go and, you
+[00:22:42] know, fix something in the field
+[00:22:43] necessarily when you're printing things
+[00:22:45] on a production line. Um, it's way
+[00:22:47] easier to just de-orbit and launch a new
+[00:22:49] one. Way lower operational cost, way
+[00:22:51] lower complexity.
+[00:22:52] >> Yeah. And, uh, in movies we get this
+[00:22:55] perception, this idea that uh, space is
+[00:22:58] like a parking lot where you can just
+[00:23:00] kind of go around and check stuff out.
+[00:23:02] Uh, that fantastic movie with George
+[00:23:06] Clooney and Sandra Bulock, is that the
+[00:23:08] one I'm thinking of? It is. Were they
+[00:23:10] where were where they just they're like,
+[00:23:11] "You know what? Let's just go to the
+[00:23:13] Chinese space station because that's
+[00:23:15] possible." Uh, no. That would require,
+[00:23:17] I'm going to say, more fuel than has
+[00:23:20] ever been used in space to that point.
+[00:23:23] Uh, because you're changing your entire
+[00:23:25] orbital inclination. It's difficult.
+[00:23:28] Space is is tricky. Uh, so we've got uh
+[00:23:32] this one here. Let's see. Seems crazy,
+[00:23:34] but so does what SpaceX has done
+[00:23:36] already. though we are seeing lots of
+[00:23:38] bumps on the road with Starship. Are we
+[00:23:41] >> I mean uh I think that I think that the
+[00:23:45] the team is actually executing on like
+[00:23:47] an impossibly challenging problem
+[00:23:49] extremely well. Like
+[00:23:51] >> Starship is arguably like the most
+[00:23:53] complicated thing that's ever been built
+[00:23:56] and it also goes to space. Um,
+[00:23:59] [laughter]
+[00:24:00] so I think I mean honestly as a as a
+[00:24:03] former SpaceX employee I'm like man
+[00:24:04] those guys are kicking ass and they
+[00:24:06] should just keep grinding and hustling
+[00:24:07] hard. I it's also like it's a
+[00:24:09] nonlinearly more complex problem than
+[00:24:11] what Falcon 9 is or Falcon 1 or these
+[00:24:14] other rockets because of the uh rapid
+[00:24:17] reusability design criteria and the and
+[00:24:20] the volume requirements and the mass to
+[00:24:22] orbit requirements. So, this is all
+[00:24:26] expected. Everybody take a deep breath.
+[00:24:29] It turns out these people are really
+[00:24:30] good at their jobs and we'll be seeing
+[00:24:32] frequent and repeatable Starship
+[00:24:35] launches very very soon.
+[00:24:37] >> And also worth noting that if it was an
+[00:24:39] expendable design, it would already be
+[00:24:41] certified.
+[00:24:42] >> Mhm.
+[00:24:43] >> Because we've already seen the
+[00:24:45] capabilities. Uh the reason it's uh
+[00:24:48] still in testing is because the
+[00:24:50] reusability portion makes it that much
+[00:24:52] more difficult.
+[00:24:53] >> Yeah.
+[00:24:54] >> Last question I got for you and this one
+[00:24:56] is a little out there I think but you
+[00:24:59] can tell me what we really need is to
+[00:25:01] put the entire fab in space. Make the
+[00:25:04] chips there. It's already a it is the
+[00:25:06] cleanest clean room you can have. But
+[00:25:09] that seems like um like more of a 20 or
+[00:25:12] 30 years from now kind of thing.
+[00:25:14] >> Yeah. I mean, eventually there's going
+[00:25:16] to be a lot of manufacturing in space.
+[00:25:18] I'll agree. I definitely think that
+[00:25:20] that's going to happen. Um, and it kind
+[00:25:23] of has to happen by necessity because
+[00:25:25] you don't want to like f the mass around
+[00:25:28] because of the propellant requirements
+[00:25:30] that we talked about earlier, right? So,
+[00:25:32] if you're on the moon, you want to build
+[00:25:34] things on the moon and you want to build
+[00:25:35] with the equipment that's already on the
+[00:25:37] moon, the mass that's already there, the
+[00:25:40] the the lunar regalith regalith or the
+[00:25:42] Martian regalith. Um, so it'll happen. I
+[00:25:46] don't know if the chips will be made
+[00:25:48] there specifically,
+[00:25:50] but there's going to be certainly solar
+[00:25:52] panels that are made out there and other
+[00:25:55] really cool interesting things. Um,
+[00:25:57] >> but time will tell.
+[00:25:59] >> Time will tell. I'm very curious to see
+[00:26:00] how mining is accomplished without air
+[00:26:03] or water because those are things that
+[00:26:06] have been very helpful to mining on
+[00:26:08] Earth. Uh, also, uh, gravity does some
+[00:26:11] does some good work for us here, uh,
+[00:26:13] that, uh, takes a little longer on on on
+[00:26:17] the moon or Mars. Uh, guys, uh, I'll put
+[00:26:20] a link in the description, of course. I
+[00:26:22] always do. Uh, check out Electric Era
+[00:26:23] Tech in Seattle, Washington. They, uh,
+[00:26:26] make chargers that other companies buy
+[00:26:29] and and use. Uh, I've had a chance to
+[00:26:32] try them out quite a few times myself,
+[00:26:34] and they're reliable. Tap and go, so
+[00:26:36] easy. Uh, thank you so much for taking
+[00:26:38] your time, everybody. Uh, what did we
+[00:26:40] miss? What do we misunderstand? Leave
+[00:26:41] it. Leave it. And everybody else, stay
+[00:26:44] tuned. Stay juicy. And I cannot wait to
+[00:26:45] hear from you clever robots on on Mars.
+[00:26:48] Yeah.

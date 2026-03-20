@@ -1,0 +1,39 @@
+Channel:     jobhakdi
+Title:       How to PREPARE for Tesla Stock's BIG MOVE
+Published:   2026-02-12 01:08:08 UTC
+Summarized:  2026-03-10 15:07:13 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01FFGWEW4chhPSyD41GBVvt8
+Cost:        $0.03326 (15,072 in / 1,420 out tokens)
+────────────────────────────────────────────────────────────
+
+Tesla LEAP options strategy is the central topic of this video, framed around a viewer question from "Dr. Steve Sudell" asking how to structure Tesla LEAP positions after earnings. The speaker, who runs a service called Pioneer Alpha, walks through the mechanics of long-dated Tesla call options, the dangers of time decay, and how to think about strike prices and expiration dates relative to a thesis about Tesla's upcoming catalysts. The broader context is a bullish long-term view on Tesla driven by robotaxi, Optimus, energy, and AI, with a near-term inflection point expected around April of the current year.
+
+Key Points:
+
+1. The LEAP roll strategy was invented specifically for Tesla's volatility problem. When an investor is already fully allocated to Tesla and the stock drops 50%, they have no capital left to add. The solution is to sell shares at the depressed price and convert that capital into deep out-of-the-money long-dated calls, which on a capital-adjusted basis tend to outperform the stock when it recovers. For example, selling $100,000 in Tesla stock at $250 and reinvesting into $700 strike calls expiring in 18 months could yield 250-300% if Tesla recovers to $500, versus roughly 100% from just holding shares.
+
+2. Time decay is the central risk in LEAP strategies, and it is far more severe than most investors realize. Using the website optionchart.io, the speaker demonstrates that a Tesla $700 strike call expiring in roughly 90 days costs $169. If Tesla stays flat for just 45 days (half the remaining life), that option drops from $169 to $11, representing a 92% loss on invested capital even though Tesla has not gone down at all. On a $1 million position, that means dropping to roughly $80,000 in 44 days of sideways price action.
+
+3. The practical method for simulating option time decay is to look at a shorter-dated equivalent, not to rely on the Greeks. To estimate what an option will be worth after 45 days of sideways movement, simply look at what the same strike option costs today with 45 fewer days to expiration. The speaker explicitly dismisses delta and other Greeks as misleading because they are non-linear and constantly changing, arguing that empirical simulation is the only reliable method for understanding real-world outcomes.
+
+4. Longer expiration dates dramatically reduce the psychological and financial pain of being early on a thesis. A December 2026 $700 strike call that experiences 6 months of sideways Tesla action will lose approximately 70% of its value (dropping from $22 to around $6). The same scenario with a December 2027 expiration produces only about a 30% loss (dropping from $65 to around $44). On a $1 million position, that's the difference between being left with $300,000 versus $700,000 — a much more survivable position psychologically and financially.
+
+5. The speaker's rule of thumb is a minimum 18-month expiration for any LEAP position. Anything shorter starts entering speculative territory where timing errors become catastrophic. He cites June 17, 2027 calls at a $600 strike as an example of a position he finds interesting, noting that if Tesla reaches $1,000, those calls would return approximately 549% versus roughly 150% from holding shares outright.
+
+6. Currently, the speaker is not holding any LEAPs and is instead using deep in-the-money short puts as a substitute long position. The logic is that in a sideways market, short puts collect time premium rather than losing it. He gives the example of selling a $440 put for $17 when Tesla is at $428 — if Tesla stays flat or rises modestly, the entire premium is collected. The break-even is around $423. The key risk is that short puts carry theoretically unlimited downside: if Tesla drops to $300, a put sold for $17 could be worth $140, creating a catastrophic loss similar to leveraged margin exposure.
+
+7. The four alpha generators in the speaker's Pioneer Alpha framework are: prediction alpha (fundamental forecasting of robotaxi, Optimus cash flows), macro alpha (geopolitical and macro overlay including Trump policy), alpha churn (selling short-dated weekly or 10-day options to harvest time decay), and alpha roll (the LEAP strategy). These are described as complementary, not interchangeable.
+
+8. The near-term market view is sideways consolidation until approximately April, with no expectation of Tesla crossing $500 before then. April is identified as the most probable inflection point for a robotaxi-driven rerating. The speaker says he was selling calls aggressively when Tesla ran to $490, believing it would stay in the $460-$480 channel, and is now selling short puts given the lower price range around $428.
+
+Important Conclusions and Recommendations:
+Do not use short-dated, deep out-of-the-money LEAPs unless you have very high conviction on precise timing. If uncertain about the exact catalyst date, extend expiration to at least 18 months to survive being wrong by 6 months. Avoid relying on delta or other Greeks for decision-making; use empirical simulation by comparing equivalent shorter-dated options. Short puts are preferable to LEAPs in sideways markets but carry margin-like risk and require constant monitoring. If April passes without the expected inflection, the speaker says he would consider liquidating LEAP positions at a loss and repositioning rather than watching them decay further.
+
+Notable Quotes and Data:
+"If you put a million in, Tesla stays flat for 45 days, you drop from a million to $80,000. That is the madness of options."
+"My rule of thumb is 18 months minimum. If you have leaps, 18 months minimum."
+On the December 2027 $700 call: sideways for 6 months produces a 30% loss versus 70% on the December 2026 equivalent.
+Projected return on June 2027 $600 strike if Tesla hits $1,000: approximately 549% versus 150% for stock.
+Tesla's projected capex: $20 billion this year against $40 billion on the balance sheet.
+Morgan Stanley cited as projecting solar energy adding $50 billion or more in new Tesla revenue.

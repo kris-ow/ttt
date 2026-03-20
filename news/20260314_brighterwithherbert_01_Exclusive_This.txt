@@ -1,0 +1,1536 @@
+Channel:     brighterwithherbert
+Title:       EXCLUSIVE: This Robot Video Changed The Conversation
+Published:   2026-03-14 18:31:16 UTC
+Fetched:     2026-03-15 04:00:03 UTC
+────────────────────────────────────────────────────────────
+
+[00:00:00] The humanoid robot race between Tesla
+[00:00:01] and Figure just got a shock with Figure
+[00:00:04] dropping a new mind-blowing video of
+[00:00:06] their humanoid bot cleaning a living
+[00:00:08] room for 2 minutes straight all
+[00:00:10] autonomously. The bot walked around the
+[00:00:12] room while handling objects like a spray
+[00:00:14] bottle to wipe the table, moving various
+[00:00:17] things back to the basket and shockingly
+[00:00:19] even being able to handle a remote
+[00:00:21] control, pressing the button to turn off
+[00:00:23] the television. Elon Musk asked if this
+[00:00:26] was autonomous or remotely operated and
+[00:00:28] CEO Brett Acock replied saying it was
+[00:00:30] fully autonomous. The world has not yet
+[00:00:32] seen the full potential for these
+[00:00:34] humanoid bots and figure just showed
+[00:00:36] they're definitely in the game. Tesla in
+[00:00:38] the meantime will reveal their third
+[00:00:40] generation Optimus next month. But most
+[00:00:42] importantly, the first half of Cortex 2,
+[00:00:45] Tesla's supercomput that will be the
+[00:00:46] brains will be turned on next month.
+[00:00:49] We'll also take a look at NVIDIA's
+[00:00:50] partnership with ABB Robotics, who
+[00:00:52] claims they've achieved 99% accuracy.
+[00:00:55] And Roa AI says they've overcome the
+[00:00:57] data scarcity problem with video
+[00:00:59] generation. Today, we have robotics
+[00:01:01] expert Scott Walter, a two-time robotics
+[00:01:03] company founder, joining me, and he'll
+[00:01:05] explain all the big announcements.
+[00:01:07] Welcome, Scott.
+[00:01:08] >> Hello, Herbert. Glad to be back.
+[00:01:13] >> Let's watch this video. 2 and 1/2
+[00:01:15] minutes. It's full. It is one shot, it
+[00:01:18] looks like. And according to the company
+[00:01:20] figure, it is all autonomous. But it is
+[00:01:22] pretty impressive. I'll play it and you
+[00:01:24] can tell us what we're watching.
+[00:01:27] >> Well, I think one of the the first
+[00:01:28] things you're seeing is that the whole
+[00:01:30] body control of the figure bot. So, it's
+[00:01:32] not just a hand doing something or an
+[00:01:34] arm doing something. It's the entire
+[00:01:35] body is being involved. You can see how
+[00:01:37] it's sort of leaning into what it's
+[00:01:38] wanting to do. And you'll notice uh no
+[00:01:41] problems dealing with flexible objects
+[00:01:43] also. Um, and this is probably one of
+[00:01:46] the more humanlike things. We don't know
+[00:01:48] if it came from the training set, but
+[00:01:50] the rather interesting thing is like,
+[00:01:51] ah, I only have two hands, but I have
+[00:01:54] three objects. How am I going to deal
+[00:01:55] with this additional one? And just goes
+[00:01:57] ahead, throws it around its shoulder and
+[00:01:59] puts it back.
+[00:02:00] >> And this is going to be also very
+[00:02:02] important is it's going to remember that
+[00:02:04] those objects are now there on the table
+[00:02:07] and it will recover them later on when
+[00:02:09] it's done doing the rest of the tidying
+[00:02:10] up. So um we will see that it's it's a
+[00:02:14] fairly I guess you could say somewhere
+[00:02:16] between short and medium horizon kind of
+[00:02:18] tasks. A lot of different things that
+[00:02:19] have to be done.
+[00:02:21] It's not clear exactly, let's say, how
+[00:02:23] contrive the situation is as far as
+[00:02:25] whether everything has to be in the
+[00:02:26] exact same location. I suspect not. I
+[00:02:28] think they can be anywhere and it's
+[00:02:30] going around and finding the objects
+[00:02:31] that are needed. Again, look at okay,
+[00:02:34] this is the best way to hold the basket.
+[00:02:36] It's finding other items that need to be
+[00:02:38] removed from the sofa and distinguishing
+[00:02:41] what should be there and what should not
+[00:02:43] be there. And so we've probably got a a
+[00:02:45] lot more questions than answers because
+[00:02:47] there certainly have been a lot you can
+[00:02:49] say um post on X um analyzing what's
+[00:02:53] going on here. A lot of people very
+[00:02:54] impressed, other people skeptical, which
+[00:02:57] naturally you should be. But you know,
+[00:02:58] we can see that it knows that it has to
+[00:03:01] rearrange the pillows. And this is like
+[00:03:02] a lot of people's favorite right here.
+[00:03:04] just going ahead and then tossing it in
+[00:03:06] the corner like that rather than moving
+[00:03:08] it on in. And then this gets even more
+[00:03:10] interesting is it sort of notices it has
+[00:03:12] to pick up the remote control which is
+[00:03:14] already something that's pretty hard to
+[00:03:15] do
+[00:03:16] >> because it noticed the TV was left on.
+[00:03:18] So basically you're wasting a lot of
+[00:03:20] tokens right there. So it's very
+[00:03:22] concerned about that waste of
+[00:03:23] electricity not being put to good use.
+[00:03:25] And the other thing is is you'll notice
+[00:03:27] it's got a little bit of OCD there
+[00:03:28] making sure the remote is properly put
+[00:03:30] down in its its resting position there.
+[00:03:33] And again, it remembers, hey, there was
+[00:03:34] a couple of objects that I need to
+[00:03:36] remove from here. Remembers to go pick
+[00:03:38] them up and then heads out. So, when you
+[00:03:42] looked at this, Herbert, what were some
+[00:03:44] of the impressions that you had and
+[00:03:45] thoughts that came to your mind?
+[00:03:47] >> Wow. That first of all, very very
+[00:03:49] impressed. I have two and a half minutes
+[00:03:50] straight accordingly. According to them,
+[00:03:53] not operated. Uh, just like was the
+[00:03:56] robot thinking ahead of time of what
+[00:03:59] it's going to do next?
+[00:04:01] >> That's what I do, right? I'm standing
+[00:04:03] there and I'm going, "Okay." Or does it
+[00:04:05] feel like after it did a job, it knows
+[00:04:07] what it's going to do next and it
+[00:04:08] doesn't, you know, how does it know
+[00:04:10] that?
+[00:04:10] >> Yeah. The the question is is how much of
+[00:04:12] it is kind of like vibe cleaning up.
+[00:04:14] It's like, "Oh, is this what I need to
+[00:04:15] do?" Because we it's it's not clear what
+[00:04:17] the prompt was. So So clearly they
+[00:04:19] they've done a lot of training on these
+[00:04:21] different problems. And at at some point
+[00:04:24] the prompt might have just been tidy the
+[00:04:26] living room or it may have been go pick
+[00:04:28] up the toys, put the teddy be, you know,
+[00:04:30] very explicitly saying what's going on
+[00:04:31] or I'm assuming it probably is was a
+[00:04:34] very simple thing, just tidy them up.
+[00:04:36] Uh, and then when we're given a command
+[00:04:37] to go in, we kind of go around look like
+[00:04:39] what's kind of out of order. What should
+[00:04:41] we do? And there's no like perfect
+[00:04:42] order. What should you do first or
+[00:04:44] second or something like that? Now, the
+[00:04:46] fact that it came in with the the spray
+[00:04:48] bottle and that tells it like, well, the
+[00:04:50] first order of operations do something
+[00:04:51] with this. you know, I brought this in
+[00:04:52] for a reason because there may be
+[00:04:54] something that needs to be cleaned up.
+[00:04:55] So, we don't know what happened off off
+[00:04:56] off off off the camera or anything like
+[00:04:58] that. And most people notice is like
+[00:05:00] their living rooms are they wish their
+[00:05:01] living rooms are already in that state,
+[00:05:03] that starting state of tightness because
+[00:05:06] rarely are they even that close. So,
+[00:05:08] it's not representative of real, but
+[00:05:09] that's not the point. The point is
+[00:05:10] showing that there's very there's
+[00:05:11] different kinds of operations could be
+[00:05:13] done here. And we can imagine like if
+[00:05:14] you had a lot more toys, it's just going
+[00:05:16] to take longer for it to be able to pick
+[00:05:17] all those things up. But, we can see
+[00:05:18] it's doing it. And some of the
+[00:05:20] challenging things because we've seen
+[00:05:22] robots trying to pick up a cell phone
+[00:05:23] from the table and it's challenging and
+[00:05:26] usually there' be like a trick. You
+[00:05:27] slide it off the table so it kind of
+[00:05:28] falls. You notice it picked it up with
+[00:05:30] its right hand and then went up there
+[00:05:33] and it was able to find it. The other
+[00:05:34] thing I wonder is like not all remotes
+[00:05:36] are the same. And so has it been
+[00:05:37] training on just one remote because
+[00:05:39] whenever someone gives me a TV remote, I
+[00:05:41] have a hard time figuring out where the
+[00:05:43] onoff button is. Sometimes it's big,
+[00:05:45] sometimes the left side, sometimes the
+[00:05:46] right side, sometimes it's red,
+[00:05:48] sometimes it's green, sometimes it's
+[00:05:49] just black. You can't figure out what it
+[00:05:51] is. So, it's rather interesting to know
+[00:05:53] how it was able to determine that or
+[00:05:55] whether it's just because it was
+[00:05:56] training on that one, which I
+[00:05:58] >> I assume the PO was, but still, it
+[00:06:00] pushed the button, which was quite good.
+[00:06:01] And it did it, you know, in a reasonable
+[00:06:04] amount of time, you know, and about the
+[00:06:05] amount of time it would have taken a
+[00:06:06] normal person to pick it up and go ahead
+[00:06:07] and do that.
+[00:06:08] >> Yeah. Okay. Well, let's go through and
+[00:06:09] watch that frame by frame. There's a lot
+[00:06:11] there that I want to ask you about.
+[00:06:12] specifically the towel on the on the
+[00:06:14] shoulder. It's probably watched a bunch
+[00:06:16] of videos, saw humans doing it, realized
+[00:06:19] it's an option.
+[00:06:20] >> But the first thing is this was pretty
+[00:06:22] interesting that Elon Musk himself had
+[00:06:25] to ask the question is this autonomously
+[00:06:27] or remotely operated. So he he himself
+[00:06:30] wanted to know was this autonomous or
+[00:06:32] remotely operated? And Brad Acock the
+[00:06:34] CEO figure came back and said it's fully
+[00:06:37] autonomous. What do you think is going
+[00:06:39] on there? Like is there a little bit of
+[00:06:40] fear in Elon or is he disbelief that
+[00:06:43] this happened or what do you think
+[00:06:45] >> it could be and I I guess the first
+[00:06:47] thing to say is that because we follow a
+[00:06:49] lot of these different robot companies
+[00:06:50] very very closely um we know a lot of
+[00:06:52] things about him that that even people
+[00:06:54] like Elon may not know because he's busy
+[00:06:56] with other things and uh we know that
+[00:06:59] you know Figure has always said that all
+[00:07:01] their videos the speed is always 1x and
+[00:07:03] it's always autonomous they've never
+[00:07:04] shown that so they made that clear so we
+[00:07:06] we knew ahead of time and they kind of
+[00:07:08] forgot to actually say right at the very
+[00:07:10] beginning this is autonomous you know if
+[00:07:11] you go down some of the comments some
+[00:07:13] places you will see that it's there um
+[00:07:15] the thing to to me it it definitely
+[00:07:18] looks autonomous because um telea
+[00:07:20] operation is not that easy you know it
+[00:07:22] is like you see a lot of jerkiness in
+[00:07:24] telea operation it's usually not that
+[00:07:25] that smooth so in in many ways the fact
+[00:07:28] that it was doing it indicates more of
+[00:07:30] that because if you actually had someone
+[00:07:31] with a joystick offsite doing that it's
+[00:07:33] I mean have you seen like the robo
+[00:07:34] boxing
+[00:07:35] >> have you and I watch did a video on that
+[00:07:37] and I know that you herself um actually
+[00:07:40] put on the 1X uh bodysuit. Yeah. So, you
+[00:07:43] know,
+[00:07:44] >> and moving around, but if if you look at
+[00:07:45] like the Robo boxing where it's being
+[00:07:47] teleoperated, they're pretty bad. I
+[00:07:49] mean, they have a hard time striking
+[00:07:50] blows. You know, they're pointing the
+[00:07:52] wrong way and stuff like that. So, if
+[00:07:53] you can imagine someone was was off
+[00:07:55] camera right there going ahead and doing
+[00:07:57] it would have to be they'd have to be
+[00:07:59] very very skilled uh to be able to. So,
+[00:08:00] for the most part, yeah, I'm I'm sure
+[00:08:02] it's it's autonomous is going on there.
+[00:08:04] It's a lot easier to do it that way.
+[00:08:06] There's there's been some people say,
+[00:08:09] well, there's a there's automatic and
+[00:08:11] then there's autonomous and what it is
+[00:08:13] and it's like if you look like
+[00:08:14] industrial robots, they're performing
+[00:08:16] the same task again, you know,
+[00:08:17] automatically, right? Because
+[00:08:19] everything's exactly where it's supposed
+[00:08:20] to be. So, some so I've seen some people
+[00:08:22] say, "Yeah, if things were like off by a
+[00:08:23] centimeter when we're like, no, no, no.
+[00:08:25] This is a very different world. This is
+[00:08:26] not your your father's industrial robots
+[00:08:29] where everything has to be there." that,
+[00:08:30] you know, they are using vision and
+[00:08:32] everything else to be able to infer and
+[00:08:34] figure out where things are, where
+[00:08:35] they're not supposed to be. Now, I
+[00:08:37] obviously have way more questions than
+[00:08:38] answers, which I'm sure everyone else
+[00:08:39] is. Like, first of all, what does it
+[00:08:41] mean to tidy the living room? You know
+[00:08:43] what? And and I assume that means there
+[00:08:45] has to be a reset state.
+[00:08:47] >> Think about it for a second.
+[00:08:48] >> Well, I don't we don't know what the
+[00:08:50] prompt was, but but my assumption is
+[00:08:52] that they came in and said they probably
+[00:08:54] trained it in every one of these little
+[00:08:56] steps already. Yeah, you see these
+[00:08:58] pillows off case, put it back here. If
+[00:09:01] you see the, you know, the these things
+[00:09:03] on the table, put it into the basket.
+[00:09:05] Each one of those was
+[00:09:06] >> pre-trained. It's it's kind of like
+[00:09:08] everything is known to have a home state
+[00:09:10] of some sort, preferred state. So, you
+[00:09:12] may have had the same situation that
+[00:09:13] either you go in Airbnb or maybe in your
+[00:09:15] own home and you tidy up the living room
+[00:09:17] >> and your spouse comes home and and moves
+[00:09:19] rearranges the pillows a completely
+[00:09:21] different way and you're like, "Well,
+[00:09:22] wait a minute. What was wrong?" said,
+[00:09:23] "This is the correct way." And like,
+[00:09:25] "Oh, okay." So you could see poor figure
+[00:09:27] three could get into that kind of
+[00:09:29] arguments of you there's probably like
+[00:09:31] leave the teddy bear behind you know the
+[00:09:32] teddy bear is supposed to be on the
+[00:09:33] couch I don't want it you know even
+[00:09:35] though it's considered a toy or whatever
+[00:09:36] so so you can see semantically it's it's
+[00:09:39] pretty tricky to define what that is and
+[00:09:41] I almost wonder is if they really say
+[00:09:43] that this is kind of the preferred state
+[00:09:45] that we'd like everything in. And you'll
+[00:09:47] go in there and you'll notice that wait
+[00:09:48] a minute the couch is supposed to look
+[00:09:49] like this. It looks like this. What do I
+[00:09:51] have to do to get it to there? And it
+[00:09:52] might be you got to remove these things.
+[00:09:54] You got to move this out. And so it it
+[00:09:55] could be that it's breaking things down
+[00:09:56] that way that that we don't know. And
+[00:09:58] those are the questions I would love to
+[00:09:59] ask uh Brett or Corey of of the team has
+[00:10:02] been developing um the healing.
+[00:10:05] >> Yeah, I want to play this part because
+[00:10:06] this is very interesting. This is the
+[00:10:08] most interesting thing for me other than
+[00:10:10] the holding the spare spray bottle and
+[00:10:13] the towel.
+[00:10:14] >> The remote control thing was pretty
+[00:10:16] impressive.
+[00:10:17] >> So picks up the remote control, lets it
+[00:10:20] fall, by the way. No. So that must mean
+[00:10:22] it has a little bit of physics knowledge
+[00:10:24] on that, right? Because it it grabbed it
+[00:10:26] and then it knew that let it fall into
+[00:10:29] his hands, stabilize it with his thumb,
+[00:10:32] use the other finger. So you that means
+[00:10:34] you have to have coordination. You have
+[00:10:36] to hold this one strong enough that when
+[00:10:38] you press this one, it doesn't just fly
+[00:10:39] off, fall off. Uh I'm sure it was taught
+[00:10:42] to press that button. So I'm not that
+[00:10:44] impressed with that part,
+[00:10:45] >> point it to the TV. All that's not that
+[00:10:48] thing, but it's just the manipulation
+[00:10:49] that that is pretty impressive,
+[00:10:52] >> right? And then it knows, oh, I didn't
+[00:10:54] put it down quite right. Boom. Let's get
+[00:10:56] it in the in the quick. But you're
+[00:10:57] you're right. It it has to get kind of
+[00:10:58] that little uh the thumb has to cover
+[00:11:01] the remote to make sure that when you
+[00:11:03] push on it, it doesn't doesn't fall out.
+[00:11:05] So, this is all that you can do with a
+[00:11:07] lot of reinforcement learning or sorry,
+[00:11:10] more imitation. So, so you've seen a lot
+[00:11:12] of examples of that and then eventually
+[00:11:13] it'll go in and kind of be be able to
+[00:11:15] get it correctly. So, I'm sure it's seen
+[00:11:17] many, many different episodes of picking
+[00:11:19] this up. Maybe different types of
+[00:11:20] remotes. Maybe he's been able to defer
+[00:11:22] what it knows to be on and off at the
+[00:11:23] same time. Was that something just go in
+[00:11:25] pick up the remote and and press off? Or
+[00:11:28] was it like I noticed the TV is on. I
+[00:11:30] noticed it has to be turned off. If the
+[00:11:31] TV was off, I wonder if it would do that
+[00:11:33] or not. So, that's why it'd be
+[00:11:35] interesting to see different examples
+[00:11:36] like that and and be able to find out
+[00:11:38] find out uh what the different states
+[00:11:40] are. But what I think what's impressive
+[00:11:43] about this is that uh no one else has
+[00:11:45] really shown anything. Well, everyone
+[00:11:47] keeps on talking about it. We we see all
+[00:11:48] these nice little videos of what we the
+[00:11:50] humanoids will do someday. And now we're
+[00:11:53] kind of seeing the first example of
+[00:11:54] like, okay, it can start to take on a
+[00:11:56] challenge like this. Um it's definitely
+[00:12:00] not all the way there yet.
+[00:12:03] >> It's not just one thing. It's multiple
+[00:12:05] things. But here, let me just walk it
+[00:12:08] through one by one. Okay, so here's the
+[00:12:10] beginning. He walks in.
+[00:12:12] >> Mhm.
+[00:12:12] >> And then he's holding that the the spray
+[00:12:14] bottle, but he he's supposed to spray
+[00:12:16] the table. So he knows that. So he moves
+[00:12:17] the cup out of the way. So I was going,
+[00:12:21] you know, if you're going to spray the
+[00:12:22] table, you should have moved everything
+[00:12:23] off first and then spray the table. But
+[00:12:25] it looks like that he decided he's only
+[00:12:27] going to spray just the white part. So
+[00:12:29] that might have been coated in
+[00:12:31] >> it. You know, it could be that. Look,
+[00:12:32] you know, the the coffee cup, there's
+[00:12:34] always a stain. You get
+[00:12:35] >> just underneath the coffee cup.
+[00:12:37] >> Just underneath the coffee cup because
+[00:12:38] there's a stain. Move the coffee cup.
+[00:12:40] That's how I interpreted it as when you
+[00:12:42] think that uh at the same time it it may
+[00:12:44] be sure it could have done all these
+[00:12:46] things and then the video becomes 20 or
+[00:12:48] 30 minutes long.
+[00:12:49] >> Why put the coffee cup on the table and
+[00:12:51] not in the sink?
+[00:12:54] >> Yeah. In the end it didn't go in the
+[00:12:55] sink. It it actually it's putting it
+[00:12:57] there temporarily then it's taking it
+[00:12:58] off screen when it's all done. It takes
+[00:13:01] all three items three items out. So
+[00:13:03] >> Oh yeah. Yeah. You I would agree. It's
+[00:13:05] like it it should have then gone in the
+[00:13:07] dishwasher. There's other little things
+[00:13:08] that we can do for the nitpicking, but
+[00:13:11] um I think
+[00:13:12] >> that part's interesting,
+[00:13:13] >> right? Some of the interesting things is
+[00:13:14] is that you might say, well, it's not as
+[00:13:17] fast as I would be. And it comes down to
+[00:13:19] like, well, maybe it doesn't have to be.
+[00:13:21] It just has to make sure that the room
+[00:13:22] living room is tidied when you're ready
+[00:13:24] for it to be. You know, it's like you
+[00:13:26] you go out to the grocery store, you
+[00:13:27] want to go back, you want to make sure
+[00:13:28] it's tidied up. The other thing is that
+[00:13:31] been pointed out, it's like these these
+[00:13:32] bots are nowhere near safe enough to be
+[00:13:34] around people yet. I'm like, well,
+[00:13:35] that's fine. So long as there's no one
+[00:13:37] in the living room, it can go around. We
+[00:13:39] don't have to worry about that. So, you
+[00:13:40] get your own kind of safety caging in a
+[00:13:42] sense by just saying that, you know,
+[00:13:44] only the bots's allowed to be in this
+[00:13:46] space right now and someone comes in,
+[00:13:47] it's going to have to do something else.
+[00:13:49] >> Um, so, so there'll be things like that.
+[00:13:51] The other thing is that I think it
+[00:13:53] points out is that how important
+[00:13:55] bipedalism is going to be in the home.
+[00:13:57] Even though this seems to be a very flat
+[00:13:59] space here,
+[00:14:00] >> you you'll notice the amount of access
+[00:14:02] way you have between the coffee table
+[00:14:03] and the in the sofa is very little. So,
+[00:14:06] it's really hard to maneuver around if
+[00:14:08] you had a wheelbase.
+[00:14:09] >> And this is where you can see the
+[00:14:10] advantages of being able to use
+[00:14:12] something like a bipeedal robot.
+[00:14:15] >> Yep. And then that part there where uh I
+[00:14:17] thought it was interesting where it it
+[00:14:19] kind of instead of picking up one by
+[00:14:21] one, it used the gravity to to put it in
+[00:14:25] there. Again, it might have uh been
+[00:14:26] taught that it might have watched videos
+[00:14:28] and then holding the basket this way. I
+[00:14:31] think that's just for cool,
+[00:14:32] >> but then there's a couple that has to
+[00:14:33] pick up from there. So, there's like one
+[00:14:34] or two say, I'll pick those up rather
+[00:14:35] than sliding them off.
+[00:14:37] >> And again, it's it's a question. We
+[00:14:40] don't know how it made these decisions
+[00:14:41] where it's like really just replaying
+[00:14:43] everything that it's seen or whether
+[00:14:45] it's seen enough different episodes that
+[00:14:47] it sort of figured out this is the best
+[00:14:49] context right now to be able to do this
+[00:14:51] that that this works a lot better. And
+[00:14:53] again, humans, we we're also lazy. We
+[00:14:56] take shortcuts. So, we would have done
+[00:14:57] the same thing. I would have slid all
+[00:14:59] those things off, too. It's not a
+[00:15:00] question of dexterity and stuff. Just I
+[00:15:01] didn't want to pick up 10 blocks, you
+[00:15:03] know? I just want to slide them all off
+[00:15:05] and job done. Um, and now if there's you
+[00:15:09] can probably remember some things from
+[00:15:11] the dishwashing uh video that was about
+[00:15:13] a month ago.
+[00:15:15] >> And that as you were watching it, did
+[00:15:16] you kind of almost get the the six sense
+[00:15:19] I think it's about to do this and it did
+[00:15:21] it? Because when I was watching it, I
+[00:15:23] thought I was prompt engineering reality
+[00:15:24] because I said, "Oh, it should do this
+[00:15:26] right now." And suddenly it did. And it
+[00:15:28] actually shocked me. And that was the
+[00:15:29] one remember when when the foot lifted
+[00:15:31] up uh the dishwasher
+[00:15:34] >> door, you know, I was thinking, "Oh, it
+[00:15:35] should do this." And suddenly it did it.
+[00:15:37] And um I almost thought, and I think
+[00:15:40] everyone else thought the same thing,
+[00:15:41] when it picked up that remote control,
+[00:15:42] did you think it was going to sit down
+[00:15:44] and start watching TV?
+[00:15:47] >> Yeah. Yeah. Let me play that video.
+[00:15:48] That's kind of funny cuz I'm not the
+[00:15:50] only one who thought that.
+[00:15:52] >> Yeah. This
+[00:15:54] >> Yes.
+[00:15:58] >> Obviously, it's a Grock imagine video
+[00:16:00] just to make fun of it. But yeah,
+[00:16:03] >> yeah. Yes. Yes. Yes.
+[00:16:05] >> One day the bot will get upset. Goes,
+[00:16:08] "Forget you guys. I'm going to rest."
+[00:16:10] And the thing is my energy. the the bot
+[00:16:12] will be fired too because the second my
+[00:16:15] wife sees the foot those feet on the
+[00:16:17] coffee table it's like that's it you're
+[00:16:18] out of here. So
+[00:16:20] >> obviously that was a fake video that
+[00:16:22] somebody made that was funny.
+[00:16:23] >> Um I want to ask you about this because
+[00:16:25] I know you and I have talked a lot about
+[00:16:26] this. Watch this where he shuffles his
+[00:16:30] legs to move to the right instead of
+[00:16:32] let's say stopping standing straight
+[00:16:35] turning and then walking a foot or two
+[00:16:37] then turning.
+[00:16:38] >> He doesn't do that. Look at this. It's
+[00:16:41] uh you he must have been taught.
+[00:16:44] >> Oops, I went to the beginning here.
+[00:16:46] Where am I now?
+[00:16:47] >> Yes. So, so I'm I'm sure there's a lot
+[00:16:49] of that in there and at some point
+[00:16:51] >> shuffle decision that my movement is so
+[00:16:54] small
+[00:16:55] >> that it makes sense for me to just do it
+[00:16:57] like this. But if it's going from one
+[00:16:59] side of the sofa to the other, you know,
+[00:17:01] turns around and walks. And we we also
+[00:17:04] make that judgment call somehow. And we
+[00:17:06] don't know why. we we just have this
+[00:17:08] instinctive feeling that oh, it's more
+[00:17:09] efficient to do this right now. And if
+[00:17:12] you have enough of that training data in
+[00:17:14] there, that's what it's going to do.
+[00:17:15] It's just going to kind of know that
+[00:17:16] this is the most efficient way to do the
+[00:17:18] operation right now
+[00:17:20] >> because functions, everything else.
+[00:17:22] Yeah,
+[00:17:23] >> throwing that pillow. I mean, I wonder
+[00:17:24] if it obviously, again, I I'm pretty
+[00:17:26] sure that they trained it for this
+[00:17:28] particular thing over and over and over
+[00:17:29] again, so it did it, but I'm just saying
+[00:17:31] at some point he needs to know I can
+[00:17:32] throw a pillow, but I can't throw a
+[00:17:34] vase.
+[00:17:36] >> Yeah. Yeah. Yeah, you would know that.
+[00:17:37] Well, the other thing it' be interesting
+[00:17:38] is whether it's practice to throw a
+[00:17:39] pillow, let's say across the room. So,
+[00:17:42] you know, let's say it's just practice
+[00:17:44] that same toss again and again and
+[00:17:45] again. You know, would be there be
+[00:17:47] someone say, "Hey, figure three, pick up
+[00:17:48] the pillow and toss it over to me and
+[00:17:50] would it then like have a same lame kind
+[00:17:52] of toss. It only goes the same distance
+[00:17:54] or would it suddenly know enough to do
+[00:17:56] that?" And and I think you need a lot of
+[00:17:58] practice to be able to do short, medium,
+[00:18:00] long, extra long stuff like that be
+[00:18:02] because we This is the thing about world
+[00:18:05] models. They have to be very careful.
+[00:18:06] Everyone keeps on talking about they're
+[00:18:07] building a world model and it gives this
+[00:18:08] assumption that it's um you know there
+[00:18:11] must be physics involved. It really
+[00:18:12] knows it has to grind. It's like no it
+[00:18:14] really doesn't. What it's doing is it's
+[00:18:15] doing a very good job of approximating
+[00:18:17] physics. So um it's it's not so much a
+[00:18:22] world model as I prefer to be more like
+[00:18:24] a world view because it depends upon
+[00:18:25] your perspective and it depends upon
+[00:18:27] your experience. So you've had a lot of
+[00:18:29] experience throwing a baseball. You can
+[00:18:30] throw a baseball almost the same
+[00:18:32] accuracy as like with a ballistic
+[00:18:33] equation. But obviously if you have it,
+[00:18:36] you can kind of get close, but you're
+[00:18:37] way way way off. And and this is the
+[00:18:39] difference between people's different uh
+[00:18:41] world models is that if you've had a lot
+[00:18:42] of enough experience doing a particular
+[00:18:44] task, you're going to get better and
+[00:18:45] better and better at it that you know
+[00:18:47] it's like you become almost perfect. So
+[00:18:49] if you don't have enough examples of
+[00:18:50] tossing different objects around there,
+[00:18:52] you're going to be just as bad as anyone
+[00:18:54] else who's never really practiced. But
+[00:18:55] you get enough of that, then you may be
+[00:18:57] may be able to. Um and this is part of
+[00:19:00] let's say the thing about um I guess you
+[00:19:04] could say sort of cross trainining and
+[00:19:06] in the question is like how much should
+[00:19:07] we do in a very diverse training set
+[00:19:09] versus keep it very narrow. We're going
+[00:19:10] in the factory. We're doing something
+[00:19:12] very very simple. We don't need all
+[00:19:13] these other things. What benefit do I
+[00:19:15] get out of it? It might be that you get
+[00:19:16] actually a lot of benefit that will kind
+[00:19:18] of surprise you because you practice in
+[00:19:19] something else. Suddenly someone asks
+[00:19:21] you to do something that you've never
+[00:19:22] done before but somehow like a
+[00:19:24] combination of a bunch of these other
+[00:19:26] things and suddenly you do it and you
+[00:19:27] and not only do you surprise yourself or
+[00:19:29] maybe like you're surprised that the
+[00:19:31] robot has been able to figure out. So
+[00:19:32] again if it's learned to toss a lot of
+[00:19:34] different objects but maybe not never
+[00:19:35] done a particular toss of a particular
+[00:19:37] object before in place and suddenly it's
+[00:19:39] very successful. That's because the
+[00:19:41] diversity of your training set has
+[00:19:42] allowed it to to figure that out and
+[00:19:44] that's where you begin to start saying
+[00:19:46] look at this emergent behavior. Now the
+[00:19:48] question is like the emergent behavior
+[00:19:50] that you're seeing is it emergent
+[00:19:51] behavior or is it like some the the
+[00:19:55] person who is training having certain
+[00:19:57] mannerisms. So remember you've got a lot
+[00:19:59] of people who are teleaoperating
+[00:20:02] and they all have different ways of
+[00:20:03] doing it and some might have some
+[00:20:05] bizarre mannerisms or way of doing it.
+[00:20:07] One of them might be like ah whip the
+[00:20:08] towel over and go ahead and do it. There
+[00:20:10] may be just one guy who did that. No one
+[00:20:12] else does that.
+[00:20:13] >> But for some reason, you know, that kind
+[00:20:15] of emerged out of of it is like as the
+[00:20:17] ideal way of being able to do it. And
+[00:20:19] this is what will be interesting to see
+[00:20:20] is is like how much that emergent
+[00:20:22] behavior is really spontaneous and how
+[00:20:24] much of it is really just this weird
+[00:20:26] kind of mixing up of all the ingredients
+[00:20:29] of what other people have done and
+[00:20:30] suddenly you get a very spicy dish.
+[00:20:32] >> This is why they're training on on a
+[00:20:34] home because it's got all these multiple
+[00:20:37] diverse tasks and you're saying that
+[00:20:38] they can teach it better. So this is uh
+[00:20:40] Corey Lynch. Cory Lynch is the director
+[00:20:43] of AI. He's the guy in charge of AI for
+[00:20:45] figure and he said this you know first
+[00:20:47] the guy guy below squeezing the 409
+[00:20:49] bottle in the TV remote blew my mind. I
+[00:20:52] agreed but I agree with that. Same said
+[00:20:55] him said Corey. Seeing one local manip
+[00:20:58] policy navigate a room and do tool use
+[00:21:02] in hand or reorientation precision tasks
+[00:21:05] like operating a remote makes me feel
+[00:21:06] like we're on the right track and need
+[00:21:09] to continue scaling.
+[00:21:10] >> Mhm. Yeah. So, so it it's it's pretty
+[00:21:14] impressive when the person who's
+[00:21:15] developing it is is impressed by the
+[00:21:17] creation. And the local manip I think
+[00:21:20] means like um crazy manipulation.
+[00:21:23] >> No. No, of course not.
+[00:21:26] >> Locomotion inflation inflation, right?
+[00:21:29] And and remember like the whole scene
+[00:21:31] was probably Corey Ograph.
+[00:21:34] >> Yeah,
+[00:21:36] >> you're you're on fire, dude. You're on
+[00:21:38] fire. I'm loving you, man.
+[00:21:41] >> Cory, tell him that. Tell him that. Was
+[00:21:43] it Corey Ograph or was it
+[00:21:46] >> Cory? Yeah, it was Corey Ograph. Yeah.
+[00:21:50] >> Wow. Okay. Well, that's figure. And uh
+[00:21:52] that did um impress a lot of people.
+[00:21:55] That's much more impressive than parkour
+[00:21:57] and fighting and jumping and all that
+[00:22:00] which that is obviously impressive. This
+[00:22:02] is impressive because it shows you some
+[00:22:04] thinking multiple different tasks all at
+[00:22:06] the same time. Two and a half minutes
+[00:22:07] straight.
+[00:22:08] >> According to them it was autonomous. It
+[00:22:10] was trained through a neural net that
+[00:22:12] they were training. So they seem to be
+[00:22:14] on the right track. Um very interesting.
+[00:22:17] Um let's talk uh we'll come back to
+[00:22:20] figure but right now let's talk about
+[00:22:22] Tesla. So Tesla said that they are going
+[00:22:25] to uh unveil their gen 3 and when Gen 3
+[00:22:29] comes out if not this month it'll be
+[00:22:31] next month first quarter of this year
+[00:22:32] they kept saying twi uh multiple times
+[00:22:35] uh should be the final you know at least
+[00:22:38] the one that they're going to start
+[00:22:39] making tens of thousands of and then
+[00:22:42] they'll do a gen 4 and so forth. But
+[00:22:44] more importantly than that of course is
+[00:22:46] the brain. So, we're going to wait for
+[00:22:47] that reveal. Uh, Peter Demandis said
+[00:22:51] this. If you're downplaying the human or
+[00:22:53] robot economy, you're making the same
+[00:22:55] mistake some people made about the
+[00:22:56] internet in 1993. The infrastructure is
+[00:22:59] being built right before your eyes.
+[00:23:02] >> Yeah.
+[00:23:02] >> Elon said, "People don't get it. People
+[00:23:04] don't get it." And so this is my point
+[00:23:07] that if you're a Tesla investor and
+[00:23:09] you're watching all this and you don't
+[00:23:11] see anything happening because you
+[00:23:12] haven't seen demos, you haven't seen
+[00:23:14] progress about Optimus. In fact, what
+[00:23:17] you've seen is delays based on what Elon
+[00:23:19] has said. This is the most important in
+[00:23:22] my mind, tell me if I'm wrong, the most
+[00:23:24] important thing that you're you should
+[00:23:25] be watching for. Cortex 2 is the brains
+[00:23:28] for Optimus. This is going it's already
+[00:23:31] has the brains because of full
+[00:23:32] self-driving but you need a massive
+[00:23:35] supercomput
+[00:23:37] and a digital playground with thou tens
+[00:23:39] of thousands of human robots to truly
+[00:23:41] train the brain to get that magnitude
+[00:23:44] better smarter and so cortex 2 Elon said
+[00:23:47] that in fact what what Joe Techmar is
+[00:23:49] reporting here is that if you look at
+[00:23:51] this they have already made the progress
+[00:23:53] here is the building and they already
+[00:23:56] have the six coolers and Elon said that
+[00:23:59] in about a month from now they will be
+[00:24:01] able to turn on half of this already
+[00:24:03] while the rest of it is still being
+[00:24:05] built. That's what uh that's what Joe is
+[00:24:08] saying over here. He said uh oops the
+[00:24:11] approach being complete employed is to
+[00:24:13] complete part one of the mega cooling
+[00:24:15] system and half of the installed
+[00:24:17] computer cabinetry and setup then
+[00:24:19] continue to complete the second half
+[00:24:21] while continue to expand the data center
+[00:24:22] capabilities throughout the summer. So,
+[00:24:25] this is it for me. If you watch this
+[00:24:28] being built, including the robot
+[00:24:30] factories themselves, uh they announced
+[00:24:32] that in uh Fremont, they're going to
+[00:24:34] stop the Model S and Model X and they're
+[00:24:36] going to create the first uh production
+[00:24:38] line there supposed to be a million
+[00:24:40] humanoid robots per year. And then they
+[00:24:42] started to break ground here in Giga,
+[00:24:44] Texas. It's offsite here. You can't see
+[00:24:46] it. And that's where they're going to
+[00:24:47] make 10 million humanoid robots per
+[00:24:50] year. So, what's your thoughts on all
+[00:24:52] that? Um my thoughts is that a colleague
+[00:24:54] of mine pointed out a documentary about
+[00:24:56] a company that Have you ever heard of uh
+[00:24:58] General Magic?
+[00:24:59] >> Yeah, they were the original Meta or
+[00:25:01] Wait,
+[00:25:02] >> well no basically they're probably the
+[00:25:04] most uh famous failed company that
+[00:25:07] you've never heard of
+[00:25:09] >> that ended in creating the successes
+[00:25:11] that we see today. Um and there's an
+[00:25:13] interesting documentary. So they were
+[00:25:14] kind of a skunk works that were spun out
+[00:25:16] of Apple with a bunch of rockstar
+[00:25:19] programmers uh from Silicon Valley I
+[00:25:21] think in the late 80s and they had like
+[00:25:22] the the vision for the smartphone except
+[00:25:25] they were just way ahead of their time
+[00:25:27] and so they were trying to bring in the
+[00:25:29] players like AT&T and Philips and Sony's
+[00:25:31] to help develop it but they already had
+[00:25:33] the ideas for like emojis and
+[00:25:35] touchcreens and that communication and
+[00:25:37] email and everything else and then you
+[00:25:39] know they would ask people you know
+[00:25:40] would you like one of these things and a
+[00:25:42] lot of them are like what do I need that
+[00:25:43] thing for? I mean, no one could imagine
+[00:25:44] what was going on. And it was kind of
+[00:25:46] surreal for me to be watching this
+[00:25:48] documentary about something that
+[00:25:49] happened 30 years before on exactly the
+[00:25:51] device that they were describing. You
+[00:25:53] know, I'm walking around just looking at
+[00:25:55] this thing, watching the videos and
+[00:25:56] everything else with all the touch
+[00:25:57] beads, everything. And part of it is
+[00:25:59] that they they were visionaries. A lot
+[00:26:01] of the tech wasn't there, but a lot of
+[00:26:03] that infrastructure was missing. We
+[00:26:04] still had analog phone. We didn't have
+[00:26:06] really digital phone yet. I mean, there
+[00:26:08] was a lot that had to be be created in
+[00:26:11] order for that to happen. Then
+[00:26:12] eventually all the pieces came together.
+[00:26:14] So what ended up pointing out is that
+[00:26:16] Peter is right is if you're sleeping on
+[00:26:18] something like this in 1993, you had no
+[00:26:20] idea what was going on. People in 93 as
+[00:26:22] they were starting to get the idea of
+[00:26:23] the internet. We're just imagining, oh,
+[00:26:25] we'll just have computers at home that
+[00:26:27] would do it. They weren't even imagining
+[00:26:29] it was going to be in your pocket. Um
+[00:26:31] and the same thing is is happening here
+[00:26:33] is that we will look back and say, man,
+[00:26:36] we we can't believe that we doubted the
+[00:26:38] human rights aren't going to be here.
+[00:26:39] They're going to be here. And part of
+[00:26:41] that infrastructure is of course things
+[00:26:43] like Cortex because you you need a lot
+[00:26:44] of inference, you need a lot of compute,
+[00:26:46] you need to gather a lot of data, but
+[00:26:47] those industries are coming online
+[00:26:49] really really quick. And the thing is
+[00:26:51] General Magic back in the day, they were
+[00:26:53] like the only ones that were doing it
+[00:26:54] and everyone thought they were crazy.
+[00:26:56] >> And I think we've already had those
+[00:26:58] general magics in the humanoid space and
+[00:27:00] that was probably like Azimov maybe, you
+[00:27:01] know, the early days of Boston Dynamics
+[00:27:03] and stuff like that. But now there's a
+[00:27:05] lot of people working on the problem.
+[00:27:06] They're all trying to solve those supply
+[00:27:07] chain issues. So that that's why I think
+[00:27:09] is like you just have to be a little bit
+[00:27:11] patient. Um but you will be rewarded
+[00:27:14] because it's very clear they're going to
+[00:27:16] they're going to come around.
+[00:27:17] >> One of the infrastructures I wanted to
+[00:27:19] ask you is this idea of sim to real.
+[00:27:21] >> Yes.
+[00:27:22] >> So Elon had said this uh in a recent
+[00:27:24] interview he said right so you've got
+[00:27:27] you will have massive supercomputers and
+[00:27:29] Nvidia's got it. uh the others who are
+[00:27:31] building this they they'll create
+[00:27:33] simulation environments and so just
+[00:27:36] using simulation you can teach human or
+[00:27:39] bot any bot human any robot anything
+[00:27:42] mechanical to move and to understand the
+[00:27:44] world because it's looking you know it's
+[00:27:46] copy this and we've seen a number of
+[00:27:48] human or I keep saying human but
+[00:27:50] robotics companies showing demos where
+[00:27:52] they show it a video of something on the
+[00:27:55] screen or just you know video and then
+[00:27:58] it was able to do in real life copy So
+[00:28:00] some people think simulation is all you
+[00:28:02] need just simulate simulate simulate
+[00:28:04] which is in the what would that human or
+[00:28:06] robot do in the simulation and then in
+[00:28:08] real world they do it but Elon is saying
+[00:28:11] that no you need both you need the
+[00:28:13] simulation and computer then you need
+[00:28:16] like he's saying 20 to 30 30,000
+[00:28:20] optimuses playing in a digital play
+[00:28:22] sorry in a playground real life
+[00:28:25] manipulating things playing around and
+[00:28:27] then they will take the learning with
+[00:28:29] the physics
+[00:28:30] and then feed the simulation. The
+[00:28:32] simulation feeds it back and then they
+[00:28:33] accelerate faster. Uh, right. So that's
+[00:28:37] what he was saying. So in this case,
+[00:28:39] what is Figure doing? Because they've
+[00:28:41] got some progress so far, but I imagine
+[00:28:44] I'm not sure that they exactly have a
+[00:28:46] supercomput and I'm not sure they have
+[00:28:48] thousands of human robots yet, but
+[00:28:50] they're able to show progress.
+[00:28:51] >> Yeah. And and that's that's a very
+[00:28:53] important thing. So for someone who's
+[00:28:55] spent their entire career doing
+[00:28:56] simulation, I always caution people that
+[00:28:59] simulation
+[00:29:00] >> is a tool that you have to use
+[00:29:01] carefully. You have to know when it's
+[00:29:03] appropriate, how much you can trust it
+[00:29:04] or not. And in the end, it's that it's
+[00:29:07] not a full proxy for reality. Okay?
+[00:29:10] You've got to realize that there are
+[00:29:11] limits on it. The whole idea of
+[00:29:13] simulation is so that your design
+[00:29:15] iteration cycle can speed up a lot
+[00:29:17] quicker so that you're catching a lot of
+[00:29:18] the mistakes way earlier. And simulation
+[00:29:21] could be everything like when you start
+[00:29:22] doing CAD basically you're simulating
+[00:29:24] it's like this is what the part's going
+[00:29:25] to look like and you're figuring out
+[00:29:26] without building it and realizing it's
+[00:29:27] all wrong. So again you can see what the
+[00:29:30] issues are going to be there. But you
+[00:29:31] know the normal simulation you do with
+[00:29:32] robotic is we're creating a virtual
+[00:29:34] world. We're bringing in digital twins
+[00:29:35] and we're moving all these things
+[00:29:36] around. So we can catch issues like
+[00:29:38] reachability collisions. Maybe get an
+[00:29:40] idea of cycle time to see if we have
+[00:29:42] enough robots and whether they're going
+[00:29:44] to meet everything. But in the end you
+[00:29:46] still have to test it in the real world.
+[00:29:48] What we're trying to do is shave off
+[00:29:50] more and more and more of the errors to
+[00:29:52] get better and better and better. But
+[00:29:53] you could be very careful in how you
+[00:29:55] measure that. So um this past week AB
+[00:29:58] announced and ABB is is you know a
+[00:30:00] classical robotics company a a
+[00:30:03] collaboration with um uh with Nvidia
+[00:30:06] with Omniverse. Now this isn't
+[00:30:07] necessarily a unique thing. Uh a lot of
+[00:30:09] other companies have also something like
+[00:30:10] that. As a matter of fact, you know, my
+[00:30:12] my previous company, Visual Components,
+[00:30:14] has a a tie-in for exactly something
+[00:30:15] like that to be able to take digital
+[00:30:18] assets, move them into the to the
+[00:30:19] omniverse to be able to look at it. So,
+[00:30:21] when you're trying to do this digital
+[00:30:23] twinning, the first thing you need to do
+[00:30:24] is have a you know, some sort of
+[00:30:27] physically accurate model and usually
+[00:30:30] everyone thinks about a rendering that
+[00:30:31] it looks correct. So that means, oh, you
+[00:30:34] get the CAD data. And sometimes it used
+[00:30:36] to be the CAD data didn't represent the
+[00:30:38] real world because it was someone taking
+[00:30:40] a real object and bringing it into CAD.
+[00:30:42] But now it's usually the other way
+[00:30:43] around. You build it in CAD first, then
+[00:30:44] you build the real world. And so you get
+[00:30:46] a pretty good relationship between that.
+[00:30:48] But the thing is that's only kind of
+[00:30:51] skin deep, right? You you got to go into
+[00:30:54] under the hood to see how that thing
+[00:30:56] actually physically behaves in the real
+[00:30:58] world. So you're able to bring in all
+[00:31:01] sorts of different robot models and they
+[00:31:03] will look exquisite and omniverse.
+[00:31:05] Absolutely. You know almost look
+[00:31:06] realistic photorealistic. But just
+[00:31:08] because it's photorealistic does not
+[00:31:09] mean the simulation fidelity is up
+[00:31:11] there. And when I talk about simulation
+[00:31:13] fidelity is like the robot's going to
+[00:31:14] move from one point to another. Does it
+[00:31:16] move exactly the way the real robot
+[00:31:18] does? Does it move with the same speed
+[00:31:20] and everything else? You say, "Well,
+[00:31:21] it's got a really good physics engine.
+[00:31:23] We just turn that that physics engine on
+[00:31:24] and it's going to work, right?" It's
+[00:31:25] like, "No, no, no. You don't understand.
+[00:31:27] A a robot controller for all intents and
+[00:31:29] purposes doesn't obey the laws of
+[00:31:31] physics. It obeys the laws of the the
+[00:31:33] human programmer, the person who wrote
+[00:31:34] the huristics in there. And you can't
+[00:31:36] intuit it that without either reverse
+[00:31:38] engineering it or have someone telling
+[00:31:39] you what is the decisions that that
+[00:31:42] person is making on how the robot's
+[00:31:44] supposed to move from one point to
+[00:31:45] another. And what that means is that you
+[00:31:47] need to be able to take a virtual
+[00:31:48] controller and plug that in. And that's
+[00:31:50] what ABB kind of announced there is that
+[00:31:51] they are able to take their actual robot
+[00:31:54] controller, pull the software out, which
+[00:31:56] does motion planning, plug it into
+[00:31:57] Omniverse, and now make the robot move.
+[00:31:59] And the movement of the robot in
+[00:32:00] Omniverse will be very, very, very, very
+[00:32:03] faithful to the real robot to 99%
+[00:32:06] accuracy. And that can be measured a
+[00:32:08] couple of ways. One is the actual cycle
+[00:32:10] time. Is it moving with the same speed
+[00:32:12] from here to there? And that can depend
+[00:32:14] upon a lot of things like the payload.
+[00:32:16] If the robots get a really heavy payload
+[00:32:18] and the simulation doesn't know about
+[00:32:19] it, the simulation will probably be too
+[00:32:21] fast. Um, the other is the actual
+[00:32:24] movement from one location to another
+[00:32:27] because if you don't model those things
+[00:32:28] correctly, there's more than one way to
+[00:32:30] go to from point A to point B. Um, and
+[00:32:32] so that's something that the controller
+[00:32:34] is able to do and that you put that in
+[00:32:36] there. So you've got to be very very
+[00:32:37] careful in that now that they have that
+[00:32:41] they may have very good accuracy of the
+[00:32:43] the simulation of the robot. But the
+[00:32:45] rest of the world is something else. You
+[00:32:47] know you got conveyors, you got end of
+[00:32:48] arm tooling, you've got processes that
+[00:32:50] are going on. How faithfully you
+[00:32:51] simulating them? It's like oh I've got a
+[00:32:53] painting robot. Can you simulate the
+[00:32:55] painting process with 99% accuracy? I
+[00:32:57] don't think you can. You can get
+[00:32:58] something close. You get down to the
+[00:32:59] real world. You test it out and go, oh
+[00:33:01] it's not quite where you got to adjust
+[00:33:02] these parameters and do everything else
+[00:33:03] and kind of get them right. So
+[00:33:05] understand the limits of simulation and
+[00:33:07] that's why you have to do them in real
+[00:33:09] world and that's why Elon has talked
+[00:33:11] about it's like all right we'll do a
+[00:33:12] little bit in the simulation but in the
+[00:33:13] end we need to have this gymnasium where
+[00:33:15] all the bots are going to go in there
+[00:33:16] we've got to train in there for them to
+[00:33:18] to be able to let's say close a cycle on
+[00:33:21] what might be their world model the the
+[00:33:24] idea of like all right we taught you how
+[00:33:26] to pick up virtual bottles but picking
+[00:33:29] up real bottles is probably going to be
+[00:33:30] a little bit different and that's how we
+[00:33:31] close the loop. So it all comes down to
+[00:33:33] a decision of like how much pre-training
+[00:33:35] you can get and then your post-training
+[00:33:37] where you try to dial it in
+[00:33:39] >> and then you go back again. Yeah. So
+[00:33:41] Elon is about uh scale, right? So he's
+[00:33:43] talking about, you know, computer. No,
+[00:33:45] no, we want the largest supercomputers
+[00:33:48] in the world. We've got Cortex one,
+[00:33:49] we've got Cortex 2, we have Colossus
+[00:33:51] one, we have Colossus 2. Now they're
+[00:33:53] talking about Colossus 3, by the way.
+[00:33:55] And then you've got not only a thousand
+[00:33:58] humanoid robots, he wants 20,000 20
+[00:34:01] 30,000 humanoid robots in that gymnasium
+[00:34:04] to do this. So, but this is proof right
+[00:34:06] from these guys. They announced ABB and
+[00:34:09] Nvidia that they have closed the SIM to
+[00:34:12] real gap achieving 99% accuracy. So, I
+[00:34:15] guess what you're saying is that they
+[00:34:16] have assimilation.
+[00:34:17] >> Let's be very careful about how they
+[00:34:18] define that. I think what they're
+[00:34:20] talking about is just how accurate the
+[00:34:22] robot behaves in Omniverse now versus
+[00:34:25] the way it may have been doing it
+[00:34:26] before. It doesn't mean the inm
+[00:34:31] not the other way around because that's
+[00:34:32] >> not like the entire simulation. It's not
+[00:34:34] it's so it's going to look
+[00:34:35] photorealistic in Omniverse. You're
+[00:34:37] almost going to think, oh, you went down
+[00:34:38] to the real factory floor and and shot a
+[00:34:40] video of it. It's like, oh, no, it turns
+[00:34:42] out the whole thing was fully rendered
+[00:34:43] and the movements of the robot are
+[00:34:45] correct. However, there could be
+[00:34:46] operations it's doing. Is it doing a
+[00:34:48] drilling operation and are who's
+[00:34:50] simulating that drilling operation in
+[00:34:51] Omniverse? You know, it's it might be a
+[00:34:54] slate of hand. You know, it's like, oh,
+[00:34:56] we go down there and suddenly a hole
+[00:34:57] appears. Wow, how about that? But no,
+[00:34:59] actually, we need to apply the forces. I
+[00:35:00] want to see material being removed.
+[00:35:02] That's another level of simulation. So,
+[00:35:04] there's all these things. ABB is not
+[00:35:06] doing all that. You know, they their
+[00:35:07] specialty is that this is their robot.
+[00:35:08] And the thing is they know how the robot
+[00:35:10] behaves and because of that, they can
+[00:35:12] encapsulate that. And I was actually
+[00:35:13] involved in a project 30 years ago
+[00:35:15] called robot realistic simulation which
+[00:35:17] was the the same problem in that we were
+[00:35:20] trying to have to reverse engineer what
+[00:35:22] was going on the controllers and they
+[00:35:23] wouldn't tell us because that was
+[00:35:24] proprietary information plus there was
+[00:35:26] just so much there's no way we could do
+[00:35:28] it. So the decision was take your
+[00:35:30] controller code create a black box out
+[00:35:32] allow us to plug it into our software
+[00:35:34] and we will use that to control your
+[00:35:36] virtual robot. So, our virtual AB robot
+[00:35:38] behaves like a ABB. Our virtual fan
+[00:35:40] behaves like a fan and the cucka like a
+[00:35:42] cucka because they're all going to make
+[00:35:44] different decisions on how they move
+[00:35:46] from the same two points because their
+[00:35:47] mechanisms are different and their their
+[00:35:50] engineers have come up with maybe a
+[00:35:51] slightly different way of doing motion
+[00:35:52] planning that I think is more clever
+[00:35:53] than everyone else.
+[00:35:54] >> That's so cool. What did you mean by
+[00:35:55] this? Because you posted this. You said
+[00:35:57] after 40 years of convincing industry to
+[00:35:59] move more in this direction, I finally
+[00:36:01] feel vindicated. You've been
+[00:36:03] >> you're the assimilation guy, right?
+[00:36:04] >> Yeah. For for the In the early days of
+[00:36:07] of robotic simulation, the robot
+[00:36:09] companies did not want to do simulation.
+[00:36:11] They they actually saw us as as a foe
+[00:36:13] that we were pretty much showing what
+[00:36:15] the robots could not do and they didn't
+[00:36:17] like that. So they didn't they just wish
+[00:36:19] we would go away. We were kind of then
+[00:36:21] eventually it began to catch on that hey
+[00:36:22] you know this could be useful. Then they
+[00:36:23] started developing their own simulation
+[00:36:25] tools. And so slowly more and more
+[00:36:27] simulation but you still will run a lot
+[00:36:28] of people think ah I don't need to
+[00:36:30] simulate what's what's the point. It it
+[00:36:31] cost too much. I have to train up people
+[00:36:32] and stuff like that. And slowly and
+[00:36:34] slowly it's getting there and like kind
+[00:36:35] of seeing that and making that big deal.
+[00:36:37] It's like ah okay capstone of my career
+[00:36:40] finally everyone gets it. Simulation is
+[00:36:42] really important but again with that
+[00:36:44] caveat that simulation still has to
+[00:36:47] close you know that.9999 you know we get
+[00:36:50] we're getting 99% in other places but
+[00:36:52] there's still a lot of places we need to
+[00:36:53] do that right and I I would love to see
+[00:36:55] a world where omniverse has all these
+[00:36:57] digital assets that people just put in
+[00:36:59] there and the things just function
+[00:37:00] correctly. It just knows exactly what to
+[00:37:04] do and you can populate everything with
+[00:37:05] it and then you really get super super
+[00:37:07] accurate. We're not there yet, but we're
+[00:37:09] getting closer and closer. But the first
+[00:37:11] thing is everyone recognizing that
+[00:37:12] simulation is really really valuable
+[00:37:14] just because everyone says, you know,
+[00:37:15] planning is very important. That's what
+[00:37:17] simulation is. It's planning things out
+[00:37:18] and if you don't have a plan, you're
+[00:37:20] going to fail.
+[00:37:20] >> Yeah, I've seen a software that you
+[00:37:22] built that was uh early days of this,
+[00:37:24] but you are now you knew this was where
+[00:37:27] we're headed. Pretty cool. Scott, um
+[00:37:30] what's this one? This is uh ROA AI who
+[00:37:33] they who they say we've solved we've
+[00:37:36] overcome the data scarcity problem by
+[00:37:38] reformulating robot policies as video
+[00:37:40] generation. Today we introduced the
+[00:37:42] direct video action model. What what is
+[00:37:45] what is that all about?
+[00:37:45] >> Okay, so ROA just came out of stealth.
+[00:37:47] They're um a Silicon Valley company
+[00:37:50] based in PaloAlto. And you know it kind
+[00:37:52] of goes back to the same thing is that
+[00:37:54] is that when you start training robots
+[00:37:56] uh um you you need a lot of pre-training
+[00:37:59] data and and do you do it from
+[00:38:00] simulation do it from real world kind of
+[00:38:02] data capture and everyone knows the best
+[00:38:04] way to get is if we could just get it
+[00:38:06] from videos but a lot of times it's kind
+[00:38:07] of the architecture you have what's best
+[00:38:09] suited for it. And so they've really
+[00:38:12] been focused on like how can we take
+[00:38:14] advantage and leverage a lot of video
+[00:38:16] data and use that for the pre-training.
+[00:38:18] And then once we've done that, the post-
+[00:38:21] trainining is just showing it the
+[00:38:22] particular task we want to do. So the
+[00:38:24] task they're showing here is um what's
+[00:38:26] known as a um decanting task, which is
+[00:38:29] very common in a lot of industrial
+[00:38:32] applications, you know, automotive,
+[00:38:34] heavy equipment, anything like that,
+[00:38:36] where you need to bring in the component
+[00:38:37] parts that are going to go into your
+[00:38:38] assembly line. And so, you know, they
+[00:38:40] arrive from your vendor, they're in
+[00:38:42] boxes, someone's going to take them out
+[00:38:43] of boxes. And there's a lot of people
+[00:38:45] dedicated to just doing that. And it's
+[00:38:47] one of those things that they haven't
+[00:38:49] been able to automate. Everyone's been
+[00:38:50] trying to automate things like that for
+[00:38:52] the longest time and they can't do it.
+[00:38:53] So these tasks are stuff that um ROA
+[00:38:57] says that with just about uh 10 hours of
+[00:39:00] training, the bot figures it out, is
+[00:39:03] able to do it because it's been
+[00:39:05] pre-trained on this huge corpus of like
+[00:39:08] tens of millions of hours of video data
+[00:39:11] seeing what humans are able to do. Now
+[00:39:14] they also do something else where they
+[00:39:15] do this uh uh video um projection of of
+[00:39:20] what the robot is is supposed to do
+[00:39:21] next. So um and this may seem similar
+[00:39:26] because Nvidia um Jim goes or Jim Fan's
+[00:39:29] team talked about that this recently I
+[00:39:31] think it's called dream go uh 1x also
+[00:39:33] talked about doing something like that
+[00:39:34] and the idea is like you know we've all
+[00:39:36] seen midjourney and sora where you can
+[00:39:38] give it a frame and say imagine the
+[00:39:40] future from this you know or or you kind
+[00:39:41] of tell it what to do and this is sort
+[00:39:44] of what they're doing as well is like
+[00:39:45] you have a current frame and it's got
+[00:39:47] kind of a goal and it's imagining what
+[00:39:49] the next couple seconds are going to
+[00:39:50] look like and then the robot executes
+[00:39:52] those based on that and part of the way
+[00:39:54] they're able to do it is because they've
+[00:39:55] already figured out how to take normal
+[00:39:56] human actions and they have to do
+[00:39:58] something called an inverse dynamic
+[00:40:00] model. This is the big trick is I
+[00:40:01] actually had you take those movements of
+[00:40:02] the hands and then turn them into
+[00:40:04] getting the robot to do the same thing.
+[00:40:06] And so this this IDM is a very important
+[00:40:09] part of it. You know 1x something like
+[00:40:11] that also roa and I suspect also Nvidia
+[00:40:14] is doing that. So, it's imagining a
+[00:40:16] little bit of what it has to do and then
+[00:40:18] controlling the movements at the same
+[00:40:20] time from that. And this is kind of
+[00:40:23] exciting because you'll see picking up
+[00:40:26] that box and everything like that is
+[00:40:28] very difficult. There's there's there's
+[00:40:30] so many things that can go wrong. And if
+[00:40:31] you go to their website, they have a
+[00:40:33] nice write up about it. And what I like
+[00:40:35] about it is that they've got a couple of
+[00:40:36] videos in there that are hours long
+[00:40:39] where you can watch the bot just doing
+[00:40:40] it over and over in a bunch of these
+[00:40:42] tasks so you can see everything else.
+[00:40:44] And they also highlight a lot of the
+[00:40:46] edge cases where things went wrong and
+[00:40:48] the robot recovered. And and I think
+[00:40:51] that was one thing that people were kind
+[00:40:52] of wondering about the the figure
+[00:40:53] reader. It's like it seemed like you did
+[00:40:54] everything right. It would have been
+[00:40:56] nice to see if something went wrong and
+[00:40:57] how was able to recover from that. And
+[00:40:59] and and a lot of times like you pick
+[00:41:01] something up and oh, you didn't pick it
+[00:41:02] up right and you try again. And and so I
+[00:41:04] really encourage everyone to look at at
+[00:41:06] the different cases like they're picking
+[00:41:08] up the boxes. There's one case where the
+[00:41:10] straps come off. It's like whoops. Okay.
+[00:41:13] How do we do it? and you would think
+[00:41:14] that's it. Humans got to come in and fix
+[00:41:16] the whole thing. The two bots figure out
+[00:41:18] how to solve the problem without that.
+[00:41:20] You know, other things go wrong. Um, so
+[00:41:22] it's it's it's really interesting to
+[00:41:23] look at some of these different edge
+[00:41:24] cases and what happens. So what they're
+[00:41:26] trying to do is they said we think we
+[00:41:29] have a way that we've been able to solve
+[00:41:30] the problem of leveraging human data
+[00:41:32] which is already out there and not
+[00:41:34] having to have these huge training sets.
+[00:41:36] And I think that's very exciting and why
+[00:41:38] you need to follow Roto very very
+[00:41:39] closely. I think they're going to be one
+[00:41:41] of the more exciting companies that come
+[00:41:42] uh out of the valley this year.
+[00:41:44] >> So it sounds very similar familiar to
+[00:41:47] what I understand that Tesla's FSD does
+[00:41:51] >> almost shadow mode. Yes.
+[00:41:54] >> No. Well, no. a year ago uh um you know
+[00:41:57] Ashra Kow Swami did did a presentation
+[00:41:59] where he showed us a video of the car of
+[00:42:02] a car driving down a street and you're
+[00:42:05] watching the scene which is you know the
+[00:42:07] everything you can imagine just a normal
+[00:42:09] city scene. Then he goes and it reveals
+[00:42:12] to everybody that actually what you're
+[00:42:14] watching here is not a video of a real
+[00:42:16] car that that somebody took with a car
+[00:42:18] took the video. No, this is the car the
+[00:42:20] the computer is now able to generate
+[00:42:24] simulation of what it thinks it's going
+[00:42:26] to see next and it can do it pretty far
+[00:42:30] forward and that's how they've trained
+[00:42:32] it. So this when Elon was saying a long
+[00:42:34] time ago when people were claiming, hey,
+[00:42:36] look what we can do now. He goes, well,
+[00:42:38] we've been doing that for about a two
+[00:42:39] years or three years
+[00:42:40] >> because our system fed all the videos
+[00:42:43] >> and then from the videos we've trained
+[00:42:45] the neural net and the neural net now is
+[00:42:47] able to create videos of what it thinks
+[00:42:49] it's going to see next and plan ahead
+[00:42:51] the future. That's called planning.
+[00:42:53] That's called reacting to whatever.
+[00:42:55] >> Exactly. Exactly. And in many cases,
+[00:42:57] it's looking at different paths and and
+[00:43:00] choosing the correct one. It's something
+[00:43:01] I've uh called like the Doctor Strange
+[00:43:03] mode where it imagines a bunch of
+[00:43:05] different futures and picks the best one
+[00:43:07] and and we kind of talked about this
+[00:43:09] before. It's like why isn't anyone do
+[00:43:10] something like this and it turns out
+[00:43:12] that they are doing it but it's it's one
+[00:43:15] thing to say why can't they do it? This
+[00:43:17] sounds like the obvious way to do it and
+[00:43:19] the other thing is like how do you
+[00:43:20] actually implement it? And so it looks
+[00:43:21] like is a lot of teams have actually
+[00:43:22] gone out there and you know also had the
+[00:43:25] same idea and have now been able to
+[00:43:27] figure out what is it we've got to put
+[00:43:28] in place to get this to actually work.
+[00:43:30] >> All right. I thought it was funny when
+[00:43:31] you made this comment about ROA.
+[00:43:34] Uh, what is it here?
+[00:43:35] >> What exactly? What what should they call
+[00:43:37] their neural network?
+[00:43:38] >> It's called the Roa Dendron.
+[00:43:40] >> Rodendrons.
+[00:43:42] >> Roa Dendrons. That's so good. Scott and
+[00:43:45] this is uh that's funny. You got a you
+[00:43:48] got a pun for everything. Jesus.
+[00:43:53] The way you think. That's the article.
+[00:43:56] That is so good. Scott. Yeah, they kind
+[00:43:59] of rose to the occasion.
+[00:44:01] >> Yeah. So, robotics is going everywhere.
+[00:44:05] Um, and this is happening faster than we
+[00:44:08] all think. So, what's your thinking
+[00:44:10] about where Tesla fits in all this? Are
+[00:44:12] we should we have be concerned that we
+[00:44:14] haven't seen anything? Meanwhile, we're
+[00:44:16] seeing demos like this dropped out there
+[00:44:18] or do you think that Tesla is actually
+[00:44:20] ahead? Um, or it doesn't matter. What
+[00:44:23] matters is scale of human or robots and
+[00:44:26] scale of neural networks and
+[00:44:28] supercomputers.
+[00:44:29] >> I that's everyone's taking a different
+[00:44:31] path there and um sometimes if if you
+[00:44:35] don't lay the foundation right things
+[00:44:37] start to crumble later on. So you know
+[00:44:39] that it might be that they're trying to
+[00:44:40] build a really good foundation um before
+[00:44:43] moving ahead too quickly. And so a lot
+[00:44:46] of times you're going to be a little bit
+[00:44:47] slower and you may seem like you're not
+[00:44:49] in the lead or you're falling way behind
+[00:44:51] when the reality is you're building
+[00:44:53] something that will allow you to
+[00:44:54] accelerate ahead. So yeah, we'll see.
+[00:44:57] >> Yeah. And then what's your thoughts on
+[00:44:59] on figure at this point? How bullish are
+[00:45:02] you on what they've done with again?
+[00:45:06] >> Yeah, quite quite impressive what they
+[00:45:08] they've been able to do. um that you
+[00:45:11] know Helix seems to be quite a good
+[00:45:13] backbone that they have there for being
+[00:45:14] able to do everything. The figure 3
+[00:45:16] seems to be reasonably capable. It's a
+[00:45:18] new hand. Uh it's I guess you could
+[00:45:20] almost call it figure 3.5 because the
+[00:45:24] when 3 came out they did not have
+[00:45:26] abduction and now the hand can do the
+[00:45:27] abduction. So they have a little bit
+[00:45:28] more dexterity in there and I think
+[00:45:30] that's where you're able to see in
+[00:45:31] picking up the remote that they were
+[00:45:32] able to do it. So, um, yeah, it's but
+[00:45:36] again, I think we're just coming out of
+[00:45:38] spring training, okay? We're not we're
+[00:45:40] not even in the in mid-season yet. So,
+[00:45:43] it's it's too early to sort of be able
+[00:45:46] to say who's going to win and who's not.
+[00:45:48] >> All right, I'm going to tell you what I
+[00:45:49] think about what I'm watching here. And
+[00:45:51] tell me if I'm just completely wrong,
+[00:45:53] but you hear you saw a figure drop a
+[00:45:55] video, Twof video about doing things in
+[00:45:58] the home, okay? Fixing the the remote
+[00:46:00] control in your living room. You see 1X,
+[00:46:03] they position their entire company as I
+[00:46:06] am the home company. I can do everything
+[00:46:08] in the home. That's going to be home
+[00:46:09] first. We're not even going to sell to
+[00:46:11] factories. We will sell to factories
+[00:46:13] after we've solved the home. You've seen
+[00:46:15] if you go to Tesla's website and you
+[00:46:16] look at their Optimus web pages, it's
+[00:46:18] all about helping you in the home.
+[00:46:21] >> Having said that, I think that the home
+[00:46:23] is not something that you're going to
+[00:46:24] see a robot in for five years or longer.
+[00:46:27] >> And a couple reasons.
+[00:46:28] >> The main reason is you could say safety.
+[00:46:31] Uh but you know like what they call
+[00:46:34] vulnerable humans, right? Children,
+[00:46:36] elderly, people disabled, dogs, cats,
+[00:46:39] those kind of things. It's it's too
+[00:46:40] dangerous. But more importantly, it's
+[00:46:43] like why would you sell a human or robot
+[00:46:45] to if if a consumer wanted to buy from
+[00:46:47] their home? They'll pay you what 30
+[00:46:49] grand a year would be like a car. Why
+[00:46:51] would they do that? Maybe they'll pay
+[00:46:53] that, but it's very hard. versus if
+[00:46:56] you're going to sell it to the factory,
+[00:46:58] you can sell tens of millions of this
+[00:47:00] before you run out of jobs that you can
+[00:47:01] sell it to and you can sell it for
+[00:47:03] 100,000 200,000 per year. That's where
+[00:47:05] it's going to go. So why are they
+[00:47:07] showing you the home? Probably one is
+[00:47:09] you want to get excitement, capture the
+[00:47:11] excitement of the society, but two maybe
+[00:47:14] what you said earlier training in a home
+[00:47:16] even though you don't intend to sell it
+[00:47:17] there gives you that ability to see a
+[00:47:20] diverse environment, learn all sort of
+[00:47:22] things. And so when you bring it to the
+[00:47:23] factory, it is going to be that much
+[00:47:25] faster, that much better, that much
+[00:47:27] smarter, all of that. What's your take
+[00:47:29] on this?
+[00:47:30] >> Yeah, it's it's it's sort of a lot of
+[00:47:32] things. I I agree. It's going to be a
+[00:47:33] while because, you know, safety is one
+[00:47:35] concern and also is the cost is like why
+[00:47:37] would you sell a bot for 20 $30,000 when
+[00:47:40] someone will willingly pay you 100
+[00:47:42] $200,000 a year to use it in their
+[00:47:44] factory? And it's going to be a long
+[00:47:46] time before, let's say, um, there are
+[00:47:49] enough bots that you you have an over
+[00:47:51] supply that, hey, the only place we have
+[00:47:52] left to move these things is into the
+[00:47:54] home. Uh, safety is is a concern, uh,
+[00:47:56] for sure. And some of it could be
+[00:47:58] mitigated. Uh, and this and again, like
+[00:48:00] I say, it's like the bot only operates
+[00:48:01] in a room when no one else is in there.
+[00:48:03] So, it's not really around. It's not
+[00:48:04] quite the butler that you're expecting
+[00:48:06] that is serving you drinks or something
+[00:48:08] like that. That that probably comes
+[00:48:09] later, but that's years off. And part of
+[00:48:11] it, you know, it might be that they just
+[00:48:13] want to get investors excited that we're
+[00:48:15] moving in this way, but you're also
+[00:48:16] being able to get a little bit of data
+[00:48:18] capture. Uh, which again, you know, some
+[00:48:20] of that diversity may be able to help,
+[00:48:22] but again, they may be seeing things
+[00:48:24] that we aren't seeing that leads them to
+[00:48:26] believe that. But, you know, my
+[00:48:28] suspicion is that really it it does make
+[00:48:29] more sense in some sort of commercial
+[00:48:31] setting.
+[00:48:31] >> Yeah. So, what I'm saying is you agree
+[00:48:33] with what
+[00:48:34] >> Exactly. I agree. I agree. It's it's
+[00:48:35] better in a commercial setting than than
+[00:48:36] in the home environment early on.
+[00:48:38] earlier.
+[00:48:39] >> It's boring. It would be a boring
+[00:48:40] company if you said out there, I'm
+[00:48:42] selling it for pick and place in a
+[00:48:44] factory. That's what we do.
+[00:48:46] >> It's too boring. Yeah. It's like watch
+[00:48:49] this cut, but it's not going to be there
+[00:48:50] for five plus years if if uh even that.
+[00:48:54] >> Wow. So big big big uh milestone here
+[00:48:57] for figure. They are definitely one to
+[00:48:59] watch. Elon himself asked the question
+[00:49:01] is this autonomous or is this tea
+[00:49:03] operated? What's your answer to that? Um
+[00:49:05] what percentage of robot companies are
+[00:49:07] still doing tele operation or are we
+[00:49:10] move past that stage?
+[00:49:11] >> Yeah. Yeah. Um so um it's it's hard to
+[00:49:16] say. It's it's hard to say. I got to go.
+[00:49:19] >> Okay.
+[00:49:20] >> Got to go.
+[00:49:21] >> All right. Got to go. Got to have
+[00:49:23] dinner. Thank you so much, Scott. We are
+[00:49:24] done. Appreciate your feedback. This was
+[00:49:26] very valuable. Thanks everybody. Bye.
+[00:49:28] >> Yep. Okay. Yeah. Bye.
+[00:49:30] >> I've created a website that is the most
+[00:49:32] comprehensive resource for the Tesla
+[00:49:33] investor. Please check it out. Simply go
+[00:49:35] to my website at herbondalm.com.

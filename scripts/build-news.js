@@ -4,7 +4,7 @@ import path from 'path';
 const newsDir = path.resolve('news');
 const outFile = path.resolve('src/data/news.json');
 
-const files = fs.readdirSync(newsDir).filter(f => f.endsWith('.txt')).sort();
+const files = fs.readdirSync(newsDir).filter(f => f.endsWith('_summary.txt')).sort();
 
 const articles = files.map(filename => {
   const content = fs.readFileSync(path.join(newsDir, filename), 'utf-8');
@@ -56,13 +56,26 @@ const articles = files.map(filename => {
   };
 });
 
+// Deduplicate: same title + date = keep the one summarized latest
+const deduped = new Map();
+for (const article of articles) {
+  const key = `${article.date}::${article.title}`;
+  const existing = deduped.get(key);
+  if (!existing || article.published > existing.published) {
+    deduped.set(key, article);
+  }
+}
+const uniqueArticles = [...deduped.values()];
+const removed = articles.length - uniqueArticles.length;
+if (removed > 0) console.log(`Deduplicated: removed ${removed} duplicate(s)`);
+
 // Group by date
 const byDate = {};
-for (const article of articles) {
+for (const article of uniqueArticles) {
   if (!byDate[article.date]) byDate[article.date] = [];
   byDate[article.date].push(article);
 }
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
-fs.writeFileSync(outFile, JSON.stringify({ articles, byDate }, null, 2));
-console.log(`Built ${articles.length} articles into ${outFile}`);
+fs.writeFileSync(outFile, JSON.stringify({ articles: uniqueArticles, byDate }, null, 2));
+console.log(`Built ${uniqueArticles.length} articles into ${outFile}`);

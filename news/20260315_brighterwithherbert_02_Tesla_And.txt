@@ -1,0 +1,1615 @@
+Channel:     brighterwithherbert
+Title:       Tesla And xAI Just Built Something Wild
+Published:   2026-03-15 13:30:11 UTC
+Fetched:     2026-03-16 04:03:42 UTC
+────────────────────────────────────────────────────────────
+
+[00:00:00] Elon Musk just announced a joint Tesla
+[00:00:02] XAI project that's called Macro hard or
+[00:00:04] alternatively digital optimist. Elon
+[00:00:06] says it's capable of eventually
+[00:00:08] replicating the work of entire
+[00:00:10] companies, not just tasks, companies.
+[00:00:12] And it's coming in just 6 months from
+[00:00:14] now. It's an AI system that watches your
+[00:00:16] computer screen in real time. The last 5
+[00:00:18] seconds of video, every mouse click,
+[00:00:20] every keystroke, and then takes action,
+[00:00:22] not through APIs or code. It operates
+[00:00:25] your computer the same way a human
+[00:00:26] would. It's a two-brain system. Digital
+[00:00:28] Optimus is system one for fast,
+[00:00:31] instinctive, real-time execution. Grock
+[00:00:34] is system two. That's a thinking layer,
+[00:00:36] the strategic brain behind everything.
+[00:00:38] What makes it even more interesting is
+[00:00:39] the hardware. The whole thing runs on
+[00:00:41] Tesla's $650 AI4 chip paired with XAI
+[00:00:45] server hardware. If this works, this
+[00:00:47] isn't just another AI system. It could
+[00:00:50] be the beginning of AI organizations.
+[00:00:52] And no other company on Earth can do
+[00:00:54] this yet. That's why he called it
+[00:00:56] Macrohard. And also it's a huge benefit
+[00:00:59] for Tesla cars and Optimus. To explain
+[00:01:03] all this is Phil Bcel. He was a founding
+[00:01:05] member of the technical team electric
+[00:01:07] vehicle maker Rivian and has also held
+[00:01:09] various engineering management roles at
+[00:01:11] Apple. Welcome Phil.
+[00:01:13] >> Hey.
+[00:01:17] So
+[00:01:18] >> this sounds like a very big deal.
+[00:01:20] Initially we had heard about macro hard
+[00:01:22] which is XAI's version of like they can
+[00:01:25] agentic AI their ability to control
+[00:01:27] computers but the way he described this
+[00:01:29] Elon made a post I'll go through this
+[00:01:31] now it sounds like it is huge because
+[00:01:34] he's combined his XAI project with Tesla
+[00:01:38] so he said it's now a joint XAI Tesla
+[00:01:41] project and it sounds like this is more
+[00:01:44] than just Grock being in the bots and
+[00:01:47] Grock being in the cars but actually
+[00:01:50] completely just changing what is
+[00:01:52] possible for those. So this is what he
+[00:01:54] said. Macroard or digital optimist he
+[00:01:57] has two names for it combined it. It's a
+[00:01:59] joint project. It's come coming as part
+[00:02:01] of Tesla's investment agreement with
+[00:02:03] XCI. Grock is the master conductor with
+[00:02:06] deep understanding of the world to
+[00:02:08] direct digital optimist which is
+[00:02:10] processing and actioning the past 5
+[00:02:12] seconds of real-time computer screen
+[00:02:13] video and keyboard mouse actions. Gro is
+[00:02:17] like a much more advanced and
+[00:02:18] sophisticated version of turnbyturn
+[00:02:21] navigation software. Makes sense. You
+[00:02:24] can think of it as digital optimist AI
+[00:02:26] being system one instinctive part of the
+[00:02:28] mind and gro being system two the
+[00:02:30] thinking part of the mind. And then just
+[00:02:33] mind-blowingly he this is crazy crazy.
+[00:02:36] This will run very competitively on the
+[00:02:39] super lowcost Tesla AI4 chip, $650,
+[00:02:44] paired with relatively frugal use of the
+[00:02:46] much more expensive XAI and Nvidia
+[00:02:48] hardware, and it'll be the only real
+[00:02:50] time smart AI system. This is a big
+[00:02:53] deal. In principle, it is capable of
+[00:02:55] emulating the function of entire
+[00:02:57] companies. That's why the program is
+[00:02:59] called Macroheart, the function of
+[00:03:01] entire companies. A a funny reference to
+[00:03:04] Microsoft. No other company yet can do
+[00:03:06] this. Uh Tesla Economics asks, "When do
+[00:03:09] you think we'll be able to use it?" And
+[00:03:10] then again, shockingly, he's saying 6
+[00:03:13] months. We're not waiting years for
+[00:03:14] this. It's available. Uh you had a post
+[00:03:17] on this. You're and I have that's why I
+[00:03:19] want you to explain to everybody what
+[00:03:21] you're saying in this post of yours.
+[00:03:22] Digital Optimus, Optimus, and FSD. Elon
+[00:03:26] agreed with everything you said here
+[00:03:28] because he re actually reposted this. So
+[00:03:32] the way the what you gathered from his
+[00:03:33] initial post of what it is, what the de
+[00:03:35] what the actual impact is seems to be
+[00:03:38] right on the money. Can you tell us
+[00:03:39] what's going on?
+[00:03:40] >> Yeah, this is big. This is really big.
+[00:03:43] So the backstory on this I think goes
+[00:03:46] like this. Um
+[00:03:48] Tesla's team has been working on vision
+[00:03:51] a vision- based AI for quite some time
+[00:03:53] right we know many years in a way and
+[00:03:56] it's come to some fruition obviously
+[00:03:58] good fruition recently but in the
+[00:04:01] meantime a bunch of engineers there want
+[00:04:03] to go work on frontier models so he
+[00:04:06] peels them off and starts his company
+[00:04:08] XAI and decides to get in he starts you
+[00:04:11] know he decides he's going to jump in
+[00:04:12] with both feet into a frontier model of
+[00:04:15] his own and he begins that effort and
+[00:04:18] now he's got two teams working on uh AIs
+[00:04:22] and this separation seemed reasonable
+[00:04:25] for a while that Tesla had this
+[00:04:27] vision-based AI and that was principally
+[00:04:30] focused on driving cars autonomously you
+[00:04:33] know the task of driving cars
+[00:04:34] autonomously and then you have XAI
+[00:04:36] building gro which is this reasoning AI
+[00:04:39] right this intelligence AI the ones that
+[00:04:41] we're familiar with in terms of LLM and
+[00:04:43] so forth and what I think has happened
+[00:04:45] is he started has he has he leaned in on
+[00:04:47] this this idea of macro hard and what is
+[00:04:50] macro hard? It's um it's a cool concept.
+[00:04:52] It basically says well why can't a
+[00:04:55] computer an agent an AI basically
+[00:04:59] perform the same kind of tasks on a
+[00:05:01] screen that that that we do. Now what we
+[00:05:04] are used to is software giving us
+[00:05:06] features and we uh go through those
+[00:05:08] features. But what if an AI can
+[00:05:10] understand all software by just
+[00:05:12] basically driving the screen itself.
+[00:05:14] Right? So it means um all software
+[00:05:17] suddenly can run that way and it also
+[00:05:19] means that outcomes uh of this aren't
+[00:05:23] just basically what the software
+[00:05:24] produces but the the AI itself can
+[00:05:27] produce pixels. So it can read pixels
+[00:05:29] which is and it can and it can produce
+[00:05:31] pixels. Now ironically or not
+[00:05:34] coincidentally reading pixels is vision.
+[00:05:36] So that comes back to XAI or what
+[00:05:39] Tesla's been doing on the vision side.
+[00:05:41] And I think there was a moment in time
+[00:05:43] and I don't know when that actually
+[00:05:44] occurred that there was a bit of a come
+[00:05:47] to Jesus on this that he realized that
+[00:05:49] the overlap was so great between the
+[00:05:50] companies and it probably happened when
+[00:05:53] the co-investment or the investment was
+[00:05:54] made by Tesla into XAI around that time
+[00:05:58] and what it means is that the teams will
+[00:06:01] be working together that the the AI team
+[00:06:04] at Tesla will be focusing on the vision
+[00:06:08] based stuff which is really very deep
+[00:06:10] right this vision stuff is extremely
+[00:06:12] deep and extremely important and that
+[00:06:15] the team over at XAI will be focused on
+[00:06:18] the standard what we'll call reasoning
+[00:06:19] stuff. Now at first it sounds like okay
+[00:06:22] that's cool that has implications just
+[00:06:25] for this macro hard which he has renamed
+[00:06:28] effectively digital optimus but the real
+[00:06:31] implication or perhaps the bigger
+[00:06:33] implication is that it has incredible
+[00:06:36] impact to what is optimist itself
+[00:06:39] because the way I think we could see
+[00:06:41] Optimus
+[00:06:42] uh developing is that it was a task
+[00:06:46] taskbased robot right it would do things
+[00:06:50] it would use its vision and it would go
+[00:06:52] off and accomplish tasks, you know,
+[00:06:55] emptying a dishwasher, uh, cleaning a
+[00:06:57] house, uh, changing a diaper, you know,
+[00:06:59] these types of things. Um, but I think
+[00:07:02] what's happened here is he's realized
+[00:07:04] and and you know, I've written about in
+[00:07:06] my articles is that the reality is that
+[00:07:08] that Optimus needs to be so much more.
+[00:07:11] It needs to be a reasoning machine. you
+[00:07:13] know, it needs to be able to talk to you
+[00:07:14] and and operate in a way that you would
+[00:07:17] expect u an LLM to operate. Um, so
+[00:07:21] what's interesting about that is if we
+[00:07:23] come full circle here, we think about
+[00:07:25] we've been talking a long time about
+[00:07:27] Tesla FSD and Grock in the car. And why
+[00:07:30] have we been talking about that? Well,
+[00:07:32] we all knew that Grock would be the
+[00:07:34] perfect interface for the human to
+[00:07:37] interact with the robot of the car that
+[00:07:39] that we could say, "Hey, don't stop
+[00:07:42] here. go up at another two houses or
+[00:07:44] don't take don't take uh 101, take 280
+[00:07:47] to the airport and uh and that would be
+[00:07:50] sort of like the the reasoning layer.
+[00:07:52] Now, if we back up further back to I
+[00:07:55] don't know, let's call it September
+[00:07:56] because I don't know exactly the
+[00:07:58] timelines. Um there was this idea of
+[00:08:01] what the releases of FSD would be,
+[00:08:03] right? There'd be 14.1, 14.2, 14.3. and
+[00:08:07] 14.3
+[00:08:08] was known as the reasoning and and and
+[00:08:12] and what you could see uh Ashock did
+[00:08:15] this uh presentation where he talked
+[00:08:18] about reasoning tokens. We actually did
+[00:08:20] a show on it back when and he started to
+[00:08:23] say that, hey, this this AI we're
+[00:08:26] building can output
+[00:08:30] uh not only the final control values uh
+[00:08:33] steering, acceleration, braking, but it
+[00:08:37] could also tell us why it's doing the
+[00:08:39] things it's doing internally. And if it
+[00:08:41] can tell us why, then we can use that as
+[00:08:44] a feedback loop to do a lot more
+[00:08:47] reasoning activities. But what I think
+[00:08:49] has happened here is that version is
+[00:08:53] effectively still born or put on ice or
+[00:08:57] re-realized in this combined effort. I
+[00:09:00] think what's happened is that as Grock
+[00:09:03] has made or XAI has made incredible
+[00:09:06] progress on their frontier model, they
+[00:09:08] realize that that's effectively the
+[00:09:10] reasoning layer. So what it means is
+[00:09:14] what we get out of this is we get uh a
+[00:09:16] product from SpaceX called digital
+[00:09:19] optimus right which basically takes
+[00:09:23] software to a new level able to drive
+[00:09:25] our screens operate in the digital realm
+[00:09:28] completely digital um and then we have
+[00:09:30] the embodied version which we call
+[00:09:32] Optimus which up until now has largely
+[00:09:35] been a taskbased robot but with this
+[00:09:38] combined effort we will see it as a
+[00:09:40] taskbased robot with reasoning
+[00:09:43] capabilities and then further this
+[00:09:47] infects or affects either word is true
+[00:09:51] uh FSD FSD all its last what I call last
+[00:09:56] mile problems about trying to pick the
+[00:09:59] proper parking space and finding the
+[00:10:02] right place to park in your garage and
+[00:10:05] all the interactions with a human
+[00:10:07] suddenly come full circle and we have a
+[00:10:10] reasoning based
+[00:10:12] FSD robot. So boom, all these things
+[00:10:16] have just converged uh overnight.
+[00:10:18] >> Right after we filmed this whole uh
+[00:10:20] episode, Elon dropped a brand new post
+[00:10:23] that is very, very significant. So I'm
+[00:10:25] going to insert that uh clip right now
+[00:10:27] because it's quite interesting. Elon
+[00:10:29] said this. Oh, and by the way, it works
+[00:10:31] in all AI4 equipped cars. So your car
+[00:10:34] can do office work for you when not
+[00:10:37] driving. uh that means that you can you
+[00:10:40] can have one your car sitting in the
+[00:10:41] garage it can actually be doing office
+[00:10:44] work which means you can get a revenue
+[00:10:45] share on that and then he also then
+[00:10:48] added we're also deploying millions of
+[00:10:50] dedicated digital optimist units in the
+[00:10:52] field at superchargers where we have 7
+[00:10:55] gawatt of available power each of these
+[00:10:57] superchargers are already distributed
+[00:10:58] throughout the world actually and then
+[00:11:01] if you imagine if they put these
+[00:11:02] cabinets these units there and then
+[00:11:04] you've got batteries you got connection
+[00:11:07] you can actually start to, you know,
+[00:11:08] instead of uh Tesla creating a whole new
+[00:11:11] data center just for digital optimists,
+[00:11:13] they can use the supercharger stations.
+[00:11:15] Phil, what's your take and tell us why
+[00:11:18] this is important to us?
+[00:11:19] >> Well, my mind was blown yesterday, so
+[00:11:20] it's now doubly blown. Um, yeah, this is
+[00:11:24] big news. I I mean the the first the
+[00:11:26] first point is that Elon has large
+[00:11:29] talked for a long time about distributed
+[00:11:31] inference to our vehicles and that
+[00:11:33] somehow we could be part of a a revenue
+[00:11:35] revenue share opportunity but we've
+[00:11:38] never really quantified the type of
+[00:11:41] compute that would occur on these
+[00:11:43] vehicles, right? we either thought of it
+[00:11:45] as um potentially training but more
+[00:11:48] likely inference for some task
+[00:11:51] that you know has been sort of just out
+[00:11:54] there as just generic GPU. Um but now
+[00:11:59] we've got a really a somewhat of a hard
+[00:12:02] connect to the macro hard or digital
+[00:12:05] optimist. So basically what he is saying
+[00:12:07] is
+[00:12:09] uh your car sitting in your garage by
+[00:12:12] virtue of a piece of software we will
+[00:12:15] install on that car and by virtue of its
+[00:12:20] ability to bond to your home Wi-Fi and
+[00:12:22] therefore connect to your computer with
+[00:12:23] a piece of software we will install on
+[00:12:25] your computer. We can now run our macro
+[00:12:29] hard or digital optimus system on that
+[00:12:33] inference compute. So what we talked
+[00:12:36] about earlier today in that show as we
+[00:12:38] said there is a very strong possibility
+[00:12:42] given Elon's discussion about AI4
+[00:12:45] hardware and its cost that that he in
+[00:12:49] fact comparing it to Nvidia that he is
+[00:12:51] in fact attempting to build a small
+[00:12:54] computing device that is adjunct to your
+[00:12:57] computer. Okay. And I suspect that
+[00:13:01] there's software installed on your
+[00:13:02] computer and there is this little
+[00:13:06] hardware device and you know which is a
+[00:13:09] much greater uh from trillions of
+[00:13:12] operations that tops kind of much
+[00:13:14] greater uh GPU style device than say
+[00:13:17] your Mac or your Windows machine but by
+[00:13:20] by a lot. So now he's saying, well, wait
+[00:13:23] a minute. Um, I could have that same
+[00:13:26] piece of software deployed on a vehicle
+[00:13:29] that already has an AI for actually two
+[00:13:32] to be direct about it. I mean, why do we
+[00:13:35] have two? We have two because it's a
+[00:13:37] it's a failover device uh for giving us
+[00:13:40] this kind of redundancy when we're we're
+[00:13:42] in driving. that when it's sitting in
+[00:13:44] your garage, you you have two
+[00:13:46] independent AI4 chips that can operate
+[00:13:49] independently and therefore and
+[00:13:50] effectively can operate as two distinct
+[00:13:54] um digital Optimus
+[00:13:57] uh instances and and there's there's
+[00:14:00] there's effectively two ways to do this.
+[00:14:02] The first way is it can connect to your
+[00:14:04] computer at home and the second way is
+[00:14:06] it can be remote compute connected to
+[00:14:08] somebody else's computer somewhere else
+[00:14:10] in the world.
+[00:14:11] Uh, in other words, you're effectively
+[00:14:14] saying that the inference is being
+[00:14:17] remoted to effectively a data center
+[00:14:20] except that data center is distributed
+[00:14:22] across, you know, millions of AI4
+[00:14:25] computers and people's garages. Um,
+[00:14:29] so that's so now he's finally colored
+[00:14:32] this uh distributed inference with a
+[00:14:36] great degree of of of of
+[00:14:39] color of how it would actually be used
+[00:14:41] in some ecosystem which is the digital
+[00:14:43] optimus product
+[00:14:45] >> make money while my car is not doing
+[00:14:47] anything much more clear now I
+[00:14:48] understand it too right because now the
+[00:14:50] car is actually doing office work which
+[00:14:53] other companies can pay not just Tesla
+[00:14:55] pay uh Before it was training, um, you
+[00:14:59] know, supercomputer training. Now it's
+[00:15:01] office work. It's very lucrative. This
+[00:15:03] is crazy. My car is going to do work for
+[00:15:06] me. Uh, and I get a cut of that.
+[00:15:08] >> Yeah.
+[00:15:09] >> And I'm going to This is going to work
+[00:15:10] for others.
+[00:15:12] >> I wonder what the revenue stream is
+[00:15:13] going to be because it sounds like it
+[00:15:14] could be more than we were thinking of
+[00:15:17] per month, which could switch the whole
+[00:15:20] business model. It's no longer expensive
+[00:15:23] to own a car. It's actually going to
+[00:15:25] make me money. not only pay for the
+[00:15:26] worth of the car, but actually make me
+[00:15:28] money uh above and beyond that. It's
+[00:15:30] very likely.
+[00:15:31] >> Yeah, I haven't done any math on it. I'm
+[00:15:33] sure CERN might be running up a model as
+[00:15:35] we speak. In fact, maybe he is. Um I
+[00:15:39] just spoke with him. Um but uh you know,
+[00:15:42] the reality is that yeah, we finally
+[00:15:44] have I mean the simplest way to say is
+[00:15:46] we finally have a a a real ideal use
+[00:15:49] case for this distributed inference and
+[00:15:52] um
+[00:15:52] >> and then
+[00:15:53] >> Yeah. Go ahead.
+[00:15:55] complete your thought. Yeah.
+[00:15:56] >> Well, I mean then it gets more
+[00:15:58] interesting as we start talking about
+[00:15:59] the second line about superchargers. I
+[00:16:01] mean
+[00:16:02] >> what what what Elon's saying is actually
+[00:16:05] something quite extraordinary here. He's
+[00:16:07] saying
+[00:16:08] >> look right now we have this power
+[00:16:10] problem. Power is the the limiting
+[00:16:12] factor for we are literally describing
+[00:16:15] compute in terms of power and when you
+[00:16:17] describe something in terms of of of of
+[00:16:20] some unit it becomes the limiting
+[00:16:22] factor,
+[00:16:23] >> right? And so we know we have this
+[00:16:25] problem of power and the one of the the
+[00:16:28] biggest problem with this power is the
+[00:16:29] centralized nature of the power is that
+[00:16:31] these these AI data centers when because
+[00:16:33] they're centralized because the GPUs are
+[00:16:35] all shoulders away from the other GPUs.
+[00:16:38] All the power is coming from one area,
+[00:16:40] one city, one um metro, etc.
+[00:16:45] And the best way to solve this problem
+[00:16:47] is there's plenty of power out there
+[00:16:49] generically but it but it but it's just
+[00:16:51] not underutilized in different areas. So
+[00:16:53] supercharger so so first first we think
+[00:16:56] about the ultimate distribution of this
+[00:16:57] problem which is our home garage where
+[00:16:59] you know basically the these are compute
+[00:17:01] nodes all over the place in both this
+[00:17:03] country United States and elsewhere. But
+[00:17:06] then we also have these um compute you
+[00:17:09] know these these power centers at
+[00:17:11] superchargers and these superchargers
+[00:17:14] are
+[00:17:15] uh on a good day highly utilized and on
+[00:17:18] other days uh underutilized
+[00:17:20] and and so and and and they've made very
+[00:17:24] good power contracts so that they're
+[00:17:26] buying power in very remote places
+[00:17:29] probably their grid interconnects
+[00:17:31] probably have very good deals and so now
+[00:17:33] they're looking at the economics here
+[00:17:35] and they're saying, "Well, guess what?
+[00:17:37] We're paying more power for at this
+[00:17:39] centralized, you know, XAI or an Oracle
+[00:17:42] data center. Um, the unit cost is higher
+[00:17:45] because of power. Here we are in
+[00:17:47] Bosezeman, Montana running a 9 gawatt,
+[00:17:50] you know, supercharger and and and we
+[00:17:53] have uh 38% utilization and we have no
+[00:17:57] utilization overnight.
+[00:17:59] uh it's just sitting there and it could
+[00:18:02] be taking off, you know, and and not
+[00:18:04] only not only that, but frankly, every
+[00:18:08] car that parks there to charge can also
+[00:18:11] contribute because now the car isn't it
+[00:18:15] the FSD computer is just sitting there
+[00:18:17] just like it is in your garage. It's
+[00:18:19] just sitting there. I mean, unless
+[00:18:21] you're, you know, playing a video game,
+[00:18:23] but if if you walk away from that car,
+[00:18:25] those those inference computers are
+[00:18:27] dark. So, you can put them to use in
+[00:18:29] this distributed platform. And think of
+[00:18:31] it as now think of it as just one big
+[00:18:34] distributed platform where the nodes are
+[00:18:37] >> everywhere
+[00:18:37] >> geographically dispersed. Some some at
+[00:18:40] two per car, some at two per car, you
+[00:18:44] know, two per car at your home, some at
+[00:18:47] two per car sitting in some idle
+[00:18:49] circumstance, uh maybe on a
+[00:18:52] supercharger.
+[00:18:53] And then the superchargers themselves
+[00:18:55] where they can they can build a uh a
+[00:18:59] sidecar cabinet
+[00:19:01] next to their you know power electronics
+[00:19:04] that that that grid interconnect and
+[00:19:06] they could put you know a couple hundred
+[00:19:08] >> uh mini you know mini GPUs in there um
+[00:19:12] AI4s or eventually AI5s that can do uh
+[00:19:16] distributed inference.
+[00:19:18] >> Brilliant. just uh I mean I swear Elon
+[00:19:21] and Tesla and now SpaceX XAI just
+[00:19:24] brilliant brilliant people you know
+[00:19:26] leverage what you've got now and imagine
+[00:19:28] what this will do to comparing to other
+[00:19:31] competitors if you have a driverless car
+[00:19:34] can you do this because if you can't
+[00:19:36] that reduces your price of your cost of
+[00:19:38] your you know car and the op operation
+[00:19:41] of the car now you can reduce the cost
+[00:19:43] of the transportation fee everything
+[00:19:45] just gets better and then uh Max who's
+[00:19:47] in charge charging SE will be helping
+[00:19:50] the charging teams will be helping to
+[00:19:51] get digital Optimus units energized
+[00:19:54] especially at long distance supercharges
+[00:19:56] we have large interconnections built for
+[00:19:57] dependable travel and weak days
+[00:20:00] >> but sit mostly idle outside of holidays
+[00:20:02] we're going to need a lot of compute and
+[00:20:04] make efficient use of the grid through
+[00:20:05] distributed computes who knew
+[00:20:07] >> that the superchargers were going to
+[00:20:09] become AI data centers
+[00:20:11] >> it's um it's not just that the power is
+[00:20:15] the limiting factor at these centralized
+[00:20:17] data centers It's the fact that Tesla
+[00:20:20] already has a jump on grid interconnects
+[00:20:22] to the superchargers, right? Because in
+[00:20:24] in many cases, someone wants to build,
+[00:20:26] let's say you want to build a data
+[00:20:28] center in Bosezeman and um you're
+[00:20:30] talking to the local power company and
+[00:20:32] they're saying, "Yeah, we can provide
+[00:20:33] you the power. It'll take uh three to
+[00:20:36] five years to uh interconnect and you
+[00:20:40] know look what look what Elon had to do
+[00:20:42] at XAI to get around um Tennessee Valley
+[00:20:45] and uh you know start building his own
+[00:20:48] power systems temporary and then you
+[00:20:50] know going to more permanent. So, so you
+[00:20:52] have this problem where you can't get
+[00:20:54] the power even if you want and even if
+[00:20:56] you're will willing to pay market rate,
+[00:20:58] you can't get connected. But guess what?
+[00:21:01] Superchargers are already connected. And
+[00:21:04] and even better, not only not only are
+[00:21:06] they connected, but Tesla understands
+[00:21:08] how to connect across the world to
+[00:21:12] power. They are probably the
+[00:21:15] organization who has the most knowledge
+[00:21:17] about how to connect to every power
+[00:21:20] company there is. knows all the
+[00:21:22] shortcuts, time savings, everything
+[00:21:25] because of the work that they put into a
+[00:21:27] supercharger.
+[00:21:28] >> Brilliant. That's the beauty of Tesla
+[00:21:30] and Elon. They just double down and they
+[00:21:32] use what they've already done. Okay, so
+[00:21:35] this is the biggest update. Uh we had to
+[00:21:37] insert this into the regular show. Back
+[00:21:39] to the show. Thanks everybody. Okay,
+[00:21:41] well you explained it really well about
+[00:21:43] the reasoning. Um but let's let's walk
+[00:21:45] me through some real examples so it's
+[00:21:48] easier for me to understand and the
+[00:21:49] audience to understand what we mean by
+[00:21:51] this right so right now let's start with
+[00:21:54] a car right the car is got FSD so it
+[00:21:56] knows how to drive it it I've always
+[00:21:59] said that the car the difference between
+[00:22:01] Tesla's neural network vision in output
+[00:22:04] out is that it's uh it it is understands
+[00:22:07] a context so it's not just sensors that
+[00:22:10] know that there's something there
+[00:22:12] actually knows what that is it's fog. It
+[00:22:15] knows uh that there is a fire hydrant
+[00:22:17] there. So, I shouldn't park near that
+[00:22:18] fire hydrant uh within, you know,
+[00:22:20] whatever feet is. It can read signs. So,
+[00:22:23] it can already do these things. It can
+[00:22:24] recognize humans uh gestures, intent to
+[00:22:28] walk across the street or maybe now it's
+[00:22:30] got even better visuals now that they up
+[00:22:33] that ability. It can see through the
+[00:22:35] window of the other guy and the other
+[00:22:36] guy goes, "God," you know, and it
+[00:22:38] understands what that means
+[00:22:40] >> because it's fed enough videos. It
+[00:22:42] understands that what will this now be
+[00:22:44] able to do for let's just start with a
+[00:22:46] car. How does that now able to do more
+[00:22:48] reasoning other than grock which is
+[00:22:50] you're telling it what to do and then
+[00:22:51] the grock tells the car what to do what
+[00:22:55] what is this
+[00:22:56] >> I think I think for the first time we
+[00:22:58] have an understanding of the objects
+[00:23:00] that that the car sees not so right so
+[00:23:04] today a car will see through its vision
+[00:23:07] stack
+[00:23:09] uh a stop light and we'll know that red
+[00:23:12] means stop and green means go and so
+[00:23:14] forth But, you know, it doesn't really
+[00:23:17] know anything about
+[00:23:20] stop lightss per se. It doesn't know
+[00:23:23] anything about uh let's say the timing
+[00:23:26] of the yellows here or um or that there
+[00:23:30] could be these kinds of issues with it
+[00:23:32] or uh uh you know, anything that an LLM
+[00:23:37] can tell you. Like if you went into LLM
+[00:23:39] right now and you said to an LLM, tell
+[00:23:41] me about the history
+[00:23:43] >> Yeah. of stoplights and when did they
+[00:23:45] first come about and what are the
+[00:23:47] different variations that might exist in
+[00:23:49] the world and why are the ones in um why
+[00:23:53] is the left on green different in
+[00:23:55] Arizona versus say California which it
+[00:23:59] is that system knows all of that context
+[00:24:02] it understands the entire context of
+[00:24:04] that right you can ask it that question
+[00:24:06] and it will say oh they've decided to do
+[00:24:08] this uh go on yellow approach yellow
+[00:24:11] arrow approach in Arizona, the state
+[00:24:14] legislature, blah blah blah. Guess what?
+[00:24:16] Now FSD knows all of that. FSD now has
+[00:24:19] this very very rich context for
+[00:24:21] understanding uh pretty much every like
+[00:24:24] last thing that we as humans would
+[00:24:27] understand about the road. So instead of
+[00:24:29] just thinking of it as a pure
+[00:24:31] vision-based approach and okay, it can
+[00:24:33] go through these things somewhat
+[00:24:35] robotically. It can know uh and by the
+[00:24:38] way, you know, do an amazing job as you
+[00:24:40] just described. It can see someone
+[00:24:42] waving it on and say, "Okay, I should
+[00:24:44] go, but it now knows that that someone
+[00:24:46] is actually a construction worker. It
+[00:24:48] may even know the project and the
+[00:24:50] project timeline associated with it,
+[00:24:53] >> right?"
+[00:24:54] >> Yeah. It could actually know if that
+[00:24:55] guy's faking it, too. You know, people
+[00:24:57] always said, "Well, what if I just dress
+[00:24:58] up like a stop sign and and if you know,
+[00:25:01] right now it can fool it, but eventually
+[00:25:03] >> Yeah. It just has this it just has this
+[00:25:06] incredibly rich context that we have
+[00:25:10] become used to out of our LLMs, right?
+[00:25:13] And now that's part of the car. So, for
+[00:25:15] example, if you say, um, I'd like you to
+[00:25:19] park far away from other cars. It may
+[00:25:23] already know in a reasoning perspective,
+[00:25:25] oh, um, Phil doesn't like to see door
+[00:25:28] dings on his car. I mean like like the
+[00:25:30] FSD isn't trained to understand door
+[00:25:32] dings, but if you asked if you asked an
+[00:25:35] LM right now, why would somebody park in
+[00:25:39] a far, you know, corner spot far away?
+[00:25:43] Oh, that person probably has a luxury
+[00:25:46] car and doesn't want door dings and is
+[00:25:49] quite sensitive to the So, it
+[00:25:50] understands that context. Now what it
+[00:25:53] means is that the vision portion can
+[00:25:57] execute on that context. It can bring
+[00:25:59] the car to that spot. It can deal with
+[00:26:03] all the stuff of cars in the way, uh, is
+[00:26:05] the spot open, etc., etc. But the
+[00:26:08] reasoning side can now inform the FSD
+[00:26:11] side. That's that's kind of a big deal.
+[00:26:13] Now with Optimus, it just blows it up
+[00:26:15] to, you know, I think you can understand
+[00:26:17] it better with Optimus, right?
+[00:26:19] >> Okay. So FSD now it can read though.
+[00:26:21] That's the other thing. Okay. And maybe
+[00:26:23] as you're driving through a drive-thru,
+[00:26:25] it can now read uh and maybe the car
+[00:26:28] tells you actually they don't have that
+[00:26:30] available today. Can't you see it says
+[00:26:31] that?
+[00:26:33] Exactly. Exactly. Now, now not only can
+[00:26:36] it can it read, but what it reads, it
+[00:26:40] isn't just like, okay, that's a speed
+[00:26:42] limit sign says 35. It can say, oh, I
+[00:26:48] see this over here. What's this? Oh,
+[00:26:51] this is a school. Oh,
+[00:26:53] >> I understand. Even if the signage is not
+[00:26:55] proper, it can understand that it's a
+[00:26:57] school. It doesn't have to have some
+[00:26:59] kind of school sitting in um
+[00:27:02] >> you know, as an object in the map
+[00:27:04] >> to inform the FSD. It can literally or
+[00:27:06] even if it just like us, we don't look
+[00:27:09] at maps. We we're driving around, we go,
+[00:27:11] that's a school and there's there's kids
+[00:27:12] running around. I'm not going I'm not
+[00:27:14] wondering whether or not Yeah. the rules
+[00:27:16] are I'm just going to go slow down now.
+[00:27:18] And and importantly and importantly it
+[00:27:20] can now interact with us us the us the
+[00:27:23] passenger. I mean we are no longer
+[00:27:24] drivers in this scenario but as a
+[00:27:27] passenger we have a lot to say about
+[00:27:29] what we want our cars whether it's robo
+[00:27:32] taxi or our own personal cars to do or
+[00:27:34] not do. And we have a lot of preferences
+[00:27:37] we want to layer on top of that. Right?
+[00:27:39] We want to make it park on the left side
+[00:27:42] in the driveway. We want to make it take
+[00:27:43] this highway only. We want to ask it
+[00:27:46] questions about why are you going down
+[00:27:48] this road or or divert it from going
+[00:27:51] down some road because we think and it
+[00:27:53] may want to say no it's the right choice
+[00:27:55] I want to go down this road and you may
+[00:27:57] want to say something like I don't want
+[00:27:59] to go down this road I think there's you
+[00:28:01] know
+[00:28:03] >> yeah so so now this context and what I
+[00:28:06] think is super interesting about this is
+[00:28:08] the hard problem has always been uh well
+[00:28:12] one we have two you know we have two
+[00:28:14] separate AIS how are they how do they
+[00:28:16] get combined and then the question is if
+[00:28:18] they get combined how do they operate on
+[00:28:20] this small piece of inference hardware
+[00:28:22] and I think what what's happening here
+[00:28:24] is that Tesla will take a small paired
+[00:28:29] down version of the LLM
+[00:28:33] uh that is really focused on you know
+[00:28:35] everything related to the whole driving
+[00:28:37] sphere right like things like that like
+[00:28:39] it may not know general knowledge or it
+[00:28:41] may it may keep some of that but but it
+[00:28:44] But in terms of what it has to load in
+[00:28:46] its context or its memory in terms of
+[00:28:48] the actual entire stack uh or you say
+[00:28:51] the entire uh AI model, you know, it
+[00:28:54] can't be it can't be the universe of
+[00:28:56] information. It can't be trillion
+[00:28:58] parameter models. It has to be paired
+[00:28:59] down to the right things for the job.
+[00:29:02] But but they can do that. They can
+[00:29:04] understand. In fact, they came and even
+[00:29:06] in a sense ask the AI what it needs to
+[00:29:10] build full context and then subtrain a
+[00:29:13] model combine that with the vision
+[00:29:15] model.
+[00:29:16] >> So we got the FSD vision model then you
+[00:29:18] got they ported the FSD vision model to
+[00:29:20] Optimus and then you've got Grock but
+[00:29:23] now you got macro hard and this ability
+[00:29:25] to he calls the digital Optimus to see
+[00:29:28] the screen visually just like FSE does
+[00:29:30] and then is able to see the last five
+[00:29:32] seconds of everything that happened.
+[00:29:34] It's always tracking exactly what's
+[00:29:35] happening and then it can predict what's
+[00:29:37] going to happen in the future. So tell
+[00:29:39] me about Optimus. How would this impact
+[00:29:41] Optimus? Give me real world examples
+[00:29:43] now.
+[00:29:44] >> Yeah. So as I said earlier, up until now
+[00:29:47] we've been thinking of Optimus as a
+[00:29:50] taskbased robot, right? It would you'd
+[00:29:53] put it to work in a factory, it would
+[00:29:56] move boxes from A to B. It would um
+[00:29:59] resupply,
+[00:30:01] etc., etc. And it has to have some level
+[00:30:04] of intelligence to know how to sequence
+[00:30:06] those tasks. And you know, I've written
+[00:30:08] about that in terms of in terms of how
+[00:30:10] it manages um goals and policies and so
+[00:30:13] forth, right? But optimist doesn't
+[00:30:17] really have a brain the way we would
+[00:30:19] think a reasoning brain. And now it gets
+[00:30:22] a reasoning brain. In fact, I said
+[00:30:24] another way. I expected or suspected all
+[00:30:27] along it needs a reasoning brain. And I
+[00:30:29] think this has been the struggle inside
+[00:30:33] uh the XAI team. I'm sorry, the Tesla AI
+[00:30:36] team has been saying well you know we
+[00:30:38] want Optimus to do all these things but
+[00:30:41] we're not trying to build a general
+[00:30:42] general model. We need that we need to
+[00:30:45] get that from you know Grock. So I think
+[00:30:48] this combined approach now if you're
+[00:30:49] talking about examples it now would know
+[00:30:52] a lot. It would know like if it opens up
+[00:30:54] your refrigerator to get you say go get
+[00:30:56] me a beer from the refrigerator. It may
+[00:30:59] remember that you're on a restricted
+[00:31:02] calorie diet or something and it should
+[00:31:04] only get the Corona lights and it
+[00:31:06] shouldn't pick me, you know, and and it
+[00:31:08] would know then by looking, you know,
+[00:31:10] you don't have to tell it now. You just
+[00:31:12] say, "Go pick my low calorie beer and it
+[00:31:14] could look in the refrigerator and see
+[00:31:16] five different types of beers and then
+[00:31:19] using the LLM capabilities, it can go
+[00:31:21] off and figure out which one is the
+[00:31:23] lowest calorie beer." And it may
+[00:31:24] interact with you. It may say, "Well,
+[00:31:26] there's two ver two beers that you and
+[00:31:28] then it may record your preference on
+[00:31:30] top of that, right? That you've
+[00:31:31] interacted with it and says, I always
+[00:31:33] want the Corona lights and and don't
+[00:31:35] forget to put a lime in them because
+[00:31:37] they require a lime, you know?" So, or
+[00:31:40] it may ask you that because it already
+[00:31:41] knows that that's a common thing. So,
+[00:31:44] now by having this reasoning system, you
+[00:31:47] can think of it as a walking talking um
+[00:31:51] you know, Grock system. uh now in this
+[00:31:54] in this robot that has agency. Uh so it
+[00:31:57] has mobility, it has agency, uh and and
+[00:32:00] it can do all these these reasoning
+[00:32:02] tasks and I I mean I could probably sit
+[00:32:04] here and give you 200 examples because
+[00:32:07] it just
+[00:32:07] >> Yeah.
+[00:32:08] >> You know, it just gets richer by the m
+[00:32:10] for example,
+[00:32:10] >> it's crazy. Yeah.
+[00:32:11] >> For example, it can look at a book now
+[00:32:13] on your bookshelf and it can say I know
+[00:32:15] what's in that book.
+[00:32:16] >> It's in like I can look at this book and
+[00:32:18] I can say oh that's Strucker's
+[00:32:19] management book. I know the seven books
+[00:32:22] he wrote on business and management and
+[00:32:25] I can you know I can
+[00:32:27] >> you're reading by the way you hand it a
+[00:32:28] book and it already grabs it. It knows
+[00:32:30] it every word written
+[00:32:32] >> and it might be just completely encoded
+[00:32:33] already right because in other words the
+[00:32:35] the LM was already trained with the
+[00:32:38] knowledge of that book. So by just
+[00:32:39] looking at that book using the vision
+[00:32:41] aspect it can see that book and it can
+[00:32:44] say oh which book did you want? And you
+[00:32:46] could say something like, "Oh, I want
+[00:32:48] the this trucker book on so- and so."
+[00:32:50] No, that's not the book that has that
+[00:32:52] section in it. That's this other book.
+[00:32:54] Let me grab that for you.
+[00:32:55] >> You know, it's it's the way I think of
+[00:32:57] it. It's like a human doing its normal
+[00:33:00] job. I'm I'm working. What do I do?
+[00:33:02] Right? I don't just sit in front of a
+[00:33:04] computer, which I do, and I do a lot of
+[00:33:06] work on a computer. I get up and I do
+[00:33:08] things, right? I go grab things. I move
+[00:33:10] things. You can see it in a in a
+[00:33:12] company, in a corporation. Almost
+[00:33:14] everybody has, you know, they call it
+[00:33:16] desk jobs. Desk jobs mostly computer,
+[00:33:19] but most people it's like a mixture.
+[00:33:21] You're always going to, you know, grab
+[00:33:22] things, move things. Uh, and then now
+[00:33:25] this bot can do it all. And then maybe
+[00:33:27] even interact with the computer itself.
+[00:33:29] >> Sits down and says, "Okay, I just I just
+[00:33:32] filled up. I finished my job." So then
+[00:33:34] the company, the factory does not have
+[00:33:36] to redesign anything. It exists the way
+[00:33:38] for humans. The bot walks up to the
+[00:33:41] terminal on the factory floor and
+[00:33:44] punches it in
+[00:33:45] >> and says, "Okay, this is what I just
+[00:33:46] did. I registered everything. I'm out."
+[00:33:48] And then the system exists the way that
+[00:33:50] they do. And you can swap a human with a
+[00:33:52] bot and they're doing exactly the same
+[00:33:54] thing.
+[00:33:54] >> Bot can approach some interface. It's
+[00:33:56] never seen in a factory.
+[00:33:58] >> Yeah.
+[00:33:59] >> It can reference the manual that it's
+[00:34:00] already encoded and it can understand it
+[00:34:02] the way you and I would have to
+[00:34:04] understand it from the first go. Like
+[00:34:05] you may say, well, we need to train it
+[00:34:06] to understand this piece of software.
+[00:34:08] Not necessarily because it can say,
+[00:34:10] well, I need to perform this function.
+[00:34:12] Oh, that's seven clicks. I need to do
+[00:34:14] these five things, etc., etc. How do I
+[00:34:17] know that? Well, I've got the manual
+[00:34:19] encoded in my LM portion of me. Right?
+[00:34:22] It that's and and what I would say about
+[00:34:24] this is it's clear to me that digital
+[00:34:27] optimist is a subset of optimist. In
+[00:34:30] other words, I would expect that
+[00:34:32] anything digital optimist can do,
+[00:34:35] optimist will certainly be able to do.
+[00:34:37] Uh because to me uh what I heard here is
+[00:34:42] that these are exactly the same AIs.
+[00:34:44] >> They're the same AI. So if you're a
+[00:34:46] surgeon, you're a surgical robot. He
+[00:34:48] said that. Okay. So you you get a robot
+[00:34:50] it and it's got the dexterity goes in it
+[00:34:52] and starts doing surgery. Well, what
+[00:34:54] normally happens when surgeons they have
+[00:34:55] a screen that they're looking at the MRI
+[00:34:57] screen or the ultrasound screen that's
+[00:34:59] actively happening. So now we can look
+[00:35:01] at it and actually, you know, like a
+[00:35:03] surgeon would do and actually look at
+[00:35:06] that vision to see what they're doing
+[00:35:07] down here. You know what I mean? like,
+[00:35:09] >> yeah, imagine a surgeon's looking at a
+[00:35:11] screen and some weird dialogue comes up
+[00:35:13] on the screen and
+[00:35:16] he he hasn't seen this before, you know,
+[00:35:18] let's call it an error um in the system
+[00:35:20] and he hasn't seen it, you know, he's
+[00:35:22] he's focused on the s surgical aspect
+[00:35:25] and he says to, you know, one of the
+[00:35:27] people in the room um what's going on
+[00:35:30] here? You know, like cuz it's, you know,
+[00:35:32] it's an emerging problem and it it
+[00:35:34] affects his ability to to do the
+[00:35:36] surgery. Well, if you have Optimus now,
+[00:35:40] it could basically just look up in its
+[00:35:42] brain where what is this error and what
+[00:35:44] does it mean and how do I and how do I
+[00:35:46] work around it and could do that in real
+[00:35:48] time without trying I mean what's what
+[00:35:51] is the surgeon doing in that case? He's
+[00:35:53] looking for knowledge in the room in
+[00:35:55] real time. Well, what if that knowledge
+[00:35:57] in real time is just available to his
+[00:35:59] brain? He just, you know, well, that's
+[00:36:01] what optimist can do.
+[00:36:03] >> A reasoning part of the brain, not just
+[00:36:05] the instinctive part. That is brilliant.
+[00:36:06] Okay, so let's just a few more things I
+[00:36:08] want to cover to cover this uh
+[00:36:10] completely. Ashra Kaliswami who's now in
+[00:36:13] charge of Tesla AI who not only has was
+[00:36:16] doing FSD and robo taxis but he's now in
+[00:36:20] charge of the optimist division. Uh so
+[00:36:23] perfect.
+[00:36:24] It was brilliant that that he made this
+[00:36:26] move. Elon made this move to make Ashok
+[00:36:28] the guy in charge of this uh 6 months a
+[00:36:30] year ago. He said, "We're actively
+[00:36:32] hiring talented people to work on this
+[00:36:34] extremely high impact project." And he
+[00:36:36] says, "Join Tesla AI or XAI to help
+[00:36:39] accelerate this." So very interesting
+[00:36:42] that he's it's a joint project. So that
+[00:36:44] also Yeah.
+[00:36:45] >> No, go ahead. Go ahead.
+[00:36:47] >> Well, I mean it just kind of leads to
+[00:36:48] this idea that maybe they will be
+[00:36:51] merging in the future. Why? You know,
+[00:36:53] >> I was going to say sounds like one
+[00:36:54] company here, doesn't it? It does.
+[00:36:56] >> Yeah.
+[00:36:57] >> I mean, if if if it's true what you're
+[00:37:00] saying, by the way, if Optimus cars and
+[00:37:04] all this and it's it's it's the
+[00:37:05] reasoning layer on top of the
+[00:37:06] instinctive layer, you can't really
+[00:37:09] separate the two anymore. They have to
+[00:37:11] be one company, one entity.
+[00:37:13] >> In a sense, in a sense, you know, we've
+[00:37:15] been I mean, I wrote my la one of my
+[00:37:17] last articles that I wrote about FSD. I
+[00:37:20] said FSD part whatever a optimist
+[00:37:23] version. What did I mean? Because what I
+[00:37:25] was trying to say is what's happening in
+[00:37:27] Optimus is going to be plowed right into
+[00:37:29] I'm sorry, what what's happening in FSD
+[00:37:31] is going to be plowed right in to to
+[00:37:33] Optimus. The the part that I always kind
+[00:37:37] of uh took a pass on was I said that
+[00:37:40] there was this intelligence backbone and
+[00:37:42] I knew instinctively that that was going
+[00:37:44] to come from the work at XAI but not
+[00:37:47] formally, right? Like in other words, I
+[00:37:49] knew that well what is an intelligence
+[00:37:51] backbone? Well, it means it's the
+[00:37:53] reasoning layer. And I didn't expect
+[00:37:56] like when Ashockach talked about
+[00:37:58] reasoning tokens in that presentation he
+[00:38:01] did to that uh group back uh in the
+[00:38:04] fall. I didn't know how those tokens
+[00:38:07] would be applied. Right? It's good to
+[00:38:09] say the system is now introspective. It
+[00:38:12] can tell you why it's doing what it's
+[00:38:14] doing. It can tell you why did it take a
+[00:38:16] lefthand turn there? Because that's
+[00:38:18] important for debugability of a system.
+[00:38:21] that's very complex like an AI system of
+[00:38:23] FSD, but it's also good to be able to
+[00:38:26] reason with the the individual, say, why
+[00:38:29] did you take a left-hand turn? Well,
+[00:38:30] because there's a detour, you know, and
+[00:38:32] blah blah blah. And we saw that, but
+[00:38:34] what we didn't see is really, well, how
+[00:38:37] are they going to have more context
+[00:38:38] about that? How are they going to take
+[00:38:40] that information and drive uh you know
+[00:38:45] higher level decisions, decisions that
+[00:38:47] are beyond what they see emerging in the
+[00:38:50] road circumstance like we talked about
+[00:38:52] as parking or things like that
+[00:38:54] >> and we all agreed violently amongst
+[00:38:58] ourselves that Grock in the car would be
+[00:39:00] a big deal. But you know when we see
+[00:39:03] Grock in the car today, we see it as
+[00:39:04] sort of okay, we can we can talk to
+[00:39:07] Grock and it has some touch to the car
+[00:39:10] like we can ask it or we can inform and
+[00:39:12] we can ask it please uh please set up
+[00:39:15] directions to go to you know the Chase
+[00:39:18] Center in San Francisco and it will it
+[00:39:20] will do that today. But these systems
+[00:39:22] are you know they're separated they're
+[00:39:24] not integrated and what we see here is
+[00:39:27] wow they're going to come they're going
+[00:39:28] to come together. So we have FSD
+[00:39:32] optimists and digital optimists
+[00:39:34] effectively in a sense being the same
+[00:39:37] system at some future point.
+[00:39:39] Realistically, they're the same system.
+[00:39:41] >> Um, let me ask you about this cuz this
+[00:39:43] is a a controversy. Some people are
+[00:39:46] saying this way. the the the you know
+[00:39:47] the people who are haters of Tesla and
+[00:39:49] XAI they they're saying that actually
+[00:39:52] what's happened here is XAI's macro hard
+[00:39:55] project which he had announced 6 months
+[00:39:57] or whatever a year ago it stalled uh
+[00:40:00] because you know here's an example of an
+[00:40:02] article because it stalled because uh
+[00:40:05] well they they you know they couldn't
+[00:40:08] get it going whatever and then they the
+[00:40:10] guy the lead guy one of the top founders
+[00:40:12] of XAI he left and that's why now Elon's
+[00:40:15] announcing that they are combining the
+[00:40:17] two together. What's your thinking about
+[00:40:20] that positioning?
+[00:40:21] >> Yeah, you know, I I don't of course I
+[00:40:24] never know exactly about what happens at
+[00:40:26] the ground level with people, but I
+[00:40:28] think that there was a challenge at if
+[00:40:30] we if we zoom out to the macro here. I
+[00:40:33] think it was a a a challenge at XAI. uh
+[00:40:37] the team recognized that,
+[00:40:39] you know, it wanted to effectively
+[00:40:43] build largely a vision stack to solve
+[00:40:46] the problem.
+[00:40:48] >> And I think Elon was nodding,
+[00:40:52] you know, knowing full well that he's
+[00:40:54] got this entire team over at Tesla doing
+[00:40:57] uh a better version of that, if you
+[00:40:59] will. Like in other words, this team,
+[00:41:02] you know, the way I look at these guys
+[00:41:03] is there's some very very mature
+[00:41:06] uh folks that have been in their careers
+[00:41:09] for a very long time. And then there's a
+[00:41:11] lot of very very very smart junior
+[00:41:14] people. So they're optimistic, they're
+[00:41:18] aggressive, they're, you know, and and
+[00:41:21] what they'll say is, "Yeah, yeah, Elon,
+[00:41:22] I'm going to go off and build this
+[00:41:24] thing." And he's like, "Okay, sure." You
+[00:41:27] know, and I think what what that means
+[00:41:29] in some cases is when you have an
+[00:41:31] extremely intelligent, bright young man
+[00:41:34] that or woman doing these kinds of task
+[00:41:36] is you let them go hang themselves or
+[00:41:38] you let them give it a try. You know, in
+[00:41:40] other words, you say, "Okay, you know,
+[00:41:43] there's no there's no real harm to
+[00:41:45] having a fivep person team at XAI trying
+[00:41:48] to replicate some of the vision stuff
+[00:41:50] that's being done at Tesla because they
+[00:41:53] may have a breakthrough." And I think
+[00:41:55] that they didn't have a breakthrough. I
+[00:41:57] what I think what they had was a log
+[00:41:58] jam. They realized that they were
+[00:42:00] running up against the same pixel
+[00:42:02] problem, the same and Elon recognized it
+[00:42:05] because he's got his foot in the other
+[00:42:06] world at Tesla. And he said, "Sounds
+[00:42:10] like all we're doing here is you're
+[00:42:12] realizing that you need to duplicate
+[00:42:14] what you're seeing at my sister
+[00:42:16] company." And so I think from that
+[00:42:18] perspective, he may have made the first
+[00:42:20] move. And and what I mean by that is he
+[00:42:22] may have said, "Look guys, I think we're
+[00:42:24] probably gonna try to get the XA uh
+[00:42:27] sorry, the Tesla folks in here to tell
+[00:42:29] us about this." And then I think what
+[00:42:30] might have happened is some of those
+[00:42:32] people said, "Oh, look at the Tesla. So
+[00:42:35] people are coming in. I don't want to be
+[00:42:36] part of this. I'm going to leave because
+[00:42:38] they wanted to do this pure.
+[00:42:40] >> They want to be in charge." Gotcha.
+[00:42:41] >> Yeah. So I I don't I think we might have
+[00:42:43] the chicken and the egg reversed here.
+[00:42:45] >> Makes sense. And at the end of the day,
+[00:42:47] um, you know, I'm not worried about it.
+[00:42:49] In fact, I'm happy because if you think
+[00:42:51] about it, it's Ashoka Swami who's in
+[00:42:53] charge of robo taxi and self-driving
+[00:42:56] cars and he just banged that out
+[00:42:58] perfectly. He's now in charge of Optimus
+[00:43:00] and you're watching Optimus and we'll
+[00:43:02] see how he's transferred the
+[00:43:04] intelligence to Optimus. Now, if he's
+[00:43:06] part of this project where he has access
+[00:43:08] to XAI's macro hard team and they create
+[00:43:11] this and this is going to replicate
+[00:43:13] entire businesses. This is way more than
+[00:43:15] just Agentic AI. So, agentic AI, I'm
+[00:43:18] playing around with clawed code. Uh, I'm
+[00:43:21] playing around with these agents, open
+[00:43:23] claw agents. These things can open up
+[00:43:25] websites. They can they can, you know,
+[00:43:28] create a they can go to visit any
+[00:43:30] website and they can look at what's
+[00:43:31] happening there and they're they're hit
+[00:43:34] and miss. Right now, you're seeing
+[00:43:35] claude for Excel, Claude for PowerPoint,
+[00:43:38] Claude for Word. Word just partnered
+[00:43:39] with them. Uh, Microsoft did so that you
+[00:43:42] can have support and actually write
+[00:43:44] emails for you, send emails for you. So
+[00:43:46] they're almost getting there. What seems
+[00:43:48] to be what these guys are doing is
+[00:43:50] that's agentic AI, but this is true
+[00:43:53] context aware and and and if you do
+[00:43:56] that, it's it's like it's it's so funny
+[00:43:57] because it's very similar to what Elon
+[00:43:59] has already his first principles on the
+[00:44:00] first thing, isn't it? It's all back to
+[00:44:02] that again, right?
+[00:44:03] >> Context aware is so critical and and
+[00:44:06] meaning to say you you know you anything
+[00:44:09] you put anything in front of that that
+[00:44:10] that thing, it should be able to figure
+[00:44:12] it out. here that was coded specifically
+[00:44:14] for how do you take an Excel
+[00:44:15] spreadsheet, how do you you know do
+[00:44:16] whatever to it.
+[00:44:17] >> No, exactly. Yeah. No, that's I think
+[00:44:19] that the difference is that what what
+[00:44:22] Macro hard or digital optimus is about
+[00:44:24] is it's a generalized approach to the
+[00:44:26] pixel on the screen. It doesn't care
+[00:44:28] what piece of software is in front of
+[00:44:29] it. It figures out what piece of
+[00:44:31] software that is or or or frankly drives
+[00:44:33] the software it needs. But but beyond
+[00:44:35] that like if it's just looking at the
+[00:44:37] screen um you know oh I I see this um
+[00:44:41] then you know goes deep into its it the
+[00:44:44] reasoning components or its intelligence
+[00:44:45] components can figure it out. I can
+[00:44:47] access the the manuals the you know for
+[00:44:50] for for the piece of software it can
+[00:44:52] pick should I use um should I use Adobe
+[00:44:55] Photoshop or should I use Da Vinci to do
+[00:44:57] color correcting
+[00:44:59] um why don't I give it a try on both of
+[00:45:02] them and look at the images and see what
+[00:45:04] they whether who color corrected better
+[00:45:07] for these images right I mean all sorts
+[00:45:10] of things that relate to
+[00:45:12] >> I can visually see it now too
+[00:45:13] >> yeah no that's that's the point it's a
+[00:45:15] general vision approach approach. Um, so
+[00:45:19] just like you and you and I might
+[00:45:22] approach an interface like for example,
+[00:45:24] let's say that you and I spent our
+[00:45:26] entire lives on Macs and suddenly we had
+[00:45:28] to use a Windows machine at work. Um, we
+[00:45:33] would stumble a bit. There would be
+[00:45:35] things that we wouldn't understand, but
+[00:45:36] all of a sudden we we very quickly adapt
+[00:45:39] to it. Uh, this is what digital optimus
+[00:45:41] is. it's able to so so digital optimists
+[00:45:44] can look at a particular piece of
+[00:45:47] software in a factory and make sense of
+[00:45:49] it uh um without you know full training
+[00:45:52] because it can just access all that
+[00:45:54] training information and then uh
+[00:45:56] recognize the things on the screen that
+[00:45:58] it can drive. So to me, you're right. It
+[00:46:02] is a very first principles way of
+[00:46:04] looking at it. And and it isn't this
+[00:46:06] silly uh the other silly uh idea is that
+[00:46:10] it's like screen scraping. That's the
+[00:46:12] wrong way to appro you know like screen
+[00:46:13] scraping is this old idea of um you know
+[00:46:17] a piece of software looks at what it
+[00:46:19] sees on the screen and it can drive
+[00:46:21] function and it's very scripted and
+[00:46:23] methodical and that's not what's
+[00:46:26] happening here. It's understanding the
+[00:46:29] screen the way you and I understand the
+[00:46:31] screen. So then it is the same kind of
+[00:46:33] screen scraping that you and I are doing
+[00:46:35] effectively. That's the difference. And
+[00:46:38] again, you know, I want to make the most
+[00:46:40] important statement of the day in my
+[00:46:42] opinion is that digital optimist is just
+[00:46:44] a subset of optimists and therefore and
+[00:46:47] and FSD is a subset of optimist at some
+[00:46:51] point some convergent point here. um
+[00:46:54] that is no longer big techn like in
+[00:46:56] other words once these parts come
+[00:46:58] together Herbert uh it's just a model
+[00:47:02] training and a bit more inference away
+[00:47:03] from that convergence at that point
+[00:47:05] right so what it means is that um you
+[00:47:10] know a future optimist bot should be
+[00:47:13] able to get in
+[00:47:15] uh
+[00:47:17] you know a caterpillar
+[00:47:19] truck
+[00:47:20] >> uh and you know plow field or
+[00:47:25] >> just like you and I would just like you
+[00:47:26] and I would do it and there would be a
+[00:47:28] screen
+[00:47:29] >> except that it would train itself much
+[00:47:31] quicker than you and I ever could. Um,
+[00:47:33] so yeah, can you speak to the I think
+[00:47:35] the the big thing that just shocked me
+[00:47:38] when you read his post is that the whole
+[00:47:40] thing runs on Tesla's AI4 chip. And then
+[00:47:43] he said this A4 chip is 650 $650 only
+[00:47:47] and then of course it pairs with XAI
+[00:47:49] server hardware, but it's like it's like
+[00:47:52] it's like we don't have to wait for AI5
+[00:47:54] or AI6. We it's only $650. Again, I
+[00:47:58] don't know any other inference chip
+[00:48:00] company out there that can do this. And
+[00:48:02] then and then and then I I also want to
+[00:48:04] clarify too that if if you're talking
+[00:48:06] macro hard, you don't you don't actually
+[00:48:08] have a camera that's looking at your
+[00:48:10] your computer screen,
+[00:48:11] >> right?
+[00:48:12] >> It it's using the computer's
+[00:48:15] system and it's using your keyboard and
+[00:48:17] mouse.
+[00:48:18] >> Yeah.
+[00:48:18] >> But it's not actually like there's no
+[00:48:21] like it could if you're optimist you're
+[00:48:22] looking
+[00:48:24] >> Yeah.
+[00:48:24] >> Yeah. It would interface at the driver
+[00:48:26] level. it would receive the pixels the
+[00:48:28] way
+[00:48:28] >> so what does he mean by it can use
+[00:48:30] Tesla's $650 IAF4 chip in what scenarios
+[00:48:33] would that
+[00:48:33] >> well that that is a very interesting
+[00:48:35] statement it it sort of I think what it
+[00:48:37] means is he's sort of saying that um
+[00:48:41] this thing can be either
+[00:48:45] operated
+[00:48:47] uh I'm I'm guessing it can either be
+[00:48:50] operated by connecting at the driver
+[00:48:53] level of your computer as that in other
+[00:48:57] words they may be building a small box
+[00:49:02] that does these types of things or it
+[00:49:05] may be able to use the inference
+[00:49:08] capabilities of your computer or may
+[00:49:10] not. So I don't know like what what I
+[00:49:12] have a feeling is that this is going to
+[00:49:14] be very inferenceheavy and the two and
+[00:49:17] the two opportunities to to manage that
+[00:49:20] outside of of inference capabilities on
+[00:49:23] your actual laptop. So it one way you
+[00:49:25] can think of it is I install a piece of
+[00:49:27] software on your laptop and it gets in
+[00:49:29] at the lowest uh so driver layer. In
+[00:49:32] other words, it can drive the mouse, it
+[00:49:35] can read the screen, whatever the
+[00:49:37] whatever the computer is outputting, it
+[00:49:39] can see um and it can drive the
+[00:49:42] keyboard, you know, as input. So it can
+[00:49:44] drive inputs and it can see outputs and
+[00:49:46] that could exist could exist as a piece
+[00:49:49] of software on the computer itself. Now
+[00:49:53] if it's too heavyweight to do that it
+[00:49:56] could exist either as a cloud assisted
+[00:50:00] model right so the cl there's inference
+[00:50:02] in the cloud doing this work in other
+[00:50:04] words your computer needs to be directly
+[00:50:05] connected or it could be a tied in a
+[00:50:10] block
+[00:50:11] >> a Mac many but if it is like but it if
+[00:50:15] it is that what he is also saying by
+[00:50:19] inference um excuse the reuse the word
+[00:50:23] is that he's saying yeah he's saying
+[00:50:26] that the the brain of FSD and the brain
+[00:50:29] of optimists
+[00:50:31] is this thing. So again what the what
+[00:50:34] he's saying out loud is this is more I
+[00:50:37] I'm converging not only I'm not only
+[00:50:40] converging the AIS but I'm converging
+[00:50:41] their runtime. I'm converging their
+[00:50:44] inference state to work on my chips that
+[00:50:48] that we've invested in and that we will
+[00:50:50] continue to invest in with AI5 and so
+[00:50:52] forth. Right? So, so I can see like I
+[00:50:55] don't think we know yet exactly how this
+[00:50:57] falls out in terms of the piece of
+[00:50:59] hardware that's necessary but uh or
+[00:51:02] whether it can operate within the
+[00:51:03] software layer of but but but what we
+[00:51:05] can see is that we can see that he's
+[00:51:08] saying I do know I do I will tell you
+[00:51:10] this it will run in uh a good portion of
+[00:51:14] this will run in AI4 and I think what
+[00:51:16] he's saying what I think he's saying is
+[00:51:18] um AI4 in our vehicles is sufficient to
+[00:51:24] run our FSD with our reasoning
+[00:51:27] component.
+[00:51:28] >> That's right.
+[00:51:29] >> Now, I do think that may be a scaled
+[00:51:30] down model from a full you know because
+[00:51:34] the biggest deal with this at the
+[00:51:36] technical level is that these models
+[00:51:40] >> uh when the more parameters they have
+[00:51:42] they have to be loaded into memory and
+[00:51:44] run in memory. uh they can't be load
+[00:51:47] continuously loaded and swapped out
+[00:51:49] because remember what what is the
+[00:51:51] difference between
+[00:51:54] FSD and Optimus are real time systems
+[00:51:58] right they they they can't like we've
+[00:52:01] talked about this a lot FSD is running
+[00:52:03] at 36 hertz 36 times a second it's
+[00:52:06] taking in vision and actuating controls
+[00:52:10] and it has to do that it can't be paused
+[00:52:13] it can't swap things in and out of
+[00:52:15] memory and weight because it's going
+[00:52:17] through an intersection or it's, you
+[00:52:19] know, um, and so you've got basically an
+[00:52:24] extra layer that like something that's
+[00:52:27] just driving your screen doesn't really
+[00:52:29] have to be real time the way uh, the way
+[00:52:32] an intelligence in a car uh, or an AI in
+[00:52:36] a car operates or an AI and an optimist.
+[00:52:38] By the way, optimist needs all that too.
+[00:52:40] I mean it can't do a lot of its task
+[00:52:42] without I mean a lot of it like if it's
+[00:52:45] surgery is a good example of that right
+[00:52:47] it needs
+[00:52:47] >> it's got on board yeah
+[00:52:49] >> needs to be fault tolerant it needs to
+[00:52:51] be a real time system
+[00:52:53] >> so what Elon's saying is I'm going to go
+[00:52:55] all the way there
+[00:52:57] >> I'm you know digital optimist whatever I
+[00:52:59] produce as a result of that
+[00:53:01] >> is just optimist in a sense
+[00:53:03] >> you know what I see happening is uh
+[00:53:05] perplexity just launched a a new product
+[00:53:08] where they they'll they'll sell you a
+[00:53:09] Mac Mini, a computer, a Mac Mini
+[00:53:12] headless computer and then it's got the
+[00:53:14] software in it. Then you plug it into
+[00:53:15] your thing and it runs everything. I can
+[00:53:17] see Tesla doing that. They will have
+[00:53:18] their AI4 chip in a small computer and
+[00:53:21] that could be the macro hard solution
+[00:53:24] and then they can they can create that
+[00:53:25] AI4 chip and they'll have pendants,
+[00:53:27] they'll have watches, they'll have
+[00:53:29] glasses, they'll have all sorts of
+[00:53:31] things and then they'll have that AI4
+[00:53:33] chip in multiple different uh bot
+[00:53:37] configurations, bot uh versions. You can
+[00:53:40] have an R2-D2, you can have a small
+[00:53:42] little, you know, Roomba kind of thing.
+[00:53:44] You can have a a desktop ARM thing.
+[00:53:47] They'll make all of this
+[00:53:49] >> and anything with a vision and a chip
+[00:53:52] all of a sudden has reasoning
+[00:53:54] intelligence of understanding context
+[00:53:57] and then being able to do things as
+[00:53:59] opposed to most bots are just task based
+[00:54:01] as you said. There was a post I put up
+[00:54:03] about three months ago and it talked
+[00:54:06] about um is Elon building a phone and
+[00:54:11] >> and I said possibly but if it does build
+[00:54:14] a phone if he does build a phone uh it
+[00:54:17] will be a very different device. It will
+[00:54:19] be a device that connects to Starlink
+[00:54:23] obviously as its comm layer and it will
+[00:54:26] be a device that is an AI driven device.
+[00:54:30] In other words, a device that gener it's
+[00:54:33] generative. It generates the pixels. It
+[00:54:35] listens to what you want it to do and it
+[00:54:37] generates the pixels in real time on the
+[00:54:40] screen. That is effectively a subset of
+[00:54:44] digital optimus. And what I further said
+[00:54:46] is that that type of device isn't just
+[00:54:49] something that sits in the corner. It
+[00:54:51] literally is a movable brain in that in
+[00:54:55] that you can have a physical optimist in
+[00:54:57] your home
+[00:54:58] >> and you can leave your home and carry
+[00:55:01] that brain with you in that device
+[00:55:04] >> and then you could effectively have that
+[00:55:07] device
+[00:55:07] >> to the car with you car
+[00:55:10] >> or moved to another optimist you know
+[00:55:13] >> that device
+[00:55:14] >> or another device so so what you see
+[00:55:16] here is this grand convergence and I
+[00:55:20] think the struggle If I'll give you I'll
+[00:55:22] I'll leave it with a a somewhat
+[00:55:24] pessimistic note um in that the struggle
+[00:55:27] here is always this is a fastm moving
+[00:55:29] train and and and Elon's both driving
+[00:55:32] the train and he's a passenger in this
+[00:55:34] train and what I mean by that is AI is
+[00:55:37] moving so fast that he cannot he has to
+[00:55:41] make these very very hard choices. Do I
+[00:55:43] let the team at Tesla continue to build
+[00:55:46] a reasoning version of FSD, call it
+[00:55:48] 14.3, and deliver it at this timeline,
+[00:55:52] and then all of a sudden deal with the
+[00:55:54] convergence problem that gets deeper
+[00:55:56] down the road, or do I take the
+[00:55:59] convergence problem up front,
+[00:56:00] >> which he does he does that right off the
+[00:56:02] bat. He's taking it up front and it's
+[00:56:04] only going to be six months. Now, that's
+[00:56:06] what does he mean by that? We'll be able
+[00:56:07] to use it maybe a version of micro micro
+[00:56:10] hard on the screen, maybe. But
+[00:56:11] >> yeah,
+[00:56:12] >> yeah, we want it to be on Grock. I for
+[00:56:15] me, I think if anything, it accelerated
+[00:56:17] and not slowed it down. We'll we'll see.
+[00:56:20] >> Uh but for for FSE per, you know, having
+[00:56:23] that having put it this way. Initially,
+[00:56:26] we thought we would have a version of
+[00:56:28] reasoning 14.3 and it was going to come
+[00:56:30] out next month. That's been delayed. I
+[00:56:32] agree with you.
+[00:56:33] >> Right.
+[00:56:33] >> Then the idea was well wait, in order to
+[00:56:36] truly you you we you did a show on this
+[00:56:38] and you you're the one that shared it
+[00:56:39] shared it with me. In order to have true
+[00:56:41] reasoning, we have to wait for AI5 and
+[00:56:43] that's not available till next year and
+[00:56:44] the following for him to say AI4 a
+[00:56:47] version of reasoning. That's actually
+[00:56:49] good news.
+[00:56:50] >> Yeah. No, I think I think yeah, he's got
+[00:56:52] a slow down to speed up situation going
+[00:56:54] on here, right? He's and I think it may
+[00:56:56] have also been a struggle at Tesla
+[00:56:58] saying, okay, how do we actually apply
+[00:57:00] these reasoning dynamics to FSD that we
+[00:57:02] really want to do now that we understand
+[00:57:04] now that we've built out this reasoning
+[00:57:06] token layer? In other words, the system
+[00:57:08] that explains itself, how do we put it
+[00:57:10] to good work? And they and they started
+[00:57:11] staring over at XAI going, we need that.
+[00:57:14] So, I think both teams are staring at
+[00:57:16] each other or at least Elon is
+[00:57:18] >> now they're together.
+[00:57:19] >> Yeah.
+[00:57:19] >> Yeah. Let's go through very quickly now
+[00:57:21] your this is a deck you created. Just go
+[00:57:24] through the key points you you thought
+[00:57:26] were very important for us uh
+[00:57:28] understanding this. Walk through.
+[00:57:29] >> Okay. This this literally just
+[00:57:31] summarizes the posts that I put up this
+[00:57:33] more uh yesterday that Elon reposted
+[00:57:35] this morning. And let's just do all all
+[00:57:38] six of them very quickly. Uh number one
+[00:57:41] uh X AI and Tesla AI systems are
+[00:57:44] complimentary and now converging. We've
+[00:57:46] talked about that. Uh that's exactly
+[00:57:48] what what is happening here that that
+[00:57:51] there is both complimentary and
+[00:57:54] overlapping components but now they're
+[00:57:56] merging into one. Number two, uh macro
+[00:58:00] hard of digital optimus is XAI's digital
+[00:58:02] agent project that goes beyond simple UI
+[00:58:05] navigation. Uh that is what we discussed
+[00:58:07] as well that it actually understands
+[00:58:10] and drives the screen um in a way that
+[00:58:13] you and I just like just like a human
+[00:58:16] could. Number three, Optimus gains a
+[00:58:18] transformative reasoning layer on top of
+[00:58:20] its existing embodiment or taskbased AI.
+[00:58:24] That's an important component is we've
+[00:58:26] really asked ourselves that question is
+[00:58:28] how does optimist come out of the gate
+[00:58:30] with a uh a reasoning layer and now we
+[00:58:33] know how that's probably going to
+[00:58:35] happen. Uh number four FSD gets major
+[00:58:39] help on these last mile problems. We've
+[00:58:41] discussed that it's like some of these
+[00:58:42] last mile problems and where it suddenly
+[00:58:45] has to reason to understand uh we're
+[00:58:49] we're sort of sitting out there in like
+[00:58:52] well how do we solve that dynamic
+[00:58:54] parking lot problem? Well maybe we can
+[00:58:57] do it better with a system like um you
+[00:59:00] know from XAI.
+[00:59:02] Um number five the combined system is
+[00:59:04] hardware efficient and can run on AI for
+[00:59:07] inference. This is a big thing that Elon
+[00:59:10] said that I didn't expect. And I think I
+[00:59:13] think what they've figured out is
+[00:59:15] they've used I mean I think the Tesla's
+[00:59:18] team has done an extraordinary job
+[00:59:21] figuring out how to make its FSD fit on
+[00:59:26] AI4 and a lot of that work which is deep
+[00:59:29] deep optimization work transfers to this
+[00:59:32] combined effort and they figured out
+[00:59:33] that they could do it.
+[00:59:35] >> Yeah. That by the way is the most
+[00:59:37] important differentiator to any other
+[00:59:40] company in the world. It's even Nvidia
+[00:59:43] because no one has spent this much time
+[00:59:45] and effort to to reduce the co the uh
+[00:59:49] inference required right AI4 to run this
+[00:59:51] massive LLM whatever it is into AI4
+[00:59:55] >> because it's cheaper it's faster and
+[00:59:58] then if that's the case you can go big
+[00:59:59] scale others will have much more
+[01:00:02] expensive systems and they'll be slower
+[01:00:03] to to react. Brilliant. Yeah.
+[01:00:06] >> Yep. And then uh and then number six,
+[01:00:09] you know, this convergence is is is big
+[01:00:11] strategic news and does explain some of
+[01:00:14] the time shifts we've seen on FSD.
+[01:00:16] That's why this is why I think we've
+[01:00:18] seen uh from some perspective FSD stall.
+[01:00:22] If you take the negative, but if you
+[01:00:23] take, you know, in other words,
+[01:00:25] >> it's, you know, 14225,
+[01:00:28] um it's been about out there for a month
+[01:00:30] and everybody's like, where's 143? I
+[01:00:32] think we understand it now. Phil, uh,
+[01:00:34] you you took a look at the what he
+[01:00:36] posted and then you interpreted it with
+[01:00:38] your post. I highly recommend people,
+[01:00:40] um, I think I flashed through some of
+[01:00:42] it. I didn't flash through your entire
+[01:00:43] post. Go to his ex account at P by cell
+[01:00:46] and X. Read it because Elon liked it so
+[01:00:50] much means that you hit it perfectly in
+[01:00:52] your interpretation of what's happening.
+[01:00:54] >> He retweeted it.
+[01:00:57] >> He reposted it. Well, I I I don't think
+[01:00:59] he would have reposted it if he didn't
+[01:01:00] think that you if you made some
+[01:01:02] assumptions that weren't correct.
+[01:01:04] >> Yeah,
+[01:01:04] >> he reposted it.
+[01:01:06] >> He didn't just like it or comment on it.
+[01:01:08] He reposted it, which means that
+[01:01:10] >> this is bang on correct.
+[01:01:14] >> Yep.
+[01:01:14] >> I think that I think it's there's an
+[01:01:16] important distinction. I get a lot of
+[01:01:17] likes from Elon, but likes are sometimes
+[01:01:20] I think what he's saying is
+[01:01:21] directionally you're correct or
+[01:01:23] >> yeah,
+[01:01:24] >> yes, you're correct and I don't really
+[01:01:25] want to say what you're saying out loud.
+[01:01:28] >> This case by reposting it, I think he
+[01:01:32] has
+[01:01:32] >> to I think we have to assume
+[01:01:35] >> that what I said is accurate.
+[01:01:38] >> That's what I'm saying. Uh this is a big
+[01:01:40] deal. This is huge. Uh first of all, I'm
+[01:01:44] happy as a Tesla investor that there is
+[01:01:45] this combined Tesla XAI project. I think
+[01:01:49] it means that uh SpaceX and Tesla is
+[01:01:52] very likely going to merge in the
+[01:01:54] future. Uh for them, for him to say it
+[01:01:56] works on AI4 is a big deal cuz I've got
+[01:01:59] a car that has AI4. I've got a car that
+[01:02:01] has AI3 in it. Uh but the fact that it's
+[01:02:04] only $650 AI4, that's another big news.
+[01:02:08] Most people thought it was a couple
+[01:02:09] thousand dollar, you know, whatever. But
+[01:02:11] I mean the point is
+[01:02:12] >> uh probably talking about single chip.
+[01:02:15] Remember cars
+[01:02:16] >> not not the whole not the whole GPU. I
+[01:02:18] get you. But
+[01:02:19] >> the car more the boards in our cars are
+[01:02:21] much more expensive. They're dual AI4
+[01:02:23] chips to do screen driving or something
+[01:02:26] and if you do it on a single chip it
+[01:02:27] it's fine, right?
+[01:02:28] >> It's got dual chips. Yeah. But the point
+[01:02:30] is that this means that he can create
+[01:02:33] multiple form factors, all that kind of
+[01:02:35] things. So huge show. Thank you for
+[01:02:37] doing this work. Uh and keep doing what
+[01:02:39] you're doing, Phil. and appreciate your
+[01:02:41] role and your job here is you you've
+[01:02:44] taken on the job of explaining what's
+[01:02:46] happening in levels that we as investors
+[01:02:49] can understand and you do such a good
+[01:02:51] job with that. Follow Phil on his ex
+[01:02:52] account, subscribe to him, P by sell. He
+[01:02:55] deserves it. Thanks everybody.
+[01:02:56] >> All right, thank you Herbert.
+[01:02:57] >> I've created a website that is the most
+[01:02:59] comprehensive resource for the Tesla
+[01:03:01] investor. Please check it out. Simply go
+[01:03:03] to my website at herbert.com.
