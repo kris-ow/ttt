@@ -259,7 +259,9 @@ function useStockQuote() {
       return
     }
 
-    // Fetch REST quote first for open/high/low/prevClose baseline
+    // Fetch REST quote for baseline data
+    // Finnhub: c = last session close, pc = close before that
+    // During pre-market, change should be vs last close (c), not pc
     async function fetchBaseline() {
       try {
         const res = await fetch(
@@ -267,16 +269,21 @@ function useStockQuote() {
         )
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const q = await res.json()
+        const session = getMarketSession()
+        // During market hours, prevClose = pc (standard).
+        // Outside market hours, prevClose = c (last session's close).
+        const effectiveClose = session === 'OPEN' ? q.pc : q.c
         setState(s => ({
           ...s,
-          price: q.c || s.price,
-          prevClose: q.pc,
+          price: s.price ?? q.c,
+          prevClose: effectiveClose,
           open: q.o,
           high: q.h,
           low: q.l,
           lastUpdated: new Date(),
           loading: false,
           error: null,
+          session,
         }))
       } catch (e) {
         setState(s => ({ ...s, error: e instanceof Error ? e.message : 'Failed to fetch', loading: false }))
@@ -284,44 +291,52 @@ function useStockQuote() {
     }
 
     fetchBaseline()
+    // Poll REST every 30s as reliable fallback, also keeps prevClose fresh
+    const pollInterval = setInterval(fetchBaseline, 30_000)
 
-    // Connect WebSocket for real-time + extended hours
-    const ws = new WebSocket(`wss://ws.finnhub.io?token=${FINNHUB_KEY}`)
+    // Try WebSocket for faster updates
+    let ws: WebSocket | null = null
+    let wsRetryTimeout: ReturnType<typeof setTimeout> | null = null
+    let destroyed = false
 
-    ws.onopen = () => {
-      ws.send(JSON.stringify({ type: 'subscribe', symbol: 'TSLA' }))
-    }
+    function connectWs() {
+      if (destroyed) return
+      ws = new WebSocket(`wss://ws.finnhub.io?token=${FINNHUB_KEY}`)
 
-    ws.onmessage = (event) => {
-      const msg = JSON.parse(event.data)
-      if (msg.type === 'trade' && msg.data?.length > 0) {
-        // Use the last trade in the batch
-        const lastTrade = msg.data[msg.data.length - 1]
-        const tradePrice = lastTrade.p
+      ws.onopen = () => {
+        ws!.send(JSON.stringify({ type: 'subscribe', symbol: 'TSLA' }))
+        setState(s => ({ ...s, error: null }))
+      }
 
-        setState(s => ({
-          ...s,
-          price: tradePrice,
-          high: s.high ? Math.max(s.high, tradePrice) : tradePrice,
-          low: s.low ? Math.min(s.low, tradePrice) : tradePrice,
-          lastUpdated: new Date(),
-          loading: false,
-          error: null,
-          session: getMarketSession(),
-        }))
+      ws.onmessage = (event) => {
+        const msg = JSON.parse(event.data)
+        if (msg.type === 'trade' && msg.data?.length > 0) {
+          const lastTrade = msg.data[msg.data.length - 1]
+          const tradePrice = lastTrade.p
+
+          const session = getMarketSession()
+          setState(s => ({
+            ...s,
+            price: tradePrice,
+            high: session === 'OPEN' && s.high ? Math.max(s.high, tradePrice) : s.high,
+            low: session === 'OPEN' && s.low ? Math.min(s.low, tradePrice) : s.low,
+            lastUpdated: new Date(),
+            loading: false,
+            error: null,
+            session,
+          }))
+        }
+      }
+
+      ws.onerror = () => {}
+      ws.onclose = () => {
+        if (!destroyed) {
+          wsRetryTimeout = setTimeout(connectWs, 10_000)
+        }
       }
     }
 
-    ws.onerror = () => {
-      setState(s => ({ ...s, error: 'WebSocket error' }))
-    }
-
-    ws.onclose = () => {
-      // Reconnect after 5s if connection drops
-      setTimeout(() => {
-        setState(s => ({ ...s, error: 'Reconnecting...' }))
-      }, 5000)
-    }
+    connectWs()
 
     // Update session label every minute
     const sessionInterval = setInterval(() => {
@@ -329,7 +344,10 @@ function useStockQuote() {
     }, 60_000)
 
     return () => {
-      ws.close()
+      destroyed = true
+      ws?.close()
+      if (wsRetryTimeout) clearTimeout(wsRetryTimeout)
+      clearInterval(pollInterval)
       clearInterval(sessionInterval)
     }
   }, [])
@@ -368,7 +386,6 @@ function StockWidget(state: StockState) {
           </div>
           <div className="flex items-center gap-2 mb-2 text-xs">
             <span className={sess.cls}>{sess.label}</span>
-            {error && <span className="text-amber">// {error}</span>}
           </div>
           <div className="grid grid-cols-2 gap-2 text-xs">
             {[
