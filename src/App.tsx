@@ -411,9 +411,27 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="text-green font-bold text-sm">[TTT]</span>
-              <span className="text-white text-sm font-bold">THE TESLA THESIS</span>
-              <span className="text-text-dim text-xs hidden sm:inline">// intelligence dashboard</span>
+              <span className="text-green font-bold text-xl">[TTT]</span>
+              <span className="text-white text-xl font-bold">THE TESLA THESIS</span>
+              <span className="text-text-dim text-xs">//</span>
+              <nav className="flex items-center gap-1">
+                {([
+                  ['feed', 'DAILY_FEED'],
+                  ['knowledge', 'KNOWLEDGE_BASE'],
+                ] as const).map(([key, label]) => (
+                  <button
+                    key={key}
+                    onClick={() => setActiveSection(key)}
+                    className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
+                      activeSection === key
+                        ? 'bg-green text-bg'
+                        : 'text-text-dim hover:text-green'
+                    }`}
+                  >
+                    {activeSection === key ? `[${label}]` : label}
+                  </button>
+                ))}
+              </nav>
             </div>
             <div className="text-text-dim text-xs">
               {data.articles.length} articles tracked
@@ -423,47 +441,30 @@ export default function App() {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 py-6 flex-1 w-full">
-        {/* ── Nav tabs ────────────────────────────────── */}
-        <nav className="flex items-center gap-1 mb-6 border-b border-border pb-3">
-          {([
-            ['feed', 'DAILY_FEED'],
-            ['knowledge', 'KNOWLEDGE_BASE'],
-          ] as const).map(([key, label]) => (
-            <button
-              key={key}
-              onClick={() => setActiveSection(key)}
-              className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
-                activeSection === key
-                  ? 'bg-green text-bg'
-                  : 'text-text-dim hover:text-green'
-              }`}
-            >
-              {activeSection === key ? `[${label}]` : label}
-            </button>
-          ))}
-        </nav>
 
-        {/* ── Top bar: Stock + Catalysts (stacks on narrow, inline on wide) ── */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-          <div>
-            <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
-            <StockWidget {...stockData} />
-          </div>
-          <div>
-            <h3 className="text-green text-xs font-bold mb-2">NEXT CATALYSTS</h3>
-            <div className="border border-border bg-surface p-4 space-y-1 text-xs">
-              {CATALYSTS.map((c, i) => (
-                <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
-                  <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
-                    {c.date}
-                  </span>
-                  <span className="text-text flex-1">{c.event}</span>
-                  {c.hot && <span className="text-green flex-shrink-0">◄</span>}
-                </div>
-              ))}
+        {/* ── Top bar: Stock + Catalysts (only on feed) ── */}
+        {activeSection === 'feed' && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div>
+              <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
+              <StockWidget {...stockData} />
+            </div>
+            <div>
+              <h3 className="text-green text-xs font-bold mb-2">NEXT CATALYSTS</h3>
+              <div className="border border-border bg-surface p-4 space-y-1 text-xs">
+                {CATALYSTS.map((c, i) => (
+                  <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
+                    <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
+                      {c.date}
+                    </span>
+                    <span className="text-text flex-1">{c.event}</span>
+                    {c.hot && <span className="text-green flex-shrink-0">◄</span>}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* ── Main content ──────────────────────────── */}
         <div>
