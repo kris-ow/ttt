@@ -1,0 +1,61 @@
+# The Tesla Thesis (TTT)
+
+Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
+
+## Tech Stack
+- Vite + React + TypeScript + Tailwind CSS v4
+- JetBrains Mono font, #00ff41 green accent, #0a0a0a background
+
+## Architecture
+- Everything lives in `src/App.tsx` — single-page, no routing
+- Stock price: Finnhub REST (30s polling) + WebSocket (live trades), client-side
+- Stock chart: Lightweight Charts v5, Yahoo Finance data via corsproxy.io CORS proxy
+- Content: Google Drive → `scripts/sync-drive.js` → `scripts/build-news.js` → `src/data/news.json`
+- Only `_summary.txt` files are processed, deduplicated by title+date
+
+## Design Rules
+- Sharp corners only, no rounded borders
+- Monospace font everywhere, green highlights on dark background
+- Full words always (OPEN, PREV CLOSE, HIGH, LOW) — never abbreviate
+- Stock price + catalysts only on Daily Feed tab, not Knowledge Base
+- Popups use blurred semi-transparent overlay (bg-bg/60 backdrop-blur-md)
+
+## Stock Price Logic
+- Pre-market: show last close (dimmed) immediately, switch to live when WebSocket delivers
+- Pre-market % change = vs last session close (q.c), not previous day close (q.pc)
+- REST never overwrites WebSocket price once live
+
+## Summary Pipeline (`scripts/pipeline/`)
+Automated YouTube → transcript → Claude summary pipeline:
+- `run.js` — main orchestrator (RSS check → transcript fetch → Claude Batch API → write summaries)
+- `config.js` — channels, corrections dictionary, categories, pricing
+- `prompt.md` — prompt template with placeholder slots
+- `state.json` — tracks processed video IDs + pending batches
+- `costs.json` — LLM cost log (every API call tracked)
+- `.github/workflows/daily-pipeline.yml` — daily GitHub Actions trigger
+
+Categories: Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
+
+Uses Claude Sonnet 4.6 via Batch API (50% cheaper). Summaries match existing `_summary.txt` format.
+
+## Core Thesis
+Tesla valuation based on: autonomous driving, robotaxi (Cybercab), humanoid robots (Optimus).
+Planned DCF valuation models fed by Knowledge Base facts extracted from summaries.
+
+## Key Files
+- `src/App.tsx` — entire dashboard (components, hooks, layout)
+- `src/types.ts` — Article/NewsData types, CHANNEL_META
+- `src/index.css` — Tailwind v4 theme config
+- `scripts/sync-drive.js` — Google Drive sync (service account, recursive)
+- `scripts/build-news.js` — parse summaries into news.json
+- `scripts/pipeline/` — automated summary pipeline (see above)
+- `.env` — VITE_FINNHUB_KEY (not in git)
+- `the-tesla-thesis-40967df2aae1.json` — service account key (not in git)
+
+## Future / Known Limitations
+- Stock price is client-side — needs server-side proxy for public deployment
+- Chart uses corsproxy.io — fragile, needs own proxy for production
+- Knowledge Base — planned bidirectional system: KB feeds into prompts, summaries update KB
+- Pipeline needs YouTube channel IDs configured in `scripts/pipeline/config.js`
+- DCF valuation models not yet built
+- Not yet publicly deployed

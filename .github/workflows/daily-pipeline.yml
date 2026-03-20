@@ -1,0 +1,52 @@
+name: Daily Summary Pipeline
+
+on:
+  schedule:
+    # Run at 6:00 AM UTC daily (1:00 AM ET, after markets close + after-hours end)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150 # 2.5 hours max (batch can take time)
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      # Restore pipeline state from previous runs
+      - uses: actions/cache@v4
+        with:
+          path: scripts/pipeline/state.json
+          key: pipeline-state-${{ github.run_id }}
+          restore-keys: pipeline-state-
+
+      - name: Run pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/pipeline/run.js
+
+      # Commit new summaries and updated state
+      - name: Commit changes
+        run: |
+          git config user.name "TTT Pipeline Bot"
+          git config user.email "pipeline@theteslathesis.com"
+          git add news/ src/data/news.json scripts/pipeline/state.json scripts/pipeline/costs.json
+          if git diff --staged --quiet; then
+            echo "No new summaries to commit"
+          else
+            git commit -m "$(cat <<'EOF'
+          Daily summary pipeline: $(date -u +%Y-%m-%d)
+
+          Automated: fetch transcripts, summarize via Claude Batch API, rebuild news.json
+          EOF
+            )"
+            git push
+          fi
