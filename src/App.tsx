@@ -1,4 +1,5 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { createChart, AreaSeries, type IChartApi, type ISeriesApi, type LineData, ColorType } from 'lightweight-charts'
 import newsData from './data/news.json'
 import { type Article, type NewsData, CHANNEL_META } from './types'
 
@@ -37,7 +38,7 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-bg/90 backdrop-blur-sm overflow-auto"
+      className="fixed inset-0 z-50 bg-bg/60 backdrop-blur-md overflow-auto"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="max-w-4xl mx-auto p-6">
@@ -275,7 +276,7 @@ function useStockQuote() {
         const effectiveClose = session === 'OPEN' ? q.pc : q.c
         setState(s => ({
           ...s,
-          price: s.price ?? q.c,
+          price: q.c,
           prevClose: effectiveClose,
           open: q.o,
           high: q.h,
@@ -400,8 +401,9 @@ function StockWidget(state: StockState) {
               </div>
             ))}
           </div>
-          <div className="text-text-dim text-xs mt-2">
-            {lastUpdated?.toLocaleTimeString()} // live
+          <div className="flex justify-between items-center mt-2 text-xs">
+            <span className="text-text-dim">{lastUpdated?.toLocaleTimeString()} // live</span>
+            <span className="text-text-dim group-hover:text-green transition-colors">[CLICK FOR CHART]</span>
           </div>
         </>
       ) : null}
@@ -409,6 +411,178 @@ function StockWidget(state: StockState) {
   )
 }
 
+
+// ── Stock Chart Popup ────────────────────────────────────
+
+const RANGES = [
+  { label: '1D', range: '1d', interval: '5m' },
+  { label: '5D', range: '5d', interval: '15m' },
+  { label: '1M', range: '1mo', interval: '1d' },
+  { label: '3M', range: '3mo', interval: '1d' },
+  { label: '6M', range: '6mo', interval: '1d' },
+  { label: '1Y', range: '1y', interval: '1d' },
+  { label: '5Y', range: '5y', interval: '1wk' },
+] as const
+
+function StockChart({ onClose }: { onClose: () => void }) {
+  const chartContainerRef = useRef<HTMLDivElement>(null)
+  const chartRef = useRef<IChartApi | null>(null)
+  const seriesRef = useRef<ISeriesApi<'Area'> | null>(null)
+  const [activeRange, setActiveRange] = useState('1M')
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    document.addEventListener('keydown', handleKey)
+    return () => document.removeEventListener('keydown', handleKey)
+  }, [onClose])
+
+  // Create chart once
+  useEffect(() => {
+    if (!chartContainerRef.current) return
+
+    const chart = createChart(chartContainerRef.current, {
+      layout: {
+        background: { type: ColorType.Solid, color: '#111111' },
+        textColor: '#555555',
+        fontFamily: "'JetBrains Mono', monospace",
+        fontSize: 11,
+      },
+      grid: {
+        vertLines: { color: '#1a1a1a' },
+        horzLines: { color: '#1a1a1a' },
+      },
+      crosshair: {
+        vertLine: { color: '#00ff41', width: 1, style: 2, labelBackgroundColor: '#111111' },
+        horzLine: { color: '#00ff41', width: 1, style: 2, labelBackgroundColor: '#111111' },
+      },
+      rightPriceScale: {
+        borderColor: '#2a2a2a',
+      },
+      timeScale: {
+        borderColor: '#2a2a2a',
+        timeVisible: true,
+      },
+      handleScroll: true,
+      handleScale: true,
+    })
+
+    const series = chart.addSeries(AreaSeries, {
+      lineColor: '#00ff41',
+      lineWidth: 2,
+      topColor: 'rgba(0, 255, 65, 0.15)',
+      bottomColor: 'rgba(0, 255, 65, 0.0)',
+      crosshairMarkerBackgroundColor: '#00ff41',
+      priceLineColor: '#00ff41',
+    })
+
+    chartRef.current = chart
+    seriesRef.current = series
+
+    const handleResize = () => {
+      if (chartContainerRef.current) {
+        chart.applyOptions({ width: chartContainerRef.current.clientWidth })
+      }
+    }
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      chart.remove()
+    }
+  }, [])
+
+  // Fetch data when range changes
+  const fetchData = useCallback(async (rangeLabel: string) => {
+    const range = RANGES.find(r => r.label === rangeLabel)
+    if (!range || !seriesRef.current || !chartRef.current) return
+
+    setLoading(true)
+    setError(null)
+
+    try {
+      const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=${range.range}&interval=${range.interval}`
+      const res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(yahooUrl)}`)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const json = await res.json()
+
+      const result = json.chart?.result?.[0]
+      if (!result?.timestamp || !result?.indicators?.quote?.[0]?.close) {
+        throw new Error('No data available')
+      }
+
+      const timestamps: number[] = result.timestamp
+      const closes: number[] = result.indicators.quote[0].close
+
+      const chartData: LineData[] = timestamps
+        .map((t: number, i: number) => ({
+          time: t as LineData['time'],
+          value: closes[i],
+        }))
+        .filter((d: LineData) => d.value != null)
+
+      seriesRef.current.setData(chartData)
+      chartRef.current.timeScale().fitContent()
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Failed to fetch')
+    } finally {
+      setLoading(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    fetchData(activeRange)
+  }, [activeRange, fetchData])
+
+  return (
+    <div
+      className="fixed inset-0 z-50 bg-bg/60 backdrop-blur-md overflow-auto"
+      onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
+    >
+      <div className="max-w-5xl mx-auto p-6">
+        <button
+          onClick={onClose}
+          className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer"
+        >
+          [ESC] &lt;-- BACK
+        </button>
+
+        <div className="border border-border bg-surface p-4" onClick={e => e.stopPropagation()}>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-green text-sm font-bold">TSLA PRICE CHART</h2>
+            <div className="flex items-center gap-1">
+              {RANGES.map(r => (
+                <button
+                  key={r.label}
+                  onClick={() => setActiveRange(r.label)}
+                  className={`px-2 py-1 text-xs font-bold cursor-pointer transition-colors ${
+                    activeRange === r.label
+                      ? 'bg-green text-bg'
+                      : 'text-text-dim hover:text-green'
+                  }`}
+                >
+                  {r.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {loading && (
+            <div className="text-text-dim text-xs mb-2 animate-pulse">LOADING DATA...</div>
+          )}
+          {error && (
+            <div className="text-red text-xs mb-2">ERR: {error}</div>
+          )}
+
+          <div ref={chartContainerRef} className="w-full h-[400px] sm:h-[500px]" />
+        </div>
+      </div>
+    </div>
+  )
+}
 
 // ── Main Dashboard ───────────────────────────────────────
 
@@ -418,6 +592,7 @@ export default function App() {
   const [activeSection, setActiveSection] = useState<Section>('feed')
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
+  const [showChart, setShowChart] = useState(false)
   const channels = useMemo(() => [...new Set(data.articles.map(a => a.channel))].sort(), [])
   const stockData = useStockQuote()
 
@@ -462,7 +637,10 @@ export default function App() {
         {/* ── Top bar: Stock + Catalysts (only on feed) ── */}
         {activeSection === 'feed' && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div>
+            <div
+              onClick={() => setShowChart(true)}
+              className="cursor-pointer group"
+            >
               <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
               <StockWidget {...stockData} />
             </div>
@@ -527,6 +705,11 @@ export default function App() {
       {/* ── Article overlay ─────────────────────────── */}
       {selectedArticle && (
         <ArticleDetail article={selectedArticle} onClose={() => setSelectedArticle(null)} />
+      )}
+
+      {/* ── Chart overlay ─────────────────────────── */}
+      {showChart && (
+        <StockChart onClose={() => setShowChart(false)} />
       )}
     </div>
   )
