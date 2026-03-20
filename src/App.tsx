@@ -231,17 +231,24 @@ interface StockState {
   loading: boolean
   error: string | null
   session: 'PRE' | 'OPEN' | 'POST' | 'CLOSED'
+  live: boolean
 }
 
 function getMarketSession(): StockState['session'] {
-  const now = new Date()
-  const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }))
-  const h = et.getHours()
-  const m = et.getMinutes()
-  const day = et.getDay()
+  const fmt = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York',
+    hour: 'numeric', minute: 'numeric', weekday: 'short',
+    hour12: false,
+  })
+  const parts = Object.fromEntries(
+    fmt.formatToParts(new Date()).map(p => [p.type, p.value])
+  )
+  const h = parseInt(parts.hour, 10)
+  const m = parseInt(parts.minute, 10)
+  const day = parts.weekday // "Mon","Tue",...
   const mins = h * 60 + m
 
-  if (day === 0 || day === 6) return 'CLOSED'
+  if (day === 'Sat' || day === 'Sun') return 'CLOSED'
   if (mins >= 240 && mins < 570) return 'PRE'       // 4:00 - 9:30 ET
   if (mins >= 570 && mins < 960) return 'OPEN'       // 9:30 - 16:00 ET
   if (mins >= 960 && mins < 1200) return 'POST'      // 16:00 - 20:00 ET
@@ -251,7 +258,7 @@ function getMarketSession(): StockState['session'] {
 function useStockQuote() {
   const [state, setState] = useState<StockState>({
     price: null, prevClose: null, open: null, high: null, low: null,
-    lastUpdated: null, loading: true, error: null, session: getMarketSession(),
+    lastUpdated: null, loading: true, error: null, session: getMarketSession(), live: false,
   })
 
   useEffect(() => {
@@ -260,9 +267,10 @@ function useStockQuote() {
       return
     }
 
+    let wsLive = false // set true once WebSocket provides a trade
+
     // Fetch REST quote for baseline data
     // Finnhub: c = last session close, pc = close before that
-    // During pre-market, change should be vs last close (c), not pc
     async function fetchBaseline() {
       try {
         const res = await fetch(
@@ -271,12 +279,11 @@ function useStockQuote() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`)
         const q = await res.json()
         const session = getMarketSession()
-        // During market hours, prevClose = pc (standard).
-        // Outside market hours, prevClose = c (last session's close).
         const effectiveClose = session === 'OPEN' ? q.pc : q.c
+        // Show q.c as price on first load. Once WebSocket is live, don't overwrite.
         setState(s => ({
           ...s,
-          price: q.c,
+          price: wsLive ? s.price : q.c,
           prevClose: effectiveClose,
           open: q.o,
           high: q.h,
@@ -314,6 +321,7 @@ function useStockQuote() {
         if (msg.type === 'trade' && msg.data?.length > 0) {
           const lastTrade = msg.data[msg.data.length - 1]
           const tradePrice = lastTrade.p
+          wsLive = true
 
           const session = getMarketSession()
           setState(s => ({
@@ -325,6 +333,7 @@ function useStockQuote() {
             loading: false,
             error: null,
             session,
+            live: true,
           }))
         }
       }
@@ -364,12 +373,16 @@ const SESSION_LABELS: Record<StockState['session'], { label: string; cls: string
 }
 
 function StockWidget(state: StockState) {
-  const { price, prevClose, open, high, low, lastUpdated, loading, error, session } = state
+  const { price, prevClose, open, high, low, lastUpdated, loading, error, session, live } = state
+  const isExtended = session === 'PRE' || session === 'POST'
+  const showingLastClose = isExtended && !live
   const change = price && prevClose ? price - prevClose : 0
   const changePct = prevClose ? (change / prevClose) * 100 : 0
   const isPositive = change >= 0
-  const priceColor = isPositive ? 'text-green' : 'text-red'
-  const sess = SESSION_LABELS[session]
+  const priceColor = showingLastClose ? 'text-text-dim' : (isPositive ? 'text-green' : 'text-red')
+  const sess = showingLastClose
+    ? { label: 'LAST CLOSE // waiting for live...', cls: 'text-text-dim' }
+    : SESSION_LABELS[session]
 
   return (
     <div className="border border-border bg-surface p-4">
@@ -381,9 +394,11 @@ function StockWidget(state: StockState) {
         <>
           <div className="flex items-baseline gap-2 mb-1">
             <span className={`text-xl font-bold ${priceColor}`}>${price.toFixed(2)}</span>
-            <span className={`text-xs ${priceColor}`}>
-              {isPositive ? '+' : ''}{change.toFixed(2)} ({isPositive ? '+' : ''}{changePct.toFixed(2)}%)
-            </span>
+            {!showingLastClose && (
+              <span className={`text-xs ${priceColor}`}>
+                {isPositive ? '+' : ''}{change.toFixed(2)} ({isPositive ? '+' : ''}{changePct.toFixed(2)}%)
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-2 mb-2 text-xs">
             <span className={sess.cls}>{sess.label}</span>
@@ -593,8 +608,19 @@ export default function App() {
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
   const [showChart, setShowChart] = useState(false)
+  const stockBoxRef = useRef<HTMLDivElement>(null)
+  const [stockBoxHeight, setStockBoxHeight] = useState<number | null>(null)
   const channels = useMemo(() => [...new Set(data.articles.map(a => a.channel))].sort(), [])
   const stockData = useStockQuote()
+
+  useEffect(() => {
+    if (!stockBoxRef.current) return
+    const observer = new ResizeObserver(() => {
+      if (stockBoxRef.current) setStockBoxHeight(stockBoxRef.current.offsetHeight)
+    })
+    observer.observe(stockBoxRef.current)
+    return () => observer.disconnect()
+  }, [activeSection])
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -636,17 +662,18 @@ export default function App() {
 
         {/* ── Top bar: Stock + Catalysts (only on feed) ── */}
         {activeSection === 'feed' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-start gap-4 mb-6">
             <div
+              ref={stockBoxRef}
               onClick={() => setShowChart(true)}
               className="cursor-pointer group"
             >
               <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
               <StockWidget {...stockData} />
             </div>
-            <div>
-              <h3 className="text-green text-xs font-bold mb-2">NEXT CATALYSTS</h3>
-              <div className="border border-border bg-surface p-4 space-y-1 text-xs">
+            <div className="flex flex-col overflow-hidden" style={stockBoxHeight ? { height: `${stockBoxHeight}px` } : undefined}>
+              <h3 className="text-green text-xs font-bold mb-2 flex-shrink-0">NEXT CATALYSTS</h3>
+              <div className="border border-border bg-surface p-4 text-xs flex-1 overflow-y-auto min-h-0 space-y-1">
                 {CATALYSTS.map((c, i) => (
                   <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
                     <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
