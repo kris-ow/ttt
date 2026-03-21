@@ -1,9 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { fetchTranscript as ytFetchTranscript } from 'youtube-transcript/dist/youtube-transcript.esm.js';
-import { XMLParser } from 'fast-xml-parser';
-import { CHANNELS, CORRECTIONS, MODEL, PRICING } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, PRICING } from './config.js';
 
 const NEWS_DIR = path.resolve('news');
 const STATE_FILE = path.resolve('scripts/pipeline/state.json');
@@ -39,49 +37,59 @@ function logCost(entry) {
   console.log(`  Running total: $${total.toFixed(4)}`);
 }
 
-// ── RSS Feed ─────────────────────────────────────────────
+// ── Find Unsummarized Transcripts ────────────────────────
 
-async function fetchNewVideos(channel) {
-  if (!channel.channelId) {
-    console.log(`  ⚠ No channelId for ${channel.id}, skipping RSS`);
-    return [];
+function findUnsummarizedTranscripts() {
+  const allFiles = fs.readdirSync(NEWS_DIR).filter(f => f.endsWith('.txt'));
+  const summaryFiles = new Set(allFiles.filter(f => f.endsWith('_summary.txt')));
+
+  const transcripts = [];
+  for (const file of allFiles) {
+    if (file.endsWith('_summary.txt')) continue;
+
+    // Check if a matching summary already exists
+    const summaryName = file.replace('.txt', '_summary.txt');
+    if (summaryFiles.has(summaryName)) continue;
+
+    // Parse the transcript file header
+    const content = fs.readFileSync(path.join(NEWS_DIR, file), 'utf-8');
+    const lines = content.split('\n');
+
+    const meta = {};
+    for (const line of lines) {
+      if (line.startsWith('─')) break;
+      const match = line.match(/^(\w[\w\s]*?):\s+(.+)$/);
+      if (match) {
+        meta[match[1].trim().toLowerCase()] = match[2].trim();
+      }
+    }
+
+    // Extract transcript body (after separator)
+    const sepIdx = content.indexOf('─'.repeat(5));
+    const transcript = sepIdx !== -1
+      ? content.slice(sepIdx).replace(/^─+\n+/, '').trim()
+      : null;
+
+    if (!transcript) {
+      console.log(`  Skipping ${file}: no transcript body found`);
+      continue;
+    }
+
+    // Extract channel from filename: YYYYMMDD_channel_NN_...
+    const channelMatch = file.match(/^\d{8}_([^_]+)/);
+    const channel = channelMatch ? channelMatch[1] : meta.channel || 'unknown';
+
+    transcripts.push({
+      filename: file,
+      summaryFilename: summaryName,
+      channel,
+      title: meta.title || file,
+      published: meta.published || '',
+      transcript,
+    });
   }
 
-  const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channel.channelId}`;
-  const res = await fetch(rssUrl);
-  if (!res.ok) throw new Error(`RSS fetch failed for ${channel.id}: HTTP ${res.status}`);
-
-  const xml = await res.text();
-  const parser = new XMLParser({ ignoreAttributes: false });
-  const feed = parser.parse(xml);
-
-  const entries = feed.feed?.entry || [];
-  const videos = (Array.isArray(entries) ? entries : [entries]).map(entry => ({
-    videoId: entry['yt:videoId'],
-    title: entry.title,
-    published: entry.published,
-    channelId: channel.id,
-    channelName: channel.name,
-  }));
-
-  return videos;
-}
-
-// ── Transcript Fetching ──────────────────────────────────
-
-async function fetchTranscript(videoId) {
-  try {
-    const segments = await ytFetchTranscript(videoId);
-    return segments.map(s => {
-      const mins = Math.floor(s.offset / 60000);
-      const secs = Math.floor((s.offset % 60000) / 1000);
-      const ts = `[${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}]`;
-      return `${ts} ${s.text}`;
-    }).join('\n');
-  } catch (e) {
-    console.log(`  Could not fetch transcript for ${videoId}: ${e.message}`);
-    return null;
-  }
+  return transcripts;
 }
 
 // ── Prompt Building ──────────────────────────────────────
@@ -197,32 +205,14 @@ function parseResult(text) {
 
 // ── Summary File Writing ─────────────────────────────────
 
-function writeSummaryFile(video, result, batchId, inputTokens, outputTokens) {
+function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens) {
   const cost = (inputTokens / 1_000_000) * PRICING.input + (outputTokens / 1_000_000) * PRICING.output;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
-  const dateStr = video.published.slice(0, 10).replace(/-/g, '');
 
-  // Build filename matching existing convention
-  const titleSlug = video.title
-    .replace(/[^a-zA-Z0-9\s]/g, '')
-    .split(/\s+/)
-    .slice(0, 3)
-    .map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
-    .join('_');
-
-  // Count existing summaries for this date+channel to get sequence number
-  const existingFiles = fs.readdirSync(NEWS_DIR)
-    .filter(f => f.startsWith(`${dateStr}_${video.channelId}`) && f.endsWith('_summary.txt'));
-  const seq = String(existingFiles.length + 1).padStart(2, '0');
-
-  const filename = `${dateStr}_${video.channelId}_${seq}_${titleSlug}_summary.txt`;
-  const rawFilename = filename.replace('_summary.txt', '.txt');
-
-  // Write summary file
   const header = [
-    `Channel:     ${video.channelId}`,
-    `Title:       ${video.title}`,
-    `Published:   ${video.published}`,
+    `Channel:     ${transcript.channel}`,
+    `Title:       ${transcript.title}`,
+    `Published:   ${transcript.published}`,
     `Summarized:  ${now}`,
     `Model:       ${MODEL} [batch]`,
     `Batch ID:    ${batchId}`,
@@ -233,24 +223,10 @@ function writeSummaryFile(video, result, batchId, inputTokens, outputTokens) {
     result.summary,
   ].join('\n');
 
-  fs.writeFileSync(path.join(NEWS_DIR, filename), header);
-  console.log(`  Written: ${filename}`);
+  fs.writeFileSync(path.join(NEWS_DIR, transcript.summaryFilename), header);
+  console.log(`  Written: ${transcript.summaryFilename}`);
 
-  // Write raw transcript file
-  if (video.transcript) {
-    const rawHeader = [
-      `Channel:     ${video.channelId}`,
-      `Title:       ${video.title}`,
-      `Published:   ${video.published}`,
-      `Fetched:     ${now}`,
-      '─'.repeat(60),
-      '',
-      video.transcript,
-    ].join('\n');
-    fs.writeFileSync(path.join(NEWS_DIR, rawFilename), rawHeader);
-  }
-
-  return { filename, cost, inputTokens, outputTokens };
+  return { filename: transcript.summaryFilename, cost, inputTokens, outputTokens };
 }
 
 // ── Main Pipeline ────────────────────────────────────────
@@ -272,51 +248,25 @@ async function main() {
     return;
   }
 
-  // Step 1: Check RSS feeds for new videos
-  console.log('\n=== Checking for new videos ===');
-  const newVideos = [];
+  // Step 1: Find transcript files without summaries
+  console.log('\n=== Scanning for unsummarized transcripts ===');
+  const transcripts = findUnsummarizedTranscripts();
+  console.log(`Found ${transcripts.length} transcript(s) needing summaries`);
 
-  for (const channel of CHANNELS) {
-    console.log(`\n${channel.name}:`);
-    try {
-      const videos = await fetchNewVideos(channel);
-      const unseen = videos.filter(v => !state.processed[v.videoId]);
-      console.log(`  Found ${videos.length} videos, ${unseen.length} new`);
-      newVideos.push(...unseen);
-    } catch (e) {
-      console.log(`  Error: ${e.message}`);
-    }
-  }
-
-  if (newVideos.length === 0) {
-    console.log('\nNo new videos found. Done.');
+  if (transcripts.length === 0) {
+    console.log('\nAll transcripts have summaries. Done.');
     return;
   }
 
-  // Step 2: Fetch transcripts
-  console.log(`\n=== Fetching transcripts for ${newVideos.length} video(s) ===`);
-  const videosWithTranscripts = [];
-
-  for (const video of newVideos) {
-    console.log(`\n  ${video.title}`);
-    const transcript = await fetchTranscript(video.videoId);
-    if (transcript) {
-      video.transcript = transcript;
-      videosWithTranscripts.push(video);
-      console.log(`  OK (${transcript.length} chars)`);
-    }
+  for (const t of transcripts) {
+    console.log(`  ${t.filename} (${t.transcript.length} chars)`);
   }
 
-  if (videosWithTranscripts.length === 0) {
-    console.log('\nNo transcripts available. Done.');
-    return;
-  }
-
-  // Step 3: Build prompts and submit batch
+  // Step 2: Build prompts and submit batch
   console.log(`\n=== Building prompts and submitting batch ===`);
-  const requests = videosWithTranscripts.map(video => ({
-    id: video.videoId,
-    prompt: buildPrompt(video.channelId, video.title, video.transcript),
+  const requests = transcripts.map(t => ({
+    id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
+    prompt: buildPrompt(t.channel, t.title, t.transcript),
   }));
 
   const batch = await submitBatch(client, requests);
@@ -324,25 +274,24 @@ async function main() {
   // Save state with pending batch info
   state.pendingBatch = {
     batchId: batch.id,
-    videos: videosWithTranscripts.map(v => ({
-      videoId: v.videoId,
-      title: v.title,
-      published: v.published,
-      channelId: v.channelId,
-      channelName: v.channelName,
-      transcript: v.transcript,
+    transcripts: transcripts.map(t => ({
+      filename: t.filename,
+      summaryFilename: t.summaryFilename,
+      channel: t.channel,
+      title: t.title,
+      published: t.published,
     })),
     submittedAt: new Date().toISOString(),
   };
   saveState(state);
 
-  // Step 4: Poll for results
+  // Step 3: Poll for results
   console.log(`\n=== Waiting for batch to complete ===`);
   await processPendingBatch(client, state);
 }
 
 async function processPendingBatch(client, state) {
-  const { batchId, videos } = state.pendingBatch;
+  const { batchId, transcripts } = state.pendingBatch;
 
   const batch = await pollBatch(client, batchId);
   if (!batch) {
@@ -351,15 +300,15 @@ async function processPendingBatch(client, state) {
     return;
   }
 
-  // Step 5: Process results
+  // Process results
   console.log(`\n=== Processing batch results ===`);
-  const videoMap = new Map(videos.map(v => [v.videoId, v]));
+  const transcriptMap = new Map(transcripts.map(t => [t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64), t]));
 
   for await (const result of getBatchResults(client, batchId)) {
-    const video = videoMap.get(result.custom_id);
-    if (!video) continue;
+    const transcript = transcriptMap.get(result.custom_id);
+    if (!transcript) continue;
 
-    console.log(`\n  Processing: ${video.title}`);
+    console.log(`\n  Processing: ${transcript.title}`);
 
     if (result.result.type === 'succeeded') {
       const msg = result.result.message;
@@ -368,31 +317,28 @@ async function processPendingBatch(client, state) {
       const inputTokens = msg.usage.input_tokens;
       const outputTokens = msg.usage.output_tokens;
 
-      const { cost } = writeSummaryFile(video, parsed, batchId, inputTokens, outputTokens);
+      writeSummaryFile(transcript, parsed, batchId, inputTokens, outputTokens);
 
-      // Log cost
       logCost({
         date: new Date().toISOString(),
-        videoId: video.videoId,
-        title: video.title,
-        channel: video.channelId,
+        filename: transcript.filename,
+        title: transcript.title,
+        channel: transcript.channel,
         batchId,
         inputTokens,
         outputTokens,
-        cost,
+        cost: (inputTokens / 1_000_000) * PRICING.input + (outputTokens / 1_000_000) * PRICING.output,
       });
 
       // Mark as processed
-      state.processed[video.videoId] = {
-        title: video.title,
-        channel: video.channelId,
+      state.processed[transcript.filename] = {
+        title: transcript.title,
+        channel: transcript.channel,
         processedAt: new Date().toISOString(),
       };
     } else {
       console.log(`  FAILED: ${result.result.type}`);
-      if (result.result.error) {
-        console.log(`  Error: ${result.result.error.message}`);
-      }
+      console.log(`  Error details: ${JSON.stringify(result.result.error || result.result)}`);
     }
   }
 
@@ -400,7 +346,7 @@ async function processPendingBatch(client, state) {
   state.pendingBatch = null;
   saveState(state);
 
-  // Step 6: Rebuild news.json
+  // Rebuild news.json
   console.log('\n=== Rebuilding news.json ===');
   const { execSync } = await import('child_process');
   execSync('node scripts/build-news.js', { stdio: 'inherit' });

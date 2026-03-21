@@ -21,32 +21,35 @@ jobs:
 
       - run: npm ci
 
-      # Restore pipeline state from previous runs
-      - uses: actions/cache@v4
-        with:
-          path: scripts/pipeline/state.json
-          key: pipeline-state-${{ github.run_id }}
-          restore-keys: pipeline-state-
+      # Write Google Drive service account key from secret
+      - name: Setup Google Drive credentials
+        run: echo '${{ secrets.GOOGLE_DRIVE_KEY }}' > the-tesla-thesis-40967df2aae1.json
 
-      - name: Run pipeline
+      # Step 1: Sync transcripts from Google Drive
+      - name: Sync transcripts from Drive
+        run: node scripts/sync-drive.js
+
+      # Step 2: Summarize new transcripts via Claude Batch API
+      - name: Run summary pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/pipeline/run.js
+
+      # Step 3: Rebuild news.json (pipeline does this, but run standalone as safety net)
+      - name: Rebuild news.json
+        run: node scripts/build-news.js
 
       # Commit new summaries and updated state
       - name: Commit changes
         run: |
           git config user.name "TTT Pipeline Bot"
           git config user.email "pipeline@theteslathesis.com"
-          git add news/ src/data/news.json scripts/pipeline/state.json scripts/pipeline/costs.json
+          git add news/ src/data/news.json scripts/pipeline/state.json scripts/pipeline/costs.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new summaries to commit"
           else
-            git commit -m "$(cat <<'EOF'
-          Daily summary pipeline: $(date -u +%Y-%m-%d)
+            git commit -m "Daily summaries: $(date -u +%Y-%m-%d)
 
-          Automated: fetch transcripts, summarize via Claude Batch API, rebuild news.json
-          EOF
-            )"
+          Sync transcripts from Drive, summarize via Claude Batch API, rebuild news.json"
             git push
           fi

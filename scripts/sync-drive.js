@@ -63,6 +63,9 @@ async function main() {
   for (const file of remoteFiles) {
     if (!file.name || !file.id) continue;
 
+    // Skip Drive summaries — we generate our own. Only pull xdaily summaries (X/Twitter).
+    if (file.name.endsWith('_summary.txt') && !file.name.includes('xdaily')) continue;
+
     const localPath = path.join(NEWS_DIR, file.name);
     const exists = localFiles.has(file.name);
 

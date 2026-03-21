@@ -34,7 +34,14 @@ Write your response in exactly this structure:
 <summary>
 [Opening paragraph: 2-3 sentences describing what the video covers and its core thesis or argument.]
 
-[Numbered key points. Each should be a substantive paragraph covering one distinct topic. Include specific numbers, dates, names, and data points. Do not write a wall of text — each point should stand on its own.]
+[Group key points by category. Use category headers (## Category Name) and numbered points within each category. Each point should be a substantive paragraph covering one distinct topic. Include specific numbers, dates, names, and data points. Only include categories that are actually covered in the video.]
+
+## [Category Name]
+1. [First key point in this category...]
+2. [Second key point in this category...]
+
+## [Next Category Name]
+1. [First key point in this category...]
 
 Notable quotes and data:
 [Bullet list of key numbers, statistics, and direct quotes worth preserving.]

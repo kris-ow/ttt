@@ -61,10 +61,12 @@ export const CORRECTIONS = {
   'lucid': 'Lucid',
   'groq': 'Grok',
   'grock': 'Grok',
+  'Cernin Basher': 'Cern Basher',
+  'Joe Techmire': 'Joe Tegtmeyer',
 };
 
 // Claude model for summarization
-export const MODEL = 'claude-sonnet-4-6-20250514';
+export const MODEL = 'claude-sonnet-4-6';
 
 // Batch API pricing (per million tokens)
 export const PRICING = {

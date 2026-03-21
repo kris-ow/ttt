@@ -26,13 +26,15 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 - REST never overwrites WebSocket price once live
 
 ## Summary Pipeline (`scripts/pipeline/`)
-Automated YouTube → transcript → Claude summary pipeline:
-- `run.js` — main orchestrator (RSS check → transcript fetch → Claude Batch API → write summaries)
+Transcript-driven summarization pipeline (transcripts sourced from Mac Mini → Google Drive):
+- `run.js` — main orchestrator (scan unsummarized transcripts → Claude Batch API → write summaries → rebuild news.json)
 - `config.js` — channels, corrections dictionary, categories, pricing
 - `prompt.md` — prompt template with placeholder slots
-- `state.json` — tracks processed video IDs + pending batches
+- `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — daily GitHub Actions trigger
+- `.github/workflows/daily-pipeline.yml` — daily GitHub Actions: sync Drive → summarize → commit
+
+Flow: Mac Mini fetches YT transcripts → Google Drive → `sync-drive.js` pulls to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries
 
 Categories: Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
 
