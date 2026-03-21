@@ -54,8 +54,15 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
             [{article.sourceType === 'x' ? 'X/TWITTER' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
           </div>
           <h2 className="text-green text-lg font-bold mb-4">{article.title}</h2>
-          {article.source && (
-            <div className="text-text-dim text-xs mb-4">src: {article.source}</div>
+          {(article.source || article.videoUrl) && (
+            <div className="text-text-dim text-xs mb-4 flex items-center gap-3">
+              {article.source && <span>src: {article.source}</span>}
+              {article.videoUrl && (
+                <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">
+                  [WATCH ON YOUTUBE]
+                </a>
+              )}
+            </div>
           )}
 
           <div className="border-t border-border pt-4 space-y-2">
@@ -187,7 +194,7 @@ function formatMetricValue(value: number, unit: string) {
   if (unit === 'GWh') return `${value} GWh`
   if (unit === 'MW') return `${value} MW`
   if (unit === 'million') return `${value}M`
-  return value.toLocaleString() + (unit && unit !== 'units' ? ` ${unit}` : '')
+  return value.toLocaleString()
 }
 
 function sortPeriods(periods: string[]) {
@@ -431,10 +438,13 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
 
                       {areaExpanded && (
                         <div className="px-4 pb-4 space-y-3">
-                          {/* Metric sparkline + table */}
+                          {/* Metric chart + source */}
                           {hasMetric && (
                             <div className="space-y-2">
                               <MetricDisplay quarterly={area.quarterly!} annual={area.annual || {}} unit={area.unit || ''} />
+                              <div className="text-text-dim" style={{ fontSize: '9px' }}>
+                                src: Tesla Quarterly Shareholder Decks (Q1-2020 — Q4-2025)
+                              </div>
                             </div>
                           )}
 

@@ -21,7 +21,7 @@ const KB_SCHEMA = {
     areas: [
       { id: "fsd_versions", name: "FSD Software Versions & Capabilities", type: "facts" },
       { id: "fsd_safety", name: "FSD Safety Metrics", type: "facts" },
-      { id: "fsd_take_rate", name: "FSD Subscription Take Rate", type: "metric", metricKey: "fsd_subscriptions_mil", unit: "million" },
+      { id: "fsd_active_subs", name: "FSD Active Subscriptions", type: "metric", metricKey: "fsd_subscriptions_mil", unit: "million" },
       { id: "regulatory_us", name: "US Regulatory Status (Federal & State)", type: "facts" },
       { id: "regulatory_intl", name: "International Regulatory & Availability", type: "facts" },
     ],

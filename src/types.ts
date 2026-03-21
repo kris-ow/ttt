@@ -8,6 +8,7 @@ export interface Article {
   sourceType: 'x' | 'youtube'
   source: string
   signal: string | null
+  videoUrl: string | null
   body: string
 }
 

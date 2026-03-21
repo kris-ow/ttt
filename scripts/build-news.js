@@ -4,6 +4,10 @@ import path from 'path';
 const newsDir = path.resolve('news');
 const outFile = path.resolve('src/data/news.json');
 
+// Load YouTube URL index if available
+const urlIndexPath = path.join(newsDir, 'transcripts_url_index.json');
+const urlIndex = fs.existsSync(urlIndexPath) ? JSON.parse(fs.readFileSync(urlIndexPath, 'utf-8')) : {};
+
 const files = fs.readdirSync(newsDir).filter(f => f.endsWith('_summary.txt')).sort();
 
 const articles = files.map(filename => {
@@ -42,6 +46,10 @@ const articles = files.map(filename => {
   const signalMatch = body.match(/Signal Strength:\s*(🟢|🟡|🔴)\s*(\w+)/);
   const signal = signalMatch ? signalMatch[2].toLowerCase() : null;
 
+  // Look up YouTube URL from transcript filename
+  const transcriptFilename = filename.replace('_summary.txt', '.txt');
+  const videoUrl = urlIndex[transcriptFilename] || null;
+
   return {
     id: filename.replace('.txt', ''),
     filename,
@@ -52,6 +60,7 @@ const articles = files.map(filename => {
     sourceType,
     source: meta.source || '',
     signal,
+    videoUrl,
     body,
   };
 });
