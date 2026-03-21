@@ -155,56 +155,329 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
 
 // ── Knowledge Base Section ───────────────────────────────
 
-const KB_SECTIONS = [
-  { key: 'autonomy', title: 'AUTONOMOUS DRIVING & ROBOTAXI', items: [
-    'FSD software versions & progress', 'CyberCab production & pricing', 'Robotaxi city rollout strategy',
-    'Safety metrics vs Waymo/human', 'NHTSA/DOT regulatory framework', 'Self-Drive Act implications',
-  ]},
-  { key: 'energy', title: 'ENERGY & BATTERIES', items: [
-    'Megapack 3 production', 'LG Energy $4.3B LFP factory (MI)', 'Battery mfg tax credits ($2.25B/yr)',
-    'Domestic lithium refinery', 'Supercharger network (75K+ stalls)', 'Energy storage revenue growth',
-  ]},
-  { key: 'ai', title: 'AI & COMPUTE', items: [
-    'Terra Fab semiconductor facility', 'Samsung $6.5B partnership', 'Custom AI training chips',
-    'Dojo supercomputer', 'Digital Optimus AI platform', 'Fleet data moat advantage',
-  ]},
-  { key: 'optimus', title: 'OPTIMUS & ROBOTICS', items: [
-    'Optimus Gen 2/3 hardware', 'Factory deployment timeline', 'Commercial availability roadmap',
-    'AI training for manipulation', 'Cost structure & margins', 'Competitive landscape',
-  ]},
-  { key: 'vehicles', title: 'VEHICLES & MANUFACTURING', items: [
-    'Model Y refresh & production', 'Cybertruck ramp', 'Next-gen $25K vehicle',
-    'Tesla Semi production', 'Roadster unveil (Apr 2026)', 'Giga Nevada expansion',
-  ]},
-  { key: 'financials', title: 'FINANCIALS & VALUATION', items: [
-    'Revenue by segment', 'Auto gross margins', 'Institutional accumulation (13F)',
-    '200x PE bull case', 'Navellier "Strong Buy" upgrade', 'Capital allocation & CapEx',
-  ]},
-  { key: 'competition', title: 'COMPETITIVE LANDSCAPE', items: [
-    'Tesla 61% US EV share', 'BYD flash charging/expansion', 'Waymo regulatory approach',
-    'Rivian R2 & sensor strategy', 'Legacy OEM struggles', 'EV slowdown narrative vs IEA data',
-  ]},
-  { key: 'geopolitics', title: 'GOVERNMENT & GEOPOLITICS', items: [
-    'US national priority alignment', 'SpaceX/FAA regulatory parallel', '100% China battery/EV tariff',
-    'Supply chain reshoring', 'Energy security & AI dominance', '"Google of physical AI" thesis',
-  ]},
-]
+import kbData from './data/knowledge-base.json'
 
-function KnowledgeSection() {
+interface KBFact {
+  fact: string
+  lastUpdated: string
+  sources: string[]
+}
+
+interface KBArea {
+  id: string
+  name: string
+  type: 'metric' | 'facts'
+  unit?: string
+  metricKey?: string
+  quarterly?: Record<string, number>
+  annual?: Record<string, number>
+  facts: KBFact[]
+}
+
+interface KBCategory {
+  areas: KBArea[]
+}
+
+const KB_CATEGORIES = Object.keys(kbData) as (keyof typeof kbData)[]
+
+function formatMetricValue(value: number, unit: string) {
+  if (unit === '$M') return `$${value.toLocaleString()}M`
+  if (unit === '%') return `${value}%`
+  if (unit === '$') return `$${value}`
+  if (unit === 'GWh') return `${value} GWh`
+  if (unit === 'MW') return `${value} MW`
+  if (unit === 'million') return `${value}M`
+  return value.toLocaleString() + (unit && unit !== 'units' ? ` ${unit}` : '')
+}
+
+function sortPeriods(periods: string[]) {
+  return periods.sort((a, b) => {
+    // Q1-2020 format: sort by year then quarter
+    const matchA = a.match(/Q(\d)-(\d{4})/)
+    const matchB = b.match(/Q(\d)-(\d{4})/)
+    if (matchA && matchB) {
+      const yearDiff = parseInt(matchA[2]) - parseInt(matchB[2])
+      return yearDiff !== 0 ? yearDiff : parseInt(matchA[1]) - parseInt(matchB[1])
+    }
+    return a.localeCompare(b)
+  })
+}
+
+function BarChart({ periods, values, unit }: { periods: string[], values: Record<string, number>, unit: string }) {
+  const nums = periods.map(p => values[p]).filter(v => v != null)
+  if (nums.length < 1) return null
+
+  const isPct = unit === '%'
+  const max = Math.max(...nums)
+  const minVal = Math.min(...nums)
+  const chartMin = isPct ? Math.floor(minVal * 0.9) : Math.min(0, minVal)
+  const chartMax = max
+  const chartRange = chartMax - chartMin || 1
+
+  // Reference lines: pick ~3 nice round values between chartMin and chartMax
+  const refLines: number[] = []
+  const step = chartRange / 3
+  const magnitude = Math.pow(10, Math.floor(Math.log10(step)))
+  const niceStep = Math.ceil(step / magnitude) * magnitude
+  let refVal = Math.ceil(chartMin / niceStep) * niceStep
+  while (refVal < chartMax) {
+    if (refVal > chartMin) refLines.push(refVal)
+    refVal += niceStep
+  }
+  // Always include 0 if it's within the chart range
+  if (chartMin <= 0 && chartMax >= 0 && !refLines.includes(0)) {
+    refLines.push(0)
+    refLines.sort((a, b) => a - b)
+  }
+
+  const chartHeight = 56 // px
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-      {KB_SECTIONS.map(section => (
-        <div key={section.key} className="border border-border bg-surface p-4">
-          <h3 className="text-green text-xs font-bold mb-3">{section.title}</h3>
-          <div className="space-y-1">
-            {section.items.map(item => (
-              <div key={item} className="text-xs text-text">
-                <span className="text-text-dim mr-2">├</span>{item}
+    <div className="overflow-x-auto">
+      {/* Bar chart with Y-axis */}
+      <div className="flex" style={{ height: `${chartHeight}px` }}>
+        {/* Y-axis labels */}
+        <div className="flex-shrink-0 relative" style={{ width: '3.5rem', height: `${chartHeight}px` }}>
+          {refLines.map(ref => {
+            const pct = ((ref - chartMin) / chartRange)
+            const bottom = pct * chartHeight
+            return (
+              <div
+                key={ref}
+                className="absolute right-1"
+                style={{ bottom: `${bottom}px`, transform: 'translateY(50%)', fontSize: '9px', color: '#888' }}
+              >
+                {formatMetricValue(ref, unit)}
               </div>
-            ))}
+            )
+          })}
+        </div>
+        {/* Bars + reference lines */}
+        <div className="flex-1 relative" style={{ height: `${chartHeight}px` }}>
+          {/* Reference lines */}
+          {refLines.map(ref => {
+            const pct = ((ref - chartMin) / chartRange) * 100
+            return (
+              <div
+                key={ref}
+                className="absolute left-0 right-0"
+                style={{ bottom: `${pct}%`, borderTop: '1px solid #333' }}
+              />
+            )
+          })}
+          {/* Bars */}
+          <div className="flex items-end h-full relative z-10">
+            {periods.map(p => {
+              const v = values[p]
+              const barHeight = v != null && chartRange > 0 ? ((v - chartMin) / chartRange) * 100 : 0
+              const barColor = v != null && v < 0 ? 'bg-red' : 'bg-green'
+              return (
+                <div key={p} className="flex-1 flex justify-center h-full items-end px-0.5">
+                  <div
+                    className={`w-3/4 ${barColor}`}
+                    style={{ height: `${Math.max(barHeight, 1)}%`, opacity: 0.7 }}
+                  />
+                </div>
+              )
+            })}
           </div>
         </div>
-      ))}
+      </div>
+      {/* Labels — flex layout matching bars */}
+      <div className="flex">
+        <div className="flex-shrink-0" style={{ width: '3.5rem' }} />
+        <div className="flex-1 flex">
+          {periods.map(p => (
+            <div key={p} className="flex-1 text-center text-text-dim px-0.5" style={{ fontSize: '10px' }}>{p}</div>
+          ))}
+        </div>
+      </div>
+      {/* Values — flex layout matching bars */}
+      <div className="flex">
+        <div className="flex-shrink-0" style={{ width: '3.5rem' }} />
+        <div className="flex-1 flex">
+          {periods.map(p => (
+            <div key={p} className="flex-1 text-center text-text-bright px-0.5" style={{ fontSize: '10px' }}>
+              {values[p] != null ? formatMetricValue(values[p], unit) : '—'}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function MetricDisplay({ quarterly, annual, unit }: { quarterly: Record<string, number>, annual: Record<string, number>, unit: string }) {
+  const allPeriods = sortPeriods(Object.keys(quarterly))
+  const recentPeriods = allPeriods.slice(-8)
+  const values = recentPeriods.map(p => quarterly[p]).filter(v => v != null)
+
+  if (values.length < 2) return null
+
+  const latest = values[values.length - 1]
+  const prev = values[values.length - 2]
+  const change = prev ? ((latest - prev) / Math.abs(prev) * 100) : 0
+  const isPositive = change >= 0
+
+  const annualPeriods = Object.keys(annual).sort()
+
+  return (
+    <div className="space-y-1">
+      {/* Latest value + change */}
+      <div className="flex items-baseline gap-2 mb-2">
+        <span className="text-text-bright text-sm font-bold">{formatMetricValue(latest, unit)}</span>
+        <span className={`text-xs ${isPositive ? 'text-green' : 'text-red'}`}>
+          {isPositive ? '+' : ''}{change.toFixed(1)}% QoQ
+        </span>
+      </div>
+
+      {/* Quarterly bar chart */}
+      <div className="text-text-dim text-xs mb-1">Quarterly</div>
+      <BarChart periods={recentPeriods} values={quarterly} unit={unit} />
+
+      {/* Annual bar chart */}
+      {annualPeriods.length > 0 && (
+        <>
+          <div className="text-text-dim text-xs mt-3 mb-1">Annual</div>
+          <BarChart periods={annualPeriods} values={annual} unit={unit} />
+        </>
+      )}
+    </div>
+  )
+}
+
+function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) => void }) {
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null)
+  const [expandedArea, setExpandedArea] = useState<string | null>(null)
+
+  const toggleCategory = (cat: string) => {
+    setExpandedCategory(expandedCategory === cat ? null : cat)
+    setExpandedArea(null)
+  }
+
+  const toggleArea = (areaId: string) => {
+    setExpandedArea(expandedArea === areaId ? null : areaId)
+  }
+
+  const openSource = (sourceFilename: string) => {
+    const articleId = sourceFilename.replace('.txt', '')
+    const article = data.articles.find(a => a.id === articleId)
+    if (article) onSelectArticle(article)
+  }
+
+  // Count totals
+  const totalFacts = KB_CATEGORIES.reduce((sum, cat) => {
+    const catData = kbData[cat] as unknown as KBCategory
+    return sum + catData.areas.reduce((s, a) => s + (a.facts?.length || 0), 0)
+  }, 0)
+  const totalMetricPoints = KB_CATEGORIES.reduce((sum, cat) => {
+    const catData = kbData[cat] as unknown as KBCategory
+    return sum + catData.areas.filter(a => a.type === 'metric').reduce((s, a) => {
+      return s + Object.keys(a.quarterly || {}).length + Object.keys(a.annual || {}).length
+    }, 0)
+  }, 0)
+
+  return (
+    <div className="space-y-2">
+      <div className="text-text-dim text-xs mb-4">
+        {totalFacts} facts + {totalMetricPoints} metric data points across {KB_CATEGORIES.length} categories
+      </div>
+      {KB_CATEGORIES.map(category => {
+        const catData = kbData[category] as unknown as KBCategory
+        const isExpanded = expandedCategory === category
+        const areaCount = catData.areas.length
+        const factCount = catData.areas.reduce((s, a) => s + (a.facts?.length || 0), 0)
+        const metricCount = catData.areas.filter(a => a.type === 'metric').length
+
+        return (
+          <div key={category} className="border border-border bg-surface">
+            <button
+              onClick={() => toggleCategory(category)}
+              className="w-full text-left p-4 flex items-center justify-between cursor-pointer hover:bg-surface-2 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-green text-xs font-bold">{isExpanded ? '[-]' : '[+]'}</span>
+                <span className="text-green text-xs font-bold">{category.toUpperCase()}</span>
+              </div>
+              <span className="text-text-dim text-xs">
+                {areaCount} areas // {metricCount > 0 ? `${metricCount} metrics, ` : ''}{factCount} facts
+              </span>
+            </button>
+
+            {isExpanded && (
+              <div className="border-t border-border">
+                {catData.areas.map(area => {
+                  const areaExpanded = expandedArea === area.id
+                  const hasMetric = area.type === 'metric' && Object.keys(area.quarterly || {}).length > 0
+                  const hasFacts = (area.facts?.length || 0) > 0
+
+                  return (
+                    <div key={area.id} className="border-b border-border last:border-0">
+                      <button
+                        onClick={() => toggleArea(area.id)}
+                        className="w-full text-left px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-surface-2 transition-colors"
+                      >
+                        <div className="flex items-center gap-3 min-w-0 flex-1">
+                          <span className="text-text-dim text-xs flex-shrink-0">{areaExpanded ? '[-]' : '[+]'}</span>
+                          <span className="text-text-bright text-xs truncate">{area.name}</span>
+                          {area.type === 'metric' && (
+                            <span className="text-green-dim text-xs flex-shrink-0">[METRIC]</span>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-2 flex-shrink-0">
+                          {hasFacts && <span className="text-text-dim text-xs">{area.facts.length} facts</span>}
+                        </div>
+                      </button>
+
+                      {areaExpanded && (
+                        <div className="px-4 pb-4 space-y-3">
+                          {/* Metric sparkline + table */}
+                          {hasMetric && (
+                            <div className="space-y-2">
+                              <MetricDisplay quarterly={area.quarterly!} annual={area.annual || {}} unit={area.unit || ''} />
+                            </div>
+                          )}
+
+                          {/* Facts */}
+                          {hasFacts && (
+                            <div className={`space-y-2 ${hasMetric ? 'border-t border-border pt-3' : ''}`}>
+                              {area.facts.map((fact, i) => (
+                                <div key={i}>
+                                  <div className="text-xs text-text leading-relaxed">{fact.fact}</div>
+                                  <div className="flex items-center gap-3 mt-1">
+                                    <span className="text-text-dim text-xs">{fact.lastUpdated}</span>
+                                    <div className="flex items-center gap-1 flex-wrap">
+                                      {fact.sources.map((src, j) => (
+                                        <button
+                                          key={j}
+                                          onClick={() => openSource(src)}
+                                          className="text-green-dim hover:text-green text-xs cursor-pointer transition-colors"
+                                          title={src}
+                                        >
+                                          [{j + 1}]
+                                        </button>
+                                      ))}
+                                    </div>
+                                  </div>
+                                  {i < area.facts.length - 1 && <div className="border-b border-border mt-2" />}
+                                </div>
+                              ))}
+                            </div>
+                          )}
+
+                          {!hasMetric && !hasFacts && (
+                            <div className="text-text-dim text-xs">No data yet</div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+              </div>
+            )}
+          </div>
+        )
+      })}
     </div>
   )
 }
@@ -718,7 +991,7 @@ export default function App() {
               <FeedSection selectedChannel={selectedChannel} onSelectArticle={setSelectedArticle} />
             </>
           )}
-          {activeSection === 'knowledge' && <KnowledgeSection />}
+          {activeSection === 'knowledge' && <KnowledgeSection onSelectArticle={setSelectedArticle} />}
         </div>
       </div>
 

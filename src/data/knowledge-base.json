@@ -1,94 +1,1885 @@
 {
-  "Autonomous Driving": [
-    { "fact": "Tesla FSD supervised has a crash rate of 1 per 5 million miles vs US national average of 1 per 600,000 miles — roughly 8x safer than human drivers", "category": "Autonomous Driving", "lastUpdated": "2026-02-24", "sources": ["20260224_futureaza_01_Tesla_S_summary.txt", "20260310_futureaza_01_Why_Tesla_summary.txt"] },
-    { "fact": "Tesla's global FSD fleet has surpassed 8.44 billion cumulative miles driven", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_01_Elon_Just_summary.txt", "20260224_futureaza_01_Tesla_S_summary.txt"] },
-    { "fact": "Lemonade Insurance offers 50% discount to FSD users, confirming FSD drivers are 2x safer than human drivers; expanded from Arizona to Oregon with 8 more states planned", "category": "Autonomous Driving", "lastUpdated": "2026-02-10", "sources": ["20260210_brighterwithherbert_01_Tesla_Quietly_summary.txt", "20260211_brighterwithherbert_01_Tesla_Investors_summary.txt"] },
-    { "fact": "Tesla fleet generates over 20 million miles of real-world visual data per day for AI training", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_01_Elon_Just_summary.txt"] },
-    { "fact": "FSD supervised approved for launch in the Netherlands around March 20, 2026 — Tesla's first European FSD market", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260227_brighterwithherbert_01_Just_Recorded_summary.txt", "20260228_futureaza_02_Cybertruck_Surge_summary.txt", "20260308_brighterwithherbert_01_Elon_Just_summary.txt"] },
-    { "fact": "FSD is also active in UAE, Korea, Australia, and China as of early March 2026", "category": "Autonomous Driving", "lastUpdated": "2026-02-28", "sources": ["20260228_futureaza_02_Cybertruck_Surge_summary.txt"] },
-    { "fact": "Tesla discontinued outright FSD purchases in favor of subscription-only model, signaling expectation of significant value increase", "category": "Autonomous Driving", "lastUpdated": "2026-02-17", "sources": ["20260217_investingagainstthegrain_01_Everyone_Is_summary.txt"] },
-    { "fact": "NHTSA held first-ever National AV Safety Forum on March 10, 2026; Secretary Duffy announced NHTSA will revise FMVSS to accommodate vehicles without steering wheels or pedals", "category": "Autonomous Driving", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_01_The_Government_summary.txt", "20260316_brighterwithherbert_01_Tesla_S_summary.txt", "20260318_jobhakdi_01_Why_Tesla_summary.txt"] },
-    { "fact": "U.S. Congress advanced the Self-Drive Act through committee with potential passage by end of summer 2026", "category": "Autonomous Driving", "lastUpdated": "2026-02-11", "sources": ["20260211_brighterwithherbert_01_Tesla_Investors_summary.txt"] },
-    { "fact": "2022 NHTSA ruling (Occupant Protection Final Rule) eliminated requirement for steering wheels and pedals for fully autonomous vehicles meeting crashworthiness standards", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_02_This_Cybercab_summary.txt"] },
-    { "fact": "Current US autonomous vehicle exemption cap is 2,500 units, with proposed congressional increase to approximately 90,000-95,000 vehicles per year", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_02_This_Cybercab_summary.txt", "20260224_futureaza_01_Tesla_S_summary.txt"] },
-    { "fact": "Tesla VP Ashok Elluswami stated at Scale ML 2026: 'The self-driving problem is not a sensor problem. It's an AI problem. The cameras have enough information already.'", "category": "Autonomous Driving", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_01_The_Government_summary.txt"] },
-    { "fact": "Former Huawei head of autonomous driving publicly stated Tesla FSD is 'generations ahead' of Chinese competitors", "category": "Autonomous Driving", "lastUpdated": "2026-02-17", "sources": ["20260217_brighterwithherbert_02_The_Auto_summary.txt"] },
-    { "fact": "Tesla NHTSA robotaxi incident report Jan 15 - Feb 15 showed only 1 incident (low-speed rear-end at ~1 mph); cumulative total of 15 reported incidents since program began", "category": "Autonomous Driving", "lastUpdated": "2026-03-18", "sources": ["20260318_brighterwithherbert_01_This_Changes_summary.txt", "20260318_brighterwithherbert_02_Tesla_Just_summary.txt"] },
-    { "fact": "Japan Ministry of Land, Infrastructure, Transport and Tourism approved regulatory measures allowing FSD activation via software updates", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_01_Elon_Just_summary.txt"] },
-    { "fact": "New UNECE autonomous driving framework adopted January 2026 replaced rigid prescriptive rules with outcome-based safety case approach", "category": "Autonomous Driving", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_01_Elon_Just_summary.txt"] }
-  ],
-  "Robotaxi": [
-    { "fact": "First Cybercab rolled off production line at Giga Texas on February 17, 2026, ahead of planned April start-of-production", "category": "Robotaxi", "lastUpdated": "2026-02-18", "sources": ["20260218_brighterwithherbert_03_Breaking_First_summary.txt", "20260218_brighterwithherbert_01_Tesla_Just_summary.txt", "20260217_jobhakdi_01_Surprise_Start_summary.txt"] },
-    { "fact": "Cybercab has no steering wheel, no pedals, only 2 seats; designed exclusively for autonomous operation with inductive charging", "category": "Robotaxi", "lastUpdated": "2026-03-18", "sources": ["20260210_jobhakdi_01_Why_Tesla_summary.txt", "20260218_brighterwithherbert_03_Breaking_First_summary.txt", "20260318_brighterwithherbert_01_This_Changes_summary.txt"] },
-    { "fact": "Cybercab confirmed at under $30,000 retail price before end of 2026; production cost target approximately $15,000-$25,000 at scale", "category": "Robotaxi", "lastUpdated": "2026-03-19", "sources": ["20260218_brighterwithherbert_03_Breaking_First_summary.txt", "20260319_brighterwithherbert_02_Tesla_Might_summary.txt"] },
-    { "fact": "Cybercab uses Tesla's 'unboxed' manufacturing process targeting one unit every 10 seconds at full scale", "category": "Robotaxi", "lastUpdated": "2026-03-17", "sources": ["20260218_brighterwithherbert_03_Breaking_First_summary.txt", "20260317_brighterwithherbert_01_The_Government_summary.txt"] },
-    { "fact": "Over 100 Cybercabs built by mid-March with units shipped for crash testing and city testing", "category": "Robotaxi", "lastUpdated": "2026-03-16", "sources": ["20260308_brighterwithherbert_01_Elon_Just_summary.txt", "20260316_brighterwithherbert_02_Tesla_S_summary.txt"] },
-    { "fact": "Tesla robotaxi fleet grew to 372 vehicles by mid-February 2026 (283 Bay Area, 89 Austin), with 7 operating fully unsupervised", "category": "Robotaxi", "lastUpdated": "2026-02-18", "sources": ["20260218_brighterwithherbert_01_Tesla_Just_summary.txt", "20260218_futureaza_01_Tesla_Crushed_summary.txt"] },
-    { "fact": "Tesla plans robotaxi expansion to 7 additional cities by end of H1 2026: Dallas, Houston, Phoenix, Miami, Orlando, Tampa, Las Vegas", "category": "Robotaxi", "lastUpdated": "2026-03-18", "sources": ["20260318_brighterwithherbert_01_This_Changes_summary.txt", "20260226_brighterwithherbert_01_Tesla_Expands_summary.txt"] },
-    { "fact": "Austin robotaxi pricing: $3 base rate, $1.40/mile, with surge pricing up to $2/mile at night — approximately one-third of Uber/Waymo rates", "category": "Robotaxi", "lastUpdated": "2026-03-16", "sources": ["20260316_brighterwithherbert_02_Tesla_S_summary.txt"] },
-    { "fact": "Cybercab production estimates for 2026: 10,000-30,000 units (conservative) to 40,000 (optimistic); using Cybertruck benchmark of 28,000 units in first 3 quarters", "category": "Robotaxi", "lastUpdated": "2026-02-17", "sources": ["20260210_jobhakdi_01_Why_Tesla_summary.txt", "20260217_jobhakdi_01_Surprise_Start_summary.txt"] },
-    { "fact": "Estimated ~$4 billion in Cybercab manufacturing capex committed; cost per unit at 100,000 volume ~$25,000, at 3,000 volume ~$200,000", "category": "Robotaxi", "lastUpdated": "2026-02-10", "sources": ["20260210_jobhakdi_01_Why_Tesla_summary.txt"] },
-    { "fact": "Single robotaxi estimated to generate $69,000-$93,000 annually in margin, equivalent to margin from selling 12 Model Y vehicles per year", "category": "Robotaxi", "lastUpdated": "2026-02-25", "sources": ["20260225_jobhakdi_01_Why_2_summary.txt"] },
-    { "fact": "Tesla robotaxi app expanded to Android (version 26.2.0)", "category": "Robotaxi", "lastUpdated": "2026-03-16", "sources": ["20260316_brighterwithherbert_01_Tesla_S_summary.txt"] },
-    { "fact": "Waymo operates in 10 US cities with ~3,000 vehicles doing ~400,000 rides/week but loses money beyond ~500 vehicles per city; raised $16 billion, remains unprofitable", "category": "Robotaxi", "lastUpdated": "2026-03-08", "sources": ["20260226_brighterwithherbert_01_Tesla_Expands_summary.txt", "20260308_futureaza_01_Tesla_Optimus_summary.txt"] },
-    { "fact": "Waymo had 97 NHTSA-reported incidents in Jan 15 - Feb 15 period vs Tesla's 1 incident", "category": "Robotaxi", "lastUpdated": "2026-03-18", "sources": ["20260318_brighterwithherbert_02_Tesla_Just_summary.txt"] },
-    { "fact": "Nvidia-Uber robotaxi launch planned LA/SF H1 2027, 28 cities by 2028", "category": "Robotaxi", "lastUpdated": "2026-03-19", "sources": ["20260319_brighterwithherbert_02_Tesla_Might_summary.txt"] }
-  ],
-  "Humanoid Bots": [
-    { "fact": "Tesla targeting 50,000 Optimus units production in 2026; Fremont Model S/X lines being converted to Optimus manufacturing", "category": "Humanoid Bots", "lastUpdated": "2026-03-17", "sources": ["20260211_brighterwithherbert_03_Elon_S_summary.txt", "20260301_brighterwithherbert_01_Tesla_Just_summary.txt", "20260317_brighterwithherbert_01_The_Government_summary.txt"] },
-    { "fact": "Optimus Gen 3 reveal imminent (Q1 2026); production run rate target of 1 million units per year from Fremont", "category": "Humanoid Bots", "lastUpdated": "2026-03-08", "sources": ["20260308_futureaza_01_Tesla_Optimus_summary.txt", "20260301_brighterwithherbert_01_Tesla_Just_summary.txt"] },
-    { "fact": "Optimus V3 target price: $20,000-$30,000; Elon confirmed V4 design is locked down", "category": "Humanoid Bots", "lastUpdated": "2026-03-14", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt", "20260314_futureaza_03_Tesla_Friday_summary.txt"] },
-    { "fact": "Musk plans to place 20,000-30,000 Optimus robots in gymnasium-style environment for real-world physics AI training", "category": "Humanoid Bots", "lastUpdated": "2026-03-17", "sources": ["20260308_futureaza_01_Tesla_Optimus_summary.txt", "20260317_brighterwithherbert_01_The_Government_summary.txt"] },
-    { "fact": "Optimus hands feature 22-26 degrees of freedom vs Boston Dynamics Atlas's 3-finger gripper", "category": "Humanoid Bots", "lastUpdated": "2026-03-08", "sources": ["20260308_futureaza_01_Tesla_Optimus_summary.txt"] },
-    { "fact": "Giga Texas North Campus being prepared for dedicated Optimus factory with 8 million sq ft and 10 million unit annual capacity target (Phase 2, 2027)", "category": "Humanoid Bots", "lastUpdated": "2026-03-15", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt", "20260315_futureaza_01_Tesla_Is_summary.txt"] },
-    { "fact": "Model S and X production ends Q2 2026; Fremont lines being converted for Optimus production", "category": "Humanoid Bots", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_01_The_Government_summary.txt", "20260228_futureaza_02_Cybertruck_Surge_summary.txt"] },
-    { "fact": "Digital Optimus (Macrohard) announced as joint Tesla/xAI project: two-brain AI system (Tesla AI4 chip + Grok) for automating screen-based white-collar work", "category": "Humanoid Bots", "lastUpdated": "2026-03-17", "sources": ["20260315_brighterwithherbert_02_Tesla_And_summary.txt", "20260317_brighterwithherbert_01_The_Government_summary.txt", "20260315_jobhakdi_02_Why_Digital_summary.txt"] },
-    { "fact": "Tesla AI4 chip costs $650 per unit; each AI4-equipped Tesla contains two chips and can run two Digital Optimus instances simultaneously while parked", "category": "Humanoid Bots", "lastUpdated": "2026-03-15", "sources": ["20260315_brighterwithherbert_02_Tesla_And_summary.txt", "20260315_jobhakdi_02_Why_Digital_summary.txt"] },
-    { "fact": "Over 4 million Tesla vehicles equipped with AI4 chip represent a distributed compute network for agentic AI work", "category": "Humanoid Bots", "lastUpdated": "2026-03-16", "sources": ["20260316_brighterwithherbert_01_Tesla_S_summary.txt"] }
-  ],
-  "Energy": [
-    { "fact": "Tesla Megapack factory in Brookshire, Texas: $200 million invested, 1.6 million sq ft, production targeted late 2026, revenue projection $8-10 billion annually at full ramp", "category": "Energy", "lastUpdated": "2026-03-01", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt"] },
-    { "fact": "Tesla and LG Energy signed $4.3 billion agreement for LFP prismatic battery cell factory in Lansing, Michigan; production start 2027; 50 GWh annual capacity", "category": "Energy", "lastUpdated": "2026-03-19", "sources": ["20260317_sawyermerritt_01_xdaily_summary.txt", "20260319_brighterwithherbert_01_Tesla_Just_summary.txt", "20260319_futureaza_01_Tesla_Just_summary.txt"] },
-    { "fact": "LG-Tesla deal battery manufacturing tax credits estimated at $2.25 billion per year at full ramp", "category": "Energy", "lastUpdated": "2026-03-19", "sources": ["20260319_brighterwithherbert_01_Tesla_Just_summary.txt", "20260319_futureaza_01_Tesla_Just_summary.txt"] },
-    { "fact": "Tesla Supercharger network surpassed 75,000 stalls globally; delivered 6.7 TWh of energy in 2025", "category": "Energy", "lastUpdated": "2026-03-17", "sources": ["20260317_sawyermerritt_01_xdaily_summary.txt"] },
-    { "fact": "V4 Supercharger cabinets in production at Giga New York; supports 500 kW for cars and 1.2 MW for Semi", "category": "Energy", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_02_Tesla_S_summary.txt"] },
-    { "fact": "Tesla lithium refinery in Corpus Christi, Texas operational as of January 2026 — largest in the US; targeting 50 GWh of battery-grade lithium annually", "category": "Energy", "lastUpdated": "2026-03-01", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt"] },
-    { "fact": "Giga Nevada battery output estimated at ~80 GWh; Reno LFP factory producing 10 GWh; Giga Texas beginning 4680 production at ~10 GWh", "category": "Energy", "lastUpdated": "2026-02-28", "sources": ["20260228_futureaza_01_Tesla_Quietly_summary.txt"] },
-    { "fact": "Giga Nevada 4680 expansion planned: 100 GWh capacity at full buildout with $3.6 billion additional investment", "category": "Energy", "lastUpdated": "2026-02-28", "sources": ["20260228_futureaza_01_Tesla_Quietly_summary.txt"] },
-    { "fact": "Supercharger stations being converted into distributed AI compute nodes leveraging 7 GW of available power globally", "category": "Energy", "lastUpdated": "2026-03-15", "sources": ["20260315_brighterwithherbert_02_Tesla_And_summary.txt", "20260317_brighterwithherbert_01_The_Government_summary.txt"] }
-  ],
-  "Electric Vehicles": [
-    { "fact": "Tesla delivered 1.8 million vehicles in 2025", "category": "Electric Vehicles", "lastUpdated": "2026-02-17", "sources": ["20260217_brighterwithherbert_01_Tesla_Doesn't_summary.txt"] },
-    { "fact": "Tesla US EV market share rebounded to 61% in January 2026", "category": "Electric Vehicles", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_02_Tesla_S_summary.txt"] },
-    { "fact": "Tesla is in its 13th consecutive month of year-over-year sales decline in Europe as of early 2026", "category": "Electric Vehicles", "lastUpdated": "2026-02-27", "sources": ["20260227_futureaza_01_One_Decision_summary.txt"] },
-    { "fact": "Cybertruck dual motor price dropped from $80,000 to $59,990; delivery estimates pushed to April 2027 due to demand surge", "category": "Electric Vehicles", "lastUpdated": "2026-02-28", "sources": ["20260226_futureaza_01_This_Is_summary.txt", "20260228_futureaza_02_Cybertruck_Surge_summary.txt"] },
-    { "fact": "Tesla Semi spec: 500-mile long range, 325-mile standard range, 1.2 MW charging, 1.7 kWh/mile efficiency", "category": "Electric Vehicles", "lastUpdated": "2026-02-11", "sources": ["20260211_futureaza_01_Giga_Nevada_summary.txt"] },
-    { "fact": "Tesla Semi estimated price: $240,000-$300,000; volume production ramping at Giga Nevada in 2026", "category": "Electric Vehicles", "lastUpdated": "2026-03-07", "sources": ["20260211_futureaza_01_Giga_Nevada_summary.txt", "20260307_futureaza_02_Semi_Cybercab_summary.txt"] },
-    { "fact": "Model Y Long (YL) 6-seat variant launched in China, now in Australia/New Zealand", "category": "Electric Vehicles", "lastUpdated": "2026-03-16", "sources": ["20260316_futureaza_01_Mega_Monday_summary.txt", "20260314_futureaza_03_Tesla_Friday_summary.txt"] },
-    { "fact": "New Roadster unveil expected late April 2026; specs include 0-60 under 2 seconds, 250+ mph, 620-mile range", "category": "Electric Vehicles", "lastUpdated": "2026-03-18", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt", "20260318_brighterwithherbert_01_This_Changes_summary.txt"] },
-    { "fact": "Model S and Model X production ends in Q2 2026, Fremont lines repurposed for Optimus", "category": "Electric Vehicles", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_01_The_Government_summary.txt", "20260226_futureaza_01_This_Is_summary.txt"] }
-  ],
-  "Financials": [
-    { "fact": "Tesla committed over $20 billion in capex for 2026, up from ~$8.5 billion prior year (135% YoY increase); self-funded from $44 billion cash balance", "category": "Financials", "lastUpdated": "2026-03-17", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt", "20260317_brighterwithherbert_01_The_Government_summary.txt"] },
-    { "fact": "Tesla 2025 free cash flow was $6.2 billion (up from $3.58 billion in 2024)", "category": "Financials", "lastUpdated": "2026-02-25", "sources": ["20260225_jobhakdi_01_Why_2_summary.txt"] },
-    { "fact": "Tesla services revenue growing 40% annually; at full FSD subscriber penetration (4.4M) software revenue alone could exceed $5B/year", "category": "Financials", "lastUpdated": "2026-02-17", "sources": ["20260217_brighterwithherbert_01_Tesla_Doesn't_summary.txt"] },
-    { "fact": "Terrafab semiconductor fabrication project announced; estimated cost $20-$25 billion; targeting 1 million wafers/month by 2030", "category": "Financials", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_01_The_Government_summary.txt", "20260316_brighterwithherbert_01_Tesla_S_summary.txt"] },
-    { "fact": "Tesla doubled AI chip order with Samsung to 40,000 wafers/month; original contract worth $17 billion over 8 years", "category": "Financials", "lastUpdated": "2026-03-08", "sources": ["20260308_brighterwithherbert_01_Elon_Just_summary.txt"] },
-    { "fact": "Elon Musk purchased ~2.5 million Tesla shares for ~$1 billion on September 15, 2025 at average price just under $390", "category": "Financials", "lastUpdated": "2026-02-28", "sources": ["20260228_brighterwithherbert_01_Elon_Doubled_summary.txt"] },
-    { "fact": "Major institutional Tesla purchases in Q4 2025: Norges Bank $11.8B new position, Geode Capital ~$20B, Renaissance Technologies $189M", "category": "Financials", "lastUpdated": "2026-02-18", "sources": ["20260218_brighterwithherbert_02_The_Biggest_summary.txt"] },
-    { "fact": "Tesla converted $2 billion xAI investment into SpaceX equity ahead of rumored SpaceX IPO at $1.5-$1.75 trillion valuation", "category": "Financials", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_01_The_Government_summary.txt", "20260314_futureaza_03_Tesla_Friday_summary.txt"] },
-    { "fact": "Giga Texas adding 5.2 million sq ft by end of 2026; total facility over 11 million sq ft", "category": "Financials", "lastUpdated": "2026-03-14", "sources": ["20260301_brighterwithherbert_01_Tesla_Just_summary.txt", "20260314_futureaza_01_Tesla_Cybercab_summary.txt"] }
-  ],
-  "Market & Competition": [
-    { "fact": "Global EV sales grew 29% in 2024 to 14.2 million vehicles (18% of all new cars)", "category": "Market & Competition", "lastUpdated": "2026-03-16", "sources": ["20260316_futureaza_01_Mega_Monday_summary.txt"] },
-    { "fact": "Honda reported first annual loss in nearly 70 years: $15.7 billion write-down tied to EV business", "category": "Market & Competition", "lastUpdated": "2026-03-14", "sources": ["20260314_futureaza_03_Tesla_Friday_summary.txt", "20260317_brighterwithherbert_02_Tesla_S_summary.txt"] },
-    { "fact": "Stellantis wrote off ~$980 million Canadian battery plant investment (sold for $100); total EV write-downs ~$21.5 billion", "category": "Market & Competition", "lastUpdated": "2026-02-10", "sources": ["20260210_futureaza_01_Legacy_Auto_summary.txt"] },
-    { "fact": "Ford wrote down ~$6-7 billion in EV losses; GM ~$12-15 billion in EV write-downs", "category": "Market & Competition", "lastUpdated": "2026-02-10", "sources": ["20260210_futureaza_01_Legacy_Auto_summary.txt"] },
-    { "fact": "BYD deployed 1.5 MW flash charging (10% to 97% in 9 minutes) on a $22,000 vehicle", "category": "Market & Competition", "lastUpdated": "2026-03-19", "sources": ["20260316_futureaza_01_Mega_Monday_summary.txt", "20260319_futureaza_01_Tesla_Just_summary.txt"] },
-    { "fact": "BYD expanding into Europe via Hungary factory; secured 100,000 vehicle orders from Argentina and Mexico", "category": "Market & Competition", "lastUpdated": "2026-03-16", "sources": ["20260227_futureaza_01_One_Decision_summary.txt", "20260316_futureaza_01_Mega_Monday_summary.txt"] },
-    { "fact": "Xpeng licensed vision-only XIMO 2.0 autonomous driving system to Volkswagen — first large-scale export of Chinese AV tech", "category": "Market & Competition", "lastUpdated": "2026-02-24", "sources": ["20260224_futureaza_01_Tesla_S_summary.txt", "20260226_brighterwithherbert_01_Tesla_Expands_summary.txt"] },
-    { "fact": "BMW removing Level 3 autonomy from refreshed 7 Series; Mercedes previously withdrew its Level 3 system", "category": "Market & Competition", "lastUpdated": "2026-02-24", "sources": ["20260224_futureaza_01_Tesla_S_summary.txt"] },
-    { "fact": "Rivian R2 pricing: performance ~$58,000 (spring 2026), standard RWD $48,000 (2027); CEO said sensor simplification may not happen until 2038-2040", "category": "Market & Competition", "lastUpdated": "2026-03-17", "sources": ["20260317_brighterwithherbert_02_Tesla_S_summary.txt"] },
-    { "fact": "China car exports reached 6.4 million vehicles, surpassing Japan (4.2M), Germany (3.18M), and US (1.3M)", "category": "Market & Competition", "lastUpdated": "2026-02-17", "sources": ["20260217_brighterwithherbert_02_The_Auto_summary.txt"] }
-  ]
+  "Autonomous Driving": {
+    "areas": [
+      {
+        "id": "fsd_versions",
+        "name": "FSD Software Versions & Capabilities",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla's global FSD fleet has surpassed 8.44 billion cumulative miles driven",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt",
+              "20260224_futureaza_01_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla fleet generates over 20 million miles of real-world visual data per day for AI training",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "Current US autonomous vehicle exemption cap is 2,500 units, with proposed congressional increase to approximately 90,000-95,000 vehicles per year",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_02_This_Cybercab_summary.txt",
+              "20260224_futureaza_01_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla VP Ashok Elluswami stated at Scale ML 2026: 'The self-driving problem is not a sensor problem. It's an AI problem. The cameras have enough information already.'",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_01_The_Government_summary.txt"
+            ]
+          },
+          {
+            "fact": "Former Huawei head of autonomous driving publicly stated Tesla FSD is 'generations ahead' of Chinese competitors",
+            "lastUpdated": "2026-02-17",
+            "sources": [
+              "20260217_brighterwithherbert_02_The_Auto_summary.txt"
+            ]
+          },
+          {
+            "fact": "Japan Ministry of Land, Infrastructure, Transport and Tourism approved regulatory measures allowing FSD activation via software updates",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fsd_safety",
+        "name": "FSD Safety Metrics",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla FSD supervised has a crash rate of 1 per 5 million miles vs US national average of 1 per 600,000 miles — roughly 8x safer than human drivers",
+            "lastUpdated": "2026-02-24",
+            "sources": [
+              "20260224_futureaza_01_Tesla_S_summary.txt",
+              "20260310_futureaza_01_Why_Tesla_summary.txt"
+            ]
+          },
+          {
+            "fact": "Lemonade Insurance offers 50% discount to FSD users, confirming FSD drivers are 2x safer than human drivers; expanded from Arizona to Oregon with 8 more states planned",
+            "lastUpdated": "2026-02-10",
+            "sources": [
+              "20260210_brighterwithherbert_01_Tesla_Quietly_summary.txt",
+              "20260211_brighterwithherbert_01_Tesla_Investors_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla NHTSA robotaxi incident report Jan 15 - Feb 15 showed only 1 incident (low-speed rear-end at ~1 mph); cumulative total of 15 reported incidents since program began",
+            "lastUpdated": "2026-03-18",
+            "sources": [
+              "20260318_brighterwithherbert_01_This_Changes_summary.txt",
+              "20260318_brighterwithherbert_02_Tesla_Just_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fsd_take_rate",
+        "name": "FSD Subscription Take Rate",
+        "type": "metric",
+        "unit": "million",
+        "metricKey": "fsd_subscriptions_mil",
+        "quarterly": {
+          "Q1-2025": 0.8,
+          "Q2-2025": 0.9,
+          "Q3-2025": 1,
+          "Q4-2024": 0.8,
+          "Q4-2025": 1.1
+        },
+        "annual": {
+          "FY2021": 0.4,
+          "FY2022": 0.5,
+          "FY2023": 0.6,
+          "FY2024": 0.8,
+          "FY2025": 1.1
+        },
+        "facts": [
+          {
+            "fact": "Tesla discontinued outright FSD purchases in favor of subscription-only model, signaling expectation of significant value increase",
+            "lastUpdated": "2026-02-17",
+            "sources": [
+              "20260217_investingagainstthegrain_01_Everyone_Is_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla services revenue growing 40% annually; at full FSD subscriber penetration (4.4M) software revenue alone could exceed $5B/year",
+            "lastUpdated": "2026-02-17",
+            "sources": [
+              "20260217_brighterwithherbert_01_Tesla_Doesn't_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "regulatory_us",
+        "name": "US Regulatory Status (Federal & State)",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "NHTSA held first-ever National AV Safety Forum on March 10, 2026; Secretary Duffy announced NHTSA will revise FMVSS to accommodate vehicles without steering wheels or pedals",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_01_The_Government_summary.txt",
+              "20260316_brighterwithherbert_01_Tesla_S_summary.txt",
+              "20260318_jobhakdi_01_Why_Tesla_summary.txt"
+            ]
+          },
+          {
+            "fact": "U.S. Congress advanced the Self-Drive Act through committee with potential passage by end of summer 2026",
+            "lastUpdated": "2026-02-11",
+            "sources": [
+              "20260211_brighterwithherbert_01_Tesla_Investors_summary.txt"
+            ]
+          },
+          {
+            "fact": "2022 NHTSA ruling (Occupant Protection Final Rule) eliminated requirement for steering wheels and pedals for fully autonomous vehicles meeting crashworthiness standards",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_02_This_Cybercab_summary.txt"
+            ]
+          },
+          {
+            "fact": "New UNECE autonomous driving framework adopted January 2026 replaced rigid prescriptive rules with outcome-based safety case approach",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "Cybercab has no steering wheel, no pedals, only 2 seats; designed exclusively for autonomous operation with inductive charging",
+            "lastUpdated": "2026-03-18",
+            "sources": [
+              "20260210_jobhakdi_01_Why_Tesla_summary.txt",
+              "20260218_brighterwithherbert_03_Breaking_First_summary.txt",
+              "20260318_brighterwithherbert_01_This_Changes_summary.txt"
+            ]
+          },
+          {
+            "fact": "Waymo had 97 NHTSA-reported incidents in Jan 15 - Feb 15 period vs Tesla's 1 incident",
+            "lastUpdated": "2026-03-18",
+            "sources": [
+              "20260318_brighterwithherbert_02_Tesla_Just_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "regulatory_intl",
+        "name": "International Regulatory & Availability",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "FSD supervised approved for launch in the Netherlands around March 20, 2026 — Tesla's first European FSD market",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260227_brighterwithherbert_01_Just_Recorded_summary.txt",
+              "20260228_futureaza_02_Cybertruck_Surge_summary.txt",
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "FSD is also active in UAE, Korea, Australia, and China as of early March 2026",
+            "lastUpdated": "2026-02-28",
+            "sources": [
+              "20260228_futureaza_02_Cybertruck_Surge_summary.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Robotaxi": {
+    "areas": [
+      {
+        "id": "cybercab_production",
+        "name": "Cybercab Production & Units",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "First Cybercab rolled off production line at Giga Texas on February 17, 2026, ahead of planned April start-of-production",
+            "lastUpdated": "2026-02-18",
+            "sources": [
+              "20260218_brighterwithherbert_03_Breaking_First_summary.txt",
+              "20260218_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260217_jobhakdi_01_Surprise_Start_summary.txt"
+            ]
+          },
+          {
+            "fact": "Cybercab confirmed at under $30,000 retail price before end of 2026; production cost target approximately $15,000-$25,000 at scale",
+            "lastUpdated": "2026-03-19",
+            "sources": [
+              "20260218_brighterwithherbert_03_Breaking_First_summary.txt",
+              "20260319_brighterwithherbert_02_Tesla_Might_summary.txt"
+            ]
+          },
+          {
+            "fact": "Cybercab uses Tesla's 'unboxed' manufacturing process targeting one unit every 10 seconds at full scale",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260218_brighterwithherbert_03_Breaking_First_summary.txt",
+              "20260317_brighterwithherbert_01_The_Government_summary.txt"
+            ]
+          },
+          {
+            "fact": "Over 100 Cybercabs built by mid-March with units shipped for crash testing and city testing",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt",
+              "20260316_brighterwithherbert_02_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Cybercab production estimates for 2026: 10,000-30,000 units (conservative) to 40,000 (optimistic); using Cybertruck benchmark of 28,000 units in first 3 quarters",
+            "lastUpdated": "2026-02-17",
+            "sources": [
+              "20260210_jobhakdi_01_Why_Tesla_summary.txt",
+              "20260217_jobhakdi_01_Surprise_Start_summary.txt"
+            ]
+          },
+          {
+            "fact": "Estimated ~$4 billion in Cybercab manufacturing capex committed; cost per unit at 100,000 volume ~$25,000, at 3,000 volume ~$200,000",
+            "lastUpdated": "2026-02-10",
+            "sources": [
+              "20260210_jobhakdi_01_Why_Tesla_summary.txt"
+            ]
+          },
+          {
+            "fact": "Single robotaxi estimated to generate $69,000-$93,000 annually in margin, equivalent to margin from selling 12 Model Y vehicles per year",
+            "lastUpdated": "2026-02-25",
+            "sources": [
+              "20260225_jobhakdi_01_Why_2_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fleet_size",
+        "name": "Fleet Size by City",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla robotaxi fleet grew to 372 vehicles by mid-February 2026 (283 Bay Area, 89 Austin), with 7 operating fully unsupervised",
+            "lastUpdated": "2026-02-18",
+            "sources": [
+              "20260218_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260218_futureaza_01_Tesla_Crushed_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rides_economics",
+        "name": "Rides & Revenue per Ride",
+        "type": "facts",
+        "facts": []
+      },
+      {
+        "id": "unit_economics",
+        "name": "Unit Economics",
+        "type": "facts",
+        "facts": []
+      },
+      {
+        "id": "city_rollout",
+        "name": "City Rollout Status",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla plans robotaxi expansion to 7 additional cities by end of H1 2026: Dallas, Houston, Phoenix, Miami, Orlando, Tampa, Las Vegas",
+            "lastUpdated": "2026-03-18",
+            "sources": [
+              "20260318_brighterwithherbert_01_This_Changes_summary.txt",
+              "20260226_brighterwithherbert_01_Tesla_Expands_summary.txt"
+            ]
+          },
+          {
+            "fact": "Austin robotaxi pricing: $3 base rate, $1.40/mile, with surge pricing up to $2/mile at night — approximately one-third of Uber/Waymo rates",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260316_brighterwithherbert_02_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla robotaxi app expanded to Android (version 26.2.0)",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260316_brighterwithherbert_01_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Giga Nevada 4680 expansion planned: 100 GWh capacity at full buildout with $3.6 billion additional investment",
+            "lastUpdated": "2026-02-28",
+            "sources": [
+              "20260228_futureaza_01_Tesla_Quietly_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "competitor_robotaxi",
+        "name": "Competitor Comparison (Waymo, Uber/Nvidia)",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Waymo operates in 10 US cities with ~3,000 vehicles doing ~400,000 rides/week but loses money beyond ~500 vehicles per city; raised $16 billion, remains unprofitable",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260226_brighterwithherbert_01_Tesla_Expands_summary.txt",
+              "20260308_futureaza_01_Tesla_Optimus_summary.txt"
+            ]
+          },
+          {
+            "fact": "Nvidia-Uber robotaxi launch planned LA/SF H1 2027, 28 cities by 2028",
+            "lastUpdated": "2026-03-19",
+            "sources": [
+              "20260319_brighterwithherbert_02_Tesla_Might_summary.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Humanoid Bots": {
+    "areas": [
+      {
+        "id": "optimus_hardware",
+        "name": "Optimus Generations & Capabilities",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Optimus Gen 3 reveal imminent (Q1 2026); production run rate target of 1 million units per year from Fremont",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_futureaza_01_Tesla_Optimus_summary.txt",
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "Optimus V3 target price: $20,000-$30,000; Elon confirmed V4 design is locked down",
+            "lastUpdated": "2026-03-14",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260314_futureaza_03_Tesla_Friday_summary.txt"
+            ]
+          },
+          {
+            "fact": "Optimus hands feature 22-26 degrees of freedom vs Boston Dynamics Atlas's 3-finger gripper",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_futureaza_01_Tesla_Optimus_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "optimus_production",
+        "name": "Production Targets & Actuals",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla targeting 50,000 Optimus units production in 2026; Fremont Model S/X lines being converted to Optimus manufacturing",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260211_brighterwithherbert_03_Elon_S_summary.txt",
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260317_brighterwithherbert_01_The_Government_summary.txt"
+            ]
+          },
+          {
+            "fact": "Giga Texas North Campus being prepared for dedicated Optimus factory with 8 million sq ft and 10 million unit annual capacity target (Phase 2, 2027)",
+            "lastUpdated": "2026-03-15",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260315_futureaza_01_Tesla_Is_summary.txt"
+            ]
+          },
+          {
+            "fact": "Model S and X production ends Q2 2026; Fremont lines being converted for Optimus production",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_01_The_Government_summary.txt",
+              "20260228_futureaza_02_Cybertruck_Surge_summary.txt"
+            ]
+          },
+          {
+            "fact": "Model S and Model X production ends in Q2 2026, Fremont lines repurposed for Optimus",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_01_The_Government_summary.txt",
+              "20260226_futureaza_01_This_Is_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "optimus_factory",
+        "name": "Factory Allocation",
+        "type": "facts",
+        "facts": []
+      },
+      {
+        "id": "optimus_economics",
+        "name": "Pricing & Unit Economics",
+        "type": "facts",
+        "facts": []
+      },
+      {
+        "id": "digital_optimus",
+        "name": "Digital Optimus / Macrohard",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Musk plans to place 20,000-30,000 Optimus robots in gymnasium-style environment for real-world physics AI training",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260308_futureaza_01_Tesla_Optimus_summary.txt",
+              "20260317_brighterwithherbert_01_The_Government_summary.txt"
+            ]
+          },
+          {
+            "fact": "Digital Optimus (Macrohard) announced as joint Tesla/xAI project: two-brain AI system (Tesla AI4 chip + Grok) for automating screen-based white-collar work",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260315_brighterwithherbert_02_Tesla_And_summary.txt",
+              "20260317_brighterwithherbert_01_The_Government_summary.txt",
+              "20260315_jobhakdi_02_Why_Digital_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla AI4 chip costs $650 per unit; each AI4-equipped Tesla contains two chips and can run two Digital Optimus instances simultaneously while parked",
+            "lastUpdated": "2026-03-15",
+            "sources": [
+              "20260315_brighterwithherbert_02_Tesla_And_summary.txt",
+              "20260315_jobhakdi_02_Why_Digital_summary.txt"
+            ]
+          },
+          {
+            "fact": "Over 4 million Tesla vehicles equipped with AI4 chip represent a distributed compute network for agentic AI work",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260316_brighterwithherbert_01_Tesla_S_summary.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Energy": {
+    "areas": [
+      {
+        "id": "storage_deployed",
+        "name": "Energy Storage Deployed",
+        "type": "metric",
+        "unit": "GWh",
+        "metricKey": "storage_deployed_gwh",
+        "quarterly": {
+          "Q1-2020": 0.26,
+          "Q1-2021": 0.45,
+          "Q1-2022": 0.85,
+          "Q1-2023": 3.89,
+          "Q1-2024": 4.1,
+          "Q1-2025": 10.4,
+          "Q2-2020": 0.42,
+          "Q2-2021": 1.27,
+          "Q2-2022": 1.13,
+          "Q2-2023": 3.7,
+          "Q2-2024": 9.4,
+          "Q2-2025": 9.6,
+          "Q3-2019": 0.48,
+          "Q3-2020": 0.76,
+          "Q3-2021": 1.29,
+          "Q3-2022": 2.1,
+          "Q3-2023": 4,
+          "Q3-2024": 6.9,
+          "Q3-2025": 12.5,
+          "Q4-2019": 0.53,
+          "Q4-2020": 1.58,
+          "Q4-2021": 0.98,
+          "Q4-2022": 2.46,
+          "Q4-2023": 3.2,
+          "Q4-2024": 11,
+          "Q4-2025": 14.2
+        },
+        "annual": {
+          "FY2017": 0.36,
+          "FY2018": 1.04,
+          "FY2019": 1.65,
+          "FY2020": 3,
+          "FY2021": 4,
+          "FY2022": 6.5,
+          "FY2023": 14.7,
+          "FY2024": 31.4,
+          "FY2025": 46.7
+        },
+        "facts": []
+      },
+      {
+        "id": "energy_revenue",
+        "name": "Energy Revenue",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "revenue_energy",
+        "quarterly": {
+          "Q1-2022": 616,
+          "Q1-2023": 1529,
+          "Q1-2024": 1635,
+          "Q1-2025": 2730,
+          "Q2-2022": 866,
+          "Q2-2023": 1509,
+          "Q2-2024": 3014,
+          "Q2-2025": 2789,
+          "Q3-2022": 1117,
+          "Q3-2023": 1559,
+          "Q3-2024": 2376,
+          "Q3-2025": 3415,
+          "Q4-2022": 1310,
+          "Q4-2023": 1438,
+          "Q4-2024": 3061,
+          "Q4-2025": 3837
+        },
+        "annual": {
+          "FY2019": 1531,
+          "FY2020": 1994,
+          "FY2021": 2789,
+          "FY2022": 3909,
+          "FY2023": 6035,
+          "FY2024": 10086,
+          "FY2025": 12771
+        },
+        "facts": []
+      },
+      {
+        "id": "supercharger_stations",
+        "name": "Supercharger Stations",
+        "type": "metric",
+        "unit": "stations",
+        "metricKey": "supercharger_stations",
+        "quarterly": {
+          "Q1-2020": 1917,
+          "Q1-2021": 2699,
+          "Q1-2022": 3724,
+          "Q1-2023": 4947,
+          "Q1-2024": 6249,
+          "Q1-2025": 7131,
+          "Q2-2020": 2035,
+          "Q2-2021": 2966,
+          "Q2-2022": 3971,
+          "Q2-2023": 5265,
+          "Q2-2024": 6473,
+          "Q2-2025": 7377,
+          "Q3-2019": 1653,
+          "Q3-2020": 2181,
+          "Q3-2021": 3254,
+          "Q3-2022": 4283,
+          "Q3-2023": 5595,
+          "Q3-2024": 6706,
+          "Q3-2025": 7753,
+          "Q4-2019": 1821,
+          "Q4-2020": 2564,
+          "Q4-2021": 3476,
+          "Q4-2022": 4678,
+          "Q4-2023": 5952,
+          "Q4-2024": 6975,
+          "Q4-2025": 8182
+        },
+        "annual": {
+          "FY2017": 1075,
+          "FY2018": 1421,
+          "FY2019": 1821,
+          "FY2020": 2564,
+          "FY2021": 3476,
+          "FY2022": 4678,
+          "FY2023": 5952,
+          "FY2024": 6975,
+          "FY2025": 8182
+        },
+        "facts": [
+          {
+            "fact": "Tesla Supercharger network surpassed 75,000 stalls globally; delivered 6.7 TWh of energy in 2025",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_sawyermerritt_01_xdaily_summary.txt"
+            ]
+          },
+          {
+            "fact": "V4 Supercharger cabinets in production at Giga New York; supports 500 kW for cars and 1.2 MW for Semi",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_02_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Supercharger stations being converted into distributed AI compute nodes leveraging 7 GW of available power globally",
+            "lastUpdated": "2026-03-15",
+            "sources": [
+              "20260315_brighterwithherbert_02_Tesla_And_summary.txt",
+              "20260317_brighterwithherbert_01_The_Government_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "supercharger_connectors",
+        "name": "Supercharger Connectors",
+        "type": "metric",
+        "unit": "connectors",
+        "metricKey": "supercharger_connectors",
+        "quarterly": {
+          "Q1-2020": 17007,
+          "Q1-2021": 24515,
+          "Q1-2022": 33657,
+          "Q1-2023": 45169,
+          "Q1-2024": 57579,
+          "Q1-2025": 67316,
+          "Q2-2020": 18100,
+          "Q2-2021": 26900,
+          "Q2-2022": 36165,
+          "Q2-2023": 48082,
+          "Q2-2024": 59596,
+          "Q2-2025": 70228,
+          "Q3-2019": 14658,
+          "Q3-2020": 19437,
+          "Q3-2021": 29281,
+          "Q3-2022": 38883,
+          "Q3-2023": 51105,
+          "Q3-2024": 62421,
+          "Q3-2025": 73817,
+          "Q4-2019": 16104,
+          "Q4-2020": 23277,
+          "Q4-2021": 31498,
+          "Q4-2022": 42419,
+          "Q4-2023": 54892,
+          "Q4-2024": 65495,
+          "Q4-2025": 77682
+        },
+        "annual": {
+          "FY2017": 9069,
+          "FY2018": 12002,
+          "FY2019": 16104,
+          "FY2020": 23277,
+          "FY2021": 31498,
+          "FY2022": 42419,
+          "FY2023": 54892,
+          "FY2024": 65495,
+          "FY2025": 77682
+        },
+        "facts": []
+      },
+      {
+        "id": "megapack_capacity",
+        "name": "Megapack Factory & Capacity",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla Megapack factory in Brookshire, Texas: $200 million invested, 1.6 million sq ft, production targeted late 2026, revenue projection $8-10 billion annually at full ramp",
+            "lastUpdated": "2026-03-01",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "battery_production",
+        "name": "Battery Production by Factory",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla and LG Energy signed $4.3 billion agreement for LFP prismatic battery cell factory in Lansing, Michigan; production start 2027; 50 GWh annual capacity",
+            "lastUpdated": "2026-03-19",
+            "sources": [
+              "20260317_sawyermerritt_01_xdaily_summary.txt",
+              "20260319_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260319_futureaza_01_Tesla_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "LG-Tesla deal battery manufacturing tax credits estimated at $2.25 billion per year at full ramp",
+            "lastUpdated": "2026-03-19",
+            "sources": [
+              "20260319_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260319_futureaza_01_Tesla_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla lithium refinery in Corpus Christi, Texas operational as of January 2026 — largest in the US; targeting 50 GWh of battery-grade lithium annually",
+            "lastUpdated": "2026-03-01",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "Giga Nevada battery output estimated at ~80 GWh; Reno LFP factory producing 10 GWh; Giga Texas beginning 4680 production at ~10 GWh",
+            "lastUpdated": "2026-02-28",
+            "sources": [
+              "20260228_futureaza_01_Tesla_Quietly_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "solar_deployed",
+        "name": "Solar Deployed",
+        "type": "metric",
+        "unit": "MW",
+        "metricKey": "solar_deployed_mw",
+        "quarterly": {
+          "Q1-2020": 35,
+          "Q1-2021": 92,
+          "Q1-2022": 48,
+          "Q1-2023": 67,
+          "Q2-2020": 27,
+          "Q2-2021": 85,
+          "Q2-2022": 106,
+          "Q2-2023": 66,
+          "Q3-2019": 43,
+          "Q3-2020": 57,
+          "Q3-2021": 83,
+          "Q3-2022": 94,
+          "Q3-2023": 49,
+          "Q4-2019": 54,
+          "Q4-2020": 86,
+          "Q4-2021": 85,
+          "Q4-2022": 100,
+          "Q4-2023": 41
+        },
+        "annual": {
+          "FY2017": 523,
+          "FY2018": 326,
+          "FY2019": 173,
+          "FY2020": 205,
+          "FY2021": 345,
+          "FY2022": 348,
+          "FY2023": 223
+        },
+        "facts": []
+      }
+    ]
+  },
+  "Electric Vehicles": {
+    "areas": [
+      {
+        "id": "production_3y",
+        "name": "Model 3/Y Production",
+        "type": "metric",
+        "unit": "units",
+        "metricKey": "production_3y",
+        "quarterly": {
+          "Q1-2020": 87282,
+          "Q1-2021": 180338,
+          "Q1-2022": 291189,
+          "Q1-2023": 421371,
+          "Q1-2024": 412376,
+          "Q1-2025": 345454,
+          "Q2-2020": 75946,
+          "Q2-2021": 204081,
+          "Q2-2022": 242169,
+          "Q2-2023": 460211,
+          "Q2-2024": 386576,
+          "Q2-2025": 396835,
+          "Q3-2019": 79837,
+          "Q3-2020": 128044,
+          "Q3-2021": 228882,
+          "Q3-2022": 345988,
+          "Q3-2023": 416800,
+          "Q3-2024": 443668,
+          "Q3-2025": 435826,
+          "Q4-2019": 86958,
+          "Q4-2020": 163660,
+          "Q4-2021": 292731,
+          "Q4-2022": 419088,
+          "Q4-2023": 476777,
+          "Q4-2024": 436718,
+          "Q4-2025": 422652
+        },
+        "annual": {
+          "FY2017": 2686,
+          "FY2018": 152977,
+          "FY2019": 302301,
+          "FY2020": 454932,
+          "FY2021": 906032,
+          "FY2022": 1298434,
+          "FY2023": 1775159,
+          "FY2024": 1679338,
+          "FY2025": 1600767
+        },
+        "facts": []
+      },
+      {
+        "id": "production_other",
+        "name": "Other Models Production",
+        "type": "metric",
+        "unit": "units",
+        "metricKey": "production_other",
+        "quarterly": {
+          "Q1-2023": 19437,
+          "Q1-2024": 20995,
+          "Q1-2025": 17161,
+          "Q2-2023": 19489,
+          "Q2-2024": 24255,
+          "Q2-2025": 13409,
+          "Q3-2023": 13688,
+          "Q3-2024": 26128,
+          "Q3-2025": 11624,
+          "Q4-2022": 20613,
+          "Q4-2023": 18212,
+          "Q4-2024": 22727,
+          "Q4-2025": 11706
+        },
+        "annual": {
+          "FY2019": 62931,
+          "FY2020": 54805,
+          "FY2021": 24390,
+          "FY2022": 71177,
+          "FY2023": 70826,
+          "FY2024": 94105,
+          "FY2025": 53900
+        },
+        "facts": []
+      },
+      {
+        "id": "production_total",
+        "name": "Total Production",
+        "type": "metric",
+        "unit": "units",
+        "metricKey": "production_total",
+        "quarterly": {
+          "Q1-2020": 102672,
+          "Q1-2021": 180338,
+          "Q1-2022": 305407,
+          "Q1-2023": 440808,
+          "Q1-2024": 433371,
+          "Q1-2025": 362615,
+          "Q2-2020": 82272,
+          "Q2-2021": 206421,
+          "Q2-2022": 258580,
+          "Q2-2023": 479700,
+          "Q2-2024": 410831,
+          "Q2-2025": 410244,
+          "Q3-2019": 96155,
+          "Q3-2020": 145036,
+          "Q3-2021": 237823,
+          "Q3-2022": 365923,
+          "Q3-2023": 430488,
+          "Q3-2024": 469796,
+          "Q3-2025": 447450,
+          "Q4-2019": 104891,
+          "Q4-2020": 179757,
+          "Q4-2021": 305840,
+          "Q4-2022": 439701,
+          "Q4-2023": 494989,
+          "Q4-2024": 459445,
+          "Q4-2025": 434358
+        },
+        "annual": {
+          "FY2017": 101025,
+          "FY2018": 254530,
+          "FY2019": 365232,
+          "FY2020": 509737,
+          "FY2021": 930422,
+          "FY2022": 1369611,
+          "FY2023": 1845985,
+          "FY2024": 1773443,
+          "FY2025": 1654667
+        },
+        "facts": []
+      },
+      {
+        "id": "delivery_3y",
+        "name": "Model 3/Y Deliveries",
+        "type": "metric",
+        "unit": "units",
+        "metricKey": "delivery_3y",
+        "quarterly": {
+          "Q1-2020": 76266,
+          "Q1-2021": 182847,
+          "Q1-2022": 295324,
+          "Q1-2023": 412180,
+          "Q1-2024": 369783,
+          "Q1-2025": 323800,
+          "Q2-2020": 80277,
+          "Q2-2021": 199409,
+          "Q2-2022": 238533,
+          "Q2-2023": 446915,
+          "Q2-2024": 422405,
+          "Q2-2025": 373728,
+          "Q3-2019": 79703,
+          "Q3-2020": 124318,
+          "Q3-2021": 232102,
+          "Q3-2022": 325158,
+          "Q3-2023": 419074,
+          "Q3-2024": 439975,
+          "Q3-2025": 481166,
+          "Q4-2019": 92620,
+          "Q4-2020": 161701,
+          "Q4-2021": 296884,
+          "Q4-2022": 388131,
+          "Q4-2023": 461538,
+          "Q4-2024": 471930,
+          "Q4-2025": 406585
+        },
+        "annual": {
+          "FY2017": 1764,
+          "FY2018": 146055,
+          "FY2019": 300885,
+          "FY2020": 442562,
+          "FY2021": 911242,
+          "FY2022": 1247146,
+          "FY2023": 1739707,
+          "FY2024": 1704093,
+          "FY2025": 1585279
+        },
+        "facts": []
+      },
+      {
+        "id": "delivery_other",
+        "name": "Other Models Deliveries",
+        "type": "metric",
+        "unit": "units",
+        "metricKey": "delivery_other",
+        "quarterly": {
+          "Q1-2023": 10695,
+          "Q1-2024": 17027,
+          "Q1-2025": 12881,
+          "Q2-2023": 19225,
+          "Q2-2024": 21551,
+          "Q2-2025": 10394,
+          "Q3-2023": 15985,
+          "Q3-2024": 22915,
+          "Q3-2025": 15933,
+          "Q4-2022": 17147,
+          "Q4-2023": 22969,
+          "Q4-2024": 23640,
+          "Q4-2025": 11642
+        },
+        "annual": {
+          "FY2019": 66771,
+          "FY2020": 57085,
+          "FY2021": 24980,
+          "FY2022": 66705,
+          "FY2023": 68874,
+          "FY2024": 85133,
+          "FY2025": 50850
+        },
+        "facts": []
+      },
+      {
+        "id": "delivery_total",
+        "name": "Total Deliveries",
+        "type": "metric",
+        "unit": "units",
+        "metricKey": "delivery_total",
+        "quarterly": {
+          "Q1-2020": 88496,
+          "Q1-2021": 184877,
+          "Q1-2022": 310048,
+          "Q1-2023": 422875,
+          "Q1-2024": 386810,
+          "Q1-2025": 336681,
+          "Q2-2020": 90891,
+          "Q2-2021": 201304,
+          "Q2-2022": 254695,
+          "Q2-2023": 466140,
+          "Q2-2024": 443956,
+          "Q2-2025": 384122,
+          "Q3-2019": 97186,
+          "Q3-2020": 139593,
+          "Q3-2021": 241391,
+          "Q3-2022": 343830,
+          "Q3-2023": 435059,
+          "Q3-2024": 462890,
+          "Q3-2025": 497099,
+          "Q4-2019": 112095,
+          "Q4-2020": 180667,
+          "Q4-2021": 308650,
+          "Q4-2022": 405278,
+          "Q4-2023": 484507,
+          "Q4-2024": 495570,
+          "Q4-2025": 418227
+        },
+        "annual": {
+          "FY2017": 103181,
+          "FY2018": 245506,
+          "FY2019": 367656,
+          "FY2020": 499647,
+          "FY2021": 936222,
+          "FY2022": 1313851,
+          "FY2023": 1808581,
+          "FY2024": 1789226,
+          "FY2025": 1636129
+        },
+        "facts": [
+          {
+            "fact": "Tesla delivered 1.8 million vehicles in 2025",
+            "lastUpdated": "2026-02-17",
+            "sources": [
+              "20260217_brighterwithherbert_01_Tesla_Doesn't_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "revenue_auto",
+        "name": "Automotive Revenue",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "revenue_auto",
+        "quarterly": {
+          "Q1-2022": 16861,
+          "Q1-2023": 19963,
+          "Q1-2024": 17378,
+          "Q1-2025": 13967,
+          "Q2-2022": 14602,
+          "Q2-2023": 21268,
+          "Q2-2024": 19878,
+          "Q2-2025": 16661,
+          "Q3-2022": 18692,
+          "Q3-2023": 19625,
+          "Q3-2024": 20016,
+          "Q3-2025": 21205,
+          "Q4-2022": 21307,
+          "Q4-2023": 21563,
+          "Q4-2024": 19798,
+          "Q4-2025": 17693
+        },
+        "annual": {
+          "FY2019": 20821,
+          "FY2020": 27236,
+          "FY2021": 47232,
+          "FY2022": 71462,
+          "FY2023": 82419,
+          "FY2024": 77070,
+          "FY2025": 69526
+        },
+        "facts": []
+      },
+      {
+        "id": "factory_capacity",
+        "name": "Factory Capacity & Expansion",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla is in its 13th consecutive month of year-over-year sales decline in Europe as of early 2026",
+            "lastUpdated": "2026-02-27",
+            "sources": [
+              "20260227_futureaza_01_One_Decision_summary.txt"
+            ]
+          },
+          {
+            "fact": "Giga Texas adding 5.2 million sq ft by end of 2026; total facility over 11 million sq ft",
+            "lastUpdated": "2026-03-14",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260314_futureaza_01_Tesla_Cybercab_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "new_models",
+        "name": "New Models (Semi, Roadster, $25K)",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Cybertruck dual motor price dropped from $80,000 to $59,990; delivery estimates pushed to April 2027 due to demand surge",
+            "lastUpdated": "2026-02-28",
+            "sources": [
+              "20260226_futureaza_01_This_Is_summary.txt",
+              "20260228_futureaza_02_Cybertruck_Surge_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla Semi spec: 500-mile long range, 325-mile standard range, 1.2 MW charging, 1.7 kWh/mile efficiency",
+            "lastUpdated": "2026-02-11",
+            "sources": [
+              "20260211_futureaza_01_Giga_Nevada_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla Semi estimated price: $240,000-$300,000; volume production ramping at Giga Nevada in 2026",
+            "lastUpdated": "2026-03-07",
+            "sources": [
+              "20260211_futureaza_01_Giga_Nevada_summary.txt",
+              "20260307_futureaza_02_Semi_Cybercab_summary.txt"
+            ]
+          },
+          {
+            "fact": "Model Y Long (YL) 6-seat variant launched in China, now in Australia/New Zealand",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260316_futureaza_01_Mega_Monday_summary.txt",
+              "20260314_futureaza_03_Tesla_Friday_summary.txt"
+            ]
+          },
+          {
+            "fact": "New Roadster unveil expected late April 2026; specs include 0-60 under 2 seconds, 250+ mph, 620-mile range",
+            "lastUpdated": "2026-03-18",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260318_brighterwithherbert_01_This_Changes_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "market_share",
+        "name": "Market Share by Region",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Tesla US EV market share rebounded to 61% in January 2026",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_02_Tesla_S_summary.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Financials": {
+    "areas": [
+      {
+        "id": "revenue_total",
+        "name": "Total Revenue",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "revenue_total",
+        "quarterly": {
+          "Q1-2020": 5985,
+          "Q1-2021": 10389,
+          "Q1-2022": 18756,
+          "Q1-2023": 23329,
+          "Q1-2024": 21301,
+          "Q1-2025": 19335,
+          "Q2-2020": 6036,
+          "Q2-2021": 11958,
+          "Q2-2022": 16934,
+          "Q2-2023": 24927,
+          "Q2-2024": 25500,
+          "Q2-2025": 22496,
+          "Q3-2019": 6303,
+          "Q3-2020": 8771,
+          "Q3-2021": 13757,
+          "Q3-2022": 21454,
+          "Q3-2023": 23350,
+          "Q3-2024": 25182,
+          "Q3-2025": 28095,
+          "Q4-2019": 7384,
+          "Q4-2020": 10744,
+          "Q4-2021": 17719,
+          "Q4-2022": 24318,
+          "Q4-2023": 25167,
+          "Q4-2024": 25707,
+          "Q4-2025": 24901
+        },
+        "annual": {
+          "FY2016": 7000,
+          "FY2017": 11759,
+          "FY2018": 21461,
+          "FY2019": 24578,
+          "FY2020": 31536,
+          "FY2021": 53823,
+          "FY2022": 81462,
+          "FY2023": 96773,
+          "FY2024": 97690,
+          "FY2025": 94827
+        },
+        "facts": []
+      },
+      {
+        "id": "gross_margin",
+        "name": "Gross Margin",
+        "type": "metric",
+        "unit": "%",
+        "metricKey": "gross_margin_pct",
+        "quarterly": {
+          "Q1-2020": 20.6,
+          "Q1-2021": 21.3,
+          "Q1-2022": 29.1,
+          "Q1-2023": 19.3,
+          "Q1-2024": 17.4,
+          "Q1-2025": 16.3,
+          "Q2-2020": 21,
+          "Q2-2021": 24.1,
+          "Q2-2022": 25,
+          "Q2-2023": 18.2,
+          "Q2-2024": 18,
+          "Q2-2025": 17.2,
+          "Q3-2019": 18.9,
+          "Q3-2020": 23.5,
+          "Q3-2021": 26.6,
+          "Q3-2022": 25.1,
+          "Q3-2023": 17.9,
+          "Q3-2024": 19.8,
+          "Q3-2025": 18,
+          "Q4-2019": 18.8,
+          "Q4-2020": 19.2,
+          "Q4-2021": 27.4,
+          "Q4-2022": 23.8,
+          "Q4-2023": 17.6,
+          "Q4-2024": 16.3,
+          "Q4-2025": 20.1
+        },
+        "annual": {
+          "FY2016": 22.8,
+          "FY2017": 18.9,
+          "FY2018": 18.8,
+          "FY2019": 16.6,
+          "FY2020": 21,
+          "FY2021": 25.3,
+          "FY2022": 25.6,
+          "FY2023": 18.2,
+          "FY2024": 17.9,
+          "FY2025": 18
+        },
+        "facts": []
+      },
+      {
+        "id": "gross_profit",
+        "name": "Gross Profit",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "gross_profit",
+        "quarterly": {
+          "Q1-2020": 1234,
+          "Q1-2021": 2215,
+          "Q1-2022": 5460,
+          "Q1-2023": 4511,
+          "Q1-2024": 3696,
+          "Q1-2025": 3153,
+          "Q2-2020": 1267,
+          "Q2-2021": 2884,
+          "Q2-2022": 4234,
+          "Q2-2023": 4533,
+          "Q2-2024": 4578,
+          "Q2-2025": 3878,
+          "Q3-2019": 1191,
+          "Q3-2020": 2063,
+          "Q3-2021": 3660,
+          "Q3-2022": 5382,
+          "Q3-2023": 4178,
+          "Q3-2024": 4997,
+          "Q3-2025": 5054,
+          "Q4-2019": 1391,
+          "Q4-2020": 2066,
+          "Q4-2021": 4847,
+          "Q4-2022": 5777,
+          "Q4-2023": 4438,
+          "Q4-2024": 4179,
+          "Q4-2025": 5009
+        },
+        "annual": {
+          "FY2016": 1599,
+          "FY2017": 2223,
+          "FY2018": 4042,
+          "FY2019": 4069,
+          "FY2020": 6630,
+          "FY2021": 13606,
+          "FY2022": 20853,
+          "FY2023": 17660,
+          "FY2024": 17450,
+          "FY2025": 17094
+        },
+        "facts": []
+      },
+      {
+        "id": "operating_margin",
+        "name": "Operating Margin",
+        "type": "metric",
+        "unit": "%",
+        "metricKey": "operating_margin_pct",
+        "quarterly": {
+          "Q1-2020": 4.7,
+          "Q1-2021": 5.7,
+          "Q1-2022": 19.2,
+          "Q1-2023": 11.4,
+          "Q1-2024": 5.5,
+          "Q1-2025": 2.1,
+          "Q2-2020": 5.4,
+          "Q2-2021": 11,
+          "Q2-2022": 14.6,
+          "Q2-2023": 9.6,
+          "Q2-2024": 6.3,
+          "Q2-2025": 4.1,
+          "Q3-2019": 4.1,
+          "Q3-2020": 9.2,
+          "Q3-2021": 14.6,
+          "Q3-2022": 17.2,
+          "Q3-2023": 7.6,
+          "Q3-2024": 10.8,
+          "Q3-2025": 5.8,
+          "Q4-2019": 4.9,
+          "Q4-2020": 5.4,
+          "Q4-2021": 14.7,
+          "Q4-2022": 16,
+          "Q4-2023": 8.2,
+          "Q4-2024": 6.2,
+          "Q4-2025": 5.7
+        },
+        "annual": {
+          "FY2016": -9.5,
+          "FY2017": -13.9,
+          "FY2018": -1.8,
+          "FY2019": -0.3,
+          "FY2020": 6.3,
+          "FY2021": 12.1,
+          "FY2022": 16.8,
+          "FY2023": 9.2,
+          "FY2024": 7.2,
+          "FY2025": 4.6
+        },
+        "facts": []
+      },
+      {
+        "id": "operating_income",
+        "name": "Operating Income",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "operating_income",
+        "quarterly": {
+          "Q1-2020": 283,
+          "Q1-2021": 594,
+          "Q1-2022": 3603,
+          "Q1-2023": 2664,
+          "Q1-2024": 1171,
+          "Q1-2025": 399,
+          "Q2-2020": 327,
+          "Q2-2021": 1312,
+          "Q2-2022": 2464,
+          "Q2-2023": 2399,
+          "Q2-2024": 1605,
+          "Q2-2025": 923,
+          "Q3-2019": 261,
+          "Q3-2020": 809,
+          "Q3-2021": 2004,
+          "Q3-2022": 3688,
+          "Q3-2023": 1764,
+          "Q3-2024": 2717,
+          "Q3-2025": 1624,
+          "Q4-2019": 359,
+          "Q4-2020": 575,
+          "Q4-2021": 2613,
+          "Q4-2022": 3901,
+          "Q4-2023": 2064,
+          "Q4-2024": 1583,
+          "Q4-2025": 1409
+        },
+        "annual": {
+          "FY2020": 1994,
+          "FY2021": 6523,
+          "FY2022": 13656,
+          "FY2023": 8891,
+          "FY2024": 7076,
+          "FY2025": 4355
+        },
+        "facts": []
+      },
+      {
+        "id": "net_income",
+        "name": "Net Income (GAAP)",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "net_income_gaap",
+        "quarterly": {
+          "Q1-2020": 16,
+          "Q1-2021": 438,
+          "Q1-2022": 3318,
+          "Q1-2023": 2513,
+          "Q1-2024": 1129,
+          "Q1-2025": 409,
+          "Q2-2020": 104,
+          "Q2-2021": 1142,
+          "Q2-2022": 2259,
+          "Q2-2023": 2703,
+          "Q2-2024": 1478,
+          "Q2-2025": 1172,
+          "Q3-2019": 143,
+          "Q3-2020": 331,
+          "Q3-2021": 1618,
+          "Q3-2022": 3292,
+          "Q3-2023": 1853,
+          "Q3-2024": 2167,
+          "Q3-2025": 1373,
+          "Q4-2019": 105,
+          "Q4-2020": 270,
+          "Q4-2021": 2321,
+          "Q4-2022": 3687,
+          "Q4-2023": 7928,
+          "Q4-2024": 2128,
+          "Q4-2025": 840
+        },
+        "annual": {
+          "FY2020": 721,
+          "FY2021": 5519,
+          "FY2022": 12556,
+          "FY2023": 14997,
+          "FY2024": 7091,
+          "FY2025": 3794
+        },
+        "facts": []
+      },
+      {
+        "id": "eps",
+        "name": "EPS (GAAP)",
+        "type": "metric",
+        "unit": "$",
+        "metricKey": "eps_gaap",
+        "quarterly": {
+          "Q1-2020": 0.11,
+          "Q1-2021": 0.39,
+          "Q1-2022": 0.68,
+          "Q1-2023": 0.73,
+          "Q1-2024": 0.34,
+          "Q1-2025": 0.12,
+          "Q2-2020": 0.02,
+          "Q2-2021": 1.02,
+          "Q2-2022": 0.95,
+          "Q2-2023": 0.78,
+          "Q2-2024": 0.42,
+          "Q2-2025": 0.33,
+          "Q3-2019": -1,
+          "Q3-2020": 0.1,
+          "Q3-2021": 1.44,
+          "Q3-2022": 0.65,
+          "Q3-2023": 0.53,
+          "Q3-2024": 0.62,
+          "Q3-2025": 0.39,
+          "Q4-2019": -1,
+          "Q4-2020": 0.24,
+          "Q4-2021": -1,
+          "Q4-2022": 1.07,
+          "Q4-2023": 2.27,
+          "Q4-2024": 0.6,
+          "Q4-2025": 0.24
+        },
+        "annual": {
+          "FY2016": -0.94,
+          "FY2017": -2.37,
+          "FY2018": -0.38,
+          "FY2019": -0.33,
+          "FY2020": 0.21,
+          "FY2021": 1.63,
+          "FY2022": 3.62,
+          "FY2023": 4.3,
+          "FY2024": 2.04,
+          "FY2025": 1.08
+        },
+        "facts": []
+      },
+      {
+        "id": "ebitda",
+        "name": "Adjusted EBITDA",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "ebitda",
+        "quarterly": {
+          "Q1-2020": 15.9,
+          "Q1-2021": 17.7,
+          "Q1-2022": 26.8,
+          "Q1-2023": 18.3,
+          "Q1-2024": 15.9,
+          "Q1-2025": 14.6,
+          "Q2-2020": 20,
+          "Q2-2021": 20.8,
+          "Q2-2022": 22.4,
+          "Q2-2023": 18.7,
+          "Q2-2024": 14.4,
+          "Q2-2025": 15.1,
+          "Q3-2019": 17.2,
+          "Q3-2020": 20.6,
+          "Q3-2021": 23.3,
+          "Q3-2022": 23.2,
+          "Q3-2023": 16.1,
+          "Q3-2024": 18.5,
+          "Q3-2025": 15,
+          "Q4-2019": 15.9,
+          "Q4-2020": 17.2,
+          "Q4-2021": 23.1,
+          "Q4-2022": 22.2,
+          "Q4-2023": 15.7,
+          "Q4-2024": 16.9,
+          "Q4-2025": 16.7
+        },
+        "annual": {
+          "FY2016": 11.9,
+          "FY2017": 5.5,
+          "FY2018": 11.2,
+          "FY2019": 12.1,
+          "FY2020": 18.4,
+          "FY2021": 21.8,
+          "FY2022": 23.8,
+          "FY2023": 17.2,
+          "FY2024": 16.4,
+          "FY2025": 15.4
+        },
+        "facts": []
+      },
+      {
+        "id": "operating_cash_flow",
+        "name": "Operating Cash Flow",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "operating_cash_flow",
+        "quarterly": {
+          "Q1-2021": 1641,
+          "Q1-2022": 3995,
+          "Q1-2023": 2513,
+          "Q1-2024": 242,
+          "Q1-2025": 2156,
+          "Q2-2020": 964,
+          "Q2-2021": 2124,
+          "Q2-2022": 2351,
+          "Q2-2023": 3065,
+          "Q2-2024": 3612,
+          "Q2-2025": 2540,
+          "Q3-2020": 2400,
+          "Q3-2021": 3147,
+          "Q3-2022": 5100,
+          "Q3-2023": 3308,
+          "Q3-2024": 6255,
+          "Q3-2025": 6238,
+          "Q4-2020": 3019,
+          "Q4-2021": 4585,
+          "Q4-2022": 3278,
+          "Q4-2023": 4370,
+          "Q4-2024": 4814,
+          "Q4-2025": 3813
+        },
+        "annual": {
+          "FY2018": 2098,
+          "FY2019": 2405,
+          "FY2020": 5943,
+          "FY2021": 11497,
+          "FY2022": 14724,
+          "FY2023": 13256,
+          "FY2024": 14923,
+          "FY2025": 14747
+        },
+        "facts": []
+      },
+      {
+        "id": "capex",
+        "name": "Capital Expenditures",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "capex",
+        "quarterly": {
+          "Q1-2020": -3169,
+          "Q1-2021": -1348,
+          "Q1-2022": -1767,
+          "Q1-2023": -2072,
+          "Q1-2024": -2773,
+          "Q1-2025": -1492,
+          "Q2-2020": -2563,
+          "Q2-2021": -1505,
+          "Q2-2022": -1730,
+          "Q2-2023": -2060,
+          "Q2-2024": -2270,
+          "Q2-2025": -2394,
+          "Q3-2019": -3415,
+          "Q3-2020": -2101,
+          "Q3-2021": -1819,
+          "Q3-2022": -1803,
+          "Q3-2023": -2460,
+          "Q3-2024": -3513,
+          "Q3-2025": -2248,
+          "Q4-2019": -3518,
+          "Q4-2020": -1151,
+          "Q4-2021": -1810,
+          "Q4-2022": -1858,
+          "Q4-2023": -2306,
+          "Q4-2024": -2780,
+          "Q4-2025": -2393
+        },
+        "annual": {
+          "FY2016": -1281,
+          "FY2017": -3415,
+          "FY2018": -2101,
+          "FY2019": -1327,
+          "FY2020": -3157,
+          "FY2021": -6514,
+          "FY2022": -7163,
+          "FY2023": -8899,
+          "FY2024": -11342,
+          "FY2025": -8527
+        },
+        "facts": [
+          {
+            "fact": "Tesla committed over $20 billion in capex for 2026, up from ~$8.5 billion prior year (135% YoY increase); self-funded from $44 billion cash balance",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260301_brighterwithherbert_01_Tesla_Just_summary.txt",
+              "20260317_brighterwithherbert_01_The_Government_summary.txt"
+            ]
+          },
+          {
+            "fact": "Terrafab semiconductor fabrication project announced; estimated cost $20-$25 billion; targeting 1 million wafers/month by 2030",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_01_The_Government_summary.txt",
+              "20260316_brighterwithherbert_01_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla doubled AI chip order with Samsung to 40,000 wafers/month; original contract worth $17 billion over 8 years",
+            "lastUpdated": "2026-03-08",
+            "sources": [
+              "20260308_brighterwithherbert_01_Elon_Just_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "free_cash_flow",
+        "name": "Free Cash Flow",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "free_cash_flow",
+        "quarterly": {
+          "Q1-2020": -3488,
+          "Q1-2021": 293,
+          "Q1-2022": 2228,
+          "Q1-2023": 441,
+          "Q1-2024": -2531,
+          "Q1-2025": 664,
+          "Q2-2020": -1190,
+          "Q2-2021": 619,
+          "Q2-2022": 621,
+          "Q2-2023": 1005,
+          "Q2-2024": 1342,
+          "Q2-2025": 146,
+          "Q3-2019": -3476,
+          "Q3-2020": -3,
+          "Q3-2021": 1328,
+          "Q3-2022": 3297,
+          "Q3-2023": 848,
+          "Q3-2024": 2742,
+          "Q3-2025": 3990,
+          "Q4-2019": -3907,
+          "Q4-2020": 1868,
+          "Q4-2021": 2775,
+          "Q4-2022": 1420,
+          "Q4-2023": 2064,
+          "Q4-2024": 2034,
+          "Q4-2025": 1420
+        },
+        "annual": {
+          "FY2016": -1405,
+          "FY2017": -3476,
+          "FY2018": -3,
+          "FY2019": 1078,
+          "FY2020": 2786,
+          "FY2021": 4983,
+          "FY2022": 7561,
+          "FY2023": 4357,
+          "FY2024": 3581,
+          "FY2025": 6220
+        },
+        "facts": [
+          {
+            "fact": "Tesla 2025 free cash flow was $6.2 billion (up from $3.58 billion in 2024)",
+            "lastUpdated": "2026-02-25",
+            "sources": [
+              "20260225_jobhakdi_01_Why_2_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cash_balance",
+        "name": "Cash & Investments",
+        "type": "metric",
+        "unit": "$M",
+        "metricKey": "cash_and_investments",
+        "quarterly": {
+          "Q1-2022": 18013,
+          "Q1-2023": 22402,
+          "Q1-2024": 26863,
+          "Q1-2025": 36996,
+          "Q2-2022": 18915,
+          "Q2-2023": 23075,
+          "Q2-2024": 30720,
+          "Q2-2025": 36782,
+          "Q3-2022": 21107,
+          "Q3-2023": 26077,
+          "Q3-2024": 33648,
+          "Q3-2025": 41647,
+          "Q4-2021": 17707,
+          "Q4-2022": 22185,
+          "Q4-2023": 29094,
+          "Q4-2024": 36563,
+          "Q4-2025": 44059
+        },
+        "annual": {
+          "FY2018": 3686,
+          "FY2019": 6268,
+          "FY2020": 19384,
+          "FY2021": 17707,
+          "FY2022": 22185,
+          "FY2023": 29094,
+          "FY2024": 36563,
+          "FY2025": 44059
+        },
+        "facts": []
+      },
+      {
+        "id": "institutional",
+        "name": "Institutional Ownership Moves",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Elon Musk purchased ~2.5 million Tesla shares for ~$1 billion on September 15, 2025 at average price just under $390",
+            "lastUpdated": "2026-02-28",
+            "sources": [
+              "20260228_brighterwithherbert_01_Elon_Doubled_summary.txt"
+            ]
+          },
+          {
+            "fact": "Major institutional Tesla purchases in Q4 2025: Norges Bank $11.8B new position, Geode Capital ~$20B, Renaissance Technologies $189M",
+            "lastUpdated": "2026-02-18",
+            "sources": [
+              "20260218_brighterwithherbert_02_The_Biggest_summary.txt"
+            ]
+          },
+          {
+            "fact": "Tesla converted $2 billion xAI investment into SpaceX equity ahead of rumored SpaceX IPO at $1.5-$1.75 trillion valuation",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_01_The_Government_summary.txt",
+              "20260314_futureaza_03_Tesla_Friday_summary.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Market & Competition": {
+    "areas": [
+      {
+        "id": "ev_market",
+        "name": "Global EV Market Size & Growth",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Global EV sales grew 29% in 2024 to 14.2 million vehicles (18% of all new cars)",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260316_futureaza_01_Mega_Monday_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tesla_share",
+        "name": "Tesla Market Share by Region",
+        "type": "facts",
+        "facts": []
+      },
+      {
+        "id": "byd",
+        "name": "BYD (Pricing, Expansion, Tech)",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "BYD deployed 1.5 MW flash charging (10% to 97% in 9 minutes) on a $22,000 vehicle",
+            "lastUpdated": "2026-03-19",
+            "sources": [
+              "20260316_futureaza_01_Mega_Monday_summary.txt",
+              "20260319_futureaza_01_Tesla_Just_summary.txt"
+            ]
+          },
+          {
+            "fact": "BYD expanding into Europe via Hungary factory; secured 100,000 vehicle orders from Argentina and Mexico",
+            "lastUpdated": "2026-03-16",
+            "sources": [
+              "20260227_futureaza_01_One_Decision_summary.txt",
+              "20260316_futureaza_01_Mega_Monday_summary.txt"
+            ]
+          },
+          {
+            "fact": "Xpeng licensed vision-only XIMO 2.0 autonomous driving system to Volkswagen — first large-scale export of Chinese AV tech",
+            "lastUpdated": "2026-02-24",
+            "sources": [
+              "20260224_futureaza_01_Tesla_S_summary.txt",
+              "20260226_brighterwithherbert_01_Tesla_Expands_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "waymo",
+        "name": "Waymo (Fleet, Economics, Regulation)",
+        "type": "facts",
+        "facts": []
+      },
+      {
+        "id": "legacy_oem",
+        "name": "Legacy OEM Struggles & Write-downs",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "Honda reported first annual loss in nearly 70 years: $15.7 billion write-down tied to EV business",
+            "lastUpdated": "2026-03-14",
+            "sources": [
+              "20260314_futureaza_03_Tesla_Friday_summary.txt",
+              "20260317_brighterwithherbert_02_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Stellantis wrote off ~$980 million Canadian battery plant investment (sold for $100); total EV write-downs ~$21.5 billion",
+            "lastUpdated": "2026-02-10",
+            "sources": [
+              "20260210_futureaza_01_Legacy_Auto_summary.txt"
+            ]
+          },
+          {
+            "fact": "Ford wrote down ~$6-7 billion in EV losses; GM ~$12-15 billion in EV write-downs",
+            "lastUpdated": "2026-02-10",
+            "sources": [
+              "20260210_futureaza_01_Legacy_Auto_summary.txt"
+            ]
+          },
+          {
+            "fact": "BMW removing Level 3 autonomy from refreshed 7 Series; Mercedes previously withdrew its Level 3 system",
+            "lastUpdated": "2026-02-24",
+            "sources": [
+              "20260224_futureaza_01_Tesla_S_summary.txt"
+            ]
+          },
+          {
+            "fact": "Rivian R2 pricing: performance ~$58,000 (spring 2026), standard RWD $48,000 (2027); CEO said sensor simplification may not happen until 2038-2040",
+            "lastUpdated": "2026-03-17",
+            "sources": [
+              "20260317_brighterwithherbert_02_Tesla_S_summary.txt"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "tariffs_policy",
+        "name": "Tariffs & Trade Policy",
+        "type": "facts",
+        "facts": [
+          {
+            "fact": "China car exports reached 6.4 million vehicles, surpassing Japan (4.2M), Germany (3.18M), and US (1.3M)",
+            "lastUpdated": "2026-02-17",
+            "sources": [
+              "20260217_brighterwithherbert_02_The_Auto_summary.txt"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
