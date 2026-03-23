@@ -6,7 +6,7 @@ export const CHANNELS = [
   { id: 'brighterwithherbert', channelId: 'UCXB0RGwFLRo3tf4n4U1x6Ow', name: 'Brighter with Herbert' },
   { id: 'futureaza', channelId: 'UCbNOk_wOA7UMvYrF7K0iBvQ', name: 'Futureaza' },
   { id: 'investingagainstthegrain', channelId: 'UC3K6_4IDtnBekVuWuH91uSg', name: 'Investing Against the Grain' },
-  { id: 'jobhakdi', channelId: 'UCSjlTWo8-Nbo6koK8df1y5w', name: 'Job Hakdi' },
+  { id: 'jobhakdi', channelId: 'UCSjlTWo8-Nbo6koK8df1y5w', name: 'Jo Bhakdi' },
   // sawyermerritt is X/Twitter — handled separately, not in this pipeline
 ];
 
@@ -63,6 +63,9 @@ export const CORRECTIONS = {
   'grock': 'Grok',
   'Cernin Basher': 'Cern Basher',
   'Joe Techmire': 'Joe Tegtmeyer',
+  'Job Hakdi': 'Jo Bhakdi',
+  'Joe Hakdi': 'Jo Bhakdi',
+  'Joe Bhakdi': 'Jo Bhakdi',
 };
 
 // Claude model for summarization

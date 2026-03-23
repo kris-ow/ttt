@@ -102,18 +102,10 @@ function renderInline(text: string) {
   })
 }
 
-const CHANNEL_SHORT: Record<string, string> = {
-  brighterwithherbert: 'BWH',
-  futureaza: 'FZA',
-  investingagainstthegrain: 'IAG',
-  jobhakdi: 'JH',
-  sawyermerritt: 'SM',
-}
-
 function channelShort(channel: string, sourceType: string) {
-  const prefix = sourceType === 'x' ? 'X' : 'YT'
-  const abbr = CHANNEL_SHORT[channel] || channel.slice(0, 3).toUpperCase()
-  return `${prefix}/${abbr}`
+  const ch = CHANNEL_META[channel]
+  const prefix = sourceType === 'x' ? '[X]' : '[YT]'
+  return `${prefix} ${ch?.name || channel}`
 }
 
 // ── Feed Section ─────────────────────────────────────────
@@ -150,9 +142,8 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
                     className="w-full text-left border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 transition-colors cursor-pointer group"
                   >
                     <div className="flex items-center gap-3 text-xs">
-                      <span className="text-text-dim flex-shrink-0 w-12 sm:w-52 truncate">
-                        <span className="sm:hidden">{channelShort(article.channel, article.sourceType)}</span>
-                        <span className="hidden sm:inline">{article.sourceType === 'x' ? '[X] ' : '[YT] '}{ch?.name || article.channel}</span>
+                      <span className="text-text-dim flex-shrink-0 w-24 sm:w-40 truncate">
+                        {channelShort(article.channel, article.sourceType)}
                       </span>
                       <span className="text-text-bright group-hover:text-green truncate min-w-0 flex-1 transition-colors">
                         {article.title}
@@ -901,6 +892,7 @@ type Section = 'feed' | 'knowledge'
 export default function App() {
   const [activeSection, setActiveSection] = useState<Section>('feed')
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
+  const [showFilter, setShowFilter] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
   const [showChart, setShowChart] = useState(false)
   const stockBoxRef = useRef<HTMLDivElement>(null)
@@ -927,29 +919,24 @@ export default function App() {
               <span className="text-green font-bold text-xl">[TTT]</span>
               <span className="text-white text-xl font-bold">THE TESLA THESIS</span>
             </div>
-            <div className="flex items-center justify-between gap-3">
-              <nav className="flex items-center gap-1">
-                {([
-                  ['feed', 'DAILY_FEED'],
-                  ['knowledge', 'KNOWLEDGE_BASE'],
-                ] as const).map(([key, label]) => (
-                  <button
-                    key={key}
-                    onClick={() => setActiveSection(key)}
-                    className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
-                      activeSection === key
-                        ? 'bg-green text-bg'
-                        : 'text-text-dim hover:text-green'
-                    }`}
-                  >
-                    {activeSection === key ? `[${label}]` : label}
-                  </button>
-                ))}
-              </nav>
-              <div className="text-text-dim text-xs">
-                {data.articles.length} articles tracked
-              </div>
-            </div>
+            <nav className="flex items-center gap-1">
+              {([
+                ['feed', 'DAILY_FEED'],
+                ['knowledge', 'KNOWLEDGE_BASE'],
+              ] as const).map(([key, label]) => (
+                <button
+                  key={key}
+                  onClick={() => setActiveSection(key)}
+                  className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
+                    activeSection === key
+                      ? 'bg-green text-bg'
+                      : 'text-text-dim hover:text-green'
+                  }`}
+                >
+                  {activeSection === key ? `[${label}]` : label}
+                </button>
+              ))}
+            </nav>
           </div>
         </div>
       </header>
@@ -989,27 +976,36 @@ export default function App() {
           {activeSection === 'feed' && (
             <>
               {/* Channel filter */}
-              <div className="flex items-center gap-1 mb-4 flex-wrap">
-                <span className="text-text-dim text-xs mr-2">FILTER:</span>
+              <div className="mb-4 relative">
                 <button
-                  onClick={() => setSelectedChannel(null)}
-                  className={`px-2 py-1 text-xs cursor-pointer transition-colors ${
-                    !selectedChannel ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
-                  }`}
+                  onClick={() => setShowFilter(!showFilter)}
+                  className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
                 >
-                  ALL
+                  FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
                 </button>
-                {channels.map(ch => (
-                  <button
-                    key={ch}
-                    onClick={() => setSelectedChannel(ch === selectedChannel ? null : ch)}
-                    className={`px-2 py-1 text-xs cursor-pointer transition-colors ${
-                      selectedChannel === ch ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
-                    }`}
-                  >
-                    {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
-                  </button>
-                ))}
+                {showFilter && (
+                  <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
+                    <button
+                      onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
+                      className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
+                        !selectedChannel ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
+                      }`}
+                    >
+                      ALL
+                    </button>
+                    {channels.map(ch => (
+                      <button
+                        key={ch}
+                        onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
+                        className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
+                          selectedChannel === ch ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
+                        }`}
+                      >
+                        {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
               <FeedSection selectedChannel={selectedChannel} onSelectArticle={setSelectedArticle} />
             </>
