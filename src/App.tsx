@@ -865,10 +865,10 @@ function StockChart({ onClose }: { onClose: () => void }) {
                 <button
                   key={r.label}
                   onClick={() => setActiveRange(r.label)}
-                  className={`px-2 py-1 text-xs font-bold cursor-pointer transition-colors ${
+                  className={`px-2 py-1 text-xs font-bold cursor-pointer transition-colors border-b-2 ${
                     activeRange === r.label
-                      ? 'bg-green text-bg'
-                      : 'text-text-dim hover:text-green'
+                      ? 'text-green border-green'
+                      : 'text-text-dim hover:text-green border-transparent'
                   }`}
                 >
                   {r.label}
@@ -934,13 +934,13 @@ export default function App() {
                 <button
                   key={key}
                   onClick={() => setActiveSection(key)}
-                  className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
+                  className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer border-b-2 ${
                     activeSection === key
-                      ? 'bg-green text-bg'
-                      : 'text-text-dim hover:text-green'
+                      ? 'text-green border-green'
+                      : 'text-text-dim hover:text-green border-transparent'
                   }`}
                 >
-                  {activeSection === key ? `[${label}]` : label}
+                  {label}
                 </button>
               ))}
             </nav>
@@ -986,11 +986,11 @@ export default function App() {
                   <button
                     key={key}
                     onClick={() => setMobileStockTab(key)}
-                    className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer ${
-                      mobileStockTab === key ? 'bg-green text-bg' : 'text-text-dim hover:text-green'
+                    className={`px-2 py-1 text-xs font-bold transition-colors cursor-pointer ${
+                      mobileStockTab === key ? 'text-green' : 'text-text-dim hover:text-green'
                     }`}
                   >
-                    {mobileStockTab === key ? `[${label}]` : label}
+                    {mobileStockTab === key ? `> ${label}` : `  ${label}`}
                   </button>
                 ))}
               </div>
@@ -1032,7 +1032,7 @@ export default function App() {
                     <button
                       onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
                       className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
-                        !selectedChannel ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
+                        !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                       }`}
                     >
                       ALL
@@ -1042,7 +1042,7 @@ export default function App() {
                         key={ch}
                         onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
                         className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
-                          selectedChannel === ch ? 'bg-green text-bg font-bold' : 'text-text-dim hover:text-green'
+                          selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                         }`}
                       >
                         {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
