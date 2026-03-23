@@ -41,7 +41,7 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
       className="fixed inset-0 z-50 bg-bg/60 backdrop-blur-md overflow-auto"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="max-w-4xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-3 sm:p-6">
         <button
           onClick={onClose}
           className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer"
@@ -49,7 +49,7 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
           [ESC] &lt;-- BACK TO FEED
         </button>
 
-        <div className="border border-border bg-surface p-6" onClick={e => e.stopPropagation()}>
+        <div className="border border-border bg-surface p-3 sm:p-6 overflow-x-hidden" onClick={e => e.stopPropagation()}>
           <div className="text-text-dim text-xs mb-2">
             [{article.sourceType === 'x' ? 'X/TWITTER' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
           </div>
@@ -102,6 +102,20 @@ function renderInline(text: string) {
   })
 }
 
+const CHANNEL_SHORT: Record<string, string> = {
+  brighterwithherbert: 'BWH',
+  futureaza: 'FZA',
+  investingagainstthegrain: 'IAG',
+  jobhakdi: 'JH',
+  sawyermerritt: 'SM',
+}
+
+function channelShort(channel: string, sourceType: string) {
+  const prefix = sourceType === 'x' ? 'X' : 'YT'
+  const abbr = CHANNEL_SHORT[channel] || channel.slice(0, 3).toUpperCase()
+  return `${prefix}/${abbr}`
+}
+
 // ── Feed Section ─────────────────────────────────────────
 
 function FeedSection({ selectedChannel, onSelectArticle }: {
@@ -136,11 +150,9 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
                     className="w-full text-left border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 transition-colors cursor-pointer group"
                   >
                     <div className="flex items-center gap-3 text-xs">
-                      <span className="text-text-dim w-14 flex-shrink-0">
-                        {article.sourceType === 'x' ? '[X]' : '[YT]'}
-                      </span>
-                      <span className="text-text-dim flex-shrink-0 w-52 truncate">
-                        {ch?.name || article.channel}
+                      <span className="text-text-dim flex-shrink-0 w-12 sm:w-52 truncate">
+                        <span className="sm:hidden">{channelShort(article.channel, article.sourceType)}</span>
+                        <span className="hidden sm:inline">{article.sourceType === 'x' ? '[X] ' : '[YT] '}{ch?.name || article.channel}</span>
                       </span>
                       <span className="text-text-bright group-hover:text-green truncate min-w-0 flex-1 transition-colors">
                         {article.title}
@@ -910,11 +922,12 @@ export default function App() {
       {/* ── Header ──────────────────────────────────── */}
       <header className="border-b border-border bg-surface sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div className="flex items-center gap-3">
               <span className="text-green font-bold text-xl">[TTT]</span>
               <span className="text-white text-xl font-bold">THE TESLA THESIS</span>
-              <span className="text-text-dim text-xs">//</span>
+            </div>
+            <div className="flex items-center justify-between gap-3">
               <nav className="flex items-center gap-1">
                 {([
                   ['feed', 'DAILY_FEED'],
@@ -933,9 +946,9 @@ export default function App() {
                   </button>
                 ))}
               </nav>
-            </div>
-            <div className="text-text-dim text-xs">
-              {data.articles.length} articles tracked
+              <div className="text-text-dim text-xs">
+                {data.articles.length} articles tracked
+              </div>
             </div>
           </div>
         </div>
