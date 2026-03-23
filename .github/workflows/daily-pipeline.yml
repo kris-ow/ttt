@@ -2,8 +2,8 @@ name: Daily Summary Pipeline
 
 on:
   schedule:
-    # Run at 6:00 AM UTC daily (1:00 AM ET, after markets close + after-hours end)
-    - cron: '0 6 * * *'
+    # Run at 3:15 AM UTC daily (4:15 AM CET / 5:15 AM CEST)
+    - cron: '15 3 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:
