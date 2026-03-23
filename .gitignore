@@ -18,6 +18,9 @@ dist-ssr
 !tsconfig*.json
 !eslint.config.js
 !src/data/*.json
+!scripts/pipeline/costs.json
+!scripts/pipeline/state.json
+!news/transcripts_url_index.json
 
 # Quarterly PDF source data
 data/
