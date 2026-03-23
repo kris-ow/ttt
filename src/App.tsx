@@ -495,7 +495,7 @@ function KBTrackerSection({ section }: { section: KBSection }) {
           </button>
           {showHistory && (
             <div className="mt-2 space-y-1 pl-2 border-l border-border">
-              {section.history.map((h, i) => (
+              {[...section.history].reverse().map((h, i) => (
                 <div key={i} className="flex items-baseline gap-3 text-xs">
                   <span className="text-text-dim w-20 flex-shrink-0">{h.date}</span>
                   {h.total !== undefined && <span className="text-text-bright">{h.total.toLocaleString()}</span>}
