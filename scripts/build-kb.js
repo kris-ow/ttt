@@ -12,6 +12,7 @@ import fs from 'fs';
 import path from 'path';
 
 const QUARTERLY_FILE = path.resolve('src/data/quarterly-metrics.json');
+const FACTS_FILE = path.resolve('src/data/kb-facts.json');
 const KB_FILE = path.resolve('src/data/knowledge-base.json');
 
 // ── KB Category & Area Definitions ─────────────────────────
@@ -28,12 +29,13 @@ const KB_SCHEMA = {
   },
   "Robotaxi": {
     areas: [
-      { id: "cybercab_production", name: "Cybercab Production & Units", type: "facts" },
-      { id: "fleet_size", name: "Fleet Size by City", type: "facts" },
-      { id: "rides_economics", name: "Rides & Revenue per Ride", type: "facts" },
-      { id: "unit_economics", name: "Unit Economics", type: "facts" },
-      { id: "city_rollout", name: "City Rollout Status", type: "facts" },
-      { id: "competitor_robotaxi", name: "Competitor Comparison (Waymo, Uber/Nvidia)", type: "facts" },
+      { id: "fleet_deployment", name: "Fleet Size & Deployment", type: "composite" },
+      { id: "production_manufacturing", name: "Production & Manufacturing", type: "facts" },
+      { id: "ride_volume", name: "Ride Volume & Demand", type: "facts" },
+      { id: "pricing_revenue", name: "Pricing & Revenue", type: "facts" },
+      { id: "operating_costs", name: "Operating Costs", type: "facts" },
+      { id: "vehicle_capex", name: "Vehicle Cost (CapEx)", type: "facts" },
+      { id: "competitor_comparison", name: "Competition", type: "facts" },
     ],
   },
   "Humanoid Bots": {
@@ -113,16 +115,29 @@ const FACT_AREA_RULES = [
   { pattern: /fleet.*data|billion.*miles|cumulative.*miles|Ashok/i, area: "fsd_versions", category: "Autonomous Driving" },
   { pattern: /FSD.*discontinu|FSD.*subscript.*only/i, area: "fsd_take_rate", category: "Autonomous Driving" },
 
-  // Robotaxi
-  { pattern: /Cybercab.*produc|Cybercab.*roll|Cybercab.*line|Cybercab.*unit|Cybercab.*built/i, area: "cybercab_production", category: "Robotaxi" },
-  { pattern: /Cybercab.*price|Cybercab.*cost|under \$30|unboxed/i, area: "unit_economics", category: "Robotaxi" },
-  { pattern: /Cybercab.*no steering|Cybercab.*seat|Cybercab.*design|inductive charg/i, area: "cybercab_production", category: "Robotaxi" },
-  { pattern: /fleet.*grew|fleet.*vehicle|robotaxi.*fleet|unsupervised|driverless/i, area: "fleet_size", category: "Robotaxi" },
-  { pattern: /robotaxi.*city|expansion.*city|Austin|Dallas|Houston|Phoenix|Miami|Orlando|Tampa|Las Vegas/i, area: "city_rollout", category: "Robotaxi" },
-  { pattern: /robotaxi.*pric|\$.*per.*mile|ride.*revenue|ride.*cost|margin.*robotaxi/i, area: "rides_economics", category: "Robotaxi" },
-  { pattern: /robotaxi.*app|Android/i, area: "city_rollout", category: "Robotaxi" },
-  { pattern: /Waymo.*incident|Waymo.*fleet|Waymo.*ride|Waymo.*city|Waymo.*raised|Waymo.*unprofit/i, area: "competitor_robotaxi", category: "Robotaxi" },
-  { pattern: /Nvidia.*Uber|Nvidia.*robotaxi/i, area: "competitor_robotaxi", category: "Robotaxi" },
+  // Robotaxi — Fleet & Deployment
+  { pattern: /fleet.*grew|fleet.*vehicle|robotaxi.*fleet|unsupervised|driverless.*vehicle/i, area: "fleet_deployment", category: "Robotaxi" },
+  { pattern: /robotaxi.*city|expansion.*city|expand.*robotaxi|hiring.*robotaxi|hiring.*safety operator/i, area: "fleet_deployment", category: "Robotaxi" },
+  { pattern: /robotaxi.*app|Android.*tesla/i, area: "fleet_deployment", category: "Robotaxi" },
+  // Robotaxi — Production & Manufacturing
+  { pattern: /Cybercab.*produc|Cybercab.*roll|Cybercab.*line|Cybercab.*unit|Cybercab.*built/i, area: "production_manufacturing", category: "Robotaxi" },
+  { pattern: /Cybercab.*no steering|Cybercab.*seat|Cybercab.*design|inductive charg|unboxed/i, area: "production_manufacturing", category: "Robotaxi" },
+  { pattern: /Cybercab.*spec|Cybercab.*battery|Cybercab.*range|Cybercab.*architect/i, area: "production_manufacturing", category: "Robotaxi" },
+  { pattern: /takt time|injection molding|crash test.*Cybercab|Giga.*Cybercab/i, area: "production_manufacturing", category: "Robotaxi" },
+  // Robotaxi — Ride Volume
+  { pattern: /rides.*per.*day|ride.*occupancy|single.*rider|paid.*miles|rental.*program/i, area: "ride_volume", category: "Robotaxi" },
+  // Robotaxi — Pricing & Revenue
+  { pattern: /robotaxi.*pric|\$.*per.*mile|ride.*revenue|base.*fare|surge.*pric/i, area: "pricing_revenue", category: "Robotaxi" },
+  { pattern: /TAM.*robotaxi|trillion.*robotaxi|robotaxi.*market/i, area: "pricing_revenue", category: "Robotaxi" },
+  // Robotaxi — Operating Costs
+  { pattern: /cost.*per.*mile.*robotaxi|COGS.*robotaxi|teleop|remote.*operator/i, area: "operating_costs", category: "Robotaxi" },
+  // Robotaxi — Vehicle CapEx
+  { pattern: /Cybercab.*price|Cybercab.*cost|under \$30|manufacturing.*cost.*Cybercab/i, area: "vehicle_capex", category: "Robotaxi" },
+  { pattern: /margin.*robotaxi|FCF.*robotaxi|free cash flow.*robotaxi/i, area: "vehicle_capex", category: "Robotaxi" },
+  // Robotaxi — Competition
+  { pattern: /Waymo|Zoox|Pony AI|Apollo Go|Baidu.*robotaxi/i, area: "competitor_comparison", category: "Robotaxi" },
+  { pattern: /Nvidia.*Uber|Nvidia.*robotaxi|Uber.*robotaxi|Uber.*autonom/i, area: "competitor_comparison", category: "Robotaxi" },
+  { pattern: /Lucid.*robotaxi|Lucid.*Lunar|Rivian.*robotaxi/i, area: "competitor_comparison", category: "Robotaxi" },
 
   // Humanoid Bots
   { pattern: /Optimus.*Gen|Optimus.*V\d|Optimus.*hand|Optimus.*degree/i, area: "optimus_hardware", category: "Humanoid Bots" },
@@ -194,12 +209,19 @@ function main() {
     console.log('No quarterly metrics file found, building KB with facts only');
   }
 
-  // Load existing facts
-  let existingFacts = {};
+  // Load extracted facts from kb-facts.json
+  let extractedFacts = [];
+  if (fs.existsSync(FACTS_FILE)) {
+    extractedFacts = JSON.parse(fs.readFileSync(FACTS_FILE, 'utf-8'));
+    console.log(`Loaded ${extractedFacts.length} extracted facts from kb-facts.json`);
+  } else {
+    console.log('No kb-facts.json found — building KB with metrics only');
+  }
+
+  // Load existing KB for composite areas (manually curated, preserved as-is)
+  let existingKb = {};
   if (fs.existsSync(KB_FILE)) {
-    existingFacts = JSON.parse(fs.readFileSync(KB_FILE, 'utf-8'));
-    const totalFacts = Object.values(existingFacts).reduce((sum, arr) => sum + arr.length, 0);
-    console.log(`Loaded existing KB: ${totalFacts} facts across ${Object.keys(existingFacts).length} categories`);
+    existingKb = JSON.parse(fs.readFileSync(KB_FILE, 'utf-8'));
   }
 
   // Build new KB structure
@@ -208,6 +230,18 @@ function main() {
   for (const [category, schema] of Object.entries(KB_SCHEMA)) {
     kb[category] = {
       areas: schema.areas.map(areaDef => {
+        // Composite areas are manually curated — preserve from existing KB
+        if (areaDef.type === "composite") {
+          const existingCat = existingKb[category];
+          const existingArea = existingCat?.areas?.find(a => a.id === areaDef.id);
+          if (existingArea) {
+            console.log(`  Preserving composite area: ${category} > ${areaDef.id}`);
+            return existingArea;
+          }
+          // Fallback: create empty composite
+          return { id: areaDef.id, name: areaDef.name, type: "composite", sections: [] };
+        }
+
         const area = {
           id: areaDef.id,
           name: areaDef.name,
@@ -249,37 +283,54 @@ function main() {
     };
   }
 
-  // Assign existing facts to areas
+  // Assign extracted facts to areas by their area ID
   let assigned = 0;
   let unassigned = 0;
 
-  for (const [category, facts] of Object.entries(existingFacts)) {
-    // Skip if it's the new format already
-    if (!Array.isArray(facts)) continue;
-
-    for (const fact of facts) {
-      const match = matchFactToArea(fact, category);
-      if (match) {
-        const catData = kb[match.category];
-        if (catData) {
-          const area = catData.areas.find(a => a.id === match.area);
-          if (area) {
-            area.facts.push({
-              fact: fact.fact,
-              lastUpdated: fact.lastUpdated,
-              sources: fact.sources,
-            });
-            assigned++;
-            continue;
-          }
-        }
-      }
-      unassigned++;
-      console.log(`  Unassigned: "${fact.fact.slice(0, 80)}..." (${category})`);
+  // Build area lookup: area_id -> { category, areaObj }
+  const areaLookup = {};
+  let skippedComposite = 0;
+  for (const [category, data] of Object.entries(kb)) {
+    for (const area of data.areas) {
+      areaLookup[area.id] = { category, area };
     }
   }
 
-  console.log(`\nFact assignment: ${assigned} assigned, ${unassigned} unassigned`);
+  for (const fact of extractedFacts) {
+    const target = areaLookup[fact.area];
+    // Skip facts targeting composite areas (manually curated)
+    if (target && target.area.type === 'composite') {
+      skippedComposite++;
+      continue;
+    }
+    if (target) {
+      target.area.facts.push({
+        fact: fact.fact,
+        date: fact.date || '',
+        sources: fact.sources || [],
+      });
+      assigned++;
+    } else {
+      // Try regex fallback for mismatched area IDs
+      const match = matchFactToArea(fact, null);
+      if (match) {
+        const fallbackTarget = areaLookup[match.area];
+        if (fallbackTarget) {
+          fallbackTarget.area.facts.push({
+            fact: fact.fact,
+            date: fact.date || '',
+            sources: fact.sources || [],
+          });
+          assigned++;
+          continue;
+        }
+      }
+      unassigned++;
+      console.log(`  Unassigned (unknown area "${fact.area}"): "${fact.fact.slice(0, 80)}..."`);
+    }
+  }
+
+  console.log(`\nFact assignment: ${assigned} assigned, ${skippedComposite} skipped (composite), ${unassigned} unassigned`);
 
   // Write output
   fs.writeFileSync(KB_FILE, JSON.stringify(kb, null, 2));

@@ -179,15 +179,43 @@ interface KBFact {
   sources: string[]
 }
 
+interface KBTrackerSnapshot {
+  date: string
+  total?: number
+  note?: string
+  breakdown?: Record<string, number>
+  sources?: string[]
+}
+
+interface KBListItem {
+  item?: string
+  city?: string
+  status?: string
+  detail?: string
+  since?: string
+  source?: string
+  date?: string
+}
+
+interface KBSection {
+  id: string
+  name: string
+  type: 'tracker' | 'list'
+  current?: KBTrackerSnapshot
+  history?: KBTrackerSnapshot[]
+  items?: KBListItem[]
+}
+
 interface KBArea {
   id: string
   name: string
-  type: 'metric' | 'facts'
+  type: 'metric' | 'facts' | 'composite'
   unit?: string
   metricKey?: string
   quarterly?: Record<string, number>
   annual?: Record<string, number>
   facts: KBFact[]
+  sections?: KBSection[]
 }
 
 interface KBCategory {
@@ -428,6 +456,116 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
   )
 }
 
+const STATUS_COLORS: Record<string, string> = {
+  operational: 'text-green',
+  testing: 'text-amber',
+  validation: 'text-amber',
+  prototype: 'text-text-dim',
+}
+
+function KBTrackerSection({ section }: { section: KBSection }) {
+  const [showHistory, setShowHistory] = useState(false)
+  const c = section.current
+  if (!c) return null
+
+  return (
+    <div className="space-y-2">
+      <div className="flex items-baseline justify-between">
+        <span className="text-text-bright text-xs font-bold">{section.name}</span>
+        <span className="text-text-dim" style={{ fontSize: '10px' }}>Updated {c.date}</span>
+      </div>
+      {c.total !== undefined && (
+        <div className="flex items-baseline gap-3">
+          <span className="text-green text-lg font-bold">{c.total.toLocaleString()}</span>
+          {c.breakdown && (
+            <span className="text-text-dim text-xs">
+              ({Object.entries(c.breakdown).map(([k, v]) => `${k}: ${v}`).join(' / ')})
+            </span>
+          )}
+        </div>
+      )}
+      {c.note && <div className="text-text text-xs leading-relaxed">{c.note}</div>}
+      {section.history && section.history.length > 0 && (
+        <div>
+          <button
+            onClick={() => setShowHistory(!showHistory)}
+            className="text-green-dim hover:text-green text-xs cursor-pointer transition-colors"
+          >
+            {showHistory ? '[-] hide history' : `[+] history (${section.history.length} snapshots)`}
+          </button>
+          {showHistory && (
+            <div className="mt-2 space-y-1 pl-2 border-l border-border">
+              {section.history.map((h, i) => (
+                <div key={i} className="flex items-baseline gap-3 text-xs">
+                  <span className="text-text-dim w-20 flex-shrink-0">{h.date}</span>
+                  {h.total !== undefined && <span className="text-text-bright">{h.total.toLocaleString()}</span>}
+                  {h.note && <span className="text-text-dim">— {h.note}</span>}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function KBListSection({ section }: { section: KBSection }) {
+  if (!section.items || section.items.length === 0) return null
+
+  return (
+    <div className="space-y-2">
+      <span className="text-text-bright text-xs font-bold">{section.name}</span>
+      <div className="space-y-1">
+        {section.items.map((item, i) => (
+          <div key={i} className="flex gap-2 text-xs">
+            <span className="text-green-dim flex-shrink-0">-</span>
+            {item.city ? (
+              <div>
+                <span className={`font-bold ${STATUS_COLORS[item.status || ''] || 'text-text'}`}>
+                  {item.city}
+                </span>
+                {item.status && (
+                  <span className="text-text-dim"> [{item.status}]</span>
+                )}
+                {item.detail && <span className="text-text"> — {item.detail}</span>}
+                {item.since && <span className="text-text-dim"> (since {item.since})</span>}
+              </div>
+            ) : (
+              <div>
+                <span className="text-text">{item.item}</span>
+                {item.source && <span className="text-text-dim"> — {item.source}</span>}
+                {item.date && <span className="text-text-dim"> ({item.date})</span>}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+function KBCompositeArea({ area }: { area: KBArea }) {
+  if (!area.sections) return null
+  const trackers = area.sections.filter(s => s.type === 'tracker')
+  const lists = area.sections.filter(s => s.type === 'list')
+
+  return (
+    <div className="space-y-4 pt-3">
+      {trackers.map(s => (
+        <div key={s.id} className="pb-3 border-b border-border last:border-0">
+          <KBTrackerSection section={s} />
+        </div>
+      ))}
+      {lists.map(s => (
+        <div key={s.id} className="pb-3 border-b border-border last:border-0">
+          <KBListSection section={s} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
 function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
   category: string
   expandedArea: string | null
@@ -439,16 +577,23 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
 
   const factCount = catData.areas.reduce((s, a) => s + (a.facts?.length || 0), 0)
   const metricCount = catData.areas.filter(a => a.type === 'metric').length
+  const compositeCount = catData.areas.filter(a => a.type === 'composite').length
 
   return (
     <div className="space-y-1">
       <div className="text-text-dim text-xs mb-3">
-        {catData.areas.length} areas // {metricCount > 0 ? `${metricCount} metrics, ` : ''}{factCount} facts
+        {catData.areas.length} areas // {metricCount > 0 ? `${metricCount} metrics, ` : ''}{compositeCount > 0 ? `${compositeCount} structured, ` : ''}{factCount} facts
       </div>
       {catData.areas.map(area => {
         const areaExpanded = expandedArea === area.id
         const hasMetric = area.type === 'metric' && Object.keys(area.quarterly || {}).length > 0
         const hasFacts = (area.facts?.length || 0) > 0
+        const isComposite = area.type === 'composite'
+
+        // Build badge text
+        const badgeText = isComposite
+          ? `${area.sections?.length || 0} sections`
+          : hasFacts ? `${area.facts.length} facts` : ''
 
         return (
           <div key={area.id} className="border border-border bg-surface">
@@ -462,14 +607,20 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
                 {area.type === 'metric' && (
                   <span className="text-green-dim text-xs flex-shrink-0">[METRIC]</span>
                 )}
+                {isComposite && (
+                  <span className="text-amber text-xs flex-shrink-0">[LIVE]</span>
+                )}
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
-                {hasFacts && <span className="text-text-dim text-xs">{area.facts.length} facts</span>}
+                {badgeText && <span className="text-text-dim text-xs">{badgeText}</span>}
               </div>
             </button>
 
             {areaExpanded && (
               <div className="px-4 pb-4 space-y-3 border-t border-border">
+                {/* Composite area */}
+                {isComposite && <KBCompositeArea area={area} />}
+
                 {/* Metric chart + source */}
                 {hasMetric && (
                   <div className="space-y-2 pt-3">
@@ -482,7 +633,7 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
 
                 {/* Facts */}
                 {hasFacts && (
-                  <div className={`space-y-2 ${hasMetric ? 'border-t border-border pt-3' : 'pt-1'}`}>
+                  <div className={`space-y-2 ${hasMetric || isComposite ? 'border-t border-border pt-3' : 'pt-1'}`}>
                     {area.facts.map((fact, i) => (
                       <div key={i}>
                         <div className="text-xs text-text leading-relaxed">{fact.fact}</div>
@@ -507,7 +658,7 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
                   </div>
                 )}
 
-                {!hasMetric && !hasFacts && (
+                {!hasMetric && !hasFacts && !isComposite && (
                   <div className="text-text-dim text-xs pt-3">No data yet</div>
                 )}
               </div>
