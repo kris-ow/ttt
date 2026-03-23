@@ -140,10 +140,10 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
                     className="w-full text-left border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 transition-colors cursor-pointer group"
                   >
                     <div className="flex items-center gap-3 text-xs">
-                      <span className="text-text-dim flex-shrink-0 w-24 sm:w-40 truncate">
+                      <span className="text-text-dim flex-shrink-0 whitespace-nowrap">
                         {channelShort(article.channel, article.sourceType)}
                       </span>
-                      <span className="text-text-bright group-hover:text-green truncate min-w-0 flex-1 transition-colors">
+                      <span className="text-text-bright group-hover:text-green min-w-0 flex-1 transition-colors overflow-hidden text-ellipsis whitespace-nowrap">
                         {article.title}
                       </span>
                       {article.signal && (
