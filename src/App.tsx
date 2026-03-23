@@ -44,9 +44,17 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
       <div className="max-w-4xl mx-auto p-3 sm:p-6">
         <button
           onClick={onClose}
-          className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer"
+          className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer hidden sm:block"
         >
           [ESC] &lt;-- BACK TO FEED
+        </button>
+
+        {/* Mobile floating back button */}
+        <button
+          onClick={onClose}
+          className="sm:hidden fixed bottom-6 right-4 z-50 bg-green text-bg px-4 py-2 text-xs font-bold cursor-pointer"
+        >
+          [BACK]
         </button>
 
         <div className="border border-border bg-surface p-3 sm:p-6 overflow-x-hidden" onClick={e => e.stopPropagation()}>
