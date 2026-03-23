@@ -565,17 +565,62 @@ function ValuationSection() {
             Where <span className="text-text-bright">FCFₜ</span> = free cash flow in year t,{' '}
             <span className="text-text-bright">r</span> = discount rate (WACC),{' '}
             <span className="text-text-bright">n</span> = projection period.
-            Terminal value captures value beyond the explicit forecast period, typically using a perpetual growth model or exit multiple.
           </p>
-          <p>
-            Key inputs for each Tesla segment:
-          </p>
-          <div className="pl-4 space-y-1 text-text-dim">
-            <div>{'>'} Revenue growth assumptions (fleet size, pricing, adoption curves)</div>
-            <div>{'>'} Operating margins (how they evolve as the segment scales)</div>
-            <div>{'>'} Capital expenditure requirements</div>
-            <div>{'>'} Discount rate (risk-adjusted — higher for speculative segments like Optimus)</div>
-            <div>{'>'} Terminal growth rate or exit multiple</div>
+
+          {/* Key terms */}
+          <div className="border-t border-border pt-3 mt-3 space-y-3">
+            <h4 className="text-green-dim text-xs font-bold">KEY TERMS</h4>
+
+            <div>
+              <span className="text-text-bright">Free Cash Flow (FCF)</span>
+              <p className="mt-1">
+                Cash a business generates after paying operating expenses and capital expenditures.
+                It's the money actually available to investors — unlike earnings, FCF can't be manipulated by accounting choices.
+              </p>
+              <div className="border border-border bg-surface-2 p-2 mt-1 text-text-bright">
+                FCF = Operating Cash Flow − Capital Expenditures
+              </div>
+            </div>
+
+            <div>
+              <span className="text-text-bright">WACC (Weighted Average Cost of Capital)</span>
+              <p className="mt-1">
+                The blended rate of return a company must earn to satisfy both debt holders and equity investors.
+                It reflects the riskiness of the business — higher WACC means future cash flows are worth less today.
+                Typical range: 8-12% for established companies, higher for speculative ventures.
+              </p>
+            </div>
+
+            <div>
+              <span className="text-text-bright">Terminal Value</span>
+              <p className="mt-1">
+                Captures all value beyond the explicit forecast period (e.g. after year 10).
+                Often the largest component of a DCF — typically 60-80% of total value.
+                Calculated either as a perpetual growth model (Gordon Growth: FCF × (1+g) / (r−g))
+                or by applying an exit multiple to the final year's metrics.
+              </p>
+            </div>
+
+            <div>
+              <span className="text-text-bright">Discount Rate / Present Value</span>
+              <p className="mt-1">
+                A dollar tomorrow is worth less than a dollar today. The discount rate converts future cash flows
+                to present value — accounting for time, inflation, and risk. At a 10% discount rate,
+                $100 received in 5 years is worth $62 today.
+              </p>
+            </div>
+          </div>
+
+          {/* Tesla-specific inputs */}
+          <div className="border-t border-border pt-3 mt-3">
+            <h4 className="text-green-dim text-xs font-bold mb-2">KEY INPUTS FOR TESLA SEGMENTS</h4>
+            <div className="pl-4 space-y-1 text-text-dim">
+              <div>{'>'} Revenue growth assumptions (fleet size, pricing, adoption curves)</div>
+              <div>{'>'} Operating margins (how they evolve as the segment scales)</div>
+              <div>{'>'} Capital expenditure requirements</div>
+              <div>{'>'} Discount rate (risk-adjusted — higher for speculative segments like Optimus)</div>
+              <div>{'>'} Terminal growth rate or exit multiple</div>
+            </div>
           </div>
         </div>
         <div className="mt-3 flex gap-3 text-xs">
