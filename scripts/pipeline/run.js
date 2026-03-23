@@ -94,7 +94,7 @@ function findUnsummarizedTranscripts() {
 
 // ── Prompt Building ──────────────────────────────────────
 
-function buildPrompt(channel, title, transcript) {
+function buildPrompt(channel, title, transcript, published) {
   let template = fs.readFileSync(PROMPT_FILE, 'utf-8');
 
   // Build corrections string
@@ -123,8 +123,13 @@ function buildPrompt(channel, title, transcript) {
     }
   }
 
+  const pubDate = published ? published.split(' ')[0] : new Date().toISOString().split('T')[0];
+  const year = pubDate.slice(0, 4);
+
   template = template.replace('{{CORRECTIONS}}', corrStr);
   template = template.replace('{{KB_CONTEXT}}', kbContext);
+  template = template.replace('{{YEAR}}', year);
+  template = template.replace('{{PUBLISH_DATE}}', pubDate);
   template = template.replace('{{CHANNEL}}', channel);
   template = template.replace('{{TITLE}}', title);
   template = template.replace('{{TRANSCRIPT}}', transcript);
@@ -266,7 +271,7 @@ async function main() {
   console.log(`\n=== Building prompts and submitting batch ===`);
   const requests = transcripts.map(t => ({
     id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
-    prompt: buildPrompt(t.channel, t.title, t.transcript),
+    prompt: buildPrompt(t.channel, t.title, t.transcript, t.published),
   }));
 
   const batch = await submitBatch(client, requests);

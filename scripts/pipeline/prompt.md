@@ -19,6 +19,10 @@ Classify the content into one or more of these categories:
 
 {{KB_CONTEXT}}
 
+## Date Context
+
+The current year is {{YEAR}}. When the transcript mentions relative timeframes like "Q2", "next quarter", "this year", "next year", etc. without specifying a year, infer the correct year based on the video's publish date ({{PUBLISH_DATE}}). Do not default to prior years.
+
 ## Task
 
 Summarize the following YouTube video transcript from the channel "{{CHANNEL}}" titled "{{TITLE}}".
