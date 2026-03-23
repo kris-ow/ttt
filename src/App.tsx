@@ -37,6 +37,14 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
   }, [onClose])
 
   return (
+    <>
+    {/* Mobile floating back button — outside scrollable container */}
+    <button
+      onClick={onClose}
+      className="sm:hidden fixed bottom-6 right-4 z-[60] bg-green text-bg px-4 py-2 text-xs font-bold cursor-pointer"
+    >
+      [BACK]
+    </button>
     <div
       className="fixed inset-0 z-50 bg-bg/60 backdrop-blur-md overflow-auto"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
@@ -47,14 +55,6 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
           className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer hidden sm:block"
         >
           [ESC] &lt;-- BACK TO FEED
-        </button>
-
-        {/* Mobile floating back button */}
-        <button
-          onClick={onClose}
-          className="sm:hidden fixed bottom-6 right-4 z-50 bg-green text-bg px-4 py-2 text-xs font-bold cursor-pointer"
-        >
-          [BACK]
         </button>
 
         <div className="border border-border bg-surface p-3 sm:p-6 overflow-x-hidden" onClick={e => e.stopPropagation()}>
@@ -98,6 +98,7 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
         </div>
       </div>
     </div>
+    </>
   )
 }
 
