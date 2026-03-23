@@ -53,6 +53,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 - `scripts/sync-drive.js` — Google Drive sync (service account, recursive)
 - `scripts/build-news.js` — parse summaries into news.json
 - `scripts/pipeline/` — automated summary pipeline (see above)
+- `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt`
 - `.env` — VITE_FINNHUB_KEY (not in git)
 - `the-tesla-thesis-40967df2aae1.json` — service account key (not in git)
 

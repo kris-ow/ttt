@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "pipeline": "node scripts/pipeline/run.js",
     "sync-drive": "node scripts/sync-drive.js",
-    "build-news": "node scripts/build-news.js"
+    "build-news": "node scripts/build-news.js",
+    "costs": "node scripts/pipeline/costs-report.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
