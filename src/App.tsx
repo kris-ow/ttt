@@ -133,9 +133,7 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
             </div>
 
             <div className="space-y-1">
-              {articles.map(article => {
-                const ch = CHANNEL_META[article.channel]
-                return (
+              {articles.map(article => (
                   <button
                     key={article.id}
                     onClick={() => onSelectArticle(article)}
@@ -153,8 +151,7 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
                       )}
                     </div>
                   </button>
-                )
-              })}
+              ))}
             </div>
           </div>
         )
