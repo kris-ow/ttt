@@ -546,7 +546,6 @@ function ValuationSection() {
         </div>
         <div className="mt-3 flex gap-3 text-xs">
           <a href="https://www.investopedia.com/terms/s/sumofpartsvaluation.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: SOTP]</a>
-          <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
         </div>
       </div>
 
@@ -580,7 +579,6 @@ function ValuationSection() {
         </div>
         <div className="mt-3 flex gap-3 text-xs">
           <a href="https://www.investopedia.com/terms/d/dcf.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: DCF]</a>
-          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/littlebook/discountedcf.htm" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran: DCF]</a>
         </div>
       </div>
 
