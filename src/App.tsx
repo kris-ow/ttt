@@ -362,14 +362,21 @@ function MetricDisplay({ quarterly, annual, unit }: { quarterly: Record<string, 
   )
 }
 
-function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) => void }) {
-  const [expandedCategory, setExpandedCategory] = useState<string | null>(null)
-  const [expandedArea, setExpandedArea] = useState<string | null>(null)
+const KB_TAB_SHORT: Record<string, string> = {
+  'Autonomous Driving': 'FSD',
+  'Robotaxi': 'ROBOTAXI',
+  'Humanoid Bots': 'OPTIMUS',
+  'Energy': 'ENERGY',
+  'Electric Vehicles': 'EVs',
+  'Financials': 'FINANCIALS',
+  'Market & Competition': 'MARKET',
+  'Valuation Models': 'VALUATION',
+}
 
-  const toggleCategory = (cat: string) => {
-    setExpandedCategory(expandedCategory === cat ? null : cat)
-    setExpandedArea(null)
-  }
+function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) => void }) {
+  const allTabs = [...KB_CATEGORIES, 'Valuation Models'] as const
+  const [activeTab, setActiveTab] = useState<string>(KB_CATEGORIES[0])
+  const [expandedArea, setExpandedArea] = useState<string | null>(null)
 
   const toggleArea = (areaId: string) => {
     setExpandedArea(expandedArea === areaId ? null : areaId)
@@ -381,122 +388,213 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
     if (article) onSelectArticle(article)
   }
 
-  // Count totals
-  const totalFacts = KB_CATEGORIES.reduce((sum, cat) => {
-    const catData = kbData[cat] as unknown as KBCategory
-    return sum + catData.areas.reduce((s, a) => s + (a.facts?.length || 0), 0)
-  }, 0)
-  const totalMetricPoints = KB_CATEGORIES.reduce((sum, cat) => {
-    const catData = kbData[cat] as unknown as KBCategory
-    return sum + catData.areas.filter(a => a.type === 'metric').reduce((s, a) => {
-      return s + Object.keys(a.quarterly || {}).length + Object.keys(a.annual || {}).length
-    }, 0)
-  }, 0)
+  // Reset expanded area when switching tabs
+  const selectTab = (tab: string) => {
+    setActiveTab(tab)
+    setExpandedArea(null)
+  }
 
   return (
-    <div className="space-y-2">
-      <div className="text-text-dim text-xs mb-4">
-        {totalFacts} facts + {totalMetricPoints} metric data points across {KB_CATEGORIES.length} categories
+    <div>
+      {/* Category tabs — wrap into 2 rows */}
+      <div className="flex flex-wrap gap-1 mb-4">
+        {allTabs.map(tab => (
+          <button
+            key={tab}
+            onClick={() => selectTab(tab)}
+            className={`px-2 py-1.5 text-xs font-bold transition-colors cursor-pointer border-b-2 ${
+              activeTab === tab
+                ? 'text-green border-green'
+                : 'text-text-dim hover:text-green border-transparent'
+            }`}
+          >
+            {KB_TAB_SHORT[tab] || tab.toUpperCase()}
+          </button>
+        ))}
       </div>
-      {KB_CATEGORIES.map(category => {
-        const catData = kbData[category] as unknown as KBCategory
-        const isExpanded = expandedCategory === category
-        const areaCount = catData.areas.length
-        const factCount = catData.areas.reduce((s, a) => s + (a.facts?.length || 0), 0)
-        const metricCount = catData.areas.filter(a => a.type === 'metric').length
+
+      {/* Tab content */}
+      {activeTab === 'Valuation Models' ? (
+        <ValuationSection />
+      ) : (
+        <KBCategoryContent
+          category={activeTab}
+          expandedArea={expandedArea}
+          toggleArea={toggleArea}
+          openSource={openSource}
+        />
+      )}
+    </div>
+  )
+}
+
+function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
+  category: string
+  expandedArea: string | null
+  toggleArea: (id: string) => void
+  openSource: (src: string) => void
+}) {
+  const catData = kbData[category as keyof typeof kbData] as unknown as KBCategory
+  if (!catData) return <div className="text-text-dim text-xs">No data for this category</div>
+
+  const factCount = catData.areas.reduce((s, a) => s + (a.facts?.length || 0), 0)
+  const metricCount = catData.areas.filter(a => a.type === 'metric').length
+
+  return (
+    <div className="space-y-1">
+      <div className="text-text-dim text-xs mb-3">
+        {catData.areas.length} areas // {metricCount > 0 ? `${metricCount} metrics, ` : ''}{factCount} facts
+      </div>
+      {catData.areas.map(area => {
+        const areaExpanded = expandedArea === area.id
+        const hasMetric = area.type === 'metric' && Object.keys(area.quarterly || {}).length > 0
+        const hasFacts = (area.facts?.length || 0) > 0
 
         return (
-          <div key={category} className="border border-border bg-surface">
+          <div key={area.id} className="border border-border bg-surface">
             <button
-              onClick={() => toggleCategory(category)}
-              className="w-full text-left p-4 flex items-center justify-between cursor-pointer hover:bg-surface-2 transition-colors"
+              onClick={() => toggleArea(area.id)}
+              className="w-full text-left px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-surface-2 transition-colors"
             >
-              <div className="flex items-center gap-3">
-                <span className="text-green text-xs font-bold">{isExpanded ? '[-]' : '[+]'}</span>
-                <span className="text-green text-xs font-bold">{category.toUpperCase()}</span>
+              <div className="flex items-center gap-3 min-w-0 flex-1">
+                <span className="text-text-dim text-xs flex-shrink-0">{areaExpanded ? '[-]' : '[+]'}</span>
+                <span className="text-text-bright text-xs truncate">{area.name}</span>
+                {area.type === 'metric' && (
+                  <span className="text-green-dim text-xs flex-shrink-0">[METRIC]</span>
+                )}
               </div>
-              <span className="text-text-dim text-xs">
-                {areaCount} areas // {metricCount > 0 ? `${metricCount} metrics, ` : ''}{factCount} facts
-              </span>
+              <div className="flex items-center gap-2 flex-shrink-0">
+                {hasFacts && <span className="text-text-dim text-xs">{area.facts.length} facts</span>}
+              </div>
             </button>
 
-            {isExpanded && (
-              <div className="border-t border-border">
-                {catData.areas.map(area => {
-                  const areaExpanded = expandedArea === area.id
-                  const hasMetric = area.type === 'metric' && Object.keys(area.quarterly || {}).length > 0
-                  const hasFacts = (area.facts?.length || 0) > 0
-
-                  return (
-                    <div key={area.id} className="border-b border-border last:border-0">
-                      <button
-                        onClick={() => toggleArea(area.id)}
-                        className="w-full text-left px-4 py-3 flex items-center justify-between cursor-pointer hover:bg-surface-2 transition-colors"
-                      >
-                        <div className="flex items-center gap-3 min-w-0 flex-1">
-                          <span className="text-text-dim text-xs flex-shrink-0">{areaExpanded ? '[-]' : '[+]'}</span>
-                          <span className="text-text-bright text-xs truncate">{area.name}</span>
-                          {area.type === 'metric' && (
-                            <span className="text-green-dim text-xs flex-shrink-0">[METRIC]</span>
-                          )}
-                        </div>
-                        <div className="flex items-center gap-2 flex-shrink-0">
-                          {hasFacts && <span className="text-text-dim text-xs">{area.facts.length} facts</span>}
-                        </div>
-                      </button>
-
-                      {areaExpanded && (
-                        <div className="px-4 pb-4 space-y-3">
-                          {/* Metric chart + source */}
-                          {hasMetric && (
-                            <div className="space-y-2">
-                              <MetricDisplay quarterly={area.quarterly!} annual={area.annual || {}} unit={area.unit || ''} />
-                              <div className="text-text-dim" style={{ fontSize: '9px' }}>
-                                src: Tesla Quarterly Shareholder Decks (Q1-2020 — Q4-2025)
-                              </div>
-                            </div>
-                          )}
-
-                          {/* Facts */}
-                          {hasFacts && (
-                            <div className={`space-y-2 ${hasMetric ? 'border-t border-border pt-3' : ''}`}>
-                              {area.facts.map((fact, i) => (
-                                <div key={i}>
-                                  <div className="text-xs text-text leading-relaxed">{fact.fact}</div>
-                                  <div className="flex items-center gap-3 mt-1">
-                                    <span className="text-text-dim text-xs">{fact.lastUpdated}</span>
-                                    <div className="flex items-center gap-1 flex-wrap">
-                                      {fact.sources.map((src, j) => (
-                                        <button
-                                          key={j}
-                                          onClick={() => openSource(src)}
-                                          className="text-green-dim hover:text-green text-xs cursor-pointer transition-colors"
-                                          title={src}
-                                        >
-                                          [{j + 1}]
-                                        </button>
-                                      ))}
-                                    </div>
-                                  </div>
-                                  {i < area.facts.length - 1 && <div className="border-b border-border mt-2" />}
-                                </div>
-                              ))}
-                            </div>
-                          )}
-
-                          {!hasMetric && !hasFacts && (
-                            <div className="text-text-dim text-xs">No data yet</div>
-                          )}
-                        </div>
-                      )}
+            {areaExpanded && (
+              <div className="px-4 pb-4 space-y-3 border-t border-border">
+                {/* Metric chart + source */}
+                {hasMetric && (
+                  <div className="space-y-2 pt-3">
+                    <MetricDisplay quarterly={area.quarterly!} annual={area.annual || {}} unit={area.unit || ''} />
+                    <div className="text-text-dim" style={{ fontSize: '9px' }}>
+                      src: Tesla Quarterly Shareholder Decks (Q1-2020 — Q4-2025)
                     </div>
-                  )
-                })}
+                  </div>
+                )}
+
+                {/* Facts */}
+                {hasFacts && (
+                  <div className={`space-y-2 ${hasMetric ? 'border-t border-border pt-3' : 'pt-1'}`}>
+                    {area.facts.map((fact, i) => (
+                      <div key={i}>
+                        <div className="text-xs text-text leading-relaxed">{fact.fact}</div>
+                        <div className="flex items-center gap-3 mt-1">
+                          <span className="text-text-dim text-xs">{fact.lastUpdated}</span>
+                          <div className="flex items-center gap-1 flex-wrap">
+                            {fact.sources.map((src, j) => (
+                              <button
+                                key={j}
+                                onClick={() => openSource(src)}
+                                className="text-green-dim hover:text-green text-xs cursor-pointer transition-colors"
+                                title={src}
+                              >
+                                [{j + 1}]
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                        {i < area.facts.length - 1 && <div className="border-b border-border mt-2" />}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {!hasMetric && !hasFacts && (
+                  <div className="text-text-dim text-xs pt-3">No data yet</div>
+                )}
               </div>
             )}
           </div>
         )
       })}
+    </div>
+  )
+}
+
+function ValuationSection() {
+  return (
+    <div className="space-y-6">
+      {/* SOTP */}
+      <div className="border border-border bg-surface p-4">
+        <h3 className="text-green text-xs font-bold mb-3">SUM-OF-THE-PARTS (SOTP)</h3>
+        <div className="text-xs text-text leading-relaxed space-y-2">
+          <p>
+            SOTP valuation breaks a company into its individual business segments, values each independently,
+            and sums them to derive total enterprise value. This is particularly relevant for conglomerates or
+            companies with distinct business lines that the market may price inefficiently as a bundle.
+          </p>
+          <p>
+            For Tesla, SOTP separates: <span className="text-text-bright">Electric Vehicles</span>,{' '}
+            <span className="text-text-bright">Robotaxi/FSD</span>,{' '}
+            <span className="text-text-bright">Optimus (Humanoid Robots)</span>,{' '}
+            <span className="text-text-bright">Energy Generation & Storage</span>, and{' '}
+            <span className="text-text-bright">AI/Compute Services</span>.
+            Each segment has fundamentally different growth profiles, margins, and comparable peers.
+          </p>
+          <p className="text-text-dim">
+            The core thesis: the market prices Tesla primarily as an automaker, significantly undervaluing
+            robotaxi, Optimus, and energy — segments with potentially larger TAMs and higher margins than the EV business.
+          </p>
+        </div>
+        <div className="mt-3 flex gap-3 text-xs">
+          <a href="https://www.investopedia.com/terms/s/sumofpartsvaluation.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: SOTP]</a>
+          <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
+        </div>
+      </div>
+
+      {/* DCF */}
+      <div className="border border-border bg-surface p-4">
+        <h3 className="text-green text-xs font-bold mb-3">DISCOUNTED CASH FLOW (DCF)</h3>
+        <div className="text-xs text-text leading-relaxed space-y-2">
+          <p>
+            DCF estimates the present value of a business based on its projected future free cash flows,
+            discounted back at a rate reflecting the risk of those cash flows (typically WACC — weighted average cost of capital).
+          </p>
+          <div className="border border-border bg-surface-2 p-3 font-bold text-text-bright">
+            PV = Σ FCFₜ / (1 + r)ᵗ + Terminal Value / (1 + r)ⁿ
+          </div>
+          <p>
+            Where <span className="text-text-bright">FCFₜ</span> = free cash flow in year t,{' '}
+            <span className="text-text-bright">r</span> = discount rate (WACC),{' '}
+            <span className="text-text-bright">n</span> = projection period.
+            Terminal value captures value beyond the explicit forecast period, typically using a perpetual growth model or exit multiple.
+          </p>
+          <p>
+            Key inputs for each Tesla segment:
+          </p>
+          <div className="pl-4 space-y-1 text-text-dim">
+            <div>{'>'} Revenue growth assumptions (fleet size, pricing, adoption curves)</div>
+            <div>{'>'} Operating margins (how they evolve as the segment scales)</div>
+            <div>{'>'} Capital expenditure requirements</div>
+            <div>{'>'} Discount rate (risk-adjusted — higher for speculative segments like Optimus)</div>
+            <div>{'>'} Terminal growth rate or exit multiple</div>
+          </div>
+        </div>
+        <div className="mt-3 flex gap-3 text-xs">
+          <a href="https://www.investopedia.com/terms/d/dcf.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: DCF]</a>
+          <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/littlebook/discountedcf.htm" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran: DCF]</a>
+        </div>
+      </div>
+
+      {/* Roadmap */}
+      <div className="border border-border bg-surface-2 p-4">
+        <h3 className="text-text-dim text-xs font-bold mb-2">ROADMAP</h3>
+        <div className="text-xs text-text-dim space-y-1">
+          <div>{'>'} Robotaxi DCF model — in progress</div>
+          <div>{'>'} EV segment valuation</div>
+          <div>{'>'} Energy segment valuation</div>
+          <div>{'>'} Optimus segment valuation</div>
+          <div>{'>'} Combined SOTP with scenario weighting</div>
+        </div>
+      </div>
     </div>
   )
 }
