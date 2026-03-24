@@ -9,7 +9,7 @@ on:
 jobs:
   pipeline:
     runs-on: ubuntu-latest
-    timeout-minutes: 150 # 2.5 hours max (batch can take time)
+    timeout-minutes: 210 # 3.5 hours max (batch + up to 3 retries at 20min intervals)
 
     steps:
       - uses: actions/checkout@v4

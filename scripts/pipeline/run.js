@@ -296,7 +296,11 @@ async function main() {
 }
 
 async function processPendingBatch(client, state) {
-  const { batchId, transcripts } = state.pendingBatch;
+  const MAX_RETRIES = 3;
+  const RETRY_DELAY_MS = 20 * 60 * 1000; // 20 minutes
+
+  let { batchId, transcripts } = state.pendingBatch;
+  let attempt = state.pendingBatch.attempt || 1;
 
   const batch = await pollBatch(client, batchId);
   if (!batch) {
@@ -306,8 +310,9 @@ async function processPendingBatch(client, state) {
   }
 
   // Process results
-  console.log(`\n=== Processing batch results ===`);
+  console.log(`\n=== Processing batch results (attempt ${attempt}/${MAX_RETRIES + 1}) ===`);
   const transcriptMap = new Map(transcripts.map(t => [t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64), t]));
+  const failedTranscripts = [];
 
   for await (const result of getBatchResults(client, batchId)) {
     const transcript = transcriptMap.get(result.custom_id);
@@ -344,12 +349,49 @@ async function processPendingBatch(client, state) {
     } else {
       console.log(`  FAILED: ${result.result.type}`);
       console.log(`  Error details: ${JSON.stringify(result.result.error || result.result)}`);
+      failedTranscripts.push(transcript);
     }
   }
 
   // Clear pending batch
   state.pendingBatch = null;
   saveState(state);
+
+  // Retry failed items
+  if (failedTranscripts.length > 0 && attempt <= MAX_RETRIES) {
+    console.log(`\n=== ${failedTranscripts.length} item(s) failed — retrying in 20 minutes (attempt ${attempt + 1}/${MAX_RETRIES + 1}) ===`);
+    await new Promise(r => setTimeout(r, RETRY_DELAY_MS));
+
+    // Re-read transcripts from disk to build prompts
+    const retryRequests = failedTranscripts.map(t => {
+      const content = fs.readFileSync(path.join(NEWS_DIR, t.filename), 'utf-8');
+      const sepIdx = content.indexOf('─'.repeat(5));
+      const transcript = sepIdx !== -1 ? content.slice(sepIdx).replace(/^─+\n+/, '').trim() : '';
+      return {
+        id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
+        prompt: buildPrompt(t.channel, t.title, transcript, t.published),
+      };
+    });
+
+    const retryBatch = await submitBatch(client, retryRequests);
+
+    state.pendingBatch = {
+      batchId: retryBatch.id,
+      transcripts: failedTranscripts,
+      submittedAt: new Date().toISOString(),
+      attempt: attempt + 1,
+    };
+    saveState(state);
+
+    console.log(`\n=== Waiting for retry batch to complete ===`);
+    await processPendingBatch(client, state);
+    return;
+  } else if (failedTranscripts.length > 0) {
+    console.log(`\n=== ${failedTranscripts.length} item(s) still failed after ${MAX_RETRIES + 1} attempts ===`);
+    for (const t of failedTranscripts) {
+      console.log(`  - ${t.filename}: ${t.title}`);
+    }
+  }
 
   // Rebuild news.json
   console.log('\n=== Rebuilding news.json ===');
