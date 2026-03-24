@@ -805,16 +805,17 @@
             "id": "fleet_count",
             "name": "Operational Fleet",
             "type": "tracker",
+            "sourceNote": "Fleet counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Known to undercount — Tesla cited 500+ on Q4 earnings call when tracker showed ~474. No official Tesla fleet disclosures available.",
             "current": {
-              "date": "2026-03-20",
-              "total": 474,
-              "note": "Tracker count; Tesla cited 500+ on Q4 earnings call. Tracker undercounts by ~30%.",
+              "date": "2026-03-24",
+              "total": 526,
+              "note": "robotaxitracker.com scrape (community-reported, unverified)",
               "breakdown": {
-                "Bay Area": 385,
-                "Austin": 89
+                "Bay Area": 432,
+                "Austin": 94
               },
               "sources": [
-                "20260320_jobhakdi_01_Tesla_Stock_summary.txt"
+                "robotaxitracker.com/data"
               ]
             },
             "history": [
@@ -875,6 +876,7 @@
             "id": "unsupervised",
             "name": "Unsupervised Vehicles",
             "type": "tracker",
+            "sourceNote": "Counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Initially reported 7–8, later revised to 3 confirmed distinct vehicles. Treat as approximate.",
             "current": {
               "date": "2026-03-18",
               "total": 3,

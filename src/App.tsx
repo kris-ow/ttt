@@ -201,6 +201,7 @@ interface KBSection {
   id: string
   name: string
   type: 'tracker' | 'list'
+  sourceNote?: string
   current?: KBTrackerSnapshot
   history?: KBTrackerSnapshot[]
   items?: KBListItem[]
@@ -485,6 +486,7 @@ function KBTrackerSection({ section }: { section: KBSection }) {
         </div>
       )}
       {c.note && <div className="text-text text-xs leading-relaxed">{c.note}</div>}
+      {section.sourceNote && <div className="text-text-dim text-xs leading-relaxed italic mt-1">Source: {section.sourceNote}</div>}
       {section.history && section.history.length > 0 && (
         <div>
           <button
