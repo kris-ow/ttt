@@ -23,6 +23,12 @@ Classify the content into one or more of these categories:
 
 The current year is {{YEAR}}. When the transcript mentions relative timeframes like "Q2", "next quarter", "this year", "next year", etc. without specifying a year, infer the correct year based on the video's publish date ({{PUBLISH_DATE}}). Do not default to prior years.
 
+## Grounding Rules
+
+- ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the transcript.
+- NEVER infer or fill in specific version numbers, dollar amounts, percentages, or dates that are not directly mentioned. If the transcript discusses something without giving a specific number, describe it qualitatively instead (e.g. "a newer FSD version" not "FSD 12.4.3").
+- If the transcript is vague or ambiguous about a detail, reflect that ambiguity — do not resolve it with assumptions from your training data.
+
 ## Task
 
 Summarize the following YouTube video transcript from the channel "{{CHANNEL}}" titled "{{TITLE}}".
