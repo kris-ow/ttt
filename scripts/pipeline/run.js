@@ -58,7 +58,7 @@ function findUnsummarizedTranscripts() {
     const meta = {};
     for (const line of lines) {
       if (line.startsWith('─')) break;
-      const match = line.match(/^(\w[\w\s]*?):\s+(.+)$/);
+      const match = line.replace(/\r$/, '').match(/^(\w[\w\s]*?):\s+(.+)$/);
       if (match) {
         meta[match[1].trim().toLowerCase()] = match[2].trim();
       }
