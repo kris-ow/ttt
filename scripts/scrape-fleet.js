@@ -94,7 +94,7 @@ function updateKB(fleetData) {
   tracker.current = {
     date: fleetData.date,
     total: fleetData.total,
-    note: 'robotaxitracker.com scrape (community-reported, unverified)',
+    note: 'robotaxitracker.com (community-reported, unverified)',
     breakdown: fleetData.breakdown,
     sources: ['robotaxitracker.com/data'],
   };
