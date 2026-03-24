@@ -1,0 +1,39 @@
+name: Weekly Fleet Scrape
+
+on:
+  schedule:
+    # Run every Monday at 6:00 AM UTC (7:00 AM CET / 8:00 AM CEST)
+    - cron: '0 6 * * 1'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Scrape fleet data and update KB
+        run: node scripts/scrape-fleet.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "TTT Pipeline Bot"
+          git config user.email "pipeline@theteslathesis.com"
+          git add src/data/knowledge-base.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No fleet changes to commit"
+          else
+            git commit -m "Weekly fleet scrape: $(date -u +%Y-%m-%d)
+
+          Updated fleet_count from robotaxitracker.com"
+            git push
+          fi
