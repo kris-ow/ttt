@@ -1,5 +1,11 @@
+import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
+
+// Pull latest from remote so costs.json is up-to-date
+try {
+  execSync('git pull --ff-only', { stdio: 'pipe' });
+} catch {}
 
 const COSTS_FILE = path.resolve('scripts/pipeline/costs.json');
 const OUT_FILE = path.resolve('scripts/pipeline/costs-summary.txt');

@@ -6,6 +6,15 @@ on:
     - cron: '15 3 * * *'
   workflow_dispatch: # Allow manual trigger
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -41,15 +50,35 @@ jobs:
 
       # Commit new summaries and updated state
       - name: Commit changes
+        id: commit
         run: |
           git config user.name "TTT Pipeline Bot"
           git config user.email "pipeline@theteslathesis.com"
           git add news/ src/data/news.json scripts/pipeline/state.json scripts/pipeline/costs.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new summaries to commit"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Daily summaries: $(date -u +%Y-%m-%d)
 
           Sync transcripts from Drive, summarize via Claude Batch API, rebuild news.json"
             git push
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Step 4: Build and deploy to GitHub Pages (GITHUB_TOKEN pushes don't trigger other workflows)
+      - name: Build site
+        if: steps.commit.outputs.has_changes == 'true'
+        env:
+          VITE_FINNHUB_KEY: ${{ secrets.VITE_FINNHUB_KEY }}
+        run: npm run build
+
+      - name: Upload pages artifact
+        if: steps.commit.outputs.has_changes == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        if: steps.commit.outputs.has_changes == 'true'
+        uses: actions/deploy-pages@v4
