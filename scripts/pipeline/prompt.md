@@ -47,11 +47,11 @@ Write your response in exactly this structure:
 [Group key points by category. Use category headers (## Category Name) and numbered points within each category. Each point should be a substantive paragraph covering one distinct topic. Include specific numbers, dates, names, and data points. Only include categories that are actually covered in the video.]
 
 ## [Category Name]
-1. [First key point in this category...]
-2. [Second key point in this category...]
+1. **Bold mini-title summarizing the point:** [First key point in this category...]
+2. **Bold mini-title summarizing the point:** [Second key point in this category...]
 
 ## [Next Category Name]
-1. [First key point in this category...]
+1. **Bold mini-title summarizing the point:** [First key point in this category...]
 
 Notable quotes and data:
 [Bullet list of key numbers, statistics, and direct quotes worth preserving.]
