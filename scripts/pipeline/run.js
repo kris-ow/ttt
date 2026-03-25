@@ -85,6 +85,7 @@ function findUnsummarizedTranscripts() {
       channel,
       title: meta.title || file,
       published: meta.published || '',
+      url: meta.url || '',
       transcript,
     });
   }
@@ -217,6 +218,7 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
   const header = [
     `Channel:     ${transcript.channel}`,
     `Title:       ${transcript.title}`,
+    ...(transcript.url ? [`URL:         ${transcript.url}`] : []),
     `Published:   ${transcript.published}`,
     `Summarized:  ${now}`,
     `Model:       ${MODEL} [batch]`,

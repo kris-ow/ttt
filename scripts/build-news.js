@@ -46,9 +46,21 @@ const articles = files.map(filename => {
   const signalMatch = body.match(/Signal Strength:\s*(🟢|🟡|🔴)\s*(\w+)/);
   const signal = signalMatch ? signalMatch[2].toLowerCase() : null;
 
-  // Look up YouTube URL from transcript filename
+  // Look up YouTube URL: header field > URL index > transcript header
   const transcriptFilename = filename.replace('_summary.txt', '.txt');
-  const videoUrl = urlIndex[transcriptFilename] || null;
+  let videoUrl = meta.url || urlIndex[transcriptFilename] || null;
+  if (!videoUrl) {
+    // Try reading URL from transcript file header
+    const transcriptPath = path.join(newsDir, transcriptFilename);
+    if (fs.existsSync(transcriptPath)) {
+      const txLines = fs.readFileSync(transcriptPath, 'utf-8').split('\n');
+      for (const line of txLines) {
+        if (line.startsWith('─')) break;
+        const m = line.replace(/\r$/, '').match(/^URL:\s+(.+)$/);
+        if (m) { videoUrl = m[1].trim(); break; }
+      }
+    }
+  }
 
   return {
     id: filename.replace('.txt', ''),
