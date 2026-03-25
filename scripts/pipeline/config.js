@@ -66,6 +66,7 @@ export const CORRECTIONS = {
   'Job Hakdi': 'Jo Bhakdi',
   'Joe Hakdi': 'Jo Bhakdi',
   'Joe Bhakdi': 'Jo Bhakdi',
+  'Alexander Mertz': 'Alexandra Merz',
 };
 
 // Claude model for summarization
