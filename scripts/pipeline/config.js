@@ -67,6 +67,10 @@ export const CORRECTIONS = {
   'Joe Hakdi': 'Jo Bhakdi',
   'Joe Bhakdi': 'Jo Bhakdi',
   'Alexander Mertz': 'Alexandra Merz',
+  'Terraab': 'Terafab',
+  'terraab': 'Terafab',
+  'tera fab': 'Terafab',
+  'terra fab': 'Terafab',
 };
 
 // Claude model for summarization
