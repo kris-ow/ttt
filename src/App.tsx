@@ -472,7 +472,7 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
 
       {/* Tab content */}
       {activeTab === 'Valuation Models' ? (
-        <ValuationSection />
+        <ValuationSection openSource={openSource} />
       ) : (
         <KBCategoryContent
           category={activeTab}
@@ -700,127 +700,303 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
   )
 }
 
-function ValuationSection() {
+// ── DCF Components ───────────────────────────────────────
+
+import { DCF_NODES, DCF_ROOT, type DcfNode } from './data/dcf-robotaxi'
+
+function DcfTreeNode({ nodeId, depth, selectedId, onSelect }: {
+  nodeId: string; depth: number; selectedId: string; onSelect: (id: string) => void
+}) {
+  const node = DCF_NODES[nodeId]
+  if (!node) return null
+  const isSelected = selectedId === nodeId
+  const hasChildren = node.children && node.children.length > 0
+  const isRoot = depth === 0
+
   return (
-    <div className="space-y-6">
-      {/* SOTP */}
-      <div className="border border-border bg-surface p-4">
-        <h3 className="text-green text-xs font-bold mb-3">SUM-OF-THE-PARTS (SOTP)</h3>
-        <div className="text-xs text-text leading-relaxed space-y-2">
-          <p>
-            SOTP valuation breaks a company into its individual business segments, values each independently,
-            and sums them to derive total enterprise value. This is particularly relevant for conglomerates or
-            companies with distinct business lines that the market may price inefficiently as a bundle.
-          </p>
-          <p>
-            For Tesla, SOTP separates: <span className="text-text-bright">Electric Vehicles</span>,{' '}
-            <span className="text-text-bright">Robotaxi/FSD</span>,{' '}
-            <span className="text-text-bright">Optimus (Humanoid Robots)</span>,{' '}
-            <span className="text-text-bright">Energy Generation & Storage</span>, and{' '}
-            <span className="text-text-bright">AI/Compute Services</span>.
-            Each segment has fundamentally different growth profiles, margins, and comparable peers.
-          </p>
-          <p className="text-text-dim">
-            The core thesis: the market prices Tesla primarily as an automaker, significantly undervaluing
-            robotaxi, Optimus, and energy — segments with potentially larger TAMs and higher margins than the EV business.
-          </p>
+    <div>
+      <button
+        onClick={() => onSelect(nodeId)}
+        className={`w-full text-left py-1.5 px-2 text-xs cursor-pointer transition-colors flex items-center gap-2 ${
+          isSelected ? 'bg-green/10 text-green' : 'text-text hover:text-green hover:bg-surface-2'
+        }`}
+        style={{ paddingLeft: `${depth * 16 + 8}px` }}
+      >
+        {hasChildren ? (
+          <span className="text-text-dim flex-shrink-0 w-3">{isSelected ? '▼' : '▶'}</span>
+        ) : (
+          <span className="text-text-dim flex-shrink-0 w-3">·</span>
+        )}
+        <span className={isRoot ? 'font-bold' : ''}>{node.label}</span>
+        {node.shortLabel && (
+          <span className="text-text-dim">({node.shortLabel})</span>
+        )}
+        {node.formula && !hasChildren && (
+          <span className="text-text-dim ml-auto flex-shrink-0 hidden sm:inline">= {node.formula}</span>
+        )}
+      </button>
+      {hasChildren && node.children!.map(childId => (
+        <DcfTreeNode key={childId} nodeId={childId} depth={depth + 1} selectedId={selectedId} onSelect={onSelect} />
+      ))}
+    </div>
+  )
+}
+
+function DcfNodeDetail({ node, onSelect, openSource }: {
+  node: DcfNode; onSelect: (id: string) => void; openSource: (src: string) => void
+}) {
+  // Look up KB facts for this node
+  const kbFacts: KBFact[] = []
+  const kbAreas: KBArea[] = []
+  if (node.kbAreaIds && node.kbCategory) {
+    const catData = kbData[node.kbCategory as keyof typeof kbData] as unknown as KBCategory
+    if (catData) {
+      for (const area of catData.areas) {
+        if (node.kbAreaIds.includes(area.id)) {
+          kbAreas.push(area)
+          if (area.facts) kbFacts.push(...area.facts)
+        }
+      }
+    }
+  }
+
+  return (
+    <div className="space-y-4">
+      <div>
+        <h3 className="text-green font-bold text-sm">{node.label}</h3>
+        {node.shortLabel && <span className="text-text-dim text-xs">{node.shortLabel}</span>}
+      </div>
+
+      {node.formula && (
+        <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold">
+          {node.label} = {node.formula}
         </div>
-        <div className="mt-3 flex gap-3 text-xs">
-          <a href="https://www.investopedia.com/terms/s/sumofpartsvaluation.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: SOTP]</a>
-          <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
+      )}
+
+      <p className="text-text text-xs leading-relaxed">{node.definition}</p>
+
+      {node.children && node.children.length > 0 && (
+        <div>
+          <h4 className="text-green-dim text-xs font-bold mb-2">COMPONENTS</h4>
+          <div className="space-y-1">
+            {node.children.map(childId => {
+              const child = DCF_NODES[childId]
+              if (!child) return null
+              return (
+                <button
+                  key={childId}
+                  onClick={() => onSelect(childId)}
+                  className="w-full text-left px-3 py-2 text-xs border border-border hover:border-border-light hover:bg-surface-2 transition-colors cursor-pointer flex items-center gap-2"
+                >
+                  <span className="text-green">{'>'}</span>
+                  <span className="text-text-bright">{child.label}</span>
+                  {child.formula && <span className="text-text-dim ml-auto">= {child.formula}</span>}
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      )}
+
+      {kbFacts.length > 0 && (
+        <div>
+          <h4 className="text-green-dim text-xs font-bold mb-2">KNOWLEDGE BASE</h4>
+          <div className="space-y-2">
+            {kbFacts.map((fact, i) => (
+              <div key={i}>
+                <div className="text-xs text-text leading-relaxed">{fact.fact}</div>
+                <div className="flex items-center gap-3 mt-1">
+                  <span className="text-text-dim text-xs">{fact.lastUpdated}</span>
+                  <div className="flex items-center gap-1 flex-wrap">
+                    {fact.sources.map((src, j) => (
+                      <button
+                        key={j}
+                        onClick={() => openSource(src)}
+                        className="text-green-dim hover:text-green text-xs cursor-pointer transition-colors"
+                        title={src}
+                      >
+                        [{j + 1}]
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                {i < kbFacts.length - 1 && <div className="border-b border-border mt-2" />}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Composite KB areas (e.g. fleet tracker) */}
+      {kbAreas.filter(a => a.type === 'composite').map(area => (
+        <div key={area.id}>
+          <h4 className="text-green-dim text-xs font-bold mb-2">{area.name.toUpperCase()}</h4>
+          <KBCompositeArea area={area} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function RobotaxiDcfView({ openSource }: { openSource: (src: string) => void }) {
+  const [selectedId, setSelectedId] = useState(DCF_ROOT)
+  const node = DCF_NODES[selectedId]
+
+  return (
+    <div className="sm:flex sm:gap-4">
+      {/* Left: Formula Tree */}
+      <div className="sm:w-2/5 border border-border bg-surface mb-4 sm:mb-0 flex-shrink-0">
+        <div className="px-3 py-2 border-b border-border">
+          <span className="text-green-dim text-xs font-bold">FORMULA TREE</span>
+        </div>
+        <div className="py-1">
+          <DcfTreeNode nodeId={DCF_ROOT} depth={0} selectedId={selectedId} onSelect={setSelectedId} />
         </div>
       </div>
 
-      {/* DCF */}
-      <div className="border border-border bg-surface p-4">
-        <h3 className="text-green text-xs font-bold mb-3">DISCOUNTED CASH FLOW (DCF)</h3>
-        <div className="text-xs text-text leading-relaxed space-y-2">
-          <p>
-            DCF estimates the present value of a business based on its projected future free cash flows,
-            discounted back at a rate reflecting the risk of those cash flows (typically WACC — weighted average cost of capital).
-          </p>
-          <div className="border border-border bg-surface-2 p-3 font-bold text-text-bright">
-            PV = Σ FCFₜ / (1 + r)ᵗ + Terminal Value / (1 + r)ⁿ
-          </div>
-          <p>
-            Where <span className="text-text-bright">FCFₜ</span> = free cash flow in year t,{' '}
-            <span className="text-text-bright">r</span> = discount rate (WACC),{' '}
-            <span className="text-text-bright">n</span> = projection period.
-          </p>
+      {/* Right: Detail Panel */}
+      <div className="sm:w-3/5 border border-border bg-surface p-4 min-w-0">
+        {node ? (
+          <DcfNodeDetail node={node} onSelect={setSelectedId} openSource={openSource} />
+        ) : (
+          <div className="text-text-dim text-xs">Select a node from the tree</div>
+        )}
+      </div>
+    </div>
+  )
+}
 
-          {/* Key terms */}
-          <div className="border-t border-border pt-3 mt-3 space-y-3">
-            <h4 className="text-green-dim text-xs font-bold">KEY TERMS</h4>
+// ── Valuation Section ────────────────────────────────────
 
-            <div>
-              <span className="text-text-bright">Free Cash Flow (FCF)</span>
-              <p className="mt-1">
-                Cash a business generates after paying operating expenses and capital expenditures.
-                It's the money actually available to investors — unlike earnings, FCF can't be manipulated by accounting choices.
+function ValuationSection({ openSource }: { openSource: (src: string) => void }) {
+  const [subView, setSubView] = useState<'overview' | 'robotaxi-dcf'>('overview')
+
+  return (
+    <div className="space-y-4">
+      {/* Sub-tabs */}
+      <div className="flex gap-1">
+        {([['overview', 'OVERVIEW'], ['robotaxi-dcf', 'ROBOTAXI DCF']] as const).map(([key, label]) => (
+          <button
+            key={key}
+            onClick={() => setSubView(key)}
+            className={`px-3 py-1.5 text-xs font-bold cursor-pointer border border-border transition-colors ${
+              subView === key
+                ? 'bg-green text-bg'
+                : 'text-text-dim hover:text-green'
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {subView === 'overview' ? (
+        <div className="space-y-6">
+          {/* SOTP */}
+          <div className="border border-border bg-surface p-4">
+            <h3 className="text-green text-xs font-bold mb-3">SUM-OF-THE-PARTS (SOTP)</h3>
+            <div className="text-xs text-text leading-relaxed space-y-2">
+              <p>
+                SOTP valuation breaks a company into its individual business segments, values each independently,
+                and sums them to derive total enterprise value. This is particularly relevant for conglomerates or
+                companies with distinct business lines that the market may price inefficiently as a bundle.
               </p>
-              <div className="border border-border bg-surface-2 p-2 mt-1 text-text-bright">
-                FCF = Operating Cash Flow − Capital Expenditures
+              <p>
+                For Tesla, SOTP separates: <span className="text-text-bright">Electric Vehicles</span>,{' '}
+                <span className="text-text-bright">Robotaxi/FSD</span>,{' '}
+                <span className="text-text-bright">Optimus (Humanoid Robots)</span>,{' '}
+                <span className="text-text-bright">Energy Generation & Storage</span>, and{' '}
+                <span className="text-text-bright">AI/Compute Services</span>.
+                Each segment has fundamentally different growth profiles, margins, and comparable peers.
+              </p>
+              <p className="text-text-dim">
+                The core thesis: the market prices Tesla primarily as an automaker, significantly undervaluing
+                robotaxi, Optimus, and energy — segments with potentially larger TAMs and higher margins than the EV business.
+              </p>
+            </div>
+            <div className="mt-3 flex gap-3 text-xs">
+              <a href="https://www.investopedia.com/terms/s/sumofpartsvaluation.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: SOTP]</a>
+              <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
+            </div>
+          </div>
+
+          {/* DCF */}
+          <div className="border border-border bg-surface p-4">
+            <h3 className="text-green text-xs font-bold mb-3">DISCOUNTED CASH FLOW (DCF)</h3>
+            <div className="text-xs text-text leading-relaxed space-y-2">
+              <p>
+                DCF estimates the present value of a business based on its projected future free cash flows,
+                discounted back at a rate reflecting the risk of those cash flows (typically WACC — weighted average cost of capital).
+              </p>
+              <div className="border border-border bg-surface-2 p-3 font-bold text-text-bright">
+                PV = Σ FCFₜ / (1 + r)ᵗ + Terminal Value / (1 + r)ⁿ
+              </div>
+              <p>
+                Where <span className="text-text-bright">FCFₜ</span> = free cash flow in year t,{' '}
+                <span className="text-text-bright">r</span> = discount rate (WACC),{' '}
+                <span className="text-text-bright">n</span> = projection period.
+              </p>
+
+              <div className="border-t border-border pt-3 mt-3 space-y-3">
+                <h4 className="text-green-dim text-xs font-bold">KEY TERMS</h4>
+                <div>
+                  <span className="text-text-bright">Free Cash Flow (FCF)</span>
+                  <p className="mt-1">
+                    Cash a business generates after paying operating expenses and capital expenditures.
+                    It's the money actually available to investors — unlike earnings, FCF can't be manipulated by accounting choices.
+                  </p>
+                  <div className="border border-border bg-surface-2 p-2 mt-1 text-text-bright">
+                    FCF = Operating Cash Flow − Capital Expenditures
+                  </div>
+                </div>
+                <div>
+                  <span className="text-text-bright">WACC (Weighted Average Cost of Capital)</span>
+                  <p className="mt-1">
+                    The blended rate of return a company must earn to satisfy both debt holders and equity investors.
+                    It reflects the riskiness of the business — higher WACC means future cash flows are worth less today.
+                    Typical range: 8-12% for established companies, higher for speculative ventures.
+                  </p>
+                </div>
+                <div>
+                  <span className="text-text-bright">Terminal Value</span>
+                  <p className="mt-1">
+                    Captures all value beyond the explicit forecast period (e.g. after year 10).
+                    Often the largest component of a DCF — typically 60-80% of total value.
+                    Calculated either as a perpetual growth model (Gordon Growth: FCF × (1+g) / (r−g))
+                    or by applying an exit multiple to the final year's metrics.
+                  </p>
+                </div>
+                <div>
+                  <span className="text-text-bright">Discount Rate / Present Value</span>
+                  <p className="mt-1">
+                    A dollar tomorrow is worth less than a dollar today. The discount rate converts future cash flows
+                    to present value — accounting for time, inflation, and risk. At a 10% discount rate,
+                    $100 received in 5 years is worth $62 today.
+                  </p>
+                </div>
               </div>
             </div>
-
-            <div>
-              <span className="text-text-bright">WACC (Weighted Average Cost of Capital)</span>
-              <p className="mt-1">
-                The blended rate of return a company must earn to satisfy both debt holders and equity investors.
-                It reflects the riskiness of the business — higher WACC means future cash flows are worth less today.
-                Typical range: 8-12% for established companies, higher for speculative ventures.
-              </p>
-            </div>
-
-            <div>
-              <span className="text-text-bright">Terminal Value</span>
-              <p className="mt-1">
-                Captures all value beyond the explicit forecast period (e.g. after year 10).
-                Often the largest component of a DCF — typically 60-80% of total value.
-                Calculated either as a perpetual growth model (Gordon Growth: FCF × (1+g) / (r−g))
-                or by applying an exit multiple to the final year's metrics.
-              </p>
-            </div>
-
-            <div>
-              <span className="text-text-bright">Discount Rate / Present Value</span>
-              <p className="mt-1">
-                A dollar tomorrow is worth less than a dollar today. The discount rate converts future cash flows
-                to present value — accounting for time, inflation, and risk. At a 10% discount rate,
-                $100 received in 5 years is worth $62 today.
-              </p>
+            <div className="mt-3 flex gap-3 text-xs">
+              <a href="https://www.investopedia.com/terms/d/dcf.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: DCF]</a>
+              <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
             </div>
           </div>
 
-          {/* Tesla-specific inputs */}
-          <div className="border-t border-border pt-3 mt-3">
-            <h4 className="text-green-dim text-xs font-bold mb-2">KEY INPUTS FOR TESLA SEGMENTS</h4>
-            <div className="pl-4 space-y-1 text-text-dim">
-              <div>{'>'} Revenue growth assumptions (fleet size, pricing, adoption curves)</div>
-              <div>{'>'} Operating margins (how they evolve as the segment scales)</div>
-              <div>{'>'} Capital expenditure requirements</div>
-              <div>{'>'} Discount rate (risk-adjusted — higher for speculative segments like Optimus)</div>
-              <div>{'>'} Terminal growth rate or exit multiple</div>
+          {/* Roadmap */}
+          <div className="border border-border bg-surface-2 p-4">
+            <h3 className="text-text-dim text-xs font-bold mb-2">ROADMAP</h3>
+            <div className="text-xs text-text-dim space-y-1">
+              <div className="text-green">{'>'} Robotaxi DCF model — <span className="text-green font-bold">LIVE</span></div>
+              <div>{'>'} EV segment valuation</div>
+              <div>{'>'} Energy segment valuation</div>
+              <div>{'>'} Optimus segment valuation</div>
+              <div>{'>'} Combined SOTP with scenario weighting</div>
             </div>
           </div>
         </div>
-        <div className="mt-3 flex gap-3 text-xs">
-          <a href="https://www.investopedia.com/terms/d/dcf.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: DCF]</a>
-          <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
-        </div>
-      </div>
-
-      {/* Roadmap */}
-      <div className="border border-border bg-surface-2 p-4">
-        <h3 className="text-text-dim text-xs font-bold mb-2">ROADMAP</h3>
-        <div className="text-xs text-text-dim space-y-1">
-          <div>{'>'} Robotaxi DCF model — in progress</div>
-          <div>{'>'} EV segment valuation</div>
-          <div>{'>'} Energy segment valuation</div>
-          <div>{'>'} Optimus segment valuation</div>
-          <div>{'>'} Combined SOTP with scenario weighting</div>
-        </div>
-      </div>
+      ) : (
+        <RobotaxiDcfView openSource={openSource} />
+      )}
     </div>
   )
 }
