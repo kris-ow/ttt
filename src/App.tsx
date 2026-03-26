@@ -65,9 +65,12 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
           {(article.source || article.videoUrl) && (
             <div className="text-text-dim text-xs mb-4 flex items-center gap-3">
               {article.source && <span>src: {article.source}</span>}
-              {article.videoUrl && (
+              {article.sourceType === 'x' ? (() => {
+                const handle = article.source.match(/@(\w+)/)?.[1]
+                return handle ? <a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">[VIEW PROFILE ON X]</a> : null
+              })() : article.videoUrl && (
                 <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">
-                  {article.sourceType === 'x' ? '[VIEW ON X]' : '[WATCH ON YOUTUBE]'}
+                  [WATCH ON YOUTUBE]
                 </a>
               )}
             </div>
@@ -93,13 +96,14 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
                 }
 
                 // X articles: replace Raw Posts with a link
-                if (isX && (trimmed.startsWith('Raw Posts') || (rawPostsReached && true))) {
+                if (isX && (trimmed.startsWith('Raw Posts') || rawPostsReached)) {
                   if (trimmed.startsWith('Raw Posts')) {
                     rawPostsReached = true
-                    if (article.videoUrl) {
+                    const handle = article.source.match(/@(\w+)/)?.[1]
+                    if (handle) {
                       elements.push(
                         <div key={i} className="mt-4 border-t border-border pt-3">
-                          <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim text-xs font-bold">
+                          <a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim text-xs font-bold">
                             [VIEW RAW POSTS ON X]
                           </a>
                         </div>
