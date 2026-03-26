@@ -67,33 +67,60 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
               {article.source && <span>src: {article.source}</span>}
               {article.videoUrl && (
                 <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">
-                  [WATCH ON YOUTUBE]
+                  {article.sourceType === 'x' ? '[VIEW ON X]' : '[WATCH ON YOUTUBE]'}
                 </a>
               )}
             </div>
           )}
 
           <div className="border-t border-border pt-4 space-y-2">
-            {article.body.split('\n').map((line, i) => {
-              const trimmed = line.trim()
-              if (!trimmed) return null
-              if (trimmed.startsWith('─')) return <hr key={i} className="border-border my-3" />
-              if (trimmed.startsWith('## '))
-                return <h3 key={i} className="text-green font-bold mt-4 mb-2 text-sm">{trimmed.slice(3)}</h3>
-              if (trimmed.startsWith('### '))
-                return <h4 key={i} className="text-green-dim font-bold mt-3 mb-1 text-xs">{trimmed.slice(4)}</h4>
-              if (trimmed.startsWith('---'))
-                return <hr key={i} className="border-border my-3" />
-              if (trimmed.startsWith('- ') || trimmed.startsWith('* '))
-                return <div key={i} className="text-text pl-4 text-xs">{'>'} {renderInline(trimmed.slice(2))}</div>
-              if (/^\d+\.\s/.test(trimmed))
-                return <div key={i} className="text-text text-xs mb-2">{renderInline(trimmed)}</div>
-              if (trimmed.startsWith('[') && /^\[\d+\]/.test(trimmed))
-                return <div key={i} className="text-text-dim text-xs bg-surface-2 p-2 mb-1 break-all">{trimmed}</div>
-              if (trimmed.startsWith('Raw Posts'))
-                return <h3 key={i} className="text-green-dim font-bold mt-4 mb-2 text-xs border-t border-border pt-3">{trimmed}</h3>
-              return <p key={i} className="text-text text-xs leading-relaxed">{renderInline(trimmed)}</p>
-            })}
+            {(() => {
+              const lines = article.body.split('\n')
+              const isX = article.sourceType === 'x'
+              let skipSignal = false
+              let rawPostsReached = false
+              const elements: React.ReactNode[] = []
+
+              for (let i = 0; i < lines.length; i++) {
+                const trimmed = lines[i].trim()
+                if (!trimmed) continue
+
+                // X articles: skip Signal Strength section
+                if (isX && trimmed.startsWith('## Signal Strength')) { skipSignal = true; continue }
+                if (skipSignal) {
+                  if (trimmed.startsWith('─') || trimmed.startsWith('---') || trimmed.startsWith('## ')) skipSignal = false
+                  else continue
+                }
+
+                // X articles: replace Raw Posts with a link
+                if (isX && (trimmed.startsWith('Raw Posts') || (rawPostsReached && true))) {
+                  if (trimmed.startsWith('Raw Posts')) {
+                    rawPostsReached = true
+                    if (article.videoUrl) {
+                      elements.push(
+                        <div key={i} className="mt-4 border-t border-border pt-3">
+                          <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim text-xs font-bold">
+                            [VIEW RAW POSTS ON X]
+                          </a>
+                        </div>
+                      )
+                    }
+                  }
+                  continue
+                }
+
+                if (trimmed.startsWith('─')) { elements.push(<hr key={i} className="border-border my-3" />); continue }
+                if (trimmed.startsWith('## ')) { elements.push(<h3 key={i} className="text-green font-bold mt-4 mb-2 text-sm">{trimmed.slice(3)}</h3>); continue }
+                if (trimmed.startsWith('### ')) { elements.push(<h4 key={i} className="text-green-dim font-bold mt-3 mb-1 text-xs">{trimmed.slice(4)}</h4>); continue }
+                if (trimmed.startsWith('---')) { elements.push(<hr key={i} className="border-border my-3" />); continue }
+                if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) { elements.push(<div key={i} className="text-text pl-4 text-xs">{'>'} {renderInline(trimmed.slice(2))}</div>); continue }
+                if (/^\d+\.\s/.test(trimmed)) { elements.push(<div key={i} className="text-text text-xs mb-2">{renderInline(trimmed)}</div>); continue }
+                if (trimmed.startsWith('[') && /^\[\d+\]/.test(trimmed)) { elements.push(<div key={i} className="text-text-dim text-xs bg-surface-2 p-2 mb-1 break-all">{trimmed}</div>); continue }
+                if (trimmed.startsWith('Raw Posts')) { elements.push(<h3 key={i} className="text-green-dim font-bold mt-4 mb-2 text-xs border-t border-border pt-3">{trimmed}</h3>); continue }
+                elements.push(<p key={i} className="text-text text-xs leading-relaxed">{renderInline(trimmed)}</p>)
+              }
+              return elements
+            })()}
           </div>
         </div>
       </div>
@@ -155,7 +182,7 @@ function FeedSection({ selectedChannel, onSelectArticle }: {
                       <span className="text-text-bright group-hover:text-green min-w-0 flex-1 transition-colors overflow-hidden text-ellipsis whitespace-nowrap">
                         {article.title}
                       </span>
-                      {article.signal && (
+                      {article.signal && article.sourceType !== 'x' && (
                         <span className="flex-shrink-0">{signalTag(article.signal)}</span>
                       )}
                     </div>

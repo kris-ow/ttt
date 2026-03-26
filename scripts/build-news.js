@@ -42,8 +42,8 @@ const articles = files.map(filename => {
   const isX = meta.source?.includes('X/') || meta.source?.includes('X @') || channel === 'sawyermerritt';
   const sourceType = isX ? 'x' : 'youtube';
 
-  // Extract signal strength
-  const signalMatch = body.match(/Signal Strength:\s*(🟢|🟡|🔴)\s*(\w+)/);
+  // Extract signal strength (X articles: signal hidden in UI, skip extraction)
+  const signalMatch = !isX ? body.match(/Signal Strength:\s*(🟢|🟡|🔴)\s*(\w+)/) : null;
   const signal = signalMatch ? signalMatch[2].toLowerCase() : null;
 
   // Look up YouTube URL: header field > URL index > transcript header
