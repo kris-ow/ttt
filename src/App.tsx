@@ -251,7 +251,6 @@ interface KBCategory {
   areas: KBArea[]
 }
 
-const KB_CATEGORIES = Object.keys(kbData) as (keyof typeof kbData)[]
 
 function formatMetricValue(value: number, unit: string) {
   if (unit === '$M') return `$${value.toLocaleString()}M`
@@ -429,9 +428,6 @@ const KB_TAB_SHORT: Record<string, string> = {
   'Market & Competition': 'MARKET',
   'Valuation Models': 'VALUATION',
 }
-
-// Hidden KB category tabs — content preserved in knowledge-base.json, restore by adding back to visibleTabs
-const HIDDEN_KB_TABS = ['Autonomous Driving', 'Robotaxi', 'Humanoid Bots', 'Energy', 'Electric Vehicles', 'Financials', 'Market & Competition']
 
 function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) => void }) {
   const visibleTabs = ['Valuation Models'] as const
