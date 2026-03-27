@@ -430,9 +430,12 @@ const KB_TAB_SHORT: Record<string, string> = {
   'Valuation Models': 'VALUATION',
 }
 
+// Hidden KB category tabs — content preserved in knowledge-base.json, restore by adding back to visibleTabs
+const HIDDEN_KB_TABS = ['Autonomous Driving', 'Robotaxi', 'Humanoid Bots', 'Energy', 'Electric Vehicles', 'Financials', 'Market & Competition']
+
 function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) => void }) {
-  const allTabs = [...KB_CATEGORIES, 'Valuation Models'] as const
-  const [activeTab, setActiveTab] = useState<string>(KB_CATEGORIES[0])
+  const visibleTabs = ['Valuation Models'] as const
+  const [activeTab, setActiveTab] = useState<string>('Valuation Models')
   const [expandedArea, setExpandedArea] = useState<string | null>(null)
 
   const toggleArea = (areaId: string) => {
@@ -455,7 +458,7 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
     <div>
       {/* Category tabs — wrap into 2 rows */}
       <div className="flex flex-wrap gap-1 mb-4">
-        {allTabs.map(tab => (
+        {visibleTabs.map(tab => (
           <button
             key={tab}
             onClick={() => selectTab(tab)}
@@ -702,16 +705,19 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
 
 // ── DCF Components ───────────────────────────────────────
 
-import { DCF_NODES, DCF_ROOT, type DcfNode } from './data/dcf-robotaxi'
+import { DCF_NODES, DCF_ROOT, REV_INPUT_IDS, computeRevPerVehicle, formatDcfValue, type DcfNode, type RevInputId } from './data/dcf-robotaxi'
 
-function DcfTreeNode({ nodeId, depth, selectedId, onSelect }: {
+function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
   nodeId: string; depth: number; selectedId: string; onSelect: (id: string) => void
+  computedValues?: Record<string, number>
 }) {
   const node = DCF_NODES[nodeId]
   if (!node) return null
   const isSelected = selectedId === nodeId
   const hasChildren = node.children && node.children.length > 0
   const isRoot = depth === 0
+  const cv = computedValues?.[nodeId]
+  const isInput = (REV_INPUT_IDS as readonly string[]).includes(nodeId)
 
   return (
     <div>
@@ -724,6 +730,8 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect }: {
       >
         {hasChildren ? (
           <span className="text-text-dim flex-shrink-0 w-3">{isSelected ? '▼' : '▶'}</span>
+        ) : isInput ? (
+          <span className="text-amber flex-shrink-0 w-3">◆</span>
         ) : (
           <span className="text-text-dim flex-shrink-0 w-3">·</span>
         )}
@@ -731,19 +739,21 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect }: {
         {node.shortLabel && (
           <span className="text-text-dim">({node.shortLabel})</span>
         )}
-        {node.formula && !hasChildren && (
-          <span className="text-text-dim ml-auto flex-shrink-0 hidden sm:inline">= {node.formula}</span>
+        {cv !== undefined && (
+          <span className={`${isInput ? 'text-amber' : 'text-green'} ml-auto flex-shrink-0 hidden sm:inline`}>{formatDcfValue(nodeId, cv)}</span>
         )}
       </button>
       {hasChildren && node.children!.map(childId => (
-        <DcfTreeNode key={childId} nodeId={childId} depth={depth + 1} selectedId={selectedId} onSelect={onSelect} />
+        <DcfTreeNode key={childId} nodeId={childId} depth={depth + 1} selectedId={selectedId} onSelect={onSelect} computedValues={computedValues} />
       ))}
     </div>
   )
 }
 
-function DcfNodeDetail({ node, onSelect, openSource }: {
+function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChange }: {
   node: DcfNode; onSelect: (id: string) => void; openSource: (src: string) => void
+  computedValues?: Record<string, number>
+  onInputChange?: (id: RevInputId, value: number) => void
 }) {
   // Look up KB facts for this node
   const kbFacts: KBFact[] = []
@@ -760,6 +770,9 @@ function DcfNodeDetail({ node, onSelect, openSource }: {
     }
   }
 
+  const cv = computedValues?.[node.id]
+  const isInput = (REV_INPUT_IDS as readonly string[]).includes(node.id)
+
   return (
     <div className="space-y-4">
       <div>
@@ -768,8 +781,45 @@ function DcfNodeDetail({ node, onSelect, openSource }: {
       </div>
 
       {node.formula && (
-        <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold">
-          {node.label} = {node.formula}
+        <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold flex items-center justify-between">
+          <span>{node.label} = {node.formula}</span>
+          {cv !== undefined && <span className="text-green">{formatDcfValue(node.id, cv)}</span>}
+        </div>
+      )}
+
+      {/* Editable input for leaf parameters */}
+      {isInput && cv !== undefined && onInputChange && (
+        <div className="border border-amber/30 bg-amber/5 p-3">
+          <label className="text-amber text-xs font-bold block mb-2">ADJUST VALUE</label>
+          <div className="flex items-center gap-2">
+            <input
+              type="number"
+              value={cv}
+              onChange={e => {
+                const val = parseFloat(e.target.value)
+                if (!isNaN(val)) onInputChange(node.id as RevInputId, val)
+              }}
+              step={node.unit === '$' || node.unit === '$/mi' ? 0.1 : node.unit === '%' ? 5 : 1}
+              className="bg-bg border border-border text-amber text-xs font-bold px-2 py-1.5 w-24 focus:outline-none focus:border-amber"
+            />
+            {node.unit && <span className="text-text-dim text-xs">{node.unit}</span>}
+            {cv !== node.defaultValue && (
+              <button
+                onClick={() => onInputChange(node.id as RevInputId, node.defaultValue!)}
+                className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors ml-auto"
+              >
+                [reset to {node.defaultValue}]
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Show computed value for non-input nodes that have one */}
+      {!isInput && !node.formula && cv !== undefined && (
+        <div className="border border-border bg-surface-2 p-3 text-xs">
+          <span className="text-text-dim">Computed: </span>
+          <span className="text-green font-bold">{formatDcfValue(node.id, cv)}</span>
         </div>
       )}
 
@@ -782,15 +832,19 @@ function DcfNodeDetail({ node, onSelect, openSource }: {
             {node.children.map(childId => {
               const child = DCF_NODES[childId]
               if (!child) return null
+              const childCv = computedValues?.[childId]
+              const childIsInput = (REV_INPUT_IDS as readonly string[]).includes(childId)
               return (
                 <button
                   key={childId}
                   onClick={() => onSelect(childId)}
                   className="w-full text-left px-3 py-2 text-xs border border-border hover:border-border-light hover:bg-surface-2 transition-colors cursor-pointer flex items-center gap-2"
                 >
-                  <span className="text-green">{'>'}</span>
+                  <span className={childIsInput ? 'text-amber' : 'text-green'}>{childIsInput ? '◆' : '>'}</span>
                   <span className="text-text-bright">{child.label}</span>
-                  {child.formula && <span className="text-text-dim ml-auto">= {child.formula}</span>}
+                  {childCv !== undefined && (
+                    <span className={`${childIsInput ? 'text-amber' : 'text-green'} ml-auto`}>{formatDcfValue(childId, childCv)}</span>
+                  )}
                 </button>
               )
             })}
@@ -840,24 +894,39 @@ function DcfNodeDetail({ node, onSelect, openSource }: {
 
 function RobotaxiDcfView({ openSource }: { openSource: (src: string) => void }) {
   const [selectedId, setSelectedId] = useState(DCF_ROOT)
+  const [revOverrides, setRevOverrides] = useState<Partial<Record<RevInputId, number>>>({})
   const node = DCF_NODES[selectedId]
+
+  const computedValues = computeRevPerVehicle(revOverrides)
+
+  const handleInputChange = (id: RevInputId, value: number) => {
+    setRevOverrides(prev => ({ ...prev, [id]: value }))
+  }
 
   return (
     <div className="sm:flex sm:gap-4">
       {/* Left: Formula Tree */}
       <div className="sm:w-2/5 border border-border bg-surface mb-4 sm:mb-0 flex-shrink-0">
-        <div className="px-3 py-2 border-b border-border">
+        <div className="px-3 py-2 border-b border-border flex items-center justify-between">
           <span className="text-green-dim text-xs font-bold">FORMULA TREE</span>
+          {Object.keys(revOverrides).length > 0 && (
+            <button
+              onClick={() => setRevOverrides({})}
+              className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+            >
+              [reset all]
+            </button>
+          )}
         </div>
         <div className="py-1">
-          <DcfTreeNode nodeId={DCF_ROOT} depth={0} selectedId={selectedId} onSelect={setSelectedId} />
+          <DcfTreeNode nodeId={DCF_ROOT} depth={0} selectedId={selectedId} onSelect={setSelectedId} computedValues={computedValues} />
         </div>
       </div>
 
       {/* Right: Detail Panel */}
       <div className="sm:w-3/5 border border-border bg-surface p-4 min-w-0">
         {node ? (
-          <DcfNodeDetail node={node} onSelect={setSelectedId} openSource={openSource} />
+          <DcfNodeDetail node={node} onSelect={setSelectedId} openSource={openSource} computedValues={computedValues} onInputChange={handleInputChange} />
         ) : (
           <div className="text-text-dim text-xs">Select a node from the tree</div>
         )}
