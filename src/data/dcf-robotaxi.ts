@@ -33,8 +33,6 @@ export const DCF_NODES: Record<string, DcfNode> = {
     id: 'fleet_size',
     label: 'Fleet Size',
     definition: 'Number of active robotaxi vehicles generating revenue. Currently ramping in Austin and Bay Area, with geographic expansion underway.',
-    kbAreaIds: ['fleet_deployment'],
-    kbCategory: 'Robotaxi',
   },
   unit_economics: {
     id: 'unit_economics',
@@ -72,8 +70,6 @@ export const DCF_NODES: Record<string, DcfNode> = {
     id: 'utilization',
     label: 'Utilization Rate',
     definition: 'Percentage of the day the vehicle is active in the network. Base assumption: 30%. Conservative — leaves ample time for charging and off-peak downtime.',
-    kbAreaIds: ['ride_volume'],
-    kbCategory: 'Robotaxi',
     defaultValue: 30,
     unit: '%',
   },
@@ -135,16 +131,12 @@ export const DCF_NODES: Record<string, DcfNode> = {
     formula: 'Base Fare + (Trip Length × Fare/Mile)',
     definition: 'Fare collected per trip. At $3 base + 5 miles × $1.40/mile = $10.00 per trip. Conservative vs current rideshare rates.',
     children: ['base_fare', 'fare_per_mile'],
-    kbAreaIds: ['pricing_revenue'],
-    kbCategory: 'Robotaxi',
     unit: '$',
   },
   base_fare: {
     id: 'base_fare',
     label: 'Base Fare',
     definition: 'Fixed starting fare per trip. Base assumption: $3.00.',
-    kbAreaIds: ['pricing_revenue'],
-    kbCategory: 'Robotaxi',
     defaultValue: 3,
     unit: '$',
   },
@@ -152,8 +144,6 @@ export const DCF_NODES: Record<string, DcfNode> = {
     id: 'fare_per_mile',
     label: 'Fare per Mile',
     definition: 'Per-mile charge on top of base fare. Base assumption: $1.40/mile.',
-    kbAreaIds: ['pricing_revenue'],
-    kbCategory: 'Robotaxi',
     defaultValue: 1.4,
     unit: '$/mi',
   },
@@ -161,9 +151,148 @@ export const DCF_NODES: Record<string, DcfNode> = {
     id: 'cost_per_vehicle',
     label: 'Cost per Vehicle',
     shortLabel: 'Cost/Vehicle',
-    definition: 'Annual operating cost per vehicle. Includes insurance, maintenance, cleaning, connectivity, remote operations, and electricity. To be detailed.',
-    kbAreaIds: ['operating_costs'],
-    kbCategory: 'Robotaxi',
+    formula: 'Charging + Maintenance + Insurance + Remote Ops + Cleaning + Connectivity + Parking + Overhead',
+    definition: 'Annual operating cost per vehicle. Includes charging, maintenance, insurance, remote operations, cleaning, connectivity, depot parking, and overhead.',
+    children: ['annual_distance', 'charging_cost', 'maintenance_cost', 'insurance_cost', 'remote_ops_cost', 'cleaning_cost', 'connectivity_cost', 'parking_cost', 'overhead_cost'],
+    unit: '$/yr',
+  },
+  annual_distance: {
+    id: 'annual_distance',
+    label: 'Annual Distance',
+    formula: 'Trips/Day × (Trip Length + Empty Distance) × 365',
+    definition: 'Total miles driven per vehicle per year, including both fare-generating and deadhead (repositioning) miles. Shared input for charging and maintenance cost calculations.',
+    unit: 'mi/yr',
+  },
+  charging_cost: {
+    id: 'charging_cost',
+    label: 'Charging Cost',
+    formula: 'Annual Distance × kWh/Mile × $/kWh',
+    definition: 'Annual electricity cost to charge the vehicle. Driven by total miles driven (fare + deadhead), energy efficiency, and electricity price. Tesla\'s Supercharger network and off-peak charging strategies can significantly reduce this cost.',
+    children: ['kwh_per_mile', 'price_per_kwh'],
+    unit: '$/yr',
+  },
+  kwh_per_mile: {
+    id: 'kwh_per_mile',
+    label: 'Energy Consumption',
+    definition: 'Energy used per mile driven. Cybercab is purpose-built for efficiency — smaller, lighter, no steering wheel. Base assumption: 0.25 kWh/mile (~4 mi/kWh).',
+    defaultValue: 0.25,
+    unit: 'kWh/mi',
+  },
+  price_per_kwh: {
+    id: 'price_per_kwh',
+    label: 'Electricity Price',
+    definition: 'Cost per kilowatt-hour for fleet charging. Tesla owns the Supercharger network and can charge at cost, but not all charging will be off-peak or at owned depots. Base assumption: $0.12/kWh (blended rate — fleet models cite $0.16–$0.35, but Tesla fleet-owned infrastructure is significantly cheaper).',
+    defaultValue: 0.12,
+    unit: '$/kWh',
+  },
+  maintenance_cost: {
+    id: 'maintenance_cost',
+    label: 'Maintenance Cost',
+    formula: 'Tire Cost + General Maintenance',
+    definition: 'Annual maintenance cost per vehicle. EVs have significantly lower maintenance than ICE vehicles — no oil changes, minimal brake wear due to regenerative braking. Main items: tires (largest cost), brakes, cabin filter, wipers, 12V battery, coolant, suspension.',
+    children: ['tire_cost', 'general_maintenance'],
+    unit: '$/yr',
+  },
+  tire_cost: {
+    id: 'tire_cost',
+    label: 'Tire Cost',
+    formula: 'Annual Distance ÷ Tire Life × Cost per Set',
+    definition: 'Annual tire replacement cost. EV tires wear faster than ICE due to vehicle weight and instant torque. Urban robotaxi driving at moderate speeds is gentler than highway, but high annual mileage means frequent replacement.',
+    children: ['tire_life', 'tire_set_cost'],
+    unit: '$/yr',
+  },
+  tire_life: {
+    id: 'tire_life',
+    label: 'Tire Life',
+    definition: 'Miles per set of tires before replacement. EV-specific tires typically last 25,000–35,000 miles. Base assumption: 25,000 miles (conservative, includes safety margin for high-mileage fleet use).',
+    defaultValue: 25000,
+    unit: 'mi',
+  },
+  tire_set_cost: {
+    id: 'tire_set_cost',
+    label: 'Cost per Tire Set',
+    definition: 'Cost of a full set of 4 tires including mounting and balancing. Cybercab is a small, purpose-built vehicle. Base assumption: $600 (includes margin for EV-rated tires and fleet service).',
+    defaultValue: 600,
+    unit: '$',
+  },
+  general_maintenance: {
+    id: 'general_maintenance',
+    label: 'General Maintenance',
+    definition: 'Annual cost for non-tire maintenance: brake pads (~$100, minimal due to regen), cabin air filter (~$50), wiper blades (~$30), 12V battery (~$50 amortized), coolant (~$50 amortized), suspension/alignment (~$100 amortized). Base assumption: $500/yr (includes safety margin).',
+    defaultValue: 500,
+    unit: '$/yr',
+  },
+  insurance_cost: {
+    id: 'insurance_cost',
+    label: 'Insurance',
+    definition: 'Annual commercial auto insurance per vehicle. Autonomous vehicle premiums are higher initially due to novelty, but Tesla can self-insure at scale using its own insurance product. Base assumption: $5,000/yr (conservative — assumes early-stage commercial premiums, not mature self-insurance rates).',
+    defaultValue: 5000,
+    unit: '$/yr',
+  },
+  remote_ops_cost: {
+    id: 'remote_ops_cost',
+    label: 'Remote Operations',
+    formula: 'Operator Cost ÷ Vehicles per Operator',
+    definition: 'Annual cost of human remote oversight per vehicle. Operators monitor multiple vehicles for edge cases — stuck situations, passenger issues, unusual conditions. Cost decreases as autonomy improves and ratio increases.',
+    children: ['remote_ops_operator_cost', 'remote_ops_ratio'],
+    unit: '$/yr',
+  },
+  remote_ops_operator_cost: {
+    id: 'remote_ops_operator_cost',
+    label: 'Operator Annual Cost',
+    definition: 'Fully loaded annual cost per remote operator, including salary, benefits, workstation, office space, and software. Base assumption: $70,000/yr.',
+    defaultValue: 70000,
+    unit: '$/yr',
+  },
+  remote_ops_ratio: {
+    id: 'remote_ops_ratio',
+    label: 'Vehicles per Operator',
+    definition: 'Number of robotaxis monitored by one remote operator. Depends on autonomy maturity and intervention frequency. Currently ~3:1 in early deployment, near-term target ~10:1. Base assumption: 15 vehicles per operator (between near-term target and mature operations).',
+    defaultValue: 15,
+    unit: 'vehicles',
+  },
+  cleaning_cost: {
+    id: 'cleaning_cost',
+    label: 'Cleaning',
+    definition: 'Annual interior/exterior cleaning cost per vehicle. Includes quick cleans between rides (2-3x/day) and weekly deep cleans. Cybercab is designed for easy cleaning — hard plastic interior with drain holes. Can be partially automated with depot cleaning stations. Base assumption: $2,500/yr (between fleet model estimate of $1,700 and early manual operations overhead).',
+    defaultValue: 2500,
+    unit: '$/yr',
+  },
+  connectivity_cost: {
+    id: 'connectivity_cost',
+    label: 'Connectivity',
+    definition: 'Annual LTE/5G data cost per vehicle for telemetry, navigation, HD maps, and remote operations video feeds. Fleet data plans are significantly cheaper than consumer rates. Base assumption: $600/yr.',
+    defaultValue: 600,
+    unit: '$/yr',
+  },
+  parking_cost: {
+    id: 'parking_cost',
+    label: 'Depot Parking',
+    formula: '(Spot Monthly Cost × 12) ÷ Vehicles per Spot',
+    definition: 'Annual depot/lot cost per vehicle for overnight parking, charging, cleaning, and staging. Located in low-cost industrial/suburban areas. Not every vehicle needs a dedicated spot — staggered shifts mean multiple vehicles share one space.',
+    children: ['spot_monthly_cost', 'vehicles_per_spot'],
+    unit: '$/yr',
+  },
+  spot_monthly_cost: {
+    id: 'spot_monthly_cost',
+    label: 'Spot Monthly Cost',
+    definition: 'Monthly lease cost per parking spot in an industrial/suburban depot lot. Varies significantly by market — Austin much cheaper than SF. Base assumption: $100/month.',
+    defaultValue: 100,
+    unit: '$/mo',
+  },
+  vehicles_per_spot: {
+    id: 'vehicles_per_spot',
+    label: 'Vehicles per Spot',
+    definition: 'Number of vehicles sharing one depot parking spot. In a 24/7 operation with staggered charging and driving schedules, not every vehicle is parked at the same time. Base assumption: 2 vehicles per spot.',
+    defaultValue: 2,
+    unit: 'vehicles',
+  },
+  overhead_cost: {
+    id: 'overhead_cost',
+    label: 'Overhead',
+    definition: 'Annual catch-all for miscellaneous per-vehicle operating costs not covered elsewhere. Includes: payment processing fees (~$900/yr at 2.5% of revenue), regulatory and AV operating permits (~$300/yr), roadside assistance and towing for breakdowns (~$300/yr), minor damage repair below insurance deductible (~$300/yr), and customer support allocation (~$200/yr). Base assumption: $2,000/yr.',
+    defaultValue: 2000,
+    unit: '$/yr',
   },
   tax_per_vehicle: {
     id: 'tax_per_vehicle',
@@ -184,8 +313,6 @@ export const DCF_NODES: Record<string, DcfNode> = {
     label: 'Vehicle Purchases',
     formula: 'New Units × Cost per Vehicle',
     definition: 'Cost of acquiring new Cybercabs or Model Ys for the fleet. Cybercab target cost ~$30k, significantly below competitors.',
-    kbAreaIds: ['vehicle_capex', 'production_manufacturing'],
-    kbCategory: 'Robotaxi',
   },
   infrastructure: {
     id: 'infrastructure',
@@ -237,6 +364,84 @@ export function computeRevPerVehicle(overrides: Partial<Record<RevInputId, numbe
   }
 }
 
+// ── Cost per Vehicle computation ────────────────────────
+
+/** IDs of all leaf inputs in the cost_per_vehicle subtree */
+export const COST_INPUT_IDS = [
+  'kwh_per_mile', 'price_per_kwh',
+  'tire_life', 'tire_set_cost', 'general_maintenance',
+  'insurance_cost', 'remote_ops_operator_cost', 'remote_ops_ratio',
+  'cleaning_cost', 'connectivity_cost',
+  'spot_monthly_cost', 'vehicles_per_spot',
+  'overhead_cost',
+] as const
+
+export type CostInputId = typeof COST_INPUT_IDS[number]
+
+/** Compute all cost_per_vehicle intermediate + final values from leaf inputs + rev values */
+export function computeCostPerVehicle(
+  revValues: Record<string, number>,
+  overrides: Partial<Record<CostInputId, number>> = {},
+): Record<string, number> {
+  const v = (id: CostInputId) => overrides[id] ?? DCF_NODES[id].defaultValue!
+
+  const trips_per_day = revValues.trips_per_day ?? 0
+  const avg_trip_length = revValues.avg_trip_length ?? 0
+  const avg_empty_distance = revValues.avg_empty_distance ?? 0
+
+  const annual_distance = trips_per_day * (avg_trip_length + avg_empty_distance) * 365
+  const kwh_per_mile = v('kwh_per_mile')
+  const price_per_kwh = v('price_per_kwh')
+  const charging_cost = annual_distance * kwh_per_mile * price_per_kwh
+
+  const tire_life = v('tire_life')
+  const tire_set_cost = v('tire_set_cost')
+  const tire_cost = (annual_distance / tire_life) * tire_set_cost
+
+  const general_maintenance = v('general_maintenance')
+  const maintenance_cost = tire_cost + general_maintenance
+
+  const insurance_cost = v('insurance_cost')
+
+  const remote_ops_operator_cost = v('remote_ops_operator_cost')
+  const remote_ops_ratio = v('remote_ops_ratio')
+  const remote_ops_cost = remote_ops_operator_cost / remote_ops_ratio
+
+  const cleaning_cost = v('cleaning_cost')
+  const connectivity_cost = v('connectivity_cost')
+
+  const spot_monthly_cost = v('spot_monthly_cost')
+  const vehicles_per_spot = v('vehicles_per_spot')
+  const parking_cost = (spot_monthly_cost * 12) / vehicles_per_spot
+
+  const overhead_cost = v('overhead_cost')
+
+  const cost_per_vehicle = charging_cost + maintenance_cost + insurance_cost + remote_ops_cost + cleaning_cost + connectivity_cost + parking_cost + overhead_cost
+
+  return {
+    annual_distance,
+    kwh_per_mile,
+    price_per_kwh,
+    charging_cost,
+    tire_life,
+    tire_set_cost,
+    tire_cost,
+    general_maintenance,
+    maintenance_cost,
+    insurance_cost,
+    remote_ops_operator_cost,
+    remote_ops_ratio,
+    remote_ops_cost,
+    cleaning_cost,
+    connectivity_cost,
+    spot_monthly_cost,
+    vehicles_per_spot,
+    parking_cost,
+    overhead_cost,
+    cost_per_vehicle,
+  }
+}
+
 /** Format a computed value with its unit */
 export function formatDcfValue(nodeId: string, value: number): string {
   const node = DCF_NODES[nodeId]
@@ -250,5 +455,10 @@ export function formatDcfValue(nodeId: string, value: number): string {
   if (unit === 'mph') return `${value} mph`
   if (unit === 'mi') return `${value} mi`
   if (unit === 'trips') return `${value.toFixed(1)}`
+  if (unit === 'kWh/mi') return `${value} kWh/mi`
+  if (unit === '$/kWh') return `$${value.toFixed(2)}/kWh`
+  if (unit === 'mi/yr') return `${Math.round(value).toLocaleString()} mi/yr`
+  if (unit === 'vehicles') return `${value}`
+  if (unit === '$/mo') return `$${value}/mo`
   return `${value}`
 }

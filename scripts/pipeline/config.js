@@ -71,6 +71,9 @@ export const CORRECTIONS = {
   'terraab': 'Terafab',
   'tera fab': 'Terafab',
   'terra fab': 'Terafab',
+  'Macrohord': 'Macrohard',
+  'macrohord': 'Macrohard',
+  'macro hard': 'Macrohard',
 };
 
 // Claude model for summarization

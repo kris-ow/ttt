@@ -1,0 +1,134 @@
+{
+  "fleet_size": [
+    {
+      "fact": "Robotaxi fleet tracker showed ~519-522 active vehicles, with ~8 unsupervised in Austin, representing ~8-9% weekly growth — the largest single-week growth in the program's history",
+      "source": "20260324_brighterwithherbert_02_Robotaxi_Signals_summary.txt"
+    },
+    {
+      "fact": "Robotaxi fleet tracker: 474 total vehicles, including 3 Cybercabs listed as driverless/unsupervised",
+      "source": "20260320_jobhakdi_01_Tesla_Stock_summary.txt"
+    },
+    {
+      "fact": "Public Robo Tracker showed 301 total vehicles — 213 in Bay Area and 88 in Austin — with 7 operating fully unsupervised in Austin. Tesla's own Q4 earnings call referenced approximately 500 vehicles",
+      "source": "20260214_brighterwithherbert_02_Exclusive_Everyone_summary.txt"
+    },
+    {
+      "fact": "Tesla already has approximately 90 to 100 vehicles operating without anyone behind the wheel",
+      "source": "20260324_futureaza_01_Tesla_Is_summary.txt"
+    },
+    {
+      "fact": "Cybercab production ramp estimate: ~100 units in April, hundreds/month in May, ~1,000/month in June; a few thousand total in Q2 2026",
+      "source": "20260320_brighterwithherbert_01_Robotaxi_Rollout_summary.txt"
+    },
+    {
+      "fact": "Over 100 Cybercabs had already been built and shipped out of Giga Texas by mid-March 2026. Projected ramp: 1,000+/month by May, 2,000/month by June-July, 5,000/month by Q3/early Q4. Full-year 2026 estimate: 20,000-40,000 units",
+      "source": "20260313_jobhakdi_01_Why_Cybercab_summary.txt"
+    },
+    {
+      "fact": "Morgan Stanley robotaxi fleet projections: 1,500 (2026), 3,000 (end-2027), 7,500 (2028), 12,500 (2029), 30,000 (2030), 5 million (2040)",
+      "source": "20260329_brighterwithherbert_02_Exclusive_Tesla_summary.txt"
+    },
+    {
+      "fact": "15-city model: ~6,000 vehicles end of 2026 → ~15,000 end of 2027. 30-city model: ~10,000 end of 2026 → ~28,000-30,000 end of 2027. 50-city model: ~13,000-14,000 end of 2026 → ~40,000 end of 2027",
+      "source": "20260214_brighterwithherbert_02_Exclusive_Everyone_summary.txt"
+    },
+    {
+      "fact": "Larry Goldberg projects 300,000-500,000 vehicles by 2030, vs Morgan Stanley's 30,000",
+      "source": "20260320_brighterwithherbert_01_Robotaxi_Rollout_summary.txt"
+    },
+    {
+      "fact": "Estimated 10-15 staging sites with 10-20 vehicles each = roughly 100-300 Model Y robotaxis currently staged",
+      "source": "20260328_brighterwithherbert_02_Tesla_About_summary.txt"
+    }
+  ],
+  "utilization": [
+    {
+      "fact": "Cybercab unit economics modeled at 30% vehicle utilization (7.2 hours per day in service)",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    },
+    {
+      "fact": "Cybercab targets 18-20 hours per day asset utilization versus a private car's 95% idle time",
+      "source": "20260328_brighterwithherbert_01_April_Will_summary.txt"
+    },
+    {
+      "fact": "1,800 robotaxi forcing function defined as: 1,800 units × 200 miles/day × $1/mile net margin. At 50% utilization, the effective threshold would require ~3,600 vehicles",
+      "source": "20260220_jobhakdi_02_Why_Tesla_summary.txt"
+    }
+  ],
+  "avg_empty_distance": [
+    {
+      "fact": "Cybercab unit economics modeled with 40% of miles being empty 'deadhead' miles",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "base_fare": [
+    {
+      "fact": "Current Austin robotaxi pricing is $3 base fare and $1.40 per mile, up from the earlier $1 base fare and $1 per mile",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "fare_per_mile": [
+    {
+      "fact": "Current Austin robotaxi pricing is $3 base fare and $1.40 per mile, up from the earlier $1 base fare and $1 per mile",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    },
+    {
+      "fact": "Current ride-share market rate is $2-$4 per mile. Tesla pricing still well below this",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "price_per_kwh": [
+    {
+      "fact": "Cybercab unit economics modeled with charging at $0.16/kWh (earlier model) and $0.35/kWh (updated fleet builder model)",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "insurance_cost": [
+    {
+      "fact": "Cybercab unit economics modeled with insurance at $3,600/year",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "cleaning_cost": [
+    {
+      "fact": "Fleet builder model uses cleaning cost of $1,700/year per vehicle",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "spot_monthly_cost": [
+    {
+      "fact": "Fleet builder model uses parking cost of $6,000/year per vehicle ($500/month)",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    }
+  ],
+  "vehicle_purchases": [
+    {
+      "fact": "Cybercab target price: under $30,000 per unit",
+      "source": "20260328_brighterwithherbert_01_April_Will_summary.txt"
+    },
+    {
+      "fact": "Cybercab assumed purchase price: $30,000; $5,000 down payment in unit economics model",
+      "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    },
+    {
+      "fact": "Waymo vehicle cost: $200,000+ (due to sensor load) vs Cybercab sub-$30,000",
+      "source": "20260328_brighterwithherbert_01_April_Will_summary.txt"
+    }
+  ],
+  "remote_ops_ratio": [
+    {
+      "fact": "Supervisor-to-robotaxi ratio discussed: currently possibly 3:1, target of 10:1 would allow fleet tripling. Going from 3:1 to 4:1 would allow a one-third fleet increase",
+      "source": "20260327_futureaza_02_Terafab_Uber_summary.txt"
+    }
+  ],
+  "infrastructure": [
+    {
+      "fact": "Tesla has at least 210 service centers across the US, framed as ready-made robotaxi operations hubs",
+      "source": "20260323_brighterwithherbert_02_The_Robotaxi_summary.txt"
+    },
+    {
+      "fact": "Average distance between adjacent Supercharger stations in the US: approximately 150 miles",
+      "source": "20260323_brighterwithherbert_02_The_Robotaxi_summary.txt"
+    }
+  ]
+}
