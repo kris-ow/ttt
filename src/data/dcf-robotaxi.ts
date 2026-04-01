@@ -20,6 +20,7 @@ export const DCF_NODES: Record<string, DcfNode> = {
     formula: 'Σ PV(FCF) + PV(Terminal Value)',
     definition: 'Present value of all projected free cash flows over 10 years, plus a terminal value capturing all cash flows beyond Year 10. Each year\'s FCF is discounted back at the WACC to reflect the time value of money and risk.',
     children: ['fcf'],
+    unit: '$total',
   },
   fcf: {
     id: 'fcf',
@@ -336,7 +337,7 @@ export const DCF_NODES: Record<string, DcfNode> = {
     label: 'Vehicle Purchases',
     formula: 'New Units × Cost per Vehicle',
     definition: 'Cost of acquiring new Cybercabs or Model Ys for the fleet. Cybercab target cost ~$30k, significantly below competitors.',
-    children: ['new_units', 'cost_per_vehicle'],
+    children: ['new_units', 'vehicle_unit_cost'],
     unit: '$total',
   },
   new_units: {
@@ -345,8 +346,8 @@ export const DCF_NODES: Record<string, DcfNode> = {
     definition: 'Number of new vehicles added in the year. Driven by the Fleet Size ramp schedule.',
     unit: 'vehicles',
   },
-  cost_per_vehicle: {
-    id: 'cost_per_vehicle',
+  vehicle_unit_cost: {
+    id: 'vehicle_unit_cost',
     label: 'Cost per Vehicle',
     definition: 'Manufacturing cost per robotaxi unit. Cybercab target ~$25K–$30K, significantly below competitors due to purpose-built design (no steering wheel/pedals).',
     unit: '$',
@@ -377,7 +378,7 @@ export const DCF_NODES: Record<string, DcfNode> = {
 
 export const DCF_ROOT = 'dcf'
 
-export const PROJ_INPUT_IDS = ['cost_per_vehicle', 'infra_cost_per_vehicle'] as const
+export const PROJ_INPUT_IDS = ['vehicle_unit_cost', 'infra_cost_per_vehicle'] as const
 
 // ── Revenue per Vehicle computation ──────────────────────
 

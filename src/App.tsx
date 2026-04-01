@@ -857,17 +857,26 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
 
       {/* Yearly breakdown for projection-derived nodes */}
       {projResult && (() => {
-        const yearlyFieldMap: Record<string, { field: keyof typeof projResult.years[0], format: 'count' | 'currency' }> = {
-          fcf: { field: 'fcf', format: 'currency' },
-          ocf: { field: 'ocf', format: 'currency' },
-          capex: { field: 'totalCapex', format: 'currency' },
-          vehicle_purchases: { field: 'vehicleCapex', format: 'currency' },
-          infrastructure: { field: 'infraCapex', format: 'currency' },
-          new_units: { field: 'newVehicles', format: 'count' },
-          infra_new_units: { field: 'newVehicles', format: 'count' },
+        type YearlyCol = { label: string; field: keyof typeof projResult.years[0]; format: 'count' | 'currency' | 'factor'; highlight?: boolean }
+        const yearlyColumnsMap: Record<string, YearlyCol[]> = {
+          fcf: [
+            { label: 'FCF', field: 'fcf', format: 'currency', highlight: true },
+            { label: 'Disc. Factor', field: 'discountFactor', format: 'factor' },
+            { label: 'PV(FCF)', field: 'pvFcf', format: 'currency', highlight: true },
+          ],
+          ocf: [{ label: 'OCF', field: 'ocf', format: 'currency' }],
+          capex: [
+            { label: 'Vehicle', field: 'vehicleCapex', format: 'currency' },
+            { label: 'Infra', field: 'infraCapex', format: 'currency' },
+            { label: 'Total', field: 'totalCapex', format: 'currency', highlight: true },
+          ],
+          vehicle_purchases: [{ label: 'Vehicle CapEx', field: 'vehicleCapex', format: 'currency' }],
+          infrastructure: [{ label: 'Infra CapEx', field: 'infraCapex', format: 'currency' }],
+          new_units: [{ label: 'New Vehicles', field: 'newVehicles', format: 'count' }],
+          infra_new_units: [{ label: 'New Vehicles', field: 'newVehicles', format: 'count' }],
         }
-        const mapping = yearlyFieldMap[node.id]
-        if (!mapping) return null
+        const columns = yearlyColumnsMap[node.id]
+        if (!columns) return null
         return (
           <div>
             <h4 className="text-green-dim text-xs font-bold mb-2">BY YEAR</h4>
@@ -876,16 +885,23 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
                 <thead>
                   <tr className="border-b border-border">
                     <th className="text-left px-2 py-1.5 text-text-dim font-bold">Year</th>
-                    <th className="text-right px-2 py-1.5 text-text-dim font-bold">{node.label}</th>
+                    {columns.map(col => (
+                      <th key={col.field} className="text-right px-2 py-1.5 text-text-dim font-bold">{col.label}</th>
+                    ))}
                   </tr>
                 </thead>
                 <tbody>
                   {projResult.years.map(y => (
                     <tr key={y.year} className="border-b border-border last:border-b-0">
                       <td className="px-2 py-1 text-text-dim">{y.year}</td>
-                      <td className="px-2 py-1.5 text-green text-right">
-                        {formatProjectionValue(y[mapping.field] as number, mapping.format)}
-                      </td>
+                      {columns.map(col => {
+                        const val = y[col.field] as number
+                        return (
+                          <td key={col.field} className={`px-2 py-1.5 text-right ${val < 0 ? 'text-red' : col.highlight ? 'text-green' : 'text-text'}`}>
+                            {formatProjectionValue(val, col.format)}
+                          </td>
+                        )
+                      })}
                     </tr>
                   ))}
                 </tbody>
@@ -931,8 +947,6 @@ function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
   const dcfInputFields: { key: keyof ProjectionInputs; label: string; desc: string; suffix: string; step: number; min: number; max: number }[] = [
     { key: 'wacc', label: 'WACC', desc: 'Discount rate reflecting risk-adjusted cost of capital. Higher = future cash flows worth less today. Typical: 8-12% for established companies, 12-20% for speculative ventures.', suffix: '%', step: 0.5, min: 5, max: 25 },
     { key: 'terminalGrowthRate', label: 'Terminal Growth Rate', desc: 'Perpetual FCF growth rate after Year 10, used in the Gordon Growth Model: FCF / (WACC - g). Must be below WACC. Typical: 2-4%.', suffix: '%', step: 0.5, min: 0, max: 5 },
-    { key: 'vehicleCost', label: 'Vehicle Cost', desc: 'Manufacturing cost per Cybercab. Tesla targets ~$25K-30K, significantly below competitors. Used for CapEx and depreciation calculations.', suffix: '$', step: 1000, min: 10_000, max: 100_000 },
-    { key: 'infraCostPerVehicle', label: 'Infrastructure / Vehicle', desc: 'One-time infrastructure investment per vehicle: charging depots, cleaning stations, remote operations centers.', suffix: '$', step: 500, min: 0, max: 50_000 },
     { key: 'vehicleUsefulLife', label: 'Vehicle Useful Life', desc: 'Depreciation period in years. Vehicles depreciate straight-line over this period, creating a tax shield that reduces taxable income.', suffix: 'yr', step: 1, min: 2, max: 15 },
   ]
 
@@ -1228,7 +1242,7 @@ function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, costOverri
       setRevOverrides(prev => ({ ...prev, [id]: value }))
     } else if ((COST_INPUT_IDS as readonly string[]).includes(id)) {
       setCostOverrides(prev => ({ ...prev, [id]: value }))
-    } else if (id === 'cost_per_vehicle') {
+    } else if (id === 'vehicle_unit_cost') {
       setProjInputs(prev => ({ ...prev, vehicleCost: value }))
     } else if (id === 'infra_cost_per_vehicle') {
       setProjInputs(prev => ({ ...prev, infraCostPerVehicle: value }))
@@ -1301,11 +1315,12 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
       fcf: lastYear?.fcf ?? 0,
       new_units: lastYear?.newVehicles ?? 0,
       infra_new_units: lastYear?.newVehicles ?? 0,
-      cost_per_vehicle: projInputs.vehicleCost,
+      vehicle_unit_cost: projInputs.vehicleCost,
       infra_cost_per_vehicle: projInputs.infraCostPerVehicle,
       vehicle_purchases: lastYear?.vehicleCapex ?? 0,
       infrastructure: lastYear?.infraCapex ?? 0,
       capex: lastYear?.totalCapex ?? 0,
+      dcf: projResult.equityValue,
     }
   }, [revValues, costValues, projResult, projInputs.vehicleCost, projInputs.infraCostPerVehicle])
 
