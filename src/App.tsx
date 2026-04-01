@@ -952,24 +952,37 @@ function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
 
   const hasOverrides = JSON.stringify(projInputs) !== JSON.stringify(DEFAULT_PROJECTION_INPUTS)
 
-  type RowDef = { label: string; key: keyof (typeof projResult.years)[0]; type: 'count' | 'currency' | 'factor'; highlight?: boolean; separator?: boolean }
+  type ColDef = { label: string; key: keyof (typeof projResult.years)[0]; type: 'count' | 'currency' | 'factor'; highlight?: boolean }
+  type Section = { title: string; formula?: string; cols: ColDef[] }
 
-  const rows: RowDef[] = [
-    { label: 'Fleet Size', key: 'fleetSize', type: 'count' },
-    { label: 'New Vehicles', key: 'newVehicles', type: 'count' },
-    { label: 'Revenue', key: 'revenue', type: 'currency', separator: true },
-    { label: 'Op. Cost', key: 'opCost', type: 'currency' },
-    { label: 'Depreciation', key: 'depreciation', type: 'currency' },
-    { label: 'Taxable Inc.', key: 'taxableIncome', type: 'currency' },
-    { label: 'Tax', key: 'tax', type: 'currency' },
-    { label: 'Net Income', key: 'netIncome', type: 'currency' },
-    { label: 'OCF', key: 'ocf', type: 'currency' },
-    { label: 'Vehicle CapEx', key: 'vehicleCapex', type: 'currency', separator: true },
-    { label: 'Infra CapEx', key: 'infraCapex', type: 'currency' },
-    { label: 'Total CapEx', key: 'totalCapex', type: 'currency' },
-    { label: 'FCF', key: 'fcf', type: 'currency', separator: true, highlight: true },
-    { label: 'Disc. Factor', key: 'discountFactor', type: 'factor' },
-    { label: 'PV(FCF)', key: 'pvFcf', type: 'currency', highlight: true },
+  const sections: Section[] = [
+    { title: 'VALUATION', formula: 'PV(FCF) = FCF × Discount Factor', cols: [
+      { label: 'FCF', key: 'fcf', type: 'currency' },
+      { label: 'Disc. Factor', key: 'discountFactor', type: 'factor' },
+      { label: 'PV(FCF)', key: 'pvFcf', type: 'currency', highlight: true },
+    ]},
+    { title: 'FREE CASH FLOW', formula: 'FCF = OCF − Total CapEx', cols: [
+      { label: 'OCF', key: 'ocf', type: 'currency' },
+      { label: 'Total CapEx', key: 'totalCapex', type: 'currency' },
+      { label: 'FCF', key: 'fcf', type: 'currency', highlight: true },
+    ]},
+    { title: 'OPERATING CASH FLOW', formula: 'OCF = Net Income + Depreciation', cols: [
+      { label: 'Revenue', key: 'revenue', type: 'currency' },
+      { label: 'Op. Cost', key: 'opCost', type: 'currency' },
+      { label: 'Depreciation', key: 'depreciation', type: 'currency' },
+      { label: 'Tax', key: 'tax', type: 'currency' },
+      { label: 'Net Income', key: 'netIncome', type: 'currency' },
+      { label: 'OCF', key: 'ocf', type: 'currency', highlight: true },
+    ]},
+    { title: 'CAPITAL EXPENDITURES', formula: 'CapEx = Vehicle Purchases + Infrastructure', cols: [
+      { label: 'Vehicle', key: 'vehicleCapex', type: 'currency' },
+      { label: 'Infra', key: 'infraCapex', type: 'currency' },
+      { label: 'Total CapEx', key: 'totalCapex', type: 'currency', highlight: true },
+    ]},
+    { title: 'FLEET SCALE', cols: [
+      { label: 'New Vehicles', key: 'newVehicles', type: 'count' },
+      { label: 'Fleet Size', key: 'fleetSize', type: 'count', highlight: true },
+    ]},
   ]
 
   return (
@@ -981,7 +994,6 @@ function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
 
       <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold">
         Equity Value = Σ PV(FCF) + PV(Terminal Value)
-        <span className="text-green ml-2">{formatProjectionValue(projResult.equityValue, 'currency')}</span>
       </div>
 
       <p className="text-text text-xs leading-relaxed">
@@ -1007,58 +1019,23 @@ function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
             <div key={f.key} className="border border-border bg-surface-2 p-3">
               <div className="flex items-center gap-2 mb-1">
                 <span className="text-amber text-xs font-bold">{f.label}</span>
-                <div className="flex items-center gap-1 ml-auto">
-                  {f.suffix === '$' && <span className="text-text-dim text-xs">$</span>}
-                  <input
-                    type="number"
-                    value={projInputs[f.key] as number}
-                    onChange={e => updateInput(f.key, Number(e.target.value))}
-                    step={f.step}
-                    min={f.min}
-                    max={f.max}
-                    className="w-24 bg-bg border border-border text-amber text-xs px-2 py-1 font-mono text-right focus:outline-none focus:border-amber"
-                  />
-                  {f.suffix && f.suffix !== '$' && <span className="text-text-dim text-xs">{f.suffix}</span>}
-                </div>
               </div>
-              <p className="text-text-dim text-xs leading-relaxed">{f.desc}</p>
+              <div className="flex items-center gap-1">
+                {f.suffix === '$' && <span className="text-text-dim text-xs">$</span>}
+                <input
+                  type="number"
+                  value={projInputs[f.key] as number}
+                  onChange={e => updateInput(f.key, Number(e.target.value))}
+                  step={f.step}
+                  min={f.min}
+                  max={f.max}
+                  className="w-24 bg-bg border border-border text-amber text-xs px-2 py-1 font-mono focus:outline-none focus:border-amber"
+                />
+                {f.suffix && f.suffix !== '$' && <span className="text-text-dim text-xs">{f.suffix}</span>}
+              </div>
+              <p className="text-text-dim text-xs leading-relaxed mt-1">{f.desc}</p>
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* 10-Year Projection Table */}
-      <div className="border border-border">
-        <div className="px-3 py-2 border-b border-border">
-          <span className="text-green-dim text-xs font-bold">10-YEAR PROJECTION</span>
-        </div>
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs font-mono">
-            <thead>
-              <tr className="border-b border-border">
-                <th className="sticky left-0 bg-surface z-10 text-left px-3 py-1.5 text-text-dim font-bold min-w-[110px]">Year</th>
-                {projResult.years.map(y => (
-                  <th key={y.year} className="text-right px-3 py-1.5 text-text-dim font-bold min-w-[90px]">{y.year}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, ri) => (
-                <tr key={row.key} className={`${row.highlight ? 'bg-green/5' : ''} ${row.separator && ri > 0 ? 'border-t border-border' : ''}`}>
-                  <td className="sticky left-0 bg-surface z-10 px-3 py-1 text-text-dim whitespace-nowrap">{row.label}</td>
-                  {projResult.years.map(y => {
-                    const val = y[row.key] as number
-                    const isNeg = val < 0
-                    return (
-                      <td key={y.year} className={`text-right px-3 py-1 whitespace-nowrap ${isNeg ? 'text-red' : row.highlight ? 'text-green' : 'text-text'}`}>
-                        {formatProjectionValue(val, row.type)}
-                      </td>
-                    )
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
         </div>
       </div>
 
@@ -1092,10 +1069,44 @@ function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
             <span className="text-text-bright">Terminal Value</span> captures all cash flows beyond Year 10 using the Gordon Growth Model:
             TV = FCF<sub>11</sub> / (WACC - g) = {formatProjectionValue(projResult.terminalFcf, 'currency')} / ({projInputs.wacc}% - {projInputs.terminalGrowthRate}%) = {formatProjectionValue(projResult.terminalValue, 'currency')}.
             Discounted to present: {formatProjectionValue(projResult.pvTerminalValue, 'currency')}.
-            It is typically 60-80% of total DCF value because it represents an infinite stream of future cash flows.
           </p>
         </div>
       </div>
+
+      {/* 10-Year Projection — drill-down tables (valuation → scale) */}
+      {sections.map(section => (
+        <div key={section.title} className="border border-border">
+          <div className="px-3 py-2 border-b border-border">
+            <span className="text-green-dim text-xs font-bold">{section.title}</span>
+            {section.formula && <span className="text-text-dim text-xs ml-2">— {section.formula}</span>}
+          </div>
+          <table className="w-full text-xs font-mono">
+            <thead>
+              <tr className="border-b border-border">
+                <th className="text-left px-2 py-1.5 text-text-dim font-bold">Year</th>
+                {section.cols.map(col => (
+                  <th key={col.key + col.label} className="text-right px-2 py-1.5 text-text-dim font-bold">{col.label}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {projResult.years.map(y => (
+                <tr key={y.year} className="border-b border-border last:border-b-0">
+                  <td className="px-2 py-1 text-text-dim">{y.year}</td>
+                  {section.cols.map(col => {
+                    const val = y[col.key] as number
+                    return (
+                      <td key={col.key + col.label} className={`text-right px-2 py-1 ${val < 0 ? 'text-red' : col.highlight ? 'text-green' : 'text-text'}`}>
+                        {formatProjectionValue(val, col.type)}
+                      </td>
+                    )
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
     </div>
   )
 }
