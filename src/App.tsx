@@ -705,8 +705,20 @@ import { DCF_NODES, DCF_ROOT, REV_INPUT_IDS, COST_INPUT_IDS, PROJ_INPUT_IDS, com
 import dcfFactsData from './data/dcf-robotaxi-facts.json'
 const dcfFacts: Record<string, { fact: string; source: string }[]> = dcfFactsData
 
-function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
+const Y10_NODE_IDS = new Set(['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'])
+
+// Collect node IDs for expand states
+function collectExpandable(nodeId: string, maxDepth?: number, depth = 0): string[] {
+  const node = DCF_NODES[nodeId]
+  if (!node?.children || (maxDepth !== undefined && depth >= maxDepth)) return []
+  return [nodeId, ...node.children.flatMap(c => collectExpandable(c, maxDepth, depth + 1))]
+}
+const DEFAULT_EXPANDED = new Set(collectExpandable(DCF_ROOT, 2))
+const ALL_EXPANDABLE = new Set(collectExpandable(DCF_ROOT))
+
+function DcfTreeNode({ nodeId, depth, selectedId, onSelect, expandedIds, onToggle, computedValues }: {
   nodeId: string; depth: number; selectedId: string; onSelect: (id: string) => void
+  expandedIds: Set<string>; onToggle: (id: string) => void
   computedValues?: Record<string, number>
 }) {
   const node = DCF_NODES[nodeId]
@@ -716,18 +728,24 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
   const isRoot = depth === 0
   const cv = computedValues?.[nodeId]
   const isInput = (REV_INPUT_IDS as readonly string[]).includes(nodeId) || (COST_INPUT_IDS as readonly string[]).includes(nodeId) || (PROJ_INPUT_IDS as readonly string[]).includes(nodeId)
+  const isExpanded = expandedIds.has(nodeId)
+
+  const handleClick = () => {
+    onSelect(nodeId)
+    if (hasChildren) onToggle(nodeId)
+  }
 
   return (
     <div>
       <button
-        onClick={() => onSelect(nodeId)}
+        onClick={handleClick}
         className={`w-full text-left py-1.5 px-2 text-xs cursor-pointer transition-colors flex items-center gap-2 ${
           isSelected ? 'bg-green/10 text-green' : 'text-text hover:text-green hover:bg-surface-2'
         }`}
         style={{ paddingLeft: `${depth * 16 + 8}px` }}
       >
         {hasChildren ? (
-          <span className="text-text-dim flex-shrink-0 w-3">{isSelected ? '▼' : '▶'}</span>
+          <span className="text-text-dim flex-shrink-0 w-3">{isExpanded ? '▼' : '▶'}</span>
         ) : isInput ? (
           <span className="text-amber flex-shrink-0 w-3">◆</span>
         ) : (
@@ -739,13 +757,16 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
         )}
         {cv !== undefined && (
           <span className={`${isInput ? 'text-amber' : 'text-green'} ml-auto flex-shrink-0 hidden sm:inline`}>
-            {['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'].includes(nodeId) && <span className="text-text-dim">Y10 </span>}
+            {Y10_NODE_IDS.has(nodeId) && <span className="text-text-dim">Y10 </span>}
             {formatDcfValue(nodeId, cv)}
           </span>
         )}
       </button>
-      {hasChildren && node.children!.map(childId => (
-        <DcfTreeNode key={childId} nodeId={childId} depth={depth + 1} selectedId={selectedId} onSelect={onSelect} computedValues={computedValues} />
+      {hasChildren && isExpanded && node.children!.map((childId, i) => (
+        <div key={childId}>
+          {depth >= 1 && i > 0 && <div className="border-t border-border/50 my-0.5" style={{ marginLeft: `${(depth + 1) * 16 + 8}px` }} />}
+          <DcfTreeNode nodeId={childId} depth={depth + 1} selectedId={selectedId} onSelect={onSelect} expandedIds={expandedIds} onToggle={onToggle} computedValues={computedValues} />
+        </div>
       ))}
     </div>
   )
@@ -762,7 +783,7 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
 
   const cv = computedValues?.[node.id]
   const isInput = (REV_INPUT_IDS as readonly string[]).includes(node.id) || (COST_INPUT_IDS as readonly string[]).includes(node.id) || (PROJ_INPUT_IDS as readonly string[]).includes(node.id)
-  const isY10 = ['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'].includes(node.id)
+  const isY10 = Y10_NODE_IDS.has(node.id)
 
   return (
     <div className="space-y-4">
@@ -836,7 +857,7 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
               if (!child) return null
               const childCv = computedValues?.[childId]
               const childIsInput = (REV_INPUT_IDS as readonly string[]).includes(childId) || (COST_INPUT_IDS as readonly string[]).includes(childId) || (PROJ_INPUT_IDS as readonly string[]).includes(childId)
-              const childIsY10 = ['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'].includes(childId)
+              const childIsY10 = Y10_NODE_IDS.has(childId)
               return (
                 <button
                   key={childId}
@@ -1246,7 +1267,17 @@ function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, costOverri
   projResult: ReturnType<typeof computeProjection>
 }) {
   const [selectedId, setSelectedId] = useState(DCF_ROOT)
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(() => new Set(DEFAULT_EXPANDED))
   const node = DCF_NODES[selectedId]
+
+  const handleToggle = useCallback((id: string) => {
+    setExpandedIds(prev => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }, [])
 
   const handleInputChange = (id: string, value: number) => {
     if ((REV_INPUT_IDS as readonly string[]).includes(id)) {
@@ -1266,17 +1297,33 @@ function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, costOverri
       <div className="sm:w-2/5 border border-border bg-surface mb-4 sm:mb-0 flex-shrink-0">
         <div className="px-3 py-2 border-b border-border flex items-center justify-between">
           <span className="text-green-dim text-xs font-bold">FORMULA TREE</span>
-          {(Object.keys(revOverrides).length > 0 || Object.keys(costOverrides).length > 0) && (
+          <div className="flex items-center gap-2">
+            {(Object.keys(revOverrides).length > 0 || Object.keys(costOverrides).length > 0) && (
+              <button
+                onClick={() => { setRevOverrides({}); setCostOverrides({}) }}
+                className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+              >
+                [reset]
+              </button>
+            )}
             <button
-              onClick={() => { setRevOverrides({}); setCostOverrides({}) }}
+              onClick={() => setExpandedIds(new Set(ALL_EXPANDABLE))}
               className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+              title="Expand all"
             >
-              [reset all]
+              ⊞
             </button>
-          )}
+            <button
+              onClick={() => setExpandedIds(new Set())}
+              className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+              title="Collapse all"
+            >
+              ⊟
+            </button>
+          </div>
         </div>
         <div className="py-1">
-          <DcfTreeNode nodeId={DCF_ROOT} depth={0} selectedId={selectedId} onSelect={setSelectedId} computedValues={computedValues} />
+          <DcfTreeNode nodeId={DCF_ROOT} depth={0} selectedId={selectedId} onSelect={setSelectedId} expandedIds={expandedIds} onToggle={handleToggle} computedValues={computedValues} />
         </div>
       </div>
 
