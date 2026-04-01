@@ -13,6 +13,14 @@ export interface DcfNode {
 }
 
 export const DCF_NODES: Record<string, DcfNode> = {
+  dcf: {
+    id: 'dcf',
+    label: 'Discounted Cash Flow',
+    shortLabel: 'DCF',
+    formula: 'Σ PV(FCF) + PV(Terminal Value)',
+    definition: 'Present value of all projected free cash flows over 10 years, plus a terminal value capturing all cash flows beyond Year 10. Each year\'s FCF is discounted back at the WACC to reflect the time value of money and risk.',
+    children: ['fcf'],
+  },
   fcf: {
     id: 'fcf',
     label: 'Free Cash Flow',
@@ -20,6 +28,7 @@ export const DCF_NODES: Record<string, DcfNode> = {
     formula: 'OCF − CapEx',
     definition: 'Cash available to equity holders after all operating expenses and capital investments. This is the value that gets discounted back to present in a DCF model.',
     children: ['ocf', 'capex'],
+    unit: '$total',
   },
   ocf: {
     id: 'ocf',
@@ -28,11 +37,13 @@ export const DCF_NODES: Record<string, DcfNode> = {
     formula: 'Fleet Size × Unit Economics',
     definition: 'Cash generated from core robotaxi operations before capital investments. Decomposed into scale (how many vehicles) and unit economics (how much each one nets).',
     children: ['fleet_size', 'unit_economics'],
+    unit: '$total',
   },
   fleet_size: {
     id: 'fleet_size',
     label: 'Fleet Size',
     definition: 'Number of active robotaxi vehicles generating revenue. Currently ramping in Austin and Bay Area, with geographic expansion underway.',
+    unit: 'vehicles',
   },
   unit_economics: {
     id: 'unit_economics',
@@ -40,6 +51,7 @@ export const DCF_NODES: Record<string, DcfNode> = {
     formula: 'Revenue/Vehicle − Cost/Vehicle − Tax/Vehicle',
     definition: 'Net cash generated per vehicle per year after all operating costs and taxes. This is the margin story — how profitable is each robotaxi unit.',
     children: ['rev_per_vehicle', 'cost_per_vehicle', 'tax_per_vehicle'],
+    unit: '$/yr',
   },
   rev_per_vehicle: {
     id: 'rev_per_vehicle',
@@ -298,7 +310,17 @@ export const DCF_NODES: Record<string, DcfNode> = {
     id: 'tax_per_vehicle',
     label: 'Tax per Vehicle',
     shortLabel: 'Tax/Vehicle',
-    definition: 'Per-vehicle share of corporate income tax on operating profit. Applied as effective tax rate on (Revenue − Cost) per vehicle.',
+    formula: '(Rev/Vehicle − Cost/Vehicle) × Tax Rate',
+    definition: 'Corporate income tax on per-vehicle operating profit. Federal rate is 21%, blended state rate ~4-5% (weighted toward low-tax states like TX, AZ, NV), offset by depreciation and R&D credits.',
+    children: ['effective_tax_rate'],
+    unit: '$/yr',
+  },
+  effective_tax_rate: {
+    id: 'effective_tax_rate',
+    label: 'Effective Tax Rate',
+    definition: 'Blended effective corporate tax rate applied to operating profit. Includes federal (21%) + blended state (~4-5%) minus credits/deductions (~2-3%). Base assumption: 23%.',
+    defaultValue: 23,
+    unit: '%',
   },
   capex: {
     id: 'capex',
@@ -307,21 +329,55 @@ export const DCF_NODES: Record<string, DcfNode> = {
     formula: 'Vehicle Purchases + Infrastructure',
     definition: 'Upfront investment in fleet vehicles and supporting infrastructure. Heavy in early years, decreases as fleet matures.',
     children: ['vehicle_purchases', 'infrastructure'],
+    unit: '$total',
   },
   vehicle_purchases: {
     id: 'vehicle_purchases',
     label: 'Vehicle Purchases',
     formula: 'New Units × Cost per Vehicle',
     definition: 'Cost of acquiring new Cybercabs or Model Ys for the fleet. Cybercab target cost ~$30k, significantly below competitors.',
+    children: ['new_units', 'cost_per_vehicle'],
+    unit: '$total',
+  },
+  new_units: {
+    id: 'new_units',
+    label: 'New Units',
+    definition: 'Number of new vehicles added in the year. Driven by the Fleet Size ramp schedule.',
+    unit: 'vehicles',
+  },
+  cost_per_vehicle: {
+    id: 'cost_per_vehicle',
+    label: 'Cost per Vehicle',
+    definition: 'Manufacturing cost per robotaxi unit. Cybercab target ~$25K–$30K, significantly below competitors due to purpose-built design (no steering wheel/pedals).',
+    unit: '$',
+    defaultValue: 25_000,
   },
   infrastructure: {
     id: 'infrastructure',
     label: 'Infrastructure',
+    formula: 'New Units × Infra Cost per Vehicle',
     definition: 'Charging depots, cleaning facilities, and remote operations centers needed to support the fleet.',
+    children: ['infra_new_units', 'infra_cost_per_vehicle'],
+    unit: '$total',
+  },
+  infra_new_units: {
+    id: 'infra_new_units',
+    label: 'New Units',
+    definition: 'Number of new vehicles requiring infrastructure buildout. Same as fleet ramp schedule.',
+    unit: 'vehicles',
+  },
+  infra_cost_per_vehicle: {
+    id: 'infra_cost_per_vehicle',
+    label: 'Infra Cost per Vehicle',
+    definition: 'Infrastructure investment per new vehicle: charging depots, cleaning bays, remote ops centers. Amortized across fleet.',
+    unit: '$',
+    defaultValue: 5_000,
   },
 }
 
-export const DCF_ROOT = 'fcf'
+export const DCF_ROOT = 'dcf'
+
+export const PROJ_INPUT_IDS = ['cost_per_vehicle', 'infra_cost_per_vehicle'] as const
 
 // ── Revenue per Vehicle computation ──────────────────────
 
@@ -373,7 +429,7 @@ export const COST_INPUT_IDS = [
   'insurance_cost', 'remote_ops_operator_cost', 'remote_ops_ratio',
   'cleaning_cost', 'connectivity_cost',
   'spot_monthly_cost', 'vehicles_per_spot',
-  'overhead_cost',
+  'overhead_cost', 'effective_tax_rate',
 ] as const
 
 export type CostInputId = typeof COST_INPUT_IDS[number]
@@ -418,6 +474,12 @@ export function computeCostPerVehicle(
 
   const cost_per_vehicle = charging_cost + maintenance_cost + insurance_cost + remote_ops_cost + cleaning_cost + connectivity_cost + parking_cost + overhead_cost
 
+  const rev_per_vehicle = revValues.rev_per_vehicle ?? 0
+  const effective_tax_rate = v('effective_tax_rate')
+  const operating_profit = rev_per_vehicle - cost_per_vehicle
+  const tax_per_vehicle = Math.max(0, operating_profit) * (effective_tax_rate / 100)
+  const unit_economics = rev_per_vehicle - cost_per_vehicle - tax_per_vehicle
+
   return {
     annual_distance,
     kwh_per_mile,
@@ -439,14 +501,163 @@ export function computeCostPerVehicle(
     parking_cost,
     overhead_cost,
     cost_per_vehicle,
+    effective_tax_rate,
+    tax_per_vehicle,
+    unit_economics,
   }
+}
+
+// ── 10-Year Projection ────────────────────────────────────
+
+export interface ProjectionInputs {
+  newVehiclesByYear: number[]
+  vehicleCost: number
+  infraCostPerVehicle: number
+  vehicleUsefulLife: number
+  wacc: number
+  terminalGrowthRate: number
+  startYear: number
+}
+
+export interface ProjectionYear {
+  year: number
+  fleetSize: number
+  newVehicles: number
+  revenue: number
+  opCost: number
+  depreciation: number
+  taxableIncome: number
+  tax: number
+  netIncome: number
+  ocf: number
+  vehicleCapex: number
+  infraCapex: number
+  totalCapex: number
+  fcf: number
+  discountFactor: number
+  pvFcf: number
+}
+
+export interface ProjectionResult {
+  years: ProjectionYear[]
+  terminalFcf: number
+  terminalValue: number
+  pvTerminalValue: number
+  totalPvFcf: number
+  equityValue: number
+}
+
+export const DEFAULT_NEW_VEHICLES = [5_000, 50_000, 150_000, 300_000, 600_000, 1_000_000, 1_500_000, 2_000_000, 2_500_000, 3_000_000]
+
+export const DEFAULT_PROJECTION_INPUTS: ProjectionInputs = {
+  newVehiclesByYear: [...DEFAULT_NEW_VEHICLES],
+  vehicleCost: 25_000,
+  infraCostPerVehicle: 5_000,
+  vehicleUsefulLife: 5,
+  wacc: 12,
+  terminalGrowthRate: 3,
+  startYear: 2026,
+}
+
+export function computeProjection(
+  inputs: ProjectionInputs,
+  revPerVehicle: number,
+  costPerVehicle: number,
+  taxRate: number,
+): ProjectionResult {
+  const { newVehiclesByYear, vehicleCost, infraCostPerVehicle,
+    vehicleUsefulLife, wacc, terminalGrowthRate, startYear } = inputs
+
+  const waccDec = wacc / 100
+  const taxDec = taxRate / 100
+  const depPerVehicle = vehicleCost / vehicleUsefulLife
+
+  const cohorts: { year: number; count: number }[] = []
+  const years: ProjectionYear[] = []
+
+  let cumulativeFleet = 0
+
+  for (let t = 0; t < 10; t++) {
+    const year = startYear + t
+    const newVehicles = newVehiclesByYear[t] ?? 0
+    cumulativeFleet += newVehicles
+    const fleetSize = cumulativeFleet
+
+    cohorts.push({ year: t, count: newVehicles })
+
+    const revenue = fleetSize * revPerVehicle
+    const opCost = fleetSize * costPerVehicle
+
+    // Sum depreciation from all active cohorts
+    let depreciation = 0
+    for (const cohort of cohorts) {
+      if (t - cohort.year < vehicleUsefulLife) {
+        depreciation += cohort.count * depPerVehicle
+      }
+    }
+
+    const taxableIncome = revenue - opCost - depreciation
+    const tax = Math.max(0, taxableIncome) * taxDec
+    const netIncome = taxableIncome - tax
+    const ocf = netIncome + depreciation // add back non-cash
+
+    const vehicleCapex = newVehicles * vehicleCost
+    const infraCapex = newVehicles * infraCostPerVehicle
+    const totalCapex = vehicleCapex + infraCapex
+    const fcf = ocf - totalCapex
+
+    const discountFactor = 1 / Math.pow(1 + waccDec, t + 1)
+    const pvFcf = fcf * discountFactor
+
+    years.push({
+      year, fleetSize, newVehicles,
+      revenue, opCost, depreciation, taxableIncome, tax, netIncome, ocf,
+      vehicleCapex, infraCapex, totalCapex, fcf,
+      discountFactor, pvFcf,
+    })
+
+  }
+
+  const lastFcf = years[9].fcf
+  const termGrowthDec = terminalGrowthRate / 100
+  const terminalFcf = lastFcf * (1 + termGrowthDec)
+  const terminalValue = waccDec > termGrowthDec ? terminalFcf / (waccDec - termGrowthDec) : 0
+  const pvTerminalValue = terminalValue * years[9].discountFactor
+
+  const totalPvFcf = years.reduce((sum, y) => sum + y.pvFcf, 0)
+  const equityValue = totalPvFcf + pvTerminalValue
+
+  return { years, terminalFcf, terminalValue, pvTerminalValue, totalPvFcf, equityValue }
+}
+
+export function formatProjectionValue(value: number, type: 'count' | 'currency' | 'factor'): string {
+  if (type === 'count') {
+    const abs = Math.abs(value)
+    if (abs >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M`
+    if (abs >= 1_000) return `${(value / 1_000).toFixed(0)}K`
+    return value.toLocaleString()
+  }
+  if (type === 'currency') {
+    const abs = Math.abs(value)
+    let formatted: string
+    if (abs >= 1_000_000_000_000) formatted = `$${(abs / 1_000_000_000_000).toFixed(1)}T`
+    else if (abs >= 1_000_000_000) formatted = `$${(abs / 1_000_000_000).toFixed(1)}B`
+    else if (abs >= 1_000_000) formatted = `$${(abs / 1_000_000).toFixed(0)}M`
+    else if (abs >= 1_000) formatted = `$${(abs / 1_000).toFixed(0)}K`
+    else formatted = `$${abs.toFixed(0)}`
+    return value < 0 ? `(${formatted})` : formatted
+  }
+  if (type === 'factor') {
+    return `${value.toFixed(3)}x`
+  }
+  return `${value}`
 }
 
 /** Format a computed value with its unit */
 export function formatDcfValue(nodeId: string, value: number): string {
   const node = DCF_NODES[nodeId]
   const unit = node?.unit
-  if (unit === '$') return `$${value.toFixed(2)}`
+  if (unit === '$') return value >= 1000 ? `$${Math.round(value).toLocaleString()}` : `$${value.toFixed(2)}`
   if (unit === '$/yr') return `$${Math.round(value).toLocaleString()}`
   if (unit === '$/mi') return `$${value.toFixed(2)}/mi`
   if (unit === '%') return `${value}%`
@@ -458,7 +669,20 @@ export function formatDcfValue(nodeId: string, value: number): string {
   if (unit === 'kWh/mi') return `${value} kWh/mi`
   if (unit === '$/kWh') return `$${value.toFixed(2)}/kWh`
   if (unit === 'mi/yr') return `${Math.round(value).toLocaleString()} mi/yr`
-  if (unit === 'vehicles') return `${value}`
+  if (unit === 'vehicles') {
+    if (value >= 1_000_000) return `${(value / 1_000_000).toFixed(1)}M`
+    if (value >= 1_000) return `${(value / 1_000).toFixed(0)}K`
+    return `${value}`
+  }
   if (unit === '$/mo') return `$${value}/mo`
+  if (unit === '$total') {
+    const abs = Math.abs(value)
+    const sign = value < 0 ? '-' : ''
+    if (abs >= 1_000_000_000_000) return `${sign}$${(abs / 1_000_000_000_000).toFixed(1)}T`
+    if (abs >= 1_000_000_000) return `${sign}$${(abs / 1_000_000_000).toFixed(1)}B`
+    if (abs >= 1_000_000) return `${sign}$${(abs / 1_000_000).toFixed(1)}M`
+    if (abs >= 1_000) return `${sign}$${(abs / 1_000).toFixed(0)}K`
+    return `${sign}$${abs}`
+  }
   return `${value}`
 }

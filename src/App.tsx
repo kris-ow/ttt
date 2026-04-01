@@ -701,7 +701,7 @@ function KBCategoryContent({ category, expandedArea, toggleArea, openSource }: {
 
 // ── DCF Components ───────────────────────────────────────
 
-import { DCF_NODES, DCF_ROOT, REV_INPUT_IDS, COST_INPUT_IDS, computeRevPerVehicle, computeCostPerVehicle, formatDcfValue, type DcfNode, type RevInputId, type CostInputId } from './data/dcf-robotaxi'
+import { DCF_NODES, DCF_ROOT, REV_INPUT_IDS, COST_INPUT_IDS, PROJ_INPUT_IDS, computeRevPerVehicle, computeCostPerVehicle, formatDcfValue, computeProjection, formatProjectionValue, DEFAULT_PROJECTION_INPUTS, DEFAULT_NEW_VEHICLES, type DcfNode, type RevInputId, type CostInputId, type ProjectionInputs } from './data/dcf-robotaxi'
 import dcfFactsData from './data/dcf-robotaxi-facts.json'
 const dcfFacts: Record<string, { fact: string; source: string }[]> = dcfFactsData
 
@@ -715,7 +715,7 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
   const hasChildren = node.children && node.children.length > 0
   const isRoot = depth === 0
   const cv = computedValues?.[nodeId]
-  const isInput = (REV_INPUT_IDS as readonly string[]).includes(nodeId) || (COST_INPUT_IDS as readonly string[]).includes(nodeId)
+  const isInput = (REV_INPUT_IDS as readonly string[]).includes(nodeId) || (COST_INPUT_IDS as readonly string[]).includes(nodeId) || (PROJ_INPUT_IDS as readonly string[]).includes(nodeId)
 
   return (
     <div>
@@ -738,7 +738,10 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
           <span className="text-text-dim">({node.shortLabel})</span>
         )}
         {cv !== undefined && (
-          <span className={`${isInput ? 'text-amber' : 'text-green'} ml-auto flex-shrink-0 hidden sm:inline`}>{formatDcfValue(nodeId, cv)}</span>
+          <span className={`${isInput ? 'text-amber' : 'text-green'} ml-auto flex-shrink-0 hidden sm:inline`}>
+            {['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'].includes(nodeId) && <span className="text-text-dim">Y10 </span>}
+            {formatDcfValue(nodeId, cv)}
+          </span>
         )}
       </button>
       {hasChildren && node.children!.map(childId => (
@@ -748,16 +751,18 @@ function DcfTreeNode({ nodeId, depth, selectedId, onSelect, computedValues }: {
   )
 }
 
-function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChange }: {
+function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChange, projResult }: {
   node: DcfNode; onSelect: (id: string) => void; openSource: (src: string) => void
   computedValues?: Record<string, number>
   onInputChange?: (id: string, value: number) => void
+  projResult?: ReturnType<typeof computeProjection>
 }) {
   // Look up DCF-specific facts for this node
   const nodeFacts = dcfFacts[node.id] || []
 
   const cv = computedValues?.[node.id]
-  const isInput = (REV_INPUT_IDS as readonly string[]).includes(node.id) || (COST_INPUT_IDS as readonly string[]).includes(node.id)
+  const isInput = (REV_INPUT_IDS as readonly string[]).includes(node.id) || (COST_INPUT_IDS as readonly string[]).includes(node.id) || (PROJ_INPUT_IDS as readonly string[]).includes(node.id)
+  const isY10 = ['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'].includes(node.id)
 
   return (
     <div className="space-y-4">
@@ -769,7 +774,7 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
       {node.formula && (
         <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold flex items-center justify-between">
           <span>{node.label} = {node.formula}</span>
-          {cv !== undefined && <span className="text-green">{formatDcfValue(node.id, cv)}</span>}
+          {cv !== undefined && <span className="text-green">{isY10 && <span className="text-text-dim">Y10 </span>}{formatDcfValue(node.id, cv)}</span>}
         </div>
       )}
 
@@ -785,7 +790,7 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
                 const val = parseFloat(e.target.value)
                 if (!isNaN(val)) onInputChange(node.id, val)
               }}
-              step={node.unit === '$' || node.unit === '$/mi' ? 0.1 : node.unit === '%' ? 5 : node.unit === 'kWh/mi' ? 0.01 : node.unit === '$/kWh' ? 0.01 : node.unit === '$/yr' ? (node.defaultValue && node.defaultValue >= 1000 ? 500 : 50) : node.unit === '$/mo' ? 25 : node.id === 'tire_life' ? 5000 : node.unit === 'vehicles' ? 1 : 1}
+              step={(PROJ_INPUT_IDS as readonly string[]).includes(node.id) ? 1000 : node.unit === '$' || node.unit === '$/mi' ? 0.1 : node.unit === '%' ? 5 : node.unit === 'kWh/mi' ? 0.01 : node.unit === '$/kWh' ? 0.01 : node.unit === '$/yr' ? (node.defaultValue && node.defaultValue >= 1000 ? 500 : 50) : node.unit === '$/mo' ? 25 : node.id === 'tire_life' ? 5000 : node.unit === 'vehicles' ? 1 : 1}
               className="bg-bg border border-border text-amber text-xs font-bold px-2 py-1.5 w-24 focus:outline-none focus:border-amber"
             />
             {node.unit && <span className="text-text-dim text-xs">{node.unit}</span>}
@@ -804,12 +809,23 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
       {/* Show computed value for non-input nodes that have one */}
       {!isInput && !node.formula && cv !== undefined && (
         <div className="border border-border bg-surface-2 p-3 text-xs">
-          <span className="text-text-dim">Computed: </span>
+          <span className="text-text-dim">{isY10 ? 'Y10: ' : 'Computed: '}</span>
           <span className="text-green font-bold">{formatDcfValue(node.id, cv)}</span>
         </div>
       )}
 
       <p className="text-text text-xs leading-relaxed">{node.definition}</p>
+
+      {(node.id === 'new_units' || node.id === 'infra_new_units') && (
+        <button
+          onClick={() => onSelect('fleet_size')}
+          className="text-xs text-green-dim hover:text-green cursor-pointer transition-colors border border-border px-3 py-2 w-full text-left flex items-center gap-2"
+        >
+          <span className="text-amber">◆</span>
+          <span>Adjust in <span className="text-green font-bold">Fleet Size</span></span>
+          <span className="ml-auto text-text-dim">&rarr;</span>
+        </button>
+      )}
 
       {node.children && node.children.length > 0 && (
         <div>
@@ -819,7 +835,8 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
               const child = DCF_NODES[childId]
               if (!child) return null
               const childCv = computedValues?.[childId]
-              const childIsInput = (REV_INPUT_IDS as readonly string[]).includes(childId) || (COST_INPUT_IDS as readonly string[]).includes(childId)
+              const childIsInput = (REV_INPUT_IDS as readonly string[]).includes(childId) || (COST_INPUT_IDS as readonly string[]).includes(childId) || (PROJ_INPUT_IDS as readonly string[]).includes(childId)
+              const childIsY10 = ['fleet_size', 'ocf', 'fcf', 'new_units', 'infra_new_units', 'vehicle_purchases', 'infrastructure', 'capex'].includes(childId)
               return (
                 <button
                   key={childId}
@@ -829,7 +846,7 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
                   <span className={childIsInput ? 'text-amber' : 'text-green'}>{childIsInput ? '◆' : '>'}</span>
                   <span className="text-text-bright">{child.label}</span>
                   {childCv !== undefined && (
-                    <span className={`${childIsInput ? 'text-amber' : 'text-green'} ml-auto`}>{formatDcfValue(childId, childCv)}</span>
+                    <span className={`${childIsInput ? 'text-amber' : 'text-green'} ml-auto`}>{childIsY10 && <span className="text-text-dim">Y10 </span>}{formatDcfValue(childId, childCv)}</span>
                   )}
                 </button>
               )
@@ -837,6 +854,46 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
           </div>
         </div>
       )}
+
+      {/* Yearly breakdown for projection-derived nodes */}
+      {projResult && (() => {
+        const yearlyFieldMap: Record<string, { field: keyof typeof projResult.years[0], format: 'count' | 'currency' }> = {
+          fcf: { field: 'fcf', format: 'currency' },
+          ocf: { field: 'ocf', format: 'currency' },
+          capex: { field: 'totalCapex', format: 'currency' },
+          vehicle_purchases: { field: 'vehicleCapex', format: 'currency' },
+          infrastructure: { field: 'infraCapex', format: 'currency' },
+          new_units: { field: 'newVehicles', format: 'count' },
+          infra_new_units: { field: 'newVehicles', format: 'count' },
+        }
+        const mapping = yearlyFieldMap[node.id]
+        if (!mapping) return null
+        return (
+          <div>
+            <h4 className="text-green-dim text-xs font-bold mb-2">BY YEAR</h4>
+            <div className="border border-border">
+              <table className="w-full text-xs font-mono">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left px-2 py-1.5 text-text-dim font-bold">Year</th>
+                    <th className="text-right px-2 py-1.5 text-text-dim font-bold">{node.label}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {projResult.years.map(y => (
+                    <tr key={y.year} className="border-b border-border last:border-b-0">
+                      <td className="px-2 py-1 text-text-dim">{y.year}</td>
+                      <td className="px-2 py-1.5 text-green text-right">
+                        {formatProjectionValue(y[mapping.field] as number, mapping.format)}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )
+      })()}
 
       {nodeFacts.length > 0 && (
         <div>
@@ -862,21 +919,319 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
   )
 }
 
-function RobotaxiDcfView({ openSource }: { openSource: (src: string) => void }) {
-  const [selectedId, setSelectedId] = useState(DCF_ROOT)
-  const [revOverrides, setRevOverrides] = useState<Partial<Record<RevInputId, number>>>({})
-  const [costOverrides, setCostOverrides] = useState<Partial<Record<CostInputId, number>>>({})
-  const node = DCF_NODES[selectedId]
+function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
+  projInputs: ProjectionInputs
+  setProjInputs: React.Dispatch<React.SetStateAction<ProjectionInputs>>
+  projResult: ReturnType<typeof computeProjection>
+}) {
+  const updateInput = <K extends keyof ProjectionInputs>(key: K, value: ProjectionInputs[K]) => {
+    setProjInputs(prev => ({ ...prev, [key]: value }))
+  }
 
-  const revValues = computeRevPerVehicle(revOverrides)
-  const costValues = computeCostPerVehicle(revValues, costOverrides)
-  const computedValues = { ...revValues, ...costValues }
+  const dcfInputFields: { key: keyof ProjectionInputs; label: string; desc: string; suffix: string; step: number; min: number; max: number }[] = [
+    { key: 'wacc', label: 'WACC', desc: 'Discount rate reflecting risk-adjusted cost of capital. Higher = future cash flows worth less today. Typical: 8-12% for established companies, 12-20% for speculative ventures.', suffix: '%', step: 0.5, min: 5, max: 25 },
+    { key: 'terminalGrowthRate', label: 'Terminal Growth Rate', desc: 'Perpetual FCF growth rate after Year 10, used in the Gordon Growth Model: FCF / (WACC - g). Must be below WACC. Typical: 2-4%.', suffix: '%', step: 0.5, min: 0, max: 5 },
+    { key: 'vehicleCost', label: 'Vehicle Cost', desc: 'Manufacturing cost per Cybercab. Tesla targets ~$25K-30K, significantly below competitors. Used for CapEx and depreciation calculations.', suffix: '$', step: 1000, min: 10_000, max: 100_000 },
+    { key: 'infraCostPerVehicle', label: 'Infrastructure / Vehicle', desc: 'One-time infrastructure investment per vehicle: charging depots, cleaning stations, remote operations centers.', suffix: '$', step: 500, min: 0, max: 50_000 },
+    { key: 'vehicleUsefulLife', label: 'Vehicle Useful Life', desc: 'Depreciation period in years. Vehicles depreciate straight-line over this period, creating a tax shield that reduces taxable income.', suffix: 'yr', step: 1, min: 2, max: 15 },
+  ]
+
+  const hasOverrides = JSON.stringify(projInputs) !== JSON.stringify(DEFAULT_PROJECTION_INPUTS)
+
+  type RowDef = { label: string; key: keyof (typeof projResult.years)[0]; type: 'count' | 'currency' | 'factor'; highlight?: boolean; separator?: boolean }
+
+  const rows: RowDef[] = [
+    { label: 'Fleet Size', key: 'fleetSize', type: 'count' },
+    { label: 'New Vehicles', key: 'newVehicles', type: 'count' },
+    { label: 'Revenue', key: 'revenue', type: 'currency', separator: true },
+    { label: 'Op. Cost', key: 'opCost', type: 'currency' },
+    { label: 'Depreciation', key: 'depreciation', type: 'currency' },
+    { label: 'Taxable Inc.', key: 'taxableIncome', type: 'currency' },
+    { label: 'Tax', key: 'tax', type: 'currency' },
+    { label: 'Net Income', key: 'netIncome', type: 'currency' },
+    { label: 'OCF', key: 'ocf', type: 'currency' },
+    { label: 'Vehicle CapEx', key: 'vehicleCapex', type: 'currency', separator: true },
+    { label: 'Infra CapEx', key: 'infraCapex', type: 'currency' },
+    { label: 'Total CapEx', key: 'totalCapex', type: 'currency' },
+    { label: 'FCF', key: 'fcf', type: 'currency', separator: true, highlight: true },
+    { label: 'Disc. Factor', key: 'discountFactor', type: 'factor' },
+    { label: 'PV(FCF)', key: 'pvFcf', type: 'currency', highlight: true },
+  ]
+
+  return (
+    <div className="space-y-4">
+      <div>
+        <h3 className="text-green font-bold text-sm">Discounted Cash Flow</h3>
+        <span className="text-text-dim text-xs">DCF</span>
+      </div>
+
+      <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold">
+        Equity Value = Σ PV(FCF) + PV(Terminal Value)
+        <span className="text-green ml-2">{formatProjectionValue(projResult.equityValue, 'currency')}</span>
+      </div>
+
+      <p className="text-text text-xs leading-relaxed">
+        Present value of all projected free cash flows over 10 years, plus a terminal value capturing perpetual growth beyond Year 10.
+        Each year's FCF is discounted back at the WACC to reflect the time value of money and risk.
+      </p>
+
+      {/* DCF-level inputs */}
+      <div>
+        <div className="flex items-center justify-between mb-2">
+          <h4 className="text-green-dim text-xs font-bold">PARAMETERS</h4>
+          {hasOverrides && (
+            <button
+              onClick={() => setProjInputs({ ...DEFAULT_PROJECTION_INPUTS })}
+              className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+            >
+              [reset all]
+            </button>
+          )}
+        </div>
+        <div className="space-y-3">
+          {dcfInputFields.map(f => (
+            <div key={f.key} className="border border-border bg-surface-2 p-3">
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-amber text-xs font-bold">{f.label}</span>
+                <div className="flex items-center gap-1 ml-auto">
+                  {f.suffix === '$' && <span className="text-text-dim text-xs">$</span>}
+                  <input
+                    type="number"
+                    value={projInputs[f.key] as number}
+                    onChange={e => updateInput(f.key, Number(e.target.value))}
+                    step={f.step}
+                    min={f.min}
+                    max={f.max}
+                    className="w-24 bg-bg border border-border text-amber text-xs px-2 py-1 font-mono text-right focus:outline-none focus:border-amber"
+                  />
+                  {f.suffix && f.suffix !== '$' && <span className="text-text-dim text-xs">{f.suffix}</span>}
+                </div>
+              </div>
+              <p className="text-text-dim text-xs leading-relaxed">{f.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 10-Year Projection Table */}
+      <div className="border border-border">
+        <div className="px-3 py-2 border-b border-border">
+          <span className="text-green-dim text-xs font-bold">10-YEAR PROJECTION</span>
+        </div>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs font-mono">
+            <thead>
+              <tr className="border-b border-border">
+                <th className="sticky left-0 bg-surface z-10 text-left px-3 py-1.5 text-text-dim font-bold min-w-[110px]">Year</th>
+                {projResult.years.map(y => (
+                  <th key={y.year} className="text-right px-3 py-1.5 text-text-dim font-bold min-w-[90px]">{y.year}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, ri) => (
+                <tr key={row.key} className={`${row.highlight ? 'bg-green/5' : ''} ${row.separator && ri > 0 ? 'border-t border-border' : ''}`}>
+                  <td className="sticky left-0 bg-surface z-10 px-3 py-1 text-text-dim whitespace-nowrap">{row.label}</td>
+                  {projResult.years.map(y => {
+                    const val = y[row.key] as number
+                    const isNeg = val < 0
+                    return (
+                      <td key={y.year} className={`text-right px-3 py-1 whitespace-nowrap ${isNeg ? 'text-red' : row.highlight ? 'text-green' : 'text-text'}`}>
+                        {formatProjectionValue(val, row.type)}
+                      </td>
+                    )
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Valuation Summary */}
+      <div className="border border-border bg-surface-2 p-4">
+        <span className="text-green-dim text-xs font-bold block mb-3">VALUATION SUMMARY</span>
+        <div className="text-xs font-mono space-y-1">
+          <div className="flex justify-between">
+            <span className="text-text-dim">Sum of PV(FCFs)</span>
+            <span className={`${projResult.totalPvFcf < 0 ? 'text-red' : 'text-text'}`}>
+              {formatProjectionValue(projResult.totalPvFcf, 'currency')}
+            </span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-text-dim">PV(Terminal Value)</span>
+            <span className="text-text">{formatProjectionValue(projResult.pvTerminalValue, 'currency')}</span>
+          </div>
+          <div className="border-t border-border pt-1 mt-1 flex justify-between">
+            <span className="text-text-bright font-bold">Equity Value</span>
+            <span className="text-green font-bold text-sm">{formatProjectionValue(projResult.equityValue, 'currency')}</span>
+          </div>
+          <div className="flex justify-between mt-2">
+            <span className="text-text-dim">Terminal Value % of Total</span>
+            <span className="text-text-dim">
+              {projResult.equityValue !== 0 ? (projResult.pvTerminalValue / projResult.equityValue * 100).toFixed(1) + '%' : 'N/A'}
+            </span>
+          </div>
+        </div>
+        <div className="mt-3 border-t border-border pt-3">
+          <p className="text-text-dim text-xs leading-relaxed">
+            <span className="text-text-bright">Terminal Value</span> captures all cash flows beyond Year 10 using the Gordon Growth Model:
+            TV = FCF<sub>11</sub> / (WACC - g) = {formatProjectionValue(projResult.terminalFcf, 'currency')} / ({projInputs.wacc}% - {projInputs.terminalGrowthRate}%) = {formatProjectionValue(projResult.terminalValue, 'currency')}.
+            Discounted to present: {formatProjectionValue(projResult.pvTerminalValue, 'currency')}.
+            It is typically 60-80% of total DCF value because it represents an infinite stream of future cash flows.
+          </p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function FleetSizeDetail({ projInputs, setProjInputs, projResult }: {
+  projInputs: ProjectionInputs
+  setProjInputs: React.Dispatch<React.SetStateAction<ProjectionInputs>>
+  projResult: ReturnType<typeof computeProjection>
+}) {
+  const [editingIndex, setEditingIndex] = useState<number | null>(null)
+  const [editValue, setEditValue] = useState('')
+
+  const adjustYear = (index: number, delta: number) => {
+    setProjInputs(prev => {
+      const updated = [...prev.newVehiclesByYear]
+      updated[index] = Math.max(0, updated[index] + delta)
+      return { ...prev, newVehiclesByYear: updated }
+    })
+  }
+
+  const setYear = (index: number, value: number) => {
+    setProjInputs(prev => {
+      const updated = [...prev.newVehiclesByYear]
+      updated[index] = Math.max(0, value)
+      return { ...prev, newVehiclesByYear: updated }
+    })
+  }
+
+  const startEditing = (index: number) => {
+    setEditingIndex(index)
+    setEditValue(String(projInputs.newVehiclesByYear[index]))
+  }
+
+  const commitEdit = () => {
+    if (editingIndex !== null) {
+      const parsed = parseInt(editValue, 10)
+      if (!isNaN(parsed)) setYear(editingIndex, parsed)
+      setEditingIndex(null)
+    }
+  }
+
+  const hasOverrides = JSON.stringify(projInputs.newVehiclesByYear) !== JSON.stringify(DEFAULT_NEW_VEHICLES)
+
+  const increments = [
+    { label: '10K', value: 10_000 },
+    { label: '100K', value: 100_000 },
+    { label: '1M', value: 1_000_000 },
+  ]
+
+  return (
+    <div className="space-y-4">
+      <div>
+        <h3 className="text-green font-bold text-sm">Fleet Size</h3>
+      </div>
+
+      <p className="text-text text-xs leading-relaxed">
+        Number of active robotaxi vehicles generating revenue. Adjust the number of <span className="text-amber">new vehicles added</span> each year using the buttons, or click the value to type directly.
+        Fleet size is the cumulative total. Currently ramping in Austin and Bay Area, with geographic expansion planned.
+      </p>
+
+      {/* Per-year new vehicles inputs — vertical layout */}
+      <div>
+        <div className="flex items-center justify-between mb-2">
+          <h4 className="text-green-dim text-xs font-bold">NEW VEHICLES BY YEAR</h4>
+          {hasOverrides && (
+            <button
+              onClick={() => setProjInputs(prev => ({ ...prev, newVehiclesByYear: [...DEFAULT_NEW_VEHICLES] }))}
+              className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+            >
+              [reset]
+            </button>
+          )}
+        </div>
+        <div className="border border-border">
+          {projResult.years.map((y, i) => (
+            <div key={y.year} className="border-b border-border last:border-b-0 px-2 py-1.5">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-text-dim text-xs font-mono">{y.year}</span>
+                <span className="text-green text-xs font-mono">{formatProjectionValue(y.fleetSize, 'count')} total</span>
+              </div>
+              <div className="flex items-center gap-1">
+                {increments.map(inc => (
+                  <button
+                    key={`minus-${inc.label}`}
+                    onClick={() => adjustYear(i, -inc.value)}
+                    className="px-1.5 py-0.5 text-xs font-mono border border-border text-text-dim hover:text-red hover:border-red cursor-pointer transition-colors"
+                  >
+                    −{inc.label}
+                  </button>
+                ))}
+                {editingIndex === i ? (
+                  <input
+                    type="number"
+                    value={editValue}
+                    onChange={e => setEditValue(e.target.value)}
+                    onBlur={commitEdit}
+                    onKeyDown={e => { if (e.key === 'Enter') commitEdit(); if (e.key === 'Escape') setEditingIndex(null) }}
+                    autoFocus
+                    step={1000}
+                    className="w-20 bg-bg border border-amber text-amber text-xs px-1 py-0.5 font-mono text-center focus:outline-none mx-auto"
+                  />
+                ) : (
+                  <button
+                    onClick={() => startEditing(i)}
+                    className="text-amber text-xs font-mono font-bold mx-auto min-w-[4rem] text-center cursor-pointer hover:underline"
+                  >
+                    {formatProjectionValue(projInputs.newVehiclesByYear[i], 'count')}
+                  </button>
+                )}
+                {increments.map(inc => (
+                  <button
+                    key={`plus-${inc.label}`}
+                    onClick={() => adjustYear(i, inc.value)}
+                    className="px-1.5 py-0.5 text-xs font-mono border border-border text-text-dim hover:text-green hover:border-green cursor-pointer transition-colors"
+                  >
+                    +{inc.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, costOverrides, setCostOverrides, computedValues, projInputs, setProjInputs, projResult }: {
+  openSource: (src: string) => void
+  revOverrides: Partial<Record<RevInputId, number>>
+  setRevOverrides: React.Dispatch<React.SetStateAction<Partial<Record<RevInputId, number>>>>
+  costOverrides: Partial<Record<CostInputId, number>>
+  setCostOverrides: React.Dispatch<React.SetStateAction<Partial<Record<CostInputId, number>>>>
+  computedValues: Record<string, number>
+  projInputs: ProjectionInputs
+  setProjInputs: React.Dispatch<React.SetStateAction<ProjectionInputs>>
+  projResult: ReturnType<typeof computeProjection>
+}) {
+  const [selectedId, setSelectedId] = useState(DCF_ROOT)
+  const node = DCF_NODES[selectedId]
 
   const handleInputChange = (id: string, value: number) => {
     if ((REV_INPUT_IDS as readonly string[]).includes(id)) {
       setRevOverrides(prev => ({ ...prev, [id]: value }))
     } else if ((COST_INPUT_IDS as readonly string[]).includes(id)) {
       setCostOverrides(prev => ({ ...prev, [id]: value }))
+    } else if (id === 'cost_per_vehicle') {
+      setProjInputs(prev => ({ ...prev, vehicleCost: value }))
+    } else if (id === 'infra_cost_per_vehicle') {
+      setProjInputs(prev => ({ ...prev, infraCostPerVehicle: value }))
     }
   }
 
@@ -901,9 +1256,15 @@ function RobotaxiDcfView({ openSource }: { openSource: (src: string) => void }) 
       </div>
 
       {/* Right: Detail Panel */}
-      <div className="sm:w-3/5 border border-border bg-surface p-4 min-w-0">
+      <div className="sm:w-3/5 border border-border bg-surface p-4 min-w-0 overflow-y-auto max-h-[80vh]">
         {node ? (
-          <DcfNodeDetail node={node} onSelect={setSelectedId} openSource={openSource} computedValues={computedValues} onInputChange={handleInputChange} />
+          selectedId === 'dcf' ? (
+            <DcfProjectionDetail projInputs={projInputs} setProjInputs={setProjInputs} projResult={projResult} />
+          ) : selectedId === 'fleet_size' ? (
+            <FleetSizeDetail projInputs={projInputs} setProjInputs={setProjInputs} projResult={projResult} />
+          ) : (
+            <DcfNodeDetail node={node} onSelect={setSelectedId} openSource={openSource} computedValues={computedValues} onInputChange={handleInputChange} projResult={projResult} />
+          )
         ) : (
           <div className="text-text-dim text-xs">Select a node from the tree</div>
         )}
@@ -916,6 +1277,37 @@ function RobotaxiDcfView({ openSource }: { openSource: (src: string) => void }) 
 
 function ValuationSection({ openSource }: { openSource: (src: string) => void }) {
   const [subView, setSubView] = useState<'overview' | 'robotaxi-dcf'>('overview')
+  const [revOverrides, setRevOverrides] = useState<Partial<Record<RevInputId, number>>>({})
+  const [costOverrides, setCostOverrides] = useState<Partial<Record<CostInputId, number>>>({})
+  const [projInputs, setProjInputs] = useState<ProjectionInputs>({ ...DEFAULT_PROJECTION_INPUTS })
+
+  const revValues = computeRevPerVehicle(revOverrides)
+  const costValues = computeCostPerVehicle(revValues, costOverrides)
+  const revPerVehicle = revValues.rev_per_vehicle ?? 0
+  const costPerVehicle = costValues.cost_per_vehicle ?? 0
+  const taxRate = costValues.effective_tax_rate ?? 23
+
+  const projResult = useMemo(
+    () => computeProjection(projInputs, revPerVehicle, costPerVehicle, taxRate),
+    [projInputs, revPerVehicle, costPerVehicle, taxRate],
+  )
+
+  const computedValues: Record<string, number> = useMemo(() => {
+    const lastYear = projResult.years[projResult.years.length - 1]
+    return {
+      ...revValues, ...costValues,
+      fleet_size: lastYear?.fleetSize ?? 0,
+      ocf: lastYear?.ocf ?? 0,
+      fcf: lastYear?.fcf ?? 0,
+      new_units: lastYear?.newVehicles ?? 0,
+      infra_new_units: lastYear?.newVehicles ?? 0,
+      cost_per_vehicle: projInputs.vehicleCost,
+      infra_cost_per_vehicle: projInputs.infraCostPerVehicle,
+      vehicle_purchases: lastYear?.vehicleCapex ?? 0,
+      infrastructure: lastYear?.infraCapex ?? 0,
+      capex: lastYear?.totalCapex ?? 0,
+    }
+  }, [revValues, costValues, projResult, projInputs.vehicleCost, projInputs.infraCostPerVehicle])
 
   return (
     <div className="space-y-4">
@@ -1033,6 +1425,7 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
             <h3 className="text-text-dim text-xs font-bold mb-2">ROADMAP</h3>
             <div className="text-xs text-text-dim space-y-1">
               <div className="text-green">{'>'} Robotaxi DCF model — <span className="text-green font-bold">LIVE</span></div>
+              <div className="text-green">{'>'} 10-Year Projection — <span className="text-green font-bold">LIVE</span></div>
               <div>{'>'} EV segment valuation</div>
               <div>{'>'} Energy segment valuation</div>
               <div>{'>'} Optimus segment valuation</div>
@@ -1041,7 +1434,7 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
           </div>
         </div>
       ) : (
-        <RobotaxiDcfView openSource={openSource} />
+        <RobotaxiDcfView openSource={openSource} revOverrides={revOverrides} setRevOverrides={setRevOverrides} costOverrides={costOverrides} setCostOverrides={setCostOverrides} computedValues={computedValues} projInputs={projInputs} setProjInputs={setProjInputs} projResult={projResult} />
       )}
     </div>
   )
