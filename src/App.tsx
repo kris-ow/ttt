@@ -1958,7 +1958,7 @@ export default function App() {
                 <div className="border border-border bg-surface p-4 text-xs flex-1 overflow-y-auto min-h-0 space-y-1">
                   {CATALYSTS.map((c, i) => (
                     <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
-                      <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
+                      <span className={`w-24 flex-shrink-0 font-bold whitespace-nowrap ${c.hot ? 'text-green' : 'text-text-dim'}`}>
                         {c.date}
                       </span>
                       <span className="text-text flex-1">{c.event}</span>
@@ -1992,7 +1992,7 @@ export default function App() {
                 <div className="border border-border bg-surface p-4 text-xs space-y-1">
                   {CATALYSTS.map((c, i) => (
                     <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
-                      <span className={`w-18 flex-shrink-0 font-bold ${c.hot ? 'text-green' : 'text-text-dim'}`}>
+                      <span className={`w-24 flex-shrink-0 font-bold whitespace-nowrap ${c.hot ? 'text-green' : 'text-text-dim'}`}>
                         {c.date}
                       </span>
                       <span className="text-text flex-1">{c.event}</span>
