@@ -683,7 +683,6 @@ function collectExpandable(nodeId: string, maxDepth?: number, depth = 0): string
   if (!node?.children || (maxDepth !== undefined && depth >= maxDepth)) return []
   return [nodeId, ...node.children.flatMap(c => collectExpandable(c, maxDepth, depth + 1))]
 }
-const DEFAULT_EXPANDED = new Set(collectExpandable(DCF_ROOT, 2))
 const ALL_EXPANDABLE = new Set(collectExpandable(DCF_ROOT))
 
 function DcfTreeNode({ nodeId, depth, selectedId, onSelect, expandedIds, onToggle, computedValues }: {
@@ -1547,6 +1546,15 @@ function useStockQuote() {
 
     let wsLive = false // set true once WebSocket provides a trade
 
+    // During extended hours, stop waiting for WebSocket after 5s
+    const session = getMarketSession()
+    let wsWaitTimer: ReturnType<typeof setTimeout> | null = null
+    if (session === 'PRE' || session === 'POST') {
+      wsWaitTimer = setTimeout(() => {
+        if (!wsLive) setState(s => ({ ...s, live: true }))
+      }, 5_000)
+    }
+
     // Fetch REST quote for baseline data
     // Finnhub: c = last session close, pc = close before that
     async function fetchBaseline() {
@@ -1635,6 +1643,7 @@ function useStockQuote() {
       destroyed = true
       ws?.close()
       if (wsRetryTimeout) clearTimeout(wsRetryTimeout)
+      if (wsWaitTimer) clearTimeout(wsWaitTimer)
       clearInterval(pollInterval)
       clearInterval(sessionInterval)
     }
