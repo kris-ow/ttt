@@ -452,23 +452,6 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
 
   return (
     <div>
-      {/* Category tabs — wrap into 2 rows */}
-      <div className="flex flex-wrap gap-1 mb-4">
-        {visibleTabs.map(tab => (
-          <button
-            key={tab}
-            onClick={() => selectTab(tab)}
-            className={`px-2 py-1.5 text-xs font-bold transition-colors cursor-pointer border-b-2 ${
-              activeTab === tab
-                ? 'text-green border-green'
-                : 'text-text-dim hover:text-green border-transparent'
-            }`}
-          >
-            {KB_TAB_SHORT[tab] || tab.toUpperCase()}
-          </button>
-        ))}
-      </div>
-
       {/* Tab content */}
       {activeTab === 'Valuation Models' ? (
         <ValuationSection openSource={openSource} />
@@ -1399,6 +1382,15 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
             {label}
           </button>
         ))}
+        {['OPTIMUS DCF', 'ENERGY DCF', 'CHIP DCF'].map(label => (
+          <span
+            key={label}
+            className="px-3 py-1.5 text-xs font-bold border border-border text-text-dim/30 cursor-default select-none"
+            title="Coming soon"
+          >
+            {label}
+          </span>
+        ))}
       </div>
 
       {subView === 'overview' ? (
@@ -1427,7 +1419,6 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
             </div>
             <div className="mt-3 flex gap-3 text-xs">
               <a href="https://www.investopedia.com/terms/s/sumofpartsvaluation.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: SOTP]</a>
-              <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
             </div>
           </div>
 
@@ -1489,7 +1480,6 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
             </div>
             <div className="mt-3 flex gap-3 text-xs">
               <a href="https://www.investopedia.com/terms/d/dcf.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: DCF]</a>
-              <a href="https://pages.stern.nyu.edu/~adamodar/" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Damodaran Online]</a>
             </div>
           </div>
 
@@ -1499,10 +1489,9 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
             <div className="text-xs text-text-dim space-y-1">
               <div className="text-green">{'>'} Robotaxi DCF model — <span className="text-green font-bold">LIVE</span></div>
               <div className="text-green">{'>'} 10-Year Projection — <span className="text-green font-bold">LIVE</span></div>
-              <div>{'>'} EV segment valuation</div>
-              <div>{'>'} Energy segment valuation</div>
               <div>{'>'} Optimus segment valuation</div>
-              <div>{'>'} Combined SOTP with scenario weighting</div>
+              <div>{'>'} Energy segment valuation</div>
+              <div>{'>'} Chip segment valuation</div>
             </div>
           </div>
         </div>
@@ -1941,7 +1930,7 @@ export default function App() {
             <nav className="flex items-center gap-1">
               {([
                 ['feed', 'DAILY_FEED'],
-                ['knowledge', 'KNOWLEDGE_BASE'],
+                ['knowledge', 'VALUATIONS'],
               ] as const).map(([key, label]) => (
                 <button
                   key={key}
