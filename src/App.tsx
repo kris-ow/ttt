@@ -96,7 +96,11 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
                 }
 
                 // X articles: skip everything from Raw Posts onward
-                if (isX && (trimmed.startsWith('Raw Posts') || trimmed.startsWith('─') && lines.slice(i + 1).some(l => l.trim().startsWith('Raw Posts')))) break
+                if (isX && trimmed.startsWith('Raw Posts')) break
+                if (isX && trimmed.startsWith('─')) {
+                  const nextNonEmpty = lines.slice(i + 1).find(l => l.trim())
+                  if (nextNonEmpty && nextNonEmpty.trim().startsWith('Raw Posts')) break
+                }
 
                 const isSep = trimmed.startsWith('─') || trimmed.startsWith('---')
                 if (isSep) {
@@ -107,8 +111,9 @@ function ArticleDetail({ article, onClose }: { article: Article; onClose: () => 
                 }
                 lastWasHr = false
 
-                if (trimmed.startsWith('## ')) { elements.push(<h3 key={i} className="text-green font-bold mt-4 mb-2 text-sm">{trimmed.slice(3)}</h3>); continue }
                 if (trimmed.startsWith('### ')) { elements.push(<h4 key={i} className="text-green-dim font-bold mt-3 mb-1 text-xs">{trimmed.slice(4)}</h4>); continue }
+                if (trimmed.startsWith('## ')) { elements.push(<h3 key={i} className="text-green font-bold mt-4 mb-2 text-sm">{trimmed.slice(3)}</h3>); continue }
+                if (trimmed.startsWith('# ')) { elements.push(<h2 key={i} className="text-green font-bold mt-4 mb-2 text-base">{trimmed.slice(2)}</h2>); continue }
                 if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) { elements.push(<div key={i} className="text-text pl-4 text-xs">{'>'} {renderInline(trimmed.slice(2))}</div>); continue }
                 if (/^\d+\.\s/.test(trimmed)) { elements.push(<div key={i} className="text-text text-xs mb-2">{renderInline(trimmed)}</div>); continue }
                 if (trimmed.startsWith('[') && /^\[\d+\]/.test(trimmed)) { elements.push(<div key={i} className="text-text-dim text-xs bg-surface-2 p-2 mb-1 break-all">{trimmed}</div>); continue }
@@ -1232,7 +1237,7 @@ function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, costOverri
   projResult: ReturnType<typeof computeProjection>
 }) {
   const [selectedId, setSelectedId] = useState(DCF_ROOT)
-  const [expandedIds, setExpandedIds] = useState<Set<string>>(() => new Set(DEFAULT_EXPANDED))
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(() => new Set(ALL_EXPANDABLE))
   const node = DCF_NODES[selectedId]
 
   const handleToggle = useCallback((id: string) => {
@@ -1274,16 +1279,14 @@ function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, costOverri
             <button
               onClick={() => setExpandedIds(new Set(ALL_EXPANDABLE))}
               className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
-              title="Expand all"
             >
-              ⊞
+              [expand all]
             </button>
             <button
               onClick={() => setExpandedIds(new Set())}
               className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
-              title="Collapse all"
             >
-              ⊟
+              [collapse all]
             </button>
           </div>
         </div>
