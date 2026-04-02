@@ -1,0 +1,28 @@
+{
+  "catalysts": [
+    "Robotaxi city expansion — new cities, launch dates, regulatory approvals",
+    "Unsupervised FSD milestones — new approvals, safety records, states/cities",
+    "Cybercab production timeline — production start, ramp numbers, factory readiness",
+    "Optimus Gen 3 — reveal date, production start, factory conversion progress",
+    "Earnings call dates or forward guidance changes",
+    "FSD version releases — wide releases, major capability upgrades",
+    "Samsung/Tesla chip production milestones",
+    "Energy segment — Megapack factory milestones, major deployments"
+  ],
+  "dcf_inputs": [
+    { "watch": "Fleet size numbers (any city, total)", "field": "fleet_size" },
+    { "watch": "Revenue or fare per mile for robotaxi rides", "field": "fare_per_mile" },
+    { "watch": "Base fare or per-ride pricing", "field": "base_fare" },
+    { "watch": "Cybercab unit production cost", "field": "vehicle_unit_cost" },
+    { "watch": "Utilization rate — hours per day or % of time in service", "field": "utilization" },
+    { "watch": "Average trip length in miles", "field": "avg_trip_length" },
+    { "watch": "Energy cost per mile or kWh per mile", "field": "kwh_per_mile" },
+    { "watch": "Insurance cost per vehicle per year", "field": "insurance_cost" },
+    { "watch": "Remote operations staffing ratio (vehicles per operator)", "field": "remote_ops_ratio" },
+    { "watch": "Infrastructure cost per vehicle (charging, parking)", "field": "infra_cost_per_vehicle" },
+    { "watch": "Vehicle useful life expectancy in years", "field": "vehicle_useful_life" },
+    { "watch": "Fleet growth projections — new vehicles per year", "field": "new_vehicles_per_year" },
+    { "watch": "WACC or discount rate used in Tesla valuations", "field": "wacc" },
+    { "watch": "Safety metrics — miles per incident, disengagement rate", "field": "safety_metrics" }
+  ]
+}

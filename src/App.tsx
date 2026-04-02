@@ -1488,13 +1488,8 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
 
 // ── Stock Section ────────────────────────────────────────
 
-const CATALYSTS = [
-  { date: 'APR 2026', event: 'Cybercab production begins', hot: true },
-  { date: 'APR 2026', event: 'Roadster unveil event', hot: true },
-  { date: 'APR 2026', event: 'FSD V14.3 wide release', hot: true },
-  { date: 'H2 2027', event: 'Samsung Tesla chip volume production', hot: false },
-  { date: '2027', event: 'LG Energy MI LFP factory online', hot: false },
-]
+import catalystsData from './data/catalysts.json'
+const CATALYSTS: { date: string; event: string; hot: boolean }[] = catalystsData
 
 const FINNHUB_KEY = import.meta.env.VITE_FINNHUB_KEY
 

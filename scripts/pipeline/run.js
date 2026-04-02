@@ -7,7 +7,8 @@ const NEWS_DIR = path.resolve('news');
 const STATE_FILE = path.resolve('scripts/pipeline/state.json');
 const COSTS_FILE = path.resolve('scripts/pipeline/costs.json');
 const PROMPT_FILE = path.resolve('scripts/pipeline/prompt.md');
-const KB_DIR = path.resolve('src/data');
+const WATCHLIST_FILE = path.resolve('scripts/pipeline/watchlist.json');
+const EXTRACTED_FACTS_FILE = path.resolve('scripts/pipeline/extracted-facts.json');
 
 // ── State Management ─────────────────────────────────────
 
@@ -103,24 +104,16 @@ function buildPrompt(channel, title, transcript, published) {
     .map(([wrong, right]) => `- "${wrong}" → "${right}"`)
     .join('\n');
 
-  // Load KB context if available
-  let kbContext = '';
-  const kbFile = path.join(KB_DIR, 'knowledge-base.json');
-  if (fs.existsSync(kbFile)) {
+  // Load watchlist for targeted fact extraction
+  let watchlistCatalysts = '';
+  let watchlistDcf = '';
+  if (fs.existsSync(WATCHLIST_FILE)) {
     try {
-      const kb = JSON.parse(fs.readFileSync(kbFile, 'utf-8'));
-      kbContext = `## Current Knowledge Base\n\nThe following is our current understanding organized by category. Flag any information in the transcript that updates, contradicts, or significantly adds to these facts as [NEW].\n\n`;
-      for (const [category, facts] of Object.entries(kb)) {
-        if (facts.length > 0) {
-          kbContext += `### ${category}\n`;
-          for (const fact of facts) {
-            kbContext += `- ${fact.fact} (${fact.lastUpdated})\n`;
-          }
-          kbContext += '\n';
-        }
-      }
+      const wl = JSON.parse(fs.readFileSync(WATCHLIST_FILE, 'utf-8'));
+      watchlistCatalysts = (wl.catalysts || []).map(c => `- ${c}`).join('\n');
+      watchlistDcf = (wl.dcf_inputs || []).map(d => `- ${d.watch} → field: \`${d.field}\``).join('\n');
     } catch {
-      // KB not available yet, that's fine
+      // Watchlist not available, proceed without
     }
   }
 
@@ -128,7 +121,8 @@ function buildPrompt(channel, title, transcript, published) {
   const year = pubDate.slice(0, 4);
 
   template = template.replace('{{CORRECTIONS}}', corrStr);
-  template = template.replace('{{KB_CONTEXT}}', kbContext);
+  template = template.replace('{{WATCHLIST_CATALYSTS}}', watchlistCatalysts);
+  template = template.replace('{{WATCHLIST_DCF}}', watchlistDcf);
   template = template.replace('{{YEAR}}', year);
   template = template.replace('{{PUBLISH_DATE}}', pubDate);
   template = template.replace('{{CHANNEL}}', channel);
@@ -236,6 +230,33 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
   return { filename: transcript.summaryFilename, cost, inputTokens, outputTokens };
 }
 
+// ── Fact Persistence ────────────────────────────────────
+
+function saveExtractedFacts(keyFacts, transcript) {
+  if (!keyFacts || keyFacts.length === 0) return;
+
+  let existing = [];
+  if (fs.existsSync(EXTRACTED_FACTS_FILE)) {
+    try { existing = JSON.parse(fs.readFileSync(EXTRACTED_FACTS_FILE, 'utf-8')); } catch { existing = []; }
+  }
+
+  const newFacts = keyFacts
+    .filter(f => f.type === 'catalyst' || f.type === 'dcf_input')
+    .map(f => ({
+      ...f,
+      source: transcript.summaryFilename,
+      channel: transcript.channel,
+      extractedAt: new Date().toISOString(),
+      status: 'pending',
+    }));
+
+  if (newFacts.length === 0) return;
+
+  existing.push(...newFacts);
+  fs.writeFileSync(EXTRACTED_FACTS_FILE, JSON.stringify(existing, null, 2));
+  console.log(`  Saved ${newFacts.length} fact(s) to review queue`);
+}
+
 // ── Main Pipeline ────────────────────────────────────────
 
 async function main() {
@@ -330,6 +351,7 @@ async function processPendingBatch(client, state) {
       const outputTokens = msg.usage.output_tokens;
 
       writeSummaryFile(transcript, parsed, batchId, inputTokens, outputTokens);
+      saveExtractedFacts(parsed.keyFacts, transcript);
 
       logCost({
         date: new Date().toISOString(),

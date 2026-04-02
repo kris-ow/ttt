@@ -17,7 +17,17 @@ Classify the content into one or more of these categories:
 - **Financials** — earnings, margins, guidance, capex, cash flow
 - **Market & Competition** — competitors, market share, tariffs, industry trends
 
-{{KB_CONTEXT}}
+## Fact Watch List
+
+While summarizing, flag any facts matching these priorities in the `<key_facts>` section below.
+
+### Catalyst Updates
+Watch for events, dates, or announcements related to:
+{{WATCHLIST_CATALYSTS}}
+
+### DCF Model Inputs
+Watch for specific numbers or estimates related to:
+{{WATCHLIST_DCF}}
 
 ## Date Context
 
@@ -61,9 +71,12 @@ Notable quotes and data:
 [JSON array of objects. Each object has:
   "fact": concise factual statement with specific data,
   "category": one of the categories above,
-  "is_new": true if this information updates or adds to the knowledge base context (or true by default if no KB context provided),
-  "context": if is_new, briefly explain what changed or why this matters
+  "type": "catalyst" if it matches a Catalyst Updates watch item, "dcf_input" if it matches a DCF Model Inputs watch item, or "general" otherwise,
+  "field": (only for dcf_input type) the DCF field name from the watch list,
+  "value": (only for dcf_input type) the numeric value extracted, if applicable,
+  "context": briefly explain why this matters or what changed
 ]
+Only include facts with specific data points — skip vague or speculative statements.
 </key_facts>
 
 ## Transcript
