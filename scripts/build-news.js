@@ -8,7 +8,11 @@ const outFile = path.resolve('src/data/news.json');
 const urlIndexPath = path.join(newsDir, 'transcripts_url_index.json');
 const urlIndex = fs.existsSync(urlIndexPath) ? JSON.parse(fs.readFileSync(urlIndexPath, 'utf-8')) : {};
 
-const files = fs.readdirSync(newsDir).filter(f => f.endsWith('_summary.txt')).sort();
+const EXCLUDED_CHANNELS = ['allinpodcast'];
+const files = fs.readdirSync(newsDir).filter(f => f.endsWith('_summary.txt')).filter(f => {
+  const ch = f.match(/^\d{8}_([^_]+)/);
+  return !ch || !EXCLUDED_CHANNELS.includes(ch[1]);
+}).sort();
 
 const articles = files.map(filename => {
   const content = fs.readFileSync(path.join(newsDir, filename), 'utf-8');

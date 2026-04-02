@@ -418,20 +418,8 @@ function MetricDisplay({ quarterly, annual, unit }: { quarterly: Record<string, 
   )
 }
 
-const KB_TAB_SHORT: Record<string, string> = {
-  'Autonomous Driving': 'FSD',
-  'Robotaxi': 'ROBOTAXI',
-  'Humanoid Bots': 'OPTIMUS',
-  'Energy': 'ENERGY',
-  'Electric Vehicles': 'EVs',
-  'Financials': 'FINANCIALS',
-  'Market & Competition': 'MARKET',
-  'Valuation Models': 'VALUATION',
-}
-
 function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) => void }) {
-  const visibleTabs = ['Valuation Models'] as const
-  const [activeTab, setActiveTab] = useState<string>('Valuation Models')
+  const [activeTab] = useState<string>('Valuation Models')
   const [expandedArea, setExpandedArea] = useState<string | null>(null)
 
   const toggleArea = (areaId: string) => {
@@ -442,12 +430,6 @@ function KnowledgeSection({ onSelectArticle }: { onSelectArticle: (a: Article) =
     const articleId = sourceFilename.replace('.txt', '')
     const article = data.articles.find(a => a.id === articleId)
     if (article) onSelectArticle(article)
-  }
-
-  // Reset expanded area when switching tabs
-  const selectTab = (tab: string) => {
-    setActiveTab(tab)
-    setExpandedArea(null)
   }
 
   return (

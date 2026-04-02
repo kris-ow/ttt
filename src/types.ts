@@ -20,7 +20,7 @@ export interface NewsData {
 export const CHANNEL_META: Record<string, { name: string; platform: string; color: string }> = {
   brighterwithherbert: { name: 'Herbert', platform: 'YouTube', color: '#ef4444' },
   futureaza: { name: 'Futureaza', platform: 'YouTube', color: '#3b82f6' },
-  investingagainstthegrain: { name: 'IAG', platform: 'YouTube', color: '#8b5cf6' },
+  investingagainstthegrain: { name: 'Nick Gibbs', platform: 'YouTube', color: '#8b5cf6' },
   jobhakdi: { name: 'Jo Bhakdi', platform: 'YouTube', color: '#f59e0b' },
   sawyermerritt: { name: 'Sawyer Merritt', platform: 'X', color: '#6366f1' },
 }
