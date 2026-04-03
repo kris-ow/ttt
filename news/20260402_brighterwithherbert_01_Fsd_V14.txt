@@ -1,0 +1,498 @@
+Channel:     brighterwithherbert
+Title:       FSD v14.3 Drops This Week. Everything You Need to Know
+URL:         https://www.youtube.com/watch?v=S9ams8bbemY
+Published:   2026-04-02 18:30:41 UTC
+Fetched:     2026-04-03 00:30:04 UTC
+────────────────────────────────────────────────────────────
+
+[00:00:00] Last night, Elon Musk posted that FSE
+[00:00:02] version 14.3 is in employee beta testing
+[00:00:05] right now and will probably go to wide
+[00:00:07] release by the end of this week. This is
+[00:00:09] the update Elon has called the last big
+[00:00:12] piece of the puzzle. The version he said
+[00:00:14] would make your car feel like it is
+[00:00:16] sentient. A neural network 10 times
+[00:00:18] larger than what's currently running on
+[00:00:19] your Tesla with reasoning, with
+[00:00:22] reinforcement learning, and with
+[00:00:23] features that could fundamentally change
+[00:00:25] what your car is capable of. But but but
+[00:00:28] what does all of that actually mean?
+[00:00:29] What does 10x parameters translate to in
+[00:00:32] the real world? What will reasoning look
+[00:00:34] like when you're driving? And why does
+[00:00:36] Elon think this is the update that
+[00:00:38] completes the picture for unsupervised
+[00:00:39] autonomy? Today, I'm going to break down
+[00:00:42] everything Elon Ashoka Swami and the
+[00:00:44] Tesla AI team have said about version
+[00:00:46] 14.3 and explain what it all means for
+[00:00:49] you. Now, fair warning, Elon has a habit
+[00:00:52] of overselling FSE updates. It will blow
+[00:00:54] your mind has been said about multiple
+[00:00:56] versions. So, I'm going to be very
+[00:00:58] precise here. I'm going to separate
+[00:01:00] what's confirmed from what's expected
+[00:01:02] and what's speculated from what's real.
+[00:01:04] Here's what we know for certain. Version
+[00:01:07] 14.3 is in employee beta as of last
+[00:01:10] night. Wide release is expected by end
+[00:01:12] of this week, though that could slip to
+[00:01:14] early next week. It targets hardware 4
+[00:01:17] vehicles first and it represents the
+[00:01:19] largest architectural change since Tesla
+[00:01:21] moved to endto-end neural networks in
+[00:01:23] version 12. Let me walk you through
+[00:01:25] every piece of what's coming.
+[00:01:28] Let's start with the most technical but
+[00:01:30] most important detail because 10x larger
+[00:01:33] neural network, it sounds impressive,
+[00:01:35] but most people they don't know what it
+[00:01:37] actually means for their driving
+[00:01:39] experience. When Elon says version 14.3
+[00:01:42] has a model that is an order of
+[00:01:43] magnitude larger, he's talking about the
+[00:01:46] number of parameters in a neural
+[00:01:47] network. Parameters are essentially the
+[00:01:49] values that the AI uses to make
+[00:01:51] decisions. Think of them as the
+[00:01:53] connections in a brain. More parameters
+[00:01:55] means more connections. More connections
+[00:01:58] means the AI can recognize more
+[00:02:00] patterns, handle more edge cases, and
+[00:02:02] make more nuanced decisions. To put this
+[00:02:05] in context, the jump from FSE version 11
+[00:02:08] to version 12 was revolutionary because
+[00:02:10] Tesla moved from handcoded rules to an
+[00:02:13] end-to-end neural network. That was a
+[00:02:15] fundamental architectural change. The
+[00:02:17] jump from version 12 to version 14 was
+[00:02:19] significant. You got better lane
+[00:02:21] selection, smoother driving, fewer
+[00:02:23] interventions, but the underlying model
+[00:02:26] size, it was similar. Version 14.3 is a
+[00:02:29] different category of upgrade. A 10x
+[00:02:32] increase in parameters means the model
+[00:02:33] can hold significantly more information
+[00:02:35] about the world. More types of
+[00:02:37] intersections, more pedestrian
+[00:02:39] behaviors, more construction patterns,
+[00:02:41] more weather conditions, more edge cases
+[00:02:44] that the previous model simply didn't
+[00:02:46] have enough capacity to learn.
+[00:02:48] Now, here's the practical implication. A
+[00:02:51] bigger model doesn't just mean better at
+[00:02:53] the same things. It means the car can
+[00:02:55] handle situations that were previously
+[00:02:57] impossible. Think of it this way. If the
+[00:03:00] previous model had memorized 10,000
+[00:03:02] types of intersections, the new model
+[00:03:04] theoretically can understand a 100,000.
+[00:03:07] That's not incremental improvement.
+[00:03:09] That's a qualitative shift. But, and
+[00:03:11] this is important, a bigger model also
+[00:03:14] requires more compute to run. This is
+[00:03:16] why version 14.3, it targets hardware 4
+[00:03:19] vehicles first. The AI4 chip has double
+[00:03:21] the memory of hardware 3 and
+[00:03:23] significantly more processing. The 10x
+[00:03:25] larger model simply cannot run at full
+[00:03:28] resolution on hardware 3 hardware, which
+[00:03:30] brings us to the hardware 3 question,
+[00:03:32] but I'll come back to that later. Now,
+[00:03:35] let's talk about the feature that Elon
+[00:03:37] says makes version 14.3 the last big
+[00:03:39] piece of the puzzle, reasoning. What
+[00:03:42] does reasoning mean in the context of a
+[00:03:44] self-driving car? Let me give you a some
+[00:03:46] concrete examples because this is where
+[00:03:49] it gets really interesting. Today's FSE
+[00:03:51] version 14.2 2 is extremely good at
+[00:03:54] reactive driving. It sees a red light
+[00:03:56] and stops. It sees a car breaking and
+[00:03:58] slows down. It detects lane markings and
+[00:04:01] follows them. It's fast. It's smooth.
+[00:04:03] It's impressively capable. But it
+[00:04:06] doesn't think ahead in the way a human
+[00:04:07] does. It doesn't quite plan perfectly.
+[00:04:10] Reasoning changes that. Here are real
+[00:04:12] world examples of what reasoning
+[00:04:14] enables. Example one, parking. Today,
+[00:04:18] FSE can park in a marked spot, but with
+[00:04:20] reasoning, the car will evaluate
+[00:04:22] multiple open spots, choose the best one
+[00:04:24] based on proximity to the entrance or
+[00:04:26] ease of exit and available space, then
+[00:04:29] navigate there autonomously. Even
+[00:04:31] better, the long-awaited banish feature,
+[00:04:33] where the car drops you off at the door
+[00:04:35] and finds its own parking spot, requires
+[00:04:38] exactly this kind of reasoning. You
+[00:04:39] can't just detect a parking spot. You
+[00:04:41] have to plan a route through a chaotic
+[00:04:43] GPS denied parking lot with
+[00:04:45] unpredictable pedestrians and erratic
+[00:04:47] drivers. Example two, construction
+[00:04:50] zones. Today, FSD can detect cones and
+[00:04:53] barriers, but construction zones are
+[00:04:56] messy. Lanes shift, signage conflicts
+[00:04:59] with road markings, flaggers wave you
+[00:05:02] through. A reactive system struggles
+[00:05:04] because the rules aren't clear. A
+[00:05:06] reasoning system evaluates the context.
+[00:05:08] There are cones narrowing the left lane.
+[00:05:10] Traffic is merging right. The flagger is
+[00:05:12] waving the right lane forward. I should
+[00:05:14] follow. That's not pattern matching.
+[00:05:16] That's understanding. Example three,
+[00:05:19] complex intersections without clear
+[00:05:21] signals. So unprotected left turns,
+[00:05:23] right? Four-way stops with ambiguous
+[00:05:25] right away. Roundabouts with aggressive
+[00:05:27] merging. These are the situations where
+[00:05:30] FSE interventions are most common today.
+[00:05:32] Reasoning means the car doesn't just
+[00:05:34] wait for a clear gap. It reads the
+[00:05:36] intent of other drivers, anticipates
+[00:05:38] their likely actions, and makes a
+[00:05:40] judgment call like a human does. Now,
+[00:05:42] Ashok Swami, Tesla's vice president of
+[00:05:44] AI, he confirmed that some reasoning
+[00:05:46] capabilities have already shipped in
+[00:05:48] version 14.2. He specifically mentioned
+[00:05:50] that reasoning is already active in
+[00:05:52] navigation route changes during
+[00:05:54] construction and evaluating parking
+[00:05:56] options. So, version 14.3 isn't starting
+[00:05:59] from zero. It's building on foundations
+[00:06:01] that are already partially deployed.
+[00:06:04] Ashok also stated that more and more
+[00:06:06] reasoning will ship in Q1, meaning
+[00:06:09] version 14.3 represents the full
+[00:06:11] deployment of what's been gradually
+[00:06:13] rolling out. So the key insight is this
+[00:06:16] reasoning is what bridges the gap
+[00:06:18] between supervised and unsupervised FSD.
+[00:06:22] Without reasoning, the car is an
+[00:06:24] excellent assistant that needs a human
+[00:06:25] to handle ambiguous situations. With
+[00:06:28] reasoning, the car can handle the
+[00:06:30] ambiguity itself. That's why Elon calls
+[00:06:33] it the last big piece of the puzzle.
+[00:06:36] Now, let's address the most provocative
+[00:06:38] thing Elon has said about version 14.3.
+[00:06:41] In October, he posted, "By version 14.3,
+[00:06:44] your car will feel like it's sentient."
+[00:06:47] That's a wild claim. Let me break down
+[00:06:49] what he likely means and what he likely
+[00:06:51] doesn't mean. I don't think he means
+[00:06:53] that the car is actually conscious. He
+[00:06:55] does not mean it has feelings or
+[00:06:57] awareness. What he means based on the
+[00:06:59] technical context is that the driving
+[00:07:01] experience will feel so natural, so
+[00:07:03] anticipatory, so context aware that it
+[00:07:06] will seem like the car understands
+[00:07:08] what's happening around it in the way a
+[00:07:10] living being does. Think about what the
+[00:07:13] experience would feel like. You approach
+[00:07:14] an intersection with a pedestrian on the
+[00:07:16] corner. The car slows not because a
+[00:07:18] pedestrian stepped onto the road, but
+[00:07:20] because their body language suggests
+[00:07:22] they're about to. You're in a parking
+[00:07:24] lot. The car navigates around a shopping
+[00:07:26] cart. yields to a family walking to
+[00:07:28] their car, spots an open space three
+[00:07:31] rows over and parks itself. You're on a
+[00:07:33] highway. A driver two lanes over is
+[00:07:35] drifting erratically.
+[00:07:38] Your car smoothly moves away before the
+[00:07:40] drift becomes a lane change. That's not
+[00:07:42] sentience, right? But it would feel like
+[00:07:44] sentience because the car would be doing
+[00:07:46] what only a conscious beings have done
+[00:07:49] until now, anticipating the future based
+[00:07:52] on contextual understanding.
+[00:07:55] And we've already seen a preview. Last
+[00:07:57] week, Tesla posted a video of FSD
+[00:07:59] predicting a pedestrian's intent to
+[00:08:01] cross before they stepped off the curb.
+[00:08:03] The car yielded proactively. That's
+[00:08:06] exactly the kind of behavior that makes
+[00:08:08] a car feel sentient. Now, will version
+[00:08:12] 14.3 actually deliver this experience
+[00:08:14] consistently? That's the question. Elon
+[00:08:17] has a history of overselling, but the
+[00:08:20] technical ingredients are all there. a
+[00:08:22] 10x larger model, reasoning
+[00:08:24] capabilities, and reinforcement
+[00:08:26] learning. If the training data is
+[00:08:28] sufficient and the model generalizes
+[00:08:30] well, this could genuinely be the most
+[00:08:33] impressive FSE update ever.
+[00:08:36] Beyond reasoning and the larger model,
+[00:08:39] let me run through the other features
+[00:08:40] and the improvements expected or hope
+[00:08:42] for in version 14.3.
+[00:08:45] Number one on the community wish list,
+[00:08:47] banish, also called reverse summon. This
+[00:08:50] is the feature where your car drops you
+[00:08:52] at the door and autonomously parks
+[00:08:54] itself. Tesla has been teasing this for
+[00:08:56] years. Elon has mentioned it repeatedly
+[00:08:58] in the context of version 14. With the
+[00:09:01] reasoning capabilities in version 14.3,
+[00:09:03] this is technically feasible for the
+[00:09:05] first time. Whether it ships in this
+[00:09:07] release or arrives shortly after remains
+[00:09:09] to be seen, but Banish is at the top of
+[00:09:12] the expected feature list. Number two,
+[00:09:16] improvements to actually smart summon.
+[00:09:18] The current summon features still run on
+[00:09:20] older version 12 and autopilot stacks.
+[00:09:24] So, an upgrade to the version 14.3
+[00:09:27] architecture would make summoning your
+[00:09:28] car from a parking lot dramatically more
+[00:09:30] reliable. Number three, improved
+[00:09:33] navigation and route planning. Ashoke
+[00:09:36] confirmed that reasoning is already
+[00:09:37] being applied to navigation decisions.
+[00:09:40] Version 14.3 should make the car much
+[00:09:42] better at choosing optimal routes,
+[00:09:44] handling detours, and navigating
+[00:09:46] construction zones without confusion.
+[00:09:49] Number four, better performance on
+[00:09:50] unmapped and private roads. This is a
+[00:09:53] key capability for a 10x larger model.
+[00:09:56] The ability to handle environments the
+[00:09:58] car has never seen before, including
+[00:10:00] hopefully private driveways, farm roads,
+[00:10:03] and unmarked residential areas.
+[00:10:05] Hopefully one day it will understand my
+[00:10:08] twisty driveway and actually find its
+[00:10:12] way to my garage, which I do all the
+[00:10:13] time, but I have to take over for that
+[00:10:15] last piece of that 500 ft. Number five,
+[00:10:19] improved behavior in rain, fog, and
+[00:10:21] degraded conditions. This is one of
+[00:10:24] FSE's known weaknesses and an area Nitsa
+[00:10:26] is actively investigating. Hopefully, a
+[00:10:29] larger model with more training data on
+[00:10:30] edge cases should show measurable
+[00:10:32] improvement here.
+[00:10:34] Now we need to address the elephant in
+[00:10:36] the room for a large portion of Tesla
+[00:10:38] owners. If version 14.3 requires
+[00:10:41] hardware 4, what happens to hardware 3
+[00:10:44] vehicles? I also have a hardware 3
+[00:10:46] vehicle in my family. So the short
+[00:10:49] answer is you're getting FSE version 14
+[00:10:51] light, but not yet. Here's what we know.
+[00:10:54] Tesla confirmed during their earnings
+[00:10:56] call that FSE version 14 light is in
+[00:10:59] development specifically for hardware 3
+[00:11:01] vehicles. Ashoka Swami said it's
+[00:11:03] probably expected in Q2 which means
+[00:11:06] somewhere between now and the end of
+[00:11:08] June 2026.
+[00:11:10] The challenge is technical. Hardware 3
+[00:11:12] has 8 GB of memory. Harbor hardware 4
+[00:11:15] has double that. The full 10x larger
+[00:11:18] version 14.3 model simply doesn't fit on
+[00:11:20] hardware 3 hardware. So Tesla's building
+[00:11:23] a distilled or quantized version,
+[00:11:25] essentially a compressed version of the
+[00:11:27] same AI that sacrifices some resolution
+[00:11:31] to fit within hardware 3's memory
+[00:11:33] constraints. Think of it like streaming
+[00:11:35] a movie in 720p versus 4K. Same movie,
+[00:11:38] same story, but less detail. FSE Lite
+[00:11:41] will run the version 14 architecture,
+[00:11:43] including the end-to-end neural network,
+[00:11:45] but with a smaller model that makes
+[00:11:47] trade-offs.
+[00:11:48] Now would FSE light include reasoning?
+[00:11:52] This is where it gets uncertain. Tesla
+[00:11:54] has not explicitly confirmed that the
+[00:11:56] reasoning layer will be included in the
+[00:11:58] light version. My guess is that given
+[00:12:00] the memory constraints, it's possible
+[00:12:02] the reading reasoning components which
+[00:12:04] require additional compute are what gets
+[00:12:06] cut to make the model fit. So, my honest
+[00:12:09] assessment, I think hardware 3 owners
+[00:12:11] will see a significant improvement over
+[00:12:12] their current FSE experience when light
+[00:12:14] ships, but it likely won't match
+[00:12:16] hardware force version 14.3 experience,
+[00:12:19] especially on reasoning, maybe on
+[00:12:21] parking and complex scenarios. And given
+[00:12:24] the pace of development, I wouldn't
+[00:12:25] expect FSE light before late June at the
+[00:12:28] earliest. For owners who paid for FSD
+[00:12:31] and are on hardware 3, absolutely this
+[00:12:33] is frustrating. But the reality is that
+[00:12:36] hardware constraints software and the AI
+[00:12:38] has outgrown the older chip.
+[00:12:41] Now, let's connect all of this to the
+[00:12:43] bigger picture. Because when Elon says
+[00:12:46] version 14.3 is the last big piece of
+[00:12:49] the puzzle, he's not just talking about
+[00:12:51] a software update. He's talking about
+[00:12:53] the entire robo taxi business. Here's
+[00:12:55] the puzzle as Elon sees it. Piece one,
+[00:12:58] the endto-end neural network shipped in
+[00:13:01] version 12 replaced 300,000 lines of
+[00:13:04] code with a single AI model trained on a
+[00:13:06] real world data. That's done. Piece two,
+[00:13:10] scale and safety. So, version 14 through
+[00:13:13] version 14.2 brought dramatic
+[00:13:16] improvements in reliability. Tesla
+[00:13:18] safety data now shows FSD at
+[00:13:20] approximately 7 to 11 times safer than a
+[00:13:22] human driver on a per mile basis. The
+[00:13:25] fleet has logged 8.4 4 billion miles.
+[00:13:27] We're getting there. Piece three,
+[00:13:30] unsupervised capability. Tesla activated
+[00:13:33] unsupervised FSE for non-employee owners
+[00:13:35] in geoenced area in Austin.
+[00:13:38] They did that in March 18th. The car
+[00:13:41] drives itself. No monitoring done in
+[00:13:43] limited areas though. Piece four,
+[00:13:46] reasoning and complex scenario. This is
+[00:13:48] what I think is coming with version
+[00:13:50] 14.3. The ability to handle the long
+[00:13:53] tale of difficult situations. the
+[00:13:55] construction zones, the chaotic parking
+[00:13:57] lots, the ambiguous intersections
+[00:13:59] without human intervention. This is
+[00:14:02] what's needed to expand unsupervised
+[00:14:04] from two from the small geo fenced area
+[00:14:06] to entire cities to the nation and to
+[00:14:10] the world. And piece 5, the hardware
+[00:14:13] cyber cap production begins this month.
+[00:14:15] Purpose-built, no steering wheel, no
+[00:14:18] pedals, under $30,000, running version
+[00:14:21] 14.3 from day one. When you put it all
+[00:14:24] together, the neural network is proven.
+[00:14:26] The safety data is strong. Unsupervised
+[00:14:29] mode is live. Reasoning ships this week
+[00:14:33] hopefully. And a purpose-built robo taxi
+[00:14:35] enters production this month. That's why
+[00:14:38] Elon calls it the last big piece. Not
+[00:14:40] because version 14.3 is perfect, but
+[00:14:43] because after version 14.3, the software
+[00:14:46] is complete enough to scale. Everything
+[00:14:48] else from here is iteration, making it
+[00:14:51] better, faster, safer, but the
+[00:14:54] architecture is done. Tesla's hiring AI
+[00:14:57] safety operators in 18 cities across 12
+[00:15:00] states. That's not hiring for a research
+[00:15:03] project. That's hiring for a rollout.
+[00:15:06] And version 14.3 is the software that
+[00:15:09] makes that roll out possible.
+[00:15:11] Now, quick reality check. Elon has
+[00:15:14] called things the last piece before.
+[00:15:16] Timelines seem to slip often. Employee
+[00:15:19] beta doesn't always translate to wide
+[00:15:21] release on schedule. And feeling
+[00:15:23] sentient is a subjective experience that
+[00:15:25] may not match expectations. 10x larger
+[00:15:28] model could also introduce new edge
+[00:15:30] cases. Bigger models sometimes produce
+[00:15:32] unexpected behaviors that require
+[00:15:33] tuning. The first few days after a major
+[00:15:36] release are always bumpy. Expect early
+[00:15:39] complaints alongside the excitement. and
+[00:15:42] hardware 3 owners are being left behind
+[00:15:43] for now, which will generate
+[00:15:45] frustration, especially for those who
+[00:15:46] paid $12,000 for FSD and feel they're
+[00:15:49] getting a lesser product. These are real
+[00:15:52] issues, but the direction is right. And
+[00:15:54] if version 14.3 delivers even 70% of
+[00:15:57] what's being described, it's still the
+[00:16:00] most significant FSD update in Tesla's
+[00:16:02] history.
+[00:16:04] So, what does this mean? Depending on
+[00:16:06] your situation,
+[00:16:07] if you have Harbor 4 and FSD, you're
+[00:16:09] about to receive the biggest update your
+[00:16:11] car has ever gotten. Pay attention to
+[00:16:13] the release notes. Test it in familiar
+[00:16:16] environments first. Report issues
+[00:16:18] through the app. You're part of the
+[00:16:19] validation fleet that will determine how
+[00:16:21] fast this scales. If you have hardware 3
+[00:16:24] and FSD, FSD version 14 light is
+[00:16:26] expected supposedly by late June. I
+[00:16:29] wouldn't hold my breath. It won't match
+[00:16:31] hardware 4's experience, but it should
+[00:16:33] be a significant step up from your
+[00:16:34] current software. If you're considering
+[00:16:36] a hardware upgrade or a new vehicle,
+[00:16:38] version 14.3 and hardware 4 is the
+[00:16:40] cleanest demonstration yet of why newer
+[00:16:43] hardware matters. If you're a Tesla
+[00:16:45] investor, version 14.3 is the software
+[00:16:48] that powers CyberCap. It's the software
+[00:16:50] that enables robo taxi expansion to 18
+[00:16:52] cities. It's the version Elon has been
+[00:16:55] pointing to as a capability needed for
+[00:16:57] unsupervised scale. Watch the early user
+[00:17:00] reports this week very closely. If the
+[00:17:03] reception matches the claims, this is a
+[00:17:05] stock moving catalyst. Here's what to do
+[00:17:08] right now. One, make sure your Tesla is
+[00:17:11] connected to Wi-Fi and set to receive
+[00:17:13] updates. Version 14.3 could push to your
+[00:17:16] car as early as the end of this week if
+[00:17:18] you're on Harbor 4. Two, watch for the
+[00:17:21] official release notes. Tesla typically
+[00:17:23] post these on the app and on their
+[00:17:24] website. The release notes will confirm
+[00:17:26] exactly which feature shipped, including
+[00:17:28] whether Banish is included. Three,
+[00:17:31] follow the early adopter reports. The
+[00:17:33] Tesla community on X and Reddit and
+[00:17:36] YouTube will have real world impressions
+[00:17:38] within hours of the release. Look for
+[00:17:40] specific scenarios like parking lots,
+[00:17:42] construction zones, unprotected lefts.
+[00:17:44] That's where the reasoning improvements
+[00:17:46] will be most visible. Four, if you're an
+[00:17:48] investor, mark Q1 earnings in late
+[00:17:50] April. the forward guidance on FSE
+[00:17:52] version 14.3 reception cybercab
+[00:17:55] integration and unsupervised expansion
+[00:17:57] plans those going to be the most
+[00:17:59] important data points for the quarter
+[00:18:01] five if you're on Harbor 3 follow
+[00:18:03] updates on FSE version 14 light
+[00:18:05] development not a Tesla app and Tesla
+[00:18:07] North are the best sources for tracking
+[00:18:09] the timeline late June is the current
+[00:18:12] expectation but Tesla has been working
+[00:18:14] on new AI distillation techniques that
+[00:18:16] could potentially accelerate this or the
+[00:18:18] more likely scenario is that it would be
+[00:18:20] Later than that, FSE version 14.3 is in
+[00:18:24] employee hands right now. By the end of
+[00:18:26] this week or early next, it could be in
+[00:18:28] your car. A neural network 10 times
+[00:18:31] larger. Reasoning that lets the car plan
+[00:18:33] not just react. The update Elon has
+[00:18:36] pointed to for over a year as the last
+[00:18:37] big piece of the puzzle. Is it really
+[00:18:40] the last piece? We'll find out this
+[00:18:42] week. But if it delivers even close to
+[00:18:44] what's been described, this is the
+[00:18:46] update that turns Tesla's robo taxi
+[00:18:47] vision from a plan into a real product.
+[00:18:51] Keep your Wi-Fi on. The future might be
+[00:18:53] downloading to your car this weekend.
+[00:18:56] Subscribe so you don't miss the first
+[00:18:57] impressions when version 14.3 goes live.
+[00:19:00] I'll see you in the next one.
