@@ -30,15 +30,8 @@ jobs:
 
       - run: npm ci
 
-      # Write Google Drive service account key from secret
-      - name: Setup Google Drive credentials
-        run: echo '${{ secrets.GOOGLE_DRIVE_KEY }}' > the-tesla-thesis-40967df2aae1.json
-
-      # Step 1: Sync transcripts from Google Drive
-      - name: Sync transcripts from Drive
-        run: node scripts/sync-drive.js
-
-      # Step 2: Summarize new transcripts via Claude Batch API
+      # Transcripts are pushed directly to repo by Mac Mini yt-transcripts
+      # Step 1: Summarize new transcripts via Claude Batch API
       - name: Run summary pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -61,7 +54,7 @@ jobs:
           else
             git commit -m "Daily summaries: $(date -u +%Y-%m-%d)
 
-          Sync transcripts from Drive, summarize via Claude Batch API, rebuild news.json"
+          Summarize new transcripts via Claude Batch API, rebuild news.json"
             git push
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi

@@ -12,7 +12,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 - Everything lives in `src/App.tsx` — single-page, no routing
 - Stock price: Finnhub REST (30s polling) + WebSocket (live trades), client-side
 - Stock chart: Lightweight Charts v5, Yahoo Finance data via corsproxy.io CORS proxy
-- Content: Google Drive → `scripts/sync-drive.js` → `scripts/build-news.js` → `src/data/news.json`
+- Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
 - Only `_summary.txt` files are processed, deduplicated by title+date
 
 ## Design Rules
@@ -28,15 +28,15 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 - REST never overwrites WebSocket price once live
 
 ## Summary Pipeline (`scripts/pipeline/`)
-Transcript-driven summarization pipeline (transcripts sourced from Mac Mini → Google Drive):
+Transcript-driven summarization pipeline (transcripts pushed directly to repo by Mac Mini):
 - `run.js` — main orchestrator (scan unsummarized transcripts → Claude Batch API → write summaries → rebuild news.json)
 - `config.js` — channels, corrections dictionary, categories, pricing
 - `prompt.md` — prompt template with placeholder slots
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — daily GitHub Actions: sync Drive → summarize → commit
+- `.github/workflows/daily-pipeline.yml` — daily GitHub Actions: summarize → commit
 
-Flow: Mac Mini fetches YT transcripts → Google Drive → `sync-drive.js` pulls to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries
+Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries
 
 Categories: Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
 
@@ -50,7 +50,6 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 - `src/App.tsx` — entire dashboard (components, hooks, layout)
 - `src/types.ts` — Article/NewsData types, CHANNEL_META
 - `src/index.css` — Tailwind v4 theme config
-- `scripts/sync-drive.js` — Google Drive sync (service account, recursive)
 - `scripts/build-news.js` — parse summaries into news.json
 - `scripts/pipeline/` — automated summary pipeline (see above)
 - `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt`
@@ -68,9 +67,9 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 ### Automated pipeline (daily GitHub Actions — 4:15 AM CET / 5:15 AM CEST)
 | Content | Source | Trigger |
 |---|---|---|
-| Transcripts | Mac Mini → Google Drive → `sync-drive.js` | Mac Mini runs at 2:30 AM CET, pipeline syncs from Drive |
+| Transcripts | Mac Mini yt-transcripts → git push | Mac Mini pushes directly to repo after download |
 | Daily Feed summaries | `news/` → `build-news.js` → `src/data/news.json` | Pipeline: Claude Batch API summarizes new transcripts, rebuilds news.json |
-| YouTube URLs | `news/transcripts_url_index.json` | Mac Mini generates index, `build-news.js` maps URLs to articles |
+| YouTube URLs | Embedded in transcript headers | Mac Mini includes URL in each transcript file |
 | Pipeline state & costs | `scripts/pipeline/state.json`, `costs.json` | Updated each pipeline run, committed by bot |
 
 ### Manual
