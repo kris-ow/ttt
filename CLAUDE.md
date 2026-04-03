@@ -10,7 +10,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 
 ## Architecture
 - Everything lives in `src/App.tsx` — single-page, no routing
-- Stock price: Finnhub REST (30s polling) + WebSocket (live trades), client-side
+- Stock price: stock-proxy on Mac Mini (Finnhub upstream) → `wss://api.theteslathesis.com`
 - Stock chart: Lightweight Charts v5, Yahoo Finance data via corsproxy.io CORS proxy
 - Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
 - Only `_summary.txt` files are processed, deduplicated by title+date
@@ -53,7 +53,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 - `scripts/build-news.js` — parse summaries into news.json
 - `scripts/pipeline/` — automated summary pipeline (see above)
 - `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt`
-- `.env` — VITE_FINNHUB_KEY (not in git)
+- `.env` — VITE_STOCK_PROXY_URL (optional, defaults to wss://api.theteslathesis.com)
 - `the-tesla-thesis-40967df2aae1.json` — service account key (not in git)
 
 ## Content & Update Triggers
@@ -61,7 +61,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 ### Client-side (live, no deployment needed)
 | Content | Source | Trigger |
 |---|---|---|
-| Stock price | Finnhub API | REST poll every 30s + WebSocket live trades |
+| Stock price | stock-proxy (`wss://api.theteslathesis.com`) | WebSocket, proxy handles Finnhub upstream |
 | Stock chart | Yahoo Finance via corsproxy.io | On page load |
 
 ### Automated pipeline (daily GitHub Actions — 4:15 AM CET / 5:15 AM CEST)
@@ -85,7 +85,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 | KB ↔ Summary bidirectional loop | KB facts feed into prompts, summaries update KB |
 
 ## Future / Known Limitations
-- Stock price is client-side — needs server-side proxy for public deployment
+- Stock price via server-side proxy (api.theteslathesis.com) — needs dynamic DNS for ISP IP changes
 - Chart uses corsproxy.io — fragile, needs own proxy for production
 - Knowledge Base — planned bidirectional system: KB feeds into prompts, summaries update KB
 - Pipeline needs YouTube channel IDs configured in `scripts/pipeline/config.js`

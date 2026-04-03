@@ -62,8 +62,6 @@ jobs:
       # Step 4: Build and deploy to GitHub Pages (GITHUB_TOKEN pushes don't trigger other workflows)
       - name: Build site
         if: steps.commit.outputs.has_changes == 'true'
-        env:
-          VITE_FINNHUB_KEY: ${{ secrets.VITE_FINNHUB_KEY }}
         run: npm run build
 
       - name: Upload pages artifact

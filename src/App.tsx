@@ -1491,7 +1491,7 @@ function ValuationSection({ openSource }: { openSource: (src: string) => void })
 import catalystsData from './data/catalysts.json'
 const CATALYSTS: { date: string; event: string; hot: boolean }[] = catalystsData
 
-const FINNHUB_KEY = import.meta.env.VITE_FINNHUB_KEY
+const STOCK_PROXY_URL = import.meta.env.VITE_STOCK_PROXY_URL || 'wss://api.theteslathesis.com'
 
 interface StockState {
   price: number | null
@@ -1534,63 +1534,22 @@ function useStockQuote() {
   })
 
   useEffect(() => {
-    if (!FINNHUB_KEY) {
-      setState(s => ({ ...s, error: 'VITE_FINNHUB_KEY not set', loading: false }))
-      return
-    }
-
-    let wsLive = false // set true once WebSocket provides a trade
-
-    // During extended hours, stop waiting for WebSocket after 5s
+    // During extended hours, stop waiting for live data after 5s
     const session = getMarketSession()
     let wsWaitTimer: ReturnType<typeof setTimeout> | null = null
     if (session === 'PRE' || session === 'POST') {
       wsWaitTimer = setTimeout(() => {
-        if (!wsLive) setState(s => ({ ...s, live: true }))
+        setState(s => s.live ? s : { ...s, live: true })
       }, 5_000)
     }
 
-    // Fetch REST quote for baseline data
-    // Finnhub: c = last session close, pc = close before that
-    async function fetchBaseline() {
-      try {
-        const res = await fetch(
-          `https://finnhub.io/api/v1/quote?symbol=TSLA&token=${FINNHUB_KEY}`
-        )
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        const q = await res.json()
-        const session = getMarketSession()
-        const effectiveClose = session === 'OPEN' ? q.pc : q.c
-        // Show q.c as price on first load. Once WebSocket is live, don't overwrite.
-        setState(s => ({
-          ...s,
-          price: wsLive ? s.price : q.c,
-          prevClose: effectiveClose,
-          open: q.o,
-          high: q.h,
-          low: q.l,
-          lastUpdated: new Date(),
-          loading: false,
-          error: null,
-          session,
-        }))
-      } catch (e) {
-        setState(s => ({ ...s, error: e instanceof Error ? e.message : 'Failed to fetch', loading: false }))
-      }
-    }
-
-    fetchBaseline()
-    // Poll REST every 30s as reliable fallback, also keeps prevClose fresh
-    const pollInterval = setInterval(fetchBaseline, 30_000)
-
-    // Try WebSocket for faster updates
     let ws: WebSocket | null = null
     let wsRetryTimeout: ReturnType<typeof setTimeout> | null = null
     let destroyed = false
 
     function connectWs() {
       if (destroyed) return
-      ws = new WebSocket(`wss://ws.finnhub.io?token=${FINNHUB_KEY}`)
+      ws = new WebSocket(STOCK_PROXY_URL)
 
       ws.onopen = () => {
         ws!.send(JSON.stringify({ type: 'subscribe', symbol: 'TSLA' }))
@@ -1599,22 +1558,22 @@ function useStockQuote() {
 
       ws.onmessage = (event) => {
         const msg = JSON.parse(event.data)
-        if (msg.type === 'trade' && msg.data?.length > 0) {
-          const lastTrade = msg.data[msg.data.length - 1]
-          const tradePrice = lastTrade.p
-          wsLive = true
-
+        if (msg.type === 'quote' && msg.data) {
+          const d = msg.data
           const session = getMarketSession()
+          const effectiveClose = session === 'OPEN' ? d.prevClose : d.close
           setState(s => ({
             ...s,
-            price: tradePrice,
-            high: session === 'OPEN' && s.high ? Math.max(s.high, tradePrice) : s.high,
-            low: session === 'OPEN' && s.low ? Math.min(s.low, tradePrice) : s.low,
+            price: d.price ?? s.price,
+            prevClose: effectiveClose ?? s.prevClose,
+            open: d.open ?? s.open,
+            high: d.high ?? s.high,
+            low: d.low ?? s.low,
             lastUpdated: new Date(),
             loading: false,
             error: null,
             session,
-            live: true,
+            live: d.live || s.live,
           }))
         }
       }
@@ -1639,7 +1598,6 @@ function useStockQuote() {
       ws?.close()
       if (wsRetryTimeout) clearTimeout(wsRetryTimeout)
       if (wsWaitTimer) clearTimeout(wsWaitTimer)
-      clearInterval(pollInterval)
       clearInterval(sessionInterval)
     }
   }, [])
