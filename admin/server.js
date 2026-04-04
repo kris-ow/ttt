@@ -129,6 +129,31 @@ app.get('/api/status', (_req, res) => {
   }
 });
 
+// ── Startup sync: propagate any approved dcf_input facts missing from DCF file
+function syncApprovedFacts() {
+  const facts = readJSON(EXTRACTED);
+  const approved = facts.filter(f => f.status === 'approved' && f.type === 'dcf_input' && f.field);
+  if (approved.length === 0) return;
+
+  const dcf = readJSON(DCF_FACTS);
+  if (Array.isArray(dcf)) return; // safety: wrong shape
+
+  let added = 0;
+  for (const fact of approved) {
+    if (!dcf[fact.field]) dcf[fact.field] = [];
+    const exists = dcf[fact.field].some(e => e.fact === fact.fact);
+    if (!exists) {
+      dcf[fact.field].push({ fact: fact.fact, source: fact.source });
+      added++;
+    }
+  }
+  if (added > 0) {
+    writeJSON(DCF_FACTS, dcf);
+    console.log(`[sync] Propagated ${added} approved fact(s) to dcf-robotaxi-facts.json`);
+  }
+}
+
 app.listen(3001, () => {
+  syncApprovedFacts();
   console.log('[API] http://localhost:3001');
 });
