@@ -1,0 +1,66 @@
+Channel:     brighterwithherbert
+Title:       Elon Says FSD v14.3 Will Feel Sentient Here's Why!
+Published:   2026-04-02 18:30 UTC
+Summarized:  2026-04-04 03:48:11 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01XHsMo3LBpCgcFauCM2HW5N
+Cost:        $0.03831 (6649 in / 3778 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from the "brighterwithherbert" channel breaks down Elon Musk's announcement that FSD version 14.3 is in employee beta testing and expected to reach wide release by end of the week of April 2, 2026. The host argues that version 14.3 represents the most significant architectural upgrade since Tesla moved to end-to-end neural networks in version 12, driven by a 10x larger neural network and the addition of reasoning capabilities. The video connects this software milestone directly to Tesla's robotaxi rollout, framing version 14.3 as the final software piece needed to enable unsupervised autonomous driving at scale.
+
+## Autonomous Driving
+
+1. **FSD v14.3 in employee beta, wide release imminent:** Elon Musk announced that FSD version 14.3 entered employee beta testing as of the night before the video was published (around April 1–2, 2026). Wide release is expected by end of the week of April 2, 2026, though the host notes this could slip to early the following week. The host emphasizes this is confirmed fact, not speculation.
+
+2. **10x larger neural network — a qualitative architectural leap:** Version 14.3 features a neural network with an order of magnitude more parameters than the current model running on Tesla vehicles. The host explains that more parameters allow the AI to recognize more patterns, handle more edge cases, and generalize to situations the previous model lacked capacity to learn — framing this not as incremental improvement but as a qualitative shift. The analogy used is that if the previous model understood 10,000 types of intersections, the new model could understand 100,000.
+
+3. **Hardware 4 required for full version 14.3:** Because the 10x larger model requires significantly more compute and memory, version 14.3 targets hardware 4 vehicles first. Hardware 4 has double the memory of hardware 3 (hardware 4: 16 GB implied; hardware 3: 8 GB confirmed). The full model cannot run at full resolution on hardware 3.
+
+4. **Reasoning as the "last big piece" for unsupervised autonomy:** The host identifies reasoning — the ability to plan ahead and evaluate context rather than merely react — as the defining new capability of version 14.3. Concrete examples given include: choosing optimal parking spots and navigating to them autonomously (enabling the "Banish" feature), handling construction zones where signage conflicts with road markings, and resolving ambiguous right-of-way situations like unprotected left turns and four-way stops. Ashok Swami, Tesla's VP of AI, confirmed that some reasoning capabilities already shipped in version 14.2, covering navigation route changes during construction and parking option evaluation, meaning version 14.3 represents a full deployment rather than a cold start.
+
+5. **"Sentient" driving experience — what Elon likely means:** Elon posted in October (2025) that "by version 14.3, your car will feel like it's sentient." The host interprets this not as a claim of consciousness but as describing a driving experience so anticipatory and context-aware that it mimics a living being's understanding — slowing for a pedestrian based on body language before they step off the curb, proactively moving away from an erratically drifting driver, navigating a parking lot with full situational awareness. The host references a Tesla-posted video showing FSD predicting a pedestrian's intent to cross before they stepped off the curb as a preview of this behavior.
+
+6. **Largest architectural change since version 12:** The host places version 14.3 in historical context: the shift from version 11 to version 12 was revolutionary (replacing ~300,000 lines of handcoded rules with an end-to-end neural network); version 12 to version 14 brought meaningful reliability gains but similar model size; version 14.3 is described as a different category of upgrade entirely due to the 10x model size increase paired with reasoning and reinforcement learning.
+
+7. **Additional expected features in version 14.3:** Beyond reasoning and the larger model, the host outlines several expected improvements: (1) **Banish/reverse summon** — the car drops you at the door and parks itself autonomously, described as technically feasible for the first time due to reasoning; (2) **Improved Smart Summon** — current summon still runs on older version 12/Autopilot stacks, so upgrading to the v14.3 architecture should improve reliability significantly; (3) **Better navigation and route planning** — applying reasoning to construction detours and optimal routing; (4) **Improved performance on unmapped and private roads** — handling environments the car has never seen; (5) **Improved performance in rain, fog, and degraded conditions** — an acknowledged weakness flagged as an area NHTSA is investigating.
+
+8. **FSD "Lite" for hardware 3 vehicles expected in Q2 2026:** Ashok Swami confirmed during Tesla's earnings call that FSD version 14 Lite — a distilled or quantized (compressed) version of the version 14 architecture — is in development for hardware 3 vehicles and is expected in Q2 2026, meaning by end of June 2026. The host compares it to streaming a movie in 720p vs. 4K: same architecture, less detail. Whether the reasoning layer will be included in the Lite version is explicitly uncertain, as the host suspects reasoning components may be what gets cut to fit hardware 3's memory constraints. The host personally expects the Lite release no earlier than late June 2026, and notes a "more likely" scenario of it slipping later.
+
+9. **Tesla's cumulative FSD safety data:** The host states Tesla's safety data shows FSD is approximately 7 to 11 times safer than a human driver on a per-mile basis. The Tesla fleet has logged 8.4 billion miles of FSD data.
+
+10. **Unsupervised FSD already activated for non-employee owners:** Tesla activated unsupervised FSD for non-employee owners in a geo-fenced area in Austin on March 18, 2026 — the car drives itself with no human monitoring, though limited to a small defined area.
+
+## Robotaxi
+
+1. **Version 14.3 is the software powering Cybercab and the robotaxi rollout:** The host frames version 14.3 as directly enabling the robotaxi business. Cybercab — described as purpose-built with no steering wheel or pedals and priced under $30,000 — is stated to be entering production this month (April 2026) and will run version 14.3 from day one.
+
+2. **Tesla hiring AI safety operators in 18 cities across 12 states:** The host notes Tesla is actively hiring AI safety operators in 18 cities across 12 states, interpreting this as evidence of an active rollout rather than a research project, and linking it directly to version 14.3 as the software that makes that expansion possible.
+
+3. **The five-piece robotaxi puzzle:** The host outlines Elon's framework for the robotaxi buildout as five pieces: (1) End-to-end neural network (shipped in v12); (2) Scale and safety (achieved through v14 to v14.2, with 8.4 billion fleet miles logged); (3) Unsupervised capability (activated in Austin geo-fence, March 18, 2026); (4) Reasoning for complex scenarios (coming with v14.3); (5) Purpose-built hardware (Cybercab production starting April 2026). The host argues that with version 14.3, the architecture is complete enough to scale — future updates are iteration, not foundational change.
+
+4. **Q1 2026 earnings call flagged as key investor catalyst:** The host instructs investors to mark the Q1 2026 earnings call in late April 2026, specifically flagging forward guidance on FSD version 14.3 reception, Cybercab integration, and unsupervised expansion plans as the most important data points for the quarter.
+
+## Electric Vehicles
+
+1. **Cybercab specifications and pricing:** The Cybercab is described as a purpose-built vehicle with no steering wheel and no pedals, priced under $30,000, with production beginning in April 2026. It will run FSD version 14.3 from day one.
+
+## Market & Competition
+
+1. **Hardware 3 owner frustration as a market dynamic:** The host acknowledges that hardware 3 owners who paid $12,000 for FSD will experience frustration at receiving a lesser version of the software due to chip constraints. This is flagged as a real reputational and customer satisfaction issue for Tesla, even as the host accepts it as a technical inevitability given that the AI has "outgrown" the older chip.
+
+Notable quotes and data:
+- Elon Musk (October post): *"By version 14.3, your car will feel like it's sentient."*
+- FSD v14.3 neural network: **10x larger** (order of magnitude more parameters) than the current model
+- FSD v14.3 targets **hardware 4 vehicles first**; hardware 3 has 8 GB memory, hardware 4 has double that
+- Tesla FSD safety data: approximately **7 to 11 times safer than a human driver** per mile
+- Tesla fleet FSD miles logged: **8.4 billion miles**
+- Unsupervised FSD activated for non-employee owners in Austin geo-fence: **March 18, 2026**
+- Cybercab priced **under $30,000**, no steering wheel, no pedals, production starting **April 2026**
+- Tesla hiring AI safety operators in **18 cities across 12 states**
+- FSD Lite for hardware 3 expected: **Q2 2026 (by end of June 2026)**, per Ashok Swami
+- FSD paid: hardware 3 owners paid **$12,000** for Full Self-Driving
+- End-to-end neural network in v12 replaced **300,000 lines of handcoded rules**
+- Wide release of v14.3 expected: **end of week of April 2, 2026** (could slip to early following week)
+- Q1 2026 earnings call expected: **late April 2026**
