@@ -142,7 +142,7 @@ async function submitBatch(client, requests) {
       custom_id: req.id,
       params: {
         model: MODEL,
-        max_tokens: 4096,
+        max_tokens: 8192,
         messages: [{ role: 'user', content: req.prompt }],
       },
     })),
