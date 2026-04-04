@@ -44,5 +44,193 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-04T08:00:00.000Z",
     "status": "rejected"
+  },
+  {
+    "fact": "Cybercab production expected to start in April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Direct statement from Elon Musk confirming production start date for the dedicated robotaxi vehicle with no steering wheel or pedals",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Tesla expects to have fully autonomous vehicles operating in somewhere between a quarter and half of the United States by end of 2026, pending regulatory approval, and in dozens of major cities",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Concrete geographic expansion target for 2026 unsupervised FSD deployment; federal preemption identified as a potential accelerant",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Unsupervised paid robotaxi rides launched in Austin with no safety monitor and no chase car as of approximately January 27, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key milestone: first commercial unsupervised FSD operation with paying customers and no human oversight in or following the vehicle",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "FSD V14 shipped to customer vehicles, described as delivering a 'huge jump in performance'",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Major FSD version release with significant capability upgrade observed by customers",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal expected in 'a few months' from January 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms approximate reveal timeline for the next Optimus generation, described as looking human-like",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Model S and X production to wind down and stop next quarter (Q1 2026); Fremont factory space to be converted to Optimus production line with a target of 1 million units per year",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Significant factory conversion announcement directly impacting Optimus production capacity and EV model lineup",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Tesla 2026 capex guidance is in excess of $20 billion, covering six new factories plus AI compute, existing factory expansion, and fleet expansion",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Major step-up from 2025 capex (slightly below $9 billion guidance); signals scale of Tesla's investment phase in autonomy, robotics, and energy",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Tesla plans to build a 'Terafab' — a large-scale domestic semiconductor fab integrating logic, memory, and packaging — to address projected chip supply constraints in 3-4 years",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New strategic initiative announced; not included in current $20B+ capex figure; seen as essential to avoid geopolitical supply risk and support Optimus/vehicle scaling",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Megapack 3 and Mega Block to launch in 2026",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "New product launches expected to drive increased energy deployments in 2026",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Robotaxi fleet carrying paid customers is well over 500 vehicles across Bay Area and Austin combined as of late January 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 500,
+    "context": "Current operational paid-ride fleet size; management indicated this would roughly double every month",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Cybercab expected to be used approximately 50 to 60 hours per week in autonomous operation, versus roughly 10 to 11 hours per week for a personally driven vehicle",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 55,
+    "context": "Elon Musk's estimate of weekly utilization hours for Cybercab in robotaxi service; approximately 5x the utilization of a personal vehicle",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Personally driven vehicles are used approximately 1.5 hours per day on average, equating to roughly 10 hours per week",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 10,
+    "context": "Baseline personal vehicle utilization figure used by Musk to contrast with expected Cybercab utilization",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Robotaxi fleet expected to roughly double every month",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Elon Musk's qualitative growth rate projection for the robotaxi fleet; no specific annual number given, but monthly doubling implies rapid exponential ramp",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Significant Optimus production volume not expected until probably end of 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Timeline clarification for Optimus production ramp; current units are R&D phase only and not deployed materially in factories",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Tesla's AI chip roadmap includes AI5 (current focus) followed by AI6 aspirationally within under a year after AI5",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Chip development timeline; AI5 completion described as Tesla's current top priority; both chips to be used in Tesla vehicles, Optimus, and data centers",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Tesla has chip supply agreements with TSMC in Arizona and Samsung in Texas; currently zero advanced memory fabs at scale exist in the United States",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Highlights domestic supply chain gap for memory chips, motivating the proposed Terafab initiative",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Tesla solar cell production goal is 100 gigawatts per year, with full vertical integration from raw materials to finished panels",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Major new strategic initiative in solar manufacturing; not yet included in the $20B+ capex figure; framed as critical for powering AI data centers",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Next-generation Roadster debut targeted for April 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "New product reveal timeline for Tesla's flagship performance vehicle",
+    "source": "20260128_tesla_01_Q4_Full_Year_2025_Financial_Results_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-04T14:19:31.236Z",
+    "status": "rejected"
   }
 ]
