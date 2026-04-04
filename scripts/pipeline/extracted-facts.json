@@ -1,0 +1,48 @@
+[
+  {
+    "fact": "Tesla Supercharger cost estimate: ~$0.17/kWh vs Electrify America ~$0.50/kWh (~3x differential)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.17,
+    "context": "Energy cost advantage for Tesla-owned fleet charging at own Superchargers vs competitors using third-party networks",
+    "source": "20260403_futureaza_01_Cybercab_Is_Coming_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-04T08:00:00.000Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Cybercab internal COGS estimate: ~$17,000–$18,000; consumer price: ~$25,000",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 17500,
+    "context": "Cern Basher's cost estimate — no competitor within 2-3x of Cybercab COGS",
+    "source": "20260403_futureaza_01_Cybercab_Is_Coming_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-04T08:00:00.000Z",
+    "status": "approved"
+  },
+  {
+    "fact": "Next closest competitor vehicle cost roughly double the Cybercab consumer price (~$50,000)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 50000,
+    "context": "Competitive benchmark — even cheapest alternative is ~2x Cybercab price before sensor/compute upfit",
+    "source": "20260403_futureaza_01_Cybercab_Is_Coming_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-04T08:00:00.000Z",
+    "status": "rejected"
+  },
+  {
+    "fact": "Vast majority of rides (80-90%+) involve 2 or fewer passengers, supporting Cybercab two-seat design",
+    "category": "Robotaxi",
+    "type": "general",
+    "context": "Validates Cybercab form factor — larger vehicles needed only for minority of rides",
+    "source": "20260403_futureaza_01_Cybercab_Is_Coming_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-04T08:00:00.000Z",
+    "status": "rejected"
+  }
+]

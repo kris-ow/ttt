@@ -12,6 +12,7 @@ const ROOT = path.resolve('..');
 const CATALYSTS = path.join(ROOT, 'src/data/catalysts.json');
 const WATCHLIST = path.join(ROOT, 'scripts/pipeline/watchlist.json');
 const EXTRACTED = path.join(ROOT, 'scripts/pipeline/extracted-facts.json');
+const DCF_FACTS = path.join(ROOT, 'src/data/dcf-robotaxi-facts.json');
 
 function readJSON(filepath) {
   if (!fs.existsSync(filepath)) return [];
@@ -52,7 +53,31 @@ app.get('/api/facts', (_req, res) => {
 });
 
 app.put('/api/facts', (req, res) => {
+  // Load previous state to detect newly approved dcf_input facts
+  const prev = readJSON(EXTRACTED);
+  const prevApproved = new Set(
+    prev.filter(f => f.status === 'approved').map(f => f.fact)
+  );
+
   writeJSON(EXTRACTED, req.body);
+
+  // Propagate newly approved dcf_input facts to dcf-robotaxi-facts.json
+  const newlyApproved = req.body.filter(
+    f => f.status === 'approved' && f.type === 'dcf_input' && f.field && !prevApproved.has(f.fact)
+  );
+  if (newlyApproved.length > 0) {
+    const dcf = readJSON(DCF_FACTS) || {};
+    for (const fact of newlyApproved) {
+      if (!dcf[fact.field]) dcf[fact.field] = [];
+      // Avoid duplicates
+      const exists = dcf[fact.field].some(e => e.fact === fact.fact);
+      if (!exists) {
+        dcf[fact.field].push({ fact: fact.fact, source: fact.source });
+      }
+    }
+    writeJSON(DCF_FACTS, dcf);
+  }
+
   res.json({ ok: true });
 });
 
@@ -67,6 +92,7 @@ app.post('/api/publish', (req, res) => {
       'src/data/catalysts.json',
       'scripts/pipeline/watchlist.json',
       'scripts/pipeline/extracted-facts.json',
+      'src/data/dcf-robotaxi-facts.json',
     ].filter(f => fs.existsSync(path.join(ROOT, f)));
 
     if (filesToAdd.length === 0) {

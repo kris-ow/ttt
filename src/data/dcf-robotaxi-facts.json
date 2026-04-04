@@ -81,6 +81,10 @@
     {
       "fact": "Cybercab unit economics modeled with charging at $0.16/kWh (earlier model) and $0.35/kWh (updated fleet builder model)",
       "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
+    },
+    {
+      "fact": "Tesla Supercharger cost estimate: ~$0.17/kWh vs Electrify America ~$0.50/kWh (~3x differential)",
+      "source": "20260403_futureaza_01_Cybercab_Is_Coming_For_summary.txt"
     }
   ],
   "insurance_cost": [
@@ -101,7 +105,11 @@
       "source": "20260322_brighterwithherbert_02_Tesla_S_summary.txt"
     }
   ],
-  "vehicle_purchases": [
+  "vehicle_unit_cost": [
+    {
+      "fact": "Cybercab internal COGS estimate: ~$17,000–$18,000; consumer price: ~$25,000",
+      "source": "20260403_futureaza_01_Cybercab_Is_Coming_For_summary.txt"
+    },
     {
       "fact": "Cybercab target price: under $30,000 per unit",
       "source": "20260328_brighterwithherbert_01_April_Will_summary.txt"
@@ -121,7 +129,7 @@
       "source": "20260327_futureaza_02_Terafab_Uber_summary.txt"
     }
   ],
-  "infrastructure": [
+  "infra_cost_per_vehicle": [
     {
       "fact": "Tesla has at least 210 service centers across the US, framed as ready-made robotaxi operations hubs",
       "source": "20260323_brighterwithherbert_02_The_Robotaxi_summary.txt"

@@ -905,7 +905,7 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
         <div>
           <h4 className="text-green-dim text-xs font-bold mb-2">FROM SUMMARIES</h4>
           <div className="space-y-2">
-            {nodeFacts.map((f, i) => (
+            {[...nodeFacts].sort((a, b) => b.source.localeCompare(a.source)).map((f, i) => (
               <div key={i}>
                 <div className="text-xs text-text leading-relaxed">{f.fact}</div>
                 <button
@@ -913,7 +913,15 @@ function DcfNodeDetail({ node, onSelect, openSource, computedValues, onInputChan
                   className="text-green-dim hover:text-green text-xs cursor-pointer transition-colors mt-1"
                   title={f.source}
                 >
-                  [{f.source.replace(/_summary\.txt$/, '').replace(/^\d{8}_/, '')}]
+                  {(() => {
+                    const articleId = f.source.replace('.txt', '')
+                    const article = data.articles.find(a => a.id === articleId)
+                    if (article) {
+                      const channelName = CHANNEL_META[article.channel]?.name || article.channel
+                      return `[${article.date} · ${channelName} · ${article.title}]`
+                    }
+                    return `[${f.source.replace(/_summary\.txt$/, '').replace(/^\d{8}_/, '')}]`
+                  })()}
                 </button>
                 {i < nodeFacts.length - 1 && <div className="border-b border-border mt-2" />}
               </div>
