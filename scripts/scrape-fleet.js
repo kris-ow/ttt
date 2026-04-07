@@ -16,23 +16,43 @@ async function scrapeFleetData() {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const html = await res.text();
 
-  // Data is in Next.js RSC format: self.__next_f.push([1,"..."]) with escaped JSON
-  // Find the push call containing the fleet data
+  // Data is embedded in the page — either as:
+  // 1. HTML-entity-encoded JSON in a <pre>/<code> element (current format)
+  // 2. Next.js RSC push([1,"..."]) call (legacy format)
   const marker = 'service_areas';
   const markerIdx = html.indexOf(marker);
   if (markerIdx === -1) throw new Error('Could not find service_areas in page');
 
-  const pushStart = html.lastIndexOf('push([1,"', markerIdx);
-  if (pushStart === -1) throw new Error('Could not find push call');
-  const contentStart = pushStart + 'push([1,"'.length;
+  let data;
 
-  const contentEnd = html.indexOf('"])', contentStart);
-  if (contentEnd === -1) throw new Error('Could not find end of push call');
-
-  // Unescape the JS string literal, then parse as JSON
-  const jsString = html.slice(contentStart, contentEnd);
-  const jsonString = JSON.parse('"' + jsString + '"');
-  const data = JSON.parse(jsonString);
+  // Try HTML-entity-encoded format first (e.g. &quot; instead of ")
+  const entityMarker = 'api_version&quot;';
+  const entityIdx = html.indexOf(entityMarker);
+  if (entityIdx !== -1) {
+    // Find the opening { before api_version
+    const jsonStart = html.lastIndexOf('{', entityIdx);
+    // Find the matching closing } — scan for end of the JSON block
+    // The JSON ends before the next HTML tag
+    let depth = 0;
+    let jsonEnd = -1;
+    const decoded = html.slice(jsonStart).replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    for (let i = 0; i < decoded.length; i++) {
+      if (decoded[i] === '{') depth++;
+      else if (decoded[i] === '}') { depth--; if (depth === 0) { jsonEnd = i + 1; break; } }
+    }
+    if (jsonEnd === -1) throw new Error('Could not find end of JSON data');
+    data = JSON.parse(decoded.slice(0, jsonEnd));
+  } else {
+    // Legacy: Next.js RSC push format
+    const pushStart = html.lastIndexOf('push([1,"', markerIdx);
+    if (pushStart === -1) throw new Error('Could not find data in page (no entity-encoded JSON or push call)');
+    const contentStart = pushStart + 'push([1,"'.length;
+    const contentEnd = html.indexOf('"])', contentStart);
+    if (contentEnd === -1) throw new Error('Could not find end of push call');
+    const jsString = html.slice(contentStart, contentEnd);
+    const jsonString = JSON.parse('"' + jsString + '"');
+    data = JSON.parse(jsonString);
+  }
 
   console.log(`Generated: ${data.generated_at}`);
   console.log(`Site total: ${data.fleet.total_vehicles} vehicles (all operators)`);
