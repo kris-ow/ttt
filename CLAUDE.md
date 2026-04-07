@@ -76,7 +76,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 | Content | Source | Trigger |
 |---|---|---|
 | Knowledge Base | `scripts/build-kb.js` → `src/data/knowledge-base.json` | Run manually after fact extraction/review |
-| URL index gaps | `news/transcripts_url_index.json` | 12 entries with null URLs need manual lookup |
+| URL index gaps | `news/transcripts_url_index.json` | Some early transcripts (pre-URL-tracking) have no video URL |
 
 ### Not yet built
 | Content | Notes |
