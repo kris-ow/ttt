@@ -51,9 +51,12 @@ export function useStockQuote() {
         }
       }
 
-      ws.onerror = () => {}
+      ws.onerror = () => {
+        setState(s => s.price ? s : { ...s, error: 'Connection failed — retrying...' })
+      }
       ws.onclose = () => {
         if (!destroyed) {
+          setState(s => s.price ? s : { ...s, loading: false, error: 'Disconnected — retrying...' })
           wsRetryTimeout = setTimeout(connectWs, 10_000)
         }
       }

@@ -149,7 +149,10 @@ export function StockChart({ onClose }: { onClose: () => void }) {
             <div className="text-text-dim text-xs mb-2 animate-pulse">LOADING DATA...</div>
           )}
           {error && (
-            <div className="text-red text-xs mb-2">ERR: {error}</div>
+            <div className="text-red text-xs mb-2">
+              ERR: {error}{' '}
+              <button onClick={() => fetchData(activeRange)} className="text-green hover:text-green-dim cursor-pointer ml-2">[RETRY]</button>
+            </div>
           )}
 
           <div ref={chartContainerRef} className="w-full h-[400px] sm:h-[500px]" />
