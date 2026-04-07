@@ -39,7 +39,7 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
 
   return (
     <div className="space-y-4">
-      <div className="flex gap-1">
+      <div className="flex gap-1 flex-wrap">
         {([['overview', 'OVERVIEW'], ['robotaxi-dcf', 'ROBOTAXI DCF']] as const).map(([key, label]) => (
           <button
             key={key}

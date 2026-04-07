@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { DEFAULT_PROJECTION_INPUTS, computeProjection, formatProjectionValue, type ProjectionInputs } from '../../data/dcf-robotaxi'
 
 export function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
@@ -66,43 +67,6 @@ export function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
         Each year's FCF is discounted back at the WACC to reflect the time value of money and risk.
       </p>
 
-      <div>
-        <div className="flex items-center justify-between mb-2">
-          <h4 className="text-green-dim text-xs font-bold">PARAMETERS</h4>
-          {hasOverrides && (
-            <button
-              onClick={() => setProjInputs({ ...DEFAULT_PROJECTION_INPUTS })}
-              className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
-            >
-              [reset all]
-            </button>
-          )}
-        </div>
-        <div className="space-y-3">
-          {dcfInputFields.map(f => (
-            <div key={f.key} className="border border-border bg-surface-2 p-3">
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-amber text-xs font-bold">{f.label}</span>
-              </div>
-              <div className="flex items-center gap-1">
-                {f.suffix === '$' && <span className="text-text-dim text-xs">$</span>}
-                <input
-                  type="number"
-                  value={projInputs[f.key] as number}
-                  onChange={e => updateInput(f.key, Number(e.target.value))}
-                  step={f.step}
-                  min={f.min}
-                  max={f.max}
-                  className="w-24 bg-bg border border-border text-amber text-xs px-2 py-1 font-mono focus:outline-none focus:border-amber"
-                />
-                {f.suffix && f.suffix !== '$' && <span className="text-text-dim text-xs">{f.suffix}</span>}
-              </div>
-              <p className="text-text-dim text-xs leading-relaxed mt-1">{f.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="border border-border bg-surface-2 p-4">
         <span className="text-green-dim text-xs font-bold block mb-3">VALUATION SUMMARY</span>
         <div className="text-xs font-mono space-y-1">
@@ -136,12 +100,32 @@ export function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
         </div>
       </div>
 
+      <div>
+        <div className="flex items-center justify-between mb-2">
+          <h4 className="text-green-dim text-xs font-bold">PARAMETERS</h4>
+          {hasOverrides && (
+            <button
+              onClick={() => setProjInputs({ ...DEFAULT_PROJECTION_INPUTS })}
+              className="text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+            >
+              [reset all]
+            </button>
+          )}
+        </div>
+        <div className="space-y-3">
+          {dcfInputFields.map(f => (
+            <ParameterField key={f.key} field={f} value={projInputs[f.key] as number} onChange={(v) => updateInput(f.key, v)} />
+          ))}
+        </div>
+      </div>
+
       {sections.map(section => (
         <div key={section.title} className="border border-border">
           <div className="px-3 py-2 border-b border-border">
             <span className="text-green-dim text-xs font-bold">{section.title}</span>
             {section.formula && <span className="text-text-dim text-xs ml-2">— {section.formula}</span>}
           </div>
+          <div className="overflow-x-auto">
           <table className="w-full text-xs font-mono">
             <thead>
               <tr className="border-b border-border">
@@ -167,8 +151,45 @@ export function DcfProjectionDetail({ projInputs, setProjInputs, projResult }: {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       ))}
+    </div>
+  )
+}
+
+function ParameterField({ field: f, value, onChange }: {
+  field: { label: string; desc: string; suffix: string; step: number; min: number; max: number }
+  value: number
+  onChange: (v: number) => void
+}) {
+  const [showDef, setShowDef] = useState(false)
+
+  return (
+    <div className="border border-border bg-surface-2 p-3">
+      <div className="flex items-center gap-2 mb-1">
+        <span className="text-amber text-xs font-bold">{f.label}</span>
+        <button
+          onClick={() => setShowDef(v => !v)}
+          className="sm:hidden text-text-dim hover:text-green text-xs cursor-pointer transition-colors"
+        >
+          [{showDef ? 'hide' : 'definition'}]
+        </button>
+      </div>
+      <div className="flex items-center gap-1">
+        {f.suffix === '$' && <span className="text-text-dim text-xs">$</span>}
+        <input
+          type="number"
+          value={value}
+          onChange={e => onChange(Number(e.target.value))}
+          step={f.step}
+          min={f.min}
+          max={f.max}
+          className="w-24 bg-bg border border-border text-amber text-xs px-2 py-1 font-mono focus:outline-none focus:border-amber"
+        />
+        {f.suffix && f.suffix !== '$' && <span className="text-text-dim text-xs">{f.suffix}</span>}
+      </div>
+      <p className={`text-text-dim text-xs leading-relaxed mt-1 ${showDef ? '' : 'hidden'} sm:block`}>{f.desc}</p>
     </div>
   )
 }

@@ -76,7 +76,7 @@ export function FleetSizeDetail({ projInputs, setProjInputs, projResult }: {
                 <span className="text-text-dim text-xs font-mono">{y.year}</span>
                 <span className="text-green text-xs font-mono">{formatProjectionValue(y.fleetSize, 'count')} total</span>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 flex-wrap">
                 {increments.map(inc => (
                   <button
                     key={`minus-${inc.label}`}

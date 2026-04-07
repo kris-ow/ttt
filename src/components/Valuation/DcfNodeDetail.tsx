@@ -133,7 +133,7 @@ export function DcfNodeDetail({ node, onSelect, openSource, computedValues, onIn
         return (
           <div>
             <h4 className="text-green-dim text-xs font-bold mb-2">BY YEAR</h4>
-            <div className="border border-border">
+            <div className="border border-border overflow-x-auto">
               <table className="w-full text-xs font-mono">
                 <thead>
                   <tr className="border-b border-border">
