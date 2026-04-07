@@ -55,6 +55,7 @@ jobs:
             git commit -m "Daily summaries: $(date -u +%Y-%m-%d)
 
           Summarize new transcripts via Claude Batch API, rebuild news.json"
+            git pull --rebase
             git push
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           fi
