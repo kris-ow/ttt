@@ -113,12 +113,14 @@ export function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, cos
               setExpandedIds(new Set(ALL_EXPANDABLE))
               return 'tree'
             }
+            // Switching back — always go to DCF summary
+            setSelectedId(DCF_ROOT)
             return 'detail'
           })
         }}
         className="sm:hidden fixed bottom-4 left-4 right-4 z-40 bg-green text-bg py-3 text-xs font-bold cursor-pointer text-center"
       >
-        {mobileView === 'tree' ? 'BACK TO DETAIL' : 'FORMULA TREE'}
+        {mobileView === 'tree' ? 'BACK TO SUMMARY' : 'FORMULA TREE'}
       </button>
     </div>
   )

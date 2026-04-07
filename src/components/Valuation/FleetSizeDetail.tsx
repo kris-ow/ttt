@@ -41,9 +41,9 @@ export function FleetSizeDetail({ projInputs, setProjInputs, projResult }: {
   const hasOverrides = JSON.stringify(projInputs.newVehiclesByYear) !== JSON.stringify(DEFAULT_NEW_VEHICLES)
 
   const increments = [
-    { label: '10K', value: 10_000 },
-    { label: '100K', value: 100_000 },
-    { label: '1M', value: 1_000_000 },
+    { label: '10K', value: 10_000, hideOnMobile: false },
+    { label: '100K', value: 100_000, hideOnMobile: true },
+    { label: '1M', value: 1_000_000, hideOnMobile: false },
   ]
 
   return (
@@ -76,12 +76,12 @@ export function FleetSizeDetail({ projInputs, setProjInputs, projResult }: {
                 <span className="text-text-dim text-xs font-mono">{y.year}</span>
                 <span className="text-green text-xs font-mono">{formatProjectionValue(y.fleetSize, 'count')} total</span>
               </div>
-              <div className="flex items-center gap-1 flex-wrap">
+              <div className="flex items-center gap-1">
                 {increments.map(inc => (
                   <button
                     key={`minus-${inc.label}`}
                     onClick={() => adjustYear(i, -inc.value)}
-                    className="px-1.5 py-0.5 text-xs font-mono border border-border text-text-dim hover:text-red hover:border-red cursor-pointer transition-colors"
+                    className={`px-1.5 py-0.5 text-xs font-mono border border-border text-text-dim hover:text-red hover:border-red cursor-pointer transition-colors ${inc.hideOnMobile ? 'hidden sm:block' : ''}`}
                   >
                     −{inc.label}
                   </button>
@@ -100,7 +100,7 @@ export function FleetSizeDetail({ projInputs, setProjInputs, projResult }: {
                 ) : (
                   <button
                     onClick={() => startEditing(i)}
-                    className="text-amber text-xs font-mono font-bold mx-auto min-w-[4rem] text-center cursor-pointer hover:underline"
+                    className="text-amber text-xs font-mono font-bold mx-auto min-w-[3rem] text-center cursor-pointer hover:underline"
                   >
                     {formatProjectionValue(projInputs.newVehiclesByYear[i], 'count')}
                   </button>
@@ -109,7 +109,7 @@ export function FleetSizeDetail({ projInputs, setProjInputs, projResult }: {
                   <button
                     key={`plus-${inc.label}`}
                     onClick={() => adjustYear(i, inc.value)}
-                    className="px-1.5 py-0.5 text-xs font-mono border border-border text-text-dim hover:text-green hover:border-green cursor-pointer transition-colors"
+                    className={`px-1.5 py-0.5 text-xs font-mono border border-border text-text-dim hover:text-green hover:border-green cursor-pointer transition-colors ${inc.hideOnMobile ? 'hidden sm:block' : ''}`}
                   >
                     +{inc.label}
                   </button>

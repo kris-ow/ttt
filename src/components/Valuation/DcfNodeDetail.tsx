@@ -28,7 +28,7 @@ export function DcfNodeDetail({ node, onSelect, openSource, computedValues, onIn
       </div>
 
       {node.formula && (
-        <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold flex items-center justify-between">
+        <div className="border border-border bg-surface-2 p-3 text-text-bright text-xs font-bold flex items-center justify-between gap-2 flex-wrap">
           <span>{node.label} = {node.formula}</span>
           {cv !== undefined && <span className="text-green">{isY10 && <span className="text-text-dim">Y10 </span>}{formatDcfValue(node.id, cv)}</span>}
         </div>

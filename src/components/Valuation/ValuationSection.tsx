@@ -40,7 +40,7 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
   return (
     <div className="space-y-4">
       <div className="flex gap-1 flex-wrap">
-        {([['overview', 'OVERVIEW'], ['robotaxi-dcf', 'ROBOTAXI DCF']] as const).map(([key, label]) => (
+        {([['overview', 'OVERVIEW'], ['robotaxi-dcf', 'ROBOTAXI']] as const).map(([key, label]) => (
           <button
             key={key}
             onClick={() => setSubView(key)}
@@ -53,7 +53,7 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
             {label}
           </button>
         ))}
-        {['OPTIMUS DCF', 'ENERGY DCF', 'CHIP DCF'].map(label => (
+        {['OPTIMUS', 'ENERGY', 'CHIP'].map(label => (
           <span
             key={label}
             className="px-3 py-1.5 text-xs font-bold border border-border text-text-dim/30 cursor-default select-none"
