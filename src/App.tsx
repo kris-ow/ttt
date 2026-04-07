@@ -42,7 +42,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <div className="flex items-center gap-3">
-              <span className="text-green font-bold text-xl">[TTT]</span>
+              <span className="text-green font-bold text-xl">[3T]</span>
               <span className="text-white text-xl font-bold">THE TESLA THESIS</span>
             </div>
             <nav className="flex items-center gap-1">
@@ -180,7 +180,7 @@ export default function App() {
       {/* ── Footer ──────────────────────────────────── */}
       <footer className="border-t border-border py-4 mt-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-xs text-text-dim">
-          [TTT] the tesla thesis // independent research & analysis // not financial advice
+          [3T] the tesla thesis // independent research & analysis // not financial advice
         </div>
       </footer>
 
