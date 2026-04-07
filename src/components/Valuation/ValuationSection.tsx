@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { computeRevPerVehicle, computeCostPerVehicle, computeProjection, DEFAULT_PROJECTION_INPUTS, type RevInputId, type CostInputId, type ProjectionInputs } from '../../data/dcf-robotaxi'
+import { computeRevPerVehicle, computeCostPerVehicle, computeProjection, formatProjectionValue, DEFAULT_PROJECTION_INPUTS, type RevInputId, type CostInputId, type ProjectionInputs } from '../../data/dcf-robotaxi'
 import { RobotaxiDcfView } from './RobotaxiDcfView'
 
 export function ValuationSection({ openSource }: { openSource: (src: string) => void }) {
@@ -53,7 +53,7 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
             {label}
           </button>
         ))}
-        {['OPTIMUS', 'ENERGY', 'CHIP'].map(label => (
+        {['EVs', 'OPTIMUS', 'ENERGY', 'CHIP'].map(label => (
           <span
             key={label}
             className="px-3 py-1.5 text-xs font-bold border border-border text-text-dim/30 cursor-default select-none"
@@ -66,100 +66,89 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
 
       {subView === 'overview' ? (
         <div className="space-y-6">
-          <div className="border border-border bg-surface p-4">
-            <h3 className="text-green text-xs font-bold mb-3">SUM-OF-THE-PARTS (SOTP)</h3>
-            <div className="text-xs text-text leading-relaxed space-y-2">
-              <p>
-                SOTP valuation breaks a company into its individual business segments, values each independently,
-                and sums them to derive total enterprise value. This is particularly relevant for conglomerates or
-                companies with distinct business lines that the market may price inefficiently as a bundle.
-              </p>
-              <p>
-                For Tesla, SOTP separates: <span className="text-text-bright">Electric Vehicles</span>,{' '}
-                <span className="text-text-bright">Robotaxi/FSD</span>,{' '}
-                <span className="text-text-bright">Optimus (Humanoid Robots)</span>,{' '}
-                <span className="text-text-bright">Energy Generation & Storage</span>, and{' '}
-                <span className="text-text-bright">AI/Compute Services</span>.
-                Each segment has fundamentally different growth profiles, margins, and comparable peers.
-              </p>
-              <p className="text-text-dim">
-                The core thesis: the market prices Tesla primarily as an automaker, significantly undervaluing
-                robotaxi, Optimus, and energy — segments with potentially larger TAMs and higher margins than the EV business.
-              </p>
+          <div className="border border-border">
+            <div className="px-3 py-2 border-b border-border">
+              <span className="text-green text-xs font-bold">SUM-OF-THE-PARTS VALUATION</span>
             </div>
-            <div className="mt-3 flex gap-3 text-xs">
-              <a href="https://www.investopedia.com/terms/s/sumofpartsvaluation.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: SOTP]</a>
-            </div>
+            <table className="w-full text-xs font-mono">
+              <thead>
+                <tr className="border-b border-border">
+                  <th className="text-left px-3 py-2 text-text-dim font-bold">Segment</th>
+                  <th className="text-right px-3 py-2 text-text-dim font-bold">Equity Value</th>
+                  <th className="text-right px-3 py-2 text-text-dim font-bold">Method</th>
+                  <th className="text-right px-3 py-2 text-text-dim font-bold">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-border">
+                  <td className="px-3 py-2 text-text-dim">Electric Vehicles</td>
+                  <td className="px-3 py-2 text-right text-text-dim">—</td>
+                  <td className="px-3 py-2 text-right text-text-dim">DCF</td>
+                  <td className="px-3 py-2 text-right text-text-dim/50">PLANNED</td>
+                </tr>
+                <tr
+                  className="border-b border-border cursor-pointer hover:bg-surface-2 transition-colors"
+                  onClick={() => setSubView('robotaxi-dcf')}
+                >
+                  <td className="px-3 py-2 text-text-bright">Robotaxi / FSD</td>
+                  <td className="px-3 py-2 text-right text-green font-bold">{formatProjectionValue(projResult.equityValue, 'currency')}</td>
+                  <td className="px-3 py-2 text-right text-text-dim">10Y DCF</td>
+                  <td className="px-3 py-2 text-right text-green">LIVE</td>
+                </tr>
+                {[
+                  { name: 'Optimus (Humanoid Robots)', method: 'DCF' },
+                  { name: 'Energy Generation & Storage', method: 'DCF' },
+                  { name: 'AI / Compute Services', method: 'DCF' },
+                ].map(seg => (
+                  <tr key={seg.name} className="border-b border-border last:border-b-0">
+                    <td className="px-3 py-2 text-text-dim">{seg.name}</td>
+                    <td className="px-3 py-2 text-right text-text-dim">—</td>
+                    <td className="px-3 py-2 text-right text-text-dim">{seg.method}</td>
+                    <td className="px-3 py-2 text-right text-text-dim/50">PLANNED</td>
+                  </tr>
+                ))}
+                <tr className="border-t-2 border-border">
+                  <td className="px-3 py-2 text-text-bright font-bold">Total Enterprise Value</td>
+                  <td className="px-3 py-2 text-right text-green font-bold">{formatProjectionValue(projResult.equityValue, 'currency')}</td>
+                  <td className="px-3 py-2 text-right text-text-dim">SOTP</td>
+                  <td className="px-3 py-2 text-right text-text-dim">PARTIAL</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
+          <p className="text-text-dim text-xs leading-relaxed">
+            The core thesis: the market prices Tesla primarily as an automaker, significantly undervaluing
+            robotaxi, Optimus, and energy — segments with potentially larger TAMs and higher margins than the EV business.
+            SOTP valuation values each segment independently via DCF, then sums them.
+          </p>
 
           <div className="border border-border bg-surface p-4">
             <h3 className="text-green text-xs font-bold mb-3">DISCOUNTED CASH FLOW (DCF)</h3>
             <div className="text-xs text-text leading-relaxed space-y-2">
               <p>
                 DCF estimates the present value of a business based on its projected future free cash flows,
-                discounted back at a rate reflecting the risk of those cash flows (typically WACC — weighted average cost of capital).
+                discounted back at a rate reflecting the risk of those cash flows (WACC).
               </p>
               <div className="border border-border bg-surface-2 p-3 font-bold text-text-bright">
                 PV = Σ FCFₜ / (1 + r)ᵗ + Terminal Value / (1 + r)ⁿ
               </div>
-              <p>
-                Where <span className="text-text-bright">FCFₜ</span> = free cash flow in year t,{' '}
-                <span className="text-text-bright">r</span> = discount rate (WACC),{' '}
-                <span className="text-text-bright">n</span> = projection period.
-              </p>
-
               <div className="border-t border-border pt-3 mt-3 space-y-3">
                 <h4 className="text-green-dim text-xs font-bold">KEY TERMS</h4>
                 <div>
                   <span className="text-text-bright">Free Cash Flow (FCF)</span>
-                  <p className="mt-1">
-                    Cash a business generates after paying operating expenses and capital expenditures.
-                    It's the money actually available to investors — unlike earnings, FCF can't be manipulated by accounting choices.
-                  </p>
-                  <div className="border border-border bg-surface-2 p-2 mt-1 text-text-bright">
-                    FCF = Operating Cash Flow − Capital Expenditures
-                  </div>
+                  <span className="text-text-dim"> — cash generated after operating expenses and capital expenditures. </span>
+                  <span className="text-text font-mono">FCF = OCF - CapEx</span>
                 </div>
                 <div>
-                  <span className="text-text-bright">WACC (Weighted Average Cost of Capital)</span>
-                  <p className="mt-1">
-                    The blended rate of return a company must earn to satisfy both debt holders and equity investors.
-                    It reflects the riskiness of the business — higher WACC means future cash flows are worth less today.
-                    Typical range: 8-12% for established companies, higher for speculative ventures.
-                  </p>
+                  <span className="text-text-bright">WACC</span>
+                  <span className="text-text-dim"> — blended rate of return reflecting business risk. Typical: 8-12% established, higher for speculative.</span>
                 </div>
                 <div>
                   <span className="text-text-bright">Terminal Value</span>
-                  <p className="mt-1">
-                    Captures all value beyond the explicit forecast period (e.g. after year 10).
-                    Often the largest component of a DCF — typically 60-80% of total value.
-                    Calculated either as a perpetual growth model (Gordon Growth: FCF × (1+g) / (r−g))
-                    or by applying an exit multiple to the final year's metrics.
-                  </p>
-                </div>
-                <div>
-                  <span className="text-text-bright">Discount Rate / Present Value</span>
-                  <p className="mt-1">
-                    A dollar tomorrow is worth less than a dollar today. The discount rate converts future cash flows
-                    to present value — accounting for time, inflation, and risk. At a 10% discount rate,
-                    $100 received in 5 years is worth $62 today.
-                  </p>
+                  <span className="text-text-dim"> — captures all value beyond Year 10 via Gordon Growth Model. Often 60-80% of total DCF value.</span>
                 </div>
               </div>
-            </div>
-            <div className="mt-3 flex gap-3 text-xs">
-              <a href="https://www.investopedia.com/terms/d/dcf.asp" target="_blank" rel="noopener noreferrer" className="text-green-dim hover:text-green transition-colors">[Investopedia: DCF]</a>
-            </div>
-          </div>
-
-          <div className="border border-border bg-surface-2 p-4">
-            <h3 className="text-text-dim text-xs font-bold mb-2">ROADMAP</h3>
-            <div className="text-xs text-text-dim space-y-1">
-              <div className="text-green">{'>'} Robotaxi DCF model — <span className="text-green font-bold">LIVE</span></div>
-              <div className="text-green">{'>'} 10-Year Projection — <span className="text-green font-bold">LIVE</span></div>
-              <div>{'>'} Optimus segment valuation</div>
-              <div>{'>'} Energy segment valuation</div>
-              <div>{'>'} Chip segment valuation</div>
             </div>
           </div>
         </div>
