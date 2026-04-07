@@ -1781,8 +1781,7 @@ function StockChart({ onClose }: { onClose: () => void }) {
     setError(null)
 
     try {
-      const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=${range.range}&interval=${range.interval}`
-      const res = await fetch(`https://corsproxy.io/?url=${encodeURIComponent(yahooUrl)}`)
+      const res = await fetch(`https://api.theteslathesis.com/chart?range=${range.range}&interval=${range.interval}`)
       if (!res.ok) throw new Error(`HTTP ${res.status}`)
       const json = await res.json()
 
