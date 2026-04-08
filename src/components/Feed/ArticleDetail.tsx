@@ -18,7 +18,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
     {/* Mobile floating back button — outside scrollable container */}
     <button
       onClick={onClose}
-      className="sm:hidden fixed bottom-6 right-4 z-[60] bg-green text-bg px-4 py-2 text-xs font-bold cursor-pointer"
+      className="sm:hidden fixed bottom-4 left-4 right-4 z-[60] bg-green text-bg py-3 text-xs font-bold cursor-pointer text-center"
     >
       [BACK]
     </button>
