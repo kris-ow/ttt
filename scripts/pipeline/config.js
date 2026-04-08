@@ -74,6 +74,8 @@ export const CORRECTIONS = {
   'Macrohord': 'Macrohard',
   'macrohord': 'Macrohard',
   'macro hard': 'Macrohard',
+  'Apollo mayo': 'Alpamayo',
+  'apollo mayo': 'Alpamayo',
 };
 
 // Claude model for summarization
