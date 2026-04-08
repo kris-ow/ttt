@@ -1,15 +1,18 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import newsData from '../../data/news.json'
 import { type Article, type NewsData } from '../../types'
 import { formatDate, channelShort, signalTag } from './helpers'
 
 const data = newsData as NewsData
+const INITIAL_DAYS = 7
 
 export function FeedSection({ selectedChannel, onSelectArticle }: {
   selectedChannel: string | null
   onSelectArticle: (a: Article) => void
 }) {
-  const dates = useMemo(() => Object.keys(data.byDate).sort().reverse(), [])
+  const allDates = useMemo(() => Object.keys(data.byDate).sort().reverse(), [])
+  const [showAll, setShowAll] = useState(false)
+  const dates = showAll ? allDates : allDates.slice(0, INITIAL_DAYS)
 
   return (
     <div className="space-y-6">
@@ -51,6 +54,14 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
           </div>
         )
       })}
+      {!showAll && allDates.length > INITIAL_DAYS && (
+        <button
+          onClick={() => setShowAll(true)}
+          className="w-full border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 text-xs text-text-dim hover:text-green transition-colors cursor-pointer"
+        >
+          SHOW OLDER ({allDates.length - INITIAL_DAYS} more days)
+        </button>
+      )}
     </div>
   )
 }

@@ -180,7 +180,7 @@ export default function App() {
       {/* ── Footer ──────────────────────────────────── */}
       <footer className="border-t border-border py-4 mt-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-xs text-text-dim">
-          [TTT] the tesla thesis // independent research & analysis // not financial advice
+          [TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate
         </div>
       </footer>
 
