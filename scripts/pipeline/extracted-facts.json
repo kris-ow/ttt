@@ -1855,5 +1855,37 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-04-08T04:14:16.693Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi expected to price between $240,000 and $260,000",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 250000,
+    "context": "Midpoint estimate of $250,000 for Tesla Semi unit price; directly relevant to fleet economics and DCF modeling for robotaxi or autonomous freight scenarios",
+    "source": "20260408_futureaza_01_Tesla_Semi_Breakthrough_Leaves_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-09T04:16:43.726Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Daimler targeting autonomous trucking solution on road by 2027 for the eCascadia platform",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Signals competitive autonomy timeline from a legacy OEM; relevant benchmark against Tesla Semi's autonomous freight ambitions",
+    "source": "20260408_futureaza_01_Tesla_Semi_Breakthrough_Leaves_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-09T04:16:43.726Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Giga Nevada Tesla Semi pilot line is operational but not at volume production; pilot trucks have been delivered to shipping customers",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Confirms Tesla Semi production has begun in limited form at Giga Nevada, with real customer deliveries occurring",
+    "source": "20260408_futureaza_01_Tesla_Semi_Breakthrough_Leaves_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-09T04:16:43.726Z",
+    "status": "pending"
   }
 ]
