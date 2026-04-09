@@ -1,0 +1,54 @@
+Channel:     brighterwithherbert
+Title:       NEWS: Tesla DROPS FSD V14.3!
+Published:   2026-04-08 14:56 UTC
+Summarized:  2026-04-09 12:55:51 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01Ccm6Ay42nyCGcap4ZMDpD5
+Cost:        $0.02394 (0 in / 3192 out tokens)
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+This live stream from the "brighterwithherbert" channel covers the release of FSD version 14.3, which dropped the night before the broadcast. Host Herbert is joined by David Moss — known for a coast-to-coast FSD drive — and Brian White from Future Aza, who collectively review early adopter reactions, real-world testing footage, and the implications of this release for Tesla's unsupervised robotaxi rollout. The core thesis is that FSD 14.3 represents a meaningful leap forward, particularly in reaction time and sign-reading capability, though it still falls short of the full "missing puzzle piece" milestone Elon Musk had implied.
+
+## Autonomous Driving
+
+1. **FSD 14.3 Release Overview:** FSD version 14.3 dropped the night before the broadcast, approximately two days after Elon Musk had indicated it would arrive by end of week (Sunday). The release is described as going to a very small group of early testers — estimated at roughly 15 to 50 people outside Tesla employees — and is beginning to roll out more broadly. The panel notes that the majority of owners may never see 14.3 itself, and could instead receive version 14.3.1 or later as the first update they experience.
+
+2. **Key Release Notes and Improvements:** The official release notes include: a 20% faster reaction time (attributed to a ground-up rewrite of the AI compiler and runtime); an upgraded reinforcement learning training stage; an upgraded neural network vision encoder with improved performance in low-visibility scenarios; fixes for unnecessary lane biasing and minor tailgating behaviors; increased decisiveness of parking lot spot selection; improved parking lot pin prediction; enhanced response to emergency vehicles, school buses, and right-of-way violators; improved handling of small animals; improved traffic light handling at complex intersections; improved handling of rare or unusual objects extending into the vehicle path; and improved handling of temporary system degradations.
+
+3. **Upcoming Features Not Yet in 14.3:** Several anticipated features are listed as still forthcoming in future dot releases: expanded reasoning to all behaviors beyond destination handling (reasoning is currently limited to destination handling and stop lights), pothole avoidance, and improved driver monitoring system sensitivity with better eye gaze tracking and handling for hats and eyewear. The highly anticipated "Banish" feature (unsupervised parking/summon capability) is also absent from this release.
+
+4. **20% Faster Reaction Time as the Headline Feature:** The panel identifies the 20% faster reaction time as the single most significant improvement in this release. David Moss demonstrated this live during his 10-hour testing session by jumping out from behind trash cans and poles at the last possible moment near the vehicle — the car stopped before Moss himself could register it was there, let alone apply the brake. A separate clip from the AI Driver account showed the car beginning to brake for a yellow light before the on-screen visualization had even updated, illustrating that the system's decision-making is now outpacing its own display rendering.
+
+5. **Sign Reading and Reasoning Capability:** One of the most notable behavioral improvements cited was FSD 14.3's apparent ability to read and obey physical signs in contradiction to incorrect map data. A clip from Dirty Tesla (Chris) showed the system being directed by navigation to turn the wrong way into a parking lot marked with "Do Not Enter" signs — FSD overrode the map instruction, recognized the signs, and corrected its path. This was described by panel members as the clearest real-world demonstration yet of sign recognition being actively used in driving decisions.
+
+6. **David Moss's 10-Hour Real-World Test in Dallas:** Moss tested FSD 14.3 for approximately 10 hours in Dallas, Texas, including a six-hour-plus live stream. Testing environments included areas near a baseball stadium with police activity (handled correctly in 2 out of 3 police encounter scenarios), a multi-story underground parking garage (successfully navigated entry, parking, and descent — though it attempted to exit the wrong way on a one-way road), sixth-floor parking garages (successfully navigated from top to bottom), SMU campus, back alleys near student housing, Dallas Airport, and downtown bar district street parking. Positive outcomes included smooth handling of a rabbit crossing the road at 2 a.m., successful multi-level garage navigation, and the ability to drive and maneuver with B-pillar and reverse cameras physically covered by testers.
+
+7. **Persistent Issues and Regressions in 14.3:** Despite overall improvement, Moss noted several issues: infinite loops in parking scenarios (circled the same downtown Dallas block five times without attempting new strategies); difficulty with drive-throughs; one instance of refusing to proceed through a legal flashing red light at a large downtown intersection; navigating out of a one-way underground parking structure the wrong way; and parking quality described as potentially worse than 14.2 in terms of alignment (diagonal parking), though significantly faster. Blinkers were also noted to activate later than in previous versions.
+
+8. **Comparative Assessment vs. Waymo:** Brian White and David Moss both contrasted Tesla's neural-net-first approach favorably against Waymo's rules-based architecture. They noted that Waymo has publicly announced a transition toward neural networks — which the panel interpreted as an implicit admission that its existing 15 years of rules-based code has hit a ceiling. A prior incident of a Waymo vehicle getting stuck in a puddle while other cars navigated around it was cited as an example of Waymo's inability to infer context the way FSD can. The panel also noted that Waymo already operates commercially despite getting stuck in loops, suggesting loops alone don't disqualify a system from deployment.
+
+9. **Rollout Timing and Wide Release Expectations:** The panel discussed an unverified report that FSD 14.3 (or a 14.3.1 dot release) is expected to go wider on Thursday (April 10, 2026). Tesla AI reportedly signaled on social media that the highest-mileage FSD users would receive priority in the rollout. The panel consensus was that 14.3 is production-quality enough for wide release, with the 0.1 dot release expected to address brake-stabbing overfitting and minor regressions before the general fleet receives it.
+
+## Robotaxi
+
+1. **Unsupervised Robotaxi Readiness Assessment:** The panel debated whether FSD 14.3 is the version that unlocks faster unsupervised robotaxi scaling in Austin. David Moss's view is that FSD 14.2 was already capable enough for unsupervised operation in controlled environments, and that Tesla's delay is not software-limited but rather contingent on waiting for the Cybercab vehicle itself. He expressed confidence that 14.3 would support Banish-level unsupervised parking in environments like Costco or strip mall parking lots, but stopped short of endorsing broad urban unsupervised deployment.
+
+2. **Dallas Robotaxi Depot Observed:** During his overnight testing session, Moss visited what appeared to be a Tesla robotaxi staging depot in Dallas, described as the same size as the known Austin depot — over 100 Model Y vehicles parked in a large lot with camera washers on-site. The panel noted these are likely destined for supervised FSD deployment, not unsupervised robotaxi operation.
+
+3. **Texas DMV Regulatory Timeline:** A new regulatory development was flagged: the Texas Department of Motor Vehicles expects to begin accepting applications for authorization to operate automated vehicles on Texas roads beginning in early May 2026. Commercial operation of vehicles using an engaged automated driving system requires this authorization. Panel members expressed mild surprise that this framework wasn't already in place, calling it a logical and much-needed next step.
+
+4. **European Regulatory Update Pending:** An announcement from the RDW (Dutch road authority) is expected on April 10, 2026, regarding FSD deployment authorization in the Netherlands and potentially broader European markets. The panel speculated that FSD 14.3's improvements — particularly the faster reaction time — could positively influence the outcome of that regulatory review.
+
+Notable quotes and data:
+- David Moss tested FSD 14.3 for approximately 10 hours in Dallas, including a 6-hour-15-minute live stream plus 3–4 hours of pre-stream testing.
+- FSD 14.3 includes a **20% faster reaction time** from a ground-up rewrite of the AI compiler and runtime.
+- Estimated **15 to 50 people** outside Tesla employees were testing 14.3 at the time of the broadcast.
+- Dallas robotaxi depot observed with **100+ Model Y vehicles** and camera washers, described as the same scale as the Austin depot.
+- Texas DMV expected to begin accepting AV authorization applications by **early May 2026**.
+- Netherlands RDW announcement expected **April 10, 2026**.
+- Unverified report that wider FSD 14.3 rollout may begin **Thursday, April 10, 2026**.
+- David Moss: *"I think they're waiting just for Cybercab to put them out. That's why I think they're waiting."*
+- David Moss on unsupervised readiness: *"Nothing safety related, nothing like that. Yeah, it's significantly better than 14.2 to sum it up."*
+- Brian White on Waymo: *"Waymo is an embarrassment. I don't know if that's necessarily good enough."*
+- On reasoning: *"Tesla AI said there is reasoning specifically with the stop lights, but they will be adding more reasoning as the dot releases go through."*
