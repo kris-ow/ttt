@@ -90,4 +90,4 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 - Knowledge Base — planned bidirectional system: KB feeds into prompts, summaries update KB
 - Pipeline needs YouTube channel IDs configured in `scripts/pipeline/config.js`
 - DCF valuation models not yet built
-- Not yet publicly deployed
+- Live at https://theteslathesis.com (GitHub Pages, Cloudflare DNS grey-cloud)
