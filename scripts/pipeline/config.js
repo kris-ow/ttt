@@ -7,7 +7,7 @@ export const CHANNELS = [
   { id: 'futureaza', channelId: 'UCbNOk_wOA7UMvYrF7K0iBvQ', name: 'Futureaza' },
   { id: 'investingagainstthegrain', channelId: 'UC3K6_4IDtnBekVuWuH91uSg', name: 'Investing Against the Grain' },
   { id: 'jobhakdi', channelId: 'UCSjlTWo8-Nbo6koK8df1y5w', name: 'Jo Bhakdi' },
-  // sawyermerritt is X/Twitter — handled separately, not in this pipeline
+  // sawyermerritt is X/Twitter — xdaily.txt format, summarized with adapted prompt
 ];
 
 // Categories for classification (maps to Knowledge Base + valuation model inputs)

@@ -65,14 +65,26 @@ function findUnsummarizedTranscripts() {
       }
     }
 
-    // Extract transcript body (after separator)
-    const sepIdx = content.indexOf('─'.repeat(5));
-    const transcript = sepIdx !== -1
-      ? content.slice(sepIdx).replace(/^─+\n+/, '').trim()
-      : null;
+    // Detect xdaily (X/Twitter digest) vs YouTube transcript
+    const isXDaily = file.includes('_xdaily');
+
+    // Extract content body
+    let transcript;
+    if (isXDaily) {
+      // xdaily format: header lines, then blank line, then posts
+      // Handle both \r\n and \n line endings
+      const blankMatch = content.match(/\r?\n\r?\n/);
+      transcript = blankMatch ? content.slice(blankMatch.index + blankMatch[0].length).trim() : null;
+    } else {
+      // YouTube format: body after ───── separator
+      const sepIdx = content.indexOf('─'.repeat(5));
+      transcript = sepIdx !== -1
+        ? content.slice(sepIdx).replace(/^─+\n+/, '').trim()
+        : null;
+    }
 
     if (!transcript) {
-      console.log(`  Skipping ${file}: no transcript body found`);
+      console.log(`  Skipping ${file}: no ${isXDaily ? 'posts' : 'transcript'} body found`);
       continue;
     }
 
@@ -84,10 +96,11 @@ function findUnsummarizedTranscripts() {
       filename: file,
       summaryFilename: summaryName,
       channel,
-      title: meta.title || file,
-      published: meta.published || '',
+      title: meta.title || (isXDaily ? `Sawyer Merritt — Daily X Summary (${meta.date || 'unknown'})` : file),
+      published: meta.published || (meta.date ? `${meta.date} 00:00:00 UTC` : ''),
       url: meta.url || '',
       transcript,
+      isXDaily,
     });
   }
 
@@ -96,8 +109,11 @@ function findUnsummarizedTranscripts() {
 
 // ── Prompt Building ──────────────────────────────────────
 
-function buildPrompt(channel, title, transcript, published) {
-  let template = fs.readFileSync(PROMPT_FILE, 'utf-8');
+function buildPrompt(channel, title, transcript, published, { isXDaily = false } = {}) {
+  const promptFile = isXDaily
+    ? path.resolve('scripts/pipeline/prompt-xdaily.md')
+    : PROMPT_FILE;
+  let template = fs.readFileSync(promptFile, 'utf-8');
 
   // Build corrections string
   const corrStr = Object.entries(CORRECTIONS)
@@ -209,7 +225,7 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
   const cost = (inputTokens / 1_000_000) * PRICING.input + (outputTokens / 1_000_000) * PRICING.output;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
 
-  const header = [
+  const headerLines = [
     `Channel:     ${transcript.channel}`,
     `Title:       ${transcript.title}`,
     ...(transcript.url ? [`URL:         ${transcript.url}`] : []),
@@ -218,11 +234,17 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
     `Model:       ${MODEL} [batch]`,
     `Batch ID:    ${batchId}`,
     `Cost:        $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens)`,
+  ];
+  if (transcript.isXDaily) {
+    headerLines.push(`Source:      X/@SawyerMerritt`);
+  }
+  headerLines.push(
     `Categories:  ${result.categories.join(', ')}`,
     '─'.repeat(60),
     '',
     result.summary,
-  ].join('\n');
+  );
+  const header = headerLines.join('\n');
 
   fs.writeFileSync(path.join(NEWS_DIR, transcript.summaryFilename), header);
   console.log(`  Written: ${transcript.summaryFilename}`);
@@ -294,7 +316,7 @@ async function main() {
   console.log(`\n=== Building prompts and submitting batch ===`);
   const requests = transcripts.map(t => ({
     id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
-    prompt: buildPrompt(t.channel, t.title, t.transcript, t.published),
+    prompt: buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily }),
   }));
 
   const batch = await submitBatch(client, requests);
@@ -308,6 +330,7 @@ async function main() {
       channel: t.channel,
       title: t.title,
       published: t.published,
+      isXDaily: t.isXDaily || false,
     })),
     submittedAt: new Date().toISOString(),
   };
@@ -389,11 +412,18 @@ async function processPendingBatch(client, state) {
     // Re-read transcripts from disk to build prompts
     const retryRequests = failedTranscripts.map(t => {
       const content = fs.readFileSync(path.join(NEWS_DIR, t.filename), 'utf-8');
-      const sepIdx = content.indexOf('─'.repeat(5));
-      const transcript = sepIdx !== -1 ? content.slice(sepIdx).replace(/^─+\n+/, '').trim() : '';
+      const isXDaily = t.filename.includes('_xdaily');
+      let transcript;
+      if (isXDaily) {
+        const blankMatch = content.match(/\r?\n\r?\n/);
+        transcript = blankMatch ? content.slice(blankMatch.index + blankMatch[0].length).trim() : '';
+      } else {
+        const sepIdx = content.indexOf('─'.repeat(5));
+        transcript = sepIdx !== -1 ? content.slice(sepIdx).replace(/^─+\n+/, '').trim() : '';
+      }
       return {
         id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
-        prompt: buildPrompt(t.channel, t.title, transcript, t.published),
+        prompt: buildPrompt(t.channel, t.title, transcript, t.published, { isXDaily }),
       };
     });
 
