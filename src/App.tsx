@@ -180,7 +180,7 @@ export default function App() {
       {/* ── Footer ──────────────────────────────────── */}
       <footer className="border-t border-border py-4 mt-8">
         <div className="max-w-7xl mx-auto px-4 text-center text-xs text-text-dim">
-          [TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate // <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
+          [TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate // <a href="mailto:sham4n@gmail.com" className="text-text-dim hover:text-green transition-colors">sham4n@gmail.com</a>
         </div>
       </footer>
 

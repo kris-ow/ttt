@@ -90,7 +90,7 @@ export function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, cos
         </div>
       </div>
 
-      <div className={`sm:w-3/5 border border-border bg-surface p-4 min-w-0 overflow-y-auto max-h-[80vh] ${mobileView === 'tree' ? 'hidden sm:block' : ''}`}>
+      <div className={`sm:w-3/5 border border-border bg-surface p-4 min-w-0 ${mobileView === 'tree' ? 'hidden sm:block' : ''}`}>
         {node ? (
           selectedId === 'dcf' ? (
             <DcfProjectionDetail projInputs={projInputs} setProjInputs={setProjInputs} projResult={projResult} />

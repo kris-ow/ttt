@@ -18,7 +18,9 @@ export interface NewsData {
 }
 
 export const CHANNEL_META: Record<string, { name: string; platform: string; color: string }> = {
-  brighterwithherbert: { name: 'Herbert', platform: 'YouTube', color: '#ef4444' },
+  brighterwithherbert: { name: 'Herbert Ong', platform: 'YouTube', color: '#ef4444' },
+  cernbasher: { name: 'Cern Basher', platform: 'YouTube', color: '#10b981' },
+  'farzad-fm': { name: 'Farzad', platform: 'YouTube', color: '#ec4899' },
   futureaza: { name: 'Futureaza', platform: 'YouTube', color: '#3b82f6' },
   investingagainstthegrain: { name: 'Nick Gibbs', platform: 'YouTube', color: '#8b5cf6' },
   jobhakdi: { name: 'Jo Bhakdi', platform: 'YouTube', color: '#f59e0b' },
