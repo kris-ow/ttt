@@ -2279,5 +2279,173 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-04-10T08:13:34.319Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 delivers a reported 20% improvement in reaction time speed versus prior versions",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Cited as the primary safety-relevant upgrade enabling unsupervised robotaxi expansion; described as a ground-up rewrite of the AI compiler and runtime to fully leverage Hardware 4",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 — not 14.3 — will be the 10x parameter large model, per Elon Musk post",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Elon stated version 15 will 'far exceed human levels of safety even in completely unsupervised and complex situations'; no release date was given for version 15",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 chip is not going into production until 2027, per Jeff Lutz",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Cited to push back on speculation that robotaxi deployment is tied to AI5; panel argues version 14.3 is sufficient for near-term unsupervised expansion",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD Netherlands regulatory approval was anticipated as of April 10, 2026 (video publish date), with 58% of a live viewer poll expecting approval",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Full pin-to-pin FSD currently available only in North America, Korea, and Australia; European approval would represent a new market opening",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "NHTSA incident data for Tesla robotaxi fleet in Austin and Bay Area: multiple low-speed fender-benders December 15–January 15, declining to one low-speed case January 15–February 15",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Cited as evidence of strong and improving safety record for supervised robotaxi operations; all incidents described as low-speed fender-benders that would go unreported in a non-robotaxi vehicle",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Single Cybercab robotaxi expected to generate $30,000–$50,000 in recurring annual profit",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "James's slide comparing one-time $3,000 car sale profit to recurring robotaxi profit; used as the core bull case for valuation multiple expansion",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab manufacturing cost cited at $15,000 per unit",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 15000,
+    "context": "James cites $15,000 as current manufacturing cost; Jeff Lutz estimates terminal production cost will be $18,000–$20,000 after at least one year of ramp",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jeff Lutz estimates terminal Cybercab production cost will reach $18,000–$20,000, taking at least a year of ramp to achieve",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 19000,
+    "context": "Lutz's more conservative near-term estimate vs. James's $15,000 figure; relevant for near-term DCF unit economics modeling",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has deployed Model Y robotaxi vehicles with Texas and California plates to five or six new U.S. cities",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Cited as evidence that the robotaxi deployment plan remains on track; Jeff Lutz argues Tesla would not stage inventory in these cities if rollout were months away",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab first unit came off production in February 2026, per Jeff Lutz's reference to production timeline",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Jeff Lutz references 'first unit off of production in February' and notes production line velocity appears to be increasing",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "SpaceX preliminary S-1 filing with the SEC expected to be published in May 2026, per Alexandra Merz",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "S-1 publication will reveal lockup periods for early investors, which determines float availability — a key factor in index fund inclusion and Tesla-SpaceX merger mechanics",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Reuters and Bloomberg reported Tesla has contacted suppliers to build parts for a low-cost 'Model Q' being developed in China",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Unsourced/unnamed reports; Jeff Lutz estimates if development is genuinely underway in China, vehicle could ship as early as 2027; expected to reuse Cybercab parts",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "James reports meeting two individuals under NDA who have seen Optimus Gen 3, with one describing it as 'creepy' and the other as 'sublime'",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Anecdotal signal that Optimus Gen 3 exists in a form that has been shown to outside parties; no technical specifications disclosed",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab partnership with Intel announced; Intel cited as providing lithographic machines and chip fabrication infrastructure",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "James describes the partnership as having 'no negatives'; framed as enabling accelerated chip fabrication co-located with production — key for Optimus and AI hardware scaling",
+    "source": "20260410_brighterwithherbert_01_Tesla_Delay_Or_Big_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T14:46:46.589Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab chip fab facility cost estimated at $20–25 billion on the low end, $50 billion per Barclays, with some estimates described as far higher",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Wide cost uncertainty around Terafab is cited as the primary reason Tesla's roadmap score is not a perfect 10; SpaceX is reportedly covering half the cost",
+    "source": "20260410_futureaza_01_Has_Tesla_Lost_Its_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T14:48:43.934Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host states Optimus could be sold today in its current form and would find buyers, but Tesla is deliberately holding back release",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Suggests Optimus is closer to market-ready than public perception implies; robots-as-a-service model flagged as capital-intensive if Tesla retains a large share of units",
+    "source": "20260410_futureaza_01_Has_Tesla_Lost_Its_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T14:48:43.934Z",
+    "status": "pending"
   }
 ]
