@@ -4,7 +4,16 @@ on:
   schedule:
     # Run 3x daily: 1:15, 9:15, 17:15 UTC (covers late transcripts within ~8h)
     - cron: '15 1,9,17 * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Processing mode: batch (default, cheap, slow) or direct (2x cost, instant)'
+        required: false
+        default: 'batch'
+        type: choice
+        options:
+          - batch
+          - direct
 
 permissions:
   contents: write
@@ -35,6 +44,7 @@ jobs:
       - name: Run summary pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PIPELINE_MODE: ${{ inputs.mode || 'batch' }}
         run: node scripts/pipeline/run.js
 
       # Step 3: Rebuild news.json (pipeline does this, but run standalone as safety net)

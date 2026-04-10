@@ -81,8 +81,13 @@ export const CORRECTIONS = {
 // Claude model for summarization
 export const MODEL = 'claude-sonnet-4-6';
 
-// Batch API pricing (per million tokens)
+// Pricing (per million tokens)
 export const PRICING = {
   input: 1.50,   // $/M tokens (batch = 50% of standard $3)
   output: 7.50,  // $/M tokens (batch = 50% of standard $15)
+};
+
+export const PRICING_DIRECT = {
+  input: 3.00,   // $/M tokens (standard)
+  output: 15.00, // $/M tokens (standard)
 };

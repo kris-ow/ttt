@@ -1,7 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, PRICING } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, PRICING, PRICING_DIRECT } from './config.js';
+
+const DIRECT_MODE = process.argv.includes('--direct') || process.env.PIPELINE_MODE === 'direct';
 
 const NEWS_DIR = path.resolve('news');
 const STATE_FILE = path.resolve('scripts/pipeline/state.json');
@@ -194,6 +196,61 @@ async function* getBatchResults(client, batchId) {
   }
 }
 
+// ── Direct (non-batch) API ───────────────────────────────
+
+async function processDirectly(client, transcripts, state) {
+  console.log(`\n=== Processing ${transcripts.length} transcript(s) directly ===`);
+
+  for (const t of transcripts) {
+    console.log(`\n  Processing: ${t.title}`);
+    const prompt = buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily });
+
+    try {
+      const msg = await client.messages.create({
+        model: MODEL,
+        max_tokens: 8192,
+        messages: [{ role: 'user', content: prompt }],
+      });
+
+      const text = msg.content.map(c => c.text).join('');
+      const parsed = parseResult(text);
+      const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
+
+      writeSummaryFile(t, parsed, null, inputTokens, outputTokens, { direct: true });
+      saveExtractedFacts(parsed.keyFacts, t);
+
+      const pricing = PRICING_DIRECT;
+      const cost = (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
+      logCost({
+        date: new Date().toISOString(),
+        filename: t.filename,
+        title: t.title,
+        channel: t.channel,
+        mode: 'direct',
+        inputTokens,
+        outputTokens,
+        cost,
+      });
+
+      state.processed[t.filename] = {
+        title: t.title,
+        channel: t.channel,
+        processedAt: new Date().toISOString(),
+      };
+      saveState(state);
+    } catch (err) {
+      console.log(`  FAILED: ${err.message}`);
+    }
+  }
+
+  // Rebuild news.json
+  console.log('\n=== Rebuilding news.json ===');
+  const { execSync } = await import('child_process');
+  execSync('node scripts/build-news.js', { stdio: 'inherit' });
+
+  console.log('\n=== Pipeline complete (direct mode) ===');
+}
+
 // ── Result Parsing ───────────────────────────────────────
 
 function parseResult(text) {
@@ -221,8 +278,9 @@ function parseResult(text) {
 
 // ── Summary File Writing ─────────────────────────────────
 
-function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens) {
-  const cost = (inputTokens / 1_000_000) * PRICING.input + (outputTokens / 1_000_000) * PRICING.output;
+function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens, { direct = false } = {}) {
+  const pricing = direct ? PRICING_DIRECT : PRICING;
+  const cost = (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
 
   const headerLines = [
@@ -231,8 +289,8 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
     ...(transcript.url ? [`URL:         ${transcript.url}`] : []),
     `Published:   ${transcript.published}`,
     `Summarized:  ${now}`,
-    `Model:       ${MODEL} [batch]`,
-    `Batch ID:    ${batchId}`,
+    `Model:       ${MODEL} [${direct ? 'direct' : 'batch'}]`,
+    ...(batchId ? [`Batch ID:    ${batchId}`] : []),
     `Cost:        $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens)`,
   ];
   if (transcript.isXDaily) {
@@ -327,6 +385,12 @@ async function main() {
 
   for (const t of transcripts) {
     console.log(`  ${t.filename} (${t.transcript.length} chars)`);
+  }
+
+  // Direct mode: process one-by-one via Messages API (fast, 2x cost)
+  if (DIRECT_MODE) {
+    await processDirectly(client, transcripts, state);
+    return;
   }
 
   // Step 2: Build prompts and submit batch
