@@ -2447,5 +2447,111 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-10T14:48:43.934Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 release notes state the AI compiler and runtime were rewritten from the ground up using MLIR, resulting in 20% faster reaction time and improved model iteration speed.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This is a major architectural change to the inference pipeline affecting real-time performance on-vehicle, representing a significant optimization milestone ahead of unsupervised deployment.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's FSD inference pipeline runs at 36 cycles per second on-vehicle.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 36,
+    "context": "Establishes the real-time performance floor required for autonomous vehicle operation; constrains which hardware generations can support larger models.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Phil predicts unsupervised robotaxi operations in Austin will launch by end of April 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Specific near-term catalyst prediction based on FSD 14.3 readiness, months of Austin supervised testing, and Cybercab multi-city calibration activity.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 60 Cybercabs were spotted and counted by Joe Tegtmeyer across various locations, some in groupings, as of the episode date (April 2026).",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 60,
+    "context": "Current observable pre-production engineering test fleet size; relevant as a baseline ahead of production ramp and unsupervised launch in Austin.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 3 is expected to support supervised FSD but not unsupervised FSD or robotaxi operation.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Defines the ceiling for a large portion of the existing Tesla fleet, limiting the addressable robotaxi fleet to HW4 and AI5 vehicles.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 4 is expected to support unsupervised robotaxi operation with high confidence, and unsupervised customer FSD with slightly less certainty.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Establishes HW4 as the minimum viable hardware tier for robotaxi fleet deployment, directly impacting fleet size projections.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 hardware is estimated to provide between 2x and 10x compute headroom over HW4, enabling substantially larger FSD models.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "AI5 headroom is critical for running a potential 10x parameter model and supporting full unsupervised FSD across all use cases.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 build candidates have reportedly been running in Austin for approximately two to three months prior to public release.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates the version has undergone extended real-world validation in the robotaxi test environment before release, supporting confidence in near-term unsupervised deployment.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's stated Optimus production target is 10 million units annually as a starting-point annualized production basis.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000000,
+    "context": "This is the factory-scale target cited by Phil for Optimus manufacturing; relevant to long-term revenue modeling for the humanoid robot business.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Previous FSD version prior to 14.3 was version 14.2.25, believed to have been released approximately December 2025, making the gap to 14.3 approximately three months.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "The extended development cycle for 14.3 is cited as evidence of the depth of the architectural changes (RL expansion and MLIR runtime rewrite) rather than a simple incremental update.",
+    "source": "20260410_cernbasher_01_Fsd_Release_Note_Nobody_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-10T18:36:40.601Z",
+    "status": "pending"
   }
 ]
