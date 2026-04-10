@@ -30,9 +30,9 @@ jobs:
     timeout-minutes: 210 # 3.5 hours max (batch + up to 3 retries at 20min intervals)
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: '20'
           cache: 'npm'
@@ -77,13 +77,13 @@ jobs:
 
       - name: Upload pages artifact
         if: steps.commit.outputs.has_changes == 'true'
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: dist
 
       - name: Deploy to GitHub Pages
         if: steps.commit.outputs.has_changes == 'true'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   # Create a GitHub issue on pipeline failure
   notify-failure:
@@ -92,7 +92,7 @@ jobs:
     if: failure()
     steps:
       - name: Create failure issue
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const title = `Pipeline failure: ${new Date().toISOString().split('T')[0]}`;
