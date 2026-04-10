@@ -2111,5 +2111,173 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-10T08:06:43.207Z",
     "status": "pending"
+  },
+  {
+    "fact": "Optimus robots are priced in a range of $20,000 to $50,000 per unit as discussed in the context of accessibility",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": null,
+    "context": "A range of $20,000–$50,000 is cited for Optimus purchase price; relevant to cost modeling for Optimus deployment economics, though this is a conversational estimate not an official Tesla figure",
+    "source": "20260409_futureaza_01_Ai_Breakout_Or_Breakdown_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:11:19.989Z",
+    "status": "pending"
+  },
+  {
+    "fact": "XAI is simultaneously training three Grok models at once, with results expected over the next few weeks and months from the video publish date of April 2026",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Signals a near-term acceleration in Grok capability releases, which could affect Tesla's AI competitive positioning",
+    "source": "20260409_futureaza_01_Ai_Breakout_Or_Breakdown_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:11:19.989Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 released with a 20% faster reaction time improvement, described by Tesla as the headline safety enhancement",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tesla emphasized this as the key update in 14.3; testers and hosts argue it is sufficient to enable unsupervised robotaxi deployment from a safety standpoint",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 includes reasoning capabilities currently scoped to destination understanding, with broader reasoning slated for future point releases",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Reasoning was added but is limited; full reasoning expansion is expected in subsequent FSD point releases",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Over 50 testers evaluated FSD 14.3 as of April 9, 2026, with consensus that it is ready for wide release",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Wide release imminent; hosts frame this as a near-term demand driver for Tesla vehicle sales",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "David Moss believes FSD 14.2 was already good enough for unsupervised robotaxi deployment, and that 14.3 further strengthens that case",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Suggests Tesla's delay on unsupervised deployment is strategic rather than capability-limited",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model Y L estimated to contribute approximately 10,000–20,000 incremental global sales",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 20000,
+    "context": "Herbert's estimate of incremental Model Y L demand globally; Brian speculates it could outperform this",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Intel announced it will join Elon Musk's Terafab chip manufacturing project alongside SpaceX and Tesla",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Resolves a key missing piece for Terafab — advanced semiconductor fabrication expertise from an experienced domestic manufacturer",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Samsung has already committed to building at least two chip fab factories in Taylor, Texas for Tesla, with Tesla absorbing all production from both",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Part of Tesla's broader compute infrastructure buildout alongside Intel partnership and internal Terafab",
+    "source": "20260409_futureaza_02_Tesla_Sales_Surge_Worldwide_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-10T08:12:29.189Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 delivers a 20% faster reaction time, achieved by rewriting the AI compiler and runtime from the ground up using MLIR.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This is the most significant technical milestone cited in the release; faster reaction time directly impacts safety performance for unsupervised robotaxi operations.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 includes reinforcement learning applied to the neural network, an upgraded vision encoder for low-visibility scenarios, improved 3D geometry understanding, and expanded traffic sign recognition.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents a broad architectural improvement to FSD, not an incremental patch, suggesting foundational readiness for unsupervised deployment.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The current unsupervised robotaxi fleet tracker stands at approximately 560 vehicles as of the video publish date (April 9, 2026).",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 560,
+    "context": "Well short of Jo Bhakdi's earlier prediction of 1,800 unsupervised vehicles for this period; signals that unsupervised scaling has not yet begun in earnest.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi's prior fleet size prediction for this period was 1,800 unsupervised Cybercabs; he explicitly acknowledges this target is not being met.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1800,
+    "context": "Sets a benchmark for expected ramp pace and highlights current underperformance relative to the bull-case model.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab mass production was targeted to begin in April 2026 according to Jo Bhakdi's thesis anchor.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "April 2026 Cybercab production start is framed as the single most important near-term catalyst; failure to meet this timeline risks thesis invalidation.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi states that if unsupervised Cybercab scaling does not begin by end of May 2026, the robotaxi investment thesis breaks and Tesla stock is expected to deflate.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Defines a clear binary catalyst window (April–May 2026) that will determine whether Tesla is repriced toward $600–$1,000 or enters a deflation period.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 includes new parking location pin prediction and increased decisiveness in parking spot selection, both described as targeting robotaxi use cases.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Operational features necessary for fully automated fleet management without human intervention; signals internal robotaxi readiness focus.",
+    "source": "20260409_jobhakdi_01_Will_Tesla_Fsd_143_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-10T08:13:34.319Z",
+    "status": "pending"
   }
 ]
