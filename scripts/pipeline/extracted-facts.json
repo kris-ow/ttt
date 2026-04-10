@@ -2069,5 +2069,47 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-09T12:55:51.321Z",
     "status": "rejected"
+  },
+  {
+    "fact": "NHTSA closed its investigation into Tesla's Actually Smart Summon feature, finding zero injuries and zero fatalities across millions of sessions, with less than 1% resulting in any incident",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Regulatory closure of a safety probe is a positive milestone for Tesla's autonomy credibility and removes a potential regulatory overhang on FSD-related features",
+    "source": "20260409_brighterwithherbert_01_Why_Tesla_Is_Diverging_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-10T08:05:49.896Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's FSD fleet is averaging 19.2 million miles per day, up from 14.4 million miles per day a couple of months ago — approximately a 33% increase",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 19200000,
+    "context": "Daily FSD mileage is a key proxy for data accumulation rate, FSD attach rate growth, and eventual safety-per-mile statistics; rapid growth strengthens Tesla's AV training data moat",
+    "source": "20260410_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-10T08:06:43.207Z",
+    "status": "pending"
+  },
+  {
+    "fact": "April 11, 2026 is flagged as 'potentially a massive day for FSD in Europe' by Sawyer Merritt",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "A European FSD approval or launch would represent a major regulatory milestone expanding Tesla's supervised FSD addressable market internationally",
+    "source": "20260410_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-10T08:06:43.207Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla updated its Robotaxi app with a tips section showing seat availability, arrival light pulse notification, and disclosure of interior cabin camera use for safety",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "App iteration signals active operational development ahead of broader robotaxi service scaling; safety camera disclosure may reflect regulatory compliance preparation",
+    "source": "20260410_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-10T08:06:43.207Z",
+    "status": "pending"
   }
 ]
