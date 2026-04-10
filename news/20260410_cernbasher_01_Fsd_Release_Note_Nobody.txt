@@ -1,0 +1,3602 @@
+Channel:     cernbasher
+Title:       The FSD Release Note Nobody Is Talking About
+URL:         https://www.youtube.com/watch?v=_oX1ppi_SXY
+Published:   2026-04-10 12:00 UTC
+Fetched:     2026-04-10 16:00 UTC
+
+────────────────────────────────────────────────────────────
+
+My god, we're starting to see the
+inseparability between Tesla and SpaceX.
+Hardware 3 may end up with a reasonable
+supervised FSD, but will never go
+unsupervised. Elon isn't propping up a
+million satellites in space for its
+health. That is a money-making exercise
+at some point. Really, Starlink is just
+a conduit, the intelligence cloud, the
+AI data center that Tesla will build.
+He's sort of telling us a story here
+from version one to version 2.5 to now
+this version three. Did Apple preview
+the iPhone before they showed it off to
+the world?
+&gt;&gt; The story of manufacturing on the moon
+and drop shipping it to Earth is a story
+that can create vastly cheaper products.
+The next 5 or 10 years, as long as they
+have an autonomous vehicle platform,
+they're are going to be improving this
+model. Your prediction about there being
+unsupervised robot taxi at the end of
+April is more or less likely.
+Hey, Phil. Welcome back. It's been two
+weeks.
+&gt;&gt; It has. Yeah. Wow. Two weeks.
+&gt;&gt; A lot has happened in the last two
+weeks.
+&gt;&gt; Yeah. Like nothing, right?
+&gt;&gt; Like nothing.
+&gt;&gt; Every time we get together, this is what
+the This is our third.
+It's like two weeks. It's like we can't
+even remember the topics we were talking
+about. There's so much stuff happening.
+&gt;&gt; I can't even remember what I was
+thinking about last week. Um,
+&gt;&gt; it's a pretty incredible time for sure.
+I I've never
+&gt;&gt; seen things move this quickly. It's It's
+kind of crazy.
+&gt;&gt; Yeah. Well, speaking of moving quickly,
+um, you know, we've got these these two
+little dudes to represent us. And, um,
+given that we're seeing some more uh
+more cyber cabs, I thought in honor of
+that, I would I would doctor this image
+a little bit and create the cyber cab
+version. Now, for some reason, it seems
+to think that I'm I should be all gold.
+I'm not sure why.
+&gt;&gt; Am I the golden boy in this pairing?
+&gt;&gt; I don't know why you became all gold.
+Definitely not matte finish.
+&gt;&gt; No. No. Very shiny. I do like your
+shirt. I do like the Tesla gold shirt.
+That That should become a thing.
+&gt;&gt; I'd take that shirt for sure.
+&gt;&gt; Yeah.
+&gt;&gt; Yeah. You You're totally golded up
+there. That's It's awesome.
+But from the real thing, we're seeing
+some uh some more cyber cabs. Uh this is
+from Joe Techmire uh today. And I
+believe he counted something like 60 uh
+cyber cabs uh in various places. And
+it's kind of nice to see them all in a
+grouping like this.
+&gt;&gt; Can you believe it? I mean, what was the
+uh
+was the uh Wii robot event was I think
+was that two years ago?
+&gt;&gt; Yeah.
+&gt;&gt; Yeah. October two years. Yeah.
+Look, look where we are.
+&gt;&gt; Look where we are.
+&gt;&gt; I mean, you know, coming from coming
+from some set of a car background
+myself, I'd realize how difficult it is
+to start with a prototype and end up
+with a platform and and then get to
+production and we're very close to very
+close to start a production
+&gt;&gt; and not only that, but develop a whole
+new production system.
+&gt;&gt; There's so much.
+&gt;&gt; Yeah, there's a there's this is a
+multiplier, right? Normally, you'd say,
+"I have a manufacturing technique. I'm
+going to add a new vehicle platform." A
+new a new model is easy, right? That's
+usually just a variant. Sometimes just
+&gt;&gt; trim to go to a new platform
+uh is significantly
+significantly harder. You know, one to
+two orders of magnitude. You have you're
+you're effectively starting over, but
+you're probably doing it on your old uh
+manufacturing. I mean, you're upgrading
+some of the processes obviously, but I
+think Tesla's done three things here
+that are like extremely substantial.
+They're going for a new vehicle
+platform.
+They're going for an entirely new
+manufacturing process and then they're
+building a vehicle platform that relies
+on entirely new technology to drive it
+autonomously.
+&gt;&gt; Right. So, it's it's it's it's it's
+much bigger than just a new vehicle
+platform.
+&gt;&gt; So, we have a guy out there who's making
+a fearless forecast. You may know him.
+&gt;&gt; Uh he's predicting that by the end of
+April that Robbo taxi will be
+unsupervised in Austin. What do you
+think about this prediction, Phil?
+&gt;&gt; I know him and I think he's quite an
+idiot.
+&gt;&gt; Well, I wanted to be bold, you know. I
+mean, I figured the downside is people
+yelling at me and a lot of people are
+yelling at the clouds anyway on on X.
+&gt;&gt; Mhm. Well, on a serious note, uh I I
+made a second post about this and saying
+like, look, it's it's a reasonably
+decent data decision, but it's not, you
+know, my confidence isn't 100%. But
+look, I think we're really getting
+there. The point of this post was to be
+provocative
+uh in the sense that we are going to see
+that moment where we you know Tesla
+drops the hammer and they go
+unsupervised.
+They run robo taxi proper in Austin
+and
+you know we've been waiting for it since
+what June of last year and we're coming
+up on a year and
+I do think we're very very close. I see
+all the things lining up that makes it
+feel like it's very very close. I think
+mo most of what happened in this 14.3
+was uh was telling the story of this as
+well. So
+&gt;&gt; yeah and perhaps you can kind of walk us
+through this post that you made. Uh you
+said 14.3 rolls out two aspects stand
+out.
+&gt;&gt; Yeah, this is this is really cool. I
+think um you know when we heard about
+14.3 I think we heard two things from
+Elon. Uh it's the reasoning reasoning
+version and it will be
+for all intents and purposes sentient.
+Uh some people say it that way. And the
+second was it'll have 10x the number of
+parameters than the previous model.
+Those are the two standout things you
+know hold Elon to some commitment um
+type of thing.
+But as we've discussed and I've
+discussed uh endlessly,
+engineering doesn't work like that. I
+mean, it may be that people don't like
+the fact that he puts out some kind of
+commitment that feels like a a firm
+stake in the ground. But I guarantee
+that the moment he walks into the next
+Saturday or Monday night review meeting
+with the team, uh whatever is on the
+road map may shift. And Elon has maybe a
+bad habit of not coming around and
+reposting and saying, "Hey, this version
+will not do this or won't do that." Uh,
+but if you understand that process, if
+you understand what's happening in the
+engineering room, uh, it's almost
+obvious that that some of those things
+that Elon says aren't going to be
+directly um, you know, directly found in
+that version. What we know about this
+version is it's taken a long time. And I
+think that told a backstory
+that was significant to me. That never
+told me that it was going to be
+necessarily at 10x more parameters.
+That's irrelevant. I mean, yes, it would
+take longer to train, but not the amount
+of time since what where we're at.
+14225,
+I think, and we're going to this
+version. And I think 14225 was uh when
+was that released? Uh possibly December.
+Uh
+&gt;&gt; yeah, I don't recall it mighty later.
+Yeah.
+&gt;&gt; Yeah. Well, you know, it is it is April
+and here we are and let's just call it
+three months
+&gt;&gt; uh because I don't remember. But you
+know what what I what I noted about this
+was there two uh what I would say
+massive things. The first one that I
+think is less massive is that it is very
+clear that they have moved from a
+technique point of view to a lot lot a
+lot of reinforcement
+learning scenarios and I think
+I think that came about because of the
+ground game that was happening in Austin
+with robo taxi. Okay. What I think was
+going on there is look, here's the
+thing. Tesla's building this product.
+They're testing with a number of
+engineers go out in the afternoon, let's
+say before before Austin, right? They go
+out every afternoon, they drive the car
+for an hour, they take some notes about
+things, they go back and they say, "Ah,
+you know, it didn't go well through this
+intersection. It didn't do this yield.
+It didn't do that thing right. It was
+too aggressive. It was too conservative.
+It was too this." But that amount of
+information through a small engineering
+community uh is is is rather small
+compared to what happened with robo
+taxi. Right? Roboaxi,
+you've got observers in the Bay Area and
+Austin uh pretty much writing notes
+after every ride and uh obviously a lot
+of them became repetitive and they would
+and a lot and a lot of those were cured
+in small point releases along the way.
+But uh it's clear that for the first
+time Tesla was testing testing it at
+scale. So they were running into all
+sorts of issues. Now this isn't to say
+oh I'm trying to cure this specific
+intersection problem in Austin. you
+know, it we're talking about dealing
+with a lot of specific circumstances
+where they can collect data from the
+vehicles.
+Uh, and then they're when they when they
+do a reinforcement learning scenario,
+they're definitely curing more than one
+problem. Okay? So, it's not like they're
+just fixing that intersection, you know,
+oh, this intersection's got is five ways
+with a very strange, but no, they're
+just basically saying, oh,
+categorically, this is different. We
+didn't like how the car operated here.
+Let's go put together an RL. You know,
+and by the way, the way RL works here is
+they will have a they'll take a piece of
+data and they'll have a desired
+scenario.
+This is what they want the car to do.
+This is ideal. And then they'll have a
+bunch of uh other scenarios uh that that
+are from really poor like not ideal like
+terrible to approaching ideal.
+&gt;&gt; Mhm.
+&gt;&gt; And they'll assign
+uh rewards in the model for doing the
+right thing. So they'll let the car run
+through a set of what would be called
+trajectories. And this is all because
+what's happening here is the they can
+take the original data, the ground data,
+they can load it up in their simulating
+framework, their RL framework. It's kind
+of the same thing. And uh and then they
+can say, okay, let's let's run, you
+know, a dozen different scenarios or
+five dozen different scenarios and they
+can put scores on them and they can say,
+okay, we really want it to behave like
+this. And so they reinforce
+the good behavior uh and uh and then
+train based on that. So what I think I'm
+trying to say is it's pretty clear what
+happened here in 143. 143 is probably
+the version that's been running for
+a bit of time. Not 143 golden master,
+but 143 some build candidate. It's been
+running in Austin probably for the last
+three months or two months say. And
+every time they come up with a scenario
+that doesn't quite meet their perfect
+objective, either from safety, comfort,
+or some other factor, uh, they build
+this RL scenario and they run it in
+training. And one thing to note about
+how they do this is that they're running
+on an actual AI4 hardware. So there's
+tons and tons of AI4 hardware boards in
+the Cortex
+uh, training center in Texas.
+So, uh, what they're what they're saying
+in this release is, you know, we've
+really double, tripled, quadrupled down
+on RL and, uh, and we're using that as
+our primary mechanism to deal with all
+these edge cases and they talked about.
+So, I looked at a lot of the other notes
+in there and I'm like, well, a lot of
+them kind of roll up under RL. Uh
+anyway,
+so this is a big deal, but the least
+significant I think of the two. Uh the
+second thing that they are doing here is
+uh they're basically so let's read I'll
+read what they wrote in the release
+note. It says rewrote the AI compiler
+and runtime from the ground up with MLIR
+resulting in 20% faster reaction time
+and improve model iteration speed.
+Um I think this is a huge thing. Okay.
+So, uh
+what happened here? So, just let's let's
+kind of lay the framework for this.
+You train a model and what you get is
+you get a model's architecture and then
+you get all the parameters, right? The
+parameters are just numbers. So, the
+numbers have an organizational
+structure. They're in layers and there's
+a certain number of nodes or neurons and
+each of those have biases and the
+connections between them have weights.
+the biases and weights or the parameters
+of the network and then based on how
+that network is arranged
+uh they have different effective
+mathematical functions for pushing the
+data through it you know I don't want to
+get specific but obviously a lot of that
+ends up as matrix multiply operations
+that we hear about all the time
+&gt;&gt; y
+&gt;&gt; but basically to go from one layer that
+might be of one type into another layer
+here's how the data has to get here's
+how it has to be computed Here's the
+compute. Okay, they have the model
+uh when it's when it's represented is
+both the kind of architecture of the
+data structure itself, the layers, how
+the layers are told to transform as the
+data runs through it and then the
+parameters themselves which affect you
+know the outcomes of of the data's
+computation.
+And that when you when you put that
+together and you put it on the car and
+it runs at 36 times a second, uh it it's
+the runtime, you know, that's uh and we
+also would refer to that as inference.
+What they did was they had a a Tesla AI
+team built up their own
+uh runtime and this is code, right?
+People to understand
+&gt;&gt; this is actual, you know, code written
+by humans kind of code. Now it doesn't
+have to be all written by humans but um
+this is the the data pipeline how you
+push data through the system and how you
+invoke the functions sometimes on chip
+and sometimes in code because there's no
+function in the chip to handle it. You
+know, we've heard Elon talk about uh
+softmax that he was moving soft they
+were moving softmax operation into
+um AI5 as a as a hardware primitive you
+know as a hardware operation and uh just
+like you might find a matrix multiply
+operation as part of like you know load
+up this data set and then just invoke
+the instruction that says multiply and
+put the put the answer over here right
+and and that instruction is kind of like
+at the hardware level inside the chip
+itself. So they what they decided to do
+is they decided to use a
+uh kind of an open-source standard this
+MLIR which stands for multi-level
+intermediate representation
+uh and and and it's an it's a way to
+abstractly define that model not the
+data but the model like how what it
+looks like how it will as the data moves
+through the pipeline if you will how the
+as the data moves through its inference
+cycle,
+how it will like what what operations
+what compute operations must take place
+to get it to move it move its way to the
+answer. Right? So that so the input is
+largely vision data and the output is
+vehicle controls and in between there
+there's I'm going to just say 100 layers
+of an ab of this thing called a neural
+network and it could be 50 layers it
+could be 25 it could be 200 but and
+there's a certain number of nodes in
+there and then as it runs through there
+there are different people have heard
+these things like activation or um and
+there's just bunch of different math
+operations that occur through that.
+Okay. So, they built their own runtime
+and I think what they realized is
+uh and and I think this is kind of a
+classic example of they did this very
+early. You know, they've been they've
+been massaging that runtime over time to
+try to optimize it. And I think there
+was a decision made somewhere
+in the 14s meaning like maybe they
+started this in at 141
+and they said you know what we need to
+we want to rewrite this thing completely
+change the runtime out and we're doing
+it because sort of like a couple things
+we will we will give us a better way to
+to abstract
+off of the hardware.
+And I'm I'm pausing here because when
+people think when they hear abstract off
+the hardware, they think that that leads
+to a a performance penalty, right?
+Because you're abstracting
+you're away from it. You're not touching
+it as cleanly. But the way this
+framework works, this ML is it allows
+you to then uh optimize all those
+functions. So you're optimizing for two
+things. you're optimizing for
+the compute and you're optimizing for
+the memory load like how much data has
+to be loaded and what kind of compute
+you're doing. And I'm sure what's
+happening here is as they had this thing
+running for, you know, the last two
+years through these last big versions,
+they've been watching the data pump
+through the pipeline and trying to
+figure out where is it spending its
+time, you know, where is it where is it
+uh too memory heavy and when is it and
+where is it I don't want to say
+overcomputing, but when is where is it
+not being efficient. And then they're
+and then they were like looking down on
+those things and they were trying to
+optimize that thing. And then they had
+this better idea which said, you know
+what, let's zoom out and replace the
+entire runtime with something that gives
+us uh uh you know, I'm sure they they
+tried it and they went, "Oh my god, look
+at this. We got 20% performance gain or
+whatever they advertise." And then
+they're and and in a sense now they're
+future proofing themselves. They've got
+a better architecture for how to do the
+data compute uh on vehicle which is
+super important right I mean this is not
+like an LM an LM you know that process
+to from the user's point of view is
+asynchronous it can go off and it could
+do what it wants to and we might be
+upset that it takes 32 seconds but you
+know the difference between 29 and 32
+seconds is immaterial to us on the
+vehicle
+this is a real-time system. They require
+the data to run through those inference
+cycles 36 times a second or some other
+number that they've um decided is
+correct. And they do not want to
+compromise on that.
+And so one side of it is go back to the
+beginning of this conversation. Oh, if
+we increase the size of the parameters
+in the network 10x,
+let's just say on a linear basis, we
+have 10x more compute. Might it may the
+relationship isn't perfectly linear, but
+it's close. And we can't afford that on
+AI4 hardware. We can run it on prototype
+AI5 hardware and boom, we can take a 10x
+parameter model and run it through and
+still get our 36 times a second and
+we're all happy. But try to do that on
+an AI4. So what what the team does is
+they spend a lot of time optimizing
+optimizing optimizing to try to you know
+really really use that hardware most
+efficiently most effectively and I think
+this was the big optimization right this
+was the step where they said let's take
+a step back let's spend the time
+and let's do it right and you know just
+so people can get a idea of what's going
+on here from an engineering point of
+view this is the constant
+tugofwar that goes on every single time.
+You build something, you uh at least
+from well both hardware and software
+frankly, you build something and you
+wake up on a Monday and you want to
+throw it out or refactor it. You're
+you're you're basically like I now know
+how to do it better.
+&gt;&gt; And every day you do something, you know
+how to do it better if you're a serious
+engineer. And uh part part of it is that
+your brain tells you how to do it better
+because you know what the problem is.
+you're understanding the nature of the
+problem you're really trying to solve.
+It's not abstract anymore. It's quite
+obvious. And the second is you're
+watching the data run through, you know,
+an architecture and you're trying to
+figure out, well, where's it? Why is it
+slow there? What's going on here? What
+do we, you know, how can we make this
+better? And as you go through that
+process, you are always constantly at
+the, you know, let's call it the
+engineering review cycle side, which,
+you know, let's say Elon runs those
+meetings once a week or whatever. Let's
+say it's not just Elon, it's just a a
+shock running those meetings and you're
+always like, uh, should I bring up the
+idea that we should refactor this code
+or or gut this code and start over and
+or should I stick with what we got and
+try to make it work? And so it's not
+abnormal. Like what I what I what I
+think is I don't want the takeaway to
+this conversation being they did it
+wrong and now they're doing it right.
+That's not the way to think about this.
+It's they don't know what to do right
+until they did it wrong. You know, it's
+like you don't really know. Um and so
+they got to a place wherever that was,
+whatever time that was, maybe it was in
+141, maybe it was in 142 or maybe they
+started 143 and realized this is what
+they wanted to really do in 143. They
+took a pause and they said, you know
+what, let's just do this. We got let's
+let's bite the bullet. And that's what
+they did. So So what does it mean? It
+means it's probably more efficient uh
+and
+&gt;&gt; it futurep proofs the the architecture a
+bit.
+&gt;&gt; Does it have any implications for
+hardware three?
+&gt;&gt; Um
+sort of I think
+uh all of this has implications for
+hardware 3 in the sense that
+they really truly understand
+what compute they need and how to
+squeeze that compute out of that chip.
+Yeah.
+&gt;&gt; So the so the negative story might be
+yeah it informs hardware 3 as in they
+can't do it on hardware 3. They realize
+that you know they've gotten close with
+this um runtime replacement. They
+probably got as close as they think they
+can to being efficient with the hardware
+or knowing how to measure it and
+abstract those moments and you know get
+into that most efficient place. and they
+may run it on hardware 3 and say we're
+just never going to get there or you
+know there's something honestly if you
+ask me to place a bet I'd say hardware 3
+may end up with a reasonable supervised
+FSD but will never go unsupervised.
+Okay,
+&gt;&gt; I would actually put money down on that
+one and I would say hardware 4
+&gt;&gt; will most certainly
+be unsupervised for robo taxi
+slightly less clear for unsupervised for
+you and I.
+&gt;&gt; Okay.
+&gt;&gt; And then AI5 I think boom you know
+they're they've got
+&gt;&gt; you know somewhere between 2x to 10x the
+the headroom to be able to run this
+stuff.
+So, Phil, explain what you wrote here
+about this 10x increase in parameter
+count and and why you don't think it
+matters as much as people might think.
+&gt;&gt; Okay. Well, I mean, for starters, I
+think I hear a lot of people just talk
+about it as if it's some kind of magic
+cure, you know, and most of the people
+talking about that don't know much about
+neural networks to begin with. But the
+other side of that coin and and to give
+somebody credit for saying that 10x is
+better than you know 10x parameters is
+better than the alternative is that we
+know that we are in the midst of of this
+kind of scaling laws and we know that
+that the more parameters we I mean look
+Elon just posted about XAI that he's got
+u you know he's building a trillion or a
+10 trillion parameter model he's not
+doing that a little bit later. Yeah.
+&gt;&gt; Yeah. Yeah. He he's not saying that
+because he doesn't think that uh like
+all of that requires more training
+compute by some let's call it let's say
+it's linear 10x. Um,
+so you know, I think the trade-off here
+is that they found that it's the much
+more nuanced cure to problems that they
+were seeing in FSD could be cured by
+reinforcement learning and that this can
+wait.
+&gt;&gt; Mhm. You know, and and by the way, I am
+not even saying that it's not there cuz
+I don't know. Like I don't think anyone
+knows except people that have a Tesla
+badge. um they may have doubled the size
+of the parameters in the 14 you know
+maybe not 10x but maybe 2x I mean Elon
+always speaks in orders of magnitude so
+that's kind of his natural
+numeric nomenclature but they may have
+1x 2xed or 3xed it uh as far as I know
+right but I'd say that it's pretty clear
+what they're telling us here they're
+saying that we're trying to chop the
+tail off and the best way to chop the
+tail off of all these crazy nuance
+situations is to apply reinforcement
+learning
+and
+uh and then the second component which
+is to get more efficiency.
+By the way, the whole second part of
+that conversation about changing out the
+runtime
+would be necessary to facilitate this.
+Right? In other words, maybe not
+necessary but probabilistically
+necessary.
+Um, meaning that maybe they built a
+prototype model 10x the size and
+realized that they could never fit it in
+hardware 4.
+&gt;&gt; Mhm.
+&gt;&gt; You know, it was way off. Um, and
+remember, they don't have to, you know,
+train that model and get it down to
+perfection. They just need to get a
+model at that sizing so they can run the
+compute operations through it. They
+don't have to have good answers. They
+just have to run the compute through it
+and say with this level of these input
+tensors, in other words, this input
+camera data and this output vector,
+which is the controls, you know,
+acceleration, steering, braking, what it
+can we get 36 times a second with 10x
+the parameter count. Maybe they found
+out they could only get 12 times a
+second
+&gt;&gt; on hardware 4 and they said, "No way.
+Can't do it. Let's not do it."
+&gt;&gt; Um, what else can we do? Oh, let's focus
+on RL to get um all that nuance stuff
+done. Uh that's what I think happened,
+but I just don't know like what I'm not
+certain of is where did it happen? Like,
+you know, is it did it did it decrease
+the throughput from 36 times a second to
+12 or was it just down to 34? You know,
+I don't know. I don't know.
+So based on what you've seen so far,
+14.3,
+do you feel like your prediction about
+there being unsupervised robot taxi at
+the end of April is more or less likely?
+And then also perhaps as it relates to
+Todd's uh question here, where he says,
+"Please address how many more Tesla FSD
+versions are needed before full autonomy
+is achieved."
+&gt;&gt; Yeah, exactly three.
+&gt;&gt; Yeah. Right. Yeah. I mean, so so u it
+probably
+This probably should be said, right? The
+effectively unsupervised FSD is the is
+the same at the neural network layer of
+what would run on robo taxi as the
+product as we as we want it to be,
+right? That without super without any
+supervision. Um, and customer
+unsupervised.
+But when people say unsupervised,
+sometimes they just mean customer
+unsupervised and they kind of forget
+about robo taxi because they're just
+like, wait, we got to get rid of the
+safety observers and then over here we
+want to get unsupervised. Well, people,
+they're the same thing at most. You
+know, at at 90% they're about the same
+thing. in unsupervised that faces
+the user you know with a customerowned
+vehicle there are some nuances or some
+differences but but at the neural
+network layer they're probably the same
+thing I suspect that we will get there
+uh very rapidly now in other words
+I think it's important to say get there
+is not a bright line as the finish line
+nothing else goes beyond that no they
+Tesla will continue to increase
+um you know for the next I don't know 5
+or 10 years as long as autonomy exists
+on this as long as they have an
+autonomous vehicle platform they're are
+going to be improving this model and
+every single day they're going to find a
+use case that they want to cure or fix
+you know to encode they want to they
+have a use case that they find that
+doesn't work ideally and they want to
+encode that use case so but I think this
+big leap to 14.3 is the setup for this.
+Like it's a setup for
+&gt;&gt; if I were to guess I would say that 90%
+of their focus is on robo taxi 10% of
+their focuses on worrying about customer
+unsupervised
+even though they're the same sort of the
+same thing. Um that's not to say that
+you know we're not going to get it or
+something. Uh it just means that their
+focus is is this new business model of
+robo taxi. I mean those cars are telling
+us that story. They're telling us that
+that they're they're going there. Those
+aren't cars for us to buy to to you know
+drive us home from the airport.
+&gt;&gt; They might drive us home from the
+airport, but you know, through the
+through robo taxi, right?
+&gt;&gt; Yeah. Yeah. And by the way, these are,
+as I mentioned in my post above there,
+these are engineering test vehicles.
+They do have steering wheels and pedals
+in them.
+&gt;&gt; Yeah.
+&gt;&gt; That they're for, you know, engineering
+test purposes. And they'll be shipped
+out probably to many cities. Um and
+that's consistent with what we've been
+seeing now over the last few months.
+&gt;&gt; Yeah. It so so that's an interesting
+story because what I think is going on
+here is that
+um
+I think you're going to see when when
+when they when they really press the
+pedal down in Austin and go, you know,
+effectively unsupervised across the
+whole fleet. I think we're going to see
+a lot of cyber cabs enter that fray.
+&gt;&gt; Yeah. And I think that what they're
+right what they're doing now is uh you
+know kind of in a parallel effort is
+that they are
+cyber cabab you know if you if you if
+you look at a 3D geometry of say a model
+Y a model 3 model S model X and a cyber
+cab and you place the cameras just sort
+of you know they may have the same
+number of cameras but they're not in the
+exact same places right they're they're
+off by an inch or two here and that you
+So, so Tesla has built into their model
+an abstraction for that, right? They
+they um effectively the model kind of
+comes up with a way to abstract
+the coordinates of the cameras. Now,
+when I say that, I don't mean like this
+is if this is the left, sorry, left
+quarter panel or whatever the this
+camera is. It's it's largely doing that,
+right? It's not like, oh, we put on the
+roof and then it's abstracted, but it
+may be off an inch or two here. And I
+think the reason that these cars show
+up, and I think sometimes they show up
+with those um solid state LARs attached
+to the top is it's uh largely to
+calibrate these cars.
+&gt;&gt; Yeah. And I think that they've, you
+know, run they're running as as they get
+closer to start of production and the
+start of production if if they hit that
+button, you know, in the factory and
+they start outputting
+cyber cabs without the steering controls
+and so forth, they want to make sure
+that they are calibrated and and so
+they're not just doing that in Austin,
+but you can see that they're doing it
+across a bunch of cities.
+&gt;&gt; Mhm. Um,
+you know, the other thing is that while
+we sit here and think to ourselves,
+well, they haven't really removed the
+safety observer because it's not I mean,
+in Austin, it's sitting in the passenger
+seat, right? So,
+uh, in the Bay Area, it's in the
+driver's seat, but that's for a
+different reason. Um, regulatory
+speaking, they can't they have to have
+that person in the actual driver's seat.
+So there is this moment in time where
+the fact that I see them spreading the
+love across many many cities now like
+testing getting ready m makes me feel
+that that's why I was sort of more
+certain in my prediction because I if I
+see them playing around in San Antonio
+and Dallas and uh Phoenix and Miami or
+wherever those you wherever they are uh
+that kind of tells me they're really
+close to basically, you know, pulling
+the plug on the safety observer in
+Austin
+&gt;&gt; and uh and going for it.
+&gt;&gt; That'll be exciting because um after
+all, I want my unsupervised FSD.
+&gt;&gt; Yeah.
+&gt;&gt; I wonder is does the age of our audience
+uh do they understand the MTV reference?
+&gt;&gt; I think so. I think they would.
+&gt;&gt; Yeah.
+&gt;&gt; Yeah. Uh there might be a few uh younger
+folks out there that might not get it,
+but anybody in our age range would
+understand.
+&gt;&gt; The other thing that gives me great
+confidence is FSD is doing all my
+driving now.
+&gt;&gt; Yeah. Last night I got into the airport
+San Francisco and
+took the crazy I didn't I just didn't do
+it. I don't know why. I just should have
+tried it, but I was like I want to get
+home and I don't want to play I don't
+want to play tester at this moment. So,
+I did the crazy spiral loops out of this
+parking garage, but the moment I got
+past the um the pay,
+I didn't I didn't I just, you know, home
+go sat there the whole time and I pretty
+much texted the whole ride home.
+&gt;&gt; So, you know, I mean, that's what I do
+all the time.
+&gt;&gt; Yeah. No, it really is amazing.
+So, you mentioned earlier um at Elon's
+post here about SpaceX AI Colossus 2 now
+has seven models in training.
+Um and we're talking about some big
+models here, right? Up to 10 trillion
+parameters.
+&gt;&gt; U explain to us what what he's talking
+about here, Phil.
+&gt;&gt; This is awesome. I mean, well,
+what he's telling us what you remember
+if we go back in time, and it's not that
+long ago, honestly, um, you know, Elon
+had boots in the ground himself in um in
+Memphis at Colossus and late night
+meetings. We have pictures of him
+standing in the parking lot and uh and
+what was he doing? they were,
+you know, figuring out the way
+uh they were speedrunning the the
+buildout of of one of the largest data
+centers in the world, right? And um they
+found workarounds to get it powered and,
+you know, equipped with uh the GPUs they
+needed and and why were they doing that?
+Well, now we know. I mean,
+&gt;&gt; we kind of knew uh but what what what
+Elon is doing here is
+he is trying to beat them all. He's
+willing to go for it. You know, I think
+he's said that he may not
+beat Google in the West if you recall
+his post, but I don't think he thinks
+that he's not going to lap Anthropic and
+Open AI and anybody else out there
+playing on the frontier model side. And
+so what he's saying here is well one of
+the things that he said for the last two
+weeks is uh and this is a great topic
+that could go on forever is and we
+talked about a little bit last time is
+is you know vision based AIS and
+language based AIS and the kind of um
+over time you know which one be got more
+traction and you know some got got more
+effort and vision was a big thing before
+LM and and LM's become became the thing
+that gave us uh the sense of knowledge.
+Elon said recently, guess what? I'm not
+backing off at all on what I'm doing
+with this imagine, which is a is a
+essentially a pixel generator.
+And you know, he made some comments on
+on
+whether it's revenue generating or
+neutral. I didn't understand or or nor
+nor nor did I care what he meant by
+that. But but he's saying uh I recognize
+that to get to AGI that vision input and
+output are very very important.
+&gt;&gt; Mhm.
+&gt;&gt; And uh so I'm not backing off. So, you
+know, we're dedicating a lot of our
+compute towards this thing that some
+people look at and go, "Well, that's
+just folly because it's just generating,
+you know, it's just animating my dog or
+uh and I don't think that's what's going
+on in his brain at all. It's it's the
+precursor to a lot of stuff that I think
+will happen with Optimus in terms of its
+vision stack. And then on these other
+ones where he says two variants, two
+variants, you know, they are um
+moving their more traditional
+frontier models, the LMS
+to um to uh much larger
+uh models, right? What did he say here?
+Yeah, Grock 42 is is a half a trillion
+parameter model and he's looking at
+building two variants of one trillion.
+So, so first part of this is he scaled
+the hell out of Colossus so he could
+even do this.
+&gt;&gt; Yep.
+&gt;&gt; You know what's the limiting factor?
+Well, I need compute. I need energy and
+compute. Okay. Having got to a happy
+place now, he can take that data center
+and he can do these things in parallel.
+And so what he's really saying here
+independent of the numbers is I'm doing
+a lot of in parallel there. And
+that is a way of saying I know how to
+speedrun this process because I have
+enough compute. I've set aside enough
+compute so that I can parallelize
+the the problem of and and I can test
+out like what's two variants? Well,
+they're doing it training it one way. I
+don't know what it is, but they're
+training it one way for one variant and
+training it another way and then they're
+going to uh get to a
+happy place. What I mean by that is the
+model won't be every epic run through
+everything will not be computed. They'll
+get to some place where they go it's
+good enough and they'll try variant one
+and they'll try variant two and they'll
+go variant one is superior. Let's stick
+with that. It's a bit of you know trial
+and error. So why why even bother with
+the one trillion if you're doing one and
+a half trillion parameters
+&gt;&gt; for the same reason I think which is
+&gt;&gt; they may find out that the one trillion
+variant one performs better than both
+variants of the 1.5
+or the 1.5
+trillion parameter also has different
+data sets or the architecture itself of
+the neural net is different.
+&gt;&gt; Yeah. So in other words, the say two
+variance almost implies
+that either the data they're running
+through is different
+&gt;&gt; or the network architecture the normal
+network architecture is different or
+both to get two different variants and
+uh because they both have one thing in
+common a trillion parameters right you
+know you think about AI in the sense
+it's like it's like a mathematical
+function right you input goes through
+this funny box of numbers and you get an
+output and you hope to get for your
+input you hope to get a great output,
+right? Whether it's driving or answering
+a question. Um
+but the reality is that you don't have a
+lot like if you're writing a function a
+mathematical function as a person
+writing code five years ago you know or
+whatever
+you know you you build this function
+you build a set of inputs you look at
+the outputs and you say the function
+does what it's supposed to do or it
+doesn't right uh you have a bunch of
+test cases and and you might complain oh
+it's running too slow so you make some
+changes then you find out oh it and all
+the inputs don't work or something like
+that. But AI is so much more nuanced,
+you know, it's sort of like a trillion
+numbers and if any one number is
+slightly different than another number,
+uh you wouldn't notice it. But if but if
+it's in the wrong place with the wrong
+number, it might give you the wrong
+answer. M
+&gt;&gt; you know part of this process is that
+they have to train with enough data a
+lot more data but a bigger model in some
+sense is is a better nuanced
+mathematical function
+and it's also a bit more impervious to a
+couple things being wrong. you know,
+like
+&gt;&gt; one number's off in a trillion
+versus uh a half a trillion, and it's
+it's a lot easier to uh settle that you
+you get an okay answer on that one.
+&gt;&gt; Does training a six trillion parameter
+model take four times as long as
+training a 1.5 trillion parameter model?
+&gt;&gt; Invariably, the answer is no because
+they never do it the same way. In other
+words, like the second they decide to do
+a
+10 trillion mo, you know, 10 trillion
+parameter model, they also decide that
+they want to put more data through it or
+they want to change its interior
+architecture in a certain particular
+way. So in other words, that they're not
+from an apples to apples point of view,
+it's it's reasonably linear, but it's
+never never that way because they're not
+trying to build an apples to apples
+comparison. They can do that in a lab.
+They don't have to do that in a in a in
+an actual training, but they're going to
+say, "Oh, let's when we make this two
+trillion parameter model versus this one
+trillion, we're going to add couple more
+layers. We're going to do we're going to
+change the we're going to make it,
+you know, most of these bigger models
+like this are are mixture of experts
+models so that when you're running data
+through it, only part of the model
+lights up. where is comput you know like
+you know you don't when you hear
+trillion parameter model one a couple
+things should come to mind is oh it's
+going to take longer to build it yeah
+it's going to take a lot longer to train
+that model if if if apples to apples you
+might think oh well then therefore it's
+also going to take you know twice as x
+to 2x or whatever whatever the start was
+half a trillion to a trillion uh to to
+compute through that model
+maybe it depends on how you organize the
+interior. So if you build these mixture
+of experts, you may say, well, we taken
+the math expert and we've broken up into
+these little sections over here. They're
+they're better trained to do these kind
+of math functions for this mixture of
+experts component, you know, versus a
+generalized math one. Um so you know you
+end up with there's a whole conversation
+going on for quite some time on how you
+take a model and then you make it
+efficient to run through inference
+because these models
+&gt;&gt; you know if you if you just do a
+straight compute the amount of memory
+they would need to load if you just if
+you did no optimization would be almost
+impos like impossible to compute the
+model. Um so clearly these models have
+are componentized through this mixture
+of experts technique uh as well as some
+other overarching things like
+quantization that that that
+changes the sizing because you know a
+model is a bunch of parameters. It's a
+bunch of numbers right so in order to
+compute through a model if you had to go
+through the whole model you have to load
+that whole thing in memory. Well where's
+that memory you know if you think about
+it and if it's if it's too big it
+doesn't fit. So now you've got to go
+well how am I going to make it fit?
+Well, you can say, well, over here in
+this side of the data center, we run
+these experts in our mixture of experts
+and there's, you know, this is the math
+thing, and this is the
+I'm making these up, but this is the
+Italian to English expert,
+you know, um,
+this is the physics expert, etc. And and
+so you can,
+&gt;&gt; you know, that's why you see, um, if
+you're using, uh, Grock 4.2 2.0
+you see these different agents go off.
+Well, I guarantee all the agents aren't
+going to the same place. I mean, they're
+not doing the exact same tasks. They're,
+you know, some are going through this
+side and then there there's a
+coordinating agent that comes back and
+gets, you know, the there's a
+coordinating agent that dispatches the
+sub agents, says, "Go off and do this
+thing for me and come back and check
+this and check that." and then he comes
+back and they all give the data and they
+may sub it out again or they may he may
+collect it and come up with a final
+answer. Um
+yeah, there's a lot going on here. So is
+going from a a trillion parameter model
+to one and a half trillion is that kind
+of like you know you bake a cake, you
+learn from your mistakes so the next
+time you bake it you're that much better
+but you don't actually use the cake in
+baking the next one, right? that the
+cake that you've baked is trashed.
+&gt;&gt; You've made your learnings. Is it is it
+like that or is it
+&gt;&gt; There's a good There's a good chance
+that when he when he says two variants
+and two variants that at least So there
+you got four models there. There's a
+good chance that only one of them shows
+up as the baked cake that you sell to
+the customer and the rest just get
+trashed because they're not haven't met
+the threshold that they're looking for.
+And you can't take a piece of one cake
+and add it to the other cake and end up
+with a better cake.
+&gt;&gt; Not not particularly.
+&gt;&gt; Yeah.
+&gt;&gt; No, not that I know of. I mean, there
+might be something. It may be that um
+you know, they in a sort of a mixture of
+experts architecture, let's say variant
+one with the one trillion is good at
+math and they're like, "Okay, we'll use
+the math component of that one and we'll
+let that go live and then we'll use over
+here. This is the general one and then
+we'll talk to this math one." I don't
+really don't know.
+&gt;&gt; You made two points. Would you like to
+&gt;&gt; elaborate on these a little bit?
+&gt;&gt; Well, it it it kind of uh will confuse
+the folks to say bigger is better. You
+know, scaling laws. We've what uh
+what I think we've learned in AI with
+the bitter lessons about what a bunch of
+things are about is that that you know
+more compute is better
+and
+theoretically larger parameter models
+are better.
+Now, that is a little bit in conflict
+with our FSD story earlier, but but
+that's why I said theoretically we, you
+know,
+&gt;&gt; again, it only matters when you use it
+and and and goes through a bunch of test
+cases and you find out that well, it was
+2% better with 10x the size. Probably
+not worth it.
+&gt;&gt; Y at least in case of of what they're
+doing here at XAI, they are basically
+saying out loud, you know, we're
+adhering to these
+we we built for, we understand, we're
+adhering to, we superersize Colossus for
+the idea of of of scaling these models.
+Uh, and that's what we're doing. And
+then the second thing he he mentioned
+was, you know, is missing important
+training data. And that's a really
+interesting
+um comment because I mean we don't know
+what it's missing and they aren't
+necessarily going to tell us but it
+could be missing you know reams and
+reams of textual data. Maybe maybe
+you know all the PhD thesises from
+biology are missing. I don't you know I
+don't know but some some set of data is
+missing. So that they're basically
+saying, you know, guess what? We're
+adding
+missing data, which circles back to our
+previous point here, which is okay, go
+ahead and add add the missing data.
+Well, that's going to kind of guarantee
+that you're going to uh end up doing
+more compute to build the model, right?
+So,
+so there's this there's this kind of
+tension I guess you would say is that
+you know all well I guess the easiest
+way to say it is all n parameter models
+are not equal. They they can be
+architecturally different and they can
+be different in terms of how they're
+trained uh from a from a data input
+side. You know if you just trained you
+can build a trillion parameter model
+with just an encyclopedia set and end up
+with a very limited data set. Right.
+Yeah.
+&gt;&gt; For example, if that encyclopedia set
+was last published in 1980, you would
+never have anything. Remember remember
+early days um
+uh I think it's less of a problem, but
+you would you would go to OpenAI and you
+would try the latest model and and it
+would tell you uh whatever my answer is,
+you know, it's a year old,
+&gt;&gt; right?
+&gt;&gt; Because
+&gt;&gt; yeah.
+&gt;&gt; Yeah. Now, now models work differently.
+They're they you can see even with
+particularly the XAI models is they
+reference current data and they bring it
+as context data and they shove it
+through. So that they're not Yeah. So I
+mean like XAI you can ask it like um you
+know what did that idiot Phil Bisel say
+in the last 24 hours on X? Can you
+summarize and it will do that because it
+it has access to that live source. It's
+not trained in the model. It's actually
+reaching out to the source and getting
+the data and shoving it through the
+context window. It's part of the prompt.
+&gt;&gt; It's effectively part of the prompt.
+&gt;&gt; Yes.
+&gt;&gt; Um Yeah.
+&gt;&gt; Well, so let's shift gears a little bit
+and um talk about a couple things that
+that I talked about this week and maybe
+you can I'm interested in your reaction,
+I guess, to some of this. I wrote a
+article and I sort of teased this idea
+of Tesla's next new product. although
+you know it's kind of already there and
+it's pretty obvious and I'm calling it a
+persistent computer but I think there's
+so many different ways of describing
+this
+um and the idea behind this is that you
+know we think of Tesla as all these
+different products services right a car
+a mega pack wall uh optimus you know an
+AI chip a data center but when I begin
+to look at this you know to me they're
+they're building computers in every
+place that matters. And of course, the
+purpose is not to build a computer. The
+purpose is to have the computer in the
+place that matters to do the stuff you
+want to have done.
+&gt;&gt; Yeah.
+&gt;&gt; Right. So, I'm a little bit backwards in
+how I'm describing this.
+&gt;&gt; But if you think about, you know, the
+vehicles, they're computers on wheels.
+If you think about Optimus, they're
+computers that walk. If you think about,
+you know, AI data centers in orbit, then
+these computers have wings, so to speak,
+right? And so
+you know some of them are large uh you
+know megapex massive massive uh or or
+sorry uh Cortex and Colossus you know
+massive data centers um you know very
+large intelligence factories
+and then sort of if you look at it from
+this perspective the thing that's kind
+of missing is then the small computer
+that just sits there in your home.
+&gt;&gt; Mhm. also the small computer that sits
+there at a supercharger site and and
+Elon's already talked about this in
+terms of having inference
+&gt;&gt; computers there. Um, so this isn't, you
+know, this this wild and crazy idea. I
+think this is certainly coming. Whether
+or not they will actually develop a, you
+know, like a Mac Mini type product that
+we can buy from Tesla, I think remains
+to be seen,
+&gt;&gt; right? Um, but as you pointed out that
+it would certainly make sense to combine
+this with power wall, combine it with
+perhaps the the charging device on your
+wall in your home. Um, or perhaps even
+the Starlink and Starlink terminals.
+There's so many different places that
+you could put an inference chip.
+&gt;&gt; Yeah. Including just your car, too,
+right? I mean,
+&gt;&gt; yeah.
+&gt;&gt; Yeah. Yeah, I mean this is I I think
+this is a very provocative post in a
+several different ways that aren't as
+direct as you put it like and I think
+that was your intention in a way. I mean
+what what one sort of macro on this is
+my god we're starting to see
+the inseparability between Tesla and
+SpaceX. We we you know because to me
+&gt;&gt; not only are we saying here or you're
+saying here we would like to multi-size
+compute and purpose you know some of it
+is based on purpose and purpose and
+place.
+Um like where are you putting your token
+factories? Well you're putting them
+inside the humanoid because that thing
+needs to produce tokens to actually do
+its thing. But if you think about
+discussions about macro hard, right? And
+and Elon alluded to alluded to this
+essentially. Not only did he say, uh,
+yeah, we could do, you know, we could we
+could we could do distributed compute at
+supercharger sites, but we could do it
+in your home on
+&gt;&gt; on um on your Tesla vehicles. And it
+brought up the obvious question, well
+maybe we need a little Mac Mini that's
+an Elon version of a Mac Mini that that
+does the stuff. And but I was thinking
+that, you know, if you think about it at
+this macro,
+it's like what is SpaceX and Tesla
+solving for? They're solving for
+intelligent compute practically
+anywhere. Intelligence compute obviously
+driven by purpose to a certain extent.
+uh energy
+and network
+and and to me if I just assume energy is
+just a required entity a component
+&gt;&gt; uh I kind of think about the network and
+the intelligence stuff as sort of a
+single thing like I I I I I think we
+should while we will think of using a
+startling to connect our devices to the
+internet as we you know at some point
+really Starlink is just a conduit to the
+cloud to the intelligence cloud that
+that the AI data center that Tesla will
+build and that there'll be really no
+distinction. We'll be using services on
+our devices that will just use Starlink
+to get to intelligence compute. And so
+maybe that obiates the need for local
+compute or maybe it doesn't. And and if
+done right, the reality of this is when
+you apply network and you apply compute,
+you essentially end up with this
+sort of homogeneous
+intelligence
+layer.
+&gt;&gt; In other words,
+if you had an Optimus in your home, it
+could do compute. But if you didn't buy
+an Optimus, maybe you have to buy one of
+these little compute devices to do the
+compute. But maybe if you have a car,
+you don't need the other two. But maybe
+if you have the two of them or maybe an
+optimist in your home is used by your
+neighbor or it's used by the fleet as a
+whole to do some larger you know data
+gathering and compute exercises that
+we've discussed at other times. So I you
+know it's
+he Elon's really lining up all these
+points of convergence between energy
+compute and network. It seems like part
+of this Phil is solving the near-term
+problems. Uh certainly orbital data
+centers are coming and we understand
+what that will bring us or at least part
+of we understand partly at least that
+what that will bring us. But in the
+meantime you kind of have to go where
+the energy sources are and this is why
+again going to the superchargers is
+great because that's already in place.
+It's already set up. You don't need
+additional permitting. You just use it.
+And same thing in your home.
+&gt;&gt; Exactly. So I mean the the point there
+is that
+if you take it's it's it's not just
+total energy to compute is the that is
+the problem. It is where that energy is
+where where that compute is located
+relative to that energy source. So if
+you want to do a terowatt of compute and
+you try to do it at one data center,
+good luck with that, you know, because
+you need to really probably do all your
+90% of your power would have to be
+behind the meter. And by the way,
+terowatt's insane because the United
+States is about half a terowatt of
+consumption. But what you're making an
+argument for, which is sort of what I'm
+saying, is it is a distributed problem.
+It is a problem that that allow allows
+if if done right you can build a compute
+fabric
+that is distributed and
+it is where the energy lies if you will
+and that inherently means that network
+is part of it because without network
+you can't coordinate effort across you
+know in other words you wouldn't decide
+oh gez let's go train one of these big
+models
+you know, at thousands of people's
+homes. Probably not because that
+requires some kind of what they call
+coherency of the it's like we're trying
+to build a single supercomputer that
+kind of operates together in these data
+epics to train. But inference is by far
+the largest part. It's our use of AI is
+you know 99% or will be close to 100% of
+of of the material use of of of AI
+compute of AI and that leads itself or
+lends itself to uh to distributed
+inference you know and and to your point
+either on device where it makes sense
+but I mean we could end up with a
+circumstance for example you know like
+you could buy maybe a couple of these
+compute cores to put in your house so
+that
+your optimist is much more effective.
+&gt;&gt; Yeah,
+&gt;&gt; whatever that means. Like in other
+words, it could it can do more effective
+intellectual tasks, generate more
+intelligence. Maybe that's required. Uh
+maybe it's not. I don't know. But what
+does that require? If you put five of
+these nodes in your house and you've got
+20 at your neighbors and
+you know 150 at your supercharger down
+the street and you've got your Optimus
+here and you want to work it as a whole,
+it requires incredible network.
+&gt;&gt; Yes.
+&gt;&gt; Which is somewhat the domain of SpaceX
+these days.
+&gt;&gt; Mhm. The other thing too is and we
+talked about this I think in our last
+show this idea that you know we're
+building intelligence that's going to be
+surrounding us like right now if we want
+to access intelligence we have to sit
+down at the device and we have to query
+it.
+&gt;&gt; Yeah.
+&gt;&gt; And we're seeing the development of
+agents that can go out and do do work uh
+themselves and come back and report to
+you. But you're still in this loop.
+You're directing it. You're you're
+instructing it. It requires quite a bit
+of input and effort on the on the
+human's part. And when we get to the
+situation where all this intelligence
+surrounds us,
+we've talked about how many things will
+just kind of magically happen because
+they can be automatically coordinated
+within the system because all the all
+the pieces are there.
+&gt;&gt; Um, I just wonder if you have any
+additional thoughts on all that. Well, I
+mean that's what we kind of mean when we
+say agentic because what we're trying to
+say is,
+you know, when we think of a task, we
+think of if we think, you know, if I ask
+you a question, you respond. It's
+largely me making a synchronous request
+to you. I make I'm making the request,
+you're responding. I'm waiting for your
+answer.
+But I could equally say to you, sir, can
+you go off and think about this problem?
+And then I go off and do something else.
+&gt;&gt; Yep. And then tomorrow we get together
+and you say yeah I've got I've given it
+a lot of thought and in fact I asked a
+bunch of other people too in the process
+and they asked a bunch of other people
+for all we know maybe disclosed not not
+disclosed and so what we have is this
+big framework of of you know it's like
+the task gets separated from the time
+&gt;&gt; and we end up with agentic kind of
+processes processes that are inherently
+asynchronous to our request.
+and they can go off and do what they
+need to do. And that's why we say we
+often say things like, well, what is
+distributed compute? Could, you know,
+could someone use my FSD computer while
+it's, you know, in my home? Well, of
+course, as long as it's wellwetworked
+together uh and there's a coordinating
+framework
+uh that can, you know, ask it and yeah,
+so I think what this leads to is if we
+watch these companies Tesla, SpaceX
+build this compute fabric,
+like that word
+um makes me sound more technical,
+doesn't it? You know, fabric
+&gt;&gt; fabric of space and time.
+&gt;&gt; Yeah. Yeah.
+Um but if it you know if these companies
+build this fabric then
+you end up with what you think of as
+just some
+intelligence out there. you know stop
+you stop thinking about
+uh local nature of compute and you know
+we've talked uh about the idea that
+devices like this you know our our
+so-called iPhones of the future won't be
+we'll be doing some of the compute local
+but we always ask you know well how big
+you know somebody asked me how big is
+the um neural processor on here compared
+to an AI5 chip and I'm like oh it's puny
+you know because this
+maximum can draw like five watts without
+taking the battery to zero.
+&gt;&gt; Y
+&gt;&gt; whereas that thing's running at 250
+watts. And so just from a compute point
+of view, you can see it's it's quite
+quite a bigger. So you can't jam an AI5
+chip in this thing and make it go.
+&gt;&gt; But if you have a great network that has
+low latency.
+&gt;&gt; Yep. You can certainly ask this thing to
+do something that can use that AI5 chip
+in your home or in your car or in your
+Optimus or at a data center or at a
+supercharger, right? And then this
+device becomes nothing really but a thin
+client.
+Uh that's word that people used years
+ago, thin client, you know, where it's
+not so much computebound
+uh you know or compute centric. Uh and
+therefore you could imagine uh Tesla
+say, "Well, Tesla can never build a
+device like this because they, you know,
+they're not optimizing for low power
+devices." And I'd say, "Well, that's
+crap because what they would be
+optimizing for is incredible network
+connect to Starlink. that would be
+connecting to a next level up
+intelligence layer known as the you know
+data center in the sky that that SpaceX
+will build. And then what we do on this
+thing will because we have very low
+latency meaning like the the request to
+responses is is is is tight enough that
+we would think whatever we're doing on
+this device feels like it's all
+happening on the device. It allows you
+to that's another reason you need to
+distribute compute probably because of
+uh that's a different form of energy
+density problem. It's not like you know
+it's like it's also because you don't
+have enough energy or you can't consume
+enough but that's because we physically
+can't put a battery in these things yet.
+you know, battery isn't following
+battery tech isn't like, you know,
+following Moore's law, right?
+&gt;&gt; So, we're not getting the same uh
+compute on device that we could get in
+um you know, incrementally over time. Uh
+&gt;&gt; it's interesting too, you know, when I
+think about this persistent computing or
+this intelligence that surrounds us, you
+know, here's a couple of silly examples,
+but I think, you know, if we really
+think about it, we can probably come up
+with some better ones. But think about,
+you know, you're doing some work in your
+house and you're,
+you know, you need something, you need
+a, you know, you're putting something in
+the wall and you're you're missing the
+right piece of, you know, hardware that
+you need. And so what you have to do
+today is either make a trip to the
+hardware store yourself or you go you
+stop what you're doing, you look on
+Amazon and you order it on Amazon and
+you have it delivered, you know, maybe
+tomorrow,
+&gt;&gt; right?
+&gt;&gt; If you have computing device and ideally
+Optimus who can just observe you or
+Optimus figures out for itself what's
+missing and then places the order and
+make sure that if it's arriving it goes
+out to the curb and goes and gets it and
+brings it back to you.
+you know, it's it's taking the human out
+of the loop in so many of the different
+steps that we have to do today.
+Or if you think about maybe getting
+ready for going out to dinner, you know,
+there's some variability in when you
+leave and and when do you order the robo
+taxi?
+You know, is it 15 minutes before so
+that you make sure it arrives on time or
+can Optimus or something in your home
+observe your actual
+&gt;&gt; progression towards getting out the
+door? Oh, Phil's putting his shoes on.
+&gt;&gt; You know, maybe now we should order the
+cyber cap.
+&gt;&gt; Yeah.
+&gt;&gt; You know, it there's a certain amount, I
+think, of anticipation that could happen
+here with this persistent computing that
+we we can't achieve today.
+Um, one of my great frustrations is I've
+got to stop what I'm doing, get on my
+phone and and do something. Query it,
+place an order,
+&gt;&gt; make a reservation.
+None of this is really all that
+seamless.
+&gt;&gt; Yeah. I you're talking about it's like
+uh kind of this idea of it sort of goes
+back to agentic to a certain extent but
+it's like service intelligence layer
+&gt;&gt; like I mean what what we're talking
+about here is you know to use another
+silly making me sound more important
+than I am kind of phrase is like we're
+bathed in compute intelligence right
+it's it's all around us and it's
+observing us and it's helping us and and
+uh sometimes for
+trivial things and sometimes and much
+more meaningful, you know, bigger bigger
+things. But it's it's uh
+you know, it's like it's kind of like
+today we have these devices in our house
+like Amazon Echo or what I think it's is
+that what it's called? Echo Alexa, you
+know, the Alexa products.
+&gt;&gt; Uh what's the device called? I'm not
+sure.
+&gt;&gt; Yep.
+um you know we're getting to a place
+those are you know we'll call it very
+very first generation products and you
+know they don't do very much they don't
+do it very well um and they make a lot
+of mistakes especially like the Siri
+products but
+that'll all change I mean especially I
+think Optimus really starts to
+let's put it this way the expectation of
+Optimus is to change that
+equation
+dramatically so it becomes
+a very effective and physically
+effective that's the other element right
+because that's what optimus gives us is
+this sort of physicality this this
+embodied AI that can not only
+service our requests much like the
+product category I just mentioned in the
+next dimension next generation I should
+say um but also like it can do
+you know, so it could
+I I don't want to say go to Home Depot
+for you, but it could certainly organize
+the order,
+you know, some cyber cab shows up, it
+can go out, pick up the thing in the
+trunk and bring it into the house and
+say, "Okay, here it is." And that was a
+20 minute wait versus, you know, you
+making the two trip required. Uh
+&gt;&gt; there's no reason that optimist can't
+look in my refrigerator every day and
+order the necessary items that are low
+or missing
+&gt;&gt; or just observe. Yeah. Observe what's
+coming in the house be
+&gt;&gt; or actually be the one that does all the
+shopping. And when I say that, you know,
+I don't necessarily mean like gets in
+your car and drives to the supermarket,
+but I mean like uses this intelligence
+framework and says, "Well, I need these
+things delivered." And you don't, you
+know, your refrigerator gets full.
+Optimus is walking in groceries. It is
+getting it from some cyber cab that
+showed up. U you know, you didn't you
+didn't pay much attention to that. All
+you simply said is Optimus may say, "Do
+you want eggs for breakfast tomorrow?"
+Yeah, I guess. Sure. Well, at least I
+might want to. Okay, great. Well, you
+know, um yeah, it becomes a bit like a
+luxury hotel experience in your house.
+Well, we know human we know a little bit
+about human nature, but I wonder about
+how humankind will change with relation
+to these
+very um I mean Optimus will
+really explode the utility, right? I
+mean because of its physical embodiment,
+the utility value goes up, you know, a
+thousandfold because it can't, you know,
+it doesn't just have to respond to you,
+but it can do the things you want it to
+do. So, you know what? Will it take care
+of grandma? Will it take care of your
+baby? Will it be responsible for all
+diaper changes? Um,
+uh, you know, does it feed and walk the
+dog?
+Everybody wants their dog walk, but you
+know, they hire dog walking services
+half the time, right? Lastly on this
+particular topic, I took the liberty of
+to taking this image that was from the
+master plan part 4 and I've added a few
+items courtesy of Gemini.
+Um, and so I I added the uh you know the
+the stationary compute nodes. I called
+them AI5 X1 and AI5X10.
+The X10's here in the supercharger kind
+of the lower right
+&gt;&gt; and the AIX1 is on the on the home. So
+the idea here is that you know you're
+combining the devices that perhaps are
+already present
+wherever the energy source is then that
+becomes you know compute an inference
+node essentially uh in the vehicles in
+the bot and the house at the
+supercharger in the semi in the factory
+in the mega packs you know all these
+things are it's an opportunity to kind
+of serve two purposes is now
+which is really quite interesting to
+think about. Uh really everything can
+serve two purposes. The car can move
+people. The car can also be an inference
+tool,
+&gt;&gt; right?
+&gt;&gt; The bot can do actions. It can also be
+an inference tool. It can coordinate
+with different things. It's quite quite
+an exciting future to think about. And
+of course there's also the the space
+aspect of this which is not pictured
+here. Um well I mean it's it's again it
+comes back to a bit of
+think about where your
+you know your your electrons are
+&gt;&gt; versus your compute need and
+note that what's between them is
+probably a welloiled network. You know,
+you don't think about it. We don't think
+about the internet as much as all we
+were worried years ago is this office
+land connected to that office land.
+Isn't that a crazy thought? Like nobody
+thinks that word thinks about those
+thoughts anymore.
+&gt;&gt; Nobody get upset now when the internet
+doesn't work and we realize how much we
+rely on it.
+&gt;&gt; Yeah. It's it's as good it's as much as
+a necessary utility as running water to
+our home. at least
+not necessarily
+Darwinistically so, but
+&gt;&gt; um we miss it right away.
+&gt;&gt; Yep.
+&gt;&gt; I mean, gez, you know, I got on a United
+plane last night and it was a 4-hour
+flight from Nashville to San Francisco
+and I was really feeling the pain of not
+being on the network. And I was like, I
+would I wanted to catch up on a bunch of
+stuff that you and I have been talking
+about. I was like, well, I got to kind
+of actually download them and I we don't
+have Starlink on this plane. I mean,
+there'll be a moment where that'll be
+uh present uh everywhere and we'll be
+like, wow. You know, we don't think of
+getting on a plane as we need to like
+all these things like you get Netflix,
+you can download a show so you can and
+I'm sitting in the downloading some
+podcasts so I can make sure that I have
+them available for offline. Um but you
+know the other thing is like it sort of
+comes back to this conversation about
+energy distribution compute how much do
+you have how much do you need um and and
+and with that with that network layer
+the only thing that you the only issue
+you have to reach to compute is latency
+right that's the only issue you have so
+if your if your task is inherently
+asynchronous if it inherently can be
+delayed to response
+you're pretty much
+to compute anywhere on Earth or frankly
+in at least uh Elon's version of first
+gen, you know, uh data center in space.
+Not when we we put a huge compute
+cluster on Mars, that's not going to
+work for us. But um but that kind of
+latency, you know, where you're talking
+about in the millisecond range allows us
+to interact with those things as if
+they're part of the thing itself.
+&gt;&gt; And and
+Since we have these constraints like if
+we take Optimus
+and we think about I've always told
+people that the last two months of the
+Optimus project will be the engineers
+optimizing compute for battery. You know
+that because they'll say oh my god you
+know in these five use cases
+uh we put this thing out there it's only
+going to run for one hour uh before it
+needs to recharge. And and by the way,
+I'm making that up. So don't everybody
+freak out about it because I don't know.
+But but I will tell you at the end of
+any of those projects, that is exactly
+where those engineers are spending their
+time because you've got a relatively
+small battery, maybe 2.5 kilowatt hours
+of energy on uh 2 to 25 on Optimus.
+You've got this beautiful AI5 or AI AI6
+eventually, whatever chip that can go
+250 watts. You've got all these
+actuators that want to, you know, move
+around and do stuff. And uh and when you
+when you start to factor that all in,
+you're like, well, maybe I do need to do
+the intelligence stuff offbot and focus
+the bot on the physical
+&gt;&gt; uh you know, like physical motors and uh
+push some of the intelligence requests
+off to
+another compute node somewhere else
+&gt;&gt; as per your diagram here. Uh that's
+that's what I see
+ultimately.
+I mean like when when you when you use
+Starlink today, you know, you don't
+think about how many satellites might be
+involved in your connection. And usually
+it's it can be one or it can be n where
+n is a small number. But it's because
+they're you know, oh I got I got to make
+the request but I don't have a ground
+station here. So, I've got to go 200
+miles this way by laser link to another
+Starlink who can ground station it down.
+And you don't think about that. You
+don't even have any sense of where's my
+data going. Um,
+even with terrestrial networks, you
+know, whether they're optical, you don't
+know where your data is going. You don't
+and you don't you don't care. And and
+it's funny how years ago you you cared
+because it was it was it was very much
+in your face. it wasn't
+&gt;&gt; it wasn't abstracted and and today I
+think we're at the same place with
+compute. It's not yet abstracted. So
+that's what I'm trying to say is like
+network is sort of a a layer that's
+become abstracted to us. We we think of
+it as like the running water. We don't
+really think about where is our water
+coming from.
+&gt;&gt; We just notice if it's not on.
+&gt;&gt; Yep. And it could come from different
+sources and it come from different pipes
+and it could be one day this dam is
+providing water and then they shut it
+off and because of repairs and then it
+comes from some other place. Uh and
+maybe maybe we taste a difference in the
+water if if you know the city multis
+sources the water but network is sort of
+like we don't we don't think of it we
+think of it like that now right we're
+not there on compute.
+&gt;&gt; Yeah. And I think we'll get there and by
+the way in order to get there on compute
+we need that network side. So we will
+get there on compute and we will stop
+thinking about
+uh oh I need to buy a computer to do X
+because uh it'll it'll compute will just
+be sort of around us. That's a good
+segue into kind of the next thing that I
+wrote about this week. Um this idea of a
+new market uh for intelligence.
+&gt;&gt; Oh the article I didn't read by the way.
+&gt;&gt; Okay. Well, this will be this will get
+your fresh take on it then here.
+&gt;&gt; So, let me just kind of walk you through
+this. And this is no um you know great
+genius on my part, but I think it's it's
+worth thinking about in terms of the
+implications of this because um
+intelligence is going to become a a type
+of commodity.
+Right now, intelligence is not a
+commodity. It's in everybody's brains
+uniquely. But with AI, intelligence is
+just going to be a commodity that that
+can be moved around, traded and so on.
+&gt;&gt; Right. Right.
+&gt;&gt; Um and so whenever you have a new
+commodity, you also create the
+opportunity for arbitrage,
+&gt;&gt; right? If you think about arbiting price
+of oil in different markets,
+&gt;&gt; right?
+&gt;&gt; You can do that because the cost of
+production different markets is is
+different and the cost of storage and
+pipeline transportation is different.
+And it allows people to arbitrage that
+if they have the ability to shift that
+product from one location to another.
+And so I just kind of followed that
+thread in this in this piece. Um you
+know again when something carries
+different prices in different places at
+different times in different forms.
+Um so you think about you know energy
+traders trying to arbitrage the cost of
+energy in different markets whether it's
+oil whether it's electricity.
+&gt;&gt; Mh. uh in some places that's possible,
+in other places it's not.
+Um and the whole reason that we have you
+know global supply chains is because
+production costs vary by different
+regions of the world,
+&gt;&gt; right?
+&gt;&gt; And there's an advantage to building
+something in one location and then of
+course the supply chain has to react
+when there's tariffs because now that
+advantage has been eroded in some way
+and you've got to constantly adjust. Um,
+and this is something that markets are
+are used to doing. Um,
+so it's interesting because as I
+mentioned, you know, for most of human
+history, intelligence was trapped in our
+brains and AI is completely changing
+that.
+&gt;&gt; And and and when you say that, it's
+important to say specialized.
+&gt;&gt; Yes.
+&gt;&gt; Right. So like what you know in your
+brain about things are not what I know.
+So you have to go to the CERN to get
+that answer. You can't go to to Phil to
+get that answer. Right. you get a you'll
+get a poor answer. Yeah.
+&gt;&gt; Yep. Yeah. Good point. And of course,
+you know, now it's going to be, you
+know, intelligence is going to be
+essentially in the future a beam down
+from from space from from above. Um, so
+here's something I I want to get your
+take on. Um, so when you have this
+intelligence that has three dimensions,
+right? Time, location, and capability.
+There's this new layer in the economy
+and I called it this intelligence
+routing layer and it needs to function
+like the internet routes data or the way
+that power grids route route
+electricity. Mhm.
+&gt;&gt; So it needs to determine in real time
+where these tasks will be executed and
+you were talking about this previously
+in this conversation
+uh when they should be executed
+and what type of intelligence it should
+should be used a 10 trillion parameter
+model or one that's much smaller is that
+sufficient enough or you know a mixture
+of experts in this fashion versus the
+other fashion.
+So it seems to me that that this too is
+kind of an important part and I guess my
+question to you is kind of where are we
+in this today in terms of
+building this intelligence routing
+layer? Is this going to be potentially a
+difficult problem or an easy one?
+&gt;&gt; Oh, it's a really good question. I mean,
+and and there's I know
+what I'm about to say is I know there's
+a lot that I can't say cuz I know it's
+sitting over here in some you know like
+I haven't read much on this but um
+you know one way like there's two
+extremes here right
+one extreme is
+all intelligence nodes are equal it's
+homogeneous and it's the routing problem
+is just availability.
+It's just literally like find a node
+that can do my compute for me. The other
+extreme is
+no these nodes much like a human
+where you know are are clustered in a
+fleet of nodes or a grouping of fleing
+of nodes that have a certain knowledge
+set. And
+today when we think of of routing
+uh intelligence like Grock 42, we think
+of this like master agent that subs it
+out to these these other agents, but we
+don't generally see or think of um XAI
+calling over to Gemini and asking it
+something that it would know, that
+Gemini knows, that it doesn't know.
+&gt;&gt; Yeah. Um, I can't come up with perfect
+examples of where that intelligence may
+be specialized,
+but if we assume it to be true as
+opposed to if we assume it to be true,
+yeah, we we don't yet have and there's
+probably someone who's written on this
+and has some
+there's probably a lot of like it's
+probably someone listening to this right
+now going, you idiot. There's this whole
+thing out there called um that happens
+to me a lot. So don't I don't feel that
+bad. Um but yeah, you need this sort of
+uh uh router because today
+I mean like if you look at an internet
+today, you know, when we go to a
+different website, why do we go to one
+website versus another? Because there's
+different data on different websites,
+right?
+&gt;&gt; And for the most part, we're making that
+conscious decision because we know that
+website A has what we're looking for.
+&gt;&gt; And if we can't find it there, we look
+in website B. And if we can't find it
+there at all, we just go to Google or at
+least let's go preLM days and we go to
+Google. And do we ever think of Google
+as sort of an intelligence router? In a
+sense, it is in a weird kind of not so
+awesome sense because it still makes the
+human do the the the um the heavy
+lifting. But what it does do is it
+presents at least options to you. And
+and I think that as we go down this road
+further with these LMS, I mean any let's
+just call it intelligence. Let's forget
+about LM, the word LM. Uh it would make
+a lot of sense that
+different
+specialized AIs could participate.
+It's sort of like that mixer of experts
+thing we were talking about earlier. We
+know those architectures exist. They're
+just never presented as cross company
+today like they're just considered as
+you know oh XAI does this model it's
+called G rock 4.2 to it, you know, runs
+out four agents. They converse with
+different of mixture of expert models.
+They gather back the data. The the the
+the other part of that is that the data
+comes back
+and it's organized, right? It's not just
+um
+&gt;&gt; uh it doesn't just come back in a in a
+bunch of separate blobs and forces the
+human to
+uh connect the dots. It it it goes to
+the routing agent which is what it does.
+It goes to the the the you know the
+master agent and the master agent takes
+the results back and it and it builds a
+cogent response and sends it back to the
+human. Um
+this certainly you know when we think
+about we think about this it it's it's
+largely comes back to kind of a network
+problem and I'm sure the people who have
+if there's writings on this it's
+probably a lot of people who've come
+from the networking world because
+&gt;&gt; this is kind of a Cisco systems of the
+AI world.
+&gt;&gt; Yeah. If you look at um you know if you
+look at at uh today if you look at
+routing it's you know that there's a
+there's a layer cake of networking
+protocols layer I don't know if it's
+they start with zero and it goes up to
+layer seven you know application layer
+down to
+physical layer of networking and each of
+them have you know and when you when
+you're when you're routing data across
+that the backbone of the internet you're
+you're doing it pretty much at the
+lowest level these layers. You know,
+you're you're you're getting off your
+your Wi-Fi to your to your to your
+routing point at your ISP and then it's
+and it's really happening at at uh that
+routing is happening at what would what
+be I don't know if it's layer one or two
+because I forgot my I forgot my layers
+but it's happening at the what called IP
+layer of TCIP IP. Who cares what you
+know but it's happening at the IP layer
+that's pretty low. It's not at the
+physical layer. It's a bit above it.
+It's the log the logical network layer.
+Uh and that's where all the basic stuff
+and routing is is happening today.
+uh and and to to formalize it as
+something that would be a generic
+intelligence router is a really novel
+and interesting thought that either
+people have given great thought to or
+it's just a novel and interesting
+thought that that that that either is
+required or or or may not be required.
+But it's it's certainly something that
+can occur. And I think the way to think
+about that
+may be more about costbased as opposed
+to
+&gt;&gt; right there's an optimization that has
+to happen.
+&gt;&gt; Yeah. So if you if you have um this may
+be true I mean there may be stuff
+already in agentic AI frameworks. There
+might be in other words what we're
+talking about here is the difference
+between someone building a proprietary
+solution and someone coming up with a
+generic sort of like the TCP IP of
+intelligence where it's just generic and
+it becomes adopted as a standard and
+everyone starts to use it and and either
+that thing exists and I'm just ignorant
+of it. Very possible.
+um or or uh it it doesn't it's been more
+theoretically
+thought of and written about and it may
+be more
+relevant to the cost of compute than
+&gt;&gt; you know we talked about um we've talked
+about this in network systems for years
+about you know quality of service and
+different types of and uh you could
+imagine that
+if you wanted to pay for compute uh to
+get intelligence back. I mean, you're
+always going to be paying for compute at
+some level to get like, you know, Elon
+isn't propping up a million satellites
+in space for his health. Um, that is a
+money-making exercise. And
+what will that compute layer be a
+proprietary compute layer or will it be
+a general intelligence layer that is
+homogenized across lots of different
+providers
+that can provide you the same sort of
+services back. I don't you know I don't
+know where that goes.
+&gt;&gt; Yeah. I think in the beginning normally
+what happens is
+and anything that's standardsbased
+um you know people that develop these
+sort of protocols or standards and
+they sometimes get adoption and
+sometimes they languish because they're
+built by committee and they're not
+solving a specific problem that anybody
+really has and they're they're more
+theoretical or they're because they're
+built by committee they're heavy weight
+and um and difficult to um
+to use. I mean a good example is
+Bluetooth. Bluetooth is a nightmare of a
+stack, you know, protocol stack, but
+it's sort of got some escape velocity
+and and enough of the world uses it
+regardless of how awful it is. Um
+but sometimes the way these things
+develop is they just the company
+produces
+uh the right tool the right API
+and it gets you know great adoption.
+So if you build a distributed
+intelligence environment at XAI maybe
+uh the way you act upon that and get at
+it uh and pay for it becomes
+uh universally
+you know I wonder Phil if if perhaps
+auto bidder is
+the early stages of something like this
+because if you think about what auto
+bidder does for megapac.
+&gt;&gt; Yeah.
+&gt;&gt; My understanding is that it's optimizing
+between, you know, certainly the time of
+discharge of that mega pack versus
+charging
+and trying to predict things like usage
+and weather and all kinds of factors
+about trying again trying to optimize
+the price.
+You could sort of take the opposite
+approach and say, well, okay, what we're
+trying to do here with this intelligence
+routing layer is optimize for cost
+and efficiency.
+and I've got all these different
+capabilities and different locations at
+my disposal with different demands on
+them. Do you think auto bidder could
+could potentially be the foundation for
+something like this?
+&gt;&gt; I don't know. I just have this feeling
+this like nagging feeling because I
+didn't do my homework here that if I
+start to look at this
+you know there's something under well
+well well understood and under some
+someone's purview of development that
+says oh yeah yeah you know we're
+handling this or
+you know anthropic has done something
+that is being utilized across
+multiple vendors now so I I don't know
+the answer. I and I I just literally say
+I don't know. I mean I there's
+there's there's really, you know, maybe
+a couple criteria that we have to route
+for. We have to route for
+intelligence specialization
+if that ends up being a thing. We have
+to route for availability of compute
+and urgency. And we have to route for
+cost, right?
+&gt;&gt; And and and and urgency, I guess, right?
+The
+&gt;&gt; Well, yeah. I mean, I think,
+&gt;&gt; yeah, cost and availability are kind of,
+you know, I mean, there aren't separate
+things that it's just like, okay, if I
+want
+uh
+it's sort of like, you know,
+in the um
+it's going to sound goofy. In the
+prehistoric data center days, you know,
+at Amazon uh just so many years ago,
+&gt;&gt; we spent a lot of time uh deciding what
+AWS uh EC cluster we wanted. I think
+this I think it's called EC compute like
+uh no it's not actually wasn't it's it's
+a like a compute node. we'd say, "Oh, we
+want this size. You know, we want
+pick up um
+this much memory,
+this many uh CPU cores." And then then
+Amazon had a way you could rent a mini,
+a small, medium, a large. And then they
+started getting crazy like large with
+that are that are that's more about
+memory or storage or you know like uh
+before before generic storage and stuff
+and then you know people backed way out
+of that and said
+or or abstracted that and said you know
+what we don't really care about we just
+want to do requests into compute and get
+answers
+&gt;&gt; and you know we want to cluster we on a
+Kubernetes cluster, we want we may
+reserve something, but we're going to
+pay for what we use. Um like like Amazon
+has this service called Lambda. And the
+idea of Lambda is you make a request.
+Now you you build the thing that
+services the request, but it gets
+pushed in a generic way across as much
+compute infrastructure that you set up
+for it. And um and so no, you're not
+like owning the box, you know, like and
+then that the other side that was sort
+of like maybe that generation's extreme
+and then there was the idea of building
+a cluster of the of these
+EC2 in that's EC2 instances
+uh that were were were were a logical
+cluster, okay, like a Kubernetes or a
+And the idea is that they'd spin up
+these little
+uh what do they call them? Jeez, my my
+my my brain is not is fried on this a
+bit. But um containers like Docker
+containers. They spin up these little
+containers that are like, you know, they
+host it on Linux, this little virtual
+universe, and your container could be
+running on the same machine as a and
+then you would have this cluster
+organizer like Kubernetes that would
+spin it off and you know, and it and so
+it's it's routing the request to an
+available compute node. You're paying
+for it, but you stop worrying about
+underprovisioning or overprovisioning
+services.
+You stop that thought. You know that
+goes away and you just say, "Uh, I'll
+use as much as I need when I need it."
+&gt;&gt; Paying for the grocery store to say,
+"Well, I I want to buy corn." And the
+grocery store says, "Well, you've got to
+pay for a certain supply of corn, right?
+They don't do that, right? You just go
+in there and pay for what you actually
+need at that moment."
+&gt;&gt; Yeah. But you certainly don't pay by the
+kernel. So,
+&gt;&gt; no. Yeah.
+&gt;&gt; So, you know, you do pay by the ear. So,
+so
+&gt;&gt; um yeah, it's just a matter of of of the
+granularity of the thing.
+&gt;&gt; Yeah.
+&gt;&gt; And and and yeah, the store could
+source, you know, three different
+qualities of corn or types of corn and
+that breaks it into these boxes and some
+might be more cost uh you know, higher
+priced and just like compute, you know,
+something that would one of these bigger
+boxes from Amazon cost more money
+because guess what? they're gonna return
+your result quicker or they can do more
+tasks for you. Um and I you know right
+now we're sort of I think largely in
+these frontier models where kind of like
+single vendor and you pick a vendor and
+you work with the vendor and you don't
+think of you know even across Amazon
+it's not as if that compute cluster just
+magically expands to
+Google
+uh or one of the other providers you
+know it's it's still pretty much focused
+on you're an Amazon guy. You're an Azure
+guy, a Microsoft Azure guy, you're a
+Google Cloud or whatever they whatever
+they call it
+&gt;&gt; guy. And and and sometimes you can mix
+and match, but usually,
+&gt;&gt; you know, it's not homogenized. It's not
+standardized at a level um that uh that
+you can, you know, it's like what Amazon
+does for Amazon Lambda is not something
+that is I think and I'm sure some people
+build some abstraction layers on top of
+that. Again, you know, we talk about
+abstractions like we can build a layer
+on top of all this that that that makes
+those specific services less less
+specific, you know, like we just
+homogenize the problem. Um,
+&gt;&gt; so is is intelligence routable this way?
+I don't know. Is there is there is there
+stuff baking out there
+uh that allows us to do this? I don't
+know. So, there's more to my article.
+We'll we'll leave it here for now. Um if
+folks are interested they can check out
+this article on my ex account. Um but
+this idea of intelligence becoming a
+spot market and the financialization of
+intelligence
+um that's also interesting we're
+thinking about and then this idea of the
+the real advantage is not just you know
+creating the most intelligent model but
+then also effectively allocating it
+where it's needed when it's needed at
+the right cost. Obviously, that's a
+pretty obvious statement, I think, but
+uh something that'll become more
+important as time goes on. So, let's
+completely shift gears. In fact, let's
+get off our planet and go to the moon.
+Um but Phil, I'm not sure that we've
+ever been there. What do you have
+anything to say about that?
+&gt;&gt; Just go back once.
+Isn't that the most extraordinary
+picture? Except for that
+iconic 1968 Apollo 8 picture that
+changed the world was on the cover of
+every magazine which I posted like a
+week before Artemis. This is the
+replacement picture or at least the
+picture that's plus 50 something years.
+That's extraordinary, isn't it?
+&gt;&gt; Pretty cool. Either way, you Yeah, that
+you can tell that the Earth is flat from
+this picture. It's pretty clear.
+&gt;&gt; Yeah. No, it's uh something about the
+lens warping the image. I don't know.
+&gt;&gt; Yeah, something.
+&gt;&gt; Yeah.
+&gt;&gt; Yeah. Anyway, you had some fun with
+this. Um I had a lot of fun. Want to
+share a little bit about this this
+journey you went on?
+&gt;&gt; Yeah.
+I stepped into it on purpose. People
+told me, "Oh, don't do this. You know,
+you're entering crazy. You're entering a
+crazy place." But I did it on purpose.
+Uh I just didn't know how many I didn't
+know the crazy place was so big. And it
+wasn't this post, but it was uh this
+other post where I said uh I'll give you
+four factual reasons why this is it. The
+moon landings happened. I mean, I was,
+you know, and I started off
+telling the world that if you were one
+of these people that are highly moronic
+moon conspiracy theorist, I'm about to
+tell you that we did in fact go to the
+moon. And I gave four reasons. The first
+was that we brought back what is it 842
+pounds of rocks.
+&gt;&gt; Mhm.
+&gt;&gt; Two, we put reflectors on the moon that
+we can ping every single day.
+Uh and and I think places on Earth do
+ping it. In fact, that's how we know
+that the moon is actually moving away
+from us every year. Um, and then the
+third was, uh, oh, we've actually taken
+pictures from the LRO, the Lunar
+Reconnaissance Orbiter in 2009 of the
+actual all six of the landing sites,
+right? And then I think the fourth one
+is I said something to the effect of
+like, this would be insane to organize a
+conspiracy of this magnitude.
+and I got a lot of responses and the
+post went up to 300,000 views and if you
+read through it uh you will either agree
+with these people in which case you
+probably aren't
+happy with this podcast or what we do
+here
+uh or you think that somehow they'd win
+because they are very noisy and they
+have a lot to say and u and I think
+they're they're they're they're crazy um
+and and They've come up with like
+there's there's really kind of two
+categories here. I found See, I didn't
+know much about the conspiracy side of
+this.
+&gt;&gt; You found out the hard way.
+&gt;&gt; I found out the Well, as I said, I
+stepped into it. I was I was well I was
+ready to go. Um but I realized that that
+the flatearthers are all moon deniers
+for sure because that's they if the if
+the Earth is flat, you obviously can't
+travel to the moon. The moon is just
+some kind of light source in a dome.
+That was explained to me. I didn't know
+much about that, but apparently um we
+live in some kind of flat. There's a
+dome and there's these light sources.
+One of them is the moon and maybe the
+others are the stars. Um and those
+people even though they're interacting
+with this and they may be going over
+satellite communications. They don't
+believe really in satellites either. So,
+and then there's this specific category
+of people that are moon deniers and I
+think uh like we haven't gone to the
+moon. Humans haven't gone to the moon.
+uh they would agree that maybe robots
+have gone to the moon. In fact, that's
+how they think the reflectors got on the
+moon, you know, autonomously through
+through rovers that placed them. But um
+and then that community, I think,
+subdivides into two. There's the rather
+unintelligent,
+empowered, ignorant, feeling empowered,
+ignorant folks, and then there's another
+group that has more intelligent things
+to say. Like I I I think both categories
+are are are a little crazy. And I think
+and then I tried to, you know, on my own
+just trying to figure out like who are
+these people? Like where are they coming
+from? Like what what's the motivation?
+And and I think I learned all sorts of
+things that I didn't know. Like most of
+them are fairly right-wing and then they
+accused me of being a Democrat because I
+guess this is like a science-based
+argument. M
+&gt;&gt; um
+I guess a lot of them said that I was
+all in on vaccine if I believe this
+stuff, which I'm not really all in on
+uh at least on not co vaccineing, but um
+but you know, so I it's very interesting
+how this whole community divides itself
+up and and I didn't realize how many of
+those people are on X. I thought we were
+just amongst a sea of rather
+intelligent people.
+So,
+&gt;&gt; well, humans have an amazing capacity to
+be tribal.
+&gt;&gt; Yeah, it's that and it's um the
+psychology behind it. I mean, I don't
+know the whole all of it, but it's it's
+it's a way of people feeling empowered
+in even if they're not
+having the truth, they don't think of it
+that way. They think of I have I hold I
+hold this piece of power. I can be a
+moon denier.
+&gt;&gt; Yeah.
+&gt;&gt; Um and then you're right, then they
+group together in some tribal way. and
+we've seen the uh ugliness of tribalism
+in the last
+couple years on the you know generally
+in in in the political sphere. Um, but
+this was just sort of interesting
+because, you know, as a as a as a kid,
+uh, the moon was, you know, it was it
+was a thing, you know, I
+I
+didn't think of that for years as being
+I don't I don't know when I first heard
+that there was Moon Deniers, you know,
+&gt;&gt; and uh, but if you go back to
+uh, on this two or three, that one.
+Yeah, I did this one for fun. You know,
+I was like, "Okay, we we planted six
+flags on the moon, which is true." Uh,
+one of the flags, the Apollo 11 one fell
+over and apparently
+Buzz Aldrin and Neil Armstrong decided
+not to say anything about it because it
+just sounded so terrible that as they
+left the moon, the thrust of the
+um the thrust knocked it over.
+&gt;&gt; Knock it over. And did it torch it as
+well or just knock it over? I think it
+just knocked it over that that they
+didn't it was sort of a apparently a
+last minute thought to
+pop a flag up and so they didn't have
+the right I don't think they knew much
+about the you know the what what's
+they didn't know much about the
+terapirma of of of of
+so they they didn't really know what
+they were going to how to and they
+brought this flag and it was designed
+hastily and I think they improved the
+design and and then somebody pointed out
+that they don't look like this at all.
+They've been deeply weathered. They're
+if if they even look like this, they're
+um they're all faded or something, you
+know. But but I did this on purpose
+because I was like, "Wow, I want to show
+that, you know, not only are there six,
+but they're all really close to each
+other." And
+&gt;&gt; yeah,
+&gt;&gt; you just like to stir up trouble, don't
+you?
+&gt;&gt; I I do. I I never thought of myself that
+way. And and uh I was talking to a
+friend about it. They said, "Well, that
+this is the way you get impressions on X
+is you create controversy." I'm like,
+"Yeah, I've heard that before." I've
+never really thought of myself like
+that. You know, like I didn't I didn't
+very few posts in the past have I ever
+started is let's be controversial. Maybe
+the one about predicting um robo taxi by
+the end of April would be a thing. But
+um
+&gt;&gt; Well, you know what? You've become
+you've become just like the media who
+who uh optimizes for clicks.
+&gt;&gt; Yeah. Yeah. I I've never thought about
+optimizing for clicks, but um
+&gt;&gt; but it was fun.
+&gt;&gt; Yeah.
+&gt;&gt; So, relating to the moon, you know, I
+think in a very naive way that, you
+know, you you launch a rocket off Earth
+and you go straight up to the moon, but
+as I've as I've learned or reinforced
+what I what I really know is that it's
+not a direct line. You've got a rendev
+You've got a rendevous with the moon at,
+you know, with some precision.
+&gt;&gt; Yeah. with a lot of precision,
+&gt;&gt; right? Um, and it's pretty amazing
+actually too how far away it is and how
+long it takes to get there.
+&gt;&gt; Even
+the the you know the basics are it takes
+a lot of energy to get off of the Earth
+and takes a lot of energy to accelerate.
+This thing was free running, so it
+really doesn't, you know, once it it did
+its last burn, it left that Earth
+slingshot orbit
+&gt;&gt; at approximately 25,000 m an hour. And
+then as it as it continued to run the
+200,000 plus miles to the moon, it's
+effectively being it's effectively
+falling back to Earth. Mhm.
+&gt;&gt; So that by the time it got to the
+rounding of the moon, it was going at
+only um uh less than 1,000 mph.
+&gt;&gt; M
+&gt;&gt; and on its return, it's now speeding up.
+And by the time it gets back on Friday
+night, this Friday, I think it's uh 5:00
+p.m. Eastern, it will be back to about
+25,000 mph. Uh, and then we'll have to
+obviously slow to effectively zero when
+it hits the ocean in off of San Diego.
+&gt;&gt; It's an incredible um, incredible
+journey really. I I think the, you know,
+I was all in on the journey. I'm just
+not all in on
+the NASA tech stack. So, is that what
+this is referring to?
+&gt;&gt; Yeah, RMS is fine, but I want my
+Starship. Yeah. Go to the next one. I
+know you have here on the on the um
+one more maybe.
+Yeah, everyone should stare at this for
+an hour. It's cool. You know, this is
+the the thrust. I lined up Saturn 5
+against the space shuttle against
+Artemis
+uh Artemis 2. They call it block one but
+essentially the configuration that
+&gt;&gt; we just saw launch against Starship.
+And uh so not notable things is that the
+space shuttle and Aremis look the same
+because they are
+in fact the I think the I think call
+them SR25
+liquid fuel engines on Aremis are
+exactly space shuttle engines taken from
+space shuttle program. I mean taken from
+like the Atlantis or whatever the space
+shuttle. So
+&gt;&gt; and then of course they reused the the
+solid booster concept.
+So they kind of re retread that older
+technology. Uh Saturn 5 of course was
+was all liquid
+liquid fuel but not methane. So all the
+liquids here are not methane until you
+get to Starship. M. So, Starship is So,
+I think everybody else is uh hydrogen
+oxy oxygen and then uh Starship is
+methane and oxygen as the oxidizer. And
+just look at the thrust of of Starship,
+the current Starship or Yeah, that's the
+current Starship I believe V3 uh
+&gt;&gt; and compare it to, you know, you pretty
+much can stack everybody up and
+uh you you know it's 20 versus
+it's crazy, right?
+&gt;&gt; It's insane. So, I mean, I thought it
+was,
+you know, it's it's an awesome mission
+and I feel uh honored to be able to
+watch it and in my, you know, watch the
+both of these in my lifetime actually.
+Um, I mean, I was really a kid at 1968.
+I was 2 years old,
+&gt;&gt; Paul 11. But, uh, but the space shuttle
+was was deeply part of my life. And I,
+you know, through both uh the Challenger
+disaster and then the um I forget what
+the the re-entry orbiter uh disaster
+remember both of those very well.
+&gt;&gt; Atlantis,
+&gt;&gt; was it Atlantis? I don't remember. You
+know, the one that blew up on re-entry,
+you know, and and the first one was the
+Challenger was because cold weather and
+the O-rings were
+caused leakage in the solid the solid
+rocket boosters, right? So they caused a
+flamethrow out. Uh and then the second
+one was because of the tiles and you
+know Elon is still challenged with these
+tiles on trying to build them on
+Starship to get uh reusability on on the
+the non-booster side of Starship.
+&gt;&gt; Sorry, it was Challenger and Colombia.
+&gt;&gt; Colombia. Okay. Yeah.
+Yeah. Yeah.
+Very unfortunate uh situation, but it's,
+you know, it's it's a it's a dangerous
+business. Um,
+&gt;&gt; look, it was incredible. I mean, those
+pictures coming back, absolutely
+stunning and incredible and um, you
+know, I'm 100% in. I know we've been
+there and I'm glad we're going back and
+Mhm. and I wish some people would agree
+that we went there.
+Well, yeah. So, uh, two two last things
+related to Optimus. Uh, you had this
+post. Um, would you care to explain this
+to us all?
+&gt;&gt; Yeah.
+So,
+uh, there is an electronic artist known
+as Gustafstein.
+&gt;&gt; Easy for you to say.
+&gt;&gt; Yeah. Pretty interesting guy. Pretty
+interesting music. Also a producer.
+Produced um,
+name blanking on the um, the artist the
+Italian lady from New Jersey,
+Lady Gaga. Lady Gaga. Yeah, I think he
+produced her last album
+and was on stage with her at Coachella
+this year. But um I just brought this up
+because something I like a lot and just
+thought that the uh theoretical drop of
+Optimus V3 looked a little bit like
+Gustaf Steam.
+&gt;&gt; There you go. maybe they'll end up
+looking exactly the same.
+&gt;&gt; You know, people have asked like what's
+going on here with this thing? And I
+think that there is a nonliteral way to
+take this and a sort of literal way to
+take this. And the nonliteral is that
+they're essentially just saying to us,
+look, we're going to shroud this thing.
+We may we may we may put it in a fabric
+suit, but if we do that, it'll be for
+functional reasons to a certain extent.
+meaning like the actuators won't get
+caught in the uh in the joints of the
+you know because those joints are
+exposed in the V2 2.5
+and so forth. But uh but I think Elon is
+like saying look I want to
+I want to shoot for the stars a bit on
+this one. I want to get it in a in the
+closest humanoid form that's reasonable
+for the time frame that I'm producing
+this product. And we know that there's a
+lot of energy being put into the hands
+and that's going to make a big
+difference. I think you know I think
+I've said this many times I think when
+Optimus comes out everyone will say so
+what are those other robotics companies
+building
+and the other thing I urge people to do
+is be patient. There's no reason there's
+no
+guess what Tesla's working on Optimus.
+Guess what? It's building a factory to
+build 10 million of these things on an
+annualized production basis as a
+starting point. So, I think they're
+pretty serious about it. And I don't
+think we as an audience, whether we're
+investors or not, need to really know
+uh
+especially if we're investors. For
+investors, I don't think there's
+anything good to know
+uh what they're doing because all
+they're doing is telling the competitors
+what they need to build. Did Apple
+preview the iPhone before they showed it
+out to the world?
+&gt;&gt; No. Yeah. I mean, very different
+cultures here and I don't know what
+I guess on a sort of
+maybe a more tactical maybe called
+strategic basis. Elon puts this out
+early in cycle to build maybe market
+awareness and pre-acceptance of a
+product like this that would be
+radically different
+as well as
+&gt;&gt; attracting the team.
+&gt;&gt; Attracting team and capital.
+&gt;&gt; Yeah.
+&gt;&gt; You know, because in other words, people
+will say, "Oh, I see where this
+company's going. I need to be buying
+Tesla stock." Um, I mean, if I didn't
+know about this product, I probably
+wouldn't have as much Tesla stock as I
+do today.
+&gt;&gt; So, I can say that there's some great
+benefits to throwing it out there early.
+Um, the other benefit is that, you know,
+if you're if you're a confident rabbit
+like Elon, you know, you let your
+competitors make mistakes. So you let
+them go through like I think his
+confidence is
+there's some really hard parts to this
+product and the hardest is to
+manufacture it. You know I've written on
+this I've already started my
+end part series on Optimus and the first
+thing talks about like how hard it is to
+manufacture this product. I think Elon
+has a lot of confidence in the reality
+of that and that includes not just the
+manufacturing of it but the supply chain
+as well right to get to you know the
+whole
+the whole vertical integration that he
+attempts to do whatever supply chain he
+needs to build that's not I mean it's at
+the lower end of this of the pack here
+because of the vertical integration
+um and then building this thing in a
+factory at scale he knows this is an
+extremely hard problem and he thinks not
+only does he know it's a hard problem
+but he knows it's a extremely capital
+intensive problem and uh I mean how many
+people can
+start erecting a factory to build 10
+million of these things
+when I think about this a lot of people
+are very hung up on the idea that
+Tesla's behind you need to be first and
+in fact I think as as you kind of
+alluded to here that being first
+actually is not an advantage
+um you you want to see your competition
+make the mistakes. You can learn from
+their mistakes without making them
+yourself.
+Um so it's not it's not too bad to be a
+you know fast follower to to some degree
+in certain things because there were
+there were different design choices to
+make uh and different robotics companies
+I think have explored some of those
+things.
+&gt;&gt; Yep. The other thing too is, you know,
+by going public with this early on, he
+fostered a whole interest in this field.
+The the robotics field existed before
+Elon threw his hat in the ring,
+&gt;&gt; right?
+&gt;&gt; But no one really cared about it. And
+now what you've had is you've had a lot
+of companies come to market. They've
+raised capital. They're, you know, these
+private companies and certainly a
+explosion of companies in in China. And
+that ultimately is good both from a
+competitive standpoint but also then in
+terms of building out that supply chain
+that you ultimately need. If it was just
+Tesla doing this
+&gt;&gt; I think
+&gt;&gt; I think it's a great path if you're very
+confident.
+&gt;&gt; Yeah.
+&gt;&gt; If you're a confident kind of person
+I think it's a great path for somebody
+like Elon Musk you know now I think
+maybe Steve Jobs was also a confident
+person but he had a different take. he
+would
+uh believe that he could imagine the
+product that would because again I think
+a lot of this comes down to is
+um you know there's this is a
+while we've seen humanoid
+robots in lots of movies we haven't had
+them in our homes and while we may say
+the iPhone was revolutionary and yeah
+all these
+Look, even Steve Jobs said, you know,
+look, it's internet navigator. It's a
+it's a phone and what's the third thing?
+And it's a music player.
+&gt;&gt; All three things combined. Remember, he
+even presented it as these three ideas
+that people already could grasp those
+ideas. They already understood those
+ideas. In fact, when he was in his 2007
+presentation,
+part of the funniness of that or the the
+whole point of it was he was saying,
+"Hey, there's this product that does I'm
+building a new revolutionary. Apple is
+building a new re to do music in this
+way uh to do um and to do these these
+other two things that we just said." And
+then and then all of a sudden, but
+people, it's one product, right? I'm
+going to build a better phone. I'm going
+to build a better internet explorer, a
+navigator. I think he he he used the
+term
+&gt;&gt; and I'm going to build a a touch-based
+music player and then and so people
+could already grasp those three objects
+and then but and even though we can
+grasp you know how we can grasp this
+because it's in human form
+&gt;&gt; it's one of the reasons that but at the
+same time
+&gt;&gt; we don't have a relationship with these
+things operating
+in our homes it's much more radical
+&gt;&gt; you know and and uh the interesting
+question and I would ask you this
+question is you know We we've talked
+about this now for two plus years in
+this community and everybody would have
+you believe that these products
+start on the manufacturing floor and
+work their way into the consumer use
+cases.
+And Elon often says who wouldn't want to
+have their own CP30 R2-D2
+you he just throws it as consumer. He he
+barely when's the last time Elon talked
+about Optimus
+in the manufacturing setting? I I mean I
+just don't know. I don't think he
+&gt;&gt; he talks about it more as a consumer
+product. I wonder if it you know I
+always said no no no logically speaking
+because of capability
+Tesla's going to bring it to
+manufacturing first and then into the
+service industry.
+you know, the baristas type of thing and
+the inventory counters and the store
+shelf stockers and then eventually bring
+it to the home uh the consumer cases.
+I don't know. What do you think? Is that
+what's going to happen that way?
+&gt;&gt; Well, I think so. When I look at it from
+a purely e economic perspective, it's
+that's very clear because
+&gt;&gt; even if the robot can only move boxes,
+that is still very valuable in a in a
+warehouse scenario and it can work three
+or four shifts.
+If I have a robot at home that can just
+move boxes or things around, that's not
+that useful to me.
+&gt;&gt; Right. Right.
+&gt;&gt; But in a warehouse setting, I'm willing
+to pay a lot for that because that's a
+very useful function. And then as the
+robot gains capabilities and skills,
+that's it. Yeah.
+&gt;&gt; Then then it allows it to move into the
+home. But it has to be at a price point
+that people can afford.
+&gt;&gt; Yeah. The tricky thing is that and why
+what you're saying makes all the sense
+in the world is you've got the economic
+grounding,
+but you've also got the capabilities
+kind of grounding. Right. What you're
+saying is
+&gt;&gt; it it fits the economics here and it can
+be the least capable version of itself.
+&gt;&gt; Yes.
+&gt;&gt; And then it must gain more capabilities
+to find itself in the home. And it's
+hard to argue with that completely
+because what we what we can say is one
+of the struggles that
+I've had with this product is
+to describe it what it will look like on
+the first day it comes out and is
+available for purchase or lease,
+whatever they choose,
+beyond the walls of Tesla or SpaceX. In
+other words, it is in a customer's
+hands. whether that's a consumer or
+somebody on the manufacturing side or
+whatever. And what I mean by that is
+definitionally what is it capable of?
+What is its capability set? You know, we
+know that
+um we have like two components of this.
+We have the vision AI stack that is
+about it being functional in the world.
+uh being able to to um manage a physical
+set of skills. And then we've got the
+reasoning or you know my people might
+just say the LM side of the stack which
+is about our ability to interact with it
+to give it orders or get information
+that can affect its physicality, you
+know, and the physical skill. But I mean
+and but if you think about it, there are
+some people who see this
+as a product that on day one, snap your
+fingers, it's like a replacement for a
+human. And then there's other people who
+see this kind of pathway to get there.
+Multiple, you know, there's there's
+multiple iterations of intelligence
+uh intelligence to to physicality uh
+skill skills. sorry skill, you know,
+this physical stuff I call skills. Um,
+and and you know, couple that with does
+it have enough battery power to do these
+things? Um,
+and uh,
+and I think, you know, that's the divide
+where I don't know what that what the
+first gen will look like. And and as
+Elon sort of moves up the stack, he's
+sort of telling us a story here from
+version one to version two.
+uh to version 2.5 to now this version
+three. He's saying, "Well, I wasn't
+going to release version one. That's
+substandard to my designs of what I
+want. I'm not going to do two. I'm not
+doing 25. Looks cool. It's better, you
+know, form factor. I'm doing this thing
+called three." And we might find out
+that three isn't good enough
+because we thought 2.5 was I don't know
+what they called it at the time but we
+thought 2.5 was the end of the road till
+it reached some idea of going into
+manufacturing and now you know we hear
+Elon saying well it's version three
+folks and we will preview it and that's
+the robot we really want. Do you recall
+that slide on the Terapab presentation
+where they were showing the AI6 chip
+&gt;&gt; being used for Optimus? So
+&gt;&gt; yeah,
+&gt;&gt; that to me points to perhaps a greater
+need for more advanced silicon.
+And then the other thing that comes to
+mind is is the conversations about
+reaching AGI that that we won't get
+there without you know the physical
+robot
+&gt;&gt; right
+&gt;&gt; and in that case you want to train it on
+the most you know
+variety possible in terms of data sets
+and that's not just manufacturing or
+warehouse that's in
+&gt;&gt; in the home and everywhere else right so
+from a capability and financial
+perspective I see it you know playing
+out the way I I talked about but Yeah,
+&gt;&gt; if AGI is the goal, then it's a little
+bit different approach. And so the
+question is, you know, how will Tesla
+approach this? If if you wanted to get
+the revenue sooner, then you could with
+low capability, you could throw it into
+a warehouse environment and start making
+money and deploy these things,
+&gt;&gt; right?
+&gt;&gt; And there's some utility in that also
+from a training perspective, but but
+perhaps limited. Well, it's sort of um
+in a way I think what's happened here is
+the exact same thing that's happened
+with
+FSD versions. It's the same process in
+my brain. It's the what I just call the
+engineering process. And it comes down
+to I, Elon Musk, walk into an optimist
+review meeting and I see where the team
+is
+and I think about that as the release
+product into the world and I ask myself,
+is that the first handshake with the
+world that I want from this product? You
+know, uh, pun intended. Is that the
+first handshake I want? It is the same
+conversation that happened with iPhone
+with Steve Jobs
+&gt;&gt; right here. He has this product
+um was the first version. You know, I
+think I have my little one right here.
+Yeah. Yeah. Here's here's the first
+iPhone, right? This little guy is a lot
+different than this current guy.
+And
+you know, do you think obviously he
+didn't want to do this?
+This is the Palm Treyo.
+It predated iPhone. Uh but he might have
+wanted to do one of these. I think this
+is three or five. I don't remember. Um I
+actually don't know. Um I think they're
+both the same, actually. Uh but uh he
+did this and this was good enough but
+you know it's if you really look at it
+it there's a lot of you know there's
+certain smaller piece of glass here.
+It's thick
+&gt;&gt; relative to you know it's small I mean
+actually kind of physically smaller than
+the current phones but doesn't have a
+lot of pixels on the screen. Mhm. Um
+and you know it's is it good enough? And
+uh you know what you want is a product
+that's good enough that it doesn't feel
+so constrained that early adopters will
+take it up such that the next version
+can come around in a near enough time
+such that that version can
+achieve escape velocity
+and become a massive product. Yeah.
+&gt;&gt; Right. And it's in that fabric of
+decision- making that is so darn
+difficult
+because
+&gt;&gt; if you need the data, you release it
+sooner rather than later. Kind of like
+FSD and having us all try it out and
+bring the data back.
+&gt;&gt; Yep.
+&gt;&gt; Um you can reduce the financial risk by
+saying, "Well, we're just going to rent
+this to you or lease it to you and when
+the new one comes out, we'll just swap
+out the robot. give us your old one back
+and we'll give you a new one.
+&gt;&gt; Yeah. I mean, all those things, but then
+at the same time,
+he's not going to put out what he
+considers a substandard product. you
+know he wants to in other words he's put
+out first off from a data and training
+point of view you know I've written on
+this a lot of the stuff while I think
+the the compute side of Optimus
+far exceeds the compute requirement for
+FSD okay far exceeds
+u hence why we need an AI5 and an AI6
+y
+&gt;&gt; uh and we have the constraint which is
+you know while we have more compute
+demand we have less power to give to
+compute so a very difficult
+problem
+um but in terms of the data the training
+the pipeline you know I think they've
+learned how to do that more in the lab
+with this product
+&gt;&gt; you know um and I if you look at my
+first article on Optimus I talk about
+how
+I think they're going to train this. And
+it's more about this um ability to
+compose and decompose skills and and
+then the decompose is the probably
+interesting part which means that you
+can build you can ask you can get it to
+do some long chain of things. But within
+those chain of things there's all these
+subsklls
+and in fact it should be capable of
+decomposing those down to subsklls. So
+making an omelette requires, you know,
+sourcing the pan,
+the butter, the eggs,
+putting the pan, turning on the flame,
+cracking the eggs. But at the end of the
+day, that aggregation, that big skill
+should be decomposable down to, well,
+I'm optimist. I know how to crack an
+egg. I'm optimist. I know how to get
+something out of the refrigerator.
+whether it's uh butter or milk, it
+doesn't matter at this point because I
+got the butter, you know.
+So I think they've learned and they have
+the infrastructure and a lot of this um
+the vision stack of FSD effectively is a
+subset of what the vision stack of
+optimist will be and that's given them a
+great leg up because you know if you go
+back uh we I think we talked about this
+previous show where we said you know and
+I even mentioned it here is that there
+was this in the beginning of AI I as we
+know it in the modern AI, we've had this
+this this sort of war or you know
+between language based and vision- based
+AIs and when Elon first sort of jumped
+in, his revelation was
+from the imageet days and so forth, oh I
+can use a vision-based AI to build an
+autonomously operating vehicle
+and boom, he's into that. Yep. many many
+years ago and his foray into the
+language only happened really with open
+AI right that's like he didn't formalize
+that as as a official Elon company or
+project within now this product that
+we're staring at here this Optimus
+product is a combination of both of
+those things
+&gt;&gt; yes
+&gt;&gt; and
+to be truly effective it is the ultimate
+combination of those two things
+&gt;&gt; that's
+So, um, you know, we'll see. Well, I
+guess the point is we will see where he
+throws it down and says this is good
+enough
+to, you know, good enough to go to
+market with. And, you know, by the way,
+the other thing that we should that's
+worth mentioning here is that one other
+rung in that, you know, like what is it
+it's not is it capability? Is it what
+part of the what market do I enter?
+But with Elon, it's also
+manufacturability, right? And I say that
+because while you might say, well, duh,
+Phil, everybody thinks about
+manufacturability. No, they don't. I
+mean, they do and they don't. Elon, you
+know, look at Cyber Cab. cyber cabab the
+the building of cyber the factory and
+the product are a product you know it's
+like and I think he's he's thinking of
+it the same way here is like
+&gt;&gt; have we built these actuators good
+enough that we can manufacture them at
+scale and uh with with a proper um you
+know reliability
+not just capability capability without
+scale and reliability is right it's
+like a very highriced thing that needs
+constant repair.
+&gt;&gt; Uh, if you're going to build a hand that
+can play a piano or thread a needle or
+do open heart surgery at some point,
+maybe that's not V3, maybe that's V3 and
+a half, V4,
+you better damn well be able to
+manufacture it at scale with great
+reliability. And and so he's,
+&gt;&gt; you know, he's pulling all of that
+together. And I think uh we are we we we
+are here witness to the fact that he
+either is going to get this right or
+he's or he's not going to get it right.
+You can always send them into space.
+It's the ultimate um you know playground
+proving ground opportunity I suppose for
+Optimus.
+&gt;&gt; And you know what I mean look at his
+post here. Off earth will be faster
+greater and and that's not that's not a
+joke you know because
+What he's saying is
+if we want to colonize the moon and we
+want to colonize Mars and then we can we
+can answer the why in a second that's so
+uh
+economically if you will like grounded
+it's ridiculous like it's a it's like
+the story
+of even manufacturing in these
+environments ultimately once we get past
+the issues of getting there and getting
+but you know the story of manufacturing
+ing on the moon
+and uh drop shipping it to Earth is a
+story that
+can create vastly cheaper products.
+&gt;&gt; Mhm.
+&gt;&gt; Uh and especially if we're going to do
+it robotically. And the need would be
+like we're not going to Mars without
+Optimus. you know, the uh
+somewhere along the line I did some post
+where I was talking about
+um
+how much a starship could support in
+terms of a human life, you know,
+transporting a human life, the two plus
+year journey to get to Mars and how much
+air you needed, how much space you
+needed, how much provisions you needed,
+sleeping quarters and waking quarters
+and exercising quarters and all these
+things where optimist can literally
+stack maybe with their arms off in a
+corner, you know, and when they get
+there, they're more capable than a human
+that needs more continuous life support.
+&gt;&gt; And now you get a software update as
+soon as they arrive and they're more
+capable than when they left.
+&gt;&gt; Yeah. Well, haha, totally true. Now, the
+the the the realities of optimists being
+put on
+moon and Mars are difficult too, right?
+these products
+um are not necessarily
+they're they're thought you know it's
+it's it's being thought of but it's not
+uh would you say it's not a dimensional
+attri attribute of the current product
+to deal with the temperature variance on
+Mars or the
+&gt;&gt; right
+&gt;&gt; the the moon dust or those types of
+things that will absolutely
+&gt;&gt; be definitional for the product's
+ability to operate there. Um
+um so that said, there's a lot to do to
+make optimists work on Mars, but or the
+moon, but these these creatures will be
+the most common creature in those
+environments by far.
+&gt;&gt; One thing you'd probably want to do on
+the moon is to make it a lot heavier so
+that it doesn't, you know, jump around
+as much like a human would.
+Yeah, these are all things I mean beyond
+knowing the gravity realities of the
+moon. Uh these are all things that are
+well beyond my pay grade in terms of
+understanding the nuance of
+&gt;&gt; of
+material selection and um yeah I mean
+the right now on on Earth it's uh it's a
+you know it's it's like the struggle
+here for this product is there's it's a
+a struggle that will present itself in a
+very big way to the Optimus team will be
+the power problem and the power problem
+is
+compute over here and mass over here,
+you know, and and mass means just moving
+its extremities, moving the actuators to
+move its extremities, picking up stuff
+that is uh is mass and and that you know
+you can do a you can do a straight
+computation people have of saying how
+much mass is the the bot have. it has to
+have this perfect amount of mass for
+both stability but also uh power
+efficiency
+&gt;&gt; and uh but that's not necessarily
+the front and center concern on on
+Mars or um or or the moon in particular.
+Phil, we've we could go on and on, but
+if there's one thing that I heard you
+say today is that you guarantee that
+Robotaxi and Cyber Cab is going to ramp
+up beyond supervised at the end of
+April.
+&gt;&gt; Is that is that the summary for this
+episode?
+&gt;&gt; What What are we're April 8th, man? I'm
+getting nervous. No, I Yeah, I'm willing
+to put it out there.
+&gt;&gt; I'm willing to put it out there. I mean,
+if I think
+uh we'll get in spinning distance close
+certainly. I think it's I think it's
+&gt;&gt; I think it's imminent now. Like I don't
+think it was
+&gt;&gt; uh people asked me like didn't you think
+of that in October it' be the same and I
+said yeah you know to be a certain
+extent I thought December was the date.
+Um, so I'm fair, you know, but I think
+one of the things that we've learned is
+that um, and we should be sort of proud
+of Tesla and Elon for this, although
+it's hard to recognize that when you
+just want the thing, is that they are
+really really taking safety seriously in
+this product. every single day I can
+find a Whimo story where Whimo has done
+something completely stupid that
+um you know Tesla would be boiled alive
+for if if nothing else and luckily I
+don't think a Whimo has injured somebody
+in a serious way. I don't know maybe
+that has but but you know we should be
+as investors or
+uh enthusiasts we should at least stop
+take a pause and realize that they are
+not effing up the safety part of this uh
+you know you know half of the community
+praise uh says Elon is too optimistic
+too aggressive and too much of a risk
+taker and then the same out of the same
+mouths of some of the same people say
+well where the hell is this product
+Well, maybe it's because he doesn't want
+to uh put your mom's life in danger.
+&gt;&gt; Yeah, I think Whimo, I think, has a
+pretty good safety record. There's been
+a few incidences. Um
+&gt;&gt; but certainly there's a lot of
+inconveniences that Whimo has created
+for people blocking the road and things
+like that.
+&gt;&gt; Uh people being trapped inside the
+vehicles for a while. So,
+&gt;&gt; you know, Tesla would would prefer to
+avoid all that.
+&gt;&gt; Yeah. And we have yeah we have to have a
+look at safety and experience.
+&gt;&gt; Yeah.
+&gt;&gt; Recognize that the experience is safety
+is important because we don't want to
+hurt somebody or you know
+um either a customer or a non-C customer
+right I mean it doesn't really matter
+but experience is important too because
+that's affects the brand and and uh and
+Whimo is as you said safety's fairly
+okay but experience is
+you know, pretty pretty poor, I think.
+&gt;&gt; Yeah.
+&gt;&gt; So,
+&gt;&gt; yep. Well, Phil, I appreciate it. Thank
+you very much. It's been a great
+till next time.
+&gt;&gt; We'll see you in two weeks.
