@@ -2,8 +2,9 @@ name: Daily Summary Pipeline
 
 on:
   schedule:
-    # Run 3x daily: 1:15, 9:15, 17:15 UTC (covers late transcripts within ~8h)
-    - cron: '15 1,9,17 * * *'
+    # 4x daily: Europe 6AM, US East 6AM, US West 6AM, evening catch-up
+    - cron: '15 1,7,10 * * *'
+    - cron: '45 17 * * *'
   workflow_dispatch:
     inputs:
       mode:
