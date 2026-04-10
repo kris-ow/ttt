@@ -34,7 +34,8 @@ Transcript-driven summarization pipeline (transcripts pushed directly to repo by
 - `prompt.md` — prompt template with placeholder slots
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — daily GitHub Actions: summarize → commit
+- `.github/workflows/daily-pipeline.yml` — 3x daily GitHub Actions: summarize → commit → deploy (failure → auto-creates GitHub issue)
+- `.github/workflows/freshness-check.yml` — daily 12:00 UTC: alerts via GitHub issue if unsummarized transcripts remain
 
 Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries
 
@@ -64,7 +65,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 | Stock price | stock-proxy (`wss://api.theteslathesis.com`) | WebSocket, proxy handles Finnhub upstream |
 | Stock chart | Yahoo Finance via corsproxy.io | On page load |
 
-### Automated pipeline (daily GitHub Actions — 4:15 AM CET / 5:15 AM CEST)
+### Automated pipeline (3x daily GitHub Actions — 1:15, 9:15, 17:15 UTC)
 | Content | Source | Trigger |
 |---|---|---|
 | Transcripts | Mac Mini yt-transcripts → git push | Mac Mini pushes directly to repo after download |

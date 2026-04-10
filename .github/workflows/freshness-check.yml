@@ -1,0 +1,87 @@
+name: Content Freshness Check
+
+on:
+  schedule:
+    # Run at 12:00 UTC daily — after all 3 pipeline runs should have completed
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for stale content
+        id: check
+        run: |
+          # Find unsummarized transcripts
+          stale=""
+          count=0
+          for f in news/*.txt; do
+            base="${f%.txt}"
+            if [[ "$f" != *_summary.txt ]] && [[ ! -f "${base}_summary.txt" ]]; then
+              stale="$stale\n- \`$(basename $f)\`"
+              count=$((count + 1))
+            fi
+          done
+
+          # Check newest summary age
+          newest_summary=$(ls -t news/*_summary.txt 2>/dev/null | head -1)
+          if [ -n "$newest_summary" ]; then
+            # Extract summarized date from file header
+            summary_date=$(grep -m1 'Summarized:' "$newest_summary" | sed 's/Summarized:\s*//')
+            echo "newest_summary_date=$summary_date" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "stale_count=$count" >> "$GITHUB_OUTPUT"
+          # Write stale list to file to avoid escaping issues
+          echo -e "$stale" > /tmp/stale_list.txt
+
+          if [ $count -gt 0 ]; then
+            echo "has_stale=true" >> "$GITHUB_OUTPUT"
+            echo "Found $count unsummarized transcript(s)"
+          else
+            echo "has_stale=false" >> "$GITHUB_OUTPUT"
+            echo "All transcripts have summaries"
+          fi
+
+      - name: Create freshness issue
+        if: steps.check.outputs.has_stale == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const count = '${{ steps.check.outputs.stale_count }}';
+            const title = `Content gap: ${count} unsummarized transcript(s)`;
+            // Don't create duplicate issues
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'content-gap',
+              per_page: 5,
+            });
+            if (existing.data.length > 0) {
+              // Update existing issue instead
+              const issue = existing.data[0];
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Still ${count} unsummarized transcript(s) as of ${new Date().toISOString()}.\n\nThe pipeline may need manual intervention — try \`gh workflow run daily-pipeline.yml\`.`,
+              });
+              return;
+            }
+            const fs = require('fs');
+            const staleList = fs.readFileSync('/tmp/stale_list.txt', 'utf-8').trim();
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body: `There are **${count}** transcript(s) without summaries after all daily pipeline runs:\n\n${staleList}\n\n**Newest summary date:** ${{ steps.check.outputs.newest_summary_date || 'unknown' }}\n\nPossible causes:\n- Mac Mini didn't push transcripts in time\n- Pipeline failed silently\n- Batch API timed out\n\n**To fix:** Run \`gh workflow run daily-pipeline.yml\` manually.`,
+              labels: ['content-gap'],
+            });

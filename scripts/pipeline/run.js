@@ -293,9 +293,26 @@ async function main() {
 
   // Check for pending batch from previous run
   if (state.pendingBatch) {
-    console.log(`Found pending batch: ${state.pendingBatch.batchId}`);
-    await processPendingBatch(client, state);
-    return;
+    const submittedAt = new Date(state.pendingBatch.submittedAt);
+    const ageHours = (Date.now() - submittedAt.getTime()) / (1000 * 60 * 60);
+
+    if (ageHours > 4) {
+      console.log(`Pending batch ${state.pendingBatch.batchId} is ${ageHours.toFixed(1)}h old — clearing stuck state`);
+      // Try to cancel the batch (best-effort)
+      try {
+        await client.messages.batches.cancel(state.pendingBatch.batchId);
+        console.log('  Batch cancel requested');
+      } catch (e) {
+        console.log(`  Could not cancel batch: ${e.message}`);
+      }
+      state.pendingBatch = null;
+      saveState(state);
+      // Fall through to process new transcripts
+    } else {
+      console.log(`Found pending batch: ${state.pendingBatch.batchId} (${ageHours.toFixed(1)}h old)`);
+      await processPendingBatch(client, state);
+      return;
+    }
   }
 
   // Step 1: Find transcript files without summaries
