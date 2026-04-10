@@ -199,47 +199,66 @@ async function* getBatchResults(client, batchId) {
 // ── Direct (non-batch) API ───────────────────────────────
 
 async function processDirectly(client, transcripts, state) {
+  const MAX_RETRIES = 3;
+  const RETRY_DELAYS = [15_000, 30_000, 60_000]; // 15s, 30s, 60s backoff
+
   console.log(`\n=== Processing ${transcripts.length} transcript(s) directly ===`);
 
   for (const t of transcripts) {
     console.log(`\n  Processing: ${t.title}`);
     const prompt = buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily });
 
-    try {
-      const msg = await client.messages.create({
-        model: MODEL,
-        max_tokens: 8192,
-        messages: [{ role: 'user', content: prompt }],
-      });
+    let success = false;
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      try {
+        if (attempt > 0) {
+          const delay = RETRY_DELAYS[attempt - 1];
+          console.log(`  Retry ${attempt}/${MAX_RETRIES} after ${delay / 1000}s...`);
+          await new Promise(r => setTimeout(r, delay));
+        }
 
-      const text = msg.content.map(c => c.text).join('');
-      const parsed = parseResult(text);
-      const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
+        const msg = await client.messages.create({
+          model: MODEL,
+          max_tokens: 8192,
+          messages: [{ role: 'user', content: prompt }],
+        });
 
-      writeSummaryFile(t, parsed, null, inputTokens, outputTokens, { direct: true });
-      saveExtractedFacts(parsed.keyFacts, t);
+        const text = msg.content.map(c => c.text).join('');
+        const parsed = parseResult(text);
+        const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
 
-      const pricing = PRICING_DIRECT;
-      const cost = (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
-      logCost({
-        date: new Date().toISOString(),
-        filename: t.filename,
-        title: t.title,
-        channel: t.channel,
-        mode: 'direct',
-        inputTokens,
-        outputTokens,
-        cost,
-      });
+        writeSummaryFile(t, parsed, null, inputTokens, outputTokens, { direct: true });
+        saveExtractedFacts(parsed.keyFacts, t);
 
-      state.processed[t.filename] = {
-        title: t.title,
-        channel: t.channel,
-        processedAt: new Date().toISOString(),
-      };
-      saveState(state);
-    } catch (err) {
-      console.log(`  FAILED: ${err.message}`);
+        const pricing = PRICING_DIRECT;
+        const cost = (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
+        logCost({
+          date: new Date().toISOString(),
+          filename: t.filename,
+          title: t.title,
+          channel: t.channel,
+          mode: 'direct',
+          inputTokens,
+          outputTokens,
+          cost,
+        });
+
+        state.processed[t.filename] = {
+          title: t.title,
+          channel: t.channel,
+          processedAt: new Date().toISOString(),
+        };
+        saveState(state);
+        success = true;
+        break;
+      } catch (err) {
+        const isRetryable = err.status === 429 || err.status === 529 || err.status === 424 || err.status === 503;
+        console.log(`  FAILED (attempt ${attempt + 1}/${MAX_RETRIES + 1}): ${err.message}`);
+        if (!isRetryable || attempt === MAX_RETRIES) {
+          console.log(`  Skipping: ${t.filename}`);
+          break;
+        }
+      }
     }
   }
 
