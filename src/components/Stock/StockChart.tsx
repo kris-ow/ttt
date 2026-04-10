@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { createChart, AreaSeries, type IChartApi, type ISeriesApi, type LineData, ColorType } from 'lightweight-charts'
 import { RANGES } from './helpers'
+import { track } from '../../analytics'
 
 export function StockChart({ onClose }: { onClose: () => void }) {
   const chartContainerRef = useRef<HTMLDivElement>(null)
@@ -132,7 +133,7 @@ export function StockChart({ onClose }: { onClose: () => void }) {
               {RANGES.map(r => (
                 <button
                   key={r.label}
-                  onClick={() => setActiveRange(r.label)}
+                  onClick={() => { setActiveRange(r.label); track('Chart Timeframe', { range: r.label }) }}
                   className={`px-2 py-1 text-xs font-bold cursor-pointer transition-colors border-b-2 ${
                     activeRange === r.label
                       ? 'text-green border-green'

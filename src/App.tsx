@@ -1,4 +1,5 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
+import { track } from './analytics'
 import newsData from './data/news.json'
 import catalystsData from './data/catalysts.json'
 import { type Article, type NewsData, CHANNEL_META } from './types'
@@ -26,6 +27,21 @@ export default function App() {
   const channels = useMemo(() => [...new Set(data.articles.map(a => a.channel))].sort(), [])
   const stockData = useStockQuote()
 
+  const handleTabSwitch = useCallback((key: Section) => {
+    setActiveSection(key)
+    track('Tab Switch', { tab: key === 'feed' ? 'Daily Feed' : 'Valuations' })
+  }, [])
+
+  const handleArticleOpen = useCallback((article: Article) => {
+    setSelectedArticle(article)
+    track('Article Open', { channel: article.channel, title: article.title.slice(0, 80) })
+  }, [])
+
+  const handleChartOpen = useCallback(() => {
+    setShowChart(true)
+    track('Chart Open')
+  }, [])
+
   useEffect(() => {
     if (!stockBoxRef.current) return
     const observer = new ResizeObserver(() => {
@@ -52,7 +68,7 @@ export default function App() {
               ] as const).map(([key, label]) => (
                 <button
                   key={key}
-                  onClick={() => setActiveSection(key)}
+                  onClick={() => handleTabSwitch(key)}
                   className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer border-b-2 ${
                     activeSection === key
                       ? 'text-green border-green'
@@ -76,7 +92,7 @@ export default function App() {
             <div className="hidden sm:grid sm:grid-cols-2 sm:items-start gap-4 mb-6">
               <div
                 ref={stockBoxRef}
-                onClick={() => setShowChart(true)}
+                onClick={handleChartOpen}
                 className="cursor-pointer group"
               >
                 <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
@@ -114,7 +130,7 @@ export default function App() {
                 ))}
               </div>
               {mobileStockTab === 'stock' ? (
-                <div onClick={() => setShowChart(true)} className="cursor-pointer group">
+                <div onClick={handleChartOpen} className="cursor-pointer group">
                   <StockWidget {...stockData} />
                 </div>
               ) : (
@@ -170,10 +186,10 @@ export default function App() {
                   </div>
                 )}
               </div>
-              <FeedSection selectedChannel={selectedChannel} onSelectArticle={setSelectedArticle} />
+              <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
             </>
           )}
-          {activeSection === 'knowledge' && <KnowledgeSection onSelectArticle={setSelectedArticle} />}
+          {activeSection === 'knowledge' && <KnowledgeSection onSelectArticle={handleArticleOpen} />}
         </div>
       </div>
 

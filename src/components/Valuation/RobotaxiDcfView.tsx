@@ -1,5 +1,6 @@
-import { useState, useCallback, useEffect } from 'react'
+import { useState, useCallback, useEffect, useRef } from 'react'
 import { DCF_NODES, DCF_ROOT, REV_INPUT_IDS, COST_INPUT_IDS, computeProjection, type RevInputId, type CostInputId, type ProjectionInputs } from '../../data/dcf-robotaxi'
+import { track } from '../../analytics'
 import { ALL_EXPANDABLE } from './helpers'
 import { DcfTreeNode } from './DcfTreeNode'
 import { DcfNodeDetail } from './DcfNodeDetail'
@@ -21,6 +22,7 @@ export function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, cos
   const [expandedIds, setExpandedIds] = useState<Set<string>>(() => new Set(ALL_EXPANDABLE))
   const [mobileView, setMobileView] = useState<'tree' | 'detail'>('detail')
   const node = DCF_NODES[selectedId]
+  const dcfTracked = useRef(false)
 
   // Track if we're on mobile (below sm breakpoint)
   const [isMobile, setIsMobile] = useState(() => window.innerWidth < 640)
@@ -46,6 +48,10 @@ export function RobotaxiDcfView({ openSource, revOverrides, setRevOverrides, cos
   }, [])
 
   const handleInputChange = (id: string, value: number) => {
+    if (!dcfTracked.current) {
+      track('DCF Interact', { node: id })
+      dcfTracked.current = true
+    }
     if ((REV_INPUT_IDS as readonly string[]).includes(id)) {
       setRevOverrides(prev => ({ ...prev, [id]: value }))
     } else if ((COST_INPUT_IDS as readonly string[]).includes(id)) {

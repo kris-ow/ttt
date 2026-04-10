@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import newsData from '../../data/news.json'
 import { type Article, type NewsData } from '../../types'
 import { formatDate, channelShort, signalTag } from './helpers'
+import { track } from '../../analytics'
 
 const data = newsData as NewsData
 const INITIAL_DAYS = 7
@@ -56,7 +57,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
       })}
       {!showAll && allDates.length > INITIAL_DAYS && (
         <button
-          onClick={() => setShowAll(true)}
+          onClick={() => { setShowAll(true); track('Show Older') }}
           className="w-full border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 text-xs text-text-dim hover:text-green transition-colors cursor-pointer"
         >
           SHOW OLDER ({allDates.length - INITIAL_DAYS} more days)

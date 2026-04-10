@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { type Article, CHANNEL_META } from '../../types'
 import { renderInline } from './helpers'
+import { track } from '../../analytics'
 
 export function ArticleDetail({ article, onClose }: { article: Article; onClose: () => void }) {
   const channel = CHANNEL_META[article.channel]
@@ -44,9 +45,9 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
               {article.source && <span>src: {article.source}</span>}
               {article.sourceType === 'x' ? (() => {
                 const handle = article.source.match(/@(\w+)/)?.[1]
-                return handle ? <a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">[VIEW PROFILE ON X]</a> : null
+                return handle ? <a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim" onClick={() => track('Source Link', { type: 'x', channel: article.channel })}>[VIEW PROFILE ON X]</a> : null
               })() : article.videoUrl && (
-                <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">
+                <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim" onClick={() => track('Source Link', { type: 'youtube', channel: article.channel })}>
                   [WATCH ON YOUTUBE]
                 </a>
               )}
