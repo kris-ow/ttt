@@ -2861,5 +2861,139 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-11T10:59:56.016Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 reaction time measured at approximately 0.2 seconds from yellow light change to vehicle control output, compared to the industry standard 1.5 seconds used in accident reconstructions for human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 0.2,
+    "context": "This is a key safety benchmark supporting the case for unsupervised robotaxi deployment; FSD v14.3 is 5–7x faster than an above-average human driver and approaches physiological human limits",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 delivers a claimed 20% improvement in reaction time, achieved by rewriting the AI compiler and runtime from the ground up using MLIR",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This is a major FSD version release milestone; the runtime rewrite is described as enabling faster future model iteration and potentially unlocking Hardware 3 upgrades",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's robotaxi reported one incident between January 15 and February 15, 2026 — a bumper touch resulting from a vehicle ahead stopping suddenly",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Only one reportable incident in the 31-day window; panelists argue v14.3's faster reaction time would prevent this specific class of incident",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk confirmed that FSD version 15 will be the large model with a 10x parameter increase, and that version 14.x variants are sufficient for unsupervised robotaxi deployment",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Clarifies the development roadmap: v14.3 and point releases are the near-term unsupervised robotaxi foundation; v15 is a future large-model upgrade, not a prerequisite for robotaxi launch",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert predicts Tesla will announce 100% unsupervised robotaxi operation in Austin as early as April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Host is on record with a specific near-term date for unsupervised Austin robotaxi scale-up; this is a personal prediction, not a Tesla official announcement",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's prior earnings call included comments about seeing 'a potential pathway' for Hardware 3 vehicles to receive upgraded FSD capabilities",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "The runtime rewrite in v14.3 may be the enabling technical development that makes a Hardware 3 'v14 light' feasible, though panelists do not expect Hardware 3 to ever run unsupervised",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 added reasoning specifically to destination handling (pickup and drop-off logic) as the first reasoning expansion, with broader reasoning across all driving behaviors listed as an upcoming improvement",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Destination handling with reasoning is a robotaxi-specific capability; its prioritization signals Tesla's focus on readying the system for unsupervised fleet operation rather than consumer FSD first",
+    "source": "20260411_brighterwithherbert_01_Everyone_Is_Wrong_About_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T18:04:33.620Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is offering a £3,750 trade-in bonus (on top of trade-in value) on new Model 3 and Model Y (non-performance) inventory in the UK, valid April to June 2026, stackable with 0% finance and a £500 referral discount",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Tesla's own incentive response to being excluded from the UK government EV grant; time-limited promotion running through Q2 2026",
+    "source": "20260411_futureaza_01_High_Gas_Prices_Are_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T18:04:33.625Z",
+    "status": "pending"
+  },
+  {
+    "fact": "UK ZEV mandate requires 33% of manufacturer vehicle sales to be battery electric vehicles by 2026, with fines for non-compliance",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Regulatory pressure on automakers to accelerate EV sales in the UK market",
+    "source": "20260411_futureaza_01_High_Gas_Prices_Are_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T18:04:33.625Z",
+    "status": "pending"
+  },
+  {
+    "fact": "UK ZEV mandate bans new petrol and diesel car sales from 2030, having been revised back from a 2035 target",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Hard regulatory deadline shaping the UK automotive transition timeline and manufacturer planning",
+    "source": "20260411_futureaza_01_High_Gas_Prices_Are_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T18:04:33.625Z",
+    "status": "pending"
+  },
+  {
+    "fact": "UK court recently pointed toward applying the domestic 5% VAT rate to public EV charging, down from the current 20% rate",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Long-campaigned policy change that would reduce the cost of public charging for EV drivers without home charging access",
+    "source": "20260411_futureaza_01_High_Gas_Prices_Are_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T18:04:33.625Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla and Intel are reportedly entering a close manufacturing partnership related to chip production, per a separate video referenced by Jo Bhakdi",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Potential near-term enabler for Terafab chip manufacturing capacity; flagged as a developing catalyst",
+    "source": "20260411_jobhakdi_01_Why_The_Real_Plan_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-11T18:04:33.631Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Starship is expected to become operational this year (2026), which Jo Bhakdi describes as the trigger point for scaling space-based compute deployment",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Starship operational status is a key gating milestone for the entire Terafab and space AI scaling thesis",
+    "source": "20260411_jobhakdi_01_Why_The_Real_Plan_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-11T18:04:33.631Z",
+    "status": "pending"
   }
 ]
