@@ -2553,5 +2553,107 @@
     "channel": "cernbasher",
     "extractedAt": "2026-04-10T18:36:40.601Z",
     "status": "pending"
+  },
+  {
+    "fact": "xAI expects to release the 1 trillion parameter Grok model in approximately 2–3 weeks and the 1.5 trillion parameter model in approximately 4–5 weeks",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Near-term model releases that could meaningfully improve Grok's capabilities and by extension Tesla's FSD reasoning layer and Optimus digital brain",
+    "source": "20260410_brighterwithherbert_02_Groks_Missing_One_Thing_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T03:50:05.144Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 is referenced as incorporating 10x more parameters than the current version and is tied to the milestone of unsupervised driving for all users",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD v15 is framed as the key unsupervised FSD milestone for broad consumer deployment, potentially gated by availability of larger supercomputing infrastructure like Cortex 2",
+    "source": "20260410_brighterwithherbert_02_Groks_Missing_One_Thing_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T03:50:05.144Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Cortex 2 supercomputer is expected to be completed in approximately 2 years and will be used primarily for training the Optimus humanoid robot brain",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Sets a rough timeline for when Tesla will have dedicated large-scale compute for Optimus training, a key input to the humanoid robot deployment thesis",
+    "source": "20260410_brighterwithherbert_02_Groks_Missing_One_Thing_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-11T03:50:05.144Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Intel joined Terafab, as announced on the SpaceX account.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Jo Bhakdi interprets this as a potential precursor to a Tesla acquisition of Intel and a key step in building onshore chip manufacturing for Terafab.",
+    "source": "20260410_jobhakdi_01_Will_Tesla_Buy_Intel_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-11T03:50:05.149Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is currently partnering with Samsung on AI5 and AI6 chips, described as precursors to the Terafab initiative.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Indicates Tesla's current chip supply chain partnerships ahead of any potential Intel acquisition or deeper Terafab involvement.",
+    "source": "20260410_jobhakdi_01_Will_Tesla_Buy_Intel_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-11T03:50:05.149Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi expects Starship version 3, or at latest version 4, to reach commercial viability potentially by end of 2026.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "This is the key inflection point in Jo Bhakdi's model at which space-based compute becomes economically competitive with terrestrial alternatives.",
+    "source": "20260410_jobhakdi_01_Will_Tesla_Buy_Intel_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-11T03:50:05.149Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD (Supervised) officially approved in the Netherlands — the first European country to receive regulatory clearance — with rollout to customer vehicles beginning shortly",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First European regulatory approval; sets a precedent and pathway for other EU countries. RDW regulatory endorsement is a meaningful template for broader European expansion.",
+    "source": "20260411_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-11T03:50:05.154Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's FSD fleet is now averaging 19.2 million miles per day, up from 14.4 million miles per day a couple of months ago — approximately a 33% increase",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 19200000,
+    "context": "Rapid growth in daily FSD miles signals accelerating fleet adoption and training data accumulation; directly relevant to FSD improvement velocity and safety metric tracking.",
+    "source": "20260411_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-11T03:50:05.154Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla updated its Robotaxi app with a new tips section (seat availability, arrival light pulse notification, cabin camera safety disclosure) and a darker UI",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Ongoing operational refinements to the Robotaxi app indicate active preparation for broader service deployment.",
+    "source": "20260411_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-11T03:50:05.154Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi factory tour quote from Dan Priestley: 'We're right on the cusp of starting to produce first assemblies off these lines'",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Suggests Tesla Semi production start is imminent; no specific date or volume provided, but indicates factory readiness milestone approaching.",
+    "source": "20260411_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-11T03:50:05.154Z",
+    "status": "pending"
   }
 ]

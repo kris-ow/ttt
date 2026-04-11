@@ -1,0 +1,52 @@
+Channel:     brighterwithherbert
+Title:       Grok's Missing One Thing (Then It's Over)
+Published:   2026-04-10 18:30 UTC
+Summarized:  2026-04-11 03:50:05 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01MwBjW5hSyYDPyfacu7pzTu
+Cost:        $0.03674 (9968 in / 2905 out tokens)
+Categories:  Autonomous Driving, Humanoid Bots, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video features host Herbert and guest Larry Goldberg, a serial entrepreneur and active venture capital investor, discussing the AI race between xAI, Anthropic, and OpenAI — and what it means for Tesla investors. The core thesis is that xAI's rapidly accelerating model training cycles, combined with Tesla's unique access to real-world vision data, positions Elon Musk's ecosystem to close the current AI capability gap, with direct implications for FSD, robotaxi deployment, and Optimus. The conversation argues that while xAI is currently behind Anthropic and OpenAI in coding and general capability, the bottleneck is no longer compute but training data — and that gap is closeable.
+
+## Autonomous Driving
+
+1. **FSD and robotaxi do not require frontier AI leadership:** Larry Goldberg asserts unambiguously that Tesla's FSD is already "far beyond the frontier" of all other AI systems when it comes to autonomous driving — no competitor is even attempting to match it. The host adds that the robotaxi rollout will proceed regardless of where xAI stands relative to Anthropic or OpenAI in general AI benchmarks, meaning the competitive AI race is largely decoupled from near-term robotaxi deployment.
+
+2. **FSD version 15 and unsupervised driving:** The host references FSD version 15 as a milestone that will incorporate 10x more parameters, noting that Tesla has already rewritten its architecture to support this. He suggests the existing compute may be sufficient to reach unsupervised driving for the robotaxi use case, while broader unsupervised FSD for all users may require larger supercomputers such as Cortex 2. Goldberg emphasizes that more compute accelerates finding and training on edge cases, which is the key remaining challenge.
+
+3. **Tesla's layered AI architecture:** The host describes Tesla's AI system as two-layer: FSD handles system one (reactive driving), while Grok serves as system two (reasoning). Both are described as important and complementary. Tesla's unique access to real-world vision data — unavailable to other AI labs — is cited as the foundational advantage that no competitor can easily replicate.
+
+## Humanoid Bots
+
+1. **Cortex 2 as the Optimus training supercomputer:** The host notes that Tesla's Cortex 2, described as a massive supercomputer, is expected to come online in a couple of years and will be used to train the brain of Optimus. Importantly, he argues that FSD's existing vision training data can be repurposed to accelerate Optimus development, giving Tesla a significant head start over competitors who lack access to equivalent real-world physical video.
+
+2. **Macrohard Digital Optimus — vision-first approach:** The host describes Elon's strategy for what he calls "Macrohard Digital Optimus" as a vision-first approach: using AI to observe a screen, control a mouse and keyboard, and make decisions — mimicking how humans use software — rather than relying on APIs as Anthropic and OpenAI do. Goldberg responds by framing this within a broader emerging "intelligence stack," arguing that vision is one important layer but that hearing, spoken language, and eventually non-language communication will all become part of the stack.
+
+## Market & Competition
+
+1. **xAI's current position — behind but accelerating:** Elon Musk has openly admitted that xAI is behind Anthropic and OpenAI. Grok 4.2 runs on 500 billion (0.5 trillion) parameters and is, by Elon's own admission, missing important training data. By comparison, the host suggests Anthropic's Sonnet is roughly twice the size of Grok, and Opus is approximately 10 times larger — meaning xAI needs to scale from 500 billion to several trillion parameters just to reach parity. However, xAI's Colossus 2 is now simultaneously training seven models ranging from 1 trillion to 10 trillion parameters, with the 1 trillion parameter model expected to release in about 2–3 weeks and the 1.5 trillion parameter model in about 4–5 weeks from the time of posting.
+
+2. **Colossus 2's parallel model training strategy:** xAI's Colossus 2 supercomputer is currently running seven models simultaneously: Imagine v2 (image/video generation), two variants at 1 trillion parameters, two variants at 1.5 trillion parameters, a 6 trillion parameter model, and a 10 trillion parameter model. Goldberg speculates that the rationale for smaller specialized models alongside the giant 10 trillion general model is domain specialization — for example, a medical imaging model may perform better with fewer, more focused parameters than a general superintelligence model.
+
+3. **Pre-training timelines compressing dramatically:** Elon stated that pre-training a massive AI model currently takes about 2 months, but newer, larger models at 1 trillion and 1.5 trillion parameters can be trained in 2 to 5 weeks. Goldberg frames this as part of a broader acceleration driven not just by scale but by improving training techniques — including recursive training, where a current model like Opus 4.6 is used to train the next version. He cautions, however, that recursive training is just one technique among many still being discovered.
+
+4. **Competitive landscape — Claude leads in coding, Grok leads in research and video:** Goldberg characterizes the current state as: Anthropic's Claude and OpenAI's Codex are the leaders in coding; Grok is the leader in research-quality analysis and video AI. He notes that Grok scaled to frontier-level performance faster than either OpenAI or Anthropic did in their early stages. OpenAI's recent releases have been described as disappointing relative to expectations, and Meta is highlighted as the biggest underperformer — once poised to lead, now largely absent from the frontier conversation.
+
+5. **Hollywood studios as an underutilized video training data source:** Goldberg raises an original argument that Hollywood and television studios possess enormous quantities of high-quality, physics-accurate, multi-angle visual data — including footage that never made it into final productions — that could be transformative for training video AI models. He suggests that whoever secures access to studio video libraries could gain a significant training data advantage, and the host half-jokingly suggests Elon should acquire movie studios for this purpose.
+
+6. **Elon's three-part AI strategy:** The host summarizes Elon's competitive position as: (1) owning the world's largest supercomputers and building more faster, (2) dramatically compressing training cycles to weeks rather than months, and (3) possessing unique real-world vision data from Tesla vehicles that no other AI lab can access. He argues it is more likely Elon can acquire the general training data he is currently missing than it is for competitors to replicate Tesla's proprietary vision dataset.
+
+Notable quotes and data:
+- Grok 4.2 runs on 500 billion (0.5 trillion) parameters and is "missing important training data" — Elon Musk's own admission
+- Colossus 2 is training 7 simultaneous models: Imagine v2, two 1T variants, two 1.5T variants, one 6T model, one 10T model
+- 1 trillion parameter Grok model expected in ~2–3 weeks; 1.5 trillion parameter model in ~4–5 weeks
+- Pre-training timelines: current large models ~2 months; newer 1T–1.5T models ~2–5 weeks
+- Grok 5 expected to be based on a 6 trillion and 10 trillion parameter model
+- Anthropic's Sonnet described as roughly 2x the size of Grok; Opus described as roughly 10x the size
+- "The AI in FSD is far beyond the frontier. It is the frontier for all of the others. No questions about that." — Larry Goldberg
+- "Robotaxi shouldn't be confused with this conversation" — Goldberg, emphasizing FSD/robotaxi readiness is independent of the general AI race
+- "We're not even in the beginning — we're just at the beginning of the beginning of seeing the new stack emerge." — Larry Goldberg
+- Tesla's AI described as two-layer: FSD = system one (reactive), Grok = system two (reasoning)
+- Cortex 2 described as expected to be completed in "a couple of years" for Optimus brain training
