@@ -1,0 +1,1629 @@
+Channel:     brighterwithherbert
+Title:       Everyone Is Wrong About Tesla FSD v14.3
+URL:         https://www.youtube.com/watch?v=WMHj5vRbP8A
+Published:   2026-04-11 13:30 UTC
+Fetched:     2026-04-11 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+One of the biggest events Tesla
+investors have been waiting for is the
+release of Tesla's full self-driving
+version 14.3. And now it's here. It's in
+limited release and about to go wide.
+This is the version Elon called the last
+piece of the puzzle. The one that was
+supposed to be 10x parameters with
+reasoning across the board. And because
+it's not 10x and the reasoning isn't
+everywhere yet, the reaction online has
+been here we go again, another
+overpromise. But I think that reaction
+is wrong. And today we're going to show
+you exactly why with real video clips.
+There are two things in this update that
+actually matter. First, reaction time is
+20% faster. We'll show you what that
+looks like in real driving situations.
+That alone is a big deal for safety.
+Second, and this is the one people are
+sleeping on, this update is a complete
+rewrite of the AI runtime from the
+ground up. New architecture, and that's
+important because it means future model
+updates can happen much faster. It also
+opens the door for hardware 3 cars to
+finally get upgraded. Bottom line, in my
+opinion, version 14.3 is the version
+that makes unsupervised robo taxi at
+scale possible. Maybe a few more point
+releases to polish things up, but we
+don't need to wait for version 15 like
+some people are saying. The foundation
+is here. Let me show you. Phil BEL and
+Cernbaster join us for this discussion
+today. Phil was a founding member of the
+technical team at EVMaker Rivian and has
+also held various engineering management
+roles at Apple. CERN is a chartered
+financial analyst running his own
+investment advisory firm called
+Brilliant Advice providing wealth
+management services. Welcome Phil.
+Welcome CERN.
+&gt;&gt; Hi Herbert. Thanks for having us.
+&gt;&gt; This is great. I This is the topic of
+the week version 14.3 dropped. We've had
+a number of videos now that we've been
+watching and now we're getting to better
+understand what it can and can't do.
+There's a debate online whether it is
+the final piece of the puzzle or whe
+whether it is not the final piece of the
+puzzle. So, let's uh want to show you
+right away some videos. Here's 14.3
+being released. Uh the big thing that
+Tesla AI is focusing on is that this
+update brings 20% faster reaction time
+to further increase safety among many
+other improvements. Let's watch this
+video. The first thing I did when
+getting the FSD 14.3 update was take it
+to all the places in my local area that
+I know it struggles with. And well, it's
+kind of a mixed bag. There's some good
+things and honestly more bad things than
+I initially expected, which we're going
+to get into. But one thing that I can
+say for sure is that its reaction time
+has far surpassed us mere mortals.
+If you have no idea why it stomped on
+the brakes there, you're not alone. When
+I posted this clip on X, the majority of
+people had no idea. It turns out it was
+because this car had started pulling out
+from their spot without looking before
+giving FSD a thumbs up for reacting so
+quickly. If you look closely, you can
+see the path planner reacting to the
+situation before the visualization shows
+the car moving at all. Absolute insane
+reaction time. I'll use this clip to
+calculate just how fast it is. We have a
+right turn coming up. And when the light
+changes to yellow, the path planner
+reacts because it knows it's going to
+have to stop at the light. Not only is
+the path planner again reacting before
+the visualization even displays the
+yellow light, but I went frame by frame
+and clocked a reaction time of just 2/10
+of a second from the moment the light
+hits yellow to when the car starts
+controlling for it. For context, 1.5
+seconds is the industry standard
+reaction time used in accident
+reconstructions. And that covers the
+entire window from detecting an
+unexpected threat to physically applying
+the brakes. Even for an alert above
+average driver who can react in a single
+second, FSD is still 5 to 7 times
+quicker. And here's the real world
+impact of that difference.
+Wow.
+Near instantaneous reactions. The
+release notes say this was accomplished
+by rewriting the AI compiler and runtime
+from the ground up. and they claim a 20%
+improvement to reaction time. And
+honestly, that feels like an
+understatement. It feels more like 50%
+to me. And that's really saying
+something because those of you who use
+version 14.2 know that its reaction
+times were already pretty impressive.
+But 14.3 is on an entirely different
+level. And it really is something that
+you can feel while using it. And while
+this is hugely impressive, I mean, I
+really never thought we'd see reaction
+times like these from a little computer
+behind the glove box running off 150
+watts of power, rewriting things from
+the ground up has had some consequences.
+The main one that I noticed is that some
+of the indecisive, jerky behaviors from
+really early versions of 14 is back.
+Look at the twitchiness of the steering
+wheel and the path planner here being
+split between two decisions. I would say
+this is a fairly straightforward,
+unprotected left. The truck in front of
+us has his turn signal on. It's clear
+he's not moving into the intersection.
+This is not something that 14.2 would
+have ever struggled with. And I believe
+this is a direct result of just how fast
+14.3 can go from decision to control
+output. Here we are approaching a
+flashing crosswalk but without any
+pedestrians around and I can feel the
+car being torn between continuing or
+stopping. It really feels like it's
+considering many, many things
+simultaneously, like, oh, the lights are
+flashing, but there's no pedestrians in
+the crosswalk. What am I missing? The
+lights are flashing, but there's no
+pedestrians. And it's something you can
+really feel when you're inside the car.
+The good. All right. So, I did speak to
+AI driver and he gave me permission to
+show that I thought is one of the best
+uh version uh explanation of what's
+happening with version 14.3. He goes
+through what's great about it and what
+is not as great about it. He is very
+clear. He says this right after I just
+shut it down there that FSE version 14.3
+is much safer than the previous version
+and that this is bigger and better than
+what people are saying out there. So I
+wanted to ask you guys explain what
+you're thinking about uh 14.3 after
+you've seen all the reactions. Um why
+don't we start with you Phil?
+&gt;&gt; That's an excellent video by the way. Um
+I think it kind of puts truth to it.
+Yeah. So I think what what's going on
+here is that um certain and I've talked
+about this is that Tesla bit the bullet
+and rewrote the runtime because they're
+looking to get more performance out of
+the inference cycles, right? So they
+they wanted a guaranteed set of
+inference cycle at like maybe 36 times a
+second. They started
+um you know the model is complex. They
+want to increase the size of the model
+eventually
+and uh they had this moment in time
+where they decided well look we need to
+uh take a pause step back and really
+optimize further. They probably saw that
+they could optimize further. They
+thought about the technique that they
+wanted to apply to that and they decided
+that they would go for it in this
+release. And I think that's one of the
+reasons it took so long to get out
+because it took a long time to really
+replace the entire runtime architecture
+of the vehicle. Not the AI but the
+runtime architecture. So uh what does it
+what does it give us? It gives us
+uh as you saw in the video probably
+incredibly good reaction times. I mean
+far exceeding any human's ability to do
+any of those things. obviously right I
+think that's pretty obvious uh and it
+gives us headroom uh gives us the
+opportunity the opportunity not
+necessarily the reality but the
+opportunity to go for that next uh
+parameter count increase maybe an order
+of magnitude so that's where we are
+&gt;&gt; okay great thank you for that and I
+wanted to just share this this is the
+key points that AI that Tesla AI wanted
+to point out rewrote the AI compiler and
+runtime from the ground up with MLR RI
+are resulting in 20% faster reaction
+time and then this sentence and
+improving model iteration speed.
+Uh upgraded the reinforcement learning
+stage of training the FSE neural network
+resulting in improvements in a wide
+variety of driving scenarios. Upgraded
+the neural network vision encoder
+improving understanding in rare and low
+visibility scenarios they can see
+better. Strengthening 3D geometry
+understanding and expanding traffic sign
+understanding. Elon said Tesla version
+14.3 self-driving review. He was for
+forwarding somebody's review. The point
+releases will bring polish. Version 15
+will far exceed human levels of safety
+even in completely unsupervised and
+complex situations. People think, oh,
+now he's punting it to version for 15.
+He said our rate of investment with the
+small model has been so fast that the
+large model has not yet caught up.
+Version 15 will be the large model. So
+he's confirmed that version 15 is the
+10x parameter one but you know this uh
+delay or not and cern you posted this
+you said version 14.3 the removal of a
+bottleneck can you explain what you are
+saying here
+&gt;&gt; yeah just just before I do uh Herbert I
+just wanted to make a comment about uh
+what AI driver was talking about there
+in terms of uh you know the the reaction
+time for accidents what was it 1 and a
+half seconds is what they allow for for
+humans and he's determined that perhaps
+this vehicle is operating at 02 two
+seconds, right? So, I wonder out loud
+right now.
+&gt;&gt; Yes.
+&gt;&gt; How many accidents would be avoided if
+you could react to all of them at that
+level?
+&gt;&gt; Yes.
+&gt;&gt; You know, does a 20% faster reaction
+time? This is from FSD, but now we need
+to compare it to human reaction time.
+Does that reduce accidents by 50%, by
+60%, by 80% because you can react that
+much faster? Um I wonder you know where
+we could go to to obtain data on that or
+if that's even something that could be
+calculated but clearly in many many
+situations if you could have reacted
+sooner the accident or the situation
+would have been avoided.
+&gt;&gt; You know I think certain overall the FSD
+data will
+uh will illustrate that over time right
+I mean that's part of what's going on
+here. It may not um laser focus on
+reaction time but clearly a lot of
+accidents are about reaction time. I
+mean so many are right. Yeah, I I was
+going to say that uh so version 14.3
+this is why they I think they delayed
+the uh scaling of unsupervised robo
+taxis wait till 14.3 comes with the
+faster reaction time 20% reaction time
+the number one like the problem with
+Whimos and actually happened with zuks
+as well is that when they're driving on
+the highway that's why they waited so
+long and another car cuts in front of
+them it's not that oh their lidar didn't
+catch it no the lidar got it. But the
+reaction time is so slow that the
+accident still occurs. And so this 02
+second scenario would stop that kind of
+accident from ever happening again or
+slow. And then of course the other one
+would be uh that that just happened. One
+incident occurred from January 15th to
+February 15th that Tesla robo taxi had
+to report and it was when a car in front
+of them stopped suddenly and then the
+robo taxi had to slow and of course it
+slowed down significantly. said it was
+just a bumper touch,
+&gt;&gt; but that 20% reaction time when it
+recognizes that the car is stopped, it
+can react sooner and that would be
+stopped. So then it would remove that
+scenario right after.
+&gt;&gt; Remember every 5 miles an hour, you
+reduce the speed at which the vehicle's
+going. Even if it's doesn't come to a
+full stop, even if it hits and it
+collides at, you know, 5 mph is less
+than it would have or 10 mph. That is a
+huge difference especially especially
+for head-on.
+&gt;&gt; Um so yeah, we're going to see all of
+this data show up in the statistics over
+time. I mean this is um it's a done deal
+folks. I mean we are you know I mean the
+fact that look it was never important to
+me from day one that FSD 14 whatever
+needed to be 10x the number of
+parameters. That's just um you know
+that's a that's a simple way for people
+to to to put a handle on it to grasp the
+realities of it. The realities are uh
+much more subtle and what Tesla did here
+did two two key things that I posted
+about. First they look 14.3 or some
+variant thereof has been running in robo
+taxi land for a while if we're being
+honest. I mean it's been there and what
+they have done is they have recorded by
+virtue of their safety passenger drivers
+whatever you want to call them they
+recorded all these little incidents and
+they decided that what they wanted to do
+was um spent a lot of time pulling these
+incidents in and running them through
+the scenario analysis of reinforcement
+learning. One of the huge parts of this
+and and and it's not just in that one
+line item that talks about RL, but it's
+a lot of the little um you know
+avoidance of animals, whatever. That's
+is all RL stuff, right? So they have um
+and RL is like um the problem with RL is
+it's not just sort of this uniform
+training that they did in imitation
+learning. It takes setup of these
+scenarios and um and they've got to run
+them through their simulator and so
+forth. So it's going to elongate the
+time to release and that's what we
+actually saw. That's what's happening
+here. Uh the second is by rewriting this
+entire runtime. Uh that's the second
+reason that we you know have elongated
+the release time. But now that we're on
+this release, now that we're on this
+14.3, we're going to uh see very fast
+follows point releases, which is
+typical. We're not going to see wide
+release until it's 14.3.1.2
+two or something, whatever it might be.
+Um, and I suspect that, uh, you know,
+top line here is that robo taxi in
+Austin will effectively go live, meaning
+quite unsupervised,
+&gt;&gt; uh, on some 14 variant. It this is not
+when Elon talked about 15, he did not
+say, it is important to point out, he
+did not say we are waiting for 15. that
+the community at large with its negative
+sentiment
+uh as a cloud decided that's what he was
+saying. Um he was simply saying that you
+know after we do this 14 release we're
+going to do a 15 release. What can he
+talk about in the 15 release? Well that
+release being I mean honestly we don't
+even know there's a road map of things
+that will be in the 15 release. uh we
+don't know when it will be, but he said,
+"Well, one thing we're earmarking
+clearly is that's when we're going to do
+the parameter increase by an order of
+magnitude." And and the big question was
+and probably still is within the team is
+can you increase the parameter count by
+10x
+and fit it on a hardware 4 vehicle? And
+uh the answer will be uh whatever it is,
+but it will be predicated on the work
+that they've just done to increase that
+performance on the runtime.
+&gt;&gt; Herbert, I just want to go back to this
+faster reaction time again. I I I think
+this is so important. Not only is the
+vehicle, Excuse me, whenever I speak my
+throat. Um, not only is the vehicle
+responding faster, if you think about
+then how it reacts, how it controls
+itself. So, I've seen videos of uh
+Teslas on a wet road and the car in
+front of it has lost control and the
+Tesla vehicle now has to avoid this out
+of control vehicle that's swerving in
+front of it with prediction and
+precision
+that is
+it's impossible for a human to do. And
+so, not only does it have to react
+quickly, but it has to have control in
+such a precise manner so as not to
+overreact because a human driver
+typically overreacts in the situation.
+The car is swerving to the left so the
+human driver yanks the wheel to the
+right which causes a massive
+overreaction in the vehicle. Then that
+it's just, you know, one problem after
+another. And so it's the combination I
+think of the precision, the ability to
+react precisely
+is so powerful here. And I'm guessing
+this would make such a massive impact on
+reducing the number of accidents or as
+Phil said at least if there is an
+accident, it's a much much lower speed
+because the vehicle is actually able to
+control itself and slow down that much
+earlier. You know, um it's interesting
+because humans have a certain reaction
+time that's built into our our neural
+processing and it really is um it cannot
+be improved, right? We there are certain
+humans that have a bit better reaction
+time uh for for example F1 drivers. But
+um and there are certain humans that
+have poor reaction time. But you know
+that point 2 uh that is really at the
+limit through which we actually can see
+um see something and actually react to
+any anything at any time
+&gt;&gt; has to decide too. Yeah.
+&gt;&gt; Yeah. This is this is just the visual
+cortex of our brain um getting the
+information to the the processing
+center. So now if in in terms of like
+what do we do to mitigate that? Well,
+race car drivers, F1 drivers are taught
+they see an accident. What you do is you
+head directly to where you saw the
+accident. You don't react by pretending
+you know where the car is going. The
+most likely place it's not going to be
+is where the accident started. So, they
+are trained to literally head directly
+at that accident and and that allows
+them to keep most control of their
+vehicle. Right? Humans that are, you
+know, average drivers don't do that. to
+CERN's point, they they overreact and
+they cause, you know, massive and and
+what's happening here with FSD is that
+not only is its reaction time to the
+initial incident, but it is continually
+in that planner reacting, you know, at
+at you know, I mean, look, it's it's
+it's running its it's running its data
+through 36 times a second, possibly
+higher. So there's no way um you know
+that as it as it runs through that
+incident that you're talking about sort
+of like someone spitting out of control
+it's replanning continuously
+&gt;&gt; during that incident and for it's it's
+sort of as if FSD has got a slow motion
+view of that like the best way to think
+of it is
+&gt;&gt; that yeah if you took that accident and
+you slowed it down 10x that's how FSD is
+actually seeing it. Um and that will be
+inescapable in the results as you know
+as they come up and of course what we
+see what we'll see in in robo taxi at
+scale will be extremely safe
+&gt;&gt; and that
+sorry I was going to say and by the way
+elite sprinters right you think of 100
+meter runners
+they will get a full start if they react
+sooner than onetenth of a second
+&gt;&gt; so the gun can go off
+&gt;&gt; and if somebody leaves the blocks and
+point you know 99 that's a false start.
+&gt;&gt; Yeah,
+&gt;&gt; cuz no human can react faster than a
+tenth of a second,
+&gt;&gt; right?
+&gt;&gt; So, we're seeing FSD with almost elite
+sprinter reaction time. The vast
+majority of the human population cannot
+react at that speed, whether it's an F1
+driver or an elite 100 meter sprinter.
+The rest of us are far slower and
+particularly if you're tired or it's
+dark or whatever other things going on,
+if it's wet. Um, so we're we're getting
+to superhuman territory here. Yeah, that
+example that he gave was fantastic. The
+car all the cars were parked and then
+this one car of course you can see the
+brake lights turn on as the car was
+driving. It noticed it and so it's
+already started to even you know start
+to go away for just in case it comes in
+and exactly that is what happens. This
+car does decide to leave without looking
+and then the car breaks and then he you
+know everybody's going why did it do
+that? Cuz they even they didn't see that
+originally. He had to slow it down to
+watch. But you can see that the car had
+already se prepared for it to happen.
+And then when it did happen, it breakd
+and then realized, okay, the guy and
+then it then it realized that the this
+car not only turned but then stopped and
+so then it then it went move forward,
+right? It continued.
+&gt;&gt; Yeah. The other interesting point here
+to make is that it isn't just reaction
+time. It's actually just the entire, you
+know, it's like there's no distraction.
+There's no um you know the driver in
+that vehicle if it was the if there was
+a human in that Tesla driving it at that
+moment he could have been looking to the
+left and not seeing that car do what it
+was. So independent of reaction time
+alone and this is what we do when we're
+so-called distracted. What what is what
+is the definition of distracted? It's
+that we're not looking through our
+entire you know we're not looking
+peripherilally through our entire
+vision. The car is always doing that.
+There's never a moment in time when the
+car isn't doing that. So, and and the
+key is and you look at one of the other
+release items as they're talking about
+improving they're they're constantly um
+an interesting thing here for for me
+from an engineering point of view is
+that I look at the amount of work that
+the Tesla team is doing on that runtime
+and that's that's a strong focus for me
+because the AI when people think of this
+they think of okay it trained an AI is
+the AI good is its box of numbers good
+and does it do the things is supposed to
+do. But the reality is, the ground
+reality is that we've got to get the
+100% of the vision data through that
+stack in minimal time. Uh, and the
+faster we can do that, the better we can
+react and frankly, the more we can see
+because that means that instead of them
+chopping off the data in some particular
+fashion, they're going to increase. I
+mean look they have a certain amount of
+visual uh resolution that they can bring
+to that stack and bring through that
+runtime. And I guarantee that in
+previous versions they have limited that
+in some fashion. They have cut it off in
+some particular fashion because they
+just don't have the processing power.
+Maybe AI5 has that processing power but
+AI4 maybe doesn't. So what they're doing
+is they're trying to optimize that.
+They're trying to bring more data
+through the system at a faster cycle to
+get all these benefits that we're
+starting to see. And that's like, you
+know, if you talk about that being in a
+sense that I don't know what Elon meant
+by the last piece of the puzzle, but to
+me that is a huge piece of the puzzle.
+You have got to it isn't good enough to
+train an AI and then think of it as
+abstractly running on some computer. you
+have to tune it to that computer.
+Especially, you know, this is very much
+unlike an LM. An LM, we as humans, we
+can wait for that thing to respond to
+us. We sit there, you know, maybe we're
+a little pissed off that it took 29
+seconds and it should have taken 24. But
+in the car, we've got to get this data
+through as much data as possible from,
+you know, this side of the stack, the
+the neural net to this side of the stack
+36 times a second or whatever they've
+decided. uh and if they wanted to go to
+60 times a second, you know, possibly
+they could do that, right? And and that
+is the effort that it goes on. That is
+the strong amount of effort that that
+team is uh optimizing for and and
+specifically optimized for in this
+release.
+&gt;&gt; Phil, when do you think they knew they
+needed to make this change? Well, I
+suspect that I mean look what what they
+did here is um I think the story goes
+back a little bit in the fact that they
+built their own version of this runtime
+over many years. Okay. And they have
+been massaging it over time and they
+have discovered
+or incrementing it or whatever you want
+to call it. they have discovered uh
+where all the little bottlenecks are and
+the things that they wanted to kind of
+optimize on and they didn't really have
+a good systemwide optimizer. So what
+what they can do with this new
+technology is that they can effectively
+say well we can take the AI we can
+determine so what is this thing going on
+here when we train a model we end up
+with uh the the abstract the the the
+model itself like what it is it's a
+bunch of layers it has mathematical
+operations so you take vision data on
+one side you send it through these
+neural neural layers aka a neural
+network and you get the the output and
+our output is you know we know is
+control data which is accelerator
+braking steering angle right um the the
+the point of the exercise is we know
+that they they may want to increase
+either the number of layers they may
+want to increase the number of
+parameters they may want to uh but what
+they need to do is they need to look at
+each of those as the data flows as the
+data flows through they want to look at
+it abstractly and say where is all of
+the um compute operations and where are
+all the memory loads because this is an
+important component that there's so much
+you know data has um we we we always
+focus on this compute part of the
+problem a lot but the reality is that
+most of the compute is waiting for data
+waiting for data and it's waiting for
+data to be loaded into memory and
+transferred to the processing cores
+whether it's GPU cores or CPU cores.
+That's where most of the compute latency
+occurs. It's not in the actual compute,
+it's in waiting for data. So by by
+redoing this whole runtime, they were
+able to now have a better modeling, if
+you will, of where all those weight
+states are, where all those
+inefficiencies are. And now they can
+sort of coales and and uh take certain
+operations and pull them together or or
+subset those operations in particular
+ways that allow smaller memory loads. So
+it's it's it's the entire to them it's
+this entire abstract view that allow
+them it's weird. It's like abstraction
+most in most people's brains abstraction
+leads to poor performance. But in this
+case, the abstraction allows them to see
+the operations at its at its kind of
+most fundamental level. And now having
+seen those operations and having the
+experience that they know what they have
+to do, now they can say, okay, this is
+where the hardware can help us. This is
+where the memory load is slowing us,
+etc., etc. When did they see this EER? I
+suspected I suspect that that early fall
+this was on the road map and there was
+probably some folks one or two engineers
+assigned to rewrite this runtime and the
+process
+I mean and and and it became you know in
+some review possibly with Elon possibly
+without they said this has got to move
+up this is you know we want to get this
+before like maybe this whole thing was
+going to be what was going to happen on
+and they decided to frontload this now.
+And I think that they said look, let's
+just do it now. Let's get it done. Um,
+and it gives us the opportunity to uh
+uh, you know, mess with the model
+further. The train model now now it's
+easy now you know so train the model now
+we've got the most optimal performance
+that they can have. uh and I'm sure
+they'll they'll continue to try to
+optimize further but I think they've
+reached limit almost limit to the
+optimized hardware and now it's just a
+matter of um okay let's do more
+reinforcement learning cases let's do
+this let's do that and then maybe let's
+get a 10x parameter model operating on
+an AI4 vehicle
+&gt;&gt; yeah sounds like they didn't they found
+this is what Elon said here right uh our
+rate of investment with a small model
+has been so fast that the large model
+has not yet caught up v15 will be the
+large So I think that they saw version
+14, they saw that they can do things to
+it to already get to that level of
+safety that they need and that's the one
+that's been moving so fast. The big
+thing was that this was a rewrite and
+because it's a rewrite it sets the stage
+for faster model iteration and they
+achieved the 20% faster reaction time.
+&gt;&gt; Right.
+&gt;&gt; And then CERN, you also think that this
+can lead to a potential V14 light for
+hardware 3. Yeah, and this is why I was
+sort of asking Phil about the timing of
+all this because if you recall in the
+either the last quarterly earrings call,
+maybe the one before that. Yes. They
+were talking about we haven't forgotten
+about hardware 3, we see a potential
+pathway.
+&gt;&gt; Yes.
+&gt;&gt; And I'm wondering if this is related to
+that. Um that if you've got a more
+efficient runtime, then you can use
+older hardware. You can you can run, you
+know, a model with more more advanced
+capabilities, right? You can you can run
+it through and and it might work. Um,
+this is speculation on my part, but it
+it seems reasonable to believe that, you
+know, it's it's coinciding with what
+they said and now what we're seeing.
+&gt;&gt; You know, ironically, some of your
+team's best work happens when you have
+these constraints. Um, this is when the
+team gets very very focused
+um on optimizing for the constraint. And
+you know if you're given unlimited
+hardware, unlimited compute, uh you
+often make some other mistakes. So here
+here reaching this limit, what I call
+the limit gives them maybe the
+opportunity to your point get this on
+hardware 3. The fact that they're
+thinking about hardware 3 in general is
+a good thing. Even if even if hardware 3
+is left behind,
+it simply means that by thinking about
+these limited compute environments, they
+are able to achieve, you know, like look
+at the end of the day and I would
+apologize to some folks who going to get
+pissed off at this, but if hardware 3 is
+left behind,
+but um robo taxi explodes and takes off,
+I think we're in a good place. And and I
+think that is where we are here. That is
+where we are here. I don't know what's
+going to happen to hardware 3 vehicles,
+but I'm pretty sure I would place a bet
+that that hardware 4 vehicles, current
+robo taxis are um are going to go, you
+know, going to go to scale. Um
+&gt;&gt; yeah,
+&gt;&gt; uh on the on the hardware for platform.
+&gt;&gt; Okay. Uh I want to play a little bit
+more of AI driver, what he does say
+because you this guy's tested it out
+really really well. Listen to what he
+says here. but hesitates a lot more than
+14.2. So far, in my experience, it has
+never chosen incorrectly and breakd.
+It just feels like it thinks about it
+sometimes. And while 14.3 may need
+another layer of polish to bring back
+the levels of smoothness of before, I
+think the real magic here is this new AI
+compiler built with MLIR. I think this
+is actually where Elon's comment of 14.3
+being the last big piece of the puzzle
+comes from. Not that this update
+completes the puzzle, especially with
+some of the clips we're going to get to.
+I'll definitely show you the puzzle
+still needs building, but this being a
+new base that they can work from that
+not only gives the car absolute
+instantaneous response times, but also
+makes it easier for them to iterate and
+get updates out more quickly. Many
+people focused on that 20% faster
+reaction time in the release notes, but
+missed that very next point about them
+being able to iterate on the models much
+faster than before. I think that this
+transition could be the pulling the
+band-aid off moment where there may be a
+few regressions, but it allows a huge
+acceleration in progress and will
+probably be the base for the next
+several generations of FSD, including
+version 15 and beyond. I mean, you never
+know with AI stuff lately. Things are
+honestly insane. But at the very least,
+we should expect updates coming out much
+more frequently than this slow burn
+cycle we've seem to be stuck in lately.
+The last thing I want to mention before
+we dive deeper into 14.3 changes is a
+psychological shift I've had lately,
+especially since the release of version
+14 in general. We finally crossed the
+point where it's basically factual that
+driving with FSD is significantly safer
+than driving yourself, and I feel like
+it's important to call that out. I
+consider myself an above average driver,
+just like the average person does. But
+I've reached a stage where I actually
+feel exposed when driving manually. It's
+just simply impossible for me to match
+the car's reaction time now, and I can't
+look in every direction at once, and the
+car can. While filming this drive, I saw
+a very near miss with a pedestrian on a
+bicycle who was texting and not paying
+attention and was nearly ran over by
+somebody who was not expecting her to be
+in the intersection. Regardless of who's
+at fault here, it's a perfect example of
+the biological limits that we all have.
+We can Wow. See that right there? There
+was an mississ accident. the biker
+crossed there and obviously the FSD car
+didn't move, but then there was another
+car that was driving, didn't see the
+biker move along. She didn't see that
+and then she had to like last second try
+to stop the collision.
+&gt;&gt; Uh I just wanted to point out his point
+which is FSE version 14 today is safer
+than him as an above uh driver, above
+average driver. I feel the same way I'm
+using it now. This is 14.2 whatever it
+is. 14.3 comes out, 20% faster reaction
+time. That's the difference. Uh are you
+guys just to get it out on the table
+here, do you think that you need to wait
+for version 15 or would version 13 with
+maybe a few more point releases is
+enough for you to say that unsupervised
+robo taxis in Austin is going to start
+scaling beyond the 10 cars and maybe
+they'll have all of them. Cyber caps
+will all be on this and it's ready to
+go. Or are you thinking 15 still?
+&gt;&gt; No, 14 doesn't.
+Absolutely. I mean, look, Elon didn't
+say 15 is the thing we're waiting for.
+Everybody else said he said that that
+but if you read what he wrote, he didn't
+say that. He simply told us what they're
+going to do in 15. That's it. Period. Um
+he said it would be much safer than
+something whatever. I don't know what
+his characterization of it, but look
+look where the safety may be today. It's
+fine. I mean, it's literally uh AI
+driver is making a completely accurate
+statement about reaction time safety. I
+would add a couple things to that. I
+would say that remember the faster it
+can react the better the the the in a
+sense in a weird sense the slower the
+planner can be to plan out what it needs
+to do. In other words, it doesn't need
+to have if we've seen in the past
+sometimes um releases where we get these
+very jerky reactions like the car does
+these uh remember there was a whole time
+when it was like doing these uh quick
+breaking re you know and and this is
+because the planner was just doing its
+very best to instantiate a plan that
+that it thought was necessary. But if
+you can increase that um you can create
+increase the the flow of data through it
+you have more time to build a plan and
+to build the accurate plan the plan that
+you want that that leads to smoothness.
+Now, I think what we where we are with
+robo taxi is is what I've been kind of
+repeating a lot is that
+the issue with roboaxi is that for the
+first time, for the first time, and
+you're and you're going to say, well,
+wait a minute, is this really the first
+time? Yes, it is. For the first time, we
+have a a lot of data from observers
+whose job is to observe. When we get a
+vehicle and we report something back to
+Tesla or we have 10 Tesla engineers
+getting a point release and running
+around the roads of Palo Alto, we are
+not getting an extreme amount of data.
+But robo taxi running in Austin, running
+in the Bay Area with these trained
+personnel sitting in the car are
+observing these situational things and
+they have probably gotten very good. I
+mean, what I'm talking about is the
+entire team has gotten very good at that
+human pipeline. What I mean by that is
+in the summer when robo taxi first
+started and we had these these observers
+out there doing their thing. I'm sure it
+was a bit of chaos. They were reporting
+things engineers like, "Oh, I think I
+just heard that. Oh, that's the same
+intersection. Oh, no, that's a different
+intersection. Oh, wait, that's a
+different situation in a different
+intersection. know this is I think that
+they have gotten that human pipeline
+down to some level of efficiency where
+they can take in the data from the
+observers and they can bring it to bear
+and what I mean bring it to bear is that
+they can conjure up a reinforcement
+learning case for the stack and I think
+that is the other big piece of time here
+is that what they are doing is they are
+curing the long tail long tail I mean
+we've heard about this a shock has
+characterized this himself Elon has
+characterized as the long tail. The tail
+is very long in terms of of scenario.
+So, we can increase the overall reaction
+time, but we can't necessarily tell what
+that sixway intersection is going to do
+with that crazy lazy light, right? We
+need to get through some of those
+scenarios. And the way we get through
+them is we observe them, meaning Tesla's
+safety drivers, riders, observers, um,
+observe them, bring them through the
+human pipeline. They build the
+reinforcement learning case. They put
+that to work. They put that in the
+model. And now they have cured another
+portion of that tail. And I think they
+are just waiting to clear that stack
+until they decide or clear that list, if
+you will, until they decide to uh
+release more of these things in an
+unsupervised way. The other thing too I
+think I would add to that is if you
+think about all the data that they've
+had on FSD pre-robo taxi, you know, pre-
+last summer, when I drive my car with
+FSD, I'm not getting out and then having
+the car park or I'm not having the car
+come to me and pick me up. So there was
+sort of missing a whole set of data in
+terms of a robo taxi operation. That
+part of it actually is kind of
+important. It's actually where in the
+&gt;&gt; That is actually Yeah, that's actually
+the the a really good point because uh
+they said that the that the upcoming
+release here uh that's not part of this
+yet expand reasoning to all be behaviors
+beyond destination handling which means
+that this release they added reasoning
+to destination handling.
+&gt;&gt; So why would they put reasoning into
+destination handling first? Why would
+that be the first thing beyond all the
+other choices of where you would put
+reasoning?
+&gt;&gt; Yeah. Robo tax
+&gt;&gt; because they want to roll out robo taxi
+sooner, faster, happening faster.
+&gt;&gt; Exactly. Yeah. CERN's exactly right is
+that when we talk about using FSD, we
+are not talking about that last mile
+stuff, you know, we don't talk about,
+oh, did it drop? It's not dropping us
+off, right? We, you know, we probably
+take control of the car, put it in the
+parking spot, get out of the car. That's
+the end of the story. The the model with
+robo taxi is different. It has to pick
+you up in the right place. It has to be
+both a correct place from u you know
+efficiency for for the rider. Remember
+when you guys I remember you both
+waiting uh running to the robo taxi you
+know down the street cuz oh look and
+Herbert's selling it's down there down
+there we have to run you know quarter
+mile to get that thing or whatever it
+was the time. Um, but you know, you got
+to pick the person up at the right place
+for both safety reasons and efficiency
+reasons, expectation reasons, and you
+got to drop them off. And that stuff was
+pretty much missing or missing from the
+experience level uh from from our use of
+FSD. So that's where there is a key
+difference. uh and that is what I think
+I've said that you know independent of
+reinforcement learning independent of
+model improvements independent of a lot
+of things that is something specific in
+robo taxi that has to be optimized for
+and has taken a lot of time if you
+remember uh even Robert Scoville talked
+about that he said he was saying uh he
+was talking to somebody off the cuff in
+the Bay Area this is a safety driver and
+uh they were saying one of the biggest
+problems that they had was was pickup
+and drop
+It makes complete sense when the second
+I heard that I'm like well you know duh
+&gt;&gt; that is a big one. Uh let's uh for
+reasons of completion just to be you
+know just do it for completion. Let's go
+through the list of features that they
+added in 14.3 and then you guys can pick
+the one you want to talk about but just
+get the audience here um up to speed. So
+we talked about the 20% faster reaction
+time already. We talked about the
+upgraded re Oh this is something we
+didn't talk about yet. upgraded the
+reinforcement learning stage of training
+the FSE neural network u resulting in
+improvements in a wide variety of
+driving scenarios. They upgraded the
+neural network vision encoder. It should
+be able to see better in low visibility
+scenarios, in rare scenarios. Uh an
+expanding traffic sign understanding,
+but uh AI driver pointed out that it's
+still not reading specifically like you
+know don't turn right or turn right you
+except for turning right you can do it
+right now. It didn't read that well. He
+thinks that that traffic sign
+understanding reading signs again been
+optimized for the parking lots but not
+necessarily yet for everything. Uh
+rewrote the AI compiler. We talked about
+that. Mitigated unnecessary lane biasing
+and minor tailgating behaviors.
+Increased decisiveness of parking spot
+selection and maneuvering. Improve
+parking location pin prediction now
+shown in a map. Enhanced response
+emergency vehicles, school buses,
+rightaway violators, and other rare
+vehicles. Improved handling of small
+animals. Improved traffic light
+handling. Complex intersections with
+compound lights, curved roads, yellow
+light stopping. Improved handling for
+rare and unusual objects extending,
+hanging, or leading into the vehicle
+path. All this sounds like it's it's
+it's already very important for robo
+taxi. Improving improved handling of
+temporary systems degradations by
+maintaining control and automatically
+recovering without driver intervention.
+Those are the things that they improved.
+And the three things that they're about
+to add later, uh talked about the
+destination handling, expanding
+reasoning beyond destination handling,
+adding pothole avoidance. Finally,
+improve driver monitoring system
+sensitivity with better eye gaze
+tracking, eyewear handling. This one
+here, that sounds more like supervised
+driving.
+&gt;&gt; Yeah. Well, I mean, a good number of
+those items can just be rolled up under
+the RL category, right? That's all they
+are. I mean essentially what they've
+done is I mean big big story here is u a
+lot of the training they did in this
+release was reinforcement learning use
+cases and so um the the coming pothole
+avoidance will be exactly that
+&gt;&gt; like it's exactly that yeah I mean
+avoiding animals is exactly that better
+&gt;&gt; school zone is exactly that um all the
+other ones that we saw there um I I
+&gt;&gt; call some attention to you know they
+talked about improved uh vision encoder
+uh here again I think I think a couple
+things are true here. One is that uh
+that you know they can take in more raw
+data and uh of course the vision coder
+is a a a big piece of this architecture
+we rarely talk about and and in and of
+itself you know they can optimize that
+piece that component of the stack um
+because it has to set up the data for
+the neural network to process it and um
+you know without that we don't really
+have any input data. So, so it's an
+important component again that's in the
+big bucket of optimization. That's in
+the bucket of optimization. Let's let's
+use all the data at the potential at the
+potential data rate we can use that
+data. And I think that's a you know it's
+a big theme here which is that at the
+end of the day uh whatever the neural
+network can can compute in other words
+whatever it can decide whatever it can
+we also want to optimize the entire data
+pipeline right so we got to get that to
+the proximal limit you know let's get
+that to the limit on the hardware that
+we're dealing with and then having have
+having that which is what 143
+effectively has done for the team and
+I'm sure there'll be more improvements
+but that's the big box of work there.
+Now they can send that data through uh
+in any number of scenarios with this
+reinforcement learning and get the
+outcomes that they're looking for in the
+planner. And I think that is, you know,
+in my mind much more important than some
+categorical I'm going to increase the
+parameter count by 10x because if you
+increase the parameter count by 10x and
+then you were left with
+um less than optimal input data or less
+than optimal runtime, then what was the
+point in the first place, right? And
+further, if you increased the parameter
+count by 10x and then found that
+having not done those things, it
+couldn't operate in the hardware
+environment that you have, then what was
+the point? So, this is the tee up for
+them to be able to do that. And now
+everybody out there who doesn't really
+understand what even a 10x improvement
+in the or 10x parameter increase in the
+model would do for them will be happy
+that they do that at some point.
+Yeah, I found it I sorry I'm being a
+little cynical there, but I found it to
+be completely insane that I mean look, a
+lot of this falls on Elon for not to say
+things he there's things he should he
+doesn't need to say, right? Uh to
+advertise an increase in the model of
+10x leads everyone to think that that
+has to happen for something to be true.
+Um and uh and then he doesn't say what's
+missing in that, you know, and so then
+people are left with filling in the gaps
+the way they do. Um, so you know, I I I
+laugh a little bit when I read those 10x
+model improvements because I'm like,
+well, what do you mean? It's it's not
+you're not improving the model 10x.
+You're simply adding 10x the number of
+parameters. You have no data yet to
+support that. That builds a better
+outcome, right? U Tesla needs to get to
+the place where it can get that on that
+kind of hardware to decide whether it
+improves the actual driving outcomes.
+Yeah,
+&gt;&gt; I think there's also something really
+important. If you go back to your second
+last slide in the list of items, um this
+idea that the car can now recover from
+its mistakes.
+Um
+I think there recovering without driver
+intervention, reducing unnecessary
+disengagements. This is also actually I
+think very important.
+So in the past, you know, you might get,
+you know, the red hands, you know, take
+over. Now, um I've noticed already with
+the the builds that I have, I'm not on
+14.3 yet, that that's happening less and
+less, and I think this is a further
+indication of that. So, the vehicle, if
+it finds itself in a situation where
+normally it would say you need to take
+over, is recovering from that itself.
+It's it's more and more capable of
+dealing with these problems that
+previously it couldn't. And certainly in
+a unsupervised robo taxi scenario, that
+is absolutely critical. It needs to be
+able to figure it out for itself at all
+times,
+&gt;&gt; right?
+&gt;&gt; Or at least
+&gt;&gt; you don't want to phone home all the
+time and say, "Hey, can you get me out
+of this situation? I went down a street
+and it turns out that there's a tree on
+this blocking the street. What do I do
+now?" Well, the car needs to be able to
+figure this out. Um, so I think this is
+also very important. And I'm I'm curious
+to see as we get more evidence from 14.3
+exactly how much more advanced this part
+of it is.
+&gt;&gt; You know, I bring up a sub point there
+which I think is super important. you're
+kind of um saying it without emphasizing
+it. It's, you know, robo taxi has to
+Yeah, you're right. In the robo taxi
+situation, it has to it has to square up
+all these problems all by itself. There
+is no it's not like you said it maybe
+there's a tree in the street and that it
+was never going to hit the tree in the
+first place, but it has to have a plan
+to get out of that. And if it doesn't
+have a plan to get out of that, it has
+to call the operations people, right?
+And so what they're left with is here
+they're trying to build a system that
+works at scale, right? And what they've
+done here is all these piece parts and
+they don't want to be left with those
+little components where the the network
+itself I mean the entire thing can't
+scale because it's left with all these
+silly
+drop off problems or you know indecision
+problems where it has to call the
+operations people. So I think that's
+another thing what they're looking at is
+they're saying look if we uh multiply
+this by a th00andfold 2,000fold
+5,000fold in the field what would our
+operation center look like? And they
+need to get that down to very minimal
+number of calls to run a service like
+this. So your point is, you know, very
+very correct in terms of of robo taxi
+specifically because in the other
+scenario, we as users that drive our
+cars, we handle this. We never call
+anybody. We never do anything. We don't
+need to do anything. We just write about
+it on X the next day. But in in the case
+of somebody that's in a robo taxi, that
+problem needs to be solved. And that
+operation center needs to only deal with
+absolutely critical problems, not
+everyday problems. Uh did you guys know
+that there was actually two features
+that's been rolled out now to all of our
+cars before 14.3 even lines?
+Uh one of them is uh apparently there's
+uh evidence that they've relaxed the
+driver monitoring. So more and more
+options you can more times scenarios you
+can just not be looking as much and they
+don't nag you as much.
+The other one is Yantai, one of the
+engineers, executives at Tesla AI. He
+was uh responding to a patent where his
+name came on and they've resolved or
+solved better the uh the wipers
+&gt;&gt; and uh there the patent was using the
+wiper. When the wiper does go, it
+actually can sense the friction on on
+the on the windshield. And then he also
+said that they've also rolled out better
+this version 14.3 specifically will
+handle better winter conditions as well.
+Yeah. So anyways, it's just interesting
+that they're continuing to improve even
+our own cars with the old version as
+well. I wanted to ask you about this
+final point here though. This is
+upcoming improvements. This is improving
+the driver monitoring system. This is
+sounds like it's the opposite of uh
+reducing nags, you know, better eye
+gaze. So, it actually can see the inc
+cabin camera can see if the driver is
+looking, tracking, uh, eyewear handling.
+So, if you're wearing hats or often when
+I bring down the visor down, I'll get
+nags because I can't see my eyes as
+often. And a higher accuracy and
+variable lighting conditions. So, this
+So, you could argue, well, if they're
+going to add this, that means you're not
+going to see unsupervised FSE anytime
+soon. What's your thinking why they
+added that?
+&gt;&gt; I think they have to do that for
+hardware 3 anyway, because I don't think
+unsupervised ends up on hardware 3. So,
+in other words, what they're trying to
+do there is um
+to be to be to state this as accurate as
+possible. They want to observe the
+human's ability to supervise the car
+accurately and make sure that they only
+interfere with the human uh when
+necessary. So, um, and I think that as
+we go further, you know, Tesla wants to
+make this feel very smooth, and I don't
+know when they get to, uh, unsupervised
+on hardware 4 vehicles, but I predict
+that they won't get there on hardware 3
+vehicles. And so, whatever 14 light or
+whatever ends up there will be um,
+unsupervised. And so, they want to make
+sure that it it works as accurately as
+possible for the best possible
+experience.
+&gt;&gt; Wait. Okay, let me argue uh take the
+other side of it. The whole reason why
+they're trying to put FSD upgraded FSD
+and hardware 3 is so that you can put
+the hardware 3 cars into robo taxi which
+just needs to be unsupervised.
+&gt;&gt; That's not going to happen. That's not
+going to happen. Not going to happen.
+&gt;&gt; I mean, nobody I don't I'm not saying
+that I've heard them promise that, but
+I'm trying to understand the words that
+they use about that they won't let the
+hardware three guys
+&gt;&gt; Yeah. I don't I don't think hardware
+vehic hard hardware I don't think
+hardware 3 vehicles will ever run
+unsupervised in the robo taxi network or
+in a customer scenario and that's my
+&gt;&gt; okay
+&gt;&gt; my prediction and I could be wrong and I
+would be pleased to be wrong but I don't
+think that's going to happen
+&gt;&gt; interesting
+&gt;&gt; just on this I gaze situation Herbert
+there's a couple things come to mind for
+me is there are times when if I'm
+wearing sunglasses
+and I'm looking at the road and yet I
+still get a warning on the screen to pay
+attention to the road, you know, the
+blue light. And what I have to do is
+like move my head in some way so that
+the camera picks up that I've adjusted
+my my gaze. And so maybe it's referring
+to that, it's that, you know,
+sensitivity with better eye gaze
+tracking that that even though it might
+think that my gaze is looking down that
+I'm not. I'm actually still looking at
+the road. And maybe there's a better
+sensitivity to that issue. The other
+issue perhaps is sometimes you're
+looking at the screen because the screen
+is, you know, barking at you about
+something. You look at the screen and
+then you get the thing that says look at
+the road and it's like, okay, what do
+you want me to do, you know? So maybe
+it's it's handling that situation a
+little bit better when it's you need to
+attend to something on the screen and
+giving you perhaps a little bit more
+time to do so. Um, that that might refer
+to some of those those issues that I'm
+experiencing. the better they can make
+that be accurate, the better the human
+will supervise the car. And they're not,
+you know, humans are incredibly good at
+working around issues and problems. And
+it's not just about fooling a system.
+It's just sort of adapting to a system
+that's given to them. And what Tesla's
+trying to say here, I think, with that
+line item is we are going to be as
+accurate, dead-on accurate as possible.
+only annoy you when we need to annoy
+you. And that builds for, you know, a
+better experience. And then I think what
+that translates to eventually is that
+remember
+&gt;&gt; when the when they go customer
+unsupervised,
+there's a funny transition period that
+we're never we're not thinking about
+that happens there, which is the human
+is still thinking, am I in play here?
+What do I have to do? Do I want to sit
+here and do this? Some of us will be
+like a lot of us in these conversations,
+listening conversation, what are you
+talking about? No, no, no. Average
+drivers will be looking at this problem
+going, "Oh my god, the car is actually
+doing it all on its own." Right? So,
+they want to get accustomed to having
+the car doing it all on its own. Whether
+that takes another six months or a year
+uh you know from now to get to fully
+customer unsupervised, I think we have
+to start conditioning its customer base.
+&gt;&gt; All right. So just to clarify everything
+as far as I heard okay we agree the
+three of us here I believe that 14.3
+with the improvements that they have uh
+has increased safety therefore they will
+scale unsupervised robo taxi now what
+about the comment about unsupervised
+coming to regular customers like us
+if if 14.3 is enough to do unsupervised
+from robo taxi let's say just in the
+geography of Austin Then CERN should be
+offer offered the opportunity when he's
+got his car in that geography to say,
+"Hey, you know, you can go ahead and do
+unsupervised Teslas as if you were
+taking a regular robo taxi or do you
+guys think that you need to wait for
+version 15 before they can then say all
+Teslas in whatever geography is
+unsupervised?"
+&gt;&gt; No, I don't think they need to wait for
+that version. I think I mean I think
+unsupervis I mean largely customer
+unsupervised and robo taxi is the same.
+It's the same problem. I mean there's
+some differences. Yeah, there's some
+obvious differences here, but um you
+know, I think that they are, like I've
+said before, I think so much of their
+focus is on getting robo taxi to go. Um
+I don't think they're as concerned with
+customer unsupervised. I think a lot of
+us are obsessed with it, but I don't
+think they're as concerned is look, they
+know that there is a laundry list of
+items that are specific to that, but I
+think they're quite busy over there. And
+I think that they're focusing most of
+their attention on the laundry list of
+items that make robo taxi scale. And I
+think so I absolutely think roboaxi goes
+out before they worry about the customer
+side of unsupervised. And then they say,
+"Okay, let's go and chop off that list."
+And I don't know what's exactly on that
+list. I can hypothesize, but you know,
+there's sort of non robo taxi things
+that are on that list uh in the customer
+bucket. And I think it's just priority
+two, if you will.
+&gt;&gt; I would agree with that. And I would
+just overlay the the business risk
+aspect on it. It would make more sense
+to scale up robo taxi, start earning a
+bunch of revenue, making profit, then
+release the customer unsupervised. You
+at least have a massive then cash flow
+to deal with any lawsuits that come your
+way because of whatever stupid things
+happen. Elon had a post this week where
+he said, you know, we'll we'll probably
+end up avoiding 90% of accidents and
+we'll save millions of lives, but the
+other 10%, you know, are unavoidable and
+we're going to get sued for that. And
+so, what's the best, you know, way to
+deal with that? Well, one is is the best
+software you can possibly make so that
+you reduce the chances. But the second
+thing is is to have a lot of revenue and
+cash flow to deal with the cost of doing
+business.
+&gt;&gt; Cover that. Yeah. It's the cost of
+business. Gotcha. I think I think
+ironically there will be more accidents
+reported
+on
+&gt;&gt; customerr run unsupervised
+customer run unsupervised than in robo
+taxi. In robo taxi you get in and you're
+not allowed to get involved.
+&gt;&gt; But unless you get your butt out of the
+driver's seat in your current car,
+you're still thinking you're somehow
+involved in driving. And I think you
+somehow involved in driving are going to
+be the
+weak point in the decision framework of
+messing up and thinking you need to
+intervene when oh my god the car would
+have done this. No, it would have done
+it just fine
+&gt;&gt; had you not interfered. And that is kind
+of what I meant by that before. So, I
+think um and that leads to a whole list
+of like funny little items, which is,
+you know, it's a lot easier for them to
+focus on the robo taxi side of this than
+to worry about, oh my god, there's a guy
+sitting behind in the driver's seat and
+he's going to want to do something even
+though he theoretically knows he doesn't
+need to do something, right?
+&gt;&gt; Wonderful. Thank you guys. This was an
+important show to get out there because
+14.3 came out a limited kind of release,
+but the reaction you're getting from the
+people using it are through the roof.
+They think it's incredible. They they
+they are saying almost everyone says
+roll this out wide now. It does not have
+as many problems. Uh you know like when
+you first get the first release out
+needs to have some polish but it's tiny.
+And yet the argument out there is they
+just saw that this is not the 10x
+parameter. this does not is not the
+final piece. Therefore, we're not going
+to see everything's been delayed.
+Unsupervised robo taxing delayed uh you
+know everything's now passed. That's not
+what's happened. I think that the 20%
+faster reaction time, faster model re
+iteration, better vision, all of those
+things, uh rebuilt from the ground up,
+that's why this thing that's what they
+were waiting for. And now we're going to
+see robot taxi scale. So the simple way
+of thinking about this is the noise on X
+is irrelevant compared to Tesla's ground
+game and any moment in time I mean it's
+like literally any moment in time Tesla
+could we could wake up tomorrow and one
+of the big posts we see on X is Tesla's
+gone 100% unsupervised in Austin.
+Literally that could happen that could
+happen and I've stuck my neck out there
+and predicted that's going to happen in
+April. Um, now I could be wrong about
+that, but but but the basic point is if
+you if you if you if you just look at
+what the noise on X is really irrelevant
+to what Tesla's doing, you know, I mean,
+like right now, if you were to drive 20
+miles up the road from me and go into
+the parking lot of where these where the
+engineering is happening, that parking
+lot uh is full and it will be full on a
+Saturday and it'll be full on a Sunday
+as well. And the point is that Tesla is
+very busy cooking this thing. They're
+not sitting around waiting for something
+to happen. They're actively trying to
+make it happen. And uh those who also
+say, "Oh, Elon is
+uh pulling a back from this because he
+wants to, you know, destroy Tesla's
+stock price to make it easier for SpaceX
+to buy." I mean, I think this is just
+absolute insanity. And I would argue
+that for all the people that come up
+with these crazy arguments, I can find a
+whole bunch of people who still think
+that the earth is flat on X as well.
+&gt;&gt; Yeah, exactly. Thank you guys.
+Appreciate the expertise shared with the
+audience here. See you soon. Bye.
+&gt;&gt; All right. Thanks, Herbert.
+&gt;&gt; I've created a website that is the most
+comprehensive resource for the Tesla
+investor. Please check it out. Simply go
+to my website at herbert.com.
