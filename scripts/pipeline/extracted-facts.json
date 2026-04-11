@@ -2735,5 +2735,131 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-04-11T08:00:46.859Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 AI compiler was rebuilt from scratch, delivering approximately 20% faster reaction times",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "A major architectural change to the AI compiler in v14.3 is producing measurably faster hazard response, a meaningful safety improvement ahead of V15 large model release",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD training data is at approximately 9.2 billion miles, approaching Elon Musk's stated 'roughly 10 billion' mile target for unsupervised self-driving",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Closing in on the publicly stated training data milestone; hosts caution Elon said 'roughly' so 10B is not a guaranteed hard trigger for unsupervised rollout",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD training data accumulates at approximately 1,000 miles every 4 seconds",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Indicates the pace at which training data is growing, relevant to estimating when the 10 billion mile threshold will be crossed",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "V15 is identified as the large model FSD update; current v14.x releases are small model iterations",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Elon Musk stated the small model has advanced faster than the large model; V15 represents a step-change architectural upgrade",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD regulatory approval in the Netherlands is described as imminent; approval there would allow other EU countries to accept it without individual country testing",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "EU mutual recognition mechanism means Netherlands approval could rapidly unlock FSD across multiple European markets",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin Cybercab supervisors are reportedly no longer actively at the controls, indicating unsupervised capability is functionally ready pending regulatory clearance",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Hosts interpret this as evidence Tesla's unsupervised robotaxi software is complete; commercial launch is a regulatory/internal timing question, not a technical one",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 60 Cybercabs observed in two groups in the Fremont outbound lot, with crash testing underway and units being shipped nationally for environmental testing",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Physical production ramp of Cybercab is visible and accelerating; multi-environment testing signals near-term deployment readiness",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi is priced between approximately $240,000 and $260,000 based on California rebate application public records",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 250000,
+    "context": "Positions Tesla Semi at roughly half the price of competing Class 8 electric trucks ($400K–$500K), making it the only sub-$300K option in the market",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi achieves approximately 2.1 kWh per mile in real-world trucking use, versus the industry average of 1.7–1.8 kWh per mile",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 2.1,
+    "context": "Superior efficiency underpins Tesla Semi's operating cost advantage and ~50% per-mile cost savings in California versus diesel",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Giga Texas Model Y line reportedly down for approximately two weeks, possibly for retooling related to long-wheelbase Model Y (YL) production",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "If confirmed as YL retooling, this would mark the start of North American long-wheelbase Model Y production ramp",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla/Intel/SpaceX chip foundry partnership estimated to reduce chip manufacturing buildout from approximately $100 billion over 10 years to approximately $30 billion over 5 years",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Dramatically accelerates Tesla's path to domestic chip self-sufficiency; chips could be produced within 4–5 years under this timeline",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model S and X remaining inventory prices raised approximately $15,000 via addition of a Lux package; custom orders for S/X have been closed",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Confirms end-of-life for Model S/X production line, clearing factory capacity for Cybercab and Optimus manufacturing ramp",
+    "source": "20260410_futureaza_02_Terafab_A_Go_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-11T10:59:56.016Z",
+    "status": "pending"
   }
 ]
