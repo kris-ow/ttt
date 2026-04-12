@@ -2995,5 +2995,149 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-04-11T18:04:33.631Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD has accumulated 9 billion miles of driving data, up from 6 million miles in 2021",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 9000000000,
+    "context": "Represents the scale of training data underpinning FSD capability; dramatic growth from 6M miles in 2021 signals rapid maturation of the safety dataset",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD completes 44% of all drives door-to-door with zero takeovers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 44,
+    "context": "A key autonomy performance metric indicating what share of real-world trips are fully handled without human intervention — directly affects utilization and unit economics assumptions",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's FSD is reported to be roughly nine times safer than the average human driver",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 9,
+    "context": "Self-reported safety multiplier; acknowledged as not yet peer-reviewed, but used by the host as a key argument for regulatory approval trajectory",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's peer-reviewed data shows 90% fewer serious injury crashes than human drivers over 170 million miles",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 90,
+    "context": "Peer-reviewed benchmark for autonomous vehicle safety; sets industry standard that Tesla's self-reported data is being compared against",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Lemonade Insurance is offering 50% off per-mile rates when FSD is driving",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "insurance_cost",
+    "value": 50,
+    "context": "First concrete insurance pricing signal for FSD-engaged driving; a 50% discount implies insurers are already building autonomous safety premium into their models",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's robotaxi target fare is under 20 cents per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.2,
+    "context": "Tesla's publicly stated target robotaxi price point; central to unit economics modeling and the cost-of-ownership disruption thesis",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi is live in Austin with no safety driver and expanding soon to 18 cities",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms unsupervised robotaxi deployment milestone and signals near-term fleet city expansion; 18-city expansion is a key catalyst for fleet size and revenue growth",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production is starting in 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Production start is a critical catalyst for fleet size ramp and robotaxi revenue; timing aligns with the broader autonomous transition thesis",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD is live in seven countries, with Europe pending and Japan and Israel in testing",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Geographic expansion of FSD is a key catalyst for data accumulation, regulatory approval momentum, and eventual robotaxi fleet scaling outside the US",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "In February 2026, New York Governor Hochul scrapped the entire robotaxi proposal for New York State following pushback from the Taxi Workers Alliance and the Teamsters",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Major regulatory setback for robotaxi expansion in one of the largest US markets; signals city-by-city regulatory risk that could affect fleet deployment timelines",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is currently trading at approximately 330 times earnings (PE ratio)",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": 330,
+    "context": "Current valuation multiple as cited by the host; illustrates the market's embedded expectation of non-automotive business lines and is relevant to discount rate and growth assumption calibration",
+    "source": "20260411_brighterwithherbert_02_Tesla_Is_The_New_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T04:23:49.683Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD (Supervised) officially rolling out to customer vehicles in the Netherlands, marking a European market expansion",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First confirmed retail customer deployment of FSD (Supervised) in Europe; Tesla requires owners to complete an educational quiz before first activation, suggesting a regulatory-aware rollout strategy",
+    "source": "20260412_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-12T04:23:49.688Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab spotted testing in Wichita, Kansas — first confirmed Cybercab sighting in that state",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Merritt attributes broader geographic spread of Cybercab testing to Tesla having recently produced significantly more engineering and validation units, signaling an accelerating validation program",
+    "source": "20260412_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-12T04:23:49.688Z",
+    "status": "pending"
   }
 ]
