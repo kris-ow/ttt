@@ -3139,5 +3139,183 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-12T04:23:49.688Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla has logged over 9 billion miles of FSD driving data across its fleet of 7 million+ vehicles",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 9000000000,
+    "context": "Establishes the scale of Tesla's training data advantage over Waymo's ~170 million rider-only miles; directly impacts AI improvement rate and timeline to unsupervised FSD",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla added 1 billion FSD miles in the first 50 days of 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates accelerating data accumulation rate (~20 million miles/day), which is a key driver of FSD improvement speed and robotaxi launch readiness",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo operates a few thousand vehicles in a handful of cities and has driven approximately 170 million rider-only miles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Competitive benchmark; Waymo's fleet size is described qualitatively as 'a few thousand' with no specific number given",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab priced under $30,000 per unit with a target operating cost under $0.20 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Key DCF input for Cybercab unit economics; sub-$30K price point is central to the argument that Tesla can scale robotaxi where Waymo ($200K+ per vehicle) cannot",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab target operating cost under $0.20 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.2,
+    "context": "Stated as an operating cost ceiling, not a fare — but relevant as a floor for profitable fare-setting in the robotaxi DCF model",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo vehicles cost over $200,000 each including all ride-hailing equipment",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 200000,
+    "context": "Competitor vehicle cost benchmark; used to argue structural inability to scale to millions of units",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab unboxed manufacturing process targets: 40% reduction in factory footprint, 30% reduction in labor cost, 50% reduction in assembly time, and a cycle time of one unit every 10 seconds",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Manufacturing efficiency targets for Cybercab production; host flags the production ramp as the key near-term catalyst to watch in 2026",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla targets 1 million Optimus robots per year from Fremont, eventually 10 million per year from Giga Texas, at $20,000–$30,000 per unit",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Long-term Optimus production target; at 1M units/year this creates a data flywheel analogous to Tesla's FSD advantage",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab targets approximately 1 terawatt of AI compute per year, described as roughly 70% of TSMC's entire current global output, with Elon Musk estimating 10x faster chip design iteration by bringing photomask manufacturing in-house",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "In-house chip fab eliminates TSMC queue dependency and enables days-long design cycles vs. months; $2 billion facility with Intel as a partner",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Shanghai Megapack factory began production in February 2025 with 40 GWh annual capacity; Houston Megapack factory coming online later in 2026 with 50 GWh capacity, bringing total Tesla Megapack capacity to approximately 133 GWh/year",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Houston factory milestone is a near-term catalyst; total 133 GWh capacity would exceed total 2025 global energy storage market deployment of ~92 GWh",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "xAI is training 7 models simultaneously on Colossus 2, including a 10-trillion-parameter model; Colossus 2 has over 550,000 GPUs running on 1 GW of power, upgrading to 1.5 GW in April 2026; each model trains in 2–5 weeks",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Parallel training at this scale is presented as an iteration-speed advantage over OpenAI, Anthropic, and Google, each of which trains one large model at a time",
+    "source": "20260412_brighterwithherbert_01_Elon_Doesnt_Compete_He_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-12T18:09:36.548Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi pricing indicated in early California grant applications at approximately $240,000–$260,000, though these may be loss leaders",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 250000,
+    "context": "Early grant application data suggests Tesla Semi pricing target; presenter cautioned these figures may not reflect true production economics",
+    "source": "20260412_futureaza_01_Tesla_Semi_Faces_A_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-12T18:09:36.554Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Schneider had 100 eCascadia trucks logging 10 million miles as of 2025, averaging over 100,000 miles per truck",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 100000,
+    "context": "Provides real-world durability and utilization data for Class 8 electric trucks at scale",
+    "source": "20260412_futureaza_01_Tesla_Semi_Faces_A_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-12T18:09:36.554Z",
+    "status": "pending"
+  },
+  {
+    "fact": "eCascadia battery estimated to last approximately 500,000 miles, though range degradation from frequent 100% charging is a concern",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "Battery longevity estimate relevant to total cost of ownership and vehicle useful life assumptions for Class 8 electric trucks",
+    "source": "20260412_futureaza_01_Tesla_Semi_Faces_A_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-12T18:09:36.554Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Green Lane (joint venture with NextEra and BlackRock) operates a major charging site in Colton, California with over 40 chargers and solar canopy; MCS addition is planned",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "MCS deployment at Green Lane sites would significantly improve charging speed for Class 8 electric trucks, a key adoption barrier",
+    "source": "20260412_futureaza_01_Tesla_Semi_Faces_A_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-12T18:09:36.554Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Domestic battery production joint venture in Mississippi (Freightliner, Cummins, PACCAR) expected around 2027",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Domesticating battery production would eliminate the 25% tariff on CATL cells, reduce logistics costs, and qualify for manufacturing incentives, accelerating price competitiveness",
+    "source": "20260412_futureaza_01_Tesla_Semi_Faces_A_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-12T18:09:36.554Z",
+    "status": "pending"
   }
 ]
