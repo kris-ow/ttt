@@ -3431,5 +3431,225 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-13T04:34:03.353Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab production stated to be starting in April 2026 (described as 'this month')",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Host cites Cybercab production start as one of the near-term bullish catalysts, indicating production ramp has begun",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi deployment referenced as active in Austin alongside FSD going global",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Austin cited as the initial robotaxi deployment city, framed as an ongoing near-term catalyst",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 anticipated as a major capability upgrade, described as potentially delivering a 10x parameter improvement",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Some observers interpreted delays in FSD 14.3's arrival as meaning the 10x parameter improvement did not arrive on schedule",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus 1 million units/year production line announced and under construction at Fremont factory",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Shift from speculation to observable factory construction; meaningful milestone for production ramp credibility",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus 10 million units/year production line under construction at Giga Texas",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Represents the longer-term large-scale Optimus manufacturing buildout being physically observed",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Analyst 'Cern' sum-of-the-parts present value estimate exceeds $3,000 per share even with 50% probability discount applied",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "Cern applied a conservative 50% probability haircut to future segment values when discounting to present value, arriving at a PV above $3,000; specific discount rate not stated",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus production start target of 5,000–10,000 units by end of 2025 was missed; production start pushed to 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirmed timeline slip for Optimus; new expectation is production beginning in 2026",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi expansion to many US cities by end of 2025 was missed; pushed to mid-2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Latest timeline slip for multi-city robotaxi rollout; current expectation is mid-2026",
+    "source": "20260413_brighterwithherbert_01_Tesla_Stock_Might_Not_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-13T18:52:00.422Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Digital Optimus revenue model: at $100/month with 10 million agents by 2031 and 70% profit margins, estimated present value is approximately $32 billion assuming no growth.",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "This is the low-end tier of a five-tier Digital Optimus pricing model; the $32B figure represents the floor present value estimate for this business.",
+    "source": "20260413_cernbasher_01_Tesla_Opportunity_Wall_Street_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-13T18:52:00.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Anthropic is reportedly planning an IPO sometime in 2026 with a speculated valuation of approximately $400 billion.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Cited as evidence that AI software businesses command very high revenue multiples, supporting the Digital Optimus valuation framework.",
+    "source": "20260413_cernbasher_01_Tesla_Opportunity_Wall_Street_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-13T18:52:00.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "70% profit margin assumed for Digital Optimus software tiers across all pricing scenarios in the model.",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "Margin assumption drives the profitability estimates in the Digital Optimus present value model; justified by the software nature of the business.",
+    "source": "20260413_cernbasher_01_Tesla_Opportunity_Wall_Street_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-13T18:52:00.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab referenced as infrastructure being built partly to address chip manufacturing constraints for scaling physical Optimus to billions of units.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms Terafab's role in removing the production bottleneck for physical Optimus; contrasted with Digital Optimus which lacks this constraint.",
+    "source": "20260413_cernbasher_01_Tesla_Opportunity_Wall_Street_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-13T18:52:00.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "SpaceX reportedly confidentially filed to go public at a $2 trillion valuation, targeting a raise of $50–$75 billion — which would be the largest IPO in history, surpassing Saudi Aramco's $29 billion raise in 2019.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "A SpaceX IPO at this scale would be a landmark market event and could precede or trigger a Tesla–SpaceX merger, directly impacting Tesla's valuation thesis.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "XAI was acquired by SpaceX in an all-stock deal in February 2026.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "The XAI–SpaceX merger is a structural step toward the combined entity thesis and directly affects the asset mix of a potential Tesla–SpaceX combination.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "In March 2026, Tesla, SpaceX, and XAI jointly announced Terafab, a $25 billion advanced chip fabrication complex in Austin, Texas, targeting 100,000 wafer starts per month scaling to 1 million, with 80% of compute output targeted at space and orbital applications.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Terafab represents shared infrastructure being built across Tesla, SpaceX, and XAI — a physical signal of convergence and a potential precursor to a formal merger.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Optimus robots are expected to help construct and operate the Terafab chip fabrication facility in Austin, Texas.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Marks a concrete near-term deployment use case for Optimus in a real production/construction environment, directly tied to Terafab's timeline.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Starship's aspirational cost target is $10–$100 per kilogram to orbit, compared to Falcon 9's current ~$2,700–$3,000/kg, representing a 30–300x reduction.",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Starship's cost curve is the foundational driver of SpaceX's platform valuation thesis; at these costs, entirely new orbital industries become economically viable.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "ARK Invest projects SpaceX enterprise value at $2.5 trillion by 2030, with a bull case of $3.1 trillion.",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "ARK's model provides an independent valuation benchmark suggesting the $2 trillion IPO price is below where the company is projected to be in 4 years.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Chamath Palihapitiya stated in January 2026 that he believes SpaceX will reverse-merge into Tesla rather than IPO independently, consolidating control into one cap table.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "A Tesla–SpaceX merger would be the most consequential corporate event in Tesla's history, fundamentally reshaping the investment thesis for TSLA shareholders.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Gwynne Shotwell, SpaceX president and COO, was quoted in Time magazine saying: 'I'm not supposed to talk about the IPO in any way, but I'm looking forward to it.'",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "A rare on-record signal from SpaceX's top operational executive confirming awareness of and anticipation for the IPO process.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Morgan Stanley is the front runner to lead the SpaceX IPO offering, with its E*Trade platform reportedly being set up for retail allocation of up to 30%; 21 banks are involved in the deal.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "The scale of bank involvement and an unprecedented retail allocation signal the magnitude of anticipated demand and the IPO's proximity to execution.",
+    "source": "20260413_farzad-fm_01_Wtf_Is_Happening_At_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-13T18:52:00.434Z",
+    "status": "pending"
   }
 ]
