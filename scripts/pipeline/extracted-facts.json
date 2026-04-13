@@ -3317,5 +3317,119 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-12T18:09:36.554Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD received regulatory approval in the Netherlands, making it the first EU country to approve the technology",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This opens the door for further EU-wide approvals and gave Tesla stock a modest bump on Friday afternoon; described as expected but confirmatory",
+    "source": "20260410_jobhakdi_02_Live_Iran_Crisis_Update_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-13T04:34:03.342Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Joe Tegtmeyer's drone footage reportedly shows 30 to 60 Cybercabs coming out of the factory every single day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Daily production rate of 30–60 units implies roughly 10,950–21,900 units per year at current pace; production is active but all supervised, no unsupervised scaling confirmed",
+    "source": "20260410_jobhakdi_02_Live_Iran_Crisis_Update_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-13T04:34:03.342Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi count on the robotaxi tracker is approximately 10 vehicles, with growth described as decelerating",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 10,
+    "context": "The live unsupervised fleet remains negligible at ~10 vehicles; commercial scaling has not yet occurred as of April 2026",
+    "source": "20260410_jobhakdi_02_Live_Iran_Crisis_Update_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-13T04:34:03.342Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercabs spotted in Kansas, Chicago, Boston, New York, Texas, Arizona, California, and Florida — all supervised deployments",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Geographic spread of supervised Cybercab deployments is widening significantly, though unsupervised commercial robotaxi launch has not been confirmed",
+    "source": "20260410_jobhakdi_02_Live_Iran_Crisis_Update_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-13T04:34:03.342Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 released; Elon Musk posted that version 15 will be significantly better, which the market interpreted as goalpost-shifting",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "The 14.3 release disappointed market expectations for an imminent unsupervised robotaxi launch; version 15 now viewed as the likely threshold for meaningful scaling",
+    "source": "20260410_jobhakdi_02_Live_Iran_Crisis_Update_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-13T04:34:03.342Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 released in mid-April 2026, approximately two days behind schedule",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "A major FSD version release with demonstrated strong performance navigating Manhattan including Times Square, Chinatown, and downtown with minimal interventions",
+    "source": "20260413_investingagainstthegrain_01_My_Big_Tesla_And_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-04-13T04:34:03.348Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands received regulatory approval for FSD in early April 2026; Belgium cited as potentially next European country",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First confirmed FSD approval in the Netherlands marks expansion of unsupervised or supervised FSD into Europe; Elon Musk publicly commented on the Netherlands milestone",
+    "source": "20260413_investingagainstthegrain_01_My_Big_Tesla_And_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-04-13T04:34:03.348Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production line described as 'clearly running' as of early April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production has begun, though no specific unit volumes or ramp rates were provided",
+    "source": "20260413_investingagainstthegrain_01_My_Big_Tesla_And_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-04-13T04:34:03.348Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host anticipates robotaxi city launches (drop-off/pickup operations) going live end of April to early May 2026 based on active testing observations",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Red and black Tesla vehicles with camera washers observed actively testing pickup and drop-off in multiple regions; host suggests this is why Tesla stock may be bottoming as market participants price in the rollout",
+    "source": "20260413_investingagainstthegrain_01_My_Big_Tesla_And_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-04-13T04:34:03.348Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla secured an $80 million Megapack order from Belgian firm Energy Solutions Group for a 76 MW / 304 MWh BESS in Sambreville, Belgium, expected to connect to the grid by 2027.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Adds to Tesla's international Megapack backlog; grid connection target of 2027 confirms near-term revenue recognition timeline for the Energy segment.",
+    "source": "20260413_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-13T04:34:03.353Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla owners in the Netherlands are now actively using FSD (Supervised) on their own vehicles following regulatory approval, marking Tesla's first real-customer FSD rollout in Europe.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "European FSD approval has been years in the making; this opens a new geographic market for FSD subscription/package revenue and validates regulatory progress outside North America.",
+    "source": "20260413_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-13T04:34:03.353Z",
+    "status": "pending"
   }
 ]
