@@ -3651,5 +3651,199 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-04-13T18:52:00.434Z",
     "status": "pending"
+  },
+  {
+    "fact": "Netherlands RDW approved Tesla FSD Supervised after 18 months of rigorous testing — first FSD approval in Europe",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First-ever European regulatory approval of Tesla FSD Supervised; RDW concluded FSD makes roads net safer",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "RDW general manager announced plan to seek EU-wide approval for Tesla FSD Supervised from the European Commission within days of the Netherlands approval",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "EU-wide approval requires a majority vote among member states; passage would cover all 27 EU countries and potentially additional nations that follow European regulation",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Ashok Elluswami confirmed European regulation is followed by more countries than just the 27 EU member states",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Suggests FSD approval could propagate to non-EU countries that align with European regulatory standards",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version approved in Europe is locally designated 2026.3.6, confirmed by Elon Musk to be the equivalent of FSD version 14.3",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Clarifies the software version Europeans are receiving; version 14.3 is the current leading release",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Guest estimates additional European country FSD approvals could begin within 4 to 8 weeks, with end of summer as worst case",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "No additional hardware required; approvals are purely software and regulatory, accelerating the timeline",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "European FSD subscription priced at €99 per month; one-time purchase option also listed",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "European FSD subscription pricing; relevant to revenue modeling for FSD monetization in Europe",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD has captured nearly 10 billion miles of data, particularly on recent releases",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10000000000,
+    "context": "Total miles captured by Tesla FSD fleet; used to support safety claims relative to human driving",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is hiring robotaxi field response specialists in Austin, Houston, and Dallas, Texas across day, afternoon, and night shifts",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Indicates active preparation for commercial robotaxi service expansion beyond current Austin and Bay Area deployments",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla earnings call scheduled for April 22, 2026",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Key upcoming event where robotaxi guidance, energy segment performance, and FSD rollout updates will be discussed",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Guest flagged that robotaxi deployment doubling-every-month milestones stated on the January 29, 2026 earnings call have not been met",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Analysts expected to press management on missed guidance at the April 22 earnings call",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Giga Berlin cited as potential Cybercab and Optimus production site following union loss; Elon previously stated intent to make it Europe's largest factory",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Possible announcement of Cybercab production at Giga Berlin could coincide with FSD Europe approval momentum",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla posted senior software engineer role for residential vehicle and robot charging, explicitly including Optimus charging in the product scope",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms active development of Optimus charging infrastructure and integration into Tesla's unified home energy and vehicle app",
+    "source": "20260413_brighterwithherbert_02_Tesla_Europe_Breakthrough_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-14T04:23:23.383Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dutch Vehicle Authority RDW approved Full Self-Driving for testing in the Netherlands and has notified the European Commission to seek EU-wide approval; all EU member states will vote, requiring a majority in the responsible committee",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First FSD approval in Europe; if EU-wide vote passes, could open all EU member states and potentially non-EU countries to FSD deployment, a major regulatory milestone",
+    "source": "20260413_futureaza_01_Tesla_Market_Share_Booms_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-14T04:23:23.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Two separate Cybercab production lines exist at the factory: one for test mules (gold-wrapped, bolt-on steering wheel) and one for vehicles intended for paid rides, per Joe Tegtmeyer's reporting",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms that ride-ready Cybercabs are being manufactured now, suggesting commercial robotaxi deployment is closer than widely assumed",
+    "source": "20260413_futureaza_01_Tesla_Market_Share_Booms_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-14T04:23:23.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host plans to tour the Lathrop Megapack factory during the week of April 13, 2026",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Potential source of near-term operational insights on Megapack production status and capacity",
+    "source": "20260413_futureaza_01_Tesla_Market_Share_Booms_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-14T04:23:23.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi stated his prediction of 1,800 unsupervised Cybercab inflection-point vehicles by April or May 2026 is increasingly unlikely to come true due to Cybercab scaling issues",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Removes a previously anticipated near-term catalyst for Tesla stock; signals robotaxi ramp is delayed beyond May 2026",
+    "source": "20260413_jobhakdi_01_Live_Iran_Update_And_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-14T04:23:23.395Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 release caused a minor negative reaction in Tesla's stock price due to market disappointment",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates a specific FSD version release (14.3) failed to meet market expectations, contributing to Tesla's recent underperformance",
+    "source": "20260413_jobhakdi_01_Live_Iran_Update_And_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-14T04:23:23.395Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dutch vehicle authority RDW has formally notified the European Commission of its plan to seek EU-wide approval for Tesla FSD (Supervised)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "RDW is the first EU regulator to pursue this pathway; Merritt notes RDW frequently sets standards adopted across Europe, implying accelerated approval in other EU member states",
+    "source": "20260414_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-14T04:23:23.400Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Spring software update introduces a new Self-Driving App exclusive to AI4 hardware vehicles, featuring FSD subscription via single tap, monthly usage bar charts, total FSD percentage tracking, and multi-day streak monitoring",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First time Tesla is surfacing granular FSD usage data to users; AI4 hardware exclusivity reinforces hardware segmentation and potential upsell dynamic",
+    "source": "20260414_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-14T04:23:23.400Z",
+    "status": "pending"
   }
 ]
