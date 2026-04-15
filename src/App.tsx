@@ -85,8 +85,9 @@ export default function App() {
                 onClick={() => track('Coffee Click', { location: 'header' })}
                 className="px-3 py-1.5 text-xs font-bold whitespace-nowrap cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
               >
-                <span className="sm:hidden">BUY ME A COFFEE</span>
-                <span className="hidden sm:inline">☕ BUY ME A COFFEE</span>
+                <span className="min-[370px]:hidden">BUY ME COFFEE</span>
+                <span className="hidden min-[370px]:inline min-[400px]:hidden">BUY ME A COFFEE</span>
+                <span className="hidden min-[400px]:inline">☕ BUY ME A COFFEE</span>
               </a>
             </nav>
           </div>
