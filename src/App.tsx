@@ -85,7 +85,8 @@ export default function App() {
                 onClick={() => track('Coffee Click', { location: 'header' })}
                 className="px-3 py-1.5 text-xs font-bold whitespace-nowrap cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
               >
-                ☕ BUY COFFEE
+                <span className="sm:hidden">☕ TIP</span>
+                <span className="hidden sm:inline">☕ BUY ME A COFFEE</span>
               </a>
             </nav>
           </div>
@@ -209,7 +210,7 @@ export default function App() {
           <div>
             <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
             {' // '}
-            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Coffee Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">☕ buy coffee</a>
+            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Coffee Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">☕ buy me a coffee</a>
           </div>
         </div>
       </footer>
