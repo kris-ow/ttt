@@ -61,7 +61,7 @@ export default function App() {
               <span className="text-green font-bold text-xl">[TTT]</span>
               <span className="text-white text-xl font-bold">THE TESLA THESIS</span>
             </div>
-            <nav className="flex items-center gap-1">
+            <nav className="flex items-center gap-2">
               {([
                 ['feed', 'DAILY_FEED'],
                 ['knowledge', 'VALUATIONS'],
@@ -69,10 +69,10 @@ export default function App() {
                 <button
                   key={key}
                   onClick={() => handleTabSwitch(key)}
-                  className={`px-3 py-1.5 text-xs font-bold transition-colors cursor-pointer border-b-2 ${
+                  className={`px-3 py-1.5 text-xs font-bold cursor-pointer border transition-colors ${
                     activeSection === key
-                      ? 'text-green border-green'
-                      : 'text-text-dim hover:text-green border-transparent'
+                      ? 'bg-green text-bg border-green'
+                      : 'border-green/50 text-green/50 hover:border-green hover:text-green'
                   }`}
                 >
                   {label}
@@ -83,7 +83,7 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => track('Coffee Click', { location: 'header' })}
-                className="ml-2 px-3 py-1.5 text-xs font-bold cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
+                className="px-3 py-1.5 text-xs font-bold cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
               >
                 [ ☕ BUY COFFEE ]
               </a>
