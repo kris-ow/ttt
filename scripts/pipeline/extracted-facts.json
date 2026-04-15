@@ -3971,5 +3971,205 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-14T18:51:28.344Z",
     "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated Tesla plans to sell Optimus to the public by end of 2027",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Updated public sale target for Optimus; previously expected 2025, now pushed to end of 2027",
+    "source": "20260414_brighterwithherbert_02_Elon_Just_Quietly_Built_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T04:22:32.587Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk targets 1 million Optimus units per year by 2029 or 2030",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Key production ramp figure for Optimus fleet sizing and revenue modeling",
+    "source": "20260414_brighterwithherbert_02_Elon_Just_Quietly_Built_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T04:22:32.587Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk's long-term vision is more humanoid robots than humans on Earth, implying 8–10 billion units",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Sets the theoretical ceiling for Optimus/robot fleet size in long-run DCF scenarios",
+    "source": "20260414_brighterwithherbert_02_Elon_Just_Quietly_Built_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T04:22:32.587Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Neuralink had 21 human trial participants as of February 2026, up from 1 over approximately two years, with 12 having severe paralysis",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Trial participant count is the leading indicator for when Neuralink surgery becomes routine and scalable",
+    "source": "20260414_brighterwithherbert_02_Elon_Just_Quietly_Built_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T04:22:32.587Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated in 2026 that Neuralink expects to begin high-volume production with near-fully-automated surgery in 2026",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Automated surgery removes surgeon bottleneck, enabling throughput scaling; key milestone for Neuralink commercialization timeline",
+    "source": "20260414_brighterwithherbert_02_Elon_Just_Quietly_Built_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T04:22:32.587Z",
+    "status": "pending"
+  },
+  {
+    "fact": "There are approximately 8 billion phones on Earth; if 1 in 5 adopt a Starlink direct-to-cell line, that equals 1.6 billion Starlink customers",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1600000000,
+    "context": "Illustrative upper-bound customer count for Starlink once direct-to-cell is fully operational, relevant to long-run revenue modeling",
+    "source": "20260414_brighterwithherbert_02_Elon_Just_Quietly_Built_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T04:22:32.587Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 delivers 20% improved reaction time and faster iteration cycles, but confirmed by Elon Musk to NOT be the 10x larger model",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Market had anticipated a larger leap; clarification caused initial stock pressure but also reset expectations more accurately",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 expected to release within the next 3 months (by approximately July 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Next major FSD version release is a key software milestone watch item for the robotaxi thesis",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised officially approved and launched in the Netherlands, restricted to Hardware 4 (HW4) vehicles — first European country approval",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First European regulatory approval for FSD; signals path toward broader European robotaxi infrastructure buildout",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Daily Cybercab production at Giga Texas cited at approximately 35, 45, and 60 units on successive days as of around April 13, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production ramp is active and accelerating; key milestone for fleet deployment timeline",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total Cybercab fleet size cited at 574 vehicles as of approximately April 14, 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 574,
+    "context": "Current total fleet count is a direct input into robotaxi revenue and utilization modeling",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Cybercab count cited at approximately 11 vehicles as of April 14, 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 11,
+    "context": "Unsupervised subset of total fleet is the revenue-generating component; current count is very small, signaling early stage",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab sightings confirmed in Wichita KS, Los Angeles CA, Naples FL, Chicago IL, Boston MA, and New York NY as of April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Geographic expansion of test deployments across the US indicates infrastructure buildup ahead of commercial robotaxi launch",
+    "source": "20260414_jobhakdi_01_Why_Is_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-15T04:22:32.592Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD V14.3.1 began rolling out on 2026-04-14",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version release; firsthand reviewer described it as polished vs V14.3 and ready for wide release — a potential near-term wide release catalyst",
+    "source": "20260415_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-15T04:22:32.599Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Safety Score v3.0 now awards a score of 100 for every mile driven on FSD (Supervised)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Removes a major user disincentive to use FSD; could increase supervised FSD engagement and training data accumulation",
+    "source": "20260415_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-15T04:22:32.599Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab testing has begun in Florida, with two Cybercabs spotted in Naples, FL",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Geographic expansion of Cybercab testing to Florida is a pre-deployment validation milestone; signals broadening of testing footprint",
+    "source": "20260415_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-15T04:22:32.599Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands approval of Tesla FSD Supervised has entered a broader EU review process; Norway's road authority (SVV) confirmed other EU regulators will evaluate the decision before a unified determination",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Advances the European regulatory pathway for FSD Supervised; no approval timeline specified but process is formally underway",
+    "source": "20260415_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-15T04:22:32.599Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla China executive stated Giga Shanghai 'can shoulder important responsibilities in manufacturing all-new products, including robots' and expressed high confidence in the arrival of a new era of robots",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "On-record executive statement linking Giga Shanghai capacity to Optimus manufacturing; no specific production numbers or dates given",
+    "source": "20260415_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-15T04:22:32.599Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A $325 million third-stage Megapack expansion of the Western Downs Battery in Queensland, Australia is now underway, expected to nearly double the existing installation",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Named project with specific dollar value; described as one of the largest batteries in the world — a major Megapack deployment milestone",
+    "source": "20260415_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-15T04:22:32.599Z",
+    "status": "pending"
   }
 ]
