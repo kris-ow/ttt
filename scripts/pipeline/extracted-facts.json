@@ -4171,5 +4171,175 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-15T04:22:32.599Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla is hiring self-driving data collection supervisors in 34 U.S. cities across day, night, and graveyard shifts",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Signals Tesla is laying operational infrastructure well beyond the initially announced 7-city robotaxi launch, suggesting a much broader rollout is being actively prepared",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The 34 targeted hiring cities cover 46% of the U.S. population",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Geographic coverage metric relevant to estimating total addressable fleet size and market penetration ceiling for robotaxi DCF modeling",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "There are currently 11 unsupervised robotaxis operating in Tesla's program",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 11,
+    "context": "Current baseline for unsupervised fleet size; critical starting point for any robotaxi revenue ramp model",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "573 total vehicles are available in Tesla's FSD robotaxi tracker (supervised and unsupervised combined)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 573,
+    "context": "Represents the broader supervised fleet that could transition to unsupervised operations as FSD matures",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 delivers a 20% improvement in reaction time",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Major safety-relevant capability upgrade; hosts argue this improvement is significant enough to enable broader unsupervised deployment and is expected to receive wide release soon",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD reaction time to a yellow traffic light measured at 0.2 seconds, versus a 1.5-second average human reaction time",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Concrete reaction-time data point demonstrating FSD 14.3 safety superiority over human drivers; relevant to safety metric inputs in DCF risk assumptions",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD received its first European regulatory approval in the Netherlands; the RDW general manager has submitted a recommendation to all 27 EU member states to adopt the approval, with broader global adoption expected",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Opens a major new market for FSD revenue and robotaxi deployment; expected to expand to more countries by end of summer 2026",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi estimates FSD version 15, characterized as a '10x version,' could arrive in approximately two months from the video date (around mid-April 2026), implying roughly June 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Version 15 is identified as the minimum threshold for real-scale unsupervised deployment; timing is critical for robotaxi ramp modeling",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Between December 15 and January 15, there were five safety incidents in the robotaxi program; between January 15 and February 15, there was one incident (a fender bender); no additional incidents reported as of video date",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Declining incident rate is a key indicator for Tesla's ability to expand unsupervised fleet size; regulators and insurance underwriters will track this trend",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi expects robotaxi operations to come online across targeted states in H2 2026, with many potentially launching in H1 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Provides a timeline estimate for city expansion that is relevant to revenue ramp assumptions in robotaxi DCF models",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk confirmed that the FSD version deployed in Europe (labeled 14.2.2.5) is functionally equivalent to FSD version 14.3",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms the latest FSD version is already live in Europe, accelerating the EU market validation timeline",
+    "source": "20260415_brighterwithherbert_01_Teslas_Robotaxi_Rollout_Might_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-15T18:51:41.923Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD Supervised received approval from the Dutch Vehicle Authority (RDW), marking the first authorized FSD use in Europe.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This is a major regulatory milestone that opens the door to broader EU-wide FSD deployment, representing Tesla's first supervised FSD approval outside North America.",
+    "source": "20260415_futureaza_01_Europe_Wasnt_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-15T18:51:41.931Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has formally requested EU-wide FSD approval, requiring a majority vote from the relevant European economic commission.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "If passed, this vote would allow all EU member states to receive FSD updates, dramatically expanding Tesla's addressable autonomous driving market.",
+    "source": "20260415_futureaza_01_Europe_Wasnt_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-15T18:51:41.931Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Estimated earliest timeline for EU-wide FSD rollout to other member states is four to six months from mid-April 2026, contingent on a successful majority vote.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Provides a rough timeline for FSD expansion across the EU, which would be a significant catalyst for both software revenue and vehicle sales in Europe.",
+    "source": "20260415_futureaza_01_Europe_Wasnt_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-15T18:51:41.931Z",
+    "status": "pending"
+  },
+  {
+    "fact": "European FSD build version is 14.225, with a region-specific maximum speed cap of 130 km/h versus the previous 140 km/h cap.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms the specific FSD version deployed in Europe and highlights regulatory-driven software customization required for EU compliance.",
+    "source": "20260415_futureaza_01_Europe_Wasnt_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-15T18:51:41.931Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 is rolling out in the US at the time of the video (published April 15, 2026).",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates a newer FSD version is in active US rollout concurrently with the European 14.225 launch.",
+    "source": "20260415_futureaza_01_Europe_Wasnt_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-15T18:51:41.931Z",
+    "status": "pending"
   }
 ]
