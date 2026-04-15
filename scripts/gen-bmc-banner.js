@@ -9,18 +9,21 @@ const W = 1331
 const H = 339
 const CX = W / 2
 
-// Corner bracket as two filled rects — guarantees a sharp square corner
+// Corner bracket as two filled rects forming an L. Both rects cover the
+// outer THICK×THICK corner square so the L is symmetric across all 4 corners.
 const THICK = 8
 const LEN = 45
 const MARGIN = 22
 
-function corner(x, y, dx, dy) {
-  // dx/dy indicate direction the bracket extends (+1 or -1)
-  const hx = dx > 0 ? x : x - LEN
-  const vy = dy > 0 ? y : y - LEN
+function corner(ox, oy, sx, sy) {
+  // (ox, oy) = outer corner point of the L. sx/sy = +1 extends inward from it.
+  const hx = sx > 0 ? ox : ox - LEN
+  const hy = sy > 0 ? oy : oy - THICK
+  const vx = sx > 0 ? ox : ox - THICK
+  const vy = sy > 0 ? oy : oy - LEN
   return [
-    `<rect x="${hx}" y="${y}" width="${LEN}" height="${THICK}" fill="${GREEN}"/>`,
-    `<rect x="${x}" y="${vy}" width="${THICK}" height="${LEN}" fill="${GREEN}"/>`,
+    `<rect x="${hx}" y="${hy}" width="${LEN}" height="${THICK}" fill="${GREEN}"/>`,
+    `<rect x="${vx}" y="${vy}" width="${THICK}" height="${LEN}" fill="${GREEN}"/>`,
   ].join('\n  ')
 }
 
@@ -39,9 +42,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">
 
   <!-- Corner brackets (sharp, filled rects) -->
   ${corner(MARGIN, MARGIN, 1, 1)}
-  ${corner(W - MARGIN - THICK, MARGIN, -1, 1)}
-  ${corner(MARGIN, H - MARGIN - THICK, 1, -1)}
-  ${corner(W - MARGIN - THICK, H - MARGIN - THICK, -1, -1)}
+  ${corner(W - MARGIN, MARGIN, -1, 1)}
+  ${corner(MARGIN, H - MARGIN, 1, -1)}
+  ${corner(W - MARGIN, H - MARGIN, -1, -1)}
 </svg>`
 
 writeFileSync('bmc-banner.svg', svg)

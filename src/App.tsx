@@ -83,9 +83,9 @@ export default function App() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => track('Coffee Click', { location: 'header' })}
-                className="px-3 py-1.5 text-xs font-bold cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
+                className="px-3 py-1.5 text-xs font-bold whitespace-nowrap cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
               >
-                [ ☕ BUY COFFEE ]
+                ☕ BUY COFFEE
               </a>
             </nav>
           </div>
