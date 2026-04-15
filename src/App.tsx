@@ -78,6 +78,15 @@ export default function App() {
                   {label}
                 </button>
               ))}
+              <a
+                href="https://buymeacoffee.com/theteslathesis"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => track('Coffee Click', { location: 'header' })}
+                className="ml-2 px-3 py-1.5 text-xs font-bold cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
+              >
+                [ ☕ BUY COFFEE ]
+              </a>
             </nav>
           </div>
         </div>
@@ -195,8 +204,13 @@ export default function App() {
 
       {/* ── Footer ──────────────────────────────────── */}
       <footer className="border-t border-border py-4 mt-8">
-        <div className="max-w-7xl mx-auto px-4 text-center text-xs text-text-dim">
-          [TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate // <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
+        <div className="max-w-7xl mx-auto px-4 text-center text-xs text-text-dim space-y-1">
+          <div>[TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate</div>
+          <div>
+            <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
+            {' // '}
+            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Coffee Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">☕ buy coffee</a>
+          </div>
         </div>
       </footer>
 
