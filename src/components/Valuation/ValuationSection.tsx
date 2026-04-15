@@ -3,7 +3,7 @@ import { computeRevPerVehicle, computeCostPerVehicle, computeProjection, formatP
 import { RobotaxiDcfView } from './RobotaxiDcfView'
 
 export function ValuationSection({ openSource }: { openSource: (src: string) => void }) {
-  const [subView, setSubView] = useState<'overview' | 'robotaxi-dcf'>('overview')
+  const [subView, setSubView] = useState<'overview' | 'robotaxi-dcf'>('robotaxi-dcf')
   const [revOverrides, setRevOverrides] = useState<Partial<Record<RevInputId, number>>>({})
   const [costOverrides, setCostOverrides] = useState<Partial<Record<CostInputId, number>>>({})
   const [projInputs, setProjInputs] = useState<ProjectionInputs>({ ...DEFAULT_PROJECTION_INPUTS })
@@ -44,10 +44,10 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
           <button
             key={key}
             onClick={() => setSubView(key)}
-            className={`px-3 py-1.5 text-xs font-bold cursor-pointer border border-border transition-colors ${
+            className={`px-3 py-1.5 text-xs font-bold cursor-pointer border transition-colors ${
               subView === key
-                ? 'bg-green text-bg'
-                : 'text-text-dim hover:text-green'
+                ? 'bg-green text-bg border-green'
+                : 'border-green/50 text-green/50 hover:border-green hover:text-green'
             }`}
           >
             {label}
