@@ -1,15 +1,5 @@
 // ── Pipeline Configuration ───────────────────────────────
 
-// YouTube channels to track (need channel IDs for RSS feeds)
-// To find a channel ID: go to the channel page → View Source → search "channelId"
-export const CHANNELS = [
-  { id: 'brighterwithherbert', channelId: 'UCXB0RGwFLRo3tf4n4U1x6Ow', name: 'Brighter with Herbert' },
-  { id: 'futureaza', channelId: 'UCbNOk_wOA7UMvYrF7K0iBvQ', name: 'Futureaza' },
-  { id: 'investingagainstthegrain', channelId: 'UC3K6_4IDtnBekVuWuH91uSg', name: 'Investing Against the Grain' },
-  { id: 'jobhakdi', channelId: 'UCSjlTWo8-Nbo6koK8df1y5w', name: 'Jo Bhakdi' },
-  // sawyermerritt is X/Twitter — xdaily.txt format, summarized with adapted prompt
-];
-
 // Categories for classification (maps to Knowledge Base + valuation model inputs)
 export const CATEGORIES = [
   'Autonomous Driving',
@@ -62,6 +52,11 @@ export const CORRECTIONS = {
   'groq': 'Grok',
   'grock': 'Grok',
   'Cernin Basher': 'Cern Basher',
+  'Dylan Lumis': 'Dillon Loomis',
+  'Dylan Loomis': 'Dillon Loomis',
+  'Dillon Lumis': 'Dillon Loomis',
+  'Dilan Loomis': 'Dillon Loomis',
+  'Dilan Lumis': 'Dillon Loomis',
   'Joe Techmire': 'Joe Tegtmeyer',
   'Job Hakdi': 'Jo Bhakdi',
   'Joe Hakdi': 'Jo Bhakdi',

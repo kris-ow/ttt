@@ -1,0 +1,55 @@
+Channel:     electrified
+Title:       Wow, Tesla's Next Gen Chip Is NOT What We Thought ⚡️
+URL:         https://www.youtube.com/watch?v=A59LHpQdrSU
+Published:   2026-04-15 23:10 UTC
+Summarized:  2026-04-16 07:39:02 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.08369 (8946 in / 3790 out tokens)
+Categories:  Autonomous Driving, Humanoid Bots, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of Electrified, hosted by Dillon Loomis, covers Elon Musk's announcement of the AI5 chip tape-out milestone, including a shared image of the chip design, clarifications on which Tesla products AI5 will target, and what this means for FSD on existing hardware. The video also touches on FSD version 14.3.1 early impressions, EU regulatory developments around FSD approval, and Tesla's new Safety Score V3. The core thesis is that AI5 is now primarily destined for Optimus and supercomputer clusters rather than vehicles, with AI4 confirmed as sufficient for unsupervised FSD — a significant and somewhat unexpected pivot from prior statements.
+
+## Autonomous Driving
+
+1. **AI4 Confirmed Sufficient for Unsupervised FSD:** Elon Musk stated that AI4 is "enough to achieve much better than human safety for FSD," marking a notable departure from prior expectations that AI5 would be needed for vehicles. Dillon Loomis notes this is a strong indication that Tesla's team is confident in what smaller, more efficiently compiled models can accomplish on AI4 hardware. He also speculates this is an encouraging sign — though not a guarantee — for Hardware 3 owners hoping to eventually receive a version of unsupervised FSD, citing advances in quantization and model distillation.
+
+2. **FSD Version 14.3.1 Early Impressions:** Early reviews of FSD version 14.3.1 are described as "pretty strong," with reports indicating it has started rolling out beyond the early access group. Reviewer Zach noted everything feels "polished and smoother overall," with improved lane bias and preference changes, and significantly improved stop sign behavior — described as committing without hesitation and no double stops observed. Loomis notes he will believe the stop sign improvement when he experiences it personally, calling it one of his biggest remaining annoyances.
+
+3. **EU FSD Regulatory Approval Status:** The Swedish Transport Administration clarified that any EU-wide approval of FSD will only apply to new vehicles produced after the approval is granted, not existing vehicles — which fall under each individual nation's regulations. The Swedish authority also confirmed it has not yet received any application from Tesla or the RDW as of the video's publication, and that national approval in Sweden is not expected until early May 2026. Meanwhile, Belgium is reportedly reviewing inquiries proactively, suggesting some EU countries may move faster than others.
+
+4. **Tesla Safety Score V3:** Tesla released a blog post detailing Safety Score V3, which uses over 1.5 billion miles of driving data for a more accurate collision risk assessment. Under V3, safety factors are now measured exclusively against miles driven without FSD engaged, and miles driven with FSD engaged automatically receive a score of 100 and are included in the overall calculation. A screenshot shared by a Tesla Insurance user in Arizona showed a starting default score of 90 producing a $260/month premium, with an expected drop to $180/month if current FSD-heavy driving behavior is maintained. Existing policyholders outside California will be upgraded to the new scoring system at their next policy renewal.
+
+## Humanoid Bots
+
+1. **AI5 Chip Tape-Out: Primarily Targeting Optimus:** Elon Musk announced the tape-out of AI5, congratulating the AI chip design team, and confirmed that AI5 will go into Optimus and Tesla's supercomputer clusters — not primarily into vehicles. Elon stated a single AI5 has approximately five times the useful compute of a dual-SOC AI4 system. The chip features a central SOC flanked by 12 memory dies (six on each side), all co-packaged on a shared substrate — a significant architectural departure from AI4's design where memory was external to the processor.
+
+2. **AI5 Memory Architecture and Performance Advantages:** The AI5 design integrates memory directly alongside the main processing SOC using an advanced packaging technique (chip-on-wafer-on-substrate, or CoWoS), drastically reducing memory latency compared to AI4. This tighter integration means faster data access, improved bandwidth, better inference performance, lower power draw, and larger context windows for processing complex scenes — critical advantages for Optimus. Based on speculation from tech forum members, the memory appears to be SK Hynix LPDDR5X modules, potentially totaling 192 GB per chip (12 modules × 16 GB), though Loomis notes Tesla will simply use what it needs.
+
+3. **AI5 Power Consumption and Design Concessions:** Elon previously stated Tesla aims to bring AI5 power consumption down closer to 250 watts, which he described as a big deal for Optimus. Elon also revealed the tape-out was completed 45 days ahead of schedule but required several design concessions in order to move fast. AI6, which will use LPDDR6 memory and Samsung's 2-nanometer fab in Texas, is intended to address those concessions and deliver a true doubling of performance over AI5 in the same half-reticle size. AI6.5 will further improve performance using TSMC's 2-nanometer process in Arizona.
+
+4. **AI5 Production Timeline and Fabs:** Elon confirmed that Tesla will have AI5 samples and possibly a small number of units in 2026, but high-volume production is only possible in 2027. Both TSMC and Samsung will manufacture slightly different versions of AI5, as the fabs translate designs to physical form differently, but Tesla's goal is for the AI software to work identically across both versions. Volume production is expected to occur at US-based TSMC and Samsung facilities, while early samples may come from overseas (likely Korea, based on a "KR2613" marking observed on the chip substrate). AI6 volume production is targeted for approximately mid-2028.
+
+5. **Terafab Chip Manufacturing Ambitions:** Tesla's Terafab facility is described in current job postings as housing logic, memory, packaging, test, and lithography mask production under one roof, optimized for rapid iteration. A job posting for a senior process engineer for dielectric deposition specifies work across three chip families: edge inference processors, space-hardened chips for orbital satellites, and high-bandwidth memory. Another posting confirms Tesla plans to use both DUV and EUV lithography machines — including EUV from ASML — contradicting claims that Tesla would only need the older DUV equipment.
+
+6. **AI5 vs. Prior Roadmap Statements:** Loomis highlights that as recently as March 18, 2026, Elon had stated AI5 would be "primarily optimized for AI edge compute in Optimus and robotaxi," and as recently as January 18, 2026, Elon said "AI5 will make the cars almost perfect." The current post-tape-out communication shifts the near-term vehicle deployment expectation back to AI4, with AI5 excess capacity potentially flowing to vehicles only if Samsung and TSMC production volume materially exceeds Optimus demand. Loomis frames this as a fluid situation and believes AI5 will ultimately make it into cars — but the new baseline expectation should be AI4 in vehicles for the foreseeable future.
+
+## Market & Competition
+
+1. **Tesla Stock Performance:** Tesla's stock rose 7.62% to $391.95 on the day of the video, significantly outperforming the Nasdaq 100, which was up 1.4%. This represented a roughly 5.4x outperformance relative to the NDX — well above the typical 2x beta Tesla exhibits. Trading volume was approximately 78% above the 30-day average. Loomis declines to speculate on the exact cause but suggests the market may have needed reassurance that AI4 is sufficient for unsupervised FSD.
+
+Notable quotes and data:
+- Elon Musk: "AI4 is enough to achieve much better than human safety for FSD."
+- Elon Musk (March 18, 2026): "AI5 while it can be used for training in data centers, is primarily optimized for AI edge compute in Optimus and robotaxi."
+- Elon Musk (January 18, 2026): "AI4 by itself will achieve self-driving safety levels very far above human. AI5 will make the cars almost perfect and greatly enhance Optimus."
+- Elon Musk on AI5 tape-out: "We were able to finish tape out 45 days ahead of schedule."
+- Elon Musk on AI6: "It will deliver a true doubling of performance over AI5 in the same half reticle size using the Samsung 2 nanometer fab in Texas."
+- Elon Musk on AI6 timeline: "Aiming for a fast follow to AI5. So hopefully mid-2028 for volume production of AI6."
+- Elon Musk on AI5 production: "We will have samples and maybe a small number of units in 2026, but high volume production is only possible next year."
+- Elon Musk on AI5 power: "It looks like we can bring the power consumption down closer to 250 watts, which is a big deal for Optimus."
+- Single AI5 chip = ~5× the useful compute of a dual-SOC AI4 system.
+- AI4 had 16 GB of RAM; AI5 may have between 144 GB and 192 GB depending on module spec.
+- Safety Score V3 based on over 1.5 billion miles of driving data.
+- Tesla Insurance example: default score of 90 → $260/month premium; projected $180/month with consistent FSD use.
+- Tesla stock volume on the day: ~78% above the 30-day average.
+- Terafab job posting confirms three chip families: edge inference processors, space-hardened orbital chips, and high-bandwidth memory.
