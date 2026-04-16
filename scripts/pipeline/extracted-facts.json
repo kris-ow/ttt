@@ -4974,5 +4974,111 @@
     "channel": "electrek",
     "extractedAt": "2026-04-16T13:16:52.486Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD supervised approved by the RDW in the Netherlands; RDW general manager actively recommending all 27 EU member states adopt similar approval",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First EU country approval for FSD supervised, with a regulatory domino effect potentially covering all EU member states and additional countries that follow EU standards",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised now operating in US, Canada, Mexico, Puerto Rico, the Netherlands, Australia, New Zealand, South Korea, and China",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tracks the geographic expansion of FSD supervised deployment globally",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 released and rolled out; FSD version 15 expected approximately two months from April 2026 recording (approximately June 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Version 15 represents the next major FSD capability milestone being anticipated by investors",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla hiring data operators in 34 cities and over a dozen states in preparation for robotaxi rollout",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Hiring footprint signals the geographic scope of planned unsupervised robotaxi deployment",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi speculates unsupervised robotaxi fleet could begin visible scaling (10 to 20 to 40 vehicles) as early as June–August 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Identified as the central stock repricing event; scaling of unsupervised fleet is the key catalyst threshold",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi previously stated 1,800 unsupervised robotaxis on the road would be a forcing function for Tesla stock repricing",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1800,
+    "context": "Specific fleet size threshold identified as a market sentiment trigger for Tesla stock",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercabs confirmed to be built without steering wheels from the factory floor; steering wheel addition is a retrofit requiring parts removal and addition, not the default configuration",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Resolves debate about whether Cybercabs are intended for consumer sale or unsupervised robotaxi use; factory design confirms robotaxi intent",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo shows a 92% reduction in serious injury and fatal crashes compared to human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 92,
+    "context": "Key safety benchmark; 92% reduction in serious/fatal crashes versus human baseline, relevant for regulatory approval and societal adoption modeling",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "New York governor banned robotaxi deployment in New York City following successful lobbying by the taxi union, excluding Waymo from the market",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Regulatory setback for robotaxi expansion; demonstrates political and union opposition as a deployment risk in major cities",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hypothetical unlimited monthly robotaxi subscription floated at approximately $199/month as a replacement for $300–$500/month car ownership costs",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "base_fare",
+    "value": 199,
+    "context": "Speculative pricing framing for consumer robotaxi subscriptions; not a confirmed Tesla price but used to illustrate cost competitiveness versus car ownership",
+    "source": "20260416_brighterwithherbert_01_Will_Tesla_Fsd_Finally_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-16T18:50:52.228Z",
+    "status": "pending"
   }
 ]

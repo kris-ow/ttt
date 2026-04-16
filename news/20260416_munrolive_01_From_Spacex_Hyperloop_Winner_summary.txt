@@ -1,0 +1,42 @@
+Channel:     munrolive
+Title:       From SpaceX Hyperloop Winner to Swisspod Technologies Co-Founder | Denis Tudor Interview
+Published:   2026-04-16 13:45 UTC
+Summarized:  2026-04-16 18:50:52 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01HwjMeNKVBzCdwxAxh8ZWbp
+Cost:        $0.02708 (9952 in / 1620 out tokens)
+Categories:  Market & Competition
+────────────────────────────────────────────────────────────
+
+This video is an interview between Paul (of Munro Live) and Denis Tudor, CEO and co-founder of Swisspod Technologies, a Hyperloop development company founded in 2019 after winning the SpaceX Hyperloop Pod Competition. The conversation covers the technology behind Swisspod's passive-track linear induction motor propulsion system, the recent Iris One demonstration in Pueblo, Colorado, and the roadmap for future prototypes including Iris 2 and Iris 3.
+
+## Market & Competition
+1. **Swisspod's founding and background:** Denis Tudor co-founded Swisspod Technologies in 2019 following his involvement with two different SpaceX Hyperloop Pod Competition teams — one based in California and one in Switzerland — winning the innovation award from SpaceX. He also completed a PhD in Hyperloop sciences, linking propulsion systems to tube vacuuming and pressurization. He has been working in the Hyperloop space for approximately 11 years total.
+
+2. **Iris One demonstration in Pueblo, Colorado:** In November (the event took place on November 21st), Swisspod conducted a public demonstration of their first full-scale module, Iris One, in Pueblo, Colorado in front of approximately 150 people. The vehicle reached nearly 70 mph on a stretch of 7,700 feet of track, which represents approximately one-third of their planned full track length. The vehicle is powered by a single-sided linear induction motor driven by an on-board battery pack. The night before the event, the battery pack produced sparks, requiring the team to work through the night to prepare for the demonstration.
+
+3. **Passive track technology and cost advantage:** Swisspod's core engineering differentiator is embedding all propulsion technology within the vehicle itself rather than electrifying the track. Competing maglev and high-speed rail systems typically place electromagnets or powered coils along the track, which Denis describes as an order of magnitude more expensive than using passive tracks. By placing the coils on the vehicle and using a passive steel-and-aluminum reaction plate as the track, Swisspod aims to dramatically reduce infrastructure costs and improve reliability — a broken component on a passive track does not require stopping and repressurizing the entire tube, as the pod itself can simply be swapped out.
+
+4. **End-effect problem and engineering solution:** A central technical challenge of vehicle-mounted linear induction motors is the "end effect," where thrust drops off significantly above approximately 100–150 mph, making higher speeds impractical. Denis explains that Swisspod solved this by controlling the power electronics converter in a way that linearizes the thrust-versus-speed profile. At speeds of 300–400 mph, this approach yields approximately a 7x increase in thrust compared to an uncompensated system. A higher-resistivity reaction plate material at higher speeds also contributes to canceling the end effect.
+
+5. **Vehicle specifications for Iris One:** The Iris One prototype weighs approximately 600 lbs and is capable of delivering up to a quarter of a megawatt of peak power, giving it a power-to-mass ratio described as approximately 10 times greater than a Tesla Model Y. The battery pack uses lithium polymer (NMC chemistry) cells from a South Korean supplier, configured as 100 cells in series and 3 in parallel (300 cells total), with a nominal discharge rate of 50C and a maximum peak discharge rate of 75C for short durations. The energy density is approximately 140 Wh/kg, which Denis acknowledges is roughly half of what Tesla achieves in its vehicles (estimated around 270 Wh/kg). The low energy density is an accepted tradeoff given that Hyperloop is a power-intensive rather than energy-intensive application.
+
+6. **Iris 2 prototype roadmap:** Iris 2 will introduce magnetic levitation using two side guideways, targeting speeds of approximately 130 mph — roughly double the speed achieved by Iris One — on approximately 2,500 feet of track (half a mile). The linear motor will be approximately double the size of Iris One's, providing 5x more thrust. Iris 2 will be fully contactless, eliminating friction and noise. A notable planned feature is placing an Optimus robot inside the vehicle to simulate passenger control and demonstrate software communication between the robot and vehicle systems. If consecutive tests are successful, a human passenger may also be placed inside Iris 2, though Denis acknowledged this would concern his CTO.
+
+7. **Iris 3 long-term vision:** Iris 3 is intended to consolidate propulsion, levitation, and stability into a single unified device using a single reaction plate — inspired conceptually by the Falcon 9 achieving stability on three landing legs. This is the subject of a patent whose claims have been allowed and is expected to be formally accepted soon. Denis envisions Iris 3 achieving speeds potentially up to 700 mph (below the sonic barrier), and notes the system would ideally use no more than three passive rails (two guideways plus one reaction plate).
+
+8. **Battery pack upgrade planned:** A new battery pack for the next prototype version is planned for release within approximately six months from the time of the interview, intended to improve on the current cell's limitations — particularly its low charging (regenerative braking) rate, which Denis and Paul identified as a significant weakness of the current lithium polymer cells.
+
+9. **Hiring philosophy at Swisspod:** Denis described his approach to hiring as gut-feel driven rather than CV-driven, prioritizing candidates who are genuinely excited about working on future-oriented technology. He emphasized that Swisspod operates seven days a week in a mission-driven culture and values consistency and long-term commitment over candidates who frequently job-hop for incremental salary increases.
+
+Notable quotes and data:
+- Iris One reached nearly 70 mph on 7,700 feet of track (approximately one-third of the planned full track).
+- Iris One vehicle mass: approximately 600 lbs; peak power: quarter of a megawatt.
+- Battery pack: 300 cells (100 series × 3 parallel), NMC lithium polymer, nominal 50C discharge, peak 75C discharge, ~140 Wh/kg energy density.
+- Target speed for Iris 2: ~130 mph on ~2,500 feet of track.
+- Iris 2 motor will be double the size of Iris One's, delivering 5x more thrust.
+- At 300–400 mph, Swisspod's end-effect cancellation yields approximately a 7x thrust improvement versus an uncompensated system.
+- Target top speed for Iris 3: up to ~700 mph (below sonic barrier).
+- Denis Tudor: "I've been doing this for 11 years... and I'm still excited about what I'm doing."
+- New battery pack planned for release "within the next six months."
+- Patent for unified propulsion/levitation/stability device has had its claims allowed and is expected to be formally granted soon.
