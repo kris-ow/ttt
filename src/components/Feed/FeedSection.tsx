@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import newsData from '../../data/news.json'
 import { type Article, type NewsData } from '../../types'
-import { formatDate, channelShort, signalTag, biasTag } from './helpers'
+import { formatDate, channelShort, biasTag } from './helpers'
 import { track } from '../../analytics'
 
 const data = newsData as NewsData
