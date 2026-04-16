@@ -1,0 +1,913 @@
+Channel:     munrolive
+Title:       BYD Electric Motor Teardown | Full Engineering Analysis by Munro
+URL:         https://www.youtube.com/watch?v=4LfDuyqmsts
+Published:   2026-03-06 00:00 UTC
+Fetched:     2026-04-16 23:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hi, welcome to Monroe Live. I'm Paul
+Turbull
+&gt;&gt; and I'm Matthew Lawrence.
+&gt;&gt; We're here today to talk about this BYD
+motor. But first, a little background on
+Monroe and Associates. We're uh an
+engineering consulting firm that helps
+our clients beat the competition by
+number one knowing what the competition
+is doing and number two implementing
+lean design principles to improve their
+designs and get ahead. This is one of
+the key competitors out there right now.
+BYD is the big player in the EV market
+and um hybrid market right now in China.
+And there's been a lot of talk about how
+they are moving ahead of the European
+and US competitors.
+And so we're going to take apart, this
+is one of their latest motors. We took
+apart an older version um not too long
+ago from the Skywell and found that uh
+this this particular one has a lot in
+common with their their older one. Um,
+so it's a um a pretty compact unit. Um,
+how many kilowatts is it?
+&gt;&gt; So, this motor is 183 and I think the
+torque is about 330 Nm,
+&gt;&gt; which is about the same as it was
+before, but um this only weighs um 84
+kg.
+Um, and so it's in a tight package,
+smaller, lighter. Um,
+it's the IDM210.
+And to 210 refers to the diameter, the
+stator inside the the motor housing. And
+it's a part of a new family of motors
+that BYD is is coming out with. It's
+going into the the Han, the Tang, and
+the Tang L. The Han is a a performance
+sedan, and the Tang is a SUV, and the
+Tang L is a seven passenger SUV. And
+this is the rear drive unit for th for
+those for the mainline version of this,
+the mainstream version. Um they have a
+higher performance version of this that
+does I think almost 500 kilowatts. So
+we're going to have a quick look at
+what's going on inside.
+All right. First of all,
+it's quite clear we got Borg Warner's
+name is all over this. This is a BYD
+drive unit, but uh clearly Borg Warner
+is the supplier for this. and uh um
+they've done a fantastic job. We keep
+seeing
+incremental improvements. Um one of the
+things that we're it's nice to see is
+the improvement in the
+um water. So this is where the water
+passes from the inverter into the motor
+and this connection is automatically
+made when the inverter comes down. But,
+uh, the seal system here, uh, has a a
+face seal on the top and a O-ring around
+the
+around this part that goes inside. And
+so, the double seal is to try to keep
+regardless of thermal expansion and over
+time
+&gt;&gt; orientation
+&gt;&gt; orientation, it'll always uh, keep that
+seal. uh which is critical. We don't
+want water leaking out anywhere.
+So that's all nice. One of the a couple
+things that saw over here when we did
+the uh p pulled off this cover is that
+these um connections to the motor are
+flexible. They used a stranded wire to
+make this this connection and that uh
+makes assembly a lot easier to make sure
+that it will
+You can move the parts in
+&gt;&gt; tolerances,
+&gt;&gt; but it does cause some issues because uh
+now vi over vibration this flexible lead
+can uh has to be supported to make sure
+that you don't have um electrical
+connection failure down in there. And a
+connection failure at the three-phase
+connection of a motor like this is a
+catastrophe. So, um it's really
+important to keep all this stuff well
+supported.
+All right. It's a
+12.83
+to1 ratio is what they were told. And
+which is an unusually high gear ratio,
+which means it's a real fast spinning
+motor. Uh close to 18,000 RPM.
+And uh we got uh roller bearings for the
+lay shaft. This is the lay shaft. So
+input shaft, lay shaft and the output.
+Large number of gear teeth on the on the
+output and uh big difference between the
+number of gear teeth on the input and
+the on the lay shaft.
+relatively small deer teeth, which is
+one of the things that's enabled by the
+330 Nton meters of torque, which is
+relatively low for a rear drive unit.
+And there it is. There's the resolver.
+Uh, one thing that's nice, sometimes
+companies will put um adjustment
+mechanisms in there, so slotted uh screw
+holes to allow them to tweak it. This is
+solidly mounted with no adjustment, no
+mechanical adjustment, which implies
+that they use uh software to um adjust
+the
+&gt;&gt; virtually. Yeah.
+&gt;&gt; All right, we're going to open up the
+inverter now. It has 21 screws, two of
+which were security bits, so we went and
+uh took those out already. I'll put on
+some gloves and uh get rolling.
+Here we go.
+The DC power comes from the battery. It
+comes in here. It goes through this.
+This is a filter that uh filters out
+some of the switching ripple. The
+switching comes from the switches. This
+is the control board for the switches.
+And then underneath this are the
+switches, the um
+&gt;&gt; MOSFETs.
+&gt;&gt; They're either MOSFETs or IGBTs. And at
+this point, we can't see enough of them
+to know that which way. This is the
+capacitor.
+Um they've got 510 microfarads of
+capacitance. It's showing it's a 750
+volt DC capacitor.
+Um and then the three-phase power then
+comes from so it's DC coming in here and
+then three-phase AC coming going out
+here uh through this. This is the
+current set of current sensors. Um,
+since it's all one block, I can't tell
+whether they're using two or three
+current sensors.
+&gt;&gt; It It looks like three, like
+&gt;&gt; like all three of the the currents are
+being measured.
+&gt;&gt; Yeah.
+&gt;&gt; Um
+Tesla just does two, other companies do
+three. It's a you only really need two
+to do the control, but knowing the third
+gives you a way of uh detecting faults.
+And so it's a relatively inexpensive way
+to detect faults um that are um not
+detectable any other way. uh although
+Tesla uses uh some clever software
+algorithms to try to get that fault
+detection with just two.
+Um,
+so this is a rather interesting um,
+uh, filtering arrangement and, uh, we're
+going to want to take a little closer
+look at that. Uh, this can help with,
+um,
+uh, reducing the
+EMI noise and it also helps with
+reducing bearing currents and loss in
+the motor. uh when you filter the the DC
+coming into the um so
+&gt;&gt; it's like a fite choke or
+&gt;&gt; yes uh like a fite choke but uh they
+usually use a little different material
+for that because the power is so much
+higher. Um you'll see kind of a fite
+choke on like your laptop power supply
+that kind of thing. It's the same idea
+but amped up to uh
+&gt;&gt; 400 plus.
+&gt;&gt; Yeah. Thousands of watts.
+&gt;&gt; Yeah. Under this board. When we take
+this apart, then uh there's the the
+cooling for it. But uh you can see the
+water comes on in here.
+&gt;&gt; Passes through the uh
+the heat the
+&gt;&gt; switching board.
+&gt;&gt; Yeah. Underneath the switches where most
+of the heat is taking place. and then
+then leaves here and goes into the
+motor.
+One of the things we like is there's
+just one big casting. The castings are
+expensive. Uh and
+um everything else is done. The two the
+top and bottom covers are just stampings
+uh which are significantly less
+expensive at um the appropriate
+uh volumes. So at 150,000 volume that
+this is is produced at maybe more if
+they're using this in other vehicles
+um then these stampings are going to
+save them quite a bit of money. All
+right, we have the uh BYYD
+Borg Warner motor all torn apart here.
+And so I'm going to go part by part and
+tell you a little bit about what we see
+at Monroe and Associates in this kind of
+a assembly. As we already mentioned that
+it's on the surface a very standard
+looking um
+electric drive unit. It's uh well over
+200 horsepower type of drive unit and
+it's in this drive unit is used in um
+mainstream electric vehicles uh a
+midsize SUV and a sedan um for the China
+market.
+Uh it's a high volume application
+and
+we we're seeing sort of a convergence of
+every automaker arriving at kind of the
+same looking drive unit um across the
+board with uh two-stage gear reduction,
+a bar wound stator and a interior magnet
+PM machine with the inverter closely
+integrated in with the housing of the of
+the motor all kind of together as one
+unit. And that's proved to be an
+extremely cost-effective way of doing a
+powertrain for an electric vehicle. This
+is also used in their um their hybrid
+application. They kind of have an
+extended range electric type hybrid
+uh that they use this powertrain for.
+So, I'm going to go ahead and start here
+at the back end of the of the motor. So,
+this is the the rear cover of the motor.
+In it, the the inverter is mounted on
+top and it passes the three-phase
+connections through here into the
+stator. Um, but what I want to really
+focus on here is this back section. um
+that provides
+a mounting spot for their resolver.
+So the resolver fits down in here.
+This tells the machine, the controls the
+position of the rotor. And I like this
+resolver because it's really small and
+uh inexpensive. Fits right down in here.
+It has no shielding on it and it doesn't
+need shielding because it's in this
+aluminum pocket in the back of the motor
+isolated from the high power um and and
+strong fields of the motor. So nice
+pocket for the uh resolver. Also, if you
+look down inside there, you see this
+this brush thing. It's a uh these are
+carbon fiber brush that touches the
+shaft and that helps dissipate any
+static electricity and also high
+frequency electricity that ends up being
+generated in the shaft by the action of
+the switching um in the stator. So you
+have the stator that transmits power to
+the rotor and it also ends up generating
+a little bit of electricity in the rotor
+shaft which can build up and if you
+don't do something like that then it
+will tend to arc produce electricity
+arcs that arc across the bearing. This
+is the rear bearing for the the motor
+that fits into that location. And this
+by the way is the resolver rotor. So
+this is what goes into that back end of
+the machine. And then this the outside
+part of this bearing the um outer
+diameter
+um fits in here loose fit that um where
+the tolerances are taken up by these two
+O-rings. So there these allow a little
+bit of compression and they keep the
+outer race of the bearing
+uh steady while it's in here. and it
+allows for nice easy slip fit assembly.
+Um, but if you look carefully at this
+insert, this is inserted into the
+casting during the casting process. Um,
+it's not your typical steel. Um, you
+like to have steel on steel for your
+bearing mount because the aluminum when
+it gets hot, it expands at a faster rate
+than the aluminum than the steel of the
+of the ro the bearings. And so having
+steel here eliminates that um difference
+in expansion rate. So the fit stays
+perfect overall temperatures. But this
+is actually coated with a material that
+makes this um very low conductivity
+electrical conductivity. So it isolates
+the bearing from the electrical
+uh voltage that's generated by the
+action of the motor. And so instead of
+having the electricity generated by the
+motor going through the bearing, it has
+an easier path going through the brush
+the brushes here um from the from the
+rotor. So we have a the housing and the
+rotor end up being at the same
+electrical potential
+and you don't end up with u bearing wear
+due to bearing currents. So this is a
+nice solution. It's not cheap. This, you
+know, this component costs a little bit
+of extra money and this special insert
+cost a little bit of extra money, but
+it's much cheaper because they can use a
+standard bearing here. It's much cheaper
+than using ceramic ball bearings
+um than uh so that some other companies
+use and other methods for um like for
+example a uh a a carbon brush that sits
+on here. Um so other methods are more
+expensive than this. So, it's a
+cost-effective way to eliminate a
+failure mode and it's something that
+um BYD has some experience with. Uh but
+also Borg Warner offers this kind of
+solution. Um and it's the kind of thing
+that a company that has been in the
+electric drive unit business for a long
+time um can offer their customers. And
+Borg Warner is a good example of that.
+um you don't if you notice but uh you
+know so we see uh Borg Warner is on all
+of these. So BYD has contracted with
+Borg Warner to manufacture this um drive
+unit to their specifications
+and BYD is going to specify a motor that
+is a little bit different than for their
+China applications a little bit
+different than what Borg Warner would
+offer to say for example a North
+American or a European customer. Um and
+and a good example of that is um the
+water cooling.
+So in the China market
+um water cooling is an except
+exceptionally
+uh cost-effective method for cooling the
+motor. Um the downside of water cooling
+is it cools the stator very nicely but
+it does absolutely nothing to cool the
+rotor. Uh, so the rotor ends up just
+roasting um and that puts a lot of
+pressure on the magnet. So the magnets
+end up um potentially could demagnetize
+um because they get hot
+when you're at under extreme conditions.
+For the China market, that's not really
+a problem because they can have rare
+earth magnets that have as much dprosium
+and turbium in them as they need to give
+make the magnets impervious to high
+temperature. So in the China market,
+water cooling and not cooling the rotor
+is a good option for the rest of the
+world where heavy rare earth elements
+are difficult to get a hold of and high
+power permanent magnets um are represent
+a supply chain risk. Usually we want to
+oil cool to make sure that the rotor can
+be cooled and the temperature of the
+rotor is managed so that we can use
+magnets that don't contain the heavy
+rare earth elements. So one different
+solutions for different applications and
+different markets and this is something
+that you know multinational corporations
+like Borg Warner are able to offer and
+customize for their their uh
+applications and their customers.
+So water cooling
+what the big problem with water cooling
+is the potential for leaks. I did a
+review of one of BYD's earlier motors
+that showed evidence of some
+lastminute engineering to fix potential
+leak issues on the water cooling.
+Typically, you'll have either an
+extrusion here that has hollow passages
+for the water
+um and then you have to seal on both
+sides of the extrusion. So the extrusion
+goes to casting um and you have to try
+to seal those the the top and bottom
+with RTV and that's where uh BYD
+previously on their previous design had
+some issues and had to do some design
+changes and we did made a previous video
+about that. Here they took the inner and
+outer housing both cast material. So
+they cast an inner housing and they cast
+an outer housing and then they use stir
+friction stir welding to weld it
+together on the top and down at the
+bottom. And then they come back and they
+machine the surface so it's utterly
+seamless and hermetically sealed. So
+there is no chance for a leak. There's
+no O-ring seals between the two housings
+that could become damaged and leak. Um
+so this is an excellent solution uh kind
+of bulletproof solution for producing a
+leakp proof water cooled motor. Um and
+it's a unique right now uh in the
+industry. I'm I'm really happy to see
+this uh Borg Warner has a has a
+fantastic solution for uh water cooled
+market water cooled motor for the China
+market. Um, it's a also relatively
+inexpensive process. But having said
+that, it's not super cheap to make
+machined castings, one that fits inside
+the other with these clever little fins
+on the old on the outside of the inner
+casting to produce great heat transfer
+and then friction stir weld it all
+together and machine it all to make it
+one seamless
+um, housing. This isn't
+um super cheap, but it's less expensive
+than say for example an oil cooling.
+You'd have to buy an oil pump and an oil
+to water heat exchanger uh as separate
+components and then the integration
+problem of tuning your oil flow and your
+pump flow for the operating conditions
+of the vehicle. Um so different
+companies are using different solutions
+for this. uh for the China market, this
+is a really great solution. Uh and I'm
+happy to see it in in the in this drive
+unit from BYD.
+Uh I'm not sure I would recommend this
+for uh Western Europe or the US market.
+Um all right. In the for the drive unit,
+the uh the gearbox,
+um we have really a pretty standard
+gearbox. It's a two-stage gearbox. The
+This is an input shaft that the motor
+rotor
+uh drives this and then this is the lay
+shaft, a secondary shaft uh that
+produces some of the gear half the gear
+reduction and then this other half the
+gear reduction is t done by the
+differential um and then the two shafts
+going half shafts going out to the
+wheels um go out here. Um this is a
+fantastic example and has very low
+friction. I would normally spin it, but
+I don't have this bearing seated because
+this this bearing was a press fit, and I
+don't want to have to pull it back out
+again because it was tough to pull out.
+Um, one thing that stands out though on
+this is how compact this whole unit is.
+They've arranged the the three gears as
+as tightly as possible for this gear
+reduction. Um, and for the loads that
+this has to handle, it's a pretty high
+torque motor. Um, and it's a high-speed
+motor, so very compact, uh, gear
+reduction. Um, and,
+uh, this casting,
+uh, form fit right around. Um, what that
+helps with is the oil flow. So the the
+differential outside gear picks up the
+oil and slings it up into pockets at the
+top and then the oil uh drains down
+through channels in the casting uh to
+lubricate all the bearings. So no uh
+dedicated oil pump for um lubrication on
+the um gears. It's all done by slinging
+oil um the action by the action of the
+gears. Um very cost-e effective solution
+for um keeping everything lubricated.
+They don't need this to run this oil all
+over the motor um for cooling. It's only
+um contained here in the gearbox.
+So that's the the gearbox. Uh excellent
+example again.
+Taken as a whole
+uh and stepping back and costing out
+each of these items, we see that this uh
+motor and drive unit is very likely the
+lowest cost drive unit that we have ever
+encountered for this capability uh over
+200 horsepower type um drive unit. And
+so
+even at the low cost that uh we have for
+this for the China market right now and
+the competitive pressure that BYD is
+under, it's almost certainly still not
+enough. So, I know that BYD is coming
+back to Borg Warner and looking for even
+more cost-saving ideas, even though this
+sets a new benchmark for finding ways to
+reduce cost in every single component as
+we go. All right, I'm going to come back
+to the stator in a little bit. Um, it's
+an interesting stater um although it's a
+kind of a standard winding diagram,
+but uh we're we'll talk about it in a
+little bit. I'm going to jump to the
+rotor here. Um the rotor is a interior
+magnet PM machine has uh a double V
+construction for the the magnets. And
+we're going to do a another video
+another time to talk about exactly why
+uh these motor manufacturers are going
+with interior permanent magnets that
+always seem to have either a single V or
+a double V construction and what they
+what the benefit of that is. But uh it's
+it's been this this construction for uh
+permanent magnet motor has become
+ubiquitous in the in the industry. Um,
+we see Hyundai using it. We see GM using
+it. Ford is using it. Um, Toyota
+practically originated it back in the
+day with the Prius. Um, uh, Nissan is
+using it. Uh, just goes the list goes on
+and on. Uh, just about every major
+manufacturer is using a a variation on
+this type of rotor. But nobody is
+putting a deep groove in the OD outside
+diameter like this. Norm, this is a very
+high-speed rotor and it spins at almost
+20,000 RPM and
+normally you want to have an unbroken
+uh outside diameter because you want the
+hoop stress for the
+um steel laminations to be uniformly
+distributed around the the perimeter.
+So this groove that required some
+detailed engineering and finite element
+analysis in order to design the radi on
+this the radiuses and design the depth
+of that groove in order to make it
+structurally hold together when this
+thing is spinning at extremely high
+speed. One thing that does help them is
+that the diameter of this rotor is a
+little bit smaller than the diameter
+that we see other companies use. The
+typical diameter is 150 millimeters or
+about 6 in. And this is more like 138
+millimeters,
+just a little bit smaller to reduce the
+stress on the outside diameter and allow
+them to do this. What they get from that
+normally with this double V construction
+of the magnets, it focuses the magnetic
+field into the center and it produces a
+a a prominent spike of
+uh magnetic flux coming out of the
+center of the of the rotor. By putting
+in this groove, it flattens out that um
+prominent spike of flux and makes the
+flux from the magnets uh much more
+sinosoidal
+and that helps reduce loss in the motor.
+Um so it's addition it it reduces torque
+ripple and noise but it also reduces
+loss um by smoothing out the flux from
+the rotor. So that's very interesting
+and I haven't seen that in other rotors
+before the permanent magnet rotors and
+it's interesting um adaptation.
+Okay, let's take talk about this
+inverter. Uh very thin inverter
+uh pancake, you know, like a pizza box
+type style that sits nice and flat on
+top of the motor. This is a rear motor
+application and so it's very important.
+And I'm sure BYD had tight regular
+specifications for the maximum height of
+this inverter uh because they need to
+give the customer in the you know the
+trunk space um as much as possible. You
+don't want to encroach on the uh
+passenger compartment and so there's a
+very little space between you know the
+bottom of the of the drive unit and the
+ground and the top of this drive unit.
+So, keeping this as as thin as possible
+was a key part of the design that caused
+it to spread out a little bit. Um, it
+has all the usual components. The DC
+energy comes in from the battery here,
+goes into a large capacitor. This helps
+smooth out the the current ripple that
+comes from the motor and stores energy
+for the switching events so that it can
+fill in the gaps of the of the switching
+events. So that's what the capacitor is
+there for. These are the switches. There
+are six switches in here. Uh actually
+it's 12 is two is pairs. They're are
+discrete devices.
+Um, and I haven't seen this kind of
+packaging before. Um, it's cooled on
+both sides. We have this uh cooling
+channel on the top and cooling channel
+on the bottom. Other companies do this
+sim something similar uh but not this
+thin. The the switching devices are only
+four millimeters thick. Uh so they must
+be going like bare dye um right onto the
+substrate and then directly connected to
+the cooling. Uh it's uh you want to have
+as as thin uh and and low resistance
+cooling path as possible with these
+switches to be able to handle the
+thermal um load.
+And so these guys, this is a step above
+what I've seen done in in other um
+inverters in the industry.
+Uh very
+um novel I think uh for how this is
+done. Also the fact that they're using
+this copper, it's of course a great
+thermal conductor, but it also is
+electrical conductor. And this provides
+shielding by putting copper on both the
+top and the bottom of the switching
+devices. The electromagnetic
+interference that is generated by these
+switching devices is shielded from all
+the rest of the components. On the back
+side, we've got these
+uh these are the gate drive controllers,
+and these can be relatively sensitive to
+um electromagnetic interference. And so
+having the the shielding on both sides
+of the switching devices helps shield
+that uh sensitive electronics from from
+the noise of this. There's actually the
+amazing thing is there is um as much
+power going through these switches as
+there is in a whole neighborhood
+uh of homes. So 15 or 20 homes could be
+lit up with the power that's going
+through this uh these switches at at
+when you're doing full max pedal
+acceleration.
+And so shielding the um all the
+components from that power is essential
+especially these three
+devices here. These are the current
+sensors
+and they do not have a uh usually
+there's a steel yolk around
+each of the
+current sensors to sort of contain the
+magnetic field of the three phases. And
+if we look underneath the three-phase
+current coming from the switches
+uh and going down to the motor passes
+directly underneath
+these three
+um current sensors.
+So it picks up the the current without
+uh shielding without the magnetic uh
+steel around it. Um which is a huge cost
+save and uh package savings. is much
+more compact. Um, normally these things
+are quite uh large and heavy. Uh, and
+that's only really made possible by this
+uh fully shielded switching package. So,
+great little tight compact package that
+enables some cost savings as well. Um,
+win-win situation. The other thing I
+love to point out is um this is all one
+casting.
+Uh then and the
+controller is mounted on the other side
+and this controller is again shielded
+from the electromagnetic interference
+not just by the cooling channels but by
+the casting itself by mounting it on the
+opposite side using this single casting.
+Other companies use a separate cast
+um part as the shield to shield the
+essentially the controller from that.
+And here they've done that with a single
+part. And they they don't uh put a big
+another heavy casting over the top of
+it. They use a stamping
+um aluminum stamping to cover it. So the
+this whole cover is just an a lowcost
+stamping. Companies will say, "Oh, we
+can't use a stamping um because we have
+to mount the cover over here." But these
+they have these nice inserts to drive
+the screws into. I will have to give
+them uh a little bit of grief.
+Freund screws to put this. I don't know
+what it is about electrical engineers
+and their love of little bitty screws
+and hundreds of them. Um, there are
+better ways to put things together. It's
+yes, screws are tried and true, but uh
+it's
+there's there's other ways to do this.
+And this represents a lot of process
+time. And every one of these screws is a
+potential failure mode. when screws tend
+to back out under vibration and thermal
+cycling and then you've got, you know,
+if one of these screws that's holding in
+these switches and making this
+electrical connection, if it backs out,
+you've got arcing and you got a failed
+inverter. So, not thrilled with uh using
+a million screws. But that's that's a
+part of the the current state of
+electrical engineers doing mechanical
+design work. Um, okay.
+Absolutely love almost everything about
+this motor, but it wouldn't be a Monroe
+Live video if we didn't find something
+that we're really not fond of. Yeah, of
+course we always pick on the screws, but
+there's more to it. And so I'm going to
+go back to the stator.
+I have a there's a fond place in my
+heart for this particular
+electromagnetic design. It's a 72 slot
+design. This one's a six pole motor. Has
+three parallel paths. Uh back in the day
+we did the Chevy Bolt. It was also a 72
+slot design. Three parallel paths. Eight
+pole motor. Um, in fact, they have an
+eight-pole version of this stator um in
+the BYYD Shark. So, they're uh doing six
+pole and eight pole versions of this
+same uh or nearly the same
+uh uh layout. This motor is a part of a
+family of motors that get power all the
+way from
+uh 350 kilowatts or more uh down to
+under under about 150 kilowatts or
+perhaps even less. I haven't seen the
+whole range. Um so it's a very flexible
+winding pattern. Um and I love the uh
+bar winding scheme. They've uh they've
+minimized the number of special
+uh um conductors here
+and produc done a a a great job with uh
+running the the three parallel paths and
+balancing the the electromagnetic um
+winding so that you have the same
+inductance in all three parallel paths.
+So that's all very good. they've made
+one
+uh
+one there's one thing that they where
+they've broken a cardinal rule and yeah
+sometimes you have to break the rules to
+get the kinds of cost savings that
+you're looking for. Um I'm this in this
+case I think that it's not going to be
+not going to work out well for them.
+These connections here they're using
+these flex leads here. There's a
+stranded wound uh stranded cable where
+the ends are welded onto these two
+terminals.
+That allows them the tolerance stack up
+because this ends up uh moving somewhat
+and there's you can't be guaranteed
+between the location of this and the
+location of the inverter connections.
+um that everything will be exactly where
+it's supposed to be. And so a little
+flexibility is great. Helps for um for
+manufacturing and and assembly,
+but
+you have to support both ends. This end
+is supported at the inverter in a
+plastic block that holds everything
+tight, but this end
+is free to move. Um, it's only supported
+by the wires from the stator. And it's
+this weld here, the same welds that
+we're using to conduct the electricity
+into the winding. And the cardinal rule,
+the general engineering rule of thumb is
+you do not want your electrical
+connection
+to be the same thing that carries the
+mechanical support. So you want to have
+the mechanical support carried by a
+mechanical part
+and the electrical connection
+being free from mechanical stress. So
+what we're what happens here is when we
+run current through this, we run
+hundreds of amps through this. This
+heats up and this heats up. So and when
+it heats up, the copper expands and when
+the copper expands, it pushes down on
+this and then this also the copper
+expands. And so these three push up. So
+this is up and this is down and it
+flexes that joint. and then you turn it
+off and it cools back off and it flexes
+the other way. And so over time it
+flexes back and forth every time you
+turn the motor on and off. In addition
+to that, just the weight of this as you
+vibrate this, as you go over the road
+and every bump in the road, you get a
+little vibration and that's also putting
+stress on that joint. And then there's
+further vibration. The action of the
+rotor spinning around is moving these
+wires. The magnetic fields are so strong
+that it actually distorts this housing
+and and produces a high frequency
+vibration that again moves this joint.
+So between all of those forces, this
+joint ends up seeing quite a lot of
+vibration. And unfortunately,
+copper, the kind of copper you want for
+great conductivity to produce low loss
+motors,
+is not a very good material for
+structural support. And over time,
+fatigue sets in and little cracks will
+turn into big cracks and this will saw
+itself right in half.
+So, that's that's an issue. it. Uh I'm
+sure that they did the FEA and they've
+done some testing to make sure that uh
+it meets the requirements.
+The only trouble is that these weld
+joints are notoriously
+um
+variable.
+All it takes is someone to not uh to go
+a little bit long on the maintenance
+schedule of the welder and suddenly
+you've got a joint that's not quite the
+same as the joint that they tested. And
+now you've got one that isn't going to
+last as well as the one you tested and
+you end up with problems in the field
+and it it's trouble. The way to fix that
+is you can put a plastic part underneath
+this, just a little bit of support
+underneath this to dampen those
+vibrations.
+Uh, and then that completely eliminates
+the issue. So, the mechanical load is
+handled by the the little plastic part
+and supported. No one likes adding an
+extra part. And at Monroe, we always
+advise to eliminate any part that's
+unnecessary.
+But
+don't go too far. And if you need to
+have a part to perform a function, which
+means in this case providing the
+mechanical support to protect that
+electrical joint, then you need to add
+the part. And so, you know, a plastic
+part kind of like they did up here with
+this this side, another plastic part
+down here to support on on on this side
+of the joint would be beneficial. So
+absolutely love this motor. Uh
+and I think that this is a new benchmark
+for compact cost effective uh electrical
+power for EVs and hybrid vehicles. Uh
+there's going to be technology taken
+from this motor and applied across the
+industry. Uh BYD is to be commended for
+setting a new benchmark and Borg Warner
+along with them and getting this new
+technology on the road and it'll be
+really fun to see how how this
+technology propagates out into other
+manufacturers designs. So thanks for
+watching here at Monroe Live and we'll
+see you next time.
