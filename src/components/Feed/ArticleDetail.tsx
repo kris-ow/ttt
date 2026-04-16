@@ -37,7 +37,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
 
         <div className="border border-border bg-surface p-3 sm:p-6 overflow-x-hidden" onClick={e => e.stopPropagation()}>
           <div className="text-text-dim text-xs mb-2">
-            [{article.sourceType === 'x' ? 'X/TWITTER' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
+            [{article.sourceType === 'x' ? 'X/TWITTER' : article.sourceType === 'article' ? 'WEB' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
           </div>
           <h2 className="text-green text-lg font-bold mb-4">{article.title}</h2>
           {(article.source || article.videoUrl) && (
@@ -46,7 +46,11 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
               {article.sourceType === 'x' ? (() => {
                 const handle = article.source.match(/@(\w+)/)?.[1]
                 return handle ? <a href={`https://x.com/${handle}`} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim" onClick={() => track('Source Link', { type: 'x', channel: article.channel })}>[VIEW PROFILE ON X]</a> : null
-              })() : article.videoUrl && (
+              })() : article.sourceType === 'article' ? article.videoUrl && (
+                <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim" onClick={() => track('Source Link', { type: 'article', channel: article.channel })}>
+                  [READ ORIGINAL ARTICLE]
+                </a>
+              ) : article.videoUrl && (
                 <a href={article.videoUrl} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim" onClick={() => track('Source Link', { type: 'youtube', channel: article.channel })}>
                   [WATCH ON YOUTUBE]
                 </a>

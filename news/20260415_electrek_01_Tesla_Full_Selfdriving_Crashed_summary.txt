@@ -1,0 +1,35 @@
+Source:     electrek
+Title:       Tesla ‘Full Self-Driving’ crashed through railroad gate seconds before train
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/04/15/tesla-fsd-railroad-gate-oncoming-train-texas-owner/
+Published:   2026-04-15 16:44 UTC
+Summarized:  2026-04-16 13:16:52 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.03182 (2781 in / 1565 out tokens)
+Categories:  Autonomous Driving, Market & Competition
+────────────────────────────────────────────────────────────
+
+A Texas Tesla owner reports that his car, operating on Full Self-Driving (FSD), accelerated through a lowered railroad crossing arm into the path of an oncoming train. The driver, Joshua Brown, avoided a collision only by flooring the accelerator to clear the tracks — the train passed less than two seconds after he crossed.
+
+## Autonomous Driving
+
+1. **Driver's account of the incident:** Brown, who claims over 40,000 miles logged on FSD, says the car spontaneously accelerated at an active level crossing — arm down, lights flashing, train visible — without any warning. He did not brake, instead choosing to accelerate through the barrier based on a racing instinct. The crossing arm struck his driver's side window. After clearing the tracks, the Tesla's touchscreen displayed: "Autopilot disengaged, what happened?"
+
+2. **Established pattern and federal probe:** Electrek identifies this as part of a documented pattern. A March dashcam video showed a Model 3 on FSD driving through a railroad crossing arm at 23 mph in West Covina, California. NBC News has documented more than 40 social-media reports of FSD failures at railroad crossings. In 2025, a Tesla on FSD was struck by a train in eastern Pennsylvania. Those incidents prompted Senators Ed Markey and Richard Blumenthal to request a formal NHTSA investigation. NHTSA already has an open probe linking FSD to at least 58 incidents, 14 crashes, and 23 injuries — a list that has since grown to roughly 80 documented violations including crossing into opposing traffic and running red lights.
+
+3. **FSD v14.3 released the following day:** Tesla began rolling out FSD v14.3 the day after Brown's incident. Built on a new MLIR-based compiler, Tesla claims it delivers "20% faster reaction time." Release notes reference improved handling for "rare and unusual objects extending, hanging, or leaning into the vehicle path" — language observers interpreted as addressing crossing-arm failures, though Tesla does not mention railroad gates explicitly.
+
+4. **Tesla's safety claims and system classification:** Tesla markets FSD Supervised as seven times safer than the average U.S. driver, citing one crash per 5–7 million miles versus roughly 660,000 miles for humans. The company does not break out that figure by incident type, does not disclose how it counts disengagements occurring seconds before a crash, and does not share its underlying dataset with outside researchers. Despite its name, FSD remains a Level 2 system requiring hands on the wheel and eyes on the road. CEO Elon Musk has conceded that "the actual time from when FSD sort of works to where it is much safer than a human is several years."
+
+## Editorial Stance
+Electrek argues that a perception system that cannot reliably detect a fluorescent orange-and-white barrier lowered directly across the vehicle's path cannot credibly be called seven times safer than a human driver. The author contends that v14.3's release notes reveal Tesla frames these railroad crossing failures as edge cases rather than a repeat, documented safety defect already under federal investigation.
+
+**Notable quotes and data:**
+- Brown: "Without any warning… my Tesla suddenly accelerated forward on its own."
+- Brown: "I glanced to my right and saw the train barreling toward us — lights glaring, horn blaring. It was terrifyingly close."
+- Musk (prior statement): "The actual time from when FSD sort of works to where it is much safer than a human is several years."
+- NHTSA open probe: at least 58 incidents, 14 crashes, 23 injuries; grown to ~80 documented violations
+- NBC News: more than 40 social-media reports of FSD failures at railroad crossings
+- West Covina incident: Model 3 on FSD drove through crossing arm at 23 mph
+- FSD v14.3: claims 20% faster reaction time; released the day after Brown's incident
+- Train cleared tracks less than 2 seconds after the Tesla crossed, per dashcam footage

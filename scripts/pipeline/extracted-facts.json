@@ -4780,5 +4780,199 @@
     "channel": "electrified",
     "extractedAt": "2026-04-16T07:40:38.857Z",
     "status": "pending"
+  },
+  {
+    "fact": "NHTSA open probe links FSD to at least 58 incidents, 14 crashes, and 23 injuries; total documented violations have grown to approximately 80",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Active federal regulatory investigation into FSD safety is a direct risk to unsupervised FSD and robotaxi deployment approvals",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:07:26.426Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 released with claimed 20% faster reaction time, built on new MLIR-based compiler and runtime",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version release with specific performance claim; timing (day after railroad incident) and release note language are material to safety narrative",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:07:26.426Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla markets FSD Supervised as producing one crash per 5–7 million miles versus approximately 660,000 miles for the average human driver",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Tesla's own safety benchmark for FSD; contested by this article given undisclosed methodology and exclusion of pre-crash disengagements",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:07:26.426Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated earlier in 2026 that 'the actual time from when FSD sort of works to where it is much safer than a human is several years'",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "CEO admission that unsupervised, demonstrably safer FSD is still years away — directly relevant to robotaxi deployment timeline assumptions",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:07:26.426Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 delivers approximately 20% faster reaction time via a new compiler, with beta testers clocking approximately 0.2 seconds reaction time versus human average of 1.5 seconds",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD 14.3 is described as a meaningful capability milestone being cited by multiple institutional analysts as a catalyst for their upgrades",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised is described as seven times safer than the average human driver",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 7,
+    "context": "Safety multiplier relative to average human driver; directly relevant to regulatory approval timelines and robotaxi unit economics risk assumptions",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla received EU/Netherlands regulatory approval for FSD, described as a major unlock for international deployment",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First European regulatory approval for FSD; opens international market for FSD subscriptions and eventual robotaxi operations",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 60 Cybercabs were observed leaving the factory to the outbound lot in mid-April 2026, per Joe Tegtmeyer",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Ongoing production and outbound shipment of Cybercabs is an observable indicator of ramp progress",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has posted job listings for data collection supervisors in 34 cities, with morning, afternoon, and overnight shifts, interpreted as preparation for Cybercab multi-city testing",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "field": "fleet_size",
+    "value": null,
+    "context": "34-city job postings far exceed the 7-city launch announcement, suggesting Tesla is planning a much broader near-term deployment footprint",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert originally forecast 7-city robotaxi launch by end of June 2026 but now believes that timeline may slip",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Downward revision to near-term launch timeline from a previously bullish forecaster; important for modeling revenue start dates",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert predicts all 34 cities will have active Cybercab operations within approximately one year from mid-April 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Provides a geographic fleet expansion trajectory relevant to modeling robotaxi network growth and revenue ramp",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 has not been revealed as of mid-April 2026; Elon Musk's prior target of 5,000–10,000 units by end of 2025 was not met",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms Optimus Gen 3 is delayed relative to prior public commitments; no new reveal date given",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A 1-million-units-per-year Optimus production line is reported to be under development in Fremont; a 10-million-units-per-year line is under development at Giga Texas",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "If accurate, these line capacities represent massive potential output that would dwarf any prior humanoid robot production at scale",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD subscription at $100/month with only 30,000 subscribing vehicles would generate $3 million per month in near-pure margin",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Illustrates FSD subscription economics at low take rates; $100/month per vehicle cited as the subscription price point",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi recurring revenue estimated at approximately $30,000 per year per vehicle",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Used to contrast robotaxi revenue potential against one-time FSD sale value of ~$5,000 and traditional automaker per-vehicle margin of ~$2,500",
+    "source": "20260416_futureaza_01_Ubs_Shock_Upgrade_Sends_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-16T13:08:33.575Z",
+    "status": "pending"
+  },
+  {
+    "fact": "NHTSA open probe links FSD to at least 58 incidents, 14 crashes, and 23 injuries; list has since grown to roughly 80 documented violations",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Active federal investigation into FSD safety is a direct regulatory risk to Tesla's autonomous driving thesis and any unsupervised FSD or robotaxi approvals",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:16:52.486Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 released the day after the Texas railroad incident, built on a new MLIR-based compiler; Tesla claims 20% faster reaction time",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version release is a catalyst update; the 20% reaction time improvement claim is a capability milestone relevant to safety benchmarks",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:16:52.486Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla markets FSD Supervised as producing one crash per 5–7 million miles, versus roughly 660,000 miles for the average human driver",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Tesla's own aggregate safety figure; article notes it is not broken out by incident type and the underlying dataset is not shared with outside researchers, limiting its reliability as a DCF input",
+    "source": "20260415_electrek_01_Tesla_Full_Selfdriving_Crashed_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-16T13:16:52.486Z",
+    "status": "pending"
   }
 ]

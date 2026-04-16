@@ -40,7 +40,8 @@ const articles = files.map(filename => {
 
   // Determine source type
   const isX = meta.source?.includes('X/') || meta.source?.includes('X @') || channel === 'sawyermerritt';
-  const sourceType = isX ? 'x' : 'youtube';
+  const isArticle = meta.author !== undefined;
+  const sourceType = isX ? 'x' : isArticle ? 'article' : 'youtube';
 
   // Extract signal strength (X articles: signal hidden in UI, skip extraction)
   const signalMatch = !isX ? body.match(/Signal Strength:\s*(🟢|🟡|🔴)\s*(\w+)/) : null;

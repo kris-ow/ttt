@@ -1,4 +1,4 @@
-import { CHANNEL_META } from '../../types'
+import { CHANNEL_META, type Bias } from '../../types'
 
 export function formatDate(dateStr: string) {
   const d = new Date(dateStr + 'T00:00:00')
@@ -27,6 +27,20 @@ export function renderInline(text: string) {
 
 export function channelShort(channel: string, sourceType: string) {
   const ch = CHANNEL_META[channel]
-  const prefix = sourceType === 'x' ? '[X]' : '[YT]'
+  const prefix = sourceType === 'x' ? '[X]' : sourceType === 'article' ? '[WEB]' : '[YT]'
   return `${prefix} ${ch?.name || channel}`
+}
+
+const BIAS_STYLE: Record<Bias, string> = {
+  'BULL': 'text-[#009926]',
+  'LEAN BULL': 'text-[#2a5a2a]',
+  'NEUTRAL': 'text-amber/40',
+  'BEAR': 'text-red/50',
+}
+
+export function biasTag(channel: string) {
+  const ch = CHANNEL_META[channel]
+  if (!ch?.bias) return null
+  const cls = BIAS_STYLE[ch.bias]
+  return <span className={cls}>[{ch.bias}]</span>
 }

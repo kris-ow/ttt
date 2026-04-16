@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import newsData from '../../data/news.json'
 import { type Article, type NewsData } from '../../types'
-import { formatDate, channelShort, signalTag } from './helpers'
+import { formatDate, channelShort, signalTag, biasTag } from './helpers'
 import { track } from '../../analytics'
 
 const data = newsData as NewsData
@@ -38,16 +38,14 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
                     onClick={() => onSelectArticle(article)}
                     className="w-full text-left border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 transition-colors cursor-pointer group"
                   >
-                    <div className="flex items-start gap-3 text-xs">
-                      <span className="text-text-dim flex-shrink-0 whitespace-nowrap w-[18ch]">
-                        {channelShort(article.channel, article.sourceType)}
+                    <div className="flex items-start gap-x-3 text-xs overflow-hidden">
+                      <span className="text-text grow-0 shrink basis-[31ch] min-w-[12ch] flex flex-wrap content-start items-baseline gap-x-2">
+                        <span className="whitespace-nowrap">{channelShort(article.channel, article.sourceType)}</span>
+                        {biasTag(article.channel)}
                       </span>
-                      <span className="text-text-bright group-hover:text-green min-w-0 flex-1 transition-colors break-words">
+                      <span className="text-text-bright group-hover:text-green grow shrink-0 basis-[55%] transition-colors">
                         {article.title}
                       </span>
-                      {article.signal && article.sourceType !== 'x' && (
-                        <span className="flex-shrink-0">{signalTag(article.signal)}</span>
-                      )}
                     </div>
                   </button>
               ))}

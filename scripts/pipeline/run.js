@@ -67,8 +67,9 @@ function findUnsummarizedTranscripts() {
       }
     }
 
-    // Detect xdaily (X/Twitter digest) vs YouTube transcript
+    // Detect content type
     const isXDaily = file.includes('_xdaily');
+    const isArticle = meta.source !== undefined;
 
     // Extract content body
     let transcript;
@@ -101,8 +102,10 @@ function findUnsummarizedTranscripts() {
       title: meta.title || (isXDaily ? `Sawyer Merritt — Daily X Summary (${meta.date || 'unknown'})` : file),
       published: meta.published || (meta.date ? `${meta.date} 00:00:00 UTC` : ''),
       url: meta.url || '',
+      author: meta.author || '',
       transcript,
       isXDaily,
+      isArticle,
     });
   }
 
@@ -111,10 +114,12 @@ function findUnsummarizedTranscripts() {
 
 // ── Prompt Building ──────────────────────────────────────
 
-function buildPrompt(channel, title, transcript, published, { isXDaily = false } = {}) {
+function buildPrompt(channel, title, transcript, published, { isXDaily = false, isArticle = false, author = '' } = {}) {
   const promptFile = isXDaily
     ? path.resolve('scripts/pipeline/prompt-xdaily.md')
-    : PROMPT_FILE;
+    : isArticle
+      ? path.resolve('scripts/pipeline/prompt-article.md')
+      : PROMPT_FILE;
   let template = fs.readFileSync(promptFile, 'utf-8');
 
   // Build corrections string
@@ -145,6 +150,7 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false }
   template = template.replace('{{PUBLISH_DATE}}', pubDate);
   template = template.replace('{{CHANNEL}}', channel);
   template = template.replace('{{TITLE}}', title);
+  template = template.replace('{{AUTHOR}}', author);
   template = template.replace('{{TRANSCRIPT}}', transcript);
 
   return template;
@@ -206,7 +212,7 @@ async function processDirectly(client, transcripts, state) {
 
   for (const t of transcripts) {
     console.log(`\n  Processing: ${t.title}`);
-    const prompt = buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily });
+    const prompt = buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily, isArticle: t.isArticle, author: t.author });
 
     let success = false;
     for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
@@ -303,8 +309,9 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
 
   const headerLines = [
-    `Channel:     ${transcript.channel}`,
+    `${transcript.isArticle ? 'Source' : 'Channel'}:     ${transcript.channel}`,
     `Title:       ${transcript.title}`,
+    ...(transcript.author ? [`Author:      ${transcript.author}`] : []),
     ...(transcript.url ? [`URL:         ${transcript.url}`] : []),
     `Published:   ${transcript.published}`,
     `Summarized:  ${now}`,
@@ -416,7 +423,7 @@ async function main() {
   console.log(`\n=== Building prompts and submitting batch ===`);
   const requests = transcripts.map(t => ({
     id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
-    prompt: buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily }),
+    prompt: buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily, isArticle: t.isArticle, author: t.author }),
   }));
 
   const batch = await submitBatch(client, requests);
@@ -523,7 +530,7 @@ async function processPendingBatch(client, state) {
       }
       return {
         id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
-        prompt: buildPrompt(t.channel, t.title, transcript, t.published, { isXDaily }),
+        prompt: buildPrompt(t.channel, t.title, transcript, t.published, { isXDaily, isArticle: t.isArticle, author: t.author }),
       };
     });
 
