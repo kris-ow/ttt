@@ -1,0 +1,707 @@
+Channel:     electrified
+Title:       Wow, Tesla's Next Gen Chip Is NOT What We Thought ⚡️
+URL:         https://www.youtube.com/watch?v=A59LHpQdrSU
+Published:   2026-04-15 23:10 UTC
+Fetched:     2026-04-16 07:25 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome to Electrified. It's your host
+Dylan Lumis. So Elon dropped a big one
+today saying congrats to the AI chip
+design team on taping out AI5. AI6 dojo
+3 and other exciting chips are in the
+works. And Elon went as far as sharing
+an image of what appears to be the
+actual AI5 design. Now we will come back
+to this shortly, but you have the main
+processor right in the middle and then
+on either side you have six dyes for
+memory. Six over here, six over here for
+12 total. And this central SOC or system
+on chip and these 12 memory dyes are all
+packaged together on this substrate that
+you see that has some wording on it. And
+as you might guess, there's a lot to
+unpack here because this is a pretty big
+departure from what we've seen with AI4.
+But first, Elon continued, "Thank you to
+Taiwan Semi and Samsung for your support
+in bringing this chip to production.
+It'll be one of the most produced AI
+chips ever. And then Elon was asked,
+will this go into cars or the robots? To
+which Elon said, Optimus and our
+supercomputer clusters, AI4 is enough to
+achieve much better than human safety
+for FSD. So all along the expectation
+has been that AI5 will of course go into
+the vehicles to make FSD superhumanlike
+from a safety perspective. But now with
+Tesla rewriting the compiler and the
+runtime and everything that we've
+covered, they're now very clearly pretty
+confident that AI4 is going to be more
+than enough for unsupervised, which yes,
+is another very strong anecdotal piece
+of evidence for all you Hardware 3
+owners. I'm not saying I'm now
+guaranteeing that unsupervised will make
+its way to hardware 3 vehicles, but I
+would postulate that Tesla solving for
+unsupervised comfortably on AI4 is a
+very encouraging sign that at some point
+we do see a version 14 or even a version
+15 light that will make it to hardware 3
+vehicles and be close to unsupervised,
+if not all the way there. And I know
+plenty of people have already written
+off the possibility of hardware 3
+running unsupervised. I personally am
+not one of those people. Given what I'm
+seeing in the world of quantization and
+distillation and all of the efficiency
+gains that can be made on the software
+side, in my opinion, there's a nonzero%
+chance that Tesla can make some magic
+happen with hardware 3 when it comes to
+a light version of the true unsupervised
+model. Just remember the good news is
+that Elon has already said he will take
+care of hardware 3 owners, whatever that
+may look like. So in the more likely
+event that hardware 3 cannot actually
+run an unsupervised model, Tesla has
+already committed to making that
+situation right when the time comes. But
+before we get into AI5 itself, I think
+it's important to call this out. Elon
+just said March 18th of this year, AI5
+will punch far above its weight because
+the entire AI software stack is designed
+to make maximally effective use of every
+circuit. We co-signed our AI software
+and hardware. Bear in mind AI5 while it
+can be used for training in data
+centers, is primarily optimized for AI
+edge compute in Optimus and Roboaxi.
+There's still significant room for
+improvement. in the same half reticle
+and same process node. We think a single
+AI6 chip has the potential to match a
+dual system onchip AI5. So today we're
+just focusing on AI5. But I want to be
+clear, less than one month ago, Elon
+said AI5 would be going into cars aka
+robo taxis. And there is a world where
+when this post was made, AI5 was
+actually already taped out or at the
+very least close to at that stage. And
+for purposes here, taped out just means
+that the design is done. It's locked and
+it's actually been shipped to the fabs,
+aka Samsung and TSMC. So my point is
+whether or not AI5 makes it into a Tesla
+vehicle is still very much fluid. I
+personally think they will ultimately
+make it into the cars. But for now, the
+new expectation should be that AI4 will
+be the chip in Tesla vehicles for the
+foreseeable future, which is a very
+strong indication that the Tesla team
+right now feels very confident about
+what it can do with these smaller
+models. And one more comment from Elon.
+This one was January 18th this year. AI4
+by itself will achieve self-driving
+safety levels very far above human. AI5
+will make the cars almost perfect and
+greatly enhance Optimus. AI 6 will be
+for Optimus and data centers. AI 7 and
+Dojo 3 will be space-based AI compute.
+So again, what Elon just said today
+would be a departure from the middle two
+bullet points. The way I'm reading this
+is that Tesla knows that Optimus is
+going to need AI5 and the processing
+power and the bandwidth improvements and
+so on. So right now that is the focus of
+the AI5 program. Tesla knows Optimus
+needs it first and foremost. But if
+Samsung and TSMC can start production of
+AI5 and get that to higher volume to a
+level that materially exceeds the
+Optimus production, which I think is a
+very real possibility, from there any
+excess chip capacity could find its way
+into the vehicles, if not into the data
+centers. And I have to say, I think it
+should have already been obvious that
+Tesla is expecting to solve unsupervised
+with AI4 because AI5 isn't expected
+until late next year. And obviously
+Tesla is expecting to start scaling
+unsupervised much sooner than that. But
+who knows, maybe the market did need a
+little reassurance that AI4 will be
+enough for unsupervised. And now, real
+quick before we get into this chip
+design, just a few days ago, the FBI
+labeled a recent data breach a major
+incident and notified Congress about the
+cyber intrusion. Meaning, yes, the
+agency responsible for investigating
+cyber crime, cannot keep its own system
+locked down. And Surf Shark, the sponsor
+of this video, just added a new feature
+for when things like this happen much
+closer to home and impact you. And for
+those who don't pay close attention,
+I'll just tell you it's happening all
+the time. Surf Shark OnePlus now
+includes up to a million dollars in
+identity theft coverage for US customers
+at no extra cost. So if your identity
+gets stolen, and again the data suggests
+it's a matter of when, not if. At this
+point, Surf Shark will reimburse
+expenses like legal fees, document
+replacement, lost wages up to $5,000,
+and even mental health counseling. Plus,
+you get access to a licensed identity
+theft investigator who does all the
+heavy lifting of restoring your credit
+and records. And of course, the best
+part, this is on top of everything else
+that Surf Shark is doing to prevent this
+from happening in the first place. Surf
+Shark's alternative ID lets you create a
+completely separate name, email, and
+number for new signup so your real
+information never enters those
+databases. They also recently launched a
+content web blocker that lets you block
+entire categories of websites across all
+your family's devices. And you can lock
+it behind 2FA so only you control what
+gets through. And one account still
+covers unlimited devices. And Surf Shark
+just completed another independent
+security audit with zero critical
+vulnerabilities. So, if you'd like to
+support the work I do here, you can go
+to surfshark.com/electrified
+or use code electrified at checkout to
+get four extra months of Surf SharkVPN.
+Now, this image was making its rounds
+and I think a lot of people are
+confused. It was comparing Tesla's AI4
+PCB, the entire printed circuit board
+that has both of the AI4 SOC's, these
+little squares on the overall larger
+PCB. That image was mistakenly being
+compared directly to just one AI5 SOC
+that has a new memory packaging strategy
+which was packaged together on this
+substrate which looks like the frame
+right here. But the reason they
+shouldn't have been compared like this
+is because this AI5 is effectively one
+of these AI4s right here. So the easiest
+way to think about it is this image
+comparison is taking one of these AI4
+SOC's and removing it from the overall
+printed circuit board and then blowing
+it up to make it bigger and then showing
+those changes from there about how AI5
+is going to look. And so now we have
+people saying that see I told you AI5 is
+not going to have redundancy anymore.
+It's only going to be one AI5 die. But
+I'm just not confident that's the case.
+I think people are just reading way too
+far into things right now. So, I
+definitely still think there's a world
+where Tesla's going to have two of these
+AI5 packages, I'm calling it, because it
+does have the SOC and the memory and the
+substrate all packaged together. And
+then Tesla will take two of those and
+actually place it on a larger PCB
+printed circuit board to have two of
+those AI5 chips just like we saw with
+AI4 for redundancy in case one fails.
+Now, we don't have anything official on
+that right now. That is just my
+speculation. Today, Elon also said a
+single AI5 has around five times the
+useful compute of a dual SOC AI4,
+meaning one AI5 chip has five times the
+compute capacity of two AI4 SOC's. And I
+don't want to speculate too much here
+based on Elon's wording. So, I'm just
+going to assume that this number will
+stay the same even if Tesla does move to
+a dual AI5 SOC for redundancy, meaning a
+dual SOC AI5 would still be around five
+times the useful compute compared to
+AI4. And that's because of my
+understanding of how Tesla handles
+redundancy. I'm pretty sure that each
+SOC has to be fully capable of running
+the FSD neural net in the event that one
+fails entirely, meaning the useful
+compute wouldn't change that much from
+having two because they're both running
+in parallel at the same time. Now,
+looking at AI5, hopefully you've all
+been watching each episode so you can
+stay up to date. Remember how I said I'd
+bring up co-was again, chip on wafer on
+substrate, which is an advanced
+packaging technique which Tesla plans to
+do in the Terrafab, which is partially
+what we're seeing here. So this AI5
+design has the memory integrated right
+next to the main processing SOC. And
+then again, all of those dyes are
+packaged together on this outer
+substrate. And again, this entire thing
+is likely going to be placed on a bigger
+PCB in the future with another AI5 for
+redundancy. But this is a big departure
+from AI4 because of the integration
+between this memory and the main
+processing unit. Now, if you go back to
+AI4, you'll see that these SOC's, these
+individual dies are separate from the
+actual memory, meaning the memory is
+placed on this larger PCB further away
+from the actual processor. which means
+the memory latency of AI5 should be far
+superior to AI4. These much shorter
+connections between the processor and
+the memory means that the neural nets
+are going to have much faster access to
+that data, which means improved
+bandwidth and efficiency and overall
+inference performance. And there's
+plenty of speculation out there about
+exactly what these memory dies are, but
+we do know that Elon and Tesla have said
+many times that AI5 will have n times
+the memory capacity of AI4. And we know
+that AI4 had 16 GB of RAM. And so 9 * 16
+would mean that AI5 might have 144 GB of
+memory. And 144 total divided by the 12
+memory dies on each AI5 would be 12 GB
+per die. But here's where I think
+everybody's getting lost. So most people
+think that the tape out means this
+entire thing that you're seeing is now
+permanently locked, which is not true.
+Tape out typically just means that the
+transistor layout in the die itself is
+what's actually locked. So this middle
+portion right here, the SOC, the main
+processor, that will be locked with the
+tape out. But it's steps after that,
+which is the advanced packaging that we
+talked about in recent videos where
+Tesla will still have plenty of
+flexibility to pair this SOC with
+different amounts, types, and
+configurations of memory on the sides.
+Meaning hypothetically Tesla could use
+this specific overall AI5 packaging
+setup for Optimus and data centers and
+then they could have a different version
+where the processor in the middle is
+exactly the same and the transistor
+layout is the same but perhaps it would
+have less or a different type of memory
+on either side because perhaps to get to
+unsupervised they don't need this much
+memory whereas again something like
+Optimus might and so given that this is
+a memory on package setup for AI5. That
+memory part comes after the die is
+actually fabricated. And guys, if you've
+been following along, what has Elon been
+talking about time after time? How fast
+they plan to iterate through different
+design choices with the Terraab? Now,
+I'm not trying to say that's going to
+happen with AI5, but this is very
+clearly the direction Tesla wants to go.
+Ultimately, they want to be able to test
+different configurations and layouts and
+memory types to see what will actually
+be best for their specific use case,
+which again is one of the primary
+benefits of Tesla taking the time to do
+all of this because they can eliminate
+everything that they do not absolutely
+need. But don't take it from me. Late
+last year, Elon said it looks like we
+can bring the power consumption down
+closer to 250 watts, which is a big deal
+for Optimus. that talking about AI5.
+Important to note that AI5 is a
+specialized inference chip for the Tesla
+AI software. That said, it'll perform
+for our purposes much better than
+anything else available. We would not
+use any other chip in our cars and
+robots even if they were free. And
+again, one of the bigger takeaways here
+is that AI5 has the memory integrated
+whereas on AI4, the memory was external.
+And this means a lot of things in
+practice, but not the least of which is
+that whether it's a robo taxi or
+Optimus, it'll have much better context
+windows, meaning it can remember more of
+the scene at once. And not only that,
+but it can then access that data faster.
+Reaction times are better, the ability
+to understand very complex scenes is
+better, the overall efficiency is
+better, meaning the power draw is lower
+and so on. And there was one line that
+Shinaka shared on X that I have to pass
+along. He said, "The chip that taped out
+this morning is not a product. It's the
+physical crystallization of 9 billion
+miles of learned physics into
+transistors optimized for the exact
+mathematical operations that physics
+requires. The software trained on the
+road. The silicon was designed from what
+the software learned and the factory
+that'll mass produce it is being built
+in the same city where the cars that
+generated the training data roll off the
+line. The loop is closed. So even if AI5
+doesn't actually make it to Tesla
+vehicles, the same thing here would hold
+true for Optimus. Everything that Tesla
+has developed, the neural nets, the
+world models, and the simulators. All of
+those learnings over a decade actually
+dictated what AI5 needs to be. And Tesla
+is now making exactly that. And now some
+people are saying, "Wo, this is actually
+going to be made in Korea because of
+this KR2613."
+But if anything, it's likely that any
+samples and early production might be
+made in Korea, but then ultimately
+volume production will be happening in
+the States. And as Elon said late last
+year, slightly different versions of the
+AI5 chip will be made at TSMC and
+Samsung because they translate designs
+to physical form differently, but the
+goal is our AI software works
+identically. We will have samples and
+maybe a small number of units in 2026,
+but high volume production is only
+possible next year. AI6 will use the
+same fabs but achieve about two times
+performance. Aiming for a fast follow to
+AI5. So hopefully mid 2028 for volume
+production of AI6. But I just wanted to
+clarify volume production of AI5 will
+certainly be happening at TSMC and
+Samsung factories here in the US. For
+now, it's likely just the samples that
+will come from overseas. And just know
+there are smart staff members on the
+tech powerup forum saying that the DRAM
+on this AI5 appeared to be LP DDR5X
+memory integrated into the package. On
+both sides there are two rows of SKH
+Highix LP DDDR5X memory modules each
+with three modules which would total 12
+memory modules per AI5 chip. Now, those
+ones in particular would have 16
+gigabytes per module, which would be 192
+gigabytes instead of the 144 we talked
+about earlier. So, it's not exactly
+clear exactly what Tesla is using here,
+but truly it does not matter. Tesla's
+obviously going to pick what it needs to
+get the job done. But sometimes I like
+to throw a little bait out there if any
+of you want to go fishing even deeper.
+And just for terminology before we move
+on because I see some people getting it
+mixed up. So this AI4 image, this is the
+PCB, the printed circuit board that has
+the AI4 SOC's, two of them on the PCB.
+But then separately, the PCB is actually
+part of the bigger ECU or the electronic
+control unit. So yes, the PCB is a large
+part of the ECU, but it's then the
+bigger ECU that actually gets mounted in
+the car and has the brackets and some
+cooling interfacing and some other
+parts. So technically a PCB what you're
+looking at here is not the same thing as
+an ECU. And one last thing on the memory
+before we move on. Late last year Elon
+said the decision regarding using HBM
+high bandwidth memory has not been made
+yet as the ratio of total parameters to
+active meaning frequently used
+parameters increases. The cost per unit
+of useful compute and compute per watt
+may favor relatively conventional RAM.
+Meaning at the time Elon was thinking
+about not using high bandwidth memory.
+And that day he also said you can fit
+more total RAM on the board if you use
+normal memory, not high bandwidth
+memory, and it's super cheap. Maybe high
+bandwidth memory is still the right
+choice, but using HBM is not the slam
+dunk many people think it is. And as far
+as we can tell, it looks like Tesla has
+decided to use conventional industry
+standard DRAM instead of the more
+specific high bandwidth memory, which is
+likely to reduce cost and complexity and
+make manufacturing easier because those
+manufacturing processes are simpler than
+HBM, which means the packaging step will
+also be a bit easier. Now, of course,
+all of these decisions have trade-offs,
+but the overall point is that Tesla has
+the ability to make the decisions it
+needs doing it vertically integrated.
+And right now, Tesla happens to have a
+job posting senior process engineer for
+dialectric deposition for the Terraab.
+The factory houses logic, memory,
+packaging, test, and lithography mask
+production under one roof, optimized for
+rapid iteration. But here it says you'll
+develop and own dialectric deposition
+processes across three distinct chip
+families, edge inference processors,
+space hardened chips for orbital
+satellites, and high bandwidth memory.
+I'd commit those three categories to
+memory because they're going to come up
+often in the months and years ahead. And
+another posting up right now, senior
+process engineer for lithography for the
+Terraab. I'm only sharing this because
+I've seen people out there make the
+argument that Tesla's only going to need
+DUV machines and not the newer, more
+capable, but harder to get EUV machines.
+But clearly Tesla is planning to use
+both, including EUV. Develop and qualify
+EUV and R5 resist processes and qualify
+scanners EUV and DUV from installation
+through production readiness. So very
+clearly Tesla will indeed need these EUV
+machines from ASML. But this AI5 tape
+out for Elon and Tesla is a massive
+milestone. The teams have been working
+on this diligently now for months. Elon
+said he's been dreaming about it. And
+the reality is any early success of
+Optimus is going to be dependent upon
+this bad boy right here. And I know some
+of you out there are still frustrated
+with the progress in robo taxi and all
+of that, but please just understand the
+foundation Tesla is building truly is
+special. This stuff takes time and it
+won't lead to results overnight. But
+there will come a time at some point in
+the next few years where we sit back and
+look back at Tesla and barely recognize
+the company that it is. And that will
+only be possible because of all of this
+technical design and decision-making and
+risk-taking that Tesla undertook. And
+Elon was asked what were the best and
+worst parts of this AI5 tape out. He
+said the best was working with a great
+team of AI hardware and software
+engineers. It was more fun than going to
+parties on Saturdays by far. The least
+awesome was that we had to make several
+design concessions to move fast, but we
+were able to finish tape out 45 days
+ahead of schedule. AI6 with LP DDR6
+memory addresses those design
+concessions and has many new great
+ideas. It will deliver a true doubling
+of performance over AI5 in the same half
+reticle size using the Samsung 2
+nanometer fab in Texas. AI 6.5 will
+further improve performance using TSMC
+2nometers in Arizona. Note both chips
+have around half of the trip AI
+computation accelerators dedicated to
+SRAMM. So effective memory bandwidth is
+an order of magnitude greater than DRAM
+bandwidth for any calculations in SRAMM
+cache. Now not to be that guy, but I'm
+going to save this explanation in
+layman's terms for the next episode
+because there is something else I've
+been wanting to tie into this very
+point. So if you're interested, you'll
+have to stay tuned for that. Alexander,
+who follows FSD developments closely in
+Sweden, said that the Swedish Transport
+Administration restated the EUwide
+approval of FSD will only apply to new
+vehicles produced after the approval.
+They also say they have not yet received
+any application from Tesla or the RDW as
+of yet for national approval in Sweden,
+which makes sense. That's not expected
+to happen until early May. And they said
+that there's really no timeline for when
+this EUwide approval will happen. So,
+the oddest thing in there, the Swedish
+representative is saying that new
+vehicles Tesla makes with support of
+that decision can then be registered in
+all EU countries. At the EU level and in
+the committee, rules for the approval of
+new vehicles, not used vehicles, are
+handled. That is, updating existing
+vehicles is something that falls under
+national regulations in each EU country.
+So, if you're a current Tesla owner in
+one of these EU countries, no need to
+panic. I'd imagine Tesla will have a
+process to certify any existing vehicles
+to send the OTAA update when the time
+comes, but I just wanted to put it out
+there as something to note and keep in
+the back of your mind. And Jonas said,
+"I just received an official response
+from the cabinet in Belgium." Now, all
+the response actually said was that we
+are reviewing your message internally
+and we'll contact you if more
+clarification is needed. But I just
+wanted to make the point that while some
+countries may drag their feet and wait
+for a more official EU committee
+process, some other countries might be a
+bit more proactive and are looking into
+things now. Early reviews of 14.3.1 are
+pretty strong. I would expect this to be
+the branch that does go wide to the
+fleet and it has started going beyond
+the early access group. Zach said with.1
+everything's polished and smoother
+overall. He noticed improved lane bias
+and preference changes. Now, I'll
+believe this one when I see it, but he
+said stop sign behavior is much
+improved. It commits and doesn't
+hesitate. No double stops that he's
+seen. I tell you what, if that's my
+experience with 14.3.1, I will be
+jumping for joy because for me, that's
+still one of the biggest annoyances at
+this point. But clearly, as Spencer
+shared, it's not all good.
+And when you get the spring software
+update, here's an example of what Grock
+can do.
+&gt;&gt; Hey Grock, can you remind me to pick up
+dog food when I get close to home?
+Got it. I'll remind you to pick up dog
+food when you get close to home.
+&gt;&gt; Thanks.
+&gt;&gt; One eternity later.
+&gt;&gt; Don't forget to pick up dog food.
+&gt;&gt; Oh, thanks for the reminder.
+&gt;&gt; You're welcome.
+&gt;&gt; All right, that's pretty cool. And on
+Tesla's new safety score V3, there is a
+blog post with more information. I'll
+have it linked below. Version 3 has a
+more accurate assessment of your future
+collision risk based on over 26 1.5
+billion miles of driving. Safety factors
+are now measured against miles driven
+without FSD engaged, ensuring your score
+focuses on your manual driving behavior.
+But again, miles driven with FSD engaged
+get a safety score of 100 and are now
+included in the calculation of the
+safety score with FSD. The risk levels
+assigned to the hours for late night
+driving have been refined based on the
+most recent data. Availability of safety
+factors will vary based on your Tesla
+vehicle's infotainment system and
+self-driving hardware. So with version
+3, your safety factors are only now for
+manual driving. Meaning when you have
+FSD engaged, you're automatically at a
+score of 100. And Benny in Arizona
+shared this screenshot that shows a
+default safety score of 90 is used to
+calculate the premium for your first 2
+months. So his started at $260 a month,
+but the expected future premium if he
+was to maintain his current driving
+behavior using FSD often, it would drop
+the rate down to $180 per month. Now,
+sadly, this is still not widely
+available, but certainly a sign that
+Tesla continues to grow more confident
+with the FSD driving behavior. And the
+question we were wondering from
+yesterday, what about existing policy
+holders? If you're insured by Tesla
+insurance in any state other than
+California, you will be upgraded to the
+latest version of the safety score at
+the time of your policy renewal. And on
+this page, they do provide a table for
+each different state and the dates that
+are important for you.
+And guys, how about Tesla's stock today?
+Up 7.62% to 62% to $391.95.
+And sure, the NDX was up as well, 1.4%,
+but typically we see about a 2x
+performance from Tesla to the positive
+or negative relative to the NDX, but
+today it was a 5.4x outperformance, but
+I'm not going to speculate as to why.
+There could have been some unusual
+options activity. The volume was much
+higher than usual, about 78% above the
+average over the past 30 days. And as I
+mentioned earlier, maybe the market did
+need some reassurance that Tesla can
+solve unsupervised with AI4. But as I
+always say, it's usually not just one
+factor. But I think these are the times
+when the hype builders are supposed to
+say things like, "Hey guys, somebody
+knows something, which sure I guess is
+possible, but look, only time will
+tell." So for now, just enjoy it for
+what it is. And don't forget, check out
+Surf Shark linked below for anybody
+interested. And I seriously can't thank
+you all enough for supporting the
+channel in that way. Hope you all have a
+wonderful day and a huge thank you to
+all of my Patreon supporters.
