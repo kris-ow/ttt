@@ -1,0 +1,43 @@
+Channel:     munrolive
+Title:       How AML Is Reinventing Permanent Magnet Motors | Munro Live Podcast
+Published:   2026-02-26 00:00 UTC
+Summarized:  2026-04-17 04:26:29 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01TqL6L1UmJEv4cxKRp2EYyo
+Cost:        $0.03028 (9026 in / 2232 out tokens)
+Categories:  Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of the Munro Live podcast features Paul Turnbull hosting Philip Mason (CTO) and Wade Cinti (President) of Advanced Magnet Labs, Inc. (AML), a Melbourne, Florida-based company developing novel permanent magnet manufacturing processes. The discussion centers on AML's alternative approach to producing rare earth magnets — one that reduces dependence on Chinese-sourced heavy rare earth elements like dysprosium and terbium — and the implications for motor design across electric vehicles, industrial applications, and drones.
+
+## Electric Vehicles
+
+1. **Rare Earth Supply Chain Vulnerability Affects EV Motors:** The podcast highlights that neodymium-iron-boron permanent magnets, which are used in EV traction motors as well as auxiliary motors (power steering, anti-lock brakes, oil pumps), depend heavily on heavy rare earth elements — particularly dysprosium and terbium — sourced over 90% from China. This supply chain concentration has become a significant risk for US manufacturers, especially amid ongoing trade tensions, and is driving interest in alternative magnet technologies.
+
+2. **AML's Powder-in-Tube Process Enables New Motor Geometries:** Unlike the conventional process of pressing magnetic powder into uniform block shapes (which requires thin magnets that are highly susceptible to demagnetization and thus demand heavy rare earth additions), AML fills stainless steel tubes with magnetic powder in an inert environment, applies non-uniform magnetic pre-alignment, compacts the powder, and then sinters it. The tube acts as a temporary protective vessel, allowing curved, helical, or ring-shaped magnets to be produced close to their final shape — geometries that reduce the demagnetization field by a factor of seven or eight compared to conventional block magnets, thereby reducing or eliminating the need for dysprosium and terbium.
+
+3. **Helical Magnet Geometry Eliminates a Key Motor Failure Mode:** AML demonstrated a 12-pole continuous helical magnet that slides onto a rotor and is mechanically captured by end flanges, so torque transfer does not rely on the adhesive bond between the magnet and rotor. Paul Turnbull noted this eliminates the well-known failure mode where a surface-mounted block magnet debonds and locks up the motor — a relevant concern for EV traction and auxiliary motors, including a Tesla oil pump motor shown on the table as an example of a direct replacement candidate.
+
+4. **PM360 Configuration Produces Sinusoidal Field, Eliminating Space Harmonics:** AML's PM360 magnet configuration uses a rotating magnetization vector (a continuous Halbach array) that concentrates flux on one side of the magnet and produces an intrinsically sinusoidal magnetic field. This eliminates space harmonics, which are the source of torque ripple, acoustic noise, and eddy current losses in conventional motors. Combined with samarium iron nitride's high electrical resistivity (which suppresses eddy currents within the magnet itself), the result is a quieter, more efficient motor with smoother torque — properties Turnbull described as directly relevant to wheel hub motor applications where torque ripple is felt by the driver.
+
+5. **Samarium Iron Nitride as a Supply-Chain-Stable Alternative:** AML is focusing on samarium iron nitride as the material for its non-sintered PM360 magnets. This material offers a more stable and diversified supply chain than neodymium-iron-boron, better temperature stability (lower performance reduction with temperature), high electrical resistivity, and competitive magnetic performance as a direct replacement for surface-mounted neodymium magnets — with no loss of performance in AML's PM360 configuration.
+
+## Market & Competition
+
+1. **China's Near-Monopoly on Heavy Rare Earths Driving Domestic Sourcing Push:** Paul Turnbull noted that dysprosium and terbium are currently found 90%+ in China, while neodymium is more globally distributed with active US mines. The trade war and procurement difficulties over the last 12–24 months have accelerated customer interest in domestically sourced magnet supply chains, with companies now actively seeking to remove dysprosium and terbium from their supply chains entirely where technology allows.
+
+2. **AML Entering Pilot Manufacturing in 2026:** Wade Cinti stated that AML plans to enter its first pilot manufacturing phase beyond pilot scale for both its sintered and non-sintered magnet product lines during the current year (2026). The company is based in Melbourne, Florida, and is actively hiring, positioning itself as a US domestic supplier at a time of heightened supply chain risk awareness.
+
+3. **Industrial Motors and Large Drone Propulsion as Primary Near-Term Markets:** AML's strongest customer pull to date has been from industrial motor and generator applications (where efficiency, durability, and 24/7 duty cycles are prioritized over power density) and large drone propulsion (described as likely their first motor product, using a radial flux outrunner design). Automotive OEM engagement has been limited thus far. AML is also developing manganese bismuth magnets using the same powder-in-tube process as a ferrite replacement with higher coercivity and a well-understood, stable supply chain for industrial use cases.
+
+4. **Process Is Approximately 85% Automatable, Suitable for US Manufacturing:** Philip Mason described that the majority of AML's manufacturing process — from automated tube filling in inert environments through pre-alignment and powder compaction — can be fully automated, with roughly 85% of the process capable of lights-out operation. This addresses the core cost competitiveness challenge of producing magnets in a high-labor-cost country like the US versus the highly labor-intensive conventional process that migrated to China for cost reasons.
+
+Notable quotes and data:
+- Dysprosium and terbium: "90 plus percent found in China" — the heavy rare earth elements most critical for demagnetization resistance in conventional block magnets.
+- AML's curved magnet geometry reduces the demagnetization field "by a factor of seven or eight" compared to conventional thin block magnets.
+- AML's manufacturing process is "probably 85% fully automated," with "lights out for three-quarters of the process."
+- The axial flux motor demonstrator on the table comprised 18 rings (three layers of six rings) and was successfully tested by a DoD customer as a replacement for surface-mounted magnets.
+- AML is entering "first PI beyond pilot manufacturing" for both sintered and non-sintered product lines in 2026.
+- AML is headquartered in Melbourne, Florida.
+- Philip Mason: PhD in electrical engineering from France; rejoined AML in 2018 to pivot the company toward permanent magnets after earlier work on superconducting motors.
+- Wade Cinti joined AML at end of 2017 as President, focused on technology-market-supply chain convergence.

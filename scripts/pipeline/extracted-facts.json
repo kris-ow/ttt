@@ -5080,5 +5080,231 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-04-16T18:50:52.228Z",
     "status": "pending"
+  },
+  {
+    "fact": "Elon Musk confirmed the FSD version approved in Europe is equivalent to FSD version 14.3",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First explicit version confirmation for the European FSD rollout; signals likely US update to same version",
+    "source": "20260416_brighterwithherbert_02_Tesla_Is_Leaving_Everyone_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T04:26:29.740Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Australian EV operating cost is approximately 1.7–1.8 cents per mile vs. approximately 16–18 cents per mile for top ICE vehicles — roughly an 8–10x difference",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Provides cost-per-mile context for EV economics in Australia; specific kWh/mile not stated but total cost per mile given",
+    "source": "20260416_brighterwithherbert_02_Tesla_Is_Leaving_Everyone_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T04:26:29.740Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's 2026 spring software update includes 'Hey Grok' voice wake word, blind spot warning accent lights, automatic update installation, improved self-driving stats UI, pet mode customization, and a new self-driving onboarding app",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents a meaningful FSD-adjacent feature release; European onboarding app with mandatory instructional video and quiz is a regulatory compliance mechanism",
+    "source": "20260416_brighterwithherbert_02_Tesla_Is_Leaving_Everyone_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T04:26:29.740Z",
+    "status": "pending"
+  },
+  {
+    "fact": "50–60 fatal crashes involving Autopilot or FSD documented in NHTSA reports and TeslaDeaths.com; aggregate crash liability estimated at $1 billion to $5 billion",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Defines the scale of the litigation pipeline; per-case verdicts of $100M–$300M or settlements of $20M–$60M implied by Benavides precedent",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "NHTSA investigation covers 2.88 million vehicles for FSD-specific traffic violations including running red lights, wrong-way driving, and entering incorrect lanes",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Active regulatory investigation that could precede mandatory recall; directly impacts FSD deployment and Robotaxi thesis",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Separate NHTSA engineering analysis covers 3.2 million vehicles for FSD performance in reduced visibility conditions — the stage preceding a mandatory recall",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Engineering analysis stage is the formal step before a recall order; affects millions of FSD-equipped vehicles",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14 Lite software for HW3 owners was promised for Q2 2026 but has not materialized as of publication (April 16, 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Missed milestone for HW3 owners; no retrofit, refund, or timeline provided 15+ months after Musk's admission",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "California DMV ruled in December 2025 that Tesla's use of 'Full Self-Driving' is 'actually, unambiguously false'; Tesla sued the DMV to overturn it",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Regulatory ruling directly contradicts Tesla's marketing; strengthens consumer fraud and class action claims",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Morand v. Tesla securities fraud class action filed August 2025; class period April 2023–June 2025; Tesla shares fell 6.1% over two days after June 2025 robotaxi failures, erasing ~$68 billion in market cap",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Securities fraud exposure estimated at $1B–$5B; robotaxi launch failures are the direct trigger",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "EEOC racial harassment lawsuit against Tesla is in mediation with a June 2026 deadline",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Near-term resolution event; outcome could set precedent for individual Fremont discrimination cases",
+    "source": "20260416_electrek_02_Tesla_Is_Facing_Up_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T04:26:29.746Z",
+    "status": "pending"
+  },
+  {
+    "fact": "NHTSA autonomous vehicle crash data updated through March 15, 2026 shows Tesla robotaxi program with zero serious incidents under SGO 2021-01 reporting standard",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Zero-incident NHTSA record strengthens Tesla's regulatory case for unsupervised FSD and robotaxi approval; data is current as of March 2026",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi fleet has grown to over 500 vehicles as of April 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 500,
+    "context": "Fleet size benchmark for Tesla's robotaxi program as of video date; Waymo estimated at 2,000–3,000 vehicles for comparison",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo estimated to have deployed roughly 2,000–3,000 robotaxi vehicles, approximately four to six times more than Tesla's 500+",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2500,
+    "context": "Provides competitive fleet size reference; Tesla's zero-incident record holds despite significantly smaller baseline",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo publishes 92% reduction in serious injuries or worse crashes compared to average human drivers in operating cities",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 92,
+    "context": "Key public safety statistic being used to shift regulatory and political environment in favor of autonomous vehicle approval",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo data shows 82% fewer injury-causing crashes and 83% fewer airbag deployments vs. average human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 82,
+    "context": "Supporting safety metrics reinforcing the regulatory case for autonomous vehicles across the industry",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo data shows 92% fewer pedestrian crashes with injuries, 85% fewer cyclist crashes with injuries, 81% fewer motorcycle crashes with injuries vs. average human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 92,
+    "context": "Vulnerable road user safety data particularly powerful for political and regulatory messaging",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 35 U.S. cities reportedly being prepared for Tesla robotaxi deployment",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Indicates breadth of planned city expansion beyond initial Austin and Bay Area launches; relevant to fleet size and revenue ramp projections",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi estimates unsupervised FSD unlock for robotaxi deployment will occur within 3–6 months of April 2026, i.e., by mid-to-late 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Host's personal timeline estimate for the key remaining catalyst triggering robotaxi scale rollout",
+    "source": "20260416_jobhakdi_01_Why_Tesla_Robotaxi_Will_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-17T04:26:29.752Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's unsupervised Model Y robotaxi fleet in Austin has grown to 13 vehicles as of April 16, 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 13,
+    "context": "Active unsupervised (driverless) vehicles spotted operating in Austin; fleet count increased twice in one day, suggesting active scaling ahead of commercial launch",
+    "source": "20260417_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-17T04:26:29.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus V3 patent describes fingers with 4 degrees of freedom each, wrist with 2 degrees of freedom, tendon/cable-driven system with actuators in the forearm",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "International patents published April 16, 2026 appear to reveal Optimus V3 hand architecture; full V3 unveil anticipated but no date specified",
+    "source": "20260417_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-17T04:26:29.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Samsung's Taylor, Texas foundry will hold a major equipment installation ceremony on April 24, 2026 for Tesla chip manufacturing",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Marks start of equipment installation phase at Samsung's Texas fab for Tesla chips; critical milestone for FSD and Optimus compute supply chain",
+    "source": "20260417_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-17T04:26:29.758Z",
+    "status": "pending"
   }
 ]
