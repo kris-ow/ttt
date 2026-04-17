@@ -5306,5 +5306,167 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-17T04:26:29.758Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla has 13 unsupervised robotaxis operating, up from 12 the prior day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 13,
+    "context": "Current live unsupervised robotaxi fleet count; incrementally growing as FSD 14.3.1 rolls out",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is hiring for robotaxi roles across 34 U.S. cities, covering an estimated 46% of the U.S. population",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Signals near-term expansion footprint; 28 of 34 cities align with previously identified future deployment markets",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.1 released and spreading beyond early adopters, including to users in Canada",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Wider FSD release is a prerequisite for expanded robotaxi deployment; panel views this version as potentially sufficient for robotaxi operations",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Zero NHTSA incidents recorded for Tesla FSD from February 17th to March 15th",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 0,
+    "context": "Clean safety record over a one-month reporting window; supports regulatory approval for broader deployment",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD received regulatory approval in the Netherlands, marking the first European approval",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First European country to approve FSD; Alexandra Merz believes this triggered institutional buying in the days following the announcement",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production reportedly began around April 1st, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Alexandra Merz confirmed Cybercab production start; Tesla posted a 'golden era' teaser interpreted as a production launch signal",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab expected to be priced sub-$30,000",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Sub-$30,000 price point cited as historically unprecedented for an autonomous vehicle; panel views it as a major demand catalyst",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 chip has been taped out; volume production realistically expected in second half of 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Jeff Lutz estimated 3-4 months to first silicon parts, followed by testing cycles; volume production not expected until H2 2026; chip prioritized for Optimus and supercomputer clusters before vehicles",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas and Houston are hiring robotaxi field response specialists for 24/7 shifts",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Operational hiring for continuous coverage signals imminent or active deployment in these markets",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Larry Goldberg estimates a robotaxi core fleet of 1 to 1.5 million vehicles would require 2.5 to 3 million vehicles during peak demand hours",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000000,
+    "context": "Goldberg's argument that peak demand multiplier of roughly 2-3x the base fleet size requires retail vehicles to be available for flex capacity; critical to the business case unit economics",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's revenue per mile is cited as two to three times higher during peak hours versus off-peak",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Peak/off-peak fare differential cited as key to robotaxi unit economics; Waymo cannot flex fleet to capture peak demand, while Tesla's retail fleet model potentially can",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal date and production start timeline remain unconfirmed; Model X production ended mid-year to free factory capacity for Optimus",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Top Say Technologies question for Q1 2026 earnings call; no specific dates provided by panel",
+    "source": "20260417_brighterwithherbert_01_Signals_Behind_Teslas_Rebound_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-17T19:14:35.912Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dutch vehicle authority RDW granted Tesla type approval for FSD Supervised — the first in the EU — but only for AI4 hardware; HW3 cars are excluded",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First EU regulatory approval for FSD, but limited to AI4 hardware, crystallizing the HW3 exclusion and triggering legal pressure",
+    "source": "20260417_electrek_01_Tesla_Tells_Hw3_Owner_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T19:14:35.918Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has vaguely promised a stripped-down 'v14 Lite' for HW3 cars in Q2 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Only concrete timeline offered for HW3 FSD; described as a fundamentally different and lesser product than what was originally sold",
+    "source": "20260417_electrek_01_Tesla_Tells_Hw3_Owner_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-17T19:14:35.918Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Nicola production semi (Aeco-based) achieved 1.7 kWh per mile efficiency versus Tesla Semi's 2.1 kWh per mile",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 2.1,
+    "context": "Tesla Semi energy consumption figure of 2.1 kWh/mile cited as a reference benchmark for efficiency comparison; relevant to operating cost modeling",
+    "source": "20260417_futureaza_01_Tesla_Semi_Weekly_Update_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-17T19:14:35.925Z",
+    "status": "pending"
   }
 ]
