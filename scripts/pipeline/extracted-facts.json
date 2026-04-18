@@ -5468,5 +5468,233 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-17T19:14:35.925Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab mass production launched as planned and on time, with production now ramping",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production start milestone has been achieved, a key catalyst for the Tesla robotaxi thesis",
+    "source": "20260417_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-18T04:08:15.233Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 released in conjunction with Cybercab production ramp",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Marks a new FSD version release milestone; some observers reportedly disappointed but release was on schedule",
+    "source": "20260417_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-18T04:08:15.233Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi launch described as potentially imminent — could happen 'next week' or within the next 6 months",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Frames the timing of unsupervised robotaxi deployment as highly uncertain but near-term, which is the primary repricing catalyst in the bull thesis",
+    "source": "20260417_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-18T04:08:15.233Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla earnings options referenced with April 24, 2026 expiration date",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Implies Tesla earnings call is on or around April 24, 2026",
+    "source": "20260417_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-18T04:08:15.233Z",
+    "status": "pending"
+  },
+  {
+    "fact": "At least 14 Cybercabs spotted without steering wheels in the Giga Texas outbound lot, though still carrying engineering decals indicating test vehicle status",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks a visible milestone in Cybercab hardware development; steering-wheel-delete units are now being produced but are not yet confirmed as production variants for the robotaxi network",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's self-certification filing indicates it does not expect to need the federal exemption, meaning the 2,500-unit annual Cybercab production cap is no longer considered a binding constraint",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Removes a previously cited ceiling on Cybercab production ramp, potentially accelerating fleet deployment timelines",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin unsupervised robotaxi fleet is now up to 13 vehicles, nearly doubling in just a few weeks",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 13,
+    "context": "Current unsupervised fleet size in Austin; growth rate of ~100% in a few weeks signals accelerating deployment pace",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla filed pre-permits for 56 V4 charging stalls in Phoenix East Valley explicitly marked as not for public use, and a second private-use site in Mesa, AZ",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Suggests Phoenix is being prepared as a near-term robotaxi expansion city; charging infrastructure is a prerequisite for fleet deployment",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla had 15 total robotaxi incidents from June 2025 launch through March 2026, with only 1 minor injury; 5 incidents occurred while Tesla was stationary (struck by others); 10 incidents were at-fault",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Cumulative safety record for Tesla's Austin robotaxi service; low injury rate and declining incident frequency support continued unsupervised deployment expansion",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "February and March 2026 were Tesla's first-ever back-to-back incident-free months for the robotaxi service",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First consecutive clean months since service launch in June 2025; correlates with accelerating growth of unsupervised vehicle count in Austin",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "6 of Tesla's 10 at-fault robotaxi incidents occurred after 8:30 p.m. in dark conditions; highest-speed incident was 18 mph",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Identifies nighttime/low-light conditions as the primary risk context for Tesla's current robotaxi system",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus patent confirms 22 degrees of freedom per hand, compared to approximately 27 degrees of freedom in a human hand",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Near-human dexterity spec for Optimus V3 hand; patent was internationalized via PCT filing after October 2024 placeholder, signaling design is likely being locked in for production",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla began a national patent filing for China for the Optimus hand/forearm design, where Elon Musk has said he expects the most competition in humanoids",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Signals Tesla is actively protecting Optimus IP in its primary competitive market for humanoid robots",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 3 FSD V14 light version expected to be delivered by Q2 2026 (June 2026), per Ashoke's statement",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Extends FSD version 14 capabilities to Hardware 3 vehicles; deadline is end of June 2026",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "TCMV May 5th meeting agenda shows only a 20-minute RDW presentation on Article 39 with no vote listed; vote now expected at the June 30th meeting",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Delays the potential EU-wide FSD unsupervised approval vote by approximately 2 months from the previously anticipated May meeting",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Samsung's foundry in Taylor, Texas will hold a major equipment installation ceremony on April 24, 2026; plans to produce Tesla's AI5 and AI6 using a 2nm process; AI5 expected in the field around late 2027",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key milestone for Tesla's next-generation compute hardware; late 2027 AI5 availability timeline has implications for FSD and robotaxi capability step-changes",
+    "source": "20260418_electrified_01_Real_Cybercab_Starts_Production_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-18T04:08:15.246Z",
+    "status": "pending"
+  },
+  {
+    "fact": "14 Cybercabs with no steering wheels spotted at Giga Texas",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First significant visual confirmation of production-intent, fully driverless-configured Cybercabs being built at Giga Texas; strongly suggests production ramp is underway ahead of commercial deployment",
+    "source": "20260418_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-18T04:08:15.253Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla 2026 Spring Update includes a new Self-Driving app allowing single-tap subscription, feature activation guidance, and ongoing stats viewing",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents a new FSD onboarding and subscription interface rolling out broadly; infrastructure consistent with scaling FSD and robotaxi fleet management",
+    "source": "20260418_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-18T04:08:15.253Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi 4680 cells are designed to last 1 million miles",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "1M mile battery life is a design spec for the Semi; while stated for the Semi rather than Cybercab, it establishes Tesla's cell durability targets which are relevant to fleet vehicle economics",
+    "source": "20260418_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-18T04:08:15.253Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Q1 2026 Wall Street consensus: Revenue $21.4B, GAAP EPS $0.16, Gross Margin 17.5%, Free Cash Flow -$1.57B",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Tesla's own compiled analyst consensus for Q1 2026 earnings; FCF expected to be negative at -$1.57B; earnings call is next week",
+    "source": "20260418_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-18T04:08:15.253Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Top investor question for Q1 earnings call asks when Optimus v3 will be revealed and when Optimus production will start, noting Model X and S production ended earlier than midyear",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Optimus v3 reveal and production start timeline is the top investor priority heading into the Q1 2026 earnings call; Model X/S production end freeing capacity is cited as a relevant datapoint",
+    "source": "20260418_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-18T04:08:15.253Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla posted nine engineering roles in Taiwan for the Terafab project requiring 5+ years of experience in advanced chipmaking processes below 7 nanometers",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Matches the Samsung/Tesla chip production milestone watch item; sub-7nm node targeting indicates Tesla is pursuing leading-edge silicon for autonomous driving or AI applications",
+    "source": "20260418_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-18T04:08:15.253Z",
+    "status": "pending"
   }
 ]

@@ -1,0 +1,77 @@
+Channel:     electrified
+Title:       The "Real" Cybercab Starts Production & Incredible Optimus Patent ⚡️
+Published:   2026-04-18 00:00 UTC
+Summarized:  2026-04-18 04:08:15 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01TdkUzTcPYeyYKkSLoxsd2T
+Cost:        $0.05190 (8846 in / 5151 out tokens)
+Categories:  Robotaxi, Humanoid Bots, Autonomous Driving, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from the "electrified" channel, hosted by Dillon Loomis, covers several major Tesla developments including the appearance of Cybercab units without steering wheels at Giga Texas, a detailed breakdown of Tesla's robotaxi safety incident data, a newly published Optimus hand/forearm patent, and various other Tesla news items. The core thesis is that Tesla's autonomous and robotics programs are making meaningful, measurable progress — from the first back-to-back incident-free months for the robotaxi service to a landmark Optimus patent that signals the design direction for Gen 3.
+
+## Robotaxi
+1. **Cybercabs Without Steering Wheels Spotted at Giga Texas:** Joe Tegtmeyer reported that at least 14 Cybercabs were spotted in the outbound lot at Giga Texas without steering wheels. However, Dillon Loomis notes these still carry engineering decals on the side, indicating they remain engineering test vehicles rather than production units destined for the robotaxi network. He reiterates that most of April will consist of engineering vehicles — both with and without steering wheels — being deployed across the country for testing and validation ahead of official production variants.
+
+2. **The 2,500-Unit Cap Debate:** A previously cited analyst framework predicted Tesla would build Cybercabs with steering wheels and pedals until Q2 of 2027, based on the assumption that Tesla would be limited to 2,500 Cybercabs per year under a federal exemption. However, Tesla's recent self-certification filing indicates it does not expect to need that exemption, meaning the 2,500-unit cap constraint is no longer considered a binding limitation on Cybercab production.
+
+3. **Austin Unsupervised Fleet Growing:** The robotaxi tracker shows up to 13 unsupervised vehicles now in the Austin fleet — nearly double what it was just a few weeks prior. Loomis frames this as evidence that Tesla's FSD software is capable of running unsupervised, and the key remaining question is how long Tesla will want to validate the Cybercab and its camera suite before deploying it to the network.
+
+4. **Phoenix Robotaxi Charging Infrastructure in Development:** Supercharger Sleuth (Marco) reported that Tesla is planning a major robotaxi charging buildout in the Phoenix East Valley. Pre-permits were submitted for 56 V4 charging stalls explicitly listed as not for public use — signaling internal robotaxi infrastructure. A second proposed location in the city of Mesa was also submitted as private use. Loomis reiterates his view that Phoenix has a high likelihood of being the next city Tesla deploys robotaxis to.
+
+5. **NHTSA Safety Data: 15 Total Incidents, First Back-to-Back Incident-Free Months:** The updated NHTSA Standing General Order incident report now includes March 2026 data. Tesla redacted most specific details under the Confidential Business Information provision, but the aggregate data shows 15 total incidents from the service launch in June 2025 through March 2026, with only one minor injury across all of them. Five of those 15 incidents occurred while Tesla's vehicle was stationary (0 mph), meaning another vehicle struck Tesla — reducing Tesla's at-fault incidents to 10. The highest-speed incident occurred at 18 mph. Six of the 10 at-fault incidents occurred after 8:30 p.m. in dark conditions. February and March 2026 were Tesla's first-ever back-to-back incident-free months for the robotaxi service, which Loomis highlights as a strong data point correlating with the gradual increase in unsupervised vehicle deployments.
+
+6. **Robotaxi Navigation Failure in Parking Garage:** User Abby Manu shared a video of his unsupervised robotaxi getting stuck in an infinite loop in a parking garage — driving to the top of the garage, ending the ride there, then requiring a restart to complete the trip. Loomis acknowledges this as problematic for mainstream users and notes Tesla is still working out issues with its navigation reasoning system.
+
+7. **Europe FSD Approval Update — May 5th Meeting Likely Preliminary:** The agenda for the TCMV meeting on May 5th was shared, showing only a 20-minute slot for the Netherlands (RDW) to present an update on Article 39 — with no vote listed. Loomis now believes the most likely outcome is that the vote will happen at the June 30th meeting, not May 5th. He notes individual EU countries can adopt the RDW approval independently regardless of the broader vote timeline.
+
+## Humanoid Bots
+1. **Optimus Hand/Forearm Patent Published — Likely Reflects Gen 3 Design:** A Tesla patent originally filed in October 2024 as a placeholder was recently published after Tesla internationalized it via a PCT filing — a step that signals serious intent to proceed with the design. The PCT filing covers 150+ countries and locks in Tesla's October 2024 priority date. Tesla has also begun a national filing specifically for China, where Elon Musk has said he expects the most competition in humanoids. Loomis argues this behavior around the patent filing strongly suggests this design is what Tesla plans to send into production for Optimus V3.
+
+2. **Actuators Moved from Hand to Forearm — Biomimetic Design:** The patent confirms Tesla is moving all actuators out of the hand itself and into the forearm, mimicking human biomechanics. This reduces distal weight (weight at the extremity furthest from the robot's center), making the hand lighter, more nimble, and capable of more precise movements. Each Optimus arm will have 25 actuators total — 23 for the fingers and 2 for the wrist.
+
+3. **22 Degrees of Freedom Per Hand — Near-Human Dexterity:** The patent confirms 22 degrees of freedom in each Optimus hand, compared to approximately 27 degrees of freedom in a human hand, placing Optimus V3's dexterity very close to human-level capability. Each finger has four rolling contact joint segments (the thumb has three), and each finger uses only three thin braided polymer tendons — a design aimed at mass-volume manufacturing simplicity.
+
+4. **Cable Management Breakthrough — Solving Wrist-Induced Finger Twitching:** One of the most significant innovations in the patent is Tesla's solution to cable routing through the wrist. Traditionally, when a robotic wrist moves, cables running from the forearm to the fingers get yanked, causing unwanted twitching in the fingers. Tesla's solution uses precisely routed cables through channels and grooves in each finger segment, with some routed behind the joints and some in front, so each segment bends independently without disturbing the others. Additionally, the cable bundle transitions from horizontal stacking in the forearm to vertical stacking through a "transition zone" in the wrist, allowing the wrist to rotate freely without impacting the cable bundle.
+
+5. **Wrist Mechanism Uses Only Two Motors:** The wrist can move in two directions — tilting up/down and rotating side to side — using only two motors instead of four. Tesla achieves this by moving both motors in the same direction to tilt the wrist and in opposite directions to rotate it, reducing weight and parts count without sacrificing meaningful range of motion.
+
+## Autonomous Driving
+1. **Hardware 3 FSD V14 Light Version Expected by Q2 2026:** Ashoke confirmed that once the version 14 release series is fully complete, Tesla plans to develop a V14 "light" version for Hardware 3 vehicles. Based on the timing of the comment, this is expected to be delivered by June 2026.
+
+2. **Robotaxi Software Branch Comparable to Customer Cars:** Loomis notes that the robotaxi software branch currently running on the Austin fleet appears to be quite comparable to what customer vehicles are running on AI4 hardware, suggesting Tesla's FSD capabilities are advancing fleetwide rather than being siloed to the robotaxi program.
+
+## Electric Vehicles
+1. **Tesla Suing North Dakota to Open Dealerships:** Tesla is suing North Dakota in its effort to open dealerships in Bismarck and Fargo. State law currently prohibits vehicle manufacturers from owning dealerships directly. Tesla is arguing either that it does not fall under the state's definition of "manufacturer," or that a statutory exception applies. There are currently over 800 Tesla vehicles registered in North Dakota. Loomis attributes the state's resistance in part to North Dakota being one of the largest oil-producing states in the U.S., with tens of billions of dollars annually tied to that industry.
+
+2. **Model Y L Launch in India Imminent:** Tesla is preparing to launch the Model Y L in India, potentially as early as the following week (from the video's publish date of April 18, 2026).
+
+3. **Tesla Entering Estonia Market April 24th:** Tesla will officially launch in Estonia on April 24, 2026, with a celebration event. Estonia is a small market with approximately 25,000 total auto sales per year and a few thousand EV sales annually.
+
+4. **SpaceX Purchased 18% of Q4 Cybertruck Sales:** Data from S&P Global showed that SpaceX bought approximately 1,279 Cybertruck units in Q4 2025, representing about 18% of the just over 7,000 Cybertrucks sold that quarter.
+
+5. **Tesla Spring Software Update Rolling Out:** Tesla's spring software update is rolling out and includes undocumented UI changes such as larger shortcut icons. It also brings a robotaxi rear-screen feature — showing destination and arrival time — to customer vehicles.
+
+## Market & Competition
+1. **Samsung Foundry in Taylor, Texas Reaches Equipment Installation Milestone:** Samsung completed preparations for its foundry in Taylor, Texas, and will hold a major equipment installation ceremony on April 24, 2026 — approximately 3.5 years after the November 2022 groundbreaking. The plant was originally expected to begin operations in October 2024. Samsung plans to produce Tesla's AI5 and AI6 chips using a 2-nanometer process at this facility. Loomis estimates it will likely take at least another year after equipment installation before yields are stable enough for production, putting AI5 availability in the field around late 2027.
+
+2. **Giga Berlin GigaCast Cycle Time Reduced to 68 Seconds:** Tesla Manufacturing shared a new video at Giga Berlin showing that the GigaCast cycle time has been reduced from approximately 120 seconds down to 68 seconds, achieved through improved cooling system design. The team attributed the improvement to identifying areas running too hot and implementing better cooling.
+
+3. **EV Battery Second Life Study — LFP Repurposing More Economic Than Recycling:** A newly published study on EV battery second life and recycling pathways found that repurposing LFP batteries for stationary energy storage is more economical than recycling them, due to LFP's long cycle life and lower material value. The study estimated repurposing costs of approximately $12 per kilowatt hour at the pack level using Tesla Model S packs (85 kWh nameplate capacity) as the base case. Loomis notes this figure covers only validation of the pack and that additional costs (enclosures, inverters, etc.) would be required for functional storage deployment.
+
+Notable quotes and data:
+- At least 14 Cybercabs spotted without steering wheels in the Giga Texas outbound lot, still bearing engineering decals
+- Austin unsupervised robotaxi fleet: up to 13 vehicles, up ~100% in a few weeks
+- Phoenix East Valley: pre-permits filed for 56 V4 charging stalls, explicitly not for public use
+- NHTSA data: 15 total incidents since June 2025 launch through March 2026; only 1 minor injury; 5 incidents occurred while Tesla was stationary (struck by another vehicle); 10 at-fault incidents; highest speed incident was 18 mph; 6 of 10 at-fault incidents occurred after 8:30 p.m.
+- February and March 2026: Tesla's first-ever back-to-back incident-free months for robotaxi service
+- Optimus patent: 25 actuators per arm (23 fingers, 2 wrist); 22 degrees of freedom per hand; 3 braided polymer tendons per finger; 4 rolling contact joint segments per finger (3 for thumb); wrist uses 2 motors instead of 4
+- Human hand reference: ~27 degrees of freedom
+- Samsung Taylor, Texas foundry: equipment installation ceremony April 24, 2026; 2nm process for AI5 and AI6; AI5 expected in the wild around late 2027
+- Giga Berlin GigaCast cycle time: reduced from ~120 seconds to 68 seconds
+- EV battery repurposing cost: ~$12/kWh at pack level (Tesla Model S 85 kWh pack as base case)
+- SpaceX: bought ~1,279 Cybertrucks in Q4 2025, ~18% of ~7,000 total Q4 Cybertruck sales
+- North Dakota: 800+ Tesla vehicles registered; state law bars manufacturer-owned dealerships
+- Tesla stock closed up 3.01% at $400.62; NDX up 1.3%; volume 36% above average
+- Hardware 3 FSD V14 light version: expected by Q2 2026 (June 2026)
+- TCMV May 5th meeting: 20-minute RDW presentation on Article 39; no vote on agenda; vote now expected June 30th
