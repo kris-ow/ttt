@@ -6080,5 +6080,231 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-19T04:25:43.061Z",
     "status": "pending"
+  },
+  {
+    "fact": "Dutch RDW granted Tesla type approval for FSD Supervised under UN R-171 on April 10, 2026 — first full EU type approval for FSD, limited to AI4 hardware only",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms FSD Europe regulatory approval milestone, but excludes HW3 vehicles — narrows the addressable supervised FSD fleet at launch",
+    "source": "20260414_electrek_01_Tesla_Fsd_Europe_Launch_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.365Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla vaguely promised a 'v14 Lite' version for HW3 owners in Q2 2026, described as a different product from what was sold",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Relevant to FSD version release watch item; Q2 2026 timeframe cited but no confirmed release date or capability specifics",
+    "source": "20260414_electrek_01_Tesla_Fsd_Europe_Launch_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.365Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla AI5 chip taped out on April 15, 2026; volume production not expected until mid-2027 — approximately 12–18 months away",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tape-out is a key milestone but fabrication, testing, and validation remain; this confirms AI5 will not be in meaningful vehicle volumes in 2026",
+    "source": "20260415_electrek_02_Tesla_Taped_Out_Ai5_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.374Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab scheduled for production in Q2 2026, launching on AI4 hardware, not AI5",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab launch hardware; AI5-equipped Cybercab production requires 'several hundred thousand AI5 boards line side,' not expected until mid-2027",
+    "source": "20260415_electrek_02_Tesla_Taped_Out_Ai5_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.374Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI6 mass production pushed to Q4 2027 at the earliest due to Samsung 2nm yield issues — a slip of roughly six months",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Samsung/Tesla chip production milestone delayed; AI6 is the chip tied to Samsung's 2nm fabrication line",
+    "source": "20260415_electrek_02_Tesla_Taped_Out_Ai5_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.374Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla and SpaceX announced the $25 billion 'Terafab' chip manufacturing project in Austin in March 2026; Intel joined in April 2026 to fabricate and package chips",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New chip fabrication infrastructure tied to AI5/AI6 production roadmap; Intel's involvement is a new development",
+    "source": "20260415_electrek_02_Tesla_Taped_Out_Ai5_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.374Z",
+    "status": "pending"
+  },
+  {
+    "fact": "NHTSA data shows Tesla recorded zero autonomous driving incidents from February 17 to March 15, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Continues a downward trend from 5 incidents (Dec 15–Jan 15) to 1 (Jan 15–Feb 17) to 0, indicating improving FSD safety performance under official government tracking",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.1 is beginning wide release as of mid-April 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version release described as significantly smoother with better responsiveness; each version has improved safety metrics",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Q3 2024 earnings call: Elon committed to a free hardware upgrade for Hardware 3 FSD purchasers if unsupervised FSD safety threshold cannot be met on that hardware",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Directly addresses the unresolved question for millions of Hardware 3 owners; sets expectation of Tesla absorbing upgrade cost",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla stated on Q3 2024 earnings call that a V14 light version for Hardware 3 was expected in Q2 of the following year (Q2 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Original internal target for Hardware 3 unsupervised FSD capability; guest now estimates this slips to Q4 2026",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla currently has 11 unsupervised robotaxis operating, with remaining fleet requiring safety monitors",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 11,
+    "context": "Only 11 vehicles confirmed operating without human safety monitor; total Austin + Bay Area fleet estimated at 300–400 vehicles",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's total robotaxi fleet estimated at 300–400 vehicles across Austin and the Bay Area",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 350,
+    "context": "Grok-sourced estimate used to contextualize safety incident comparisons; not an official Tesla figure",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's robotaxi fleet estimated to have driven approximately 1 million miles from February 17 to March 15",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Grok-sourced estimate; used as denominator for zero-incident safety record; implies strong miles-per-incident ratio during this period",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo estimated at approximately 3,000 vehicles driving 4 million miles per week",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Grok-sourced estimate used for competitive comparison; Waymo fleet is approximately 15x larger than Tesla's estimated Austin/Bay Area fleet by miles driven",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo recorded 100 incidents in January, 73 in February, and 25 in the first half of March 2026, per NHTSA data",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Provides competitive safety baseline; Waymo incidents are declining but remain significantly higher in absolute terms than Tesla's over same periods",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk indicated AI5 chip has recently taped out as of the time of the video (April 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "AI5 taped out is a precursor to production; guest speculates AI5 computer design could incorporate backward-compatible connectors for older vehicles, though this would add 6–12 months to Hardware 3 upgrade timeline",
+    "source": "20260419_brighterwithherbert_01_Tesla_Just_Hit_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-19T18:28:09.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin Robotaxi fleet is approximately a dozen unsupervised vehicles after 10 months of operation, with most rides still using safety monitors",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 12,
+    "context": "Direct data point on current unsupervised fleet size in Tesla's most mature robotaxi market; far below scaling thresholds needed for meaningful revenue",
+    "source": "20260419_electrek_02_Teslas_Robotaxi_Expansion_Looks_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.398Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has reported 15 crashes to NHTSA since launching Robotaxi in Austin, characterized as a crash rate roughly 4x worse than human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Safety record is cited as the core limiting factor constraining fleet expansion; a poor safety record could delay regulatory approvals and scale-up",
+    "source": "20260419_electrek_02_Teslas_Robotaxi_Expansion_Looks_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.398Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Q1 2026 earnings call is scheduled for Wednesday, April 22, 2026",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Earnings date is a key catalyst event; performance and guidance on robotaxi will directly influence Tesla's valuation thesis",
+    "source": "20260419_electrek_02_Teslas_Robotaxi_Expansion_Looks_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.398Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas and Houston Robotaxi expansion announced days before Q1 2026 earnings; January 2026 Austin 'unsupervised' launch was announced days before Q4 2025 earnings and drove a 4% stock jump",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Pattern of pre-earnings robotaxi announcements is directly relevant to assessing how much weight to assign new city launch headlines as operational milestones",
+    "source": "20260419_electrek_02_Teslas_Robotaxi_Expansion_Looks_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-19T18:28:09.398Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Windrose E700 pricing observed at $240,000–$260,000 per unit via California incentive program public records",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 250000,
+    "context": "Real-world pricing data for a Tesla Semi competitor in the long-haul Class 8 segment; midpoint ~$250,000",
+    "source": "20260419_futureaza_01_Tesla_Semi_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-19T18:28:09.406Z",
+    "status": "pending"
   }
 ]
