@@ -6576,5 +6576,139 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-04-20T11:45:33.659Z",
     "status": "pending"
+  },
+  {
+    "fact": "AI5 chip tape out confirmed by Elon Musk; delivers 5x useful compute of a dual AI4 setup, 8x compute power, 9x memory, 5x bandwidth vs. current generation",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "AI5 tape out completion is a key milestone for both FSD and Optimus scaling; specs indicate a major generational leap in Tesla's in-house silicon",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon stated AI4 is sufficient to achieve 'much better than human safety' for FSD; AI5 is targeted at Optimus and supercomputer clusters, not cars",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Clarifies near-term FSD hardware roadmap; AI5 going to Optimus first could delay car-side compute upgrades",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon announced team is now working on AI6, Dojo 3, and other chips following AI5 tape out",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms continued chip roadmap progression beyond AI5; relevant to long-term Terafab and compute strategy",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bloomberg reports Tesla's Terafab team has contacted chip suppliers including Applied Materials, Tokyo Electron, Lam Research, and Samsung Electronics, allegedly offering above-market pricing for priority access",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Suggests Terafab is moving beyond planning into active supply chain engagement, though sourcing reliability is disputed",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla confirmed partnership with Intel connected to the Terafab chip manufacturing project",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Intel partnership is described as confirmed real news (not rumor); guest speculated Tesla or SpaceX could potentially acquire Intel",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Chinese securities firms claim Tesla is targeting 100,000 Optimus units annual production capacity at Giga Shanghai by end of 2026",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 100000,
+    "context": "Rumored Giga Shanghai Optimus production target for 2026; dismissed as 'absolutely false' by guest citing Brian White's assessment that there is no floor space available",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla China President Alan Wang Hao confirmed Giga Shanghai has the capability to manufacture robots, stating it 'can shoulder important responsibilities in manufacturing all new products including robots'",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First direct executive confirmation that Giga Shanghai is being considered for Optimus manufacturing, even if timeline and scale remain unconfirmed",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Guest expects 100,000 Optimus bots planned at Fremont will use AI4 chips, with AI5 arriving approximately one year later",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 100000,
+    "context": "Fremont Optimus production target of 100,000 units referenced as near-term plan; AI4 chip confirmed as the hardware for this initial ramp",
+    "source": "20260420_brighterwithherbert_01_Tesla_Might_Be_Building_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T18:44:46.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 is currently in Tesla employee beta with wide release expected by end of the week of April 20, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Employee beta is described as the final stage before public early-adopter release; wide release timing directly impacts robotaxi readiness",
+    "source": "20260420_cernbasher_01_Tesla_Didnt_Hire_In_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-20T18:44:46.094Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has hired Autopilot-related operational staff across 18 cities, including a nighttime Cybercab cleaning and support role on a 24/7 shift basis",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Hiring across 18 cities including dedicated overnight support staff signals imminent multi-city robotaxi deployment rather than continued testing phase",
+    "source": "20260420_cernbasher_01_Tesla_Didnt_Hire_In_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-20T18:44:46.094Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fleets of Model Y vehicles equipped with rear camera washers have been spotted staged in parking lots in at least four cities",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Physical vehicle pre-positioning in at least four cities interpreted as final preparation for robotaxi service launch pending FSD 14.3 clearance",
+    "source": "20260420_cernbasher_01_Tesla_Didnt_Hire_In_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-20T18:44:46.094Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Panel identifies Q2 2026 as the most likely timeframe for a multi-city robotaxi expansion, coinciding with the start of Cybercab production",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Logical argument based on infrastructure deployment timing: vehicles and staff would not be staged now if a Q4 ramp were planned",
+    "source": "20260420_cernbasher_01_Tesla_Didnt_Hire_In_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-20T18:44:46.094Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production start expected to begin in Q2 2026, with vehicles intended to be put into service immediately",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Production start timing directly determines fleet size ramp rate and early unit economics for the robotaxi business",
+    "source": "20260420_cernbasher_01_Tesla_Didnt_Hire_In_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-20T18:44:46.094Z",
+    "status": "pending"
   }
 ]
