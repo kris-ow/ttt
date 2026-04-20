@@ -6306,5 +6306,219 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-19T18:28:09.406Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 described as 'slightly delayed but out'; AI5 described as 'done'; Cybercab scaling described as 'proceeding as planned' — all achieved since December 2025 all-time high",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Bhakdi frames these three milestones as the basis for his bullish Tesla thesis and argument that the stock can return to all-time highs without a new catalyst",
+    "source": "20260417_jobhakdi_02_Live_My_1m_Bet_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T04:34:44.091Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised FSD rollout described as 'imminent' across America, starting with Texas",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key catalyst watch item — signals near-term timeline expectation for unsupervised FSD geographic expansion",
+    "source": "20260417_jobhakdi_02_Live_My_1m_Bet_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T04:34:44.091Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi expansion to Dallas and Houston referenced as a major near-term development, with a dedicated video described as forthcoming",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "New city expansion for robotaxi is a direct catalyst watch item; Bhakdi calls it 'potentially huge'",
+    "source": "20260417_jobhakdi_02_Live_My_1m_Bet_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T04:34:44.091Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi states that reaching approximately 10,000 robotaxis in operation would produce 'very substantial income' and push Tesla stock to $1,000",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 10000,
+    "context": "Explicit fleet size threshold cited as the level at which robotaxi generates material revenue impact and major stock re-rating",
+    "source": "20260417_jobhakdi_02_Live_My_1m_Bet_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T04:34:44.091Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla described as on track to become the largest chip manufacturer in the world by number of chips produced, surpassing Nvidia, 'very soon'",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Relates to AI5 chip manufacturing ambitions; framed as a near-term milestone driven by vertically integrated inference-only architecture",
+    "source": "20260417_jobhakdi_02_Live_My_1m_Bet_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T04:34:44.091Z",
+    "status": "pending"
+  },
+  {
+    "fact": "ARK projects global robotaxi market at $8–10 trillion in annual revenue at scale over the next 5–10 years",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Top-level revenue TAM estimate from ARK's open-source Tesla model; used as a ceiling reference for robotaxi unit economics modeling",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has accumulated 8–12 billion miles of real-world driving footage and is adding approximately 1 billion miles per month",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Core data moat figure; fleet scale is central to ARK and other bull-case valuations; Waymo comparison is ~20 million miles (~400:1 ratio)",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's unsupervised autonomous miles are described as 'tens of thousands' — a small number still growing, distinct from total fleet miles which include a human in the seat",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key bear risk: the valuation-relevant metric for driverless operation is far smaller than Tesla's total mileage figure; Waymo leads on fully driverless miles",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Mass production of Optimus Gen 3 has started at Fremont; over 1,000 Gen 3 units are currently being built",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms production has begun; units will be deployed in factories over the next year for learning tasks; host flags this as a key deployment milestone to watch",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is repurposing Model S and Model X production lines at Fremont for Optimus Gen 3 manufacturing",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Signals Tesla is prioritizing humanoid robot production capacity over flagship car lines — a major strategic pivot",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk's stated target is 1 million Optimus units per year by end of 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Host advises applying significant timeline discounts given Elon's history of missing targets; even at half, this would be transformative production scale",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "New dedicated Optimus factory under construction at Giga Texas: 5.2 million square feet, target capacity of 10 million Optimus units per year by 2027",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000000,
+    "context": "Long-term production capacity target; provides ceiling for fleet growth modeling once factory is operational",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Colossus 2 (XAI, Memphis) contains 550,000 Nvidia GPUs as of January, representing approximately $18 billion in chips, drawing 2 GW of power; plan is to reach 1 million GPUs at this single site by end of 2026",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Described as the largest AI supercomputer ever built; also provides compute to X and SpaceX beyond just training Grok",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dojo 3 has been relaunched, now built from clusters of Tesla's own AI5 chips (and eventually AI6), rather than a separate proprietary training chip",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Strategic pivot from original Dojo approach; enables a unified silicon strategy where the same chip serves cars, robots, and data center training",
+    "source": "20260419_brighterwithherbert_02_Tesla_The_Largest_Ai_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-20T04:34:44.099Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi ride completed in Dallas, Texas on 2026-04-19",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms geographic expansion of unsupervised robotaxi operations beyond Austin into Dallas — a new city milestone",
+    "source": "20260420_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-20T04:34:44.108Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi fare for a 2.25-mile, 7-minute Dallas trip was $6.15, versus Waymo's $13.93 for the same trip — Tesla was 56% cheaper",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "base_fare",
+    "value": 6.15,
+    "context": "First publicly documented per-ride Tesla robotaxi pricing data point; establishes a fare floor and competitive pricing benchmark vs. Waymo",
+    "source": "20260420_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-20T04:34:44.108Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Implied Tesla robotaxi fare per mile in Dallas: approximately $2.73 ($6.15 / 2.25 miles)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 2.73,
+    "context": "Derived from the $6.15 fare and 2.25-mile trip distance reported in post [3]; useful for revenue-per-mile modeling",
+    "source": "20260420_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-20T04:34:44.109Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Average trip length in the documented Dallas robotaxi ride was 2.25 miles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "avg_trip_length",
+    "value": 2.25,
+    "context": "Single data point for average trip length in live Tesla robotaxi operations; useful as an early proxy for fleet utilization modeling",
+    "source": "20260420_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-20T04:34:44.109Z",
+    "status": "pending"
+  },
+  {
+    "fact": "All unsupervised Model Y robotaxis operating in Austin, Houston, and Dallas are running the AI4 hardware platform",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms AI4 is the operational standard for Tesla's live unsupervised fleet across all three Texas cities; relevant to FSD capability and scalability assumptions",
+    "source": "20260420_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-20T04:34:44.109Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi operations confirmed active in Austin, Houston, and Dallas as of 2026-04-19",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms three-city Texas footprint for unsupervised robotaxi service; represents a robotaxi city expansion milestone",
+    "source": "20260420_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-20T04:34:44.109Z",
+    "status": "pending"
   }
 ]
