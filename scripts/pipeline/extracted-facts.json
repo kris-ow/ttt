@@ -6520,5 +6520,61 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-20T04:34:44.109Z",
     "status": "pending"
+  },
+  {
+    "fact": "15 unsupervised robotaxis (no safety driver, commercial transport) now deployed as of April 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15,
+    "context": "Represents the current unsupervised-only fleet size; a key baseline for modeling ramp trajectory",
+    "source": "20260420_jobhakdi_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T11:45:33.659Z",
+    "status": "pending"
+  },
+  {
+    "fact": "602 total robotaxis deployed including supervised vehicles as tracked by robotaxitracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 602,
+    "context": "Broader fleet figure including safety-driver vehicles; presenter argues these are functionally unsupervised given zero interventions",
+    "source": "20260420_jobhakdi_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T11:45:33.659Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla deployed one unsupervised robotaxi each in Houston and Dallas, Texas — two new cities added within 48 hours in April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First unsupervised deployments outside Austin; signals possible beginning of multi-city Texas expansion",
+    "source": "20260420_jobhakdi_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T11:45:33.659Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi estimates 20,000–30,000 unsupervised robotaxis could be deployed across Austin, Houston, and Dallas without impacting car ownership",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Qualitative fleet saturation estimate for three Texas cities; no timeline given but framed as near-term opportunity",
+    "source": "20260420_jobhakdi_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T11:45:33.659Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi's April 2026 prediction of ~1,800 unsupervised robotaxis deployed is acknowledged as likely incorrect",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Revises the specific fleet number milestone while maintaining that April represents the beginning of the inflection point zone",
+    "source": "20260420_jobhakdi_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-20T11:45:33.659Z",
+    "status": "pending"
   }
 ]
