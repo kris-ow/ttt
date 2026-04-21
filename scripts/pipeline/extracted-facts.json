@@ -7174,5 +7174,109 @@
     "channel": "electrek",
     "extractedAt": "2026-04-21T11:36:10.181Z",
     "status": "pending"
+  },
+  {
+    "fact": "Elon Musk signaled that supervised FSD approval in China is imminent, reportedly suggesting it could come within days of the video's publication.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "A supervised FSD approval in China would unlock a major new market for Tesla's software offering and could significantly accelerate adoption given China's tech-forward consumer base.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The Netherlands is presenting Tesla FSD results to an EU committee on May 5, 2026, with a vote expected at the end of June 2026. Approval by 50%+ of EU countries would automatically extend approval to all 27 EU member states.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "EU-wide FSD approval would be a transformational regulatory milestone, opening the entire European market to Tesla's autonomous driving software.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 3–4 million Tesla vehicles with Hardware 3 are in the fleet, described as at least one-third of Tesla's total fleet, and their path to unsupervised FSD remains unconfirmed.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3500000,
+    "context": "Hardware 3 fleet size is relevant to estimating the addressable base for unsupervised FSD monetization and potential robotaxi conversion; whether these vehicles can achieve unsupervised operation is a material open question.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 is believed to be the version currently running on vehicles in the Austin robotaxi deployment.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms the current software baseline for the operational robotaxi fleet; both the host and Jeff Lutz described 14.3 as already feeling unsupervised in quality during personal use.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla promised an Optimus V3 reveal in Q1 2026 but has not delivered it or announced a new date; the host expects the reveal in Q3 2026.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "A delayed V3 reveal pushes back the timeline for investors to assess next-generation Optimus capabilities and production readiness.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus high-volume production target referenced as 1 million units per year at Fremont, with Austin eventually scaling to 10x or more that volume.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "These production scale targets are critical inputs for long-term Optimus revenue modeling; the Fremont NPI line is described as a precursor step before full-volume production ramp.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bloomberg reported Tesla is preparing to launch the Model Y L in India as soon as the week of April 21, 2026.",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "India market entry with the Model Y L represents a new geographic growth opportunity for Tesla's EV business.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Q1 2026 Tesla earnings call live stream is scheduled for 12:30 PM Pacific time on April 22, 2026.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Upcoming earnings call is expected to address key catalysts including Optimus timeline, robotaxi expansion, FSD milestones, and the energy segment miss.",
+    "source": "20260421_brighterwithherbert_01_Elon_Might_Be_Signaling_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-21T18:46:59.543Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Q1 2026 earnings call is scheduled for Wednesday, April 23, 2026",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Confirmed earnings call date for Q1 2026 results",
+    "source": "20260421_futureaza_01_Tesla_Stock_Set_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-21T18:46:59.553Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Two new robotaxi cities opened over the weekend prior to April 21, 2026, cited as a positive catalyst for Tesla stock",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Expansion of robotaxi service to new cities is a key catalyst in the Tesla thesis; specific city names not mentioned in transcript",
+    "source": "20260421_futureaza_01_Tesla_Stock_Set_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-21T18:46:59.553Z",
+    "status": "pending"
   }
 ]
