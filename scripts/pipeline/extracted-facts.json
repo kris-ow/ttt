@@ -7605,5 +7605,175 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-22T04:24:17.858Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla launched fully unsupervised robotaxi service in Dallas and Houston, with a plan to reach 7 cities by end of June 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks the first expansion of unsupervised commercial robotaxi service beyond Austin; 7-city target by June 2026 is a concrete near-term deployment milestone",
+    "source": "20260422_brighterwithherbert_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T18:47:27.490Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 17 unsupervised robotaxis were in commercial operation across Austin, Dallas, and Houston at time of recording (April 2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 17,
+    "context": "Current baseline fleet size for unsupervised commercial robotaxi operations; used as starting point for scaling projections",
+    "source": "20260422_brighterwithherbert_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T18:47:27.490Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi identifies 1,800 unsupervised robotaxis as his 'forcing function' threshold, representing approximately 5% of Tesla's 2024 annualized free cash flow",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1800,
+    "context": "Key fleet size threshold at which robotaxi revenue becomes materially significant to Tesla's financials, expected to force analyst repricing",
+    "source": "20260422_brighterwithherbert_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T18:47:27.490Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 14 Cybercabs were spotted at Giga Texas with no steering wheel or pedals, indicating production units potentially destined for robotaxi service",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Physical evidence of Cybercab production ramp at Giga Texas; no-steering-wheel configuration confirms dedicated robotaxi units are being produced",
+    "source": "20260422_brighterwithherbert_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T18:47:27.490Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi estimates a secondary stock inflection may occur around 50–100 unsupervised robotaxis if the growth slope is steep and achieved within weeks",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 100,
+    "context": "Earlier-than-forcing-function threshold at which market momentum and institutional re-rating could begin, contingent on rapid growth rate",
+    "source": "20260422_brighterwithherbert_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T18:47:27.490Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's vehicle cost estimated at approximately four times the cost of a Cybercab, cited as a structural barrier to profitability",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": null,
+    "context": "Comparative unit economics: Waymo's high vehicle acquisition cost vs. Cybercab's lower cost is cited as a key reason Waymo cannot achieve positive free cash flow at any fleet size",
+    "source": "20260422_brighterwithherbert_01_Tesla_Robotaxi_Starts_Expanding_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T18:47:27.490Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal expected in Q2 or Q3 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Hosts' best estimate ahead of earnings call; no official date confirmed by Tesla",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus production line tooling changeover at Giga Texas potentially beginning around May 12, 2026, following SNX signature series final event",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "SNX production ending imminently; May 12 flagged as likely start of factory retooling for Optimus",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus year-end 2026 production volume expected to be fewer than 1,000 total units according to hosts",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Hosts explicitly state production may not reach 1,000 units total by end of 2026, reflecting early-ramp caution",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Early Optimus units will use AI4 chip, not AI5",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "AI5 confirmed for Optimus in later generations and supercomputer, but not initial production units",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14.3 has been released to a number of users and remains in supervised mode",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Hosts confirm v14.3 is not the final version required for unsupervised FSD operation",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD received regulatory approval in the Netherlands and is expected to launch across Europe in summer 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First EU regulatory domino has fallen; patchwork of country-level approvals expected to follow",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Both hosts do not expect unsupervised FSD to reach customer vehicles in 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Regulatory hurdles and safety data validation cited as primary bottlenecks",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab spotted in Chicago by Rob Mau on approximately April 21, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Suggests Cybercab geographic presence is expanding beyond known Texas test zones",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi deployments confirmed in Florida, Nevada, and multiple Texas locations as of April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Hosts cite visible rollouts in new markets ahead of earnings call guidance",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is building its own solar fabrication facility, which hosts say is the primary reason for current residential solar deployment stall",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Hosts speculate Tesla is waiting for its solar fab to scale before aggressively expanding solar deployments",
+    "source": "20260422_futureaza_01_Tesla_Could_Reveal_Major_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-22T18:47:27.499Z",
+    "status": "pending"
   }
 ]
