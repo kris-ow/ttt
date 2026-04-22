@@ -7278,5 +7278,332 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-21T18:46:59.553Z",
     "status": "pending"
+  },
+  {
+    "fact": "17 unsupervised Tesla robotaxis have been spotted in total, including 2 in Dallas and 2 in Houston, with a cumulative tracked fleet of 611 vehicles including inactive units",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks Tesla's unsupervised robotaxi entry into two major new Texas metro areas — Houston (#3 US city) and Dallas — representing meaningful geographic expansion beyond initial launch markets",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's FSD supervised version 14.2.2.5 was in active use during a real-world safety event in which the car detected a distracted child cyclist and came to a complete stop",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Specific FSD version actively deployed and demonstrating real-world safety performance; Tesla VP Ashok Kaliswami stated users are 'unequivocally safer' using FSD",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's total robotaxi service recorded zero incidents over the past month across all supervised and unsupervised operations",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 0,
+    "context": "Zero incidents over a one-month period suggests safety performance exceeding human benchmarks, a key input for regulatory approval timelines and fleet scaling assumptions",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Italy's Ministry of Infrastructure and Transport formally requested fast-tracking of Tesla FSD supervised approval, with the request forwarded to the transport department and Italian road authority",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "If approved, Italy becomes the fourth EU market with FSD supervised deployment, adding approximately 16 million population to Tesla's European autonomy footprint",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Spain confirmed 30 Tesla FSD supervised test vehicles have driven approximately 80,000 kilometers (nearly 50,000 miles) since November 2025 with zero reported incidents",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 0,
+    "context": "Official government-confirmed safety record from Spain's DGT supporting regulatory approval case; zero incidents across ~80,000 km is a strong data point for European FSD expansion",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "EU member states are scheduled to hear the Netherlands' full FSD supervised report on May 5th, 2026 in a session extended from 20 to 60 minutes, with a potential EU-wide vote possible by end of June 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Concrete near-term dates for potential EU-wide FSD supervised approval, which would unlock multiple additional European markets simultaneously",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi projected that if Tesla robotaxi scaling begins in earnest in 2026, there could be millions of robotaxis operating globally by 2028",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "context": "Analyst projection implying rapid fleet ramp from current tens of units to potentially millions within two years, underpinning aggressive long-term fleet size assumptions in valuation models",
+    "source": "20260421_brighterwithherbert_02_Teslas_Week_Fsd_Approved_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-22T04:24:17.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Federal $7,500 EV tax credit expired September 30, 2025",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Identified as primary driver of Q1 2026 EV sales collapse nationally and in California",
+    "source": "20260421_electrek_03_Teslas_California_Sales_Crash_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-22T04:24:17.828Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi fare in Houston/Dallas: $6.15 vs. Waymo comparable ride at $13.93 — Tesla under half the price",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Multiple receipts confirm Tesla's significant pricing advantage; one data point showed Tesla at $1.67/mile vs. Waymo at $5.41/mile",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi cost per mile: $1.67 vs. Waymo comparable trip at $5.41 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 1.67,
+    "context": "Direct competitive pricing comparison useful for robotaxi unit economics modeling; Tesla is dramatically undercutting Waymo",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "As of recording, Tesla has approximately 2 unsupervised robotaxi vehicles active in each of Houston and Dallas",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2,
+    "context": "Extremely limited fleet size per city at launch; constrains availability and revenue generation at this stage",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's current total fleet size is estimated at approximately 3,000 vehicles, with public guidance targeting ~3,500 by end of 2026",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Waymo fleet benchmark; Tesla's total tracked figure sits at 611, well below Waymo's scale",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's 'all tracked' robotaxi figure (not active vehicles) sits at 611 as of recording date (April 2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 611,
+    "context": "Falls far short of Elon's stated exponential doubling trajectory from Q1 2026 guidance of 500+ vehicles doubling monthly",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated in Q1 2026 that Tesla had 'well over 500' taxi vehicles carrying paid customers, projecting the number would 'double every month'",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Guidance significantly missed: doubling monthly from ~500 would imply ~4,000 by April 2026; actual tracked figure is 611",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla launched unsupervised robotaxi service in Houston and Dallas — first time any new city launched without safety supervisors from day one",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Major departure from prior stated policy of always starting new cities with supervised drivers; signals high software confidence",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Austin supervised robotaxi operation ran for approximately seven months before going unsupervised",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Baseline reference: Houston and Dallas skipped this supervised phase entirely, representing a major acceleration",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab has been self-certified by Tesla as meeting all applicable US FMVSS, as evidenced by a compliance sticker at a pop-up event",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Self-certification means Tesla is not seeking the Part 555 exemption, so the 2,500-unit annual cap does not apply to Cybercab production",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "2022 Federal Register ruling amended occupant protection FMVSS to account for vehicles without traditional manual controls, including steering wheels",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Regulatory basis for Tesla's self-certification of the Cybercab without a steering wheel or pedals; removes key barrier to scale production",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Spain: Tesla has been testing 30 FSD-equipped vehicles since November 2025, with approximately 80,000 kilometers driven and zero reported incidents",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Zero incidents over 80,000 km in Spanish FSD testing; Spain awaiting broader EU/RDW vote before granting approval",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands RDW presentation on Article 39 (autonomous vehicle regulation) extended from 20 minutes to 1 hour at the May 5th meeting",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Extended slot raises possibility of a vote at the May 5th meeting, though host still expects formal vote at June 30th meeting",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated supervised FSD is not yet approved in China and that Giga Shanghai production output is the limiting factor for China sales",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD China approval is a pending catalyst; when approved, combined with Cybercab production decisions, could trigger Giga Shanghai expansion",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus rolling contact finger joint patent design has been changed according to Elon Musk; original design 'did not actually work'",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Signals active iteration on Optimus hand design; Optimus V3 demo potentially weeks away but hands likely to be covered",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's three-phase Powerwall is rolling out in Europe this week (week of April 21, 2026), addressing a key constraint vs. prior single-phase version",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Three-phase version expected to unlock broader EU residential adoption where three-phase power is standard",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybertruck and Powerwall approved for PG&E's residential V2X (vehicle-to-everything) program in California; first AC vehicle-to-grid application approved in California",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "AC-based system eliminates need for expensive DC-to-AC conversion hardware; eligible customers may receive up to $4,500 in incentives",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla spring software update deployed to approximately 11% of the fleet as of April 21, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Rollout still in very early stages; majority of Tesla fleet has not yet received the update",
+    "source": "20260421_electrified_01_What_Is_Tesla_Doing_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-22T04:24:17.838Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Pioneer Bond closing date for the first series is end of April 2026.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Imminent closing date is a time-sensitive event for potential qualified investors and marks the start of live (non-simulated) bond performance tracking.",
+    "source": "20260421_jobhakdi_01_I_Am_Betting_1m_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-22T04:24:17.846Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla unsupervised Model Y robotaxis were observed operating in rainy conditions",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Adverse weather operation is a key technical milestone for robotaxi scalability; demonstrates expanding real-world operational envelope beyond ideal conditions",
+    "source": "20260422_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-22T04:24:17.858Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Q1 2026 earnings call is scheduled for Wednesday, April 23, 2026",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Major catalyst event for autonomy and Optimus guidance updates; retail investor questions previewed include Optimus v3 reveal timing and production ramp",
+    "source": "20260422_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-22T04:24:17.858Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model S and Model X Signature Edition final delivery event scheduled for May 12, 2026 at Fremont factory",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Framed as 'last deliveries ever' of Model S/X; combined with earlier-than-midyear production end, signals Fremont capacity reallocation likely toward Optimus manufacturing",
+    "source": "20260422_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-22T04:24:17.858Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model S and Model X production ended earlier than mid-year 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Earlier production end mentioned in retail investor questions for earnings call; implies factory capacity freed up sooner than expected, potentially accelerating Optimus ramp",
+    "source": "20260422_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-22T04:24:17.858Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dutch vehicle authority (RDW) presentation on Tesla FSD (Supervised) to the EU Technical Committee on Motor Vehicles (TCMV) on May 5th extended from 20 minutes to 1 hour",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "TCMV is a central EU regulatory body for vehicle approvals; extended session suggests deeper regulatory interest and is a step toward potential European FSD authorization",
+    "source": "20260422_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-22T04:24:17.858Z",
+    "status": "pending"
   }
 ]
