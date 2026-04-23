@@ -8863,5 +8863,285 @@
     "channel": "electrek",
     "extractedAt": "2026-04-23T11:35:34.122Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD fleet is now averaging 28.8 million miles per day, up from 14.4 million miles per day a couple of months earlier — a doubling in a short period.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 28800000,
+    "context": "Rapid growth in FSD daily miles signals accelerating adoption and generates more training data; relevant as a proxy for fleet scale and engagement.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk confirmed FSD version 15 will run on AI4 hardware and is targeted to arrive hopefully by the end of 2026; it is described as a complete overhaul of the software architecture enabling unsupervised FSD anywhere it is legally permitted.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD version 15 is the key software milestone for global-scale unsupervised deployment; confirmation that AI4 is sufficient removes a major hardware upgrade overhang.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon confirmed AI4 hardware is sufficient to achieve unsupervised FSD; there is no pressing need to move to AI5 in cars. AI5 will go into Optimus first.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Removes uncertainty about whether current vehicle buyers would need a costly hardware upgrade to participate in unsupervised FSD and the robotaxi fleet.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "An AI4 Plus variant with 32 GB RAM per chip (64 GB in dual configuration) and approximately 10% more compute is planned for production in mid-2027, contingent on Samsung manufacturing capability.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms Samsung chip production milestone tied to AI4 Plus rollout targeted for mid-2027.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated he expects unsupervised FSD or robotaxi to be operating in a dozen or so states by the end of 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Direct update on robotaxi geographic expansion target for end of 2026; a key milestone for the robotaxi thesis.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla confirmed Cybercab production has started at Giga Texas, with volume production on track for 2026 following an initially slow S-curve ramp accelerating toward year-end.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production start — a critical milestone for the robotaxi deployment timeline.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's earnings deck confirmed Cybercab, Tesla Semi, and Megapack 3 are on schedule for volume production starting in 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Official confirmation from Tesla's earnings materials of three major product volume production timelines in 2026.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla earnings deck states that first-generation production lines for Optimus are being installed in anticipation of volume production.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms Optimus factory buildout is actively underway as of Q1 2026, ahead of volume production ramp.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 3 vehicles cannot achieve unsupervised FSD. Tesla is offering a discounted trade-in for AI4-equipped vehicles and an in-place computer and camera upgrade, to be performed at micro-factories in major metropolitan areas.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Defines the pathway for Hardware 3 owners to enter the robotaxi fleet; micro-factory approach is a new operational detail for enabling fleet conversion at scale.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14 light for Hardware 3 cars is targeted for release in June 2026; it will be supervised-only but functionally close to version 14 for point-to-point trips.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Near-term FSD software release milestone for the large installed base of Hardware 3 vehicles.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk said it will not make sense to deploy unsupervised FSD or robotaxi at large scale while known major architectural software improvements — expected in FSD version 15 — remain unimplemented.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Clarifies that FSD v15 is the prerequisite for truly wide-scale or global unsupervised deployment, though multi-state U.S. rollout can proceed before then.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has had no injuries and no fatalities to date with unsupervised FSD and robotaxi expansion, as confirmed by Elon Musk on the earnings call.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Clean safety record is a key regulatory and public confidence input supporting continued robotaxi expansion approvals.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The incremental FSD paid subscription take rate over new deliveries in the most recent quarter exceeded 50%, excluding free trials.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "High and rising FSD attach rate signals both near-term revenue strength and a growing base of vehicles eligible for supervised and eventually unsupervised operation.",
+    "source": "20260423_brighterwithherbert_02_Tesla_Earnings_Call_Confused_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-23T18:48:23.854Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla agreed to acquire an unnamed AI hardware company for up to $2.00 billion in Tesla common stock and equity awards, disclosed in a single sentence in Note 14 of the Q1 2026 10-Q filing.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Largest acquisition in Tesla's disclosed history; never mentioned on the earnings call or in the shareholders' letter. Deal agreed in April 2026.",
+    "source": "20260423_electrek_04_Tesla_Tsla_Quietly_Discloses_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T18:48:23.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced capital expenditures exceeding $25 billion for 2026, driven primarily by AI initiatives.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Represents a major escalation in AI-focused capex; relevant to forward financial modeling and cash flow projections.",
+    "source": "20260423_electrek_04_Tesla_Tsla_Quietly_Discloses_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T18:48:23.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla completed the AI5 chip tape-out on April 15, 2026.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key hardware milestone for Tesla's next-generation AI compute platform; timing coincides with the unnamed acquisition.",
+    "source": "20260423_electrek_04_Tesla_Tsla_Quietly_Discloses_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T18:48:23.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is building Terafab, described as a joint Tesla/SpaceX semiconductor factory, in partnership with Intel.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Terafab is part of Tesla's in-house AI chip strategy; the unnamed acquisition may relate to IP or capabilities relevant to this facility.",
+    "source": "20260423_electrek_04_Tesla_Tsla_Quietly_Discloses_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T18:48:23.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Model YL prototype spotted driving on Interstate 280 in the San Francisco Bay Area — first sighting on US roads",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Signals active US market preparation, moving beyond factory body sightings at Giga Texas to public road testing",
+    "source": "20260423_electrek_05_Tesla_Model_Yl_Prototype_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T18:48:23.874Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk previously stated US production would not begin until late 2026, and the vehicle 'might not ever' come to the US",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Current road testing appears to contradict or accelerate this timeline; author suggests late 2026 or early 2027 launch is realistic",
+    "source": "20260423_electrek_05_Tesla_Model_Yl_Prototype_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T18:48:23.874Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla confirmed full-year 2026 energy deployments will exceed 2025 and will be record profits",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Forward guidance reaffirmed despite Q1 deployment decline; Shanghai Megapack factory still ramping",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla capital expenditure guidance increased to $25 billion",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "Significant increase in capex signals aggressive buildout of Cybercab factories, Terafabs, AI data centers, and Optimus; negative free cash flow expected in coming quarters",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Six Cybercab factories are expected to begin production in 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production ramp timeline; multiple factories starting simultaneously suggests aggressive scaling intention",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Each Cybercab estimated to generate approximately $30,000 per year in robotaxi revenue (host's conservative estimate)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 30000,
+    "context": "Herbert's per-unit annual revenue estimate used as a conservative floor for robotaxi unit economics modeling",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 referenced as expected next year (2027)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Hosts describe v15 as a major capability milestone; current versions cited are 14.3 and 14.3.1",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 3 vehicles will be upgradeable to hardware 4",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Expands the addressable base for full FSD capability; expected to increase used Tesla residual values",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands has approved FSD and a May 5th European regulatory agenda date was referenced for broader FSD approval",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "European FSD regulatory approval is in progress but timeline is uncertain per Elon Musk's comments on the earnings call",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla used 'demand aggregation' language in its Q1 2026 report, interpreted as signaling intent to operate its own robotaxi fleet",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Suggests Tesla is beginning to transition a portion of vehicle production toward its own fleet operations rather than exclusively customer sales",
+    "source": "20260423_futureaza_01_Tesla_Earnings_Call_Key_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-23T18:48:23.884Z",
+    "status": "pending"
   }
 ]
