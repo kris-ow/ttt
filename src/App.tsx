@@ -24,7 +24,10 @@ export default function App() {
   const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'catalysts'>('stock')
   const stockBoxRef = useRef<HTMLDivElement>(null)
   const [stockBoxHeight, setStockBoxHeight] = useState<number | null>(null)
-  const channels = useMemo(() => [...new Set(data.articles.map(a => a.channel))].sort(), [])
+  const channels = useMemo(() => {
+    const sorted = [...new Set(data.articles.map(a => a.channel))].sort()
+    return sorted.sort((a, b) => (a === 'tesla' ? -1 : b === 'tesla' ? 1 : 0))
+  }, [])
   const stockData = useStockQuote()
 
   const handleTabSwitch = useCallback((key: Section) => {
