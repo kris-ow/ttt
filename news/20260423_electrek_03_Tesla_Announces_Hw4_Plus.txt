@@ -1,0 +1,65 @@
+Source:      electrek
+Title:       Tesla announces HW4 Plus with doubled memory — will HW4 follow HW3 to the grave?
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/04/23/tesla-hw4-plus-upgrade-will-hw4-follow-hw3/
+Published:   2026-04-23 09:33 UTC
+Fetched:     2026-04-23 10:00 UTC
+
+────────────────────────────────────────────────────────────
+
+During Tesla’s Q1 2026 earnings call, CEO Elon Musk revealed that Tesla is planning an “AI4.1 or AI4 Plus” upgrade to its self-driving computer that doubles the RAM from 16 gigabytes to 32 gigabytes per chip — taking the total system memory to 64 gigabytes.
+
+The announcement came on the same call where Musk confirmed (or rather reconfirmed after backing away from the admision last year) that HW3 “simply does not have the capability” for unsupervised FSD. 
+
+For the millions of Tesla owners currently driving HW4 cars, the timing raises an uncomfortable question.
+
+## What Musk said about AI4 Plus
+
+Musk described the upgrade while explaining why Tesla’s next-generation AI5 chip won’t go into vehicles anytime soon. Since Tesla believes AI4 is sufficient for unsupervised Full Self-Driving, AI5 will instead go into Optimus robots and data centers.
+
+ 
+ 
+ 
+
+But in the same breath, Musk acknowledged that AI4 hardware will eventually feel its age:
+
+> 
+“At some point the AI4 hardware is going to get like so old that it’s like, okay, the only reason to keep the factory open is for AI4,” Musk said. “We are planning an AI4 upgrade to use newer generation RAM. So it’ll go from 16 gigabytes to I think 32 gigabytes per SoC. So 64 gigabytes total, and probably a 10% increase in compute and in memory bandwidth.”
+
+Musk called it “AI4.1 or AI4 Plus” and said it would go into production “next year,” dependent on Samsung completing the modifications. Samsung fabricates Tesla’s current AI4 chips on its 7nm process.
+
+## Tesla is already iterating — AI4.5 shipped in January
+
+This isn’t even the first AI4 revision. In January 2026, we reported that Tesla quietly started shipping a new “AI4.5” computer in the 2026 Model Y built at Fremont. That version appears to use a three-chip design instead of AI4’s original two-chip architecture, though Tesla never formally announced it.
+
+So the upgrade path is already AI4 → AI4.5 (shipped) → AI4 Plus (announced for 2027). That’s three hardware revisions in roughly two years — for a computer Tesla says is already good enough for unsupervised driving.
+
+## The HW3 parallel is impossible to ignore
+
+Here’s the pattern that should concern every Tesla owner:
+
+Tesla sold millions of vehicles with HW3 from 2019 onwards, telling buyers that every car had “all the hardware needed for full self-driving.” The company collected up to $15,000 from customers who purchased the FSD software package based on that promise.
+
+On this very same earnings call, Musk finally admitted what we’ve been reporting for over a year: HW3 can’t do unsupervised FSD. It has only one-eighth the memory bandwidth of HW4. Tesla is now proposing to build “micro-factories” to retrofit roughly 4 million cars — an enormously expensive admission of a broken promise.
+
+Now Tesla is making the same claim about HW4: it’s sufficient for unsupervised FSD. But the company is simultaneously shipping AI4.5 and planning AI4 Plus with doubled memory and more compute. 
+
+## The memory bandwidth question
+
+Memory bandwidth was the specific technical limitation Musk cited for killing HW3. The older chip had only one-eighth the bandwidth of HW4 — and as Musk put it, “memory bandwidth is the choke point” for AI inference.
+
+AI4 currently offers approximately 384 GB/s of bandwidth using GDDR6 memory — a deliberate upgrade from HW3’s LPDDR4 that actually exceeds what NVIDIA’s Orin (~205 GB/s) and even the newer Thor (~273 GB/s) deliver. Where AI4 falls short is total memory capacity: 32GB versus Orin’s 64GB.
+
+The AI4 Plus upgrade specifically addresses that gap, doubling total RAM from 32GB to 64GB and boosting bandwidth further. The fact that Tesla’s own engineers see the current memory headroom as tight enough to warrant an upgrade suggests AI4 may not be as future-proof as Musk claims — even if it handles today’s FSD software.
+
+The question is whether AI4 can run the software Tesla will need two, three, or five years from now as the neural networks grow larger and more complex to deliver unsupervised self-driving at scale — exactly the trap that killed HW3.
+
+## Electrek’s Take
+
+We’ve watched this movie before. Tesla told HW3 owners their cars had all the hardware needed for full self-driving. We were skeptical for years, and we were right — Musk just confirmed it on this call. Now Tesla owes roughly 4 million owners either a free retrofit or compensation, and the company’s solution is to build entire factories just to handle the upgrades.
+
+If you believe that’s going to happen, I have a bridge to sell you.
+
+Today, Tesla is telling AI4 owners the same thing: your hardware is sufficient. But the company’s own actions tell a different story. Musk has been pushing hard the narrative that unsupervised doesn’t require AI5, and that’s clearly aimed at boosting confidence in HW4 achieving unsupervised driving. He doesn’t want Tesla buyers to wait for it, but then why AI4 Plus?
+
+And we’re not saying HW4 is definitely going to follow HW3 to the grave. AI4 is genuinely more capable hardware, and the gap between AI4 and what’s needed for unsupervised FSD may be smaller than the chasm that existed with HW3. But Tesla has burned through all of its credibility on hardware sufficiency claims. When Musk says “AI4 is enough,” the only honest response from anyone who’s been paying attention is: we’ll see.
