@@ -8768,5 +8768,58 @@
     "channel": "tesla",
     "extractedAt": "2026-04-23T06:58:40.061Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab production officially started at Giga Texas, confirmed by Elon Musk on Q1 2026 earnings call",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms the Cybercab production timeline milestone; continuous production began April 2026 after first unit rolled off in February 2026",
+    "source": "20260423_electrek_02_Tesla_Confirms_Cybercab_Production_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T09:05:58.183Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab is not subject to NHTSA's 2,500-unit annual production cap; designed to self-certify FMVSS compliance with no exemption needed",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Removes a key regulatory constraint on Cybercab production scale; Tesla can ramp uncapped unlike Waymo/Cruise",
+    "source": "20260423_electrek_02_Tesla_Confirms_Cybercab_Production_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T09:05:58.183Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Musk said unsupervised FSD would reach customer vehicles 'probably Q4' 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New public timeline commitment for unsupervised FSD, directly tied to Cybercab commercial viability",
+    "source": "20260423_electrek_02_Tesla_Confirms_Cybercab_Production_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T09:05:58.183Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's supervised robotaxi fleet crashes at 1 per 57,000 miles vs. human benchmark of 1 per 229,000 miles — roughly 4x the human crash rate",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 57000,
+    "context": "Current safety gap vs. human drivers is a key risk input for robotaxi unit economics and deployment timeline",
+    "source": "20260423_electrek_02_Tesla_Confirms_Cybercab_Production_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T09:05:58.183Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Musk stated production ramp for Cybercab expected to go 'exponential towards the end of the year' (2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "context": "Qualitative guidance on 2026 production ramp shape; no specific unit numbers given",
+    "source": "20260423_electrek_02_Tesla_Confirms_Cybercab_Production_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T09:05:58.183Z",
+    "status": "pending"
   }
 ]
