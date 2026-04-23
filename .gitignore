@@ -22,8 +22,8 @@ dist-ssr
 !scripts/pipeline/state.json
 !news/transcripts_url_index.json
 
-# Quarterly PDF source data
-data/
+# Quarterly PDF source data (root-level only — don't match nested src/components/Data/ etc.)
+/data/
 
 # Editor directories and files
 .vscode/*
