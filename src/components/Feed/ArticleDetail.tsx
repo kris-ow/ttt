@@ -11,7 +11,12 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
       if (e.key === 'Escape') onClose()
     }
     document.addEventListener('keydown', handleKey)
-    return () => document.removeEventListener('keydown', handleKey)
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', handleKey)
+      document.body.style.overflow = prevOverflow
+    }
   }, [onClose])
 
   return (
@@ -27,7 +32,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
       className="fixed inset-0 z-50 bg-bg/60 backdrop-blur-md overflow-auto"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="max-w-4xl mx-auto p-3 sm:p-6">
+      <div className="max-w-4xl mx-auto p-3 sm:p-6 pb-24 sm:pb-6">
         <button
           onClick={onClose}
           className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer hidden sm:block"
