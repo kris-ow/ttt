@@ -23,6 +23,7 @@ export default function App() {
   const [showChart, setShowChart] = useState(false)
   const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'catalysts'>('stock')
   const stockBoxRef = useRef<HTMLDivElement>(null)
+  const filterRef = useRef<HTMLDivElement>(null)
   const [stockBoxHeight, setStockBoxHeight] = useState<number | null>(null)
   const channels = useMemo(() => {
     const sorted = [...new Set(data.articles.map(a => a.channel))].sort()
@@ -53,6 +54,17 @@ export default function App() {
     observer.observe(stockBoxRef.current)
     return () => observer.disconnect()
   }, [activeSection])
+
+  useEffect(() => {
+    if (!showFilter) return
+    const handleClick = (e: MouseEvent) => {
+      if (filterRef.current && !filterRef.current.contains(e.target as Node)) {
+        setShowFilter(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [showFilter])
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -88,9 +100,7 @@ export default function App() {
                 onClick={() => track('Coffee Click', { location: 'header' })}
                 className="px-3 py-1.5 text-xs font-bold whitespace-nowrap cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
               >
-                <span className="min-[370px]:hidden">BUY ME COFFEE</span>
-                <span className="hidden min-[370px]:inline min-[400px]:hidden">BUY ME A COFFEE</span>
-                <span className="hidden min-[400px]:inline">☕ BUY ME A COFFEE</span>
+                SUPPORT [TTT]
               </a>
             </nav>
           </div>
@@ -114,7 +124,7 @@ export default function App() {
               </div>
               <div className="flex flex-col overflow-hidden" style={stockBoxHeight ? { height: `${stockBoxHeight}px` } : undefined}>
                 <h3 className="text-green text-xs font-bold mb-2 flex-shrink-0">NEXT CATALYSTS</h3>
-                <div className="border border-border bg-surface p-4 text-xs flex-1 overflow-y-auto min-h-0 space-y-1">
+                <div className="border border-border bg-surface p-3 text-xs flex-1 overflow-y-auto min-h-0 space-y-1">
                   {CATALYSTS.map((c, i) => (
                     <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
                       <span className={`w-24 flex-shrink-0 font-bold whitespace-nowrap ${c.hot ? 'text-green' : 'text-text-dim'}`}>
@@ -148,7 +158,7 @@ export default function App() {
                   <StockWidget {...stockData} />
                 </div>
               ) : (
-                <div className="border border-border bg-surface p-4 text-xs space-y-1">
+                <div className="border border-border bg-surface p-3 text-xs space-y-1">
                   {CATALYSTS.map((c, i) => (
                     <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
                       <span className={`w-24 flex-shrink-0 font-bold whitespace-nowrap ${c.hot ? 'text-green' : 'text-text-dim'}`}>
@@ -168,37 +178,40 @@ export default function App() {
         <div>
           {activeSection === 'feed' && (
             <>
-              {/* Channel filter */}
-              <div className="mb-4 relative">
-                <button
-                  onClick={() => setShowFilter(!showFilter)}
-                  className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
-                >
-                  FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
-                </button>
-                {showFilter && (
-                  <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
-                    <button
-                      onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
-                      className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
-                        !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
-                      }`}
-                    >
-                      ALL
-                    </button>
-                    {channels.map(ch => (
+              <div className="flex items-center gap-2 mb-4">
+                <h3 className="text-green text-xs font-bold">NEWS FEED</h3>
+                <span className="text-text-dim text-xs">//</span>
+                <div ref={filterRef} className="relative">
+                  <button
+                    onClick={() => setShowFilter(!showFilter)}
+                    className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
+                  >
+                    FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
+                  </button>
+                  {showFilter && (
+                    <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
                       <button
-                        key={ch}
-                        onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
+                        onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
                         className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
-                          selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                          !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                         }`}
                       >
-                        {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
+                        ALL
                       </button>
-                    ))}
-                  </div>
-                )}
+                      {channels.map(ch => (
+                        <button
+                          key={ch}
+                          onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
+                          className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
+                            selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                          }`}
+                        >
+                          {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
               <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
             </>
@@ -214,7 +227,7 @@ export default function App() {
           <div>
             <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
             {' // '}
-            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Coffee Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">☕ buy me a coffee</a>
+            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Coffee Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">support [TTT]</a>
           </div>
         </div>
       </footer>

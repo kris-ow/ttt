@@ -16,7 +16,12 @@ export function StockChart({ onClose }: { onClose: () => void }) {
       if (e.key === 'Escape') onClose()
     }
     document.addEventListener('keydown', handleKey)
-    return () => document.removeEventListener('keydown', handleKey)
+    const prevOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', handleKey)
+      document.body.style.overflow = prevOverflow
+    }
   }, [onClose])
 
   useEffect(() => {
@@ -114,20 +119,28 @@ export function StockChart({ onClose }: { onClose: () => void }) {
   }, [activeRange, fetchData])
 
   return (
+    <>
+    {/* Mobile floating back button — outside scrollable container */}
+    <button
+      onClick={onClose}
+      className="sm:hidden fixed bottom-4 left-4 right-4 z-[60] bg-green text-bg py-3 text-xs font-bold cursor-pointer text-center"
+    >
+      [BACK]
+    </button>
     <div
       className="fixed inset-0 z-50 bg-bg/60 backdrop-blur-md overflow-auto"
       onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="max-w-5xl mx-auto p-6">
+      <div className="max-w-5xl mx-auto p-3 sm:p-6 pb-24 sm:pb-6">
         <button
           onClick={onClose}
-          className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer"
+          className="text-green hover:text-green-dim mb-4 text-sm cursor-pointer hidden sm:block"
         >
           [ESC] &lt;-- BACK
         </button>
 
-        <div className="border border-border bg-surface p-4" onClick={e => e.stopPropagation()}>
-          <div className="flex items-center justify-between mb-4">
+        <div className="border border-border bg-surface p-3" onClick={e => e.stopPropagation()}>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
             <h2 className="text-green text-sm font-bold">TSLA PRICE CHART</h2>
             <div className="flex items-center gap-1">
               {RANGES.map(r => (
@@ -160,5 +173,6 @@ export function StockChart({ onClose }: { onClose: () => void }) {
         </div>
       </div>
     </div>
+    </>
   )
 }

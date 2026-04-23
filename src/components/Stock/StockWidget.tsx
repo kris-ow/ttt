@@ -13,7 +13,7 @@ export function StockWidget(state: StockState) {
     : SESSION_LABELS[session]
 
   return (
-    <div className="border border-border bg-surface p-4">
+    <div className="border border-border bg-surface p-3">
       {loading && !price ? (
         <div className="text-text-dim text-xs animate-pulse">CONNECTING...</div>
       ) : error && !price ? (
@@ -45,7 +45,7 @@ export function StockWidget(state: StockState) {
             ))}
           </div>
           <div className="flex justify-between items-center mt-2 text-xs">
-            <span className="text-text-dim">{lastUpdated?.toLocaleTimeString()} // live</span>
+            <span className="text-text-dim">{lastUpdated?.toLocaleTimeString()}{live ? ' // live' : ''}</span>
             <span className="text-text-dim group-hover:text-green transition-colors">[CLICK FOR CHART]</span>
           </div>
         </>
