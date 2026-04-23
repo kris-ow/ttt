@@ -1,0 +1,128 @@
+Channel:     brighterwithherbert
+Title:       Elon Musk Makes Big Tesla Predictions On Q1 2026 Earnings | Supercut
+Published:   2026-04-23 00:00 UTC
+Summarized:  2026-04-23 04:26:01 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_019itkoX9E9R8wtXYrCD7HrT
+Cost:        $0.07177 (13288 in / 6912 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video is a supercut of Tesla's Q1 2026 earnings call, featuring opening remarks from Elon Musk and CFO Vaibhav Taneja, followed by Q&A with analysts and investors. The call covers Tesla's ambitious investment roadmap across autonomous driving, robotaxi expansion, Optimus humanoid robot production, chip development (AI5/Terafab), and energy storage — with Elon framing 2026 as a pivotal year of heavy capital deployment laying the groundwork for transformative future revenue streams.
+
+## Autonomous Driving
+
+1. **FSD Version 14.3 as the architectural foundation:** Elon confirmed that FSD version 14.3 was a "major architectural update" and represents the last piece of the puzzle needed to enable unsupervised FSD. However, he noted the team is aware of additional major architectural improvements in the pipeline that would further improve safety, and Tesla does not intend to scale to very large unsupervised deployment until those improvements are written, validated, and released. Version 15 (V15) is targeted for later in 2026 or early 2027 and will be a "complete overhaul of the software architecture," running on AI4 hardware.
+
+2. **Hardware 3 cannot support unsupervised FSD:** Elon explicitly stated that hardware 3 vehicles will never achieve unsupervised FSD capability, citing that hardware 3 has only one-eighth the memory bandwidth of hardware 4 — and memory bandwidth is described as the critical chokepoint for AI inference in autonomous driving. Tesla's solution is to offer discounted trade-ins toward hardware 4 vehicles and to offer hardware upgrades (requiring both computer and camera replacement). To execute this efficiently at scale, Tesla plans to set up "micro factories" or small facilities in major metropolitan areas rather than relying on slow service center throughput. The stated motivation is enabling hardware 3 owners to eventually enter the robotaxi fleet.
+
+3. **Hardware 3 will receive a V14 distilled version:** An executive noted that a distilled version of V14 software will be released for hardware 3 vehicles, providing the same features as V14 for hardware 4, including starting drives from a parked state. This release is expected by the end of June 2026.
+
+4. **AI4 Plus (AI4.1) upgrade planned:** Tesla is planning an upgrade to the current AI4 chip, moving from 16 GB to 32 GB of RAM per SOC (64 GB total), with approximately a 10% increase in compute and memory bandwidth. This updated chip, referred to as "AI4 Plus" or "AI4.1," is expected to go into production around mid-2027, dependent on Samsung completing the necessary modifications.
+
+5. **FSD approved in Netherlands; EU-wide review expected:** FSD received regulatory approval in the Netherlands. The supervised FSD submission was expected to go to Brussels for EU-wide review in May 2026, with a broader EU approval potentially in Q2 2026. China FSD approval is being pursued with regulators, and Tesla hopes to receive it by Q3 2026. FSD paid customers reached nearly 1.3 million globally, with the bulk of growth from subscriptions. Churn rates are declining, indicating improving product satisfaction.
+
+6. **FSD unsupervised release to customer cars expected in Q4 2026:** Elon said he expects unsupervised FSD to begin rolling out to the general customer fleet in Q4 2026, but the rollout will be gradual — geography by geography — as Tesla confirms each area is safe.
+
+## Robotaxi
+
+1. **Robotaxi operating in three cities with zero incidents:** Tesla's unsupervised robotaxi service is currently running in Austin, Dallas, and Houston, all using the same V14.3 software base deployed in the Bay Area. Elon emphasized that to date there have been zero accidents or injuries across the entire robotaxi program and described safety validation as the primary bottleneck for expansion, not technology readiness per se.
+
+2. **Expansion target of roughly a dozen states by year-end:** Elon stated Tesla hopes to have unsupervised FSD or robotaxi operating in "a dozen or so states" by the end of 2026, with a cautious, validated rollout approach. He acknowledged robotaxi revenue will not be "super material" in 2026 but expects it to be "material in a significant way" in 2027.
+
+3. **Operational challenges dominate over safety issues:** Elon and his team described the most common robotaxi operational problems as "convenience" issues rather than direct safety failures — including the vehicle getting "scared" to cross railroad tracks, getting stuck at permanently red lights, and literal infinite loops around construction zones. A specific anecdote was shared about a line of Tesla robotaxis blocked in a left-turn lane in Austin because a Waymo had crashed into a bus, preventing the lane from clearing. These edge cases are the primary focus of ongoing engineering work.
+
+4. **QA fleet expanding across the US:** Tesla is growing its quality assurance fleet nationwide to accelerate safety validation. The team uses both real-world intervention data and neural network-based simulation to evaluate what would have happened in edge cases and makes expansion decisions based on those analyses.
+
+5. **Robotaxi fleet growing quarter-over-quarter:** The CFO confirmed the robotaxi fleet grew quarter-over-quarter in Q1 2026 and that Tesla is making deliberate infrastructure investments to support further fleet growth and geographic expansion. Robotaxi revenue is currently captured under the Services and Other segment.
+
+6. **Robotaxi strategy in Europe is premature:** Elon cautioned against expectations for a near-term robotaxi launch in Europe, noting that obtaining supervised FSD approval alone took an "immense amount of time." The timeline for unsupervised FSD or robotaxi approval in Europe is uncertain and dependent on regulators.
+
+## Humanoid Bots
+
+1. **Optimus V3 design nearly complete, reveal planned for mid-2026:** Elon said the Optimus V3 design is "almost ready to demonstrate," with some aesthetic elements still being finalized. He indicated a reveal is likely around mid-2026, though Tesla is deliberately delaying the public showing to prevent competitors from performing frame-by-frame analysis and copying the design — as has happened with previous Optimus unveils.
+
+2. **Optimus production to begin at Fremont later in 2026:** Tesla is converting Fremont's Model S/X production line to Optimus manufacturing. The last Model S/X units will be produced in early May 2026, after which the final assembly line will be dismantled. Elon noted the full process — dismantling the existing line, installing the new Optimus line, wiring, commissioning — takes several months, and transitioning in approximately four months would be "an insanely fast speed" unprecedented in manufacturing. He estimated production start in the late July–August 2026 timeframe.
+
+3. **Production ramp will be very slow initially:** Elon strongly cautioned against expecting significant Optimus output in 2026, explaining that with over 10,000 unique components, production speed is determined by "the least lucky, slowest, dumbest part." He described any near-term production rate prediction as "impossible" and said volume production would ramp meaningfully in 2027. Initial skills for factory-deployed Optimus will be simple tasks, building up from there.
+
+4. **Second Optimus factory under construction at Giga Texas:** A second Optimus manufacturing facility is being constructed at the Giga Texas campus, expected to begin production around summer 2027.
+
+5. **Optimus intelligence architecture — local plus cloud:** Elon described a hybrid intelligence model for Optimus: sufficient local on-board intelligence (similar to how Tesla cars operate without connectivity) to continue functioning if disconnected, combined with cloud-based orchestration via Grok for higher-level management and voice interaction. He characterized Grok's management role as analogous to a manager overseeing workers — Optimus could likely work for "several hours without any management oversight."
+
+6. **Optimus remains Tesla's biggest product conviction:** Elon reiterated his view that Optimus will be "the biggest product ever" — not just Tesla's biggest, but in history — and that he remains "convinced of that conclusion." External Optimus deployment (outside Tesla) is tentatively targeted for sometime in 2027.
+
+## Energy
+
+1. **Q1 2026 energy storage deployment declined sequentially:** Tesla deployed 6.8 gigawatt-hours of energy storage in Q1 2026, a 38% sequential decline, described as consistent with the inherently "lumpy" nature of the business tied to customer deployment timelines. Despite the quarter's decline, management reiterated that full-year 2026 deployments are expected to exceed 2025 totals.
+
+2. **Energy gross margins hit record 39.5% with one-time benefits:** The energy segment posted over 39.5% gross margin in Q1 2026, partly due to one-time tariff recognition benefits exceeding $250 million from tariffs paid in prior quarters. Management guided that margins will compress from this level due to increasing competition and ongoing tariff impacts on battery cells sourced from China.
+
+3. **Megapack 3 production launch planned later in 2026:** Elon announced that Megapack 3 production will begin later in 2026 at a new factory outside Houston, described as a "world-class facility."
+
+4. **Solar market in correction; Tesla launching lease product:** The US residential solar market is experiencing a downturn following the loss of the homeowner tax credit, but Tesla sees demand recovering in the second half of 2026. Tesla introduced a solar lease product this year to capture tax credits directly and offer competitive pricing to homeowners. Tesla also debuted its own solar panel and mounting system, creating a fully integrated home energy ecosystem.
+
+## Electric Vehicles
+
+1. **Demand resurgence in EMEA and Asia:** CFO Vaibhav Taneja noted over 150% quarter-over-quarter delivery growth in France and Germany in Q1 2026, and growth in South Korea and Japan. Even in the US, slight quarter-over-quarter delivery growth was observed. Tesla ended Q1 with its highest Q1 order backlog in over two years, with the improvement attributed partly to gas price increases but primarily to more compelling and affordable vehicles.
+
+2. **Cybercab production has just started:** Elon confirmed that Cybercab production has just begun, describing it as early on the S-curve with very slow initial ramp expected, accelerating toward year-end and into 2027. He characterized Cybercab as a "compact two-person vehicle" and suggested it could eventually become the dominant vehicle in Tesla's lineup, since 90% of miles driven involve only one or two people.
+
+3. **Semi-truck production starting soon:** Tesla Semi production is also beginning, with the same S-curve ramp dynamic expected — slow start, accelerating through year-end and into 2027.
+
+4. **New Tesla Roadster debut potentially within a month:** Elon mentioned that the new Tesla Roadster could potentially be debuted "in a month or so," pending testing and validation to ensure a smooth demo. He described it as potentially "one of the most spectacular demos ever," though acknowledged it won't "move the needle massively" from a revenue standpoint.
+
+5. **Battery pack capacity is the primary production constraint:** Management identified battery pack capacity — not cell supply per se — as the current main limiter on vehicle production. Remedies underway include: ramping in-house 4680 cells in Berlin (Model Y packs); retooling the Reno/Giga Nevada battery pack facility for more efficient output; and ramping in-house LFP module production in China.
+
+6. **Giga Berlin set a record in Q1 2026:** Giga Berlin reached record output of over 61,000 units in Q1 2026, supported by the ramp of in-house 4680 battery packs for the Model Y.
+
+7. **Autonomous vehicles to dominate future lineup:** Elon stated that long-term, almost the entire Tesla lineup will consist of autonomous vehicles of different sizes, with the only manually driven car being the new Tesla Roadster.
+
+## Financials
+
+1. **Automotive margins improved sequentially:** Auto gross margins excluding credits improved from 17.9% to 19.2% sequentially. The improvement included approximately $230 million in one-time warranty-related benefits. Tariffs and high interest rates continue to pressure automotive costs, with interest rate subvention costs recognized upfront.
+
+2. **Capex guidance of over $25 billion for 2026:** Management guided to over $25 billion in capital expenditures for 2026, covering six factories moving toward operation, AI infrastructure for robotaxi and Optimus, the Terafab research semiconductor fab in Austin, and solar manufacturing equipment. Free cash flow ended Q1 at approximately $1.44 billion, and management explicitly warned of negative free cash flow for the remainder of 2026 due to this investment phase.
+
+3. **FSD adoption approaching 1.3 million paid customers:** Tesla's FSD subscriber count reached nearly 1.3 million globally by Q1 2026, with most growth from subscriptions. Upfront FSD purchases grew only 7% after Tesla removed the purchase option in some markets. Subscriber churn is declining.
+
+4. **Bitcoin mark-to-market and FX headwinds:** Net income was negatively impacted by mark-to-market losses on Bitcoin holdings (Bitcoin depreciated 22% in the quarter) and unfavorable foreign exchange impacts from large intercompany transactions.
+
+5. **Services and Other margins improved:** The Services and Other segment gross margin improved from 8.8% to 9.2% sequentially, encompassing service centers, used cars, paid Supercharging, parts, insurance, and the emerging robotaxi business.
+
+## Market & Competition
+
+1. **Terafab: research fab at Giga Texas, SpaceX handling scaled fab:** Tesla plans to build a research semiconductor fabrication facility ("Terafab") on the Giga Texas campus, described as approximately a $3 billion initiative capable of producing a few thousand wafer starts per month. SpaceX will handle the initial phase of the larger-scale Terafab. Decisions require independent director review and board approval from both Tesla and SpaceX. Intel is partnering with Tesla to use Intel's 14A process technology, described as state-of-the-art.
+
+2. **AI5 chip taped out early; AI6 and Dojo 3 in early stages:** The AI5 chip tape-out was completed ahead of schedule after six months of weekend and holiday work by the team. Elon called it "probably the best AI inference chip for edge compute that exists." AI5 is planned for Optimus and data centers, not immediately for vehicles, since AI4 is expected to be sufficient for unsupervised FSD well above human safety levels. Early momentum exists for designing AI6, and discussions about Dojo 3 have begun.
+
+3. **Optimus competitors actively copying Tesla's designs:** Elon explicitly cited that competitors perform frame-by-frame analysis of every Optimus reveal and copy the design, which is the key reason Tesla is delaying the V3 reveal until closer to production start.
+
+4. **Long-term chip supply is the core Terafab motivation:** Elon clarified that Terafab is not about gaining negotiating leverage over chip suppliers, but about ensuring Tesla has access to sufficient AI chip supply as it scales — noting the industry's production growth rate for both logic and memory chips cannot keep pace with Tesla's projected needs, particularly if AI satellites or similar deployments become reality.
+
+---
+
+**Notable quotes and data:**
+
+- *"I think Optimus will be our biggest product, not just Tesla's biggest product ever, but probably the biggest product ever."* — Elon Musk
+- *"If we're able to go from stopping production on one line, dismantling that entire line, reinstalling a whole new line, and turning that on in a matter of 4 months, that is an insanely fast speed. I don't think any other company on Earth has ever done that before."* — Elon Musk
+- *"14.3 is the last piece of the puzzle for unsupervised FSD."* — Elon Musk
+- *"Hardware 3 has only 1/8 of the memory bandwidth of hardware 4."* — Elon Musk
+- *"We haven't had any injuries and certainly no fatalities to date with the unsupervised FSD and robotaxi expansion."* — Elon Musk
+- *"We certainly hope to have unsupervised FSD or robotaxi operating in a dozen or so states by the end of this year."* — Elon Musk
+- *"Unsupervised FSD or robotaxi revenue will not be super material this year, but it will be material — probably in a significant way — next year."* — Elon Musk
+- Giga Berlin record output: **61,000+ units** in Q1 2026
+- Energy storage deployed in Q1 2026: **6.8 GWh** (down 38% sequentially)
+- Energy gross margin Q1 2026: **over 39.5%** (includes ~$250M one-time tariff benefit)
+- Auto gross margin ex-credits: improved from **17.9% to 19.2%**
+- FSD paid customers: **nearly 1.3 million globally**
+- 2026 capex guidance: **over $25 billion**
+- Free cash flow end of Q1: **~$1.44 billion**
+- Warranty one-time benefit: **~$230 million**
+- AI4 Plus: **16 GB → 32 GB RAM per SOC (64 GB total)**, ~10% compute increase, targeting mid-2027 production
+- Terafab research fab: **~$3 billion** initiative, **few thousand wafer starts/month**, using **Intel 14A process**
+- V14 for hardware 3: expected **end of June 2026**
+- Unsupervised FSD to customer cars: **expected Q4 2026**
+- Optimus V3 reveal: **approximately mid-2026**
+- Optimus Fremont production start: **late July–August 2026 timeframe**
+- Second Optimus factory (Giga Texas): **production expected around summer 2027**
