@@ -6,6 +6,7 @@ import { type Article, type NewsData, CHANNEL_META } from './types'
 import { ArticleDetail } from './components/Feed/ArticleDetail'
 import { FeedSection } from './components/Feed/FeedSection'
 import { KnowledgeSection } from './components/KnowledgeBase/KnowledgeSection'
+import { DataSection } from './components/Data/DataSection'
 import { StockWidget } from './components/Stock/StockWidget'
 import { StockChart } from './components/Stock/StockChart'
 import { useStockQuote } from './components/Stock/useStockQuote'
@@ -13,10 +14,26 @@ import { useStockQuote } from './components/Stock/useStockQuote'
 const data = newsData as NewsData
 const CATALYSTS: { date: string; event: string; hot: boolean }[] = catalystsData
 
-type Section = 'feed' | 'knowledge'
+const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
+
+type Section = 'feed' | 'data' | 'valuations'
+const SECTION_LABELS: Record<Section, string> = {
+  feed: 'Daily Feed',
+  data: 'Data',
+  valuations: 'Valuations',
+}
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState<Section>('feed')
+  const [activeSection, setActiveSection] = useState<Section>(() => {
+    if (typeof window !== 'undefined' && window.location.hash === '#valuations') {
+      return 'valuations'
+    }
+    return 'feed'
+  })
+  const [dataSeen, setDataSeen] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false
+    return window.localStorage.getItem('ttt-data-seen') === 'true'
+  })
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
@@ -33,7 +50,17 @@ export default function App() {
 
   const handleTabSwitch = useCallback((key: Section) => {
     setActiveSection(key)
-    track('Tab Switch', { tab: key === 'feed' ? 'Daily Feed' : 'Valuations' })
+    if (typeof window !== 'undefined' && window.location.hash) {
+      history.replaceState(null, '', window.location.pathname + window.location.search)
+    }
+    if (key === 'data') {
+      setDataSeen(prev => {
+        if (!prev) window.localStorage.setItem('ttt-data-seen', 'true')
+        return true
+      })
+      track('Data View')
+    }
+    track('Tab Switch', { tab: SECTION_LABELS[key] })
   }, [])
 
   const handleArticleOpen = useCallback((article: Article) => {
@@ -79,7 +106,7 @@ export default function App() {
             <nav className="flex items-center gap-2">
               {([
                 ['feed', 'DAILY_FEED'],
-                ['knowledge', 'VALUATIONS'],
+                ['data', 'DATA'],
               ] as const).map(([key, label]) => (
                 <button
                   key={key}
@@ -91,6 +118,9 @@ export default function App() {
                   }`}
                 >
                   {label}
+                  {key === 'data' && !dataSeen && activeSection !== 'data' && new Date() < DATA_BADGE_UNTIL && (
+                    <span className="ml-1 text-green text-[10px]">[NEW]</span>
+                  )}
                 </button>
               ))}
               <a
@@ -216,7 +246,8 @@ export default function App() {
               <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
             </>
           )}
-          {activeSection === 'knowledge' && <KnowledgeSection onSelectArticle={handleArticleOpen} />}
+          {activeSection === 'data' && <DataSection />}
+          {activeSection === 'valuations' && <KnowledgeSection onSelectArticle={handleArticleOpen} />}
         </div>
       </div>
 
