@@ -8563,5 +8563,210 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-23T04:26:01.738Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla's 2026 capex guidance is over $25 billion, covering six factories, AI infrastructure, Optimus launch, and the Austin research semiconductor fab.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Represents a massive capital investment phase expected to last a couple of years and result in negative free cash flow for the remainder of 2026.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD approved in the Netherlands; EU-wide approval expected in Q2 2026 after Brussels review in May; China broader approval targeted for Q3 2026.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Regulatory approvals in Europe and China are key catalysts for FSD revenue and vehicle demand expansion in those markets.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 — a complete software architecture overhaul running on AI4 — is targeted for release by end of 2026 or early 2027.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "V15 is expected to substantially increase FSD safety beyond already-above-human levels and is a prerequisite for very large-scale unsupervised deployment.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised FSD rollout to the customer fleet is expected to begin in Q4 2026, on a geographically gradual basis.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First broad consumer access to unsupervised FSD; rollout will proceed city by city as safety is confirmed in each geography.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A distilled version of FSD V14 for Hardware 3 vehicles is expected to launch by end of June 2026, enabling park-to-destination driving.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Extends meaningful FSD capability to the large Hardware 3 installed base while full unsupervised capability remains Hardware 4 exclusive.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI4.1 chip upgrade: RAM increases from 16 GB to 32 GB per SOC (64 GB total), with approximately 10% more compute and improved memory bandwidth; production targeted for mid-2027, dependent on Samsung.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Extends the AI4 vehicle hardware platform's useful life and capability; Samsung dependency adds timeline risk.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's unsupervised robotaxi service is operating in Austin, Dallas, and Houston with zero accidents or injuries to date as of Q1 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Safety record supports continued expansion; zero-incident record cited as the basis for regulatory and operational confidence.",
+    "field": "safety_metrics",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla targets robotaxi operations in approximately a dozen or more US states by end of 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Represents a significant geographic expansion from the current three-city footprint (Austin, Dallas, Houston).",
+    "field": "fleet_size",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The Tesla FSD customer fleet is approaching 10 billion cumulative miles driven, expected within the next few weeks of the Q1 2026 call.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10000000000,
+    "context": "Key dataset used to validate safety for unsupervised deployment expansion; serves as the primary real-world safety validation corpus.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi fleet grew quarter over quarter in Q1 2026; continued ramp planned as geographic expansion accelerates.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "context": "No specific fleet size number given, but sequential growth confirmed; infrastructure investments are being made to support scaling.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production has just started as of Q1 2026; Semi production beginning soon; both will ramp slowly then accelerate toward year-end and into 2027.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks the formal start of Cybercab production, a major milestone for the robotaxi fleet ramp.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus startup production at Fremont targeted for late July to August 2026; Model S/X line dismantled by May 2026 to make way.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First formal production timeline for Optimus at Fremont; four-month line swap from S/X to Optimus described as unprecedented speed.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A second Optimus factory is under construction at Giga Texas, targeted to begin production around summer 2027.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Second production site adds significant future capacity; summer 2027 start aligns with the ramp-up phase Musk expects to yield meaningful Optimus volumes.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus V3 reveal deferred to approximately mid-2026 to minimize competitive intelligence leakage; design is functionally complete, pending aesthetic finalization.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Reveal timing deliberately tied to production readiness to limit frame-by-frame analysis by competitors.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus expected to be deployable outside Tesla sometime in 2027.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First indication of external commercialization timeline for Optimus; represents a major new revenue stream if achieved.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Megapack 3 production will begin later in 2026 at a new factory outside Houston.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "New flagship energy storage product launching at a new facility; signals Tesla's intent to scale energy storage manufacturing capacity significantly.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla AI5 chip taped out early after six months of continuous weekend work; targeted for Optimus and data center use, not near-term vehicle deployment.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "AI5 tape-out is a major semiconductor milestone; its redirection from vehicles to Optimus/data center reflects AI4's sufficiency for unsupervised FSD.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla research semiconductor fab planned at Giga Texas campus: approximately $3 billion investment, capacity of a few thousand wafer starts per month, covering logic, memory, packaging, and mask creation under one roof; using Intel's 14A process node.",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Unique integrated chip R&D facility; SpaceX will handle the initial phase of the larger-scale Terafab. Construction orders already placed.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model S/X final production scheduled for early May 2026; final assembly line dismantled next month to begin Optimus line installation.",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "End of a major vehicle program frees Fremont capacity for Optimus; timing is critical path for Optimus production start.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is designing AI6 and has begun preliminary discussions on Dojo 3.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Long-horizon chip and compute roadmap signals continued vertical integration in AI hardware development.",
+    "source": "20260422_tesla_01_Tesla_Q1_2026_Financial_summary.txt",
+    "channel": "tesla",
+    "extractedAt": "2026-04-23T06:58:40.061Z",
+    "status": "pending"
   }
 ]
