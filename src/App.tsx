@@ -97,7 +97,7 @@ export default function App() {
                 href="https://buymeacoffee.com/theteslathesis"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => track('Coffee Click', { location: 'header' })}
+                onClick={() => track('Support Click', { location: 'header' })}
                 className="px-3 py-1.5 text-xs font-bold whitespace-nowrap cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
               >
                 SUPPORT [TTT]
@@ -119,11 +119,11 @@ export default function App() {
                 onClick={handleChartOpen}
                 className="cursor-pointer group"
               >
-                <h3 className="text-green text-xs font-bold mb-2">NASDAQ:TSLA</h3>
+                <h3 className="text-text-bright text-xs font-bold mb-2">NASDAQ:TSLA</h3>
                 <StockWidget {...stockData} />
               </div>
               <div className="flex flex-col overflow-hidden" style={stockBoxHeight ? { height: `${stockBoxHeight}px` } : undefined}>
-                <h3 className="text-green text-xs font-bold mb-2 flex-shrink-0">NEXT CATALYSTS</h3>
+                <h3 className="text-text-bright text-xs font-bold mb-2 flex-shrink-0">NEXT CATALYSTS</h3>
                 <div className="border border-border bg-surface p-3 text-xs flex-1 overflow-y-auto min-h-0 space-y-1">
                   {CATALYSTS.map((c, i) => (
                     <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
@@ -179,7 +179,7 @@ export default function App() {
           {activeSection === 'feed' && (
             <>
               <div className="flex items-center gap-2 mb-4">
-                <h3 className="text-green text-xs font-bold">NEWS FEED</h3>
+                <h3 className="text-text-bright text-xs font-bold">NEWS FEED</h3>
                 <span className="text-text-dim text-xs">//</span>
                 <div ref={filterRef} className="relative">
                   <button
@@ -192,7 +192,7 @@ export default function App() {
                     <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
                       <button
                         onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
-                        className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
+                        className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
                           !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                         }`}
                       >
@@ -202,7 +202,7 @@ export default function App() {
                         <button
                           key={ch}
                           onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
-                          className={`px-3 py-1.5 text-xs text-left cursor-pointer transition-colors ${
+                          className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
                             selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                           }`}
                         >
@@ -227,7 +227,7 @@ export default function App() {
           <div>
             <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
             {' // '}
-            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Coffee Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">support [TTT]</a>
+            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Support Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">support [TTT]</a>
           </div>
         </div>
       </footer>

@@ -26,7 +26,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
         return (
           <div key={date}>
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-green text-xs font-bold">{formatDate(date)}</span>
+              <span className="text-green-dim text-xs font-bold">{formatDate(date)}</span>
               <span className="flex-1 border-t border-border" />
               <span className="text-text-dim text-xs">{articles.length} items</span>
             </div>

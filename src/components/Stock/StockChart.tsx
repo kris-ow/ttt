@@ -141,7 +141,7 @@ export function StockChart({ onClose }: { onClose: () => void }) {
 
         <div className="border border-border bg-surface p-3" onClick={e => e.stopPropagation()}>
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-            <h2 className="text-green text-sm font-bold">TSLA PRICE CHART</h2>
+            <h2 className="text-text-bright text-sm font-bold">TSLA PRICE CHART</h2>
             <div className="flex items-center gap-1">
               {RANGES.map(r => (
                 <button
