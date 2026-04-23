@@ -1,0 +1,32 @@
+Channel:     electrek
+Title:       Tesla announces HW4 Plus with doubled memory — will HW4 follow HW3 to the grave?
+Published:   2026-04-23 09:33 UTC
+Summarized:  2026-04-23 11:35:34 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01T6oE8jTqutygKmjzCvuvbv
+Cost:        $0.01659 (2862 in / 1639 out tokens)
+Categories:  Autonomous Driving, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+During Tesla's Q1 2026 earnings call, Elon Musk announced an "AI4.1 or AI4 Plus" upgrade to Tesla's self-driving computer that doubles RAM from 16GB to 32GB per chip (64GB total) and delivers roughly a 10% increase in compute and memory bandwidth. The announcement raises questions about whether HW4 will follow HW3's fate as hardware that ultimately proves insufficient for unsupervised FSD.
+
+## Autonomous Driving
+
+1. **AI4 Plus specs and timeline:** Musk described the upgrade as moving from 16GB to 32GB per SoC (64GB total), with approximately a 10% increase in compute and memory bandwidth. He said it would go into production "next year" (2027), dependent on Samsung completing modifications. Samsung currently fabricates AI4 chips on a 7nm process.
+
+2. **AI4.5 already shipping:** In January 2026, Tesla quietly began shipping a revised "AI4.5" computer in 2026 Model Y vehicles built at Fremont, using an apparent three-chip design versus AI4's original two-chip architecture. This was never formally announced. The upgrade path is now AI4 → AI4.5 (shipped) → AI4 Plus (announced for 2027) — three hardware revisions in roughly two years.
+
+3. **AI5 directed away from vehicles:** Musk explained that AI5 will go into Optimus robots and data centers rather than vehicles, since Tesla considers AI4 sufficient for unsupervised FSD. He cited AI4's memory bandwidth — approximately 384 GB/s using GDDR6 — as already exceeding NVIDIA's Orin (~205 GB/s) and Thor (~273 GB/s), but noted total memory capacity (32GB vs. Orin's 64GB) as a current gap the AI4 Plus addresses.
+
+4. **HW3 admission and retrofit obligation:** On the same call, Musk confirmed that HW3 "simply does not have the capability" for unsupervised FSD, citing memory bandwidth as the choke point — HW3 has one-eighth the bandwidth of HW4. Tesla is now planning "micro-factories" to retrofit approximately 4 million HW3 vehicles, representing an admission that customers who paid up to $15,000 for FSD on HW3 were sold hardware that cannot deliver it.
+
+## Editorial Stance
+Electrek's Fred Lambert argues Tesla has exhausted its credibility on hardware sufficiency claims — having been proven right about HW3's limitations — and that Tesla's own iterative hardware actions (AI4.5, AI4 Plus) contradict Musk's assertion that AI4 is sufficient, though Lambert acknowledges AI4 is genuinely more capable than HW3 and the gap to unsupervised FSD may be smaller.
+
+Notable quotes and data:
+- Musk: "Memory bandwidth is the choke point" for AI inference
+- Musk: AI4 Plus will go "from 16 gigabytes to I think 32 gigabytes per SoC. So 64 gigabytes total, and probably a 10% increase in compute and in memory bandwidth"
+- Musk called it "AI4.1 or AI4 Plus"; production contingent on Samsung modifications
+- AI4 bandwidth: ~384 GB/s (GDDR6); Orin: ~205 GB/s; Thor: ~273 GB/s
+- HW3 retrofit scope: ~4 million vehicles; Tesla proposing dedicated "micro-factories"
+- FSD package sold to HW3 owners for up to $15,000

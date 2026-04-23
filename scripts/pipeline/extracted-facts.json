@@ -8821,5 +8821,47 @@
     "channel": "electrek",
     "extractedAt": "2026-04-23T09:05:58.183Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla announced AI4 Plus upgrade doubling RAM from 16GB to 32GB per chip (64GB total) with ~10% increase in compute and memory bandwidth",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Directly relevant to FSD hardware capability roadmap and whether HW4 can sustain unsupervised FSD long-term",
+    "source": "20260423_electrek_03_Tesla_Announces_Hw4_Plus_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T11:35:34.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI4 Plus production targeted for 2027, contingent on Samsung completing chip modifications",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Samsung milestone tied to Tesla's next hardware revision; production year explicitly stated as next year from Q1 2026 earnings call",
+    "source": "20260423_electrek_03_Tesla_Announces_Hw4_Plus_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T11:35:34.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla quietly shipped AI4.5 in January 2026 in 2026 Model Y at Fremont, using an apparent three-chip design versus AI4's two-chip architecture",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Unannounced hardware revision already in production ahead of formally announced AI4 Plus",
+    "source": "20260423_electrek_03_Tesla_Announces_Hw4_Plus_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T11:35:34.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI4 memory bandwidth approximately 384 GB/s (GDDR6); NVIDIA Orin ~205 GB/s; NVIDIA Thor ~273 GB/s; AI4 total RAM currently 32GB vs. Orin's 64GB",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Hardware specs relevant to FSD capability assessment; memory capacity gap is the specific limitation AI4 Plus addresses",
+    "source": "20260423_electrek_03_Tesla_Announces_Hw4_Plus_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-23T11:35:34.122Z",
+    "status": "pending"
   }
 ]
