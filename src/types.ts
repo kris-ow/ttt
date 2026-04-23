@@ -30,5 +30,5 @@ export const CHANNEL_META: Record<string, { name: string; platform: string; colo
   jobhakdi: { name: 'Jo Bhakdi', platform: 'YouTube', color: '#f59e0b', bias: 'BULL' },
   munrolive: { name: 'Sandy Munro', platform: 'YouTube', color: '#a3e635', bias: 'NEUTRAL' },
   sawyermerritt: { name: 'Sawyer Merritt', platform: 'X', color: '#6366f1', bias: 'LEAN BULL' },
-  tesla: { name: 'Tesla IR', platform: 'YouTube', color: '#e31937', bias: 'BULL' },
+  tesla: { name: 'Tesla Official', platform: 'YouTube', color: '#e31937', bias: 'BULL' },
 }

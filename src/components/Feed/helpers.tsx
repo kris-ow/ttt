@@ -28,7 +28,9 @@ export function renderInline(text: string) {
 export function channelShort(channel: string, sourceType: string) {
   const ch = CHANNEL_META[channel]
   const prefix = sourceType === 'x' ? '[X]' : sourceType === 'article' ? '[WEB]' : '[YT]'
-  return `${prefix} ${ch?.name || channel}`
+  const label = `${prefix} ${ch?.name || channel}`
+  if (channel === 'tesla') return <span className="text-white">{label}</span>
+  return label
 }
 
 const BIAS_STYLE: Record<Bias, string> = {

@@ -91,11 +91,18 @@ const uniqueArticles = [...deduped.values()];
 const removed = articles.length - uniqueArticles.length;
 if (removed > 0) console.log(`Deduplicated: removed ${removed} duplicate(s)`);
 
-// Group by date
+// Group by date, with tesla pinned first within each day
 const byDate = {};
 for (const article of uniqueArticles) {
   if (!byDate[article.date]) byDate[article.date] = [];
   byDate[article.date].push(article);
+}
+for (const date of Object.keys(byDate)) {
+  byDate[date].sort((a, b) => {
+    if (a.channel === 'tesla' && b.channel !== 'tesla') return -1;
+    if (b.channel === 'tesla' && a.channel !== 'tesla') return 1;
+    return 0;
+  });
 }
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
