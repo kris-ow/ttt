@@ -37,6 +37,8 @@ OPERATIONAL_METRICS = {
     "Active FSD Subscriptions": "fsd_subscriptions_mil",
 }
 
+# Order matters: longer/more-specific labels listed first so they match before
+# their shorter prefixes (e.g. "...excluding regulatory..." before bare "Automotive gross margin").
 FINANCIAL_METRICS = {
     "Total automotive revenues": "revenue_auto",
     "Energy generation and storage revenue": "revenue_energy",
@@ -44,6 +46,10 @@ FINANCIAL_METRICS = {
     "Total revenues": "revenue_total",
     "Total gross profit": "gross_profit",
     "Total GAAP gross margin": "gross_margin_pct",
+    # Prefix covers both "...excluding regulatory credits (non-GAAP)" (old) and "...credit sales (non-GAAP)" (new)
+    "Automotive gross margin excluding": "auto_gross_margin_ex_credits_pct",
+    "Automotive gross margin (GAAP)": "auto_gross_margin_pct",
+    "Automotive gross margin": "auto_gross_margin_pct",
     "Income from operations": "operating_income",
     "Operating margin": "operating_margin_pct",
     "Adjusted EBITDA": "ebitda",
@@ -55,6 +61,8 @@ FINANCIAL_METRICS = {
     "Net cash provided by operating activities": "operating_cash_flow",
     "Capital expenditures": "capex",
     "Free cash flow": "free_cash_flow",
+    # Label changed 2026: "...and investments" (old) → "...and short-term investments" (new)
+    "Cash, cash equivalents and short-term investments": "cash_and_investments",
     "Cash, cash equivalents and investments": "cash_and_investments",
 }
 
@@ -174,6 +182,13 @@ def extract_table(text, metric_map):
             j = i + 1
             while len(values) < num_cols and j < len(lines):
                 candidate = lines[j]
+
+                # Skip standalone footnote markers like "(1)" through "(99)"
+                # Without this, parse_number("(1)") → -1.0 pollutes the first column
+                if re.match(r"^\(\d{1,2}\)$", candidate.strip()):
+                    j += 1
+                    continue
+
                 # Stop if it looks like a metric name (not a value)
                 if not is_value_line(candidate) and parse_number(candidate) is None:
                     # Could be the next metric or a footnote — check

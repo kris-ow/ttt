@@ -1,12 +1,15 @@
 import { useState } from 'react'
 import quarterlyData from '../../data/quarterly-metrics.json'
 
-type MetricFormat = 'usd_m' | 'pct' | 'int' | 'gwh' | 'mw' | 'mil'
+type MetricFormat = 'usd_m' | 'pct' | 'int' | 'gwh' | 'mw' | 'mil' | 'usd' | 'days'
 
 interface MetricDef {
   key: string
   label: string
   format: MetricFormat
+  // Display absolute value — used for capex, which is stored as a negative cash outflow
+  // but conventionally shown as a positive spending figure.
+  absolute?: boolean
 }
 
 interface SectionDef {
@@ -21,16 +24,21 @@ const SECTIONS: SectionDef[] = [
       { key: 'revenue_total', label: 'TOTAL REVENUE', format: 'usd_m' },
       { key: 'gross_margin_pct', label: 'GROSS MARGIN (GAAP)', format: 'pct' },
       { key: 'operating_margin_pct', label: 'OPERATING MARGIN (GAAP)', format: 'pct' },
+      { key: 'net_income_gaap', label: 'NET INCOME (GAAP)', format: 'usd_m' },
+      { key: 'eps_non_gaap', label: 'EPS (NON-GAAP)', format: 'usd' },
       { key: 'free_cash_flow', label: 'FREE CASH FLOW', format: 'usd_m' },
+      { key: 'capex', label: 'CAPEX', format: 'usd_m', absolute: true },
+      { key: 'cash_and_investments', label: 'CASH & INVESTMENTS', format: 'usd_m' },
     ],
   },
   {
     title: 'AUTO',
     metrics: [
       { key: 'revenue_auto', label: 'AUTO REVENUE', format: 'usd_m' },
+      { key: 'auto_gross_margin_pct', label: 'AUTO GROSS MARGIN (GAAP)', format: 'pct' },
       { key: 'production_total', label: 'PRODUCTION', format: 'int' },
       { key: 'delivery_total', label: 'DELIVERIES', format: 'int' },
-      { key: 'supercharger_stations', label: 'SUPERCHARGER STATIONS', format: 'int' },
+      { key: 'inventory_days', label: 'INVENTORY (DAYS OF SUPPLY)', format: 'days' },
     ],
   },
   {
@@ -41,8 +49,10 @@ const SECTIONS: SectionDef[] = [
     ],
   },
   {
-    title: 'AUTONOMY',
+    title: 'SERVICES',
     metrics: [
+      { key: 'revenue_services', label: 'SERVICES REVENUE', format: 'usd_m' },
+      { key: 'supercharger_stations', label: 'SUPERCHARGER STATIONS', format: 'int' },
       { key: 'fsd_subscriptions_mil', label: 'FSD SUBSCRIPTIONS', format: 'mil' },
     ],
   },
@@ -55,6 +65,8 @@ const VALUE_HEADER: Record<MetricFormat, string> = {
   gwh: 'GWh',
   mw: 'MW',
   mil: 'M',
+  usd: '$',
+  days: 'DAYS',
 }
 
 const data = quarterlyData as {
@@ -123,6 +135,8 @@ function formatNumber(val: number | null | undefined, fmt: MetricFormat): string
     case 'gwh': return val.toFixed(1)
     case 'mw': return Math.round(val).toLocaleString()
     case 'mil': return val.toFixed(2)
+    case 'usd': return val.toFixed(2)
+    case 'days': return Math.round(val).toLocaleString()
   }
 }
 
@@ -141,13 +155,21 @@ function formatWithUnit(val: number | null | undefined, fmt: MetricFormat): stri
     case 'gwh': return num + ' GWh'
     case 'mw': return num + ' MW'
     case 'mil': return num + 'M'
+    case 'usd': return '$' + num
+    case 'days': return num + ' DAYS'
   }
   return num
 }
 
+function seriesValue(metric: MetricDef, period: string | null | undefined): number | null | undefined {
+  if (!period) return undefined
+  const raw = data.metrics[metric.key]?.[period]
+  if (raw == null) return raw
+  return metric.absolute ? Math.abs(raw) : raw
+}
+
 function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string[] }) {
-  const series = data.metrics[metric.key] || {}
-  const periodsWithData = periods.filter(p => series[p] != null)
+  const periodsWithData = periods.filter(p => data.metrics[metric.key]?.[p] != null)
   return (
     <div className="border-t border-border bg-bg overflow-x-auto">
       <table className="w-full text-xs">
@@ -161,9 +183,9 @@ function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string
         </thead>
         <tbody>
           {periodsWithData.map(p => {
-            const val = series[p]
-            const qoq = computeChange(val, series[previousQuarter(p) || ''], metric.format)
-            const yoy = computeChange(val, series[yearAgoQuarter(p) || ''], metric.format)
+            const val = seriesValue(metric, p)
+            const qoq = computeChange(val, seriesValue(metric, previousQuarter(p)), metric.format)
+            const yoy = computeChange(val, seriesValue(metric, yearAgoQuarter(p)), metric.format)
             return (
               <tr key={p} className="border-b border-border last:border-0">
                 <td className="text-text px-3 py-2 whitespace-nowrap">{periodLabel(p)}</td>
@@ -192,7 +214,7 @@ function MetricRow({ metric, latestPeriod, periods, expanded, onToggle }: {
   expanded: boolean
   onToggle: () => void
 }) {
-  const latest = data.metrics[metric.key]?.[latestPeriod]
+  const latest = seriesValue(metric, latestPeriod)
   return (
     <div className="border-b border-border last:border-0">
       <button
