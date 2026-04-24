@@ -1,13 +1,14 @@
-import { SESSION_LABELS, type StockState } from './helpers'
+import { SESSION_LABELS, formatTradeAge, type StockState } from './helpers'
 
 export function StockWidget(state: StockState) {
-  const { price, prevClose, open, high, low, lastUpdated, loading, error, session, live } = state
+  const { price, prevClose, open, high, low, tradeAt, lastUpdated, loading, error, session, live } = state
   const isExtended = session === 'PRE' || session === 'POST'
   const showingLastClose = isExtended && !live
   const change = price && prevClose ? price - prevClose : 0
   const changePct = prevClose ? (change / prevClose) * 100 : 0
   const isPositive = change >= 0
   const priceColor = showingLastClose ? 'text-text-dim' : (isPositive ? 'text-green' : 'text-red')
+  const staleLabel = !showingLastClose && live ? formatTradeAge(tradeAt) : null
   const sess = showingLastClose
     ? { label: 'LAST CLOSE // waiting for live...', cls: 'text-text-dim' }
     : SESSION_LABELS[session]
@@ -30,6 +31,7 @@ export function StockWidget(state: StockState) {
           </div>
           <div className="flex items-center gap-2 mb-2 text-xs">
             <span className={sess.cls}>{sess.label}</span>
+            {staleLabel && <span className="text-text-dim">• {staleLabel}</span>}
           </div>
           <div className="grid grid-cols-2 gap-2 text-xs">
             {[

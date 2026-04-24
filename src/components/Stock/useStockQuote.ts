@@ -1,21 +1,14 @@
 import { useState, useEffect } from 'react'
-import { STOCK_PROXY_URL, getMarketSession, type StockState } from './helpers'
+import { STOCK_PROXY_URL, getMarketSession, normalizeTradeAt, type StockState } from './helpers'
 
 export function useStockQuote() {
   const [state, setState] = useState<StockState>({
     price: null, prevClose: null, open: null, high: null, low: null,
-    lastUpdated: null, loading: true, error: null, session: getMarketSession(), live: false,
+    tradeAt: null, lastUpdated: null, loading: true, error: null,
+    session: getMarketSession(), live: false,
   })
 
   useEffect(() => {
-    const session = getMarketSession()
-    let wsWaitTimer: ReturnType<typeof setTimeout> | null = null
-    if (session === 'PRE' || session === 'POST') {
-      wsWaitTimer = setTimeout(() => {
-        setState(s => s.live ? s : { ...s, live: true })
-      }, 5_000)
-    }
-
     let ws: WebSocket | null = null
     let wsRetryTimeout: ReturnType<typeof setTimeout> | null = null
     let destroyed = false
@@ -35,6 +28,7 @@ export function useStockQuote() {
           const d = msg.data
           const session = getMarketSession()
           const effectiveClose = session === 'OPEN' ? d.prevClose : d.close
+          const incomingTradeAt = normalizeTradeAt(d.tradeAt)
           setState(s => ({
             ...s,
             price: d.price ?? s.price,
@@ -42,6 +36,7 @@ export function useStockQuote() {
             open: d.open ?? s.open,
             high: d.high ?? s.high,
             low: d.low ?? s.low,
+            tradeAt: incomingTradeAt ?? s.tradeAt,
             lastUpdated: new Date(),
             loading: false,
             error: null,
@@ -64,6 +59,8 @@ export function useStockQuote() {
 
     connectWs()
 
+    // Periodic session refresh (also drives re-renders so the "Xm ago" staleness
+    // indicator in StockWidget ticks forward even when no new quotes arrive).
     const sessionInterval = setInterval(() => {
       setState(s => ({ ...s, session: getMarketSession() }))
     }, 60_000)
@@ -72,7 +69,6 @@ export function useStockQuote() {
       destroyed = true
       ws?.close()
       if (wsRetryTimeout) clearTimeout(wsRetryTimeout)
-      if (wsWaitTimer) clearTimeout(wsWaitTimer)
       clearInterval(sessionInterval)
     }
   }, [])

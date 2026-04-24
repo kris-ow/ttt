@@ -7,10 +7,30 @@ export interface StockState {
   high: number | null
   low: number | null
   lastUpdated: Date | null
+  // Unix ms of the most recent real Finnhub WebSocket trade tick (from proxy).
+  // Used to judge "live but stale" — e.g., pre-market with long gaps between trades.
+  tradeAt: number | null
   loading: boolean
   error: string | null
   session: 'PRE' | 'OPEN' | 'POST' | 'CLOSED'
   live: boolean
+}
+
+// Staleness helpers for the tradeAt field.
+// Proxy may send tradeAt in seconds (Finnhub native) or ms. Normalize to ms.
+export function normalizeTradeAt(raw: number | null | undefined): number | null {
+  if (raw == null) return null
+  return raw < 1e12 ? raw * 1000 : raw
+}
+
+export function formatTradeAge(tradeAt: number | null, now: number = Date.now()): string | null {
+  if (tradeAt == null) return null
+  const ageSec = Math.max(0, Math.floor((now - tradeAt) / 1000))
+  if (ageSec < 60) return null
+  const mins = Math.floor(ageSec / 60)
+  if (mins < 60) return `${mins}m ago`
+  const hours = Math.floor(mins / 60)
+  return `${hours}h ago`
 }
 
 // NYSE holidays (dates when market is fully closed)
