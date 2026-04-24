@@ -1,0 +1,788 @@
+Channel:     futureaza
+Title:       How Vertical Integration Wins EV Charging
+URL:         https://www.youtube.com/watch?v=X-QkMSoCGfE
+Published:   2026-04-24 17:30 UTC
+Fetched:     2026-04-24 18:00 UTC
+
+────────────────────────────────────────────────────────────
+
+So, one thing Tesla has done that's
+pretty exceptional is make chargers that
+actually work almost all the time with
+almost all the things. And the way they
+were able to do it is with vertical
+integration. And it shows the software,
+the hardware all the way through to the
+car. Uh, other companies are vertically
+integrated, too. Maybe not all the way
+down to the car, but at least with all
+of the charging components, the
+manufacturing of it, the software, all
+of that. And they know what their parts
+are. They know how it works, and it
+makes them work. But why? How? That's
+what we're going to figure out. I'm
+Brian. Welcome to Futura.
+&gt;&gt; So, you guys requested it. Every time we
+have Sith on the show, you say, "Yeah,
+like him. Bring him back." And so, and
+so he's uh required. It is mandatory.
+And if you guys have really good
+questions, uh leave them because then he
+has to come back. So you got a big
+presentation going on here. Vertical
+integration, I mean, let's start there.
+What is it and why is it important?
+&gt;&gt; It's important.
+So what vertical integration is is
+really just owning the stack, like
+owning all of the different components
+of a product in order to run software on
+them, control what's actually happening,
+and just make changes. And and when you
+do that, you you can actually like
+adjust to what's actually happening in
+real time in the world around you and
+make things work where they otherwise
+wouldn't.
+&gt;&gt; So, let me ask you this. I make
+chargers, but I don't know how to write
+firmware,
+&gt;&gt; right?
+&gt;&gt; I'm going to hire a company to write my
+firmware. It's 6 months later and I need
+to change something. What is my process?
+you have to go call up that vendor and
+be like, "Hey, I've got this problem
+with this firmware and it's not really
+working."
+&gt;&gt; They don't quite understand what I mean,
+though.
+&gt;&gt; And they don't know what, and this is, I
+think, one of the key problems with
+charging today is that the charger
+manufacturers are not the people that
+are actually installing and operating
+the chargers, right?
+&gt;&gt; And so, they never feel the pain, right?
+What what the charge point operators,
+like people like us feel is like we're
+fielding calls from drivers that are,
+you know, that are confused about
+something or maybe they have an interop
+problem and we see that exact problem
+showing up on our doorstep. And with
+vertically integrated software, we're
+actually empowered to make the changes
+to say, "Hey, like we see the problem
+you're experiencing. We figured out how
+to fix it. We're going to roll a
+software update. Next week you won't
+have a problem." So with because we saw
+this with Electrify America where they
+didn't know even what was in a given box
+and it varies box to box and so if you
+want I read a story from a gentleman who
+worked at Kia when Tesla rolled out
+their light shows his boss went to him
+and said we want light shows too. What
+does it take to make it happen? you get
+the you see where this is going.
+&gt;&gt; And they said, "Well, we're going to
+have to go out to all the vendors all
+the way up the supply chain and all the
+way back down to validate before we
+could do anything, right?
+&gt;&gt; And it's going to cost 2 to three
+million and take three years." Yeah.
+&gt;&gt; They said, "Forget it. We're not
+&gt;&gt; where Tesla said, well, we
+&gt;&gt; know how just roll it out. We know how
+it works. We know how to code it. Let's
+just code it." So you have if you see
+something stupid in the firmware, you
+don't go out for bid. You don't wait 3
+months, 6 months.
+&gt;&gt; You just fix it and push it.
+&gt;&gt; Yeah. It's the the person I can yell at
+is across the desk from me. Not
+&gt;&gt; Yeah. Should we do that now?
+&gt;&gt; Oh, that could be a prize we give out on
+the channel. We can yell We can give
+that out. Someone can come in and yell
+at that person.
+&gt;&gt; You can go yell at a software engineer.
+&gt;&gt; It's so much fun. You guys, have you
+tried it? Oh, it's the best. I can uh I
+can I can attest to that after becoming
+a manager. It's so much fun and yell at
+software engineers.
+&gt;&gt; What am I looking at?
+&gt;&gt; Okay, so um this is a this is I think a
+a pretty good and condensed slide of
+like when I talk about vertically in
+integrated software like what I what I
+mean and I want to start with like where
+the industry is today. So what most
+charging networks what you're looking at
+is something akin to this like your
+charge point operator the electrify
+Americas whoever of the world blink
+whatever
+&gt;&gt; you know insert your favorite charge
+point it better be us operator here um
+&gt;&gt; they own this kind of this is all in the
+cloud they own this and what this is is
+like a charge point management system it
+lets them kind of remotely look at like
+transactions what's going on at a high
+level um accept payment all of that and
+that's what they own, right? And what we
+did when we started our journey at
+Electric Era, as we said, we realized
+that we needed to vertically integrate
+software. And so we started to take over
+control over what's going on on the
+charger because the, you know, the the
+folks out in the industry, if
+something's going wrong with a payment
+terminal,
+&gt;&gt; they have to go to the charger vendor or
+they have to go to the payment terminal
+vendor and they have to say, "Hey, like
+something's going on here. I don't know
+what's going on." And you know, one of
+the things that happened in the industry
+early on was that payment terminals were
+just they were kind of crap. Like they
+just didn't work. People didn't know how
+to make them work. They failed in the
+field all the time. And so that's when
+the apps started coming out, right?
+&gt;&gt; Because those never fail.
+&gt;&gt; And and so now you could run a charge
+point operator. As a charge point
+operator, you could run a network and
+fall back to the app if the payment
+terminal wasn't working. And guess what?
+Now you can kind of cheat a little bit
+on reliability because
+&gt;&gt; you can just you could just say hey you
+know just use the app payment terminal
+is not working but that's that's kind of
+a crappy experience for a driver.
+&gt;&gt; So we ended up vertically integrating
+software to get control over the payment
+terminals the HMI which is that giant
+display on the on the charger
+&gt;&gt; um as well as monitoring things like the
+grid
+&gt;&gt; and keeping track of things like power
+outages because that's a huge problem.
+Heck, in um Northern California, we see
+power outages all the time. PG&amp;E um the
+folks at Pacific Power, they're cutting
+off power up up in North NorCal all the
+time.
+&gt;&gt; If the winds get too high, they will
+they will tell you, "We're going to cut
+your power. Are power lines down?" No,
+but we're cutting your power. Right.
+&gt;&gt; Yeah. And the thing is, actually, a lot
+of the time they don't even tell us. Oh,
+and so so we took over control of um
+telemetry and information at the site.
+So now we're probably the first to know
+about power outages in many time many
+regions.
+&gt;&gt; So we'll go and phone the utility and
+say, "Hey, like we're seeing this power
+outage. Can you confirm?" And then
+there'll be like a silence and then
+they're like, "Oh, that's right.
+&gt;&gt; We'll send someone out."
+&gt;&gt; Yeah.
+&gt;&gt; Um
+&gt;&gt; so you moved up this far.
+&gt;&gt; Yeah, we moved up to here. So we're
+we're controlling a lot of the software
+at the high level software on the
+charger.
+&gt;&gt; Now here's the thing like communicating
+with the car and controlling like really
+core aspects of a charger is more
+complicated than that. This isn't gas
+anymore. And I think you know you and I
+have probably talked about this in a
+couple videos back about how complex it
+is to actually communicate with the car,
+&gt;&gt; right? Not a car,
+&gt;&gt; any cars, all cars. And I'll insert my
+kind of like my favorite thing about
+standards is that it
+there is a standard there's a standard
+for how a car should talk to a charger
+&gt;&gt; and it's you know it's reasonably well
+defined. It's like I think a 100 pages
+long,
+&gt;&gt; but it's there.
+&gt;&gt; And it turns out that one, nobody really
+follows it.
+&gt;&gt; And and and then two, like when people
+introduce fixes, they don't always make
+them out to every variant of the car. So
+you got your 2017 Volkswagen E-Golfs,
+they don't even make those anymore,
+&gt;&gt; right?
+&gt;&gt; And they got some weird behaviors, I'll
+tell you that.
+&gt;&gt; It was limited run discardment.
+&gt;&gt; And why fix it? But but people own those
+cars and they own those cars for 10
+years, right? And then even today there
+are weird vehicle idiosyncrasies being
+introduced.
+&gt;&gt; So the the thing I found with standards
+is that mine are quite low. Please
+proceed. Now we've got the comms and the
+dispenser, the disco and the cool.
+&gt;&gt; Yes. So I'll I'll tell you where each
+one is. Um so Disco so showed you disco
+is actually managing both of these. And
+I'm going to tell you that tomorrow
+we're gonna tomorrow, the next day,
+we're going to show the video with Sam.
+Sam is our newest face uh on the screen
+with Electric Era. Not a sponsor. Uh
+they're just two hours away and uh they
+invite me in and there's a barbecue. So
+what am I supposed to do? Say no to a
+barbecue? Come on.
+&gt;&gt; So
+&gt;&gt; So he Oh,
+&gt;&gt; on that I just want to say on that, if
+you like Sam, you got to let us know. Go
+ahead.
+&gt;&gt; And I was going to say he's a little
+shy, so you have to be nice to him.
+&gt;&gt; We have to be extra nice. And if you
+like the value the feedback, the
+education we get, let us know.
+&gt;&gt; So disco, which is short for dispenser
+controller, um,
+&gt;&gt; if you say so.
+&gt;&gt; Is I didn't come up with these names. So
+if you want to yell at an electrical
+engineer, then you know, you know, you
+can turn to them.
+&gt;&gt; Do that too. Um, so
+the the dispenser controller controls
+both vehicle comms and all of the like
+safety and other integrated circuitry on
+the dispenser.
+&gt;&gt; And so now on our
+&gt;&gt; on our existing chargers, we don't have
+access or control over this very very
+low level. And that kind of limits us in
+how fast we are able to respond to
+issues communicating with the car. And
+what actually communicates with a car in
+every charger basically ever is a board
+called the SECCC uh stands for the
+supply equipment charging controller.
+And it is um it's got this like special
+chip on it that communicates in a very
+special way
+&gt;&gt; to the car. And so with Retail Edge, we
+went ahead and took control over all of
+this.
+&gt;&gt; Um, so that we can actually see exactly
+what's going on with an supply equipment
+charge controller and actually debug at
+the lowest level what a vehicle is doing
+and then we can push updates to all of
+these all of these different blocks.
+Mhm.
+&gt;&gt; We also took control over all of this
+which is you know basically managing
+aspects of the charging process and it
+yields some like pretty cool outcomes
+right so owning the insulation monitor
+that helps us um there's a check that
+happens at the beginning of every
+charging session to make sure that
+you're not going to fry yourself
+&gt;&gt; and doing that check can take a really
+really long time if you do it in a dumb
+way and you can you can you can also do
+it intelligently
+&gt;&gt; and actually cut down the time on that
+it takes for your charging session to
+start.
+&gt;&gt; Smart.
+&gt;&gt; And so we've actually made some pretty
+reasonable gains in the time to chart to
+start charging um for certain vehicles.
+And and then you know all of the rest of
+this thermal management super super
+important or Sam probably w you know in
+Sam's video you'll find that like the
+dispenser is super slim. It's very hard
+to cool effectively when you have very
+limited real estate inside the
+dispenser. So, we've taken over thermal
+management to make sure that we can do
+that and supply really, really high
+current to vehicles so that your
+charging session is really fast
+&gt;&gt; on our dispensers.
+&gt;&gt; So, you know, you control everything.
+You get all of this telemetry and then
+you can use it to update things, solve
+problems, make the driving experience
+better for everybody
+&gt;&gt; and do it all in house. I do it all in.
+&gt;&gt; So, tomorrow I'm going to be talking
+with Sam or the next day I'm gonna be
+talking with him about the the uh actual
+like behind the scenes, but you're going
+to show me the front of the scenes, the
+actual
+&gt;&gt; charger itself, the menus, all that.
+&gt;&gt; Yes.
+&gt;&gt; Should we go do that now?
+&gt;&gt; Let's go do that.
+&gt;&gt; Okay. Ampside Market.
+&gt;&gt; That's your generic.
+&gt;&gt; It's our generic retailer so that we
+don't make anybody angry, right?
+&gt;&gt; Um
+&gt;&gt; doesn't copy someone. Sounds legit.
+&gt;&gt; Yeah.
+&gt;&gt; It's like a Sims kind of business. I
+might run a store one day called
+Ampside, you know, why not when I'm done
+with all this. But
+&gt;&gt; um so the one of the nice things that we
+got when we um started to build retail
+edge, but even with our current
+generation dispenser is we realized the
+driver experience is core. In fact, it's
+really core to simple things like
+plugging in successfully. M a driver
+that doesn't know what they're doing is
+actually not going to be able to charge
+their car no matter how good we get at
+vehicle communication because you still
+got to plug it in right if you want it
+to charge. Um and so taking over control
+of the display is actually really key in
+that. So we pay a lot of attention to
+the driver experience, what they're
+seeing, how they're interacting with the
+display, paying attention to the
+confusion that they might experience if
+they don't understand something on the
+display. and then kind of leveraging the
+platform to introduce things like Halo,
+which is our oncharger AI assistant
+designed to help drivers charge, shop,
+and explore.
+&gt;&gt; So, probably a year or two ago, I got to
+see the earliest demo where you were
+asking questions saying, "Hey, I don't
+why am I charging slow?" And it asked
+what kind of car it was and all that.
+Yeah.
+&gt;&gt; And it gave some really great answers
+and I got to see other people poke it
+and see what it could do.
+&gt;&gt; Last year I got to come and check it out
+myself, give it some good trials.
+&gt;&gt; But my lingering question is why?
+&gt;&gt; Mhm.
+&gt;&gt; Because I've got AI in my pocket and
+I've got it in my car and now I've got
+it on my charger.
+&gt;&gt; Yeah.
+&gt;&gt; What
+&gt;&gt; the
+&gt;&gt; do I need it for?
+&gt;&gt; The reason we went ahead and put it into
+the charger um
+One of the most foundational reasons is
+that
+context is everything. And
+&gt;&gt; I think this is actually one of the most
+underappreciated parts of AI is that you
+know you can talk to a model all day,
+&gt;&gt; right?
+&gt;&gt; A supermodel
+&gt;&gt; cuz I can't I I get all choked up.
+&gt;&gt; I you can talk to like Grock all day if
+you wanted, right? And then but it's
+really the effectiveness of the
+information it is going to be giving
+back to you is going to be limited by
+how much it knows about your current
+situation.
+&gt;&gt; And so among
+&gt;&gt; this is plugged in.
+&gt;&gt; It knows a lot.
+&gt;&gt; It knows a lot about exactly what's
+going on, including like what might be
+going wrong with your car. the fact that
+your insulation monitoring has failed,
+maybe that the latch is not fully
+engaged,
+&gt;&gt; that many kinds of, you know, things
+that aren't obvious just by looking at
+what's going on.
+&gt;&gt; Can I give you a couple scenarios? I I
+hit talk to Halo. I'm talking to Halo
+&gt;&gt; and I say, "This is a 400 kilowatt
+station. My 2018 Model 3 is not getting
+400 kilowatts.
+&gt;&gt; Let's Let's give it a shot. See how it
+goes." Okay.
+&gt;&gt; So,
+um I went ahead and started a charge.
+This is a demo charger. It's not
+actually hooked up to anything. Um but
+it is wired into
+&gt;&gt; Put it in your mouth.
+&gt;&gt; Don't do it.
+&gt;&gt; It's, you know, it's also like 7 feet
+tall. So, that might be a little tricky.
+&gt;&gt; The handle.
+&gt;&gt; I meant the handle.
+&gt;&gt; Oh, the handle.
+&gt;&gt; Okay.
+&gt;&gt; So, yeah, it's charging.
+&gt;&gt; So, it's showing you it's charging.
+&gt;&gt; Okay. Well, let's ask Halo. Hey, Halo.
+Um, the charger said that it could
+charge at 400 kW, but I'm only getting
+I'm I'm not getting that. What's going
+on?
+&gt;&gt; Your car's current charging power is
+173.9 kW. The station can deliver up to
+400 kW, but the vehicle limits the
+actual draw. Your Tesla Model 3's
+charging rate will vary based on battery
+conditions and state of charge.
+&gt;&gt; So, it's a 2018 Model 3. Can it charge
+at 400 kW?
+&gt;&gt; A 2018 Model 3 can't reach 400 kW. Its
+peak is around 200 kW. Right now, you're
+getting 188.6 kW, which is normal.
+So, and this is really interesting
+because in its knowledge base, it
+actually knows that a 2018 Tesla Model 3
+can't charge at all on one of these
+chargers because it doesn't actually
+support NAS. It predates the chip that
+um
+&gt;&gt; this you can't charge a 2018. And so
+this is actually one of the most common
+failures that we see on our charging
+sessions, our charging stations today,
+is that somebody shows up in a 2018
+Model 3 and they're like plugging it in,
+doesn't work, and then, you know, we
+might get a call.
+&gt;&gt; Yeah.
+&gt;&gt; And we have to explain to them how, you
+know, you don't have the CCS chip.
+Here's where you can dig through four
+different SC, you know, screens in your
+infotainment to figure out why.
+&gt;&gt; Wow. Now, Halo did the right thing here
+because it actually knew that you were
+charging,
+&gt;&gt; right?
+&gt;&gt; So, it didn't tell you that
+&gt;&gt; Yeah.
+&gt;&gt; that like, hey, your car can't actually
+charge here.
+&gt;&gt; Sure.
+&gt;&gt; Um, so it it will go ahead and make, you
+know, a couple of assumptions that like
+maybe you don't know the model your your
+vehicle, which is really common.
+&gt;&gt; So, what if you know you you often have
+batteries at the site?
+&gt;&gt; Mhm. So, if the if the site itself can't
+push 400 without the batteries, if the
+batteries are low and I'm now getting
+200, would it know that, well, I can't
+give you the full 400. The batteries
+behind me are empty.
+&gt;&gt; Yes. Yeah. And so, it has all of that
+information readily available to it. And
+the thing is, like your phone doesn't,
+you can ask your phone and your phone's
+going to go search Google and it's going
+to give you some fairly generic
+information. my phone's going to go get
+information that applies universally,
+&gt;&gt; right?
+&gt;&gt; Not to this connection right here,
+&gt;&gt; right? And that's why I say context is
+everything, right? And like the models
+themselves are a way to disseminate that
+information, like provide it to you in a
+user-friendly way, but
+&gt;&gt; but the information, the underlying
+information is what matters.
+&gt;&gt; So, if you want to put your By the way,
+these chargers, we're not telling you to
+go charge at them. You can. We're saying
+this is a company that manufactures
+them. So if you want to put these at
+your restaurant, your hotel, you can.
+One free drink every week. Now, this is
+just an example of what you might put on
+there. The only other place I've seen
+this is the Tesla diner. When you get
+there to charge, it says dollar coffee.
+&gt;&gt; And that's the only other place I've
+seen that kind of integration.
+&gt;&gt; Yep. And I think that this is like it's
+underlying a really important point. I
+mean, amenities are super important.
+Like if I'm taking a road trip in an EV,
+every time I stop, I want to do
+something. I'm not just going to sit in
+my car for half an hour, right?
+&gt;&gt; I won't stop at Harrisburg. I think
+Harrisburg is the station
+&gt;&gt; in Pennsylvania.
+&gt;&gt; No, in it's in Oregon, I think.
+&gt;&gt; Okay.
+&gt;&gt; Because there's nothing there. There's
+nothing there. It is. It was like a gas
+station or I don't remember what it was.
+And then at one point it was wine
+tasting or something else.
+&gt;&gt; Yeah.
+&gt;&gt; And it's always closed and it's I won't
+go there anymore.
+&gt;&gt; I I'm willing to bet that like 10 years
+from now, the real winners in the EV
+charging space are going to be the ones
+that kind of had that in the DC fast
+charging space are going to be the ones
+that have the gas station
+&gt;&gt; that have value add. We're seeing that
+more where they'll have a deli, a Yep. a
+car wash, a
+something for the love, just please. I
+did see one
+&gt;&gt; Mhm.
+&gt;&gt; I want to get your opinion if it would
+handle this. These folks were charging
+their Tesla.
+&gt;&gt; Yeah.
+&gt;&gt; And I saw them change stalls and they're
+just like And I go I walk over, I'm
+like, "What's the problem?" Like, "Oh,
+do you work here?" I'm like, basically,
+it's fine. They said, "We can't get over
+50 kilowatts." I'm like, "Oh, what's
+your state of charge?"
+&gt;&gt; 75.
+&gt;&gt; What are you doing? Why are you here?
+Well, we're going another 100 miles and
+then home. I'm like,
+&gt;&gt; go enjoy. I I I Where did you start?
+Portland. And we're just going to like
+Medford. I'm like, that's really close.
+&gt;&gt; Like, you can definitely make it.
+&gt;&gt; You can definitely make it round trip.
+&gt;&gt; And if not, stop anywhere. Mhm.
+&gt;&gt; And and I said, "How long did you pick
+when did you get did you pick this up
+like on Turo?"
+Had it for 3 years.
+&gt;&gt; Oh, yeah. And they probably never DC
+fast char.
+&gt;&gt; They've never They've never been to a
+supercharger. They always charge at
+home.
+&gt;&gt; 100.
+&gt;&gt; Yep.
+&gt;&gt; So,
+would this be able to say your state of
+charge is too high?
+&gt;&gt; Yeah. Well, and it and it it it
+definitely can. Um right now it knows
+that your state of charge is actually a
+little low.
+&gt;&gt; Quite low. So, we'll have to kind of
+adjust our conversation a little bit,
+but here I'll I'll give it a shot.
+&gt;&gt; Um,
+&gt;&gt; what's the maximum charge you think I
+can get if my battery is at 75% full?
+&gt;&gt; At 75% state of charge, your Tesla Model
+3's charging speed will likely taper
+down to around 70 to 90 kW. That's
+normal for the charging curve.
+And what about, you know, should I just
+charge it all the way to 100?
+&gt;&gt; Charging all the way to 100% takes much
+longer after 80%. Most drivers stop
+around 80% for faster sessions.
+&gt;&gt; That's not a problem with like a gas
+car. Like, what's going on?
+&gt;&gt; Unlike gas cars, EV batteries slow
+charging as they fill up to protect the
+battery. Right now, you're pulling 202.9
+kW at 34.8% state of charge. the speed
+will taper as the battery fills.
+&gt;&gt; And I think that all of that is like
+really important contextual information
+that drivers like no half the
+dealerships in the country that sell you
+EVs like they're not going to tell you
+this.
+&gt;&gt; They really don't know. Right. when we
+went to Nissan to cover for the electric
+Oregon Electric Vehicle Association,
+&gt;&gt; uh we realized afterwards we should have
+done the research for him because his
+spec sheet, his fivepage spec sheet did
+not include uh the rate of charge.
+&gt;&gt; Oh, really?
+&gt;&gt; And it's like, really? You don't know
+what it maxes out at? No. No. I No
+earthly I don't even know where to look
+on here.
+&gt;&gt; Yeah. Um, so they would ask all the
+questions, all the obvious questions we
+didn't get answers to. But fortunately,
+we all had this device in our pocket
+which accesses the sum of human
+information.
+What else will people use this for that
+actually gives them value? Because if
+I've got, you know, a hotel, if I've got
+a convenience store, if I've got I mean,
+if I like my employees enough to give
+them juice,
+&gt;&gt; uh, which make no mistake, I do not. uh
+what is the benefit here? Cuz I get the
+benefit of the charger itself, but Halo.
+&gt;&gt; So, you know, we talked through a couple
+of things like driver help um and and
+about driver education, all of which are
+are super important. Um
+&gt;&gt; yeah, I took that class
+&gt;&gt; and um I had a really weird driver ed
+teacher in in high school. Well, we'll
+we'll have a different video for that
+one. the
+&gt;&gt; let us know if that's something you
+would watch
+&gt;&gt; because I've got stories too.
+&gt;&gt; Um so and one of the things that you
+know we didn't ask Halo about but is
+it's totally capable of knowing is
+actually helping you when your charging
+session's not working.
+&gt;&gt; Um it's a little difficult for me to
+demo that particular
+&gt;&gt; because we're not actually having a
+problem.
+&gt;&gt; Exactly. And it will tell you if you're
+if you tell it that it's you know that
+it's not charging it'll be like hold on
+that's not right. Mhm.
+&gt;&gt; Um but the final thing is actually
+helping drivers get an understanding of,
+you know, where they are, especially if
+they're on a road trip, what the
+benefits of, um the loyalty programs,
+the retail establishment that you're at,
+&gt;&gt; um are so that you can actually get, you
+know, the maximum value of shopping at
+Ampside Market if you're going to go
+inside. Um,
+&gt;&gt; so if if this is in front of a
+restaurant, I could say
+&gt;&gt; tell me about the menu and what are the
+what are the reviews online say?
+&gt;&gt; I mean, you can ask about Ampside Market
+right now if you wanted.
+&gt;&gt; Hey, tell me about Ampside Market. What
+do they have that's popular?
+&gt;&gt; Ampside Market is known for fresh
+snacks, drinks, and quick meals. Popular
+items include specialty coffees, and
+sandwiches. Do they have any of that
+famous yogurt brand yogurt?
+&gt;&gt; I'm not sure about specific brands, but
+&gt;&gt; that's okay.
+&gt;&gt; So, it's um but it's, you know, it's
+designed to give you Yeah. Our marketing
+made this.
+&gt;&gt; It has to be generic. Of course,
+&gt;&gt; we love We love yogurt. And of course,
+Halo doesn't get my joke because I don't
+think yogurt is a brand, but
+&gt;&gt; um
+&gt;&gt; so I could I could say, you know, I
+could ask it
+about thing the sort of things that the
+merchant would like me to know anyway,
+&gt;&gt; right?
+&gt;&gt; Especially if I'm at a at a like a strip
+mall, right,
+&gt;&gt; where there might be 20 businesses,
+&gt;&gt; maybe I'd like to know what they all
+are. And it could definitely help you
+with that as long as you know the
+business owner that actually owns the
+charger was
+&gt;&gt; battery low.
+&gt;&gt; So my battery is dying.
+&gt;&gt; Oh no.
+&gt;&gt; Which is a good place to wind it up
+unless I'm missing something super
+critical.
+&gt;&gt; No, I think uh I mean we covered a lot
+of the important points. I'll I'll I'll
+say that like the you know doing this
+helps the business owner and it helps
+the driver.
+&gt;&gt; Um the business owners need to be able
+to make money on at their charging
+stations. They need they need you to go
+inside and buy those bags of chips and
+the slushies and all of that type of
+stuff so that they can provide you with
+the necessary services to fill up your
+car.
+&gt;&gt; And then at the same time, we want to be
+able to provide drivers with the
+information that's relevant to them. And
+so Halo and the charger screen, the
+built-in kind of validated loyalty
+applications, things like that that
+could exist on the charger, all exist to
+serve that purpose. Mhm. I'm
+disappointed it isn't Taco Brand Taco,
+&gt;&gt; but maybe maybe maybe I'm the marketing
+department and the wizard there. So
+guys, you know what you need to be
+asking us. We covered it at the top of
+the video. Uh thank you so much, Sith,
+for hanging out. If you need him back,
+you have to let me know. I have no way
+of knowing otherwise. And uh yeah, what
+do we miss? What do we misunderstand?
+Leave it. Leave it. Everybody else, stay
+tuned. Stay juicy. And I can't wait to
+hear from you clever robots at the grand
+opening of Ampside Market.
