@@ -9143,5 +9143,383 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-23T18:48:23.884Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla raised 2026 capex guidance from $20 billion to $25 billion, a 25% increase announced at the Q1 2026 earnings call",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Triggered a sharp stock sell-off during the earnings call; hosts argue this is growth capex, not maintenance capex, and should be viewed positively",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Q1 2026 10-Q disclosed an acquisition in the AI hardware space for approximately $1.5–$2 billion",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Newly disclosed; cited as a contributor to the capex jump; specifics of the target company not named in the transcript",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla finalized plans for a research chip fab at Giga Texas with construction starting in 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Part of Tesla's broader AI hardware buildout; groundbreaking shown during the video",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is working on Dojo 3, currently in early planning/idea stage",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates continued investment in proprietary AI training infrastructure beyond current Dojo generations",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated FSD version 14.3 is 'the last piece of the puzzle' for unsupervised capability but improvements are still needed before scaling",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Clarifies that v14.3 enables unsupervised operation at limited scale; v15 is not required to begin deployment",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla targets unsupervised FSD operations across 12 states by end of 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Stated by Elon Musk on the Q1 2026 earnings call; key milestone for regulatory and geographic expansion",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated robotaxi earnings will not be meaningful until mid-2027",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Pushed back expectations for material robotaxi revenue contribution; consistent with some analyst models but disappointed investors expecting 2026 breakout",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab confirmed in production and on track for volume-scale production as of Q1 2026 earnings call",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Elon confirmed production has begun; volume scale ramp expected within months",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Larry Goldberg projects approximately 200–500 Cybercabs deployed in each of the 12 approved states, ~2,000 in Bay Area, ~1,000 in Austin/Dallas, before end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Analyst projection for initial fleet distribution; total implied fleet of several thousand units across all cities by end of 2026",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Goldberg expects a few hundred Cybercabs per month to emerge from production in the first couple of months of the ramp",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Early production rate estimate before scaling; implies initial annual run rate in low thousands before acceleration",
+    "source": "20260423_brighterwithherbert_03_Tesla_Earnings_Call_Wall_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-24T04:29:52.578Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla hiring ~1,000 new employees at Giga Berlin starting May 2026, converting 500 temp workers to permanent; current workforce is 11,500",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Represents a ~9% workforce expansion; additional hires planned for battery cell production",
+    "source": "20260423_electrek_06_Tesla_Claims_Boost_Giga_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-24T04:29:52.590Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Lars (Tesla) directly confirmed via reply on social media that the Cybercab is not subject to the 2,500-unit annual AV cap, meaning Tesla can legally deploy Cybercabs in any volume.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Removes a previously assumed legal constraint on Cybercab fleet scaling; however, Elon's own comments about waiting for V15 temper the near-term deployment outlook.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab has officially entered production; Joe Tegtmeyer shared images of the production version with no steering wheel or pedals.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production start milestone, though the host cautions these vehicles may remain in testing before network deployment.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon stated Tesla will wait for FSD version 15 and associated software architectural improvements before scaling unsupervised robotaxi to 'large scale'; robotaxi revenue will not be a material contributor until 2027.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Represents a major downshift from prior guidance that 50% of the US would be covered by robotaxi in 2026; resets near-term deployment expectations.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host's revised 2026 robotaxi baseline: 10 cities with 50–100 unsupervised vehicles each, totaling 500–1,000 unsupervised vehicles across all cities by year-end.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000,
+    "context": "Host's updated personal baseline after earnings call; upper bound of 500–1,000 range used as DCF reference point for 2026 year-end fleet size.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's cumulative paid robotaxi miles stood at approximately 1.7 million as of March 2026, with 15 incidents since launch, equating to approximately 113,000 miles per incident.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 113000,
+    "context": "NHTSA SGO data point providing a safety benchmark for Tesla's paid robotaxi service; notably comparable to Waymo's 111,000 miles per incident over 200M+ miles.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo announced over 200 million fully autonomous miles as of February 2026, with 1,790 incidents since launch, equating to approximately 111,000 miles per incident.",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 111000,
+    "context": "Provides competitive safety benchmark; Tesla's per-incident rate is nearly identical to Waymo's despite vastly fewer total miles.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.2 is rolling out and unified the model between Smart Summon, FSD, and robotaxi for more capable and reliable behavior.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents a meaningful architectural change in the FSD software stack; early reviews describe substantial Smart Summon improvements.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon stated that unsupervised FSD could begin rolling out to customer vehicles sometime in Q4 2026, subject to heavy caveats around weather, edge cases, and city-by-city validation.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Sets a conditional timeline for the first consumer unsupervised FSD deployment; host believes this will be limited to markets where robotaxi is already operating.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "All Hardware 3 vehicles will require an upgrade to AI4 or beyond to achieve unsupervised FSD; host estimates this upgrade (compute + cameras) would cost $2,000–$3,000.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Provides a clear path forward for Hardware 3 owners; upgrade cost estimate relevant to consumer adoption and Tesla revenue modeling.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Ashoke stated that V14 lite will roll out to Hardware 3 vehicles before the end of June 2026.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Near-term FSD software milestone for the large Hardware 3 installed base.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI4 Plus, featuring double the memory bandwidth and approximately 10% higher TOPS than AI4, is set to enter production in 2027.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms Tesla is iterating on AI4 architecture before moving to AI5; relevant to long-term FSD compute capacity planning.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus production start is targeted for late July or August 2026; Tesla will end Model S and X production in May 2026 and convert those lines to Optimus production, a process Elon said typically takes around 6 months.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Sets a conditional timeline for Optimus production start; 6-month conversion timeline implies risk to the late July/August target.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon said Optimus deployment outside of Tesla could happen 'hopefully sometime next year' (2027).",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Sets 2027 as the earliest expected timeline for external Optimus deployment, which the host identifies as the more meaningful investment catalyst.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla disclosed in its 10-Q that in April 2026 it entered an agreement to acquire an AI hardware company for up to $2 billion, of which approximately $1.8 billion is contingent on service conditions and/or performance milestones.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Potential acquisition of silicon startup led by Anant Navarti, who rejoined Tesla in April 2026 to lead silicon engineering after leaving in December 2025 to build scalable AI hardware at a stealth startup.",
+    "source": "20260423_electrified_01_I_Wont_Ever_Make_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-24T04:29:52.601Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla raised 2026 capex guidance from $20 billion to $25 billion, a $5 billion increase announced on the earnings call",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Triggered post-call stock sell-off from $405 to ~$380; implies ~$9B/quarter capex for remaining three quarters of 2026",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Paid robotaxi miles nearly doubled QoQ in Q1 2026, reaching close to 1 million miles with zero incidents reported",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Zero incidents while doubling miles is a critical safety threshold milestone for regulatory scaling; Waymo is at ~50 million miles for comparison",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo has approximately 50 million paid autonomous miles as a reference benchmark",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Used to contextualize Tesla's ~1 million paid robotaxi miles; Tesla is doubling each quarter",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla unsupervised robotaxi fleet began January 25, 2026 and has grown to approximately 17 vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 17,
+    "context": "Current unsupervised fleet size; described as only Model Y vehicles at this stage",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla added Dallas and Houston as new unsupervised robotaxi cities",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "City expansion of unsupervised fleet; pace of city additions viewed as more important than current small fleet size",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk reiterated approximately 12 cities for robotaxi deployment by end of 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms year-end city target; Tesla acknowledged edge cases such as getting caught in loops at intersections requiring additional training",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab official production started during the Q1 2026 earnings call, with 20–60 units per week observed over the past four weeks",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Transition from pilot/handmade phase to real production line; manufacturing infrastructure now committed to throughput",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Applying the Cybertruck production ramp curve to Cybercab start date implies ~25,000 units by end of 2026; halving that curve for Cybercab's simpler design implies >10,000 units",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000,
+    "context": "Analyst's bottom-end projection for Cybercab production in 2026 based on Cybertruck ramp analog; underpins 10,000+ unsupervised robotaxi bull case",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD miles driven by Tesla owners increased 90% quarter-over-quarter in Q1 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Miles grew far faster than subscriptions (+16%), suggesting materially improved FSD capability driving higher utilization per user",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk announced Optimus production will begin in Q2 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First concrete production start date for Optimus; analyst expects this will coincide with Optimus Gen 3 reveal and could drive stock up ~$100",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Roadster expected to arrive within approximately one month of the earnings call (approximately May 2026)",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "New vehicle arrival reiterated by Elon Musk on the call; not considered a primary demand or cash flow driver by the analyst",
+    "source": "20260424_jobhakdi_01_Tesla_Earnings_Review_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-24T04:29:52.617Z",
+    "status": "pending"
   }
 ]
