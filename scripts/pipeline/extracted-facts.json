@@ -10065,5 +10065,263 @@
     "channel": "electrek",
     "extractedAt": "2026-04-25T04:11:13.983Z",
     "status": "pending"
+  },
+  {
+    "fact": "Paid robotaxi miles nearly doubled sequentially in Q1 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Reported in Tesla's Q1 2026 earnings deck; indicates rapid real-world scaling of the robotaxi service before Cybercab production ramp",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla launched unsupervised robotaxi service in Dallas and Houston in addition to existing markets",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Two new Texas cities added to the robotaxi network; one individual completed unsupervised rides across three Texas cities in a single day",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production has officially begun, with units observed being driven around Giga Texas by engineers",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Tesla also released a video showing eight Cybercabs lined up; Cybercab is expected to become the highest-volume vehicle in the robotaxi fleet over time",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD v14 (variant 143) has been broadly deployed including internationally (e.g., Netherlands), and unsupervised robotaxi operations run on this version",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Broad deployment of the version enabling unsupervised operation is a key milestone ahead of commercial robotaxi scaling",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk confirmed on the Q1 2026 earnings call that hardware 3 vehicles require a hardware upgrade to support unsupervised FSD",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tesla plans to build additional 'mini-factory' service centers to perform hardware 4 retrofits; hardware 3 owners can still use supervised FSD v14",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus manufacturing factory construction has broken ground, with next-generation production line being designed concurrently",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "SNX production line is being wound down simultaneously; Optimus factory groundbreaking signals accelerating transition to AI/robotics focus",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cortex 2 AI training cluster is already operational and training",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Cortex 2 is Tesla's next-generation AI training infrastructure; being active ahead of major robotaxi and FSD scaling is a key compute milestone",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab chip fabrication facility has broken ground, with Intel as a partner",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Intel partnership closes a critical chip manufacturing competency gap; Samsung responded by offering 4x DRAM supply to Tesla, suggesting the competitive threat is credible",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "170,000 new FSD subscribers or owners added in Q1 2026 at $99/month subscription price",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 99,
+    "context": "Record FSD subscription growth; panel estimated 3-4 million hardware-capable vehicles converting to subscriptions could yield ~$300M/month in recurring revenue",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi fleet operators estimate annual fuel and maintenance savings of approximately $105,000 per year",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Cost-per-mile advantage is the primary fleet buyer decision driver; no per-mile figure given but $105,000/year savings cited as the key ROI metric",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Samsung announced it is quadrupling DRAM supply offered to Tesla following Tesla's Terafab announcement",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Panel interpreted as a defensive competitive response; suggests Tesla's vertical integration threat is credible enough to shift supplier behavior",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "85% of car trips in North America involve one or two passengers",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "avg_trip_length",
+    "value": null,
+    "context": "Statistic used to justify the two-seat Cybercab design; no specific trip length number given but trip occupancy data supports the vehicle's addressable market size",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi and Megapack production lines in Nevada (Giga Nevada) are beginning to come online",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Semi and Megapack Nevada LFP battery lines starting production is a key milestone for both the energy and commercial vehicle segments",
+    "source": "20260424_futureaza_02_Cybercab_Going_Nuts_Fsd_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T08:15:00.758Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's fleet is averaging 28.8 million FSD miles per day, up from 14.4 million miles per day approximately two months ago — a doubling in roughly 60 days",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 28800000,
+    "context": "Daily FSD miles are the primary input for safety validation and regulatory confidence; doubling in ~60 days indicates rapid fleet adoption and training data accumulation",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla ended Q1 2026 with its highest Q1 order backlog in over two years",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Signals demand recovery and supports near-term volume guidance assumptions",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercabs without steering wheels are rolling off the production line at Giga Texas and driving themselves autonomously to the outbound lot",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First visual confirmation of production-spec, fully driverless Cybercab units coming off the line — a major production ramp milestone",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced an agreement to acquire an AI hardware company for up to $2 billion in Tesla common stock and equity awards, with approximately $1.8 billion subject to service conditions and/or performance milestones",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Signals vertical integration into AI chip/hardware; likely aimed at reducing third-party compute dependence for FSD and Optimus development",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla stated in its Q1 2026 earnings that preparations for its first large-scale Optimus factory will begin in 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms Optimus manufacturing scale-up is on a 2026 timeline, a key milestone for the humanoid robot investment thesis",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla will create 1,000 new jobs at Giga Berlin by end of June 2026 to increase weekly production by approximately 20% starting Q3 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Concrete near-term production ramp driven by increased Model Y demand in Europe; Q3 2026 start date provides a timeline anchor",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD V14.3.2 is rolling out and includes improved Actually Smart Summon speed, corrected highway lane-keeping behavior in Mad Max mode (no far-left lane hugging, speed capped below 80 mph), and a new disengagement reason prompt for driver feedback",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version release with behavioral improvements and a structured disengagement feedback loop that could accelerate training data quality",
+    "source": "20260424_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.770Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Robotaxi app officially launched for Android users on April 24, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Consumer-facing ride-hailing interface now available on Android, lowering adoption friction as fleet deployment progresses; high engagement (2.7K likes, 329 RTs) signals significant community attention",
+    "source": "20260425_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.781Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production has started, approximately 18 months after a prominent skeptical article predicted it would not happen",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Merritt explicitly states production has commenced, framing it as a vindication of Tesla's execution; no specific volume or ramp numbers provided",
+    "source": "20260425_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.781Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Samsung held an equipment move-in ceremony at its $37B Taylor, Texas chip facility on April 24, 2026, with silicon production for Tesla and other customers expected to begin later in 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Direct supply chain milestone for Tesla's FSD/AI compute hardware; 'later this year' implies H2 2026 production start",
+    "source": "20260425_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.781Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Alyath plans to unveil a 'Tesla Semi as a Service' campaign at ACT Expo on May 4, 2026, offering a fully bundled monthly OpEx model with no upfront capital, covering truck, charging infrastructure, and integration in a planned 90-day program",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Novel commercial deployment model for Tesla Semi that could accelerate fleet adoption without requiring large capital outlays from fleet operators",
+    "source": "20260425_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.781Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A Tesla patent application for Optimus camera head configuration was publicly published, with Merritt noting anticipation for Optimus Gen 3 unveil; no specific reveal date given",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Patent reveals sensor architecture detail for Optimus; Gen 3 unveil framed as upcoming but no timeline confirmed",
+    "source": "20260425_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-25T08:15:00.781Z",
+    "status": "pending"
   }
 ]
