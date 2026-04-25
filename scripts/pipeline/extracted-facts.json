@@ -9837,5 +9837,233 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-04-24T18:32:58.163Z",
     "status": "pending"
+  },
+  {
+    "fact": "Unsupervised FSD for personal vehicle owners expected to begin rolling out in approximately 7 months (region by region) across 12 states",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Elon Musk signaled this timeline on the earnings call; represents the first unsupervised FSD milestone for consumer owners",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 potentially arriving Q4 2026, which Brian Wang identifies as the trigger for true global mass-scale robotaxi deployment",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Version 15 is the architecture intended for million-vehicle global scale; its arrival timeline anchors the broader robotaxi ramp thesis",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Current robotaxi deployment under FSD 14.3 is approximately 17 vehicles across Austin, Dallas, and Houston",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 17,
+    "context": "Establishes the baseline fleet size as of late April 2026; highlights how early-stage the deployment remains",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Brian Wang's base case Cybercab fleet by end of 2026: approximately 15,000 vehicles across ~25 cities with 50–100 vehicles per city",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Base case fleet projection for year-end 2026; below the ~50,000 threshold Brian defines as financially material",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Brian Wang's optimistic Cybercab fleet scenario for end of 2026: 20,000–60,000 vehicles across 40–50 cities with 500–1,000 vehicles per city",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 60000,
+    "context": "Upper bound scenario contingent on rapid resolution of hesitation/indecision bottleneck; aligns with Jo Bhakdi's prior hopes of 20,000–40,000",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert estimates approximately 30,000 Cybercabs by end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 30000,
+    "context": "Host's midpoint estimate between Brian's 15,000 base and 60,000 optimistic case",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 50,000 unsupervised robotaxi vehicles identified as the threshold for 'financially material' robotaxi revenue (a few billion dollars annually)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 50000,
+    "context": "Defines the fleet size needed for robotaxi revenue to meet the legal/financial definition of materiality",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's current fleet is approximately 3,000 vehicles",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Benchmark for comparison; even 5,000 unsupervised Tesla vehicles would represent roughly double Waymo's fleet",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk indicated material robotaxi scale (Q4 2026 or Q1 2027) was uncertain, not confirmed",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Musk's hedged language on the earnings call is interpreted as the key source of investor confusion and drove the debate about timeline",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab confirmed to be in production as of the earnings call",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Herbert explicitly states this was announced on the earnings call, marking a production start milestone",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3.2 reported to have resolved numerous operational issues including smart summon, left-lane camping, and parking problems",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Rapid point-release progress suggests hesitation bottleneck may be resolved sooner than version 15; could accelerate fleet expansion timeline",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal forecasted for July 2026, with production starting August 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Matches the Optimus Gen 3 reveal date watch item; production start in August would be the first meaningful Optimus manufacturing milestone",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 initial production volumes: hundreds to low thousands in Q3 2026, scaling further in Q4; tens of thousands not expected until 2027",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Establishes the Optimus production ramp curve; initial volumes are very small relative to eventual scale targets",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab investment: $3 billion for 2,000 chips; lab/fab expected complete in 2027; SpaceX phase expected approximately 2028",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Tracks the Samsung/Tesla chip production and Terafab factory milestone watch items; 2027 completion is the key near-term date",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Grok 4.5 expected late May 2026 with 1.5 trillion parameters; Grok 5 expected June–July 2026 with ~6 trillion parameters; Grok 5 Heavy expected August–September 2026 with ~10 trillion parameters",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Rapid Grok capability improvements could unlock in-car voice control for both consumer FSD and robotaxi applications within months",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo experiences approximately 100x more traffic-blocking incidents than Tesla's FSD system, resolved using remote human operators",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": null,
+    "context": "Highlights the operational cost structure difference between Waymo's remote-ops model and Tesla's AI-first approach; relevant to unit economics modeling",
+    "source": "20260424_brighterwithherbert_02_Exclusive_Tesla_Found_The_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T04:11:13.965Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus announced to enter live production as early as June 2026, with July 2026 as the working estimate — approximately 90 days from April 24, 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Marks a concrete production start timeline for Optimus, a key milestone for Tesla's humanoid robot business",
+    "source": "20260424_jobhakdi_02_Will_Tesla_Stock_Bounce_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-25T04:11:13.975Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 (version 3) referenced as an upcoming revolutionary humanoid robot reveal",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Framed as Tesla potentially seizing global pole position in humanoid robotics; no specific date given beyond the broader 2026 timeframe",
+    "source": "20260424_jobhakdi_02_Will_Tesla_Stock_Bounce_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-25T04:11:13.975Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Production-version Cybercab described as rolling off the line at Giga Texas, with 'dozens and dozens' produced daily as of late April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Suggests Cybercab production has begun in meaningful volume; glossy finish cited as distinguishing marker of production vs. prototype units",
+    "source": "20260424_jobhakdi_02_Will_Tesla_Stock_Bounce_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-25T04:11:13.975Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's dynamic live Supercharger pricing expanded from ~10 California pilot stations (May 2025) to 550+ stations",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Significant network infrastructure and pricing milestone affecting non-Tesla EV competitiveness and Tesla energy/services revenue",
+    "source": "20260425_electrek_01_Tesla_Offers_1_Year_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-25T04:11:13.983Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Most US Supercharger stations priced in $0.30–$0.45/kWh range; high-demand areas reach $0.50–$0.60+ at peak",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Supercharger per-kWh pricing data relevant to energy cost modeling for Tesla network users, including potential robotaxi fleet charging costs",
+    "source": "20260425_electrek_01_Tesla_Offers_1_Year_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-25T04:11:13.983Z",
+    "status": "pending"
   }
 ]
