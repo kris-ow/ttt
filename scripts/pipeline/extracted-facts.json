@@ -10323,5 +10323,285 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-25T08:15:00.781Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD paid customers reached nearly 1.3 million globally at end of Q1 2026",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1300000,
+    "context": "Represents the active paying FSD subscriber base; a key input for modeling FSD recurring revenue and eventual unsupervised fleet potential",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Average FSD subscriber drove over 18 miles per day on FSD in Q1 2026, up from approximately 11 miles per day in Q1 2025",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 18,
+    "context": "Nearly doubling of daily FSD usage per subscriber year-over-year signals increasing reliance on FSD as a primary driving mode, relevant to robotaxi utilization modeling",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon stated FSD version 14.3 is 'the last piece of the puzzle for unsupervised FSD'",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Direct quote from Q1 2026 earnings call confirming unsupervised FSD does not require version 15, accelerating the timeline for robotaxi expansion on the current software base",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 expected 'hopefully later this year' or 'certainly by early next year,' described as a complete software architecture overhaul running on AI4",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Version 15 is a next-generation milestone but explicitly not a prerequisite for near-term robotaxi scaling; will run on AI4 hardware",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi expanded to Dallas and Houston, both unsupervised with no safety driver, using the same software as Austin/Bay Area",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "New city expansion confirmed at Q1 2026 earnings call; unsupervised launch without phased safety driver program represents an acceleration from prior expectations",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon said Tesla plans to expand robotaxi to 'probably a dozen states or more later this year'",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Robotaxi city expansion target for 2026; hosts estimate this implies approximately 20+ cities given multi-city coverage within states like California and Florida",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production has started, with ramp described as slow initially going 'kind of exponential towards the end of the year'",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Production start confirmed at Q1 2026 earnings call; rate of ramp is the primary determinant of robotaxi fleet size by year-end",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host estimate for robotaxi fleet size by end of 2026 is 10,000–15,000 Cybercabs, based on approximately 20 cities with 500+ vehicles each",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 12500,
+    "context": "Host's working estimate, not Tesla-confirmed; midpoint of 10,000–15,000 range used as DCF input proxy for 2026 fleet size",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 3 retrofit cost estimated by hosts at $5,000–$7,000 per vehicle (speculative, not confirmed by Tesla)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 6000,
+    "context": "Host estimate for hardware upgrade cost; relevant to modeling fleet expansion economics if Tesla subsidizes retrofits to grow the robotaxi fleet",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD approval received in the Netherlands; EU-wide supervised FSD approval targeted for Q2 2026; broader China FSD approval targeted for Q3 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Regulatory milestones for FSD international expansion; China Q3 approval would unlock a major new subscription market",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Supervised FSD going to Brussels for EU review in May 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Specific near-term regulatory event that could enable EU-wide FSD deployment",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal now expected in August 2026, delayed from April; Elon stated Tesla would show it as close to production as possible",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Reveal delay does not necessarily indicate production delay per Elon's stated rationale; factory groundbreaking at Giga Texas confirmed",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is sunsetting the Model S/X production line at Giga Texas and converting it to an Optimus production line",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirms Optimus production line conversion is underway; factory groundbreaking for Optimus facility at Giga Texas campus occurred",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab research fab to be built on Giga Texas campus at approximately $3 billion cost, capable of a few thousand wafers per month, intended for testing ideas; SpaceX to fund initial phase of full-scale Terafab",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Clarifies Tesla vs. SpaceX roles in Terafab; research fab is Tesla's investment while full-scale Terafab funding comes from SpaceX (potentially via IPO); location of full-scale Terafab not yet announced",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "10 billion cumulative FSD miles milestone calculated by host to be reached approximately May 6, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Near-term data milestone; hosts noted it is a symbolic milestone rather than a direct regulatory trigger",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon said unsupervised FSD would be released to customer vehicles 'gradually' in geographies already validated for robotaxi, expected 'probably in the fourth quarter' of 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First public guidance on timing for unsupervised FSD in customer-owned vehicles; geography-locked rollout tied to robotaxi validation areas",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's discussed robotaxi take rate of approximately 35%, with possible reduction to around 20% as an incentive for hardware 3 owners to enter the fleet (speculative, host discussion)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Host-speculated Tesla take rate structure for robotaxi network; not confirmed by Tesla; relevant to modeling owner and Tesla revenue splits",
+    "source": "20260425_brighterwithherbert_01_How_Tesla_Thinks_Differently_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-25T18:30:11.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus factory at Giga Texas north campus confirmed by Tesla during earnings call; targets 10 million units per year run rate; ground slab estimated at ~2 million square feet",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Official confirmation from Tesla earnings call; construction actively underway with foundation work, footings, and geoper drilling visible from drone footage",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus factory construction estimated at 18–20 months to initial readiness, pointing to well into 2027",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Timeline estimate from Joe Tegtmeyer based on observed construction pace and comparison to prior Giga Texas builds",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont Model S/X production lines being converted for Optimus production; Tesla indicated initial Optimus production could start fall 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First production facility timeline disclosed; Cortex 2 training is explicitly linked to readiness for this conversion",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cortex 2 AI data center at Giga Texas is already partially operational and being used for Optimus training; described as twice the size and capacity of Cortex 1",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Confirmed operational status accelerates Optimus training capability ahead of initial production ramp",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Advanced Technology Fab at Giga Texas is a joint Tesla/SpaceX venture with ~$3 billion investment and ~2 million square foot footprint; soil sampling actively underway",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Distinct from the separately planned Terafab; represents a major new chip R&D facility co-invested by SpaceX",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab is described as a separate, much larger project planned for a different location from the Giga Texas Advanced Technology Fab",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Clarifies that the $3B Giga Texas chip fab is not the Terafab, meaning the Terafab remains a future, larger-scale milestone",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab crash testing ongoing at Giga Texas and Fremont to achieve full vehicle certification, removing the prototype unit cap constraint on fleet deployment",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Full certification would allow Tesla to deploy Cybercabs at production rate without being limited by a prototype cap (e.g., 2,500 units)",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus factory construction timeline (~18–20 months) described as roughly aligned with Samsung's chip fab timeline for AI5",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Suggests coordinated supply chain planning between Optimus hardware ramp and AI chip availability",
+    "source": "20260425_futureaza_01_Optimus_Is_Real_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.122Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Shanghai Megapack factory is confirmed operational, consistent with indications from February 2025; output figures were not disclosed.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Confirms a key Megapack factory milestone — Shanghai operational status — which expands Tesla's global energy storage manufacturing capacity.",
+    "source": "20260425_futureaza_02_Teslas_Most_Underrated_Factory_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.133Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Two additional Megapack factories beyond Lathrop are described as 'about to come online' and are expected to be larger and more advanced than the Lathrop facility.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Signals upcoming significant expansion of Megapack manufacturing capacity, which could materially impact Tesla's energy segment revenue trajectory.",
+    "source": "20260425_futureaza_02_Teslas_Most_Underrated_Factory_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-25T18:30:11.133Z",
+    "status": "pending"
   }
 ]
