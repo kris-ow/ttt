@@ -1,0 +1,103 @@
+Channel:     cernbasher
+Title:       Elon Musk’s Making the Bet of His Lifetime.
+Published:   2026-04-26 11:42 UTC
+Summarized:  2026-04-26 18:31:16 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01DM5EXRK6VzkboseLuq9hUV
+Cost:        $0.10179 (35877 in / 6396 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Electric Vehicles, Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of "Two Guys, Two Weeks, Two Hours" features Cern Basher and Phil in a wide-ranging discussion centered on Tesla's Cybercab production start, the robotaxi deployment trajectory, FSD subscription growth metrics, Optimus's near-term positioning, and the broader thesis that Tesla and SpaceX are building the "operating system of civilization." The hosts draw heavily on the recent Tesla earnings call and frame Tesla's harder, manufacturing-intensive path as a long-term competitive moat that software-only competitors like OpenAI cannot replicate.
+
+## Electric Vehicles
+
+1. **Cybercab Production Start — An Automotive Speed Record:** The hosts celebrate the start of Cybercab production, noting that it was unveiled at Tesla's "We Robot" event in October 2024 and has gone from handbuilt prototype to production in approximately 18 months — which Phil, drawing on his experience at Rivian building three vehicles on two platforms in five years, calls a likely automotive record and "sprinting in the automotive world." The vehicle's shiny finish (not paint) prompted the hosts to wear gold suits for the segment.
+
+2. **Cybercab Design and Cost Profile:** Phil describes crawling inside a pre-production Cybercab prototype at Santana Row and notes the interior looks "almost luxury" despite an estimated manufacturing cost of roughly $20,000–$25,000 (his personal estimate, not confirmed by Tesla). The vehicle is purpose-built for two passengers — covering what Phil estimates is approximately 90% of ride use cases — and is engineered for extreme efficiency due to its small size. He asserts it will become "the largest volume car produced potentially in the world."
+
+3. **Cybercab Manufacturing Philosophy — Designed Alongside the Factory:** Phil emphasizes that the Cybercab is unique in that the product and factory were designed simultaneously under a single executive (Lars), making it one of the first vehicles to be built essentially 100% robotically with no human hands in the loop. He draws a parallel to Apple's Project Titan, which ran for a decade (2014–2024) and cost $10 billion but failed because Apple couldn't manufacture at scale or solve full autonomy software.
+
+4. **Model Y Demand Recovery:** During the FSD subscription discussion, the hosts note that Tesla's order book is the best it has been in two years, with the company planning to increase production across all factories globally — signaling that demand for existing vehicle lines is recovering.
+
+## Autonomous Driving
+
+1. **FSD 14.3 Called a "Magical Release":** Phil explains that FSD version 14.3 was a pivotal release because it delivered significant performance headroom on the existing AI4 compute platform, giving Tesla confidence that AI4 is sufficient for unsupervised robotaxi operation. Elon Musk reportedly stated on the earnings call that the AI5 chip is no longer needed for vehicles and will instead go to Optimus and training purposes. A variant of the AI4 chip with faster and more memory is also being developed and will spread across the vehicle fleet.
+
+2. **AI5 Chip Not Required for Robotaxi:** The hosts clarify the AI4 vs. AI5 chip architecture: AI4 has two chips on a large PCB board with memory located on the PCB rather than integrated into the chip itself. AI5 brings memory directly onto the system-on-chip (on-die), making it significantly faster and more modern in architecture. However, Elon's statement that AI5 goes to Optimus — not vehicles — means robotaxi scaling will proceed on AI4. AI5 is not expected to be in production until early 2027.
+
+3. **FSD Version 15 — Architectural Upgrade, Not a Prerequisite for Scale:** Phil theorizes that FSD version 15 is in development as an architectural remake — potentially involving a mixture-of-experts model with a better routing system and more parameters — rather than just incremental training improvements. He believes that large-scale robotaxi rollout ("hitting the scale button") likely awaits version 15, but that tremendous progress on the 14.x line will occur in the next six months. Critically, all reinforcement learning training data accumulated for version 14 can be rerun on the new architecture, so there is no need to start training from scratch.
+
+4. **Robotaxi Software Process — Reinforcement Learning Iteration Cycle:** Phil describes the current robotaxi improvement process as a tight loop: Tesla identifies operational anomalies in the field (e.g., in Austin), sets up reinforcement learning scenarios with reward and penalty functions, fine-tunes the model, deploys a candidate build, and then re-certifies the specific streets and intersections — being careful not to fix one problem while introducing regressions elsewhere. He compares this to an athlete gaining a new skill but potentially weakening in another area simultaneously.
+
+5. **Overindexed on Safety — Causing Operational Problems:** Both hosts acknowledge that Tesla has deliberately overindexed on safety for robotaxi, resulting in vehicles that are overly cautious — stopping at railroad crossings unnecessarily, stacking up at left turns due to a Waymo-bus accident blocking the path, and getting caught in navigational loops. Phil frames this as the right starting position but notes it creates two compounding problems: customer dissatisfaction and an inability to scale operationally, because it requires more human intervention from the operations center, similar to what he observes as a weakness in Waymo's model.
+
+6. **Dutch Regulatory Approval — Template for Global Expansion:** Tesla received regulatory approval for FSD in the Netherlands, which the hosts describe as a major achievement given the bureaucratic complexity. Phil lists four implications: it establishes a regulatory template for other countries, demonstrates that outcome-based (not sensor-prescriptive) regulation is achievable, helps Tesla refine its internal regulatory process, and was likely a resource drain that partly explains why US robotaxi rollout has been slower than hoped. A review in Brussels is mentioned as a near-term follow-on event in May 2026.
+
+7. **FSD Subscription Growth — Approaching Inflection Point:** Active FSD subscriptions reached 1.28 million in the most recent quarter, up 180,000 quarter-over-quarter. Against approximately 9.2 million total Tesla vehicles on the road globally, the overall take rate is roughly 14–15%. In North America specifically, the take rate is estimated at approximately 30–35%, which was directionally confirmed on the earnings call. The incremental take rate for the quarter (change in subscribers divided by deliveries of 358,000) was approximately 50%, though this was inflated by the last opportunity to purchase FSD outright before it was discontinued. Daily FSD miles per subscriber has nearly doubled in one year, from approximately 10–11 miles per day to 18–19 miles per day, compared to the US average of roughly 30 miles driven per day.
+
+8. **FSD Subscription Revenue Reaching Parity with Regulatory Credits:** Using a simplified methodology of 1.28 million subscribers all paying $99/month, Cern calculates a run-rate FSD subscription revenue of approximately $380 million per quarter — exactly matching regulatory credit revenue in the same quarter, which had been declining. He notes that Wall Street cannot ignore this revenue stream much longer and that it will exhibit S-curve growth properties going forward.
+
+## Robotaxi
+
+1. **Current Fleet Status — Four Metro Areas, Mostly Supervised:** As of the episode, unsupervised Tesla robotaxi service is operating in Austin, with Houston and Dallas recently added, and a chauffeur/limo-style supervised service running in the San Francisco Bay Area (covering San Jose, Oakland, and San Francisco under California TCP regulations). Phil emphasizes this is still a test and validation phase, not scale — availability is inconsistent and cannot be counted on as a reliable alternative to other transportation.
+
+2. **1.7 Million Cumulative Paid Robotaxi Miles Reported:** Tesla disclosed 1.7 million cumulative paid robotaxi miles on the earnings call. Phil notes this figure covers only paid service miles, with additional unpaid testing miles on top of that.
+
+3. **Path to Scale — Under-Promise, Over-Deliver Phase:** Phil describes Tesla as entering an "under-promise, over-deliver" phase after a period of over-commitment. He expects hundreds to thousands of Cybercabs to be deployed into service in test cities before a true large-scale rollout, and believes Tesla will scale more aggressively than public communications suggest. He frames the current period as a "mini-scale" phase where the engineering and operational teams need to validate that fixes don't introduce regressions before pushing a broader release.
+
+4. **Operational vs. Safety Challenges:** Phil is emphatic that most current robotaxi problems are operational rather than safety-critical: pickup/drop-off loops, navigational anomalies, overcaution at static obstacles (e.g., parked trains), and fleet stacking in blocked intersections. He argues that solving these operational issues — not safety issues — is the key to unlocking scale and customer satisfaction simultaneously.
+
+5. **Robotaxi as Transportation-as-a-Service Endgame:** Both hosts argue that as robotaxi scales, it will shift consumer behavior away from vehicle ownership entirely. Phil projects that once the service is reliable and available, the rational economic decision — potentially saving consumers $5,000 or more per year — will cause people to stop buying cars. He notes that Cybercab owners who put their vehicles into the Tesla fleet would convert a depreciating asset into an income-generating investment. When idle, he suggests these vehicles could serve as compute nodes.
+
+6. **Waymo Critique — Too Slow to Achieve Escape Velocity:** Phil argues that Waymo is not scaling fast enough, is still making fundamental (though mostly non-safety-critical) operational mistakes, and requires an oversized operations center relative to fleet size. He concludes that "Waymo is not going to achieve the proper escape velocity" and that robotaxi is "Tesla's to win or lose."
+
+## Humanoid Bots
+
+1. **Optimus Closer to Reality Than Expected — Late 2027 Target:** Phil states that, in his assessment, Optimus is a "late 2027 product" and that comments on the earnings call suggested the timeline may be closer than he previously anticipated. He acknowledges uncertainty about whether that timeline will be met. Elon reportedly confirmed on the call that Optimus will start in manufacturing environments performing low-skill, repetitive tasks — consistent with what the hosts had theorized as the logical entry point before higher-agency home use becomes viable.
+
+2. **Optimus Essential for Mars and Moon Operations:** Phil argues forcefully that "we don't build a damn thing on Mars or the moon without Optimus." He projects that on Mars or the moon, robot-to-human ratios will be 10:1 to 100:1 because of the difficulty of supporting human life in those environments. He notes that future variants of Optimus may need to be hardened differently for lunar vs. Martian conditions.
+
+3. **AI5 Chip Going to Optimus:** As noted in the autonomous driving section, Elon's statement that AI5 is allocated to Optimus (rather than vehicles) signals both that AI4 is sufficient for robotaxi and that Optimus will be compute-hungry — requiring AI5's on-chip memory integration and higher performance. Phil suggests that future Optimus generations will need AI5 "and more."
+
+## Market & Competition
+
+1. **Tesla and SpaceX as the "Operating System of Civilization":** Cern presents research from University of Arizona professor Hendrick Besson Binder covering 100 years of US stock market returns (1926–2025). Key findings: just 46 companies created half of all wealth created; the median stock returned negative 7% over its listing lifetime; only 41% of stocks outperformed T-bills; and wealth creation is concentrating into fewer companies — in the last decade alone, just 13 companies accounted for half of all wealth created. Cern maps today's dominant companies (Nvidia, Apple, Microsoft, Alphabet, Amazon, Broadcom, Tesla, Meta, etc.) as the "operating system of civilization" and argues that Tesla and SpaceX are uniquely positioned to be the dominant operating systems for the physical world and space, respectively.
+
+2. **SpaceX Business Thesis — Connectivity, Intelligence, Manufacturing, Civilization:** Phil wrote a detailed article framing SpaceX's business across four layers: (1) global connectivity via Starlink, including becoming a worldwide cellular carrier and displacing T-Mobile, AT&T, and Verizon; (2) orbital data centers as a solution to Earth-based permitting and power constraints for AI compute; (3) off-Earth manufacturing using lunar escape velocity advantages (2.38 km/s vs. Earth's 11.2 km/s) to cheaply put satellites and materials into orbit; and (4) civilizational-scale expansion making Earth a home but not humanity's permanent residence. Phil expects SpaceX to be valued above $1.75–$2 trillion in the public markets within approximately two months of the episode date and predicts SpaceX and Tesla will compete to be the most valuable company in the world within 10 years — or merge.
+
+3. **Terafab — Complexity Signals Merger Necessity:** The hosts discuss Terafab as a joint venture between Tesla and SpaceX, with the chip intellectual property owned by Tesla shareholders. Phil notes that when the earnings call question about Terafab arose, the complexity of the two-company relationship was evident, and he interprets this as a signal that the companies "must merge" to resolve the growing operational and ownership complexities.
+
+4. **OpenAI Compared to Netscape:** Phil argues that OpenAI, lacking physical manufacturing infrastructure, is vulnerable to being displaced the way Netscape was displaced by Microsoft — through better software execution by a better-capitalized competitor. He contrasts this with Tesla's robotaxi and Cybercab moat, which he says "no one can catch" once it reaches scale because of the combination of manufacturing, autonomy software, and fleet network effects.
+
+5. **Starlink — Predicted to Become Largest Subscription Service Ever:** Cern cites Jason from the All-In Podcast as predicting Starlink will accumulate more subscribers than any service on the planet, including Netflix, Windows, and Spotify combined. Cern agrees and adds Optimus as another candidate for the largest subscription or service product ever created. The hosts also discuss Starlink Mini, which Cern demonstrates runs for approximately four and a half hours on an Anker battery and delivers approximately 256 Mbps download speeds.
+
+6. **Founder-Led Companies and Wealth Concentration:** Both hosts discuss the importance of founder-led companies in generating outsized returns, citing Steve Jobs/Apple, Elon Musk/Tesla and SpaceX, and Google's founder re-engagement with AI as examples. They note that capital alone is insufficient — Microsoft's participation in AI is attributed largely to existing capital rather than visionary leadership — and contrast this with Elon's combination of vision, execution, and capital at Tesla and SpaceX.
+
+Notable quotes and data:
+- **"This car will be the largest volume car produced potentially in the world."** — Phil
+- **"We don't build a damn thing on Mars or the moon without Optimus."** — Phil
+- **"Open AI is just going to end up like Netscape."** — Phil
+- **"SpaceX and Tesla will compete with each other to be the most valuable company in the world in the next 10 years if they don't combine."** — Phil
+- **"Tesla's taken a harder, more difficult, longer-term path, but I think it might solidify them in a way that these other companies could only dream of."** — Cern
+- **"This is the operating system of civilization."** — Cern
+- **"Waymo is not going to achieve the proper escape velocity."** — Phil
+- Cybercab unveiled October 2024; production started approximately 18 months later
+- Apple Project Titan: started 2014, ended 2024, cost $10 billion — failed on manufacturing and autonomy software
+- Active FSD subscriptions: 1.28 million (up 180,000 quarter-over-quarter)
+- Total Tesla fleet: approximately 9.2 million vehicles
+- FSD take rate globally: ~14–15%; North America: ~30–35%
+- Incremental FSD take rate in latest quarter: ~50% (deliveries of 358,000 vs. 180,000 new subscribers)
+- Daily FSD miles per subscriber: ~18–19 miles/day, up from ~10–11 miles/day a year ago
+- US average daily driving: ~30 miles/day
+- FSD subscription run-rate revenue (simplified): ~$380 million/quarter — equal to regulatory credit revenue
+- Robotaxi cumulative paid miles: 1.7 million
+- Robotaxi operating in: Austin (some unsupervised), Houston, Dallas (recently added), San Francisco Bay Area (supervised/limo model)
+- AI5 chip production timeline: early 2027
+- AI5 chip destination: Optimus and training, not vehicles
+- SpaceX estimated public market valuation: $1.75+ trillion, approaching $2 trillion within ~2 months of episode date
+- Moon escape velocity: 2.38 km/s (5,324 mph) vs. Earth: 11.2 km/s (~25,000 mph)
+- Stock market study (1926–2025): 46 companies created 50% of all US stock market wealth; median stock returned -7% over its listing lifetime; only 41% of stocks outperformed T-bills; last decade required only 13 companies to account for 50% of wealth created
+- Starlink Mini: boots in under 5 minutes, ~256 Mbps download, runs ~4.5 hours on Anker battery
+- Cybercab estimated manufacturing cost: ~$20,000–$25,000 (Phil's personal estimate, unconfirmed)
+- Optimus target deployment: late 2027, starting with low-skill repetitive manufacturing tasks

@@ -10675,5 +10675,307 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-04-26T04:33:58.493Z",
     "status": "pending"
+  },
+  {
+    "fact": "Base price announced in 2017 was $200,000; Founders Series deposit was $250,000 for first 1,000 units",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 200000,
+    "context": "2017-era pricing; no updated production pricing has been announced — not a current cost estimate",
+    "source": "20260421_electrek_04_Tesla_Is_Supposed_To_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.616Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Musk said in March 2026 that the Roadster unveil would happen in late April 2026 and called it 'a banger next-level'",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Most recent public commitment to an unveil date; if it occurs, would be the first production-intent reveal after nine years",
+    "source": "20260421_electrek_04_Tesla_Is_Supposed_To_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.616Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla filed permits for 56 V4 Supercharger stalls in Chandler, Arizona, designated as private fleet-only charging for Robotaxi operations",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First dedicated Robotaxi charging infrastructure Tesla has planned; signals intent to scale Arizona operations",
+    "source": "20260421_electrek_05_Tesla_Submits_Plans_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.626Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla launched Robotaxi service in Dallas and Houston on April 18, 2026, expanding beyond Austin for the first time with unsupervised rides",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First geographic expansion of unsupervised Robotaxi service outside Austin",
+    "source": "20260421_electrek_05_Tesla_Submits_Plans_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.626Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla operates fewer than 10 truly unsupervised vehicles in Austin, where service launched in June 2025",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 10,
+    "context": "Establishes current unsupervised fleet ceiling in the most mature Robotaxi market; critical baseline for fleet growth modeling",
+    "source": "20260421_electrek_05_Tesla_Submits_Plans_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.626Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla cancelled a planned San Francisco robo-charging site at 825 Sansome Street in February 2026 that would have accommodated 150+ vehicles at 600 amps of power",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Prior failed attempt at dedicated fleet charging infrastructure; cancellation came on day of planning commission hearing after Teamsters opposition",
+    "source": "20260421_electrek_05_Tesla_Submits_Plans_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.626Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab rolled its first unit off the production line in February 2026 and uses wireless inductive charging, requiring different infrastructure than V4 Superchargers",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Cybercab production has begun but its charging needs are incompatible with the Arizona stations being planned, which serve the Model Y fleet",
+    "source": "20260421_electrek_05_Tesla_Submits_Plans_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-26T18:31:16.626Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hey Grok launched on April 13, 2026 as part of the Spring 2026 update",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Marks the first deployment of an in-car LLM voice agent in Tesla vehicles; current capabilities are limited to destination setting, route adjustment, POI search, and location-based reminders",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.637Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 chip was taped out on April 15, 2026, with specs of 192 GB memory (9x AI4), 8–10x compute, 5x bandwidth, benchmarking near Nvidia H100 inference performance",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "AI5 is the hardware unlock for fully local agentic Grok with sub-second latency; critical milestone for both Cybercab and broader fleet deployment",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.637Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 expected in small numbers late 2026, high volume in 2027; Cybercab identified as most likely first vehicle to receive AI5",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Directly ties AI5 production ramp to Cybercab deployment timeline; affects when full agentic AI experience becomes available in robotaxi fleet",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.638Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced AI4 Plus FSD computer with more memory and compute; expected to ship in some new vehicles late 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Bridge chip between current AI4 and future AI5; allows more of Grok stack to run locally, reducing cloud latency for agentic features",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.638Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 production start expected summer 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First deployment of Grok in a humanoid body; host flags this as a key milestone for the embodied AGI thesis",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.638Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Current AI4 chip has roughly 16 GB of memory; sufficient for simple local Grok tasks but requires cloud roundtrip of 3–4 seconds for agentic reasoning",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Latency constraint on current hardware is a key limitation for agentic Grok; affects user experience quality and demand-driving potential of current fleet",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.638Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Grok 5 release expected Q2 2026 per XAI announcements",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Model upgrade could meaningfully improve agentic reasoning capabilities even on existing AI4 hardware before AI5 arrives",
+    "source": "20260426_brighterwithherbert_01_Teslas_Chatgpt_Moment_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-26T18:31:16.638Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla reported 1.7 million cumulative paid robotaxi miles as of the most recent earnings call",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 1700000,
+    "context": "Establishes baseline for fleet utilization and operational maturity; paid miles only, not including unpaid test miles",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi unsupervised service now operating in Austin, Houston, and Dallas; supervised limo-model service operating in San Francisco Bay Area (San Jose, Oakland, San Francisco)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Houston and Dallas are newly added cities in the last two weeks; marks expansion of robotaxi geographic footprint to four metro areas",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Daily FSD miles per subscriber rose from approximately 10–11 miles/day one year ago to approximately 18–19 miles/day in the latest quarter",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 18.5,
+    "context": "Nearly doubled year-over-year; indicates FSD is becoming more integrated into daily driving habits, approaching US average of ~30 miles/day",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab was unveiled at the We Robot event in October 2024 and reached production start approximately 18 months later",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Phil describes this as likely an automotive production speed record; go-to-market faster than any comparable new vehicle platform",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab estimated manufacturing cost is approximately $20,000–$25,000 per unit (Phil's personal estimate, unconfirmed by Tesla)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 22500,
+    "context": "Key DCF input for robotaxi unit economics; hosts note the interior looks near-luxury at this price point",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 chip is not required for robotaxi deployment; Elon stated on the earnings call that AI5 will go to Optimus and training, not vehicles",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Removes a key perceived bottleneck for robotaxi scaling; FSD 14.3 gave sufficient headroom on AI4 platform for unsupervised operation",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 chip production is not expected until early 2027",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms robotaxi will scale on AI4 hardware; AI5 allocated to Optimus and training use cases",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is developing a variant of the AI4 chip with faster and more memory, which will spread across the vehicle fleet",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Incremental hardware improvement to support robotaxi scaling without waiting for AI5",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla received regulatory approval for FSD in the Netherlands; a European Commission review in Brussels is expected in May 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First major European regulatory foothold; establishes template for scaling approval process to other EU and non-EU countries",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus is described as a late 2027 product, with Elon indicating on the earnings call it will start in manufacturing environments performing low-skill repetitive tasks",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Clearer timeline signal than prior communications; confirms manufacturing-first deployment strategy before home/general-purpose use",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 is in development as an architectural remake — potentially involving a mixture-of-experts model with better routing and more parameters — but is not a prerequisite for near-term robotaxi progress",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Version 15 seen as the likely trigger for large-scale robotaxi button; significant progress expected on version 14.x line in the next six months",
+    "source": "20260426_cernbasher_01_Elon_Musks_Making_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-04-26T18:31:16.649Z",
+    "status": "pending"
+  },
+  {
+    "fact": "VIN Zero — the first production Cybercab built at Giga Texas — was publicly revealed with a glossy thermoplastic injection-molded body, distinct from all prior matte-wrapped engineering and validation builds",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks the transition from validation to production-spec units, a key milestone in Cybercab production ramp tracking",
+    "source": "20260426_futureaza_01_How_Tesla_Cybercab_Cuts_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-26T18:31:16.661Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately a dozen glossy final-production Cybercabs had been observed publicly as of the video's recording date (late April 2026)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Provides a rough lower-bound indicator of where production-spec unit counts stand at this stage of the ramp",
+    "source": "20260426_futureaza_01_How_Tesla_Cybercab_Cuts_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-26T18:31:16.661Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Joe Tegtmeyer toured the Cybercab assembly line at Giga Texas approximately eight weeks before the video (approximately late February/early March 2026)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Establishes timeline of when the line was sufficiently built out to allow a tour, informing production readiness assessment",
+    "source": "20260426_futureaza_01_How_Tesla_Cybercab_Cuts_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-26T18:31:16.661Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The ratio of non-steering-wheel Cybercabs to steering-wheel-equipped units on the outbound lot has recently flipped, with non-steering-wheel units now dominant",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Signals production is increasingly building toward final autonomous configuration rather than supervised/testing variants",
+    "source": "20260426_futureaza_01_How_Tesla_Cybercab_Cuts_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-26T18:31:16.661Z",
+    "status": "pending"
   }
 ]
