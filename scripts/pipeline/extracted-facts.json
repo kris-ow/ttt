@@ -11435,5 +11435,239 @@
     "channel": "electrek",
     "extractedAt": "2026-04-27T12:02:43.692Z",
     "status": "pending"
+  },
+  {
+    "fact": "Fremont factory Optimus production line being built for 1 million robots per year capacity",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Signals near-term production ramp scale; Fremont conversion starting Q2 2026",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Giga Texas being designed for 10 million Optimus robots per year capacity",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Long-term production ceiling for Optimus; indicates scale of physical AI ambitions",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Large-scale Optimus factory preparation begins next quarter (Q2 2026)",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Elon Musk stated this on the Q1 2026 earnings call; marks start of production conversion timeline",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal pushed from April 2026 to June 2026; Elon stated it will be revealed closer to production readiness",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Reveal delay framed as strategic (competitive secrecy), not a production delay",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont factory conversion to Optimus production estimated at 4 months total: 2 months dismantling, 2 months building new line",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Timeline for when Fremont can begin Optimus production output",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dojo 3 already in development as of Q1 2026 earnings call",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates Tesla's AI training infrastructure is advancing to a third generation",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla broke ground on a research chip fab 'this week' (week of April 27, 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Marks a milestone in Tesla's push for semiconductor self-sufficiency",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla and SpaceX collaborating on Terafab, a large chip-building plant being developed in Austin",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Cross-company AI infrastructure project; supports the physical AI thesis and potential merger narrative",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Larry Goldberg estimates Tesla robotaxi fleet will reach 500,000–750,000 vehicles within 1 to 1.5 years",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 750000,
+    "context": "Guest estimate for near-term robotaxi fleet scale; upper bound of 500K–750K range",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Estimated 200–500 robotaxi cars per city, targeting approximately 12 states and 20+ cities by end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 500,
+    "context": "Per-city fleet size estimate for 2026 rollout; used to model early-stage robotaxi revenue",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla currently running supervised robotaxi service in Palo Alto; removing safety drivers is described as the next step",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Unsupervised FSD milestone is imminent in Palo Alto per the hosts' characterization",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dan Ives references Houston and Dallas as cities in robotaxi expansion discussions, with five additional cities suggested as the next scaling milestone",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Named cities indicate near-term geographic expansion targets for the robotaxi network",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Grok 'Hey Grok' voice wake word rolling out via Tesla spring 2026 software update to all vehicles",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD version/feature milestone: hands-free Grok voice activation marks a new in-car AI capability release",
+    "source": "20260427_brighterwithherbert_01_Teslas_Ai_Pivot_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T18:58:24.188Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's public targets for 2027 and 2028 reference scaling humanoid robots to tens of thousands and eventually millions of units",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Host cites Tesla's own stated production ramp targets as evidence that physical-world labor displacement is imminent but not yet at scale; current units are in the hundreds on internal factory floors",
+    "source": "20260427_farzad-fm_01_Elon_Musks_Biggest_Prediction_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-27T18:58:24.199Z",
+    "status": "pending"
+  },
+  {
+    "fact": "As of 2026, humanoid robots are measured in hundreds of units operating on internal factory floors",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Provides current baseline for humanoid robot deployment scale; described qualitatively as 'hundreds' without a specific number",
+    "source": "20260427_farzad-fm_01_Elon_Musks_Biggest_Prediction_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-27T18:58:24.199Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi fares projected to be less than half the price of an Uber due to absence of a human driver",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Host states robotaxi economics will undercut Uber by more than 50% because there is no driver cost; no specific dollar figure provided",
+    "source": "20260427_farzad-fm_01_Elon_Musks_Biggest_Prediction_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-04-27T18:58:24.199Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated on the Tesla earnings call that Optimus Version 3 will go into commercial production and debut within 90 days of the call, placing the timeline approximately in July 2026.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First confirmed production launch timeline for Optimus Gen 3 from Elon Musk directly; represents the key near-term humanoid bot catalyst.",
+    "source": "20260427_jobhakdi_01_How_Tesla_Optimus_Helps_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T18:58:24.214Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla China's official Weibo account announced a midyear debut for Optimus V3 around June 2026, with mass production ramp starting in July and August 2026.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Official Tesla China social media confirmation corroborates the earnings call guidance and narrows the debut window to June 2026.",
+    "source": "20260427_jobhakdi_01_How_Tesla_Optimus_Helps_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T18:58:24.214Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A leak reported approximately December 2025 from Chinese suppliers indicated Tesla was preparing a supply chain for a run rate of up to 70,000 Optimus units per year for 2026, implying over 10,000 units produced in 2026.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 70000,
+    "context": "Supplier contract leaks provide the only concrete production volume estimate for Optimus in 2026; critical input for any Optimus revenue model.",
+    "source": "20260427_jobhakdi_01_How_Tesla_Optimus_Helps_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T18:58:24.214Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi projects Tesla will reach 1 million Optimus units sold per year by 2030 or before.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Analyst's long-range fleet/sales growth projection for Optimus, driven by pre-superiority consumer and industrial demand.",
+    "source": "20260427_jobhakdi_01_How_Tesla_Optimus_Helps_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T18:58:24.214Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Speculative Optimus pricing mentioned: approximately $40,000 purchase price and $1,000 per month subscription.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 40000,
+    "context": "The only specific price point mentioned for Optimus in the video; relevant for modeling consumer and industrial revenue per unit.",
+    "source": "20260427_jobhakdi_01_How_Tesla_Optimus_Helps_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T18:58:24.214Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated Tesla will not publicly show Optimus developments until the last possible moment, defined as the commercial production launch, due to aggressive reverse-engineering risk from Chinese competitors.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Explains the 9+ month silence on Optimus and signals that the upcoming reveal will coincide with actual production readiness rather than a pre-production demo.",
+    "source": "20260427_jobhakdi_01_How_Tesla_Optimus_Helps_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T18:58:24.214Z",
+    "status": "pending"
   }
 ]
