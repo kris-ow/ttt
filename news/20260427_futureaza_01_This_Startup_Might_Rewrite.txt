@@ -1,0 +1,821 @@
+Channel:     futureaza
+Title:       This Startup Might Rewrite Charging
+URL:         https://www.youtube.com/watch?v=57Kh6D3xb8A
+Published:   2026-04-27 12:00 UTC
+Fetched:     2026-04-27 13:00 UTC
+
+────────────────────────────────────────────────────────────
+
+You guys, public chargers are difficult.
+If you've worked with brands other than
+Tesla and [music] a handful of others,
+you know that they're unreliable, buggy,
+always on the fritz. They're getting
+better, but some companies are doing
+better than others. [music] I'm at
+Electric Era, the folks in Seattle,
+founded by some SpaceX former engineers
+and some other really brilliant people,
+too. And yes, I'm here because [music]
+they're bribing me with a barbecue. They
+know me, man. They speak my language.
+Let's figure out what's awesome about
+their chargers and what they're still
+improving. I'm Brian, welcome to Future
+Foss.
+&gt;&gt; [music]
+[singing]
+&gt;&gt; So, I've got Sam here. Sam is the CTO of
+Electric Era.
+He's the one who can tell me what on
+earth is going on here, and that's what
+we're going to do.
+This is the charger. Actually, let's
+look at it close for a second so we can
+see.
+Of course, it's got a latch for when
+it's under
+under repair, it stays open. Cord's in
+the way there.
+Come around the side and look at how
+thin this machine is. This is
+elegant. This is This is
+about Is anyone's thinner?
+You know, I don't actually know. I think
+it's It's right at the minimum.
+&gt;&gt; It's It's certainly pushing the limits
+there. And you've tested the strength
+that can be bonked into modestly without
+failure. The wind is not going to take
+it down in the planes. We're designing
+it for actually the the southern tip of
+Florida for hurricane force winds.
+&gt;&gt; Exactly. And for those who don't know,
+they do have ones with NACS, they do
+have ones with CCS, but regardless, it's
+just tap to pay,
+get on with your day.
+No memberships, no apps, no nonsense
+like that. What was the decision on the
+no apps?
+You know,
+we started trying to think about how do
+you make charging easy for people? There
+was a lot of issues in the industry.
+They've gotten a little bit better over
+time, but around session reliability,
+session start, just showing up to a
+charger and not being able to just get
+on with the business of charging. Um
+[snorts]
+there was a lot of community feedback
+that having to deal with multiple
+different apps and, you know, having
+funds locked into different apps that
+they couldn't access at other chargers
+was a huge pain point in the industry.
+We went in pretty early on with a like a
+really clear design thesis around we
+need to minimize any friction points
+between somebody showing up at the
+charger and being able to successfully
+charge cars. Uh so, getting rid of the
+apps, letting you just, you know, tap to
+pay, really easy payment methods was was
+really key to that. Makes it a lot more
+straightforward. There's a supermarket
+down in in Ridgefield near that Costco
+down there that had, what is it? I
+forget, Rose Acres, maybe, where they
+had a free charger for while you're
+shopping, 9 kilowatts [clears throat] or
+something.
+And then it switched to a
+BP
+and you had to do the app, but the app
+wouldn't work. You couldn't create an
+account, you couldn't log in, but they
+fixed it.
+&gt;&gt; Yeah. They've torn them out.
+That's not a solution. Hey, let's look
+at the inside. I want to see what's
+going on in here. Yeah. So, you know, at
+a high level, I think one of the
+interesting parts about designing EV
+chargers is it is right at the
+intersection of consumer electronics and
+electrical infrastructure, and you have
+all of the challenges with both, uh you
+know, happening in in a single design
+space and all of the constraints. Um
+So, this is a one of our pilots for the
+the RE400 product. It's a 400 kilowatt
+liquid cooled
+&gt;&gt; [snorts]
+&gt;&gt; We call it a charging kiosk. Uh and
+actually, that's intentional naming
+there because we're really trying to
+establish this as not just a place where
+you can charge, but as a place where our
+retail [snorts] customers
+can can purchase equipment that lets
+them establish their brand in the
+parking lot and link the EV charging
+experience with the rest of their sort
+of in-store experience.
+&gt;&gt; Mhm. So,
+to to do all of that, I mean,
+the there's a few things you have to get
+right.
+&gt;&gt; Sure. One is they really care about the
+driver experience. Like all of these
+other, you know, brand ties, loyalty
+experience, these these things are
+predicated on being able to show up and
+charge successfully every time. If you
+show up to the charger and it's a bad
+experience, the fact that it's tied to
+the brand is like not a benefit to
+anyone.
+&gt;&gt; Right. So, when we started
+&gt;&gt; Brian's
+convenience chargers
+&gt;&gt; Mhm. and these don't work, who looks
+bad? I mean, Right. Whoever's name is on
+it, which is the
+&gt;&gt; bad. Everybody looks bad.
+&gt;&gt; Yeah. But Brian would be upset in that
+case.
+&gt;&gt; Exactly. So, we started with just, you
+know, the first thing we need to get
+right is session reliability and
+hardware uptime. It needs to be always
+available and when you plug in your car,
+it needs to work.
+&gt;&gt; Mhm. So, that's actually what's going on
+on this board. Mhm. Um this is the We
+call this the dispenser controller.
+Okay. Uh so, it's running basically all
+of the vehicle comms, the full like ISO
+15118 and DIN stacks that do uh vehicle
+communication and giving us a ton of
+oversight into that whole process,
+allowing us to get really, really
+uh deep levels of telemetry and insights
+into the various levels of
+communications that are going on.
+There's There's analog comms, there's
+digital comms, there's multiple levels
+of digital comms, all getting mediated
+by this board. Now, is this a final one?
+Is this actually as simple as it looks
+inside? This is a a pilot unit still. Uh
+so, we're actually going to be
+&gt;&gt; a bunch of more No, this is this is
+everything in there. And then And
+actually, we'll we'll go and charge on
+on basically the the
+the a second one of this unit as built.
+So, it's got so little in here, I assume
+because you moved as much of the big
+stuff as you could back to the cabinet.
+Correct. And And that's an intentional
+choice. I mean, obviously, there's units
+in the field today that are both
+all-in-one units as well as sort of
+satellite style
+charging cabinets.
+We feel that the the best way for a
+retailer to maximize sort of the the
+experience of their forecourt and use
+the least amount of parking is to be
+able to push the the bulkier power
+conversion elements out of the way
+Right.
+&gt;&gt; uh and their cabinets really help with
+that.
+&gt;&gt; here. Uh yeah. And that's kind of
+fundamental to how we were able to
+achieve such a slim profile. Yeah.
+[snorts] Um we have a cooling system in
+here.
+&gt;&gt; Right.
+&gt;&gt; Um that's pretty important even, you
+know, even with the power conversion
+moved off-board, uh there's still
+several kilowatts of heat that is
+getting dissipated by the liquid cooling
+system in here. So, that's what's going
+on in the bottom there, and that's kind
+of key to hitting those really high
+powers. And of course, because you guys
+know how to design, the only piece here
+that's remotely large is in the part of
+the cabinet that's actually wide at the
+base. Makes perfect sense. Quick
+question for you.
+&gt;&gt; Mhm. How important is it to use copper
+for the bus rather than aluminum? Oh,
+great question. So, people use both
+copper and aluminum in in bus bar
+applications.
+Uh the copper has a lower
+uh resistance
+&gt;&gt; resistance, yes. Uh so, you can
+basically maximize the use of of
+compressed space in here. Um this is all
+pilot hardware, so, you know, in in the
+future, these things will be probably
+tin-plated and and the hardware will
+change a little bit for the production
+units. But this is a small amount of
+copper. Yeah. Might as well. And we're
+designing this unit for 500 amps
+continuous, so there's quite a bit of
+current going through the the bus bar
+elements in here.
+Okay. Uh my next question is on these
+units that you're rolling out,
+400 volt, 800 volt, anywhere in between,
+what are we talking?
+&gt;&gt; Yeah, up to 1,000 volts
+and 500 amps continuous. We'll support
+both 400 volt and 800 volt vehicle
+architectures, so anybody can show up
+and charge.
+&gt;&gt; So, you've got a Lucid, you've got a
+Taycan, you pull up to this, you're
+going to be pretty happy. Yeah. For
+sure. I think we've
+We're designing it to hit 400 kilowatts.
+There's obviously not really any cars in
+the market right now that can do that,
+but we have hit
+more than 300 just in testing on
+Cybertrucks
+already.
+&gt;&gt; on Cybertrucks already in
+&gt;&gt; More than 300 on Cybertrucks. Yeah. It's
+hard to get a Cybertruck. Yeah. You
+know, to actually pull that much.
+Okay. Yes. Anything else on this cabinet
+before we walk to the next spot? Ooh,
+let's see.
+Yeah, maybe the other point to to point
+out is we've done a lot of work on the
+design of the
+the user interface.
+You know, it's a it's basically an
+interactive audio problem. We have a lot
+of audio custom audio processing on both
+the the audio output and the audio
+input. That's [snorts] in development,
+so that's all happening in a module
+here. That's sort of the the UI-focused
+element as well. Um and that's kind of
+one of those design challenges that I
+was mentioning. We're right at the
+intersection of consumer electronics and
+industrial infrastructure.
+I see. Okay, fantastic. And again,
+NACS,
+one of each, whatever I want. Yeah, the
+intention is to be quite flexible. Um
+obviously, right now, most of the
+vehicle fleet outside of Tesla is NA or
+is CCS.
+Um most of the the newer vehicles
+getting released are switching to NACS.
+Uh so, I would say that probably today
+we have the largest number of CCS cars
+on on the market that will exist. Um but
+outside of the test specific Tesla
+charging station, CCS is still the
+dominant use case.
+Uh so, our intention is to be able to
+provide a mixed blend of ports and then
+actually update those ports over time as
+the vehicle fleet changes composition.
+Uh and we're also investigating, you
+know, an an omniport {slash} magic dock
+style multi-adapter. Sure. Well, I have
+used your NACS chargers Yeah. and I have
+used your CCS chargers with adapters,
+and I don't see a difference. So, that's
+if you've got if you've got
+one or the other, it's nice to just have
+the adapter in the car
+just in case,
+regardless of which one you have.
+Let's head to the next spot.
+&gt;&gt; Awesome. We've got a couple of vehicles
+here. We've got a Tesla as well as an
+EV6 and we'll charge both of them
+with this Snacks cable
+using an adapter obviously for the for
+the EV6. Mhm. What you can see behind
+you is actually just a
+a pretty small fraction of the total
+telemetry that we're capturing from the
+system
+and I'll talk through you know some of
+the some of the details on on what we
+can see there. That's cool. So this is
+this is a small percentage of what I
+don't see behind the scenes. Yeah, I
+think that's accurate. Yeah. So if
+if you're testing something new a new
+car comes out and for some reason it's
+throwing errors
+you've got this plus a bunch of other
+stuff but this might be enough to tell
+you what's going on. Yeah,
+interoperability is is a a big challenge
+in the industry at large. It you know I
+don't I don't think it's because
+anybody's necessarily doing a bad job.
+It's because the problem is
+fundamentally really hard. You have many
+generations of hardware in the fields.
+Those you know in terms of both the the
+supply equipment as well as on the the
+vehicle side and [snorts] you know in
+that fleet there are no non-compliances
+with the standards. The standards
+themselves are not particularly well
+defined and there's not a really
+established and and consistently agreed
+on compliance test. So it ends up being
+a little bit of a wild wild west out
+there. You know manufacturers like
+automotive OEMs push updates that that
+break backwards compatibility
+Our general thesis is like because the
+environment is so dynamic the only way
+you can really achieve high reliability
+in the field is to have a very
+compressed timeline between resolution
+basically issue detection
+in the field and then being able to
+identify what's happening figure out the
+root cause develop a software fix and
+then deploy it to your fleet of chargers
+and this is just part of the the tool
+set that we use to do that.
+&gt;&gt; [snorts]
+&gt;&gt; We also do extensive testing here
+charging different vehicles. We've
+developed hoodles which are basically
+hardware out of the loop test setups
+where we can you know test vehicles and
+make sure that we are compliant with
+standards and compliant with specific
+known vehicle idiosyncrasies.
+I had a chance to interview
+the representative from Electrify
+America
+who is now the CEO. Nice. Or became the
+CEO. I think he's still there. Yeah. And
+my viewers had precisely one question
+and it was made clear to me before the
+interview that
+that's the question you're not going to
+ask. You know the question why doesn't
+it work? Yeah. So I had to ask different
+questions and the question I asked was
+where is it designed? Where is it
+manufactured?
+And what pieces go in? And he said oh
+we just spec the output and local
+contractors build whatever they build.
+So all the pieces are different in every
+unit which means you might live
+somewhere where Electrify America was
+perfect
+then go on a road trip and find it
+doesn't work at all cuz you're in
+someone else's territory. Yeah.
+&gt;&gt; It was a real mess. There's a a general
+problem with how particularly the
+vehicle comm stack is handled. There's a
+few major suppliers who make the actual
+modems that that run the the low level
+comms with the vehicles. You [snorts]
+know Qualcomm makes one Lumos will make
+one. There's there's a handful of other
+folks.
+Those [snorts] chips typically get
+integrated onto to carrier boards or sub
+modules that have additional [snorts]
+layers of firmware and then those
+modules get sold to to OEMs who are
+building the end chargers. So anytime
+there's an issue in the field there's
+many people who have to come together on
+the resolution and that's the type of
+thing that can really really slow down
+response
+&gt;&gt; [snorts]
+&gt;&gt; and you know leads to basically
+interoperability issues that are known
+just sitting out there and impacting
+drivers for a really long time. Mhm. So
+you know
+it's it's a challenging problem for
+sure.
+Our approach is to basically own as much
+of the software and firmware and
+hardware stack as possible. We're
+sourcing those modem chips directly.
+We're integrating them. We're doing all
+of the firmware development and the
+higher level software to to run this and
+that's how we can keep that response
+time really short. And that's very
+similar to Tesla's approach on all the
+chips all the all the software.
+Everything top to bottom. They have
+actually an easier version of the
+problem because they also own the cars.
+So you know they get both ends and you
+know I have a lot of respect for what
+they've been able to do and and one of
+the reasons is because they can
+basically cheat on the inner op problem
+and just make sure that everything is
+always working in their sort of
+internally controlled ecosystem. For the
+the broader ecosystem it's a more
+challenging problem for sure. And
+they're beginning to see that as well
+like if you look at you know where
+Tesla's like like reviews on on plug
+share and whatnot like a lot of the
+issues that they're seeing are not Tesla
+interoperability issues. It is the other
+OEMs now charging at Tesla stations.
+And the big thing Tesla did to fix the
+biggest complaint is they made longer
+electricity hoses. I don't know if you
+know but that's what those are. Yeah.
+One problem Electrify America had was
+when Ford went out to field test the
+Mach-Es they were able to identify which
+component was causing a problem. So they
+reached out and said can you tell us
+which locations have them and they said
+no.
+So that's not great. Yeah, the the
+charging cable is a really hard problem
+generally.
+&gt;&gt; like a an inverter some internal
+component that was causing a problem.
+Yeah.
+And they didn't know where they were.
+Yeah, and you know I think there's so
+many places that where like in terms of
+what drives interoperability failures
+like you know it starts at
+the driver actually just using the
+equipment like sometimes they're not
+plugging in fully sometimes they're
+they're pushing the
+the CCS button while they install.
+There's many things that can cause
+issues. Of course. And and then like you
+know that
+there can be issues with the cable there
+can be too much torque on the cable when
+it's seated that can you know degrade
+the the lower level comms quality
+&gt;&gt; [snorts]
+&gt;&gt; and that goes all the way back into the
+you know the board level and the
+firmware level
+like software that's actually mediating
+the the interaction. Um
+Yeah, the the charging cable is
+interesting. You know obviously we've
+chosen for this one to to take approach
+more similar to what Tesla is doing with
+avoiding a cable management system.
+Yeah.
+&gt;&gt; Um [snorts] we've seen very few cable
+management systems that have been
+successfully executed. Most of the time
+people are like yeah we have a really
+long cable and like but it's attached at
+the top with the cable management system
+and like you're applying torque to that
+it is not actually a better experience.
+No, it might be better on day one
+but by day 50 60 all your pieces are
+getting loose and people are dropping it
+on the ground and And and that's where
+like when you think about how to design
+for upkeep and and and uptime in general
+just keeping the mechanical system as
+simple as possible is is really
+important. So we've done a ton of
+testing with this specific cable length
+to make sure that we can charge every
+vehicle. We we basically like we have
+massive spreadsheets of of different you
+know vehicle positions cable reach
+thinking about how to lay out the stall
+relative to the vehicles thinking about
+how much space a user needs and like
+where the bumper is relative to all of
+these things. One of the really exciting
+things about having a lot of user
+interactivity and having all of this
+data is that we can actually train
+models to be really really prescriptive
+in their discussion to the user about
+what went wrong. I think this is kind of
+the last frontier of interoperability.
+It is like
+instructing the users on how to
+successfully initiate their charging
+session so that if you do see a failure
+the next time they try can be
+successful. Mhm. So tell me what we got
+over here. Yeah, so this is a Grafana
+dashboard that we use to visualize some
+of the telemetry that we're getting off
+of the system. So kind of the main
+things here we've got basically
+dispenser state machines. So this is
+looking at the the software state
+machines as it sequences into charging.
+And [snorts] then we have reports of the
+DC voltage and the DC current that we
+are delivering and that the vehicle is
+requesting
+as well as power some of the analog
+signaling coming off such as control
+pilot and proximity pilot. These are all
+parts of sort of the the safety system
+and the communications between the
+vehicle and the charger.
+&gt;&gt; What's a proximity pilot? Ah, great
+question.
+So if you look at a a charging cable
+head
+you have basically five pins there.
+You've got a DC plus and a DC minus and
+then you've got a a ground pin there so
+that's just for safety for providing a
+current return path and then you have
+control pilot and prox pilot. Huh. Prox
+pilot is the simplest one. This just
+makes sure that if the connector comes
+undone it immediately triggers shutdown
+of the full systems so you don't have
+live voltage present.
+Control pilot's what's doing all of the
+the mediation of the vehicle to supply
+equipment. You know
+All the country. All of the comms. It's
+happening at both an analog as well as a
+higher level digital layer on top of
+things.
+Yeah, so we can plug it in and here we
+go.
+&gt;&gt; All right.
+So we've got our blue light flashing.
+I hear the cabinet kicking on and the
+light is green. That was
+9 seconds? Yeah, I think we have a a
+pretty clear path to get Tesla's
+probably to sevenish seconds from
+plug-in to start. Like our design
+criteria here is that the experience has
+to feel magical. Yeah. And we take that
+one pretty seriously. There is some
+variability vehicle to vehicle on how
+things you know will will actually react
+but our goal is to make it so you you
+plug in and you know you're charging as
+soon as possible and if you're not
+charging you know that as soon as
+possible with what you need to do next.
+Cuz the only real gap is
+payment processing. Yeah, and we can do
+that. Typically we ask our folks to to
+plug in and then pay. That way the
+plug-in sequence can happen while
+they're paying. Yeah, and you can get
+people you know charging even faster.
+Yeah, yeah. Um you can see you've
+actually heard some clicks. Those are
+different power modules uh cycling into
+the the session. Sure. Uh the way the
+charging cabinet works, you've got 80 kW
+increments that get added to the
+specific vehicles that are charging.
+That way you can make most efficient use
+of the power conversion you have on
+site.
+That's great.
+&gt;&gt; Yeah, so you can see over here, you
+know, we're we're we're we're starting
+to supply some current here. Uh this is
+a 400-V architecture. It looks like we
+are supplying, you know, somewhere
+around 357 V. That's the current battery
+voltage. That's basically clamped onto
+the battery system voltage. Mhm.
+[snorts] Um and then, you know, the
+vehicle is telling how much current it
+can handle and we're we're stepping up
+to it by swapping in additional modules.
+That's so cool. Yeah. I got to see a
+Ford Model T that an old farmer had
+decided, "This is garbage. I'm going to
+save it. I'm going to electrify it.
+&gt;&gt; Oh, man.
+&gt;&gt; My budget is zero." Oh, wow. That's even
+more fun.
+&gt;&gt; So, he found some old scrap batteries.
+He put four batteries in and he made it
+into a four-speed with four Frankenstein
+levers.
+&gt;&gt; That's awesome. And it was the seat was
+an old tractor seat he welded in it and
+it's road legal. It's road legal. It's
+got the real antique plates on it.
+&gt;&gt; Man, I love these conversion projects. I
+really Sith uh who I think you've
+interviewed before, he he drives a
+little Mazda Miata. Oh. Uh and I keep
+telling Is that not a Mazda? No, no.
+That is a Mazda but but I'm excited. Go
+on. Yeah, yeah. Well, I keep telling him
+that we got to do we got to electrify
+it.
+&gt;&gt; to. Yeah, I've got a garage space for
+him. So, as soon as he's ready to go,
+we're going to start we're going to
+start making that thing. We're going to
+keep the manual transmission in. Yeah.
+&gt;&gt; For fun. My buddy Mike has a Miata and
+he says, "I feel bad cuz all my electric
+friends say, 'You should be driving
+electric.'" And I said, "Mike, you just
+tell them it's pre-conversion."
+It's true. All all Miatas are
+pre-conversion. Pre-conversion EVs.
+Okay, so this is
+what's this cool pattern? Is that a
+spirograph from when I was a child?
+&gt;&gt; one. So, one of the key safety systems
+in all DC fast charging equipment is an
+insulation monitor. So, this is
+basically confirming that the the DC
+plus and DC minus are floating relative
+to earth potential. So, that if you
+touch one of those terminals and you're
+touching a pole next to you, you don't
+get, you know, electrified.
+&gt;&gt; Yeah. You know Uh Yeah. So, what we're
+actually doing is continuously
+monitoring the insulation of both of
+those poles relative to ground. Mhm. Uh
+and you know, we we do that live uh
+continuously through the session.
+There's a There's IEC standards that
+sort of describe what this needs to look
+like as well as it's in the UL 2202
+standard. Or 2231 standard.
+&gt;&gt; The important thing to notice is
+the the really important thing is where
+did it go? Is we've got both Coolio and
+Disco Oh, yeah.
+&gt;&gt; in action. And if you can't find joy in
+one of the two, I don't know if there's
+any helping you.
+Coolio is our cooling system controller
+and Disco is our dispenser controller.
+We get to choose some fun board names
+for these projects. [laughter]
+Yeah.
+&gt;&gt; Um awesome. Do you want to try to charge
+in the 6?
+&gt;&gt; Oh, sure. Sweet. So, yeah, let's
+So, this is obviously a CCS car. So, we
+will use uh CCS adapter. This is an Axis
+CCS adapter for this. Um although, we
+will also be producing these with
+dedicated CCS ports. Mhm.
+I think I have to unlock it.
+&gt;&gt; you do.
+It's good. You got keys.
+Very retro. Thank you. They're dicks.
+&gt;&gt; [laughter]
+&gt;&gt; Okay. Oh, shows your state of charge,
+I'm assuming.
+&gt;&gt; Yeah. That's pretty cool. I really like
+this car, honestly.
+So, we're going to install our adapter.
+This one takes a little bit longer than
+the Teslas to start charging. Um you
+know, I think there's
+&gt;&gt; to have that conversation. Yeah.
+So, this guy.
+Uh typically, this takes more like 20
+seconds to start a session, but
+we'll be working on improving that.
+These things make me nervous. Yeah. Do
+they? Yeah, there was some like
+3 years ago, there was
+there was some like fires with
+connectors associated with connectors.
+You remember that? But it basically the
+connector industry's made worked itself
+out at this point. That's helpful.
+There's not great standard coverage on
+the adapters right now. Uh that's
+improving over time, though. So,
+&gt;&gt; Yeah. they should be getting more
+available and safer.
+So, yeah. This is a This is actually an
+800-V
+architecture.
+&gt;&gt; Yeah, we weren't even paying attention.
+It's charging.
+Yeah. Yeah. And it works.
+Well, and again, this is still Is it the
+thinnest cabinet?
+I think technically. Cuz I've It's
+thinner than the Supercharger V3s.
+Yeah. You could do the old TV trick,
+which is where you hide it in a wall.
+There you go. Make it make it paper
+thin. Yeah. Yeah. Okay. Well, is there
+anything else you want to tell me about
+this or have we covered it? Because in
+the comments, you guys, I need it and it
+is mandatory. I apologize, it happens
+sometimes. One very smart comment or
+question from each of you. Because if
+you ask smart questions, I can trick
+them into coming back and answering
+them. I mean, it's very sneaky what I
+do, but I can't do it alone.
+Anything I've missed?
+Man, I don't know. I think we hit a lot
+of stuff. Um you can see this guy is
+charging it almost 200 kW. Mhm. Um you
+know, we'll be able to charge at up to
+400 kW on this architecture uh and, you
+know, it's uh we're we're excited to
+keep developing it and getting it on the
+field. Mhm. Do you have uh the ability
+Do your maps allow cars to precondition?
+Like I know
+if you're on the Tesla map and you
+select the location, the car will
+precondition. With my Tesla, I will go
+to our stations and if you click it, it
+the Tesla system actually
+preconditions
+&gt;&gt; preconditions the the Tesla. Yeah. So,
+it's happening. It's pretty cool. It it
+basically whatever car you're in needs
+to acknowledge that it's a charging
+station and then it'll like auto
+boot up its um preconditioning system.
+So, I will tell you the solution on that
+because I've had it not work and I've
+had it work and the difference is when
+you're navigating to a charger, check to
+allow third-party chargers.
+Otherwise, it doesn't know what the heck
+it is.
+Yeah. Um go ahead. Oh, we're we're going
+to go
+&gt;&gt; in the part where you get to talk and
+tell me whatever. We're going to work
+with
+uh you know, we're we're constantly
+talking to the automotive OEMs and
+thinking about how to improve the
+infotainment sort of navigation and how
+to incorporate our systems into that
+better. So,
+Yeah.
+So, guys, what did we miss? What did we
+misunderstand? Leave it in them comments
+below and everybody else like,
+subscribe, do what you do. Thank you so
+much for all of you who support me on
+Patreon, on YouTube, as a channel
+member, on X as a subscriber. It's how
+I'm able to do these journeys. And this
+particular one, it's only 2 hours I can
+actually just do it. Everybody else,
+stay tuned. Stay juicy and I can't wait
+to hear from you clever robots when you
+find one of these and get to charge it
+yourself.
