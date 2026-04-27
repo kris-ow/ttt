@@ -10977,5 +10977,329 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-26T18:31:16.661Z",
     "status": "pending"
+  },
+  {
+    "fact": "19 unsupervised robotaxis operating as of April 24, 2026, growing at approximately 1 per day (~5% per day)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 19,
+    "context": "Current baseline fleet size for unsupervised operations; started at zero on January 20, 2026",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fleet distributed as approximately 15 unsupervised robotaxis in Austin, 2 in Dallas, 2 in Houston",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms expansion to Dallas and Houston as new cities for unsupervised robotaxi operations",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production currently running at approximately 10 units per day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 3650,
+    "context": "Implied annualized production rate of ~3,650 Cybercabs/year at current pace of 10/day; directly relevant to fleet growth projections",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 declared sufficient for scaling by Elon Musk and Ashok Elluswami; version 15 not required before scale",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key milestone: software readiness threshold for robotaxi scaling has been met per Tesla leadership statements",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 anticipated in Q3 or Q4 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Next major FSD version release timeline; described as a 'cherry on top' rather than a prerequisite for scaling",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi app released for Android users as of approximately April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Expansion of robotaxi app platform signals broader deployment readiness",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi's robotaxi forcing function target is approximately 1,800–2,000 unsupervised robotaxis generating ~5% of Tesla's 2024 free cash flow annualized",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1800,
+    "context": "Threshold at which Jo believes Tesla's robotaxi trajectory becomes undeniable to the market, triggering a major stock repricing",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi expects Optimus Gen 3 pilot deals with major corporations before the formal reveal, contingent on sufficient capability",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Anticipated pre-reveal commercial agreements for Optimus as an early demand signal",
+    "source": "20260424_jobhakdi_03_Tesla_Pioneer_Alpha_Breaking_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-27T04:44:04.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Grok launched in Tesla vehicles on April 13th, 2026 as part of the spring 2026 software update",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Marks the initial deployment of Grok as an in-car AI feature; current version is limited to voice navigation and points of interest, not true agentic behavior",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's AI5 chip was taped out on April 15th, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tapeout is a key production milestone; AI5 is the hardware prerequisite for fully local agentic Grok with no cloud dependency",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "AI5 expected in small numbers in late 2026, with high-volume production in 2027",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Sets the timeline for when fully local agentic Grok can ship at scale; 2027 is the projected viral-moment window",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab identified as the most likely first vehicle to receive the AI5 chip",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Suggests Cybercab will be the earliest platform for full agentic Grok capability",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced a new AI4 Plus FSD computer with more memory and compute, expected in some new vehicles late 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Bridge hardware between AI4 and AI5; enables more of Grok's stack to run locally before AI5 ships at volume",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 production start expected summer 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First time Grok intelligence will appear in a humanoid body; part of the embodied AGI cross-platform vision",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Grok 5 release expected Q2 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Next major model release for Grok; could accelerate in-car agentic capabilities",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Q3 2026 deliveries flagged as the first real read on whether Grok is influencing vehicle demand",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Key near-term data point to validate or invalidate the agentic Grok demand-driver thesis",
+    "source": "20260426_brighterwithherbert_02_Why_Grok_Will_Make_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.197Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated robotaxi revenue will not be 'super material' in 2026 but will be 'material, probably in a significant way' in 2027.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First explicit public timeline from Elon tying revenue materiality to 2027, representing a grounded shift in language compared to prior optimistic promises.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla expects unsupervised robotaxi operations in a dozen or more states by end of 2026, up from one state (Texas) today.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Major expansion commitment from the earnings call; current unsupervised operations are limited to Austin, Dallas, and Houston.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 15 described as a full architectural overhaul, targeted for end of 2026 or start of 2027.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Version 15 is framed as the software prerequisite for very large-scale unsupervised rollout (all 50 states, hundreds of cities, hundreds of thousands of vehicles).",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 4 million Tesla vehicles on Hardware 3 cannot perform unsupervised FSD; unsupervised capability is Hardware 4 only.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Hardware 3 owners will need trade-in or upgrade path; a 'version 14 light' with improved supervised FSD is coming to Hardware 3 in late June 2026.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hardware 3 'version 14 light' with improved supervised FSD expected in late June 2026.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirmed by Ashok Naswami on the Q1 2026 earnings call; does not enable unsupervised operation.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Current unsupervised robotaxi fleet is 13 vehicles in Austin, approximately 30–40 total across Austin, Dallas, and Houston.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 40,
+    "context": "Baseline fleet size as of earnings call date; host estimates scaling to 8,000–15,000 by end of 2026.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Gross revenue per robotaxi estimated at $30,000–$60,000 per year at good utilization, in line with Morgan Stanley and ARK models.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Used as the basis for host's 2026 revenue model; average assumed at $45,000/year per vehicle.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host estimates 2026 year-end unsupervised robotaxi fleet of 8,000–15,000 vehicles across 20–25 cities in ~12 states.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Derived from Elon's 'not super material' revenue comment and Cybercab production data; upper bound of host's range.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production estimate for 2026: 15,000–25,000 units, based on Giga Texas drone footage, crash testing, and manufacturing hiring patterns.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 25000,
+    "context": "Host's production estimate; upper bound. Notes a discrepancy between production and deployment numbers.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The robotaxi version running in Austin, Dallas, and Houston is a variant of FSD version 14.3; Tesla will continue expanding on the 14.3 base until version 15 is released.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirmed by Ashok Naswami on the Q1 2026 earnings call; clarifies software roadmap for near-term expansion.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Q2 2026 earnings expected in late July 2026 and will provide first real Cybercab production unit data.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Host flags Q2 earnings as key catalyst; over 5,000 Cybercab units = bullish, over 10,000 = signal of true scale.",
+    "source": "20260426_brighterwithherbert_03_Elon_Just_Said_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-27T04:44:04.209Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla launched unsupervised Cybercab robotaxi operations in two new cities, referenced as a milestone during the recent earnings period.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Host criticizes Tesla for not highlighting this milestone on the earnings call; confirms unsupervised deployment in two cities with no reported incidents.",
+    "source": "20260427_investingagainstthegrain_01_Stock_Market_Is_In_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-04-27T04:44:04.219Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production has started, referenced by the host as a concrete milestone Tesla management failed to celebrate on the earnings call.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production has begun; host does not specify production volumes or ramp rate.",
+    "source": "20260427_investingagainstthegrain_01_Stock_Market_Is_In_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-04-27T04:44:04.219Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi factory, when fully ramped, will be capable of producing 50,000 units per year",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Cited in context of Tesla's Q1 2026 earnings shareholder deck confirming Semi is in pilot production; signals ramp timeline is becoming more concrete for a long-delayed program",
+    "source": "20260427_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-27T04:44:04.233Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi confirmed to be in pilot production as of Q1 2026 earnings shareholder deck",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "First explicit confirmation from Tesla's own earnings materials that Semi has entered pilot production phase",
+    "source": "20260427_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-27T04:44:04.233Z",
+    "status": "pending"
   }
 ]
