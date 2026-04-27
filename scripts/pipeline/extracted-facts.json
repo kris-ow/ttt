@@ -11301,5 +11301,139 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-27T04:44:04.233Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla disclosed $9.97 billion in unrecognized stock-based compensation expense related to the 2018 award, to be charged against earnings over coming quarters",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Material earnings impact expected in upcoming quarters; relevant to forward guidance and margin tracking",
+    "source": "20260427_electrek_01_Tesla_Files_To_Deliver_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.682Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Delaware Supreme Court reversed the lower court's voiding of Musk's 2018 pay package in December 2025",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Legal turning point that cleared the path for SEC filing and share delivery",
+    "source": "20260427_electrek_01_Tesla_Files_To_Deliver_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.682Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Robotaxi Android app launched April 24, 2026, nearly one year after iOS launch in September 2025",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks first availability of the Tesla Robotaxi app to Android users, broadening potential rider base",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla expanded Robotaxi service to Dallas and Houston shortly before April 24, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Represents first expansion beyond Austin since June 2025 launch, though scale is extremely limited",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has delayed 5 of 8 planned U.S. city expansions; those cities now listed as 'preparations underway' with no specific timelines",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Signals significant slowdown in robotaxi rollout versus previously stated expansion plans",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin fleet: approximately 40 active vehicles, roughly 12 operating fully driverless",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 40,
+    "context": "Austin is Tesla's most mature robotaxi market; only ~12 unsupervised vehicles materially impacts revenue and unit economics assumptions",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas robotaxi fleet at launch: 1–2 vehicles; geofence approximately 30–35 square miles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2,
+    "context": "Extremely limited initial deployment in Dallas constrains near-term revenue contribution",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Houston robotaxi fleet at launch: 1–2 vehicles; geofence approximately 12–15 square miles in Jersey Village and Willowbrook areas",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2,
+    "context": "Smallest operational footprint of the three Texas cities; minimal near-term revenue impact",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas Robotaxi pricing: $3.00 base fare plus $1.40 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "base_fare",
+    "value": 3,
+    "context": "First reported pricing data for Dallas market; higher per-mile rate than Austin",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas Robotaxi per-mile fare: $1.40",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 1.4,
+    "context": "Key DCF input for Dallas market revenue modeling",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin Robotaxi pricing: $3.25 base fare plus $1.00 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "base_fare",
+    "value": 3.25,
+    "context": "Austin base fare slightly higher than Dallas; lower per-mile rate",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin Robotaxi per-mile fare: $1.00",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 1,
+    "context": "Key DCF input for Austin market revenue modeling; lower than Dallas rate",
+    "source": "20260427_electrek_02_Tesla_Finally_Launches_Robotaxi_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-27T12:02:43.692Z",
+    "status": "pending"
   }
 ]
