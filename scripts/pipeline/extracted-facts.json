@@ -11953,5 +11953,213 @@
     "channel": "cernbasher",
     "extractedAt": "2026-04-28T12:04:52.318Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla has Optimus V3 units in engineering testing but is not showing them publicly; Elon guided a July–August 2026 production start date, with Jeff Lutz estimating it may land September–October 2026.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Key near-term catalyst for Tesla's humanoid robot program; production start timing directly affects 2026 unit output and ramp trajectory.",
+    "source": "20260428_brighterwithherbert_01_Elon_Vs_Openai_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.413Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is converting Fremont factory lines to Optimus production targeting a 1 million unit per year run rate; Jeff Lutz expects the line to begin producing thousands of units in 2026.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First large-scale Optimus production facility coming online; 2026 output expected in thousands before full ramp.",
+    "source": "20260428_brighterwithherbert_01_Elon_Vs_Openai_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.413Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Land near Giga Texas has been identified and preparation has begun for a dedicated Optimus manufacturing facility targeting 10 million units per year; Jeff Lutz predicts the structure will be framed by end of 2026 and factory ready in 2027.",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "10 million unit per year facility represents the long-term scale anchor for Optimus production; factory construction timeline is a key milestone to track.",
+    "source": "20260428_brighterwithherbert_01_Elon_Vs_Openai_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.413Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont Optimus factory targets 1 million units per year run rate.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Establishes the annual production capacity assumption for the first dedicated Optimus facility, relevant to fleet growth projections.",
+    "source": "20260428_brighterwithherbert_01_Elon_Vs_Openai_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.413Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Giga Texas Optimus facility targets 10 million units per year run rate.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000000,
+    "context": "Long-term production capacity target for the second and much larger Optimus facility near Giga Texas.",
+    "source": "20260428_brighterwithherbert_01_Elon_Vs_Openai_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.413Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo currently has approximately 3,000 vehicles operating in robotaxi service.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Provides a competitive benchmark for deployed robotaxi fleet size as Tesla has not yet launched its own robotaxi fleet.",
+    "source": "20260428_brighterwithherbert_01_Elon_Vs_Openai_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.413Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.2 is rolling out wide (defined as more than 5% of vehicles) to all HW4/AI4 models, software update labeled 2026.2.9",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First wide rollout after numerous releases; community reports describe it as a 'magnitude leap' over 14.3.1, marking a significant FSD version release milestone",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 is described as a fully rearchitected model designed to enable much faster and deeper iteration cycles going forward",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Architectural overhaul — not an incremental update — expected to accelerate improvement curve for all future FSD versions",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A municipality in Sweden approved Tesla FSD testing on its road network for a one-year period",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First European municipal-level testing approval mentioned; not final regulatory approval but a step toward it — relevant to EU FSD expansion timeline",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands has a meeting scheduled for May 5th, 2026, with a potential EU member-state FSD approval decision possible in late June 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Active EU regulatory process underway; late June 2026 is the earliest possible decision date if process proceeds on schedule",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Current Cybercab production rate is approximately 10–12 units per day, with approximately 640 robotaxis currently deployed",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 640,
+    "context": "Current deployed fleet size as of late April 2026; production rate of 10–12/day implies ~300/month and a path to ~10,000 by December 2026 if ramp continues",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production rate of 10–12 units per day implies approximately 300 units per month, scaling to potentially 10,000 units by December 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000,
+    "context": "Jo Bhakdi's projection based on current production rate continuing; Herbert's estimate is 15,000 produced by end of 2026, with possible 20,000–25,000 total",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi's prior prediction was 1,800 robotaxis deployed by April/May 2026; actual deployment as of late April 2026 is approximately 640–800",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms a deployment delay of approximately one to two months versus earlier projections; relevant to Cybercab production and fleet ramp timeline tracking",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo currently has approximately 3,000 cars operating across 5 cities and is expanding to 10 cities in 2026",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Waymo competitor fleet size benchmark; used to contextualize Tesla's current ~640-unit fleet and contrast deployment strategies",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is working on wireless charging and automated cleaning via robotic vacuums for robotaxi fleet operations, described as having been in development for approximately one to two years",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Infrastructure investments indicating Tesla is planning for large-scale robotaxi fleet operations well beyond current deployment numbers",
+    "source": "20260428_brighterwithherbert_02_Tesla_Fsd_1432_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T19:15:46.428Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's net profit per vehicle recovered to approximately $5,558 after falling to less than half of its ~$10,000+ peak in 2022–2023",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 5558,
+    "context": "Per-vehicle net profit metric cited as evidence of margin recovery; hosts note COVID-era peak was artificial and ~$6,000 is considered 'normal'",
+    "source": "20260428_futureaza_01_Tesla_Stock_Outlook_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T19:15:46.441Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Electric semi operating cost is 15–25 cents per mile vs. 50–70 cents per mile for diesel, yielding $15,000–$25,000 in annual savings per truck",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Directly relevant to fleet operating economics; establishes the cost-per-mile range for electric semi operations",
+    "source": "20260428_futureaza_02_Gas_Truck_Industry_Didnt_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T19:15:46.453Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi priced at $240,000–$260,000 based on California rebate program invoices",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 250000,
+    "context": "Publicly documented pricing from California incentive program submissions; Tesla may be selling at or below cost at this price",
+    "source": "20260428_futureaza_02_Gas_Truck_Industry_Didnt_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T19:15:46.453Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi factory in Sparks, Nevada is nearly complete as of early 2026, with production expected to begin in 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Production launch of the Tesla Semi represents a significant volume ramp catalyst; factory outfitting reported as mostly complete",
+    "source": "20260428_futureaza_02_Gas_Truck_Industry_Didnt_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T19:15:46.453Z",
+    "status": "pending"
   }
 ]

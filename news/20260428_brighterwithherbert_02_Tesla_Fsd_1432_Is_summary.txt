@@ -1,0 +1,61 @@
+Channel:     brighterwithherbert
+Title:       Tesla FSD 14.3.2 Is a Magnitude Leap Forward
+Published:   2026-04-28 18:20 UTC
+Summarized:  2026-04-28 19:15:46 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01QJq4zC75ikTf4ohv6h7hbJ
+Cost:        $0.04317 (11260 in / 3504 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from "brighterwithherbert" features host Herbert and guest Jo Bhakdi — an economist, investor, and tech entrepreneur — discussing the state of Tesla's Full Self-Driving technology, robotaxi deployment progress, and competitive positioning. The core thesis is that FSD's fundamental safety capability has effectively been solved, and the remaining challenges are operational infrastructure and scaling convenience — not core AI — and that no competitor is close to matching Tesla's real-world deployment infrastructure.
+
+## Autonomous Driving
+
+1. **FSD 14.3.2 Rolling Out Wide with Dramatic Community Reception:** FSD version 14.3.2 is described as now going wide, with software update labeled 2026.2.9, and is reportedly being rolled out to all HW4 (AI4) models — marking the first wide rollout (defined as more than 5% of vehicles) after numerous prior releases. Community feedback is described as overwhelmingly positive, with users calling it a "magnitude leap" over version 14.3.1, despite the minor-seeming version number increment. Herbert emphasizes that the jump in quality is surprising given how small the version number change appears.
+
+2. **FSD 14.3 as a Rearchitected Model:** Jo Bhakdi stresses that version 14.3 is not a routine incremental improvement but a deeply reworked, rearchitected model designed to allow much faster and deeper iterations going forward. He argues this architectural change means significant improvements should be expected with every subsequent iteration, and that the improvement curves are steepening — leading him to extrapolate that FSD will be effectively solved well before the end of 2026.
+
+3. **Safety Highlighted by Tesla Executives — Proactive and Contextual Intelligence:** Multiple videos shared in the episode showcase FSD 14.3.2 demonstrating advanced situational awareness. In one clip, the car pulled onto the shoulder to avoid a fast-approaching vehicle making an unsignaled lane change, then re-entered traffic and yielded for a merging car — a sequence the driver initially found alarming but retrospectively praised. In another, FSD held back from advancing at an intersection and then reversed to make room for a wide-turning truck trailer, anticipating the swing before it happened. Tesla VP of AI Ashok Kaliswami described this as "the advantage of having eyes all around" and called it "big brain in a small box." Tesla AI executive Phil Dwan is quoted saying "safety is best when it's proactive."
+
+4. **Safety vs. Convenience as the Core Engineering Tradeoff:** Jo Bhakdi articulates what he describes as a key insight from the earnings call: Tesla has deliberately prioritized safety over convenience, instructing the system to hesitate when in doubt. The result is a car that is sometimes inconveniently cautious — e.g., stopping at green lights too long or driving in circles — but this is a conscious design choice. The challenge now is using continued capability improvements to converge safety and convenience simultaneously, rather than sacrificing one for the other.
+
+5. **Sweden Municipality Approves FSD Testing for One Year:** A small municipality in Sweden approved Tesla FSD testing on its road network for a one-year period. Herbert clarifies this is not final regulatory approval for autonomous operation, but a testing step. Jo Bhakdi contextualizes this within Sweden's decentralized governance structure, noting that diligent decisions by small Swedish communities tend to be adopted more broadly. He also expresses the broader view that regulatory approvals are secondary to technology readiness — once Tesla has tens of thousands of robotaxis operating in the U.S., regulators globally will fall in line quickly.
+
+6. **Netherlands EU Approval Process Moving:** Herbert mentions that the Netherlands has a meeting scheduled for May 5th, with a potential EU member-state decision on FSD approval possible in late June 2026, if the process proceeds as planned.
+
+## Robotaxi
+
+1. **Current Cybercab Production Rate and Fleet Size:** Jo Bhakdi estimates the current Cybercab production rate at approximately 10–12 units per day, with roughly 640 robotaxis currently deployed. He projects this pace would yield approximately 300 per month now, scaling to potentially 10,000 by December 2026 if the ramp continues. Herbert's own estimate is 15,000 Cybercabs produced by end of 2026, with Jo noting there may be 20,000–25,000 produced but uncertainty about how many will be deployed in robotaxi service versus other uses by year-end.
+
+2. **Elon's "Not Super Material" Comment Reinterpreted:** The hosts discuss Elon Musk's earnings call statement that robotaxi revenue would be "not super material" by end of 2026. Jo Bhakdi runs the math, estimating that even 2,000 annualized robotaxi-equivalent units would represent only about 5% of free cash flow — and with the fleet only reaching scale in the final months of the year, the annualized contribution would be closer to 1–2% of 2026 free cash flow. They argue this makes the "not material" statement mathematically consistent with producing 15,000–25,000 Cybercabs by December.
+
+3. **Tesla's Strategy: Build for Million-Scale, Not Patch to 4,000:** Jo Bhakdi draws a sharp strategic contrast between Tesla and Waymo. Waymo, with approximately 3,000 cars across five cities and expanding to ten cities this year, is described as "patching its way" to incremental fleet growth — a 3,000 → 4,000 car strategy. Tesla, by contrast, is building systems and infrastructure intended to scale to millions of vehicles, which requires solving fundamentally different problems and cannot be rushed through incremental patching.
+
+4. **Waymo Incident — Hit-and-Run Behavior After Multi-Car Accident:** The hosts play a video showing a Waymo vehicle that, after being rear-ended, appeared to leave the scene, striking multiple cars (described as hitting four cars) and driving away. Herbert and Jo comment that the same incident involving a Tesla would receive massive global news coverage, while Waymo incidents receive relatively little scrutiny. They use this to illustrate the asymmetric media and regulatory treatment Tesla would face and why Tesla is being extremely cautious about deployment.
+
+5. **Operational Infrastructure as the Remaining Bottleneck:** Beyond core AI, the hosts identify cloud connectivity, wireless charging, automated cleaning (robotic vacuums), AT&T connectivity reliability, and other meta-infrastructure as the true remaining barriers to robotaxi scaling. A specific example is cited where some Tesla robotaxis lost cloud connectivity and went dark mid-ride — the root cause was Tesla's cloud connection (possibly AWS), not AT&T. Jo argues these problems cannot be simulated and must be discovered and resolved through real-world deployment at scale.
+
+## Market & Competition
+
+1. **Why No Competitor Can Replicate Tesla's Infrastructure:** Jo Bhakdi argues that even if a competitor like Volkswagen, Toyota, or Mercedes were to match Tesla's FSD neural network capability today, they would still need years and billions of dollars to build out the surrounding operational infrastructure — cloud systems, connectivity layers, charging, cleaning, remote operations — that can only be stress-tested at real-world scale with massive fleets. He states no traditional automaker has even begun testing at scale, and that Nvidia's role is chip supplier, not vertically integrated robotaxi operator.
+
+2. **Simulation Cannot Substitute for Real-World Scaling:** Jo Bhakdi directly rebuts the thesis that competitors could use Nvidia-powered simulation to accelerate their way to parity. He distinguishes between simulation of the neural net's perception/decision-making (which is simulatable) and the broader infrastructure reliability problems — cloud uptime, connectivity, edge-case operations — which are not simulatable and can only be discovered through deployment. He references a YouTube video by Dillon Loomis covering the connectivity issue as a concrete illustration.
+
+3. **Tesla Vehicle Safety — Head-On Collision Survivability:** Herbert shares a Facebook post from a Tesla owner named Adrienne Rose Alvarado, who survived a head-on collision with a drunk driver, walked away with minor injuries (swelling, bruising, a fractured concern), while the drunk driver was ejected from his vehicle and hospitalized in the ICU. Jo Bhakdi explains the structural reason: Tesla EVs have no front engine, allowing the entire front section to function as a crumple zone without cabin intrusion, making them among the safest vehicles in head-on collisions.
+
+---
+
+**Notable quotes and data:**
+
+- "Reports from the community are overwhelmingly positive saying this release is a magnitude leap from 14.3.1." — Herbert
+- "It's a revamped, rearchitected model. I would not be surprised if we actually see significant improvements with every single iteration now." — Jo Bhakdi
+- "Safety is solved. It's once you have safety, it's a tradeoff between convenience and safety." — Jo Bhakdi
+- "The engineering problem is not just safety... to merge, to make it convenient and safe, that is a capability issue." — Jo Bhakdi
+- "At the moment where this scales, at the moment you have tens of thousands of robotaxis in Dallas, Texas, Austin, whatever, it's game over." — Jo Bhakdi
+- "You can't simulate your way out of it... This is a real-world safety-critical operation. You need to actually build it." — Jo Bhakdi
+- Cybercab current production rate: ~10–12 per day; current fleet: ~640 deployed
+- Waymo: ~3,000 cars, 5 cities, expanding to 10 cities in 2026
+- Herbert's end-of-2026 fleet estimate: 15,000 Cybercabs produced; Jo Bhakdi's estimate: 10,000+ deployed in robotaxi service
+- Jo Bhakdi's prior prediction: 1,800 robotaxis deployed by April/May 2026; actual: ~640–800
+- Jo Bhakdi's calculation: 2,000 annualized robotaxi units ≈ ~5% of free cash flow; 15,000 units concentrated in December ≈ 1–2% of 2026 free cash flow
