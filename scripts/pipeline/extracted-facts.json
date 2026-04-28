@@ -11669,5 +11669,279 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-04-27T18:58:24.214Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla currently has approximately 19 unsupervised robotaxis and more than 600 total vehicles in its robotaxi network as of late April 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 600,
+    "context": "Baseline fleet size figure for modeling 2026 ramp trajectory; unsupervised count of 19 is the operative autonomous deployment number",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert estimates 10,000–15,000 unsupervised Tesla robotaxis deployed by end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 12500,
+    "context": "Host's projection for year-end 2026 fleet size; would represent roughly 2–3x Waymo's current ~3,000 vehicle fleet",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo estimated to have approximately 3,000 robotaxi vehicles deployed as of late April 2026",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Benchmark competitor fleet size used to contextualize Tesla's robotaxi scale ambitions",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla launched the Android robotaxi app, opening the service to approximately 30–40% more US smartphone users",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Interpreted as a signal that Tesla plans to add substantially more vehicles to the network; Android dominates globally outside the US",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is hiring robotaxi field response specialists for day, afternoon, and night shifts in Dallas and Houston",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Around-the-clock hiring in multiple Texas cities signals planned fleet expansion well beyond current handful of vehicles",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "New robotaxi operations manager job openings posted for Florida, signaling it is next in line for expansion",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Florida operations manager hiring is the clearest public signal of imminent robotaxi city expansion beyond Texas",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "First production Cybercab VIN Zero photographed with glossy exterior, distinctly different from matte-finish wrapped engineering prototypes",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production has begun; glossy finish indicates these are production-spec vehicles, not pre-production prototypes",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Multiple Cybercabs spotted driving in formation throughout Austin over the weekend of April 26–27, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Public sightings of production Cybercabs operating in Austin corroborate that early deployment and testing is underway",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi is in pilot production as confirmed in Q1 2026 earnings deck; drone footage from April 25, 2026 shows initial units exiting the factory",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Pilot production precedes official Start of Production; factory designed for 50,000 units/year at full ramp",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Giga Berlin to hire 1,000 new workers by end of June 2026, with recruitment beginning in May, targeting 20% weekly production increase from Q3 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Direct response to increased Model Y demand in Europe; 20% production increase is a concrete near-term output metric",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.2 described by Jeff Lutz as a major step-function improvement over version 14.3.1 released approximately two weeks prior; not yet in wide release as of late April 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version represents a significant capability upgrade; wide release pending",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands has approved FSD and is recommending broader EU approval covering all 27 member states",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Netherlands is described as the regulatory gateway to the EU; broader approval could significantly expand FSD's addressable market in Europe",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model Y charging cost approximately $7–$10 for roughly 300 miles of range",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Implies an approximate energy cost of $0.023–$0.033 per mile based on ~300 mile range; relevant to robotaxi unit economics modeling",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jeff Lutz estimates Elon Musk's internal definition of 'volume scale' for robotaxi is hundreds of thousands of vehicles, not thousands or tens of thousands",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 100000,
+    "context": "Sets the upper bound of Elon's long-term fleet vision; explains earnings call ambiguity around what constitutes 'material' robotaxi revenue",
+    "source": "20260427_brighterwithherbert_02_Tesla_Just_Had_A_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-28T04:48:09.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD subscriptions have reached $546 million in annual recurring revenue, as revealed in a newly released Tesla slide deck.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "First granular public disclosure of FSD subscription ARR scale; signals FSD is becoming a meaningful software revenue stream and supports autonomous driving thesis.",
+    "source": "20260427_futureaza_02_Waymo_Hit_Run_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T04:48:09.276Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla began hiring FSD vehicle operators in 9 new countries following regulatory breakthroughs and successful testing campaigns in Europe.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Indicates Tesla is preparing to expand unsupervised or supervised FSD operations internationally, a key geographic expansion milestone.",
+    "source": "20260427_futureaza_02_Waymo_Hit_Run_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T04:48:09.276Z",
+    "status": "pending"
+  },
+  {
+    "fact": "The Tesla robotaxi app was released for Android phones, confirmed by a viewer comment on April 27, 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Android app availability broadens potential user base for Tesla's robotaxi service ahead of fleet deployment.",
+    "source": "20260427_futureaza_02_Waymo_Hit_Run_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T04:48:09.276Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Samsung increased its supply of 8GB DDR6 RAM to Tesla with changes taking effect in April 2026, but supply still does not fully meet Tesla's total demand.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Chip supply constraints remain a potential bottleneck for Tesla's FSD hardware scaling; partial ramp underway.",
+    "source": "20260427_futureaza_02_Waymo_Hit_Run_And_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-28T04:48:09.276Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.2 rollout has been paused, per Chuck Cook; likely related to connectivity/cloud infrastructure issues and a UI change removing navigation from the intervene screen",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Paused rollout delays broader FSD deployment; Tesla engineer Yun Tasai acknowledged the navigation omission",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "At least 15 glossy deep-gold Cybercabs spotted at Giga Texas, all equipped with steering wheels and pedals, expected to be test vehicles shipped across the country",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms Cybercab production is underway but vehicles are still in testing phase, not yet deployed to robotaxi network",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas and Houston robotaxi deployments remain at 2 unsupervised Model Y vehicles each as of day 11 of operation",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2,
+    "context": "Per-city fleet size remains extremely small; no Cybercab deployment to network yet",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin robotaxi fleet has reached 15 unsupervised vehicles per third-party tracker",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15,
+    "context": "Austin unsupervised fleet growing but still very limited in scale",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Supervised FSD approved for employee-only testing in Strängnäs, Sweden; Finland will pursue EU-wide TCMV approval rather than national fast-lane",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "European FSD expansion progressing but slowly; no consumer availability yet in either country",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi in Austin observed traveling at 35 mph in an active school zone with a posted 20 mph limit during enforcement hours (2:45–4:15 PM), at 3:05 PM on a school day",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Safety compliance failure in active deployment; highlights remaining gaps in FSD's ability to recognize dynamic speed limit enforcement",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "New Actually Smart Summon unified with FSD branch 14.3.2 and robotaxi features under a single model; capped at 6 mph with a limited operational radius",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Unification is a major architecture step but introduces new latency and bandwidth challenges via cloud relay",
+    "source": "20260428_electrified_01_Why_Tesla_Just_Stopped_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-04-28T04:48:09.289Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla received approval to test FSD (Supervised) on public municipal roads in Strängnäs, Sweden, valid for 1 year after final Transport Agency approval, with safety drivers required",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First confirmed municipal public road FSD testing approval in Sweden; Tesla already held state road approvals. Represents continued European regulatory progress for supervised autonomy.",
+    "source": "20260428_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-28T04:48:09.299Z",
+    "status": "pending"
   }
 ]

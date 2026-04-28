@@ -1,0 +1,72 @@
+Channel:     electrified
+Title:       Why Tesla Just Stopped the FSD Rollout & Elon's TSLA Sacrifice ⚡️
+Published:   2026-04-28 00:00 UTC
+Summarized:  2026-04-28 04:48:09 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01TvjpgVB1qxaeGuPpfbMsJb
+Cost:        $0.04557 (9426 in / 4191 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from the "electrified" channel covers a range of Tesla developments including the paused FSD 14.3.2 rollout, connectivity issues with the new Summon feature and robotaxi remote operations, Cybercab testing vehicle updates at Giga Texas, Elon Musk's 2018 compensation plan restructuring, and FSD regulatory progress in Europe. The host maintains a self-described objective stance, willing to call out Tesla's shortcomings alongside its progress. The video closes with a personal update from the creator about stepping away from a side business venture.
+
+## Autonomous Driving
+
+1. **FSD 14.3.2 Rollout Paused:** The rollout of FSD version 14.3.2 has apparently been paused, according to noted FSD tester Chuck Cook. Cook's initial guess for the pause was related to the new "intervene" question screen — specifically, Tesla moved the interaction to multiple-choice only rather than voice-based, and initially omitted navigation as an option. Tesla engineer Yun Tasai acknowledged the navigation omission, responding "noted" when Luca suggested it should be added. The host, however, suspects the pause may be driven by deeper connectivity and infrastructure issues rather than just the UI change.
+
+2. **Summon Now Unified with FSD Branch — But Plagued by Connectivity Issues:** The new "Actually Smart Summon" feature has been paired with robotaxi features in the FSD 14.3.2 branch, meaning all features now use a unified model. This has delivered notably improved parking lot behavior, though the feature is capped at 6 mph and has a radius the host considers too limited. However, Chuck Cook's testing revealed serious and repeated connectivity failures — the vehicle stopped mid-route, rolled past its destination after the button was released, and displayed errors including "summon not ready" and "waiting for improved phone location." Critically, both Cook's phone and the in-car Tesla UI showed full 5G signal bars throughout, suggesting the issue is not cellular signal strength.
+
+3. **Cloud Infrastructure Likely the Root Cause:** The host explains that Summon operates through a four-step relay — from the user's phone network (e.g., Verizon), through the internet, through Tesla's cloud servers (historically hosted on Amazon Web Services), and then to AT&T before reaching the car. The host argues the connectivity failures are most likely a problem with Tesla's cloud relay infrastructure, not the cellular carriers, since both endpoints showed full bars. Because Summon is now paired with a much larger unified FSD model, latency and bandwidth demands have increased substantially, making cloud infrastructure performance a bigger challenge. The host views this as fixable on Tesla's own terms without requiring renegotiation with carriers.
+
+4. **FSD Swerves onto Highway Shoulder — Impressive or Concerning?:** A user video of FSD 14.3.2 on the highway showed the vehicle making an evasive maneuver onto the shoulder at high speed over rumble strips, with seemingly nothing ahead. Shoke framed this as an example of FSD's 360-degree awareness, suggesting the car may have detected a threat behind it. The host acknowledged the potential upside — if FSD can detect fast-approaching rear traffic and make evasive maneuvers, that would be a meaningful safety capability — but noted the driver's calm non-reaction was striking.
+
+5. **FSD Navigation Still Problematic, Though Improving:** The host noted that navigation issues persist in the 14.3.2 branch, sharing an image from user Dennis of a confusing navigation state. However, the host observed that most early access group videos suggest navigation has improved relative to the 14.2 branches, even if it remains far from acceptable for full deployment.
+
+6. **Swedish FSD Approval — Employee Testing Only:** Supervised FSD has been approved for testing in Strängnäs, Sweden, but the host clarified this applies only to trained Tesla employees with a limited number of vehicles. This does not mean Tesla owners in Sweden can use supervised FSD. Finland, meanwhile, confirmed it will pursue EU approval through the TCMV process rather than a national fast-lane route, meaning it will wait for a broader European consensus.
+
+7. **Chinese AI Engineers Validate Tesla's Autonomous Approach:** Two prominent Chinese AI engineers with their own autonomous driving startup publicly stated that Tesla's approach is the only viable path to Level 4 autonomy. They argued that Waymo's approach cannot fully solve the long-tail problem and that Waymo's city-by-city expansion costs are prohibitively high. One engineer, Yinshi, stated Tesla is still the global leader in intelligent driving and that other companies remain far behind. He also noted that China's AI large model parameter volume currently lags Tesla's due to compute infrastructure constraints, and that vehicle-side models industry-wide are too small, with tens of billions of parameters needed for comprehensive inference — a benchmark not yet met broadly.
+
+## Robotaxi
+
+1. **Cybercab Test Vehicles at Giga Texas — Steering Wheels Included:** Joe Tegtmeyer reported at least 15 more glossy deep-gold Cybercabs at Giga Texas, and these vehicles appear to be equipped with steering wheels and pedals. This is a meaningful distinction — earlier speculation was that glossy Cybercabs would be true production variants without any manual controls. The current expectation is these are test vehicles that will be shipped across the country for testing purposes. The host estimates that even 20 Cybercabs per state across 50 states would account for 1,000 vehicles, suggesting most of April and likely much of May will be occupied by test vehicle distribution rather than robotaxi network deployment.
+
+2. **Robotaxi Network Still in Early Stages — Dallas and Houston at Two Vehicles Each:** The Dallas and Houston robotaxi deployments remain at only two unsupervised Model Y vehicles each, now on day 11 of operation. Austin has reached 15 unsupervised vehicles according to a third-party tracker. The host cautioned that the tracker's total figure of 640 includes inactive vehicles, and that its reported 23 unsupervised rides in Austin over the past week only reflects user-reported rides — actual ride volume is higher. The host also noted that Cybercabs could begin replacing Model Ys on the robotaxi network at any time, but Tesla may produce hundreds of Cybercabs before deploying even one to the network.
+
+3. **Remote Operations Connectivity Also Problematic:** Separate from Summon's cloud relay issues, the robotaxi remote operations communications are also experiencing connectivity problems. Texas Tesla reported his mother's first robotaxi ride in Dallas was filled with glitches — the screen refused to work and rider support connections were poor and randomly dropped. User Spencer, described as a Tesla fan, said over half his rider support connections had "incredibly poor" connectivity, and that an average customer would not be happy with the experience. The host noted the mechanisms behind Summon and remote operations are different, but both are experiencing connection failures.
+
+4. **Austin Robotaxi — Supervisors Back in Driver's Seat for Highway Rides:** Josh West reported from Austin that Tesla has returned supervisors to the driver's seat with hands on the wheel for rides that include highway segments. The host clarified Tesla is still adding new unsupervised vehicles in Austin and has not eliminated unsupervised rides, but highway-inclusive rides still use supervised drivers. West also reported a poor experience — after 15 minutes wait due to high demand, a Model Y with no robotaxi badging arrived and dropped the passengers approximately a quarter mile from their intended destination. The supervisor told them to call support, support said nothing could be done, and the passengers had to walk the remainder in 91°F heat.
+
+5. **School Zone Speed Compliance Failure:** Texas Tesla shared a video showing the robotaxi failing to slow to 20 mph in an active school zone — the vehicle traveled at 35 mph during a period (3:05 PM on a school day) that fell within the posted 20 mph enforcement window (2:45–4:15 PM). The host flagged this as a meaningful safety compliance issue that needs to be addressed.
+
+6. **Robotaxi App Now on Google Play Store:** The Tesla robotaxi app is now available for download on the Google Play Store for Android users.
+
+## Electric Vehicles
+
+1. **Tesla Semi 3-Week Pilot with ISO Logistics:** A company called ISO Logistics has begun a 3-week pilot of the Tesla Semi on live freight routes, serving multiple customers. ISO stated it will release findings from the pilot after the evaluation period concludes. No performance or efficiency data was shared yet.
+
+2. **Supercharger Network Gains Predictive Queue Intelligence:** Tesla has deployed a new model for its Supercharger network that uses real-time traffic monitoring and vehicle trajectory data within a geofence around Supercharger sites to predict occupancy and queue length. The model reduces queue length estimation error to 20%, meaning in cases of 10 or more vehicles waiting, the predicted queue is accurate within one to two vehicles. The system is now deployed globally. Tesla also released a digital queue feature via the app, allowing drivers to join a virtual line rather than physically waiting at the station. The host noted that challenges remain, including cars queuing at nearby drive-throughs affecting estimates, as seen at the Tesla Diner.
+
+## Market & Competition
+
+1. **Waymo Scalability Questioned by Chinese Engineers:** The two Chinese autonomous driving engineers cited above argued specifically that Waymo's HD map-dependent, city-by-city approach cannot solve the long-tail problem and that the cost of expanding to new cities is prohibitively large. They positioned Tesla's vision-based, generalized approach as the only scalable path to Level 4, and noted Tesla is already ahead on addressing compute and memory constraints that will challenge the broader industry over the next 2–3 years.
+
+## Financials
+
+1. **Elon's 2018 Compensation Plan Restructured — Lock-Up Through 2033:** Tesla's special committee reached a new agreement governing how Elon Musk can exercise his 2018 performance award of approximately 303–304 million shares. Under the new implementation agreement, Elon can exercise the shares between May 21st and August 15th, 2026. Upon exercise, the shares will be issued as restricted stock rather than freely tradable. Elon must remain in continuous service as CEO or a specific executive role through January 19th, 2028 for the shares to vest and become non-forfeitable. A 5-year holding period begins at the vesting date (not the exercise date), meaning Elon could not begin selling until approximately January 2033. Voting rights are granted immediately upon exercise. The host characterized this as Elon making meaningful concessions — delaying his own liquidity for the benefit of Tesla and reducing potential market disruption from large share sales.
+
+2. **SEC Filing Clarifications — No New Dilution, No Selling:** The host clarified two recent SEC filings that caused confusion. The S-8 filing was Tesla legally registering the 303 million shares so they can be issued to Elon once he exercises his options — not new dilution and not a sale. The Form 4 showing Elon "disposing" of 96 million shares was him relinquishing access to a bridge loan that Tesla had set up as a contingency in case his 2018 compensation plan was permanently rejected by the courts — since the plan was restored, the bridge loan is no longer needed.
+
+3. **TSLA Stock Price:** Tesla stock closed the day at $378.67, up 6.3%, while the Nasdaq was up 0.1%. Volume was in line with the average.
+
+---
+
+**Notable quotes and data:**
+- Yinshi (Chinese AI engineer): *"I believe Tesla is still the global leader in intelligent driving, and other companies are still far behind."*
+- Yinshi: *"Tens of billions of parameters are the benchmark for comprehensive inference capabilities and current vehicle side models are too small leaving significant room for improvement in the next 2 to 3 years."*
+- Spencer (Tesla fan, on rider support): *"Over half the times I've connected to Rider support, the connectivity has been incredibly poor. If I was an average customer, I would not be very happy."*
+- Supercharger queue model: reduces queue length estimation error to 20%; in 10+ vehicle wait scenarios, predicts queue within 1–2 vehicles
+- At least 15 glossy Cybercabs now spotted at Giga Texas, all equipped with steering wheels and pedals
+- Austin robotaxi: 15 unsupervised vehicles per third-party tracker; only 23 rides reported in past 7 days (user-reported only)
+- Dallas and Houston: 2 unsupervised Model Y vehicles each, day 11 of operation
+- Tesla stock: $378.67, +6.3% on the day vs. Nasdaq +0.1%
+- Elon's exercise window: May 21 – August 15, 2026; vesting date: January 19, 2028; share sale lock-up until approximately January 2033
