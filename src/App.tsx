@@ -1,7 +1,6 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { track } from './analytics'
 import newsData from './data/news.json'
-import catalystsData from './data/catalysts.json'
 import { type Article, type NewsData, CHANNEL_META } from './types'
 import { ArticleDetail } from './components/Feed/ArticleDetail'
 import { FeedSection } from './components/Feed/FeedSection'
@@ -10,9 +9,9 @@ import { DataSection } from './components/Data/DataSection'
 import { StockWidget } from './components/Stock/StockWidget'
 import { StockChart } from './components/Stock/StockChart'
 import { useStockQuote } from './components/Stock/useStockQuote'
+import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
 
 const data = newsData as NewsData
-const CATALYSTS: { date: string; event: string; hot: boolean }[] = catalystsData
 
 const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
 
@@ -38,10 +37,8 @@ export default function App() {
   const [showFilter, setShowFilter] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
   const [showChart, setShowChart] = useState(false)
-  const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'catalysts'>('stock')
-  const stockBoxRef = useRef<HTMLDivElement>(null)
+  const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'robotaxi'>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
-  const [stockBoxHeight, setStockBoxHeight] = useState<number | null>(null)
   const channels = useMemo(() => {
     const sorted = [...new Set(data.articles.map(a => a.channel))].sort()
     return sorted.sort((a, b) => (a === 'tesla' ? -1 : b === 'tesla' ? 1 : 0))
@@ -72,15 +69,6 @@ export default function App() {
     setShowChart(true)
     track('Chart Open')
   }, [])
-
-  useEffect(() => {
-    if (!stockBoxRef.current) return
-    const observer = new ResizeObserver(() => {
-      if (stockBoxRef.current) setStockBoxHeight(stockBoxRef.current.offsetHeight)
-    })
-    observer.observe(stockBoxRef.current)
-    return () => observer.disconnect()
-  }, [activeSection])
 
   useEffect(() => {
     if (!showFilter) return
@@ -143,35 +131,24 @@ export default function App() {
         {activeSection === 'feed' && (
           <>
             {/* Desktop: side by side */}
-            <div className="hidden sm:grid sm:grid-cols-2 sm:items-start gap-4 mb-6">
+            <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
               <div
-                ref={stockBoxRef}
                 onClick={handleChartOpen}
-                className="cursor-pointer group"
+                className="cursor-pointer group flex flex-col"
               >
                 <h3 className="text-text-bright text-xs font-bold mb-2">NASDAQ:TSLA</h3>
-                <StockWidget {...stockData} />
+                <StockWidget {...stockData} className="flex-1" />
               </div>
-              <div className="flex flex-col overflow-hidden" style={stockBoxHeight ? { height: `${stockBoxHeight}px` } : undefined}>
-                <h3 className="text-text-bright text-xs font-bold mb-2 flex-shrink-0">NEXT CATALYSTS</h3>
-                <div className="border border-border bg-surface p-3 text-xs flex-1 overflow-y-auto min-h-0 space-y-1">
-                  {CATALYSTS.map((c, i) => (
-                    <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
-                      <span className={`w-24 flex-shrink-0 font-bold whitespace-nowrap ${c.hot ? 'text-green' : 'text-text-dim'}`}>
-                        {c.date}
-                      </span>
-                      <span className="text-text flex-1">{c.event}</span>
-                      {c.hot && <span className="text-green flex-shrink-0">◄</span>}
-                    </div>
-                  ))}
-                </div>
+              <div className="flex flex-col">
+                <h3 className="text-text-bright text-xs font-bold mb-2">UNSUPERVISED ROBOTAXIS</h3>
+                <RobotaxiCounts className="flex-1" />
               </div>
             </div>
 
             {/* Mobile: tabbed */}
             <div className="sm:hidden mb-6">
               <div className="flex gap-1 mb-2">
-                {([['stock', 'NASDAQ:TSLA'], ['catalysts', 'NEXT CATALYSTS']] as const).map(([key, label]) => (
+                {([['stock', 'NASDAQ:TSLA'], ['robotaxi', 'UNSUPERVISED ROBOTAXIS']] as const).map(([key, label]) => (
                   <button
                     key={key}
                     onClick={() => setMobileStockTab(key)}
@@ -188,17 +165,7 @@ export default function App() {
                   <StockWidget {...stockData} />
                 </div>
               ) : (
-                <div className="border border-border bg-surface p-3 text-xs space-y-1">
-                  {CATALYSTS.map((c, i) => (
-                    <div key={i} className="flex items-center gap-2 py-1 border-b border-border last:border-0">
-                      <span className={`w-24 flex-shrink-0 font-bold whitespace-nowrap ${c.hot ? 'text-green' : 'text-text-dim'}`}>
-                        {c.date}
-                      </span>
-                      <span className="text-text flex-1">{c.event}</span>
-                      {c.hot && <span className="text-green flex-shrink-0">◄</span>}
-                    </div>
-                  ))}
-                </div>
+                <RobotaxiCounts />
               )}
             </div>
           </>

@@ -1,6 +1,6 @@
 import { SESSION_LABELS, formatTradeAge, type StockState } from './helpers'
 
-export function StockWidget(state: StockState) {
+export function StockWidget({ className, ...state }: StockState & { className?: string }) {
   const { price, prevClose, open, high, low, tradeAt, lastUpdated, loading, error, session, live } = state
   const isExtended = session === 'PRE' || session === 'POST'
   const showingLastClose = isExtended && !live
@@ -14,7 +14,7 @@ export function StockWidget(state: StockState) {
     : SESSION_LABELS[session]
 
   return (
-    <div className="border border-border bg-surface p-3">
+    <div className={`border border-border bg-surface p-3${className ? ` ${className}` : ''}`}>
       {loading && !price ? (
         <div className="text-text-dim text-xs animate-pulse">CONNECTING...</div>
       ) : error && !price ? (
