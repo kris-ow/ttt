@@ -12161,5 +12161,119 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-28T19:15:46.453Z",
     "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi's robotaxi scaling threshold is approximately 1,800 unsupervised robotaxis, which he believes would reprice Tesla stock toward $1,000",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Represents the key inflection point in the TTT thesis; below this threshold, the path to all-time highs is seen as independent of robotaxi scaling",
+    "source": "20260428_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-29T04:43:18.944Z",
+    "status": "pending"
+  },
+  {
+    "fact": "An Optimus announcement was referenced as expected within 90 days from the date of a prior video",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Near-term Optimus catalyst flagged as part of the ongoing Tesla thesis; no specific date given in this video",
+    "source": "20260428_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-04-29T04:43:18.944Z",
+    "status": "pending"
+  },
+  {
+    "fact": "US rollout of FSD V14 Lite for HW3 vehicles is targeted for end of June 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Sets the earliest possible trigger for international HW3 expansion; Musk timelines have a documented history of slipping",
+    "source": "20260429_electrek_01_Tesla_Promises_Fsd_V14_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-29T04:43:18.956Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla received FSD Supervised approval in the Netherlands — its first European regulatory approval — limited to HW4 vehicles only",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First European FSD regulatory approval is a key geographic expansion milestone, but HW3 exclusion created legal and reputational exposure",
+    "source": "20260429_electrek_01_Tesla_Promises_Fsd_V14_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-29T04:43:18.956Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 4 million HW3 vehicles worldwide are candidates for AI4 retrofit via planned Tesla micro-factories",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 4000000,
+    "context": "Indicates scale of HW3 legacy fleet; retrofit scope and cost could be a significant capex item affecting Tesla's financials",
+    "source": "20260429_electrek_01_Tesla_Promises_Fsd_V14_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-29T04:43:18.956Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced HW4 Plus with doubled memory one day after the Q1 2026 earnings call",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Raises concern that HW4 owners may face the same hardware obsolescence cycle as HW3 owners, relevant to long-term FSD and robotaxi fleet planning",
+    "source": "20260429_electrek_01_Tesla_Promises_Fsd_V14_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-29T04:43:18.956Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD V14.3.2 (software version 2026.2.9.9) is rolling out broadly to Tesla owners, adding 'Navigation' as a new selectable disengagement reason in the FSD popup",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Broad rollout of a new FSD version with an updated disengagement taxonomy is a software milestone; the 'Navigation' disengagement category may improve data granularity for training and regulatory reporting",
+    "source": "20260429_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-29T04:43:18.969Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Two separate semi trucks loaded with Cybercabs were spotted in transit on April 28, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Multiple Cybercab transport sightings in a single day suggest active fleet staging or logistics ramp, consistent with pre-launch deployment preparation",
+    "source": "20260429_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-29T04:43:18.969Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is hosting an Autonomy Pop-Up in Miami starting April 29, 2026 at the F1 Crypto.com Miami Grand Prix Fan Fest (Lummus Park), featuring Cybercab and Optimus",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "High-visibility public debut of Cybercab and Optimus at a major international sporting event; signals active consumer marketing push ahead of commercial launch",
+    "source": "20260429_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-29T04:43:18.969Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Safety Score Version 3.0 is now live for new policy holders in Florida and Maryland; existing holders transition on July 12, 2026; new feature is night driving as a scored behavior",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "V3.0 adds night driving scoring, expanding behavioral data collection relevant to FSD training and Tesla's insurance data flywheel",
+    "source": "20260429_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-29T04:43:18.969Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Operating cost of Tesla Model Y Premium in the U.S. is approximately $0.04 per mile versus $0.104 per mile for a Toyota RAV4 Hybrid, a 61% cost advantage excluding maintenance",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Energy cost per mile for Tesla Model Y quoted at $0.04/mile; useful as a proxy for robotaxi energy cost modeling, though this is a consumer vehicle figure and not Cybercab-specific",
+    "source": "20260429_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-04-29T04:43:18.969Z",
+    "status": "pending"
   }
 ]
