@@ -42,7 +42,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
 
         <div className="border border-border bg-surface p-3 sm:p-6 overflow-x-hidden" onClick={e => e.stopPropagation()}>
           <div className="text-text-dim text-xs mb-2">
-            [{article.sourceType === 'x' ? 'X/TWITTER' : article.sourceType === 'article' ? 'WEB' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
+            [{article.sourceType === 'x' ? 'X/TWITTER' : article.sourceType === 'article' ? 'WEB' : article.sourceType === 'exec' ? 'TTT EDITORIAL' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
           </div>
           <h2 className="text-green text-lg font-bold mb-4">{article.title}</h2>
           {(article.source || article.videoUrl) && (
@@ -67,7 +67,9 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
             {(() => {
               const lines = article.body.split('\n')
               const isX = article.sourceType === 'x'
+              const isExec = article.type === 'executive'
               let skipSignal = false
+              let inExecSummarySection = false
               const elements: React.ReactNode[] = []
               let lastWasHr = false
 
@@ -96,10 +98,17 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
                 }
                 lastWasHr = false
 
+                if (isExec && trimmed.startsWith('## ')) {
+                  inExecSummarySection = trimmed.slice(3).trim().toLowerCase() === 'brief'
+                }
+
                 if (trimmed.startsWith('### ')) { elements.push(<h4 key={i} className="text-green-dim font-bold mt-3 mb-1 text-xs">{trimmed.slice(4)}</h4>); continue }
                 if (trimmed.startsWith('## ')) { elements.push(<h3 key={i} className="text-green font-bold mt-4 mb-2 text-sm">{trimmed.slice(3)}</h3>); continue }
                 if (trimmed.startsWith('# ')) { elements.push(<h2 key={i} className="text-green font-bold mt-4 mb-2 text-base">{trimmed.slice(2)}</h2>); continue }
-                if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) { elements.push(<div key={i} className="text-text pl-4 text-xs">{'>'} {renderInline(trimmed.slice(2))}</div>); continue }
+                if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+                  const cls = inExecSummarySection ? 'text-text-bright pl-4 text-xs' : 'text-text pl-4 text-xs'
+                  elements.push(<div key={i} className={cls}>{'>'} {renderInline(trimmed.slice(2))}</div>); continue
+                }
                 if (/^\d+\.\s/.test(trimmed)) { elements.push(<div key={i} className="text-text text-xs mb-2">{renderInline(trimmed)}</div>); continue }
                 if (trimmed.startsWith('[') && /^\[\d+\]/.test(trimmed)) { elements.push(<div key={i} className="text-text-dim text-xs bg-surface-2 p-2 mb-1 break-all">{trimmed}</div>); continue }
                 if (trimmed.startsWith('Raw Posts')) { elements.push(<h3 key={i} className="text-green-dim font-bold mt-4 mb-2 text-xs border-t border-border pt-3">{trimmed}</h3>); continue }

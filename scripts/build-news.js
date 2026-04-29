@@ -39,9 +39,10 @@ const articles = files.map(filename => {
   const channel = channelMatch ? channelMatch[1] : meta.channel || '';
 
   // Determine source type
+  const isExec = channel === 'ttt';
   const isX = meta.source?.includes('X/') || meta.source?.includes('X @') || channel === 'sawyermerritt';
   const isArticle = meta.author !== undefined;
-  const sourceType = isX ? 'x' : isArticle ? 'article' : 'youtube';
+  const sourceType = isExec ? 'exec' : isX ? 'x' : isArticle ? 'article' : 'youtube';
 
   // Extract signal strength (X articles: signal hidden in UI, skip extraction)
   const signalMatch = !isX ? body.match(/Signal Strength:\s*(🟢|🟡|🔴)\s*(\w+)/) : null;
@@ -75,6 +76,7 @@ const articles = files.map(filename => {
     signal,
     videoUrl,
     body,
+    ...(isExec ? { type: 'executive' } : {}),
   };
 });
 
@@ -99,6 +101,10 @@ for (const article of uniqueArticles) {
 }
 for (const date of Object.keys(byDate)) {
   byDate[date].sort((a, b) => {
+    // Executive summary always first
+    if (a.type === 'executive' && b.type !== 'executive') return -1;
+    if (b.type === 'executive' && a.type !== 'executive') return 1;
+    // Tesla official next
     if (a.channel === 'tesla' && b.channel !== 'tesla') return -1;
     if (b.channel === 'tesla' && a.channel !== 'tesla') return 1;
     return 0;

@@ -30,14 +30,16 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 ## Summary Pipeline (`scripts/pipeline/`)
 Transcript-driven summarization pipeline (transcripts pushed directly to repo by Mac Mini):
 - `run.js` — main orchestrator (scan unsummarized transcripts → Claude Batch API → write summaries → rebuild news.json)
+- `exec-summary.js` — daily executive digest aggregating all `_summary.txt` for a date into `news/YYYYMMDD_ttt_00_executive_summary.txt`. Direct API (Sonnet 4.6). Runs only on the 01:15 and 07:15 UTC pipeline executions.
+- `prompt-exec.md` — prompt for the executive digest (Brief bullets + category sections + notable quotes)
 - `config.js` — channels, corrections dictionary, categories, pricing
 - `prompt.md` — prompt template with placeholder slots
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — 3x daily GitHub Actions: summarize → commit → deploy (failure → auto-creates GitHub issue)
+- `.github/workflows/daily-pipeline.yml` — 4x daily GitHub Actions (01:15, 07:15, 10:15, 17:45 UTC): summarize → exec summary (early runs only) → commit → deploy (failure → auto-creates GitHub issue)
 - `.github/workflows/freshness-check.yml` — daily 12:00 UTC: alerts via GitHub issue if unsummarized transcripts remain
 
-Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries
+Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries → on 01:15/07:15 UTC runs, `exec-summary.js` aggregates the day into a TTT-branded digest pinned first in the feed
 
 Categories: Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
 

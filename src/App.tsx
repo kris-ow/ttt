@@ -63,6 +63,9 @@ export default function App() {
   const handleArticleOpen = useCallback((article: Article) => {
     setSelectedArticle(article)
     track('Article Open', { channel: article.channel, title: article.title.slice(0, 80) })
+    if (article.type === 'executive') {
+      track('Exec Summary Open', { date: article.date })
+    }
   }, [])
 
   const handleChartOpen = useCallback(() => {

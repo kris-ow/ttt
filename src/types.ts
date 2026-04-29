@@ -5,11 +5,12 @@ export interface Article {
   channel: string
   title: string
   published: string
-  sourceType: 'x' | 'youtube' | 'article'
+  sourceType: 'x' | 'youtube' | 'article' | 'exec'
   source: string
   signal: string | null
   videoUrl: string | null
   body: string
+  type?: 'executive'
 }
 
 export interface NewsData {
@@ -19,7 +20,7 @@ export interface NewsData {
 
 export type Bias = 'BULL' | 'LEAN BULL' | 'NEUTRAL' | 'BEAR'
 
-export const CHANNEL_META: Record<string, { name: string; platform: string; color: string; bias: Bias }> = {
+export const CHANNEL_META: Record<string, { name: string; platform: string; color: string; bias?: Bias }> = {
   brighterwithherbert: { name: 'Herbert Ong', platform: 'YouTube', color: '#ef4444', bias: 'BULL' },
   cernbasher: { name: 'Cern Basher', platform: 'YouTube', color: '#10b981', bias: 'BULL' },
   electrek: { name: 'Elektrek', platform: 'Web', color: '#f97316', bias: 'BEAR' },
@@ -31,4 +32,5 @@ export const CHANNEL_META: Record<string, { name: string; platform: string; colo
   munrolive: { name: 'Sandy Munro', platform: 'YouTube', color: '#a3e635', bias: 'NEUTRAL' },
   sawyermerritt: { name: 'Sawyer Merritt', platform: 'X', color: '#6366f1', bias: 'LEAN BULL' },
   tesla: { name: 'Tesla Official', platform: 'YouTube', color: '#e31937', bias: 'BULL' },
+  ttt: { name: 'The Tesla Thesis', platform: 'TTT', color: '#00ff41' },
 }

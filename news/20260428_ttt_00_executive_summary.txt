@@ -1,0 +1,95 @@
+Channel:     ttt
+Title:       Executive Summary (2026-04-28)
+Published:   2026-04-28 00:00 UTC
+Summarized:  2026-04-29 12:53:38 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.09926 (17730 in / 3071 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FSD 14.3.2 rolls out broadly to HW4 fleet — then pauses.
+- Sweden approves supervised FSD testing on public roads for one year.
+- Robotaxi school zone speed violation captured on video in Dallas.
+- Cybercab production now ~10–12 units/day per Bhakdi; ~640 deployed.
+- Giga Texas Optimus facility targets 10M units/year; framing by end of 2026.
+- Elon's 2018 award: 304M shares registered; no sales until ~January 2033.
+
+## Autonomous Driving
+
+- **FSD 14.3.2 goes wide, then pauses.** The release — software update 2026.2.9 — marked the first wide rollout (>5% of fleet) to all HW4/AI4 vehicles, with community reception described as "a magnitude leap" over 14.3.1. Per Chuck Cook, the rollout was subsequently paused; the stated trigger was a UI omission (navigation missing as a disengagement option), though per Electrified the underlying cause may be deeper cloud infrastructure issues.
+
+- **FSD 14.3 is a rearchitected model, not an incremental update.** Jo Bhakdi emphasized that 14.3 was fundamentally rebuilt to enable faster and deeper iterations going forward, predicting FSD will be effectively "solved" before end of 2026. Tesla VP of AI Ashok Kaliswami described the system's 360-degree situational awareness as "big brain in a small box"; Tesla AI executive Phil Dwan stated "safety is best when it's proactive."
+
+- **Sweden approves supervised FSD testing for one year.** Tesla received approval from Sweden's Transport Agency (Transportstyrelsen) to test FSD (Supervised) on public municipal roads in Strängnäs, valid for one year following final sign-off, requiring safety drivers. Note: Tesla already holds state road approvals in Sweden; this does not authorize unsupervised operation or owner use. Finland confirmed it will pursue EU approval via the TCMV process rather than a national fast lane.
+
+- **Netherlands EU process: May 5 meeting, potential decision late June.** A scheduled Netherlands meeting on May 5th could advance an EU member-state decision on FSD approval by late June 2026 if proceedings proceed as planned.
+
+- **Actually Smart Summon impresses, but connectivity failures are systemic.** Sawyer Merritt logged approximately one hour of back-seat riding across four parking lots with updated Summon and reported the car "handled all scenarios very well." However, Chuck Cook's testing revealed repeated cloud relay failures — vehicle stopping mid-route, rolling past destination, "summon not ready" errors — despite full 5G signal at both endpoints, pointing to Tesla's cloud infrastructure (historically AWS) as the bottleneck, not cellular carriers.
+
+- **Chinese AI engineers validate Tesla's autonomous approach.** Two prominent Chinese AI engineers with their own AV startup publicly stated Tesla's vision-based approach is the only viable path to Level 4 autonomy. Engineer Yinshi stated "Tesla is still the global leader in intelligent driving, and other companies are still far behind," and noted China's vehicle-side models lack sufficient parameters — benchmarking "tens of billions" as the threshold for comprehensive inference, not yet widely met.
+
+## Robotaxi
+
+- **Cybercab production ~10–12 units/day; ~640 robotaxis deployed.** Per Bhakdi, current production rate yields roughly 300 units per month, with his projection of ~10,000 deployed by December 2026. Herbert's independent estimate is 15,000 Cybercabs produced by year-end; Bhakdi estimates 20,000–25,000 produced but with uncertainty on how many enter active robotaxi service. Sources disagree on deployed count: Bhakdi cites ~640, while Electrified notes the third-party tracker total of 640 includes inactive vehicles.
+
+- **At least 15 more Cybercabs spotted at Giga Texas — with steering wheels.** Joe Tegtmeyer reported the glossy deep-gold vehicles are equipped with steering wheels and pedals, confirming these are test units rather than production robotaxis. Electrified estimates distribution of test vehicles across all 50 states could account for ~1,000 units, suggesting most of April–May will be occupied by test fleet logistics rather than consumer deployment.
+
+- **Austin: 15 unsupervised vehicles; highway rides still use supervised drivers.** Per third-party tracker, Austin has 15 unsupervised Model Ys active, but Josh West reported Tesla has returned supervisors to the driver's seat with hands on wheel for any ride including highway segments. Dallas and Houston remain at 2 unsupervised Model Y vehicles each, day 11. One Austin passenger reported being dropped a quarter-mile short of destination in 91°F heat with no support resolution.
+
+- **School zone speed violation recorded.** Texas Tesla shared video of a Dallas robotaxi traveling 35 mph in an active 20 mph school zone at 3:05 PM on a school day (enforcement window: 2:45–4:15 PM). Flagged by Electrified as a meaningful safety compliance failure requiring remediation.
+
+- **Remote operations connectivity rated unacceptable by riders.** Spencer, a self-described Tesla fan, reported "over half" of rider support connections had "incredibly poor" connectivity. "If I was an average customer, I would not be very happy." Texas Tesla's report from Dallas corroborated with glitches throughout.
+
+- **Uber structurally exposed as Tesla scales.** A guest analyst on Cern Basher argued Tesla's absence from Uber's ~20 AV partner roster is structural, not temporary — Uber's CEO acknowledged Tesla "doesn't play well with others." The analyst's core thesis: Uber wins with fragmented human driver supply and loses when autonomous fleet operators consolidate and self-direct demand, rendering the aggregator role unnecessary. Uber Q4: $54B gross bookings, $14.4B revenue, ~$300M net profit, ~2% net margin.
+
+- **Tesla Robotaxi app now available on Google Play Store.**
+
+## Humanoid Bots
+
+- **Fremont converting to Optimus at 1M units/year run rate.** Per supply chain executive Jeff Lutz (brighterwithherbert), Tesla is actively converting Fremont to Optimus production targeting a 1 million unit/year run rate, with thousands of units expected in 2026 and the full run rate achievable roughly one year after line spin-up. Lutz noted this is his own framing, not an official Tesla designation.
+
+- **Giga Texas Optimus facility: 10M units/year target, framing by end of 2026.** Aerial photos from Joe Tegtmeyer show land near Giga Texas being prepared for a dedicated facility. Lutz predicts the structure will be framed by end of 2026, factory ready in 2027, with first bots potentially rolling off the line by end of 2027 — though hitting 10M units/year will require additional ramp time after opening.
+
+- **Optimus V3 exists in engineering form; public demo tied to production start.** Tesla has V3 units in-house for engineering work but is not showing them publicly. Lutz explained the delay as necessary tuning time to reach and surpass V2.5's capability level before a public reveal. Elon has guided July–August 2026 for production start; Lutz's estimate is September–October 2026.
+
+## Financials
+
+- **Elon's 2018 compensation: 304M shares registered, no sales until ~January 2033.** Tesla filed an S-8 to register ~303.96M shares. Under a new implementation agreement, Elon may exercise shares between May 21–August 15, 2026; they vest as restricted stock on January 19, 2028 (contingent on continued CEO service), with a 5-year lock-up from vesting — precluding sales until approximately January 2033. Voting rights attach immediately upon exercise. Sources (Electrified, Sawyer Merritt, Futurazza) concur this is procedural and not dilutive in the near term; tax obligation will likely be handled via net settlement (share withholding), not open-market sales.
+
+- **Tesla stock closed +6.3% at $378.67 vs. Nasdaq +0.1%.** Per Electrified. Jo Bhakdi's short put positions are break-even at $372 this week, highly profitable above $385, with a near-term target of $400. Tesla's all-time high was $490 on December 16, 2025.
+
+- **Net profit per vehicle recovered to ~$5,558.** Per Futurazza citing Motley Fool: peaked at over $10,000 per vehicle in 2022–2023, fell to roughly half by 2024, now recovered to ~$5,558. Randy Kirk's estimate of a "normal" run-rate is ~$6,000. Q1 2026 deliveries described as lackluster but gross margins "pretty fantastic."
+
+- **$230M warranty true-down** reported in the most recent earnings, per Lutz — Tesla vehicles failed at a lower rate and cost less to repair than previously modeled.
+
+## Electric Vehicles
+
+- **Tesla Semi: 3-week commercial pilot underway with ISO Logistics / AiLO Logistics.** Sources differ on company name (ISO Logistics per Electrified; AiLO Logistics per Sawyer Merritt) but agree a live freight pilot serving multiple customers is in progress, with findings to be released post-evaluation. No performance data yet.
+
+- **Tesla Semi factory in Sparks, Nevada nearly complete.** Per Futurazza presenter Brian, who visited the site approximately two months prior: building and outfitting mostly done, production expected to begin in 2026. Pricing observed from California incentive invoices: $240,000–$260,000. Current battery: Panasonic 2170 cells (Reno); transitioning to 4680 cells (Texas).
+
+- **Supercharger queue model deployed globally.** New predictive model uses real-time traffic and vehicle trajectory data within a geofence to forecast occupancy; reduces queue estimation error to 20% (within 1–2 vehicles for queues of 10+). Digital virtual queue feature now available via app.
+
+## Market & Competition
+
+- **Elon vs. OpenAI trial underway; jury selection began in Oakland.** Elon is seeking $130B in remedies — publicly committed to returning any award to OpenAI's nonprofit — and is asking the court to remove Sam Altman from leadership. Fraud claims against Altman and Greg Brockman were dropped to narrow scope. Per brighterwithherbert, hosts characterized the trial as a distraction risk but expressed hope for swift resolution.
+
+- **SpaceX acquires right to buy Cursor for $60B.** SpaceX struck a deal giving it the option to acquire the AI coding platform Cursor for $60B later in 2026; if the option is not exercised, SpaceX pays Cursor $10B. Strategic rationale: XAI currently trails Anthropic and OpenAI in coding/agentic AI; Cursor provides tooling access while gaining compute on Colossus and Colossus 2.
+
+Notable quotes and data:
+- Jo Bhakdi: *"Safety is solved. It's once you have safety, it's a tradeoff between convenience and safety."*
+- Jo Bhakdi: *"You can't simulate your way out of it... This is a real-world safety-critical operation. You need to actually build it."*
+- Yinshi (Chinese AI engineer): *"I believe Tesla is still the global leader in intelligent driving, and other companies are still far behind."*
+- Spencer (Tesla rider support): *"Over half the times I've connected to Rider support, the connectivity has been incredibly poor."*
+- Uber CEO on Tesla: *"Tesla doesn't play well with others."*
+- Guest analyst on Uber: *"The orchestra will conduct itself."*
+- Cybercab production: ~10–12 units/day; ~640 deployed (Bhakdi)
+- FSD rollout version: 14.3.2 / software update 2026.2.9
+- Tesla stock: $378.67, +6.3%; all-time high $490 (Dec 16, 2025)
+- Elon exercise window: May 21–Aug 15, 2026; vesting: Jan 19, 2028; sales lock-up: ~Jan 2033
+- Optimus V3 production start (Elon guided): July–Aug 2026; (Lutz estimate): Sep–Oct 2026
+- Giga Texas Optimus factory: framed by end of 2026, first bots by end of 2027 (Lutz)
+- Uber Q4: $54B gross bookings, $14.4B revenue, ~$300M net profit (~2% margin)
+- SpaceX / Cursor deal: $60B acquisition option or $10B partnership fee

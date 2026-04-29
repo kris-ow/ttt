@@ -32,23 +32,34 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
             </div>
 
             <div className="space-y-1">
-              {articles.map(article => (
+              {articles.map(article => {
+                const isExec = article.type === 'executive'
+                return (
                   <button
                     key={article.id}
                     onClick={() => onSelectArticle(article)}
-                    className="w-full text-left border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 transition-colors cursor-pointer group"
+                    className={`w-full text-left border p-3 transition-colors cursor-pointer group ${
+                      isExec
+                        ? 'border-green-muted bg-green-bg hover:bg-green-bg-2 hover:border-green-dim'
+                        : 'border-border bg-surface hover:bg-surface-2 hover:border-border-light'
+                    }`}
                   >
                     <div className="flex items-start gap-x-3 text-xs overflow-hidden">
                       <span className="text-text grow-0 shrink basis-[31ch] min-w-[12ch] flex flex-wrap content-start items-baseline gap-x-2">
-                        <span className="whitespace-nowrap">{channelShort(article.channel, article.sourceType)}</span>
+                        {channelShort(article.channel, article.sourceType)}
                         {biasTag(article.channel)}
                       </span>
-                      <span className="text-text-bright group-hover:text-green grow shrink-0 basis-[55%] transition-colors">
+                      <span className={`grow shrink-0 basis-[55%] transition-colors ${
+                        isExec
+                          ? 'text-green-dim group-hover:text-green'
+                          : 'text-text-bright group-hover:text-green'
+                      }`}>
                         {article.title}
                       </span>
                     </div>
                   </button>
-              ))}
+                )
+              })}
             </div>
           </div>
         )

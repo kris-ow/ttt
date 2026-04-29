@@ -27,8 +27,10 @@ export function renderInline(text: string) {
 
 export function channelShort(channel: string, sourceType: string) {
   const ch = CHANNEL_META[channel]
-  const prefix = sourceType === 'x' ? '[X]' : sourceType === 'article' ? '[WEB]' : '[YT]'
-  const label = `${prefix} ${ch?.name || channel}`
+  const prefix = sourceType === 'x' ? '[X]' : sourceType === 'article' ? '[WEB]' : sourceType === 'exec' ? '[TTT]' : '[YT]'
+  const name = ch?.name || channel
+  // NBSP glues prefix to first word so [TTT] never sits alone on a line; remaining spaces wrap normally.
+  const label = `${prefix} ${name}`
   if (channel === 'tesla') return <span className="text-white">{label}</span>
   return label
 }

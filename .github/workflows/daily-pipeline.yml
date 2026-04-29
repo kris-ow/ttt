@@ -48,6 +48,21 @@ jobs:
           PIPELINE_MODE: ${{ inputs.mode || 'batch' }}
         run: node scripts/pipeline/run.js
 
+      # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
+      # 01:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
+      # The 10:15 and 17:45 runs skip this step.
+      - name: Build executive summary
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          HOUR=$(date -u +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$HOUR" = "01" ] || [ "$HOUR" = "07" ]; then
+            node scripts/pipeline/exec-summary.js
+          else
+            echo "Skipping executive summary at ${HOUR}:xx UTC (only runs at 01:xx and 07:xx)"
+          fi
+
       # Step 3: Rebuild news.json (pipeline does this, but run standalone as safety net)
       - name: Rebuild news.json
         run: node scripts/build-news.js
