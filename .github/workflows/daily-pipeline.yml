@@ -3,7 +3,11 @@ name: Daily Summary Pipeline
 on:
   schedule:
     # 4x daily: Europe 6AM, US East 6AM, US West 6AM, evening catch-up
-    - cron: '15 1,7,10 * * *'
+    # Split entries so github.event.schedule can distinguish the early runs (which
+    # build the exec summary) from the later runs (which skip it).
+    - cron: '15 1 * * *'
+    - cron: '15 7 * * *'
+    - cron: '15 10 * * *'
     - cron: '45 17 * * *'
   workflow_dispatch:
     inputs:
@@ -51,17 +55,14 @@ jobs:
       # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
       # 01:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
       # The 10:15 and 17:45 runs skip this step.
+      # Gate on github.event.schedule (the cron expression that triggered the run), not wall-clock
+      # time — Actions cron is routinely delayed 3+ hours, which silently skipped the gate previously.
       - name: Build executive summary
         continue-on-error: true
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 1 * * *' || github.event.schedule == '15 7 * * *'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          HOUR=$(date -u +%H)
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$HOUR" = "01" ] || [ "$HOUR" = "07" ]; then
-            node scripts/pipeline/exec-summary.js
-          else
-            echo "Skipping executive summary at ${HOUR}:xx UTC (only runs at 01:xx and 07:xx)"
-          fi
+        run: node scripts/pipeline/exec-summary.js
 
       # Step 3: Rebuild news.json (pipeline does this, but run standalone as safety net)
       - name: Rebuild news.json
