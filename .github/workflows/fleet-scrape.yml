@@ -1,0 +1,46 @@
+name: Fleet Scrape
+
+on:
+  schedule:
+    # 3x daily — same cadence the previous kris-ow/robo-tracker workflow used.
+    # 03:00 / 11:00 / 19:00 UTC = 04 / 12 / 20 CET (winter), 05 / 13 / 21 CEST (summer).
+    - cron: '0 3,11,19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - run: npx playwright install --with-deps chromium
+
+      - name: Scrape tracker (operational + unsupervised)
+        run: node scripts/scrape-tracker.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "TTT Pipeline Bot"
+          git config user.email "pipeline@theteslathesis.com"
+          git add src/data/knowledge-base.json data/counts.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No tracker changes to commit"
+          else
+            git commit -m "Fleet scrape: $(date -u +%Y-%m-%dT%H:%MZ)
+
+          Updated fleet_count + unsupervised_count from robotaxitracker.com"
+            git pull --rebase
+            git push
+          fi

@@ -23,7 +23,8 @@ dist-ssr
 !news/transcripts_url_index.json
 
 # Quarterly PDF source data (root-level only — don't match nested src/components/Data/ etc.)
-/data/
+/data/*
+!/data/counts.json
 
 # Editor directories and files
 .vscode/*
