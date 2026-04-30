@@ -20,8 +20,20 @@ const HOME_URL = 'https://robotaxitracker.com/';
 const KB_FILE = path.resolve('src/data/knowledge-base.json');
 const COUNTS_FILE = path.resolve('data/counts.json');
 
-const NON_TESLA_SLUGS = ['waymo', 'zoox', 'cruise'];
-const OPERATIONAL_SLUGS = ['bay_area', 'austin']; // matches existing fleet_count tracker scope
+const NON_TESLA_OPERATORS = ['waymo', 'zoox', 'cruise'];
+
+// Tesla Robotaxi operational service areas — the cities where Tesla actually
+// runs Robotaxi service (vs cities where Teslas are merely SIGHTED, which
+// the tracker also lists with low trip counts).
+//
+// IMPORTANT: robotaxitracker.com lists DUPLICATE entries for some cities
+// (e.g. two `dallas` rows: one with vehicles=16/trips=7 representing sightings,
+// another with vehicles=3/trips=20 representing the operational Robotaxi
+// deployment). The scraper picks the entry with the most trips per service
+// area name, which is reliably the operational one.
+//
+// When Tesla launches a new operational city, add it here.
+const TESLA_OPERATIONAL_AREAS = ['Bay Area', 'Austin', 'Dallas', 'Houston'];
 
 // ── Operational fleet (HTTP) ─────────────────────────────
 
@@ -49,14 +61,23 @@ async function scrapeOperational() {
 
   const data = JSON.parse(decoded.slice(0, jsonEnd));
 
-  const regions = data.service_areas
-    .filter(a => OPERATIONAL_SLUGS.includes(a.service_area_slug))
-    .filter(a => !NON_TESLA_SLUGS.some(s => a.service_area_slug.includes(s)))
-    .map(a => ({ name: a.service_area_name, vehicles: a.total_vehicles }));
+  // Filter out non-Tesla operators (Waymo, Zoox, Cruise have explicit slug
+  // suffixes like `bay-area-waymo`).
+  const teslaEntries = data.service_areas.filter(a =>
+    !NON_TESLA_OPERATORS.some(op => a.service_area_slug.includes(op))
+  );
 
-  const total = regions.reduce((sum, r) => sum + r.vehicles, 0);
+  // Dedup: for each operational service area, pick the entry with the most
+  // trips (resolves duplicate slug entries — see TESLA_OPERATIONAL_AREAS).
   const breakdown = {};
-  for (const r of regions) if (r.vehicles > 0) breakdown[r.name] = r.vehicles;
+  for (const name of TESLA_OPERATIONAL_AREAS) {
+    const matches = teslaEntries.filter(a => a.service_area_name === name);
+    if (matches.length === 0) continue;
+    const best = matches.reduce((a, b) => (b.total_trips > a.total_trips ? b : a));
+    if (best.total_vehicles > 0) breakdown[name] = best.total_vehicles;
+  }
+
+  const total = Object.values(breakdown).reduce((s, v) => s + v, 0);
 
   return {
     total,
