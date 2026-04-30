@@ -808,12 +808,12 @@
             "type": "tracker",
             "sourceNote": "Fleet counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Known to undercount — Tesla cited 500+ on Q4 earnings call when tracker showed ~474. No official Tesla fleet disclosures available.",
             "current": {
-              "date": "2026-04-27",
-              "total": 636,
+              "date": "2026-04-30",
+              "total": 643,
               "note": "robotaxitracker.com (community-reported, unverified)",
               "breakdown": {
-                "Bay Area": 538,
-                "Austin": 98
+                "Bay Area": 542,
+                "Austin": 101
               },
               "sources": [
                 "robotaxitracker.com/data"
@@ -890,6 +890,11 @@
                 "date": "2026-04-20",
                 "total": 604,
                 "note": "Bay Area: 508, Austin: 96"
+              },
+              {
+                "date": "2026-04-27",
+                "total": 636,
+                "note": "Bay Area: 538, Austin: 98"
               }
             ]
           },
@@ -1097,6 +1102,26 @@
                 "date": "2026-02"
               }
             ]
+          },
+          {
+            "id": "unsupervised_count",
+            "name": "Unsupervised Fleet",
+            "type": "tracker",
+            "sourceNote": "Unsupervised counts from robotaxitracker.com (community-reported, unverified). Subset of the operational fleet — vehicles confirmed driverless. Scraped from the rendered \"UNSUPERVISED FLEET\" section.",
+            "history": [],
+            "current": {
+              "date": "2026-04-30",
+              "total": 25,
+              "note": "robotaxitracker.com (rendered DOM, community-reported)",
+              "breakdown": {
+                "Austin": 19,
+                "Dallas": 3,
+                "Houston": 3
+              },
+              "sources": [
+                "robotaxitracker.com"
+              ]
+            }
           }
         ]
       },
