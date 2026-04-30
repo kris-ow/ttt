@@ -102,6 +102,53 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
                   inExecSummarySection = trimmed.slice(3).trim().toLowerCase() === 'brief'
                 }
 
+                // Markdown table: header row + alignment row + body rows, all wrapped in `|`
+                if (trimmed.startsWith('|') && trimmed.endsWith('|')) {
+                  const tableLines = [trimmed]
+                  let j = i + 1
+                  while (j < lines.length) {
+                    const t = lines[j].trim()
+                    if (!t.startsWith('|') || !t.endsWith('|')) break
+                    tableLines.push(t); j++
+                  }
+                  if (tableLines.length >= 2 && /^\|[\s:|-]+\|$/.test(tableLines[1])) {
+                    const splitRow = (s: string) => s.slice(1, -1).split('|').map(c => c.trim())
+                    const headers = splitRow(tableLines[0])
+                    const aligns = splitRow(tableLines[1]).map(c => {
+                      const l = c.startsWith(':'), r = c.endsWith(':')
+                      return l && r ? 'text-center' : r ? 'text-right' : 'text-left'
+                    })
+                    const rows = tableLines.slice(2).map(splitRow)
+                    elements.push(
+                      <table key={i} className="text-xs border border-border my-3 border-collapse">
+                        <colgroup>
+                          {aligns.map((a, k) => (
+                            <col key={k} style={a === 'text-left' ? undefined : { width: '4.5rem' }} />
+                          ))}
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            {headers.map((h, k) => (
+                              <th key={k} className={`text-green-dim font-bold py-1 px-2 border-b border-border bg-surface ${aligns[k] || 'text-left'}`}>{renderInline(h)}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {rows.map((r, ri) => (
+                            <tr key={ri} className="border-b border-border last:border-0">
+                              {r.map((c, k) => (
+                                <td key={k} className={`py-1 px-2 text-text tabular-nums ${aligns[k] || 'text-left'}`}>{renderInline(c)}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    )
+                    i = j - 1
+                    continue
+                  }
+                }
+
                 if (trimmed.startsWith('### ')) { elements.push(<h4 key={i} className="text-green-dim font-bold mt-3 mb-1 text-xs">{trimmed.slice(4)}</h4>); continue }
                 if (trimmed.startsWith('## ')) { elements.push(<h3 key={i} className="text-green font-bold mt-4 mb-2 text-sm">{trimmed.slice(3)}</h3>); continue }
                 if (trimmed.startsWith('# ')) { elements.push(<h2 key={i} className="text-green font-bold mt-4 mb-2 text-base">{trimmed.slice(2)}</h2>); continue }

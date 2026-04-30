@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { MODEL, PRICING_DIRECT } from './config.js';
-import { formatCanonicalTrackerBlock } from './kb-tracker.js';
+import { formatCanonicalTrackerBlock, renderUnsupervisedTable } from './kb-tracker.js';
 
 // ── Configuration ────────────────────────────────────────
 
@@ -135,7 +135,11 @@ function writeExecutiveSummary(targetDate, parsed, { inputTokens, outputTokens, 
     body = parsed.brief;
   }
 
-  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + body + '\n');
+  // Prepend deterministic unsupervised-fleet table from KB. Numbers are
+  // sourced from KB tracker history, not the LLM, so they cannot drift.
+  const trackerTable = renderUnsupervisedTable(targetDate);
+
+  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + trackerTable + body + '\n');
   console.log(`  Written: ${filename}`);
   return filename;
 }

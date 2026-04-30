@@ -17,10 +17,13 @@ export function signalTag(signal: string | null) {
 }
 
 export function renderInline(text: string) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g)
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g)
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**'))
       return <span key={i} className="text-white font-medium">{part.slice(2, -2)}</span>
+    const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+    if (link)
+      return <a key={i} href={link[2]} target="_blank" rel="noopener noreferrer" className="text-green hover:text-green-dim">{link[1]}</a>
     return part
   })
 }

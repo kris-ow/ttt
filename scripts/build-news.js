@@ -26,7 +26,7 @@ const articles = files.map(filename => {
 
   // Get body after first separator
   const sepIdx = content.indexOf('─'.repeat(5));
-  const body = sepIdx !== -1 ? content.slice(sepIdx).replace(/^─+\n+/, '').trim() : content;
+  const body = sepIdx !== -1 ? content.slice(sepIdx).replace(/^─+[\r\n]+/, '').trim() : content;
 
   // Extract date from filename
   const dateMatch = filename.match(/^(\d{8})/);

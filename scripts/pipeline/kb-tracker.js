@@ -54,3 +54,86 @@ export function formatCanonicalTrackerBlock() {
 
   return lines.join('\n');
 }
+
+// ─── Unsupervised fleet table for exec summary ──────────────
+// Renders a markdown table showing per-city unsupervised Robotaxi counts as
+// of the target date, with 1D / 7D / 30D deltas computed from KB history.
+// Returns '' if no usable data exists. Intended to be prepended to the LLM-
+// generated body in writeExecutiveSummary so the numbers are deterministic.
+
+function dateAddDays(dateStr, days) {
+  const d = new Date(dateStr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+// Most recent tracker entry on or before `date` (uses current + history pool).
+function findValueByDate(tracker, date) {
+  const all = [...(tracker.history || [])];
+  if (tracker.current) all.push(tracker.current);
+  all.sort((a, b) => a.date.localeCompare(b.date));
+  for (let i = all.length - 1; i >= 0; i--) {
+    if (all[i].date <= date) return all[i];
+  }
+  return null;
+}
+
+function fmtDelta(now, then) {
+  if (now == null || then == null) return '—';
+  const d = now - then;
+  if (d === 0) return '0';
+  return d > 0 ? `+${d}` : String(d);
+}
+
+export function renderUnsupervisedTable(targetDate) {
+  let kb;
+  try {
+    kb = JSON.parse(fs.readFileSync(KB_FILE, 'utf-8'));
+  } catch {
+    return '';
+  }
+
+  const tracker = kb?.Robotaxi?.areas
+    ?.find(a => a.id === 'fleet_deployment')
+    ?.sections?.find(s => s.id === 'unsupervised_count');
+  if (!tracker) return '';
+
+  // If we have no entry on or before target_date, fall back to the closest
+  // available value (latest current). This handles the backfill case where
+  // unsupervised history hasn't accumulated yet.
+  const target = findValueByDate(tracker, targetDate) || tracker.current;
+  if (!target || !target.breakdown) return '';
+
+  const anchors = {
+    '1D': findValueByDate(tracker, dateAddDays(targetDate, -1)),
+    '7D': findValueByDate(tracker, dateAddDays(targetDate, -7)),
+    '30D': findValueByDate(tracker, dateAddDays(targetDate, -30)),
+  };
+
+  // Sort cities by current count descending
+  const cities = Object.keys(target.breakdown).sort(
+    (a, b) => (target.breakdown[b] || 0) - (target.breakdown[a] || 0)
+  );
+
+  const rows = cities.map(city => {
+    const now = target.breakdown[city] ?? 0;
+    return `| ${city} | ${now} | ${fmtDelta(now, anchors['1D']?.breakdown?.[city])} | ${fmtDelta(now, anchors['7D']?.breakdown?.[city])} | ${fmtDelta(now, anchors['30D']?.breakdown?.[city])} |`;
+  });
+
+  const totalRow = `| **Total** | **${target.total}** | ${fmtDelta(target.total, anchors['1D']?.total)} | ${fmtDelta(target.total, anchors['7D']?.total)} | ${fmtDelta(target.total, anchors['30D']?.total)} |`;
+
+  return [
+    '## Unsupervised Robotaxi Fleet',
+    '',
+    '| City | Now | 1D | 7D | 30D |',
+    '|:-----|----:|---:|---:|----:|',
+    ...rows,
+    totalRow,
+    '',
+    'Source: [RobotaxiTracker.com](https://robotaxitracker.com/)',
+    '',
+    '---',
+    '',
+    '',
+  ].join('\n');
+}
