@@ -12979,5 +12979,139 @@
     "channel": "electrek",
     "extractedAt": "2026-04-30T11:56:36.464Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.2 is rolling out wide; community reports it is a magnitude improvement over v14.3.1 with cleaner parking behavior and faster reactions",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms wide release of FSD v14.3.2 — a major capability upgrade milestone",
+    "source": "20260430_brighterwithherbert_01_Tesla_Just_Dropped_Features_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-30T19:00:12.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced FSD version 14 light will be released for Hardware 3 vehicles in the US, with plans to expand to international markets afterward",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Hardware 3 will not support unsupervised FSD but will receive version 14 light; international rollout subject to regulatory factors with no definitive dates given",
+    "source": "20260430_brighterwithherbert_01_Tesla_Just_Dropped_Features_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-30T19:00:12.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla unified Smart Summon, FSD, and robotaxi into a single neural network model in FSD v14.3.2, eliminating separate code paths",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Architectural unification means weight updates propagate across all driving modes simultaneously; represents a major FSD capability upgrade",
+    "source": "20260430_brighterwithherbert_01_Tesla_Just_Dropped_Features_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-30T19:00:12.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Grok 'Hey Grok' wake word feature added to Tesla in-car integration; previously required a button press",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New FSD version release feature — hands-free Grok activation represents a usability upgrade toward agentic in-car AI",
+    "source": "20260430_brighterwithherbert_01_Tesla_Just_Dropped_Features_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-04-30T19:00:12.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated on the Q1 2026 earnings call that robotaxi will not be 'super material' to the bottom line by end of 2026, but will be material in 2027 — walking back prior guidance of meaningful impact in H2 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Represents a formal guidance revision on robotaxi revenue contribution timeline, pushing material impact out to 2027.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert estimates approximately 15,000 Cybercabs deployed by end of 2026, which he defines as consistent with 'not super material' revenue impact.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Independent estimate from Herbert (Brighter channel) for total Cybercab fleet size by end of 2026; contrasts with more bullish community estimates of 50,000.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert frames robotaxi revenue as approximately $30,000 per vehicle per year, recurring for at least 3–5 years, versus a one-time ~$5,000–$7,000 profit on a car sale.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "High-level annual revenue per robotaxi vehicle estimate used to illustrate the business model transition; not broken down to per-mile fare.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced on the Q1 2026 earnings call that Hardware 3 owners will receive a hardware upgrade (new cameras + new computer) performed at Tesla 'mini factories' in major cities, assumed to be at Tesla's expense.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Resolves long-standing uncertainty about Hardware 3 upgrade path; has implications for unsupervised FSD eligibility and fleet addressable market.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "V14 light FSD software update for Hardware 3 vehicles expected in June 2026 or later in Q2 2026.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents the next major FSD version release milestone for the ~200,000 remaining Hardware 3 vehicles in the US.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk's stated goal of 50% of the US market having access to robotaxi by end of 2025 was not met.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms a missed milestone; Herbert notes he had already adjusted expectations in December 2025 before the Q1 2026 earnings call.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated in January 2026 that robotaxi deployments in Austin and California should double every month; this target was not achieved.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Second consecutive missed robotaxi scaling milestone, contributing to investor frustration heading into Q1 2026 earnings.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.885Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab described as a joint Tesla/SpaceX initiative to manufacture Tesla's own AI chips (GPUs), reducing dependence on Nvidia.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "If confirmed, represents a major vertical integration milestone for Tesla's AI compute stack and potential cost reduction.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.886Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's AI5 chip was described as having been 'taped out' as of the time of filming (late April 2026), with Elon Musk having spent 'every single weekend' for the past 7–8 months on it.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tape-out is a key production milestone indicating the chip design is finalized and sent to fabrication.",
+    "source": "20260430_futureaza_01_Tesla_Debate_Just_Got_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-04-30T19:00:12.886Z",
+    "status": "pending"
   }
 ]
