@@ -33,6 +33,8 @@ Watch for specific numbers or estimates related to:
 
 The current year is {{YEAR}}. When the transcript mentions relative timeframes like "Q2", "next quarter", "this year", "next year", etc. without specifying a year, infer the correct year based on the video's publish date ({{PUBLISH_DATE}}). Do not default to prior years.
 
+{{TRACKER_DATA}}
+
 ## Grounding Rules
 
 - ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the transcript.

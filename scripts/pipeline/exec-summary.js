@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { MODEL, PRICING_DIRECT } from './config.js';
+import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 
 // ── Configuration ────────────────────────────────────────
 
@@ -90,6 +91,7 @@ function buildPrompt(targetDate, sources) {
   return tpl
     .replace('{{YEAR}}', year)
     .replace(/\{\{TARGET_DATE\}\}/g, targetDate)
+    .replace('{{TRACKER_DATA}}', formatCanonicalTrackerBlock())
     .replace('{{SUMMARIES}}', summariesBlock);
 }
 

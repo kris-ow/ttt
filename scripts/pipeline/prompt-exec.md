@@ -6,6 +6,8 @@ Your job: produce a daily **TTT Executive Summary** that synthesizes everything 
 
 The current year is {{YEAR}}. The summary covers the date {{TARGET_DATE}}. Treat any relative timeframes ("this quarter", "next month", etc.) accordingly.
 
+{{TRACKER_DATA}}
+
 ## Categories
 
 Use these category headers exactly, in this order, and only include categories that have material news today:
