@@ -12925,5 +12925,59 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-04-30T04:47:41.827Z",
     "status": "pending"
+  },
+  {
+    "fact": "Only ~17 of 25 unsupervised vehicles were active in the last seven days per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 17,
+    "context": "Effective operational fleet is smaller than cumulative count; relevant to realistic fleet size inputs for DCF modeling",
+    "source": "20260430_electrek_01_Tesla_Robotaxi_Unsupervised_Fleet_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-30T11:56:36.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's unsupervised Robotaxi vehicles operating less than 30% of the time",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 0.3,
+    "context": "Far below utilization levels needed for a viable ride-hailing business; key downside input for unit economics model",
+    "source": "20260430_electrek_01_Tesla_Robotaxi_Unsupervised_Fleet_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-30T11:56:36.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas and Houston joined the unsupervised Robotaxi program on April 18, 2026, each starting with a single vehicle",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks first city expansion beyond Austin for unsupervised service; relevant to robotaxi city expansion catalyst tracking",
+    "source": "20260430_electrek_01_Tesla_Robotaxi_Unsupervised_Fleet_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-30T11:56:36.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's planned expansion to five additional cities in H1 2026 has slipped; only Dallas and Houston have launched",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Confirms expansion timeline pushback — a negative catalyst update for the robotaxi city rollout schedule",
+    "source": "20260430_electrek_01_Tesla_Robotaxi_Unsupervised_Fleet_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-30T11:56:36.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised fleet grew from single digits in January 2026 to 25 by end of April 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First documented ramp in unsupervised fleet size; pace remains slow but breaks prior stagnation pattern",
+    "source": "20260430_electrek_01_Tesla_Robotaxi_Unsupervised_Fleet_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-04-30T11:56:36.464Z",
+    "status": "pending"
   }
 ]
