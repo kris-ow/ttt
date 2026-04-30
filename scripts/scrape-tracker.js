@@ -190,6 +190,10 @@ function rotateHistory(tracker, next) {
     const last = tracker.history[tracker.history.length - 1];
     const histEntry = { date: cur.date, total: cur.total };
     if (cur.breakdown) {
+      // Preserve breakdown as structured data so per-city historical lookups
+      // (e.g. delta columns in the exec-summary table) keep working after
+      // rotation. Also retain a human-readable note for KB readers.
+      histEntry.breakdown = cur.breakdown;
       histEntry.note = Object.entries(cur.breakdown).map(([k, v]) => `${k}: ${v}`).join(', ');
     }
     if (!last || last.date !== histEntry.date || last.total !== histEntry.total) {

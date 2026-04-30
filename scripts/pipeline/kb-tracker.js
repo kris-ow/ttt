@@ -85,6 +85,8 @@ function fmtDelta(now, then) {
   return d > 0 ? `+${d}` : String(d);
 }
 
+// Date helpers + per-anchor breakdown lookup live below renderUnsupervisedTable.
+
 export function renderUnsupervisedTable(targetDate) {
   let kb;
   try {
@@ -115,9 +117,14 @@ export function renderUnsupervisedTable(targetDate) {
     (a, b) => (target.breakdown[b] || 0) - (target.breakdown[a] || 0)
   );
 
+  // Per-city anchor lookup: if the anchor entry exists but the city is
+  // missing from its breakdown, treat as 0 (the scraper omits 0-count
+  // cities). If the anchor entry is missing entirely, the delta is unknown.
+  const cityAt = (anchor, city) => anchor ? (anchor.breakdown?.[city] ?? 0) : null;
+
   const rows = cities.map(city => {
     const now = target.breakdown[city] ?? 0;
-    return `| ${city} | ${now} | ${fmtDelta(now, anchors['1D']?.breakdown?.[city])} | ${fmtDelta(now, anchors['7D']?.breakdown?.[city])} | ${fmtDelta(now, anchors['30D']?.breakdown?.[city])} |`;
+    return `| ${city} | ${now} | ${fmtDelta(now, cityAt(anchors['1D'], city))} | ${fmtDelta(now, cityAt(anchors['7D'], city))} | ${fmtDelta(now, cityAt(anchors['30D'], city))} |`;
   });
 
   const totalRow = `| **Total** | **${target.total}** | ${fmtDelta(target.total, anchors['1D']?.total)} | ${fmtDelta(target.total, anchors['7D']?.total)} | ${fmtDelta(target.total, anchors['30D']?.total)} |`;

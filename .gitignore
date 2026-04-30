@@ -25,6 +25,7 @@ dist-ssr
 # Quarterly PDF source data (root-level only — don't match nested src/components/Data/ etc.)
 /data/*
 !/data/counts.json
+!/data/robotaxis.csv
 
 # Editor directories and files
 .vscode/*
