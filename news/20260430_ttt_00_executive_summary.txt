@@ -1,0 +1,118 @@
+Channel:     ttt
+Title:       Executive Summary (2026-04-30)
+Published:   2026-04-30 00:00 UTC
+Summarized:  2026-05-01 05:02:42 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.11116 (18380 in / 3735 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 19 | 0 | +6 | +10 |
+| Dallas | 3 | 0 | +1 | +3 |
+| Houston | 3 | 0 | +1 | +3 |
+| **Total** | **25** | 0 | +8 | +16 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Tesla Semi mass production officially begins at Giga Nevada
+- Unsupervised robotaxi fleet at 25 vehicles across Austin, Dallas, Houston
+- FSD 14.3.2 rolling out; Smart Summon unified with full FSD stack
+- EU FSD vote converging on June 30 TCMV meeting
+- Cybercab confirmed front-wheel drive; paint shop elimination saves ~$500M
+- Waymo losing ~$800M/quarter; costs ~$15–$20 per $1 of ride revenue
+
+## Robotaxi
+- **Unsupervised fleet at 25 vehicles, utilization remains below 30%.** Per RobotaxiTracker.com, the unsupervised fleet stands at 25 vehicles (Austin 19, Dallas 3, Houston 3) — up from single digits in January, with Dallas and Houston each launched April 18. Electrek's Fred Lambert notes this breaks a long stagnation but falls well short of his own prior "bearish" forecast of ~100 vehicles by end of 2025, and utilization is under 30% — far below viable ride-hailing thresholds.
+
+- **Five-city H1 2026 expansion target is slipping.** With ~60 days left before end of June, Dillon Loomis calculates Tesla would need one new city launch every 12 days to meet its earlier slide-deck target. He expects Dallas and Houston fleets to grow to ~10 unsupervised vehicles each within the next week or two, but views sudden exponential city expansion as unlikely.
+
+- **Cybercab production rate estimated at 10–20 units/day at Giga Texas.** Per Joe Tegtmeyer's tracking cited by Bhakdi, Cybercabs are rolling off the line at that rate, with vehicles spotted in Illinois, Massachusetts, Florida, Bay Area, Texas, Phoenix, and potentially Georgia. Some units are shipping without a steering wheel. Bhakdi predicts thousands of Cybercabs per month by June 2026 and estimates 1,800 deployed unsupervised robotaxis — his "forcing function" threshold — may arrive September–November 2026.
+
+- **Herbert's end-of-2026 Cybercab deployment estimate: ~15,000 units.** He contrasts this with more bullish community estimates of 50,000, and frames it as the practical meaning of Musk's Q1 earnings call statement that robotaxi will not be "super material" in 2026 but will be "material" in 2027.
+
+- **Musk's Q1 earnings call walked back prior robotaxi guidance.** Musk had previously suggested robotaxi would be "meaningfully impacting the bottom line" in H2 2026; on the Q1 call he revised this to "not super material" by year-end, with material contribution expected in 2027. Herbert notes he had already adjusted his own expectations in December 2025 after Tesla missed its stated 50%-of-US-market-access goal by end of 2025.
+
+- **Robotaxi unit economics contrast: ~$5K–$7K one-time car profit vs. ~$30K/year recurring robotaxi revenue.** Herbert frames this as the central investment thesis for why the autonomy pivot justifies slower vehicle volume growth.
+
+- **Multi-party robotaxi models highlighted as a structural cost disadvantage vs. Tesla.** The announcement that Hertz (via Oro Mobility) will manage fleet logistics for the Uber/Lucid/Nuro Bay Area robotaxi service (targeting end-of-2026 launch) is used by Loomis to illustrate how each partner in a non-vertically-integrated chain extracts margin — contrasting with Tesla's integrated approach.
+
+## Autonomous Driving
+- **FSD 14.3.2 rolling out, but ~90% of fleet has yet to receive FSD 14.3.** Community reports describe 14.3.2 as a "magnitude change" over 14.3.1 — notably cleaner parking behavior and faster reactions. A new disengagement popup now includes a navigation option and requires a response before dismissal, indicating continued edge-case data collection.
+
+- **Smart Summon unified with FSD and robotaxi stack in 14.3.2.** Previously running on a separate code path, Smart Summon now shares the same end-to-end neural network as FSD and the robotaxi system, meaning weight updates propagate across all driving modes simultaneously. Community reports describe dramatically faster, smoother, and more confident Smart Summon behavior.
+
+- **FSD V14 Lite confirmed for HW3 vehicles and international markets.** Tesla announced V14 Lite for US HW3 owners, with plans to expand to additional international markets, though no definitive dates were provided. Herbert expects the update in June 2026 or later in Q2. HW3 vehicles will not support unsupervised FSD regardless of software version. Estimated ~200,000 HW3 owners remain in the US who purchased FSD outright.
+
+- **Hardware 3 upgrade path announced at Q1 earnings call.** Tesla is offering two paths for HW3 FSD purchasers: a trade-in discount toward a new car, or a direct hardware upgrade (new cameras and compute) that Tesla will perform at "mini factories" in major cities. Drop-off time is approximately one week. Given that owners paid $8K–$15K for FSD, Herbert assumes Tesla will absorb the upgrade cost.
+
+- **EU FSD approval converging on June 30 TCMV vote.** Most EU nations are waiting for a group decision rather than acting country-by-country. Italy's Senator Carlo Calenda filed a formal parliamentary question urging the government to pursue FSD (Supervised) approval directly. An EU-wide supervised FSD approval this summer remains on the table.
+
+- **China suspended new AV licenses after Baidu Apollo Go mass-stall incident.** Following an incident in late March where 100+ Apollo Go robotaxis simultaneously stalled in Wuhan, China suspended new Level 4 AV permits and city expansions, requiring local safety reviews. Current operations continue except for Baidu/BYD. Loomis notes no immediate Tesla impact since Tesla operates at Level 2.
+
+- **Xpeng VLA 2.0 positioned as FSD rival in Chinese scenarios.** Xpeng's CEO publicly claimed VLA 2.0 outperforms FSD in Chinese driving conditions and made a public wager: if VLA 2.0 matches FSD 14.2's Silicon Valley performance in China by August 30, 2026, he will build a Chinese canteen in Silicon Valley; if not, Xpeng's autonomous driving chief runs naked across the Golden Gate Bridge. Xpeng still uses radar; a global VLA 2.0 rollout with Volkswagen as launch partner is expected in 2027. The CEO stated full unsupervised autonomy will arrive within 1–3 years.
+
+## Humanoid Bots
+- **Elon Musk teased Optimus Gen 3 as "special"; Bhakdi estimates release ~90 days out (late July 2026).** No further technical details were disclosed in available sources.
+
+- **Tesla Autonomy Pop-Up in Miami (April 29–May 3) features Optimus on public display.** The event runs 2–6 PM on April 29–30 and 12–6 PM May 1–3, pairing Optimus with autonomy demonstrations as a consumer-facing engagement ahead of a broader commercial push.
+
+- **Fremont factory conversion targeting 1M Optimus units/year; new Giga Texas-area factory planned at 10M units/year.** Herbert frames 10M/year as achievable "several years from now if the program works." Tesla's compensation plan for Musk includes a milestone of 1 million Optimus delivered.
+
+- **Figure humanoid competitor producing 55 robots/week (~1/hour).** This is a competitor data point providing a production-rate benchmark against which Optimus's ramp can be evaluated.
+
+## Electric Vehicles
+- **Tesla Semi mass production officially begins at Giga Nevada.** The Long Range Semi specs: ~500-mile range, 4680 cells, fully electric steering, Cybertruck-derived actuators, 48V architecture, 3 independent rear motors. Long Range customer quote: ~$290K before destination/taxes; standard range ~$260K (~325-mile range). CARB data shows the average zero-emission Class 8 truck cost $435K in 2024; California HVIP incentives can exceed $100K per unit. Tesla's stated production target is 50,000 Semis/year from Nevada. Musk guided that Semi ramp will be slow before going exponential in late 2026 into 2027.
+
+- **Cybercab confirmed as front-wheel drive via unboxed architecture.** Per Joe Tegtmeyer (citing engineer conversations), the entire drive unit, cooling system, and electronics are front-integrated in a single subassembly module bolted to the body — eliminating rear wiring runs, drivelines, and brake lines. Rear wheels are 21-inch aluminum alloy; front wheels are 18-inch steel (more durable but higher replacement frequency given weight distribution).
+
+- **Paint shop elimination saves Tesla ~$500M on Cybercab.** Injection-molded colored plastic panels remove the need for a traditional paint shop, which can cost $200M–$1B to build, occupy up to 50% of factory footprint, and account for ~60% of plant energy and CO2. Lars Munro confirmed the ~$500M savings figure without pushback. Joe Tegtmeyer confirmed color matching across panels is solved.
+
+- **Cybercab target specs: ~5.5 mi/kWh efficiency, under 50 kWh battery, ~300-mile range.** Loomis notes the 300-mile range target would actually require closer to 6 mi/kWh to achieve given the sub-50 kWh pack.
+
+- **Cybercab described as a "data center on wheels."** Joe Justice observed the Cybercab's cooling infrastructure appears larger than even the Model S Plaid's, theorizing the vehicle is engineered to run distributed compute workloads when not in active service, with cooling looping through both the battery and electronics.
+
+- **Cybercab unboxed manufacturing model estimated at 5x the output of a Model Y per production footprint.** Combined with the ~$20K–$25K estimated production cost and self-driving capability, Loomis describes this cost structure as "nearly impossible to replicate."
+
+- **Giga Berlin record Q1 2026: 61,000 Model Y units, 1 millionth drive unit, 1,000 jobs added.** Musk publicly congratulated the team. Brian White notes Giga Berlin is shipping to Canada due to tariff complications, and describes European demand as "picking back up."
+
+- **Used Tesla prices up ~18% over 90 days per CarGurus** vs. 6% for the broader CarGurus index. Used non-Tesla EVs lost more than 10% of value over the past year. Tesla Model X was the fastest-selling used car in March 2026.
+
+- **Tesla annual deliveries remain ~1.8M, flat; 20M/year target definitively abandoned.** Both Brian White and Herbert confirm the 20M/year goal is off the table. Tesla's strategic pivot toward autonomy-first is cited as the deliberate explanation.
+
+## Financials
+- **Waymo losing ~$800M/quarter, with costs ~$15–$20 per $1 of ride-fare revenue.** Alphabet Q1 2026 Other Bets (which includes Waymo) reported $411M revenue (down from $450M in Q1 2025) and a $2.1B operating loss (up from $1.2B). Loomis estimates Waymo represents ~70% of Other Bets. Sundar Pichai has stated Waymo will not be profitable until 2027 at the earliest. Waymo raised $16B in February 2026 at a $126B valuation.
+
+- **Tesla Musk compensation plan: 24.8% stake requires simultaneous valuation + operational milestone.** First tranche requires a $2T market cap paired with one of: ~20M cumulative vehicles, 10M active FSD subscriptions, 1M bots, or 1M robotaxis. Current status: ~9–10M cumulative vehicles delivered, ~2M FSD subscriptions. Musk must wait five years before selling any awarded shares.
+
+- **Ford EV division: $800M loss in Q1 2026 on $1.2B revenue, -63% EBIT margin.** Year-over-year losses are flat, underscoring continued structural challenges at legacy OEM EV operations.
+
+## Market & Competition
+- **SpaceX targeting ~$1.75–2T IPO valuation around June 2026; NASDAQ changed rules to allow index inclusion 15 days post-IPO.** SpaceX's new performance pay plan ties Musk's 200M super-voting shares to a $7.5T market cap, 1M-resident Mars colony, and 100 TW of space-based compute. The near-identical valuation targets between Tesla ($8.5T) and SpaceX ($7.5T) are fueling merger speculation, though Brian White expresses skepticism about the necessity of consolidation.
+
+- **Supercharger virtual queue feature launched.** Drivers near a full station can join a digital waitlist; Tesla notifies them when a stall opens. Currently honor-based. Hosts frame this as infrastructure groundwork for automated Cybercab fleet charging orchestration.
+
+Notable quotes and data:
+- Loomis: "Tesla has a vehicle in production that likely costs somewhere in the neighborhood of $20–$25,000. That, oh by the way, just happens to drive itself."
+- Waymo cost ratio: ~$15–$20 in costs per $1 of ride-fare revenue (Loomis estimate)
+- Cybercab paint shop savings: ~$500M (Lars Munro via Ryan McAffrey, uncontested)
+- Bhakdi: "At 1,800 truly deployed robotaxis unsupervised in full operation, that is an easy $600, $700, $800 share price."
+- Herbert: "$5,000 or $7,000 one-time [car profit] vs. $30,000 per year at the minimum, every year for at least three to five years" for robotaxi
+- Herbert's end-of-2026 Cybercab deployment estimate: ~15,000 units
+- Bhakdi's 1,800-unsupervised-robotaxi timeline: September–November 2026
+- FSD 14.3 fleet penetration: ~10% as of April 30 recording
+- Giga Berlin Q1 2026 Model Y output: 61,000 units (record); 1M drive units produced; 1,000 jobs added
+- Tesla annual deliveries: ~1.8M (flat); cumulative deliveries: ~9–10M; FSD subscriptions: ~2M
+- Semi Long Range customer quote: ~$290K; avg. zero-emission Class 8 truck (CARB 2024): $435K
+- Used Tesla prices: +18% over 90 days (CarGurus) vs. +6% broader index
+- Figure humanoid production rate: 55 robots/week (~1/hour)
+- Xpeng VLA 2.0 global rollout (with VW): expected 2027; CEO says full unsupervised autonomy within 1–3 years
+- Brian White: "20 million [vehicles] per year absolutely off the table at this point"
+- SpaceX IPO valuation target: $1.75–2T; Musk annual salary at SpaceX: $54,000

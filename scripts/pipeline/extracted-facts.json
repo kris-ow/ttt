@@ -13113,5 +13113,269 @@
     "channel": "futureaza",
     "extractedAt": "2026-04-30T19:00:12.886Z",
     "status": "pending"
+  },
+  {
+    "fact": "SpaceX IPO targeted for approximately June 2026 at a valuation of $1.75–2 trillion, with ~10 banks involved and road shows reportedly underway",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "SpaceX IPO is a near-term catalyst that could trigger NASDAQ inclusion 15 days later and potentially accelerate merger discussions with Tesla",
+    "source": "20260430_brighterwithherbert_02_8_Trillion_Tesla_Pattern_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-01T05:01:10.436Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD subscriptions currently approximately 2 million, versus the 10 million milestone required in the compensation plan",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2000000,
+    "context": "Current FSD subscriber count is well below the 10 million operational milestone threshold in Musk's compensation plan",
+    "source": "20260430_brighterwithherbert_02_8_Trillion_Tesla_Pattern_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-01T05:01:10.436Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont factory reportedly being converted to Optimus bot production targeting 1 million units per year; a new factory near Giga Texas is planned for 10 million Optimus bots per year",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Factory conversion and new factory build are key milestones for Optimus scaling toward the 1 million bot delivery compensation milestone",
+    "source": "20260430_brighterwithherbert_02_8_Trillion_Tesla_Pattern_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-01T05:01:10.436Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet per RobotaxiTracker.com: 650 total (Bay Area 543, Austin 101, Dallas 3, Houston 3) as of 2026-04-30; unsupervised driverless subset: 25 (Austin 19, Dallas 3, Houston 3)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 650,
+    "context": "Canonical current fleet count; hosts reference Dallas and Houston having only ~2 vehicles each and not running 24/7, consistent with the tracker's very small numbers in those cities",
+    "source": "20260430_brighterwithherbert_02_8_Trillion_Tesla_Pattern_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-01T05:01:10.436Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi fleet: ~26 total vehicles — approximately 20 in Austin, 3 in Dallas, 3 in Houston, per RobotaxiTracker.com as of late April 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 26,
+    "context": "Canonical unsupervised fleet count from RobotaxiTracker.com; well below levels needed for meaningful revenue; city-by-city breakdown also provided",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab estimated production cost: approximately $20,000–$25,000 per vehicle",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 22500,
+    "context": "Dillon Loomis states this range as the likely cost of building a Cybercab, citing elimination of paint shop and unboxed manufacturing as key cost drivers",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab efficiency target: approximately 5.5 miles per kWh, with Lars Munro citing a target battery under 50 kWh and ~300 miles of range (implying closer to 6 mi/kWh needed)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.182,
+    "context": "Efficiency of ~5.5 mi/kWh equates to ~0.182 kWh/mile; relevant for energy cost modeling in robotaxi DCF",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla plans to expand FSD V14 Lite to additional international markets following US Hardware 3 rollout; no definitive dates provided",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD international expansion milestone; Hardware 3 owners in international markets will gain access to ongoing updates",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "EU-wide FSD supervised approval expected at TCMV group vote on or around June 30, 2026; individual nation fast-tracking appears unlikely",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Key regulatory catalyst for Tesla FSD European expansion; timing now converging on a single group decision rather than rolling country approvals",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3.2 has been rolled out to a few more users beyond the early access group as of late April 2026; approximately 90% of fleet has not yet received FSD 14.3",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "FSD version release status; rollout still narrow — relevant for tracking when wide release occurs",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has approximately 60 days from late April 2026 to launch in five new robotaxi cities per its previously stated slide deck targets (implying one new city every ~12 days through end of June 2026)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Robotaxi city expansion catalyst; Loomis considers this timeline aggressive and expects more gradual rollout",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "First Tesla Semi has come off the high-volume production line at the Tesla Semi factory in Giga Nevada",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Major production milestone; Elon Musk stated Semi production will start slow then ramp exponentially toward end of 2026 and into 2027; Loomis sets personal bar of 1,000+ units for remainder of 2026",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Xpeng CEO publicly wagered that VLA 2.0 will match Tesla FSD 14.2's Silicon Valley performance within China by August 30, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Competitive FSD milestone marker; sets a specific date and benchmark for comparing Xpeng vs. Tesla autonomous capability in China",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated on Q1 2026 earnings call that Cybercab and Semi production will start slow then ramp exponentially toward end of 2026 and into 2027",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Forward production guidance directly from CEO; Cybercab production ramp timeline is a core input to fleet size and revenue projections",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated Optimus Gen 3 is 'special'",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Teaser comment from Elon on Optimus Gen 3; no further details provided but signals a meaningful upgrade is coming",
+    "source": "20260430_electrified_01_We_Missed_Crucial_Cybercab_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-01T05:01:10.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet stands at 25 vehicles: Austin 19, Dallas 3, Houston 3 — per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "New record for unsupervised driverless Tesla robotaxi deployments; marks geographic expansion beyond Austin into Dallas and Houston",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total active robotaxi fleet is 650 vehicles across Bay Area (543), Austin (101), Dallas (3), Houston (3) per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 650,
+    "context": "Current operational fleet size across all modes; key baseline for DCF fleet growth modeling",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production rate at Giga Texas estimated at 10–20 units per day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "At 10–20/day, annualized rate would be 3,650–7,300 units/year; Bhakdi predicts thousands per month by June 2026",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi predicts Cybercab monthly production will reach 'thousands per month' by June 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Production ramp milestone; if accurate, dramatically accelerates fleet deployment timeline",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi estimates 1,800 unsupervised robotaxi target will be reached by September–November 2026, approximately 6 months later than his original projection",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Revised timeline for the '1,800 forcing function'; acknowledges delay but maintains thesis intact",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi predicts Tesla Semi autonomous trucking deployment in 2027",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First explicit timeline call on Tesla Semi autonomy; positions it as an uncontested TAM with zero autonomous competition currently",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 release described as approximately 90 days away from the video date of April 30, 2026, implying late July 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Bhakdi includes Optimus Gen 3 reveal as a 12-month catalyst in his investment framework; implied date is approximately late July 2026",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Some Cybercabs are being manufactured and shipped without a steering wheel",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Signals hardware-level commitment to fully autonomous operation; no retrofit path to human-driven mode for these units",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercabs have been spotted in Illinois, Massachusetts, Florida, Bay Area, Texas, Phoenix, and potentially Georgia",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Geographic distribution of pre-deployment Cybercabs suggests broad national rollout is underway beyond current operational cities",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
+  },
+  {
+    "fact": "First production Tesla Semi units are now rolling off the production line at Giga Texas",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Tesla Semi has transitioned from prototype to production phase; Bhakdi expects several thousand units deployed in 2026",
+    "source": "20260430_jobhakdi_01_Live_Tesla_Robotaxi_Breaks_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T05:01:10.464Z",
+    "status": "pending"
   }
 ]
