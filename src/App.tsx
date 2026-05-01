@@ -38,6 +38,22 @@ export default function App() {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
   const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'robotaxi'>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
+  const swipeRef = useRef<HTMLDivElement>(null)
+
+  const handleSwipeScroll = useCallback(() => {
+    if (!swipeRef.current) return
+    const { scrollLeft, clientWidth } = swipeRef.current
+    if (clientWidth === 0) return
+    const idx = Math.round(scrollLeft / clientWidth)
+    const next: 'stock' | 'robotaxi' = idx === 0 ? 'stock' : 'robotaxi'
+    setMobileStockTab(prev => prev === next ? prev : next)
+  }, [])
+
+  const scrollToMobileTab = useCallback((key: 'stock' | 'robotaxi') => {
+    if (!swipeRef.current) return
+    const idx = key === 'stock' ? 0 : 1
+    swipeRef.current.scrollTo({ left: idx * swipeRef.current.clientWidth, behavior: 'smooth' })
+  }, [])
   const channels = useMemo(() => {
     const sorted = [...new Set(data.articles.map(a => a.channel))].sort()
     return sorted.sort((a, b) => (a === 'tesla' ? -1 : b === 'tesla' ? 1 : 0))
@@ -138,13 +154,13 @@ export default function App() {
               </div>
             </div>
 
-            {/* Mobile: tabbed */}
+            {/* Mobile: tabbed + swipeable */}
             <div className="sm:hidden mb-6">
               <div className="flex gap-1 mb-2">
                 {([['stock', 'NASDAQ:TSLA'], ['robotaxi', 'UNSUPERVISED ROBOTAXIS']] as const).map(([key, label]) => (
                   <button
                     key={key}
-                    onClick={() => setMobileStockTab(key)}
+                    onClick={() => scrollToMobileTab(key)}
                     className={`px-2 py-1 text-xs font-bold transition-colors cursor-pointer ${
                       mobileStockTab === key ? 'text-green' : 'text-text-dim hover:text-green'
                     }`}
@@ -153,11 +169,17 @@ export default function App() {
                   </button>
                 ))}
               </div>
-              <div className={mobileStockTab === 'stock' ? '' : 'hidden'}>
-                <StockWidget {...stockData} />
-              </div>
-              <div className={mobileStockTab === 'robotaxi' ? '' : 'hidden'}>
-                <RobotaxiCounts />
+              <div
+                ref={swipeRef}
+                onScroll={handleSwipeScroll}
+                className="flex overflow-x-auto snap-x snap-mandatory swipe-container"
+              >
+                <div className="snap-start shrink-0 w-full">
+                  <StockWidget {...stockData} />
+                </div>
+                <div className="snap-start shrink-0 w-full">
+                  <RobotaxiCounts />
+                </div>
               </div>
             </div>
 
