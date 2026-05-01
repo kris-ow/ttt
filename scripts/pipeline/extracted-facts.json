@@ -13447,5 +13447,103 @@
     "channel": "cernbasher",
     "extractedAt": "2026-05-01T11:35:59.264Z",
     "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi fleet at approximately 25–26 vehicles, described as growing exponentially per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 26,
+    "context": "RobotaxiTracker.com canonical figure as of 2026-05-01: 26 unsupervised vehicles (Austin 20, Dallas 3, Houston 3). Bhakdi references ~25, consistent with tracker. Fleet growth rate cited at approximately 5 robotaxis per day.",
+    "source": "20260501_jobhakdi_01_How_This_Investment_Method_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T18:49:19.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total active Tesla robotaxi fleet (all modes) at 651 per RobotaxiTracker.com as of 2026-05-01: Bay Area 544, Austin 101, Dallas 3, Houston 3",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 651,
+    "context": "Bhakdi references the robotaxi tracker fleet growth chart; canonical tracker figure is 651 active across all modes as of the video publish date.",
+    "source": "20260501_jobhakdi_01_How_This_Investment_Method_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T18:49:19.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi identifies 1,800 robotaxis in full operation as the forcing function to drive Tesla stock to $600–$1,000",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "This is the specific fleet threshold Bhakdi believes will compel analyst upgrades and a major re-rating of Tesla's stock. No timeline given beyond 'the next year' horizon implied by his prediction framework.",
+    "source": "20260501_jobhakdi_01_How_This_Investment_Method_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T18:49:19.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi fleet growing at approximately 5 unsupervised vehicles per day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Bhakdi states ~5 robotaxis per day are being added; annualized this implies ~1,825 new vehicles per year if the rate holds, though he presents this as an observed current rate, not a formal projection.",
+    "source": "20260501_jobhakdi_01_How_This_Investment_Method_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T18:49:19.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal on a 90-day timeline from earnings call, described as likely the first commercial version",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Bhakdi attributes this to Tesla's earnings call. Gen 3 reveal expected approximately 90 days from the call. He assigns high probability it will not be materially delayed, consistent with his prior Cybercab timeline prediction being correct.",
+    "source": "20260501_jobhakdi_01_How_This_Investment_Method_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T18:49:19.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab manufacturing timeline confirmed held in April 2026 per Tesla announcement",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Bhakdi states he predicted Tesla would maintain the Cybercab scaling/manufacturing timeline in April, and that this was confirmed. Supports near-term Cybercab production ramp narrative.",
+    "source": "20260501_jobhakdi_01_How_This_Investment_Method_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-01T18:49:19.451Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Basecharger deliveries estimated to begin early 2027",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "New product with confirmed (if approximate) launch timeline; relevant to Tesla Semi fleet electrification ramp",
+    "source": "20260501_electrek_02_Tesla_Launches_Basecharger_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-01T18:49:19.479Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla charges $0.08/kWh all-inclusive fee for revenue-generating Megacharger and Basecharger sites",
+    "category": "Energy",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.08,
+    "context": "Per-kWh network fee for Semi charging business operators; relevant to Semi fleet operating economics (energy cost proxy)",
+    "source": "20260501_electrek_02_Tesla_Launches_Basecharger_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-01T18:49:19.479Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has 66 planned Megacharger locations with the first public station open in Ontario, California",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Tracks Megacharger network buildout pace; milestone for Semi commercial viability",
+    "source": "20260501_electrek_02_Tesla_Launches_Basecharger_For_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-01T18:49:19.479Z",
+    "status": "pending"
   }
 ]
