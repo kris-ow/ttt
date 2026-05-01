@@ -7,7 +7,6 @@ import { FeedSection } from './components/Feed/FeedSection'
 import { KnowledgeSection } from './components/KnowledgeBase/KnowledgeSection'
 import { DataSection } from './components/Data/DataSection'
 import { StockWidget } from './components/Stock/StockWidget'
-import { StockChart } from './components/Stock/StockChart'
 import { useStockQuote } from './components/Stock/useStockQuote'
 import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
 
@@ -29,6 +28,7 @@ export default function App() {
     }
     return 'feed'
   })
+  const [mountedTabs, setMountedTabs] = useState<Set<Section>>(() => new Set([activeSection]))
   const [dataSeen, setDataSeen] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false
     return window.localStorage.getItem('ttt-data-seen') === 'true'
@@ -36,7 +36,6 @@ export default function App() {
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
-  const [showChart, setShowChart] = useState(false)
   const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'robotaxi'>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
   const channels = useMemo(() => {
@@ -47,6 +46,7 @@ export default function App() {
 
   const handleTabSwitch = useCallback((key: Section) => {
     setActiveSection(key)
+    setMountedTabs(prev => prev.has(key) ? prev : new Set([...prev, key]))
     if (typeof window !== 'undefined' && window.location.hash) {
       history.replaceState(null, '', window.location.pathname + window.location.search)
     }
@@ -66,11 +66,6 @@ export default function App() {
     if (article.type === 'executive') {
       track('Exec Summary Open', { date: article.date })
     }
-  }, [])
-
-  const handleChartOpen = useCallback(() => {
-    setShowChart(true)
-    track('Chart Open')
   }, [])
 
   useEffect(() => {
@@ -129,16 +124,11 @@ export default function App() {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 py-6 flex-1 w-full">
-
-        {/* ── Top bar: Stock + Catalysts (only on feed) ── */}
-        {activeSection === 'feed' && (
-          <>
+        {mountedTabs.has('feed') && (
+          <div className={activeSection === 'feed' ? '' : 'hidden'}>
             {/* Desktop: side by side */}
             <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
-              <div
-                onClick={handleChartOpen}
-                className="cursor-pointer group flex flex-col"
-              >
+              <div className="flex flex-col">
                 <h3 className="text-text-bright text-xs font-bold mb-2">NASDAQ:TSLA</h3>
                 <StockWidget {...stockData} className="flex-1" />
               </div>
@@ -163,62 +153,62 @@ export default function App() {
                   </button>
                 ))}
               </div>
-              {mobileStockTab === 'stock' ? (
-                <div onClick={handleChartOpen} className="cursor-pointer group">
-                  <StockWidget {...stockData} />
-                </div>
-              ) : (
+              <div className={mobileStockTab === 'stock' ? '' : 'hidden'}>
+                <StockWidget {...stockData} />
+              </div>
+              <div className={mobileStockTab === 'robotaxi' ? '' : 'hidden'}>
                 <RobotaxiCounts />
-              )}
+              </div>
             </div>
-          </>
-        )}
 
-        {/* ── Main content ──────────────────────────── */}
-        <div>
-          {activeSection === 'feed' && (
-            <>
-              <div className="flex items-center gap-2 mb-4">
-                <h3 className="text-text-bright text-xs font-bold">NEWS FEED</h3>
-                <span className="text-text-dim text-xs">//</span>
-                <div ref={filterRef} className="relative">
-                  <button
-                    onClick={() => setShowFilter(!showFilter)}
-                    className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
-                  >
-                    FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
-                  </button>
-                  {showFilter && (
-                    <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
+            <div className="flex items-center gap-2 mb-4">
+              <h3 className="text-text-bright text-xs font-bold">NEWS FEED</h3>
+              <span className="text-text-dim text-xs">//</span>
+              <div ref={filterRef} className="relative">
+                <button
+                  onClick={() => setShowFilter(!showFilter)}
+                  className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
+                >
+                  FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
+                </button>
+                {showFilter && (
+                  <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
+                    <button
+                      onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
+                      className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
+                        !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                      }`}
+                    >
+                      ALL
+                    </button>
+                    {channels.map(ch => (
                       <button
-                        onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
+                        key={ch}
+                        onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
                         className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
-                          !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                          selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                         }`}
                       >
-                        ALL
+                        {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
                       </button>
-                      {channels.map(ch => (
-                        <button
-                          key={ch}
-                          onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
-                          className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
-                            selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
-                          }`}
-                        >
-                          {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
+                    ))}
+                  </div>
+                )}
               </div>
-              <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
-            </>
-          )}
-          {activeSection === 'data' && <DataSection />}
-          {activeSection === 'valuations' && <KnowledgeSection onSelectArticle={handleArticleOpen} />}
-        </div>
+            </div>
+            <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
+          </div>
+        )}
+        {mountedTabs.has('data') && (
+          <div className={activeSection === 'data' ? '' : 'hidden'}>
+            <DataSection />
+          </div>
+        )}
+        {mountedTabs.has('valuations') && (
+          <div className={activeSection === 'valuations' ? '' : 'hidden'}>
+            <KnowledgeSection onSelectArticle={handleArticleOpen} />
+          </div>
+        )}
       </div>
 
       {/* ── Footer ──────────────────────────────────── */}
@@ -236,11 +226,6 @@ export default function App() {
       {/* ── Article overlay ─────────────────────────── */}
       {selectedArticle && (
         <ArticleDetail article={selectedArticle} onClose={() => setSelectedArticle(null)} />
-      )}
-
-      {/* ── Chart overlay ─────────────────────────── */}
-      {showChart && (
-        <StockChart onClose={() => setShowChart(false)} />
       )}
     </div>
   )

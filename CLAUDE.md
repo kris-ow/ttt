@@ -11,7 +11,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 ## Architecture
 - Everything lives in `src/App.tsx` — single-page, no routing
 - Stock price: stock-proxy on Mac Mini (Finnhub upstream) → `wss://api.theteslathesis.com`
-- Stock chart: Lightweight Charts v5, Yahoo Finance data via corsproxy.io CORS proxy
+- Stock chart: Lightweight Charts v5, embedded inline in StockWidget (no popup), Yahoo Finance via stock-proxy `/chart` endpoint
 - Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
 - Only `_summary.txt` files are processed, deduplicated by title+date
 
@@ -65,7 +65,7 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 | Content | Source | Trigger |
 |---|---|---|
 | Stock price | stock-proxy (`wss://api.theteslathesis.com`) | WebSocket, proxy handles Finnhub upstream |
-| Stock chart | Yahoo Finance via corsproxy.io | On page load |
+| Stock chart | Yahoo Finance via stock-proxy (`api.theteslathesis.com/chart`) | On page load + range change |
 
 ### Automated pipeline (3x daily GitHub Actions — 1:15, 9:15, 17:15 UTC)
 | Content | Source | Trigger |
@@ -89,7 +89,6 @@ Planned DCF valuation models fed by Knowledge Base facts extracted from summarie
 
 ## Future / Known Limitations
 - Stock price via server-side proxy (api.theteslathesis.com) — needs dynamic DNS for ISP IP changes
-- Chart uses corsproxy.io — fragile, needs own proxy for production
 - Knowledge Base — planned bidirectional system: KB feeds into prompts, summaries update KB
 - Pipeline needs YouTube channel IDs configured in `scripts/pipeline/config.js`
 - DCF valuation models not yet built

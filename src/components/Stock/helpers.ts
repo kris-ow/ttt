@@ -23,14 +23,14 @@ export function normalizeTradeAt(raw: number | null | undefined): number | null 
   return raw < 1e12 ? raw * 1000 : raw
 }
 
-export function formatTradeAge(tradeAt: number | null, now: number = Date.now()): string | null {
+export function formatTradeAge(tradeAt: number | null, now: number = Date.now()): { label: string; fresh: boolean } | null {
   if (tradeAt == null) return null
   const ageSec = Math.max(0, Math.floor((now - tradeAt) / 1000))
-  if (ageSec < 60) return null
+  if (ageSec < 60) return { label: 'live', fresh: true }
   const mins = Math.floor(ageSec / 60)
-  if (mins < 60) return `${mins}m ago`
+  if (mins < 60) return { label: `${mins}m ago`, fresh: false }
   const hours = Math.floor(mins / 60)
-  return `${hours}h ago`
+  return { label: `${hours}h ago`, fresh: false }
 }
 
 // NYSE holidays (dates when market is fully closed)
