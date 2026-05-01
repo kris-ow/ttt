@@ -13377,5 +13377,75 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-01T05:01:10.464Z",
     "status": "pending"
+  },
+  {
+    "fact": "Waymo fare per mile is approximately $5, compared to Uber's approximately $4 per mile for human-driver rides",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 5,
+    "context": "Waymo commands a premium over Uber due to driverless preference; this premium is described as finite and eroding as fleet scales",
+    "source": "20260501_cernbasher_01_Uber_Just_Made_Waymos_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-01T11:35:59.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Cybercab target fare range estimated at $1.00–$1.50 per mile by hosts",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 1.25,
+    "context": "At this price point, hosts argue robotaxi becomes a substitute for personal vehicle ownership, unlocking exponential demand growth",
+    "source": "20260501_cernbasher_01_Uber_Just_Made_Waymos_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-01T11:35:59.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Ark Invest projects Tesla robotaxi fare of approximately $0.70 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.7,
+    "context": "Cited as the lower end of the fare range debate; significantly below personal vehicle cost of ownership for many consumers",
+    "source": "20260501_cernbasher_01_Uber_Just_Made_Waymos_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-01T11:35:59.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Personal vehicle cost of ownership estimated at $0.50–$1.50 per mile depending on individual circumstances",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 1,
+    "context": "Benchmark used to argue Tesla robotaxi at $1.00–$1.50/mile becomes competitive with or cheaper than car ownership",
+    "source": "20260501_cernbasher_01_Uber_Just_Made_Waymos_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-01T11:35:59.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo Austin fleet estimated at approximately 300 vehicles (illustrative estimate used in discussion)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 300,
+    "context": "Hosts use this figure to illustrate idle-fleet economics during low-demand periods; not sourced from RobotaxiTracker.com — materially different from canonical Austin figure",
+    "source": "20260501_cernbasher_01_Uber_Just_Made_Waymos_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-01T11:35:59.264Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi vehicles are described as potential mobile compute nodes, identified as an emerging and significant use case",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Represents a new non-ride-hailing revenue stream for the Tesla robotaxi platform; economics not yet quantified",
+    "source": "20260501_cernbasher_01_Uber_Just_Made_Waymos_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-01T11:35:59.264Z",
+    "status": "pending"
   }
 ]
