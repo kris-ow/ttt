@@ -808,11 +808,11 @@
             "type": "tracker",
             "sourceNote": "Fleet counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Known to undercount — Tesla cited 500+ on Q4 earnings call when tracker showed ~474. No official Tesla fleet disclosures available.",
             "current": {
-              "date": "2026-04-30",
-              "total": 650,
+              "date": "2026-05-01",
+              "total": 651,
               "note": "robotaxitracker.com (community-reported, unverified)",
               "breakdown": {
-                "Bay Area": 543,
+                "Bay Area": 544,
                 "Austin": 101,
                 "Dallas": 3,
                 "Houston": 3
@@ -897,6 +897,17 @@
                 "date": "2026-04-27",
                 "total": 636,
                 "note": "Bay Area: 538, Austin: 98"
+              },
+              {
+                "date": "2026-04-30",
+                "total": 650,
+                "breakdown": {
+                  "Bay Area": 543,
+                  "Austin": 101,
+                  "Dallas": 3,
+                  "Houston": 3
+                },
+                "note": "Bay Area: 543, Austin: 101, Dallas: 3, Houston: 3"
               }
             ]
           },
@@ -1464,14 +1475,24 @@
                 "sources": [
                   "robotaxitracker.com"
                 ]
+              },
+              {
+                "date": "2026-04-30",
+                "total": 25,
+                "breakdown": {
+                  "Austin": 19,
+                  "Dallas": 3,
+                  "Houston": 3
+                },
+                "note": "Austin: 19, Dallas: 3, Houston: 3"
               }
             ],
             "current": {
-              "date": "2026-04-30",
-              "total": 25,
+              "date": "2026-05-01",
+              "total": 26,
               "note": "robotaxitracker.com (rendered DOM, community-reported)",
               "breakdown": {
-                "Austin": 19,
+                "Austin": 20,
                 "Dallas": 3,
                 "Houston": 3
               },
