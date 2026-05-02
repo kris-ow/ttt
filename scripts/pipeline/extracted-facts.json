@@ -13545,5 +13545,181 @@
     "channel": "electrek",
     "extractedAt": "2026-05-01T18:49:19.479Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla's Lathrop, California Megapack factory is now producing 200 Megapacks per week, per a new Tesla-released video.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Concrete production throughput milestone for the Megapack factory; directly relevant to Energy segment revenue modeling and Catalyst Watch item for Megapack factory milestones.",
+    "source": "20260502_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-02T04:30:42.850Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD V14.3.2 received a UI update redesigning the disengagement/intervention popup: moved lower on screen, made smaller, improved layout, non-dismissible until driver selects an option.",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms active V14.3.2 development iteration; matches Catalyst Watch item for FSD version releases and capability upgrades.",
+    "source": "20260502_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-02T04:30:42.850Z",
+    "status": "pending"
+  },
+  {
+    "fact": "California will begin issuing traffic violation tickets directly to autonomous vehicles (robotaxis) starting July 1, 2026.",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "New regulatory requirement affecting Tesla's Bay Area and California robotaxi operations; introduces a compliance/operational cost variable starting Q3 2026.",
+    "source": "20260502_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-02T04:30:42.850Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla will charge businesses $0.08 per kWh for use of its chargers at revenue-generating sites, inclusive of annual preventative maintenance and Tesla technician support.",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.08,
+    "context": "This is a per-kWh charging rate for Tesla Semi business customers (not directly robotaxi energy cost), but establishes Tesla's commercial energy pricing floor; may inform energy cost modeling.",
+    "source": "20260502_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-02T04:30:42.850Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet stands at 26 vehicles per RobotaxiTracker.com, up from 17 just days prior — Dallas 3, Houston 3, remainder in Austin and Bay Area",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 26,
+    "context": "Recent acceleration in unsupervised fleet deployment; Dallas and Houston newly added at 3 vehicles each",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD cumulative miles counter expected to hit 10 billion around May 3, 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Elon previously cited ~10 billion miles as the threshold validating safety at scale; milestone is imminent",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 rolled out in April 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Latest FSD version release; remaining issues characterized as convenience/operational rather than safety-critical",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised approved in the Netherlands in April 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "New international regulatory approval for supervised FSD operation",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised approval in China rumored to coincide with President Trump's visit approximately two weeks from late April 2026, potentially mid-May 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Unconfirmed rumor; would be a significant new market approval for FSD supervised mode",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production officially started in April 2026 (VIN zero produced; Dan Priestley cited as source of 'start of production' confirmation)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Cybercab production line now active; vehicle being tested in multiple cities ahead of robotaxi network deployment",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production line engineered to run at several times the speed of the Model Y line; Model Y line capacitized at approximately 1.5 million units per year; Cybercab targeted as Tesla's highest-volume vehicle",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "No specific annual Cybercab volume number given, but described as multiple times Model Y capacity — implies potential for millions per year at peak",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi first unit off high-volume production line announced; described as effectively start of production",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Semi production ramp beginning; parallel drawn to Cybercab's Feb first-unit milestone followed by production start two months later",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 reveal delayed out of April 2026; Model S/X line expected to sunset in May 2026 to begin Optimus production line build-out",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "SNX line shutdown is prerequisite for Optimus manufacturing ramp; transition described as a herculean effort",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus production start estimated July–August 2026 per earnings call; first units off line possibly late Q3 or Q4 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Jeff Lutz expressed surprise at July–August timeline, suggesting end of summer is more realistic; Optimus Gen 3 production milestone tracking",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Part of Cortex 2 came online in April 2026; reportedly approaching ~50% capacity based on fan activity observations",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Cortex 2 AI training supercomputer ramp is key to scaling FSD and Optimus development",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Next robotaxi cities identified as Phoenix, Miami, Orlando, Tampa, and Las Vegas; Florida cities may launch simultaneously",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "City expansion pipeline for robotaxi network; no specific dates given but described as potentially imminent for any of the five",
+    "source": "20260501_brighterwithherbert_01_Teslas_Timeline_Just_Shifted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T04:30:42.864Z",
+    "status": "pending"
+  },
+  {
+    "fact": "First customer deliveries of new Canadian Model 3 lineup expected as early as May or June 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Near-term delivery milestone for Shanghai-built Model 3 in Canada",
+    "source": "20260502_electrek_01_Tesla_Launches_Model_3_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-02T04:30:42.878Z",
+    "status": "pending"
   }
 ]
