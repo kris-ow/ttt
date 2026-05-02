@@ -13813,5 +13813,145 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-02T08:45:58.617Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla trailing 12-month incremental revenue per dollar of capex + R&D has ranged between $6 and $9",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "Rolling annual capital efficiency metric; used to illustrate Tesla's near-term return on capex investment relative to peers",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla capex plan is over $25 billion with stated willingness to spend more and ability to access capital markets if needed",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Tesla has guided to $25B+ capex and indicated robotaxi revenue may begin flowing in time to partially self-fund the buildout",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont Model S and Model X production line to be taken down beginning Q2 2026 and converted to Optimus humanoid robot production line in approximately 40–60 days",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Signals imminent start of Optimus manufacturing ramp at Fremont; conversion timeline is 40–60 days per Cern Basher",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont Optimus production line will have capacity for 1 million units annually",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "First stated production capacity for Optimus at Fremont following Model S/X line conversion",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Ground broken and foundations being laid for a 10 million unit annual capacity Optimus factory in Texas; estimated 12–15 months to complete",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Largest announced humanoid robot factory globally; completion estimated approximately mid-to-late 2027",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD is currently available in the United States, Canada, Mexico, and the Netherlands",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Geographic availability cited in context of advertising spend debate; FSD described on earnings call as now a vehicle demand driver",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla stated on its earnings call that FSD has become a demand driver for vehicle sales",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Earnings call acknowledgment that FSD is influencing purchase decisions; used to argue for advertising investment in FSD",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab target manufacturing cost cited as $20,000 per unit",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 20000,
+    "context": "Mentioned by Cern Basher as the cost target Elon is aiming for; contrasted against a hypothetical Google/Waymo vehicle cost of $50,000 to illustrate Tesla's manufacturing moat",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "SpaceX expected to go public within the coming quarters, at which point Tesla + SpaceX combined financials can be compared to hyperscalers",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Herbert states SpaceX IPO is forthcoming; noted SpaceX needs approximately $70 billion to compete in AGI/AI data center race",
+    "source": "20260502_brighterwithherbert_01_Tsla_Chart_Wall_Street_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-02T18:37:10.182Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Farzad projects autonomous vehicle and humanoid robot production cost will fall below $30,000 at scale, possibly below $20,000 for some form factors",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Speaker projects sub-$30K cost for self-driving vans and humanoid robots at scale; sub-$20K mentioned for some form factors — relevant to Cybercab and Optimus unit economics modeling",
+    "source": "20260502_farzad-fm_01_How_To_Win_The_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-02T18:37:10.210Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Farzad projects autonomous vehicle operating cost of approximately 5 cents per mile at scale",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.05,
+    "context": "Speaker cites ~5 cents per mile as the expected running cost for autonomous vehicles at scale — directly relevant to robotaxi unit economics; note this appears to be total operating cost per mile, not strictly energy cost",
+    "source": "20260502_farzad-fm_01_How_To_Win_The_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-02T18:37:10.210Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Anthropic Claude ECI benchmark score rose from approximately 120 in January 2024 to approximately 150 for Claude Opus 4.6, with a further significant jump for the 'Mythos' model as of April 2026",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Rapid model capability improvement achieved through additional compute — relevant to rate of AI progress underpinning Tesla's FSD and Dojo investment thesis",
+    "source": "20260502_farzad-fm_01_How_To_Win_The_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-02T18:37:10.210Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk admitted on the Q1 2026 earnings call (April 22, 2026) that HW3 vehicles will never achieve full self-driving without hardware upgrades requiring new factories to be built",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Direct CEO admission that HW3 FSD delivery is not possible with current hardware; no factories have been started; materially impacts the timeline and feasibility of FSD promises made to millions of owners",
+    "source": "20260502_electrek_03_This_Tesla_Owner_Won_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-02T18:37:10.222Z",
+    "status": "pending"
   }
 ]
