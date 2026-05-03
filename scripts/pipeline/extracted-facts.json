@@ -13953,5 +13953,171 @@
     "channel": "electrek",
     "extractedAt": "2026-05-02T18:37:10.222Z",
     "status": "pending"
+  },
+  {
+    "fact": "Portland General Electric residential electricity rate: 19 cents/kWh, equivalent to ~$1.50/gallon of gasoline in driving cost; rates have risen ~8%/year on average over five years including ~18% in 2024",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Electricity pricing data relevant to energy cost per mile calculations for EV and robotaxi unit economics; no direct kWh/mile figure stated but 19 cents/kWh residential rate and factor-of-8 efficiency ratio provided",
+    "source": "20260502_futureaza_02_Gas_Cars_Are_Quietly_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-03T04:53:05.194Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Electrify America public DC fast charging rate: ~62 cents/kWh; Tesla Supercharger rate (Midwest locations): ~47 cents/kWh; Level 2 public charger (Electric Avenue): ~30 cents/kWh",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Public charging cost benchmarks relevant to robotaxi fleet energy cost modeling where vehicles may rely on public or semi-public charging infrastructure",
+    "source": "20260502_futureaza_02_Gas_Cars_Are_Quietly_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-03T04:53:05.194Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD V14.3.2 is in active rollout; V14.3 release notes confirm improved small animal handling via RL training on harder examples and added proactive safety rewards",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Confirms FSD V14.3.2 version exists and is being used in the field; documents a specific RL training improvement targeting edge-case safety scenarios — relevant to FSD capability progression tracking",
+    "source": "20260503_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-03T04:53:05.207Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab volume production officially started April 24th, 2026; first unit rolled off the line February 17th, 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Marks the transition from pilot to volume production — the key enabler for Tesla's projected fleet ramp to 10,000+ by December 2026.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Realistic 2026 Cybercab production estimate: 15,000–25,000 units by year-end, with 30–50% going to Tesla's own robotaxi fleet (5,000–12,000 vehicles)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "First public production number will come at Q2 earnings in late July 2026; threshold of <1,000 units for Q2 would make 10,000 forecast too aggressive, >5,000 units would be bullish.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab target unit production cost: under $30,000",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Compared to Waymo's ~$175,000 per vehicle, this nearly 6x cost advantage is central to Tesla's projected per-mile economics superiority.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo vehicle cost approximately $175,000 per unit ($75,000 Jaguar I-Pace + ~$100,000 autonomous hardware)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 175000,
+    "context": "Benchmark competitor unit cost for DCF comparison; highlights structural cost disadvantage vs. Cybercab target of under $30,000.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi fare documented at $6.15 for a Dallas trip vs. $13.93 for the same trip on Waymo — 56% cheaper",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "base_fare",
+    "value": 6.15,
+    "context": "Attributed to 'Merrit' documenting a real ride. Provides earliest real-world data point on Tesla robotaxi pricing vs. leading competitor.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla announced 12-state unsupervised FSD rollout on Q1 2026 earnings call; Phoenix, Miami, Orlando, Tampa, Las Vegas confirmed for H1 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Multi-state expansion is a key catalyst for Tesla's fleet ramp; currently operating unsupervised in one state (Texas). Each new state approval directly expands addressable robotaxi market.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Netherlands approved Tesla FSD (supervised) on April 10th, 2026; Europe-wide FSD approval targeted for summer 2026",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First EU country approval; second country (Germany, France, or Italy) identified as the trigger for continental EU FSD rollout.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla year-end 2026 robotaxi forecast: 10,000+ unsupervised vehicles minimum across a dozen states; upside scenario 15,000–20,000",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Host's central thesis; would represent Tesla moving from fifth globally to first, surpassing Waymo's confirmed year-end target of 3,500.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo confirmed year-end 2026 fleet target: 3,500 vehicles (starting from ~1,500 in early 2025, adding 2,000 this year)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3500,
+    "context": "Corrected figure from prior reporting; establishes the competitive bar Tesla needs to clear. Waymo also targeting 1 million weekly rides by end of 2026.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo current fleet approximately 3,000 vehicles across 10 US cities; ~500,000 paid rides/week as of March 2026; 20 million cumulative paid rides as of December 2025",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Current baseline for the leading robotaxi operator globally; key benchmark for Tesla's projected ramp.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "WeRide global fleet: 1,023 vehicles as of January 2026; targeting 2,600+ by year-end 2026; Lenovo deal for 200,000 autonomous vehicles over 5 years",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1023,
+    "context": "WeRide is the most geographically diversified Chinese operator with driverless permits outside China, but is partially constrained by China license freeze.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Q2 2026 earnings (first public Cybercab production number): expected late July 2026",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Host identifies this as the single most important data point of the year; <1,000 Cybercab units for Q2 would make 10,000 year-end forecast too aggressive; >5,000 would be bullish.",
+    "source": "20260502_brighterwithherbert_02_Why_Tesla_Hits_10000_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T04:53:05.222Z",
+    "status": "pending"
   }
 ]
