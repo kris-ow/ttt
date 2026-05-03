@@ -14119,5 +14119,100 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-03T04:53:05.222Z",
     "status": "pending"
+  },
+  {
+    "fact": "EV1 VIN 212 restoration target completion: November 14, 2026, marking the 30th anniversary of the first EV1 customer delivery",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Milestone date for the only operational, legally owned EV1; GM participation signals changed corporate attitude toward EV heritage",
+    "source": "20260503_futureaza_01_Gm_Ev1_And_The_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-03T18:39:12.775Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Figure scaled humanoid robot manufacturing 24x in 120 days, from 1 robot/day to 1 robot/hour, producing approximately 55 robots per week as of late April 2026",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First US humanoid company to demonstrate this level of production ramp; directly relevant to competitive positioning vs. Optimus",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Scott Walter forecasts Figure's 2026 annual production at 3,000–4,000 units, with a run rate approaching 5,000/year by mid-2026; Brett Adcock stated target is 'thousands' in 2026",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 5000,
+    "context": "Scott's estimate of Figure's 2026 production run rate; relevant as competitive benchmark for Optimus fleet growth projections",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "1X NeoFactory in Hayward, California: 58,000 sq ft, 200 employees, built in 3 months, fully operational; stated target capacity of 10,000 Neo home robots per year with a goal of 100,000 by end of 2027",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "First major US humanoid home-robot factory to go operational; 1X claims most vertically integrated humanoid plant in America",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Optimus Gen 3 reveal has been delayed from original end-of-2024 target, then end-of-2025, then Q1 2026; Scott Walter now expects fall 2026 at earliest, possibly later",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Optimus Gen 3 reveal is a major catalyst for Tesla's humanoid thesis; repeated delays affect investor confidence in timeline",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Scott Walter forecasts Tesla will produce no more than 'a couple of thousand' Optimus units by end of 2026; explicitly states 10,000 units by end of December 2026 will not happen",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 2000,
+    "context": "Independent expert's 2026 Optimus production ceiling estimate; materially lower than some bullish investor expectations",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated on the most recent earnings call (2026) that it is 'literally impossible to predict' the Optimus production ramp due to too many moving parts",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Represents a significant retreat from prior optimistic guidance; removes any firm forward production number for Optimus",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is converting Model S and Model X lines at Fremont into an Optimus production line; a new building permit has been filed for a separate 'North Campus Manufacturing' facility described as a 10 million unit/year scale factory",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "North Campus is the large-scale future Optimus factory; Fremont conversion is the near-term learning line Scott estimates as realistically 10,000 units/year capacity",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Figure bots charge in approximately 15-minute increments compatible with standard human break schedules, enabling a single bot to match an 8-hour human shift without full battery swaps in some configurations",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "utilization",
+    "context": "Charging cadence affects effective daily utilization rate for commercial deployment planning",
+    "source": "20260503_brighterwithherbert_01_Humanoid_Robot_Factory_War_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-03T18:39:12.789Z",
+    "status": "pending"
   }
 ]
