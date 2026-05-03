@@ -808,14 +808,14 @@
             "type": "tracker",
             "sourceNote": "Fleet counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Known to undercount — Tesla cited 500+ on Q4 earnings call when tracker showed ~474. No official Tesla fleet disclosures available.",
             "current": {
-              "date": "2026-05-01",
-              "total": 651,
+              "date": "2026-05-03",
+              "total": 657,
               "note": "robotaxitracker.com (community-reported, unverified)",
               "breakdown": {
-                "Bay Area": 544,
+                "Bay Area": 549,
                 "Austin": 101,
                 "Dallas": 3,
-                "Houston": 3
+                "Houston": 4
               },
               "sources": [
                 "robotaxitracker.com/data"
@@ -908,6 +908,17 @@
                   "Houston": 3
                 },
                 "note": "Bay Area: 543, Austin: 101, Dallas: 3, Houston: 3"
+              },
+              {
+                "date": "2026-05-01",
+                "total": 651,
+                "breakdown": {
+                  "Bay Area": 544,
+                  "Austin": 101,
+                  "Dallas": 3,
+                  "Houston": 3
+                },
+                "note": "Bay Area: 544, Austin: 101, Dallas: 3, Houston: 3"
               }
             ]
           },
