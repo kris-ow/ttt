@@ -35,8 +35,8 @@ export function StockChartPanel({ range, heightClass, compact = false }: Props) 
       },
       rightPriceScale: { borderColor: '#2a2a2a' },
       timeScale: { borderColor: '#2a2a2a', timeVisible: true },
-      handleScroll: true,
-      handleScale: true,
+      handleScroll: false,
+      handleScale: false,
     })
 
     const series = chart.addSeries(AreaSeries, {

@@ -18,7 +18,18 @@ export function StockWidget({ className, ...state }: StockState & { className?: 
 
   const [activeRange, setActiveRange] = useState('5D')
   const [showRangeFilter, setShowRangeFilter] = useState(false)
+  const [dropdownPos, setDropdownPos] = useState<{ top: number; right: number } | null>(null)
   const rangeRef = useRef<HTMLDivElement>(null)
+  const buttonRef = useRef<HTMLButtonElement>(null)
+
+  const toggleRangeFilter = () => {
+    const next = !showRangeFilter
+    if (next && buttonRef.current) {
+      const rect = buttonRef.current.getBoundingClientRect()
+      setDropdownPos({ top: rect.bottom + 4, right: window.innerWidth - rect.right })
+    }
+    setShowRangeFilter(next)
+  }
 
   useEffect(() => {
     if (!showRangeFilter) return
@@ -27,8 +38,15 @@ export function StockWidget({ className, ...state }: StockState & { className?: 
         setShowRangeFilter(false)
       }
     }
+    const handleDismiss = () => setShowRangeFilter(false)
     document.addEventListener('mousedown', handleClick)
-    return () => document.removeEventListener('mousedown', handleClick)
+    document.addEventListener('scroll', handleDismiss, true)
+    window.addEventListener('resize', handleDismiss)
+    return () => {
+      document.removeEventListener('mousedown', handleClick)
+      document.removeEventListener('scroll', handleDismiss, true)
+      window.removeEventListener('resize', handleDismiss)
+    }
   }, [showRangeFilter])
 
   return (
@@ -52,15 +70,19 @@ export function StockWidget({ className, ...state }: StockState & { className?: 
               <span className={sess.cls}>{sess.label}</span>
               {age && <span className={age.fresh ? 'text-green' : 'text-text-dim'}>• {age.label}</span>}
             </div>
-            <div ref={rangeRef} className="relative shrink-0">
+            <div ref={rangeRef} className="shrink-0">
               <button
-                onClick={() => setShowRangeFilter(!showRangeFilter)}
+                ref={buttonRef}
+                onClick={toggleRangeFilter}
                 className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
               >
                 TIMEFRAME: <span className="text-green font-bold">[{activeRange}]</span>
               </button>
-              {showRangeFilter && (
-                <div className="absolute top-6 right-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
+              {showRangeFilter && dropdownPos && (
+                <div
+                  style={{ position: 'fixed', top: dropdownPos.top, right: dropdownPos.right }}
+                  className="z-50 border border-border bg-surface p-2 flex flex-col gap-1"
+                >
                   {RANGES.map(r => (
                     <button
                       key={r.label}

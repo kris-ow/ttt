@@ -145,11 +145,11 @@ export default function App() {
             {/* Desktop: side by side */}
             <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
               <div className="flex flex-col">
-                <h3 className="text-text-bright text-xs font-bold mb-2">NASDAQ:TSLA</h3>
+                <h3 className="text-text-bright text-sm font-bold mb-2">NASDAQ:TSLA</h3>
                 <StockWidget {...stockData} className="flex-1" />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-text-bright text-xs font-bold mb-2">UNSUPERVISED ROBOTAXIS</h3>
+                <h3 className="text-text-bright text-sm font-bold mb-2">UNSUPERVISED ROBOTAXIS</h3>
                 <RobotaxiCounts className="flex-1" />
               </div>
             </div>
@@ -165,7 +165,8 @@ export default function App() {
                       mobileStockTab === key ? 'text-green' : 'text-text-dim hover:text-green'
                     }`}
                   >
-                    {mobileStockTab === key ? `> ${label}` : `  ${label}`}
+                    <span className="inline-block w-3 text-left">{mobileStockTab === key ? '>' : ''}</span>
+                    {label}
                   </button>
                 ))}
               </div>
@@ -184,7 +185,7 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-2 mb-4">
-              <h3 className="text-text-bright text-xs font-bold">NEWS FEED</h3>
+              <h3 className="text-text-bright text-xs sm:text-sm font-bold">NEWS FEED</h3>
               <span className="text-text-dim text-xs">//</span>
               <div ref={filterRef} className="relative">
                 <button
