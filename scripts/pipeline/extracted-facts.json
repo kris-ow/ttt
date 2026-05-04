@@ -14452,5 +14452,47 @@
     "channel": "investingagainstthegrain",
     "extractedAt": "2026-05-04T09:32:12.796Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 delivers 20% faster reaction time via a full rewrite of the AI compiler and runtime using MLRI",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents a foundational architectural change to FSD runtime, not the AI model itself; directly cited as a safety improvement and enabler for unsupervised robotaxi expansion",
+    "source": "20260504_cernbasher_01_Tesla_Just_Hit_Superhuman_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-04T12:09:42.886Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Estimated FSD 14.3 reaction time: approximately 0.2 seconds, versus the human safety standard of approximately 1.5 seconds",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 0.2,
+    "context": "FSD reaction time of ~0.2 seconds is cited as superhuman; human benchmark is ~1.5 seconds; elite sprinter threshold is 0.1 seconds",
+    "source": "20260504_cernbasher_01_Tesla_Just_Hit_Superhuman_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-04T12:09:42.886Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk confirmed FSD version 15 will be the large model — approximately 10x the parameter count of the current small model",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Elon confirmed version 15 = 10x parameter increase; also stated version 15 will 'far exceed human levels of safety even in completely unsupervised and complex situations'",
+    "source": "20260504_cernbasher_01_Tesla_Just_Hit_Superhuman_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-04T12:09:42.886Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Panel states unsupervised robotaxi expansion in Austin is expected to proceed on a FSD 14.x variant, not contingent on version 15",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Pushes back on community interpretation that Tesla is waiting for FSD 15 before scaling unsupervised robotaxi; panel argues 14.3 or a point release is the enabler",
+    "source": "20260504_cernbasher_01_Tesla_Just_Hit_Superhuman_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-04T12:09:42.886Z",
+    "status": "pending"
   }
 ]
