@@ -251,13 +251,58 @@ function updateKB(operational, unsupervised) {
 
 // ── counts.json (frontend artifact) ──────────────────────
 
+function dateAddDaysIso(dateStr, days) {
+  const d = new Date(dateStr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
+// Most recent tracker entry on or before `date` (history + current pool).
+function findEntryOnOrBefore(tracker, date) {
+  const all = [...(tracker?.history || [])];
+  if (tracker?.current) all.push(tracker.current);
+  all.sort((a, b) => a.date.localeCompare(b.date));
+  for (let i = all.length - 1; i >= 0; i--) {
+    if (all[i].date <= date) return all[i];
+  }
+  return null;
+}
+
+function buildPriorAnchors(unsupervised) {
+  let kb;
+  try {
+    kb = JSON.parse(fs.readFileSync(KB_FILE, 'utf-8'));
+  } catch {
+    return undefined;
+  }
+  const tracker = kb?.Robotaxi?.areas
+    ?.find(a => a.id === 'fleet_deployment')
+    ?.sections?.find(s => s.id === 'unsupervised_count');
+  if (!tracker) return undefined;
+
+  const today = new Date().toISOString().split('T')[0];
+  const pick = entry => entry && {
+    date: entry.date,
+    total: entry.total,
+    breakdown: entry.breakdown,
+  };
+  const prior = {};
+  for (const [key, days] of [['1d', -1], ['7d', -7], ['30d', -30]]) {
+    const e = pick(findEntryOnOrBefore(tracker, dateAddDaysIso(today, days)));
+    if (e) prior[key] = e;
+  }
+  return Object.keys(prior).length ? prior : undefined;
+}
+
 function writeCountsJson(unsupervised) {
   if (!unsupervised) return false;
+  const prior = buildPriorAnchors(unsupervised);
   const out = {
     fetched_at: new Date().toISOString(),
     source: HOME_URL,
     total_unsupervised: unsupervised.total_unsupervised,
     cities: unsupervised.cities,
+    ...(prior ? { prior } : {}),
   };
   fs.mkdirSync(path.dirname(COUNTS_FILE), { recursive: true });
   fs.writeFileSync(COUNTS_FILE, JSON.stringify(out, null, 2) + '\n');
