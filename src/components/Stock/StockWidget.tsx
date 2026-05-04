@@ -3,7 +3,7 @@ import { SESSION_LABELS, formatTradeAge, RANGES, type StockState } from './helpe
 import { StockChartPanel } from './StockChartPanel'
 import { track } from '../../analytics'
 
-export function StockWidget({ className, ...state }: StockState & { className?: string }) {
+export function StockWidget({ className, bare, ...state }: StockState & { className?: string; bare?: boolean }) {
   const { price, prevClose, tradeAt, loading, error, session, live } = state
   const isExtended = session === 'PRE' || session === 'POST'
   const showingLastClose = isExtended && !live
@@ -50,7 +50,7 @@ export function StockWidget({ className, ...state }: StockState & { className?: 
   }, [showRangeFilter])
 
   return (
-    <div className={`border border-border bg-surface p-2 flex flex-col${className ? ` ${className}` : ''}`}>
+    <div className={`${bare ? '' : 'border border-border bg-surface '}p-2 flex flex-col${className ? ` ${className}` : ''}`}>
       {loading && !price ? (
         <div className="text-text-dim text-xs animate-pulse">CONNECTING...</div>
       ) : error && !price ? (

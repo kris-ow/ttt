@@ -46,7 +46,7 @@ function relativeAge(iso: string): { label: string; stale: boolean } {
   return { label: `${days}d ago`, stale }
 }
 
-export function RobotaxiCounts({ className }: { className?: string } = {}) {
+export function RobotaxiCounts({ className, bare }: { className?: string; bare?: boolean } = {}) {
   const [data, setData] = useState<Counts | null>(null)
   const [error, setError] = useState(false)
 
@@ -69,7 +69,7 @@ export function RobotaxiCounts({ className }: { className?: string } = {}) {
   const age = data ? relativeAge(data.fetched_at) : null
 
   return (
-    <div className={`border border-border bg-surface p-3 text-xs${className ? ` ${className}` : ''}`}>
+    <div className={`${bare ? '' : 'border border-border bg-surface '}p-3 text-xs${className ? ` ${className}` : ''}`}>
       {error && <div className="text-text-dim">FAILED TO LOAD</div>}
       {!data && !error && <div className="text-text-dim">LOADING...</div>}
       {data && (

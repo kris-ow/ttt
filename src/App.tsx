@@ -176,16 +176,18 @@ export default function App() {
                   </button>
                 ))}
               </div>
-              <div
-                ref={swipeRef}
-                onScroll={handleSwipeScroll}
-                className="flex overflow-x-auto snap-x snap-mandatory swipe-container"
-              >
-                <div className="snap-start shrink-0 w-full">
-                  <StockWidget {...stockData} />
-                </div>
-                <div className="snap-start shrink-0 w-full">
-                  <RobotaxiCounts />
+              <div className="border border-border bg-surface">
+                <div
+                  ref={swipeRef}
+                  onScroll={handleSwipeScroll}
+                  className="flex overflow-x-auto snap-x snap-mandatory swipe-container"
+                >
+                  <div className="snap-start shrink-0 w-full">
+                    <StockWidget {...stockData} bare />
+                  </div>
+                  <div className="snap-start shrink-0 w-full">
+                    <RobotaxiCounts bare />
+                  </div>
                 </div>
               </div>
             </div>
