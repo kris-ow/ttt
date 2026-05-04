@@ -250,9 +250,10 @@ export function DataSection() {
     <div>
       {SECTIONS.map(section => (
         <div key={section.title} className="mb-6">
-          <h3 className="text-text-bright text-xs font-bold mb-2 flex items-baseline justify-between">
-            <span>{section.title}</span>
-            <span className="text-text-dim font-normal">LATEST: {periodLabel(latestPeriod)}</span>
+          <h3 className="text-text-bright text-xs sm:text-sm font-bold mb-2 flex items-center gap-2">
+            <span className="whitespace-nowrap">{section.title}</span>
+            <span className="flex-1 border-t border-dashed border-text-dim" />
+            <span className="text-text-dim text-xs font-normal whitespace-nowrap">LATEST: {periodLabel(latestPeriod)}</span>
           </h3>
           <div className="border border-border bg-surface">
             {section.metrics.map(metric => (
