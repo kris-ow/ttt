@@ -1,0 +1,348 @@
+Channel:     cernbasher
+Title:       Tesla Just Hit Superhuman Reaction Time
+URL:         https://www.youtube.com/watch?v=JQ9lTXObhmg
+Published:   2026-05-04 11:00 UTC
+Fetched:     2026-05-04 11:00 UTC
+
+────────────────────────────────────────────────────────────
+
+And and I'm guessing this would make
+such a massive impact on reducing the
+number of accidents. Or as Phil said, at
+least if there is an accident, it's at
+much much lower speed because the
+vehicle is actually able to control
+itself and slow down that much earlier.
+Here's 14.3 being released. The big
+thing that Tesla AI is focusing on is
+that this update brings 20% faster
+reaction time to further increase safety
+among many other improvements. I wanted
+to ask you guys explain what you're
+thinking about 14.3 after you've seen
+all the reactions. Why don't we start
+with you, Phil? Yeah, so I think what
+what's going on here is that um
+Sir and I have talked about this is that
+Tesla bit the bullet and rewrote the
+runtime because they're looking to get
+more performance out of the inference
+cycles. Right? So they they wanted a
+guaranteed set of inference cycle at
+like maybe 36 times a second. They
+started you know, the model is complex.
+They want to increase the size of the
+model eventually.
+And they had this moment in time where
+they decided, well, look, we need to
+take a pause, step back, and really
+optimize further. They probably saw that
+they could optimize further.
+They thought about the technique that
+they wanted to apply to that.
+And they decided that they would go for
+it in this release. And I think that's
+one of the reasons it took so long to
+get out because it took a long time to
+really replace the entire runtime
+architecture of the vehicle. Not the AI,
+but the runtime architecture. One thing
+that I can say for sure is that its
+reaction time has far surpassed us mere
+mortals.
+If you have no idea why it stomped on
+the brakes there, you're not alone. When
+I posted this clip on X, the majority of
+people had no idea. It turns out it was
+because this car had started pulling out
+from their spot without looking before
+giving FSD a thumbs up for reacting so
+quickly. If you look closely, you can
+see the path planner reacting to the
+situation before the visualization shows
+the car moving at all. Absolute insane
+reaction time. So what is it what does
+it give us? It gives us
+uh
+as you saw in the video, probably
+incredibly good reaction times. I mean,
+far exceeding any human's ability to do
+any of those things, obviously, right? I
+think that's pretty obvious.
+Uh and it gives us headroom. Gives us
+the opportunity, the opportunity, not
+necessarily the reality, but the
+opportunity to go for that next
+parameter count increase maybe an order
+magnitude. So that's where we are. Okay,
+great. Thank you for that. And I wanted
+to just share this. This is the key
+points that AI that Tesla AI's wanted to
+point out. Rewrote the AI compiler and
+runtime from the ground up with MLRI are
+resulting in 20% faster reaction time.
+And then this sentence, and improving
+model iteration speed.
+Uh upgraded the reinforcement learning
+stage of training the FSD neural network
+resulting in improvements in a wide
+variety of driving scenarios. Upgraded
+the neural network vision encoder
+improving understanding in rare and low
+visibility scenarios. It can see better.
+Strengthening 3D geometry understanding
+and expanding traffic sign
+understanding. Elon said Tesla version
+14.3 self-driving review. He was
+forwarding somebody's review. The point
+releases will bring polish. Version 15
+will far exceed human levels of safety
+even in completely unsupervised and
+complex situations. People think, oh,
+now he's punting it to version 15. He
+said, our rate of advancement with the
+small model has been so fast that the
+large model has not yet caught up.
+Version 15 will be the large model. So
+he's confirmed that version 15 is the
+10x parameter one. But
+you know, this delay or not. And Sir,
+you posted this. You said version 14.3,
+the removal of a bottleneck. Can you
+explain what you're saying here? Yeah,
+just before I do, Herbert, I just wanted
+to make a comment about what AI driver
+was talking about there in terms of
+you know, the the reaction time for
+accidents. What was it? 1 and 1/2
+seconds is what they allow for for
+humans. And he's determined that perhaps
+this vehicle is operating at 0.2
+seconds. Right? So I wonder out loud
+right now Yes. how many accidents would
+be avoided if you could react to all of
+them at that level? You know, does a 20%
+faster reaction time is for this FSD,
+but now we need to compare it to human
+reaction time. Does that reduce
+accidents by 50%? By 60%? By 80%?
+Because you can react that much faster.
+I wonder, [clears throat] you know,
+where we could go to to obtain data on
+that or if that's even something that
+could be calculated. But clearly in many
+many situations, if you could have
+reacted sooner, the accident or the
+situation would have been avoided. You
+know, I think Sir, overall, the FSD
+data will
+uh will illustrate that over time.
+Right? I mean, that's part of what's
+going on here. It may not
+um
+laser focus on reaction time, but
+clearly a lot of accidents are about
+reaction time. I mean,
+so many are, right? Yeah, I I was going
+to say that so version 14.3, this is why
+they I think they delayed the scaling of
+unsupervised robotaxis. Wait till 14.3
+comes with the faster reaction time, 20%
+reaction time. The number one like the
+problem with Waymo's and actually
+happened with Zoox as well, is that when
+they're driving on the highway, that's
+why they waited so long, and another car
+cuts in front of them.
+It's not that oh, their lidar didn't
+catch it. No, the lidar got it, but the
+reaction time is so slow that the
+accident still occurs. And so this 0.2
+second scenario would stop that kind of
+accident from ever happening again or
+slower. And then of course, the other
+one would be
+that off that just happened. One
+incident occurred from January 15th to
+February 15th that Tesla robotaxi had to
+report. And it was when a car in front
+of them stopped suddenly, and then the
+robotaxi had to slow. And then of
+course, it slowed down
+significantly so that it was just a
+bumper touch. Right. But that 20%
+reaction time when it recognizes that
+the car has stopped, it can react sooner
+and that would be stopped. So then it
+would remove that scenario right off the
+&gt;&gt; every 5 miles an hour you reduce the
+speed at which the vehicle's going even
+if it's doesn't come to a full stop,
+even if it hits
+and it collides at, you know, 5 miles an
+hour less than it would have or 10 miles
+an hour. That is a huge difference
+especially especially for head-on. So
+yeah, we're going to see all of this
+data show up in the statistics over
+time. I mean, this is um
+it's a done deal, folks. I mean, we are
+Look, it was never important to me from
+day one that
+FSD 14.whatever needed to be 10x the
+number of parameters. That's just
+you know, that's a that's a simple way
+for people to to to put a handle on it,
+to grasp the realities of it. The
+realities are
+uh much more subtle. And what Tesla did
+here
+did two two key things that I posted
+about. First, they Look, 14.3 or some
+variant thereof has been running in
+robotaxi land for a while. If we're
+being honest, I mean, it's been there.
+And what they have done is they have
+recorded by virtue of their safety
+passenger drivers, whatever you want to
+call them. They recorded all these
+little incidents.
+And they decided that
+what they wanted to do was spend a lot
+of time
+pulling these incidents in and running
+them through the scenario analysis of
+reinforcement learning. So one of the
+huge parts of this and and and and it's
+not just in that one line item it talks
+about RL, but it's a lot of the little
+you know, avoidance of animals,
+whatever. That's just all RL stuff,
+right? So they have um and RL is like
+the problem with RL is it's not just
+sort of this uniform training that they
+did in imitation
+learning. It takes setup of these
+scenarios and and they've got to run
+them through their simulator and so
+forth. uh that's the second reason that
+we you know, have elongated the release
+time. But now that we're on this
+release, now that we're on this 14.3,
+we're going to see very fast follows
+point which is typical. We're not going
+to see wide release until it's 14.3.1.2
+or something, whatever it might be. Um
+and I suspect that uh
+you know, top line here is that robotaxi
+in Austin will effectively go live
+meaning quite unsupervised
+uh on some 14 variant. It This is not
+When Elon talked about 15, he did not
+say, it is important to point out he did
+not say we are waiting for 15. The the
+community at large with its negative
+sentiment
+uh as a cloud decided that's what he was
+saying. Um he was simply saying that you
+know, after we do this 14 release, we're
+going to do a 15 release. What can he
+talk about in the 15 release? Well, that
+release being I mean, honestly, we don't
+even know there's a roadmap of things
+that will be in the 15 release.
+Uh we don't know when it will be, but he
+said, well, one thing we're earmarking
+clearly is that's when we're going to do
+the parameter increase by an order of
+magnitude. And then the big question was
+and probably still is within the team,
+is can you increase the parameter count
+by 10x
+and fit it on a hardware for vehicle?
+And
+uh the answer will be
+whatever it is, but it will be
+predicated on the work that they've just
+done to increase that performance on the
+run time. Herbert, I just want to go
+back to this
+faster reaction time again. I I think
+this is
+so important. Not only is the vehicle
+Excuse me, [clears throat] whenever I
+speak, my throat. Um not only is the
+vehicle responding faster, if you think
+about then how it reacts, how it
+controls itself. So, I've seen videos of
+uh Teslas on a wet road, and the car in
+front of it has lost control. And the
+Tesla vehicle now has to avoid this out
+of control vehicle that's swerving in
+front of it
+with prediction and precision
+that is
+it's impossible for a human to do. And
+so, not only does it have to react
+quickly,
+but it has to
+have control in such a precise manner so
+as not to overreact, because a human
+driver typically overreacts in the
+situation.
+The car is swerving to the left, so the
+human driver yanks the wheel to the
+right, which causes a massive
+overreaction in the vehicle. Then that
+it's just, you know, one problem after
+another.
+And so, it's the combination, I think,
+of the precision, the ability to react
+precisely
+is so powerful here.
+And I'm guessing this would make such a
+massive impact on reducing the number of
+accidents. Or, as Phil said, at least if
+there is an accident, it's at a much,
+much lower speed, because the vehicle is
+actually able to control itself and slow
+down that much earlier. You know, um
+it's interesting because
+humans have a certain reaction time
+that's built into our
+our neural processing, and it really is
+um
+it cannot be improved, right? We There
+are certain humans that have a bit
+better reaction time.
+Uh for for example, F1 drivers.
+But, um
+and there's certain humans that have
+poor reaction time, but you know, that
+point two, uh that is really at the
+limit through which we actually
+can see um
+see something and actually react to any
+any- anything at any time.
+&gt;&gt; Decide. And decide, too. Sorry, Herbert,
+I was just going to say, and by the way,
+elite sprinters, right? You think 100-m
+runners,
+they will get a full start if they react
+sooner than 1/10 of a second. Mhm. So,
+the gun can go off, Yeah.
+&gt;&gt; and if somebody leaves the blocks in
+point, you know, 99, that's a full
+start. Yeah. Cuz no human can react
+faster than a 10th of a second. Right.
+So, we're seeing FSD with almost an
+elite sprinter reaction time. The vast
+majority of the human population cannot
+react at that speed, whether it's an F1
+driver or an elite 100-m sprinter.
+The rest of us are far slower, and
+particularly if you're tired, or it's
+dark, or whatever other things going on,
+if it's wet,
+um so, we're we're getting to superhuman
+territory here.
