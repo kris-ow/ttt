@@ -1,0 +1,79 @@
+Channel:     ttt
+Title:       Executive Summary (2026-05-03)
+Published:   2026-05-03 00:00 UTC
+Summarized:  2026-05-04 04:53:56 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.07474 (11069 in / 2769 out tokens)
+Sources:     5
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 21 | +1 | +6 | +12 |
+| Houston | 6 | +3 | +4 | +6 |
+| Dallas | 5 | +2 | +3 | +5 |
+| **Total** | **32** | +6 | +13 | +23 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Tesla FSD fleet crosses 10 billion miles — Musk's own stated threshold for safe unsupervised driving.
+- Consumer unsupervised FSD deferred to Q4 2026 at earliest.
+- FSD active subscriptions: 1.28 million, up 51% QoQ in Q1 2026.
+- Figure scales humanoid manufacturing 24x in 120 days; now 1 robot/hour.
+- Scott Walter: "Do not expect more than a couple thousand" Optimus by end of 2026.
+- Tesla Canada Model 3 RWD now starts at ~$29,000 USD — cheapest Tesla ever in North America.
+
+## Autonomous Driving
+- **10 billion FSD miles reached, but Musk's own goalpost keeps moving.** Tesla's safety page confirms the FSD (Supervised) fleet has surpassed 10 billion miles — the exact threshold Musk designated in January 2026 as necessary for safe unsupervised driving. That figure was itself a revision upward from a prior 6-billion-mile target he had cited previously.
+- **Data collection rate has nearly doubled since January.** The fleet logged approximately 29 million miles per day by late April 2026, up from 14 million miles per day at the start of the year — compressing the time to any future mileage threshold.
+- **Unsupervised FSD for consumer vehicles pushed to Q4 2026 at earliest.** Musk has deferred the consumer rollout with heavy caveats. Per Electrek's Fred Lambert, the real barrier is not mileage data but Tesla's unwillingness to accept legal liability for unsupervised driving — a structural issue no mileage number resolves.
+- **Tesla's Austin robotaxi safety data is materially worse than its headline FSD stat.** Tesla's safety page reports one major collision per 5.3 million FSD miles versus one per 660,000 miles for the average U.S. driver. However, the Austin robotaxi fleet logged approximately 800,000 miles through February 2026 and reported 14 crashes to NHTSA — roughly four times the human crash rate in comparable urban conditions. Experts have also flagged that Tesla and NHTSA use different crash-counting methodologies.
+- **FSD V14.3.2 is in active rollout with small-animal detection improvements.** Per Sawyer Merritt, Tesla's V14.3 release notes confirm the update "improved handling of small animals by focusing RL training on harder examples and adding rewards for better proactive safety." A firsthand observation of the system slowing for a small animal corroborates the claim.
+
+## Robotaxi
+- **Robotaxi miles doubled QoQ in Q1 2026**, per the Tesla pay plan analysis from Herbert Ong. No additional qualitative fleet developments were reported today beyond the tracker counts visible in the table above.
+- **The gap to the pay-plan milestone is vast.** The Tesla compensation plan requires 1 million robotaxis in commercial operation for full vesting. The active fleet of 663 (per RobotaxiTracker.com) represents 0.066% of that target.
+
+## Humanoid Bots
+- **Figure has scaled manufacturing 24x in 120 days**, going from one robot per day to one robot per hour — approximately 55 robots per week as of early May 2026. Robotics expert Scott Walter (two-time robotics company founder, appeared on Herbert Ong's channel) projects Figure will approach a run rate of 400 robots per month by end of 2026, implying 3,000–4,000 units for the full year with a possible 5,000-unit trajectory.
+- **Figure's "Vulcan" AI controller enables fault-tolerant operation.** A newly demonstrated controller allows a robot to lose up to three lower-body actuators and still balance and walk to a repair station autonomously, rather than falling. Fleet-level coordination automatically swaps in healthy robots when a unit signals a fault. Figure has also run autonomous operations non-stop for over 72 hours with bots rotating in and out and no software errors reported.
+- **1X opened a 58,000 sq ft NeoFactory in Hayward, California** — built in three months with 200 employees — targeting 10,000 Neo home robots in 2026 and 100,000 by end of 2027. The factory received over 10,000 pre-orders in its first five days. Neo weighs approximately 30 kg (versus 50–70 kg for most competitors), uses tendon-driven actuation for contact safety, and has 22 degrees of freedom in its hands. The facility has already built 17,000 Rev 2 motors in-house.
+- **Tesla Optimus Gen 3 has still not been revealed.** The original reveal was expected end of 2024, slipped to end of 2025, then Q1 2026; Scott Walter now expects fall 2026 at the earliest and possibly later. Elon Musk stated on the most recent earnings call that it is "literally impossible to predict" the Optimus production ramp. Walter's forecast: no more than "a couple of thousand" Optimus units by end of December 2026. The Fremont Model S/X line conversion is characterized as a ~10,000-unit learning line; the newly permitted North Campus Manufacturing facility represents the eventual million-unit-scale ambition.
+- **Scott Walter frames Tesla as fighting for third place in the humanoid race.** He places Figure and 1X as the current manufacturing leaders, with Tesla, Boston Dynamics (next-gen Atlas expected later in 2026), and Apptronik competing for third. Chinese manufacturers — Unitree produced approximately 5,000 units in 2025 alone — are cited as already operating at scales US companies are only approaching.
+
+## Financials
+- **Tesla's pay plan (approved November 2025, 75% shareholder vote) sets extreme milestones for full vesting.** The plan covers approximately 424 million restricted shares (~12% of the company) across 12 tranches over 10 years. Full vesting requires: $8.5 trillion market cap, EBITDA growth from $13 billion to $400 billion (~30x), 20 million vehicle deliveries, 1 million robotaxis in commercial operation, 1 million Optimus units delivered, and 10 million active FSD subscriptions. The first tranche does not vest until Tesla reaches a $2 trillion market cap.
+- **SpaceX approved a parallel compensation plan in January 2026** covering up to approximately 200 million Class B super-voting shares. The primary milestone: a $7.5 trillion SpaceX market cap plus placement of 1 million humans permanently on Mars. Herbert Ong argues the near-identical scale of the two targets ($7.5T vs. $8.5T) is structural rather than coincidental, and points toward a future combined entity.
+- **Tesla generated approximately $30 billion in cash last year**, per Herbert Ong's analysis. A combined Tesla-SpaceX balance sheet — supplemented by Starlink subscription cash flows — would represent a capital base with no current peer.
+- **Tesla's $2 billion xAI investment has been converted to less than 1% of SpaceX equity** following SpaceX's absorption of xAI, which Herbert Ong characterizes as the first structural move in a potential broader consolidation.
+
+## Market & Competition
+- **Dan Ives (Wedbush) puts Tesla-SpaceX merger probability at 80–90% by early 2027**; prediction markets price it at 22–26% before mid-2027. Bloomberg reported in January 2026 that SpaceX was actively considering a merger with Tesla or xAI. Herbert Ong's analysis argues that SpaceX would be the acquiring entity given its dual-class voting structure — post-IPO, Elon holds approximately 42% of equity but approximately 79% of votes, and per the S-1 filing can only be removed from the SpaceX board by a vote of Class B shareholders (i.e., himself).
+- **Waymo operates at a meaningfully different liability and safety standard than Tesla.** Waymo runs Level 4 driverless operations across 10 cities, targeting 1 million weekly rides with its 6th-generation system, and reports 90% fewer serious injury-causing crashes and 82% fewer airbag deployments than human drivers across 127 million autonomous miles. Crucially, Waymo accepts legal responsibility for driving; Tesla does not under FSD branding.
+- **China's humanoid manufacturing scale already exceeds the entire US industry.** Scott Walter notes multiple Chinese companies are producing humanoids at scale; Unitree alone produced approximately 5,000 units in 2025, with buyers primarily deploying for R&D readiness rather than ROI-positive commercial use.
+
+## Electric Vehicles
+- **Tesla Canada launched a restructured Model 3 lineup with the most aggressive pricing in North American Tesla history.** The new Model 3 Premium RWD starts at $39,490 CAD (~$29,000 USD) — approximately 50% below the prior Canadian entry-level Model 3. Tesla also cut the Model 3 Performance price 17%, from $89,990 CAD to $74,990 CAD. A base 2026 Toyota Camry Hybrid is only approximately $1,000 CAD less than the new Model 3 RWD, putting Tesla in direct price competition with mainstream hybrid sedans for the first time in Canada.
+
+Notable quotes and data:
+- FSD total miles: 10 billion (per Tesla safety page)
+- FSD data rate: ~29M miles/day (late April 2026), up from ~14M miles/day (January 2026)
+- FSD safety: 1 collision per 5.3M miles (FSD) vs. 1 per 660,000 miles (avg U.S. driver) — but Austin robotaxi fleet reported ~4x human crash rate in urban conditions to NHTSA
+- Active FSD subscriptions: 1.28 million, +51% QoQ (Q1 2026); full-vesting target: 10 million
+- Robotaxi miles: doubled QoQ in Q1 2026
+- Figure: 24x manufacturing scale-up in 120 days; 55 robots/week; ~196 bots visible in Grid facility drone shot
+- Figure fault tolerance: "Before this, if we lost a knee actuator, we would fall. There was no way to stay balanced. Today, we can lose up to three in the lower body and not only stay balanced, but hobble off safely." — Brett Adcock
+- 1X NeoFactory: 58,000 sq ft, Hayward CA, 10,000 units/year target, 10,000+ pre-orders in 5 days
+- Scott Walter on Optimus: "Do not expect more than a couple of thousand at the end of the year. You will not see 10,000 Optimus by the end of December."
+- Elon Musk (per Scott Walter): Said on most recent earnings call it is "literally impossible to predict" the Optimus ramp
+- Tesla pay plan: ~424M restricted shares, $8.5T market cap for full vesting, $2T required for first tranche
+- SpaceX IPO target: ~$1.75 trillion (summer 2026); pay plan target: $7.5 trillion
+- Post-IPO Elon voting control at SpaceX: ~79%
+- Merger probability — Wedbush: 80–90% by early 2027; prediction markets: 22–26% before mid-2027
+- Lambert (Electrek): "Reaching 10 billion miles is a marketing milestone. Accepting liability for billions of miles of unsupervised driving is an entirely different proposition."

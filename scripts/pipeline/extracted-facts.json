@@ -14214,5 +14214,213 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-03T18:39:12.789Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla's global fleet has crossed 10 billion cumulative miles driven on FSD (Supervised)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Major data milestone; the first 10B miles took 5.5 years, underscoring how much the fleet and adoption have scaled",
+    "source": "20260504_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-04T04:52:52.478Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla fleet is averaging 28.8 million FSD miles per day (1,000 miles every 3 seconds)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 28800000,
+    "context": "Daily FSD mileage run-rate is a proxy for data generation pace and real-world training throughput — key input for assessing FSD improvement velocity",
+    "source": "20260504_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-04T04:52:52.478Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD V14.3.2 rolled out in two waves on 2026-05-03: first to AI4 hardware owners (with redesigned FSD popup), second broader wave later in the day",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Active FSD version release with staged rollout; redesigned popup noted as a UI change",
+    "source": "20260504_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-04T04:52:52.478Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet reached 32 vehicles as of 2026-05-03 per RobotaxiTracker.com: Austin 21, Dallas 5, Houston 6",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 32,
+    "context": "Canonical end-of-day unsupervised (driverless) fleet count; grew intraday from 29 to 32, adding vehicles in Dallas and Houston",
+    "source": "20260504_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-04T04:52:52.478Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet (all modes) stands at 663 as of 2026-05-03 per RobotaxiTracker.com: Bay Area 550, Austin 102, Dallas 5, Houston 6",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 663,
+    "context": "Total operational robotaxi fleet across all supervision modes and all cities; Bay Area remains dominant by volume",
+    "source": "20260504_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-04T04:52:52.478Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD (Supervised) fleet has crossed 10 billion total miles per Tesla's safety page",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This is the specific milestone Musk stated in January 2026 was needed for safe unsupervised driving — its achievement is a potential catalyst trigger for unsupervised FSD announcements",
+    "source": "20260503_electrek_01_Tesla_Reaches_10_Billion_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-04T04:52:52.491Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla safety page reports 1 major collision per 5.3 million FSD miles vs. 1 per 660,000 miles for average U.S. driver",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 5300000,
+    "context": "Tesla's self-reported miles-per-incident figure; article notes methodology is disputed and not directly comparable to NHTSA data",
+    "source": "20260503_electrek_01_Tesla_Reaches_10_Billion_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-04T04:52:52.491Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Austin robotaxi fleet logged ~800,000 miles through February 2026 and reported 14 crashes to NHTSA — approximately 4x the average human crash rate in urban conditions",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "NHTSA-reported crash rate for Austin robotaxi fleet significantly worse than human baseline; contradicts Tesla's broader FSD safety claims",
+    "source": "20260503_electrek_01_Tesla_Reaches_10_Billion_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-04T04:52:52.491Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Musk has pushed unsupervised FSD for consumer Tesla vehicles to Q4 2026 at the earliest",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Direct update to unsupervised FSD timeline; prior commitment was end of 2025, now Q4 2026 with heavy caveats",
+    "source": "20260503_electrek_01_Tesla_Reaches_10_Billion_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-04T04:52:52.491Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo reports 90% fewer serious injury-causing crashes and 82% fewer airbag deployments than human drivers across 127 million autonomous miles",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Waymo's verified Level 4 safety figures provide a competitive benchmark for autonomous safety performance",
+    "source": "20260503_electrek_01_Tesla_Reaches_10_Billion_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-04T04:52:52.491Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla reported 1.28 million active FSD subscriptions as of Q1 2026, representing 51% growth quarter-over-quarter",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "This is a public scorecard milestone toward the Tesla pay plan's requirement of 10 million active FSD subscriptions for full vesting; 51% QoQ growth is the fastest pace reported",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi miles driven doubled quarter-over-quarter in Q1 2026 per Tesla earnings report",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Key operational growth metric indicating accelerating robotaxi utilization; relevant to DCF modeling of fleet productivity",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active Tesla robotaxi fleet: 663 vehicles as of May 3, 2026 (Bay Area 550, Austin 102, Dallas 5, Houston 6) per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 663,
+    "context": "Current operational fleet size across all supervised and unsupervised modes; baseline for fleet growth projections",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) Tesla robotaxi fleet: 32 vehicles as of May 3, 2026 (Austin 21, Dallas 5, Houston 6) per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 32,
+    "context": "Unsupervised subset is the commercially relevant robotaxi count for unit economics modeling; only 3.2% of total fleet is currently driverless",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla pay plan requires 1 million robotaxis in commercial operation for full vesting; current fleet is approximately 663 total active vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Illustrates the scale gap between current fleet and milestone target; implies massive fleet ramp required within the 10-year plan window",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla pay plan requires 1 million Optimus humanoid robots delivered; Optimus is currently still being handbuilt in a workshop",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "Highlights gap between current Optimus production status and the pay plan milestone; no production ramp date mentioned",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla pay plan requires 10 million active FSD subscriptions for full vesting; current count is 1.28 million (Q1 2026)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Tesla is at approximately 12.8% of the FSD subscription milestone with 51% QoQ growth; trajectory matters for vesting timeline",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "SpaceX targeting ~$1.75 trillion valuation for its IPO planned for summer 2026",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "SpaceX IPO is a major near-term catalyst; dual-class S-1 details will be critical for understanding merger mechanics",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Terafab chip fabrication facility is a joint Tesla-SpaceX project currently being built in Texas",
+    "category": "Market & Competition",
+    "type": "catalyst",
+    "context": "Joint infrastructure project cited by Elon on Q1 2026 earnings call as an example of the committee-review friction; progress is a merger probability indicator",
+    "source": "20260503_brighterwithherbert_02_Why_Both_Musk_Pay_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T04:52:52.508Z",
+    "status": "pending"
   }
 ]
