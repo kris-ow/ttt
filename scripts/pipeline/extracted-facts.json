@@ -14494,5 +14494,87 @@
     "channel": "cernbasher",
     "extractedAt": "2026-05-04T12:09:42.886Z",
     "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated Tesla and SpaceX are each separately targeting 100 gigawatts per year of US solar cell manufacturing, with a combined target of 200 GW/year, expected to take approximately 3 years (by ~2029).",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Represents a massive domestic solar manufacturing scale-up; combined output would be 4x total US solar installations in 2024 (~50 GW).",
+    "source": "20260504_brighterwithherbert_01_Why_Tesla_Investors_Should_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T19:11:23.290Z",
+    "status": "pending"
+  },
+  {
+    "fact": "SpaceX has begun construction of a solar cell factory in Bastrop, Texas, per SpaceX Director of Solar Production Noah Kohl, who is actively hiring facilities engineers.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Confirms Bastrop solar factory is past planning and into active construction phase; lessons from this facility expected to flow into Tesla's solar roadmap.",
+    "source": "20260504_brighterwithherbert_01_Why_Tesla_Investors_Should_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T19:11:23.290Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Buffalo, NY Gigafactory has added 350 jobs, begun manufacturing solar panels, invested $350 million in on-site supercomputers, and is scaling toward 300 megawatts per year of solar panel production capacity.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Confirms Tesla's solar manufacturing is active and scaling, though Goldberg expressed doubt that Buffalo's current scale is sufficient for Tesla's ambitions.",
+    "source": "20260504_brighterwithherbert_01_Why_Tesla_Investors_Should_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T19:11:23.290Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk announced in March 2026 that Terafab is a joint Tesla-SpaceX chip fabrication facility targeting over one terawatt of compute per year (logic, memory, and packaging in one location), with 80% allocated to space and 20% to ground applications.",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Terafab represents the deepest known operational integration between Tesla and SpaceX; Goldberg called it Elon's most significant project ever undertaken.",
+    "source": "20260504_brighterwithherbert_01_Why_Tesla_Investors_Should_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T19:11:23.290Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla solar cells are being redesigned from 6 zones to 18 zones per cell, representing a near-complete departure from previous manufacturing formulations.",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Indicates a significant technology upgrade in Tesla's solar cell design, aligned with the broader push to compete with Chinese solar manufacturing dominance.",
+    "source": "20260504_brighterwithherbert_01_Why_Tesla_Investors_Should_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-04T19:11:23.290Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Nevada factory designed for full ramp capacity of 50,000 Semi units annually, with run rate targeted for H2 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "This is a near-term production milestone for the Semi program; hitting the run rate in H2 2026 sets up a full 50,000-unit output year in 2027",
+    "source": "20260504_jobhakdi_01_Why_Tesla_Semi_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-04T19:11:23.305Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi electrical efficiency: 1.64–1.7 kWh per mile",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.67,
+    "context": "Cited efficiency range for the Tesla Semi; directly relevant to operating cost modeling for a robo-trucking fleet",
+    "source": "20260504_jobhakdi_01_Why_Tesla_Semi_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-04T19:11:23.305Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi predicts robo-trucking pilots replacing human drivers in Tesla Semis will begin as early as 2027",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Speculative near-term milestone for autonomous commercial trucking; if accurate, would significantly expand Tesla's autonomous driving addressable market beyond passenger vehicles",
+    "source": "20260504_jobhakdi_01_Why_Tesla_Semi_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-04T19:11:23.305Z",
+    "status": "pending"
   }
 ]
