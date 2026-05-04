@@ -145,11 +145,17 @@ export default function App() {
             {/* Desktop: side by side */}
             <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
               <div className="flex flex-col">
-                <h3 className="text-text-bright text-sm font-bold mb-2">NASDAQ:TSLA</h3>
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">NASDAQ:TSLA</h3>
+                  <span className="flex-1 border-t border-dashed border-text-dim" />
+                </div>
                 <StockWidget {...stockData} className="flex-1" />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-text-bright text-sm font-bold mb-2">UNSUPERVISED ROBOTAXIS</h3>
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">UNSUPERVISED ROBOTAXIS</h3>
+                  <span className="flex-1 border-t border-dashed border-text-dim" />
+                </div>
                 <RobotaxiCounts className="flex-1" />
               </div>
             </div>
@@ -185,8 +191,8 @@ export default function App() {
             </div>
 
             <div className="flex items-center gap-2 mb-4">
-              <h3 className="text-text-bright text-xs sm:text-sm font-bold">NEWS FEED</h3>
-              <span className="text-text-dim text-xs">//</span>
+              <h3 className="text-text-bright text-xs sm:text-sm font-bold whitespace-nowrap">NEWS FEED</h3>
+              <span className="flex-1 border-t border-dashed border-text-dim" />
               <div ref={filterRef} className="relative">
                 <button
                   onClick={() => setShowFilter(!showFilter)}
@@ -195,7 +201,7 @@ export default function App() {
                   FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
                 </button>
                 {showFilter && (
-                  <div className="absolute top-6 left-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
+                  <div className="absolute top-6 right-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
                     <button
                       onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
                       className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
