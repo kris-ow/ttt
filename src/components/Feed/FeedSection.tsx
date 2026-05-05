@@ -34,13 +34,17 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
             <div className="space-y-1">
               {articles.map(article => {
                 const isExec = article.type === 'executive'
+                const isWeekly = article.type === 'weekly'
+                const isTtt = isExec || isWeekly
                 return (
                   <button
                     key={article.id}
                     onClick={() => onSelectArticle(article)}
                     className={`w-full text-left border p-3 transition-colors cursor-pointer group ${
-                      isExec
-                        ? 'border-green-muted bg-green-bg hover:bg-green-bg-2 hover:border-green-dim'
+                      isWeekly
+                        ? 'border-green-muted bg-green-bg-2 hover:border-green-dim'
+                        : isExec
+                        ? 'border-green-deep bg-green-bg hover:bg-green-bg-2 hover:border-green-muted'
                         : 'border-border bg-surface hover:bg-surface-2 hover:border-border-light'
                     }`}
                   >
@@ -50,7 +54,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
                         {biasTag(article.channel)}
                       </span>
                       <span className={`grow shrink-0 basis-[55%] transition-colors ${
-                        isExec
+                        isTtt
                           ? 'text-green-dim group-hover:text-green'
                           : 'text-text-bright group-hover:text-green'
                       }`}>

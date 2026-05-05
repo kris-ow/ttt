@@ -64,6 +64,22 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/pipeline/exec-summary.js
 
+      # Step 2b: Build weekly brief on Monday 07:15 UTC only (covers Mon-Sun of prior week)
+      # Day-of-week is checked in-step rather than via cron because adding a separate
+      # `15 7 * * 1` cron would fire the workflow twice on Mondays at 07:15 UTC.
+      # workflow_dispatch always runs the weekly brief regardless of day.
+      - name: Build weekly brief
+        continue-on-error: true
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 7 * * *'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ "$(date -u +%u)" != "1" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
+            echo "Not Monday (DOW=$(date -u +%u)) — skipping weekly brief"
+            exit 0
+          fi
+          node scripts/pipeline/weekly-summary.js
+
       # Step 3: Rebuild news.json (pipeline does this, but run standalone as safety net)
       - name: Rebuild news.json
         run: node scripts/build-news.js

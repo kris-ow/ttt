@@ -40,6 +40,7 @@ const articles = files.map(filename => {
 
   // Determine source type
   const isExec = channel === 'ttt';
+  const isWeekly = isExec && filename.includes('_weekly_');
   const isX = meta.source?.includes('X/') || meta.source?.includes('X @') || channel === 'sawyermerritt';
   const isArticle = meta.author !== undefined;
   const sourceType = isExec ? 'exec' : isX ? 'x' : isArticle ? 'article' : 'youtube';
@@ -76,7 +77,7 @@ const articles = files.map(filename => {
     signal,
     videoUrl,
     body,
-    ...(isExec ? { type: 'executive' } : {}),
+    ...(isWeekly ? { type: 'weekly' } : isExec ? { type: 'executive' } : {}),
   };
 });
 
@@ -101,7 +102,10 @@ for (const article of uniqueArticles) {
 }
 for (const date of Object.keys(byDate)) {
   byDate[date].sort((a, b) => {
-    // Executive summary always first
+    // Weekly brief above daily executive
+    if (a.type === 'weekly' && b.type !== 'weekly') return -1;
+    if (b.type === 'weekly' && a.type !== 'weekly') return 1;
+    // Daily executive next
     if (a.type === 'executive' && b.type !== 'executive') return -1;
     if (b.type === 'executive' && a.type !== 'executive') return 1;
     // Tesla official next

@@ -42,7 +42,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
 
         <div className="border border-border bg-surface p-3 sm:p-6 overflow-x-hidden" onClick={e => e.stopPropagation()}>
           <div className="text-text-dim text-xs mb-2">
-            [{article.sourceType === 'x' ? 'X/TWITTER' : article.sourceType === 'article' ? 'WEB' : article.sourceType === 'exec' ? 'TTT EDITORIAL' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
+            [{article.sourceType === 'x' ? 'X/TWITTER' : article.sourceType === 'article' ? 'WEB' : article.sourceType === 'exec' ? 'TTT' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
           </div>
           <h2 className="text-green text-lg font-bold mb-4">{article.title}</h2>
           {(article.source || article.videoUrl) && (
@@ -67,7 +67,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
             {(() => {
               const lines = article.body.split('\n')
               const isX = article.sourceType === 'x'
-              const isExec = article.type === 'executive'
+              const isExec = article.type === 'executive' || article.type === 'weekly'
               let skipSignal = false
               let inExecSummarySection = false
               const elements: React.ReactNode[] = []

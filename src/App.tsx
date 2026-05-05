@@ -81,6 +81,8 @@ export default function App() {
     track('Article Open', { channel: article.channel, title: article.title.slice(0, 80) })
     if (article.type === 'executive') {
       track('Exec Summary Open', { date: article.date })
+    } else if (article.type === 'weekly') {
+      track('Weekly Brief Open', { date: article.date })
     }
   }, [])
 

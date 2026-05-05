@@ -10,7 +10,7 @@ export interface Article {
   signal: string | null
   videoUrl: string | null
   body: string
-  type?: 'executive'
+  type?: 'executive' | 'weekly'
 }
 
 export interface NewsData {
