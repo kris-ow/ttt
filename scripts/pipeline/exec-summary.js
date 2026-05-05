@@ -113,7 +113,7 @@ function writeExecutiveSummary(targetDate, parsed, { inputTokens, outputTokens, 
 
   const headerLines = [
     `Channel:     ttt`,
-    `Title:       Executive Summary (${targetDate})`,
+    `Title:       Daily Tesla Brief (${targetDate})`,
     `Published:   ${targetDate} 00:00 UTC`,
     `Summarized:  ${now}`,
     `Model:       ${MODEL} [direct]`,
@@ -217,7 +217,7 @@ async function main() {
   logCost({
     date: new Date().toISOString(),
     filename: `${dateToFilenameSlug(targetDate)}_ttt_00_executive_summary.txt`,
-    title: `Executive Summary (${targetDate})`,
+    title: `Daily Tesla Brief (${targetDate})`,
     channel: 'ttt',
     mode: 'direct',
     inputTokens,
