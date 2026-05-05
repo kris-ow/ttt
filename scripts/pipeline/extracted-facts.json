@@ -14956,5 +14956,179 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-05T04:30:18.397Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla added 170,000 new FSD paid subscribers in the most recent quarter",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents continued acceleration in FSD subscription revenue, a key recurring revenue stream cited as a valuation driver",
+    "source": "20260505_futureaza_01_Tesla_May_Be_Building_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-05T19:00:42.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 33 unsupervised Tesla robotaxi vehicles operating in Austin at time of recording (host figure; RobotaxiTracker.com canonical unsupervised Austin count is 25 as of 2026-05-05)",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Host's figure is materially higher than the tracker canonical count, suggesting either a different date or counting methodology; flagged as independent estimate",
+    "source": "20260505_futureaza_01_Tesla_May_Be_Building_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-05T19:00:42.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab fare target cited as $1 per mile, with availability goal of under 5 minutes",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 1,
+    "context": "Per-mile fare used as a consumer-facing price point to illustrate disruption potential; attributed to host framing, not an official Tesla figure",
+    "source": "20260505_futureaza_01_Tesla_May_Be_Building_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-05T19:00:42.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus purchase price cited as $300,000; annual rental price cited as $100,000 per year",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 300000,
+    "context": "Hosts attribute these figures to 'Cern and many others'; framed as commercially rational given industrial buyers already spend $50,000 on inferior floor-cleaning robots",
+    "source": "20260505_futureaza_01_Tesla_May_Be_Building_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-05T19:00:42.820Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus production targets referenced: 1 million units per year at Fremont and 10 million units per year at a larger planned facility",
+    "category": "Humanoid Bots",
+    "type": "catalyst",
+    "context": "These are the scale targets being discussed as Tesla builds out Optimus manufacturing capacity; Lutz notes Tesla would stair-step capex rather than commit all at once",
+    "source": "20260505_brighterwithherbert_01_Elon_Musk_Is_Thinking_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-05T19:00:42.834Z",
+    "status": "pending"
+  },
+  {
+    "fact": "US union labor cost ~$55/hour vs. China labor cost ~$3.50–$5.00/hour — humanoid robot economics more favorable in the US/Western Europe",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": null,
+    "context": "Labor arbitrage comparison used to argue humanoid ROI curve is much longer in China than in Western markets; not a direct unit cost figure but frames the competitive economics",
+    "source": "20260505_brighterwithherbert_01_Elon_Musk_Is_Thinking_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-05T19:00:42.834Z",
+    "status": "pending"
+  },
+  {
+    "fact": "SpaceX IPO targeting $1.75 trillion valuation with a $75 billion capital raise; road show reportedly underway",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "Largest anticipated IPO ever; S&P 500 fast-track rule changes could trigger forced index buying within 6 months of listing",
+    "source": "20260505_brighterwithherbert_01_Elon_Musk_Is_Thinking_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-05T19:00:42.834Z",
+    "status": "pending"
+  },
+  {
+    "fact": "S&P Dow Jones Indices has officially proposed rule changes allowing mega-cap companies like SpaceX to be added to the S&P 500 just 6 months after IPO, with waivers on float and profitability requirements",
+    "category": "Financials",
+    "type": "catalyst",
+    "context": "If adopted, this would trigger forced institutional buying of SpaceX shares within 6 months of its IPO listing",
+    "source": "20260505_brighterwithherbert_01_Elon_Musk_Is_Thinking_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-05T19:00:42.834Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Gigafactory Nevada Tesla Semi production line designed for annual capacity of 50,000 trucks; first unit confirmed off high-volume line as of late April/early May 2026",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "High-volume Semi production ramp has officially begun — a key milestone for fleet delivery timelines and production credibility",
+    "source": "20260505_electrek_01_Tesla_Semi_Lands_60truck_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-05T19:00:42.851Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi Long Range priced at $290,000 (500-mile range); Standard Range at approximately $260,000 (325-mile range)",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 290000,
+    "context": "First confirmed pricing data points for Tesla Semi from Electrek-sourced quotes; relevant to fleet operator TCO and Tesla revenue modeling",
+    "source": "20260505_electrek_01_Tesla_Semi_Lands_60truck_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-05T19:00:42.851Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi Megacharger units start at $188,000 for two posts; 64 Megacharger locations confirmed across 15 states",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": 188000,
+    "context": "Infrastructure cost data point for charging hardware; relevant to fleet electrification economics and Tesla's charging ecosystem build-out",
+    "source": "20260505_electrek_01_Tesla_Semi_Lands_60truck_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-05T19:00:42.851Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi fleet stands at 36 vehicles as of May 5, 2026 — Austin 25, Dallas 5, Houston 6",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 36,
+    "context": "Per RobotaxiTracker.com canonical data; this is the unsupervised (driverless) subset of the total active fleet",
+    "source": "20260505_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-05T19:00:42.869Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total active Tesla robotaxi fleet (all modes) is 664 as of May 5, 2026 — Bay Area 551, Austin 102, Dallas 5, Houston 6",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 664,
+    "context": "Per RobotaxiTracker.com; includes supervised and unsupervised modes across all active cities",
+    "source": "20260505_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-05T19:00:42.869Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi estimates Tesla will have more than 10,000 robotaxis deployed by end of 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Year-end fleet size estimate; exceeding this milestone is cited as the key catalyst for stock repricing above $1,000",
+    "source": "20260505_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-05T19:00:42.869Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab mass production has started as of May 2026",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Bhakdi states this as a confirmed fact and cites it as evidence Tesla is a stronger company than at its December 2025 all-time high; no volume figures provided",
+    "source": "20260505_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-05T19:00:42.869Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi operations now active in Austin, Houston, and Dallas (all Texas)",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Represents geographic expansion of unsupervised FSD deployment; Houston and Dallas described as growing rapidly",
+    "source": "20260505_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-05T19:00:42.869Z",
+    "status": "pending"
   }
 ]
