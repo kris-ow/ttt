@@ -248,6 +248,10 @@ export function DataSection() {
 
   return (
     <div>
+      <h2 className="text-text-bright text-base sm:text-lg font-bold mb-6 flex items-center gap-2">
+        <span className="whitespace-nowrap">KEY PERFORMANCE INDICATORS</span>
+        <span className="flex-1 border-t border-dashed border-text-dim" />
+      </h2>
       {SECTIONS.map(section => (
         <div key={section.title} className="mb-6">
           <h3 className="text-text-bright text-xs sm:text-sm font-bold mb-2 flex items-center gap-2">
