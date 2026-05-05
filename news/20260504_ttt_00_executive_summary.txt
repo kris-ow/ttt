@@ -1,11 +1,11 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-04)
 Published:   2026-05-04 00:00 UTC
-Summarized:  2026-05-05 04:31:44 UTC
+Summarized:  2026-05-05 09:19:24 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.09486 (14820 in / 3360 out tokens)
+Cost:        $0.09304 (14818 in / 3239 out tokens)
 Sources:     7
-Categories:  Daily Tesla Brief
+Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Unsupervised Robotaxi Fleet
 
@@ -22,80 +22,104 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- FSD 14.3 rewrites AI runtime from scratch; reaction time drops to ~0.2 seconds
-- FSD v14.3.2 rolling out in two waves; already on >40% of eligible fleet
-- Unsupervised robotaxi fleet hits record single-day expansion; nighttime ops begin in Austin
-- San Antonio job posting signals next robotaxi city; Cybercab spotted in San Francisco
-- Tesla Semi Nevada line complete; 50,000-unit annual run rate targeted H2 2026
-- Tesla + SpaceX each targeting 100 GW/year US solar; Terafab chip fab described as Musk's largest-ever project
+- FSD 14.3 rewrites AI runtime; reaction time drops to ~0.2 seconds vs. human 1.5 seconds.
+- FSD v14.3.2 rolling out in two waves; already on >40% of eligible fleet.
+- Austin unsupervised robotaxi fleet expands to nighttime operation for the first time.
+- San Antonio robotaxi ops manager job posted; hiring also flags Orlando, Miami, San Francisco.
+- Tesla Semi Nevada line targets 50,000-unit annual run rate in H2 2026.
+- SpaceX breaking ground on solar cell factory in Bastrop; Musk targets 100 GW/year each for Tesla and SpaceX.
 
 ## Autonomous Driving
 
-- **FSD 14.3 is an architecture overhaul, not an incremental update.** Tesla rebuilt the AI compiler and runtime from the ground up using MLRI, targeting ~36 inference cycles per second. The redesign was a deliberate pause to lock in guaranteed inference performance before scaling model size.
-- **Reaction time: ~0.2 seconds vs. the human standard of ~1.5 seconds.** Tesla AI's official release notes cite a 20% faster reaction time from the runtime rewrite. Community analysis places FSD 14.3 at approximately 0.2 seconds — approaching elite-sprinter territory (Olympic false-start threshold: 0.1 seconds) and far faster than the average driver, especially under fatigue, darkness, or wet conditions.
-- **Faster reaction time is paired with calibrated precision, not just speed.** The panel on cernbasher highlighted that FSD modulates its response amplitude simultaneously — contrasting with the human tendency to overreact (e.g., yanking the wheel on a wet-road swerve), which compounds danger.
-- **RL training pipeline significantly expanded.** A major portion of the 14.3 development cycle fed real-world robotaxi safety-driver incidents back through scenario simulators, producing improvements in rare and low-visibility scenarios, 3D geometry, traffic sign recognition, and animal avoidance.
-- **FSD v14.3.2 rolling out in two waves on the same day.** Per Sawyer Merritt, an early wave (03:52 UTC) targeted HW4 owners with a redesigned FSD popup interface; a second broader wave followed at 20:38 UTC. Per futureaza, the build is already on >40% of the eligible fleet and expected to go wide soon.
-- **Elon Musk on version 15: a future milestone, not a deployment precondition.** Musk confirmed v15 will carry a large model (~10x current parameter count) and will "far exceed human levels of safety even in completely unsupervised and complex situations" — but the cernbasher panel explicitly pushes back on the reading that Tesla is waiting for v15 before expanding robotaxi operations.
-- **10 billion cumulative supervised FSD miles crossed; pace is accelerating sharply.** Per Sawyer Merritt, the fleet is now averaging 28.8 million FSD miles per day (1,000 miles every 3 seconds). It took 5.5 years to reach the first 10 billion miles; the next 10 billion will take approximately 11.5 months.
-- **FSD performing approximately 90% safer than human driving**, per Jeff Lutz on brighterwithherbert, who argues this statistic — not isolated incident counts — should anchor any regulatory or public debate about deployment.
+- **FSD 14.3 is a ground-up runtime rewrite, not an incremental update.** Tesla rebuilt the AI compiler and runtime using MLRI, targeting ~36 guaranteed inference cycles per second. The architectural overhaul — distinct from any model change — is what produced the 20% reaction time improvement and explains the long development cycle before release.
+
+- **Reaction time now estimated at ~0.2 seconds — deep into superhuman territory.** Human safety standards allow ~1.5 seconds; elite sprinters approach the 0.1-second physical limit. Per the cernbasher panel, FSD 14.3's speed advantage is compounded by calibrated precision control, avoiding the overcorrection errors (e.g., wheel-yanking on wet roads) that make fast human reactions dangerous.
+
+- **RL training on real robotaxi incidents was a major component of 14.3.** Safety drivers recorded edge-case incidents — including a minor bumper contact when a lead vehicle stopped suddenly — and fed them back through scenario simulators. Improvements include better rare/low-visibility scenario handling, enhanced 3D geometry, expanded traffic sign recognition, and improved animal avoidance.
+
+- **FSD v14.3.2 rolling out in two staged waves on the same day.** Per Sawyer Merritt, an early wave at 03:52 UTC targeted HW4 owners and included a redesigned FSD popup interface; a broader second wave followed at 20:38 UTC. Per futureaza, the build is already on more than 40% of the eligible fleet and expected to go wide soon.
+
+- **10 billion cumulative supervised FSD miles crossed, with rate accelerating sharply.** The fleet now averages ~28.8 million miles per day (1,000 miles every 3 seconds). It took 5.5 years to reach the first 10 billion miles; the next 10 billion will accumulate in approximately 11.5 months. Per Jeff Lutz, FSD is currently performing at approximately 90% safer than human driving.
+
+- **Elon Musk on FSD version 15: future milestone, not a deployment precondition.** Musk described version 15 as featuring a model ~10x larger than the current small model, and said it will "far exceed human levels of safety even in completely unsupervised and complex situations." The cernbasher panel explicitly pushes back on community interpretation that Tesla is waiting for v15 before expanding robotaxi — arguing unsupervised deployment is proceeding on 14.x variants now.
 
 ## Robotaxi
 
-- **Austin unsupervised robotaxi fleet begins nighttime operations for the first time.** Previously limited to midafternoon hours, the expansion into evening driving conditions is flagged as a meaningful operational confidence signal.
-- **January incidents explain the conservative ramp cadence.** Per brighterwithherbert, five low-speed fender-bender incidents in January triggered outsized global media coverage; Tesla deliberately slowed fleet growth to create narrative separation. The 14.3 reaction time improvement is cited by the cernbasher panel as directly addressing that class of incident (a robotaxi made minor bumper contact when a car ahead stopped suddenly).
-- **Houston lot shows additional vehicles staged with license plates already assigned**, signaling continued near-term fleet additions as internal performance metrics continue to improve.
-- **San Antonio robotaxi operations manager job posting spotted**, alongside fleet support hiring referencing Orlando, Dallas, San Francisco, and Miami. Brighterwithherbert views San Antonio as the next city to receive service. Cybercab prototypes were also spotted in the San Francisco area.
-- **California AV traffic law takes effect July 1, 2026**, allowing tickets to be issued to autonomous vehicles for violations including running red lights or failing to stop for pedestrians. Accumulated violations can restrict rollout or suspend a company's driverless license — a structural enforcement mechanism, not per-incident fines.
-- **Robotaxi fleet controller: 91 active riders, $5 average fare, ~20-minute average wait** (as low as 7 minutes) per RobotaxiTracker.com data displayed live on futureaza. Cybercab projected to generate $10,000–$30,000 per vehicle per year in recurring revenue (host estimate).
-- **Waymo reportedly losing $5–6 billion per year**, per brighterwithherbert, attributed to high part counts, complex sensors, and elevated repair costs — a structural unit-economics problem that worsens with scale. The cernbasher panel draws a parallel between Waymo/Zoox highway incidents (slow reaction time, not failed detection) and the problem FSD 14.3's 0.2-second response directly solves.
-- **Cybercab's Unboxed modular assembly is a structural repair cost advantage.** Jeff Lutz argues the design will translate into modular field disassembly and repair — potentially the most repairable vehicle in the robotaxi space.
+- **Austin unsupervised robotaxi fleet extended to nighttime hours for the first time.** Previously limited to midafternoon, the operational window expansion signals improved system confidence across more challenging low-light conditions — a qualitative milestone beyond raw fleet count.
+
+- **Biggest single-day unsupervised fleet addition on record preceded the current canonical count.** Per RobotaxiTracker.com data cited in sources, seven unsupervised vehicles were added in a single day — approximately 20% daily growth, and roughly 50% fleet growth over ~10 days. Per Jeff Lutz, Tesla appears to be running a probabilistic incident-rate model and adding vehicles as performance metrics improve.
+
+- **Staged Houston vehicles with assigned plates signal continued near-term additions.** Footage of a Houston staging lot shows additional robotaxi units ready to deploy. Jeff Lutz describes internal pace-of-ramp debate as normal for any product launch.
+
+- **San Antonio robotaxi ops manager job posted; multi-city fleet support hiring underway.** Herbert and Jeff Lutz view the San Antonio posting as a strong signal it is the next Texas city to receive service. Separate fleet support postings reference Orlando, Dallas, San Francisco, and Miami. Cybercab prototypes have also been spotted in the San Francisco area.
+
+- **January fender-benders deliberately shaped the conservative ramp cadence.** Five low-speed incidents in January generated outsized negative global media coverage. Tesla slowed unsupervised fleet growth in subsequent months to create narrative separation; per Jeff Lutz, doubling the fleet without first improving the system would have statistically doubled the incident count.
+
+- **California AV traffic law takes effect July 1, 2026.** The law allows tickets to be issued to autonomous vehicles for violations including running red lights or failing to stop for pedestrians; accumulated violations can restrict rollout or suspend a company's driverless license. Jeff Lutz views third-party performance accountability as a net positive for the ecosystem.
+
+- **RobotaxiTracker.com live data during futureaza stream: 91 active riders, average fare $5, average wait ~20 minutes** (as low as 7 minutes earlier that day).
 
 ## Electric Vehicles
 
-- **Model Y and Model 3 ranked #1 and #2 globally among individual EV models in March 2026.** BYD requires eight to nine models on the same list to approach comparable combined volume, per brighterwithherbert and futureaza.
-- **Model Y was the #1 bestselling vehicle overall in California in Q1 2026** — beating the Camry, Civic, and CR-V across all powertrains.
-- **China-made Model 3 launched in Canada at C$39,940 (~US$29,000)**, the lowest price ever for the model in that market — a 17% cut to Model 3 Performance pricing and approximately 50% cheaper than the long-range variant previously available. Canadian average new vehicle price is ~C$63,000, making the Model 3 over C$24,000 cheaper than the market average.
-- **Tesla Semi production line completed at Giga Nevada.** A new customer ordered 40 Semis at the ACT Expo in Las Vegas, where the Semi was also spotted with three cameras per side mirror and a front bumper camera. Per jobhakdi, the Nevada factory targets a 50,000-unit annualized run rate by H2 2026, which would represent ~25% of the US Class 8 heavy truck market.
-- **Tesla Semi Base Charger unveiled** for fleet depot use: 125 kW output, up to 60% charge in 4 hours, 6-meter cable, no external cabinet, supports daisy-chaining up to three units, MCS protocol. Deliveries begin early 2027.
-- **Tesla Semi fuel economics vs. diesel:** ~$75 in electricity vs. ~$375 in diesel for a 500-mile trip — an ~80% fuel cost reduction — with no credible electric Class 8 competitor identified at scale, per jobhakdi.
-- **Tesla US customer loyalty: 61%, #1 in the US** per S&P Global Mobility (February 2026), ahead of Subaru and Toyota.
-- **Nissan cancelled ~$500M US EV plant in Mississippi**, pivoting back to gas and hybrids.
+- **Model Y and Model 3 ranked #1 and #2 globally among individual EV models in March 2026.** BYD requires eight or nine separate models to appear on the same top-20 list. Per Jeff Lutz, a revenue-ranked chart would skew even further toward Tesla given BYD's model fragmentation and pricing.
+
+- **Model Y was the #1 bestselling vehicle overall in California in Q1 2026** — outselling the Camry, Civic, CR-V, and all other gasoline vehicles in the state.
+
+- **Tesla launched Chinese-made Model 3s in Canada at C$39,940 (~US$29,000)** — the lowest-ever price for the model in that market, more than C$24,000 below the average new car price in Canada (~C$63,000). Per brighterwithherbert, Canada's trade legislation reserved a quota for vehicles with an import price under C$35,000, which Tesla leveraged while also qualifying to sell units at higher price points.
+
+- **Tesla Semi production line completed at Giga Nevada; 50,000-unit annual run rate targeted for H2 2026.** Per Bhakdi's analysis, this would represent ~25% of the US Class 8 market by volume. One new customer ordered 40 Semis at the ACT Expo during the week. Bhakdi frames 50,000 units as the revenue equivalent of ~400,000 incremental Model Y sales per year.
+
+- **Tesla Semi Base Charger unveiled for fleet depot charging.** Specs: 125 kW output, up to 60% charge in 4 hours, full overnight charge, 6-meter cable, 150A continuous, integrated AC/DC converter (no external cabinet), daisy-chainable up to three units, MCS protocol. Deliveries begin early 2027.
+
+- **Tesla customer loyalty: 61%, #1 in the US** per S&P Global Mobility (February 2026), ahead of Subaru and Toyota.
+
+- **Tesla Semi spotted at ACT Expo in Las Vegas** — the largest North American advanced commercial vehicle trade show — with three side-mirror cameras per side and an additional front bumper camera visible.
 
 ## Energy
 
-- **Elon Musk: both Tesla and SpaceX are independently targeting 100 GW/year of US solar cell manufacturing**, each, within approximately three years. Combined, 200 GW/year would be roughly four times the entire US solar industry's 2024 installation output of ~50 GW.
-- **SpaceX breaking ground on a solar cell factory in Bastrop, Texas**, on the south end of the Starlink terminal complex, per a job posting from SpaceX Director of Solar Production Noah Kohl. The two companies' solar technologies differ by design: SpaceX cells must roll compactly and withstand vacuum and extreme cold; Tesla's cells target static rooftop use. Scientific knowledge — formulations, coatings — will be shared across teams.
-- **Tesla's Buffalo solar factory scaling toward 300 MW/year**, with 350 new jobs added and $350M invested in on-site supercomputers. Tesla solar cells are moving from 6 manufacturing zones to 18 zones — a near-total redesign.
-- **Terafab, the joint Tesla-SpaceX chip fabrication venture announced in March 2026**, targets over one terawatt of compute per year (logic, memory, and packaging co-located), with an 80/20 space/ground allocation. Larry Goldberg called it "the biggest project Elon has ever undertaken" — surpassing Starship and Optimus — and argued it is only executable if the two companies operate as an integrated unit.
-- **Orbital AI data centers framed as 5–6 years away** by Goldberg, enabled by Starship full reusability dropping launch costs from ~$1,000/ton to ~$30–50/ton. Musk: "The lowest cost place to put AI will be space, and that'll be true within two years, maybe three."
+- **SpaceX has begun construction of a solar cell factory in Bastrop, Texas.** Sited at the south end of the Starlink terminal campus, the facility is described by SpaceX Director of Solar Production Noah Kohl (via job postings) as one of the world's most advanced solar cell factories. Larry Goldberg confirmed ground was being cleared nearly a year before the announcement.
+
+- **Elon Musk: both Tesla and SpaceX are independently targeting 100 GW/year of US solar cell manufacturing.** Combined, the two companies would represent 200 GW/year — roughly four times total US solar installations in 2024 (~50 GW). Musk estimates the goal takes approximately three years. The two programs are intentionally separate: SpaceX cells are designed for space (rollable, vacuum-rated, extreme temperature tolerant); Tesla's target rooftop applications.
+
+- **Tesla's solar cells are undergoing a near-total redesign**, moving from 6 manufacturing zones to 18 zones per cell, per Goldberg citing Musk.
+
+- **Tesla's Buffalo solar factory is scaling**, with 350 new jobs added, $350M invested in on-site supercomputers, and production capacity tracking toward 300 MW/year. Goldberg expressed some skepticism that current Buffalo scale is sufficient for Tesla's stated ambitions.
+
+- **Space-based solar is ~5x more productive than ground-based**, per Musk, due to no atmospheric attenuation, continuous operation (no night/weather/seasons), and passive cooling from the cold of space. Musk: orbital AI compute will be the lowest-cost location within two to three years.
+
+## Financials
+
+- **Terafab — joint Tesla/SpaceX chip fabrication — described as Musk's largest project ever, surpassing Starship and Optimus.** Musk's stated goal: over one terawatt of compute per year (logic, memory, and packaging co-located), with an 80/20 split between space and ground applications. Goldberg argues the project is only viable with Tesla and SpaceX operating as a functionally integrated unit, and that cost-sharing effectively halves each company's burden.
+
+- **Tesla capex increase announced**, focused on AI software, AI training, battery, powertrain, chip design, and AI infrastructure. Per futureaza, Nvidia is the near-term primary beneficiary; Tesla is building toward in-house chip manufacturing over time.
 
 ## Market & Competition
 
-- **SpaceX-Tesla merger: Goldberg at "101% confidence," with a 2026 announcement possible** and full resolution expected by mid-2027. Cited evidence: Dr. Charles Khman serving simultaneously as VP of Materials Engineering at both companies; shared engineers, chips, batteries, motors, and solar science across Terafab and other projects.
-- **SpaceX estimated valuation ~$1.7–$2 trillion**; Goldberg proposes a rolling IPO lockup structure (beginning at 2–5% of shares tradeable two weeks post-IPO, expanding over six months) to prevent a supply flood. He predicts SpaceX stock will be "muted" near-term, but Tesla will rerate toward SpaceX multiples as merger inevitability becomes clear.
-- **Tesla down ~13% YTD; needs ~$450 to be flat for the year**, per investingagainstthegrain. Within the Magnificent 7, Alphabet leads at +23% YTD; Tesla and Microsoft are the laggards at ~-13–14%, which the host frames as the logical capital rotation destination.
-- **Morgan Stanley raised 2026 hyperscaler capex forecast to $805B** (from $765B) for five major cloud operators. Host characterizes this as demand-driven, not speculative — "there are no dark GPUs."
-- **Ford CEO Jim Farley visits China 6–7 times per year** and describes it as "the most humbling thing I've ever seen" while simultaneously lobbying to block Chinese EV imports. Jeff Lutz on brighterwithherbert calls the messaging incoherent; Ford's April sales showed declines across gas, hybrid, and EV segments. Ford is estimated to be 5–7 years behind Tesla on every major strategic move.
-- **BYD in talks to acquire part of Volkswagen's Dresden plant**, which would make BYD a domestic European manufacturer and exempt it from EV import tariffs.
-- **China dominates current global solar manufacturing**, but Goldberg argues new technology — perovskite cells, automated production, high-efficiency silicon — is shifting the economic case for US-based manufacturing back toward viability.
+- **Larry Goldberg: SpaceX–Tesla merger is a "101%" certainty, likely announced in 2026.** He cites operational integration already underway across chips, solar, compute, batteries, materials, and motors — including Dr. Charles Khman serving as VP of Materials Engineering at both companies simultaneously — as making separate corporate structures untenable. He expects the process to extend through mid-2027 to fully resolve.
+
+- **Morgan Stanley raised 2026 hyperscaler capex forecast to $805B** (from $765B prior) across Amazon, Alphabet, Meta, Microsoft, and Oracle. Per investingagainstthegrain, Musk described today's AI infrastructure build as demand-driven, not speculative — "there are no dark GPUs."
+
+- **Tesla is down ~13% YTD**, making it among the weakest Magnificent 7 performers alongside Microsoft. Alphabet leads the group at +23%, Amazon at +16%. The host of investingagainstthegrain targets $400+ imminently and $450 to be flat for the year.
+
+- **BYD in talks to acquire part of Volkswagen's Dresden plant**, which would qualify it as a domestic European manufacturer and exempt it from EV import tariffs. Per futureaza, Germany offers deep automotive supply chain infrastructure despite higher costs than BYD's other considered site in Spain.
+
+- **Waymo reportedly losing $5–6 billion per year**, per Jeff Lutz, attributed to high part counts, complex sensor arrays, and expensive repair costs — structural unit economics that worsen at scale. Bhakdi sees no credible electric Class 8 truck competitor to the Semi in the US market.
+
+- **Nissan cancelled ~$500M US EV plant in Mississippi**, pivoting back to gas and hybrids amid inability to price EVs competitively.
 
 Notable quotes and data:
-- Elon Musk: "SpaceX and Tesla — both separately — are working to build to 100 gigawatts a year of solar power in the US... that'll probably take us about 3 years."
-- Musk on space solar: "Any given solar panel will do five times more energy in space than on the ground."
-- Musk on orbital AI: "The lowest cost place to put AI will be space, and that'll be true within two years, maybe three, three at the latest."
-- Musk on Terafab: "Over a terawatt of compute per year — logic, memory, and packaging — all in one place, with 80% for space and 20% for the ground."
-- Larry Goldberg on merger probability: "I'm at 101%."
-- Goldberg on Terafab: "This is going to be the biggest project that Elon has ever undertaken — including Starship, including Optimus, including everything."
 - Tesla AI official release notes: "Rewrote the AI compiler and runtime from the ground up with MLRI, resulting in 20% faster reaction time."
-- Elon Musk: "Version 15 will far exceed human levels of safety even in completely unsupervised and complex situations."
+- Elon Musk: "SpaceX and Tesla — both separately — are working to build to 100 gigawatts a year of solar power in the US... that'll probably take us about 3 years."
+- Elon Musk: "Any given solar panel will do five times more energy in space than on the ground."
+- Elon Musk: "The lowest cost place to put AI will be space, and that'll be true within two years, maybe three, three at the latest."
+- Elon Musk on Terafab: "Over a terawatt of compute per year — logic, memory, and packaging — all in one place, with 80% for space and 20% for the ground."
 - Jeff Lutz: "I think we're months away actually from an unsupervised version of the software."
-- Jeff Lutz on Waymo losses: reportedly $5–6 billion per year.
-- FSD 14.3 estimated reaction time: ~0.2 seconds vs. ~1.5-second human safety standard.
-- FSD fleet data rate: 28.8 million supervised miles/day; next 10B miles in ~11.5 months.
-- Tesla Semi cost per 500 miles: ~$75 electric vs. ~$375 diesel (~80% fuel savings).
-- Nevada Semi factory full ramp: 50,000 units/year, targeting H2 2026 run rate.
-- Bhakdi on robo-trucking: AI service fee of 10–20% of displaced driver salary; "2026 is the year where they all come into play."
-- Morgan Stanley hyperscaler capex forecast: $805B for 2026.
-- Tesla solar cell zone count: moving from 6 to 18 zones per cell.
-- Starlink terminal factory (Bastrop) employee density: ~one-tenth of Giga Texas per square foot.
+- Larry Goldberg on merger probability: "I'm at 101%."
+- Larry Goldberg on Terafab: "This is going to be the biggest project that Elon has ever undertaken — including Starship, including Optimus, including everything."
+- FSD 14.3 estimated reaction time: ~0.2 seconds vs. ~1.5 seconds human standard
+- FSD miles run-rate: ~28.8 million miles/day; next 10B miles in ~11.5 months
+- Tesla Semi fuel cost advantage: ~$75 per 500-mile trip vs. ~$375 for diesel (~80% reduction)
+- Nevada Semi factory target: 50,000 units/year annualized run rate in H2 2026
+- Bhakdi robo-trucking fee estimate: 10–20% of displaced driver salary flowing to Tesla
+- SpaceX estimated valuation cited: ~$1.7–$2 trillion
+- Starship target launch cost: ~$30–$50/ton (vs. ~$1,000/ton today on Falcon 9)
