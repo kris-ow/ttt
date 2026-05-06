@@ -15130,5 +15130,165 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-05T19:00:42.869Z",
     "status": "pending"
+  },
+  {
+    "fact": "Volume production of redesigned Tesla Semi started recently (referenced as of May 2026)",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Confirms redesigned Semi is in volume production, not just pilot builds; relevant to Semi revenue ramp timing",
+    "source": "20260506_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-06T04:53:36.205Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Flemish Minister of Mobility Annick De Ridder has officially asked Tesla to submit its FSD file to the Flemish administration, with instructions to explore a possible fast-track homologation process",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First concrete regulatory step toward FSD approval in Belgium/Flanders; fast-track language suggests potential acceleration of European FSD rollout",
+    "source": "20260506_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-06T04:53:36.205Z",
+    "status": "pending"
+  },
+  {
+    "fact": "New Tesla Megapack project in Koolunga, South Australia: 200MW / 800MWh, $225 million, commissioned by Equis Development, commissioning scheduled for September 2027",
+    "category": "Energy",
+    "type": "catalyst",
+    "context": "Large-scale Megapack deployment adding to Energy segment pipeline; commissioning in September 2027",
+    "source": "20260506_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-06T04:53:36.205Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla hiring robotaxi field response specialists in Doral, Florida and Las Vegas, Nevada — same roles filled in Dallas and Houston ahead of their unsupervised robotaxi launches",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Strong signal that Las Vegas and Doral/Miami are next cities for unsupervised robotaxi expansion, potentially imminent",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "EU TCMV meeting held in Brussels where Dutch RDW presented 18 months and 1 million miles of FSD testing results to EU member states",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Precursor vote to approve FSD across all EU countries without individual retesting; sets up vote at late June or early October 2026 meeting",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "EU FSD approval vote scheduled for either late June or early October 2026; requires 15 of 27 countries representing at least 65% of EU population",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Binary regulatory catalyst — EU-wide approval would unlock supervised FSD across all member states simultaneously",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Flanders (Belgium) Minister of Mobility immediately requested Tesla's FSD dossier after Brussels meeting and instructed her administration to provide clarity on rapid homologation by end of week",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "First concrete regional fast-track approval attempt in EU following the TCMV presentation; could become a template for other regions",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "EU mandatory driver monitoring regulation (EU 2019/2014) takes effect July 7, 2026 for all new car registrations — requires interior cameras tracking eye movement, head position, and attention levels",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Creates demand pull for FSD adoption: either the car drives itself or drivers face constant monitoring nags; applies to all manufacturers including Ford",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "25–30 Cybercabs spotted at Giga Texas including at factory exit and outbound lot, with many being transported away over the prior week",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Joe Tegtmeyer drone footage; interpreted as Tesla preparing Cybercab entry into robotaxi fleet",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab estimated production rate of 10–25 units per day at Giga Texas, implying approximately 300–500+ per month",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Host and Bhakdi estimate based on drone observations; no official figure confirmed — range implies 3,600–6,000+ annualized at current rate before any ramp",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi estimates cumulative Cybercabs already outside Giga Texas factory is likely well over 200",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Informal estimate based on repeated drone footage showing different vehicle patterns; no official count available",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert and Bhakdi project 10,000–15,000 Cybercabs deployed as robotaxis by end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 12500,
+    "context": "Converged estimate from both commentators; Bhakdi uses Cybertruck's ~30,000 units in first 9 months as production floor, halved for conservatism",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet per RobotaxiTracker.com: 36 total (Austin 25, Dallas 5, Houston 6) as of 2026-05-05",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 36,
+    "context": "Current baseline for unsupervised driverless operations across three cities; Austin is largest deployment",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet per RobotaxiTracker.com: 664 total (Bay Area 551, Austin 102, Dallas 5, Houston 6) as of 2026-05-05",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 664,
+    "context": "Total operational fleet across all modes; Bay Area remains largest by far in supervised mode",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 described by Bhakdi as an important breakthrough enabling high iteration speed and a full system revamp",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Cited as the version that confirmed FSD is ready for unsupervised scaling; enables faster improvement cycles going forward",
+    "source": "20260505_brighterwithherbert_02_This_July_Law_Makes_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T04:53:36.220Z",
+    "status": "pending"
   }
 ]
