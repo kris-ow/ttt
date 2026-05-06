@@ -15290,5 +15290,159 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-06T04:53:36.220Z",
     "status": "pending"
+  },
+  {
+    "fact": "Bhakdi expects robotaxi and Starlink to reach 'super scale' by 2027 at the latest, with Tesla and SpaceX potentially generating hundreds of billions in capex capacity by approximately 2028",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Specific timeline for robotaxi scaling inflection that would trigger a major stock re-rating, per Bhakdi's model",
+    "source": "20260506_brighterwithherbert_01_Teslas_Biggest_Mystery_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.088Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi frames 2026 as 'the year of robotaxi' in terms of initial deployment and revenue, with 2027 as the year of meaningful scale for both robotaxi and Starlink cash flows",
+    "category": "Robotaxi",
+    "type": "catalyst",
+    "context": "Specific year-by-year timeline for when robotaxi transitions from deployment to scale — directly relevant to DCF timing assumptions",
+    "source": "20260506_brighterwithherbert_01_Teslas_Biggest_Mystery_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.088Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi high-volume production line went live April 29, 2026 at the dedicated 1.7 million sq ft factory in Sparks, Nevada, adjacent to Gigafactory Nevada; designed for 50,000 trucks/year",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "First truck off the dedicated volume line marks transition from pilot to mass production; 50,000/year at ~$275K average implies ~$14B annual revenue at full ramp",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Analyst estimates for 2026 Tesla Semi production: 5,000–15,000 units",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000,
+    "context": "Analyst consensus range for 2026 ramp year; midpoint ~10,000 units",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi long-range: 500 miles range at full payload, 1.7 kWh/mile energy consumption, tri-motor 800 kW powertrain, 1 million mile battery life, 0.04 drag coefficient, 95% fleet uptime",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.7,
+    "context": "Key efficiency metric for operating cost modeling; ~3–4x more efficient than diesel equivalent of 5–7 kWh/mile",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi vehicle useful life: battery designed to last 1 million miles",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "1 million mile battery life implies significantly longer useful life than diesel trucks; important for TCO and depreciation modeling",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi fleet uptime reportedly 95%",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 0.95,
+    "context": "High uptime rate implies low maintenance burden and strong availability for commercial fleet operations",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla launched Semi Charging for Business on May 1, 2026: Mega Charger (1.2 MW, 60% charge in 30 min, starts ~$188,000 for two-post setup); Base Charger (125 kW, 60% charge in ~4 hours, $40,000 for two units installed); Base Charger deliveries begin early 2027",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Base Charger enables depot-level overnight charging without major utility upgrades, removing a key barrier to fleet electrification; delivery timing aligns with high-volume Semi ramp",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "66 planned Mega Charger locations across 15 states at 1.2 MW each; Texas leads with 19 sites, California has 17; Pilot Flying J deal targets 46 Mega Charger stations operational by early 2027",
+    "category": "Electric Vehicles",
+    "type": "catalyst",
+    "context": "Coverage of I-10 and I-5 freight corridors is foundational to long-haul Semi viability; Pilot Flying J partnership mirrors Supercharger network buildout strategy",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Goldman Sachs projects autonomous truck cost per mile drops from $8.56 today to ~$2.30 by 2035; crossover point where autonomous trucks beat human-driven on cost projected ~2028",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 2.3,
+    "context": "2035 autonomous trucking cost/mile estimate from Goldman Sachs; crossover ~2028 sets timeline for when economics become compelling vs. human drivers",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla crossed 10 billion FSD miles; over 62% are highway miles",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10000000000,
+    "context": "Highway-dominant training data directly supports autonomous trucking thesis; AI is most trained on the environment trucks operate in most",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Aurora Innovation launched commercial driverless freight runs in Texas in late 2024",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Competitor milestone establishing that commercial autonomous trucking is already underway; Tesla not yet in commercial autonomous trucking",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "ACT Expo (largest clean transportation trade show in North America) runs May 4–7, 2026; two new Tesla Semis displayed in Las Vegas ahead of show; Tesla describes trucks as 'autonomy ready' on spec sheet",
+    "category": "Autonomous Driving",
+    "type": "catalyst",
+    "context": "Public framing of Semi as autonomy-ready at major freight industry trade show signals Tesla's intent to compete in autonomous trucking",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi standard range priced at ~$260,000; long range at ~$290,000",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 275000,
+    "context": "Average of standard and long-range pricing (~$275K) used as basis for $13–14B revenue projection at 50,000 units/year",
+    "source": "20260506_brighterwithherbert_02_Teslas_14_Billion_Truck_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-06T19:16:24.103Z",
+    "status": "pending"
   }
 ]
