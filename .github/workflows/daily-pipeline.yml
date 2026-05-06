@@ -5,7 +5,7 @@ on:
     # 4x daily: Europe 6AM, US East 6AM, US West 6AM, evening catch-up
     # Split entries so github.event.schedule can distinguish the early runs (which
     # build the exec summary) from the later runs (which skip it).
-    - cron: '15 1 * * *'
+    - cron: '15 0 * * *'
     - cron: '15 7 * * *'
     - cron: '15 10 * * *'
     - cron: '45 17 * * *'
@@ -53,13 +53,13 @@ jobs:
         run: node scripts/pipeline/run.js
 
       # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
-      # 01:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
+      # 00:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
       # The 10:15 and 17:45 runs skip this step.
       # Gate on github.event.schedule (the cron expression that triggered the run), not wall-clock
       # time — Actions cron is routinely delayed 3+ hours, which silently skipped the gate previously.
       - name: Build executive summary
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 1 * * *' || github.event.schedule == '15 7 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 0 * * *' || github.event.schedule == '15 7 * * *'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/pipeline/exec-summary.js

@@ -30,7 +30,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 ## Summary Pipeline (`scripts/pipeline/`)
 Transcript-driven summarization pipeline (transcripts pushed directly to repo by Mac Mini):
 - `run.js` — main orchestrator (scan unsummarized transcripts → Claude Batch API → write summaries → rebuild news.json)
-- `exec-summary.js` — Daily Tesla Brief aggregating all `_summary.txt` for a date into `news/YYYYMMDD_ttt_00_executive_summary.txt` (filename kept; user-facing Title is "Daily Tesla Brief"). Direct API (Sonnet 4.6). Runs only on the 01:15 and 07:15 UTC pipeline executions.
+- `exec-summary.js` — Daily Tesla Brief aggregating all `_summary.txt` for a date into `news/YYYYMMDD_ttt_00_executive_summary.txt` (filename kept; user-facing Title is "Daily Tesla Brief"). Direct API (Sonnet 4.6). Runs only on the 00:15 and 07:15 UTC pipeline executions.
 - `prompt-exec.md` — prompt for the Daily Tesla Brief (Brief bullets + category sections + notable quotes)
 - `weekly-summary.js` — Weekly Brief aggregating the prior 7 daily briefs (Mon-Sun) + last 4 weekly briefs (continuation context) into `news/YYYYMMDD_ttt_99_weekly_brief_summary.txt`. Direct API (Sonnet 4.6). Runs only on the Monday 07:15 UTC pipeline execution (day-of-week gated in workflow step). Robotaxi tracker table uses Now/7D/30D columns (no 1D).
 - `prompt-weekly.md` — prompt for the Weekly Brief (Brief + category sections with editorial trim + Bear Case of the Week)
@@ -38,10 +38,10 @@ Transcript-driven summarization pipeline (transcripts pushed directly to repo by
 - `prompt.md` — prompt template with placeholder slots
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — 4x daily GitHub Actions (01:15, 07:15, 10:15, 17:45 UTC): summarize → exec summary (early runs only) → commit → deploy (failure → auto-creates GitHub issue)
+- `.github/workflows/daily-pipeline.yml` — 4x daily GitHub Actions (00:15, 07:15, 10:15, 17:45 UTC): summarize → exec summary (early runs only) → commit → deploy (failure → auto-creates GitHub issue)
 - `.github/workflows/freshness-check.yml` — daily 12:00 UTC: alerts via GitHub issue if unsummarized transcripts remain
 
-Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries → on 01:15/07:15 UTC runs, `exec-summary.js` aggregates the day into the Daily Tesla Brief pinned first in the feed
+Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries → on 00:15/07:15 UTC runs, `exec-summary.js` aggregates the day into the Daily Tesla Brief pinned first in the feed
 
 Categories: Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
 
