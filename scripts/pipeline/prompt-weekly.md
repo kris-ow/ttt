@@ -57,7 +57,7 @@ Required as a section unless the week was genuinely clean of bear signal.
 - ONLY use facts, numbers, dates, and quotes that appear in the daily briefs provided. Do not introduce outside information.
 - If two daily briefs disagree on a number, note both and flag the disagreement.
 - Quote sparingly and only when a direct quote carries unique signal (e.g., Elon, an executive, an analyst).
-- Source attribution: where useful, mention the channel briefly in the prose ("per Bhakdi", "Sandy Munro reported"). Do not list channel names exhaustively.
+- Source attribution: where useful, mention the channel briefly in the prose ("per Bhakdi", "Munro Live reported"). Do not list channel names exhaustively.
 - A canonical "Unsupervised Robotaxi Fleet" table is added programmatically above your output. Do not duplicate fleet count / per-city Robotaxi numbers in your Brief or category sections — the reader already sees them in the table. Reference Robotaxi fleet only when there is qualitative context worth adding (a launch, a milestone, a quote).
 
 ## Style

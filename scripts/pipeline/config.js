@@ -64,7 +64,8 @@ export const CORRECTIONS = {
   'Monroe': 'Munro',
   'monroe': 'Munro',
   'Munroe': 'Munro',
-  'Sandy Monroe': 'Sandy Munro',
+  'Sandy Monroe': 'Munro Live',
+  'Sandy Munro': 'Munro Live',
   'Alexander Mertz': 'Alexandra Merz',
   'Terraab': 'Terafab',
   'terraab': 'Terafab',
@@ -75,6 +76,8 @@ export const CORRECTIONS = {
   'macro hard': 'Macrohard',
   'Apollo mayo': 'Alpamayo',
   'apollo mayo': 'Alpamayo',
+  'Futureaza': 'FutureAzA',
+  'futureaza': 'FutureAzA',
 };
 
 // Claude model for summarization

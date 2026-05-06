@@ -55,8 +55,14 @@ export default function App() {
     swipeRef.current.scrollTo({ left: idx * swipeRef.current.clientWidth, behavior: 'smooth' })
   }, [])
   const channels = useMemo(() => {
-    const sorted = [...new Set(data.articles.map(a => a.channel))].sort()
-    return sorted.sort((a, b) => (a === 'tesla' ? -1 : b === 'tesla' ? 1 : 0))
+    const unique = [...new Set(data.articles.map(a => a.channel))]
+    return unique.sort((a, b) => {
+      if (a === 'tesla') return -1
+      if (b === 'tesla') return 1
+      const nameA = (CHANNEL_META[a]?.name || a).toLowerCase()
+      const nameB = (CHANNEL_META[b]?.name || b).toLowerCase()
+      return nameA.localeCompare(nameB)
+    })
   }, [])
   const stockData = useStockQuote()
 
