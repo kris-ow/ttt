@@ -808,12 +808,12 @@
             "type": "tracker",
             "sourceNote": "Fleet counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Known to undercount — Tesla cited 500+ on Q4 earnings call when tracker showed ~474. No official Tesla fleet disclosures available.",
             "current": {
-              "date": "2026-05-05",
-              "total": 664,
+              "date": "2026-05-06",
+              "total": 666,
               "note": "robotaxitracker.com (community-reported, unverified)",
               "breakdown": {
                 "Bay Area": 551,
-                "Austin": 102,
+                "Austin": 104,
                 "Dallas": 5,
                 "Houston": 6
               },
@@ -930,6 +930,17 @@
                   "Houston": 6
                 },
                 "note": "Bay Area: 550, Austin: 102, Dallas: 5, Houston: 6"
+              },
+              {
+                "date": "2026-05-05",
+                "total": 664,
+                "breakdown": {
+                  "Bay Area": 551,
+                  "Austin": 102,
+                  "Dallas": 5,
+                  "Houston": 6
+                },
+                "note": "Bay Area: 551, Austin: 102, Dallas: 5, Houston: 6"
               }
             ]
           },
@@ -1537,14 +1548,24 @@
                   "Houston": 6
                 },
                 "note": "Austin: 24, Dallas: 5, Houston: 6"
+              },
+              {
+                "date": "2026-05-05",
+                "total": 36,
+                "breakdown": {
+                  "Austin": 25,
+                  "Dallas": 5,
+                  "Houston": 6
+                },
+                "note": "Austin: 25, Dallas: 5, Houston: 6"
               }
             ],
             "current": {
-              "date": "2026-05-05",
-              "total": 36,
+              "date": "2026-05-06",
+              "total": 38,
               "note": "robotaxitracker.com (rendered DOM, community-reported)",
               "breakdown": {
-                "Austin": 25,
+                "Austin": 27,
                 "Dallas": 5,
                 "Houston": 6
               },
