@@ -5271,5 +5271,65 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-05-07T12:08:56.883Z",
     "status": "pending"
+  },
+  {
+    "fact": "Leased Model 3s returned after 3–4 years carry approximately 30,000–40,000 miles on the odometer, making them near-new for redeployment",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "Brian White's point that lease returns at 30,000–40,000 miles are effectively new vehicles is relevant to estimating effective useful life for robotaxi fleet vehicles sourced from lease returns.",
+    "source": "20260507_brighterwithherbert_01_Tesla_Just_Dropped_Multiple_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-07T19:20:48.166Z",
+    "status": "pending"
+  },
+  {
+    "fact": "4680 '8L' pack: ~79 kWh gross / 74 kWh usable, replacing LG 5M at 82–84 kWh in European Model Y Premium Long Range RWD",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Lower usable capacity in same vehicle implies worse energy efficiency per mile than predecessor pack; relevant to energy cost modeling",
+    "source": "20260507_electrek_01_Teslas_4680_Battery_Cells_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-07T19:20:48.173Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Wall Street projects Waymo will lose $5 billion in 2026 at a target of 1 million paid rides per week (~52 million rides annually), equating to ~$100 loss per ride",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "The $100-per-ride loss figure at Waymo's targeted scale illustrates the unit economics gap that robotaxi competitors face vs. Tesla's expected cost structure; no per-mile fare given but loss-per-ride is directly stated.",
+    "source": "20260507_brighterwithherbert_02_Tesla_Competition_Problem_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-07T19:20:48.181Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Uber expanded Lucid commitment to $500 million minimum investment and at least 35,000 vehicles (10,000 Gravity SUVs + 25,000 midsize platform EVs) for robotaxi deployment",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 35000,
+    "context": "Uber's committed order size for Lucid-based robotaxis provides a reference point for competitor fleet build-out scale and timelines.",
+    "source": "20260507_brighterwithherbert_02_Tesla_Competition_Problem_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-07T19:20:48.181Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Lucid delivered 75 engineering vehicles to Nuro and Uber for robotaxi testing across several U.S. cities",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 75,
+    "context": "This is the current Uber/Nuro/Lucid robotaxi testing fleet size — extremely early stage relative to commercial deployment targets.",
+    "source": "20260507_brighterwithherbert_02_Tesla_Competition_Problem_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-07T19:20:48.181Z",
+    "status": "pending"
   }
 ]
