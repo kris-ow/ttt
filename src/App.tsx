@@ -256,8 +256,6 @@ export default function App() {
           <div>[TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate</div>
           <div>
             <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
-            {' // '}
-            <a href="https://buymeacoffee.com/theteslathesis" target="_blank" rel="noopener noreferrer" onClick={() => track('Support Click', { location: 'footer' })} className="text-text-dim hover:text-green transition-colors">support [TTT]</a>
           </div>
         </div>
       </footer>
