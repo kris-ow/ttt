@@ -2,26 +2,19 @@ import { useState, useEffect, useCallback } from 'react'
 
 // ── Types ───────────────────────────────────────────────
 
-interface Catalyst {
-  date: string
-  event: string
-  hot: boolean
-}
-
 interface WatchlistDcf {
   watch: string
   field: string
 }
 
 interface Watchlist {
-  catalysts: string[]
   dcf_inputs: WatchlistDcf[]
 }
 
 interface ExtractedFact {
   fact: string
   category: string
-  type: 'catalyst' | 'dcf_input' | 'general'
+  type: 'dcf_input' | 'general'
   field?: string
   value?: number
   context?: string
@@ -31,7 +24,7 @@ interface ExtractedFact {
   status: 'pending' | 'approved' | 'rejected'
 }
 
-type Tab = 'review' | 'catalysts' | 'watchlist'
+type Tab = 'review' | 'watchlist'
 
 // ── API helpers ─────────────────────────────────────────
 
@@ -53,7 +46,7 @@ export default function App() {
     setPublishing(true)
     setPublishMsg(null)
     const res = await api<{ ok: boolean; message?: string; error?: string }>('/publish', 'POST', {
-      message: 'Admin console: update catalysts/watchlist/facts',
+      message: 'Admin console: update watchlist/facts',
     })
     setPublishMsg(res.ok ? res.message || 'Published' : `Error: ${res.error}`)
     setPublishing(false)
@@ -82,7 +75,7 @@ export default function App() {
 
       {/* Tabs */}
       <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
-        {([['review', 'REVIEW QUEUE'], ['catalysts', 'CATALYSTS'], ['watchlist', 'WATCHLIST']] as const).map(([key, label]) => (
+        {([['review', 'REVIEW QUEUE'], ['watchlist', 'WATCHLIST']] as const).map(([key, label]) => (
           <button
             key={key}
             onClick={() => setTab(key)}
@@ -104,7 +97,6 @@ export default function App() {
 
       {/* Content */}
       {tab === 'review' && <ReviewQueue />}
-      {tab === 'catalysts' && <CatalystsManager />}
       {tab === 'watchlist' && <WatchlistEditor />}
     </div>
   )
@@ -133,16 +125,11 @@ function btnStyle(color: 'green' | 'red' | 'dim' | 'amber'): React.CSSProperties
 
 function ReviewQueue() {
   const [facts, setFacts] = useState<ExtractedFact[]>([])
-  const [catalysts, setCatalysts] = useState<Catalyst[]>([])
   const [filter, setFilter] = useState<'all' | 'pending' | 'approved' | 'rejected'>('pending')
 
   const load = useCallback(async () => {
-    const [f, c] = await Promise.all([
-      api<ExtractedFact[]>('/facts'),
-      api<Catalyst[]>('/catalysts'),
-    ])
+    const f = await api<ExtractedFact[]>('/facts')
     setFacts(f)
-    setCatalysts(c)
   }, [])
 
   useEffect(() => { load() }, [load])
@@ -152,13 +139,6 @@ function ReviewQueue() {
     updated[idx] = { ...updated[idx], status }
     setFacts(updated)
     await api('/facts', 'PUT', updated)
-  }
-
-  const addToCatalysts = async (fact: ExtractedFact) => {
-    const newCatalyst: Catalyst = { date: 'TBD', event: fact.fact, hot: true }
-    const updated = [...catalysts, newCatalyst]
-    setCatalysts(updated)
-    await api('/catalysts', 'PUT', updated)
   }
 
   const filtered = facts.filter(f => filter === 'all' || f.status === filter)
@@ -197,7 +177,7 @@ function ReviewQueue() {
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ color: 'var(--text-bright)', fontSize: 12, marginBottom: 4 }}>{fact.fact}</div>
                     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', fontSize: 11 }}>
-                      <span style={{ color: fact.type === 'catalyst' ? 'var(--amber)' : fact.type === 'dcf_input' ? 'var(--green-dim)' : 'var(--text-dim)' }}>
+                      <span style={{ color: fact.type === 'dcf_input' ? 'var(--green-dim)' : 'var(--text-dim)' }}>
                         [{fact.type}]
                       </span>
                       {fact.field && <span style={{ color: 'var(--text-dim)' }}>field: {fact.field}</span>}
@@ -212,9 +192,6 @@ function ReviewQueue() {
                       <>
                         <button onClick={() => updateFact(realIdx, 'approved')} style={btnStyle('green')}>[APPROVE]</button>
                         <button onClick={() => updateFact(realIdx, 'rejected')} style={btnStyle('red')}>[REJECT]</button>
-                        {fact.type === 'catalyst' && (
-                          <button onClick={() => { addToCatalysts(fact); updateFact(realIdx, 'approved') }} style={btnStyle('amber')}>[→ CATALYST]</button>
-                        )}
                       </>
                     )}
                     {fact.status !== 'pending' && (
@@ -233,82 +210,6 @@ function ReviewQueue() {
   )
 }
 
-// ── Catalysts Manager ───────────────────────────────────
-
-function CatalystsManager() {
-  const [catalysts, setCatalysts] = useState<Catalyst[]>([])
-  const [dirty, setDirty] = useState(false)
-
-  useEffect(() => { api<Catalyst[]>('/catalysts').then(setCatalysts) }, [])
-
-  const save = async () => {
-    await api('/catalysts', 'PUT', catalysts)
-    setDirty(false)
-  }
-
-  const update = (idx: number, field: keyof Catalyst, value: string | boolean) => {
-    const next = [...catalysts]
-    next[idx] = { ...next[idx], [field]: value }
-    setCatalysts(next)
-    setDirty(true)
-  }
-
-  const remove = (idx: number) => {
-    setCatalysts(catalysts.filter((_, i) => i !== idx))
-    setDirty(true)
-  }
-
-  const add = () => {
-    setCatalysts([...catalysts, { date: '', event: '', hot: false }])
-    setDirty(true)
-  }
-
-  const move = (idx: number, dir: -1 | 1) => {
-    const next = [...catalysts]
-    const target = idx + dir
-    if (target < 0 || target >= next.length) return
-    ;[next[idx], next[target]] = [next[target], next[idx]]
-    setCatalysts(next)
-    setDirty(true)
-  }
-
-  return (
-    <div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
-        <span style={{ color: 'var(--green-dim)', fontSize: 12, fontWeight: 'bold' }}>NEXT CATALYSTS</span>
-        <button onClick={add} style={btnStyle('green')}>[ADD]</button>
-        {dirty && <button onClick={save} style={btnStyle('amber')}>[SAVE]</button>}
-      </div>
-
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-        {catalysts.map((c, i) => (
-          <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, border: '1px solid var(--border)', background: 'var(--surface)', padding: '8px 12px' }}>
-            <button onClick={() => move(i, -1)} style={{ ...btnStyle('dim'), padding: '2px 6px' }}>▲</button>
-            <button onClick={() => move(i, 1)} style={{ ...btnStyle('dim'), padding: '2px 6px' }}>▼</button>
-            <input
-              value={c.date}
-              onChange={e => update(i, 'date', e.target.value)}
-              placeholder="Date"
-              style={inputStyle(90)}
-            />
-            <input
-              value={c.event}
-              onChange={e => update(i, 'event', e.target.value)}
-              placeholder="Event description"
-              style={{ ...inputStyle(0), flex: 1 }}
-            />
-            <label style={{ display: 'flex', alignItems: 'center', gap: 4, fontSize: 11, color: c.hot ? 'var(--amber)' : 'var(--text-dim)', cursor: 'pointer', flexShrink: 0 }}>
-              <input type="checkbox" checked={c.hot} onChange={e => update(i, 'hot', e.target.checked)} />
-              HOT
-            </label>
-            <button onClick={() => remove(i)} style={btnStyle('red')}>[X]</button>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
-
 function inputStyle(width?: number): React.CSSProperties {
   return {
     background: 'var(--surface-2)',
@@ -323,7 +224,7 @@ function inputStyle(width?: number): React.CSSProperties {
 // ── Watchlist Editor ────────────────────────────────────
 
 function WatchlistEditor() {
-  const [watchlist, setWatchlist] = useState<Watchlist>({ catalysts: [], dcf_inputs: [] })
+  const [watchlist, setWatchlist] = useState<Watchlist>({ dcf_inputs: [] })
   const [dirty, setDirty] = useState(false)
 
   useEffect(() => { api<Watchlist>('/watchlist').then(setWatchlist) }, [])
@@ -333,26 +234,6 @@ function WatchlistEditor() {
     setDirty(false)
   }
 
-  // Catalyst watch items
-  const updateCatalyst = (idx: number, value: string) => {
-    const next = { ...watchlist, catalysts: [...watchlist.catalysts] }
-    next.catalysts[idx] = value
-    setWatchlist(next)
-    setDirty(true)
-  }
-
-  const removeCatalyst = (idx: number) => {
-    const next = { ...watchlist, catalysts: watchlist.catalysts.filter((_, i) => i !== idx) }
-    setWatchlist(next)
-    setDirty(true)
-  }
-
-  const addCatalyst = () => {
-    setWatchlist({ ...watchlist, catalysts: [...watchlist.catalysts, ''] })
-    setDirty(true)
-  }
-
-  // DCF watch items
   const updateDcf = (idx: number, field: keyof WatchlistDcf, value: string) => {
     const next = { ...watchlist, dcf_inputs: [...watchlist.dcf_inputs] }
     next.dcf_inputs[idx] = { ...next.dcf_inputs[idx], [field]: value }
@@ -378,27 +259,6 @@ function WatchlistEditor() {
         {dirty && <button onClick={save} style={btnStyle('amber')}>[SAVE]</button>}
       </div>
 
-      {/* Catalyst watches */}
-      <div style={{ marginBottom: 20 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-          <span style={{ color: 'var(--amber)', fontSize: 11, fontWeight: 'bold' }}>CATALYST PATTERNS</span>
-          <button onClick={addCatalyst} style={btnStyle('green')}>[ADD]</button>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          {watchlist.catalysts.map((c, i) => (
-            <div key={i} style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-              <input
-                value={c}
-                onChange={e => updateCatalyst(i, e.target.value)}
-                style={{ ...inputStyle(0), flex: 1 }}
-              />
-              <button onClick={() => removeCatalyst(i)} style={btnStyle('red')}>[X]</button>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* DCF watches */}
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
           <span style={{ color: 'var(--green-dim)', fontSize: 11, fontWeight: 'bold' }}>DCF INPUT PATTERNS</span>

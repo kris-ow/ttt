@@ -19,7 +19,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 - Sharp corners only, no rounded borders
 - Monospace font everywhere, green highlights on dark background
 - Full words always (OPEN, PREV CLOSE, HIGH, LOW) — never abbreviate
-- Stock price + catalysts only on Daily Feed tab, not Knowledge Base
+- Stock price + robotaxi counts only on Daily Feed tab
 - Popups use blurred semi-transparent overlay (bg-bg/60 backdrop-blur-md)
 
 ## Stock Price Logic

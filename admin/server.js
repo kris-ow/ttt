@@ -9,7 +9,6 @@ app.use(cors());
 app.use(express.json());
 
 const ROOT = path.resolve('..');
-const CATALYSTS = path.join(ROOT, 'src/data/catalysts.json');
 const WATCHLIST = path.join(ROOT, 'scripts/pipeline/watchlist.json');
 const EXTRACTED = path.join(ROOT, 'scripts/pipeline/extracted-facts.json');
 const DCF_FACTS = path.join(ROOT, 'src/data/dcf-robotaxi-facts.json');
@@ -23,17 +22,6 @@ function readJSON(filepath) {
 function writeJSON(filepath, data) {
   fs.writeFileSync(filepath, JSON.stringify(data, null, 2) + '\n');
 }
-
-// ── Catalysts ───────────────────────────────────────────
-
-app.get('/api/catalysts', (_req, res) => {
-  res.json(readJSON(CATALYSTS));
-});
-
-app.put('/api/catalysts', (req, res) => {
-  writeJSON(CATALYSTS, req.body);
-  res.json({ ok: true });
-});
 
 // ── Watchlist ───────────────────────────────────────────
 
@@ -85,11 +73,10 @@ app.put('/api/facts', (req, res) => {
 
 app.post('/api/publish', (req, res) => {
   const { message } = req.body;
-  const commitMsg = message || 'Admin console: update catalysts/watchlist/facts';
+  const commitMsg = message || 'Admin console: update watchlist/facts';
 
   try {
     const filesToAdd = [
-      'src/data/catalysts.json',
       'scripts/pipeline/watchlist.json',
       'scripts/pipeline/extracted-facts.json',
       'src/data/dcf-robotaxi-facts.json',

@@ -4,7 +4,7 @@ import newsData from './data/news.json'
 import { type Article, type NewsData, CHANNEL_META } from './types'
 import { ArticleDetail } from './components/Feed/ArticleDetail'
 import { FeedSection } from './components/Feed/FeedSection'
-import { KnowledgeSection } from './components/KnowledgeBase/KnowledgeSection'
+import { ValuationSection } from './components/Valuation/ValuationSection'
 import { DataSection } from './components/Data/DataSection'
 import { StockWidget } from './components/Stock/StockWidget'
 import { useStockQuote } from './components/Stock/useStockQuote'
@@ -91,6 +91,12 @@ export default function App() {
       track('Weekly Brief Open', { date: article.date })
     }
   }, [])
+
+  const openSourceById = useCallback((sourceFilename: string) => {
+    const articleId = sourceFilename.replace('.txt', '')
+    const article = data.articles.find(a => a.id === articleId)
+    if (article) handleArticleOpen(article)
+  }, [handleArticleOpen])
 
   useEffect(() => {
     if (!showFilter) return
@@ -245,7 +251,7 @@ export default function App() {
         )}
         {mountedTabs.has('valuations') && (
           <div className={activeSection === 'valuations' ? '' : 'hidden'}>
-            <KnowledgeSection onSelectArticle={handleArticleOpen} />
+            <ValuationSection openSource={openSourceById} />
           </div>
         )}
       </div>

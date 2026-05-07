@@ -19,10 +19,6 @@ Classify the content into one or more of these categories:
 
 While summarizing, flag any facts matching these priorities in the `<key_facts>` section below.
 
-### Catalyst Updates
-Watch for events, dates, or announcements related to:
-{{WATCHLIST_CATALYSTS}}
-
 ### DCF Model Inputs
 Watch for specific numbers or estimates related to:
 {{WATCHLIST_DCF}}
@@ -75,7 +71,7 @@ Notable quotes and data:
 [JSON array of objects. Each object has:
   "fact": concise factual statement with specific data,
   "category": one of the categories above,
-  "type": "catalyst" if it matches a Catalyst Updates watch item, "dcf_input" if it matches a DCF Model Inputs watch item, or "general" otherwise,
+  "type": "dcf_input" if it matches a DCF Model Inputs watch item, or "general" otherwise,
   "field": (only for dcf_input type) the DCF field name from the watch list,
   "value": (only for dcf_input type) the numeric value extracted, if applicable,
   "context": briefly explain why this matters or what changed

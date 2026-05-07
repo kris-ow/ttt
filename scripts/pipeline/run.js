@@ -129,12 +129,10 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
     .join('\n');
 
   // Load watchlist for targeted fact extraction
-  let watchlistCatalysts = '';
   let watchlistDcf = '';
   if (fs.existsSync(WATCHLIST_FILE)) {
     try {
       const wl = JSON.parse(fs.readFileSync(WATCHLIST_FILE, 'utf-8'));
-      watchlistCatalysts = (wl.catalysts || []).map(c => `- ${c}`).join('\n');
       watchlistDcf = (wl.dcf_inputs || []).map(d => `- ${d.watch} → field: \`${d.field}\``).join('\n');
     } catch {
       // Watchlist not available, proceed without
@@ -145,7 +143,6 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
   const year = pubDate.slice(0, 4);
 
   template = template.replace('{{CORRECTIONS}}', corrStr);
-  template = template.replace('{{WATCHLIST_CATALYSTS}}', watchlistCatalysts);
   template = template.replace('{{WATCHLIST_DCF}}', watchlistDcf);
   template = template.replace('{{YEAR}}', year);
   template = template.replace('{{PUBLISH_DATE}}', pubDate);
@@ -349,7 +346,7 @@ function saveExtractedFacts(keyFacts, transcript) {
   }
 
   const newFacts = keyFacts
-    .filter(f => f.type === 'catalyst' || f.type === 'dcf_input')
+    .filter(f => f.type === 'dcf_input')
     .map(f => ({
       ...f,
       source: transcript.summaryFilename,
