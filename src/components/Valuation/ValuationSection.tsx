@@ -53,15 +53,6 @@ export function ValuationSection({ openSource }: { openSource: (src: string) => 
             {label}
           </button>
         ))}
-        {['EVs', 'OPTIMUS', 'ENERGY', 'CHIP'].map(label => (
-          <span
-            key={label}
-            className="px-3 py-1.5 text-xs font-bold border border-border text-text-dim/30 cursor-default select-none"
-            title="Coming soon"
-          >
-            {label}
-          </span>
-        ))}
       </div>
 
       {subView === 'overview' ? (
