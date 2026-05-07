@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-06)
 Published:   2026-05-06 00:00 UTC
-Summarized:  2026-05-07 04:09:21 UTC
+Summarized:  2026-05-07 09:45:30 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.10253 (16338 in / 3568 out tokens)
+Cost:        $0.09458 (16338 in / 3038 out tokens)
 Sources:     7
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,98 +22,61 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- Tesla Semi: 430+ trucks ordered in a single week across multiple fleet buyers.
-- Washington State WAZIP rebate drops long-range Semi to ~$115K — below diesel.
-- EU FSD vote missed May 5th; next window June 30th, Belgium fast-tracking independently.
-- Canada Model 3 launches at ~$29K USD via Chinese import quota; deliveries slip to October.
-- Anthropic-SpaceX Colossus One deal: 220K+ Nvidia GPUs leased to Anthropic in May 2026.
+- Tesla Semi: 430+ trucks ordered in one week; high-volume Nevada line now live.
+- Canada Model 3 RWD prices at ~$29K USD via Chinese-import quota mechanism.
+- EU FSD vote missed May 5th; next window June 30th; Belgium fast-tracking independently.
+- SpaceX leases Colossus One's 220K GPUs to Anthropic; xAI moves to Colossus 2.
 - Goldman Sachs: autonomous trucking a $560B market by 2035, larger than robotaxi.
-
-## Electric Vehicles
-
-- **Tesla Semi high-volume production line goes live:** Tesla's Semi-dedicated factory in Sparks, Nevada — 1.7M sq ft, capacity 50,000 trucks/year — posted its first unit off the high-volume line on April 29, 2026. At ~$275K average price, full-ramp output represents ~$14B in annual revenue. 2026 production is estimated at 5,000–15,000 units by analysts.
-
-- **Watt EV orders 370 Semis (~$100M) for Port of Oakland program:** The largest single electric Class 8 deployment in California history. First 50 units deliver in 2026, full fleet by end of 2027; 300+ trucks support a joint Port of Oakland drayage program. Charging depots planned at Oakland, Fresno, Stockton, and Sacramento, with 15 additional sites under development. Watt EV CEO: "The Semi was the easiest choice, based on cost, performance, and availability."
-
-- **Big F Transport and Nika Container Freight add 60 more Semis:** Big F Transport trialed one Semi and immediately ordered 40, citing driver comfort, Scope 3 targets, and TCO versus diesel. Nika Container Freight ordered 20, targeting operations by early 2027. Both fleets will charge at Form Mobility's Rancho Dominguez depot. Total publicly announced orders in the past week exceed 430 trucks.
-
-- **Washington WAZIP rebate makes long-range Semi cheaper than diesel upfront:** Washington State's Zero Emission Incentive Program offers up to $175,000 off qualifying heavy-duty EVs, funded by the Climate Commitment Act ($120M pool, applied at point of sale). The $290K long-range Semi drops to ~$115K — roughly $60K below a new diesel Class 8 at ~$175K, before fuel or maintenance savings. California already has a comparable $200K voucher; 900 of those have gone to Tesla Semi.
-
-- **New Semi charging product suite removes depot infrastructure barrier:** Tesla launched "Semi Charging for Business" on May 1, 2026: a Mega Charger (1.2 MW, 60% charge in 30 min, from ~$188K) for freight corridors, and a Base Charger (125 kW, 60% in ~4 hours, $40K for two installed) for overnight depot use — daisy-chainable up to three units on one breaker without a utility upgrade. Deliveries begin early 2027. Jordan from The Limiting Factor: "With a base charger as an option, I'm no longer concerned that the charging network will be the rate limiting factor for semi production." Tesla has mapped 66 planned Mega Charger locations across 15 states; a Pilot Flying J deal targets 46 stations by early 2027.
-
-- **Tesla Semi confirmed "autonomy ready" at ACT Expo:** A walkaround at ACT Expo (May 4–7, Las Vegas) showed two redesigned Semis with cameras explicitly called out on the spec sheet under "autonomy ready." A 2026 Spring software update also enabled European-style semi-truck visualizations in the FSD display.
-
-- **Canada Model 3 launches at ~$29K USD via Chinese import quota:** Tesla listed a Shanghai-built, LFP-battery Model 3 Premium on its Canadian site overnight at ~$39,990 CAD (~$29K USD) — down from ~$79,990 CAD previously. The gap versus the US price ($42,490 USD) exceeds $13,000. Pricing is enabled by Canada's quota allowing 49,000 Chinese-built vehicles at reduced tariffs in 2026 (growing to ~70,000/year). Delivery estimates have already slipped from June to October 2026, indicating strong order intake. Chinese EV brands (BYD, Geely) have no Canadian sales infrastructure to compete for the quota.
-
-- **Model Y L mule spotted on I-280 in North America:** A camouflaged Model Y Long mule was photographed on I-280 northbound, consistent with expected Q2 2026 testing timing. Tesla has not made a formal US announcement, which the host attributes to avoiding an Osborne effect on current Model Y sales. A five-star ANCAP safety rating for the Model Y L has already been confirmed.
-
-- **Tesla brand loyalty #1 in the US at 61.1%:** S&P Global Mobility February 2026 data puts Tesla at 61.1% retention, ahead of Subaru, Toyota, and Ferrari — sharply contradicting mid-2025 narratives of brand damage.
-
-- **Cybertruck Premium AWD lease raised ~10–12%:** New rates are $1,100/month at $0 down and $949/month with $5,000 down. Cyberbeast pricing unchanged. The direction suggests improved demand or margin management on that trim.
-
-- **Tesla FSD one-time purchase ending in Europe May 21st:** The option to buy FSD outright ends across the UK, Germany, France, Italy, Belgium, Switzerland, Denmark, and others on May 21, 2026 — consistent with Tesla's North America shift to subscriptions.
-
-- **Norway Q1 2026: Model Y #1 overall, BEV share hits 97.9%:** Model Y sold 5,406 units in Q1 — outselling the next five non-Tesla vehicles combined. Model 3 ranked #2. BEVs captured 97.9% market share in Norway for the quarter.
-
-- **Lucid Q1 2026: revenue $282M vs. $440M expected, net loss -$1B:** Lucid guided for production cuts due to inventory buildup. The severe miss reinforces the difficulty competitors face scaling profitably against Tesla.
-
-## Autonomous Driving
-
-- **EU FSD vote missed at May 5th TCMV meeting:** Regulators watched ~one hour of FSD demos covering European traffic and mixed weather but raised concerns over occasional speed limit exceedances, wildlife hazards (moose in Nordic countries), icy roads, and the "Full Self-Driving" name itself. There was also reported pushback linked to political pressure from Tesla supporters contacting officials. The next vote opportunity is June 30, 2026; if missed, the following window is October. Roughly 15 of 27 member states must vote in favor.
-
-- **Belgium initiates fast-track FSD homologation:** Flemish Minister of Mobility Annick De Ridder formally requested Tesla submit its FSD dossier to the Flemish administration and directed it to explore "rapid homologation." Denmark's regulator stated vehicles "performed very well in the complex traffic of rush hour in Copenhagen." Sweden's transport agency said it is "generally positive on automated driving tech as long as it follows regulations." Switzerland's Astra said it has no issue with Level 2+ systems provided Tesla communicates that the driver remains fully responsible.
-
-- **FSD in China: employee trial with ~$732K confidentiality penalty; Q3 approval targeted:** An unverified account reported Tesla made FSD 14.3.2 available to employees in China with full functionality. Tesla added a confidentiality clause to its employee FSD trial policy carrying a ~$732,000 penalty for violations. Tesla guided on its Q1 earnings call for broader FSD approval in China in Q3 2026.
-
-- **Highway miles dominate FSD training dataset — key for autonomous trucking:** Tesla has crossed 10 billion FSD miles; over 62% are highway miles. The host of brighterwithherbert argues this makes autonomous highway freight a more data-mature problem than urban robotaxi, potentially compressing the autonomous trucking timeline relative to conventional assumptions.
-
-- **China pauses new robotaxi license issuance after Apollo Go mass freeze:** On March 31, 100+ BYD Apollo Go robotaxis froze simultaneously due to a server connectivity failure. Chinese regulators responded by pausing issuance of new robotaxi expansion licenses and new applications; existing approved operators may continue.
+- Tesla brand loyalty hits 61.1% in February 2026, #1 in the US per S&P Global.
 
 ## Robotaxi
+- **Android app now live.** Tesla's robotaxi app launched on Android, reaching feature parity with the iOS version. Android users missed the introductory pricing window available at the iOS launch.
+- **Qualitative milestone, not a fleet number.** The unsupervised fleet continues to expand geographically; no new city launches were reported today.
+- **China pauses new robotaxi license issuance.** On March 31st, 100+ BYD Apollo Go robotaxis froze simultaneously due to a server failure; Chinese regulators responded by halting new expansion licenses and applications, though existing operators continue running.
 
-- **Tesla Robotaxi app launches on Android:** The robotaxi app is now live on Android, reaching feature parity with the iOS version. Android users did not have access during the initial iOS-exclusive introductory pricing window.
+## Autonomous Driving
+- **EU FSD: no vote on May 5th; June 30th is the next opportunity.** Regulators watched roughly one hour of FSD demos but raised objections around speed-limit compliance, wildlife hazards, icy roads, and the "Full Self-Driving" name itself. Roughly 15 of 27 member states must vote in favor to pass; a broad EU rollout this summer is described as "pretty optimistic," with Q4 2026 a more realistic target.
+- **Belgium fast-tracking independently.** Flemish Minister of Mobility Annick De Ridder formally requested Tesla submit its FSD dossier and explicitly instructed her administration to explore rapid homologation. Denmark's regulator said Tesla vehicles "performed very well in the complex traffic of rush hour in Copenhagen"; Sweden is "generally positive"; Switzerland's Astra has no objection to Level 2+ systems provided driver responsibility is clearly communicated.
+- **FSD China employee trial now includes a ~$732K confidentiality penalty clause.** Tesla added the clause to its internal employee FSD trial policy; broader Chinese approval remains on track for Q3 2026 per Tesla's Q1 earnings guidance.
+- **Momenta flagged as the key Chinese FSD competitor.** The decade-old Chinese autonomous driving software company supplies end-to-end neural-net software (similar architecture to FSD) to 50+ production vehicle models representing hundreds of thousands of vehicles; investors include GM, Mercedes, and Tencent; a strategic partnership with Uber targets a European launch.
+- **Tesla Semi described as "autonomy ready" at ACT Expo.** A walkaround by Sawyer Merritt at the Las Vegas show noted Tesla's own spec language explicitly calling out the truck's camera suite under that label. Over 62% of Tesla's 10 billion accumulated FSD miles are highway miles — the operating environment where trucks spend most of their time.
 
-- **Bhakdi: robotaxi is the near-term stock re-rating catalyst:** Bhakdi argues the market will not incrementally reprice Tesla as the fleet grows — it will instantly discount a trajectory toward tens of millions of vehicles once scalability is demonstrated, similar to the ~700% move when Model Y's scalability was confirmed. He expects "super scale" robotaxi deployment by 2027 at the latest.
-
-## Humanoid Bots
-
-- **Optimus framed as larger long-term opportunity than robotaxi:** Bhakdi views Optimus as the mechanism for Tesla to become the "physical AI king" — capable of instantaneously displacing entire manufacturing industries at scale, analogous to what Anthropic is doing to software. He describes the timeline as longer than robotaxi but the economic ceiling as larger.
+## Electric Vehicles
+- **Tesla Semi high-volume production line live in Nevada.** Tesla Semi's official account posted "First Semi off high volume line" on April 29th, accumulating 2.1 million views. The 1.7 million sq ft Sparks facility is designed for 50,000 trucks/year; 2026 output is estimated at 5,000–15,000 units by analysts.
+- **430+ Semi trucks ordered in roughly one week.** Watt EV: 370 units (~$100M), 50 delivering in 2026 with 300+ under a Port of Oakland joint program. Nica Container Freight: 20 units, operational by early 2027. Big F Transport: 40 units after a single demo truck. DHL has additional orders beyond a handful. All short- and long-range variants are priced below the $300K threshold analysts cite as the economic break-even for electric Class 8 trucks.
+- **Washington WAZIP rebate cuts long-range Semi price to ~$115K.** The state's new Zero Emission Incentive Program offers up to $175,000 off qualifying heavy-duty electric trucks, dropping the $290K long-range Semi to roughly $115K — approximately $60K below the average new diesel Class 8. California's comparable $200K voucher has already been claimed for 900 Tesla Semis.
+- **New Tesla Semi charging suite removes depot infrastructure barrier.** Launched May 1st: the Mega Charger (1.2 MW, 60% charge in 30 min, from ~$188K per two-post setup) targets freight corridors; the Base Charger (125 kW, 60% in ~4 hours, $40K for two units installed) is designed for overnight depot use and can daisy-chain three units on a single breaker without a major utility upgrade. Tesla has mapped 66 planned Mega Charger locations across 15 states; a Pilot Flying J deal targets 46 stations by early 2027.
+- **Canada Model 3 RWD launches at ~$29K USD (~$39,990 CAD).** Tesla quietly listed the Shanghai-built, LFP-battery Model 3 Premium on its Canadian site — down from a prior ~$79,990 CAD — enabled by Canada's quota allowing 49,000 Chinese-built vehicles at reduced tariffs in 2026 (growing to ~70,000/year). The same car lists at $42,490 USD in the US. Delivery estimates have already slipped from June to October 2026 on strong order intake; Chinese EV brands have no Canadian sales infrastructure to compete for the quota this year.
+- **Model Y L mule spotted on I-280 in North America.** A camouflaged Model Y Long was photographed northbound; the vehicle also received a five-star ANCAP safety rating. A US launch is described as feeling "imminent" by multiple commentators.
+- **Tesla brand loyalty #1 in the US at 61.1%.** S&P Global Mobility data for February 2026 places Tesla first, ahead of Subaru, Toyota, and Ferrari — sharply contradicting August 2025 headlines claiming brand damage from Elon Musk's political activities.
+- **Cybertruck Premium AWD lease raised ~10–12%.** New monthly rates: $1,100/month with $0 down (up ~10%), $949/month with $5,000 down (up ~12%); Cyberbeast pricing unchanged. Direction of change suggests improved demand or margin management.
+- **Model Y ranked #1 globally among EVs in March 2026; #1 overall in Norway Q1 2026.** Norway Model Y: 5,406 units in Q1, outselling the next five non-Tesla vehicles combined; BEVs captured 97.9% market share in Norway for the quarter. Model Y also #1 among all cars in Colombia for two consecutive months.
+- **FSD one-time purchase ending in Europe on May 21st.** Affected markets include the UK, Germany, France, Italy, Belgium, Switzerland, Denmark, and others — consistent with Tesla's North American shift to subscriptions.
+- **Lucid Q1 2026: revenue $282M vs. $440M expected; net loss -$1B.** Lucid is cutting production due to elevated inventory. The result reinforces the difficulty competitors face scaling profitably alongside Tesla.
 
 ## Energy
-
-- **$225M Megapack BESS project under construction in South Australia:** The 200MW / 800MWh Kulonga battery project in Koolunga, South Australia is being developed and operated by Equis Development (per Sawyer Merritt) / Uno Ekis (per electrified); commissioning is scheduled for September 2027. This is a deployment project, not a new factory.
-
-- **Tesla Australia: battery storage now 55% of revenue, up from 15% in 2023:** Energy has overtaken vehicles as Tesla's primary revenue driver in Australia, even as battery prices have fallen substantially over the period.
-
-- **Solar and wind reach cost parity with fossil fuels:** Solar and wind now cost $54–$82/MWh, below new gas capacity globally (>$100/MWh) and at parity with new coal in China ($70–$85/MWh).
+- **$225M Megapack BESS under construction in South Australia.** The 200MW / 800MWh Kulonga project (developer: Equis Development / Uno Ekis) is scheduled for commissioning by September 2027, adding meaningfully to Tesla's Energy segment pipeline.
+- **Tesla Australia: battery storage now 55% of revenue, up from 15% in 2023.** The shift came despite a substantial fall in battery prices over the period, illustrating volume-driven growth in the Energy segment. Tesla also earned its first $3M in Australian regulatory credits under the country's new vehicle emissions standards, with tightening annual targets expected to grow that income stream.
+- **Solar and wind now at cost parity with fossil fuels.** Solar and wind generation costs $54–$82/MWh versus $70–$85 for new Chinese coal capacity and $100+ for new gas globally — a structural tailwind for battery storage demand.
 
 ## Market & Competition
-
-- **Anthropic signs compute deal with SpaceX's Colossus One:** Anthropic will access 220,000+ Nvidia Blackwell B200 GPUs and 300 megawatts of capacity at the Colossus One data center, coming online within May 2026. xAI has merged into SpaceX and moved its training workloads to Colossus 2, freeing Colossus One. Bhakdi frames this as the formation of a "magic trinity" — Nvidia, SpaceX, and Anthropic — and the first commercial step toward orbital AI compute, which he projects reaches significant scale by 2028 and hyperscale before 2030.
-
-- **Goldman Sachs: autonomous trucking ($560B by 2035) exceeds robotaxi ($415B by 2035):** Goldman projects autonomous truck cost per mile falls from $8.56 today to ~$2.30 by 2035, with the crossover vs. human-driven trucks projected around 2028. US freight trucking revenue exceeds $830B annually; ~60,000 US driver positions are currently unfilled with ~90% annual turnover at major carriers.
-
-- **SpaceX proposes $55–$119B Terafab chip fab in Grimes County, Texas:** A public hearing is scheduled for June 3rd. Elon Musk described it as one of several locations under consideration for the largest and most advanced chip fab in the world. Multiple sources confirm the $55B initial phase / $119B total figures.
-
-- **Tesla stock closed at $398.73, +2.4%:** The Nasdaq 100 rose 2.08% on the same day. Volume was 17% below the daily average.
-
-- **Bhakdi's stock framework:** Bhakdi estimates Tesla's core auto business is worth ~$90/share on a generous growth multiple, implying ~$310 of the current ~$400 price reflects optionality across robotaxi, Optimus, and energy. He draws a parallel to 2014–2019 when Tesla stock was flat for five years before a ~700% move in one year.
-
-- **Momenta identified as a significant FSD competitor in China and Europe:** Momenta supplies end-to-end neural network autonomous driving software to OEMs (similar architecture to FSD), has deployed across 50+ production vehicle models representing hundreds of thousands of vehicles, counts GM, Mercedes, and Tencent as investors, and has a strategic partnership with Uber for European launch.
+- **SpaceX leases Colossus One to Anthropic.** xAI merged into SpaceX and migrated training to Colossus 2, freeing Colossus One's 220,000+ Nvidia Blackwell B200 GPUs and 300 MW of capacity for Anthropic — coming online within May 2026. Bhakdi frames this as the formation of a "magic trinity" (Nvidia, SpaceX, Anthropic) and the first commercial step toward orbital AI compute, which he projects reaches significant scale by 2028 and hyperscale before 2030.
+- **Goldman Sachs: autonomous trucking is a larger market than robotaxi by 2035.** Goldman projects robotaxi at $415B and autonomous trucking at $560B by 2035. Cost per mile for autonomous trucks is projected to fall from $8.56 today to ~$2.30 by 2035, with the crossover versus human-driven trucks around 2028.
+- **Bhakdi's stock thesis: $400 Tesla = ~$90 auto + ~$310 optionality.** He draws a parallel to the 2014–2019 Tesla plateau (roughly $18 to $17 over five years, then +700% in one year once Model Y scalability was confirmed) and argues robotaxi scaling will trigger a comparable instantaneous re-rating — not incremental repricing. He expects robotaxi at "super scale" by 2027 at the latest.
+- **SpaceX Terafab chip fab proposed at $55B–$119B in Grimes County, Texas.** A public hearing is scheduled for June 3rd. Multiple commentators note Elon's public comment on the location is likely a negotiating tactic to encourage competing bids.
+- **Nuro receives modified driverless DMV permit covering Lucid Gravity SUVs.** Lucid delivered 75 engineering vehicles to Nuro for testing using Nvidia Drive AGX Thor compute. However, Nuro still requires a CPUC ride-hailing permit and a separate commercial DMV permit before paid rides — the same gap that applies to Tesla. Multiple commentators are skeptical of Nuro's proprietary technology given its history of scrapping its low-speed delivery program.
 
 Notable quotes and data:
-- Bhakdi: "At the moment where it becomes clear that this actually works, that you can actually scale robo taxi, they're not going to say, 'Oh, it's 1,000 robo taxis, let's see.' No, they're going to say, 'Well, if it's 2,000 now and grew like this, then it's going to be 20 million soon. Discount it back. Boom.'"
-- Bhakdi: "They will start scaling at the very latest at super scale in 2027, both of them [robotaxi and Starlink]."
-- Musk on Anthropic: "No one set off my evil detector."
+- Jo Bhakdi: "At the moment where it becomes clear that this actually works, that you can actually scale robo taxi, they're not going to say, 'Oh, it's 1,000 robo taxis, let's see.' No, they're going to say, 'Well, if it's 2,000 now and grew like this, then it's going to be 20 million soon. Discount it back. Boom.'"
+- Elon Musk on Anthropic: "I spent a lot of time last week with senior members of the Anthropic team... No one set off my evil detector."
+- Jordan (The Limiting Factor) on Base Charger: "This is massive. With a base charger as an option, I'm no longer concerned that the charging network will be the rate limiting factor for semi production."
+- Watt EV CEO: "The Semi was the easiest choice, based on cost, performance, and availability."
 - Denmark regulator: "The vehicles did perform very well in the complex traffic of rush hour in Copenhagen."
-- FSD China employee confidentiality penalty: ~$732,000 per violation
-- Tesla Q1 guidance: broader FSD approval in China expected Q3 2026
-- Semi specs: 500mi range, 1.7 kWh/mile, 800 kW tri-motor, 1M-mile battery life, 0.04 Cd, 95% uptime
-- Washington WAZIP: long-range Semi ~$115K after rebate vs. ~$175K for new diesel
-- 900 California clean truck vouchers already applied to Tesla Semi
-- Colossus One: 220,000+ Nvidia GPUs, 300MW; Bhakdi: "probably at least three times the amount of energy you would need at Tranium chips… to get to the same compute"
-- Goldman Sachs: robotaxi $415B by 2035; autonomous trucking $560B by 2035; cost/mile crossover ~2028
-- Tesla brand loyalty: 61.1% (S&P Global Mobility, Feb 2026), #1 US
-- Tesla Australia: battery storage 55% of revenue (2025), up from 15% (2023)
-- Lucid Q1 2026: revenue $282M vs. $440M expected; net loss -$1B; production cuts planned
-- Tesla stock: $398.73, +2.4%; volume 17% below average
+- FSD China confidentiality penalty: ~$732,000 per violation
+- Tesla stock close: $398.73, +2.4%; volume 17% below daily average
+- Semi factory capacity: 50,000 trucks/year; 2026 estimate 5,000–15,000 units
+- Semi long-range specs: 500-mile range, 1.7 kWh/mile (vs. 5–7 kWh/mile diesel), 800 kW tri-motor, 1M-mile battery, 0.04 drag coefficient, 95% fleet uptime
+- Autonomous truck cost/mile: $8.56 today → ~$2.30 by 2035 (Goldman Sachs)
+- Norway Q1 2026: Model Y #1 overall with 5,406 units; BEV market share 97.9%
+- Tesla brand loyalty: 61.1%, #1 US (S&P Global Mobility, February 2026)
+- Bhakdi: Terafab capex $55B "realistic"; Tesla-SpaceX merger more likely 2027, possible November 2026
