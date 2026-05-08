@@ -1,0 +1,73 @@
+Channel:     brighterwithherbert
+Title:       Big Week for Tesla, SpaceX, and AI
+Published:   2026-05-08 13:30 UTC
+Summarized:  2026-05-08 19:00:26 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01JBiViqT3pR9Q7R4zkLbLb9
+Cost:        $0.07563 (24899 in / 5104 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of "brighterwithherbert" features host Herbert alongside panelists Jeff Lutz ("the rational bull"), Cern Basher ("the bot bull"), and Phil Biceel ("the engineerable," formerly of Apple and Rivian) discussing a busy week spanning the SpaceX–Anthropic compute deal, Tesla's unsupervised Robotaxi fleet expansion, FSD progress in China and Europe, the debate over a potential SpaceX–Tesla merger, and the state of Optimus humanoid robot development. The episode's core thesis is that Elon Musk is systematically positioning his companies — through compute infrastructure, chip fabrication (Terafab), autonomous driving software, and humanoid robots — further ahead of all competitors, but that Tesla investors should maintain humility about timing and unexpected risks. The panel is notably divided on the SpaceX–Tesla merger question and on whether Optimus is meaningfully delayed.
+
+## Autonomous Driving
+
+1. **FSD Rollout in China:** Rumors surfaced that a fully functional version of FSD 14.3.2 is being made available to Tesla employees in China under non-disclosure agreements. Supporting this signal, Tesla China is actively hiring Autopilot test engineers, which the panel interprets as a possible indication that Tesla expects to seek full FSD approval in China in the near term.
+
+2. **FSD Expansion Across Europe:** The RDW (Dutch vehicle regulator) presented its findings on FSD to EU member states and is advocating for FSD approval across all 27 EU countries. Separately, Tesla updated FSD purchase terms — including deadlines for one-time purchase pricing — in multiple European countries including Belgium, Germany, and Sweden, which observers interpret as preparation for a broader FSD rollout. The panel noted that EU approval may still proceed country-by-country rather than bloc-wide, and that the process remains inherently messy.
+
+3. **FSD 14 Series as the Readiness Threshold:** Both Jeff and Phil agreed that FSD was not genuinely ready for regulatory approval until the FSD 14 series. Phil noted that FSD 14.3 specifically rewrote the runtime, dramatically improving performance and creating headroom for model inference frequency, and also established a reinforcement learning pipeline enabling rapid fine-tuning of specific operational issues encountered in the field. The panel acknowledged ongoing "whack-a-mole" regression risks when fine-tuning but expressed confidence that the tooling to address this quickly is now in place.
+
+4. **FSD Variant in Robotaxi Fleet:** Ashok confirmed at Tesla's earnings call that the Robotaxi fleet runs a variant of the FSD 14.3 series. The panel assessed that the Robotaxi fleet is likely running software somewhat ahead of what is deployed to consumer vehicles, and that as FSD 14.3.2 reaches wider consumer deployment (estimated at ~50% of Tesla fleet at time of recording, with full rollout expected within one to two weeks), the broader fleet will help surface remaining edge cases faster.
+
+## Robotaxi
+
+1. **Unsupervised Fleet Growth:** Per RobotaxiTracker.com, the unsupervised Robotaxi fleet grew from 26 to 38 vehicles in the five days preceding the episode — a 46% increase. The breakdown is 27 unsupervised vehicles in Austin, 5 in Dallas, and 6 in Houston. Dallas and Houston are noted as 100% unsupervised (no safety monitor in any vehicle). The panel emphasized that the percentage rate of change, not the absolute number, is the meaningful signal at this early stage.
+
+2. **Brian Wang's 60-Day Projection:** Brian Wang predicted that if Tesla converts all Austin vehicles to unsupervised (potentially adding ~24 more), and Dallas and Houston each reach at least 10 unsupervised vehicles, the total could reach approximately 70 unsupervised vehicles by end of the following week, with each city potentially reaching 100 unsupervised and an overall fleet of 80+ parked Robotaxi-badged vehicles per city including Cybercabs. Wang argued that extending evening driving hours combined with a 10x vehicle increase would produce approximately 20x the Robotaxi miles.
+
+3. **Cybercab Integration Into Robotaxi Fleet:** Joe Tegtmeyer documented 40–50 Cybercabs now spotted at and around Giga Texas (up from ~20 previously), and a Tesla Semi was filmed transporting a batch of new Cybercabs. Phil assessed that the Cybercab camera placement differs slightly from the Model Y but that Tesla has abstracted this in software, making it straightforward to integrate. He believes Cybercabs are already operating within the Robotaxi network in Austin but are not yet available for customer hailing — they are conducting autonomous test runs without passengers. The panel sees Cybercabs as ultimately replacing Model Ys in the fleet over time.
+
+4. **Operational Constraints as the Binding Limitation:** The panel consensus was that safety is no longer the primary constraint on Robotaxi scaling — operational issues are. These include proper pickup and drop-off behavior, situations where the vehicle sits idle awaiting a remote operations decision, and the need to keep the ratio of remote operations interventions extremely low (Elon's stated goal being a service scalable without frequent human intervention). Jeff noted a concern about wireless charging not yet visibly deployed, which he flagged as a future scaling bottleneck if vehicles must be manually plugged in. Rumors suggest the wireless charging system has been significantly delayed and has not yet received regulatory approval.
+
+5. **Mystery Covered Vehicle:** Joe Tegtmeyer captured footage of a mystery vehicle covered with a tarp and wheels masked with white vinyl at what appeared to be a Tesla facility. Size comparisons to a Cybertruck and Model Y suggest it may be a Model Y variant, though the panel acknowledged they are rarely correct when speculating on covered vehicles.
+
+## Humanoid Bots
+
+1. **Tesla's Communication Blackout on Optimus:** Tesla made a deliberate decision to stop releasing short demo videos and public event appearances for Optimus, citing competitive intelligence concerns — Elon stated that revealing too much too soon allows competitors to copy the design frame by frame. A promised reveal that was expected in Q1 2026 did not happen; Elon stated the bot was not yet performing enough use cases at the required level. Phil expressed comfort with this communications policy, drawing a parallel to Apple's product secrecy culture.
+
+2. **Acknowledged Delays vs. Real Capital Commitment:** The panel agreed Optimus is delayed relative to earlier promises (e.g., the original target of 5,000 units that required building an entirely new actuator supply chain). However, Herbert countered that Tesla is actively spending real capital converting the Fremont factory to an Optimus production facility and building out infrastructure at Giga Texas. He argued that if Tesla were truly shelving Optimus, Elon would delay capital spending as he did with Giga Mexico — the continued spending signals near-term intent to ramp. Herbert described the current Fremont conversion as a "10 million per year line."
+
+3. **AI5 Chip as a Prerequisite:** Phil stated his view that Optimus will not enter meaningful production until Tesla's AI5 chip is available to power it, framing this as a hard dependency.
+
+4. **Competitive Landscape — Figure, 1X, Boston Dynamics:** Figure and 1X both publicly revealed factory footage and claimed pre-production volumes. Jeff was skeptical, noting that pre-production unit counts reveal nothing about spec compliance, yield rates, or supply chain readiness. He drew on his smartphone industry experience — it took five years to scale from a few million units per year to one billion in smartphones — and warned that the humanoid bot supply chain, particularly for constrained components, is not ready for mass ramp. He identified China as potentially moving 10x faster in bot deployment but questioned whether functionality and usefulness would match. Jeff also noted Boston Dynamics' 20+ year history with no mass-market product, and that its original CEO acknowledged the platform was never designed to be a commercial product. The panel saw Hyundai's ownership of Boston Dynamics as a potential improvement but not a near-term threat.
+
+5. **Tesla's Manufacturing Credibility:** Despite the delays, the panel's consistent view was that Tesla has the most credible path from prototype to scaled production of any company in the humanoid bot space, given its existing manufacturing culture and supply chain expertise. Phil's key evaluative framework: the only milestones that truly matter are when the first 100,000 units and first million units are available for consumers to purchase — all demos, start-of-production events, and interim milestones are "squishy."
+
+## Market & Competition
+
+1. **SpaceX–Anthropic Compute Deal:** SpaceX agreed to lease its Colossus 1 data center (~300 megawatts of capacity) to Anthropic, which had been severely compute-constrained and throttling its Claude LLM. Elon stated that XAI had already migrated training workloads to Colossus 2, making Colossus 1 available. The deal allows Anthropic to double its rate limits, remove peak-hour restrictions, and substantially raise API limits (Tier 1 input tokens per minute jumping from 30,000 to 500,000, and context limits from 2 million to 10 million tokens). Revenue estimates for SpaceX from this deal ranged from $5 billion to $16 billion per year in the discussion, with Brian Wang's AWS-comparable estimate cited as closer to $20–28 billion per year. The panel interpreted this as strategically weakening OpenAI by strengthening its top competitor while SpaceX monetizes excess compute.
+
+2. **SpaceX–Tesla Merger Debate:** A significant portion of the episode addressed the heated community debate over a potential SpaceX–Tesla merger. Polymarket odds were cited at approximately 70% probability that a merger occurs. Cern Basher laid out the bull case for merger (Tesla would otherwise pay SpaceX for Starlink connectivity, Grok/XAI AI services, Terafab chips, and orbital data centers anyway — so "economic leakage" to SpaceX happens regardless of merger structure) and the bear case (dilution of Tesla's robotaxi upside to SpaceX shareholders; uncertainty about regulatory timelines; risk of chip constraints if Terafab is not built). SpaceX's valuation was noted as having surged from $400 billion last summer to a potential $2 trillion IPO valuation. Cern noted he holds 20x more Tesla exposure than SpaceX. The panel consensus was that the debate is currently "low data" — no merger has been proposed and Elon has not publicly stated he wants one.
+
+3. **Terafab as a Strategic Necessity:** Multiple panelists flagged Terafab as critical infrastructure. A new SpaceX filing was cited showing Terafab numbers of $55 billion upfront and up to $119 billion total, potentially sited in Grimes County, Texas (~2 hours from Austin). The panel argued that without domestic chip fabrication at this scale, both Robotaxi and Optimus face a chip supply constraint within approximately five years that could cap Tesla's growth and compress its valuation multiples regardless of software progress.
+
+4. **European and China EV Sales Data:** Jeff noted that April 2026 European sales data was very positive, with Germany posting its best-ever April sales. China April data was also described as one of the strongest Aprils on record. A deal reportedly in the works for over $100 million in Tesla Semi purchases was also cited as a positive signal. Tesla Semi was described as entering production.
+
+5. **Tesla Stock Technical Analysis:** Jeff referenced analysis from a technical analyst on X (handle: "retro tech") noting that Tesla's stock had broken out of a downward channel for the third time, and that the prior two such breakouts preceded runs to all-time highs. The stock was noted to have closed above its 200-day moving average (in the low $400s, around $402–$404), and is currently trading between Fibonacci sequence levels.
+
+Notable quotes and data:
+- Elon Musk on the Anthropic deal: *"I spent a lot of time last week with senior members of the Anthropic team to understand what they do to ensure Claude is good for humanity and was impressed. Everyone I met was highly competent and cared a great deal about doing the right thing. No one set off my evil detector."*
+- Elon on Grok: *"We have many Grok models training simultaneously in Colossus 2. I'm confident they will bear fruit and work on the Grok built harness is progressing well."*
+- SpaceX–Anthropic deal revenue estimates: $5B–$16B/year (various analysts); Brian Wang estimate ~$20–28B/year (AWS-comparable pricing)
+- Terafab filing: $55 billion upfront, up to $119 billion total; potentially in Grimes County, Texas
+- Unsupervised Robotaxi fleet per RobotaxiTracker.com: 38 total (Austin 27, Dallas 5, Houston 6) — up from 26 five days prior
+- Total active Robotaxi fleet per RobotaxiTracker.com: ~550+ in Bay Area, 104 Austin, with Cybercab counts at Giga Texas now 40–50 units
+- FSD 14.3.2 estimated at ~50% of Tesla fleet at time of recording; full fleet rollout expected within 1–2 weeks
+- SpaceX valuation: $400B last summer → potential $2T IPO valuation
+- Polymarket odds of SpaceX–Tesla merger: ~70%
+- Cern Basher: holds 20x more Tesla exposure than SpaceX
+- Fremont Optimus conversion: described as a "10 million per year line"
+- Anthropic Tier 1 API: input tokens/minute increased from 30,000 → 500,000; context from 2M → 10M tokens
+- Tesla stock 200-day moving average: approximately $402–$404
+- Boston Dynamics: ~20 years of operation with no mass-market product shipped

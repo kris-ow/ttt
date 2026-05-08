@@ -5355,5 +5355,89 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-05-08T03:54:44.763Z",
     "status": "pending"
+  },
+  {
+    "fact": "Estimated Semi production capacity discussed at 50,000 units per year as a likely bottleneck figure",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 50000,
+    "context": "Viewer-cited figure discussed by hosts as plausible capacity ceiling, possibly assuming 2–3 shifts; hosts note higher volume may be achievable",
+    "source": "20260508_futureaza_01_Tesla_Semi_Demand_Just_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-08T19:00:26.014Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi efficiency: 1.7 kWh per mile (~0.6 miles/kWh) vs. competitors at ~0.4–0.5 miles/kWh",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.7,
+    "context": "Officially cited efficiency figure; relevant to energy cost modeling for any Tesla fleet operation",
+    "source": "20260508_electrek_02_Tesla_Semi_Battery_Sizes_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-08T19:00:26.021Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Robotaxi fleet grew from 26 to 38 vehicles in 5 days: Austin 27, Dallas 5, Houston 6",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 38,
+    "context": "Per RobotaxiTracker.com as of approximately May 6, 2026; a 46% increase in 5 days, with Dallas and Houston operating 100% unsupervised",
+    "source": "20260508_brighterwithherbert_01_Big_Week_For_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-08T19:00:26.028Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Brian Wang projected unsupervised Robotaxi fleet could reach ~70 vehicles by end of the following week, with each city potentially reaching 100 unsupervised vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 100,
+    "context": "Speculative near-term projection based on observed conversion pace in Austin and growth in Dallas/Houston; not a Tesla official figure",
+    "source": "20260508_brighterwithherbert_01_Big_Week_For_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-08T19:00:26.028Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Brian Wang argued that 10x vehicle count combined with 2x driving hours would produce approximately 20x the Robotaxi miles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Qualitative multiplier framework for projecting Robotaxi mile scaling; extending into evening hours cited as the key utilization lever",
+    "source": "20260508_brighterwithherbert_01_Big_Week_For_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-08T19:00:26.028Z",
+    "status": "pending"
+  },
+  {
+    "fact": "80+ parked Robotaxi-badged vehicles (including Cybercabs) in each city cited by Brian Wang as basis for scaling projection",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 80,
+    "context": "Per Brian Wang's estimate of parked but not yet active vehicles per city; suggests near-term fleet headroom without new vehicle production",
+    "source": "20260508_brighterwithherbert_01_Big_Week_For_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-08T19:00:26.028Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab count at and around Giga Texas has grown to 40–50 units, up from approximately 20 previously",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Joe Tegtmeyer documentation; growth rate suggests roughly ~20 additional Cybercabs added recently; a Tesla Semi was filmed transporting a batch of new Cybercabs",
+    "source": "20260508_brighterwithherbert_01_Big_Week_For_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-08T19:00:26.028Z",
+    "status": "pending"
   }
 ]
