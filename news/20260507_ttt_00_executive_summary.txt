@@ -1,0 +1,115 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-07)
+Published:   2026-05-07 00:00 UTC
+Summarized:  2026-05-08 03:56:00 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.08833 (12922 in / 3304 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 27 | 0 | +8 | +17 |
+| Houston | 6 | 0 | +3 | +6 |
+| Dallas | 5 | 0 | +2 | +5 |
+| **Total** | **38** | 0 | +13 | +28 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD Europe one-time purchases end May 21 — subscription-only after that date.
+- Tesla ~50x Waymo on cumulative autonomous miles per Farzad analysis.
+- 4680 "8L" pack quietly swapped into European Model Y — 52 km range cut.
+- Waymo projected to lose $5B in 2026; ~$100 loss per paid ride.
+- Cybercab confirmed FMVSS-compliant — no 2,500-unit NHTSA exemption cap applies.
+- SpaceX files $55B chip fab in Grimes County, Texas; county hearing in early June.
+
+## Autonomous Driving
+
+- **FSD 14.3.2 rumored in China employee rollout.** A rumor circulating online suggests Tesla pushed FSD 14.3.2 — described as "full functionality" — to employees in China. Per Brian White (FutureAzA), Chinese FSD previously ran version 13, lagging the US product, with regulatory hurdles delaying a wider launch originally expected in March. White argues that if true, it signals Chinese government approval for a broader rollout may be imminent, unlocking a significant new recurring revenue stream.
+
+- **Tesla cumulative FSD miles: ~10 billion, doubling every ~9 months.** Per Farzad, Tesla is accumulating roughly 1 billion FSD miles per month versus north of 200 million total cumulative driverless miles for Waymo across its entire history — approximately a 50x gap. Farzad applies Wright's Law to argue that whoever doubles autonomous miles fastest gets cheaper and safer faster, giving Tesla a structural compounding advantage.
+
+- **Tesla robotaxi cost per mile: ~$0.81 vs. Waymo's ~$1.36–$1.43.** Morgan Stanley figures cited by Farzad show Tesla already operating at roughly 60% of Waymo's cost per mile, at a far smaller fleet size. ARK Invest projects the industry floor at ~$0.25/mile at scale versus Uber's current ~$2.00/mile.
+
+- **Tesla's unified neural net as a compounding moat.** Every supervised FSD mile driven by customers worldwide trains the same neural network powering the unsupervised Austin/Dallas/Houston robotaxis. Farzad contrasts this with Waymo's historically city-specific HD-mapping and sensor calibration requirements, which inflate per-market expansion costs.
+
+- **170,000 new FSD subscribers added**, per Herbert (brighterwithherbert) — described as a small but persistently growing recurring revenue stream. Brian White suggested it may be time for Tesla to offer another free one-month trial given FSD version 14's quality.
+
+- **FSD snow performance — anecdotal validation.** Sawyer Merritt shared personal experience using FSD in low-visibility winter conditions with obscured lane markings, calling claims that FSD doesn't work in snow "simply not true" while noting increased vigilance is warranted.
+
+## Robotaxi
+
+- **Cybercab confirmed FMVSS-compliant from day one.** Per Farzad (citing Tesla's head of engineering), this means Cybercab is not subject to the NHTSA 2,500-vehicle annual exemption cap that had been a concern for autonomous vehicles lacking standard safety equipment. There is therefore no regulatory production ceiling on Cybercab output beyond normal manufacturing ramp constraints. Cybercab production began in April 2026 at Giga Texas.
+
+- **Q1 2026 paid robotaxi miles: ~1.7 million, nearly tripling from Q4 2025's ~610,000.** Farzad projects Q2 could exceed 4 million paid miles and Q3 could approach 10 million, with end-of-2026 volume potentially approaching Waymo's annual commercial scale.
+
+- **Five additional city launches committed for H1 2026:** Phoenix, Miami, Orlando, Tampa, and Las Vegas. Farzad is skeptical all five will launch on schedule and expects some slippage to H2 2026 or later.
+
+- **Nashville Boring Company residential tunnel stop announced.** Residents of two luxury Nashville towers will take an elevator directly to an underground loop station and board autonomous Model Ys — reaching the airport in ~9 minutes versus 35–40 minutes in rush-hour surface traffic. First segments targeted for late 2026 / early 2027. Per FutureAzA, the precedent of a residential stop could trigger a chain reaction of private-entity approvals similar to what occurred with Las Vegas casinos.
+
+- **Pony.AI break-even benchmark: ~23 paid rides per vehicle per day.** Farzad flags this as a key reference point for framing the competitive race — who reaches that utilization rate first, and at what cost per mile.
+
+- **Waymo: $5B projected 2026 loss; ~$100 loss per paid ride.** Against a target of 1 million paid rides per week (~52 million annually), Wall Street expects Google/Waymo to lose approximately $5 billion this year. Brian White argues Waymo's LiDAR/HD-mapping hardware architecture creates costs with no clear path to resolution at scale. He contends Waymo's only viable path is a full pivot to vision-only neural nets — effectively "changing everything" — and speculates it may eventually need to acquire an automaker to control vehicle costs.
+
+## Electric Vehicles
+
+- **4680 "8L" pack quietly swapped into European Model Y — 52 km range cut.** Tesla replaced the LG 5M pack (82–84 kWh, 661 km WLTP) with the 4680-based 8L pack (~79 kWh gross / 74 kWh usable, 609 km WLTP) in the Model Y Premium Long Range RWD without clearly notifying customers with existing orders. Per Electrek, EV communities in France and Norway are reporting order cancellations. Tesla does not disclose battery chemistry on its configurator.
+
+- **4680 energy density remains 13% below Panasonic 2170.** Giga Austin-produced 4680 cells measure 244 Wh/kg versus 269 Wh/kg for the 2170 cells they are meant to replace. Charging performance is also worse: first-gen 4680 Model Y exceeds 40 minutes for a 10–80% charge versus ~27–30 minutes for the 2170 Long Range. The 8L pack's charging power was already declining at 31% SOC in Out of Spec Roaming testing, ranking it the worst battery option in the current European Model Y lineup.
+
+- **L&F cathode contract written down from $2.9B to $7,386.** The South Korean supplier disclosed its Tesla 4680 cathode materials contract has been reduced by 99.9%, citing a "change in supply quantity." Cybertruck, the primary 4680 vehicle, is running at an estimated 20,000–25,000 units/year against 250,000-unit factory capacity. At the 2025 shareholder meeting, Musk stated the dry electrode process was "way harder" than expected — "a mistake."
+
+- **New five-tier Model Y lease structure launched**, starting at $459/month (standard RWD) through $799/month (Performance), all requiring ~$4,000 at signing. Brian White frames the lease program as a robotaxi pipeline strategy: Tesla reclaims vehicles at lease-end (~30,000–40,000 miles on the odometer) and redeploys them into the fleet.
+
+- **Canadian Model 3 RWD Premium priced at CAD $39,000 (~USD $29,000).** Brian White calls it cheaper than anything "remotely comparable." A camouflaged Model Y L was also spotted in the US, which White reads as a signal the vehicle may arrive earlier than Musk's stated "end of year" timeline.
+
+- **Model Y received a 5-star ANCAP safety rating** (Australian equivalent of Euro NCAP) for the refreshed model.
+
+- **FSD Europe: one-time (perpetual) purchases end May 21, 2026.** Affected markets include the UK, Germany, France, Italy, Belgium, Switzerland, Denmark, and others. After that date, FSD will only be available via subscription, transitioning European customers to recurring revenue. Buyers have roughly two weeks to lock in a one-time purchase.
+
+- **Tesla Semi: California HVIP program offers $120,000–$330,000 per Semi** with over $100M in total funding available on a first-come, first-served basis, per Sawyer Merritt's compiled incentive summary. Subsidies of this scale materially reduce TCO for commercial fleet buyers.
+
+## Energy
+
+- **Kulonga battery: 200 MW / 800 MWh Megapack installation in Australia**, valued at approximately $225 million. Per FutureAzA, Australia has repeatedly demonstrated Megapack payback periods of roughly one to two years, validating the grid-scale business model.
+
+- **Megapack 3 production expected no later than Q3 2026** from the new Texas Gigafactory, per Brian (FutureAzA). Ramp pace carries some uncertainty tied to cell supply from LG's new Lansing, Michigan factory.
+
+- **IRENA report: solar and wind with battery storage now costs $54–$82/MWh**, down from over $100/MWh in 2020 and now cheaper than new gas globally (>$100/MWh). Per Sawyer Merritt, this is a structural macro tailwind for Tesla's Megapack segment as falling storage costs accelerate grid-scale battery deployments.
+
+## Market & Competition
+
+- **SpaceX files $55B chip fab in Grimes County, Texas; up to $119B total.** Tesla has pledged $20B and SpaceX $20B toward the initial phase. A county public hearing is scheduled for early June 2026. Musk confirmed the filing is real while noting several locations are under consideration. FutureAzA frames the proximity to Giga Texas — future home of Cybercab and Optimus manufacturing — as the primary site selection criterion.
+
+- **Uber expanded commitment to Lucid to $500M; vehicle order raised to 35,000 units** (10,000 Gravity SUVs + 25,000 midsize platform EVs). Lucid has delivered 75 engineering vehicles to Nuro and Uber for driverless testing. Brian White flags the Uber robotaxi stack involves at least five separate unproven technology partners — vehicle, autonomy software, compute, camera, and LiDAR — and argues combining unproven systems multiplies rather than mitigates risk.
+
+- **Lucid Q1 2026: ~$1B loss; revenue $282M vs. $440M expected.** Loss per share was -$3.46 versus -$2.64 expected. Lucid suspended full-year production guidance and announced plans to reduce output. Stock is down 41% year-to-date.
+
+- **BYD April 2026 new energy passenger vehicle sales: ~314,000 units, -15.7% YoY** — its eighth consecutive month of year-over-year decline in China, while domestic rivals Xiaomi, Leap Motor, and Zeekr posted new monthly highs. Exports hit a record but the hosts argue domestic weakness will eventually constrain overseas ambitions.
+
+- **Mercedes all-electric C-Class priced at €68,000 (~$79,900 USD)**, with 350 miles expected EPA range, 94 kWh battery, 800V architecture, and 0–60 in 3.9 seconds. Legacy EV competition remains concentrated at the premium end of the market.
+
+Notable quotes and data:
+- Farzad: Tesla ~10B cumulative FSD miles vs. Waymo north of 200M — ~50x gap; both doubling ~every 9 months
+- Morgan Stanley: Tesla robotaxi cost/mile ~$0.81; Waymo ~$1.36–$1.43
+- Tesla Q1 2026 paid robotaxi miles: ~1.7M (up from ~610K in Q4 2025)
+- Cybercab: FMVSS-compliant from day one — no 2,500-unit NHTSA exemption cap
+- 5 H1 2026 city launches committed: Phoenix, Miami, Orlando, Tampa, Las Vegas
+- FSD Europe one-time purchase deadline: May 21, 2026
+- 4680 energy density: 244 Wh/kg vs. 269 Wh/kg Panasonic 2170 (−13%)
+- European Model Y WLTP range: 609 km (8L/4680) vs. 661 km (LG 5M) — same trim
+- L&F cathode contract: $2.9B written down to $7,386 (−99.9%)
+- Musk (2025 shareholder meeting): dry electrode process "way harder" than expected — "a mistake"
+- Waymo projected 2026 loss: $5B; ~$100 loss per ride at 1M rides/week target
+- Lucid Q1 2026: revenue $282M (exp. $440M); loss/share −$3.46 (exp. −$2.64); stock −41% YTD
+- BYD April 2026 NEV passenger sales: ~314K, −15.7% YoY; 8th straight monthly decline
+- SpaceX Terafab: $55B initial / $119B total; Tesla + SpaceX each pledged $20B; Grimes County hearing early June 2026
+- Kulonga Megapack: 200 MW / 800 MWh, ~$225M, Australia
+- Musk on Roadster: "the best of the last human-driven cars"; hover capability "classified"
+- Brian White on Waymo: "If you can just change everything then maybe you'll make a profit"

@@ -5331,5 +5331,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-07T19:20:48.181Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD (Supervised) has surpassed 10 billion miles of real-world driving, per official Tesla customer email",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10000000000,
+    "context": "Cumulative supervised miles are a proxy for training data scale and neural network maturity — a key competitive moat argument for Tesla's autonomous driving valuation thesis",
+    "source": "20260508_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-08T03:54:44.763Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi Long Range: usable battery capacity of 822 kWh, NMCA chemistry using 4680 cells, 500-mile range at 82,000 lbs gross combination weight",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Official production specs from regulatory filing; 822 kWh over 500 miles implies ~1.64 kWh/mile at max load — relevant to energy cost modeling for Tesla's commercial fleet and 4680 cell production scale validation",
+    "source": "20260508_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-08T03:54:44.763Z",
+    "status": "pending"
   }
 ]
