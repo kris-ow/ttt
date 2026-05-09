@@ -1,0 +1,45 @@
+Channel:     brighterwithherbert
+Title:       Elon Just Changed The AI War Again
+Published:   2026-05-09 13:31 UTC
+Summarized:  2026-05-09 18:39:56 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01GXLbGYwBfmNxtWEMB3wwR2
+Cost:        $0.03662 (11447 in / 2593 out tokens)
+Categories:  Autonomous Driving, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from the "brighterwithherbert" channel covers the announcement of a major compute partnership between SpaceX and Anthropic, in which Anthropic has signed an agreement to use all of the capacity at SpaceX's Colossus 1 supercomputer facility. Host Herbert is joined by serial entrepreneur and venture capital investor Larry Goldberg (website: lumacenti.com) to discuss the strategic implications of this deal for SpaceX, XAI, Grok, Anthropic, and the broader AI competitive landscape. The core thesis is that this deal validates Elon Musk's "compute as infrastructure" strategy and fundamentally transforms SpaceX into a recurring-revenue cloud business.
+
+## Market & Competition
+
+1. **Anthropic-SpaceX Colossus 1 Deal:** Anthropic (maker of Claude) has signed a partnership with SpaceX to use all of the compute capacity at the Colossus 1 data center — 220,000 Nvidia GPUs with over 300 megawatts of power. Anthropic stated the capacity would be online within the month, and that Claude inference on Colossus 1 would begin ramping up within days. Anthropic's Tom Brown credited SpaceX's ability to "move atoms" quickly, hinting at potential future collaboration extending beyond terrestrial data centers. Nvidia publicly congratulated the partnership, calling Colossus 1 "two Frontier Labs, one accelerated computing platform."
+
+2. **XAI Dissolved as Separate Entity; SpaceX AI Born:** Elon Musk announced that XAI will be dissolved as a separate company and folded into SpaceX as a product group called "SpaceX AI." Elon confirmed a new logo is planned and possibly a new name for the AI division. Larry Goldberg framed this as SpaceX becoming, overnight, a massive recurring-revenue company earning from both its Starlink satellite network and its Colossus compute infrastructure — directly countering critics who argued XAI's losses would erode SpaceX's profitability.
+
+3. **Musk's Strategic Rationale — Coherence and Compute Allocation:** Elon explained that XAI's Grok models have already moved training to Colossus 2, making Colossus 1 available to lease. Goldberg explained this is due to the technical concept of "coherence" — all training processes must run simultaneously on a single, unified compute cluster and cannot be mixed across architecturally distinct systems. Because Grok's inference demand has not yet matched Claude's scale, Colossus 1 was underutilized for SpaceX AI's own needs, creating the opportunity to lease it.
+
+4. **SpaceX as AI Infrastructure Landlord:** Elon stated that just as SpaceX launches satellites for competitors on fair terms, SpaceX will lease compute to AI companies that are "taking the right steps to ensure it is good for humanity," with the explicit right to reclaim compute if an AI engages in actions that harm humanity. Herbert cited Brian Wang's calculation that this rental arrangement could generate approximately $16.8 billion per year in revenue for SpaceX. Goldberg suggested the combined SpaceX entity could show roughly $20 billion in profit in its first year from these combined revenue streams.
+
+5. **Anthropic's Compute Crisis and Near-IPO Risk:** Both Herbert and Goldberg described Anthropic as having been in a serious compute bottleneck prior to this deal, with Claude being throttled — slower response times, reduced token limits, peak-hour restrictions, and pricing increases — to the point that users (including Herbert himself) were migrating to alternatives like OpenAI's Codex. Despite existing agreements with Amazon (5 gigawatts), Google (5 gigawatts), and strategic partnerships with Microsoft and Nvidia, Anthropic still lacked sufficient live inference capacity. Goldberg noted that Anthropic was planning an IPO — with speculation around a valuation of over $1 trillion — and that the compute shortage threatened both that IPO and the company's competitive standing. The SpaceX deal, Herbert argued, effectively saved Anthropic.
+
+6. **Competitive Squeeze on OpenAI:** Herbert framed the deal as OpenAI being squeezed from both sides: Elon is in an active lawsuit against Sam Altman, and Anthropic — led by former OpenAI employee Dario Amodei — is now empowered with SpaceX compute. Goldberg was less focused on the adversarial framing, noting Elon has historically welcomed competition and would likely be willing to lease compute to OpenAI and Google as well, subject to the same ethical guardrails.
+
+7. **Musk's Foresight on Compute Scarcity and Energy Bottlenecks:** Goldberg credited Musk with having recognized compute as the critical bottleneck before it became widely understood, and having built Colossus 1 before the market caught on. Herbert noted that Musk had also predicted energy would be the next bottleneck, which appears to be materializing — with 50% of data center projects reportedly stalled due to inability to secure energy or permitting. Musk's off-planet data center strategy (space-based compute via Starlink infrastructure) was cited as the long-term play that validates this vision.
+
+8. **Musk's Cybertruck 48V Open-Sourcing as Precedent for Competition Philosophy:** Goldberg cited as evidence of Musk's pro-competition worldview the fact that when Tesla developed and implemented the 48-volt electrical architecture on the Cybertruck, Musk produced a detailed book explaining the system and vendor relationships and sent it to every major automotive CEO — none of whom, Goldberg noted, acted on it.
+
+9. **SpaceX-Tesla Merger Speculation:** Herbert briefly raised the possibility of a SpaceX-Tesla merger, noting that if it occurred, Tesla investors could own a piece of the company now sitting at the center of global AI infrastructure. Goldberg did not dismiss the idea but noted that whether or not a merger occurs, SpaceX and Tesla already have a natural fluidity in assigning compute work and financial flows between them, making the merger question "not material" to the underlying thesis.
+
+10. **Grok as Tesla/FSD AI vs. Claude as General/Coding AI:** Goldberg expressed his view that the partnership with Anthropic is strictly a client-vendor compute relationship and that Grok — not Claude — is the intended AI for Tesla's cars, Full Self-Driving, and Optimus. He noted that Grok's integration into Tesla vehicles is already progressing at a "pretty rapid clip," while Claude's strength is in generalized and coding applications. He does not foresee the Anthropic-SpaceX relationship deepening beyond compute leasing.
+
+Notable quotes and data:
+- Colossus 1: 220,000 Nvidia GPUs, over 300 megawatts of power
+- Anthropic's Claude API rate limits reportedly increased from ranges like 30,000 to 500,000 and 450,000 to 2 million and 2 million to 10 million tokens (exact tier definitions not fully specified in transcript)
+- Brian Wang's estimated SpaceX compute rental revenue: ~$16.8 billion per year
+- Goldberg's estimate: combined SpaceX entity could show ~$20 billion in profit in its first year
+- Elon (quoted): "Nobody set off my evil detector" — on meeting Anthropic's senior team
+- Elon (quoted): "Just as SpaceX launches hundreds of satellites for competitors with fair terms and pricing, we will provide compute to AI companies that are taking the right steps to ensure it is good for humanity."
+- Elon (quoted): GB300 is "the best AI computer"
+- Herbert: "50% of all data center projects are not moving forward — they can't get the energy"
+- Goldberg: "He's going to be the only large-scale AI company in the world making profits next year" — referring to Musk's combined SpaceX/XAI entity
+- Anthropic's existing agreements cited: 5-gigawatt deal with Amazon, 5-gigawatt deal with Google, strategic partnership with Microsoft and Nvidia, $50 billion investment in American AI infrastructure with Fluid Stack

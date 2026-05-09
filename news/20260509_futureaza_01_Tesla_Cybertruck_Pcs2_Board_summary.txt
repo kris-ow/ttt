@@ -1,0 +1,42 @@
+Channel:     futureaza
+Title:       Tesla Cybertruck PCS2 Board Failure Breakdown
+Published:   2026-05-09 12:00 UTC
+Summarized:  2026-05-09 18:39:56 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01GXLbGYwBfmNxtWEMB3wwR2
+Cost:        $0.02971 (7577 in / 2446 out tokens)
+Categories:  Electric Vehicles
+────────────────────────────────────────────────────────────
+
+This video is a collaborative discussion between Brian (FutureAzA) and Craig (Red Review) breaking down a hardware failure affecting Cybertruck owners — specifically the PCS2 board, which manages AC-to-DC power conversion for home charging, Supercharging, and PowerShare (vehicle-to-home). The hosts explain the nature of the failure, how to detect it, warranty coverage, and Tesla's response to affected owners.
+
+## Electric Vehicles
+
+1. **What the PCS2 Board Does:** The PCS2 (Power Conversion System 2) board is described as the nerve center for electricity flow in the Cybertruck. It handles home AC charging (converting AC to DC for the high-voltage battery), DC Supercharging, and PowerShare/vehicle-to-home back-feeding functionality. Craig first discovered the issue when attempting to film a PowerShare demonstration and the truck failed to back-feed the home, followed shortly by the charging rate dropping to 24 amps.
+
+2. **Nature of the Failure — Redundancy Masks the Problem:** The PCS2 board has two AC-side components for redundancy. When one fails, the charge rate drops from the normal 48 amps (or 40 amps depending on the home electrical system) down to 24 amps — but no driver-facing error notification is generated because partial functionality remains. The vehicle only throws a front-facing alert when the second AC component also fails and AC charging is lost entirely. This design means many owners are unaware they have a fault.
+
+3. **How to Detect the Failure:** Owners can check the Tesla app to see if their Cybertruck is capped at 24 amps during home charging. A more definitive check is to enter service mode on the vehicle, where error codes PCS_049 or PCS_048 will appear if the board has failed. Craig notes he has tutorial videos on how to access service mode on his Red Review channel. He also cautions that owners who primarily use Supercharging and rarely plug into AC at home may have a failed board without knowing it, since the triggering event (AC charging) may not have occurred.
+
+4. **Warranty Coverage — A Split Situation:** The PCS2 failure is covered under the basic vehicle warranty, which Craig states is 4 years / 50,000 miles. However, many high-mileage Cybertruck owners have already exceeded 50,000 miles. The 2026 Cybertruck is covered under a new warranty Tesla is offering called the "high-priced propulsion related parts ZEV limited warranty" — a 7-year / 70,000-mile warranty — but this is not retroactive and does not apply to 2024 or 2025 trucks.
+
+5. **Out-of-Warranty Costs and Tesla's Goodwill Response:** For owners out of warranty, replacement costs initially ranged from $4,000 to $7,000 depending on labor time, as Tesla gave no clear guidance to service centers. More recently, as a goodwill gesture, Tesla has been charging approximately $1,000 — roughly the cost of parts — for out-of-warranty repairs, though Craig describes this as "hit or miss." Tesla has a broader reputation for goodwill repairs; Craig cites an example of a Model S owner whose battery was replaced when they were only a few hundred miles beyond warranty.
+
+6. **Parts Shortage and Free Supercharging Workaround:** Tesla service centers across the country have run out of replacement PCS2 boards, leading to wait times of 4 to 6 weeks, and in some cases up to 8 weeks or roughly 2.5 months. Owners have reported being as far back as 13th in line for the repair. In response, when an owner files a service ticket through the app for a verified PCS issue, Tesla in some cases sends an over-the-air update via cellular — without requiring Wi-Fi — that enables free Supercharging for the affected truck until the repair date. This is not free lifetime Supercharging but is intended to allow owners to continue charging their vehicles while waiting for parts.
+
+7. **Distinction from Inverter Recall and Wiring Harness Service Bulletin:** Craig clarifies that this issue is entirely separate from a prior drive inverter recall that affected many Cybertrucks. The PCS2 is a power conversion system, not a drive inverter. There is also a separate service bulletin for a wiring harness that connects the PCS board to the rest of the system; Tesla replaces both the harness and the board together when performing the PCS repair. The wiring harness was initially thought to be the root cause, but the board itself is the primary issue.
+
+8. **Scope of Affected Vehicles and Call for a Recall:** Craig has been tracking VIN numbers of affected trucks and reports failures going back to the earliest VIN numbers. The highest VIN number he has observed with the issue is approximately 77,000, with the majority of failures concentrated in the VIN 25,000–35,000 range. He has observed at least three different versions of the PCS2 board, with at least two of them consistently failing. He argues that a formal recall is warranted given the scale of affected vehicles, and notes Tesla has been tight-lipped about the issue — apparently reluctant to invite further negative press after the Cybertruck's already turbulent public reception. Whether 2026 Cybertrucks are at risk remains uncertain, as the root cause of the board flaw has not been publicly identified.
+
+9. **Community Awareness vs. Sudden Surge:** Craig pushes back against social media speculation that a recent software update caused a sudden wave of failures. He argues the failures have been a dormant, ongoing issue — the apparent spike in reports is driven by growing community awareness following his earlier video, which prompted many owners to check their apps and service mode for the first time. Munro Live previously conducted a teardown that included the PCS2 board.
+
+Notable quotes and data:
+- Normal home charge rate: 48 amps (or 40 amps depending on home electrical system); failure causes a drop to 24 amps
+- Error codes to look for in service mode: PCS_049 or PCS_048
+- Basic warranty: 4 years / 50,000 miles (2024–2025 Cybertrucks)
+- New ZEV limited warranty: 7 years / 70,000 miles (2026 Cybertruck and beyond, non-retroactive)
+- Out-of-warranty repair cost: initially $4,000–$7,000; now approximately $1,000 as a goodwill gesture
+- Parts wait time: 4–8 weeks, up to approximately 2.5 months
+- Highest affected VIN observed: approximately 77,000; majority of failures between VIN 25,000–35,000
+- At least 3 versions of the PCS2 board identified; at least 2 have consistently failed
+- Craig: "I think we can all agree at this point there's so many vehicles affected that there needs to be a recall on this part."
