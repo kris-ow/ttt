@@ -1,0 +1,103 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-08)
+Published:   2026-05-08 00:00 UTC
+Summarized:  2026-05-09 03:58:33 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.09272 (12731 in / 3635 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 27 | 0 | +7 | +17 |
+| Houston | 6 | 0 | +3 | +6 |
+| Dallas | 5 | 0 | +2 | +5 |
+| **Total** | **38** | 0 | +12 | +28 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD (Supervised) crosses 10 billion real-world miles
+- Tesla Semi production begins at Giga Nevada; 430+ units ordered at ACT Expo
+- 2026 Model Y first to pass NHTSA's new ADAS tests — but FSD probe runs concurrently
+- Unsupervised Robotaxi fleet up 46% in five days; Dallas and Houston now 100% driverless
+- Bhakdi DCF: ~$600 intrinsic value contingent on 10,000 Robotaxis by year-end 2026
+- FSD 14.3.2 rolling to ~50% of fleet; full rollout expected within one to two weeks
+
+## Autonomous Driving
+
+- **FSD crosses 10 billion supervised miles.** Tesla emailed customers confirming FSD (Supervised) has surpassed 10 billion real-world miles — a data-scale moat that competitors cannot quickly replicate, and the core training corpus argument for Tesla's neural network advantage.
+
+- **FSD 14.3.2 at ~50% of fleet; full rollout in one to two weeks.** Per the brighterwithherbert panel, 14.3.2 is estimated at roughly half the Tesla fleet at time of recording. Ashok confirmed at Tesla's earnings call that the Robotaxi fleet runs a variant of the FSD 14.3 series — likely somewhat ahead of the consumer build. Phil noted that FSD 14.3 rewrote the runtime, materially improving inference headroom and establishing a reinforcement learning pipeline for rapid field fine-tuning; the panel flagged ongoing regression ("whack-a-mole") risk but expressed confidence in the tooling to address it quickly.
+
+- **FSD expansion in China and Europe.** Rumors surfaced that FSD 14.3.2 is being offered to Tesla employees in China under NDA, with Tesla China actively hiring Autopilot test engineers — interpreted as preparation for a near-term full approval push. In Europe, the Dutch regulator (RDW) presented FSD findings to all 27 EU member states and is advocating for bloc-wide approval, while Tesla updated FSD purchase terms and one-time pricing deadlines in Belgium, Germany, and Sweden. The panel cautioned that EU approval may still proceed country-by-country.
+
+- **2026 Model Y first to pass NHTSA's updated ADAS benchmark — with heavy caveats.** The Model Y (manufactured on or after November 12, 2025) cleared all eight pass/fail ADAS criteria, including four new categories: pedestrian AEB, lane keeping assistance, blind spot warning, and blind spot intervention. Electrek notes most competitors have not yet submitted for testing because the Trump administration delayed full NCAP implementation by one year to model year 2027 — so "first" reflects timing, not unique capability. Concurrently, NHTSA is conducting an Engineering Analysis into FSD across approximately 3.2 million vehicles — the stage that typically precedes a recall — citing failures to detect sun glare and fog and potential under-reporting of crashes. The NHTSA press release carried unusual political branding: "Trump's Transportation Department Announces Tesla Model Y Is the First Vehicle to Pass NHTSA's New 'Advanced Driver Assistance System' Tests."
+
+## Robotaxi
+
+- **Unsupervised fleet up 46% in five days; Dallas and Houston fully driverless.** Per RobotaxiTracker.com, the unsupervised fleet grew from 26 to 38 vehicles in the five days preceding the brighterwithherbert episode. Dallas (5 vehicles) and Houston (6 vehicles) are noted as 100% unsupervised — no safety monitor in any vehicle. The panel emphasized the rate of change, not the absolute number, as the meaningful signal at this stage.
+
+- **Cybercab count at Giga Texas now 40–50 units; active autonomous test runs underway.** Joe Tegtmeyer documented 40–50 Cybercabs at and around Giga Texas (up from ~20 previously), and a Tesla Semi was filmed hauling a fresh batch. Per the brighterwithherbert panel, Cybercabs are believed to already be operating autonomously within the Austin network but are not yet available for customer hailing — conducting driverless runs without passengers. Phil assessed that Tesla has abstracted the Cybercab's slightly different camera placement in software, making fleet integration straightforward.
+
+- **Operational constraints — not safety — are now the binding limit.** Panel consensus: the primary scaling bottleneck has shifted from safety to operations — proper pickup/drop-off behavior, idle time awaiting remote operations decisions, and keeping the ratio of remote interventions low enough to scale without persistent human intervention. Jeff flagged wireless charging as a future bottleneck; rumors suggest that system is significantly delayed and lacks regulatory approval.
+
+- **Bhakdi's base case: 10,000 Robotaxis deployed by end of 2026.** Bhakdi described 10,000 as a conservative assumption — noting other analysts project higher — and said his ~$600 intrinsic value (DCF) is directly contingent on hitting it. He projects 100,000 Robotaxis in 2027, 200,000 in 2028, and approximately 10 million by 2034–2035, with 2028 as the year he expects the technical problem to be "thoroughly solved."
+
+## Humanoid Bots
+
+- **Tesla has gone dark on Optimus communications.** Tesla deliberately stopped releasing demo videos and public Optimus appearances, with Elon citing competitive intelligence concerns — revealing designs allows competitors to copy frame by frame. A Q1 2026 reveal did not materialize; Elon said the bot was not yet performing enough use cases at the required level. Phil drew a favorable parallel to Apple's product secrecy culture.
+
+- **Capital spending at Fremont signals near-term intent despite delays.** Herbert countered the "Optimus is shelved" narrative by pointing to ongoing real capital spending converting the Fremont factory — described as a "10 million per year line" — and infrastructure buildout at Giga Texas. He argued that if Tesla were truly deprioritizing Optimus, Elon would pause capex as he did with Giga Mexico.
+
+- **Phil: AI5 chip is a hard prerequisite for meaningful Optimus production.** Phil stated his view that Optimus will not enter significant production until Tesla's AI5 chip is available. Separately, Bhakdi's base model projects 10,000 Optimus units in 2026, scaling to 50,000 in 2027, 200,000 in 2028, and approximately 1.5 million deployed by 2030.
+
+- **Competitors showing pre-production volumes; panel skeptical.** Figure and 1X both released factory footage and claimed pre-production unit counts. Jeff warned these figures reveal nothing about spec compliance, yield, or supply chain readiness, drawing on smartphone industry experience — five years to scale from a few million to one billion units annually. He identified China as potentially 10x faster in bot deployment but questioned functional quality. Boston Dynamics' 20+ year history with no mass-market product was cited as context; the panel saw Hyundai's ownership as a mild improvement, not a near-term threat. Panel consensus: Tesla retains the most credible path from prototype to scale, given manufacturing culture and supply chain depth.
+
+## Electric Vehicles
+
+- **Tesla Semi production confirmed started at Giga Nevada.** The first Semi has come off the production line. Brian (FutureAzA) expects the ramp to be "painfully slow" initially, consistent with Tesla's historical new-product trajectory.
+
+- **430+ Semi units ordered at ACT Expo.** Watt EV ordered 370 Semis (first 50 deliveries in 2026, full fleet by end of 2027, following a prior pilot program with published white papers); Big F Transport ordered 40 units post-demo; NA Container Freight Lines ordered 20 units. Official pricing confirmed: $290,000 Long Range, $260,000 Standard Range.
+
+- **CARB filing confirms 822 kWh (LR) and 548 kWh (SR) battery specs.** Executive Order A-374-0095 (April 15) officially certified both Tesla Semi trims using NCMA/4680 chemistry. The 822 kWh Long Range achieves 500 miles at 82,000 lb GCW — smaller than Elon's 2022 ~900 kWh estimate, with the gap explained partly by the production unit running ~1,000 lbs lighter than the prototype. Both trims share an 800 kW tri-motor drivetrain and support 1.2 MW Megacharger speeds via MCS 3.2 connector. At 1.7 kWh/mile, the Semi runs materially more efficient than the Freightliner eCascadia (~0.4–0.5 miles/kWh vs. Tesla's ~0.6 miles/kWh).
+
+- **Strong April sales globally.** Tesla China deliveries reached 79,478 units in April — up 36% year-over-year and the best April ever for the China operation. South Korea posted a record 13,190 units, outselling BMW and Mercedes combined. Germany posted its best April ever. The brighterwithherbert panel also cited a deal reportedly in the works for over $100 million in Tesla Semi purchases as an additional positive signal.
+
+## Market & Competition
+
+- **SpaceX–Tesla merger: Polymarket at ~70%; panel calls it "low data."** The brighterwithherbert panel devoted significant time to the community debate. Cern Basher laid out the bull case (Tesla would pay SpaceX for Starlink, Grok, Terafab chips, and orbital compute regardless of merger structure — "economic leakage" happens either way) and bear case (dilution of Robotaxi upside; regulatory uncertainty; chip risk if Terafab is not built). SpaceX valuation was cited as having surged from $400 billion last summer toward a potential $2 trillion IPO. Panel consensus: no merger has been proposed; Elon has not stated he wants one; the debate is premature.
+
+- **Terafab: $55B upfront, up to $119B total, possibly in Grimes County, TX.** A new SpaceX filing was cited with these figures. Multiple panelists framed Terafab as critical infrastructure — without domestic chip fabrication at this scale, both Robotaxi and Optimus face a supply constraint within approximately five years that could cap growth and compress valuation multiples regardless of software progress.
+
+- **SpaceX leases Colossus 1 to Anthropic.** SpaceX agreed to lease its ~300 MW Colossus 1 data center to Anthropic (XAI has migrated to Colossus 2, freeing the capacity). The deal enables Anthropic to double rate limits and raise API limits substantially. Revenue estimates cited ranged from $5–16 billion/year (various analysts) to $20–28 billion/year (Brian Wang, AWS-comparable pricing). The panel interpreted the deal as strategically weakening OpenAI by strengthening its top competitor.
+
+- **Rivian signed Uber Robotaxi deal on R2 platform.** At ACT Expo, Rivian CEO RJ Scaringe confirmed a large deal with Uber to build a Robotaxi on the R2 platform, with self-driving as a central element. Rivian's EDV fleet with Amazon now exceeds 30,000 units. The Volkswagen partnership ($5.8B software licensing deal) produced the VW ID1 at approximately $20,000. Separately, Rivian's micromobility subsidiary "Also" signed a DoorDash deal for small food-delivery bots. Scaringe framed the company as shifting from "software-defined" to "AI-defined vehicles."
+
+- **Lexus TZ all-electric three-row SUV unveiled for U.S. market.** Specs: 77 kWh or 96 kWh battery, up to 300 miles range, 150 kW peak charging (35 minutes 10–80%), NACS port. Sawyer Merritt noted negatively that the vehicle includes fake gear shifts and simulated engine sounds. The 150 kW peak charge rate and 300-mile ceiling position it below Tesla's benchmarks in the segment.
+
+## Financials
+
+- **Bhakdi DCF: ~$600 intrinsic value for 2026, contingent on 10,000 Robotaxis.** After pushing timelines back 12–18 months, Bhakdi's model produces a 2026 intrinsic value of approximately $600/share. He applies a probability discount on top of raw DCF output (e.g., a 20% failure risk on a $300–$400 Robotaxi contribution reduces that component by 20%). He believes the actual market price could significantly exceed $600 if milestones are hit — but cautions investors to expect a subsequent correction back toward intrinsic value. His 2030 target is characterized as "still pretty good" but "a little lower" than earlier estimates; no specific revised figure was given.
+
+- **Tesla Semi TCO analysis: ~$400K in 10-year savings vs. diesel.** Based on $0.20/mile energy cost (at $0.12/kWh) versus $0.67/mile for diesel at $5.35/gallon. Analyst projections for 2026 Semi deliveries range from 5,000 to 15,000 units; Electrek notes even 1,000 deliveries would be a positive signal for the Nevada ramp.
+
+Notable quotes and data:
+- FSD (Supervised): **10 billion real-world miles** surpassed (Tesla official customer email)
+- CARB Executive Order A-374-0095 (April 15): Long Range **822 kWh**, Standard Range **548 kWh**, NCMA/4680 chemistry
+- Tesla Semi pricing: **$290,000** (LR) / **$260,000** (SR); efficiency **1.7 kWh/mile** (~0.6 miles/kWh)
+- ACT Expo orders: Watt EV **370 units**, Big F Transport **40**, NA Container Freight Lines **20**
+- April sales: China **79,478** units (+36% YoY, best April ever); South Korea record **13,190** units
+- Bhakdi 2026 DCF intrinsic value: **~$600/share**, contingent on **10,000 Robotaxis** by year-end
+- Bhakdi Robotaxi trajectory: **10K (2026) → 100K (2027) → 200K (2028) → ~10M (2034–35)**
+- Terafab filing: **$55B upfront**, up to **$119B total**; potential site Grimes County, TX
+- Polymarket SpaceX–Tesla merger odds: **~70%**
+- SpaceX Colossus 1 lease revenue estimates: **$5–16B/year** (analysts); **$20–28B/year** (Brian Wang)
+- FSD Engineering Analysis scope: **~3.2 million vehicles**
+- NHTSA Administrator Morrison: *"demonstrates the lifesaving potential of driver assistance technologies and sets a high bar for the industry"*
+- Bhakdi: *"Over 50% of the stock price is already anticipating the future discounted with the risks and unknown factors."*
