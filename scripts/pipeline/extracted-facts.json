@@ -5487,5 +5487,53 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-09T08:52:15.117Z",
     "status": "pending"
+  },
+  {
+    "fact": "Elon Musk's stated long-term Optimus production target is 1 billion humanoid robots per year at $30,000 per unit, implying $30 trillion in annual revenue",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Host uses $30,000/unit as the Optimus price point for long-term revenue modeling; even 1% of the implied revenue ($300B) would exceed Tesla's current total revenue base",
+    "source": "20260509_brighterwithherbert_02_Tesla_Beats_Every_Other_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-10T04:16:32.170Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk's stated long-term Optimus production target is 1 billion units per year, with a path to 1 million units per year per production line",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000000,
+    "context": "Long-term aspirational target cited by host; near-term path is 1 million units per year per line; Elon gave no specific 2026 or 2027 guidance",
+    "source": "20260509_brighterwithherbert_02_Tesla_Beats_Every_Other_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-10T04:16:32.170Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo fleet cited at approximately 3,000 cars confined to a few cities as of the time of the video",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Used as a competitive benchmark against Tesla's robotaxi ambitions; host characterizes Waymo as 'still tiny' relative to Tesla's scale",
+    "source": "20260509_brighterwithherbert_02_Tesla_Beats_Every_Other_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-10T04:16:32.170Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host identifies robotaxi fleet count and Cybercab unit count as key leading indicators to watch for Tesla's physical-world AI thesis",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "No specific fleet numbers cited in the video; mentioned as a monitoring metric for investors tracking the thesis",
+    "source": "20260509_brighterwithherbert_02_Tesla_Beats_Every_Other_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-10T04:16:32.170Z",
+    "status": "pending"
   }
 ]

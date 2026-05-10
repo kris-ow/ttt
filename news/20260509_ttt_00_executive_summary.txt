@@ -1,0 +1,72 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-09)
+Published:   2026-05-09 00:00 UTC
+Summarized:  2026-05-10 04:17:24 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.07136 (13067 in / 2144 out tokens)
+Sources:     6
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | +1 | +8 | +18 |
+| Houston | 6 | 0 | +3 | +6 |
+| Dallas | 5 | 0 | +2 | +5 |
+| **Total** | **39** | +1 | +13 | +29 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Tesla homepage redesigned to lead with live FSD mile counter and owner videos.
+- Danish regulator contradicts Reuters: never criticized FSD approval.
+- Model S/X Signature delivery event set for Tuesday, May 12.
+- Terafab: $25B vertically integrated chip fab; AI 5 is first planned chip.
+- Anthropic–SpaceX Colossus 1 deal; xAI dissolved into "SpaceX AI."
+- Cybertruck PCS2 board failures widespread; parts backlog 4–8 weeks.
+
+## Autonomous Driving
+- **Tesla FSD homepage spotlight.** Tesla redesigned its homepage to lead with the live FSD (Supervised) cumulative mile counter alongside owner-recorded FSD videos — the day's highest-engagement item on X per Sawyer Merritt (4.3K likes). The move frames real-world mileage data as a primary marketing and credibility tool.
+- **Danish regulator refutes Reuters.** The Danish Road Traffic Authority issued an official statement saying it has "at no time expressed either positive or negative opinions about the approval of Tesla's FSD" — directly contradicting a recent Reuters report. The clarification removes a potential European regulatory headwind for FSD.
+- **AI 5 chip specs and FSD roadmap.** Per brighterwithherbert, Tesla's stated hardware progression has AI 5 delivering 2,500 TOPS, 144 GB memory, and up to a 40x system-level improvement over Hardware 4 — the chip intended to push FSD well beyond current human-level safety benchmarks.
+
+## Robotaxi
+- **Texas triangle flagged as near-term expansion zone.** Per cernbasher, the Austin–Dallas–Houston corridor covers both urban and suburban environments and represents a logical near-term expansion geography, given existing operations in all three cities. The guest noted he will not be seriously concerned unless Tesla is still not rolling out at scale by end of 2026.
+- **Fleet orchestration as a monetizable software layer.** Cern and guests discussed how the operational software managing robotaxi fleets — potentially unified under "Tesla One" — is directly transferable to Tesla Semi logistics and Optimus warehouse deployment, representing a recurring subscription platform Tesla develops for internal use first.
+
+## Humanoid Bots
+- **Optimus factory conversion underway.** Per brighterwithherbert, Tesla has discontinued Model S and Model X production and is converting that factory space into an Optimus production line — a strategic, not incremental, commitment. Elon's long-term target remains 1 billion units/year at $30,000/unit ($30 trillion implied annual revenue).
+- **Etherloop architecture extends to Optimus.** Per cernbasher, the time-division multiplexed Ethernet architecture developed for the Cybercab — eliminating 80–100 lbs of wiring per vehicle — will be applied to Optimus limb controllers, with inter-bot coordination handled via cloud orchestration over Wi-Fi/5G/Starlink rather than peer-to-peer.
+- **Optimus supply chain is structurally new.** Per cernbasher, virtually every Optimus component is novel — suppliers cannot pull from existing inventory — making initial scaling harder but eliminating all legacy architecture debt that competitors would carry.
+
+## Electric Vehicles
+- **Model S/X Signature delivery event: May 12.** Tesla confirmed production of the Signature edition is well underway, with the delivery event set for Tuesday, May 12, 2026 — a near-term catalyst for the flagship lineup.
+- **Two new blue paint options launched.** Tesla introduced Marine Blue (Model Y/3 Premium, $1,000) and Frost Blue (Model Y/3 Performance) in the U.S., replacing the discontinued Deep Blue Metallic. The announcement drew 4.3K likes on X.
+- **Cybertruck PCS2 board failure — widespread, no recall yet.** Per futureaza, the PCS2 power conversion board is failing across Cybertrucks ranging from the earliest VINs through approximately VIN 77,000, with the highest failure concentration between VINs 25,000–35,000. Failures silently drop home charge rates from 48A to 24A with no driver-facing alert; error codes PCS_048/PCS_049 appear only in service mode. Out-of-warranty repair cost has dropped to ~$1,000 as a goodwill gesture (from $4,000–$7,000), but parts shortages are causing 4–8 week wait times. Tesla is offering free Supercharging OTA to affected owners awaiting repair. The 2026 Cybertruck carries a new 7-year/70,000-mile ZEV limited warranty, non-retroactive. Craig (Red Review) argues a formal recall is warranted.
+- **Honda delays five models, cites $15.7B EV losses.** Honda is pushing the Odyssey, Accord, HR-V, and two other redesigns to 2030 or later — a data point reinforcing legacy automakers' structural disadvantage in the EV transition.
+
+## Financials
+- **Terafab: $25B vertically integrated chip fab.** Announced March 21, Terafab covers logic, memory, and advanced packaging. Elon has stated Tesla plans to build more AI chips than every other company combined. Per cernbasher, one Terafab alone is insufficient to meet accelerating AI compute demand growing at ~3.4x/year; orbital manufacturing is framed as the necessary long-term complement.
+
+## Market & Competition
+- **xAI dissolved; Anthropic gets Colossus 1.** Elon Musk announced xAI will be folded into SpaceX as "SpaceX AI." Simultaneously, Anthropic signed an agreement to use all capacity at Colossus 1 — 220,000 Nvidia GPUs, 300+ megawatts — with Claude inference expected to begin ramping within days. Colossus 2 remains dedicated to SpaceX AI's own workloads. Brian Wang's estimated rental revenue: ~$16.8B/year for SpaceX.
+- **Anthropic and OpenAI launch PE-backed enterprise deployment ventures.** Per Bhakdi, Anthropic announced a $1.5B joint venture with Blackstone, Helman & Friedman, and Goldman Sachs focused on enterprise AI deployment. Hours later, OpenAI announced "the Development Company," targeting $4B from 19 investors (including TPG, Brookfield, Bain Capital) at a $10B valuation. Bhakdi's thesis: private equity is the distribution channel for mass enterprise AI adoption, with mid-sized PE portfolio companies as the primary target.
+- **Hyperscaler AI CapEx running ~$700B in 2026.** Per brighterwithherbert: Microsoft $190B, Google $190B, Amazon $200B, Meta $145B — up ~70% YoY. Global AI data center CapEx projected to reach $1 trillion/year by 2028, creating a balance-sheet barrier to entry that favors Tesla among physical-world AI plays.
+- **SpaceX–Tesla merger: still speculation.** Sawyer Merritt urged caution on circulating merger speculation, noting no confirmed timeline and that any deal would require more than 50% of outstanding Tesla shares to vote yes. Cernbasher guests debated the operational rationale (deeply intertwined IP) but noted that if SpaceX triples before a merger while Tesla doubles, Tesla shareholders see no relative gain in a combined entity.
+- **Grok launches on Apple CarPlay.** A distribution milestone for xAI; no Tesla-specific integration details provided.
+
+Notable quotes and data:
+- Elon (per brighterwithherbert): "Just as SpaceX launches hundreds of satellites for competitors with fair terms and pricing, we will provide compute to AI companies that are taking the right steps to ensure it is good for humanity."
+- Elon (paraphrased): Tesla plans to build more AI chips than Nvidia, Google TPUs, AMD, and every hyperscaler's custom silicon combined.
+- Phil (cernbasher): "I estimate that 90% or greater of all inference will basically be delivered to Earth via space. Period. End of story."
+- Phil (cernbasher): "One Terafab is not good enough."
+- Goldberg (brighterwithherbert): Combined SpaceX entity could show ~$20B in profit in its first year.
+- AI 5: 2,500 TOPS, 144 GB memory, up to 40x system-level improvement over HW4.
+- Terafab CapEx: ~$25B. Minimum facility size: ~100M sq ft (five Pentagons).
+- Anthropic valuation (TechCrunch): ~$900B, seeking $50B in new funding. OpenAI: $852B valuation, $122B raised end of March 2026.
+- Cybertruck PCS2: goodwill repair ~$1,000; parts wait 4–8 weeks; highest affected VIN ~77,000.
+- Model S/X Signature delivery event: Tuesday, May 12, 2026.
