@@ -5643,5 +5643,89 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-10T18:41:19.041Z",
     "status": "pending"
+  },
+  {
+    "fact": "Optimus dedicated factory at Giga Texas targets 10 million units per year capacity",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000000,
+    "context": "Long-run manufacturing capacity target for Optimus; relevant to modeling future unit economics and revenue scale",
+    "source": "20260510_brighterwithherbert_02_Tesla_Thesis_Elon_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-11T04:37:49.128Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Fremont production line (repurposed from Model S/X) targets 1 million Optimus units per year run rate",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Near-term Optimus production capacity at Fremont after Model S/X discontinuation",
+    "source": "20260510_brighterwithherbert_02_Tesla_Thesis_Elon_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-11T04:37:49.128Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus production target for 2027 or 2028 is between 100,000 and 300,000 units across both facilities",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Near-to-medium term Optimus volume ramp estimate; range of 100,000–300,000 units",
+    "source": "20260510_brighterwithherbert_02_Tesla_Thesis_Elon_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-11T04:37:49.128Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus cost target at scale: $20,000–$25,000 per unit",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": null,
+    "context": "Per-unit cost target for Optimus at manufacturing scale; range of $20,000–$25,000",
+    "source": "20260510_brighterwithherbert_02_Tesla_Thesis_Elon_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-11T04:37:49.128Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) Tesla robotaxi fleet is at 39 vehicles as of session date",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Per RobotaxiTracker.com; Bhakdi describes deployment as 'stagnating a little bit' and awaiting the next push",
+    "source": "20260510_jobhakdi_01_Live_Tesla_Stock_Outlook_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-11T04:37:49.136Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total active Tesla robotaxi fleet (all modes) is at 666 vehicles as of session date",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 666,
+    "context": "Per RobotaxiTracker.com; includes supervised and unsupervised modes across all cities",
+    "source": "20260510_jobhakdi_01_Live_Tesla_Stock_Outlook_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-11T04:37:49.136Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi's robotaxi inflection point thesis: approximately 1,800 unsupervised robotaxis needed to unlock mainstream investor conviction and trigger scaling to hundreds of thousands",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1800,
+    "context": "Bhakdi's long-standing threshold prediction; he expected it to be reached April or May 2026 and says he was 'a little early'",
+    "source": "20260510_jobhakdi_01_Live_Tesla_Stock_Outlook_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-11T04:37:49.136Z",
+    "status": "pending"
   }
 ]

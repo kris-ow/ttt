@@ -1,0 +1,135 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-10)
+Published:   2026-05-10 00:00 UTC
+Summarized:  2026-05-11 04:39:20 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.09456 (13296 in / 3645 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | +7 | +18 |
+| Houston | 6 | 0 | 0 | +6 |
+| Dallas | 5 | 0 | 0 | +5 |
+| **Total** | **39** | 0 | +7 | +29 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD 14.3.2 navigation regressed — loops block repeatedly before parking lot entry
+- Brian Wang: unsupervised Texas fleet could 10x to 300+ vehicles within 60 days
+- Optimus reveal expected within 90 days per Bhakdi; production line retooling reported
+- Tesla loses ~$400M/year 45X cell credit in 2026 due to new PFE rules
+- Optimus Giga Texas factory targets 10M units/year; Fremont line targets 1M units/year
+- Model S/X Signature Edition delivery event postponed from May 12; no new date set
+
+## Autonomous Driving
+
+- **FSD 14.3.2 driving performance is strong; navigation has regressed.** FutureAzA's real-world review rates vehicle control — lane selection, merging, pedestrian handling — as exceptional and increasingly difficult to fault. However, FSD looped the block multiple times before successfully entering a bank parking lot, with the reviewer stating plainly: "The navigation has absolutely gotten worse." The passenger confirmed this is a regression from prior versions.
+
+- **FSD 14.3.2 adds two new UI features.** A new on-screen parking intent indicator and an in-app intervention reason logging button (no written note required) were both observed for the first time in this version.
+
+- **FSD 14.3 adds slippery weather detection.** Per Sawyer Merritt, FSD V14.3 now automatically limits the vehicle to Standard mode and caps speed at 70 mph when it detects potential hydroplaning surfaces — addressing a gap critics have historically flagged.
+
+- **Danish authorities contradicted a Reuters report** claiming they were skeptical of FSD, stating they had released no official position for or against the technology.
+
+- **FSD version 14.x identified as the safety threshold** that gave Tesla sufficient confidence to launch Dallas and Houston as fully unsupervised operations, per the Herbert/Wang/Basher panel. Elon Musk's earnings call comments suggest FSD version 15 may be needed before truly scaled unsupervised consumer deployment, with unsupervised consumer FSD targeted for Q4 2026 or Q1 2027.
+
+- **Tesla demonstrated FSD capability transfer to new geographies using video training alone**, achieving high baseline performance in China without requiring extensive local miles first, per Brian Wang. The panel characterized deploying to new cities as increasingly straightforward, with the remaining work being closing the gap to Tesla's unsupervised commercial safety threshold.
+
+## Robotaxi
+
+- **Brian Wang's 60-day thesis: unsupervised Texas fleet grows ~10x.** Wang argues all remaining supervised Austin vehicles will convert to unsupervised within ~10 days (bringing Austin from 28 to 50+), and that the combined Texas unsupervised fleet could exceed 300 vehicles by end of June 2026. His logic: 80+ parked robotaxi-badged vehicles reportedly sit ready to activate in each city, and Dallas/Houston proved 100% unsupervised launch is viable from day one.
+
+- **Dallas and Houston launched directly as unsupervised operations**, skipping the supervised ride-hail phase Austin went through. The panel theorized this was enabled by FSD 14.x reaching a sufficient safety threshold, combined with quiet pre-launch supervised (non-ride-hail) testing that went unannounced — a deliberate strategy to avoid bad PR and enable a clean unsupervised debut.
+
+- **Bay Area fleet remains puzzling.** The ~551-vehicle Bay Area fleet operates under a ride-hail limo-service permit with human drivers. Tesla has not applied for a California autonomous vehicle permit despite reportedly accumulating the required 50,000 miles of data. The panel offered theories — political caution, waiting for federal AV legislation, avoiding headlines — but described the inaction as genuinely unexplained.
+
+- **Bhakdi's 1,800-vehicle inflection thesis reiterated.** Bhakdi argues ~1,800 unsupervised robotaxis is the threshold at which mainstream investors will accept the robotaxi thesis as proven, triggering institutional buy-in ahead of scale to hundreds of thousands of vehicles. He had predicted this threshold by April–May 2026 and acknowledges being slightly early.
+
+- **Herbert's year-end 2026 estimate: 10,000–15,000 robotaxis across ~15–20 cities in ~12 states**, roughly 500–1,000 vehicles per city, with the bulk eventually being Cybercabs rather than Model Y vehicles. Offered as personal view, not Tesla guidance.
+
+- **Model Y will remain a necessary fleet component** even after Cybercab scales, because ~10% of rides require more than two passengers. Panel consensus: a mature city fleet might be ~90% Cybercab and ~10% Model Y (with eventual Cybertruck or robo-van for specialty needs).
+
+## Humanoid Bots
+
+- **Optimus reveal expected within 90 days**, per Bhakdi, who describes it as a "huge soft catalyst" for the stock. Separately, Bhakdi cited a news item reporting Tesla paused the Optimus production line to retool for faster assembly — framed as a development momentum signal, not a setback.
+
+- **Optimus factory scale:** Giga Texas dedicated Optimus factory targets 10 million units/year capacity; Fremont line (repurposed from Model S/X production) targets 1 million units/year. V3 production is set to begin summer 2026. Combined 2027–2028 production target is 100,000–300,000 units, at a cost target of $20,000–$25,000 per unit at scale.
+
+- **Model S and Model X discontinued to free Fremont for Optimus**, announced on the Q1 2026 earnings call. This is the most definitive signal yet that Tesla has formally transitioned its strategic identity from car company to physical AI company.
+
+- **The Optimus supply chain does not yet exist.** Elon on the Q3 earnings call: "With humanoid robots, there is no supply chain." Tesla is building actuators, sensors, hands, and forearms itself. Elon described the hand and forearm as "more difficult than the entire rest of the robot."
+
+## Energy
+
+- **Tesla loses ~$400M/year in 45X cell manufacturing credits in 2026.** IRS Notice 2026-15 (February 2026) introduced Prohibited Foreign Entity rules; because battery cells account for ~80% of pack cost, using CATL cells puts Tesla immediately over the PFE allowance threshold, eliminating the $10/kWh module assembly credit Tesla had been earning at Lathrop — worth ~$400M/year at 40 GWh throughput.
+
+- **Tesla's Q1 2026 energy gross margin of ~39% included a non-recurring tariff benefit.** Management flagged a one-time "tariff recognition" item; Benchmark's Iola Hughes believes the most likely explanation is a timing overpayment during tariff changes — not a recurring benefit. Tesla's 10-Q confirmed it was unrelated to the February Supreme Court tariff refund ruling.
+
+- **Nevada LFP factory credit pathway is viable but cathode-sourcing remains the gating issue.** Tesla's CATL-licensed Nevada LFP line is expected to qualify for both the $10/kWh module assembly and potentially $35/kWh cell manufacturing credits. However, ~99% of LFP cathode supply is currently China-based, and cathode accounts for ~40% of cell cost — creating a substantial compliance challenge for the $35 credit.
+
+- **Megapack pricing: ~$190–$200/kWh at volume**, roughly $30–$40/kWh cheaper than other Western players but significantly more expensive than Chinese competitors deploying systems in China at under $100/kWh. In unprotected markets (Europe, Australia), Chinese products are materially cheaper.
+
+- **Tesla's 2025 global energy storage market share: ~15%** (46.7 GWh of ~315 GWh total). Benchmark forecasts share declining but holding above 10%, with the key variables being Nevada cell production ramp and credit eligibility.
+
+- **Giga-scale project pipeline accelerating sharply:** 11 projects over 1 GWh came online in Q1 2026 alone; 122 are in the full-year 2026 pipeline vs. 50 in all of 2025. Ex-China utility-scale storage grew 112% year-over-year in Q1 2026. Australia became the second-largest market globally, with over 8 GWh installed in Q1.
+
+- **Tesla's Giga Shanghai Megapack facility capacity appears to have been revised from 40 GWh to 20 GWh** in the most recent earnings context. Australian projects are now being served from Shanghai rather than Lathrop, reducing costs meaningfully.
+
+- **On innovation, Benchmark rates Tesla as potentially lagging Chinese players.** Hughes: "It's not necessarily them taking a leap ahead of everyone, but it's more a kind of response to put them in line with where the market's already going." Chinese manufacturers have progressed to 700 Ah cells and are working on 1,000+ Ah cells; container energy density is now roughly 5x Megapack 1 levels. Tesla retains a strong reputation for reliability and after-sales service.
+
+- **Tesla launched a UK Renewable Energy Bundle**: Tesla Solar + Powerwall 3 for £199/month (including installation, 0% interest), with an optional Model 3 add-on for £494/month. Targeted at existing Tesla owners; represents a maturing cross-product subscription strategy in Europe.
+
+## Electric Vehicles
+
+- **Cybercab production running at ~20 units/day**, per Herbert's estimate, projecting ~500–600/month and ~2,000 within three months. Joe Tegtmeyer reported ~40–50 Cybercabs on a lot with ~20 more arriving daily. Panel consensus: current distribution is national road validation, not commercial service. Tesla will likely need ~1,000 Cybercabs operating in a given area for several months before launching unsupervised commercial Cybercab service.
+
+- **Cybercab cannot run in a supervised mode** — the two-seat layout makes it socially and practically untenable for a safety monitor to sit beside a passenger. This structural constraint means Cybercab must launch commercially as fully unsupervised from day one, raising the validation bar and explaining the extended pre-launch testing period.
+
+- **Cybercab brand integrity is the highest-stakes constraint**, per Cern Basher: "The Cybercab has to be perfect… it is the brand for Tesla's robotaxi." Any high-profile Cybercab incident would damage the brand in a way a Model Y incident would not.
+
+- **Model S/X Signature Edition delivery event postponed** from May 12. No new date announced.
+
+- **Frost Blue Model 3 Performance rolling out**: car haulers spotted transporting large numbers, with showroom deliveries described as imminent.
+
+## Financials
+
+- **Tesla guided to negative free cash flow for the remainder of 2026**, alongside massive capital commitments: Terafab ($55B upfront, $119B total), xAI Colossus 2 ($18B in chips), and the Optimus supply chain buildout.
+
+- **Terafab announced March 21**: a vertically integrated chip factory jointly owned by Tesla, xAI, SpaceX, and Intel in Austin, Texas, targeting over 1 terawatt of AI compute per year. Elon: "All the current chip fabs on Earth combined produce only about 2% of what Tesla and SpaceX will need across all their projects."
+
+## Market & Competition
+
+- **Tesla YTD: -4.75%; Google YTD: +26%**, per Bhakdi. Tesla's prior all-time high was $490 on December 16th; recent trading range was ~$360s to $428. Bhakdi maintains a $490 price target and describes current levels as a "Goldilocks moment" with limited downside absent a macro shock.
+
+- **BYD took the top spot for global energy storage system shipments in 2025**, displacing Tesla. CATL's share of global energy storage cell supply fell from ~30% to 22% as Chinese competition intensified. Chinese players — Sungrow, Hithium, Cornex, EVE Energy — are aggressively pursuing Australian and global market share with sub-$100/kWh pricing.
+
+- **Powin, previously the third-largest US energy storage integrator, declared bankruptcy** — attributed to excessive debt taken on during rapid growth in a hyper-competitive market. Benchmark expects further industry consolidation.
+
+- **SpaceX–xAI merger** (February 2026) created a combined entity valued at ~$1.25 trillion. Days after the merger, SpaceX filed an FCC application to launch up to 1 million satellites functioning as orbital data centers, citing constant sunlight and 9x stronger solar power in orbit.
+
+Notable quotes and data:
+- Brian Wang: unsupervised Texas fleet forecast to grow from ~39 → 300+ by end of June 2026
+- Herbert's 2026 year-end estimate: 10,000–15,000 robotaxis, ~15–20 cities, ~12 states
+- Cybercab production: ~20 units/day per Herbert; Cybercab production confirmed started April 2026
+- Elon (Q3 earnings call): "With humanoid robots, there is no supply chain."
+- Elon on Terafab: "All the current chip fabs on Earth combined produce only about 2% of what Tesla and SpaceX will need."
+- Elon: unsupervised consumer FSD targeted Q4 2026 or Q1 2027; robotaxi revenue "not super material" in 2026
+- Optimus Giga Texas: 10M units/year targeted; Fremont: 1M units/year; cost target $20K–$25K/unit at scale; 2027–2028 target: 100K–300K units
+- 45X credit loss at Lathrop: ~$400M/year, now ineligible in 2026 due to PFE rules
+- Nevada LFP line: expected to qualify for $10/kWh assembly + potentially $35/kWh cell credits, subject to cathode sourcing
+- Battery tariffs: currently 38.4%; Hughes estimates ~50% reasonable planning assumption
+- Tesla 2025 energy storage market share: ~15% (46.7 GWh / ~315 GWh global)
+- Iola Hughes: "In terms of innovation, in terms of the cell design and the system design, Tesla's potentially lagging some of what we see from the Chinese players."
+- FSD 14.3.2 reviewer (FutureAzA): "The navigation has absolutely gotten worse."
+- Bhakdi on 1,800-vehicle threshold: "I predicted this April or May. It's the time that this happens. I was a little early, but I don't think I was that early."
+- Cern Basher: "The Cybercab has to be perfect… it is the brand for Tesla's robotaxi."
+- Tesla YTD: ~-4.75%; Bhakdi price target: $490; prior ATH: $490 (December 16, prior year)
+- Morgan Stanley humanoid robot market estimate: $5 trillion by 2050; some analysts model Optimus as 80% of Tesla's value by 2050
