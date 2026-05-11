@@ -1,0 +1,39 @@
+Channel:     munrolive
+Title:       Kodiak’s SensorPod Design Explained | CEO Don Burnette at ACT Expo
+Published:   2026-05-11 16:35 UTC
+Summarized:  2026-05-11 19:20:50 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01ANHZJToZkJ2BKPczHZMv2p
+Cost:        $0.02136 (6358 in / 1577 out tokens)
+Categories:  Autonomous Driving, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video features an interview with Don Burnette, CEO and founder of Kodiak Robotics, conducted at ACT Expo by a representative from Munro Live. The discussion centers on Kodiak's autonomous trucking hardware — specifically the design and engineering philosophy behind their SensorPod system — and its real-world deployment status. The conversation serves as a walkthrough of the physical truck on the expo floor, highlighting key engineering decisions made to address durability, maintainability, and safety in commercial freight applications.
+
+## Autonomous Driving
+
+1. **Universal SensorPod Design Philosophy:** Kodiak's sensor hardware is built around a universal pod concept, where the same pod unit is used across different OEM truck makes and models, as well as across different application types (industrial vs. long haul). The only component that changes between vehicle types is the mounting bracket, which is custom to each specific vehicle. This approach allows fleets operating mixed makes and models to share pod inventory across their entire fleet, reducing complexity and cost.
+
+2. **Breakaway Safety and Impact Protection:** The SensorPod mounts on a single spindle below the A-pillar and features calibrated shear bolts at the front mounting points. If the pod receives a frontal impact above a certain force threshold, those bolts break away and the entire pod rotates inward on the spindle, becoming protected by the outer structure of the truck. Burnette noted that mirror strikes from adjacent trucks backing into parking spots are an extremely common real-world occurrence, and this breakaway mechanism was specifically engineered to protect against that failure mode without requiring full pod replacement after minor contact events.
+
+3. **Vibration and Structural Engineering:** Kodiak chose to prioritize maximum stiffness of the pod relative to the truck frame, rather than vibration dampening, in order to ensure structural strength and consistent sensor calibration. The company conducted extensive field data collection using strain gauges and accelerometers across thousands of miles in varied environments, building a proprietary "Kodiak spec" for shock and vibration tolerance — a specification that did not previously exist in any published standard. The current pod design represents the seventh generation of hardware iteration.
+
+4. **Clearing Sensors — A Separate Safety Layer:** In addition to the primary autonomy SensorPod, Kodiak has added fisheye camera "clearing sensors" on each side of the truck. These cameras are explicitly not part of the autonomy stack — they are used solely by remote operations staff to visually verify that no personnel or obstacles are present around the truck before launch. Once the truck is cleared and the autonomy system is engaged, the system continuously tracks whether anything enters the previously confirmed clear zones, allowing the system to account for blind spots directly in front of the engine where the autonomy sensors cannot see.
+
+5. **Next Generation Hardware Roadmap:** Burnette described the path to an eighth-generation system as involving three simultaneous workstreams: removing unnecessary sensor redundancy (the current design takes a "throw the kitchen sink" approach with LiDAR, cameras, and radar on both pods), substituting lower-cost component alternatives where performance allows, and achieving manufacturing cost reductions through volume and scale. He noted that higher-volume demand unlocks more efficient manufacturing processes such as injection molding, but that scaling demand must come first to justify tooling investment.
+
+## Market & Competition
+
+1. **Production Deployment with Atlas Energy in the Permian Basin:** As of the end of 2025, Kodiak had 20 trucks deployed with their launch customer, Atlas Energy, operating in the Permian Basin. These trucks are manufactured and delivered by Rous (present at the same ACT Expo). The trucks are hauling sand — up to three trailers at a time — at a gross freight weight of 275,000 lbs. Burnette emphasized that this is a heavy-duty, real-world commercial application rather than a demonstration program, using a ruggedized Peterbilt with a reinforced chassis and heavy suspension to support the load requirements.
+
+2. **Delivery Milestones Referenced at Bosch Booth:** The interviewer noted seeing a figure of over 12,000 deliveries referenced at the Bosch booth at the same expo, suggesting that as a data point reflecting Kodiak's operational track record, though Burnette did not confirm or update that specific figure during the interview.
+
+Notable quotes and data:
+- "We're on the seventh generation of our hardware design." — Don Burnette
+- "As of the end of last year, 20 trucks deployed with our launch customer Atlas Energy... delivering sand up to three trailers at a time, 275,000 lbs of gross freight."
+- "Rous is actually manufacturing this solution and delivering it to customers today."
+- "These trucks are out there running in the Permian Basin... 24/7 with lots of reliability."
+- "There's no book you can look up. There's no information you can pull. ChatGPT can't even help you with this type of problem." — Don Burnette on developing Kodiak's proprietary vibration spec
+- Over 12,000 deliveries referenced at the Bosch booth (unconfirmed by Burnette in this interview)
+- The SensorPod mounts below the A-pillar on a single spindle with calibrated shear bolts for breakaway impact protection
+- Clearing sensors (fisheye cameras) are separate from and not used by the autonomy stack

@@ -5811,5 +5811,113 @@
     "channel": "cernbasher",
     "extractedAt": "2026-05-11T12:51:40.449Z",
     "status": "pending"
+  },
+  {
+    "fact": "Current unsupervised robotaxi fleet referenced at approximately 38 vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 38,
+    "context": "Host cites ~38 unsupervised robotaxis currently operational; canonical RobotaxiTracker.com data as of 2026-05-09 shows 39 unsupervised vehicles, confirming this is consistent with tracker data. Larry suggests this may grow to 100–200 by June 2026 SpaceX IPO.",
+    "source": "20260511_brighterwithherbert_01_5_Questions_Every_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-11T19:20:50.749Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Larry Goldberg estimates 100–200 unsupervised robotaxis will be operational around June 2026 (SpaceX IPO timeframe)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 150,
+    "context": "Larry's informal projection for fleet size at the time of the SpaceX IPO in June 2026; used to contextualize why IPO — not fleet milestones — is the key stock catalyst.",
+    "source": "20260511_brighterwithherbert_01_5_Questions_Every_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-11T19:20:50.749Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi Sparks, Nevada factory designed for 50,000 trucks per year; first truck off high-production line in April 2026",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 50000,
+    "context": "Maximum annual production capacity for Tesla Semi at Sparks, Nevada; relevant to fleet growth projections for autonomous freight",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi standard range priced at $260,000 with ~350 miles of range; long range at $290,000 with ~500 miles of range",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 260000,
+    "context": "Unit cost for Tesla Semi standard range; relevant to fleet economics modeling for autonomous freight deployment",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production began at Giga Texas in Q1 2026; full-volume production target is 2 million units per year",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 2000000,
+    "context": "Full-volume annual production target for Cybercab at Giga Texas; key input for robotaxi fleet growth projections",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus fully loaded cost estimated at ~$1.50–$2.00 per hour, based on $25,000 unit cost, 3-year useful life, 7,000 productive hours/year, plus energy and maintenance",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": 3,
+    "context": "3-year useful life assumption used in Optimus unit economics calculation; yields 21,000 lifetime productive hours",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus assumed to produce ~7,000 productive hours per year in the unit economics model presented",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 7000,
+    "context": "Annual productive hours per Optimus unit used to calculate fully loaded hourly cost of ~$1.50–$2.00",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus energy cost estimated at ~$0.10–$0.15 per hour; maintenance estimated at ~$0.20–$0.30 per hour",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Energy and maintenance cost components in Optimus hourly cost model; analogous to energy/maintenance cost inputs in robotaxi DCF",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Fremont production target: ~1 million units per year run rate by late 2026, more likely 2027–2028; Giga Texas Optimus factory targeted at 10 million units per year",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000000,
+    "context": "Long-term Giga Texas production target for Optimus; Fremont nearer-term ramp is 1M/year, expected late/delayed",
+    "source": "20260511_farzad-fm_01_Nobody_Sees_What_Amazon_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-05-11T19:20:50.767Z",
+    "status": "pending"
   }
 ]
