@@ -97,11 +97,15 @@ function buildPrompt(targetDate, sources) {
 
 // ── Result Parsing ───────────────────────────────────────
 
+// Prefer a properly-balanced <brief>...</brief> block. If the LLM
+// truncated mid-response or omitted a tag, fall back to stripping any
+// orphan <brief> / </brief> lines from the raw output so the saved
+// file is never polluted with the wrapper tags.
 function parseResult(text) {
   const briefMatch = text.match(/<brief>\s*([\s\S]*?)\s*<\/brief>/);
-  return {
-    brief: briefMatch ? briefMatch[1].trim() : text,
-  };
+  if (briefMatch) return { brief: briefMatch[1].trim() };
+  const stripped = text.replace(/^<\/?brief>\s*$/gm, '').trim();
+  return { brief: stripped };
 }
 
 // ── File Writing ─────────────────────────────────────────
@@ -187,7 +191,7 @@ async function main() {
       }
       msg = await client.messages.create({
         model: MODEL,
-        max_tokens: 4096,
+        max_tokens: 8192,
         messages: [{ role: 'user', content: prompt }],
       });
       break;
@@ -202,6 +206,9 @@ async function main() {
   }
 
   const text = msg.content.map(c => c.text).join('');
+  if (msg.stop_reason === 'max_tokens') {
+    console.warn('  WARNING: response stopped at max_tokens — summary may be truncated and missing the closing </brief> tag.');
+  }
   const parsed = parseResult(text);
   const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
   const cost = (inputTokens / 1_000_000) * PRICING_DIRECT.input + (outputTokens / 1_000_000) * PRICING_DIRECT.output;
