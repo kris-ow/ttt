@@ -1,0 +1,320 @@
+Channel:     cernbasher
+Title:       Tesla's Robotaxi Path Just Got Clearer
+URL:         https://www.youtube.com/watch?v=KbTUJrXgWaA
+Published:   2026-05-11 11:00 UTC
+Fetched:     2026-05-11 11:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Let's go through the list of features
+that they added in 14.3 and then you
+guys can pick the one you want to talk
+about but just get the audience here
+up to speed.
+&gt;&gt; Yeah, well, I mean a good number of
+those items can just be rolled up under
+the RL category.
+Right, that's all they are. I mean
+essentially what they've done is I mean
+a lot of the training they did in this
+release was reinforcement learning use
+cases. And so
+uh
+the the coming pothole avoidance will be
+exactly that. Like it's exactly that.
+Yeah, I mean avoiding animals is exactly
+that. Better school zone is exactly
+that.
+All the other ones that we saw there.
+I I
+call some attention to you know they
+talked about improved vision encoder.
+Here again I think I think a couple
+things are true here. One is that you
+know they can take in more raw data
+and of course the vision encoder is a
+big piece of this architecture we rarely
+talk about and and in and of itself you
+know they can optimize
+that piece of that component of the
+stack um because it has to set up the
+data for the neural network to process
+it and you know without that we don't
+really have any input data. So so it's
+an important component. Again, that's in
+the big bucket of optimization. That's
+in the bucket of optimization. Let's
+let's use all the data at the potential
+at the potential data rate we can use
+that data. And I think that's a you know
+it's a big theme here which is that
+at the end of the day
+uh whatever the neural network can
+can compute. In other words, whatever it
+can decide, whatever it can
+we also want to optimize
+the entire data pipeline, right? So we
+got to get that to the proximal limit.
+You know let's get that to the limit on
+the hardware that we're dealing with and
+then having have having that which is
+what 14.3 effectively has done for the
+team. And I'm sure there'll be more
+improvements but that's the big box of
+work there.
+Now they can send that data through
+uh in any number of scenarios with this
+reinforcement learning and get the
+outcomes that they're looking for in the
+planner. And I think that is you know in
+my mind much more important than some
+categorical I'm going to increase the
+parameter count by 10x. Because if you
+increase the parameter count by 10x
+and then you were left with
+um less than optimal input data
+or less than optimal run time
+then what was the point in the first
+place?
+Right? And further
+if you increase the parameter count by
+10x and then found that
+having not done those things it couldn't
+operate in the hardware environment that
+you have
+then what was the point?
+So this is the tee up for them to be
+able to do that and now everybody out
+there who doesn't really understand what
+even a 10x improvement in the model 10x
+parameter increase in the model would do
+for them will be happy that they do that
+at some point.
+&gt;&gt; [laughter]
+&gt;&gt; Yeah, I found it I
+sorry I'm being a little cynical there
+but I found it to be
+completely insane that I mean look, a
+lot of this falls on Elon for not to say
+things he
+there's things he should he doesn't need
+to say, right? Uh to advertise an
+increase in the model of 10x leads
+everyone to think that that has to
+happen for something to be true.
+Um
+and and then he doesn't say what's
+missing in that. You know and so then
+people are left with filling in the gaps
+the way they do. Um
+So you know I I I laugh a little bit
+when I read those 10x model improvements
+because I'm like well what do you mean
+it's it's not you're not improving the
+model 10x or simply adding 10x the
+number of parameters. You have no data
+yet to support that that builds a better
+outcome. Right? Uh Tesla needs to get to
+the place where it can get that
+on that kind of hardware to decide
+whether it improves
+the actual driving outcomes.
+Yeah. Herbert, I think there's also
+something really important. If you go
+back to your second last slide, this
+idea that the car can now recover from
+its mistakes, I think they're
+recovering without driver intervention
+reducing unnecessary disengagements.
+This is also actually I think very
+important.
+So in the past, you know, you might get
+you know the red hands
+you know take over now.
+Um I've noticed already with the the
+builds that I have I'm not on 14.3 yet
+that that's happening less and less.
+And I think this is a further indication
+of that. So the vehicle if it finds
+itself in a situation where normally it
+would say you need to take over is
+recovering from that itself. It's it's
+more and more capable
+of dealing with these problems that
+previously it couldn't.
+And certainly in a unsupervised robotaxi
+scenario that is absolutely critical. It
+needs to be able to figure it out for
+itself at all times. Mhm. All right,
+there's at least the
+Right. You don't want to phone home all
+the time and say hey can you get me out
+of this situation? I I went down a
+street and it turns out that there's a
+tree on this blocking the street. What
+do I do now? Well the car needs to be
+able to figure this out.
+So I think this is also very important
+and I'm I'm curious to see as we get
+more evidence from 14.3 exactly how much
+more advanced this part of it is. You
+know I bring up a sub point there which
+I think is super important. You're kind
+of
+saying it without
+emphasizing it. It's
+you know robotaxi has yeah you're right.
+In the robotaxi situation it has to it
+has to square up all these problems all
+by itself. There is no it's not like you
+said it maybe there's a tree in the
+street and that it was never going to
+hit the tree in the first place. But it
+has to have a plan to get out of that.
+And if it doesn't have a plan to get out
+of that it has to call the operations
+people, right? And so what they're left
+with is here they're trying to build a
+system that works at scale.
+Right? And what they've done here is all
+these piece parts and they don't want to
+be left with those little components
+where the the network itself
+I mean the entire thing can't scale
+because it's left with all these silly
+drop off problems or you know indecision
+problems where it has to call the
+operations people. So I think that's
+another thing what they're looking at is
+they're saying look if we multiply this
+by a thousandfold, two thousandfold,
+five thousandfold in the field, what
+would our operations center look like?
+And they need to get that down to very
+minimal number of calls to run a service
+like this.
+So your point is you know
+very very correct in terms of of
+robotaxi specifically because in the
+other scenario
+we as users that drive our cars we
+handle this. We never call anybody. We
+never do anything. We don't need to do
+anything. We just write about it on X
+the next day. But in in the case of
+somebody that's in a robotaxi that
+problem needs to be solved and that
+operations center
+needs to only deal with absolutely
+critical problems, not everyday
+problems. And I think that as we go
+further you know Tesla wants to make
+this feel very smooth and I don't know
+when they get to
+unsupervised on
+hardware four vehicles but I predict
+that they won't get there on hardware
+three vehicles. And so whatever 14 light
+or whatever ends up there will be um
+unsupervised and so they want to make
+sure that it works as accurately as
+possible for the best possible
+experience. Wait. Okay, let me argue
+the the other side of it. The whole
+reason why they're trying to put FSD
+upgraded FSD on hardware three so that
+you can put the hardware three cars into
+robotaxi which is needs to be
+unsupervised. It's not going to happen.
+It's not going to happen. Not going to
+happen. I mean nobody I don't I'm not
+saying that I've heard them promise that
+but I'm trying to understand the words
+that they use about
+that they won't let the hardware three
+guys Yeah, I don't I don't think
+hardware three vehicles will ever run
+unsupervised in the robotaxi network or
+in a customer scenario and that's my
+Okay. my prediction and I could be wrong
+and I would be pleased to be wrong but I
+don't think that's going to happen. All
+right, so just to clarify everything as
+far as I heard, okay? We agree the three
+of us here I believe that 14.3 with the
+improvements that they have uh
+is increased safety, therefore they will
+scale unsupervised robotaxi.
+Now what about the comment about
+unsupervised
+coming to regular customers like us?
+If if 14.3 is enough to do unsupervised
+robotaxi, let's say just in the
+geography of Austin, then Suren should
+be off offered the opportunity when he's
+got his car in that geography to say hey
+you know you can go ahead and do
+unsupervised just as if you were taking
+a regular robotaxi.
+Or do you guys think that you need to
+wait for version 15 before they can then
+say all Teslas in whatever geography is
+unsupervised? No, I don't think they
+need to wait for that version. I think I
+mean I think unsuper I mean largely
+customer unsupervised and robotaxi is
+the same it's the same problem. I mean
+there's some differences. Yeah, there's
+some obvious differences here but you
+know I think that they are like I've
+said before I think
+so much of their focus is on getting
+robotaxi to go. Um
+I don't think they're as concerned with
+customer unsupervised. I think a lot of
+us are obsessed with it but I don't
+think they're as concerned is like they
+know that there is a laundry list of
+items that are specific to that.
+But I think they're quite busy over
+there.
+And I think that they're focusing most
+of their attention on the laundry list
+of items that make robotaxi scale.
+And I think so I absolutely think
+robotaxi goes out before they worry
+about the customer side of unsupervised
+and then they say okay, let's go and
+chop off that list. And I don't know
+what's exactly on that list. I can
+hypothesize but you know there's sort of
+non robotaxi things that are on that
+list
+in the customer bucket. And I think it's
+just priority two, if you will. I would
+agree with that and I would just overlay
+the the business risk aspect on it. It
+would make more sense to scale up
+robo-taxi, start earning a bunch of
+revenue, making profit, then release the
+customer unsupervised. You at least have
+a massive then cash flow to deal with
+any lawsuits that come your way because
+of whatever stupid things happen. Elon
+had a post this week where he said, you
+know, we'll
+we'll probably end up avoiding 90% of
+accidents and we'll save millions of
+lives.
+But the other 10%
+you know, they're unavoidable and we're
+going to get sued for that.
+And so, what's the best, you know, way
+to deal with that? Well, one is is the
+best software you can possibly make so
+that you reduce the chances, but the
+second thing is just to have a lot of
+revenue and cash flow to deal with the
+cost of doing this.
+&gt;&gt; that. Yeah, it's cost of business. Got
+you.
