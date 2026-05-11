@@ -41,26 +41,32 @@ function splitHeaderAndBody(raw) {
   };
 }
 
-// Remove the canonical Robotaxi tracker block — Reddit posts must not
-// link RobotaxiTracker.com (avoids shilling-suspicion) and the table
-// itself is built around that attribution. The block starts with the
-// "## Unsupervised Robotaxi Fleet" heading and continues until the next
-// `## ` heading.
-function stripTrackerBlock(body) {
-  return body.replace(/^## Unsupervised Robotaxi Fleet[\s\S]*?(?=^## )/m, '');
-}
-
-// Strip the leading "---" separator if the tracker block left one behind
-// (the source uses `---` between the tracker block and `## Brief`).
-function stripLeadingSeparator(body) {
-  return body.replace(/^\s*---\s*\n+/, '');
+// Kept: the canonical Robotaxi tracker block (table). New.reddit and the
+// official mobile apps render markdown tables; old.reddit displays them
+// as raw pipes — acceptable cosmetic loss.
+//
+// Removed: the `Source: [RobotaxiTracker.com](https://...)` markdown link.
+// User position (2026-05-11): outbound link risks being read as shilling
+// the third-party site on Reddit. Plain text attribution `Source: Robotaxi
+// Tracker` keeps credit without the link.
+function delinkTrackerSource(body) {
+  return body.replace(
+    /^Source: \[RobotaxiTracker\.com\]\(https:\/\/robotaxitracker\.com\/?\)/m,
+    'Source: Robotaxi Tracker'
+  );
 }
 
 // ── Output ───────────────────────────────────────────────
 
+// Defensive: weekly-summary.js sometimes leaves the LLM output wrapper
+// tags (<brief>, </brief>) in the source brief. Strip them here too.
+function stripBriefTags(body) {
+  return body.replace(/^<\/?brief>\s*$/gm, '');
+}
+
 function buildRedditPost(title, body) {
-  const cleaned = stripLeadingSeparator(stripTrackerBlock(body)).trimStart();
-  const footer = `---\n\nFull Daily Tesla Briefs and the long-form weekly write-up at ${TTT_URL}`;
+  const cleaned = stripBriefTags(delinkTrackerSource(body)).trimStart();
+  const footer = `---\n\nDaily Tesla Briefs at ${TTT_URL}`;
   return `${cleaned.trimEnd()}\n\n${footer}\n`;
 }
 
