@@ -1,0 +1,400 @@
+Channel:     munrolive
+Title:       Kodiak’s SensorPod Design Explained | CEO Don Burnette at ACT Expo
+URL:         https://www.youtube.com/watch?v=ieDOB7uPyXg
+Published:   2026-05-11 16:35 UTC
+Fetched:     2026-05-11 17:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hi everyone, welcome back to the ACT
+Expo. I'm here with Don Bernett, the CEO
+and founder of Kodiak. So Don, you know,
+firstly, thank you for taking the time.
+I know it's a busy expo. You guys are
+showcasing uh the product here that
+we'll talk about on the floor. You know,
+we did we did the podcast not too long
+ago. It was great to dive into, you
+know, where Kodiak's head's really at
+some of the real world challenges. Uh, I
+was hoping today to walk through the the
+vehicle that you've got on the floor
+here. We'll talk about some of the
+hardware and if you want to point out
+some of the areas that you know like,
+hey, we were struggling with durability,
+but we found ways to overcome those
+hurdles. You know, kind of ground us in
+what we're seeing on the truck that is
+unique to Kodiak and then we'll dive
+into some of the engineering behind it.
+&gt;&gt; Yeah, sure. So, I think it really starts
+with our sensor pod solution where if
+you look you look at the truck, it's a
+clean sheet truck, right? The only thing
+we've modified from an external
+perspective is the the sensor pod which
+we're which we're mounting here just
+below the the A-pillar and nothing else.
+That makes ease of maintenance
+really easy. Uh because what we heard
+from fleets is when you have sensors up
+on the top it's really hard to get to
+them. They're they're up high. You have
+to get like a gantry or you have to have
+a ladder. That creates inefficiencies.
+It creates OSHA concerns. Um and we also
+wanted to build it in such a way where
+you didn't need any specialized
+understanding in order to do any kind of
+maintenance and repair. So just starting
+from kind of the base platform. First of
+all, it's a universal pod.
+&gt;&gt; So this is the same solution we would
+use on this ruggedized Peterbuilt versus
+another OEM make model. It's the same
+pod that we would use for an industrial
+application as we would for a long haul
+application. The only thing that changes
+is the mounting bracket. Right? So, this
+is custom to a specific vehicle type.
+And then from there on, if you're a
+fleet with multiple makes and models in
+your uh in your fleet, then you can use
+the same pods for each one of your
+trucks.
+&gt;&gt; So, so this is the adaptation bracket in
+in effect. And from there out, it's copy
+paste. You'll mix and match the colors
+and the application.
+&gt;&gt; That's right. Of course. Yeah, we can
+mix and match the colors. Uh and then
+from there, this entire pod sits on a
+single spindle. Right. So, with just a
+few bolts in the back and a few bolts in
+the front, it holds it really rigid onto
+the frame. However, there's a couple
+really cool features that we've
+implemented. First of all, these front
+bolts here, those are calibrated shear
+bolts. And because it's on a rotating
+spindle here, if there's an impact from
+the front, those bolts will actually
+break away at a certain at a certain
+force and the entire pod bends inward
+and is becomes protected by the outer uh
+outer section of the truck.
+&gt;&gt; Yeah. So, so if you were to draw a hard
+line based on all these other interface
+points, you allow this given a certain
+load to just get out of the way
+&gt;&gt; to just swing out of the way. So, one of
+the things we've discovered in in the
+field is that there are a lot of mirror
+strikes. It's a very very common thing
+in the industry and it mainly happens
+while trucks are parked and other trucks
+are backing in next to you, right? And
+so, it's almost always in this direction
+and it happens by the back corner of a
+trailer.
+&gt;&gt; That's the most common. And so, we
+wanted to protect against that because
+we have a lot of expensive equipment
+here, right? We don't want we want it to
+be breakaway safe. We don't want it to
+get damaged every time somebody nicks it
+because in practice that's going to
+happen. So I think this is a really
+unique design that uh that we've
+obviously been working for many years to
+to uh perfect and it's something that
+we've really taken through its paces in
+production. These trucks are out there
+running in the wild 247 with lots of
+reliability.
+&gt;&gt; When we go further inboard, you know, I
+look at this, this is an impressive
+sensor module here. There's a lot going
+on. There's a lot of technology and cost
+as you pointed out associated with this.
+How sensitive, you know, from the
+engineering side, how sensitive were all
+these components to the movement and the
+vibration of the mirror and then did
+that drive anything internal to the the
+truck structure, tapping plates,
+reinforcements, etc.
+&gt;&gt; So, it's it's a trade-off between, you
+know, vi vibration dampening and
+strength, right? Ultimately where we
+came to is we want to have this
+maximally stiff relative to the frame uh
+in order to ensure strength as opposed
+to worrying about kind of vibrations.
+And then we've done extensive testing to
+understand the vibration characteristics
+and the shock and load uh sorry the
+shock and vibe characteristics that
+we're going to experience in the
+different environments. And then we've
+speced the pod internals to be able to
+handle those loads and and handle those
+those profiles. You know, there's var
+there's various kind of um specs you can
+look up like there's mill specs and
+other types of specs. We created the
+Kodiak spec uh based on our
+understanding of what these trucks are
+going to go through. But just to
+demonstrate as an example, you know,
+this is incredibly strong. You can hang
+from it and you know, I can do a pull-up
+if I'm strong enough, but this is not
+going to budge at all. And in fact, I
+don't think there's anybody super close
+to the truck. You can shake the entire
+truck by pushing on the pod. So, it's
+incredibly rigid, even though it has
+this breakaway feature that we just
+talked about. And it sits it sits on a
+single spindle. So, there's a lot of
+engineering that went into making all of
+these different characteristics work
+together in a way that it still allows
+the autonomy brain to have the good
+perception that it needs to make good
+decisions. Well, and what what you said
+to me that resonated was it's not just
+the external structure, stiffness and
+specs in in terms of the the physical
+architecture, but it's all the envelopes
+that those sensors must operate in in
+this unique environment. I just what I
+hear is like requirements trailblazing
+that that's a requirement for Kodiak to
+exist is the company must be agile
+enough to one understand the
+engineering, understand the problem
+statements and engineer their way into
+this area that is relatively unblazed
+trail.
+&gt;&gt; That's right. And we're starting from
+scratch. Nobody, there's no book you can
+look up. There's no information you can
+pull. Uh, you know, chatubt can't even
+help you with this type of problem.
+That's right. There's no spec. So, we
+had to go figure it out ourselves
+&gt;&gt; by by actually, you know, putting
+putting strain gauges, putting
+accelerometers, and going out and
+collecting the data and analyzing the
+spectrum and all that kind of stuff over
+thousands and thousands and thousands of
+miles in different environments. And
+then you can slowly build that spec up
+over time. And then, of course, you test
+it, you find problems, you you iterate.
+We're on the seventh generation of our
+hardware design and so what you see
+today is a really refined example of
+where where we started and and we think
+ultimately that this is the type of uh
+solution that the market is is going to
+want.
+&gt;&gt; So I love what you guys are doing.
+There's a lot of design of experiments
+that are are kind of you know
+culminating in what we're seeing today.
+So everyone looks at this sensor pod but
+obviously Kodiak is focused on other
+areas around the vehicle as well. So,
+can you help walk through like what
+other components are providing a more
+holistic system on the truck beyond just
+the sensor body?
+&gt;&gt; So, on the external uh portion of the
+truck, that's that's all there is,
+right? So, we don't modify.
+&gt;&gt; So, these cameras,
+&gt;&gt; all right, you got me. You got me. So,
+there are these cameras that we've
+added. It is true. This is actually the
+the only other one that we do. So, this
+is these are used for clearing. So, we
+call these our clearing sensors. So they
+are fisheye lenses that allow you to see
+almost perfectly down the front of the
+truck there and completely down the side
+of the truck and we have one on each
+side. These are not a part of the
+autonomy system. So the autonomy system
+is not using these cameras. But what we
+can do before we launch a truck, we can
+ask our remote uh operation center to
+log into the truck to see and make sure
+that the area around the truck is clear.
+And now typically these days with our
+customers, there's also somebody on the
+ground that uh that ensures there's
+nobody hi. You know, the old problem of
+somebody hiding underneath the the the
+hood of the truck, you know, in front of
+the wheel. You can't see it with your
+pods or they're ducking right there in
+front. Like how are you going to make
+sure that that doesn't happen? And
+that's what we use. Exactly.
+&gt;&gt; So So this is really just at the onset
+startup. Make sure there's no pallet
+jack here or something, right? Like this
+is clear.
+&gt;&gt; Nobody hiding there jumping in. And once
+we've cleared it, then we can track
+uh things coming in and things going
+out. So then the autonomy system takes
+over and even though there's a blind
+spot directly in front of the engine
+right here, we know nothing is there
+because we haven't seen anything enter
+that frame. Uh and we knew that nobody
+was there or nothing was there to start
+with.
+&gt;&gt; So it's not just freeze frame data.
+You're referencing back in the recording
+and saying, "Yep, nothing entered that
+zone."
+&gt;&gt; That's right. We're tracking that the
+entire time that the system becomes
+engaged. From the moment that the
+operator says, "Yes, I'm clearing this
+truck to say there's nobody around it."
+Then after that, throughout the entire
+operation, we're always checking to make
+sure that nobody's entered the vicinity
+around the truck. Unless that's the
+intention, right? If somebody's
+somebody's there,
+&gt;&gt; right? Right. Now, looking at, you know,
+this being the the primary, right? This
+is the integration. This is all of those
+things. What is the limiting factor at
+this point from making this an eighth
+generation? Is it is it at this are we
+at the point now where it's like if we
+look at our partners we look at the
+state of the technology and all these
+things those if we look at all the
+envelopes that are contained within this
+module that's stopping us from getting
+any more shrink wrapped at this point or
+is there something else that we could do
+to get to an eighth generation?
+&gt;&gt; Yeah, I think the next the next frontier
+is going to be to start to peel back
+some of the technology that's in the
+pods. So we've taken a throw the kitchen
+sink added approach. We have LAR, we
+have camera, we have radars on both
+pods. There's lots of redundancy.
+There's lots of coverage around the
+truck. We of course want to maintain
+that coverage around the truck, but it's
+a pretty expensive system today. And as
+you know, there's a couple ways to
+downcost the system. You can remove
+components. You can engineer your your
+way to a uh a slicker solution and you
+can also get uh improvements with volume
+and scale. And so I it's really all
+three of those simultaneously. Now we
+think about that as we move into the
+next generation. What can we take out of
+this that we just don't need? Yeah. What
+are some cheaper versions of a component
+that we may use today that we could use
+in the next generation of the truck? And
+then how do we make sure we have the
+demand profile to support more expensive
+tooling, right? Because you can always
+start to go from, you know, you know, uh
+bespoke oneoffs to injection and all
+kinds of different uh manufacturing
+processes, but you have to have the
+scale to support the tooling and the
+bring up and the upfront costs.
+&gt;&gt; Yeah. Yeah. Which which one of those is
+going to take the lead and at which
+point in time, right? Exactly. Yeah. No,
+it's interesting. You know, I think we
+one of the things that we had chatted
+about on on the podcast was
+&gt;&gt; the intersection points between safety
+factor, redundancy, the hardware
+overlaps. How much of that can AI fill
+in realistically over what period of
+time and when do we call the ball on
+whether or not we're going to change
+hardware? It's not an easy thing to go
+and flesh out, but I mean that's that
+that's the challenge statement right
+now. So,
+&gt;&gt; Don, I appreciate you taking the time.
+What is there anything else here on the
+you know that you'd want to share with
+the folks here at ACT or you know online
+about uh what Kodiak is doing as a
+snapshot of today?
+&gt;&gt; Yeah, I think the most important message
+to take away from is really that this
+truck is in in production in in some
+sense. Right. We're here at the Rous
+booth. Rous is actually manufacturing
+this solution and delivering it to
+customers today. We have as of the end
+of last year uh 20 trucks deployed with
+our launch customer Atlas Energy. These
+trucks in this color and this spec are
+out there running in the Peran basin.
+They're delivering sand up to three
+trailers at a time. 275,000
+lbs of gross freight. Uh so this
+particular Peterbuilt is it looks like a
+standard class 8 truck, but it's
+actually the beefiest of beefy class 8
+trucks with reinforced chassis,
+reinforced steel, like heavier, stronger
+suspension to support a lot of load.
+&gt;&gt; Not all class 8s are equal.
+&gt;&gt; Not all class 8s are equal, which most
+people don't don't realize. And so it's
+not the most fuel efficient, but when
+you need a rugged job and you need to
+carry a lot of load, this is the type of
+truck that that gets it done. And we
+want to keep our solution agnostic to
+all those kind of underlying details.
+And that's really where we're excited to
+bring this to more markets, more
+customers, more makes and models in the
+future.
+&gt;&gt; Yeah. I mean, the message that I took
+down is that it's real. It's a real
+application. This isn't lightweight
+stuff. We're not hauling around, you
+know, goose down. It's something
+legitimate. You know, I think when we
+were at the Bosch booth, the the metric
+that I saw was over 12,000 deliveries.
+I'm sure that number is larger and
+growing.
+&gt;&gt; Um, that's meaningful. That's helping
+you guys understand what this thing's
+really capable of
+&gt;&gt; and paint a clear path in the future.
+&gt;&gt; Absolutely.
+&gt;&gt; Thanks for the time, guys.
+&gt;&gt; For sure. My pleasure.
+&gt;&gt; Yeah, likewise. All right. Thanks,
+everyone. Take care.
