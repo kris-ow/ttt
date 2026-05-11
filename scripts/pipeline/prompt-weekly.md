@@ -58,7 +58,7 @@ Required as a section unless the week was genuinely clean of bear signal.
 - If two daily briefs disagree on a number, note both and flag the disagreement.
 - Quote sparingly and only when a direct quote carries unique signal (e.g., Elon, an executive, an analyst).
 - Source attribution: where useful, mention the channel briefly in the prose ("per Bhakdi", "Munro Live reported"). Do not list channel names exhaustively.
-- A canonical "Unsupervised Robotaxi Fleet" table is added programmatically above your output. Do not duplicate fleet count / per-city Robotaxi numbers in your Brief or category sections — the reader already sees them in the table. Reference Robotaxi fleet only when there is qualitative context worth adding (a launch, a milestone, a quote).
+- A canonical "Unsupervised Robotaxi Fleet" table is added programmatically above your output. **Hard rule: no fleet count numbers anywhere in the Brief section.** Do not duplicate fleet count / per-city Robotaxi numbers / week-over-week vehicle deltas in your Brief or category sections — the reader already sees them in the table. Reference Robotaxi fleet only when there is qualitative context worth adding (a launch, a milestone, a quote). Phrases like "fleet up N vehicles on the week" or "now N unsupervised cars" belong in the table, never in prose.
 
 ## Style
 
@@ -100,6 +100,7 @@ GOOD examples (style and length to mimic):
 BAD examples (do not produce these):
 - "This week brought several developments across autonomous driving, robotaxi, and Optimus" (no specific fact)
 - "Tesla continues to make progress on FSD" (vague, no signal)
+- "Unsupervised Texas fleet up 11 vehicles on the week" (fleet count info lives in the Robotaxi table above the Brief, never in Brief bullets)
 
 If the week was genuinely quiet, write 2–3 short bullets saying so concretely.]
 

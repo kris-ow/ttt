@@ -1,5 +1,5 @@
 Channel:     ttt
-Title:       Weekly Brief (May 4 – May 10, 2026)
+Title:       Weekly Tesla Brief (May 4 – May 10, 2026)
 Published:   2026-05-11 00:00 UTC
 Summarized:  2026-05-11 09:42:07 UTC
 Model:       claude-sonnet-4-6 [direct]
@@ -23,7 +23,6 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 ## Brief
 
 - FSD 14.3.2 hits ~50–60% of HW4 fleet; navigation regression confirmed.
-- Unsupervised Texas fleet up 11 vehicles on the week; nighttime Austin ops launched.
 - Tesla Semi high-volume Nevada line live; 430+ units ordered at ACT Expo.
 - Cybercab production ~20 units/day; FMVSS-compliant, no NHTSA exemption cap.
 - EU FSD bloc vote missed May 5; next window June 30; Belgium fast-tracking.
@@ -46,7 +45,7 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 - **FSD 14.3.2 rolling out broadly — ~50–60% of HW4 fleet — with a confirmed navigation regression.** FutureAzA's real-world review rated vehicle control as "exceptional" but documented FSD looping the block three times before entering a parking lot: "The navigation has absolutely gotten worse." New features include a parking-intent indicator and a one-tap intervention logger.
 
-- **FSD 14.3 architecture significance: ground-up runtime rewrite enabling RL fine-tuning pipeline.** Reaction time estimated at ~0.2 seconds vs. ~1.5 seconds human standard. Phil Biceel (ex-Apple, ex-Rivian) confirmed the rewrite establishes headroom for higher inference frequency and rapid field-issue fine-tuning — the structural reason Tesla could launch Dallas and Houston without safety drivers.
+- **FSD 14.3 architecture significance: ground-up runtime rewrite enabling RL fine-tuning pipeline.** Reaction time estimated at ~0.2 seconds vs. ~1.5 seconds human standard. Phil Beisel (ex-Apple, ex-Rivian) confirmed the rewrite establishes headroom for higher inference frequency and rapid field-issue fine-tuning — the structural reason Tesla could launch Dallas and Houston without safety drivers.
 
 - **EU FSD bloc vote missed the May 5 window; June 30 is next.** The Dutch RDW presented 18 months and ~1M miles of test data; regulators raised objections on speed-limit compliance, wildlife hazards, icy roads, and the "Full Self-Driving" name. Bhakdi assigns 30–50% odds of passage; his base case is rejection followed by individual-country approvals. Belgium's Flemish Minister of Mobility formally requested Tesla's dossier and instructed her administration to map a rapid homologation path by end of week. Denmark's regulator publicly contradicted a Reuters skepticism report, stating it had issued no official position.
 
@@ -60,7 +59,7 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 - **Optimus communications blackout is intentional, per Elon** — competitive intelligence concerns cited. A promised Q1 2026 reveal did not occur. Bhakdi states an Optimus reveal is coming within 90 days; he also cites a report that Tesla paused the production line to retool for faster assembly, characterizing it as a development positive.
 
-- **AI5 chip confirmed as a hard prerequisite for meaningful Optimus production**, per Phil Biceel. Specs: 2,500 TOPS, 144 GB memory, up to 40x system-level improvement over HW4. Tesla's AI chip roadmap: AI4 (superhuman safety) → AI5 ("almost perfect" cars) → AI6 (Optimus and data centers) → AI7/Dojo 3 (space-based).
+- **AI5 chip confirmed as a hard prerequisite for meaningful Optimus production**, per Phil Beisel. Specs: 2,500 TOPS, 144 GB memory, up to 40x system-level improvement over HW4. Tesla's AI chip roadmap: AI4 (superhuman safety) → AI5 ("almost perfect" cars) → AI6 (Optimus and data centers) → AI7/Dojo 3 (space-based).
 
 - **Optimus supply chain being built from scratch; zero legacy architecture debt.** Elon described the hand and forearm as "more difficult than the entire rest of the robot." Virtually every component is new — structurally advantageous over competitors building from industrial supply chains, but harder to scale initially.
 

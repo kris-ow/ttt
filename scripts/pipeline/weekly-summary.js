@@ -201,7 +201,7 @@ function writeWeeklyBrief(targetDate, weekStart, weekEnd, parsed, { inputTokens,
 
   const headerLines = [
     `Channel:     ttt`,
-    `Title:       Weekly Brief (${weekRange})`,
+    `Title:       Weekly Tesla Brief (${weekRange})`,
     `Published:   ${targetDate} 00:00 UTC`,
     `Summarized:  ${now}`,
     `Model:       ${MODEL} [direct]`,
@@ -286,7 +286,7 @@ async function main() {
   logCost({
     date: new Date().toISOString(),
     filename: `${slug(targetDate)}_ttt_99_weekly_brief_summary.txt`,
-    title: `Weekly Brief (${weekRangeLabel(weekStart, weekEnd)})`,
+    title: `Weekly Tesla Brief (${weekRangeLabel(weekStart, weekEnd)})`,
     channel: 'ttt',
     mode: 'direct',
     inputTokens,
