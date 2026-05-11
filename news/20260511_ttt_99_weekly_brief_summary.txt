@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Weekly Tesla Brief (May 4 – May 10, 2026)
 Published:   2026-05-11 00:00 UTC
-Summarized:  2026-05-11 09:42:07 UTC
+Summarized:  2026-05-11 10:47:40 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.13678 (26984 in / 3722 out tokens)
+Cost:        $0.14232 (26960 in / 4096 out tokens)
 Sources:     7
 Categories:  Weekly Brief
 ────────────────────────────────────────────────────────────
@@ -20,107 +20,109 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ---
 
+<brief>
 ## Brief
 
-- FSD 14.3.2 hits ~50–60% of HW4 fleet; navigation regression confirmed.
-- Tesla Semi high-volume Nevada line live; 430+ units ordered at ACT Expo.
-- Cybercab production ~20 units/day; FMVSS-compliant, no NHTSA exemption cap.
-- EU FSD bloc vote missed May 5; next window June 30; Belgium fast-tracking.
-- Tesla loses ~$400M/year 45X battery credit under new PFE rules.
-- NHTSA Engineering Analysis covers ~3.2M Tesla vehicles — recall-stage review.
-
-## Robotaxi
-
-- **Unsupervised fleet expanded to nighttime operations in Austin for the first time.** Previously limited to midafternoon, the extension to evening hours signals improved system confidence in low-light conditions. Dallas and Houston launched and remain 100% unsupervised — no safety monitor in any vehicle in either city.
-
-- **Brian Wang's 10x-in-60-days thesis: 300+ unsupervised vehicles by end of June.** Wang cites 80+ parked robotaxi-badged vehicles reportedly staged in each Texas city and the precedent of Dallas/Houston skipping the supervised phase entirely. He separately predicts all remaining supervised Austin vehicles convert to driverless within ~10 days.
-
-- **Cybercab production at ~20 units/day; FMVSS-compliant from day one.** Joe Tegtmeyer documented 40–50 Cybercabs at or near Giga Texas, with a Tesla Semi filmed transporting a fresh batch. Tesla's head of engineering confirmed Cybercab meets FMVSS, meaning the NHTSA 2,500-vehicle annual exemption cap does not apply — production ramp is manufacturing-constrained, not regulatory.
-
-- **Q1 2026 paid robotaxi miles: ~1.7M, up from ~610K in Q4 2025.** Farzad projects Q2 could exceed 4M paid miles and Q3 could approach 10M — potentially nearing Waymo's annual commercial volume by year-end. Pony.AI's break-even benchmark of ~23 paid rides per vehicle per day frames the utilization bar.
-
-- **Bay Area remains anomalous: ~551 vehicles operating under a limo-service permit with human drivers.** Tesla has not applied for a California AV permit despite reportedly accumulating sufficient miles. Panel theories include federal AV legislation preference and headline-risk aversion, but the posture is described as "genuinely puzzling."
+- FSD 14.3.2 rolling wide on HW4; navigation regression confirmed in real-world review.
+- Cybercab FMVSS-compliant; production ~20 units/day begun in April at Giga Texas.
+- Tesla Semi high-volume Nevada line live; 430+ units ordered in one week at ACT Expo.
+- Model S/X discontinued; Fremont converting to Optimus production this summer.
+- 45X tax credit lost — ~$400M/year — due to new PFE rules on imported CATL cells.
+- EU FSD bloc vote missed May 5; next window June 30; Belgium fast-tracking independently.
+- Cybertruck PCS2 board failures widespread across tens of thousands of VINs.
 
 ## Autonomous Driving
 
-- **FSD 14.3.2 rolling out broadly — ~50–60% of HW4 fleet — with a confirmed navigation regression.** FutureAzA's real-world review rated vehicle control as "exceptional" but documented FSD looping the block three times before entering a parking lot: "The navigation has absolutely gotten worse." New features include a parking-intent indicator and a one-tap intervention logger.
+- **FSD 14.3.2 is a split verdict.** Vehicle control — merging, lane selection, pedestrian handling — described as "exceptional" with edge cases increasingly rare. But navigation regressed: one reviewer's vehicle looped a bank parking lot entrance three times before entering, behavior confirmed as new. Verdict: "The navigation has absolutely gotten worse." The build reached ~50–60% of the HW4 consumer fleet by mid-week; full rollout expected within one to two weeks.
 
-- **FSD 14.3 architecture significance: ground-up runtime rewrite enabling RL fine-tuning pipeline.** Reaction time estimated at ~0.2 seconds vs. ~1.5 seconds human standard. Phil Beisel (ex-Apple, ex-Rivian) confirmed the rewrite establishes headroom for higher inference frequency and rapid field-issue fine-tuning — the structural reason Tesla could launch Dallas and Houston without safety drivers.
+- **FSD 14.3's architectural significance.** The update rewrote the AI compiler and runtime using MLRI, targeting ~36 guaranteed inference cycles per second and producing an estimated reaction time of ~0.2 seconds — versus the ~1.5-second human standard. The rewrite also established a reinforcement learning pipeline enabling rapid field-issue fine-tuning from real robotaxi incidents. Per Tesla's Q1 earnings call, Ashok confirmed the robotaxi fleet runs a variant of the 14.3 series likely ahead of the consumer build.
 
-- **EU FSD bloc vote missed the May 5 window; June 30 is next.** The Dutch RDW presented 18 months and ~1M miles of test data; regulators raised objections on speed-limit compliance, wildlife hazards, icy roads, and the "Full Self-Driving" name. Bhakdi assigns 30–50% odds of passage; his base case is rejection followed by individual-country approvals. Belgium's Flemish Minister of Mobility formally requested Tesla's dossier and instructed her administration to map a rapid homologation path by end of week. Denmark's regulator publicly contradicted a Reuters skepticism report, stating it had issued no official position.
+- **EU FSD: no May 5 vote; June 30 is the next window.** Dutch regulator RDW presented 18 months and 1 million miles of FSD data to all 27 EU member states at a Brussels TCMV meeting; regulators raised objections around speed limits, wildlife hazards, icy roads, and the "Full Self-Driving" name. Bhakdi assigns 30–50% probability to a bloc-wide pass; his base case is rejection followed by individual-country approvals. Belgium's Flemish minister formally requested Tesla's dossier and instructed her administration to explore rapid homologation. Denmark's authority publicly contradicted a Reuters report claiming skepticism, stating it had issued no official position.
 
-- **FSD 14.3 slippery-surface detection added.** The build now detects potential hydroplaning conditions and automatically limits speed to 70 mph in Standard mode — addressing a gap critics flagged in adverse-weather handling.
+- **NHTSA is running a concurrent Engineering Analysis on ~3.2 million Tesla vehicles**, the stage typically preceding a recall, focused on FSD camera failures in sun glare and fog and potential underreporting of related crashes. This runs in parallel with the 2026 Model Y becoming the first vehicle to pass all eight NHTSA NCAP ADAS evaluations, including four new criteria added for MY2026.
 
-- **NHTSA Engineering Analysis covers ~3.2M Tesla vehicles** — the stage typically preceding a recall — over FSD camera failures in sun glare and fog, and potential crash under-reporting. Concurrent with the 2026 Model Y becoming the first vehicle to pass all eight NHTSA NCAP ADAS evaluations, including four new criteria.
+- **Consumer unsupervised FSD targeted Q4 2026 or Q1 2027.** Elon on the Q1 earnings call suggested FSD version 15 — described as featuring a model ~10x larger than the current small model — may be needed before truly scaled unsupervised consumer deployment.
+
+## Robotaxi
+
+- **Cybercab confirmed FMVSS-compliant from day one** per Tesla's head of engineering. This eliminates the NHTSA 2,500-vehicle annual exemption cap as a ceiling risk for the purpose-built driverless vehicle — production ramp at Giga Texas is now constrained by manufacturing, not regulation. Production began in April 2026 at approximately 20 units/day, with ~40–50 units documented near the factory.
+
+- **Unsupervised expansion: Dallas and Houston are 100% driverless.** Both cities launched directly into unsupervised service with no prior ride-hail supervised phase. Austin's remaining supervised vehicles are expected to convert within approximately 10 days. Per Brian Wang, the Texas triangle could reach 300+ unsupervised vehicles by end of June. The operational binding constraint is now software orchestration (pickup/drop-off behavior, remote ops frequency) rather than safety performance.
+
+- **Paid robotaxi miles tripled quarter-over-quarter**: ~1.7 million miles in Q1 2026, up from ~610,000 in Q4 2025. Farzad projects Q2 could exceed 4 million and Q3 could approach 10 million paid miles.
+
+- **Five additional city launches committed for H1 2026:** Phoenix, Miami, Orlando, Tampa, and Las Vegas. Field response specialist hiring is active in Las Vegas and Doral, Florida — the same pre-launch role Tesla staffed ahead of Dallas and Houston. California unsupervised service is unlikely before 2027; Tesla has not applied for a CPUC AV permit and faces a 6–9 month processing window once it does.
+
+- **California AV traffic law takes effect July 1, 2026.** Law enforcement may issue citations directly to AV manufacturers; accumulated violations can restrict or suspend driverless operating licenses. A separate 50,000-mile pre-commercial safety test is required.
 
 ## Optimus
 
-- **Model S/X lines shut down; Fremont converting to Optimus production.** Tesla confirmed last Model X and Model S units off the line, consistent with the Q1 earnings call announcement. The Fremont line targets 1M units/year; a dedicated Giga Texas Optimus factory targets 10M units/year. V3 production set to begin summer 2026; 2027–2028 combined target is 100,000–300,000 units at a $20,000–$25,000/unit cost target.
+- **Model S/X production discontinued; Fremont line converting to Optimus manufacturing.** The factory conversion is a deliberate reallocation of production capacity — a formal signal Tesla has transitioned its strategic identity from car company to physical AI company. Fremont targets 1M units/year; Giga Texas targets 10M units/year. V3 production is set to begin summer 2026; 2027–2028 targets are 100,000–300,000 units across both facilities at a cost target of $20,000–$25,000/unit.
 
-- **Optimus communications blackout is intentional, per Elon** — competitive intelligence concerns cited. A promised Q1 2026 reveal did not occur. Bhakdi states an Optimus reveal is coming within 90 days; he also cites a report that Tesla paused the production line to retool for faster assembly, characterizing it as a development positive.
+- **Optimus reveal expected within 90 days per Bhakdi**, who describes it as a major soft catalyst. Tesla has maintained a communications blackout on Optimus citing competitive intelligence concerns — Elon cited frame-by-frame copying by rivals. A "paused production line to retool for faster assembly" news item was read as active development signal, not a setback.
 
-- **AI5 chip confirmed as a hard prerequisite for meaningful Optimus production**, per Phil Beisel. Specs: 2,500 TOPS, 144 GB memory, up to 40x system-level improvement over HW4. Tesla's AI chip roadmap: AI4 (superhuman safety) → AI5 ("almost perfect" cars) → AI6 (Optimus and data centers) → AI7/Dojo 3 (space-based).
+- **Optimus supply chain does not yet exist.** Elon on the Q3 earnings call: "With humanoid robots, there is no supply chain." Tesla is building actuators, sensors, hands, and forearms internally; Elon described the hand and forearm as "more difficult than the entire rest of the robot." The Etherloop (Ethernet-based time-division multiplexing developed for Cybercab) will apply directly to Optimus limb control architecture.
 
-- **Optimus supply chain being built from scratch; zero legacy architecture debt.** Elon described the hand and forearm as "more difficult than the entire rest of the robot." Virtually every component is new — structurally advantageous over competitors building from industrial supply chains, but harder to scale initially.
+- **AI5 chip is a hard prerequisite for meaningful Optimus production**, per Phil Biceel. AI5 delivers 2,500 TOPS and 144 GB memory — up to 40x system-level improvement over HW4. Elon's roadmap: AI4 achieves safety far beyond human levels; AI5 makes cars "almost perfect"; AI6 targets Optimus and data centers.
 
 ## Tesla Semi
 
-- **High-volume Giga Nevada Semi line live; first unit confirmed off the line.** The 1.7M sq ft Sparks facility targets 50,000 trucks/year; 2026 analyst estimates range 5,000–15,000 units. Aerial footage confirms paint operations, stamping press, and bridge crane installation active.
+- **High-volume production line is live at Giga Nevada.** The first unit came off the dedicated facility on April 29; the 1.7 million sq ft Sparks plant is designed for 50,000 trucks/year. Analyst 2026 delivery estimates range from 5,000 to 15,000 units. CARB regulatory filings confirmed specs: 822 kWh (Long Range) and 548 kWh (Standard Range), both NCMA/4680 chemistry; LR achieves 500 miles at 82,000 lb GCW.
 
-- **430+ units ordered at ACT Expo.** Watt EV: 370 units (~$100M, first 50 in 2026); Big F Transport: 40 units post-demo; NA Container Freight Lines: 20 units operational by early 2027. Official pricing confirmed via CARB filing: $290K long-range (822 kWh, NCMA/4680), $260K standard range (548 kWh) — 25–35% below competing electric Class 8 trucks.
+- **430+ units ordered at ACT Expo.** Watt EV: 370 units (~$100M), first 50 in 2026. Big F Transport: 40 units after a single demo. NA Container Freight Lines: 20 units, first operating 2027. Semi pricing is 25–35% below competing electric Class 8 trucks ($400K–$500K range); official pricing confirmed at $290,000 LR / $260,000 SR.
 
-- **New charging suite removes depot infrastructure barrier.** Mega Charger: 1.2 MW, 60% charge in 30 minutes, ~$188K per two-post setup, 66 planned locations across 15 states. Base Charger: 125 kW, 60% in ~4 hours, daisy-chainable on a single breaker, ~$40K installed for two units, deliveries early 2027.
+- **New charging suite removes depot infrastructure barrier.** Mega Charger: 1.2 MW, 60% in 30 minutes, ~$188,000 per two-post setup, 66 planned locations across 15 states. Base Charger: 125 kW, 60% overnight, ~$40,000 installed for two units, daisy-chainable on a single breaker. Jordan (The Limiting Factor): "I'm no longer concerned that the charging network will be the rate-limiting factor for semi production."
 
-- **Washington WAZIP rebate cuts long-range Semi to ~$115K** — ~$60K below the average new diesel Class 8. California's comparable $200K HVIP voucher has been claimed for 965 Tesla Semis out of 1,067 total clean-truck applications statewide (Jan 2025–Feb 2026).
+- **Incentives make economics compelling.** Washington State WEZI program: up to $175,000 rebate, reducing the LR Semi to ~$115,000. California HVIP: $120,000–$330,000 per truck with $100M+ available. Tesla Semi captured 965 of 1,067 California clean truck voucher applications between January 2025 and February 2026.
 
 ## Energy
 
-- **Tesla loses ~$400M/year 45X battery credit under IRS Notice 2026-15.** New Prohibited Foreign Entity rules mean CATL cells at Lathrop exceed the PFE allowance threshold, eliminating the $10/kWh module assembly credit. Tesla's Nevada LFP line (CATL-licensed equipment) may restore eligibility, but cathode sourcing is the decisive variable — ~99% of LFP cathode supply is currently China-based.
+- **Tesla loses ~$400M/year 45X tax credit in 2026.** IRS Notice 2026-15 introduced Prohibited Foreign Entity rules; Tesla's use of imported CATL cells at the Lathrop Megapack factory immediately exceeds the PFE allowance, eliminating the $10/kWh module assembly credit. Nevada LFP factory expected to restore eligibility — but ~99% of LFP cathode supply is China-based, creating a substantial compliance hurdle even after the domestic line opens.
 
-- **Q1 2026 energy gross margin of ~39% flagged as including one-time tariff benefits**, not fully recurring. Management confirmed it is unrelated to the February Supreme Court tariff refund ruling.
+- **Q1 2026 energy gross margin of ~39% included non-recurring tariff benefits.** Management flagged the record margin reflected "tariff recognitions"; Benchmark's Iola Hughes describes the most likely explanation as an overpayment during tariff turbulence — not a recurring benefit.
 
-- **Giga-scale Megapack pipeline accelerating sharply.** 11 projects over 1 GWh came online in Q1 2026 alone; full-year 2026 pipeline at 122 projects, up from 50 in all of 2025. Australia became the second-largest ex-China market with over 8 GWh in Q1. A 200 MW / 800 MWh Megapack installation in South Australia (~$225M) is under construction, commissioning targeted September 2027.
+- **Giga-scale project pipeline accelerating sharply.** Q1 2026 saw 11 projects over 1 GWh come online; the full-year 2026 pipeline stands at 122 projects, versus 50 in all of 2025 and 17 in 2024. Australia became the second-largest global market with over 8 GWh installed in Q1 alone. Ex-China markets grew ~112% year-over-year in Q1.
 
-- **Megapack competitive position under pressure.** Benchmark's Iola Hughes describes Tesla as potentially lagging Chinese players on cell energy density innovation — Chinese manufacturers are at 700 Ah cells, progressing toward 1,000+ Ah. At ~$190–$200/kWh after volume discounts, Megapack is significantly above Chinese systems deploying under $100/kWh domestically. Tesla retains reliability and after-sales service advantages in tariff-protected Western markets.
+- **Chinese competition intensifying.** BYD took top global energy storage shipment rank in 2025. Chinese competitors deploy systems in China at under $100/kWh versus Tesla's ~$190–$200/kWh — a structural gap in unprotected markets. Hughes: "Tesla's potentially lagging some of what we see from the Chinese players." Powin, previously the third-largest US integrator, declared bankruptcy.
 
 ## Electric Vehicles
 
-- **Tesla China April deliveries: 79,478 units (+36% YoY) — best April ever.** South Korea: 13,190 units, a record, outselling BMW and Mercedes combined. Model Y confirmed world's best-selling EV in March 2026; Tesla passed BYD in Q1 2026 total EV sales.
+- **Record April China deliveries: 79,478 units, +36% YoY** — best April ever for China operations. South Korea posted a record 13,190 units, outselling BMW and Mercedes combined. Germany posted its best April ever. Model Y confirmed as the world's best-selling EV in March 2026; Tesla passed BYD in Q1 2026 overall.
 
-- **Canada Model 3 RWD (Giga Shanghai) now at ~$29K USD (~$39,940 CAD)** — cheapest Tesla offered globally — enabled by a 49,000-vehicle quota at reduced tariffs. Delivery estimates already slipped from June to October 2026 on strong intake; Chinese EV brands have no Canadian sales infrastructure to compete for the quota this year.
+- **Canada Model 3 RWD (Giga Shanghai) priced at ~CAD $39,990 (~USD $29,000)** — enabled by Canada's quota mechanism allowing ~49,000 Chinese-built vehicles at 6% import tariff in 2026. Delivery estimates slipped from June to October on strong order intake; Chinese EV brands have no Canadian sales infrastructure to compete for the quota this year.
 
-- **Model Y L spotted testing in the US; unveil possible within 60 days**, with deliveries potentially starting around October 2026 at ~$55,000–$60,000. The vehicle also earned a five-star ANCAP safety rating. Model S/X production has officially ended.
+- **New five-tier Model Y lease starting at $459/month.** Tesla reclaims vehicles at lease-end (~30,000–40,000 miles) and redeploys them into the robotaxi fleet — a model generating margin twice regardless of robotaxi readiness at return. Model Y L mule spotted in the US with an unveil possible within 60 days; deliveries projected ~October 2026 at ~$55,000–$60,000.
 
-- **Model S/X Signature Edition delivery event postponed from May 12; no new date set.**
+- **Cybertruck Frost Blue and Model 3 Marine Blue launched.** Model S/X Signature Edition delivery event — originally scheduled May 12 — postponed with no new date announced.
 
 ## Financials
 
-- **Tesla guided to negative free cash flow for the rest of 2026.** Major capital commitments include Terafab ($55B upfront, $119B total), xAI's Colossus 2 supercomputer ($18B in chips), and the Optimus supply chain buildout.
+- **Tesla guided to negative free cash flow for the remainder of 2026.** Capital commitments include Terafab ($55B upfront, $119B total), xAI's Colossus 2 supercomputer ($18B in chips), and the Optimus supply chain buildout. Terafab is jointly owned by Tesla, xAI, SpaceX, and Intel; a Grimes County public hearing is scheduled for early June 2026.
 
-- **FSD Europe perpetual purchase ends May 21, 2026**, shifting UK, Germany, France, Italy, Belgium, Switzerland, Denmark, and others to subscription-only — converting one-time revenue to recurring ARR across a key growth market.
+- **FSD Europe perpetual purchase ends May 21, 2026** across UK, Germany, France, Italy, Belgium, Switzerland, Denmark, and other markets — shifting to subscription-only and converting one-time revenue to recurring ARR.
 
-- **Bhakdi DCF: ~$600/share intrinsic value in 2026**, explicitly conditioned on 10,000 robotaxis deployed by year-end. He pushed original timelines back 12–18 months and acknowledges being slightly early on his 1,800-vehicle inflection prediction (April–May), but characterizes the delay as operational, not fundamental.
+- **Bhakdi DCF: ~$600/share intrinsic value for 2026**, explicitly conditioned on 10,000 robotaxis deployed by year-end. He pushed original model timelines back 12–18 months from earlier projections. Stock up ~11% on the week, closing above its 200-day moving average (~$402–$404).
 
 ## Market & Competition
 
-- **xAI dissolved into SpaceX as "SpaceX AI"; Colossus 1 leased to Anthropic.** The February SpaceX–xAI merger, described by Reuters as the largest corporate merger ever recorded, created a combined entity estimated at ~$1.25T. Colossus 1 (220,000 Nvidia GPUs, 300+ MW) now provides Anthropic inference capacity; revenue estimates range $16–$28B/year. Grok launched on Apple CarPlay.
+- **xAI dissolved; folded into SpaceX as "SpaceX AI."** Colossus 1 (~220,000 Nvidia GPUs, ~300 MW) leased to Anthropic for inference; Colossus 2 remains dedicated to Grok training. Larry Goldberg estimates the combined SpaceX entity could show ~$20B in profit in its first year. SpaceX–Tesla merger speculation is at ~70% on Polymarket; Sawyer Merritt characterized it as "purely speculation" with no confirmed timeline.
 
-- **Terafab chip fab: $55B upfront, $119B total**, jointly owned by Tesla, SpaceX, xAI, and Intel; proposed site in Grimes County, Texas (~2 hours from Austin); county hearing June 3. Target: over 1 terawatt of AI compute per year. Multiple commentators flag domestic chip supply as a five-year constraint on both Robotaxi and Optimus scaling.
+- **Goldman Sachs: autonomous trucking is a $560B market by 2035**, larger than the $415B robotaxi market. Autonomous truck cost per mile projected to fall from $8.56 today to ~$2.30 by 2035, with crossover versus human-driven trucks around 2028.
 
-- **Waymo projected to lose ~$5B in 2026 — roughly $100 per ride** across ~52M annual rides. Morgan Stanley pegs Tesla robotaxi cost per mile at ~$0.81 vs. Waymo's ~$1.36–$1.43; ARK projects ~$0.25/mile at full Tesla scale. Brian White argues Waymo must abandon its entire LiDAR/HD-mapping architecture to reach viable unit economics.
+- **Waymo projected to lose ~$5B in 2026 — roughly $100 per ride** across ~52 million annual rides. Morgan Stanley pegs Tesla's robotaxi cost per mile at ~$0.81 versus Waymo's ~$1.36–$1.43. Multiple analysts argue Waymo must abandon its LiDAR/HD-mapping architecture entirely to reach viable unit economics.
 
-- **Tesla stock up ~11% on the week**, closing above the 200-day moving average (~$402–$404), but still down ~4.75% YTD vs. Google +26%.
+- **BYD April 2026 passenger EV sales: ~314,000 units, -15.7% YoY** — eighth consecutive month of domestic China decline. Domestic rivals Xiaomi, Leap Motor, and Zeekr posted new monthly highs.
 
 ## Bear Case of the Week
 
-- **FSD 14.3.2 navigation regression confirmed in real-world testing.** FutureAzA documented FSD looping the block three times before entering a bank parking lot on the same build praised for vehicle control: "The navigation has absolutely gotten worse." Regression on a wide release with ~50–60% fleet penetration is a meaningful quality signal.
+- **FSD 14.3.2 navigation confirmed regressing.** A real-world review found the vehicle looping a bank parking lot entrance three times — behavior a passenger confirmed "didn't used to" happen. The reviewer's verdict: "The navigation has absolutely gotten worse." This is a concrete regression, not a framing complaint, in a build that has reached ~50–60% of the HW4 consumer fleet.
 
-- **NHTSA Engineering Analysis covers ~3.2M Tesla vehicles** for FSD camera failures in sun glare and fog conditions, with potential crash under-reporting. This is the stage that typically precedes a recall — concurrent with a positive NCAP headline, but a real regulatory overhang.
+- **NHTSA Engineering Analysis covers ~3.2 million Tesla vehicles**, the stage typically preceding a recall, specifically focused on FSD's camera system failing in sun glare and fog and potential underreporting of related crashes. Running concurrently with the positive NCAP result — the duality is a material regulatory risk.
 
-- **4680 "8L" pack quietly replaced higher-energy LG cells in European Model Y**, cutting WLTP range 52 km (−8%) with no disclosure on the configurator or order confirmations. Charging performance also lags: 10–80% takes >40 minutes vs. ~27–30 minutes for the 2170 variant; charge curve degrades from 31% SOC. The L&F cathode contract written down from $2.9B to $7,386 (−99.9%) confirms structural 4680 supply struggles.
+- **4680 "8L" pack quietly substituted in European Model Y without disclosure.** The swap cuts WLTP range 52 km (−8%) versus the LG 5M pack it replaced in the same Premium Long Range RWD trim, with slower charging (155 kW curve already declining at 31% SOC, ranked worst in the current EU lineup). Consumer backlash triggered cancellations in France and Norway. South Korean cathode supplier L&F confirmed the scale of 4680 commercial disappointment: a $2.9B Tesla contract written down to $7,386 (−99.9%), citing "change in supply quantity."
 
-- **Tesla loses ~$400M/year 45X credit in 2026** under new IRS PFE rules on Chinese cells. The Nevada LFP line may restore eligibility, but ~99% of LFP cathode supply is currently China-sourced, making the fix uncertain. Combined with management's negative free cash flow guidance for the rest of 2026, the capital picture is tight.
+- **Cybertruck PCS2 board failures widespread.** Failures documented across a wide VIN range with concentration between VINs 25,000–35,000; the board manages AC charging, Supercharging, and PowerShare. Charge rate drops silently from 48A to 24A with no driver alert. Out-of-warranty repair cost was $4,000–$7,000 before Tesla offered a goodwill rate of ~$1,000; parts are backordered 4–8 weeks. Per Craig (Red Review): "There needs to be a recall on this part." 2024–2025 trucks are covered only by the standard 4-year/50,000-mile warranty, which many high-mileage owners have already exceeded.
 
-- **Cybertruck PCS2 board failures documented across a wide VIN range** (up to VIN ~77,000; concentrated VINs 25,000–35,000). The failure silently halves charge rate from 48A to 24A with no driver alert; out-of-warranty repairs initially ran $4,000–$7,000. Parts are backordered 4–8 weeks. Multiple service-community voices are calling for a formal recall.
+- **45X credit loss of ~$400M/year is effective immediately in 2026** due to PFE rules triggered by CATL cell imports at Lathrop. The Nevada LFP line that could restore eligibility faces a further obstacle: ~99% of LFP cathode supply is currently China-based, and cathode accounts for ~40% of cell cost — meaning domestic manufacturing alone does not resolve the compliance gap.
 
-- **California unsupervised robotaxi service not before 2027**, per direct CPUC contact: Tesla has not filed for any AV permit and is subject to a 6–9 month minimum approval timeline once applied. The ~551-vehicle Bay Area fleet generating zero unsupervised revenue is the largest single fleet concentration and remains fully stuck behind a supervised driver.
+- **Tesla guided to negative free cash flow for the remainder of 2026** while simultaneously absorbing Terafab ($55B upfront), Colossus 2 ($18B in chips), and the Optimus supply chain — with Q1's record energy gross margin
