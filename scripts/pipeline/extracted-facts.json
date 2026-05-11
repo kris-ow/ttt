@@ -5727,5 +5727,77 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-11T04:37:49.136Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla supervised FSD has accumulated over 10 billion real-world miles",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10000000000,
+    "context": "Key data milestone supporting regulatory approval cases globally; exceeds Elon Musk's original 6 billion mile threshold cited in 2016 Master Plan Part Two",
+    "source": "20260506_theteslaspace_01_Teslas_Robotaxi_Just_Did_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-11T09:39:02.457Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 36 fully unsupervised Model Y robotaxi vehicles operating across Austin, Dallas, and Houston, Texas per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 36,
+    "context": "Current unsupervised (driverless) fleet size; near-vertical growth trajectory visible on tracker chart as of early May 2026",
+    "source": "20260506_theteslaspace_01_Teslas_Robotaxi_Just_Did_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-11T09:39:02.457Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi energy consumption is under 1.7 kWh per mile",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.7,
+    "context": "Official Tesla Semi efficiency specification; relevant as a benchmark for commercial EV energy cost modeling",
+    "source": "20260506_theteslaspace_01_Teslas_Robotaxi_Just_Did_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-11T09:39:02.457Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi base charger delivers 125 kW and costs approximately $40,000 for two units; arriving early 2027",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": 20000,
+    "context": "$40,000 for two units implies ~$20,000 per unit for depot overnight charging infrastructure; relevant to fleet total cost of ownership",
+    "source": "20260506_theteslaspace_01_Teslas_Robotaxi_Just_Did_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-11T09:39:02.457Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi fleet in Texas is now operating at night in addition to daytime hours",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Extension to nighttime operations increases potential daily utilization hours and signals Tesla's confidence in FSD's performance across lighting conditions",
+    "source": "20260506_theteslaspace_01_Teslas_Robotaxi_Just_Did_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-11T09:39:02.457Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi fleet stands at 39 vehicles per RobotaxiTracker.com, described as growing exponentially",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Fleet growth trajectory cited as a key bullish catalyst for Tesla's recent stock move; unsupervised (driverless) subset only",
+    "source": "20260511_investingagainstthegrain_01_If_You_Own_Tesla_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-05-11T09:39:02.465Z",
+    "status": "pending"
   }
 ]
