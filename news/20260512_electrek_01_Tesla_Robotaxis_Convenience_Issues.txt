@@ -1,0 +1,64 @@
+Source:      electrek
+Title:       Tesla Robotaxi’s ‘convenience issues’ are hiding the real safety bottleneck
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/05/12/tesla-robotaxi-convenience-issues-hide-safety-bottleneck/
+Published:   2026-05-12 13:43 UTC
+Fetched:     2026-05-12 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+A new Reuters investigation documents long wait times, surface-street-only routing, and near-zero vehicle availability across Tesla’s three-city “Robotaxi” service. These all look like convenience problems — but they’re really symptoms of a safety system that can’t scale.
+
+Elon Musk himself told investors at the Q1 2026 earnings call that safety validation is the limiting factor. The “convenience issues” riders are experiencing are the direct result of those safety constraints manifesting as a degraded user experience.
+
+## What riders are actually experiencing
+
+Reuters reporters tested Tesla’s “Robotaxi” service across Austin, Dallas, and Houston over the past month, and the results paint a picture of a service still deep in beta testing.
+
+In Dallas, a reporter spent nearly two hours completing what would typically be a 20-minute, 5-mile drive from Southern Methodist University to Dallas City Hall. After 36 minutes of seeing “high service demand” and “no rides available nearby” messages, a car finally appeared with a 19-minute wait. Uber showed an 8-minute wait for the same trip.
+
+ 
+ 
+ 
+
+Once picked up, the car avoided North Central Expressway — the main artery to downtown Dallas — and instead took nearly 35 minutes navigating surface streets. It dropped the reporter at a parking lot a 15-minute walk from City Hall.
+
+In Houston, a reporter managed one ride on a weeknight before the app canceled a second booking and offered no more vehicles for 30 minutes. She ordered an Uber.
+
+Even in Austin, where the service has operated for nearly a year, a Reuters reporter tracking availability eight times daily for three weeks in April found wait times exceeded 15 minutes about half the time, were at least 25 minutes more than a quarter of the time, and in 27% of checks, no cars were available at all. Tesla operates about 50 vehicles in Austin, according to city officials, compared with more than 250 Waymo vehicles in the same city.
+
+## Musk told you: safety is the limiting factor
+
+On Tesla’s Q1 2026 earnings call on April 22, Musk was remarkably candid about what’s actually constraining the rollout. He didn’t point to manufacturing bottlenecks or software readiness — he pointed directly at safety validation.
+
+He said the limiting factor for expansion is “rigorous validation, making sure things are completely safe,” adding that Tesla doesn’t want “a single accidental injury” with the rollout. He described the approach as “very cautious.”
+
+That’s a significant admission, because it reframes every “convenience problem” Reuters documented as a safety constraint. Consider the evidence:
+
+Tiny fleet, massive wait times: Tesla has roughly 50 cars in Austin, 25 unsupervised vehicles across all three Texas cities, and availability below 20% during operating hours. Why not deploy more? Because more vehicles means more miles driven, and more miles means more opportunities for the kind of crashes Tesla is already experiencing at a rate 4x worse than human drivers. Every additional car on the road increases the statistical likelihood of an incident that could derail the entire program.
+
+Surface-street-only routing: The Dallas reporter’s car avoided the expressway entirely, adding 15 minutes to a simple downtown trip. This isn’t a routing bug — Tesla’s vision-only system is more confident on lower-speed surface streets where the consequences of errors are less severe. Highway driving involves higher speeds, more complex merging decisions, and less margin for error. Tesla is routing through roads where it feels safest, not fastest.
+
+Tiny geofences in new cities: Dallas and Houston launched with extremely small service areas. Houston’s is limited to a small suburban pocket on the northwest side. That’s not a deployment strategy — it’s a safety perimeter. Tesla is restricting operations to areas it has validated, which is exactly what Waymo does, except Waymo has been doing it for years with high-definition mapping and extensive pre-launch testing — the very approach Musk has repeatedly mocked.
+
+Drop-offs nowhere near destinations: In Dallas, the robotaxi dropped a reporter on the opposite side of a freeway from a farmers’ market, suggesting he walk under overpasses. In another ride, the car failed to make a left turn four times at an intersection near a freeway off-ramp with “do not enter” signs. A remote attendant eventually helped. These are areas the system has identified as beyond its safe operating capability.
+
+## The crash data tells the real story
+
+Tesla has reported 15 crashes in Austin to NHTSA since August, and the rate works out to roughly one crash every 57,000 miles — about 4x worse than the average human driver’s rate of one per 229,000 miles, according to Tesla’s own vehicle safety data. Unlike other autonomous vehicle operators, Tesla has asked regulators to redact all crash information.
+
+With that crash rate, scaling up aggressively is a mathematical problem. Double the fleet and the miles, and you double the expected number of crashes. At the current rate, expanding to thousands of vehicles would produce headline-grabbing incident numbers that could trigger regulatory action and destroy the narrative that Tesla’s approach to autonomy is viable.
+
+Musk also walked back his expansion timeline. Last July, he predicted Tesla robotaxis would serve half the U.S. population by the end of 2025. On the Q1 2026 call, he downgraded that to “a dozen or so states” by the end of 2026, and Tesla has already pushed back its five-city expansion plan that was supposed to happen in the first half of this year.
+
+Meanwhile, Waymo is delivering over 500,000 paid robotaxi rides per week across 10 U.S. cities — fully driverless, no chase cars, no safety monitors, 24 hours a day.
+
+## Electrek’s Take
+
+During the earnings call, Musk focused attention on “safety validation and convenience” as the main bottlenecks preventing scaling robotaxi expansion – something he claims was happening every year for the last decade.
+
+The “convenience issues” framing is actually generous to Tesla. Long wait times, bizarre routing, and drop-offs in the wrong part of town are annoying, but they’re fixable if the underlying technology works. The problem is that these aren’t convenience issues — they’re the visible surface of a system that cannot safely scale. Tesla keeps the fleet small because more cars means more crashes. It routes through surface streets because its vision-only without a supervision system isn’t confident on highways. It restricts geofences because it hasn’t validated broader areas.
+
+These are all problems that Waymo has also run into and limited its scale at first. I think the idea that Tesla would somehow quickly outscale Waymo because of its vision-only approach is officially dead.
+
+We’ve been tracking this closely since the Austin launch, and the pattern is consistent: every expansion metric Tesla announces — new cities, more vehicles, larger geofences — is followed by the reality that the numbers remain tiny and the constraints remain tight. Until the underlying crash rate improves dramatically, these “convenience issues” aren’t going anywhere.
