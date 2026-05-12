@@ -1,10 +1,10 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-11)
 Published:   2026-05-11 00:00 UTC
-Summarized:  2026-05-12 04:09:27 UTC
+Summarized:  2026-05-12 09:53:27 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.11068 (16374 in / 4104 out tokens)
-Sources:     9
+Cost:        $0.11298 (18155 in / 3901 out tokens)
+Sources:     10
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Unsupervised Robotaxi Fleet
@@ -22,74 +22,93 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
+- Tesla Vision deploys airbags up to 70ms earlier via software update on all new cars.
+- Coast-to-coast FSD 14.3.2 drive: 2,800 miles, zero interventions, under 50 hours.
+- China April retail sales fell 10% YoY to 25,956 — the "36% surge" was wholesale/exports.
 - Model S and Model X production ends after ~750,000 combined deliveries.
-- FSD 14.3.2 coast-to-coast: 2,800 miles, zero interventions, under 50 hours.
-- Tesla Vision deploys airbags up to 70ms earlier via software update, free to all new cars.
-- China April retail sales fell 10% YoY to 25,956 units — 36% "surge" was wholesale/exports.
-- Amazon launches ASCS logistics platform; Tesla Semi, Cybercab, Optimus flagged as key suppliers.
-- SpaceX IPO expected June 2026; one analyst estimates 30–40% Tesla stock move on success.
+- Amazon launches ASCS logistics platform; Farzad frames Tesla as the physical-AI supplier.
+- SpaceX IPO expected June 2026; Larry Goldberg sees 30–40% Tesla stock move on success.
 
 ## Autonomous Driving
-- **FSD 14.3.2 coast-to-coast record set.** Zach Black, Dan Berkeland, and Aaron drove a Model 3 from New York City to Los Angeles — 2,800 miles, zero interventions, under 50 hours — beating the prior record by 8.5 hours. Tesla officially reposted the achievement. Per Jeff Lutz, no competing vehicle can offer anything comparable.
-- **Tesla Vision airbag pre-deployment now live on new cars.** Tesla Vision cameras detect unavoidable collisions and can trigger airbag deployment up to 70 milliseconds earlier than impact-sensor-only systems. Elon Musk confirmed it arrives "for free on all new cars" via software update, applicable across a fleet of approximately 8–9 million vehicles.
-- **Neural net photon reconstruction gives Tesla cameras superhuman low-light vision.** Elon shared before/after images demonstrating that Tesla AI's photon count reconstruction resolves scenes with extreme glare that are illegible to the human eye — running in real time on in-vehicle AI supercomputers.
-- **FSD 14.3 advances centered on reinforcement learning and operational robustness.** Per Cern Basher's panel, the majority of 14.3 improvements — pothole avoidance, animal avoidance, improved school zone handling — are RL use cases. A upgraded vision encoder (enabling higher data ingestion rates) and improved self-recovery from edge cases without driver intervention are flagged as the most consequential infrastructure upgrades for unsupervised robotaxi scale.
-- **Hardware 3 predicted to never run unsupervised robotaxi.** One Cern Basher panelist stated — as a personal prediction, not a Tesla commitment — that HW3 vehicles will not run unsupervised in the robotaxi network or in customer unsupervised mode, implying unsupervised capability is limited to HW4 and Cybercab.
-- **Tesla hiring robotaxi software engineers with miles per intervention as primary KPI.** A Tesla job posting explicitly names miles per intervention as the key metric, with the stated goal to keep it "as high as possible while robotaxi expands globally." Jeff Lutz noted that much of the front-end FSD architecture work is now migrating toward Optimus development.
-- **2026 Model Y is first vehicle to pass four new NHTSA/NCAP ADAS tests.** The 2026 Model Y (manufactured on or after November 2025) passed pedestrian AEB, lane-keeping assistance, blind spot warning, and blind spot intervention — the first vehicle to clear all four. No other automaker had passed more than three as of this reporting.
-- **Ireland FSD regulatory engagement confirmed; Belgium and Denmark also in motion.** Ireland's Department of Transport confirmed active talks with Tesla and NSAI on FSD (Supervised) approval, with compliance required at both Irish and EU levels. In Belgium, a local director is pushing to fast-forward FSD analysis, though authorities want limited-scale testing first. Denmark's road authority pushed back on a Reuters report, clarifying it expressed no criticism of Tesla FSD.
-- **China FSD employee beta rumored on version 14.3.2.** An unverified social media report (attributed to "Ry") claims Tesla China began pushing FSD 14.3.2 to approximately 1,000 employee vehicles in late April/early May, with NDAs signed. Herbert Ong speculated the timing may align with a potential Elon Musk visit to China; Jeff Lutz cautioned that product milestones would not be built around a rescheduled diplomatic trip.
-- **Chinese auto industry official acknowledges gap vs. Tesla FSD.** Wang Yao, deputy chief engineer of the China Association of Automobile Manufacturers, stated that despite domestic social media claims, "we should also honestly acknowledge some of the gaps" relative to Tesla FSD — framed by commentators as a signal of why Chinese regulators have moved cautiously.
-- **Unusual volume of NHTSA complaints against Tesla flagged as potentially organized.** A secondhand account relayed by FutureAzA's Brian describes a contact at NHTSA noting Tesla was receiving more complaints than units of the relevant vehicle sold, suggesting coordinated bad-faith filing rather than legitimate consumer grievances.
+
+- **Tesla Vision airbag pre-deployment rolling out fleet-wide:** Tesla cameras detect unavoidable collisions and trigger airbags up to 70 milliseconds before impact — earlier than impact-sensor-only systems. Elon confirmed this arrives "for free on all new cars" via software update, applicable across Tesla's ~8–9 million vehicle fleet.
+
+- **FSD 14.3.2 coast-to-coast: zero interventions, 2,800 miles, under 50 hours:** Zach Black, Dan Berkeland, and Aaron completed a New York–Los Angeles drive on FSD 14.3.2 with no human interventions, beating the prior record by 8.5 hours. Tesla officially reposted the achievement. Per Jeff Lutz, no competitor vehicle can offer anything comparable today.
+
+- **FSD 14.3 architecture: RL breadth, vision encoder upgrade, self-recovery focus:** Per Cern Basher's panel, FSD 14.3's improvements — pothole avoidance, animal avoidance, school zone handling — are primarily reinforcement learning applications. An upgraded vision encoder maximizes the data pipeline to hardware limits, a prerequisite before any model-size scaling is meaningful. Critically for robotaxi, the system can now resolve more edge cases without disengagement — reducing the operations-center intervention load that would otherwise make large-scale deployment uneconomical.
+
+- **Neural net photon reconstruction gives Tesla cameras superhuman low-light vision:** Elon shared images demonstrating Tesla AI's photon-count reconstruction versus human-perceived glare — the AI rendering dramatically clearer. Jeff Lutz framed this as the core architectural advantage: not simply more cameras, but AI-augmented perception exceeding human capability at dawn, dusk, and night.
+
+- **2026 Model Y first vehicle to pass all four new NHTSA/NCAP ADAS tests:** NHTSA confirmed the 2026 Model Y (manufactured on or after November 2025) is the first vehicle to meet criteria for pedestrian automatic emergency braking, lane-keeping assistance, blind spot warning, and blind spot intervention — all four newly integrated advanced safety metrics. No other automaker had passed more than three as of publication.
+
+- **Ireland formally engaging Tesla on FSD supervised; Belgium accelerating analysis:** Ireland's Department of Transport confirmed active discussions with Tesla and the NSAI regarding FSD (Supervised) approval, with compliance required at both Irish and EU levels — no timeline given. In Belgium, local director Anek Ditter announced she is pushing to fast-track FSD analysis, though authorities want limited-scale testing first given road-system differences from the Netherlands. Denmark separately clarified it has expressed neither support nor skepticism about approval, pushing back on a Reuters characterization.
+
+- **China FSD employee beta rumored on v14.3.2 with ~1,000 vehicles and NDAs:** An unverified social media report (attributed to "Ry") claims Tesla China began pushing FSD 14.x internally to approximately 1,000 employee vehicles in late April/early May, with NDAs required. Jeff Lutz cautioned against tying any product milestone to Elon Musk's rescheduled China trip. Tesla China is also actively hiring autopilot test engineers.
+
+- **Chinese auto industry insider acknowledges Tesla FSD gap:** Wang Yao, deputy chief engineer of the China Association of Automobile Manufacturers, stated that "we should also honestly acknowledge some of the gaps" relative to Tesla FSD — notable given Chinese social media claims that domestic brands have surpassed Tesla on autonomy.
+
+- **Tesla robotaxi job posting names miles per intervention as primary KPI:** A new Tesla posting for robotaxi software engineers focused on "code hardening" states: "Miles per intervention is a key metric we look at to measure this and our primary focus is keeping the number as high as possible while robotaxi expands globally." Jeff Lutz noted the secondary metric is likely a bug identification and closure rate, and flagged that much front-end FSD architecture work is now migrating to Optimus.
+
+- **HW3 predicted to never run unsupervised robotaxi:** One Cern Basher panelist stated a personal (non-Tesla-official) prediction that Hardware 3 vehicles will not operate unsupervised in the robotaxi network or in customer unsupervised mode — framing driverless capability as exclusive to HW4 and Cybercab platform hardware.
 
 ## Robotaxi
-- **Robotaxi-first sequencing locked in; customer unsupervised FSD is priority two.** The Cern Basher panel reached consensus that Tesla's internal focus is overwhelmingly on scaling robotaxi revenue before enabling personal-vehicle unsupervised FSD. The business logic: generate robotaxi cash flow first to buffer the litigation costs Elon Musk himself acknowledged are unavoidable, then expand to customer unsupervised use.
-- **Operations center scalability framed as the binding design constraint.** Panelists emphasized that if the current small fleet requires frequent intervention, scaling to tens or hundreds of thousands of vehicles would make the operations center unmanageable. FSD 14.3's self-recovery improvements are directly aimed at reducing the interventions-per-vehicle-mile ratio as a prerequisite for economically viable large-scale deployment.
-- **Austin supervised-to-unsupervised transition described as the observable maturation path.** Herbert Ong noted Tesla appears to be systematically replacing supervised Austin robotaxi rides with driverless ones as the technology is validated city by city, which is visible in real time through RobotaxiTracker data.
-- **Fleet growth pace defended statistically.** Jeff Lutz pushed back on skeptics, arguing that going from approximately 22 to 33 to 35 unsupervised vehicles within a 7–10 day window represents a ~50% fleet increase — statistically meaningful — though he acknowledged that what Elon means by "volume deployment" remains unknown, with hundreds of thousands as one possible threshold.
-- **Cybercab step-change deployment expected in 2026, not April or May.** FutureAzA's Brian stated no large Cybercab deployment step is expected in April or May 2026 but characterized it as "definitely" coming this year, adding: "No roadblocks have appeared. Quite the opposite."
-- **Competitor AV under NHTSA investigation for 16 accidents in Dallas and Austin.** A non-Tesla autonomous vehicle company (operating in Dallas and Austin since 2017, available on Uber) is under NHTSA investigation following 16 ADS-related accidents including lane-change conflicts and striking stationary objects, resulting in one minor injury. This is not a Tesla vehicle.
+
+- **Robotaxi-first sequencing: revenue generation before customer unsupervised FSD:** The Cern Basher panel reached consensus that Tesla's internal priority is robotaxi scaling over enabling personal-vehicle unsupervised FSD. The business logic: generate robotaxi cash flow first to buffer the inevitable litigation costs from unavoidable accidents — a risk Elon himself acknowledged publicly, stating AVs will "probably end up avoiding 90% of accidents" but the remaining 10% are unavoidable and Tesla will be sued for them.
+
+- **Austin supervised-to-unsupervised transition ongoing:** Herbert (brighterwithherbert) observed that Tesla appears to be systematically replacing supervised Austin robotaxi rides with driverless ones as technology is validated — the observable path of fleet maturation in real time.
+
+- **Bhakdi: safety largely solved, convenience is the current frontier:** Bhakdi characterized the current robotaxi challenge as reducing non-dangerous but frustrating ride failures — bringing error rates from perhaps 5–10 inconvenient events per 100 rides toward 0.1 — rather than a life-safety problem. He described the current fleet size as exciting for believers but insufficient to move institutional sentiment, with Waymo's ~3,000-vehicle fleet as the institutional benchmark frame of reference.
+
+- **Larry Goldberg: no "magic fleet number" triggers re-rating; scaling not complete in 2026:** Goldberg pushed back on the idea that hitting a specific unsupervised fleet milestone — whether 500 vehicles or surpassing Waymo — will trigger a stock re-rating. He does not expect robotaxi to be "scaled" by end of 2026, and estimates the unsupervised fleet may reach 100–200 vehicles by the time of the SpaceX IPO in June.
+
+- **Competitor AV under NHTSA investigation — 16 accidents in Dallas and Austin:** An unnamed Tesla rival (operating in Dallas and Austin, developed since 2017, available on Uber) is under NHTSA investigation following 16 accidents involving its automated driving system, resulting in one minor injury and property damage. Alleged failures included lane changes into other vehicles and failure to respond to merging traffic.
 
 ## Humanoid Bots
-- **Optimus unit economics: ~$1.50–$2.00/hour fully loaded vs. $25–$35/hour for a U.S. warehouse worker.** Farzad's analysis uses a $25,000 unit cost, 3-year useful life, and ~7,000 productive hours/year to arrive at ~$1.20/hour hardware cost, with energy and maintenance bringing the total to ~$1.50–$2.00/hour — a 90%+ labor cost reduction at scale.
-- **Amazon flagged as potential anchor Optimus customer.** Amazon already operates over 1 million robots across 300+ fulfillment centers (up from 750,000 the prior year). Farzad argues Amazon's warehouses are the largest concentrated humanoid market on Earth and that at $20,000–$30,000/unit, Amazon could absorb hundreds of thousands of Optimus units without straining capex. A pilot deployment announcement is characterized as a "generational signal" event.
-- **Tesla not currently leading on real-world humanoid deployments.** Farzad explicitly acknowledges competitors are ahead on actual deployment: Boston Dynamics' Atlas is live at Hyundai's Meta Plant in Georgia (all 2026 capacity committed to Hyundai and Google DeepMind); Apptronik (Apollo) raised $520M with GXO Logistics as a customer; Figure is at BMW Spartanburg; Agility Robotics has subscription leasing models already operating in warehouses.
-- **Optimus production targets: Fremont ~1M units/year run rate by late 2026, Giga Texas targeting 10M units/year.** Farzad explicitly expects the Fremont timeline to slip into 2027–2028. Production is targeted to begin on the converted Model S/X line in late July or August 2026.
-- **Piper Sandler: Optimus is free at $400/share.** Piper Sandler's published update argues its valuation model assigns zero value to Optimus at the current share price (~$440 at time of reporting), and will begin incorporating Optimus once revenue arrives.
-- **Larry Goldberg expects Optimus to "really roll out" in Q3–Q4 2026.** He frames it as one of several simultaneous catalysts — alongside robotaxi progress and the SpaceX IPO — that could drive Tesla's stock higher this year.
+
+- **Optimus production timeline: Fremont late July/August 2026 (likely slipping); Giga Texas target 10M units/year:** Per Farzad, Optimus production at the converted Fremont Model S/X line is targeted for late July or August 2026, though Farzad explicitly expects delays, with 1M units/year run rate more likely 2027–28. The Giga Texas Optimus factory targets 10 million units per year. End-goal unit price: $20,000–$30,000.
+
+- **Optimus unit economics: ~$1.50–$2.00/hour fully loaded vs. $25–$35/hour for U.S. warehouse labor:** At a $25,000 unit cost, 3-year useful life, and ~7,000 productive hours/year, hardware cost alone is ~$1.20/hour; adding energy (~$0.10–$0.15) and maintenance (~$0.20–$0.30) yields ~$1.50–$2.00/hour fully loaded — a 90%+ labor cost reduction versus U.S. warehouse workers.
+
+- **Amazon flagged as potential anchor Optimus customer; competitors already deployed:** Amazon operates 1 million+ robots across 300+ fulfillment centers (up 250,000 in under one year) and is identified as the largest concentrated humanoid market on Earth. However, Tesla has the most catching up to do on actual deployment: Boston Dynamics Atlas is committed to Hyundai's Meta Plant through 2026; Apptronik (Apollo) raised $520M with GXO Logistics as customer; Figure is in BMW Spartanburg; Agility Robotics has subscription humanoid models already operating in warehouses.
+
+- **Piper Sandler: Optimus is "free" at $400/share — not yet in their model:** Piper Sandler published an update stating their valuation assigns zero value to Optimus at $400/share, and they will begin incorporating it once revenue arrives.
+
+- **Larry Goldberg expects Optimus to "really roll out" by Q3–Q4 2026:** Goldberg described Optimus demonstrating genuine capability by Q3–Q4 2026 as one of several simultaneous catalysts — alongside robotaxi progress and the SpaceX IPO — that could drive Tesla stock to a new all-time high this year.
 
 ## Electric Vehicles
-- **Model S and Model X production ends.** Tesla has built the final units of both models — 14 years of Model S history, 11 years of Model X — with approximately 750,000 combined deliveries worldwide. Factory workers signed the final vehicles. The capacity freed is expected to be directed toward Model Y, Cybertruck, Cybercab, and next-generation vehicles. A planned final delivery event was delayed by 72 hours with little notice.
-- **China April retail sales fell 10% YoY; the "36% surge" was a wholesale/export figure.** Giga Shanghai produced 79,478 vehicles in April (+36% YoY), but 53,522 were exports — the second-highest monthly export total in Giga Shanghai's history and up 80% YoY. Domestic retail was 25,956 units, down 9.66% from 28,731 in April 2025. For January–April 2026, domestic retail totals 138,754 units, down 15% YoY. Tesla's NEV market share in China hit 3.06% — its lowest since November 2025.
-- **Tesla canceled seven-year low-interest loan option in China.** Tesla retained only a zero-interest plan of up to five years. Promotional financing has not reversed the domestic demand decline so far.
-- **Giga Shanghai exports surging.** April exports of 53,522 units were up 80% YoY and 81% vs. March. For January–April, exports totaled 154,122 units, up 127% YoY. Jeff Lutz noted export markets (EU, South Korea, Japan, Australia) carry higher margins than domestic China pricing.
-- **Tesla Semi battery capacity confirmed by California regulators: 822 kWh long range, 548 kWh standard range.** The Semi is now appearing on Tesla's European websites (UK), currently listing only the standard range variant. In California's clean truck voucher program, Tesla Semi received 965 of 1,067 Class 8 applications; Daimler, Paccar, and Volvo combined received under 100.
-- **Tesla remains the best-selling automotive brand in California** — a distinction no American automaker had held since the 1990s, per a Forbes piece cited by Sawyer Merritt.
-- **Tesla issued a recall of 218,000 U.S. vehicles** for a backup camera software glitch, resolved over the air. Characterized as a non-event by multiple sources.
+
+- **Model S and Model X production ends after 14 and 11 years respectively:** Tesla has built its final Model S and Model X, with approximately 750,000 combined deliveries over their lifespans. The final vehicles were signed by factory workers; a planned final delivery event was delayed with 72 hours' notice, with leaked footage suggesting production may not have been fully complete at announcement. Factory capacity is now freed for Model Y, Cybertruck, Cybercab, and next-generation vehicles.
+
+- **China April retail sales: 25,956 units, down 10% YoY — "36% surge" was wholesale output:** Per CPCA final data (via Electrek), Tesla's actual China retail sales fell 9.66% year-over-year in April, with the widely reported 36% surge reflecting Giga Shanghai's 79,478-unit wholesale production figure — of which 53,522 were exports. January–April 2026 cumulative domestic retail: 138,754 units, down 15% YoY. Tesla's NEV market share hit 3.06%, its lowest since November 2025.
+
+- **Giga Shanghai April exports: 53,000 units — highest since October 2022, +80% YoY:** Export volumes to South Korea, Europe, Australia, and Canada drove the wholesale surge. Jeff Lutz noted export markets carry higher margins than China's intensely competitive domestic pricing environment. Canada recently resumed accepting Chinese-made Teslas.
+
+- **Tesla Semi battery capacity confirmed: 822 kWh long range, 548 kWh standard range:** California regulators published official figures. The Semi is now appearing on Tesla's European websites (UK listed, standard range only so far). The Sparks, Nevada factory is designed for 50,000 trucks/year; Tesla received 965 of 1,067 California Class 8 clean truck voucher applications, with Daimler, Paccar, and Volvo combined receiving under 100.
+
+- **Strong European and select market sales cited:** April figures referenced: Denmark +102%, Sweden +111%, France +112% in Tesla vehicle sales volume. These are cited in the context of FSD rollout beginning to drive demand awareness in Europe.
 
 ## Market & Competition
-- **Amazon launches ASCS — framed as the AWS of the physical world.** Amazon Supply Chain Services bundles ocean, air, ground, and rail freight with fulfillment, parcel shipping, and AI inventory forecasting into a single platform available to any business. Launch customers include P&G, 3M, Lands' End, American Eagle, and Aerie. Infrastructure includes ~1,200 facilities, 350+ fulfillment centers, 40,000+ semi-trucks, 100+ aircraft, and 30,000 Rivian electric vans (committed to 100,000 by 2030). The global logistics market is $9.37 trillion today, projected to grow to $13 trillion by 2035. FedEx, UPS (-10%), GXO (-13%), and CH Robinson (-9%) all fell sharply on the announcement.
-- **SpaceX IPO expected June 2026; Larry Goldberg projects 30–40% Tesla stock move on success.** Larry identifies the IPO — targeting ~$1.75 trillion with success defined as reaching ~$2 trillion by end of day — as the single biggest Tesla catalyst of 2026, ahead of any robotaxi fleet milestone. He argues a successful IPO rehabilitates Musk's public image, educates investors on the Tesla-SpaceX relationship, and validates Elon's credibility on autonomous vehicle promises. Tesla rose ~$10 on the SpaceX-Anthropic deal announcement despite no direct Tesla connection.
-- **Tesla-SpaceX merger discussed but not expected before lockup ends.** Larry believes any merger announcement would not occur during or around the IPO lockup period (estimated at up to six months), placing any such announcement after end of 2026 at the earliest.
-- **Elon Musk joining Trump's China visit alongside Tim Cook, Goldman, BlackRock, and Visa/Mastercard CEOs.** Tesla China SVP Grace Tao posted optimistically about US-China mutual prosperity ahead of the trip. Jeff Lutz dismissed concerns about Chinese automakers building $10,000 EVs in the U.S. as unrealistic given domestic labor rates, supply chain constraints, and labor availability.
-- **Stellantis considering selling an underutilized Spanish factory to Leap Motors joint venture.** European factories are operating at roughly half capacity; Brian characterized the sale as guaranteeing — not merely risking — further Chinese automaker strengthening, as steep import tariffs are being bypassed by local manufacturing.
-- **Tesla-Intel semiconductor partnership reported.** Elon Musk toured Intel's Hillsboro fab ahead of a reported Tesla and SpaceX partnership with Intel. Wedbush called it a "compelling opportunity" while flagging significant execution risk between announced plans and actual production.
 
-## Financials
-- **Tesla stock at ~$427–$428, down 11.7% YTD, up from ~$330 at the recent market bottom** (~3–4 weeks prior). The 52-week high is $498. One options trader (Nick, investingagainstthegrain) is cautioning long-term Tesla holders against selling covered calls at what he characterizes as the beginning of an autonomous driving thesis inflection, citing a bullish monthly technical print.
+- **Amazon Supply Chain Services (ASCS) launched — Farzad frames Tesla as the physical-AI picks-and-shovels play:** Amazon announced ASCS, an end-to-end logistics platform (ocean/air/ground/rail freight, fulfillment, parcel delivery, AI inventory forecasting) open to any business, entering a $9.37 trillion global logistics market projected to reach $13 trillion by 2035. Immediate market reaction: FedEx worst single day in over a year, UPS -10%, GXO -13%, CH Robinson -9%. Farzad's thesis: Tesla Semi (autonomous trucks), Cybercab/Robo Van (autonomous delivery), and Optimus (warehouse labor) comprise a unified FSD-powered stack that is uniquely positioned to supply every layer of ASCS's physical infrastructure needs.
+
+- **SpaceX IPO expected June 2026; Larry Goldberg forecasts 30–40% Tesla stock move:** Goldberg identifies a successful SpaceX IPO as Tesla's single largest 2026 catalyst — arguing it reframes Elon Musk's public credibility, validates his ability to deliver on audacious claims, and helps investors understand the Tesla-SpaceX relationship. He estimates a target IPO valuation of ~$1.75 trillion, with success defined as reaching ~$2 trillion by end of day. A Tesla-SpaceX merger announcement, which Goldberg describes as "extraordinarily positive," would not occur before the post-IPO lockup period ends — likely after end of 2026.
+
+- **Bhakdi: $490 is the near-term technical floor, everything above is "complete randomness" until robotaxi scales:** Bhakdi frames Tesla's return to its December all-time high of $490 as mechanically driven — the broader market is at prior highs, Tesla is fundamentally stronger, therefore $490 is a minimum near-term target achievable within one to two weeks. He explicitly cautions against extrapolating to $500–$600 absent evidence of robotaxi scaling to hundreds of vehicles.
+
+- **Kodiak Robotics: 20 autonomous trucks deployed in Permian Basin, seventh-generation SensorPod:** CEO Don Burnette detailed Kodiak's universal SensorPod design (same pod across OEM makes, breakaway shear-bolt impact protection, seventh-generation hardware), with 20 trucks hauling sand for Atlas Energy at 275,000 lbs gross freight weight operating 24/7 as of end of 2025. Farzad separately named Kodiak's parent-ecosystem competitor Nvidia's Alpamayo as having demonstrated nothing approaching Tesla's coast-to-coast FSD capability, with competitors limited to short-segment YouTube clips.
+
+- **Elon joining Trump's China visit alongside Cook, Fink, Solomon:** Elon Musk is reportedly part of a tech/finance CEO delegation accompanying President Trump to China. Jeff Lutz dismissed concerns about Chinese automakers gaining meaningful U.S. manufacturing foothold, citing U.S. labor rates, supply chain constraints, and structural cost challenges that would make domestic Chinese-brand EV production unprofitable.
 
 Notable quotes and data:
-- Tesla robotaxi job posting: *"Miles per intervention is a key metric we look at to measure this and our primary focus is keeping the number as high as possible while robotaxi expands globally."*
-- Elon Musk: *"Tesla AI Vision deploys airbags before impact, which greatly reduces risk of injury or death. This comes for free on all new cars."*
-- Wang Yao (China Association of Automobile Manufacturers): *"While Chinese companies are indeed doing a very good job, we should also honestly acknowledge some of the gaps."*
-- Elon Musk (cited by Cern Basher panel): autonomous vehicles will "probably end up avoiding 90% of accidents and saving millions of lives," but the remaining 10% are unavoidable and Tesla will be sued for them.
-- FutureAzA on Cybercab: *"Not in April, not in May — definitely in 2026. No roadblocks have appeared. Quite the opposite."*
-- Piper Sandler: *"At $400/share, investors can buy Optimus for free in terms of valuation."*
-- Larry Goldberg on SpaceX IPO Tesla impact: *"30%, maybe even 40%."*
-- China April retail sales: 25,956 units (−9.66% YoY); Giga Shanghai wholesale: 79,478 (+36% YoY); exports: 53,522 (+80% YoY)
-- Jan–Apr 2026 domestic China retail: 138,754 (−15% YoY); exports: 154,122 (+127% YoY)
-- Optimus fully loaded cost estimate: ~$1.50–$2.00/hour vs. $25–$35/hour U.S. warehouse worker
-- Tesla Semi: 965 of 1,067 California Class 8 clean truck voucher applications
-- Coast-to-coast FSD drive: 2,800 miles, zero interventions, under 50 hours, FSD version 14.3.2
-- SpaceX IPO target valuation: ~$1.75 trillion; success = ~$2 trillion by end of day; expected June 2026
-- Model S and X combined deliveries: ~750,000 units over their lifespans
+- Tesla Vision airbag: "Up to 70 milliseconds earlier airbag deployment decision. That can be the difference between a serious injury and walking away from the incident."
+- Tesla robotaxi job posting: "Miles per intervention is a key metric we look at... our primary focus is keeping the number as high as possible while robotaxi expands globally."
+- Wang Yao (China Association of Automobile Manufacturers): "We should also honestly acknowledge some of the gaps" vs. Tesla FSD.
+- Bhakdi: "Everything above $490 is complete randomness and arbitrary — as long as robotaxi doesn't prove itself."
+- Elon on AVs: will "probably end up avoiding 90% of accidents... the remaining 10% are unavoidable and Tesla will be sued for them."
+- Giga Shanghai April exports: 53,522 units (+80% YoY); domestic retail: 25,956 (-9.66% YoY)
+- Tesla NEV market share China April: 3.06% (lowest since November 2025)
+- Optimus fully loaded cost: ~$1.50–$2.00/hour vs. $25–$35/hour U.S. warehouse worker
+- Amazon robots: 1,000,000+ deployed, up ~250,000 in under one year
+- SpaceX IPO target valuation: ~$1.75 trillion; Goldberg estimates 30–40% Tesla stock move on success
+- Tesla stock (per sources): ~$427–$445 range day of coverage, up from $385 May 6th low; all-time high $490 (December 16th)
+- Coast-to-coast FSD 14.3.2: 2,800 miles, 0 interventions, <50 hours — beat prior record by 8.5 hours

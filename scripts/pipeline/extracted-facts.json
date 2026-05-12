@@ -6015,5 +6015,41 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-12T04:07:44.119Z",
     "status": "pending"
+  },
+  {
+    "fact": "Unsupervised Tesla robotaxi fleet stands at 39 vehicles per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Bhakdi cites this as the current unsupervised (driverless) fleet size, contrasting it with Waymo's ~3,000 to illustrate that institutional investors will not yet re-rate Tesla on robotaxi fundamentals",
+    "source": "20260511_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-12T09:51:47.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi estimates that out of 100 robotaxi rides, roughly 5–10 currently result in a convenience failure (non-dangerous but annoying), and Tesla needs to reduce this to ~0.1 per 100 before scaling further",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Qualitative estimate of current FSD reliability; Bhakdi argues safety is solved and the remaining challenge is convenience/reliability tuning",
+    "source": "20260511_jobhakdi_01_Why_Tesla_Stock_Is_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-12T09:51:47.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Model Y (made on or after November 12, 2025) is the first and only vehicle to pass NHTSA's new advanced driver assistance system tests, covering pedestrian AEB, lane-keeping assistance, blind spot warning, and blind spot intervention",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Federal-level official validation of Tesla's vision-only system; significant regulatory milestone during ongoing congressional debate about LiDAR vs. vision-only AV frameworks",
+    "source": "20260512_electrified_01_When_Tesla_Will_Deploy_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-12T09:51:47.070Z",
+    "status": "pending"
   }
 ]
