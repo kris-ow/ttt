@@ -1,0 +1,556 @@
+Channel:     munrolive
+Title:       Tesla Semi Walkaround & Discussion at ACT Expo w/ Dan Priestley
+URL:         https://www.youtube.com/watch?v=zzfMRBc1zeY
+Published:   2026-05-12 12:45 UTC
+Fetched:     2026-05-12 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hi everyone. We're uh back at the ACT
+Expo. We're actually in the parking lot
+here. I'm with Dan Priestley, the
+director of engineering for the Tesla
+semi-truck. So, we're super excited to
+talk about some of the things and, you
+know, Dan's going to help us step
+through some of the things that maybe we
+saw in the public space, but we want to
+confirm directly and then just talk
+about some of the attributes that make a
+Tesla semi-truck a Tesla semi-truck and
+talk through some of those differences.
+So, Dan, thanks for taking the time and
+uh and stepping through some of those
+things with us.
+&gt;&gt; Yeah, happy to chat.
+&gt;&gt; Appreciate it. So, Dan, I know, you
+know, one of the things that we' started
+talking about offline was the
+aerodynamics. is probably one of the
+more, you know, stark or obvious things
+that you see when you look at the truck.
+You know, if you don't, if you've never
+worked in the CFD space, you look at it
+and you might wonder why it looks that
+way. Maybe it's just a design, but maybe
+talk a little bit about the the cab
+design, the focus on arrow, and the
+importance of those things to an
+application like this.
+&gt;&gt; Yeah, the aerodynamics are key because
+it's about 50% of the energy that you
+use just to move the truck down the
+road. You have to overcome that
+aerodynamic drag. And so by making the
+truck as aerodynamic as possible to do
+the same amount of work, have the same
+amount of range, it means you need less
+battery to do the job. Less battery is
+less cost, it's less mass, and less mass
+begets mass. So you get even less mass
+for supporting said battery. And so you
+really end up in a situation where
+aerodynamic improvements have this
+massive compounding effect on the
+overall efficiency and that's total cost
+of ownership of the truck. And achieving
+that requires looking at it from the
+ground up from day one. Taking a lot of
+the lessons that we've had over from the
+passenger car side, whether that's
+smooth underbody a treatment, really
+studying how air flows around the wheels
+and tires, spending a lot of time in the
+wind tunnel, but then also challenging
+some of the ways that traditional trucks
+have been designed. One things that
+unique on that front is that uh this is
+a hard-mounted cab to the frame
+structure. So the fully integrated
+chassis and the the cab actually work
+really well together. This is not an
+independently suspended cab. And what
+that really does is enables maximum
+aerodynamics because you aren't worried
+about this compliance between a moving
+cab and the fixed panels that are on the
+chassis. You can remove those as
+potential sources of drag and optimize
+your aerodynamics again in the chase of
+lowest total cost of ownership.
+&gt;&gt; No, it makes perfect sense. And I mean
+some of those things are subtle cues,
+but if you talk about them all of a
+sudden, you know, if you've seen trucks
+driving around the road over the road
+trucks, you would see that a lot of
+these gaps that are maybe belt line or
+slightly below. If you look at, you
+know, some of the other name plates in
+this space, they're large gaps and
+they've got sort of this treacherous
+looking path near those. And that's to
+make up for those dynamic envelopes and
+the movements relative from the cab to
+the frame.
+&gt;&gt; That's right. So at I mean at what point
+when when you guys were endeavoring to
+design this you know from the arrow
+perspective was that a known thing sort
+of at the beginning of development it's
+like you know what one of the best ways
+to get rid of that gap is to go hard
+mounted cab or was that along the
+development process you're like you know
+these gaps are just not great how do we
+get rid of that and so you you sort of
+you know iterated your way into the
+omission of that isolation. Well, there
+was another factor here and that is that
+in a traditional truck where you have
+that forward engine and that long drive
+line that runs along the the whole body
+length of the truck and then you get to
+the rear axle where you have to make
+this sharp 90° turn for torque delivery
+to get out to the rear wheels. Well,
+when you do that, you're invoking a very
+serious moment on the total frame of the
+vehicle. And if you watch traditional
+trucks with that longitudinal drive
+line, even if it's electric, you end up
+twisting this whole chassis. And that's
+not something we wanted to do. One is
+those transitions in torque delivery are
+inefficient. So again, back to you need
+more battery than to do the same job. So
+we're chasing efficiency, but also is
+that because we like to integrate the
+battery structure right in with the rest
+of the vehicle structure. We don't want
+that whole vehicle twisting. We want to
+treat this much more, you could say,
+like a unibody,
+&gt;&gt; like a unibody,
+&gt;&gt; right? So it's much more car-like in
+that respect. So the battery structure
+and the chassis of the vehicle, the
+frame rails and everything associated
+with supporting the rest of the vehicle
+work together in harmony. So you don't
+have these independent entities. So when
+you can really lock down the integrated
+chassis, what we call the skateboard
+with the drivetrain, the battery, the
+front subframe, and all of those other
+bits, and you integrate that all
+together, you can then hard mount
+because it's not twisting and shaking
+the same way that a traditional truck is
+because you don't have that compliance.
+&gt;&gt; Totally makes perfect sense. And I think
+one of the things you said earlier was
+you were talking about the cascading or
+knock-on effects of weight begets weight
+and costs cost and those things. I think
+about the battery pack as one of the
+biggest functions of that, right? The
+the mass reduction coupled with the aero
+improvements that we're making, those
+can relate directly to kilowatt hours
+that need to be carried by the the
+truck. Now, it's a unique scenario on a
+truck where the the total mass of the
+truck when pulling a trailer, you may
+actually want to provision for that. So
+like as you were sizing the battery pack
+for the specific application, was there
+like a realized savings that you got
+from the aero efforts and from the mass
+efforts or did you have to size the
+battery packs to what is really the
+total load which includes the trailer?
+&gt;&gt; Yeah. So, it's a balance of those
+factors and we do actually internally
+have a
+&gt;&gt; how much a kilogram is worth and how
+much a count of drag is worth and if we
+can pull that out of the truck, how does
+that compound into the value because of
+payload a customer could potentially
+haul. So, it's a way to help levelize
+everything.
+&gt;&gt; But when it comes to the practical
+implementation of the truck, it's a
+balance where you need enough energy to
+do the job. You need enough energy on
+board to drive the range to slot
+directly into a diesel operation from a
+time perspective. Y
+&gt;&gt; but at the same time if you have too
+much battery then you've displaced
+payload and you've knocked yourself out
+from being compatible with a number of
+those operations. So it's about finding
+both of those. What's that sweet spot
+and I think that we've really landed you
+really close to that optimum in the two
+different variants of the truck. Here we
+have the long range truck. So 500 miles
+on a single charge. You're really
+starting to see where you're exhausting
+drivers hours of service. You coupled
+with fast charge, you can slip seat this
+thing. So you can slot in operationally
+with no dedicated charge time. You're
+doing it while the driver is taking a
+break. So no time explicitly for
+charging. Y
+&gt;&gt; and then simultaneously the longrange
+truck can haul a 45,000lb payload with a
+typical drive van. So you've got both
+time par as well as payload par. And
+that's really the key. And then for
+those that are really mass sensitive,
+standard range is a great option. For
+those just those don't need that much
+energy, standard range is a great
+option. So it's about finding that
+balance again, maximizing the
+efficiency, minimizing TCO, but
+ultimately you we're trying to make the
+best truck and that means it's got to
+fit into all of the operations that we
+can both from a time perspective as well
+as an energy and uh miles perspective.
+&gt;&gt; That totally makes sense. You know, I I
+would I would want to get to the back
+and talk about some of the battery
+integration and and what we're seeing on
+the chassis of the vehicle, but maybe as
+we walk back there, I'd want to
+understand, you know, as we look at the
+other competitors in the space that have
+tried to launch electric semi-truckss or
+are talking about it or have done, you
+know, maybe it's not a full-blown
+semi-truck, but they're heavy duty
+applications. A lot of them have not
+been successful in those endeavors. And
+and I attribute that to a couple things.
+You know, one, it's a it's a tough
+industry. It's a tough space period. But
+two, they a lot of those companies that
+tried to do that and didn't do well
+didn't have I'll say the the tenure in
+industry and all the experience that a
+company like Tesla has, you know, I
+mean, how much of an advantage from your
+view was it taking all those things
+from, you know, the S, the X, the model,
+you know, the Model Y, the the all these
+battery pack integrations, all these
+structural integrations, you know, was
+that a huge contributor or did you have
+to rethink a lot of that because the
+application is so different?
+I'd say it's a bit of a mix, but for the
+most part, you are absolutely right that
+we've benefited hugely from the
+experience and success that the light
+duty side of the business has had.
+Absolutely. And that comes from whether
+it's a design ethos of challenging all
+of the specifications like the best part
+is no part integrating those structures
+really challenging that uh you know from
+day one on the truck design you know but
+it's also even today leveraging
+componentry. So you know the drive
+inverter and stator are shared from
+Cybertruck. Y
+&gt;&gt; the uh you know HVAC compressor is
+actually shared with CyberCap. So the
+upcoming product uh there's light
+modules are shared from other vehicles
+as well. We tried to pull in I mean the
+screens you just start picking apart
+these parts and those are key enablers
+both for reliability and cost. So it
+really enables us to have a successful
+product because those are two very
+important things in the semi-truck
+space. That's not to say that we haven't
+thought about things a little
+differently.
+&gt;&gt; And you know, structurally, there are
+problems to solve on the truck that you
+don't have to solve on the car side.
+&gt;&gt; Sure.
+&gt;&gt; For example, I mean, we are still about
+only a quarter of the combination
+weight. Your vehicle dynamics are
+largely dominated by the trailer, which
+we don't have, but that you're carrying.
+&gt;&gt; Yep.
+&gt;&gt; And so, how does that play into the
+structures of the vehicle? How does that
+play into the vehicle dynamics? That's a
+lot of learning that was new and bespoke
+for semi but you know we still
+understood at the end of the day how to
+make an effective electric vehicle in
+that from all the learnings that we had
+on the light duty side. Yeah, there is
+this I would imagine there's a strange
+function in this particular application
+where this lowest common denominator of
+having this huge trailer with this
+payload is driving a lot of the
+structures that we're seeing where you
+know in the passenger car even if it's
+got a towing capacity like a cybert
+truck or or something like that. You
+know the I think the phrase comes to
+mind in this case it's literally like
+the tail wagging the dog to a degree you
+know with a mass of of that capacity. So
+um that makes sense. Dan, you know, look
+at looking at the back, is there is
+there anything that you would want to
+talk about on the architecture side that
+you know you think is particularly um
+impactful or unique here? And then maybe
+beyond that, we could talk a bit about
+total cost of ownership.
+&gt;&gt; Yeah, I mean I think right away you'll
+notice that we have that e- axle. So
+again, we're not doing this longitudinal
+drive line. We have directly mounted
+motors on the drive axle and we have uh
+two different styles. The first the four
+axle or the mid axle really is our
+torque axle. So it's got uh two motors
+that are independently driven one to
+each wheel and that is designed for high
+power events. So those are the takeoffs,
+those are your high-grade overtake
+applications and then the rear axle is
+the efficiency axle.
+&gt;&gt; These two axles are geared differently
+but then underneath share a lot of the
+same components. So they share oil
+pumps, they share rotor stator and
+inverter all the same in every position.
+So that's where that scale really helps.
+So we're not bespoke making uh those
+expensive components if you're trying to
+do them individually. We are trying to
+commonize across platform as well as
+within the vehicle itself. So, uh, you
+know, the twin axle setup here really
+gives an operator all the benefits of a
+6x4 in terms of maximum traction,
+torque, and power to do the job while
+also then all of the efficiency of a
+6x2. Because at highway speed, when
+you're on, you know, cruise and you're,
+you know, not encountering large hills,
+that torque axle disconnects, wheels
+still spin, but there's no windage
+losses. There's nothing internally
+spinning. And so, that's what unlocks a
+really great highway efficiency.
+&gt;&gt; Totally. It it makes me think of, you
+know, I think some of the Tesla models
+and and other OEMs as well have
+deployed, you know, for like a rear
+traction motor, it'd be a PM machine and
+then the front they'd be an induction
+machine so that there weren't coging
+losses if you wanted to go up to
+cruising speed. But when you need the
+torque and when you need the power
+delivery, you can trigger that. So,
+similar concept, slightly different
+application in this instance.
+&gt;&gt; Yep.
+&gt;&gt; Makes perfect sense. Dan, from the, you
+know, total cost of ownership piece of
+this. This is this is something that,
+you know, it's it's such a unique
+application. It's a bold move taking an
+electric vehicle into a space that has
+obviously been for the past 100 years
+dominated by the, you know, the diesel
+truck application. How how is Tesla
+looking at considering messaging the
+total cost of ownership benefit? And and
+I mean maybe down to like a driver if if
+a driver was sitting with us or maybe
+it's a fleet owner operator type of
+person like how how are we expressing
+the total cost of ownership advantage to
+something like this versus the next
+diesel partner down the road?
+&gt;&gt; Yeah. I mean I think there's a few
+things uh to touch on that point. I mean
+one is on the TCO piece. Yeah. That's
+the underlying success for everybody
+because if you're have a successful
+business, you've got a lower total cost
+of ownership. That means that you're
+going to be able to provide freight for
+cheaper. So truck carrier wins, driver
+wins, those that you're hauling freight
+for win. That's the best scenario. And
+so you really that has again become our
+ethos is chasing total cost of
+ownership. Now like how that applies
+different parties like we still have to
+solve for all of them. We sometimes say
+that the the three customers that matter
+are the driver, the fleet owner, and
+then the shipper who's providing the
+goods. And you have to make something
+that works for all three. If you make
+something that doesn't, it's not going
+to be an acceptable product. And so, you
+know, with that, even though we aim for
+total cost, that doesn't mean that we're
+trying to make a bad experience. On the
+driver's side, we've made it very
+comfortable. We've brought over, you
+know, an in-house seat architecture I
+think is going to uh drivers are really
+going to love. And then on the fleet
+manager side, we've brought over the
+reliability, you know, the things that,
+you know, make Tesla uh and EVs great.
+We brought over that reliability,
+something they can count on day in day
+out. And then from a shipper
+perspective, again, it's just the like
+lowest total cost energy throughput that
+lowers their shipping cost. So overall,
+we've really tried to tackle that on
+multiple fronts and ensure each one of
+those key partners in the space is taken
+care of.
+&gt;&gt; Yeah, makes makes perfect sense from
+from a charging infrastructure
+perspective, you know, both on the
+vehicle side as well as, you know, the
+hard infrastructure side of it, you
+know, this is Tesla's quickest charging
+product that's in the marketplace today,
+you know. So megawatt, you know, plus
+charging units, right, that Tesla is
+now, you know, engineering and and and
+launching and doing all of those things.
+You know, what what is the you know, are
+there any concerns right now with
+launching a product like this and having
+those chargers stood up in time and like
+this this this sort of ven diagram of
+all these these attributes and you know
+the the three personas or customers that
+you articulated and getting the
+infrastructure in place in time like how
+how is that from your view sort of
+shaping up recently?
+&gt;&gt; I mean the charging is progressing
+really well. We've got about 50
+different sites that are in some stage
+of work. I mean, some of them are still
+in design and phasing, but we are like
+actively working on a bunch with some
+actually opening here within the next
+month or two. And so, we're going to be
+in a position that as trucks you really
+start to roll off the line, they will
+have charging available because we
+recognize right now it doesn't matter if
+it's public or it's private.
+&gt;&gt; Whatever truck that we build, charging
+has to already be in existence in that
+location. Yep. So we have to really
+match charging with every truck that we
+deliver. And so we're laser focused on
+right now making sure that those
+customers are going to have something
+that works for them on day one. So a
+charging solution needs to be
+identified. And you know we've been
+working really closely and leveraging
+all of that experience that we have on
+the light duty side. I mean at this
+point the supercharger team has deployed
+more than 80,000 DC fast charging posts
+worldwide and they work closely with all
+the utilities and so they understand the
+process to go and deploy the charging
+that we need at the scale, at the speed,
+and work closely with utilities, all of
+our customer partners, and anybody else
+in order to get that on time so that the
+truck can hit the ground running day
+one.
+&gt;&gt; It makes a lot of sense. I think you
+have to cater to the partners, you know,
+your prospective customers for something
+like this, you know, but that tailored
+approach of saying, "Here's a truck,
+here's the infrastructure that goes with
+it." And we're tailoring how we build
+out that infrastructure relative to, you
+know, the markets of destination and
+where these vehicles are going and
+making sure that we're not selling
+trucks in in areas where we can't go and
+do the charging. That's encouraging to
+hear.
+&gt;&gt; Yeah. And also on the charging point is
+that now we've announced you know people
+can go and buy on you know online our uh
+charging cabinet both for the fast
+charging so the V4 with 1.2 megawatt
+capability or what we call the base
+charger the 125 kowatt charger because
+depending on your operation one might
+work better than the other and so this
+is a great chance for whether it's folks
+deploying charging at their own site or
+other parties that want to get into the
+charging game itself. It provides a
+unique opportunity uh you know for folks
+now to get that full spec sheet priced
+right up front, see it online and you
+know run with it on their own.
+&gt;&gt; That's fantastic. Well Dan, I know uh we
+we talked with the team offline. We want
+to get out to the site. We want to walk
+through the manufacturing facility,
+maybe dive into some more of the
+architecture, which you know I know for
+the folks on the Monroe Live uh channel,
+they'd love to dive into. I personally
+want to dive into it. We we appreciate
+you taking the time and we're excited
+about what you guys are doing.
+&gt;&gt; Well, this is great. Happy to chat.
+We're really excited. Uh, and yeah, we'd
+love to have you out and have a chance
+to do a tech deep dive at some point
+because there's a lot of amazing
+engineering work that went into this.
+And you know, it's not going to stop.
+We've got plenty of improvements planned
+to come down the pipe, but uh, overall
+uh, Tesla's done a great job and I'm
+super excited to get this into high
+volume.
+&gt;&gt; Totally. Awesome. Thanks, Dan.
+Appreciate the time.
+&gt;&gt; Thanks so much. Take care. Thank you.
+Thanks, everyone.
