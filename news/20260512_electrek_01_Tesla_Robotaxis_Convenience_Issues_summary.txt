@@ -1,0 +1,36 @@
+Channel:     electrek
+Title:       Tesla Robotaxi’s ‘convenience issues’ are hiding the real safety bottleneck
+Published:   2026-05-12 13:43 UTC
+Summarized:  2026-05-12 20:32:27 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01KgmN9koyhSnGTPH58nstGx
+Cost:        $0.02041 (3186 in / 2084 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Market & Competition
+────────────────────────────────────────────────────────────
+
+A Reuters investigation documents severe availability and routing problems across Tesla's three-city Robotaxi service. The article argues these are not mere convenience issues but direct symptoms of a safety system that cannot scale — a framing supported by Elon Musk's own comments at the Q1 2026 earnings call.
+
+## Robotaxi
+
+1. **Service reliability is severely limited across all three cities:** Reuters reporters tested the service in Austin, Dallas, and Houston over the past month. In Dallas, a reporter spent nearly two hours on what should have been a 20-minute, 5-mile trip — including a 36-minute wait before a car appeared, followed by a 35-minute surface-street detour that avoided North Central Expressway and dropped them at a parking lot 15 minutes from the destination. In Houston, one ride was completed before the app canceled a second booking and showed no vehicles for 30 minutes. In Austin, where the service has run for nearly a year, a Reuters reporter tracking availability eight times daily for three weeks in April found wait times exceeded 15 minutes roughly half the time, exceeded 25 minutes more than a quarter of the time, and in 27% of checks, no cars were available at all.
+
+2. **Fleet size is extremely small relative to stated ambitions:** Tesla operates approximately 50 vehicles in Austin, according to city officials, versus more than 250 Waymo vehicles in the same city. Across Dallas and Houston combined, roughly 25 unsupervised vehicles are operating. The article attributes the tiny fleet directly to crash-rate math: Tesla has reported 15 crashes in Austin to NHTSA since August, working out to approximately one crash every 57,000 miles — about 4x worse than the average human driver rate of one per 229,000 miles, based on Tesla's own vehicle safety data. Tesla has asked regulators to redact all crash details.
+
+3. **Musk cited safety validation — not software or manufacturing — as the scaling bottleneck:** On the Q1 2026 earnings call on April 22, Musk said the limiting factor for expansion is "rigorous validation, making sure things are completely safe," adding that Tesla does not want "a single accidental injury" and described the approach as "very cautious." He also walked back his expansion timeline: last July he predicted robotaxis would serve half the U.S. population by end of 2025; on the Q1 2026 call he downgraded that to "a dozen or so states" by end of 2026. Tesla has also delayed its five-city expansion that was originally planned for the first half of 2026.
+
+## Market & Competition
+
+4. **Waymo's scale contrasts sharply with Tesla's:** Waymo is delivering over 500,000 paid robotaxi rides per week across 10 U.S. cities — fully driverless, no chase cars or safety monitors, operating 24 hours a day. The article notes that Waymo's HD-mapping and extensive pre-launch testing approach is the same methodology Musk has repeatedly mocked.
+
+## Editorial Stance
+Lambert argues the "convenience issues" framing is generous to Tesla — the real problem is that the underlying crash rate makes scaling mathematically dangerous, and Tesla's vision-only system without supervision is not confident enough for highway driving. He states that "the idea that Tesla would somehow quickly outscale Waymo because of its vision-only approach is officially dead."
+
+Notable quotes and data:
+- Tesla Austin crash rate: ~1 per 57,000 miles vs. human average of ~1 per 229,000 miles (per Tesla's own vehicle safety data) — approximately 4x worse
+- Tesla Austin fleet: ~50 vehicles (per city officials); Waymo Austin fleet: 250+
+- Unsupervised Tesla vehicles across Dallas and Houston combined: ~25
+- Austin availability: no cars available in 27% of checks; wait >15 min ~50% of the time; wait >25 min in >25% of checks (Reuters, three weeks in April 2026)
+- Waymo: 500,000+ paid rides/week across 10 U.S. cities, fully driverless
+- Musk Q1 2026 call (April 22): safety validation is the limiting factor; expansion target downgraded to "a dozen or so states" by end of 2026
+- Tesla has requested NHTSA redact all crash information
+- Dallas trip: 5-mile ride took nearly 2 hours; car failed to make a left turn four times at one intersection; remote attendant intervened
