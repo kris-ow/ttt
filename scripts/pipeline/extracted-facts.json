@@ -5919,5 +5919,101 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-05-11T19:20:50.767Z",
     "status": "pending"
+  },
+  {
+    "fact": "Model Ys at Giga Berlin have driven a combined 93,000 miles on FSD from the end of the production line to the outbound lot",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Real-world FSD deployment in a factory logistics context; cumulative miles figure is a proxy for reliability/safety performance in controlled operational conditions",
+    "source": "20260512_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-12T04:07:44.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi Standard Range listed on European websites with ~550 km range and 1.0 kWh per kilometer energy consumption; European launch expected 2027 at earliest",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.609,
+    "context": "1.0 kWh/km converts to ~1.609 kWh/mile for the Tesla Semi Standard Range; first official European spec disclosure. Note: this is a Semi figure, not Cybercab — apply with caution to robotaxi DCF",
+    "source": "20260512_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-12T04:07:44.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet grew from approximately 22 to 33 to 35 vehicles within a 7–10 day span per Jeff Lutz's commentary",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 35,
+    "context": "Jeff Lutz cited this growth trajectory as statistically meaningful; consistent with RobotaxiTracker.com unsupervised fleet data of 39 as of 2026-05-09",
+    "source": "20260511_brighterwithherbert_02_Teslas_Global_Fsd_Signals_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-12T04:07:44.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet per RobotaxiTracker.com: 666 total (Bay Area 551, Austin 104, Dallas 5, Houston 6) as of 2026-05-06",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 666,
+    "context": "Canonical community-tracked fleet count; video discussion of fleet expansion is consistent with this data",
+    "source": "20260511_brighterwithherbert_02_Teslas_Global_Fsd_Signals_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-12T04:07:44.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) robotaxi fleet per RobotaxiTracker.com: 39 total (Austin 28, Dallas 5, Houston 6) as of 2026-05-09",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Subset of total active fleet operating without safety driver; Austin is primary unsupervised market",
+    "source": "20260511_brighterwithherbert_02_Teslas_Global_Fsd_Signals_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-12T04:07:44.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Miles per intervention is Tesla's primary KPI for robotaxi software engineers, per job posting language cited in the video",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Confirms miles per intervention as the key safety/reliability metric Tesla uses internally to evaluate robotaxi software quality as fleet scales globally",
+    "source": "20260511_brighterwithherbert_02_Teslas_Global_Fsd_Signals_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-12T04:07:44.110Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla 4680 battery delivers 27 kWh in 15 minutes of charging in real-world testing",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Relevant to energy cost modeling for Tesla vehicles; absolute charge rate, not per-mile figure",
+    "source": "20260511_futureaza_01_Fsd_Crash_Probe_Not_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-12T04:07:44.119Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model Y manufactured on or after November 12, 2025 is the first vehicle to pass the new NCAP ADAS test; no other automaker had passed more than 3 of 4 criteria as of ~May 9, 2026",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "New ADAS safety benchmark; Tesla leads by at least 33% on standardized criteria including pedestrian AEB, lane keeping, blind spot warning and intervention",
+    "source": "20260511_futureaza_01_Fsd_Crash_Probe_Not_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-12T04:07:44.119Z",
+    "status": "pending"
   }
 ]
