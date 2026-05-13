@@ -1,0 +1,106 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-12)
+Published:   2026-05-12 00:00 UTC
+Summarized:  2026-05-13 04:15:41 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.12034 (20547 in / 3913 out tokens)
+Sources:     12
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | +3 | +17 |
+| Houston | 6 | 0 | 0 | +6 |
+| Dallas | 5 | 0 | 0 | +5 |
+| **Total** | **39** | 0 | +3 | +28 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Optimus V3 enters trial production in May; mass orders to suppliers mid-July
+- Cybercab output estimated at 300–600/month; Bhakdi's 10,000-unit target by year-end
+- Waymo recalls all 3,800 robotaxis over flooded-road software failure
+- Giga Berlin adds $250M for 4680s, doubling capacity target to 18 GWh
+- 2026 Model Y first vehicle to pass all four new NHTSA ADAS tests
+- Tesla/SpaceX partner with Intel on $55B Terafab chip fab
+
+## Humanoid Bots
+- **Optimus V3 clears engineering verification, enters trial production this month:** Per Chinese supply chain account Ming (cited by Dillon Loomis as credible), Optimus V3 passed its engineering verification stage and is entering small-scale trial production in May 2026. Seven key Chinese suppliers have already cleared Tesla's production part approval (PPA) certification. Core suppliers receive first mass production orders in mid-July, with a large-scale ramp targeted for August — consistent with Tesla's Q1 2026 earnings guidance.
+
+- **First bulk purchase orders placed with component suppliers:** Separate China supply chain reports (via brighterwithherbert/Jeff Lutz) indicate Tesla has moved beyond sample validation and placed its first actual bulk purchase orders with humanoid robot component suppliers, with payments now flowing. Jeff Lutz noted this is mechanically required if Tesla is targeting a July–August production start: electromechanical suppliers must begin production in April, and silicon components require purchase orders even earlier. He characterized the convergence of Tesla's public guidance and supplier intelligence as corroborating evidence the timeline is credible.
+
+- **Piper Sandler assigns zero value to Optimus at $400/share:** Analyst Alex Potter's 17-business-line model projecting ~$1.8T in 2045 revenue deliberately excludes Optimus entirely — Potter's stated reason is that including it would produce numbers too large for institutional acceptance. At ~$400/share, Potter argues investors are getting the Optimus business for free. Potter separately wrote that the humanoid robot and inference-as-a-service businesses "arguably will be worth more than Tesla's other businesses combined."
+
+- **Planned Optimus factory capacity: 10 million units per year at Giga Texas.** Joe Tegtmeyer footage shows the future factory site just north of the Cortex 2 facility now under construction; Cortex 2 itself is approximately 50% operational with Megapacks, chillers, and superstructure all visible.
+
+## Robotaxi
+- **64% of Austin robotaxi rides were unsupervised over the past seven days**, per Herbert Ong — a meaningful operational transition, though total ride and vehicle counts remain small. Herbert expects approximately 20 additional supervised vehicles to be converted to unsupervised in the near term.
+
+- **Reuters investigation documents severe reliability failures across all three cities:** In Dallas, a 5-mile ride took nearly two hours — including a 36-minute wait, a 35-minute surface-street detour, and a car that failed to make a left turn four times at one intersection before a remote operator intervened. In Houston, the app canceled a booking and showed no vehicles for 30 minutes after one completed ride. In Austin, Reuters tracking eight times daily for three weeks in April found no vehicles available in 27% of checks, wait times exceeding 15 minutes roughly half the time, and exceeding 25 minutes more than a quarter of the time.
+
+- **Musk cited safety validation — not software or production — as the scaling bottleneck** on the Q1 2026 earnings call (April 22). He also walked back his expansion timeline: in July 2025 he predicted robotaxis serving half the U.S. population by end of 2025; on the April call he downgraded that to "a dozen or so states" by end of 2026. Tesla has delayed its previously announced five-city expansion that was planned for H1 2026.
+
+- **Tesla's Austin crash rate is approximately 4x worse than the human average:** Tesla has reported 15 crashes in Austin to NHTSA since August 2025, working out to roughly one crash per 57,000 miles, versus the human average of approximately one per 229,000 miles based on Tesla's own vehicle safety data. Tesla has requested NHTSA redact all crash details. The Electrek/Reuters piece frames the service reliability problems as a direct symptom of a crash rate that makes rapid scaling mathematically constrained — not a software or logistics issue that can be patched quickly.
+
+- **Cybercab production estimated at 300–600 units/month currently:** Jo Bhakdi estimates that if the ~37–40 Cybercabs visible in the Giga Texas outbound lot cycle out even twice weekly, minimum daily output is roughly 10 units, implying 300–600/month. Bhakdi's personal inflection threshold is 1,800 total Cybercabs produced, which he believes is approximately one month away at current trajectory, with a year-end 2026 cumulative fleet projection of ~10,000.
+
+- **Dillon Loomis (Electrified) projects first paid Cybercab rides around September 15, 2026** — materially later than the 1–2 month window many observers expect. His case: the Cybercab introduces novel FSD stack challenges Cybertruck did not — first front-wheel-drive Tesla, no steering wheel or pedals requiring entirely new control command outputs, different camera angles and suspension — and unlike Cybertruck, Cybercab will launch unsupervised, raising the validation bar. He notes Tesla can continue scaling the robotaxi network with Model Y in the interim, removing urgency.
+
+- **Waymo recalls all 3,800 vehicles** (fifth and sixth generation automated driving systems) after a software issue caused vehicles to navigate onto flooded roads. The recall incidentally confirms the true size of Waymo's fleet. A separate NHTSA investigation involves a Waymo vehicle striking a child near an elementary school, resulting in minor injuries. The Electrek article also notes Waymo is delivering over 500,000 paid rides per week across 10 U.S. cities, fully driverless — a scale contrast with Tesla's current deployment that Lambert uses to argue the vision-only scaling thesis "is officially dead." Sources disagree on the competitive interpretation: Bhakdi counters that Waymo's earliest path to solving its core architecture problems is approximately 2028 and that its losses run $5–6B/year (~$100/ride), calling its lidar dependency a structural dead end.
+
+- **AV Ride (Uber partner) is under NHTSA investigation for 16 self-driving crashes** involving failures to change lanes properly, respond to vehicles in the same lane, and detect stationary objects — all occurring with a safety monitor present.
+
+## Autonomous Driving
+- **2026 Model Y is the first and only vehicle to pass all four new NHTSA advanced driver assistance tests:** NHTSA confirmed Model Y vehicles manufactured on or after November 12, 2025 successfully passed pedestrian automatic emergency braking, lane-keeping assistance, blind spot warning, and blind spot intervention. NHTSA's administrator stated the 2026 Model Y "sets a high bar for the industry." Loomis flags this as significant federal-level validation of Tesla's vision-only approach at a moment when the LiDAR-vs-vision congressional debate is active.
+
+- **FSD supervised mode renamed "Tesla Assisted Driving" in China's owner's manual:** The Chinese manual has been updated with the new name, and Tesla has been hiring Autopilot engineers in Chinese cities including Shanghai, Shenzhen, Chongqing, and Wuhan — the first time Tesla has specified city-level locations for this role. Elon Musk's inclusion on President Trump's China trip is broadly interpreted across sources as a potential accelerant for broader FSD approval in China.
+
+- **Netherlands becomes first European market where any active ADAS requires an FSD purchase:** Tesla's Dutch configurator now offers only FSD (Supervised) — at €99/month or €7,500 one-time — with no Basic Autopilot at any price, following Dutch RDW approval under UN R-171 in mid-April 2026. Other EU markets (Germany, France) still include Basic Autopilot as standard, but Tesla has set a May 21, 2026 deadline for one-time FSD purchases across other European markets, signaling an imminent subscription-only shift. Competitors including VW ID.4 and Hyundai Ioniq 5 include active lane-centering standard at similar price points — a competitive friction point Electrek flags as likely to generate stronger backlash in Europe than in North America.
+
+- **Giga Berlin Model Ys have driven a combined 93,000 miles on FSD** from the end of the production line to the outbound lot — a controlled but operationally meaningful real-world deployment milestone, per Sawyer Merritt.
+
+## Electric Vehicles
+- **Giga Berlin $250M investment doubles 4680 cell capacity target from 8 GWh to 18 GWh**, creating 1,500+ new battery jobs. Cumulative investment in the cell unit now approaches €1 billion (~$1.2B). Cell production is expected to start in H1 2027. At 18 GWh, the facility would support an estimated 250,000–350,000 vehicles annually. Electrek's Fred Lambert notes healthy skepticism is warranted given Tesla's history of announcing and re-announcing Grünheide battery plans since 2021, while acknowledging the scale of cumulative investment and active recruiting makes this more concrete than prior announcements.
+
+- **Giga Berlin union context:** Two months before the investment announcement, Musk sent workers a video warning expansion would not proceed if IG Metall won a works council majority. IG Metall's vote share fell from 39.4% to 31.1% in the March 2026 election; Tesla's aligned list won 24 of 37 seats. IG Metall has filed a legal challenge. The investment announcement followed immediately after the union's defeat.
+
+- **Giga Berlin hit 750,000 total vehicles produced** and is planning a 20% production increase requiring new hires. Giga Shanghai posted its strongest April on record at approximately 80,000 vehicles — an annualized run rate approaching 1 million units — with strong export momentum to Canada, Europe, and South Korea.
+
+- **Tesla Semi now appears on European websites** (including UK), listing only the Standard Range trim with ~550 km range and 1.0 kWh/km consumption. European launch is expected no earlier than 2027.
+
+- **$59,000 Cybertruck variant may have begun production at Giga Texas**, per Joe Tegtmeyer — presented as preliminary observation, not confirmed. Model S/X Signature Edition delivery event rescheduled to May 20, 2026 in Fremont; final Model S has been produced, ending the SNX lineup.
+
+## Financials
+- **Piper Sandler 17-business-line model: ~$1.8T revenue by 2045, $500/share target.** Selected projections: FSD subscriptions ~$600M in 2026 growing to $10.6B by 2030; robotaxi rides $400M in 2027, $2.2B in 2028, $18.6B by 2030; FSD licensing to third-party automakers $0 through 2031 then ramping to $400B by 2045; total Tesla revenue ~$96B in 2026, $155B in 2030, $1.7T by 2045 (first trillion-dollar year: 2039). Vehicle sales are projected at ~$48–50B by 2045 — essentially flat in dollar terms and rapidly declining as a share of revenue.
+
+- **Tesla's Q1 2026 energy business missed consensus by approximately 38–39%**, per Jeff Lutz — a shortfall that would have caused severe market reactions at other energy storage companies. Lutz frames this as setting up a potentially large Q2 rebound alongside recovering auto sales momentum visible in April data.
+
+## Market & Competition
+- **Tesla and SpaceX partnering with Intel on "Terafab" semiconductor fab**, Phase 1 estimated at $55 billion split between the two companies. Musk toured Intel's Hillsborough, Oregon fab ahead of the announcement. Tesla first approached Samsung, then TSMC (who declined), before landing on Intel. The hosts (FutureAzA) argue the deal is arguably more significant for SpaceX than Tesla given the de-risking effect ahead of SpaceX's anticipated IPO. Samsung subsequently announced it would dedicate additional chip capacity — suggesting the Intel deal triggered competitive pressure.
+
+- **Google and Anthropic both announced orbital AI compute partnerships with SpaceX** within a short window, per Jo Bhakdi. Anthropic's deal includes access to the Colossus One terrestrial data center and expressed interest in "multiple gigawatts" of orbital compute; Google confirmed it is in talks to place an orbital data center in space. Bhakdi frames this as validation of his earlier thesis that terrestrial energy constraints — AI consuming 7% of U.S. electricity in 2026, projected 20% by 2030 and 50% by 2035 — will force compute into orbit, with SpaceX's Starship cost trajectory ($25,000/kg today toward $200/kg by ~2027) as the enabling unlock.
+
+- **Tesla stock closed at $445 on May 12**, up 3.89% on the day versus Nasdaq 100 up 2.9%, with volume 18% above average. TSLA is up 32–33% over the prior 35 days and approximately 10–11.5% below its all-time high of ~$490–495. Bhakdi frames ~$490 as a baseline mean-reversion target independent of any robotaxi or Optimus catalyst, with a "great repricing" to $600–$1,000 contingent on market conviction that robotaxi is scaling to millions of vehicles — a threshold he believes will be crossed well before the fleet reaches 10,000 units.
+
+- **Ford launched "Ford Energy"** — a new subsidiary targeting at least 20 GWh of annual battery storage deployments using U.S.-assembled LFP prismatic cells in standardized 20-foot containerized systems, with first customer deliveries planned for late 2027. Multiple sources frame this as validation of attractive BESS margins rather than a near-term competitive threat to Tesla's Megapack, which holds a substantial lead in scale and deployment maturity.
+
+Notable quotes and data:
+- Alex Potter (Piper Sandler): "At $400 a share, we think investors can buy Optimus for free." / "The humanoid robot and inference as a service businesses arguably will be worth more than Tesla's other businesses combined."
+- NHTSA administrator on 2026 Model Y: "Sets a high bar for the industry."
+- Bhakdi on Waymo architecture: "The earliest where Waymo could solve the technology thing… is maybe 2028."
+- Bhakdi on competitors' infrastructure stack: "They're at 1% or less of Tesla."
+- Musk (Q1 2026 earnings, April 22): Safety validation — not software or manufacturing — is the limiting factor for robotaxi expansion.
+- Tesla Austin crash rate: ~1 per 57,000 miles vs. human average ~1 per 229,000 miles (per Tesla's own vehicle safety data) — approximately 4x worse.
+- Piper Sandler FSD licensing: $0 through 2031 → $400B by 2045.
+- ARK Invest robotaxi cost estimate: $0.25/mile for Tesla at scale; Waymo estimated 50% higher in 2030.
+- Giga Berlin 4680: 8 GWh → 18 GWh target; €1B cumulative investment; cell production start H1 2027.
+- Terafab Phase 1: $55B, shared Tesla/SpaceX.
+- Starship lift cost: ~$25,000/kg today → $200/kg projected ~2027.
+- Ron Baron: ~$70B of SpaceX IPO available to public; NASDAQ listing confirmed; index inclusions at 5, 10, and 15 days post-IPO.
+- Optimus V3 timeline: trial production May 2026 → mass production orders mid-July → large-scale ramp August 2026.
+- Bhakdi robotaxi cash flow projection: "hundreds of billions of dollars" in 2027–2028 (unverified, speculative).
