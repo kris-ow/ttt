@@ -69,6 +69,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 - `scripts/build-news.js` — parse summaries into news.json
 - `scripts/pipeline/` — automated summary pipeline (see above)
 - `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt`
+- `scripts/pipeline/latency-report.js` — `npm run latency [days=7]`: per-video YT-publish → summary latency report; writes baseline TSV to `data/latency/YYYY-MM-DD.tsv`
 - `scripts/scrape-tracker.js` — Robotaxi tracker scraper (fleet-scrape.yml)
 - `scripts/build-kb.js` — rebuild `knowledge-base.json` from quarterly metrics + composite trackers
 - `scripts/extract-quarterly.py` — manual quarterly-metrics extractor from shareholder PDFs
