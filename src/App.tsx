@@ -17,7 +17,7 @@ const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
 type Section = 'feed' | 'data' | 'valuations'
 const SECTION_LABELS: Record<Section, string> = {
   feed: 'Daily Feed',
-  data: 'KPI',
+  data: 'TSLA_DATA',
   valuations: 'Valuations',
 }
 
@@ -122,7 +122,7 @@ export default function App() {
             <nav className="flex items-center gap-2 w-full sm:w-auto">
               {([
                 ['feed', 'DAILY_FEED'],
-                ['data', 'KPI'],
+                ['data', 'TSLA_DATA'],
               ] as const).map(([key, label]) => (
                 <button
                   key={key}

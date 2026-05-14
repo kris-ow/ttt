@@ -10,7 +10,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 
 ## Architecture
 - Everything lives in `src/App.tsx` — single-page, no routing
-- Two visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts), KPI (quarterly metrics). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
+- Two visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts), TSLA_DATA (quarterly metrics). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
 - Stock price: stock-proxy on Mac Mini (Finnhub upstream) → `wss://api.theteslathesis.com`
 - Stock chart: Lightweight Charts v5, embedded inline in StockWidget (no popup), Yahoo Finance via stock-proxy `/chart` endpoint
 - Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
@@ -56,7 +56,7 @@ Scrapes RobotaxiTracker.com via Playwright/Chromium and writes:
 - `.github/workflows/fleet-scrape.yml` — 3x daily at 03:00, 11:00, 19:00 UTC
 
 ## Quarterly Metrics (`scripts/extract-quarterly.py`)
-Manual Python script run each quarter against Tesla shareholder deck PDFs in `data/quarterly/`. Produces `src/data/quarterly-metrics.json`, consumed by the KPI tab and by `build-kb.js` metric-area construction.
+Manual Python script run each quarter against Tesla shareholder deck PDFs in `data/quarterly/`. Produces `src/data/quarterly-metrics.json`, consumed by the TSLA_DATA tab and by `build-kb.js` metric-area construction.
 
 ## Core Thesis
 Tesla valuation based on: autonomous driving, robotaxi (Cybercab), humanoid robots (Optimus).

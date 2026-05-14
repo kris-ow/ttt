@@ -249,7 +249,7 @@ export function DataSection() {
   return (
     <div>
       <h2 className="text-text-bright text-base sm:text-lg font-bold mb-6 flex items-center gap-2">
-        <span className="whitespace-nowrap">KEY PERFORMANCE INDICATORS</span>
+        <span className="whitespace-nowrap">QUARTERLY TESLA DATA</span>
         <span className="flex-1 border-t border-dashed border-text-dim" />
       </h2>
       {SECTIONS.map(section => (
