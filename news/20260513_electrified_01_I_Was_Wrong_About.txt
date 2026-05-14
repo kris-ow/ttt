@@ -1,0 +1,728 @@
+Channel:     electrified
+Title:       I Was Wrong About Tesla's Cybercab (Important Update) ⚡️
+URL:         https://www.youtube.com/watch?v=6uNFbf15Ay0
+Published:   2026-05-13 23:20 UTC
+Fetched:     2026-05-14 00:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome to Electrified. It's your host,
+Dylan Lumis. As it turns out, I believe
+that I was wrong about the Cyber Cab
+after that September 15th prediction for
+when a Cyber Cab will hit the market.
+After that video, something just didn't
+feel right. So, I got back to research
+and found some new things. And I have to
+say, part of me is glad that it happened
+because by the end of this video, I
+think it'll end up being pretty
+educational for exactly what's going on.
+But today, I will be officially
+adjusting my expectation for when the
+cyber cab will hit the robo taxi
+network. But most importantly, I want to
+share my new rationale for why. So,
+we'll get there, but just to quickly tap
+into what's going on in Dallas, Spencer
+said the worst robo taxi move he's seen
+in recent months. The car tried to turn
+onto a street. it got stuck and just sat
+there blocking the road for almost a
+minute. Now, look, as Spencer said, and
+as we know, most of the robo taxi rides
+are great. And now, I wouldn't say this
+situation was particularly dangerous,
+but what we have to understand is that
+if you have things like this happening
+at a certain proportion of overall
+rides, when you scale, the number of
+times we see instances like this is of
+course going to scale with more cars in
+the fleet. and Reuters just went to test
+the robo taxi network also in Dallas and
+they said the service was plagued by
+long wait times and sometimes no
+availability at all. The drop off spots
+and some rides were far away from the
+riders destination. For 30 minutes the
+reporter tried booking a ride but would
+get high demand or service unavailable.
+And after 36 minutes of trying, one
+became available and the wait time was
+19 minutes. So, of course, this should
+be expected with only a handful of
+vehicles in operation. And with such
+narrow geo fences right now, it really
+is more of a beta than a full-blown
+active service. And as you'll see in
+this video, Tesla's support had to get
+involved, and they're certainly still
+dealing with some navigation issues.
+&gt;&gt; At one point, the car seems to get
+confused by a do not enter sign near a
+freeway off-ramp.
+&gt;&gt; You missed a turn again. Instead of
+taking a left turn, it kept on going
+straight. Then it made right turns to
+double back again and again in a circle.
+Eventually, I had to call Tesla support
+just to get their help in making that
+left turn.
+&gt;&gt; It did.
+&gt;&gt; Yeah, it looks like it made that left
+turn for you. Uh, is there anything else
+I can help you with today?
+&gt;&gt; On another ride, what should have been
+20 minute drive to city hall took nearly
+2 hours. Uh I I don't actually know
+where I am. And I asked uh Tesla support
+why isn't the car going to the uh city
+hall, my destination, and they said they
+don't actually serve the area area
+around the city hall yet. Mainly because
+they're still testing. And in the
+Reuters report, even the Tesla agent
+said that we're still in the beta
+version. And as we know, even in Austin,
+customers will have to wait north of 30
+minutes, and sometimes they're not able
+to get a ride at all. And Reuters said
+Tesla's operating about 50 vehicles in
+Austin, according to a recent slideshow
+presentation by Austin officials, which
+compares to more than 250 Whimos in
+Austin. And lastly, a reporter in Austin
+spent 3 weeks in April tracking wait
+times for Tesla's robo taxis. the wait
+times were over 15 minutes about half
+the time and were at least 25 minutes
+more than 25% of the time and then 27%
+of the time no cars were available at
+all. So yes, it's Reuters and they tend
+to paint with a negative brush when it
+comes to Tesla, but in this case, I
+actually think it's likely a realistic
+representation of the true experience of
+non-Tesla fans. So given all of that,
+tracking Tesla's robo taxi progress is
+the thing when it comes to Tesla right
+now. So I want to share something I've
+been working on and just bear with me.
+It's only V1 and we know what Elon says,
+things usually don't get good until V3,
+but I really have had a blast putting it
+together and think it can be useful even
+in its current form. I told you guys I
+was vibe coding another dashboard. This
+one to track Tesla's robo taxi progress.
+I'm calling it Tesla Autonomy. So, I
+want to quickly just walk you through
+some of the features so you know what
+you're looking at and how to navigate it
+because you will be able to visit this
+dashboard, save it for yourself, and
+view the updated information anytime.
+For the map section, you can zoom in and
+out. So, if you want to see more detail,
+you can click on each active city to get
+a popup dashboard with more information.
+The Bay Area is this orange color
+because it's still supervised and not
+technically a robo taxi service, but you
+can still click to pull up more
+information. As we've covered on the
+channel, Tesla has not yet applied for
+that California driverless permit. And
+of course, we have the other cities like
+Vegas and Phoenix and a few in Florida
+that Tesla has said officially they'll
+be launching in. Moving down to zone 2,
+you'll see those officially announced
+cities and how many days Tesla has left
+to launch in those cities to meet its
+own timelines. You can click on the
+hiring watch list button right here to
+see all of the active listings where it
+plans to hire vehicle operators in new
+cities. And when you click on that
+button, you'll see these gray circles
+populate on the map to see where Tesla
+is planning to expand. Down in zone 3,
+we have some more official information
+comparing Tesla to Whimo and each of
+these different data points you can also
+click on to get more information. In
+zone 4, you'll see the different active
+cities with the date of when Tesla
+launched the service in that city, and
+you'll see an active counter for how
+many days it's been operating. And one
+of my favorite parts of the dashboard is
+the Nitsa incident data reported in a
+visually appealing and easy to
+understand way. So, no more fooling
+around with those CSV files. This
+actually shares more important
+information, like five out of Tesla's 15
+incidents were when the Tesla vehicle
+was stopped, meaning Tesla was not at
+fault. And further, it'll break down the
+pre-crash movement of the Tesla vehicle,
+the injury severity for each incident,
+and the geography in which the incident
+happened. And what's great about this is
+this dashboard will largely update
+itself. And yes, I vibecoded this with
+Perplexity Computer, who happens to be
+the sponsor of this video. And many of
+you know I've been using Perplexity
+Computer since the day it came out. And
+so when they offered to sponsor the
+channel, it was incredibly exciting.
+I'll just say it. I'd love to work with
+them on a long-term basis. So if you
+want to support the channel, trying out
+Perplexity Computer and all of this
+agentic AI would be an awesome way to
+support the channel. So, I told Computer
+I wanted a Bloomberg terminal style
+layout in a Tesla aesthetic, the most
+important robo taxi metrics, plus a
+head-to-head comparison with Whimo. It
+then broke that goal into different
+tasks. It spun up specialized agents in
+parallel and just started building. And
+listen, I'm not a developer by any
+stretch. I cannot write in React, but I
+can give clear instructions and that's
+the whole point. Perplexity Computer
+does the actual work. I just guide and
+correct even down to very small details
+like me saying I wanted these orange
+circles to pulse. I wanted this red
+outline around the brief me section
+which by the way is an active button you
+can click to see a change log for the
+past 5 days of all the progress Tesla
+has made and it'll give you an update on
+the most recent 48 hours of Tesla news.
+And if you haven't used computer before
+prepare to have your mind blown. One
+example, originally when this Tesla
+verse Whimo section came back, you
+couldn't click on any of the info. So, I
+just said verbally via dictation, hey,
+I'd like to be able to click on each of
+these numbers to give more information.
+And so, folks can actually click through
+to the source. I then walk away from my
+setup for a few minutes, and Perplexity
+Computer runs the task in the background
+on its own, self-correcting itself by
+spinning up these sub agents. And a few
+minutes later, I come back with the
+ability to click on these data points
+and see these popups in the dashboard.
+The reality is that's just something I
+would have no idea how to do on my own.
+And computer connects to hundreds of
+different services right out of the box.
+So for this dashboard, it's pulling live
+from a Google sheet that I can manage on
+my own. Or I could set up cron jobs
+which are automations. So the sheet will
+update itself. You may have seen the
+dashboards also pulling from the YouTube
+API to have my latest YouTube videos at
+the bottom. And zooming in on the full
+screen mode, you'll see the Tesla and
+NASDAQ prices also in real time. And so
+every night at a set time, computer
+wakes itself up, refreshes the data,
+snapshots the changes, and redeploys to
+the site. So I set this up once, and now
+it'll just run on its own for as long as
+I want it to. And this same tool helped
+me research and source every number on
+the dashboard. Computer routes the work
+across multiple AI models in parallel.
+So while one agent was cross-checking
+Tesla's IR deck, another was pulling
+Whimo's latest blog post. So computer's
+not replacing me, at least not yet. But
+it's giving me a team of agents to do
+things that I can't do on my own. And it
+does them while I sleep or while I do
+anything else. So honestly guys, sponsor
+or not, I cannot recommend Perplexity
+Computer enough. This technology is
+going to have massive implications on
+our future and I believe those that
+learn the technology early are going to
+benefit the most. So the link to this
+very dashboard will be below. It's
+electrified.plx.app
+and you can click this red brief me
+button and it'll start your own
+Perplexity Computer session. And again,
+you can save or bookmark this very
+dashboard that will be updated in real
+time, and it is optimized for mobile and
+desktop. So, if you can't tell, I'm
+super excited about this one. I really
+hope you guys take a second to try this
+out for yourself. And as always, thank
+you for supporting the channel in this
+way. It might take a few seconds to load
+the first time you do it, but after
+that, it should be good. And share all
+the feedback you have because again, in
+the weeks ahead, I'll continue to build
+this out and update it. But this brings
+me back to the Cyber Cab deployment
+timeline conversation. In the last
+video, we talked about the challenges
+Tesla had getting FSD to work well on
+the Cybertruck. When I went back and did
+more research, got further into the
+weeds, it turns out we don't have any
+official information like I thought
+about exactly what the challenges were.
+But based on forums and comments and
+everything I could gather, it seems like
+the options are the rear wheel steer of
+the Cybertruck, the variable ratio
+steering of the Cybertruck, and of
+course, the camera positioning on the
+vehicles and the overall vehicle
+dynamics. So, all three were certainly a
+factor. But here's the thing, on the
+Cyber Cab, none of those challenges are
+actually going to apply. The Cyber Cab
+will not have rear wheel steering, which
+is also known as four-wheel steering.
+That's a very niche feature, usually for
+higher-end vehicles or larger trucks,
+but that's something the Cyber Cab won't
+have. And then production variants of
+the Cyber Cab without a wheel and pedals
+obviously will not have a variable
+steering ratio in the traditional sense
+because there's no physical steering
+wheel at all. Meaning the output
+controls on the Cyber Cab will all be
+done with AI and software. And we know
+the Cyber Cab is a front-wheel drive
+vehicle, so it will still likely use
+steer by wire except those controls will
+be sent to the actuators that will
+actually turn the wheels on the front
+axle. And once again, all of that will
+be handled with AI and software. And
+sure, the camera placements on the Cyber
+Cab are different than the rest of the
+lineup, but it's going to be much closer
+to a vehicle like the Model 3. And so
+there will definitely be a season needed
+to retrain the models for the Cyber Cab
+build, but I was looking at it totally
+wrong. So what Tesla pulled off, getting
+FSD on the Cybertruck was going to be
+far harder than getting FSD on the Cyber
+Cab. Said another way, if Tesla can
+figure out FSD for the Cybertruck and
+all those specialty features, then it
+should actually be relatively easy on
+the Cyber Cab. But before I share my new
+expected timeline for cyber cab
+deployment, I do want to touch on the
+unboxed method because FSD aside,
+obviously Tesla needs to work out the
+physical part of the cyber cab from a
+manufacturing standpoint. And I do
+really think Tesla moving to the Ether
+Loop gets slept on because it is that
+breakthrough that actually enables Tesla
+to do the unboxed manufacturing in the
+first place. If you need a quick
+refresher, Tesla took the traditional
+wiring system where you would run a ton
+of copper wires, sometimes all the way
+across the vehicle, front to back, side
+to side, to connect all these different
+controllers that run things like the
+windows, the lights, the motors, and
+everything else. But now Tesla's Ether
+Loop is shifting that to a high-speed
+Ethernet ring around the car. Just think
+of it like a NASCAR racetrack circling
+the whole vehicle. along that track at
+different points. You still have those
+controllers. The older low-speed ones
+are still speaking their familiar CANB
+language, but Tesla then packages that
+traffic and sends it over the faster
+gigabit Ethernet backbone. And so the
+high-performance stuff, things like
+steer by wire, motor controls, and FSD
+related traffic talks natively on this
+new network. And here's the cool part.
+Because it's a closed loop system
+running around the car in both
+directions, you get redundancy built in.
+So if something happens, a signal gets
+lost or a wire gets cut, that message
+will still make it to the end
+destination because it's running around
+the car in two directions. And doing it
+this way eliminates a massive amount of
+wiring from the vehicle. We're talking
+somewhere around 70% less wiring than a
+Model 3 from about 490 wires down to
+around 155 on the Cybert truck. Even
+though the number of connection points
+actually went up. So, it's cheaper, it's
+lighter, it's way simpler to
+manufacture. And it's actually the key
+reason Tesla's unboxed manufacturing
+process is possible. So, we know with
+the unboxed method, you have these big
+modules, the front end, the rear end,
+the doors, and whatever else. Each one
+has its own short segment of that ether
+loop harness. So when you bring all the
+modules together and snap them into
+place, kind of like Legos, that full
+ring just connects and then you're off
+to the races. No more fighting with
+giant harnesses that have to snake
+through the entire car. And as always,
+guys, there really is so much to the
+story. Once you start getting into this
+technology, you realize how many other
+things it actually impacts and changes.
+Because Tesla's running this system on
+48 volts now, it means they can now run
+both power and data over that Etherloop
+system, which on its own unlocks a whole
+host of new features. Tesla can now
+integrate the audio system and the UI
+controls directly into the main network
+instead of needing their own separate
+heavy wiring harnesses. And things like
+active road noise cancellation and those
+features can be carried out on the
+Etherloop. But most critically of all,
+if we assume that Tesla is indeed
+running FSD commands and video feeds
+from the cameras to the AI computer over
+that Etherloop network, which I think is
+a pretty safe assumption, it obviously
+needs to have redundancy built in. It
+needs to have very minimal latency and
+it needs to be reliable. And you guessed
+it, it is. The gigabit Ethernet can run
+somewhere around 200 times faster than
+the older canvas wiring with millisecond
+type latency, which also just happens to
+open up a ton of headroom for Tesla in
+the future to continue building on and
+adding on to that system. And as I said,
+there's even more to the story. So over
+time, Tesla has been working on building
+all of these controllers inhouse,
+vertically integrating them. So instead
+of Tesla doing what most other
+automakers do, working with hundreds of
+different suppliers, each with their own
+software and language for these vehicle
+controllers, Tesla has been building
+exactly what it needs on its own. And
+they're actually making these
+controllers more general purpose in this
+case and more softwaredefined. That's
+because Tesla wants to be able to
+control multiple things with each
+controller, the headlights, the brakes,
+the windows, whatever else using fewer
+unique controllers. But in the end,
+Tesla can have far more connections
+between everything because of how much
+data they can move around the Etherloop.
+And so all this to say, it's a
+relatively new technology even for
+Tesla. Yes, they have it on the Cybert
+truck and likely on the semi as well,
+but the Cyber Cab is going to benefit
+immensely from this architecture given
+again it has no rear steering, no
+traditional variable steering ratios.
+The camera placements are much closer to
+the rest of the fleet and it's a
+purpose-built autonomous first design
+with no wheels or pedals. So my new
+stance is that whatever neural net
+training Tesla needs to do for the AI
+steering output, it's going to be far
+more straightforward than it was on the
+Cybert truck. And as some of you pointed
+out, it's also true that Cortex 2 is now
+online and has started running training
+workloads as Tesla told us on the Q1
+deck. So Cortex 1 was over 100,000 H100
+equivalents and Cortex 2 is going to be
+over 130,000 H100 equivalents. But the
+latter is still in the early ramp phase.
+So, is Cortex 2 running frontier models
+or is it just getting warmed up in a
+sense? We don't have that level of
+detail, but it's a fact that Tesla has
+likely materially more compute available
+now than it did when it was working on
+getting FSD on the Cybert truck. So,
+given all of that, I now happen to
+believe that the deployment of the Cyber
+Cab will largely hinge on Tesla's risk
+tolerance. Meaning from a technical
+standpoint, I think the Cyber Cab could
+be ready for deployment sometime in the
+coming weeks. Having received some
+clarification on the challenges of
+getting FSD on the Cybertruck, I now
+think Tesla is incredibly well
+positioned to have FSD ready for the
+Cyber Cab. And it really should be far
+more straightforward than what they had
+to deal with with the Cybertruck. So
+given all of that, my new expectation
+for when we see a cyber cab on the robo
+taxi network for a paid unsupervised
+ride will be sometime in July. That
+gives Tesla three full months from the
+start of production to validate the
+unboxed method to ensure the safety and
+the tolerances and things like the ether
+loop are all working as expected
+reliably on all production units. And
+having clarified all of this, part of me
+does feel like it could be imminent even
+sooner than that. But I keep defaulting
+to Tesla has no reason to rush it. The
+Model Y will work just fine on a small
+scale like it is now. And there's just
+no rational argument for why Tesla
+should rush it. And anytime over the
+next few months will be just fine in the
+long run. So in the weeks ahead, I
+myself will be watching with even more
+anticipation now that I'm pretty
+confident porting FSD to the Cyber Cab
+is not going to be a challenge like it
+was on the Cybert truck. So, my
+apologies for the false alarm on Monday.
+Hopefully, through this process, you
+guys learned something new, but I am
+sure this will not be the last time I
+changed my mind about something Tesla
+related. And before we move on, I found
+the chart from Tesla where they show
+they're now designing their own
+controllers. So, the line is the
+percentage of Tesla designed
+controllers. Back with the Model S, it
+was only 20%. With the Cybertruck, they
+got up all the way to 85%. And for the
+nextG vehicle, the Cyber Cab is expected
+to be 100% designed inhouse. And some of
+you will remember that Jim Farley
+interview he gave last year where he
+said they actually work with 150
+different suppliers for these
+controllers, each of which has its own
+software and its own languages. And then
+Ford has to bring that all together in
+its vehicles. Whereas Tesla for their
+cyber cab has one supplier and that
+supplier is Tesla. And even companies
+like Whimo, they're not developing their
+own controllers. And the companies
+they're sourcing vehicles from likely
+aren't either, at least not to the level
+Tesla is. So, this all just works
+together to be part of the reason Tesla
+can actually offer a Cyber Cab for less
+than $30,000. So, again, we might have
+to be patient when it comes to scaling
+this year, and I'm trying to keep those
+expectations low. But guys, truly longer
+term, I still just don't see any way
+anybody else can compete with Tesla
+whenever that scale does arrive. Even if
+we are waiting until next year, no one
+is even close to being able to offer
+what Tesla can because they've been
+working on all of these technologies for
+a decade plus today. Joe Teter said over
+70 cyber cabs at Giga Texas outbound lot
+today in three major areas and driving
+around. I think this is now the largest
+single gathering of cyber cabs I've
+observed. The daily production rate is
+still likely in the neighborhood of 5 to
+15 per day, and I still think we're
+likely to see hundreds shipped off
+across the country for testing and
+validation. But I am now much more
+optimistic that the primary challenge
+for Tesla deploying CyberC, whatever
+that ends up being, will not likely be
+getting FSD to work reliably on the
+CyberCab. And Tesla's not yet at the
+place where it'll start reporting on
+number of rides given per vehicle or per
+day or week or whatever metric. But that
+time will come eventually. And when it
+does, it'll be important to remember
+this statistic. Recently, Pony AI said
+reaching unit economics break even in
+two tier 1 Chinese cities demonstrates
+autonomous mobility is not only
+technically viable, but also
+economically sustainable at scale. And
+their break even number per vehicle if
+you look from a monthly perspective is
+an average of 23 orders per vehicle per
+day. Said another way, 23 rides per
+vehicle per day. That's the number Pony
+AI needs to hit to be at roughly break
+even for its robo taxis. Now, of course,
+exactly how Pony AI defines its unit
+economics break even is going to be
+somewhat of a black box, but 23 rides
+per vehicle per day should be a number
+we store in the back of our minds for
+when Tesla starts reporting its data.
+I've said we should be cautious with all
+of these massive growth numbers for one
+month data for Tesla sales this year.
+Yes, they're certainly encouraging, but
+I'm still waiting to zoom out to see how
+we end up through two quarters looking
+at the bigger picture. But something I
+do believe is signal. Roland said Giga
+Shanghai produced more cars than ever
+during the first four months of the
+year. And he shared this chart. So you
+can see through April, which is this
+blue box, that's the highest production
+level ever for Giga Shanghai. Not by a
+wide margin relative to 2024, but still
+the best ever. and significantly ahead
+of 2025. But guys, as always, we have to
+have some perspective here. Remember, Q1
+2025 was the change over to the new
+Model Y and the new Model 3 and that
+bled into Q2. But I still think this is
+a meaningful way for Giga Shanghai to
+start the year. And as Elon would say,
+that's before FSD approved. And I would
+add to that both in China for that
+broader approval and largely across the
+EU. We actually already talked about
+this a few weeks ago, but Andre Turig
+did say they announced a $250 million
+investment for the Gigab Berlin cell
+factory. It'll enable 18 gawatt hours of
+annual 4680 cell production and create
+more than 1,500 new jobs. Good news
+during challenging times for the German
+industry. And the reason this number
+matters is because from an annual
+perspective, that's likely to be enough
+sales for in the neighborhood of 240,000
+vehicles, which means once it's up and
+running and hitting those levels, which
+might take a year plus. But whenever
+Gigab Berlin gets there, they might be
+able to supply nearly 100% of vehicles
+produced there with its own in-house
+4680s. And further, I think it's a great
+sign that Tesla feels very confident
+about where 4680 production is at this
+point, given that it's now exporting
+that manufacturing process, which as far
+as we know is likely to include DBE for
+both the anode and the cathode. This
+rendering you're seeing was created by
+not a Tesla app, but Tesla has patented
+a new trim clip to reduce rattles and
+vibrations in the car. Tesla's patent
+describes a new trim clip system that
+uses a soft vibration isolating layer
+between components. The patent says the
+design helps improve retention while
+also damping noise and vibration. I
+really have come to love Tesla's
+relentless innovation even with the
+smallest of details. A full-on patent
+for trim clips. The continuous
+improvement and attention to detail are
+unmatched. Drew Baglo just said, "You
+know what? Heron power is not enough.
+I'm going to fire up another startup
+focused on heat pumps. The startup is
+called Sadi Thermal Machines. Little is
+known about the company right now, but
+it appears to employ several Tesla
+alumni. Don't forget what Drew said in
+the past. We've learned a lot about how
+to make capable and reliable heat pumps
+that work in all environmental
+conditions and are excited about the
+idea of working on that problem one day.
+That problem being a heat pump that
+would handle both HVAC and water
+heating. He said making a heat pump for
+the home would be easier. It's way
+harder in a vehicle. It's so constrained
+on mass and volume and energy. So
+hopefully Drew can find success with
+this company and then Tesla can acquire
+his company in a few years and finally
+bring that Tesla branded home HVAC
+system to market. Today Whimo said we're
+expanding in Miami with Austin, Atlanta,
+Houston, and the Bay Area up next. Soon
+we'll cover 1,400 plus square miles
+across 11 cities. And yes, I plan to add
+this statistic to my Teslaomy tracker.
+So rather than just showing the current
+biggest geoence for each company, we can
+also have the total square miles
+covered. Today on LinkedIn, Matt Mlullen
+said, "Covenant Logistics is kicking off
+a 3-week demo of the Tesla Semi. We are
+running the 500 mile variant and keeping
+our day simple with a 200-mile round
+trip. More details coming soon. As of
+now, it's looking like I will have
+another interview upload coming this
+Sunday. So, be on the lookout for that
+one. Tesla stock closed the day at
+$44527,
+up 2.73% while VNDX was up 1.04%.
+The volume was 4% above the average. And
+don't forget, if you have any interest
+in checking out Perplexity Computer, my
+link's in the description below. Then
+you can click that brief me button on
+the dashboard, and that will open up
+your own Perplexity Computer session,
+and you can go from there. Even if it's
+just for one month, I highly recommend
+you try building something on your own.
+If you haven't, I am very confident your
+mind will be blown. Hope you all have a
+wonderful day and a huge thank you to
+all of my Patreon supporters.
