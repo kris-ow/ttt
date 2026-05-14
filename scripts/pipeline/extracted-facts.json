@@ -6483,5 +6483,65 @@
     "channel": "electrified",
     "extractedAt": "2026-05-14T04:14:15.939Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab production rate estimated at approximately 20–40 units per day, expected to increase over time",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "20–40/day implies roughly 7,300–14,600 units/year at current rate; hosts expect ramp-up, making this a near-term baseline for fleet growth modeling",
+    "source": "20260514_brighterwithherbert_01_Teslas_Biggest_Transition_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-14T14:03:02.042Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD has accumulated 8 billion supervised miles across the Model 3/Y fleet",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 8000000000,
+    "context": "Establishes the scale of Tesla's FSD training data vs. the Cybercab which has almost no real-world miles yet; relevant for fleet readiness and insurance/safety modeling",
+    "source": "20260514_brighterwithherbert_01_Teslas_Biggest_Transition_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-14T14:03:02.042Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla hiring self-driving data collection supervisors across 33 cities as of the video's publication date (May 14, 2026)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": null,
+    "context": "Hiring scale across 33 cities reflects the human oversight infrastructure being built out ahead of unsupervised robotaxi deployment",
+    "source": "20260514_brighterwithherbert_01_Teslas_Biggest_Transition_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-14T14:03:02.042Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab charge port is located at the bottom rear of the vehicle; wireless charging not yet available",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Current charging requires depot-based human or automated plug-in; wireless charging pending regulatory and hardware readiness, affecting per-vehicle infrastructure cost assumptions",
+    "source": "20260514_brighterwithherbert_01_Teslas_Biggest_Transition_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-14T14:03:02.042Z",
+    "status": "pending"
+  },
+  {
+    "fact": "First 5,000 Optimus units planned for internal training deployment across Tesla engineering offices and factories",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 5000,
+    "context": "Near-term Optimus deployment scale; not revenue-generating but establishes training baseline before external/commercial deployment",
+    "source": "20260514_brighterwithherbert_01_Teslas_Biggest_Transition_Is_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-14T14:03:02.042Z",
+    "status": "pending"
   }
 ]
