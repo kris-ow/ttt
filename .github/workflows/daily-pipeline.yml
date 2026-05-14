@@ -2,13 +2,22 @@ name: Daily Summary Pipeline
 
 on:
   schedule:
-    # 4x daily: Europe 6AM, US East 6AM, US West 6AM, evening catch-up
+    # 4x daily: Europe 6AM, US East 6AM, US West 6AM, evening catch-up.
+    # Acts as a safety net now that push events handle the common case.
     # Split entries so github.event.schedule can distinguish the early runs (which
     # build the exec summary) from the later runs (which skip it).
     - cron: '15 0 * * *'
     - cron: '15 7 * * *'
     - cron: '15 10 * * *'
     - cron: '45 17 * * *'
+  push:
+    # Fire as soon as Mac Mini pushes new transcripts. Bot's own _summary.txt
+    # commits use GITHUB_TOKEN, which does NOT trigger workflows — so no loop.
+    # Time-gated steps below (exec/weekly/Reddit briefs) check
+    # github.event.schedule, which is undefined on push, so they stay cron-only.
+    branches: [master]
+    paths:
+      - 'news/**.txt'
   workflow_dispatch:
     inputs:
       mode:

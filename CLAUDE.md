@@ -39,7 +39,7 @@ Transcript-driven summarization pipeline (transcripts pushed directly to repo by
 - `prompt.md` — prompt template with placeholder slots
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — 4x daily GitHub Actions (00:15, 07:15, 10:15, 17:45 UTC): summarize → exec summary (early runs only) → commit → deploy (failure → auto-creates GitHub issue)
+- `.github/workflows/daily-pipeline.yml` — triggered on `push` to `news/**.txt` (Mac Mini transcript arrival) plus 4x daily safety-net cron (00:15, 07:15, 10:15, 17:45 UTC): summarize → exec summary (early cron runs only) → commit → deploy (failure → auto-creates GitHub issue)
 - `.github/workflows/freshness-check.yml` — daily 12:00 UTC: alerts via GitHub issue if unsummarized transcripts remain
 
 Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries → on 00:15/07:15 UTC runs, `exec-summary.js` aggregates the day into the Daily Tesla Brief pinned first in the feed
@@ -89,7 +89,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 | Content | Source | Trigger |
 |---|---|---|
 | Transcripts | Mac Mini yt-transcripts → git push | Mac Mini pushes directly to repo after download |
-| Daily Feed summaries | `news/` → `build-news.js` → `src/data/news.json` | `daily-pipeline.yml` 4x daily (00:15, 07:15, 10:15, 17:45 UTC) — Claude Batch API summarizes new transcripts |
+| Daily Feed summaries | `news/` → `build-news.js` → `src/data/news.json` | `daily-pipeline.yml` on Mac Mini transcript push (event-driven) + 4x daily safety-net cron — Claude Batch API summarizes new transcripts |
 | Daily Tesla Brief | `news/YYYYMMDD_ttt_00_executive_summary.txt` | Same workflow, only on 00:15 + 07:15 runs |
 | Weekly Tesla Brief | `news/YYYYMMDD_ttt_99_weekly_brief_summary.txt` | Same workflow, only on Monday 07:15 (in-step day-of-week gate) |
 | Robotaxi trackers | `src/data/knowledge-base.json` (composite areas), `data/counts.json` | `fleet-scrape.yml` 3x daily (03:00, 11:00, 19:00 UTC) |
