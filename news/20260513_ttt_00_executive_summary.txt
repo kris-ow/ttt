@@ -1,0 +1,108 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-13)
+Published:   2026-05-13 00:00 UTC
+Summarized:  2026-05-14 04:15:20 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.08995 (15798 in / 2837 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | +1 | +17 |
+| Houston | 6 | 0 | 0 | +6 |
+| Dallas | 5 | 0 | 0 | +5 |
+| **Total** | **39** | 0 | +1 | +28 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Belgium FSD supervised testing approval imminent — "within days"
+- Cybercab: 70+ units spotted at Giga Texas; production est. 20–40/day
+- Optimus: Chinese suppliers committed to 70,000-unit supply chain for 2026
+- BYD overtakes Tesla as world's top BESS deployer — 13% share vs. 10%
+- Tesla invests ~$250M to double 4680 capacity at Giga Berlin to 18 GWh
+- Ron Baron projects Tesla at $2,000–$2,500 within 10 years
+
+## Autonomous Driving
+
+- **Belgium FSD supervised testing approval days away.** Flemish mobility minister Annick De Ridder stated approval for Tesla FSD (Supervised) testing on public roads in Flanders could come "within days" as regulators review Tesla's documentation. This is the most concrete European regulatory progress to date on FSD public road testing.
+
+- **FSD v15 flagged as gating event for "super scale" Cybercab launch.** Tesla has stated it is waiting for FSD version 15 before large-scale deployment. The version release cadence is a key monitoring signal — a bump to v15 would be a meaningful indicator that broad Cybercab rollout is imminent.
+
+- **Cortex 2 online and ramping training workloads.** Per Tesla's Q1 earnings deck, Cortex 2 has come online with over 130,000 H100 equivalents (vs. Cortex 1's 100,000+), though still in early ramp. Tesla likely has materially more compute available now than when it was porting FSD to the Cybertruck.
+
+- **Cybercab FSD porting expected to be easier than Cybertruck.** Per Loomis (electrified), the Cybertruck's porting challenges — rear-wheel steering, variable steering ratio, non-standard camera placement — do not apply to the Cybercab. The Cybercab has no rear-wheel steering, no physical steering wheel, is front-wheel drive with steer-by-wire, and uses camera placements closer to the Model 3.
+
+- **AI4 confirmed sufficient for unsupervised Cybercab operation; AI5 not required.** Bhakdi states Elon was explicit on the Q1 earnings call that AI5 is not a prerequisite for fully unsupervised Cybercab service.
+
+## Robotaxi
+
+- **Cybercab production rate estimated at 20–40 units/day at Giga Texas**, based on Joe Tegtmeyer drone footage showing groupings of 50–60+ units in the staging lot. Tegtmeyer separately reported over 70 Cybercabs in the outbound lot in a single day — the largest single gathering observed to date. Despite the ramp, zero Cybercabs have entered live passenger service; the entire unsupervised fleet remains Model Ys.
+
+- **Two competing Cybercab deployment timelines emerged today.** Loomis (electrified) revised his prior estimate to July 2026, reasoning Tesla needs roughly three months from production start to validate the unboxed method and Etherloop reliability. Herbert (brighterwithherbert) argues the vehicle will stay out of passenger service two to three months while accumulating 50–100 million Cybercab-specific miles, placing a switch-flip "somewhere between September and November." Neither timeline is official.
+
+- **Dallas service quality problems documented by multiple outlets.** Reuters tested the Dallas service and found long wait times, frequent unavailability, and drop-offs sometimes far from destinations — one reporter waited 36 minutes before getting a ride, and a trip to city hall took nearly 2 hours. A separate user report described a Cybercab-era maneuver where a car got stuck attempting a turn and blocked the road for nearly a minute.
+
+- **Austin wait times remain a friction point.** Reuters cited Austin officials' data showing Tesla operates approximately 50 vehicles in Austin vs. more than 250 Waymo vehicles. A 3-week April 2026 tracking study found wait times exceeded 15 minutes roughly half the time, exceeded 25 minutes more than 25% of the time, and no cars were available 27% of the time.
+
+- **33 US cities where Tesla is actively hiring for robotaxi roles**, per job posting analysis on X. At 100 vehicles per city across all 33, that yields 3,300 vehicles from expansion markets alone. The host (brighterwithherbert) treats quiet staffing decisions as a more reliable forward signal than public Musk statements.
+
+- **End-of-year fleet size range modeled at 3,300 to 15,000 robotaxis.** Production math: ~30 Cybercabs/day over ~150 days (May–October) yields roughly 4,500 units, with ramp potentially reaching 5,000–10,000 by year-end. Three Texas cities at ~1,100 vehicles each plus 5–7 expansion cities at 500–1,500 each generates the upper bound.
+
+- **Pony AI break-even benchmark: 23 rides per vehicle per day**, achieved in two Tier 1 Chinese cities. Flagged by Loomis as a useful reference metric for when Tesla begins reporting ride-level data.
+
+## Humanoid Bots
+
+- **Chinese Optimus suppliers committed supply chain capacity for 70,000 units in 2026**, per a December 2025 leak from "Tesla Ming," described as a well-sourced Chinese industry source. Bhakdi interprets this as confirmation Optimus is entering mass production this year — framing supplier capex commitments as harder evidence than forward guidance.
+
+- **US-China trade normalization is a direct Optimus supply chain catalyst.** Bhakdi emphasizes that high tariffs or a continued trade war would be damaging for Tesla's humanoid robot program given China's role in Optimus component supply. He views Trump's China state visit — with Elon Musk walking off Air Force One second behind Trump — as a constructive signal for Tesla's manufacturing dependencies.
+
+## Energy
+
+- **BYD overtook Tesla in 2025 to become the world's largest BESS integrator**, capturing 13% of global market share vs. Tesla's 10%, per Benchmark Mineral Intelligence. BYD shipped over 60 GWh; Tesla deployed 46.7 GWh — up 49% year-over-year but insufficient to hold the top position it had held in 2023 and 2024.
+
+- **Global BESS market nearly doubled in 2025**: installations jumped 51% to ~315 GWh; cell shipments for stationary storage exceeded 600 GWh. China installed 65 GWh of large-scale storage in December 2025 alone — more than the entire US deployed over the full year.
+
+- **BYD's HaoHan system carries a structural capacity advantage**: 14.5 MWh standard configuration vs. Tesla Megapack 3's 5 MWh per unit. A 12.5 GWh HaoHan deployment is underway in Saudi Arabia. Tesla's structural response — the Houston Megafactory targeting 50 GWh annual capacity by late 2026 and a $4.3 billion LFP cell deal with LG Energy Solution starting August 2027 — is acknowledged but described by Electrek's Fred Lambert as urgently needed given Tesla's current reliance on CATL and BYD for cells.
+
+## Electric Vehicles
+
+- **Tesla investing ~$250 million to expand 4680 production at Giga Berlin**, more than doubling the site's annual capacity target to 18 GWh and creating over 1,500 jobs. At full ramp, output would be sufficient for approximately 240,000 vehicles annually — potentially enough to supply nearly 100% of Giga Berlin's production with in-house cells.
+
+- **Giga Shanghai set a through-April cumulative production record in 2026**, surpassing both 2024 and the disrupted early-2025 period affected by the Model Y and Model 3 changeover. This occurred before any broader FSD approval in China or the EU.
+
+- **Tesla Semi 500-mile variant running a 3-week demo with Covenant Logistics** on a 200-mile round trip, per a LinkedIn post from Matt Mullen. Battery capacities officially confirmed: 548 kWh (standard range) and 822 kWh (long range).
+
+- **Tesla Semi appearing on European websites**, standard range only, with a European launch expected 2027 at earliest. A European Semi factory is speculated most likely at or near Giga Berlin.
+
+## Market & Competition
+
+- **SpaceX IPO expected on NASDAQ in late June 2026**, with betting markets projecting the offering to close above $2.2 trillion on day one and to be added to three major indexes within 5, 10, and 15 days post-IPO. Ron Baron projects SpaceX worth $10–$30 trillion over 10–15 years and plans to purchase an additional $1 billion of SpaceX stock at IPO.
+
+- **Betting markets currently assign 50% probability to a Tesla-SpaceX merger within one year.** Bhakdi argues a "magnet effect" pulls Tesla's market cap (~$1.3–1.4 trillion) toward SpaceX's anticipated IPO valuation (~$2.2 trillion), creating a merger-driven valuation dynamic independent of Tesla fundamentals.
+
+- **Ron Baron projects Tesla at $2,000–$2,500 per share within 10 years**, implying a market cap of roughly $8.3 trillion at $2,500 — approximately 5.7x today's value. Baron's firm has generated ~$8 billion in profit from Tesla since investing ~$400 million between 2014 and 2016.
+
+- **Waymo expanding to Miami**, with Austin, Atlanta, Houston, and the Bay Area listed as next in pipeline, projecting 1,400+ square miles of coverage across 11 cities.
+
+Notable quotes and data:
+- Ron Baron: "I think that the company over the next 10 or 15 years is going to be worth 10 trillion, 20 trillion, 30 trillion. And I could be very low." (on SpaceX)
+- Ron Baron Tesla price target: $2,000–$2,500/share within 10 years (~$8.3 trillion market cap at high end)
+- Belgium FSD approval: "within days" per Flemish minister Annick De Ridder
+- Cybercab production: estimated 20–40 units/day; 70+ units observed in single day at Giga Texas outbound lot
+- Unsupervised fleet: 39 vehicles (all Model Ys) per RobotaxiTracker.com — zero Cybercabs in live service
+- Optimus supply chain: 70,000-unit commitment from Chinese suppliers for 2026, per Tesla Ming (Dec 2025 leak)
+- BYD: 60+ GWh shipped in 2025 (13% share); Tesla: 46.7 GWh (+49% YoY, 10% share)
+- Giga Berlin 4680 investment: ~$250M, 18 GWh annual capacity, ~1,500 jobs, ~240,000 vehicles' worth of cells
+- Austin robotaxi: ~50 Tesla vehicles vs. 250+ Waymo; no cars available 27% of the time in April 2026 study
+- Pony AI break-even: 23 rides per vehicle per day
+- Tesla Semi battery: 548 kWh (standard), 822 kWh (long range)
+- SpaceX IPO: expected ~$1.7 trillion pricing, projected to close above $2.2 trillion; late June 2026 on NASDAQ
+- Tesla stock: $445.27, +2.73% on day; NASDAQ +1.04%
+- Bhakdi price target: $490; Pioneer Alpha portfolio +36% YTD, +43 pp alpha over Tesla

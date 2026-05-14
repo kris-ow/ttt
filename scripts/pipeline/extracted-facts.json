@@ -6399,5 +6399,89 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-13T19:27:38.098Z",
     "status": "pending"
+  },
+  {
+    "fact": "Chinese suppliers for Optimus were preparing supply chain readiness for 70,000 units in 2026, per Tesla Ming leak from December 2025",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 70000,
+    "context": "Represents the supply chain capacity commitment for Optimus in 2026; Bhakdi interprets this as confirmation of mass production entry this year, though actual deliveries may be lower",
+    "source": "20260513_jobhakdi_01_Tesla_Stock_Trump_Elon_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-14T04:14:15.927Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Pony AI reports break-even unit economics at 23 rides per vehicle per day in two Tier 1 Chinese cities",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 23,
+    "context": "Provides a real-world robotaxi break-even benchmark (rides/vehicle/day) that can anchor utilization assumptions in Tesla robotaxi DCF models",
+    "source": "20260513_electrified_01_I_Was_Wrong_About_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-14T04:14:15.939Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Reuters/Austin officials: Tesla operating approximately 50 vehicles in Austin robotaxi service as of May 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 50,
+    "context": "Austin fleet count cited by Reuters from an Austin officials slideshow; notably lower than RobotaxiTracker.com canonical figure of 104 for Austin, suggesting a different definition or data lag",
+    "source": "20260513_electrified_01_I_Was_Wrong_About_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-14T04:14:15.939Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Joe Tegtmeyer observed 70+ Cybercabs in Giga Texas outbound lot; estimated daily production rate of 5–15 units per day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Early-stage Cybercab production rate (5–15/day) informs near-term fleet growth projections; 70+ units already accumulated at Giga Texas outbound lot",
+    "source": "20260513_electrified_01_I_Was_Wrong_About_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-14T04:14:15.939Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab target retail price is under $30,000",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Loomis cites sub-$30,000 price point as enabled by 100% in-house controllers and Etherloop architecture; relevant to fleet acquisition cost in DCF models",
+    "source": "20260513_electrified_01_I_Was_Wrong_About_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-14T04:14:15.939Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin robotaxi wait times exceeded 15 minutes ~50% of rides, exceeded 25 minutes >25% of rides, and no cars available 27% of the time (3-week April 2026 study)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Availability and wait time data reflect very low current fleet utilization and service reliability at small scale; relevant for near-term unit economics modeling",
+    "source": "20260513_electrified_01_I_Was_Wrong_About_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-14T04:14:15.939Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo operating more than 250 vehicles in Austin vs. Tesla's approximately 50 vehicles in Austin",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 250,
+    "context": "Waymo Austin fleet is ~5x Tesla Austin fleet, illustrating current competitive gap in a shared market; Waymo figure for competitive context",
+    "source": "20260513_electrified_01_I_Was_Wrong_About_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-14T04:14:15.939Z",
+    "status": "pending"
   }
 ]

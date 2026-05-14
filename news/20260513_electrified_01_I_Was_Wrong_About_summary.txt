@@ -1,0 +1,61 @@
+Channel:     electrified
+Title:       I Was Wrong About Tesla's Cybercab (Important Update) ⚡️
+Published:   2026-05-13 23:20 UTC
+Summarized:  2026-05-14 04:14:15 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01NYxWpsVsuGfTK2aJnfvuYL
+Cost:        $0.04535 (9469 in / 4153 out tokens)
+Categories:  Robotaxi, Autonomous Driving, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+In this video, host Dillon Loomis of the "electrified" channel walks back his earlier prediction that the Cybercab would hit the robotaxi network by September 15th, replacing it with a revised July 2026 timeline. He explains why he was wrong — specifically that the challenges Tesla faced getting FSD to work on the Cybertruck (rear-wheel steering, variable steering ratio, camera placement) do not apply to the Cybercab — and argues that Tesla is actually very well-positioned to port FSD to the Cybercab relatively easily. He also introduces a new self-built robotaxi tracking dashboard called "Tesla Autonomy" and covers broader Tesla news including Dallas and Austin robotaxi experience reports, Giga Shanghai production records, a Giga Berlin cell factory investment, and Waymo's expansion plans.
+
+## Robotaxi
+
+1. **Revised Cybercab deployment timeline — now July 2026:** Loomis formally revises his Cybercab robotaxi deployment prediction from September 15th to July 2026. He reasons that Tesla needs roughly three full months from the start of production to validate the unboxed manufacturing method, confirm safety tolerances, and ensure the Etherloop is working reliably across all production units. He acknowledges the timeline could be even sooner, but notes Tesla has no reason to rush since the Model Y is functioning adequately at the current small scale.
+
+2. **Dallas robotaxi service struggling with navigation and availability:** A report from Spencer described the worst robotaxi move he had seen in recent months — a car attempting to turn onto a street, getting stuck, and blocking the road for nearly a minute. Reuters also tested the Dallas service and found it plagued by long wait times and sometimes no availability at all, with drop-off spots sometimes far from the rider's destination. One reporter tried for 30 minutes to book a ride, was repeatedly met with "high demand" or "service unavailable," and after 36 minutes finally got a ride with a 19-minute wait. On another ride, what should have been a 20-minute drive to city hall took nearly 2 hours, and Tesla support confirmed the area around city hall was not yet in the service zone.
+
+3. **Austin robotaxi wait time data — half of rides over 15 minutes:** Reuters cited a recent slideshow from Austin officials indicating Tesla is operating approximately 50 vehicles in Austin, compared to more than 250 Waymo vehicles in Austin. A reporter who spent 3 weeks in April 2026 tracking wait times found that wait times exceeded 15 minutes about half the time, were at least 25 minutes more than 25% of the time, and 27% of the time no cars were available at all. Loomis acknowledges the Reuters framing tends to be negative on Tesla but believes in this case it is a realistic representation of the experience for non-Tesla fans.
+
+4. **Cybercab FSD porting should be easier than Cybertruck:** Loomis corrects his prior video's implicit assumption that FSD porting to the Cybercab would be as difficult as it was on the Cybertruck. He clarifies that the Cybertruck's challenges — rear-wheel (four-wheel) steering, variable steering ratio, and non-standard camera placements — do not apply to the Cybercab. The Cybercab has no rear-wheel steering, no physical steering wheel (so no traditional variable steering ratio), is front-wheel drive, uses steer-by-wire with AI-controlled actuators, and has camera placements much closer to the Model 3. He concludes that porting FSD to the Cybercab should be far more straightforward than it was for the Cybertruck.
+
+5. **Cybercab production observed at Giga Texas:** Joe Tegtmeyer reported over 70 Cybercabs in the Giga Texas outbound lot across three major areas, with vehicles driving around — described as the largest single gathering of Cybercabs observed to date. Loomis estimates the daily production rate is still likely in the neighborhood of 5 to 15 units per day and expects hundreds to be shipped across the country for testing and validation.
+
+6. **Pony AI break-even benchmark — 23 rides per vehicle per day:** Loomis highlights that Pony AI announced reaching unit economics break-even in two Tier 1 Chinese cities, with the key metric being an average of 23 orders (rides) per vehicle per day. Loomis flags this as a useful benchmark to store in memory for when Tesla eventually begins reporting its own ride-level data.
+
+7. **Tesla Autonomy dashboard introduced:** Loomis introduces a new self-built robotaxi tracking dashboard called "Tesla Autonomy," vibe-coded using Perplexity Computer (the video's sponsor). Features include an interactive map of active robotaxi cities, a countdown showing days remaining for Tesla to launch in its officially announced cities, a hiring watch list that populates new cities on the map, a head-to-head Tesla vs. Waymo comparison with clickable data points, NHTSA incident data broken down by pre-crash movement, injury severity, and geography (noting 5 of Tesla's 15 incidents involved a stopped Tesla vehicle), and real-time Tesla and NASDAQ prices. The dashboard is available at electrified.plx.app.
+
+## Autonomous Driving
+
+1. **Cortex 2 now online and ramping training workloads:** Loomis notes that Cortex 2 has come online and begun running training workloads, as disclosed in Tesla's Q1 earnings deck. Cortex 1 was over 100,000 H100 equivalents; Cortex 2 will be over 130,000 H100 equivalents, though it is still in an early ramp phase. Loomis flags that Tesla likely has materially more compute available now than when it was working on getting FSD running on the Cybertruck, though the exact frontier model status of Cortex 2's workloads is unknown.
+
+2. **Etherloop architecture enables unboxed manufacturing and FSD redundancy:** Loomis explains Tesla's Etherloop system — a high-speed gigabit Ethernet ring running around the car in both directions — as the key enabler of the unboxed manufacturing process. It replaces traditional copper wiring, reducing wiring from approximately 490 wires on the Model 3 to around 155 on the Cybertruck (roughly a 70% reduction), while increasing connection points. Because it is a closed loop running in two directions, it provides built-in redundancy, meaning a severed wire won't interrupt signal delivery. Running on 48 volts, it can carry both power and data, enabling features like active road noise cancellation, integrated audio, and UI controls over the same network. The system runs approximately 200 times faster than older CAN bus wiring with millisecond-level latency, providing headroom for future capabilities including FSD command and camera feed transmission.
+
+3. **Cybercab to use 100% Tesla-designed controllers:** Tesla's own chart shows that controller in-house design has grown from 20% on the Model S to 85% on the Cybertruck, with the Cybercab targeted at 100% Tesla-designed controllers. Loomis contrasts this with Ford, where CEO Jim Farley noted they work with 150 different controller suppliers, each with its own software and language. Waymo also does not develop its own controllers. Loomis argues this vertical integration is part of why Tesla can offer the Cybercab for under $30,000.
+
+## Electric Vehicles
+
+1. **Giga Shanghai sets production record through April 2026:** Roland reported that Giga Shanghai produced more cars than ever during the first four months of 2026, with the through-April cumulative production at its highest level ever — ahead of both 2024 and significantly ahead of early 2025 (which was impacted by the Model Y and Model 3 changeover). Loomis notes this is before broader FSD approval in China or the EU.
+
+2. **Giga Berlin $250 million cell factory investment:** André Turinge announced a $250 million investment in a Giga Berlin cell factory that will enable 18 GWh of annual 4680 cell production and create more than 1,500 new jobs. At that production level, Loomis estimates the output would be sufficient for approximately 240,000 vehicles annually, potentially allowing Giga Berlin to supply nearly 100% of its vehicles with in-house 4680 cells once fully ramped. He views this as a signal of Tesla's confidence in its 4680 technology, noting the export of that manufacturing process likely includes dry battery electrode (DBE) technology for both the anode and cathode.
+
+3. **Tesla Semi 500-mile variant demo with Covenant Logistics:** Matt Mullen posted on LinkedIn that Covenant Logistics is running a 3-week demo of the Tesla Semi using the 500-mile variant on a 200-mile round trip, with more details forthcoming.
+
+## Market & Competition
+
+1. **Waymo expanding to Miami, targeting 1,400+ square miles across 11 cities:** Waymo announced expansion into Miami, with Austin, Atlanta, Houston, and the Bay Area listed as next in the pipeline. The company projects coverage of 1,400+ square miles across 11 cities. Loomis plans to incorporate total square miles covered as a comparative metric in his Tesla Autonomy dashboard.
+
+Notable quotes and data:
+- Reuters: Tesla operating ~50 vehicles in Austin vs. more than 250 Waymo vehicles in Austin (per Austin officials slideshow)
+- Austin wait time study (3 weeks in April 2026): >15 min wait ~50% of the time; ≥25 min wait >25% of the time; no cars available 27% of the time
+- Pony AI break-even benchmark: 23 rides per vehicle per day in two Tier 1 Chinese cities
+- Cybertruck wiring reduction: ~490 wires (Model 3) → ~155 wires (Cybertruck), ~70% fewer wires
+- Etherloop speed: ~200x faster than older CAN bus wiring, millisecond-level latency
+- Cortex 1: >100,000 H100 equivalents; Cortex 2: >130,000 H100 equivalents (early ramp)
+- Tesla controller in-house design: Model S 20% → Cybertruck 85% → Cybercab 100% (target)
+- Cybercab price target referenced: under $30,000
+- Joe Tegtmeyer: 70+ Cybercabs observed in Giga Texas outbound lot; estimated production rate 5–15/day
+- Giga Berlin: $250M investment, 18 GWh annual 4680 capacity, ~1,500 new jobs, ~240,000 vehicles' worth of cells annually
+- Tesla stock close: $445.27, up 2.73%; NASDAQ up 1.04%; volume 4% above average
+- Revised Cybercab robotaxi deployment timeline: July 2026 (updated from September 15th prior prediction)
