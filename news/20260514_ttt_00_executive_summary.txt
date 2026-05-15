@@ -1,0 +1,86 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-14)
+Published:   2026-05-14 00:00 UTC
+Summarized:  2026-05-15 04:18:34 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.09375 (14895 in / 3271 out tokens)
+Sources:     8
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | +1 | +17 |
+| Houston | 6 | 0 | 0 | +6 |
+| Dallas | 5 | 0 | 0 | +5 |
+| **Total** | **39** | 0 | +1 | +28 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- 2026 Model Y is first US vehicle to pass NHTSA's new ADAS benchmark tests.
+- Tesla Vision pre-deploys airbags 70ms earlier than traditional crash sensors.
+- Belgium to test FSD over 5,000 km toward provisional EU type approval.
+- Last Model S ever produced; Fremont line converting to Optimus assembly.
+- Cybercab production estimated at 20–40 units/day; 70+ spotted in outbound lot.
+- Bhakdi model: Tesla standalone hits $3T by end-2027; merger mildly dilutive through 2027.
+
+## Autonomous Driving
+- **NHTSA validation — first-ever ADAS benchmark pass:** The 2026 Model Y became the first vehicle in the US to pass NHTSA's new advanced driver assistance system benchmark tests, clearing evaluations for pedestrian AEB, lane-keeping, blind spot warning and intervention, forward collision warning, and crash imminent braking. NHTSA administrator Jonathan Morrison called the results "a significant step forward" and said the Model Y "sets a high bar for the industry."
+- **Tesla Vision predictive pre-crash safety:** Tesla revealed a new feature using Tesla Vision to detect an imminent collision before physical impact, pre-deploying airbags and seat belt tensioners up to 70 milliseconds earlier than conventional impact-sensor systems. The feature will ship standard on new vehicles and via free OTA update to existing camera-equipped cars.
+- **Photon count reconstruction for glare:** Elon Musk demonstrated Tesla AI reconstructing a driving scene obliterated by direct sunlight glare — showing clear road geometry, lane markings, and nearby vehicles from raw photon data the human eye cannot parse. The capability directly reinforces the cameras-only perception thesis.
+- **Belgium advancing toward EU type approval:** The Director of Transportation for Flanders announced Belgium will conduct a 5,000 km (≈3,000 mile) FSD Supervised test on Flemish roads, with officials stating Tesla could begin "tomorrow" and that they are "removing all obstacles to be first." The goal is a provisional EU type approval valid across all Belgian territory.
+- **Sweden and Ireland progressing:** Sweden's Transport Agency publicly affirmed support for FSD and indicated a broader consumer launch is possible "at the earliest during the summer or autumn of 2026," aligned with the expected EU member state vote window. Ireland confirmed it is in active talks with Tesla.
+- **FSD 14.3.2 real-world performance noted:** Per Brian White (FutureAzA), FSD 14.3.2 autonomously detected a stopped vehicle with hazards ahead, initiated a reversal and signal maneuver to go around, then cancelled the maneuver when the car ahead resumed — entirely without driver input.
+- **Tesla hiring self-driving data collection supervisors in 33 cities**, including Bellevue, WA — interpreted as a scaling signal for unsupervised deployment preparation.
+
+## Robotaxi
+- **Cybercab production rate:** Production Cybercabs are being built at an estimated 20–40 units per day, with output expected to increase gradually. Approximately 70+ units were spotted in the factory outbound lot per drone coverage from Joe Tegtmeyer. Production units are visually distinguished from validation units by their shiny (vs. matte gold) finish.
+- **Cybercab sightings across three cities:** Cybercabs have appeared on public roads in Miami, San Francisco, and Houston. Florida Governor DeSantis commented on the Miami sighting; community framing of a Cybercab alongside a Waymo in San Francisco as "the world's Blackberry vs. iPhone moment" circulated widely.
+- **Timeline to commercial service — validation gap:** Despite the FSD software stack being considered mature, the hosts of brighterwithherbert assess it may take one to three months before Cybercabs enter true commercial robotaxi service in Austin, as the new physical form factor requires additional real-world validation miles. Brian White agreed the remaining work is vehicle validation, not software.
+- **Charging design detail:** The Cybercab's charge port is provisionally located at the bottom rear of the vehicle. Wireless charging — the intended long-term solution — requires wideband FCC approval for precise vehicle-over-charger positioning, which was only granted approximately February–May 2026, making mass wireless charging hardware deployment in that timeframe physically impossible.
+
+## Humanoid Bots
+- **Fremont factory converting to Optimus line:** With Model S and Model X production ended, Tesla is removing existing manufacturing equipment at Fremont and installing the Optimus assembly line. Long-term plans call for up to 1 million Optimus units per year at the facility.
+- **Optimus hiring surge across 7+ locations:** Tesla is actively hiring "data collection operator – Optimus" roles in Austin, Fremont, Palo Alto, San Diego, Marina del Rey, Henderson (NV), and Lyra — consistent with Elon Musk's stated plan to deploy the first 5,000 units internally for training data generation. Commentator Phil Trouy flagged this as a positive signal that summer production targets remain on track.
+
+## Electric Vehicles
+- **Last Model S produced; farewell event May 20:** The final Tesla Model S rolled off the Fremont line, was signed by employees, and will be displayed at the factory. Steve Jurvetson — who purchased the first Model S — is reported to be buying the last one. A farewell delivery event for the final Signature Edition Model S and Model X is scheduled for May 20th. The two models delivered approximately 750,000 vehicles combined over their lifetimes.
+- **US Q1 EV dominance:** Tesla's Model Y and Model 3 ranked first and second in US Q1 EV sales — approximately 78,000 and 31,000 units respectively (≈110,000 combined per KBB/EV Wire). The next closest competitor sold roughly 10,000 units. The Cybertruck registered only 3,519 units, described as well below its potential; a lower-cost variant at a ~$59,000 price point is expected to begin deliveries in June 2026.
+- **Europe recovery:** Tesla sold 13,740 cars across EU/UK/EFTA, up 29% year-over-year, breaking a 13-month sales losing streak. Giga Berlin hit 750,000 cumulative vehicles and announced a 20% production increase.
+- **China April: strong exports, misleading domestic framing:** Giga Shanghai produced approximately 79,478 Model 3 and Y units in April, with exports described as record-high since 2022. Media coverage citing Tesla "falling out of China's top 10 NEV brands" was criticized by both FutureAzA and brighterwithherbert as ignoring the export component.
+- **Tesla Semi commercial demo begins:** Covenant Logistics commenced a 3-week Tesla Semi demo on May 13, starting with a 200-mile round-trip freight run in California using the 500-mile range variant. A major logistics operator actively evaluating the Semi under commercial conditions is a meaningful validation moment.
+- **Model Y municipal fleet — Covington, KY:** Covington, Kentucky is adding seven Model Y vehicles to its police fleet, replacing seven ICE vehicles, with projected annual savings of approximately $23,000 in fuel and maintenance.
+
+## Market & Competition
+- **Legacy automaker deterioration accelerating:** Honda posted its first-ever full-year loss; a proposed Honda-Nissan merger collapsed; Mazda is cutting EV investment from ≈1.5 trillion yen to ≈830 billion yen through 2030 and delaying its first dedicated EV platform to 2029. Porsche is cutting 500+ jobs and exiting three non-core business lines. Per Brian White: Mazda's pivot back to hybrids is "justifying their inaction, their laziness, and their complacency."
+- **China EV penetration surpasses 40%:** BEV share of new car sales in China has crossed 40%, with combined BEV+hybrid well above 50%, effectively completing the market's transition. German and American legacy brands that once held ≈15% China market share have been largely squeezed out. US EV share remains approximately 9%, projected at ≈10% for 2026.
+- **SpaceX–Anthropic compute deal (Musk ecosystem context):** xAI/SpaceX leased Colossus 1 — its 220,000+ GPU Memphis data center — to Anthropic, which was compute-constrained despite a revenue run rate climbing from ≈$9B (end-2025) to ≈$30B (April 2026). xAI has migrated its own training to Colossus 2. Anthropic also expressed interest in partnering on orbital AI compute. This is primarily a SpaceX/xAI development but is relevant to Tesla investors tracking the Musk conglomerate thesis and Terafab's chip ambitions.
+- **Tesla-SpaceX merger debate — Bhakdi analysis:** Jo Bhakdi's DCF model concludes the merger is mildly negative for Tesla shareholders on an 18-month horizon (2027: merged entity returns ≈38% vs. Tesla standalone ≈50%) but net positive by 2028–2029, when SpaceX's orbital AI cash flows begin contributing. Bhakdi projects Tesla standalone market cap at $2T (end-2026), $3T (end-2027), $5T (end-2028), $8T (end-2029). SpaceX IPO projected at ≈$2.2T, with a ≈30% post-IPO deflation seen as "very likely." Bhakdi's verdict: "For the next 18 months the odds that a SpaceX merger is bad for Tesla shareholders is high" — but "already in 2028, the merged entity will outperform Tesla."
+- **US–China diplomatic meeting:** Trump, Musk, and Jensen Huang met Chinese Vice President Han Zheng in Beijing on May 13 as part of a US business delegation. No Tesla-specific announcements were reported, but any tariff or market access outcomes would be material to Tesla's China revenue.
+- **Governor DeSantis on FSD:** DeSantis, who has publicly opposed EV mandates, said he has "friends who never touch the wheel anymore because of FSD" — a notable unsolicited endorsement of Full Self-Driving from a prominent non-EV-aligned political figure in a state with no incumbent automaker lobby.
+
+## Energy
+- **Solar Roof quietly on life support:** Tesla's Solar Roof has accumulated only ≈3,000 total US installations (Wood Mackenzie estimate through early 2023) — 97.7% below its 2016 target of 1,000 installs per week. Peak deployment reached only ≈23 roofs per week in Q2 2022. Tesla stopped reporting solar deployment figures entirely in Q1 2024. A 2023 class-action settlement cost $6 million over pricing allegations; average Solar Roof cost is ≈$106,000 before incentives vs. ≈$60,000 for a traditional roof plus conventional panels, with a payback period of 15–25 years versus 7–12 years for standard panels.
+- **Pivot to TSP-420 panels and manufacturing scale ambition:** Tesla launched its TSP-420 panel (Gigafactory Buffalo) in early 2026, featuring an 18-zone power optimization system that addresses Solar Roof's shading weakness. Musk announced at Davos in January 2026 a target of 100 GW/year of US solar manufacturing capacity before end of 2028 — roughly 300x Tesla's current ≈300 MW annual capacity. Tesla is reportedly negotiating a ≈$2.9 billion purchase of Chinese solar equipment from Suzhou Maxwell Technologies.
+
+Notable quotes and data:
+- NHTSA: 2026 Model Y is the first US vehicle to pass new ADAS benchmark tests; administrator Morrison calls it "a significant step forward."
+- Tesla Vision pre-deploys airbags/seatbelts **70ms** earlier than traditional systems.
+- Belgium FSD test: **5,000 km** on Flemish roads; officials say Tesla can begin "tomorrow."
+- EU FSD consumer launch possible "at the earliest during the **summer or autumn of 2026**" (Sweden Transport Agency).
+- Cybercab production: **20–40 units/day**; **70+** in factory outbound lot (Joe Tegtmeyer).
+- Tesla US Q1 EV: **~78,000 Model Y**, **~31,000 Model 3**, **~3,519 Cybertruck** (KBB/EV Wire).
+- Giga Berlin: **750,000** cumulative vehicles; **+20%** production increase announced.
+- Model S + Model X combined lifetime deliveries: **~750,000 vehicles**; farewell event **May 20**.
+- Bhakdi Tesla standalone market cap targets: **$2T** (end-2026) → **$3T** (end-2027) → **$5T** (end-2028) → **$8T** (end-2029).
+- SpaceX IPO projected at **~$2.2T**; post-IPO deflation of **~30%** seen as "very likely."
+- Solar Roof peak: **~23 installs/week** (Q2 2022); target was **1,000/week** by end-2019.
+- Musk Davos solar target: **100 GW/year** US manufacturing by end-2028.
+- DeSantis: "I have friends who never touch the wheel anymore because of [FSD]."
+- Brian White: "Uber will be crushed way before a price war could ever erupt."
+- Bhakdi: "For the next 18 months the odds that a SpaceX merger is bad for Tesla shareholders is high."
