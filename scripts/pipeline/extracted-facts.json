@@ -6543,5 +6543,17 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-14T14:03:02.042Z",
     "status": "pending"
+  },
+  {
+    "fact": "New Supercharger opened in Jean, Nevada with 64 stalls, peak charging speed of 325kW, and a base rate of $0.46/kWh for Tesla owners",
+    "category": "Energy",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.46,
+    "context": "Concrete Supercharger energy pricing data point ($0.46/kWh base rate); relevant as a proxy for fleet charging cost inputs in Robotaxi unit economics models",
+    "source": "20260515_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-15T00:01:56.982Z",
+    "status": "pending"
   }
 ]
