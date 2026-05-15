@@ -1,0 +1,33 @@
+Channel:     electrek
+Title:       Tesla finally reveals what happened in 17 ‘Robotaxi’ crashes
+Published:   2026-05-15 15:04 UTC
+Summarized:  2026-05-15 16:04:12 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_0163EV3Y1ykqnFWPVG6Tevgv
+Cost:        $0.01836 (4332 in / 1581 out tokens)
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+Tesla has quietly unredacted all 17 of its autonomous driving crash narratives filed with NHTSA — covering July 2025 through March 2026 — revealing for the first time what happened in each incident during its Austin "Robotaxi" testing program. The data shows most crashes were caused by other drivers, but several incidents reveal genuine limitations of Tesla's ADS and its teleoperator backup.
+
+## Autonomous Driving
+
+1. **Tesla was uniquely opaque in NHTSA crash reporting:** Tesla had been the only ADS operator to fully redact its crash narratives under NHTSA's Standing General Order 2021-01, citing potential "financial harm" from competitors assessing its autonomous progress. Waymo, Zoox, Avride, May Mobility, and all other operators provided detailed crash narratives throughout this period. Tesla has now filed updated reports removing the confidential designation.
+
+2. **Crash summary across 17 incidents:** All 17 incidents involve a 2026 Model Y with the ADS engaged and a safety monitor present, all in Austin, TX. Injury breakdown: 13 property damage only, 2 no injuries, 1 minor injury without hospitalization, 1 minor injury requiring hospitalization (the most serious). A significant portion were not Tesla's fault — multiple incidents involved the ADS being rear-ended while stopped at red lights, stop signs, or in traffic; a pedicab clipped its mirror; a city bus sideswiped it; and an SUV struck it from behind at a yield lane.
+
+3. **Teleoperator failures are a distinct concern:** Two crashes occurred when a remote teleoperator took over from the ADS. In July 2025, a teleoperator responding to an ADS that wouldn't proceed forward drove the vehicle up a curb and into a metal fence at 8 mph, causing a minor injury. In January 2026, a teleoperator took over a stopped vehicle and drove it into a construction barricade at 9 mph. Both incidents raise questions about the reliability of human backup intervention.
+
+4. **ADS spatial awareness failures:** Several crashes reflect the system's difficulty detecting small or unusual obstacles, particularly while reversing — including hitting a metal chain entering a parking lot, clipping a dump trailer's gooseneck hitch protruding into the street, backing into a wooden electrical pole at 1 mph, and hitting a curb while reversing into a parking space.
+
+## Editorial Stance
+Author Fred Lambert argues Tesla's year-long redaction was a "self-inflicted wound" — had the data been public earlier, the safety narrative would have looked more favorable, since many crashes mirror the rear-ending patterns seen in Waymo's data. However, Lambert flags the teleoperator crashes and spatial awareness failures as genuine concerns, especially as Tesla moves toward removing safety monitors, and suggests ultrasonics and radar may have helped prevent some incidents.
+
+Notable quotes and data:
+- All 17 incidents: 2026 Model Y, ADS engaged, safety monitor present, Austin TX, July 2025–March 2026
+- Injury severity: 13 property damage only, 2 no injuries, 1 minor non-hospitalization, 1 minor with hospitalization
+- Teleoperator crash speeds: 8 mph (fence, July 2025), 9 mph (construction barricade, January 2026)
+- ADS spatial incidents: metal chain (6 mph), trailer hitch (18 mph), electrical pole (1 mph), curb while reversing (2 mph)
+- Most serious injury: ADS creeping at 2 mph in slip lane, rear-ended by SUV; safety monitor later sought medical evaluation
+- Tesla argued disclosure would cause "financial harm" because competitors could assess its autonomous progress
+- Dog strike at 27 mph: ADS reduced speed and steered left; dog ran toward vehicle and pushed it into path of a van; dog seen running away afterward

@@ -6555,5 +6555,17 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-05-15T00:01:56.982Z",
     "status": "pending"
+  },
+  {
+    "fact": "Two crashes caused by teleoperators taking over from the ADS: one at 8 mph into a metal fence (July 2025), one at 9 mph into a construction barricade (January 2026)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": null,
+    "context": "Teleoperator failures in two separate incidents raise reliability concerns for the human backup layer, relevant to remote ops staffing and risk modeling",
+    "source": "20260515_electrek_01_Tesla_Finally_Reveals_What_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-15T16:04:12.045Z",
+    "status": "pending"
   }
 ]
