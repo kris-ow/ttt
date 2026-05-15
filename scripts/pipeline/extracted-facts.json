@@ -6567,5 +6567,29 @@
     "channel": "electrek",
     "extractedAt": "2026-05-15T16:04:12.045Z",
     "status": "pending"
+  },
+  {
+    "fact": "Optimus per-unit value discussed at approximately $100,000/year in revenue or $400,000 in cash value per unit",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "These are not fare-per-mile figures but are the closest proxy to per-unit revenue discussed; relevant to TAM and DCF modeling for Optimus specifically, not robotaxi",
+    "source": "20260515_futureaza_01_Tesla_Stock_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-15T19:10:38.719Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active Tesla robotaxi fleet being tracked daily across Austin, Dallas, and Houston by Randy Kirk as the primary investment indicator",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Per RobotaxiTracker.com (as of 2026-05-15): Austin 104, Dallas 5, Houston 6 active robotaxis; Bay Area 555; total active fleet 670",
+    "source": "20260515_futureaza_01_Tesla_Stock_Ready_For_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-15T19:10:38.719Z",
+    "status": "pending"
   }
 ]
