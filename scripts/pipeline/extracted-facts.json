@@ -6795,5 +6795,41 @@
     "channel": "cernbasher",
     "extractedAt": "2026-05-16T13:02:08.135Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi estimated to save approximately 35 cents per mile versus diesel for fleet operators",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.35,
+    "context": "Cost savings per mile figure relevant to modeling Semi economics and competitive displacement of diesel trucking; not a robotaxi fare but a per-mile financial metric",
+    "source": "20260516_brighterwithherbert_01_Tesla_Delays_Usually_Mean_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-16T14:02:32.833Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo reported to have approximately 1,000 incidents per month across its fleet",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 1000,
+    "context": "Cited as a safety and reliability concern for Waymo's current operation; used as a benchmark contrast for Tesla's deliberate delay in scaling robotaxi",
+    "source": "20260516_brighterwithherbert_01_Tesla_Delays_Usually_Mean_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-16T14:02:32.833Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla permitted a 36,000 square foot robotic car wash facility in Las Vegas specifically for Cybercabs",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Physical infrastructure build-out for Cybercab fleet operations underway; facility scale implies planning for thousands of Cybercabs in Las Vegas alone; no per-vehicle cost stated",
+    "source": "20260516_brighterwithherbert_01_Tesla_Delays_Usually_Mean_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-16T14:02:32.833Z",
+    "status": "pending"
   }
 ]
