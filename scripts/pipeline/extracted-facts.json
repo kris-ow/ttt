@@ -6591,5 +6591,101 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-15T19:10:38.719Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi total incidents since June 2025 launch: 17 as of April 2026 data release",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 17,
+    "context": "Newly unredacted NHTSA SGO data; 7 of 17 incidents occurred at 0 mph (Tesla not at fault). April added 2 incidents, both at 0 mph, 0 new injuries.",
+    "source": "20260515_electrified_01_Tesla_Just_Unredacted_Its_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-16T01:02:58.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi approaching approximately 2 million autonomous miles driven since June 2025 launch",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 2000000,
+    "context": "Provides denominator for incidents-per-mile safety calculation; approximately 17 incidents over ~2M miles.",
+    "source": "20260515_electrified_01_Tesla_Just_Unredacted_Its_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-16T01:02:58.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Two documented incidents where Tesla TEA (remote) operator took control and caused a collision — one into a metal fence, one into a construction barricade at ~9 mph",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": null,
+    "context": "Highlights reliability issues with remote operations infrastructure, a key cost and risk factor in robotaxi unit economics.",
+    "source": "20260515_electrified_01_Tesla_Just_Unredacted_Its_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-16T01:02:58.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Las Vegas robotaxi maintenance facility (Tesla Center Mohawk Cybercab Phase 2) is approximately 36,000 sq ft with ~55 parking spots",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Dedicated autonomous fleet maintenance hub including car wash, tire service, and power raceways — signals infrastructure investment per city deployment.",
+    "source": "20260515_electrified_01_Tesla_Just_Unredacted_Its_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-16T01:02:58.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active Tesla robotaxi fleet operational hours in Austin effectively end around 5:00 PM on weekdays, with only 1–2 supervised cars operating after that time and 20–30 minute wait times",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Operational time constraints reduce effective daily utilization rate well below maximum possible hours.",
+    "source": "20260515_electrified_01_Tesla_Just_Unredacted_Its_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-16T01:02:58.865Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Las Vegas Cybercab maintenance facility permit filed with Clark County: 36,000 square feet, described as 'Tesla Center Cybercab Phase 2 car wash'",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "No cost figure given, but the permit reveals Tesla is building dedicated autonomous fleet maintenance infrastructure in Las Vegas; relevant to understanding fleet opex and infrastructure planning",
+    "source": "20260515_brighterwithherbert_01_Something_Big_May_Be_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-16T01:02:58.877Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet at approximately 39 vehicles per RobotaxiTracker.com (Austin 28, Dallas 5, Houston 6 as of 2026-05-09)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Panel referenced this number repeatedly; Jeff argued fleet is plateaued waiting for next FSD release before expanding",
+    "source": "20260515_brighterwithherbert_01_Something_Big_May_Be_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-16T01:02:58.877Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk stated on a prior earnings call that over 500 robotaxis were operating in the Bay Area",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 500,
+    "context": "James cited this from a prior earnings call; refers to supervised fleet in Bay Area only; not the unsupervised subset",
+    "source": "20260515_brighterwithherbert_01_Something_Big_May_Be_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-16T01:02:58.877Z",
+    "status": "pending"
   }
 ]

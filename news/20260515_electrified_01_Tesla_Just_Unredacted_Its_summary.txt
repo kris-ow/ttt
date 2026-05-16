@@ -1,0 +1,83 @@
+Channel:     electrified
+Title:       Tesla Just Unredacted Its Robotaxi Reports: Scaling Questions Answered ⚡️
+Published:   2026-05-15 23:09 UTC
+Summarized:  2026-05-16 01:02:58 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_0176mHNEG8bs4NG6kEipcwE9
+Cost:        $0.05309 (9677 in / 5143 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of Electrified, hosted by Dillon Loomis, covers Tesla's newly unredacted NHTSA Standing General Order (SGO) robotaxi incident reports, fleet scaling constraints, the Uber-Waymo rift, competitive developments in humanoid robotics (Figure AI), and a range of Tesla-adjacent news items. The core thesis is cautionary: while Tesla's robotaxi safety profile and driving performance are encouraging, infrastructure problems — TA operator errors, connectivity issues, limited geofences, and product bugs — make near-term scaling to thousands of vehicles unrealistic. Dillon also argues that Uber's public criticism of Waymo is strategically motivated by self-preservation as autonomous vehicle operators increasingly go direct-to-consumer.
+
+## Autonomous Driving
+
+1. **Tesla Unredacts NHTSA SGO Incident Data:** Tesla had previously been the only automaker to redact certain incident details under Confidential Business Information (CBI) rules, but has now chosen to disclose specific information about its robotaxi incidents. The updated data shows a total of 17 incidents since the Austin robotaxi launch in June 2025. Seven of those occurred when the Tesla vehicle was traveling at 0 mph, indicating Tesla was not at fault. The two new April incidents were both at 0 mph, making it another clean month from a fault perspective. Dillon notes he has updated his Teslaomy dashboard (electrified.plx.app) with this data.
+
+2. **Specific Incident Details Reveal ADS Limitations:** The unredacted reports expose several categories of edge-case failures. In one incident, the ADS reversed into a wooden electrical pole after encountering a blocked alley. In another, the side mirror struck a heavy-duty tow truck in a narrow street. A third involved the ADS making contact with a metal chain while entering a parking lot after an unprotected left turn — an issue Dillon links to known FSD limitations with metal chains, citing Chuck Cook's testing even with a newer FSD version. Another incident involved a goose-neck trailer hitch sticking into the street from a driveway, with the ADS side mirror making contact. Dillon characterizes these as evidence that the camera system still struggles to consistently detect smaller, thinner objects at certain height levels.
+
+3. **TA (Remote) Operator Errors Documented Twice:** Two separate incidents involve the TEA (Tesla remote operator) taking control of a vehicle and causing an accident. In the first, the operator gradually increased speed and turned the vehicle left, driving it up a curb and into a metal fence. In the second, the operator took control of a stopped vehicle and drove it into a temporary construction barricade at approximately 9 mph, scraping the front left fender and tire. No passengers were present in either incident. Dillon connects these TA operator issues to previously reported connectivity problems and flags them as a systemic concern for scaling.
+
+4. **Approaching 2 Million Autonomous Miles; Safety Profile Remains Strong:** Despite the specific incidents detailed, Dillon notes Tesla's robotaxi service is approaching approximately 2 million autonomous miles driven, with no new injuries in April. He frames the overall safety record as encouraging, while stressing that back-end infrastructure, TA operations reliability, and object recognition limitations are the real challenges that must be resolved before meaningful scaling can occur.
+
+5. **FSD Data Labeling Job Listing in China:** Tesla posted a new job listing in China for a data labeler who will label images and videos from the fleet and from Optimus data collectors, feeding Tesla's deep learning network. Dillon interprets this as a positive signal that Tesla is now collecting China-specific fleet data to train a localized FSD model — which he identifies as the primary limiting factor for supervised FSD performance in China to date.
+
+## Robotaxi
+
+1. **Scaling Constraints: Geofence Size and Operational Gaps:** Dillon pushes back on expectations of rapid fleet expansion, noting that Tesla's geofences in Houston and Dallas remain very small, with Houston's zone excluding downtown in favor of a more rural area. He argues there is no realistic scenario where Tesla floods those cities with 500 robotaxis in the near term. He explicitly states he is "very confident" anyone expecting 1,000 robotaxis across Austin, Dallas, and Houston will be disappointed absent significant geofence expansion.
+
+2. **Austin Operational Hours Gap After 5 PM:** Rider Ethan McConno reported that while unsupervised robotaxi rides in Austin officially stop around 5:00 PM on weekdays, supervised cars are also sparse after that time — effectively only one or two unmarked driver-monitor cars operating. This creates high service demand and 20–30 minute waits in the post-5 PM window during weekdays. Dillon notes this is a product and operational limitation that contradicts Tesla's official stated operating hours.
+
+3. **Product Bugs Beyond Driving Performance:** Ethan McConno, after stress-testing the Austin robotaxi service over several days, praised the driving performance as impressive in complex, high-traffic scenarios, but catalogued a "long list of important product issues": bad PUDOs (pickup and drop-off locations), broken audio, connectivity issues, and UI/UX problems. Dillon uses this to argue that raw driving quality — while solid — is only one component of what is needed to scale a commercial robotaxi service.
+
+4. **Cybercab Spotted with Starlink Unit; Patent Clarification:** A photo shared by Cybercab Spotter appears to show a Cybercab with a Starlink unit mounted on the back. Dillon treats this as a testing observation only, not confirmation of production integration. He clarifies that the equipment visible on the back of Model Y robotaxis is telecommunications and GPS hardware for remote operations — not built-in Starlink. He also addresses a misunderstood patent involving a new polymer roof material designed to make vehicles radio-frequency transparent, allowing removal of traditional shark fins, but notes that Starlink was not mentioned in that patent.
+
+5. **Las Vegas Robotaxi Launch Anticipated Within ~45 Days:** Dillon references Tesla's permit filings for a dedicated facility in Las Vegas branded "Tesla Center Mohawk Cybercab Phase 2 Car Wash" — approximately 36,000 square feet with roughly 55 parking spots. The facility is described as a full-service maintenance hub for the autonomous fleet, including a car wash enclosure, tire service equipment relocation, and power raceway installation. The location is noted to be approximately a 7-hour drive from Giga Nevada. Dillon states Tesla is planning a Las Vegas robotaxi launch "hopefully sometime in the next 45 days."
+
+6. **Waymo vs. Uber Rift: Competitive Dynamics and Tesla Implications:** Uber executives have taken public shots at Waymo, criticizing its deployment strategy, warning AV operators against going direct-to-consumer, and sharing a video titled "scary Waymo moment." Uber's CEO Dara Khosrowshahi stated that AVs are "still far from capable of meeting the level of reliability and ubiquity that customers and cities expect." Uber also attempted to portray Waymo as withholding service from cities like Oakland and Santa Monica where it allegedly has permits — but Dillon fact-checks this, noting that Waymo's CPUC permit expansion to Oakland is currently suspended through June 27, 2026, pending further staff review, meaning Waymo cannot legally charge for rides there. Dillon concludes Uber's criticism is strategically motivated: Uber's business model is threatened by Tesla and Waymo operating independently, and Uber has every incentive to slow them down through public narrative.
+
+7. **Waymo Recall and San Antonio Suspension:** Waymo issued a recall for 3,800 vehicles due to software issues that could allow its robotaxis to drive onto flooded roadways. An interim software update has been shipped; a permanent fix is still in progress. Waymo's San Antonio service remains temporarily suspended after a vehicle drove into a flooded road and was swept into a creek (no passengers on board). Austin Waymo vehicles were also filmed driving onto a flooded street and stalling.
+
+## Humanoid Bots
+
+1. **Figure AI's Live Transparency and F.04 Development:** Figure AI is on day three of a public live-stream marathon showing its robot sorting packages. CEO Brett Adcock clarified that arm-lift motions near the conveyor belt are part of programmed safety policy, not teleoperation. Phil Trouay conducted an interview with Brett, revealing that Figure's next robot (F.04) has completed design lock and is expected to debut in fall 2026, described as the biggest performance leap between versions to date. Figure is also nearly fully localized in its supply chain away from China, expected to be complete by Q3 2026.
+
+2. **Cross-Training Boosts Reliability; Actuator Design Diverges from Tesla:** Brett Adcock is a strong proponent of cross-training robots across many unrelated tasks, citing an example where fridge-loading reliability jumped from 60% to 90% after adding kitchen shelving training to the same model. Figure spends nearly all development time on pre-training its unified Helix model to capture these cross-training benefits. On hardware, Figure's Gen 4 hands have all actuators embedded in the hand itself — the opposite of Tesla's initially patented tendon-driven forearm approach. Dillon notes that Elon Musk recently indicated Tesla has changed course on the hand design described in that patent, making Optimus hand architecture a key area to watch.
+
+## Electric Vehicles
+
+1. **Tesla China Denies Model Y Price Increase:** Tesla China officially denied reports of a domestic Model Y price increase. Dillon notes that rising global memory chip (DRAM) prices since September 2025 — driven by surging demand and constrained capacity — have pushed up the cost of advanced driver assistance systems. BYD recently raised the price of its optional lidar-assisted driving package, and NIO's CEO estimated rising memory chip prices could add 3,000–5,000 yuan (roughly up to ~$750) to the cost of high-end new energy vehicles. Tesla and BYD are reportedly among the two largest global consumers of memory DRAM. Dillon assesses the margin impact on Tesla as likely minor and notes Tesla is working to bring memory production in-house as a long-term mitigation.
+
+2. **Panasonic Forecasts 19% Growth in US Battery Sales, Driven by Tesla Recovery:** Panasonic told investors it expects US EV battery sales to grow 19% to 46 GWh in its current fiscal year (ending March 2027), citing Tesla's ongoing market share recovery despite significant lineup revisions. Panasonic projects broader US EV market sales will remain roughly flat year-over-year, while Tesla-specific demand is expected to increase — implying Panasonic expects Tesla to outperform the broader EV market. Dillon notes Panasonic has strong visibility into Tesla's business given their partnership at Giga Nevada.
+
+3. **Tesla Semi Pilot at Covenant Receives Positive Early Results:** Matt Mullen, VP of Sustainability at Covenant, reported the Tesla Semi pilot went off without issues. He praised Tesla's trip planner for accounting for distance, traffic, wind direction, air temperature, weather, grade, and driver inputs to manage range. The driver reported a positive first-day experience despite the center-drive seating position requiring adjustment. Mullen noted more information on the economics of the pilot will be shared soon.
+
+4. **Honda Posts First Annual Loss in ~70 Years:** Honda reported its worst financial results since listing on the stock exchange in 1957, booking more than $9 billion in costs to restructure its EV business. Honda is scrapping its target of EVs comprising 20% of new car sales by 2030 and abandoning its goal of a full EV/fuel cell transition by 2040. It is also indefinitely suspending an $11 billion EV and battery manufacturing investment in Canada. Dillon cites Honda's results as evidence of how risky the EV pivot is for legacy automakers facing weaker-than-expected demand.
+
+## Market & Competition
+
+1. **Uber's Data Collection Play Won't Match Tesla's Fleet Advantage:** Uber announced ambitions to outfit its human-driven cars with sensors to collect real-world data for AV companies and AI training. Uber argued that outfitting even a fraction of its millions of global drivers would create a data platform dwarfing any individual AV company's own data collection. Dillon directly challenges this claim, noting Tesla already has millions of vehicles globally functioning as data collection platforms — and with far more consistency and integration than third-party sensor kits bolted onto Uber driver vehicles. He is skeptical Uber can execute this at scale.
+
+2. **SpaceX IPO Timeline Disclosed:** SpaceX is reportedly planning to disclose its IPO prospectus filing as soon as the following week, with an IPO date of June 12, 2026, under the ticker SPCX, targeting a valuation of approximately $2 trillion.
+
+Notable quotes and data:
+- Total Tesla robotaxi incidents since June 2025 launch: **17** (as of April data)
+- Incidents at 0 mph (Tesla not at fault): **7 of 17**
+- April 2026: **2 new incidents**, both at 0 mph, **0 new injuries**
+- TA operator-caused accidents: **2 documented instances**
+- Remote operator collision speed (barricade incident): **~9 mph**
+- Tesla robotaxi approaching **~2 million autonomous miles**
+- Austin post-5 PM wait times: **20–30 minutes**; effectively 1–2 unmarked cars operating
+- Las Vegas Cybercab maintenance facility: **~36,000 sq ft**, **~55 parking spots**, ~7-hour drive from Giga Nevada
+- Las Vegas robotaxi launch target: **within ~45 days**
+- Waymo recall: **3,800 vehicles** for software allowing flooded road entry; San Antonio service **suspended**
+- Waymo Oakland CPUC permit expansion: **suspended through June 27, 2026**
+- Figure F.04: **design lock complete**, debut expected **fall 2026**
+- Figure fridge-loading accuracy: **60% → 90%** after cross-training with kitchen shelving tasks
+- Panasonic US battery sales forecast: **+19% to 46 GWh** (fiscal year ending March 2027)
+- Memory chip cost impact on EVs: **3,000–5,000 yuan (~up to ~$750)** per vehicle (NIO CEO estimate)
+- Honda restructuring costs: **>$9 billion**; suspended **$11 billion** Canada EV/battery project
+- SpaceX IPO: ticker **SPCX**, target date **June 12, 2026**, target valuation **~$2 trillion**
+- Tesla stock close: **$422.24**, down **4.75%** vs. NDX down **1.54%**; volume **19% below average**
+- Ethan McConno (rider): *"I've been stress testing Robotaxi as hard as I can over the last few days and have been incredibly impressed with performance"* — but noted a "long list of important product issues and bugs"
+- Dillon on scaling: *"I'm very confident you're going to end up disappointed unless we see significant geofence expansion"*
