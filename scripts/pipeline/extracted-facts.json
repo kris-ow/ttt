@@ -6735,5 +6735,65 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-16T08:03:01.964Z",
     "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet as of 2026-05-15: 670 total (Bay Area 555, Austin 104, Dallas 5, Houston 6)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 670,
+    "context": "Per RobotaxiTracker.com canonical data; city-level breakdown shows highly concentrated Bay Area deployment with small initial presence in Dallas and Houston",
+    "source": "20260516_cernbasher_01_Elon_Called_Out_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-16T13:02:08.135Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) robotaxi fleet as of 2026-05-09: 39 total (Austin 28, Dallas 5, Houston 6)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Per RobotaxiTracker.com; the unsupervised subset is critical for robotaxi unit economics modeling as it excludes safety-driver cost",
+    "source": "20260516_cernbasher_01_Elon_Called_Out_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-16T13:02:08.135Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host speculative estimate of 10,000 robotaxis deployed by end of 2026, explicitly flagged as unconfirmed",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000,
+    "context": "Commentator-generated estimate only, not sourced from Tesla; included for scenario modeling but should be treated as speculative upper bound for 2026",
+    "source": "20260516_cernbasher_01_Elon_Called_Out_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-16T13:02:08.135Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi program has had zero accidental injuries across all deployments to date",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 0,
+    "context": "Confirmed by both Elon Musk and Ashok on the earnings call; zero-incident record is cited as validation of the safety-first expansion approach",
+    "source": "20260516_cernbasher_01_Elon_Called_Out_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-16T13:02:08.135Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon stated that even with FSD version 14, Tesla is 'significantly safer than human' driving, with version 15 expected to improve safety further",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "No specific multiple quantified (e.g., 2x or 5x); qualitative claim of above-human safety supports insurance cost and liability assumptions in DCF modeling",
+    "source": "20260516_cernbasher_01_Elon_Called_Out_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-16T13:02:08.135Z",
+    "status": "pending"
   }
 ]
