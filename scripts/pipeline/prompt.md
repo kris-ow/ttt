@@ -27,7 +27,9 @@ Watch for specific numbers or estimates related to:
 
 ## Date Context
 
-The current year is {{YEAR}}. When the transcript mentions relative timeframes like "Q2", "next quarter", "this year", "next year", etc. without specifying a year, infer the correct year based on the video's publish date ({{PUBLISH_DATE}}). Do not default to prior years.
+The current year is {{YEAR}}. When the transcript uses relative timeframes — forward ("this year", "next year", "Q2", "next quarter") or backward ("last year", "last month", "X months ago", "yesterday", "last peak") — resolve them against the video's publish date ({{PUBLISH_DATE}}).
+
+Do NOT substitute well-known historical dates from training even when the speaker's description matches a famous past event (e.g. an all-time high, a product launch, an earnings date). If the speaker says "last year's all-time high of $490", write the year implied by {{PUBLISH_DATE}}, not the year you recall a similar event occurring.
 
 {{TRACKER_DATA}}
 
