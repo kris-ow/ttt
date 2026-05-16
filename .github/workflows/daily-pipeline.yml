@@ -33,6 +33,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: pipeline
@@ -45,6 +46,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: master
 
       - uses: actions/setup-node@v6
         with:
