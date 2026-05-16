@@ -6699,5 +6699,41 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-16T02:02:28.120Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Vision enables airbag deployment up to 70 milliseconds earlier than conventional bump-sensor-triggered systems",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 70,
+    "context": "Camera-based predictive collision detection; FSD also cited as 6–7x safer per mile than human drivers",
+    "source": "20260515_futureaza_02_Clean_Cabs_Superhuman_Vision_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-16T08:03:01.964Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD is stated to be 6–7 times safer per mile than human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Safety multiplier cited by hosts as rationale for broad deployment; relevant to regulatory approval and insurance cost modeling",
+    "source": "20260515_futureaza_02_Clean_Cabs_Superhuman_Vision_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-16T08:03:01.964Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi E-PTO delivers up to 25 kW to power trailer refrigeration and other equipment",
+    "category": "Energy",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "E-PTO adds auxiliary power capability relevant to total energy draw per mile in fleet operations; hosts cite ~50% cost-per-mile savings vs diesel in California",
+    "source": "20260515_futureaza_02_Clean_Cabs_Superhuman_Vision_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-16T08:03:01.964Z",
+    "status": "pending"
   }
 ]
