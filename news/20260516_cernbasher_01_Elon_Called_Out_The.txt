@@ -1,0 +1,377 @@
+Channel:     cernbasher
+Title:       Elon Called Out The Real Robotaxi Bottleneck
+URL:         https://www.youtube.com/watch?v=nNZK8He6L90
+Published:   2026-05-16 12:27 UTC
+Fetched:     2026-05-16 13:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Speaking of robot taxi, so let's talk
+about that. So, Elon says we've expanded
+robot taxi to Dallas and Houston
+uh using the same software source as in
+the Bay Area. And the limiting factor
+for expansion is really rigorous
+validation, making sure things are
+completely safe. And we've seen now over
+the last few weeks a lot of cybercab
+engineering prototype vehicles that I
+think they're using probably for
+validation in all kinds of cities all
+over the United States. We've seen them
+reports of them in many, many places.
+And he's just saying, "We don't want to
+have a single accidental injury with the
+expansion of robot taxi, and we have to
+the credit of the team not had a single
+one to date." So,
+they are being extremely, extremely
+cautious here.
+Uh to me, more cautious than Waymo has
+been.
+Waymo seems to be had been at least
+historically willing to take more risks.
+And Elon is just saying, I guess, that
+it's just not worth the risk. Let Let's
+make sure that we're putting the safest
+vehicle we can out there. And if it
+means, you know, delaying things
+further, so be it.
+We don't want to cause any problems if
+we know that we can avoid them. I I was
+just going to say, Herbert, I think
+because they have visibility into FSD
+development and what's coming down the
+pipe, I think they
+I think they constantly say, "Well,
+let's just Let's just go slow and put
+this new version in."
+You go ahead, you wanted to make a
+comment about Well, yeah.
+&gt;&gt; Yeah, so expand limiting the factor is
+extreme is really rigorous rigorous
+validation. And then down here, Ashok
+says that we are increasing the amount
+of our QA fleet, but we also want to
+increase the customer fleet to give us
+the useful metrics back so that we can
+scale it safely. We're absolutely
+focused on safety. So, they have flooded
+the market as many QA fleets and these
+rigorous validation
+to really be sure before they roll it
+out. But then later they say that safety
+is is the issue. They've had zero
+incidents, and they're not concerned
+about safety. They're They're They're
+trying to work out these final steps,
+right? You'll You'll talk about that.
+But, safety is when when he talked about
+that we want another version of the
+software to to have even better safety.
+It's he said degrees of safety, right?
+Magnitudes of safety.
+But, I think he was referring to there
+global
+like like millions of cars cuz
+honestly the 14.3 today could
+theoretically be rolled out to every
+single person all around the world right
+now.
+&gt;&gt; Mhm. Because it works. But, now you're
+not going to do that because you don't
+want even one accident. And so, you want
+to wait till the next version because
+you know that there's going to be a
+magnitude change in safety then, and
+let's do that one to go global like
+millions. But, does that mean that we're
+no longer going to roll out robotaxi
+beyond, you know, 500 cars, 1,000 cars?
+And I'm saying maybe,
+you know, 10,000 robotaxis by the end of
+this year. Yeah, a good good question. I
+don't think we know. And I think
+whatever expectation you you have or
+anybody else has, we run the risk of
+being disappointed because that
+expectation
+may not be the one that we should have.
+The problem is we don't know what the
+expectation should be because the
+company isn't telling us.
+They're using words that we can't we
+can't quantify.
+And look at the the last couple sentence
+there of that second paragraph for Elon.
+He says, "I think probably unsupervised
+FSD or robotaxi revenue would not be
+super material this year." Well, what
+does super material mean? Now, material
+has a meaning in accounting speak,
+but I don't know that Elon's aware of
+that or using that. He's He's just
+saying it's not super material, what
+whatever that means.
+Is super material a billion dollars? Is
+it five billion? Is it 10 billion? We
+don't know. But, then he says, "I do
+think it'll be material. It'll be
+material probably in a significant way
+next year." Again,
+there's no quantification of numbers
+there. So, it leaves it up to the rest
+of us sort of develop our own
+expectations,
+which again are going to be wrong. Now,
+Vibob does say there in the top
+paragraph, he says, "We grew the
+robotaxi fleet quarter over quarter and
+we expect to keep on ramping the fleet
+as we accelerate Yeah. and get into
+other geographies."
+Keep on ramping the fleet.
+&gt;&gt; mean?
+Is it like we have two cars, now we're
+going to ramp it up to three? Yeah.
+Or is it 10, 20, 50? And and I think
+this is where people took the comments
+that they said and then they said, "Oh,
+everything's delayed."
+Well, wait. What is that what they said?
+So, Conon Elangan asked a question. He
+says, "You removed the safety driver in
+Austin and now you're expanding in
+Dallas and Houston. You know, what are
+the key safety metrics you're tracking
+and and so on? What gives you confidence
+that robotaxi is safe enough to expand?"
+And so on. He's looking for some
+metrics.
+And Ashok says, uh, "We track basically
+all the metrics you mentioned." Doesn't
+share any with us.
+Um, we have a pretty large QA fleet
+spread across all of the United States
+and we've seen evidence of that.
+Then we look at any intervention that
+could happen and then, s- uh, sort of
+simulate both in practice and also in
+our simulators that are very, very good
+nowadays using neural networks as to
+what would have happened. And then based
+on all these analysis, we make the call
+to expand.
+And so, my guess is because they haven't
+expanded a whole lot that they're still
+working through lots of issues.
+But the And then Elon came in and said,
+"Here's what the issues though are.
+They're not safety issues."
+Yeah. And I think this is important. I
+highlighted this here. He says, "A lot
+of what limits wider deployment of
+robotaxi are actually not safety issues,
+but convenience issues where the car
+basically gets paranoid and gets stuck."
+Like sometimes and he talks about it's
+programmed for maximum safety. Um, and I
+experienced this recently as well. Some
+some road construction, a a road was
+closed and so the car routed around.
+It found itself back in the same place
+again and continue to make the same
+mistake. Is it an infinite loop?
+Yeah. So, those kinds of things need to
+be ironed out. It's not a safety issue.
+&gt;&gt; [clears throat]
+&gt;&gt; It's just that I don't want to spend,
+you know, 6 hours in the car when it
+could take me 30 minutes for the
+destination.
+Well, can you answer the question then
+that people are asking, which is
+Okay, so if this is the issue, infinite
+loop and all these kind of these three
+things he just said here, right? These
+three concerns, is that something that
+you have to wait for version 15 theme
+for or is it a version 14.3?
+My answer 14.3, yeah. Yes. Because okay,
+a couple things. Unless I'm really wrong
+on this, but if I just take it forward,
+remember when they launched 14.3.1, they
+said that reasoning is available now,
+but it's only applied to the end
+destination, parking, which means
+implies that they're going to
+add reasoning to more things as you move
+forward. This is the kind of stuff,
+let's say railroads, reasoning when it
+gets scared to cross a railroad, they
+should add reasoning to that to figure
+out what to do there. Or reasoning when
+it's stuck for so long, like a red
+light. Do I stay here or I don't stay
+here? Those kind of things is reasoning
+and I think those are point releases to
+the 14.3.1 series, not something you
+have to wait for 14 for 15. And That
+would be my understanding. Obviously,
+15's going to make everything better at
+some point, but but yes, you the 14.3
+uh series
+And Elon goes on. I mean, he takes quite
+a bit of time actually here to talk
+about that. Um he says the single
+biggest thing is the car is being scared
+to move or just getting kind of stuck in
+situations like that. We've also had
+literal infinite loops, right? And I've
+experienced this personally.
+Um not in the robotaxi, but my own my
+own Cybertruck. You know, and then he
+says, uh those actually, the very last
+sentence, those actually those are by
+far the issues that we have had to
+resolve as opposed to direct safety
+issues.
+So, this is a good spot to be in, I
+think, for Tesla.
+And the question is how quickly can they
+resolve these issues?
+So if if you think interpreting these
+exact statements that they said that it
+is about 14.3 can resolve some of these
+operational issues, not safety issues,
+then why aren't they going wide?
+Again, depends on your definition of
+scale. Like when he says wider
+deployment, this is why we haven't done
+wider deployment. Well, what is wider
+deployment? I think I think he's This is
+his answer to why Why did you only
+launch in Houston and and
+Dallas with one car each? Why haven't
+you launched in half in seven cities
+already? Why haven't you done 100 cars
+in each city? Mhm. This is why.
+I think so. I I think it's also
+encouraging by the fact that the cars in
+Dallas and Houston
+are unsupervised.
+Because it's not safety.
+Yeah. Not safety, right? But
+unsupervised, that's great. And then I
+think I'm further encouraged by the fact
+that Cybercab production has started. It
+does not make any sense to start
+production if you're not going to put
+those cars in the robotaxi fleet.
+Mhm. May Maybe [clears throat] you wait
+a week or so or whatever time period
+Yeah, you can have a few build up, but
+it doesn't make sense to fill up every
+parking spot at Giga Texas.
+So far all those Cybercabs that have
+been produced, they're they've been
+moved off. They were engineering
+prototype vehicles. They're They're now
+in the Q fleet in cities all around the
+country.
+Uh including a lot of rural areas
+they're being spotted.
+Um that's a good sign, but now we've got
+started production of these new shiny
+golden Cybercabs.
+And I'm pretty sure that Joe Techmeyer's
+drone videos, as he does them, will show
+that those vehicles are being moved off
+the lot as well.
+And they should start showing up
+fairly soon, I think. At least this is
+my expectation. Could be wrong.
+Will start showing up
+in these in these cities, whether it's
+San Francisco, whether it's Dallas,
+Houston. Well, I guess it can't be San
+Francisco yet, but it would be in
+Austin, Dallas, and Houston for now.
+Yeah, if if they had steering wheels,
+those could be the QA fleet, but if they
+don't have steering wheels and there was
+like 14 of them that was seen recently,
+I don't know, maybe they're more likely
+to go right into an expansion.
+They have to. There's no other place for
+them.
+Yeah. Okay, we'll see what happened to
+those 14. Yeah, I think we'll learn here
+in the next week or so.
+Okay, so on FSD itself,
+um Elon says for full self-driving and
+Robotaxi, version 14.3 was a major
+architectural update.
+We have had a whole pipeline of major
+improvements to full self-driving that
+we believe will lead to unsupervised
+full self-driving being available
+anywhere in the world that it is legal
+to do so. Okay? So, that was all about
+14.3, okay? That was
+&gt;&gt; And then later he says somewhere that
+the
+unsupervised full self-driving should
+come by the end of this year as well in
+certain
+&gt;&gt; [clears throat]
+&gt;&gt; regions. Yeah, I think we'll get there
+in a second. Okay, so now he's shifting
+though to version 15. He says, "Then
+there's a version 15,
+hopefully later this year."
+Okay, he's hedging a bit.
+"Hopefully by the end of this year," he
+says, "but certainly by early next
+year."
+That'll be a complete overhaul of the
+software architecture
+and it'll run on AI 4. Okay? So, it'll
+run on AI 4. A lot of people have said,
+"Well, version 15, we have to wait now
+for AI 5?" No, he's saying it's going to
+run on AI 4. Now, of course, things can
+change, Mhm. but [clears throat] right
+now this is what he's saying at this
+point in time. Um and he says, "At that
+point, we're really just increasing the
+safety level of FSD above human safety
+level." I think it's already there, but
+he's
+he seems to make this statement that
+they don't quantify that it's twice as
+safe as a human or something. It's just
+always above human level.
+Um
+and then he says, "Meaning I think even
+with version 14
+we are significantly safer than human."
+But with the it says V13, I think it's
+meant to be V15. V15 will take that to
+another level. Mhm. What's your
+interpretation of all that, Herbert?
+First of all, this is the part that I
+really liked. I absolutely love this
+part. Version 14.3 series is enough to
+take us to unsupervised.
+We don't have to wait for 15. Yeah.
+And and then number and and 15 can take
+can run an AI 4. So, those were the two
+big like
+That's like pretty good news, okay? That
+the 14.3 series can take us there. And
+then of course, combine that with it's
+not the safety issue, it's these
+operational issues, which may leads me
+to believe that by the end of this year,
+you could have a rollout of robotaxi.
