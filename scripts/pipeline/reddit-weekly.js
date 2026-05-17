@@ -56,6 +56,18 @@ function delinkTrackerSource(body) {
   );
 }
 
+// Adds TTT attribution into the Brief section heading. Sits below the
+// Robotaxi tracker, so first link in the post; reads as editorial
+// provenance rather than a CTA. User position (2026-05-17): one mention
+// in the Brief heading is enough; the bottom footer was removed to avoid
+// double-mention.
+function attributeBriefHeading(body) {
+  return body.replace(
+    /^## Brief$/m,
+    `## Brief from [theteslathesis.com](${TTT_URL})`
+  );
+}
+
 // ── Output ───────────────────────────────────────────────
 
 // Defensive: weekly-summary.js sometimes leaves the LLM output wrapper
@@ -65,9 +77,10 @@ function stripBriefTags(body) {
 }
 
 function buildRedditPost(title, body) {
-  const cleaned = stripBriefTags(delinkTrackerSource(body)).trimStart();
-  const footer = `---\n\nDaily Tesla Briefs at ${TTT_URL}`;
-  return `${cleaned.trimEnd()}\n\n${footer}\n`;
+  const cleaned = stripBriefTags(
+    attributeBriefHeading(delinkTrackerSource(body))
+  ).trimStart();
+  return `${cleaned.trimEnd()}\n`;
 }
 
 function writeRedditPost(targetDate, title, post, sourceFilename) {
