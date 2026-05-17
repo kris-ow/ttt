@@ -1,0 +1,543 @@
+Channel:     brighterwithherbert
+Title:       Elon Just Won the Compute War (Nobody Noticed)
+URL:         https://www.youtube.com/watch?v=66TqyDO6W90
+Published:   2026-05-17 18:30 UTC
+Fetched:     2026-05-17 19:00 UTC
+
+────────────────────────────────────────────────────────────
+
+I want to share with you today a deep
+dive on Elon Musk's real strategy which
+is to build more compute than anyone
+else on Earth. Then I think the plan is
+he'll either rent it out or he'll use it
+for himself, Tesla or SpaceX. So you
+might have already heard last week
+Anthropic just agreed to rent every GPU
+at Colossus 1. That's 300 megawatt,
+220,000 chips. Google apparently is now
+reportedly in discussions to reserve
+Starship launches for their own space
+data centers. So now we have the two
+biggest AI labs not named OpenAI.
+They're lining up to pay Elon for
+compute. And here's what I want you to
+sit with. I don't think it's hyperbole
+anymore to say this is the most
+important race on the planet right now.
+I think it's more important than robo
+taxi, more important than Optimus, maybe
+even more important than landing humans
+on Mars because I think whoever wins
+compute wins everything else by default.
+So today, I'm going to give you the most
+complete status update you'll find
+anywhere on Tesla and SpaceX Compute.
+We're going to talk about the current
+builds, the future plans, and exactly
+how they stack up against OpenAI, Meta,
+Google, and Anthropic. Look, I get the
+skepticism here. Every six months,
+somebody says Elon just won something.
+He won Robo Taxi, Optimus, Starship, and
+the goalposts keep moving. But I think
+this one's different. And I want to
+explain to you why. Because compute,
+raw, brute force compute is the one
+thing in AI that you cannot fake. You
+can't spin a narrative on it. You can't
+type a model. You can't fake a building
+full of GPUs that's actually running.
+Here's what I'm going to walk you
+through. We're going to talk about every
+supercomputer in the Musk universe right
+now. Colossus 1, Colossus 2, Macrohard,
+Macroharder, Cortex 1, and Cortex 2.
+What they are, how big they are, how
+fast they got built. Then we're going to
+share with you every supercomputer the
+rest of the Mag 7 is building. Stargate,
+Prometheus, Iperion, Google's TPU stack,
+what's actually operational versus
+what's still a press release. Then I'm
+going to explain something called the
+bitter lesson. Because once you
+understand this bitter lesson, you
+understand why this is the only race
+that matters and why the company with
+the most compute eventually wins
+everything. Let me start with the one
+that started it all. Remember this
+Colossus 1 sits in an old Electrolux
+factory in Memphis, Tennessee. XEI
+bought the shell because building from
+scratch was too slow. Here's a timeline
+that nobody else in the industry has
+matched, not even now. 19 days from
+concept to construction start. 122 days
+to bring 100,000 H100 GPUs online, then
+another 92 days to double it to 200,000.
+For context, a data center this size at
+Google, at Meta, at Microsoft usually
+takes 2 to 3 years. XAI did it in 4
+months. And the way they did it tells
+you everything about how they operate.
+They couldn't get enough power from the
+grid. So, what did they do? They rolled
+in mobile gas turbines. They couldn't
+get enough water. So, they tapped a
+wastewater treatment plant next door.
+Tesla mega packs for battery backup,
+SpaceX engineering for the supply chain,
+the whole thing duct taped together by
+people who actually ship. So today,
+Colossus 1 has roughly 220,000 GPUs.
+It's a mix of H100s, H200s, and the
+newer GB 200 Blackwells. This is the
+oneropic just rented in full. And here's
+the part most people miss when they ask
+how Elon got power so fast. There's a
+company called Solaris Energy
+Infrastructure. They own a fleet of
+about 600 megawatts of gas turbines.
+Roughly 400 of those are already serving
+XAI and the remaining capacity sits
+inside a joint venture. So Solaris owns
+just over half. XAI owns just under
+half. By the second quarter of next
+year, Solaris is targeting over 1.1
+gawatt of operating turbines just for
+XAI. That's how you bypass a slow
+utility. You don't wait for the grid.
+You bring your own grid. Tesla Mega
+Packs for battery backup. Solaris
+turbines for power. This is the vertical
+integration nobody else has. Now, here's
+where it gets serious. Colossus 2 is a
+different kind of beast. That's 2
+gawatts of power capacity. 555,000
+Nvidia GPUs purchased, $18 billion in
+hardware, and the target is 1 million
+GPUs at this single site. But the number
+that actually matters is one I want you
+to remember. It's coherence. Colossus 2
+is the world's first 1 gawatt coherent
+AI training cluster. Okay, so what does
+coherent mean? Here's a simple version.
+So when you train a frontier model, you
+want every single GPU talking to every
+other GPU constantly with almost zero
+latency because the model is one giant
+brain split across all those chips. If
+one corner of the cluster is slow, the
+whole training run slows down. So
+coherent means they're all stitched
+together into one machine. Non-coherent
+means you've got smaller clusters spread
+across multiple buildings or cities and
+you train in chunks and stitch the
+results together. Non-coherent is way
+less efficient. you lose a huge amount
+of training quality. Most of the
+industry, including some of the big
+OpenAI sites, is non-coherent at scale.
+XAI partner with Cisco and Nvidia
+Spectrum X to solve the networking
+problem, and they're the only ones
+who've actually done it at a gigawatt.
+This is the thing competitors are still
+drafting plans for. XAI just turned it
+on. Now, this is where it gets fun. Last
+fall, Elon announced something called
+Macrohard. He literally tweeted it. It's
+a tongue-in-cheek name, but the project
+is very real. So the idea is this.
+Microsoft is a software company. They
+don't make hardware. So in principle,
+you should be able to assimilate
+Microsoft, a fully a run software
+company. Macroard pairs Grock as the
+highle brain, the navigator. Then a
+Tesla built agent watches the screen,
+moves the mouse, types on the keyboard
+just like a human worker would. It runs
+on Tesla's own AI4 chip plus XAI's
+NVIDIA hardware. The project's had some
+bumps. Engineers have rotated and left.
+A data annotation effort got paused
+because researchers found flaws in the
+model. That's normal. That's what
+shipping at the edge looks like. But the
+strategic point is huge. If macro hard
+works, you don't just have an AI
+company. You have an AI company that
+replaces every other software company.
+That's a multi-trillion dollar wedge.
+Okay. So, here's where it gets confusing
+and I want to clear it up. Macroheart is
+the project, the AI software company.
+Macro harder with two Rs, is a building.
+Specifically, it's XAI's third data
+center in the Memphis region. And it's
+not actually in Memphis. It's in South
+Haven, Mississippi, just across the
+state line. The price tag is wild. Over
+$20 billion, the largest private sector
+investment in Mississippi's history by
+mile. This is the third building in
+Colossus 2 complex and it's what takes
+XEI from one supercomputer site to a 2
+gawatt regional cluster operations
+targeted to begin around February. So
+when you put the picture together,
+Colossus one in Memphis about 300
+megawatt. Colossus 2 main building
+ramping toward a gigawatt. Macro hard
+the building around 350 megawatts of
+cooling. And now macro harder in South
+Haven pushing the total toward 2 gawatt.
+Three buildings, two states, but one
+coherent training cluster. That's enough
+power to light up about one and a half
+million homes. Now the locals are
+absolutely pushing back. By the way, the
+NAACP and environmental groups have
+raised concerns about air pollution and
+water use. That's a real risk for the
+timeline. Permitting can slow things
+down, but the capital's committed. The
+buildings are being built. This is
+absolutely happening. Now, let's flip
+over to Tesla. Most people forget that
+Tesla has its own supercomputers sitting
+right inside Giga, Texas. Cortex 1 came
+online in Q4 of 2024. It started with
+50,000 H100 GPUs. Now it's scaling
+toward 100,000 H100s and H200s, about
+130 megawatts of power and cooling,
+growing toward 500 megawatt. Cortex 1 is
+what trains Tesla's FSD models. Every
+single mile of video from every Tesla on
+the road feeds it in here. This is where
+version 14 came from. This is where the
+unsupervised version is being trained
+right now. And then there's Cortex 2
+being built on the north side of Giga
+Texas right now. 250 megawatts coming
+online next month, 500 megawatts by mid
+year, and another roughly 100,000 GPUs.
+Here's the thing that connects all of
+this. So, Cortex one trains FSD. Cortex
+2 trains FSD and will be the brains for
+Optimus. And Optimus is the bigger
+workload. A human or robot has way more
+degrees of freedom than a car. Way more
+video to learn from, way more edge
+cases. So when you add it up, you got
+Colossus 1 plus Colossus 2, plus you got
+Cortex 1 plus Cortex 2, you're looking
+at well over a million GPUs across the
+Musk Empire by the end of next year.
+Concentrated in two locations, all
+stitched together with coherent
+networking. Nobody else has done
+anything even close to this. Okay, so
+let's do the comparison because the
+headline numbers are one thing, coherent
+working, training today. Those numbers
+are another. Let me start with OpenAI
+and Stargate, the big one. The flagship
+site is Abene, Texas. The plan is 1.2
+gawatt and 450,000 Blackwell GPUs built
+with Oracle, built by Crusoe. But here's
+where it gets interesting. As of right
+now, only about half of the eight
+buildings are operational and a planned
+600 megawatt expansion just got scrapped
+in March. Financing dispute plus winter
+weather messing with the liquid cooling
+buildout or something like that. So,
+OpenAI is going big on paper, 10 gawatts
+by 2029, but on the ground, reality is
+they're still ramping the first gigawatt
+and pieces are slipping. Meanwhile, XAI
+already has a coherent cluster running
+and is renting it to Anthropic. Now,
+let's talk about Meta. This one's
+actually serious. Meta is building two
+superclusters with names. Prometheus is
+1 gawatt in New Albany, Ohio, coming
+online this year. Hyperion is the
+monster, up to 5 gawatt in Louisiana.
+Meta illiterally ordered 10 gas fired
+power plants for Hyperion, but Hyperion
+won't be fully built out until 2030. So
+Meta has the biggest blueprint of
+anyone. But blueprints don't train
+models. Operational gigawatts do. And in
+2026, XAI has more operational coherent
+compute than Meta does. Now Google, they
+have TPUs, their own custom silicon TPU
+V7. Very efficient, very powerful.
+Google's also spending $175 to $185
+billion in capex this year. But the
+irony is Google's reportedly in
+discussions to have SpaceX help them
+launch to space or maybe even rent
+compute from XAI too. Let that sink in
+for a second. Google with its own TPUs
+renting launch and GPUs from Elon.
+Amazon Amazon has tranium chips.
+Anthropic has been using them. And as of
+last week, Enthropic is also using
+Colossus 1 because ran out. So when Elon
+was asked why he agreed to sell compute
+to Anthropic, he said, quote, "No one
+set off my evil detector." That's it.
+That's a standard now. The same guy who
+called them anti-western three months
+ago, compute makes strange bed fellows.
+And Anthropic didn't just want GPUs.
+They asked Elon about renting orbital
+compute data centers in space, which
+we'll come back to. Okay, now we get to
+the part that ties this all together.
+This is the most important idea in AI,
+and almost nobody in the mainstream
+press talks about it. So in 2019 there's
+a researcher named Richard Sutton and he
+wrote a short essay called the bitter
+lesson. His argument in one sentence for
+70 years every time someone tried to be
+clever in AI by hand coding rules by
+injecting human knowledge by being
+elegant. The simple brute force approach
+that just used more compute eventually
+beat them every time. Chess go speech
+recognition image recognition language
+models every single time. The bitter
+part is this. Re researchers spend years
+building elegant systems and then
+somebody comes along with 10 times more
+compute and a dumb algorithm and wins.
+It's bitter because the lesson is
+antihuman in a way. Your cleverness
+doesn't matter. The compute does. And
+here's the implication for Tesla, for
+SpaceX, for everything Elon's doing. If
+the bitter lesson is right and 70 years
+of evidence as it is, then the company
+with the most compute wins. Not the
+company with the smartest researchers,
+not the company with the best data set,
+the company with the most GPUs running
+coherent training. That's why every move
+Elon's made for the last three years
+makes sense. The factory in Memphis,
+Tesla Mega Packs for Power, SpaceX
+engineering for speed, the merger of XAI
+into SpaceX, the Tesla $2 billion
+investment in XAI. None of it is being
+clever. It's about scale. Now, here's
+where most people stop thinking, and I
+want you to keep going, because if you
+think this is just about who has a
+better chatbot, you're missing it. The
+same compute that trains Grock trains
+FSD. The same computer that trains FSD
+trains Optimus. The same compute that
+trains Optimus can run a fully
+autonomous AI software company called
+Macrohard. And the same computer that
+does Macroard, they can run AI
+scientists, AI doctors, AI engineers, AI
+lawyers, maybe even make new physics,
+new metals. This is the part Elon keeps
+trying to tell people and it doesn't
+land because it sounds science
+fictional. But think about it like this.
+What is a business at its core? A
+business is a bunch of humans making
+decisions and producing outputs. If you
+can run human level intelligence on a
+chip at scale, you can run businesses on
+chips. You can develop new physics on
+chips. You can run drug discovery on
+chips and cure diseases that have killed
+people for 10,000 years. The demand for
+intelligence is effectively infinite.
+There's no point at which a civilization
+says we have enough intelligence.
+Thanks. You always want more. And
+whoever can sell intelligence by the
+hour at scale at low cost is selling the
+most valuable commodity that has ever
+existed. This is what Anthropic figured
+out. This is why Google's in talks.
+Comput is oil. Comput is the new
+electricity. And Elon just built the
+biggest refinery. Last piece. And this
+one's wild and it's not hypothetical
+anymore. In January, SpaceX filed with
+the FCC. The filing was for a million
+satellite orbital AI data center
+constellation. A million satellites in
+orbit as one supercomput. That's not a
+tweet, that's a slide. That is a
+regulatory filing with the United States
+government. Then in May, when Anthropic
+signed the Colossus one deal, they
+didn't just rent GPUs on the ground.
+They expressed interest in working with
+SpaceX on multiple gigawatts of compute
+in space. Why orbital data centers? The
+power is effectively unlimited because
+solar runs 24/7 up there. The cooling is
+basically free because space is 270
+degrees below zero. There's no zoning
+board. There's no NAACP
+lawsuit. No water rights fights. SpaceX
+can launch whatever they want. 200
+starships a year by 2028 on current
+targets. Each one carrying hundreds of
+tons to orbit. You start stacking GPU
+clusters in space. And a scaling curve
+looks nothing like what anyone else can
+do. Microsoft can't do this. They don't
+have a rocket. Google can't do this.
+They don't have a rocket. Meta, they
+don't have a rocket. Only one company on
+Earth has the launch capacity to put or
+compute in orbit at scale. That
+company's now the parent company of XAI.
+This is what people don't price him.
+Earth compute has limits. Power grids,
+water, land, permits. Space comput
+doesn't. The first company to crack
+orbital data centers gets an effectively
+unlimited scaling curve. SpaceX has
+already filed for that spectrum.
+Okay, so let me give the bare case a
+fair shot because there are real risks
+here. The first one is power. Colossus 2
+needs gigawatts. That's small city
+scale. Satellite imagery suggests the
+cooling capacity is currently behind
+schedule. Some analysts think Colossus 2
+won't hit a full gigawatt until later
+this year. That's real. Power and
+cooling are the bottleneck, not chips.
+The second one is macroart. Projects had
+leadership turnover. Engineers have
+moved teams. A big annotation effort got
+paused. The thesis is sound, but
+execution is hard. The third one is
+competitive response. Google CPOS are
+very good, really good. OpenAI plus
+Microsoft have more total capex
+committed than XAI does. If Stargate
+hits its build targets, they could match
+or exceed Colossus on raw GPU count. The
+fourth one, and this is the honest one,
+Elon's timeline slip always on
+everything. So when he says 1 million
+GPUs by the end of this year, I'd add at
+least nine months at the minimum. But
+here's the reframe. Even with slippage,
+even with cooling delays, XAI has the
+only operational gigawatt scale coherent
+cluster on Earth right now. Anthropic is
+paying for it. Google's in talks for it.
+That is not a hypothetical. That is
+happening this month. The lead doesn't
+have to be permanent for the thesis to
+work. It just has to last long enough to
+train two or three generations of
+frontier models and then the network
+effects and data fly wheels take over.
+So if you own Tesla stock, here's how I
+think about this. The market still
+prices Tesla as a car company that maybe
+is building a robot. Some analysts are
+starting to add a robo taxi premium.
+Fine, but almost nobody is pricing the
+compute story. Tesla's Cortex clusters
+are training FSE. That's understood.
+What's not understood is that Tesla owns
+roughly 9% of XAI now. and XAI just
+merged into SpaceX, which Tesla is also
+a major customer of. So, you've got two
+companies, Tesla, SpaceX, and XAI,
+sharing engineers, sharing compute,
+sharing supply chains with one guy at
+the top who points them all in the same
+direction. If you think AGI is real and
+the bitter lessons as it is, then the
+compute leader captures most of the
+value and Tesla shareholders own a piece
+of that compute leader, either directly
+through XAI ownership or indirectly
+through Cortex training the FSD and
+Optimus models that monetize the
+compute. Three scenarios I think
+through. One, let's say that AGI doesn't
+happen for 10 plus years. Tesla trades
+on cars and FSD. Stock goes up but
+slowly. Two, AGI happens by 2030. XA is
+a top three lab. Tesla's ownership stake
+plus Optimus deployment make Tesla the
+most valuable company on Earth. Three,
+the compute lead compounds. Space data
+centers come online. XAI becomes the
+default intelligence provider for the
+planet. Tesla rides that wave plus owns
+the physical AI layer with Optimus.
+Marcus is pricing scenario one right
+now. Here's what I'd actually do with
+this information. The first thing is
+track the GPU count. Colossus 2 is
+supposed to hit 1 gawatt by mid year.
+Satellite imagery and Epoch AI publish
+updates. Watch that number. The second
+one is watch the customer list.
+Anthropic was first. Google is
+reportedly in talks right now. If a
+third major AI lab signs up, that's a
+signal that XAI compute is becoming the
+default rental market. Then there's
+Cortex 2. 250 megawatts in April, 500 by
+midyear. Tesla doesn't usually announce
+these milestones cleanly. Watch for
+satellite imagery. Watch for utility
+filings in Travis County, Texas. Fourth,
+the Macro hard product. If a public beta
+drops this year, pay attention. Even a
+small launch matters because it proves
+the concept. And the last one is the
+space angle. If SpaceX announces an
+orbital data center test mission, this
+changes everything. That's the black
+swan that no other company can match.
+So, I've been covering Tesla since 2012.
+I watch a lot of cycles, a lot of
+milestones, a lot of hype. What's
+happening right now in compute is
+different. This is not a product launch,
+not a press conference. It's not
+infrastructure.
+It's built running already generating
+revenue for most of AI history. Scale
+has been the answer. And whoever has the
+most scale wins. Elon has the most
+scale. He's pulling away. Anthropic is
+rented from him. Google's in talks and
+the next data centers are going to
+orbit. If you understand the bitter
+lesson and you understand convergence,
+you understand why Tesla, SpaceX, and
+XAI being one effective unit is the most
+important corporate structure on Earth
+right now. I'll keep tracking the
+milestones. You know the drill. If you
+got something out of this, please hit
+subscribe. I'll see you in the next one.
