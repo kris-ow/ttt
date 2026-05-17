@@ -19,7 +19,6 @@ jobs:
       - name: Check for stale content
         id: check
         run: |
-          now=$(date +%s)
           alerts=""
 
           # ── Check unsummarized transcripts ──
@@ -36,43 +35,6 @@ jobs:
           if [ $stale_count -gt 0 ]; then
             alerts="$alerts\n### Unsummarized transcripts: $stale_count\n$stale_files"
             echo "Found $stale_count unsummarized transcript(s)"
-          fi
-
-          # ── Check Mac Mini heartbeat ──
-          heartbeat="scripts/pipeline/heartbeat.json"
-          if [ -f "$heartbeat" ]; then
-            # Check each service
-            for service in yt-transcripts x-summaries; do
-              ts=$(node -e "
-                const hb = JSON.parse(require('fs').readFileSync('$heartbeat','utf-8'));
-                const t = hb.services && hb.services['$service'];
-                if (t) console.log(t);
-              " 2>/dev/null)
-
-              if [ -n "$ts" ]; then
-                service_epoch=$(date -d "$ts" +%s 2>/dev/null || echo "0")
-                age_hours=$(( (now - service_epoch) / 3600 ))
-
-                # yt-transcripts runs hourly — stale after 3h
-                # x-summaries runs daily at 2am — stale after 27h
-                if [ "$service" = "yt-transcripts" ]; then
-                  threshold=3
-                else
-                  threshold=27
-                fi
-
-                if [ $age_hours -gt $threshold ]; then
-                  alerts="$alerts\n### Mac Mini service stale: $service\nLast heartbeat: $ts ($age_hours hours ago, threshold: ${threshold}h)"
-                  echo "$service is stale: $age_hours hours old"
-                fi
-              else
-                alerts="$alerts\n### Mac Mini service missing: $service\nNo heartbeat timestamp found in $heartbeat"
-                echo "$service has no heartbeat entry"
-              fi
-            done
-          else
-            alerts="$alerts\n### Mac Mini heartbeat missing\nNo heartbeat.json found — Mac Mini may not have pushed yet"
-            echo "No heartbeat.json found"
           fi
 
           # Write alerts to file for the next step
