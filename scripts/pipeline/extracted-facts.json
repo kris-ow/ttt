@@ -6843,5 +6843,89 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-16T19:02:26.631Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi operation estimated at approximately 80,000 miles per day as of mid-2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 80000,
+    "context": "Munster's estimate of Tesla daily robotaxi miles, derived from Tesla investor deck and ride count data; implies very low per-vehicle utilization given ~60 active unsupervised vehicles",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active unsupervised Tesla robotaxi fleet approximately 60 vehicles (excluding Bay Area supervised vehicles) per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 60,
+    "context": "Dillon Loomis references this figure during discussion of rerating thresholds; consistent with RobotaxiTracker.com canonical data (39 unsupervised as of 2026-05-09, with rounding/approximation in play)",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi rerating threshold estimated at 5,000+ vehicles and 5–10% autonomous share of ride-hailing market",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 5000,
+    "context": "Munster's view of the fleet size needed for a true step-function stock rerating, not just incremental appreciation",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
+  },
+  {
+    "fact": "US ride-hailing market: just over 4 billion rides per year at average ~6 miles per ride, equating to ~1.5% of total US miles driven",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "avg_trip_length",
+    "value": 6,
+    "context": "Munster's estimate of average ride-hailing trip length in miles, used to size the total addressable robotaxi market",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi pricing expected to be approximately 5–10% cheaper than Lyft/Uber, not dramatically lower",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Munster's qualitative estimate based on Tesla's historical pricing behavior; no absolute fare figure given, but implies pricing near market rates rather than aggressive undercutting",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
+  },
+  {
+    "fact": "43,000 US fatalities in car accidents in 2024; Tesla claims Autopilot/FSD is approximately 7x safer than human driving",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 7,
+    "context": "Munster cites Tesla's 7x safety multiple to argue ~37,000 lives per year could be saved at full autonomous adoption; used as moral and regulatory argument for faster deployment",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi ASP approximately $200,000 per vehicle",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 200000,
+    "context": "Munster's rough figure for Tesla Semi average selling price, cited when discussing the Semi as a 5–10% incremental opportunity relative to robotaxi and Optimus",
+    "source": "20260517_electrified_01_Interview_When_Tsla_Stock_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-17T17:03:02.546Z",
+    "status": "pending"
   }
 ]
