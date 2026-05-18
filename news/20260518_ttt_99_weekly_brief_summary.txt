@@ -1,0 +1,109 @@
+Channel:     ttt
+Title:       Weekly Tesla Brief (May 11 – May 17, 2026)
+Published:   2026-05-18 00:00 UTC
+Summarized:  2026-05-18 09:48:40 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.15140 (32793 in / 3535 out tokens)
+Sources:     7
+Categories:  Weekly Brief
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 7D | 30D |
+|:-----|----:|---:|----:|
+| Austin | 28 | 0 | +15 |
+| Houston | 6 | 0 | +6 |
+| Dallas | 5 | 0 | +5 |
+| **Total** | **39** | 0 | +26 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD 14.33 released; Elon confirms 14.3 stack sufficient for unsupervised deployment.
+- Tesla unredacts all 17 NHTSA robotaxi crash reports; teleoperator failures flagged.
+- Las Vegas Cybercab maintenance facility permitted; launch targeted within ~45 days.
+- Belgium announces 5,000 km FSD supervised trial; EU vote window summer–autumn 2026.
+- Cybercab testing confirmed in Colorado — first state beyond known markets.
+- Model Y prices raised up to $1,000 — first increase in two years.
+- Multiple Megapack contracts signed: $2.7B Georgia Power, $556M China, 1 GWh Scotland.
+
+## Autonomous Driving
+
+- **FSD 14.3 is the operative unsupervised deployment version; v15 is not a prerequisite.** Elon confirmed on the Q1 call (reiterated this week) that 14.3 is a sufficient architectural base for unsupervised FSD, with reasoning capabilities extending through point releases. V15 — described as a "complete overhaul of the software architecture" running on AI4 — is targeted for late 2026 or early 2027 as a further safety magnitude improvement, not a gating item. FSD 14.33 released mid-week; Bhakdi's Mars Catalog rated it "extremely positive."
+
+- **Belgium is moving fastest in Europe.** Director of Transportation for Flanders announced a 5,000 km FSD Supervised trial on Flemish roads, stating Tesla can begin "tomorrow." Sweden's Transport Agency said a consumer launch could come "at the earliest during the summer or autumn of 2026." Ireland confirmed active talks with Tesla. The EU-wide TCMV vote window is now expected summer–autumn 2026, with Belgium and Sweden the leading bilateral paths if bloc approval slips again.
+
+- **FSD China approval flagged as the single largest near-term catalyst.** During Elon's May 13 Beijing trip, FSD regulatory approval was reportedly his stated priority. Tesla posted China FSD data-labeling roles marked "urgent" and a robotaxi-specific hiring posting appeared in China for the first time — the operational sequence being FSD approval → supervised rollout → robotaxi launch, likely requiring Giga Shanghai-produced vehicles.
+
+- **Cortex 2 live at 250 MW; first cluster training both FSD and Optimus.** Came online approximately April 2026, targeting 500 MW by mid-2026 with ~100,000 additional GPUs. Cortex 1 continues scaling FSD training. The simultaneous dual workload on Cortex 2 is new this week and underappreciated, per brighterwithherbert.
+
+- **FSD 14.3.2 coast-to-coast Cannonball Run: 2,833 miles, 49 hours 55 minutes, zero disengagements.** Completed California-to-New York with human input only at charging stops, beating the prior FSD record by 8.5 hours. Tesla Vision superhuman night reconstruction (photon-count AI rebuilding sun-blinded scenes) cited as the core architectural advantage enabling adverse-condition performance.
+
+## Robotaxi
+
+- **Elon: scaling bottleneck is convenience, not safety.** Both Elon and Ashok confirmed zero accidental passenger injuries across the full robotaxi deployment history. Elon's characterization: "A lot of what limits wider deployment of robotaxi are actually not safety issues, but convenience issues where the car basically gets paranoid and gets stuck" — including routing loops and excessive caution near construction. Robotaxi revenue described as "not super material this year" but "material in a significant way" in 2027.
+
+- **Las Vegas Cybercab infrastructure materializing.** Tesla filed a Clark County permit for a ~36,000 sq ft automated Cybercab maintenance facility with ~55 parking spots — "Phase 2" designation implies concurrent Phase 1 work. Dillon Loomis puts the Las Vegas robotaxi launch at approximately 45 days out. Tesla is actively hiring robotaxi operations roles in 33 U.S. cities per job posting analysis.
+
+- **Cybercab production units now moving out of Giga Texas.** Approximately 14 new production Cybercabs were spotted departing the Giga Texas outbound lot (per cernbasher/Tegtmeyer footage), with units also sighted on public roads in Miami, San Francisco, and Houston, and confirmed testing in Colorado — the first state beyond current operating markets. Production rate estimates remain divergent: 20–40 units/day (brighterwithherbert/Tegtmeyer) vs. 5–15/day (Loomis).
+
+- **Munster's rerating threshold: 5,000+ vehicles and 5–10% of U.S. ride-hailing.** He estimates Waymo at ~4 million miles/day versus Tesla robotaxi at ~80,000 miles/day — roughly 50-to-1 — but maintains Tesla holds the superior long-term cost structure. Bhakdi's view: 10,000 robotaxis by year-end pushes the stock through $700 toward $1,000. Analyst consensus puts Cybercab's first commercial paid deployment in the July–September window.
+
+## Optimus
+
+- **Optimus V3 design reportedly signed off** per an unverified but cited source on X. Fremont Model S/X line is being cleared and Optimus assembly infrastructure is being installed, targeting up to 1 million units/year long-term. Tesla is hiring "data collection operator – Optimus" roles across at least 12 locations, consistent with Elon's stated goal of deploying ~5,000 units internally for training data generation.
+
+- **Chinese supply chain committed to 70,000-unit readiness for 2026.** A December 2025 sourced leak from "Tesla Ming" indicates Chinese Optimus component suppliers prepared supply chain capacity for 70,000 units this year; seven key partners have already passed Tesla's PPA certification. First bulk purchase orders placed with component suppliers, with large-scale ramp targeted August 2026.
+
+- **No analyst has Optimus in their model — framed as asymmetric optionality.** Piper Sandler's Alex Potter explicitly states investors are "getting Optimus for free" at $400/share and will begin incorporating it only once revenue arrives. Munster cautions against head fakes from small pilots: the true rerating event is a credible third-party commercial customer taking delivery at scale, which he rates as 5–10 years out.
+
+- **Optimus requires more compute than FSD** due to higher-dimensional action and perception space — the explicit rationale for Cortex 2's scale and its simultaneous training role. Elon has changed course on the tendon-driven forearm hand design described in the original patent; Optimus hand architecture is flagged as a key area to watch.
+
+## Tesla Semi
+
+- **Tesla Semi enters first commercial demo under load.** Covenant Logistics began a 3-week demo on May 13 running a full freight load on the 500-mile variant in California, with estimated annual fuel savings of $60,000–$80,000 per truck. Tesla Semi's E-PTO delivers 25 kW to refrigerated trailers, eliminating diesel auxiliary motors — hosts cite ~50% cost-per-mile savings in California versus diesel.
+
+## Energy
+
+- **Multiple large Megapack contracts confirmed as executed.** Georgia Power: $2.7B, 3+ GW. China: $556M. Scotland: 1 GWh. France: 240 MW (described as one of France's largest grid storage projects). Per brighterwithherbert, these are purchase orders, not pipeline. A new Megablock product is scheduled to ramp H2 2026.
+
+- **BYD overtook Tesla as top global BESS integrator in 2025.** BYD shipped 60+ GWh (13% share) versus Tesla's 46.7 GWh (10%), per Benchmark Mineral Intelligence — Tesla's first year out of the top position since 2023. Eight of the top 10 global integrators are Chinese; BYD's HaoHan system offers 14.5 MWh per unit versus Tesla Megapack 3's 5 MWh.
+
+- **Giga Berlin 4680 expansion advancing: $250M for 18 GWh annual capacity.** Cell production starts H1 2027; at 18 GWh output, the facility could supply cells for ~240,000–350,000 vehicles per year, potentially covering most of Giga Berlin's output in-house. Cumulative cell investment in Grünheide now approaches €1 billion.
+
+## Electric Vehicles
+
+- **Model Y prices raised up to $1,000 — first increase in approximately two years.** Premium RWD rises to $45,990 (+$1,000), Premium AWD to $49,990 (+$1,000), Performance AWD to $57,990 (+$500); base trims unchanged. Electrek reads the selective trim increases as margin-capture on high-profitability configurations, not a broad demand signal.
+
+- **Panasonic raised U.S. battery sales forecast +19% to 46 GWh for fiscal year ending March 2027**, explicitly citing Tesla's ongoing market share recovery. With the broader U.S. EV market projected roughly flat, Panasonic is implicitly forecasting Tesla outperforms the segment.
+
+- **Model Y L confirmed for Southeast Asia/Singapore with U.S. arrival expected by end of 2026.** A brief appearance on Tesla's U.S. website and Bay Area test sightings support a 2026 U.S. launch, projected at ~$55,000–$60,000. Tesla Canada is expected to claim a disproportionate share of the 49,000-vehicle/year Chinese EV import quota via Giga Shanghai Model 3 exports.
+
+## Financials
+
+- **Tesla 2026 capex guidance raised from >$20B to >$25B.** Cash on hand remains >$30B. Munster characterizes the market's negative reaction as a "headscratcher" for a company building paradigm-shifting infrastructure that is roughly breakeven on cash flow. Q1 2026 profit was approximately $63M/day; FSD subscriptions contributed ~6.9% — higher than expected given their recurring, high-margin nature.
+
+- **Bhakdi revised his 2030 base case downward to $4,000/share** (from $6,000), citing increased caution on robotaxi and Optimus scaling timelines. Munster anchors at $600 by end of 2027. Bhakdi's near-term sequence: $490 prior high → $700 possible by November 2026 → $4,000 by 2030 on a standalone basis.
+
+## Market & Competition
+
+- **SpaceX IPO targeted June 12 under ticker SPCX at approximately $2 trillion.** Road show reportedly slated for June 8; early indications suggest 4x oversubscribed with 12–20x projected for round two. Ron Baron's $1.7B investment is reportedly now worth ~$15B; he plans to buy $1B more at IPO. The brighterwithherbert panel consensus: IPO generates a 10–15% Tesla halo lift, not a rotation out.
+
+- **Honda books first annual loss in ~70 years** — $9B+ in EV restructuring costs, abandoned its 2040 full-EV goal, suspended $11B Canadian EV investment. Mazda delayed its first dedicated EV platform to at least 2029 and cut EV investment by ~45%. Porsche announced 500+ job cuts. Legacy automaker competitive retreat framed as a structural Tesla tailwind.
+
+- **Bhakdi flags 30-year U.S. bond yields approaching 5% as macro risk.** The 10-year moved 14 bps in a single week; Iran's Strait of Hormuz blockade (20%+ of global oil) is cited as the root inflation pressure. Tesla dropped ~4.75% Friday on low volume (~40M shares vs. ~65M average) — attributed to "sell the news" following the Beijing summit, not thesis-specific deterioration.
+
+## Bear Case of the Week
+
+- **Tesla Austin robotaxi crash rate approximately 4x worse than the human driver average.** Per Reuters, Tesla reported 15 crashes to NHTSA since August 2025 — roughly one per 57,000 miles versus the human baseline of one per 229,000 miles (per Tesla's own vehicle safety data). Tesla had been the only ADS operator to fully redact all crash narratives before removing confidentiality designations this week. Teleoperator failures caused two of the 17 incidents: a July 2025 collision into a metal fence at 8 mph and a January 2026 impact into a construction barricade at ~9 mph. Spatial awareness failures — reversing into wooden poles, clipping trailer hitches, contacting metal chains — appear in several additional incidents.
+
+- **Austin service reliability failures documented by independent and official sources.** A Reuters three-week April 2026 study found no cars available 27% of the time and wait times exceeding 15 minutes roughly half the time. A 5-mile Dallas trip took nearly two hours, including a car that failed a left turn four times before remote intervention. Elon himself acknowledged the core problem: routing loops and excessive caution. Dillon Loomis: "I'm very confident you're going to end up disappointed unless we see significant geofence expansion" in Houston and Dallas.
+
+- **Musk walked back his 2025 "half the U.S. population" robotaxi prediction**, downgrading to "a dozen or so states" by end of 2026 on the Q1 earnings call. The five-city H1 2026 expansion originally committed has been delayed. Munster's rerating threshold — 5,000+ vehicles and 5–10% ride-hailing share — remains far from current operational scale, with Tesla at roughly 80,000 autonomous miles/day versus Waymo's ~4 million.
+
+- **Solar Roof is effectively discontinued.** Peak deployment reached ~23 installations per week versus the 2016 promise of 1,000/week — a 97.7% miss. Tesla installed roughly 3,000 total U.S. systems per Wood Mackenzie, stopped reporting solar deployment data in Q1 2024, and redirected customers to third-party installers. The TSP-420 panel pivot is an acknowledgment of the product's failure to scale.
+
+- **Automotive gross margins compressed from above 25% (early 2023) to below 18% (mid-2025)** through sustained price cuts, and Q1 2026 saw a ~50,000-vehicle inventory build alongside missed delivery expectations. The Model Y price increases this week are a partial reversal, but full-year 2025 deliveries of 1.636 million were below the 2023 peak — context for investors modeling delivery growth assumptions.
