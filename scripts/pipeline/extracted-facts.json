@@ -6939,5 +6939,17 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-17T23:03:27.764Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD V14.3.3 adds a live on-screen counter showing miles driven since last intervention, resetting to zero on disengagement",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "New UI feature surfaces per-driver intervention frequency data; may improve Tesla's ability to collect and communicate safety metrics publicly over time",
+    "source": "20260518_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-18T00:02:20.802Z",
+    "status": "pending"
   }
 ]
