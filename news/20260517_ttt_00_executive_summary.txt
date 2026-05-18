@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-17)
 Published:   2026-05-17 00:00 UTC
-Summarized:  2026-05-18 09:47:07 UTC
+Summarized:  2026-05-18 11:13:03 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.08669 (16162 in / 2547 out tokens)
+Cost:        $0.09181 (16162 in / 2888 out tokens)
 Sources:     7
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,59 +22,61 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- Cybercab testing confirmed in Colorado — new state beyond known markets.
-- Model Y price increases up to $1,000 — first hike in two years.
-- FSD 14.33 released; Bhakdi calls the 14.3 stack revamp "a huge deal."
-- Munster: true robotaxi rerating requires 5,000+ vehicles and 5–10% ride-hailing share.
-- Cortex 2 at 250 MW live; trains both FSD and Optimus.
-- Starship V3 first flight scheduled May 20 at 6:30 p.m. ET.
+- Cybercab testing confirmed in Colorado — new state beyond known markets
+- Model Y price increase: first in two years, up $500–$1,000 across trims
+- FSD 14.33 released; described as a complete stack revamp
+- Starship V3 first flight scheduled Wednesday May 20 at 6:30 p.m. ET
+- Munster: true robotaxi rerating requires 5,000+ vehicles and 5–10% of ride-hailing
+- Cortex 2 online at 250 MW; trains both FSD and Optimus
 
 ## Robotaxi
-- **Cybercab now testing in Colorado**, marking the first confirmed deployment outside Bay Area, Austin, Dallas, and Houston. Per Sawyer Merritt, Tesla has been "shipping a lot of them around" and Cybercab is expected to "start to pop up in a lot of new places" — signaling active geographic stress-testing ahead of broader commercial rollout.
-- **Rerating threshold, per Munster:** reaching ~60 unsupervised vehicles today is "incrementally positive" but likely already priced in. A genuine step-function re-valuation requires 5,000+ vehicles and autonomous rides representing 5–10% of the US ride-hailing market — at which point the average person viscerally grasps the opportunity.
-- **Waymo vs. Tesla miles gap:** Munster estimates Waymo at ~4 million miles/day versus Tesla robotaxi at ~80,000 miles/day — roughly a 50-to-1 ratio. He nonetheless maintains Tesla holds the superior long-term cost structure.
-- **Robotaxi pricing expectation:** Munster projects Cybercab fares approximately 5–10% cheaper than Lyft/Uber rather than a dramatic price slash, consistent with Tesla's historical pattern of monetizing scale rather than passing all savings to consumers.
-- **Scale as stock catalyst:** Bhakdi argues that 10,000 robotaxis deployed by end of 2026 would push Tesla through $700 toward $1,000, independent of broader market tailwinds.
+- **Cybercab now testing in Colorado**, marking geographic expansion beyond the Bay Area, Austin, Dallas, and Houston. Per Sawyer Merritt, Tesla has been "shipping a lot of them around" and Cybercab is expected to "start to pop up in a lot of new places," suggesting active hardware stress-testing across diverse regulatory environments ahead of broader commercial rollout.
+- **Rerating threshold framed at 5,000 vehicles and 5–10% ride-hailing share.** Gene Munster (Deepwater Asset Management) says reaching ~60 unsupervised vehicles to ~1,000 is "incrementally positive but likely already priced in." A true step-function rerating requires 5,000+ vehicles demonstrating that autonomous rides are a visible fraction of the market. At current Waymo dominance (~4M miles/day vs. Tesla's ~80,000/day), Munster describes the score as "50 to zip" — while still favoring Tesla's long-term cost structure.
+- **10,000 robotaxis by end of 2026 cited as a $700–$1,000 stock catalyst** by Bhakdi, who frames it as a scenario where Tesla "pulls itself up by its own shoelaces" independent of any macro tailwind.
+- **Cybercab pricing expected ~5–10% below Lyft/Uber**, per Munster, who draws a parallel to Tesla's EV history: despite enormous scale advantages, blended Model Y/3 ASP sits at $38,000–$42,000, well above the long-anticipated $25,000 vehicle. He expects Tesla to monetize scale rather than pass all savings to consumers.
 
 ## Autonomous Driving
-- **FSD 14.33 released.** Bhakdi confirms the Mars Catalog rated it "extremely positive" and characterizes the broader 14.3 stack as a complete revamp that will support faster iteration going forward.
-- **Cortex 2 is live at 250 MW** as of approximately April 2026, targeting 500 MW by mid-2026 with ~100,000 additional GPUs. Critically, Cortex 2 trains both FSD and Optimus — the first Tesla cluster dedicated to both workloads simultaneously.
-- **Cortex 1 trains FSD including unsupervised FSD:** the cluster came online Q4 2024, starting at 50,000 H100s and scaling toward 100,000 H100s/H200s at ~130 MW growing toward 500 MW. Every Tesla fleet mile feeds into it.
-- **Munster on FSD inflection:** interventions have dropped to "almost none" over the past two months versus multiple per day six months ago. He recommends Tesla's two-day test drive for skeptics and notes FSD miles are still only ~0.15–0.2% of total US light-vehicle miles driven as of Q1 2026 — the addressable market is nearly untapped.
-- **Elon Musk speaks at the 2026 Samson International Smart Mobility Summit on May 18** (virtually, topic: "scaling smart mobility") — a potential source of forward guidance on autonomy and deployment timelines.
+- **FSD 14.33 released.** Bhakdi confirms the release and notes the Mars Catalog rated it "extremely positive." He characterizes the broader FSD 14.3 branch as a complete stack revamp that will accelerate iteration speed — and argues the market broadly underestimates what is coming.
+- **Cortex 2 came online at 250 MW in approximately April 2026**, with 500 MW targeted by mid-2026 and ~100,000 additional GPUs. Critically, Cortex 2 trains both FSD and Optimus — with the humanoid workload described as larger than FSD due to higher-dimensional perception and action spaces. Cortex 1 (50,000–100,000 H100/H200s, ~130 MW, online Q4 2024) already produced FSD v14 and is currently training unsupervised FSD.
+- **Munster reports near-zero FSD interventions** over the past two months versus multiple per day six months prior. He highlights that FSD-driven miles represent only ~0.15%–0.2% of total US light vehicle miles driven (~3.3 trillion in 2025), underscoring the scale of the untapped addressable market.
+- **FSD safety case:** Munster calculates that if Autopilot/FSD is ~7x safer than human driving (per Tesla's own data), the technology could prevent ~37,000 of the 43,000 US traffic fatalities recorded in 2024.
+- **Legacy OEMs declined FSD licensing** when Musk reportedly reached out approximately one year ago, per Munster — a strategic error he believes leaves them in an increasingly difficult competitive position as autonomy compounds.
 
 ## Humanoid Bots
-- **Optimus as the largest compute workload in the Musk stack:** training Optimus requires more compute than FSD due to higher-dimensional action and perception space — the explicit rationale for Cortex 2's scale. The host at brighterwithherbert frames this as underappreciated by the market.
-- **Munster: Optimus carries more optionality than robotaxi near-term** precisely because virtually no analyst has it in financial models. The true rerating event will not be factory deployment but a credible third-party commercial customer taking delivery at scale. He cautions against "head fakes" from small pilot announcements.
-- **1 million unit target not credible to the market:** Munster says "very few people" believe Elon's stated goal. An announcement of 50,000 units would not disappoint. He rates meaningful scale as genuinely 5–10 years out — a range he acknowledges signals he has "no idea" on the exact timing.
+- **Optimus carries more optionality than robotaxi near-term** because virtually no analyst has it in their financial models, per Munster. He notes that if Tesla shut Optimus down today, the stock would fall not on lost earnings but on what it signals about innovation health. He rates meaningful scale as genuinely 5–10 years away.
+- **Third-party commercial customer sale remains the true rerating catalyst** for Optimus, per Munster and Loomis. Factory deployment announcements are insufficient — a credible external customer taking delivery at scale is what moves the stock. Munster cautions against "head fakes" from small pilot orders.
+- **Elon Musk's 1-million-unit target for next year is not credible to the market**, per Munster. He notes that if Tesla announced 50,000 units, the market wouldn't object — expectations are that low. Internally, people close to Tesla confirm the company views Optimus as its most important long-term business, with physical labor (~50% of global GDP) as the addressable market.
+- **Macrohard** — an XAI software project pairing Grok with a Tesla-built screen-watching agent — is described as a potential multi-trillion-dollar wedge if it works, but has experienced leadership turnover and a paused data annotation effort after researchers found model flaws. The host characterizes this as normal for frontier development.
 
 ## Electric Vehicles
-- **Model Y price increase — first in approximately two years.** New US structure: base RWD unchanged at $39,990; Premium RWD +$1,000 to $45,990; AWD +$1,000 to $49,990; Performance +$500 to $57,990. A demand signal with positive near-term margin implications.
-- **Tesla delivery growth consensus:** Munster expects ~10% growth in 2026, with potential for 20–30% annually within five years as legacy auto's reduced EV investment compounds into a structural competitive disadvantage.
+- **Model Y price increases — first in approximately two years.** New structure: base RWD unchanged at $39,990; Premium RWD +$1,000 to $45,990; AWD +$1,000 to $49,990; Performance +$500 to $57,990. Price increases rather than cuts signal sufficient order flow and carry positive near-term margin implications.
+- **Tesla delivery growth expected ~10% in 2026** (current consensus per Munster), with a scenario for re-acceleration to 20–30% within five years as electrification compounds and legacy OEM underinvestment in EVs (~one-third cut from peak commitments on average) creates a structural gap.
 
 ## Financials
-- **Tesla capex raised from >$20B to >$25B for calendar 2026.** Munster views the market's negative reaction as a "headscratcher" given Tesla holds >$30 billion in cash and is roughly breakeven on cash flow — arguing near-term profitability concerns are largely irrelevant when building paradigm-shifting infrastructure.
-- **Tesla owns ~9% of XAI and has invested $2 billion** in the entity. The brighterwithherbert analysis argues Tesla shareholders have indirect exposure to the compute buildout (XAI/Colossus) and direct exposure via Cortex — but the market is still pricing Tesla as a car company with a robotaxi premium and almost no compute premium.
-- **Bhakdi price targets:** ~$490 near-term (prior all-time high), $700 possible by November 2026, $4,000 by 2030 on a standalone basis. He estimates Tesla's 2029 market cap at ~$8 trillion (~$2,500–$3,000/share). Munster's anchor: $600 by end of 2027.
-- **Bhakdi risk flag:** 30-year US bond yields approaching 5%; 10-year moved 14 bps in a single week. He identifies a potential yen carry-trade unwind as a structural risk to US equity flows. Tesla dropped ~4.75% Friday vs. NASDAQ's 1.54%.
+- **Tesla capex guidance raised from >$20B to >$25B for calendar 2026.** Munster calls the market's negative reaction a "headscratcher" given Tesla holds >$30B in cash and is roughly break-even on cash flow. He argues near-term profitability concerns are irrelevant when building infrastructure for a paradigm shift.
+- **Tesla owns ~9% of XAI and has invested ~$2B**, per the brighterwithherbert compute analysis. The host argues this stake — combined with Cortex clusters training FSD and Optimus — gives Tesla shareholders indirect exposure to the compute race that the market is not yet pricing. Current market pricing is characterized as "a car company that maybe is building a robot."
+- **Bhakdi's Tesla price targets:** ~$490 near-term all-time high, $700 possible by November 2026 under bullish robotaxi scaling scenarios, $4,000 by 2030 on a standalone basis. He projects Tesla at ~$8 trillion market cap by 2029 (~$2,500–$3,000/share). Munster's target: $600 by end of 2027.
+- **Pioneer Alpha had its worst week of 2026** (estimated ~-3% alpha vs. Tesla) driven by short puts at the $440 strike caught by Friday's macro-driven selloff.
 
 ## Market & Competition
-- **Tesla-SpaceX merger probability:** Munster assigns >50% odds within five years. His thesis: SpaceX is becoming a sovereign AI company (energy → chips → manufacturing → Starlink → Grok) with physical AI as the one gap Tesla fills. Combined entity would be ~$3 trillion today; fully integrated, potentially the most valuable company in the world.
-- **SpaceX IPO:** SPCX on NASDAQ, pricing June 11, first trade June 12, listing target $70–75 billion. Early chatter suggests 4x oversubscribed after round one, with 12–20x projected for round two — implying ~$1 trillion in demand at the $75B target per Goldberg. He expects IPO-day market cap to reach or exceed $2 trillion.
-- **XAI compute dominance thesis (brighterwithherbert):** Colossus 1 (220,000 GPUs, 300 MW) is fully rented to Anthropic. Colossus 2 is the world's first 1-gigawatt coherent AI training cluster — 555,000 GPUs purchased, $18B in hardware, targeting 1 million GPUs. "Coherent" means every GPU is networked near-zero latency into one unified training machine; most competitor clusters at scale are non-coherent. The host argues most investors are not pricing this into Tesla.
-- **Starship V3 first flight scheduled May 20 at 6:30 p.m. ET.** Bhakdi frames the key question not as whether Starship works but as the cost curve: current ~$2,500/kg to orbit; ~$200/kg is the inflection point at which space-based data centers become ~60% cheaper over 10 years than terrestrial equivalents. Reliability (failure rate and its insurance cost implications) is flagged as equally important as reusability.
-- **Strait of Hormuz disruption:** Iran's blockade — with 20%+ of global oil transiting the strait — is cited by Bhakdi as the root macro risk driving inflation fears and bond yield pressure. EIA estimates losses peaking at 10.8 million barrels/day in May; JP Morgan flags early June as when OECD commercial inventories reach operational stress.
+- **Tesla dropped ~4.75% Friday** vs. NASDAQ -1.54%; beta-implied decline was ~3%, with the excess attributed to the stock's large prior run-up. Tesla was roughly flat for the week overall.
+- **Macro headwinds sharpening:** 10-year Treasury yield moved from 4.46% to 4.6% in one week; 30-year approaching 5%. Bhakdi flags the yen carry trade reversal risk and rising yields across German, UK, French, and Japanese bonds as structural threats to US equity positioning.
+- **Strait of Hormuz disruption driving inflation risk.** Bhakdi cites EIA projecting losses peaking at 10.8M barrels/day in May, UBS flagging OECD oil inventories could hit near-record lows of 7.6B barrels by end of May, and JP Morgan warning commercial inventory stress by early June. 250M barrels were drawn from reserves in March–April 2026 alone.
+- **Tesla-SpaceX merger assigned >50% probability within five years** by Munster, who estimates a combined entity at ~$3 trillion today. His thesis: SpaceX is becoming a sovereign AI company controlling the full stack from energy to satellite distribution to AI models, and Tesla's physical AI layer (Optimus, robotaxi) is the one structural gap. Bhakdi's merger modeling shows it is a net negative for Tesla shareholders in year one (~38% return vs. 50% standalone) but a significant long-term winner (~80–88% in years two and three vs. 60–66% standalone).
+- **SpaceX IPO: ticker SPCX on NASDAQ, pricing June 11, first trade June 12**, targeting $70–75B listing valuation. Goldberg (via brighterwithherbert) expects market cap to reach or exceed $2 trillion on IPO day, with the book reportedly 4x oversubscribed in round one and projections of 12–20x in round two. Ron Baron is reportedly seeking another $1B allocation.
+- **XAI's Colossus 2 is the world's first 1-gigawatt coherent AI training cluster**: 555,000 Nvidia GPUs purchased, $18B in hardware, targeting 1 million GPUs at a single site. Colossus 1 (~220,000 GPUs, ~300 MW) is fully rented to Anthropic — the same company Musk called "anti-western" roughly three months prior. His explanation: *"No one set off my evil detector."*
+- **Starship V3 first flight: Wednesday May 20, 6:30 p.m. ET.** Bhakdi frames the central question not as whether Starship reaches orbit (it already does) but the cost curve — current ~$2,500/kg, with ~$200/kg as the inflection point at which space-based data centers become ~60% cheaper to operate over 10 years than terrestrial equivalents.
 
 Notable quotes and data:
-- Munster: *"The score is 50 to zip"* — Waymo (~4M miles/day) vs. Tesla robotaxi (~80,000 miles/day).
-- Munster: *"43,000 people in the US lost their lives in car accidents in 2024. Tesla's data: 7x safer. Divide by 7, you get 6,000. What's the value of 37,000 lives a year?"*
-- Munster: *"If you hear people like me saying something is 5 to 10 years away, it means they have no idea"* — on Optimus timeline.
+- Munster: *"The score is 50 to zip"* — Waymo ~4M miles/day vs. Tesla Robotaxi ~80,000 miles/day
+- Munster: *"If you hear people like me saying something is 5 to 10 years away, it means they have no idea"* — on Optimus timeline
 - Musk on renting Colossus to Anthropic: *"No one set off my evil detector."*
-- Bhakdi on Starship cost inflection: ~$200/kg → ~60% cheaper to operate a 1 GW space data center over 10 years vs. terrestrial.
-- Colossus 2: 555,000 GPUs, $18B hardware, targeting 1M GPUs — world's first 1 GW coherent cluster.
-- Tesla capex 2026 guidance: >$25B (raised from >$20B); cash on hand: >$30B.
-- Bhakdi Tesla targets: $490 near-term / $700 by Nov 2026 / $4,000 by 2030 (standalone).
-- Munster Tesla target: $600 by end of 2027.
-- Cortex 2: 250 MW live ~April 2026, targeting 500 MW by mid-2026.
-- Model Y price increases: Premium RWD and AWD +$1,000; Performance +$500, effective now.
-- Starship V3 first flight: May 20, 2026 at 6:30 p.m. ET.
+- Model Y price increases: RWD Premium +$1,000 to $45,990; AWD +$1,000 to $49,990; Performance +$500 to $57,990; base RWD unchanged at $39,990
+- FSD miles as share of US total: ~0.15%–0.2% as of March 2026 quarter
+- Cortex 2: 250 MW online ~April 2026, 500 MW targeted mid-2026, ~100,000 additional GPUs
+- Colossus 1 build speed: 19 days concept-to-construction, 122 days to 100,000 GPUs, 92 more days to 200,000
+- Tesla capex guidance: >$25B for 2026; Tesla cash: >$30B
+- Tesla ~9% ownership of XAI; $2B investment
+- Bhakdi's Starship cost estimate: ~$2,500/kg today; ~$200/kg as the orbital compute inflection point
+- Starship V3 flight: May 20, 2026, 6:30 p.m. ET / 5:30 p.m. CT
+- Elon Musk to speak at Smart Mobility Summit (Israel) virtually on May 18 — monitor for robotaxi/Optimus guidance
