@@ -7047,5 +7047,29 @@
     "channel": "electrek",
     "extractedAt": "2026-05-18T17:03:44.491Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi unredacted crash data shows 17 reported incidents, the majority involving other vehicles striking a stationary Tesla or minor contact events",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "First public release of unredacted robotaxi crash data; host argues incidents are largely not attributable to Tesla FSD behavior",
+    "source": "20260518_futureaza_01_Waymo_Has_No_Answer_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-18T22:02:29.390Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo vehicle captured on video running a red light on a left turn",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Safety incident cited as evidence of limitations in Waymo's rule-based autonomous driving system",
+    "source": "20260518_futureaza_01_Waymo_Has_No_Answer_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-18T22:02:29.390Z",
+    "status": "pending"
   }
 ]
