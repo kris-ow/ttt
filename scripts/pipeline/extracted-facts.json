@@ -7023,5 +7023,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-18T16:04:13.010Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla unsupervised robotaxi fleet is approximately 30 vehicles across Austin, Dallas (5), and Houston (6) as of article publish date",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 30,
+    "context": "Per RobotaxiTracker.com; this is the baseline fleet size against which Musk's 'widespread US deployment by year-end' claim must be evaluated",
+    "source": "20260518_electrek_01_Musk_Says_Tesla_Unsupervised_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-18T17:03:44.491Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Musk claimed on X approximately six weeks before the article that FSD is already '10X safer' than human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Musk's claimed 10X safety advantage is disputed by the article; contradicted by his own framing at the Summit as a future goal",
+    "source": "20260518_electrek_01_Musk_Says_Tesla_Unsupervised_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-18T17:03:44.491Z",
+    "status": "pending"
   }
 ]
