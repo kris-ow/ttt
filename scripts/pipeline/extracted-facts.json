@@ -6963,5 +6963,53 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-05-18T09:03:31.783Z",
     "status": "pending"
+  },
+  {
+    "fact": "Estimated Hardware 3 retrofit cost: $5,000–$7,000 per vehicle",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 6000,
+    "context": "Midpoint of host estimate for Hardware 3 → Hardware 4 upgrade cost; relevant to Tesla's total upgrade liability and robotaxi fleet economics",
+    "source": "20260518_cernbasher_01_Elon_Just_Added_A_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-18T12:02:33.572Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla expansion plan covers 12 states; hosts interpret this as 15–20+ cities",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Geographic expansion scope directly affects addressable robotaxi fleet size projections",
+    "source": "20260518_cernbasher_01_Elon_Just_Added_A_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-18T12:02:33.572Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hosts projected 300–500+ vehicles per city for unsupervised robotaxi deployment",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Per-city fleet density assumption used to build toward total fleet size estimate",
+    "source": "20260518_cernbasher_01_Elon_Just_Added_A_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-18T12:02:33.572Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Hosts projected 10,000–15,000 total unsupervised robotaxi vehicles by end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 12500,
+    "context": "End-of-2026 total fleet size estimate based on 20 cities × 500+ vehicles; midpoint ~12,500",
+    "source": "20260518_cernbasher_01_Elon_Just_Added_A_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-18T12:02:33.572Z",
+    "status": "pending"
   }
 ]
