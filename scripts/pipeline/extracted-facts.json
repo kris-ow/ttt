@@ -7071,5 +7071,77 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-18T22:02:29.390Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi estimated 1.8x safer than human drivers as of April 2026, per NHTSA crash data analysis",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 1.8,
+    "context": "First month robotaxi surpassed human safety baseline; analyst used 3-month rolling crash rate and fleet mileage data from RobotaxiTracker.com",
+    "source": "20260518_brighterwithherbert_03_Fsd_1433_Just_Dropped_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-19T01:03:07.734Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Human crash rate baseline estimated at 249,000 miles per accident (including reported and non-reported crashes)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 249000,
+    "context": "Used as denominator in analyst's safety comparison; represents miles-per-accident baseline for average human driver",
+    "source": "20260518_brighterwithherbert_03_Fsd_1433_Just_Dropped_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-19T01:03:07.734Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi has had 17 total NHTSA-reported incidents since Austin launch in June 2025 through April 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 17,
+    "context": "53% attributed to other parties; only 7 (41%) were Tesla at fault, 2 of which were curb rashes and 2 occurred under teleoperator control",
+    "source": "20260518_brighterwithherbert_03_Fsd_1433_Just_Dropped_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-19T01:03:07.734Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas-Fort Worth robotaxi service facility planned with 212 remote fleet parking spaces and 17 EV charging stations",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Permit filing reveals scale of planned Dallas robotaxi infrastructure; includes 24/7 maintenance, car wash, tire replacement, and software upgrades — pending city approval",
+    "source": "20260518_brighterwithherbert_03_Fsd_1433_Just_Dropped_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-19T01:03:07.734Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi app decompiled features include remote operator voice calls, proactive remote assistance, manual override and remote start for driverless Cybercabs, and dynamic safety monitoring modes",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": null,
+    "context": "App infrastructure reveals architecture for teleoperations support layer; proactive flagging by FSD computer to remote ops center before issues arise suggests lower required staffing ratio over time",
+    "source": "20260518_brighterwithherbert_03_Fsd_1433_Just_Dropped_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-19T01:03:07.734Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Twelve production Cybercabs spotted by drone in Houston as of publish date (May 2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 12,
+    "context": "New Houston sightings consistent with RobotaxiTracker.com canonical data showing 6 active Houston robotaxis; glossy production units suggest pre-deployment staging",
+    "source": "20260518_brighterwithherbert_03_Fsd_1433_Just_Dropped_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-19T01:03:07.734Z",
+    "status": "pending"
   }
 ]

@@ -1,0 +1,59 @@
+Channel:     brighterwithherbert
+Title:       FSD 14.3.3 Just DROPPED Along with Tesla Safety Data
+Published:   2026-05-18 19:46 UTC
+Summarized:  2026-05-19 01:03:07 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01L6mFLbxAQ2MbXaojEwh5LV
+Cost:        $0.05105 (14433 in / 3920 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of brighterwithherbert covers a busy week for Tesla's autonomy push, focusing on three major developments: the release of FSD version 14.3.3, new NHTSA safety data showing Tesla's robotaxi is now estimated to be 1.8 times safer than human drivers, and newly discovered infrastructure permits and robotaxi app features that signal aggressive fleet expansion. Host Robert is joined by Jeff Lutz, a multi-decade supply chain executive and CEO of a high-tech manufacturing consulting firm, who shares first-hand driving impressions of the new FSD release across multiple Tesla vehicles.
+
+## Autonomous Driving
+
+1. **FSD 14.3.3 drops with dramatically reduced driver monitoring:** FSD version 14.3.3 began rolling out as a point release from 14.3.2, accompanied by a broader spring update. Elon Musk publicly called the release "a banger," specifically highlighting reduced driver nagging as the headline improvement. Tester Sawyer reported going over a minute before receiving a nag prompt. Jeff Lutz reported that in his Model X he could not get the system to nag him at all — his own instinct to look at the road was more frequent than any system prompt — describing it as feeling "unofficially like it was operating as unsupervised." He noted meaningfully different behavior in the Cybertruck, where nagging is still noticeably present, which he attributes to the vehicle being approximately 1,450 lbs heavier than the Model X and having longer stopping distances.
+
+2. **Smart Summon speed increased 33% to 8 mph:** One of the most celebrated features in the 14.3.3 release is that Smart Summon now operates at up to 8 mph in parking lots, a 33% increase from the prior speed. The update also includes faster reaction times and smoother overall behavior. Lutz noted that the aggressive "Mad Max" acceleration off the line in 14.3.2 has been smoothed out in 14.3.3. The "Hey Grok" wake word is now enabled, allowing hands-free voice activation without a button press; Lutz noted that setting it on one vehicle automatically applied the setting to his other Tesla.
+
+3. **Parking and edge-case limitations persist:** Despite broad improvements, both the host and Lutz noted that parking and drop-off navigation remain problem areas. Lutz described being parked hundreds of feet from his intended destination in a strip mall. He also flagged roadkill avoidance as a consistent trigger for manual disengagement. One previously reported looping behavior in parking garages — the car circling endlessly without finding an exit — appears partially resolved in 14.3.3, with the system now attempting an alternative route after one loop.
+
+4. **Miles-since-last-intervention counter raises debate:** Tesla added a live "streak" counter to the main screen showing miles driven since the last intervention, along with a gamified summary (longest streak, total FSD miles). Some community members, including commenter Chuck K, expressed concern that drivers might delay necessary interventions to preserve their streak. Lutz and the host were skeptical this would influence safety decisions, noting the streak resets every time a driver manually parks — making it an imperfect metric in practice. A new "parking" disengagement category has been added to the intervention log.
+
+5. **FSD 14.3.3 described as first truly refined build:** Reviewer Omar, whose assessment Elon Musk forwarded, called 14.3.3 "the first truly refined build" and "the first version that should have gone wide," noting he drove 41 miles without intervention over three days. The release is rolling out nationally across the United States, not restricted to geofenced areas like Austin or Dallas — distinguishing it from the supervised robotaxi deployment.
+
+6. **Tesla passed NHTSA's new ADS safety test:** The host referenced a previously reported development in which Tesla became the first vehicle — not just the first EV — to pass NHTSA's new ADS (Automated Driving System) safety test. This is framed as a significant regulatory milestone, with the argument made that countries approving FSD at scale could see immediate road safety improvements.
+
+7. **Competition remains distant at scale:** Lutz argued that no competitor is meaningfully closing the gap with Tesla on full autonomy at scale. He noted that the iterative engineering process — years of beta programs, architecture rewrites, billions of miles of real-world data — creates an extremely high barrier to entry. He dismissed the notion that purchasing an Nvidia chip and downloading firmware is sufficient for autonomous driving, and noted that while OEMs like Ford, GM, BMW, and Mercedes have engineering teams, none appear to be running comparable public beta programs with address-to-address driving. The closest competitor mentioned was a Chinese company (referred to as "Shop," likely a transcription artifact) which a reviewer tested for five hours in China.
+
+## Robotaxi
+
+1. **NHTSA safety data: robotaxi now 1.8x safer than humans as of April 2026:** Analyst "Reigns" published a detailed breakdown using NHTSA crash report data and fleet mileage estimates from RobotaxiTracker.com. He estimated the human crash rate (including reported and non-reported crashes) at 249,000 miles per accident. By tracking Tesla's reported mileage and 7-day active fleet size from RobotaxiTracker.com, he estimated monthly robotaxi mileage in Austin with less than 5% error. Using a three-month rolling crash rate, he determined that April 2026 was the first month Tesla's robotaxi surpassed average human safety — at 1.8 times safer. The host notes this is particularly significant because several of Tesla's reported "incidents" were minor or not Tesla's fault.
+
+2. **NHTSA incident breakdown: 53% other-party fault since June 2025 launch:** Tesla provided unredacted narratives for all 17 robotaxi incidents reported to NHTSA since the Austin launch in June 2025. Of these, 53% were attributed to other parties, and only 41% (seven incidents) were Tesla's fault. Of those seven Tesla-at-fault incidents: two were backing collisions, two were side swaps, two were road hazards, and one was a collision with a stationary object. Two of the seven at-fault incidents were described as curb rashes, and two occurred while under teleoperator control. In January, five incidents drew widespread negative media coverage framing Tesla as four times less safe than humans; the host notes those articles failed to note all five occurred at under 4 mph. February had zero incidents; March had two.
+
+3. **Infrastructure buildout accelerating in multiple cities:** Documents submitted to Dallas-Fort Worth city officials show Tesla is seeking to lease a facility for cleaning, service, and repair of its autonomous vehicle fleet. The planned space includes 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations, exterior and interior cleaning (car wash), tire replacement, software upgrades, and 24/7 maintenance operations — pending approval. This follows previously reported permits: a 36,000 sq ft Cybercab car wash facility in Las Vegas (reported the prior week) and a similar facility in Austin. Twelve glossy production Cybercabs were also spotted by drone in Houston. Lutz described these buildouts as "the template for how they're going to have to set up in major cities."
+
+4. **Robotaxi app decompiled, revealing advanced operational features:** Developers decompiled the Tesla robotaxi app and found several new feature categories under development: (1) Remote operator voice calls — a dedicated VoIP/cellular audio link connecting passengers directly to a Tesla teleoperator, triggered by roadblocks, construction zones, or emergency button presses; (2) Proactive remote assistance — the vehicle's FSD computer flags potential problem states to Tesla's remote operations center before issues arise; (3) Manual override and remote start for driverless Cybercabs — allowing authorized users (Tesla technicians, fleet operators, or riders in tight spots) to assume app-based manual control, and allowing empty vehicles to begin autonomous journeys on command; (4) Ride hailing and dispatch features covering day-to-day passenger logistics; (5) Rider cabin sync — the passenger's phone becomes the primary interface for center display control, dynamic routing, payment pre-authorization, and device correlation; (6) A digital vehicle immobilization kill switch; (7) Dynamic safety monitoring modes including vandalism detection, unresponsive passenger detection, unaccompanied minor mode, and pet transit mode.
+
+5. **Unsupervised fleet expansion expected soon:** Both the host and Lutz expressed the view that 14.3.3 represents a qualitative step toward broader unsupervised robotaxi deployment. Lutz stated he believes the 14.3.3 update may already be running on the robotaxi fleet and that "they're on to the next thing," expecting fleet numbers to increase soon. The host noted Tesla currently has only five unsupervised robotaxis in Dallas, suggesting the Dallas infrastructure buildout signals plans for significant expansion there.
+
+6. **Tax policy may accelerate infrastructure capex:** Lutz noted that under what he referred to as "the one big beautiful bill," robotaxi-related capital expenditure can be expensed in the first year, providing a significant financial incentive for Tesla to accelerate infrastructure buildout and offset gains elsewhere in the business.
+
+Notable quotes and data:
+- Elon Musk on FSD 14.3.3: "It's a banger" (paraphrased from his public post)
+- Jeff Lutz on Model X experience: "I couldn't get it to nag me... my instincts were to be eyes forward"
+- Lutz on Cybertruck: "There's a noticeable nag that still exists in the Cybertruck on the same software release" — attributed to ~1,450 lbs greater weight vs. Model X
+- Smart Summon speed: now 8 mph, up 33% from prior version
+- Human crash rate baseline used by analyst: 249,000 miles per accident (including reported and non-reported)
+- Tesla robotaxi safety as of April 2026: 1.8x safer than human baseline (first month to surpass human safety)
+- Total NHTSA-reported robotaxi incidents since June 2025 launch: 17
+- Tesla-at-fault incidents: 7 (41%); other-party fault: 9 (53%)
+- Active robotaxi fleet per RobotaxiTracker.com: used for mileage estimation (specific count not cited in transcript)
+- Mileage estimation error rate claimed by analyst: less than 5%
+- Dallas-Fort Worth facility: 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations
+- Las Vegas Cybercab car wash facility permit: 36,000 sq ft
+- FSD activated users cited: approximately 1.3 million (out of 9 million+ Teslas sold globally, ~4.5–5 million in North America)
+- Omar's review: "41 miles without intervention over three days... first truly refined build"
+- Car crashes described as "the number one killer of healthy people aged 5 to 29 globally"
+- Tesla described as "first vehicle" (not just first EV) to pass NHTSA's new ADS safety test
