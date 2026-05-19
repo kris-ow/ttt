@@ -7155,5 +7155,29 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-19T13:04:14.064Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla reportedly in talks to purchase $2.9 billion of Chinese solar manufacturing equipment, with equipment reported shipping to Texas",
+    "category": "Energy",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Large capex commitment for solar manufacturing; not a per-vehicle cost but relevant to total capital deployment scale",
+    "source": "20260519_electrified_01_This_Is_My_Last_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-19T23:04:02.715Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD 14.3 rollout at fewer than approximately 50 vehicles as of 2026-05-19 per trackers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 50,
+    "context": "Very early staged rollout; not a robotaxi fleet count but indicative of FSD deployment pace",
+    "source": "20260519_electrified_01_This_Is_My_Last_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-19T23:04:02.715Z",
+    "status": "pending"
   }
 ]
