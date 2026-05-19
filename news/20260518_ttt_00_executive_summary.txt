@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-18)
 Published:   2026-05-18 00:00 UTC
-Summarized:  2026-05-19 04:35:07 UTC
+Summarized:  2026-05-19 10:45:22 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.11490 (18990 in / 3862 out tokens)
+Cost:        $0.11244 (18990 in / 3698 out tokens)
 Sources:     12
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,102 +22,94 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- FSD 14.3.3 rolls out nationally; Musk calls it "a banger"
-- Robotaxi 1.8x safer than human drivers as of April 2026
-- Musk: unsupervised FSD "widespread in the US by end of this year"
-- FSD 14.3 declared "last piece of the puzzle" for unsupervised deployment
-- Dallas-Fort Worth facility filing: 212 remote fleet parking spaces, 17 chargers
-- HW3 confirmed incapable of unsupervised FSD; discounted HW4 upgrade offered
+- FSD 14.3.3 drops; Musk calls it "a banger," driver nagging dramatically reduced.
+- Tesla robotaxi now 1.8x safer than human drivers as of April 2026.
+- Musk: unsupervised FSD "widespread in the US by end of this year."
+- FSD 14.3 confirmed as "last piece of the puzzle" for unsupervised expansion.
+- Dallas-Fort Worth facility sought: 212 fleet parking spaces, 17 EV chargers.
+- Robotaxi app decompiled; reveals VoIP teleoperator link, kill switch, pet transit mode.
 
 ## Autonomous Driving
 
-- **FSD 14.3.3 rolls out nationally with reduced driver nagging.** Musk publicly called the release "a banger," highlighting reduced nag frequency as the headline improvement. Tester Sawyer reported going over a minute without a prompt; Jeff Lutz (Munro-adjacent supply chain CEO) said his Model X would not nag him at all — his own road-watching instincts were more frequent than any system prompt — describing it as feeling "unofficially like unsupervised." Notably, the Cybertruck still nags on the same build, which Lutz attributes to its ~1,450 lb weight penalty and longer stopping distances.
+- **FSD 14.3.3 rolling out nationally with dramatically reduced nagging.** Elon Musk publicly called the release "a banger," citing reduced driver monitoring as the headline improvement. Tester Sawyer Merritt reported it on his Model Y (software 2026.14.6.6) and documented the changes firsthand; Jeff Lutz (supply chain executive, Munro Live guest) said he could not get his Model X to nag him at all, describing it as feeling "unofficially like it was operating as unsupervised." Nagging remains more present in the Cybertruck, which Lutz attributes to its approximately 1,450 lbs of additional weight and longer stopping distances.
 
-- **Smart Summon top speed raised 33% to 8 mph.** The increase from 6 mph is perceptible in real-world use per Sawyer Merritt, who noted vehicles now "flow better with traffic." The aggressive off-the-line acceleration present in 14.3.2 has been smoothed out. "Hey Grok" voice activation is now live; setting it on one Tesla automatically applies to a user's other vehicles.
+- **Smart Summon speed raised 33% to 8 mph.** The prior cap was 6 mph; Merritt confirmed the speed increase is perceptible in real-world use. The "Hey Grok" wake word is now enabled for hands-free voice activation; setting it on one vehicle automatically applied across Lutz's other Teslas.
 
-- **Intervention counter and redesigned disengagement categories added.** The main screen now shows a live miles-since-last-intervention streak, resetting on disengagement. Intervention popup categories have been updated: "Preference" and "Discomfort" replaced by "Parking" and "Other," signaling Tesla is refining how it classifies and learns from driver takeovers.
+- **Reviewer Omar called 14.3.3 "the first truly refined build"** and "the first version that should have gone wide," reporting 41 miles without intervention over three days. Musk forwarded the review publicly. The release is rolling out nationally — not restricted to robotaxi geofences.
 
-- **Reviewer Omar — forwarded by Musk — called 14.3.3 "the first truly refined build"** and "the first version that should have gone wide," after driving 41 miles without intervention over three days. The national rollout is not geofenced to Austin or Dallas, distinguishing it from supervised robotaxi deployment.
+- **New intervention counter and reclassified takeover categories.** A live miles-since-last-intervention streak counter now appears on the main screen, with a longest-streak tracker in the FSD app. Tesla replaced "Preference" and "Discomfort" takeover categories with "Parking" and "Other," alongside retained "Navigation" and "Critical" options — suggesting refined learning from driver takeovers. Some community members flagged streak-preservation as a potential safety concern; Lutz and the host were skeptical it would materially affect behavior.
 
-- **Musk declared FSD 14.3 "the last piece of the puzzle for unsupervised FSD,"** though he qualified it with "I think." A Tesla executive confirmed the robotaxi deployments in Austin, Dallas, and Houston are "essentially 14.3 variants" and "obviously safe," and that Tesla will continue expanding on the 14.x series until Version 15 — described as "a major upgrade" — is validated.
+- **FSD 14.3 confirmed as "the last piece of the puzzle" for unsupervised expansion.** Elon Musk stated this on the Q1 2026 earnings call, qualified with "I think." A Tesla executive confirmed the robotaxi variants running in Austin, Dallas, and Houston are "essentially 14.3 variants" and "obviously safe," and that Version 15 — described as "a major upgrade" — is not a prerequisite for continued geographic expansion. Hosts at cernbasher interpret this to mean meaningful city-by-city scaling can proceed under the 14.x series now.
 
-- **Unsupervised FSD for customer vehicles targeted for Q4 2026, geography-gated.** Musk's framing: "I think we would release unsupervised gradually to the customer fleet as we feel like a particular geography is confirmed to be safe." Analysts at cernbasher interpreted this to mean owners within an already-approved robotaxi geography could be enabled without waiting for a broader V15 rollout.
+- **Unsupervised FSD for consumer vehicles targeted for Q4 2026, geography-gated.** Musk said on the earnings call he expects unsupervised FSD to reach customer cars "probably in the fourth quarter," released geography-by-geography "as we feel like a particular geography is confirmed to be safe." Customers living within an already-approved robotaxi geography could be enabled without a broader Version 15 rollout.
 
-- **Hardware 3 confirmed incapable of unsupervised FSD**, reversing hints from prior quarterly calls. Tesla is offering HW3 owners a discounted trade-in toward an HW4 vehicle or an in-place upgrade replacing both the computer and cameras. A "distilled" V14 build for HW3 will retain all supervised FSD features. Hosts at cernbasher estimated possibly ~500,000 HW3 vehicles have purchased FSD that cannot transfer, with retrofit costs of ~$5,000–$7,000 per vehicle; they framed Tesla's upgrade offer as a fleet-recruitment mechanism rather than a pure liability.
+- **Hardware 3 confirmed incapable of unsupervised FSD.** Tesla reversed prior ambiguity on the earnings call, stating HW3 "simply does not have the capability." Tesla is offering HW3 owners a discounted trade-in toward an HW4 vehicle or an in-vehicle hardware-and-camera upgrade. A "distilled" Version 14 build for HW3 is planned — all features except unsupervised capability. Upgrade timing was cited as "this summer" by Tesla; one host disputed this, projecting next year. Estimated retrofit cost: $5,000–$7,000 per vehicle; estimated HW3 vehicles with untransferred purchased FSD: possibly ~500,000 (hosts flagged uncertainty on that figure).
 
-- **Tesla first vehicle — not just first EV — to pass NHTSA's new ADS safety test**, per the brighterwithherbert/Lutz discussion. The host argued countries approving FSD at scale could see immediate road safety improvements given the technology's documented trajectory.
+- **Tesla became the first vehicle — not just the first EV — to pass NHTSA's new ADS safety test**, per brighterwithherbert. The host framed this as a meaningful regulatory milestone supporting international FSD approvals.
 
-- **Electrek challenged Musk's safety claims as contradictory.** At the Smart Mobility Summit, Musk said FSD is on a "path" to being "an order of magnitude safer than humans." Six weeks earlier on X, he claimed FSD is already "10X safer" with "unequivocal" statistics. Electrek's author argues these two positions cannot simultaneously be true and detailed methodological flaws in Tesla's Vehicle Safety Report: FSD usage is concentrated on highways (the safest road type), Tesla counts only airbag-deployment crashes while NHTSA baselines include all police-reported crashes, and Tesla's demographic skew further flatters the comparison.
+- **Musk at the Samson Smart Mobility Summit (Israel, 2:30 AM Austin time):** Stated the path to autonomous vehicles being "at least an order of magnitude safer than human drivers" is "very clear" — not a question mark. Predicted that within 10 years, roughly 90% of all distance driven on Earth will be handled by AI, making human-driven cars a niche recreational activity. Electrek noted a contradiction: six weeks prior on X, Musk claimed FSD is *already* "10X safer" — these two positions cannot simultaneously be true.
 
-- **Tesla posting China FSD road-testing jobs**, including data labelers, intelligent driving testers requiring domestic and international travel, and city-specific smart driving test technicians — a signal of significant FSD expansion activity in China per FutureAzA.
+- **Tesla posting China FSD road-testing jobs**, per FutureAzA — roles include data labelers, intelligent driving testers requiring flexible domestic and international travel, and city-specific smart driving test technicians. Framed as a significant signal of FSD momentum in China.
 
-- **Waymo issued a software recall** after vehicles in Texas were swept away in floodwater. FutureAzA explained the root cause as a hand-coded rules conflict: vehicles were programmed both to avoid water and to proceed through it under certain conditions, producing inconsistent behavior. A separate Waymo vehicle was filmed running a red light on a left turn. Host argued both failures reflect structural limitations of rule-based systems that a neural-net approach avoids by learning from observed vehicle behavior.
+- **Waymo red-light and flood incidents highlighted as structural contrast.** A Waymo vehicle was captured running a red light on a left turn; separately, Waymo issued a software recall after vehicles in Texas were swept away by floodwaters, traced to a conflicting rules-based programming issue. FutureAzA argued these failures illustrate a structural advantage for Tesla's neural-net approach, which generalizes from observing real-world behavior rather than relying on hand-coded rules.
 
 ## Robotaxi
 
-- **Tesla robotaxi 1.8x safer than human drivers as of April 2026 — first month to surpass human safety baseline.** Analyst "Reigns" used NHTSA crash report data and RobotaxiTracker.com fleet mileage estimates (claimed <5% error) to calculate a three-month rolling crash rate. The human baseline used was 249,000 miles per accident (including reported and non-reported crashes). April 2026 was the first month Tesla's robotaxi exceeded that rate.
+- **Tesla robotaxi reached 1.8x safer than human drivers in April 2026** — the first month to surpass the human baseline, per analyst "Reigns" using NHTSA crash data and fleet mileage estimates from RobotaxiTracker.com. Human crash rate baseline used: 249,000 miles per accident (including reported and non-reported). Mileage estimation error claimed at under 5%.
 
-- **Full NHTSA incident narrative breakdown released: 53% other-party fault.** Tesla provided unredacted narratives for all 17 robotaxi incidents since the Austin launch in June 2025. Of 17 incidents: 9 (53%) were other parties' fault; 7 (41%) were Tesla's fault. Of the 7 Tesla-at-fault incidents: 2 backing collisions, 2 side swaps, 2 road hazards, 1 stationary object collision — two described as curb rashes, two occurring under teleoperator control. January's five incidents drew negative media coverage; the host noted all five occurred at under 4 mph. February had zero incidents; March had two.
+- **NHTSA incident breakdown since June 2025 launch: 53% other-party fault.** Tesla provided unredacted narratives for all 17 reported robotaxi incidents. Of these, 53% were attributed to other parties; only 7 incidents (41%) were Tesla's fault. Of those seven: two backing collisions, two side swaps, two road hazards, one stationary object. Two at-fault incidents occurred under teleoperator control. FutureAzA noted that five January incidents — which drove widespread "four times less safe" media coverage — all occurred at under 4 mph. February had zero incidents; March had two.
 
-- **Dallas-Fort Worth facility permit filed**, seeking to lease space for cleaning, service, and repair of the autonomous vehicle fleet. The planned facility includes 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations, interior/exterior cleaning, tire replacement, software upgrades, and 24/7 maintenance — pending approval. This follows previously reported permits for a 36,000 sq ft Cybercab car wash in Las Vegas and a similar facility in Austin. Twelve production Cybercabs were also spotted by drone in Houston. Jeff Lutz described these buildouts as "the template for how they're going to have to set up in major cities."
+- **Dallas-Fort Worth infrastructure permit filed.** Tesla is seeking to lease a facility for cleaning, service, and repair of its autonomous vehicle fleet. Plans include 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations, exterior and interior washing, tire replacement, software upgrades, and 24/7 maintenance — pending city approval. This follows a 36,000 sq ft Cybercab car wash facility permit in Las Vegas (prior week) and a similar Austin facility. Twelve production Cybercabs were also spotted by drone in Houston. Jeff Lutz called these buildouts "the template for how they're going to have to set up in major cities."
 
-- **Robotaxi app decompiled, revealing seven categories of operational features under development:** (1) Remote operator VoIP voice calls triggered by roadblocks, construction, or emergency; (2) Proactive remote assistance — FSD computer flags potential problems to Tesla ops center before incidents occur; (3) Manual override and remote start for driverless Cybercabs; (4) Ride-hailing and dispatch logistics; (5) Rider cabin sync — passenger phone becomes primary interface for display, routing, payment, and device correlation; (6) Digital vehicle immobilization kill switch; (7) Dynamic safety monitoring including vandalism detection, unresponsive passenger detection, unaccompanied minor mode, and pet transit mode.
+- **Robotaxi app decompiled, revealing seven categories of operational features under development:** (1) Remote operator VoIP voice calls — direct teleoperator audio link triggered by roadblocks, construction, or emergency button press; (2) Proactive remote assistance — FSD computer flags potential problem states before issues arise; (3) Manual override and remote start for driverless Cybercabs — authorized app-based manual control and remote dispatch of empty vehicles; (4) Ride-hailing and dispatch logistics; (5) Rider cabin sync — passenger phone becomes primary interface for display control, routing, payment, and device correlation; (6) Digital vehicle immobilization kill switch; (7) Dynamic safety monitoring including vandalism detection, unresponsive passenger detection, unaccompanied minor mode, and pet transit mode.
 
-- **Robotaxi expansion targeted across 12 states.** Cernbasher hosts projected this translates to 15–20+ cities (Texas alone has three, Florida would likely have at least three metro areas) and estimated approximately 10,000–15,000 unsupervised robotaxi vehicles by end of 2026 at roughly 300–500+ vehicles per city. Both hosts expressed frustration that Musk gave no order-of-magnitude signal for what "large-scale" deployment means.
+- **Expansion to 12 states projected to yield 15–20+ cities**, per cernbasher hosts. Texas alone has three cities; Florida would likely contribute at least three major metros. At 300–500+ vehicles per city, hosts project 10,000–15,000 unsupervised robotaxis by end of 2026 — consistent with their pre-call estimate.
 
-- **Cybercab spotted driving in Las Vegas on May 17**, per Sawyer Merritt. No operational context (supervised vs. unsupervised, testing vs. service) was provided. Las Vegas is not among cities currently tracked by RobotaxiTracker.com.
+- **Cybercab spotted driving in Las Vegas on May 17**, per Sawyer Merritt. No operational context provided (supervised vs. unsupervised, testing vs. public service). Las Vegas is not currently tracked by RobotaxiTracker.com as an active deployment city.
 
-- **Musk confirmed driverless operations in three Texas cities** at the Smart Mobility Summit and said widespread US deployment is expected by end of 2026. Electrek contextualized this against a decade of missed autonomous timelines and noted the current unsupervised fleet represents approximately 30 vehicles across three Texas cities per RobotaxiTracker.com, arguing that scaling to "widespread" US coverage in seven months has no demonstrated precedent.
+- **Musk confirmed unsupervised operations in three Texas cities** at the Samson Summit, expecting the service to be "widespread in the US by the end of this year." Electrek flagged this as consistent with a decade-long pattern of missed timelines and noted the gap between ~39 unsupervised vehicles today and "widespread" coverage in seven months.
+
+- **Tax incentive may accelerate infrastructure capex.** Lutz noted that under current legislation, robotaxi-related capital expenditure can be expensed in the first year, providing a meaningful financial incentive to front-load infrastructure buildout and offset gains elsewhere.
 
 ## Humanoid Bots
 
-- **Musk predicted intelligent robots will "far outnumber" humans on the planet** — not by a small margin. An Optimus unit was present on the exhibition floor at the Smart Mobility Summit, which Musk jokingly called "Optimus Subprime."
+- **Musk at Samson Summit: intelligent robots will "far outnumber" humans on the planet.** A Tesla Optimus unit was on display at the summit's exhibition floor, which Musk jokingly called "Optimus Subprime." He tied the humanoid robot thesis to an economic output framework: productivity per capita times population, with a large, highly productive robot workforce potentially growing the global economy 10 to 100 times larger than today — enabling what he called "universal high income," distinct from a safety net and framed as genuine abundance.
 
-- **Economic framework: robot workforce could produce an economy 10–100x larger than today's.** Musk's framing: output equals productivity per capita times population; a massive, highly productive robot workforce scales both. He described the end state as "universal high income" — not a safety net, but genuine abundance — a framing he explicitly distinguished from universal basic income.
+- **Optimus factory in California expected by December 2026**, per Larry Goldberg (VC investor, brighterwithherbert). He described Optimus as one of Tesla's four major future product lines and said he cannot determine whether Optimus's economic opportunity is larger or smaller than SpaceX's AI data center opportunity — characterizing both as "gigantic."
 
-- **Musk did not dismiss the Terminator scenario**, calling it "unlikely but not impossible" and saying people should remain "a little paranoid" about robot safety.
-
-- **Optimus factory in California expected by December 2026**, per Larry Goldberg (serial entrepreneur, VC investor) on brighterwithherbert. Goldberg compared Optimus's opportunity size directly to SpaceX's AI data center opportunity, saying he cannot determine which is larger — both are "gigantic."
-
-## Electric Vehicles
-
-- **Model Y price increases across all trims:** RWD up $1,000, AWD up $1,000, Performance up $500, per FutureAzA. Even post-increase, the price remains lower in real terms than after the April 2024 price increase when adjusted for ~6% cumulative inflation.
-
-- **Two new paint colors — Marine Blue and Frost Blue — added for Model 3 and Model Y in the US.** Canada receives only one of the two, attributed to differences in factory supply for the Canadian market.
-
-- **Tesla cited as primary beneficiary of California's $1 billion EV truck rebate program**, on the basis that no other manufacturer has the volume or competitive pricing to capture comparable share.
-
-- **Tesla down 5% on Friday May 16**, per investingagainstthegrain. The host attributed the drop primarily to broader market selling pressure — Iran-related oil spike, rising Treasury yields, NASDAQ selloff — rather than any Tesla-specific negative catalyst. Tesla is down approximately 3.61% year-to-date, the MAG7 laggard.
+- **Musk did not dismiss the Terminator scenario**, calling it "unlikely but not impossible" and saying people should always be "a little paranoid" about robot safety — a more nuanced acknowledgment than he typically receives credit for, per brighterwithherbert host.
 
 ## Market & Competition
 
-- **WTI crude opened above $107/barrel, Brent above $110/barrel**, driven by escalating US-Israel-UAE-Iran tensions. Reports of a White House Situation Room meeting on military options, a large US Air Force weapons airlift to the Middle East, and Trump's public warning that "the clock is ticking" are flagged by investingagainstthegrain as potential precursors to imminent kinetic action.
+- **Tesla dropped 5% on Friday, May 16**, per investingagainstthegrain host, attributed primarily to broader market selling pressure (Iran conflict, rising yields) rather than Tesla-specific news. Tesla is down approximately 3.61% year-to-date, making it the laggard among the Magnificent 7. Host describes weekly and monthly charts as "extremely healthy" and expects a bottom by approximately May 23.
 
-- **CME is pricing a rate hike in January 2027** with no cuts expected before then, per investingagainstthegrain. The 10-year Treasury yield is cited at 4.5–4.6% and rising; the host argues sustained 4.5–5% yields are incompatible with current equity valuations.
+- **Macro headwinds flagged: WTI crude over $107, Brent over $110, 10-year yield at 4.5–4.6%.** CME is pricing in a rate *hike* in January 2027 with no cuts expected before then. Host cites midterm election year seasonality (historically weak May–October), Tom Lee's "painful summer" warning, and speculative excess in triple-leveraged semiconductor ETFs as compounding risk factors.
 
-- **Nvidia earnings due ~May 21**; investingagainstthegrain forecasts a record quarter and post-earnings price of $250–$270, citing strong AMD results, cloud provider capex, and Neocloud demand as indirect corroboration. A strong Nvidia print combined with an Iran resolution is framed as the catalyst for SPX toward 8,000.
+- **SpaceX IPO set for June 12 on NASDAQ**, per Larry Goldberg. Float is approximately $75 billion against a total valuation of $1.4–$2 trillion. Index fund inclusion expected in waves: one group 5 days post-IPO, a second 5 days later, smaller funds 15 days later, S&P 500 inclusion slower. Goldberg expects the IPO to be oversubscribed approximately 12 times.
 
-- **SpaceX IPO set for June 12 on NASDAQ**, per Larry Goldberg on brighterwithherbert. Float is approximately $75 billion against a total valuation of $1.4–$2 trillion. Index fund inclusion expected in waves beginning 5 days post-IPO. Goldberg expects the IPO to be 12x oversubscribed. A Tesla-SpaceX merger is described as likely but not before IPO lockup periods (3–6 months) expire — Goldberg does not expect a merger announcement until at least late 2026.
+- **Tesla-SpaceX merger of equals framed as likely but post-lockup.** Goldberg argues a merger announcement is unlikely before IPO lockups expire (typically 3–6 months post-June 12), as no stable SpaceX market price would yet exist against which to set exchange ratios. He forecasts Tesla stock at approximately $500 by December 2026, which would put Tesla's market cap near $2 trillion — roughly comparable to his expected stabilized SpaceX valuation of $1.8–$2.2 trillion, making a "merger of equals" framing plausible at that point.
 
-- **Goldberg forecasts Tesla at ~$500 by December 2026**, which would put Tesla's market cap at just over $2 trillion — roughly comparable to his expected stabilized SpaceX valuation of $1.8–$2.2 trillion. He argues merger-fairness debates based on today's prices are premature; both stocks need stable post-lockup prices to establish a valid exchange ratio.
+- **Model Y prices raised:** RWD +$1,000, AWD +$1,000, Performance +$500, per FutureAzA. Host notes the post-increase price remains lower in real terms than after the April 1, 2024 price increase when adjusted for roughly 6% cumulative inflation.
 
-- **Starlink margins cited at 60–70%** versus Tesla automotive margins of ~14–18%. Goldberg's central argument: Starlink is 1–2 years ahead of Tesla's robotaxi business on the development curve, is already profitable, and its earnings quality is superior to Tesla's despite lower absolute revenue ($18–18.5B full-year vs. Tesla's ~$100B annualized).
+- **Two new paint colors launched for Model 3 and Model Y in the US:** Marine Blue and Frost Blue. Canada receives only one of the two due to factory supply differences.
+
+- **California announced $1 billion EV truck rebate program.** FutureAzA argues Tesla is positioned to capture a disproportionate share given volume and pricing advantages relative to other manufacturers.
 
 Notable quotes and data:
-- Musk: "I think version 14.3 is the last piece of the puzzle for unsupervised FSD."
-- Musk: "We already have some vehicles operating with no people inside and no safety monitors in three cities in Texas and probably will be widespread in the US by the end of this year."
-- Musk: "10 years from now, probably 90% of all distance driven will be driven by the AI in a self-driving car."
-- Musk: "The size of the economy could be maybe 10 or even 100 times bigger than what it is today."
-- Tesla executive: "The version of robotaxi that's running in Austin, Dallas, and Houston — those are essentially 14.3 variants. And it's obviously safe."
-- Omar (forwarded by Musk): "The first truly refined build… the first version that should have gone wide." — 41 miles without intervention over three days.
-- Jeff Lutz on Model X with 14.3.3: "I couldn't get it to nag me… my instincts were to be eyes forward."
-- Larry Goldberg: "I honestly think that we will be in the $500 range for the Tesla stock by the end of the year."
-- Goldberg: "There's no Waymo in the sky." — on Starlink's competitive position.
-- April 2026 robotaxi safety: 1.8x safer than human baseline (human baseline: 249,000 miles per accident).
-- 17 total NHTSA robotaxi incidents since June 2025; 7 Tesla-at-fault (41%), 9 other-party (53%).
-- Dallas-Fort Worth facility: 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations.
-- HW3 retrofit cost estimate: $5,000–$7,000 per vehicle; estimated ~500,000 HW3 vehicles with untransferred purchased FSD (hosts expressed uncertainty on the latter figure).
-- SpaceX IPO float: ~$75B against $1.4–$2T total valuation; Goldberg expects 12x oversubscription.
-- Starlink margins: ~60–70%; Tesla automotive margins: ~14–18%.
-- Tesla YTD: -3.61%; dropped 5% on May 16, 2026.
-- WTI: >$107/barrel; Brent: >$110/barrel; 10-year Treasury yield: 4.5–4.6%.
+- Elon Musk: "I think version 14.3 is the last piece of the puzzle for unsupervised FSD."
+- Elon Musk: "probably be widespread in the US by the end of this year"
+- Elon Musk: "I think we would release unsupervised gradually to the customer fleet as we feel like a particular geography is confirmed to be safe."
+- Elon Musk: "10 years from now, probably 90% of all distance driven will be driven by the AI in a self-driving car."
+- Tesla executive: "The version of robotaxi running in Austin, Dallas, and Houston — those are essentially 14.3 variants. And it's obviously safe."
+- Jeff Lutz: "I couldn't get it to nag me... my instincts were to be eyes forward" (Model X, FSD 14.3.3)
+- Omar review (forwarded by Musk): "First truly refined build... 41 miles without intervention over three days"
+- April 2026 robotaxi safety: 1.8x safer than human baseline (249,000 miles/accident human rate)
+- Total NHTSA robotaxi incidents since June 2025: 17; Tesla-at-fault: 7 (41%)
+- Dallas-Fort Worth facility: 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations
+- Las Vegas Cybercab car wash permit: 36,000 sq ft
+- Hosts project 10,000–15,000 unsupervised robotaxis by end of 2026 across 15–20+ cities
+- HW3 retrofit cost estimate: $5,000–$7,000/vehicle; ~500,000 HW3 vehicles with untransferred FSD (uncertain)
+- Larry Goldberg: "I honestly think we will be in the $500 range for Tesla stock by the end of the year."
+- SpaceX IPO: June 12, NASDAQ; ~$75B float; Goldberg expects 12x oversubscription
+- Tesla YTD: -3.61%; dropped 5% May 16; WTI crude >$107; 10-year yield 4.5–4.6%
+- Model Y price increases: RWD/AWD +$1,000; Performance +$500
