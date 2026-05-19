@@ -1,0 +1,42 @@
+Channel:     munrolive
+Title:       Cross Car Beam Evolution | Choosing the Right Architecture for Cost, Weight & Performance
+Published:   2026-05-19 19:31 UTC
+Summarized:  2026-05-19 20:03:39 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01RrNBhoZZCgoi9egBWhDs65
+Cost:        $0.02436 (5744 in / 2099 out tokens)
+Categories:  Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from Munro Live presents a detailed engineering and cost analysis of cross car beam (CCB) architectures — the structural component buried inside a vehicle's instrument panel — comparing multiple design approaches across different materials and manufacturing processes. The core thesis is that hidden structural components are prime targets for cost and weight optimization without affecting customer-facing surfaces, and that making the right architectural decision before tooling is committed can yield dramatic cost savings. The video uses real components from the Ford F-250 and F-150 Lightning teardowns as case studies.
+
+## Electric Vehicles
+
+1. **F-250 vs. F-150 Lightning Cross Car Beam Comparison:** The video uses components from two Ford vehicles — the F-250 (made available via a partnership with ATMAC1) and the F-150 Lightning (from a prior teardown) — to contrast radically different structural philosophies despite the two trucks sharing similar interior trim themes and customer-facing surfaces. The F-250 uses a highly traditional stamped steel weldment approach, while the F-150 Lightning uses a cast magnesium beam, illustrating that even within the same brand family, architectural choices can diverge significantly.
+
+2. **Stamped Steel Weldment (F-250 Approach):** The F-250's cross car beam consists of over 40 individual steel stampings welded together. Because each part is complex and typically requires multiple press hits (estimated at an average of three hits per part), the presenter estimates approximately 120 individual stamping tools were required, along with a factory full of stamping presses. All parts must then be fixtured, welded, and assembled — representing a very high tool count, high process labor, and significant tolerance stack-up, though this approach offers flexibility to modify individual brackets without scrapping an entire large tool.
+
+3. **Cast Magnesium Beam (F-150 Lightning Approach) — Cost and Integration Shortfall:** The F-150 Lightning's cross car beam is a single-piece cast magnesium component, which in principle replaces all those individual stampings with one large tool making one part. Munro's costing analysis puts the total cost of this cast magnesium beam at roughly $55. However, because the beam did not fully integrate all mounting points out to the A-surface components, it required over 20 additional steel brackets to be bolted on. Each bracket — illustrated with a 0.15 kg example costing approximately $1.12 to produce — also carries about $0.61 in installation labor (more than half the part cost itself), when accounting for picking, placing, fastening with multiple bolts, and tool movement. Replicating this across 20+ brackets nearly doubled the total unit cost of the assembly, negating much of the savings from consolidation.
+
+4. **Aluminum Stamped Weldment — Weight Savings at a Net Cost Premium:** A third approach examined is an aluminum stamped weldment, which mirrors the construction process of the steel version but uses aluminum for weight reduction. The presenter notes this is strictly worse on a cost basis: it uses the same number of tools and the same welding-intensive assembly process as the steel version, but pays a premium for the aluminum raw material. No process savings are achieved, making this the highest-cost-per-benefit option among those reviewed.
+
+5. **Hydroformed Aluminum with Overmolded Plastic:** A more advanced option uses a hydroformed aluminum core with injection-molded plastic overmolded directly onto it, creating one large integrated part. This approach is lightweight and allows attachment features to be incorporated directly into the plastic shell, reducing the need for separate brackets. However, hydroforming is described as an expensive and uncommon process, requiring two major tools (one for the aluminum core, one for the plastic overmold).
+
+6. **Single Steel Stamping with Plastic Overmold — Best of Both Worlds:** The most refined architecture shown replaces the hydroformed aluminum core with a single steel stamping, then overmolds plastic onto it. The steel stamping provides structural integrity at low raw material cost, while the plastic overmold incorporates all the attachment legs and mounting positions needed to reach A-surface components — eliminating the bracket proliferation problem seen in the F-150 Lightning design. Munro's cost modeling shows this approach, at a baseline of roughly $100 for a low-volume scenario, can be reduced to just under $40 through what-if scenario analysis by changing material and process assumptions before any tooling is committed.
+
+7. **Importance of Pre-Production Decision-Making:** The presenter emphasizes that Munro Associates' core value proposition is running cost scenarios before tooling is purchased or manufacturing is set up. The software tool ("Design Profit") allows teams to model different manufacturing locations, volumes, materials, and processes to build a business case before committing capital. Structural components like cross car beams are typically locked into a plan for seven to eight years, making early-stage decisions especially consequential. The presenter frames this as benefiting not just OEM customers but ultimately end consumers, citing a goal of saving $15 per part to help keep vehicle prices down.
+
+## Market & Competition
+
+1. **Ford as a Case Study in Suboptimal Architectural Execution:** While both Ford vehicles are used as educational examples rather than as targets of criticism, the analysis implicitly highlights a broader industry pattern: cost-saving architectural concepts (like casting consolidation) can backfire if not executed with sufficient integration. The F-150 Lightning's cast magnesium beam is presented as a cautionary tale where the concept was sound but the incomplete integration of mounting features forced a proliferation of add-on brackets that erased the intended savings — a lesson applicable across the industry.
+
+Notable quotes and data:
+- F-250 cross car beam: over 40 individual steel stampings, estimated ~120 stamping tools at ~3 hits per part average
+- F-150 Lightning cast magnesium beam total cost: ~$55 (raw material + process)
+- Additional brackets on Lightning CCB: over 20 steel brackets required due to incomplete integration
+- Example bracket weight: ~0.15 kg; part cost ~$1.12; installation labor ~$0.61 (>50% of part cost)
+- Net effect: bracket proliferation nearly doubled the total cost of the cast magnesium CCB assembly
+- Steel stamping + plastic overmold CCB: ~$100 at low volume baseline; reduced to just under $40 via what-if scenario analysis
+- Structural component design plans are typically locked in for 7–8 years
+- *"I don't like reducing cost for the touch surfaces. But anything like this cross car beam, which is buried inside of the instrument panel, I would look at this as being fair game."*
+- *"If I can save $15 in this part, I can hopefully keep the cost of that vehicle down more for long term."*
