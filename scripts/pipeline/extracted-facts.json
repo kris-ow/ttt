@@ -7215,5 +7215,89 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-20T13:05:30.838Z",
     "status": "pending"
+  },
+  {
+    "fact": "Fewer than 10,000 robotaxis exist on roads worldwide as of mid-2026, per Wave AI CEO Alex Kendall",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 10000,
+    "context": "Establishes the current global robotaxi baseline; relevant upper bound for current fleet size inputs in near-term DCF modeling",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.183Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi projects 10,000–20,000 Tesla robotaxis commercially operating by end of 2026, driven by Cybercab production ramp",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Year-end 2026 fleet size projection from Jo Bhakdi (range: 10,000–20,000); Herbert's independent projection is 15,000",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Herbert projects 15,000 Tesla robotaxis on the road by end of 2026, distributed across 30+ cities with ~1,000 per major city",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "City-level deployment model: ~1,000 Cybercabs per city across 30+ cities; key input for geographic fleet distribution assumptions",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi states minimum 10,000 Cybercabs will be produced by end of 2026, with likely higher actual output",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000,
+    "context": "Minimum production floor for Cybercab in 2026; Jo Bhakdi describes this as a conservative low-end estimate",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production currently at hundreds per month run rate, projected to reach thousands per month within approximately 3 months (by ~August 2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Production ramp trajectory: current hundreds/month scaling to thousands/month by ~Q3 2026; critical for fleet growth rate assumptions",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "17 total NHTSA-reported Tesla robotaxi incidents since June (implied June 2025); 7 determined to be Tesla's fault, including several curb rashes and a couple of human teleoperator errors",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 17,
+    "context": "NHTSA incident data providing early safety baseline for Tesla robotaxi operations; fault attribution breakdown relevant to insurance and liability modeling",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.184Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla has acquired a 36,000 sq ft robotaxi service facility in Las Vegas, plus additional facilities in Austin and Dallas for cleaning, servicing, and charging",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Physical infrastructure buildout across multiple cities; facility size and charger count (~270 referenced) could be used to estimate per-vehicle infrastructure cost and city-level fleet capacity",
+    "source": "20260520_brighterwithherbert_01_China_Might_Be_Teslas_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T14:03:42.184Z",
+    "status": "pending"
   }
 ]
