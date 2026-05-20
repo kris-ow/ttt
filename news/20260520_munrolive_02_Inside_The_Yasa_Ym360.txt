@@ -1,0 +1,520 @@
+Channel:     munrolive
+Title:       Inside the YASA YM360: Axial Flux Motor Engineering Explained
+URL:         https://www.youtube.com/watch?v=m507ryWhc6c
+Published:   2026-05-20 19:30 UTC
+Fetched:     2026-05-20 20:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hi, welcome to Monroe Live. I'm Paul
+Turble and here we have I'm really
+excited to see the YASA motor. This is
+the YASA YM360.
+It's a production motor. Um, and there's
+been a lot of talk online about this
+motor because it produces an enormous
+amount of torque for a motor as
+lightweight as it is. This is about a 15
+kg motor and it produces 360 new meters
+of torque. Um, and it's 125 kilowatts of
+power. That's about 167 horsepower.
+They make a version of this motor about
+the same size as this one. Uh, it's part
+of a family of motors that they're
+making. Um, one of the motors that's in
+this form factor delivers a 1000
+horsepower.
+So they they're doing amazing things and
+I want to dive in to see how they're
+actually doing it and uh hopefully get a
+better feel for what the magic is that's
+going on inside. So we have the motor.
+Here's the the rotors. There are two
+rotors
+uh and the stator.
+This is the part that's stationary. It's
+bolted in. In this case it's bolted into
+a transmission. So this is a hybrid for
+a hybrid application. And then these uh
+fortunately the these rotors are not
+magnetized. These are magnets. So
+normally if I did something like this, I
+would clamp my fingers in there. But
+fortunately they're not magnetized. And
+so the magnet the rotors go on. So the
+two sides of this thing
+spin. So these are the rotors that spin
+on the two sides and the center part
+stays stationary.
+So that's how this motor is built. It's
+something called an axial flux motor
+because the the flux from the magnets
+goes along the axis through the stator
+into the next rotor and then around to
+the next magnet and then back through
+the stator axially which is a little
+different than a typical motor. And I'll
+show you here's a we have next to us
+over here a typical motor. This is a BYD
+motor for their upcoming their new uh
+Tang model in China. It's uh a fantastic
+example of a traction motor. This
+produces about the same torque and about
+the same power as this motor. Um, so
+they're similar power and capability,
+but you can see that the
+the overall size of this motor is quite
+a bit more and the overall weight of
+this motor is over 40 kilograms. And so
+15 kilograms over here versus over 40.
+We have at least 3 to one on a on a
+weight basis. So I can barely pick up
+just the stator of this versus this I
+can pick up with one hand.
+So how do they do it? How does Yasa get
+so much torque and power
+out of such a small a tight package and
+and such low weight? And there's there's
+been some information sent out. I see
+several YouTube channels that have been
+talking about this motor and one of the
+things they they mention when they say
+the way that Yasa gets all this torque
+is not exactly
+right. It's only part of the story. So
+the way that's usually explained is that
+this motor
+you produce the force
+along the magnets. So the surface of the
+of the magnets are facing this is the
+roing rotating part and it's facing this
+stator and so we have a magnetic field
+between them
+and so the magnetic field is where the
+force is generated to produce the
+torque.
+The way the story goes
+because the diameter here is the
+effective diameter that the force is
+applied is larger than it is over here
+then that's what c that's what explains
+how they're getting so much torque
+except
+that's not exactly the the full truth
+that yes that's a factor but it's not
+the whole story. If that was the whole
+story, then this type of motor would be
+the torque king. And it's not. This is
+also a hub motor. And this is a motor
+that's, you know, you put it right into
+a wheel. And it it's about the same size
+as the OSA motor, about the same
+thickness as the OSA motor.
+But this one, the force is applied right
+out here near the outside diameter.
+This is a radial flux motor. Same as
+this old-fashioned type outrunner radial
+flux motor. Um, this type of motor is
+used in, you know, all kinds of hobby
+stuff. Drone motors are built this way.
+It's a good motor, but
+the fact that it's diameter here is
+large gives it some torque advantage.
+But this motor produces about a third of
+the torque as the Yasa motor. And so if
+diameter was the whole explanation,
+then we' we'd think that this one would
+produce more torque than the ASA, but it
+actually is only about a third. So
+what's going on? Why
+does the ASA get so much torque out of
+such a small package?
+Well, the reality is that we're applying
+the torque using magnetic fields. And
+you can only get so much force through a
+magnetic field because there are
+practical limits. Not necessarily
+physical limits, but practical limits.
+So the practical limit comes from steel.
+The steel that's used to transmit the
+magnetic field is has a limit. It can
+only carry so much magnetic field. Um in
+magnetics we use a unit for the strength
+of a magnetic field. That's called
+Teslas after Nickeola a Tesla. And steel
+can only carry about two Tesla of
+magnetism. Um and before it saturates
+and once it saturates it can't carry any
+more flux. And so two Tesla is all the
+the strength you can possibly get with a
+uh rotor that has steel in it. We use
+steel because
+flux carries goes through steel
+thousands of times better than it goes
+through air. And so with a small current
+in the windings, you can get thousands
+of times more magnetic flux if you use
+steel. So yeah, we want to use steel,
+but it also puts a limit on how much
+flux density that we can get in the air
+gap. So there's a limit due to the
+steel. There's also a limit due to the
+copper. So you can only put so much
+electric current through a given
+cross-section of copper. Now you can put
+a million amps through one millimeter of
+copper. But you won't be able to do it
+much more than a microssecond before
+that copper vaporizes and becomes
+plasma. And then in the next millisecond
+or microcond it's gone. So if you want
+to use your motor again,
+there's a limit for how much current you
+can put through copper. And that limit
+is roughly in the neighborhood of 40
+amps per square millimeter. Um 10 amps
+per square millimeter if you want to do
+it continuously.
+And you if you have ordinary cooling. So
+you have to do if you want to go higher
+than that, you have to have some kind of
+extraordinary cooling. So you have
+limits on the current, you've got limits
+on the magnetic field. Those two things
+together put limits on the amount of
+force that you can apply using a
+magnetic field. So when we say a force
+per unit area, we usually talk something
+like PSI, some pounds per square inch
+or other units would be like kilopascals
+or bars.
+So pounds per square inch, normally when
+you think of pounds per square inch,
+you're thinking of a pressure. And a
+pressure is that force pounds per square
+inch is acting against at right angles
+to the um surface. We call that acting
+normal to the surface. So the normal
+stress gives you a pressure in PSI. If
+you have a stress that's going along the
+surface like the stress that we're using
+to produce torque, we call that a shear
+stress. So engineers will call that a
+shear stress. And the limit for shear
+stress that you can deliver with
+magnetism
+turns out to be about 14 pounds per
+square inch. And some of the engineers
+will know that 14 pounds per square inch
+is about the same as atmospheric
+pressure. It's hap it's a coincidence
+but it's it makes it easy to remember.
+You can only apply a shear stress equal
+to about one atmosphere
+using magnetism within the practical
+limits of electric motors. And so how do
+you get with that limit? How do you get
+a lot of torque in a small package? And
+it turns out that what YASA is doing,
+they have this
+disc and they're using both sides of the
+disc. And so we have all of this surface
+area to transmit that shear stress and
+we have all of this surface area to
+transmit the shear stress. So the two
+sides of the disc, it turns out, is
+almost exactly the same surface area to
+transmit the force as the surface area
+of this rotor. And that's why these two
+produce about the same torque is they
+have about the same surface area for
+transmitting the torque. The big
+difference is the volume. So the volume
+of this is
+large and it's a big big part of that
+volume is made up of steel.
+Here the volume of a disc for that
+surface area is much smaller. And not
+only that, but the way it's arranged is
+that the amount of steel that's used is
+much smaller. They have actually about
+the same amount of copper because they
+both carry the same amount of current.
+They have about the same amount of
+magnet material because again they both
+need the same magnetic field. The big
+difference is the steel. So this has
+uh almost 30 kilograms less steel than
+this. And that's the key. And steel
+costs a lot of money. We aren't talking
+about your average 1010 uh lowgrade
+steel. This stuff is called electrical
+steel and it's specifically chosen to
+give low loss in a rotating magnetic
+field. So that's the secret that the
+secret sauce and I use this uh shear
+stress, you know, 14 pounds per square
+inch shear stress as a kind of sanity
+check. When I see companies making
+claims about extraordinary torque in an
+amazingly small package, they've somehow
+come up with a new way of making a motor
+that is double, triple, or quadruple the
+torque in a given package. I do this
+little shear stress calculation to make
+sure that they're not breaking any laws
+of physics. And if they are, then we
+smile and shake hands and walk away.
+That's not where we want to invest our
+money. Yasa passes that test. They're
+doing it with clever geometry. Axial
+flux motors allow them to use both sides
+of the disc and that gets them the
+surface area they need to carry the
+torque without all the steel.
+There's more. So when we actually this
+is a awesome look at the what the
+geometry of this looks like. But they we
+also had a chance to get inside and look
+at what's going on inside.
+So each one of these
+uh these are the the teeth of the stator
+and each one of these is made of a steel
+but it has a clever geometry in it. It's
+you can see they're sort of tilted a
+little bit one way
+and then if you compare that with the
+straight walls of the magnet. So the
+magnets are rad have these radial lines
+and you you watch as a a radial line
+would go around
+the circle. You'd see that the radius is
+just leaving this point as it's starting
+to pick up this point. And so the
+magnetic flux from this tooth is just
+leave. So the the magnet as it's leaving
+this tooth is just starting to pick up
+this tooth. And what that does is it
+smooths out the magnetic field. So it
+goes very smoothly from one tooth to the
+other. If these were arranged radially,
+then you'd have a gap in between
+for as you go from one tooth to the
+next. And that gap would produce torque
+ripple and noise. And this by skewing
+the
+angle of the each tooth they get a
+smooth sinosoidal back EMF. So that the
+flux from the uh stator teeth becomes
+smooth and sinosoidal which produces
+smooth torque.
+With a radial flux machine we try to do
+something along those lines but instead
+of smoothly doing it we do it in steps.
+So they've offset the they've offset the
+magnets by little bits so that you don't
+have the each magnet hitting a stator
+tooth with its flux all at once. It's it
+a little the middle part hits it and
+then these parts hit it and then these
+parts hit it and it gives it a kind of a
+gradual
+um stepped up flux increase and that
+makes the torque smoother. It makes the
+the motor run smoother and quieter. And
+they've been able to do that not in a
+stepped way, but in a continuous way
+with this geometry.
+They were able to do this geometry
+because they're using a special
+material. This material is they didn't
+just take a solid chunk of steel. It
+does kind of look like a solid chunk of
+steel that they just um cut out, but
+instead it's not. It's a they took a
+powdered metal where each grain of the
+powder is coated with a electrical
+insulator and they put the powder into a
+mold and compact it. So this is called
+this material is called a soft magnetic
+composite. So it's mostly steel with a
+little bit of insulating material that
+gets in between the grains. And what
+that insulating material does is it
+prevents eddy currents from forming
+because the the flux in this steel is
+changing directions back and forth all
+the time. And when you change the
+direction of flux, you generate
+voltages. If you generate voltages
+inside steel, then you drive eddyurrens.
+And the eddiurrens cause loss and that's
+a problem. So they put little insulators
+around each grain of steel and they
+compact it and it forms whatever shape
+they like. So they can get these complex
+shapes. Each one of these individual
+shapes um then gets wrapped with with
+copper. Um and the the winding machine
+that is used to wrap this copper around
+the steel tooth is a relatively
+inexpensive winding machine. So, I want
+to mention that uh we at Monroe focus on
+production stuff. You can talk about
+prototype stuff all day long, but at in
+at Monroe, we want to focus on
+production equipment. This is a
+production motor. It's in a hybrid
+application. Um that the one that they
+have announced is Lamborghini, a
+Lamborghini hybrid, a performance
+hybrid. Um and there's other
+applications for this motor. And so
+they're in production now with this
+motor at uh modest levels. Yasa is
+wholly owned by Mercedes-Benz and so
+they know a thing or two about high
+volume production. So this is geared
+towards high volume production designed
+for high volume production and is in
+production now um at first now on
+relatively low high performance um
+applications like the Lamborghini. Um,
+so we looked at this each each one of
+these parts. This is the hub
+and around here are the magnets.
+Um, the magnets are laser welded to a
+steel backing plate and there's a steel
+ring around the outside to re to make
+sure that the centrifugal forces um
+aren't too much to keep the magnets in
+place. So magnets are held in place by
+this steel ring.
+the stator which have these glass fiber
+covers over the top of it. You want this
+to be as thin as possible because this
+material is in the air gap. The magnetic
+flux has to go through this. So you want
+to have as little as as as thin as
+possible, but it needs to be very strong
+uh because there are significant forces.
+If you're doing 360 new meters of torque
+and 167 horsepower or more, then you
+need strength. And then there, this has
+two rotors, one on either side,
+uh, that goes like that. You put in
+bolts to hold it together.
+The magnets look large from this
+surface, but they're actually quite
+thin. Um, they only go back in here u
+about 4 millimeters.
+So that keeps the overall magnet
+material amount of magnet material about
+the same as the magnet material that's
+used in this. So inside this stator if
+you if you we take off this cover and
+that's what we've done here and it fits
+fits on just like this.
+So inside this
+is the stator where we have the copper
+windings and the steel teeth. And we
+also have the way that this is cooled.
+We have two water entry. I'm sorry, not
+water. It's oil. So you have oil which
+is which does not conduct electricity
+coming in and then it circulates uh
+around each one of the teeth around the
+the stator cooling the getting direct
+contact on the windings. And so that's
+how this can get um extremely good
+cooling. That's one of the central
+problems of a of a axioflux motor
+because when you have spinning things
+on both sides of your stator, it's a
+little bit difficult to get heat out of
+the stator if it's between two things
+that are spinning at thousands of RPM.
+So, uh, the way they did it pretty
+clever with, uh, running oil in and the
+oil circulates around all of the, uh,
+channels just between each of the copper
+windings. So, all of the copper windings
+see continuously flowing oil
+um, to keep them cool.
+And then all the oil is kept from
+spilling out by these
+uh covers that are uh glued in place.
+&gt;&gt; What's on the other side of the cover?
+&gt;&gt; The on the other side of the cover we
+have um steel. This is magnetic steel um
+that fits right over the top of these
+teeth. And that again minimizes the this
+the magnetic flux passes through this
+very well. Um, and so it minimizes the
+gap between steel and the magnets here.
+So the you you don't want to have much
+material in the gap between your steel
+and the magnets. So this helps
+it also it's a little bit bigger and and
+different profile from the the tooth
+here. So again, it helps spread out the
+flux from one tooth to the other. Ends
+up being the end caps on both sides of
+the these teeth. All kinds of things we
+at Monroe uh absolutely love to see when
+it comes to efficient design, minimizing
+using a simple concept, geometric
+concept to minimize the amount of
+material. And ultimately it's this the
+material that drives the cost and the
+cost of this. So you end up with lots of
+steel versus a little steel. You have
+less weight, less cost, and the same
+performance or better performance. And
+when I I say better performance, yes,
+they're they've got a prototype that
+does a 1000 horsepower in this package.
+And I want to talk a little bit about
+how they do that. If you want to go to
+the next level with this design
+and and Yasa has these things on the
+books now um then the way to go that for
+this design it has the sky is the limit.
+Um,
+one of the disadvantages with all this
+steel is that the flux in the steel, the
+magnetic flux in the steel as the rotor
+is spinning, the flux is going round and
+round in circles in this back iron.
+Sometimes it's going this way, sometimes
+it's going that way, sometimes it's
+going in towards the the center. And so
+the flux at any given point inside this
+back iron is going round and round in
+circles. Well, that's
+that's that's a a problem for this
+because you have to use a particular
+kind of steel that has a minimum loss
+for any direction of flux. So they call
+that nonoriented non-grainoriented
+steel. And you can only get steel that's
+non-grainoriented
+that is so good. is particularly it has
+a particular loss
+when with this type of motor the flux
+either goes this way or it goes that
+way.
+So it's always in one direction. So if
+the flux is always going in one
+direction and not going in circles
+then you can use something called
+grainoriented steel and grain oriented
+steel. So instead of using the um this
+soft magnetic magnetic composite, you
+could use grain oriented steel
+laminations.
+Uh if you made it all the way through
+this, I appreciate the the view and uh
+uh looking forward to talking to you
+next time. Uh thanks again from Monroe
+Live.
