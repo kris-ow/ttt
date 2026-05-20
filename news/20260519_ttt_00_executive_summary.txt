@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-19)
 Published:   2026-05-19 00:00 UTC
-Summarized:  2026-05-20 04:37:40 UTC
+Summarized:  2026-05-20 10:30:12 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.11632 (16837 in / 4387 out tokens)
+Cost:        $0.09487 (16837 in / 2957 out tokens)
 Sources:     10
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -23,112 +23,91 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 ## Brief
 
 - Musk: 90% of all miles driven by AI within 10 years
-- FSD 14.3/14.3.3 rolling out; mixed early feedback on 14.3
-- Tesla's 17 Austin robotaxi crash reports reviewed; mostly non-fault
-- Houston solar factory confirmed: 1.65M sq ft, $250M+ capex
+- FSD 14.3 live on fewer than ~50 vehicles; mixed early reports
+- Tesla's Houston solar factory confirmed: 1.65M sq ft, $250M+ capex
 - SpaceX IPO S1 expected May 20; June 12 listing date rumored
-- Andrej Karpathy joins Anthropic
+- Tesla's 17 Austin robotaxi crash reports reviewed; nearly all non-fault
+- Potential Tesla-SpaceX merger: Chamath calls it "99% sure"
 
 ## Autonomous Driving
 
-- **Musk's 10-year AV forecast:** At the Samson International Smart Mobility Summit in Israel, Musk stated that within 10 years "probably 90% of all distance driven will be driven by the AI in a self-driving car," adding that AI already handles 90%+ of his personal miles. The post drew 5K likes and 954 reposts.
+- **Musk's 10-year AV forecast:** At the Samson International Smart Mobility Summit in Israel, Musk stated: "10 years from now, probably 90% of all distance driven will be driven by the AI in a self-driving car." He added AI already drives over 90% of his personal miles.
 
-- **FSD 14.3 in very early rollout — mixed signals:** Fewer than ~50 vehicles were on FSD 14.3 as of May 19 per trackers. Musk described it as "a banger" that "nags less," and some users reported going over a minute without a nag prompt. However, early feedback includes phantom braking complaints (Chris's wife), a critical disengagement within the first 30 seconds (DJ), a parking regression caught on video (Devon Olsen, echoed by Dirty Tesla), and continued left-lane camping in standard mode (Mike P).
+- **FSD 14.3 / 14.3.3 early rollout — mixed feedback:** Fewer than ~50 vehicles were on 14.3 as of yesterday per trackers. Musk described it as "a banger" that "nags less," and V14.3.3 delivers over a minute before a nag prompt in some cases. But early reports include phantom braking complaints, a critical disengagement within the first 30 seconds, a parking regression (vehicle backed into a curb), and continued left-lane camping in standard mode.
 
-- **FSD 14.3.3 nag reduction confirmed:** V14.3.3, part of Tesla's 2026 Spring Update, delivers over a minute between driver-attention nags in some cases. The update also introduces Blind Spot Warning Accent Lights — accent lights turn red on the side where a blind-spot object is detected when the turn signal is engaged, or when a parked vehicle detects an approaching object.
+- **FSD 14.3 UI changes:** The intervention feedback screen now categorizes disengagements as navigation, parking, critical, or other. A new streak feature tracks consecutive time without disengagement.
 
-- **FSD 14.3 UI changes:** The intervention feedback screen now categorizes disengagements as navigation, parking, critical, or other. A new streak feature tracks time between FSD disengagements. Users can dismiss the screen via double-click of the steering wheel voice button.
+- **Smart Summon speed raised to 8 mph**, up from 6 mph previously.
 
-- **Smart Summon speed raised to 8 mph:** Actually Smart Summon speed increased from 6 mph to 8 mph in the new update — a 33% increase.
+- **FSD regulatory expansion — Israel:** Musk said he hopes FSD will receive regulatory approval in Israel "sometime this year," speaking at the Samson summit.
 
-- **Israel regulatory approval targeted for 2026:** At the Samson summit, Musk said he hopes FSD will receive regulatory approval in Israel "sometime this year."
+- **Einride counterpoint:** Electrek flagged that Einride is already operating Level 4 autonomous electric semi trucks commercially, including a signed Amazon middle-mile deal — framing Musk's "widespread unsupervised FSD by year-end" pledge as a recurring undelivered promise.
 
-- **Waymo operational failures highlight rule-based AV limits (per FutureAzA):** A Waymo software recall was issued after a vehicle was swept away by Texas floodwaters following an update that allowed driving through standing water. Separately, a Waymo vehicle ran a red light in Dallas — with LiDAR's colorblindness cited as a potential factor — and 30–50 empty Waymo vehicles at a time were observed repeatedly circling and jamming a residential neighborhood. Brian of FutureAzA contrasted Waymo's hard-coded rule-based approach with Tesla's neural-network system, arguing each new edge case requires a new explicit rule.
+- **Tesla's physical AI as an underappreciated moat:** A Tesla AI executive (identified as "Yantasai") was quoted: "Making seamless real-world agents is a lot harder than digital world agents… It may not be considered a frontier lab, but it is truly frontier." Jeff Lutz, a supply chain executive on Herbert Ong's show, stated he knows of no company doing physical real-world AI at Tesla's scale.
 
-- **Einride claims operational L4 autonomy today:** Einride's CEO states the company is already running public L4 autonomous electric semi-truck operations commercially, including a multimillion-dollar middle-mile deal with Amazon — framed by Electrek as a substantive counterpoint to Tesla's repeated unsupervised FSD timeline commitments.
-
-- **Tesla's physical AI flagged as undervalued:** A senior Tesla AI executive (identified as "Yantasai") was quoted: "Making seamless real-world agents is a lot harder than digital world agents, especially since the compute and energy budgets are extremely frugal compared to an H200… It may not be considered a frontier lab, but it is truly frontier." Guest Jeff Lutz on brighterwithherbert stated he knows of no company doing physical real-world AI at Tesla's scale, citing 1.3 million cars currently running FSD.
+- **Waymo safety failures cited as competitive contrast:** FutureAzA documented a Waymo vehicle running a red light in Dallas (LiDAR is colorblind to signal color), a separate flood-related incident where a software update designed to allow Waymo vehicles to drive through standing water resulted in a vehicle being swept away, and a recurring incident in which 30–50 empty Waymo vehicles jammed a residential neighborhood and became stuck when a resident placed a barricade.
 
 ## Robotaxi
 
-- **Tesla's 17 Austin crash reports reviewed — largely non-fault:** Tesla released unredacted robotaxi crash data for Austin covering 17 total incidents. The vast majority involve other vehicles striking a stationary or lawfully operating Tesla: rear-end collisions at stop signs and red lights, a metro bus bike rack scraping a stopped Tesla, a scooter rider hitting a parked Tesla. FutureAzA's Brian identified only two incidents worth addressing — a vehicle driving into a chain across a parking lot entrance, and a construction barricade scrape — and notably, the barricade incident occurred after a remote teleoperator had taken control from the ADS. Two of the 17 incidents were caused by teleoperators; only one minor injury was reported across all 17, caused by another driver rear-ending the Tesla.
+- **17 Austin crash reports reviewed:** Tesla released unredacted crash data for its Austin robotaxi fleet. Of 17 documented incidents, the large majority involve other vehicles or objects striking a stationary or lawfully operating Tesla — rear-ends at stop signs and red lights, a bus bike rack scraping a stopped vehicle, a scooter hitting a parked Tesla. Only two incidents were flagged as genuinely worth addressing: a vehicle driving into a chain across a parking lot entrance, and a construction barricade scrape — the latter of which occurred after a remote teleoperator took over control from the ADS.
 
-- **Cybercab spotted with license plate in Houston:** User Sloak reported a production-version Cybercab in Houston now bearing a license plate. Per Dillon Loomis (electrified), Texas Transportation Code requires plates on all public-road vehicles — a necessary but not conclusive deployment step.
+- **Teleoperators implicated in at least two incidents:** In two of the 17 events, a safety monitor requested remote operator assistance; in at least one case the teleoperator then drove the vehicle up a curb into a metal fence. One minor injury was reported total across all 17 incidents — sustained when another driver rear-ended the Tesla robotaxi.
 
-- **Musk reiterates widespread US robotaxi deployment by end of 2026:** Stated at the Samson Smart Mobility Summit; Dillon Loomis noted Musk has been "a literal yo-yo" on robotaxi timeline predictions and cautioned against weighting any specific forecast heavily.
+- **Cybercab spotted with license plate in Houston**, per user Sloak. Texas Transportation Code requires license plates on all vehicles operated on public roads; Dillon Loomis framed it as a required but not conclusive step toward deployment.
 
-- **India factory reportedly abandoned — Cybercab global rollout implications:** A Chinese financial outlet reported Tesla has dropped plans for an India factory, citing supply chain gaps, tariff negotiation deadlock, infrastructure shortfalls, and market positioning mismatch. Loomis speculated this could be a negotiating tactic and that India could re-enter the picture once Cybercab is in global production.
+- **Musk reaffirmed widespread US robotaxi deployment by end of 2026** at the Samson summit. Loomis noted Musk has been "a literal yo-yo" on rollout timelines and counseled skepticism on any specific date.
 
-- **Deployment philosophy defended:** Guest Jeff Lutz (brighterwithherbert) argued Tesla's slower-than-announced robotaxi rollout reflects a deliberate strategy to build a profitable, scalable cost structure — contrasting it with competitors likely deploying unprofitably at small scale.
+- **India factory plans reportedly abandoned**, per a Chinese financial outlet, citing supply chain gaps, tariff negotiation deadlock, infrastructure shortfalls, and market mismatch. One analyst suggested this could be a negotiating tactic, and that Cybercab's eventual global readiness could reopen the conversation.
 
 ## Energy
 
-- **Houston solar factory confirmed by Electrek:** Tesla is building a fully vertically integrated solar panel manufacturing facility at its Brookshire, Texas site (Empire West Business Park, ~35 miles west of Houston), co-located with the Megapack Megafactory under construction there. Tesla leases Buildings 9 and 10 totaling 1.65 million square feet, with plans for an additional 600,000-square-foot building. The entire site is 100% leased to Tesla under a long-term agreement. Capex across multiple simultaneous facility builds exceeds $250 million, with cleanroom-grade manufacturing environments under construction.
+- **Houston solar factory confirmed by Electrek:** Tesla is building a fully vertically integrated solar panel manufacturing facility at its Brookshire, Texas site (Empire West Business Park, ~35 miles west of Houston), co-located with the Megapack Megafactory. The leased footprint is 1.65 million square feet across two buildings, with a planned additional 600,000 sq ft building. Capex across multiple simultaneous builds exceeds $250 million; manufacturing environments are described as cleanroom-grade.
 
-- **Full vertical integration from ingot to panel:** Unlike simple assembly, Tesla is building the complete chain at Brookshire: ingot growth, wafer slicing, photovoltaic cell production, and finished panel assembly. This is consistent with the previously reported $2.9 billion deal (CNBC, March 2026) to purchase Chinese solar manufacturing equipment from suppliers including Suzhou Maxwell Technologies, destined for Texas.
+- **Full vertical integration:** Unlike simple panel assembly, Tesla is building the complete chain: ingot growth, wafer slicing, PV cell production, and finished panel assembly — consistent with the previously reported $2.9 billion deal to purchase Chinese solar manufacturing equipment, including from Suzhou Maxwell Technologies.
 
-- **Scale context:** Tesla's current TSP-420 panel capacity at Giga New York (Buffalo) is ~300 MW/year. Musk's stated 100 GW target represents a 300x scale-up. First Solar — the largest US domestic manufacturer — projects 17.7 GW by 2027; US total solar installations in 2025 were 43 GW (down 14% from 2024). Electrek's Fred Lambert characterized the 100 GW by 2028 goal as "wildly ambitious to completely delusional," with Chinese export approvals and construction timelines as key risks.
+- **Scale context:** Tesla's existing Buffalo facility produces ~300 MW/year. The Houston operation targets 100 GW annually — a 300x increase — versus First Solar's projected 17.7 GW by 2027. The stated 100 GW target would exceed double the entire 43 GW the US installed in 2025. Electrek's Fred Lambert characterized the timeline as "wildly ambitious to completely delusional," citing Chinese export approvals and construction pace as key risks.
 
-- **Capex signal confirmed on Q1 earnings call:** Tesla CFO Vaibhav Taneja stated 2026 capex guidance is over $25 billion, up from a prior $20 billion figure, with solar manufacturing equipment cited as part of the incremental $5 billion increase. The Megapack Megafactory at Brookshire carries a separate $200 million investment.
-
-- **Ford announces competing grid storage deal:** Ford signed a five-year agreement to supply up to 20 GWh of battery energy storage capacity to renewable developer EDF (up to 4 GWh/year of DC Block systems). This signals growing non-Tesla competition in the grid-scale storage market where Megapack currently holds a strong position.
+- **Capex signal:** On the Q1 2026 earnings call, CFO Vaibhav Taneja raised 2026 capex guidance to over $25 billion from a prior $20 billion figure, citing solar manufacturing equipment as a driver of the incremental $5 billion.
 
 ## Humanoid Bots
 
-- **Musk projects 100M–1B humanoid robots by ~2031:** At the Forbes Innovator Summit, Musk stated there could be "at least 100 million humanoid robots, but maybe a billion" within five years, and that digital intelligence will exceed the sum of all human intelligence within the same timeframe.
+- **Musk's 5-year humanoid forecast:** At the Forbes Innovator Summit, Musk projected "at least 100 million humanoid robots, but maybe a billion" by approximately 2031, and stated that "digital intelligence will exceed the sum of all human intelligence" within five years.
 
-- **Physical AI TAM framed as unbounded:** Herbert and Jeff Lutz (brighterwithherbert) argued Tesla's physical AI opportunity extends beyond cars and humanoid robots to any physical device with a chip and camera — factory equipment, agricultural machinery, smart home devices. Lutz posed the rhetorical question of what TAM one would assign to all global factory and industrial equipment, referencing Jeff Bezos's startup Prometheus as pursuing a similar AI-enablement concept for existing factories.
+- **Physical AI TAM framing:** Herbert Ong and supply chain executive Jeff Lutz argued Tesla's physical AI opportunity extends beyond cars and humanoid robots to any physical device with a chip and a camera — factory equipment, agricultural machinery, smart home devices — drawing a parallel to Jeff Bezos's startup Prometheus, which is pursuing AI-enablement of existing factories.
 
 ## Electric Vehicles
 
-- **Tesla Semi gaining traction in California:** The New York Times published a positive profile of the Semi. California trucking firms have applied for state subsidies to purchase more than 1,200 Tesla Semis — more than all applications for other electric trucks combined since the incentive program began in 2019. The owner of King Theot Trucking (20 Semis ordered) cited range, weight, and cost advantages. In 2025, the early Semi fleet achieved over 95% uptime; 75% of service visits were completed in under 24 hours. Diesel prices have risen ~50% since "the war with Iran," per the source.
+- **Tesla Semi demand inflection:** The New York Times published a positive profile of the Tesla Semi. California trucking firms have submitted subsidy applications for over 1,200 Tesla Semis — more than all applications for other electric truck brands combined since the incentive program launched in 2019. The early fleet achieved over 95% uptime in 2025, with 75% of service visits completed under 24 hours. Diesel prices have risen ~50% since a recent conflict, improving the Semi's economic case.
 
-- **Competitor pushback on Semi:** Volvo Trucks North America's president said he does not view the Semi as disruptive, citing Volvo's planned longer-range model next year. Daimler Truck NA's president cited insufficient high-power charging infrastructure as a barrier.
+- **Competitor responses:** Volvo Trucks North America's president said he does not view the Semi as disruptive, citing a planned longer-range model next year. Daimler Truck North America cited insufficient high-powered charging infrastructure as a barrier to long-haul EV truck adoption.
 
-- **Bipartisan EV road-use fee proposed:** House lawmakers introduced legislation requiring EV owners to pay $130/year for road maintenance (in lieu of fuel taxes), and $35/year for plug-in hybrid owners. Starting 2029, fees rise $5/year to a maximum of $150 (EVs) and $50 (PHEVs), on top of existing state registration fees.
+- **Cybertruck Wade Mode incident:** A Cybertruck owner drove into Grapevine Lake in Texas to test Wade Mode, became stranded, and was arrested on multiple charges. Wade Mode supports a maximum ~32-inch wade depth; Musk's 2022 claim was that the Cybertruck would be "waterproof enough" to serve as a boat. Tesla's warranty does not cover water damage.
 
-- **Cybertruck Wade Mode incident:** A Cybertruck owner drove into Grapevine Lake, Texas to test Wade Mode, became stranded, and was arrested on charges including operating a vehicle in a closed section of park/lake, no valid boat registration, and multiple water safety violations. Wade Mode's actual limit is ~32 inches maximum wade depth — not the lake-crossing capability Musk publicly described in 2022. Tesla's warranty does not cover water damage.
-
-- **Affordable EV pipeline from legacy OEMs:** Electrek's Quick Charge episode flagged upcoming affordable EVs from BMW, Stellantis (including a potential sub-$18,000 Jeep EV and a Dodge Neon candidate), and Volvo, as well as a Costco stackable discount on the 2027 Chevy Bolt.
+- **EV road-use fee proposed:** Bipartisan House legislation would impose a $130 annual fee on EV owners and $35 on plug-in hybrid owners for road maintenance, rising $5/year from 2029 to a maximum of $150/$50 — in addition to existing state registration fees.
 
 ## Market & Competition
 
-- **SpaceX IPO: June 12 on NASDAQ (ticker: SPCX), S1 expected May 20:** The S1 filing was anticipated to drop on the SEC's EDGAR database on May 20. Rumored underwriters are four equal co-leads — JP Morgan, Goldman Sachs, Morgan Stanley, Bank of America — with an unusual 30% retail allocation. Broker access varies: Vanguard reportedly gets no allocation with limit-only day-one orders; Robinhood reportedly gets allocation; Fidelity reportedly considers allocation for accounts holding $100K+. A 5-for-1 stock split brings the implied share price from $527 to $105.
+- **SpaceX IPO imminent:** The S1 filing was expected on May 20 per multiple sources. Rumored IPO date is June 12 on NASDAQ under ticker SPCX, following a 5-for-1 stock split (from $527 to $105). Rumored underwriters are JP Morgan, Goldman Sachs, Morgan Stanley, and Bank of America as equal co-leads, with an unusually high ~30% retail allocation. IPO valuation estimates range from $1.75 trillion (Cern Basher) to $2.2–$2.4 trillion (pre-market trading implied). BlackRock has announced a $5–$10 billion investment; Ron Baron has placed a $1 billion IPO order; Musk confirmed he will not sell shares.
 
-- **SpaceX IPO demand and valuation range:** Ron Baron has placed a $1 billion IPO order; BlackRock plans to invest $5–$10 billion. Pre-market trading implies a $2.2–$2.4 trillion valuation per Jo Bhakdi; Cern Basher anticipates a listing valuation of ~$1.75 trillion trading up to ~$2.25 trillion on enthusiasm. Musk confirmed he will not sell any of his SpaceX shares at IPO. An Alexandra Merz poll of ~400 predominantly Tesla investors found ~21% would sell Tesla to fund SpaceX purchases; the majority would use available cash.
+- **Tesla-SpaceX merger debate:** Chamath Palihapitiya has publicly stated the merger is "99% sure" to happen, per Jo Bhakdi, who draws a parallel to Chamath's earlier SpaceX-Anthropic suggestion that materialized within days. Ron Baron, when asked, said "I don't know," citing good arguments on both sides. Jo Bhakdi's modeling suggests a merger is likely short-term negative for Tesla shareholders over 12–18 months (due to capital rotation into SpaceX) but strongly positive beyond that inflection. Bhakdi also raises a structural risk: if Tesla's market cap rises materially above SpaceX's before a merger is struck, the deal math becomes difficult.
 
-- **Tesla-SpaceX merger debate:** Chamath Palihapitiya stated the merger is "99% sure" to happen, per Jo Bhakdi — treated as a meaningful signal given Chamath's prior accuracy on the SpaceX-Anthropic deal. Ron Baron described the merger as an "I don't know" rather than a firm yes or no, saying whatever Elon decides will have good rationale. Jo Bhakdi modeled the merger as short-term negative for Tesla shareholders in the ~12–18 month window (IPO capital flows away from Tesla) but long-term superior for a combined entity. A structural complication noted: if Tesla's robotaxi ramp pushes Tesla's market cap above SpaceX's, a merger-of-equals becomes mathematically difficult.
+- **Andrej Karpathy joined Anthropic**, stating the next few years at the frontier of LLMs will be "especially formative." SpaceX signed an agreement to give Anthropic access to Colossus 1 earlier in May 2026. Dillon Loomis framed these moves as deepening the overlap between Tesla, SpaceX, and frontier AI organizations.
 
-- **Starship V3 test flight as IPO catalyst:** A Starship V3 test flight was scheduled for approximately May 20. Jo Bhakdi argued the flight is consequential for IPO valuation — if carrying 150 tons of GPUs, insured cargo value could approach $1 billion, and a 20% failure rate would add ~$200 million of effective risk cost per launch. A successful flight, he argued, could send SpaceX's valuation "to three trillion."
-
-- **XAI positioning as space-based AI compute vendor:** Elon argued in a Forbes interview that orbital data centers are "much easier than people may think," citing 10,000 current Starlink satellites and projecting 10,000+ communication satellite launches per year via Starship. Jo Bhakdi frames this as Elon's strategic domain — owning the space compute layer — while partnering with Anthropic on models and Nvidia on chips rather than competing head-on.
-
-- **Nvidia Vera CPU delivered to SpaceX/XAI:** Nvidia VP of Hyperscale Ian Buck hand-delivered the first Vera CPU servers (88 cores, purpose-built for agentic AI) to four launch customers: Anthropic, OpenAI, SpaceX, and Oracle. SpaceX/XAI's inclusion on this short list confirms priority standing with Nvidia.
-
-- **Andrej Karpathy joins Anthropic:** Karpathy announced he has joined Anthropic, stating the next few years at the LLM frontier will be "especially formative." SpaceX signed an agreement to provide Anthropic access to Colossus 1 earlier in May 2026. Dillon Loomis noted Grok is already integrated into Tesla vehicles and will play a direct role in Optimus development.
-
-- **OpenAI lawsuit dismissed on statute of limitations:** A California court dismissed Musk's OpenAI lawsuit, ruling the filing exceeded the three-year statute of limitations. Musk announced an appeal to the Ninth Circuit. Jo Bhakdi framed the lawsuit as a strategic success regardless of legal outcome: depositions, public release of damaging emails, and likely delay of OpenAI's IPO were achieved, with SpaceX now positioned to IPO ahead of OpenAI.
-
-- **SpaceX orbital dominance (2026):** SpaceX accounted for 87% of total global mass sent to orbit in 2026 — 841 of 969 metric tons. The rest of the world combined: 13%.
+- **Ford announced a five-year, up to 20 GWh battery energy storage supply agreement with renewable developer EDF** — a signal of growing non-Tesla competition in grid-scale storage, where Megapack currently leads.
 
 Notable quotes and data:
-- Musk at Samson Smart Mobility Summit: "10 years from now, probably 90% of all distance driven will be driven by the AI in a self-driving car."
-- Musk at Forbes Innovator Summit: "There might be at least 100 million humanoid robots, but maybe a billion" within five years.
+- Musk: "10 years from now, probably 90% of all distance driven will be driven by the AI in a self-driving car."
+- Musk (Forbes Innovator Summit): "There might be at least 100 million humanoid robots, but maybe a billion" within five years.
+- Tesla AI exec ("Yantasai"): "It may not be considered a frontier lab, but it is truly frontier."
+- Chamath on merger (per Bhakdi): "99% sure."
 - Ron Baron: "Tesla is going to be 2,000 or 2,500 over the next 10 years."
-- Ron Baron on Starlink: "9 million customers last year. 15 million this year. They're going to grow 50% a year. They could have 300 million customers in 10 years."
-- Ron Baron on the AI market: "$27 trillion a year."
-- Tesla AI exec "Yantasai": "It may not be considered a frontier lab, but it is truly frontier."
-- Chamath on Tesla-SpaceX merger: "99% sure" (per Bhakdi)
-- Jo Bhakdi on merger timeline: "It inflects around 12 to 18 months from now where it's very likely that a merged entity makes you way more money than Tesla alone."
-- FutureAzA Brian on Tesla's 17 crash reports: "The only ones that bother me is the chain and I guess the barricade. Those two."
-- Elon on space data centers: "AI satellite tonnage will dwarf communication satellite tonnage."
-- SpaceX IPO: June 12, NASDAQ, ticker SPCX; 5-for-1 split ($527 → $105); 30% retail allocation
-- Starlink defense contract: $1.7B/year with the Pentagon for intelligence services
-- Tesla 2026 capex guidance: >$25 billion (up from prior $20B); solar equipment cited in incremental $5B
-- Houston solar factory: 1.65M sq ft leased + 600K sq ft planned; $250M+ capex; $2.9B Chinese equipment order
-- FSD 14.3 rollout: fewer than ~50 vehicles as of May 19 per trackers
-- Smart Summon: raised to 8 mph from 6 mph
-- Tesla Semi: >95% uptime in 2025; 75% of service visits completed in under 24 hours
-- California Semi subsidy applications: >1,200, more than all other electric trucks since 2019 combined
-- Proposed EV road fee: $130/year EVs, $35/year PHEVs, rising $5/year from 2029 to max $150/$50
-- 17 Austin robotaxi crash reports: 1 minor injury (caused by another driver); 2 incidents caused by teleoperators taking over from ADS
+- Ron Baron on Starlink: "9 million customers last year. 15 million this year… could have 300 million customers in 10 years… worth 14–15 trillion alone."
+- Bhakdi on merger timeline: "It inflects around 12 to 18 months from now where it's very likely that a merged entity makes you way more money than Tesla alone."
+- Tesla Austin robotaxi: 17 total crashes; 1 minor injury (caused by another driver); 2 incidents caused by remote teleoperators.
+- FSD 14.3: fewer than ~50 vehicles on rollout as of May 19.
+- Smart Summon: 8 mph, up from 6 mph.
+- Houston solar factory: 1.65M sq ft leased + 600K sq ft planned; $250M+ capex; $2.9B Chinese equipment order.
+- Tesla 2026 capex guidance: over $25 billion.
+- California Semi subsidy applications: 1,200+ for Tesla, more than all other EV truck brands combined since 2019.
+- SpaceX orbital share (2026): 87% of total global mass to orbit (841 of 969 metric tons).
+- Starlink: ~15 million customers in 2026, up from 9 million in 2025.
