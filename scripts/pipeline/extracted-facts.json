@@ -7203,5 +7203,17 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-20T01:03:12.504Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi European spec energy consumption: 1 kWh per kilometer",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.609,
+    "context": "Converted from 1 kWh/km to approximately 1.609 kWh/mile; official spec listed on Tesla's European website for the standard range Semi",
+    "source": "20260520_futureaza_02_Tesla_Semi_Is_Quietly_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-20T13:05:30.838Z",
+    "status": "pending"
   }
 ]
