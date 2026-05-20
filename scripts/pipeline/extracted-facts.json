@@ -7179,5 +7179,29 @@
     "channel": "electrified",
     "extractedAt": "2026-05-19T23:04:02.715Z",
     "status": "pending"
+  },
+  {
+    "fact": "Ioniq 5 real-world efficiency during spirited driving: approximately 3 miles per kWh",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.333,
+    "context": "Observed during test drive in sport mode; noted as good for a spacious two-row SUV; relevant to EV operating cost benchmarking",
+    "source": "20260520_futureaza_01_Tesla_Analyst_Reviews_Hyundai_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-20T01:03:12.504Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Supercharging at approximately $0.35/kWh equates to roughly $3.50/gallon gasoline equivalent",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.35,
+    "context": "Per-kWh Supercharger rate cited in Pacific Northwest context; relevant to robotaxi and EV operating cost modeling",
+    "source": "20260520_futureaza_01_Tesla_Analyst_Reviews_Hyundai_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-20T01:03:12.504Z",
+    "status": "pending"
   }
 ]
