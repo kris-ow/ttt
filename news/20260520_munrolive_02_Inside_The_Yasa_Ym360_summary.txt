@@ -1,0 +1,50 @@
+Channel:     munrolive
+Title:       Inside the YASA YM360: Axial Flux Motor Engineering Explained
+Published:   2026-05-20 19:30 UTC
+Summarized:  2026-05-20 20:06:05 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_011EEmzYPAGmd3sGKYjB9ht4
+Cost:        $0.03181 (7392 in / 2763 out tokens)
+Categories:  Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+This Munro Live video features Paul Turble providing a detailed engineering teardown of the YASA YM360, an axial flux electric motor produced by YASA (a wholly owned Mercedes-Benz subsidiary). The video's core thesis is that the YASA motor achieves exceptional torque and power density not simply because of its large effective diameter — as commonly claimed online — but primarily because its disc geometry allows both faces of the stator to transmit magnetic shear stress simultaneously, drastically reducing the amount of heavy and expensive electrical steel required. The presentation uses hands-on comparison with a BYD traction motor and a hub motor to illustrate the engineering tradeoffs.
+
+## Electric Vehicles
+
+1. **YASA YM360 specifications and form factor:** The YASA YM360 is a production axial flux motor weighing approximately 15 kg. It produces 360 Newton-meters of torque and 125 kilowatts (approximately 167 horsepower) of power. YASA also produces a motor in the same form factor that delivers 1,000 horsepower, demonstrating the scalability of the platform. The motor is currently in production for hybrid applications, with Lamborghini confirmed as a customer for a performance hybrid drivetrain.
+
+2. **Weight advantage over conventional radial flux motors:** For direct comparison, a BYD traction motor designed for BYD's upcoming Tang model in China — which produces approximately the same torque and power as the YM360 — weighs over 40 kilograms. This gives the YASA motor at least a 3-to-1 weight advantage. Paul Turble demonstrates this by noting he can barely lift the stator of the BYD motor alone, while the entire YASA motor can be lifted with one hand. The weight difference is attributed almost entirely to the reduction in electrical steel, with the YASA motor containing approximately 30 kg less steel than the comparable radial flux motor.
+
+3. **Why axial flux geometry reduces steel, not just "large diameter":** Turble challenges the commonly repeated explanation that the YASA motor's torque advantage comes from its larger effective force-application diameter. He uses a hub motor (an outrunner radial flux design of similar size) as a counterexample — that motor applies force at its outer diameter but produces only about one-third of the torque of the YASA. The real explanation is that the fundamental limit on magnetic shear stress in any electric motor is approximately 14 pounds per square inch (roughly one atmosphere of pressure), constrained by steel magnetic saturation at approximately 2 Tesla and copper current density limits of around 10 amps per square millimeter (continuous, with ordinary cooling) or up to 40 amps per square millimeter (short-term). The YASA's disc design applies this shear stress across both faces of the disc simultaneously, achieving approximately the same total active surface area as the larger cylindrical rotor — but in a dramatically smaller and lighter package due to far less steel volume.
+
+4. **Soft magnetic composite stator teeth enable complex geometry and low losses:** The stator teeth in the YM360 are not machined from solid steel but are made from a soft magnetic composite (SMC) — powdered steel where each grain is coated with an electrical insulator, then compacted into a mold. This prevents eddy current losses that would otherwise occur as the magnetic flux reverses direction through the steel. The SMC manufacturing process also enables complex 3D tooth geometries that are not practical with conventional steel laminations. Specifically, the teeth are skewed at an angle relative to the radially-oriented magnets, so that as the rotor turns, magnetic flux transitions continuously and smoothly from one tooth to the next — producing a sinusoidal back-EMF and smooth torque output without the stepped approximation used in radial flux machines.
+
+5. **Oil cooling system solves axial flux thermal management challenge:** A key engineering challenge of axial flux motors is extracting heat from the stator, which is sandwiched between two spinning rotors. YASA addresses this by circulating oil (chosen because it does not conduct electricity) directly through channels between each copper winding, providing direct thermal contact with all windings. The oil is retained by glued covers on the stator. The glass fiber covers over the stator teeth — which sit in the air gap and must be as thin as possible to minimize magnetic reluctance while still withstanding significant mechanical forces — are also part of this assembly.
+
+6. **Rotor construction and magnet retention:** The magnets are laser welded to a steel backing plate, and a steel retention ring around the outer diameter contains the centrifugal forces at operating speed. Despite appearing large from the face, the magnets are only approximately 4 millimeters deep, which keeps the total magnet material roughly equivalent to that used in comparable radial flux motors. Magnetic steel end caps on both sides of each stator tooth minimize the effective air gap and help spread flux smoothly between teeth.
+
+7. **Path to 1,000 horsepower: grain-oriented steel laminations:** Turble explains that the next design step for YASA — already on their roadmap — involves replacing the soft magnetic composite with grain-oriented electrical steel laminations. In a conventional radial flux motor, the back iron sees magnetic flux rotating in all directions as the rotor spins, requiring non-grain-oriented steel. In an axial flux design, the flux in the stator teeth travels in only one direction (axially), making it compatible with grain-oriented steel, which has significantly lower losses in a single preferred direction. This substitution would enable a further leap in power density, as demonstrated by the 1,000 horsepower prototype already developed in the same package size.
+
+8. **Production status and ownership:** YASA is wholly owned by Mercedes-Benz. The YM360 is currently in production at modest volumes, initially targeting high-performance applications such as the Lamborghini hybrid. Munro Live notes its focus on production hardware rather than prototypes, and emphasizes that the motor is designed for eventual high-volume manufacturing.
+
+## Market & Competition
+
+1. **BYD traction motor as benchmark:** The BYD motor shown is sourced from BYD's upcoming Tang model for the Chinese market and is described as a "fantastic example of a traction motor" producing approximately the same torque and power as the YASA YM360. It serves as the primary weight and size benchmark throughout the video, representing conventional radial flux motor technology at a high level of engineering maturity.
+
+Notable quotes and data:
+- YASA YM360: ~15 kg, 360 N·m torque, 125 kW (167 hp)
+- YASA 1,000 hp prototype: same form factor as YM360
+- BYD Tang motor (comparison unit): >40 kg, similar torque and power to YASA
+- Weight ratio: at least 3-to-1 in favor of YASA (15 kg vs. >40 kg)
+- Steel reduction: approximately 30 kg less steel in the YASA versus the BYD motor
+- Magnetic saturation limit of steel: ~2 Tesla
+- Practical copper current density: ~10 A/mm² continuous (ordinary cooling), ~40 A/mm² short-term
+- Practical magnetic shear stress limit: ~14 psi (~1 atmosphere) — described as a useful "sanity check" for evaluating motor claims
+- Magnet depth: approximately 4 mm
+- Hub motor (outrunner radial flux, similar diameter to YASA): produces approximately one-third the torque of the YASA YM360
+- Stator material: soft magnetic composite (powdered steel with insulating grain coatings, compacted into complex 3D shapes)
+- Cooling medium: oil (non-conductive), circulated directly between copper windings
+- Current production application: Lamborghini performance hybrid
+- Corporate ownership: YASA is wholly owned by Mercedes-Benz
+- "When I see companies making claims about extraordinary torque in an amazingly small package… I do this little shear stress calculation to make sure that they're not breaking any laws of physics. And if they are, then we smile and shake hands and walk away."

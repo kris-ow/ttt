@@ -7299,5 +7299,77 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-20T14:03:42.184Z",
     "status": "pending"
+  },
+  {
+    "fact": "Dallas-area robotaxi depot in Irving, TX: 35,049 sq ft building with 212 fleet parking spaces, 64 additional spaces, 17 EV charging stations, and 24/7 maintenance operations on ~24 acres",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 212,
+    "context": "The 212 idle parking spots represent the buffer/idle fraction of a larger active fleet; host estimates this implies 700–1,400+ active vehicles in that single metro based on 15–30% idle rate assumption",
+    "source": "20260520_brighterwithherbert_02_Teslas_Secret_Robotaxi_Depots_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T20:06:05.862Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Using a 15–30% idle/parked fraction, 212 idle depot spaces implies approximately 700 to over 1,400 active robotaxi vehicles in the Dallas metro alone at steady-state operation",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Host applies industry-standard 15–30% idle fraction to back-calculate implied fleet size from depot parking capacity; utilization rate of 70–85% assumed for active fleet",
+    "source": "20260520_brighterwithherbert_02_Teslas_Secret_Robotaxi_Depots_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T20:06:05.862Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host's reasonable estimate: at least 1,000 robotaxis per major city at scale",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000,
+    "context": "Per-city fleet size estimate derived from depot infrastructure math; described as 'reasonable, not crazy'",
+    "source": "20260520_brighterwithherbert_02_Teslas_Secret_Robotaxi_Depots_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T20:06:05.862Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab production at Giga Texas currently reported at approximately 800 units per month (~200 per week)",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 9600,
+    "context": "Current Cybercab production rate cited as the binding constraint on fleet scaling; annualized to ~9,600 units/year at current pace",
+    "source": "20260520_brighterwithherbert_02_Teslas_Secret_Robotaxi_Depots_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T20:06:05.862Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Chandler, AZ private fleet charging depot: 56 V4 Supercharger stalls, designated private use only, on South Roosevelt Avenue",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Private fleet-only charging infrastructure; V4 stall cost estimated at low six figures installed, so 56 stalls = millions of dollars for one site alone",
+    "source": "20260520_brighterwithherbert_02_Teslas_Secret_Robotaxi_Depots_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T20:06:05.862Z",
+    "status": "pending"
+  },
+  {
+    "fact": "V4 Supercharger stall installation cost estimated at low six figures (i.e., ~$100,000+) per stall",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Host's cost estimate for fleet charging infrastructure buildout; 56 stalls in Chandler alone represents millions in charging capex before vehicles",
+    "source": "20260520_brighterwithherbert_02_Teslas_Secret_Robotaxi_Depots_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-20T20:06:05.862Z",
+    "status": "pending"
   }
 ]
