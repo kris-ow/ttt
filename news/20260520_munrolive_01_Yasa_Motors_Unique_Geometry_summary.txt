@@ -1,0 +1,25 @@
+Channel:     munrolive
+Title:       YASA Motors Unique Geometry
+Published:   2026-05-20 16:35 UTC
+Summarized:  2026-05-20 17:04:38 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01TM5m4PprWJNGEeTHPBxvR7
+Cost:        $0.00839 (2841 in / 551 out tokens)
+Categories:  Electric Vehicles
+────────────────────────────────────────────────────────────
+
+This video from Munro Live provides a detailed technical explanation of the unique geometry used in YASA Motors' axial flux motor stator design. The core thesis is that by skewing the stator teeth at a specific angle — rather than arranging them radially — YASA achieves a smoother, more sinusoidal magnetic flux transition, which eliminates torque ripple and noise. This is a deep-dive engineering segment focused on motor design principles.
+
+## Electric Vehicles
+
+1. **Stator Tooth Geometry and Skew Angle:** The stator teeth in the YASA motor are made of steel and feature a deliberately tilted (skewed) geometry rather than a purely radial arrangement. The presenter explains that this skew angle is the key design choice that differentiates this motor's performance characteristics from conventional designs.
+
+2. **Magnetic Flux Transition and Torque Ripple Elimination:** Because the stator teeth are skewed, the magnetic flux from one tooth begins transitioning to the next tooth smoothly — as one radial line leaves one tooth, it is simultaneously beginning to engage the next. This overlap ensures there is no gap in magnetic coverage as the rotor magnet passes from tooth to tooth. In a radial (non-skewed) arrangement, a gap would exist between teeth during that transition, causing torque ripple and audible noise.
+
+3. **Sinusoidal Back EMF and Smooth Torque Output:** The practical result of the skewed geometry is that the back EMF (electromotive force) produced by the stator becomes smooth and sinusoidal rather than stepped or irregular. A smooth, sinusoidal back EMF directly produces smooth torque output, which is the primary engineering benefit of this design approach.
+
+Notable quotes and data:
+- "If these were arranged radially, then you'd have a gap in between for as you go from one tooth to the next and that gap would produce torque ripple and noise."
+- "By skewing the angle of each tooth they get a smooth sinusoidal back EMF."
+- "The flux from the stator teeth becomes smooth and sinusoidal which produces smooth torque."
+- The magnets are described as having straight radial lines, while the stator teeth are skewed — creating the deliberate geometric mismatch that enables the smooth flux handoff.
