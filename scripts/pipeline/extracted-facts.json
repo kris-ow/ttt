@@ -7371,5 +7371,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-20T20:06:05.862Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD (Supervised) in the Netherlands: 9.32 million miles (15 million km) driven in 39 days since rollout, averaging ~239,000 miles/day",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 239000,
+    "context": "Daily mileage accumulation rate in a newly approved European market; useful as a proxy for FSD adoption pace in new geographies",
+    "source": "20260521_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-21T00:07:26.268Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla owners globally have driven nearly 10.5 billion miles on FSD (Supervised) as of May 20, 2026",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10500000000,
+    "context": "Cumulative FSD mileage milestone; key input for safety statistics and public trust narrative supporting robotaxi regulatory approvals",
+    "source": "20260521_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-21T00:07:26.268Z",
+    "status": "pending"
   }
 ]
