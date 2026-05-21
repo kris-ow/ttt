@@ -1,0 +1,592 @@
+Channel:     futureaza
+Title:       Battery Storage Solutions For AI Data Centers And Power Grids
+URL:         https://www.youtube.com/watch?v=dwYaCVed-K4
+Published:   2026-05-21 18:00 UTC
+Fetched:     2026-05-21 19:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla makes batteries. Yes, that's not a
+surprise. They've been making battery
+energy storage solutions for quite some
+time now using cells sourced from other
+manufacturers. And uh they still do that
+today. But a big chunk of the secret
+sauce that makes it so incredibly
+valuable is the software behind it. How
+come no one has copied it? Could it even
+be copied? Is there a way to understand
+what they're doing and try and figure it
+out in ways that can help other
+companies? It turns out there is uh our
+friends at uh Electric Era Charging in
+uh Washington State have been working on
+a solution just like that. We're going
+to get into it, find out what it is,
+what it does, and how I can steal it for
+myself. I'm Brian. Welcome to Futurasa.
+&gt;&gt; So, I'm here uh for very selfish, very
+greedy reasons. I'm going to uh
+effortlessly copy what you guys have
+spent years developing because that's
+how easy it is, I'm sure. So, you've got
+something new. Tell me what it is.
+&gt;&gt; Yeah, well, good to be here with you,
+Brian. And, uh, we're excited today to
+be announcing the COP power platform,
+which is our power capacity as a service
+offering for edge AI data centers that
+helps them unlock new behindthe-ter
+power capacity for their data centers.
+uh alleviating the grid in the process
+and ultimately saving a lot on
+electricity costs. Um this is a product
+that we've been building in stealth for
+about six to seven months and today
+we're announcing it to the public.
+&gt;&gt; Well, I know when I asked you guys maybe
+three months ago, is this is this
+something you're working on? You guys
+were like, uh, you know, who knows,
+right? Uh which could have gone either
+way, but here we are. So, this isn't a
+physical object per se. What does that
+mean? How does that work?
+&gt;&gt; Well, no. So, so ju just to be clear, it
+is it is a physical object. I uh I
+probably did a bad job describing this
+in the beginning. Um but let me share my
+screen real quick and I'll just show
+you. So at at a high level, you know,
+kind of what Electric Era, I would say
+at our DNA is really good at is using um
+really world-class software platform
+technology that we've developed to
+operate power infrastructure systems and
+and one examples of that is our EV fast
+charging stations. Many of your
+subscribers and viewers have probably
+used our EV fast charging stations and
+have come to discover it's a reliable
+experience with some advanced
+capabilities around energy management
+and our energy storage systems that we
+have on site. With that software system,
+we're able to pull together hardware
+assets that are brittle and fail and
+have a lot of unique behaviors and
+operate them in a very high reliable
+fashion that is delighting to drivers um
+and also uh in in this case delighting
+to the reliability requirements of data
+centers. So um we take that software, we
+pair it with uh some of our own
+proprietary hardware and a lot of
+thirdparty vendor hardware to build EV
+fast charging stations. And we're taking
+that same approach with the co-ower
+platform. Um, so we're we're using
+different battery providers, different
+larger power conversion system
+providers, different providers of uh
+medium voltage switch gear and
+transformers. We're rolling that whole
+hardware stack together with our uh
+software platform for power
+infrastructure that I just talked about
+in order to bring what is called behind
+the meter power capacity online for edge
+data centers. So you can see an example
+of that in the the photo here. This is a
+you know an edge data center with an
+array of roughly six energy storage
+systems. Those energy storage systems
+would have about five megawatt hours
+each and would each be able to discharge
+about 2 megawws. So call it uh you know
+30 megawatt hours and approximately what
+is that 12 megawatts of total power that
+we can feed into the data center to
+support intermittent and uh peak usage
+ultimately helping them alleviate the
+electrical grid which is a really big
+part of the reason we did this.
+&gt;&gt; Well then where does the power come
+from? This is uh the kind of really
+underappreciated and perhaps understood
+part of how energy storage systems work,
+which is they just charge up during
+periods of low usage when the grid is
+not at its worst case strain and then
+they discharge during periods of peak
+usage when the grid is under a lot of
+stress. Uh this is what's called load
+shifting. Um so imagine a you know
+morning time period where there's not a
+whole lot of activity on the electrical
+grid. Um those are periods where you can
+charge up the battery for much lower
+cost without impacting um you know
+energy prices. You ultimately store that
+energy until later in the day typically
+during 4 to 9 p.m. when electricity
+spikes. Um, and in doing so, you
+actually alleviate the power pressure on
+the grid during the peak times because
+you're shifting the load from the
+morning to the evening.
+&gt;&gt; So, what I'm looking at here is a
+reservoir and what you're selling is the
+dam that controls when the power comes
+out in and out of it, when the water
+goes in and out of the reservoir. Uh,
+because it doesn't rain in the summer in
+a lot of places. Uh but thanks to uh
+reservoirs that's not uh going to kill
+all the crops and the people because
+you're storing it uh for times when it's
+more scarce. So what you're so what
+you're saying is the you you know put in
+the batteries, no big deal. Get them
+from wherever
+&gt;&gt; and then your system smartly controls
+the the ins and outs.
+&gt;&gt; The ins and outs and the reliability of
+the power delivery. Um yeah, that that's
+right. and and doing this well is
+challenging because of what I mentioned
+earlier um around power infrastructure
+being brittle u and failing in a wide
+variety of modalities. Uh those the
+combination of those modalities also of
+which are unexpected and hard to uh
+navigate. So our system is able to kind
+of resiliently respond to that. Think of
+uh all of the things on site at a
+deployment like what you see on your
+screen. You have inverters, you have
+medium voltage switch gear, you have
+medium voltage transformers, you have
+the battery systems themselves, you have
+power meters, a whole array of telemetry
+systems that are gathering data. All of
+those are possible failure modalities.
+And with the kind of antiquated nature
+of a lot of power infrastructure, uh you
+ultimately see those systems fall out or
+not share data in the way that they're
+supposed to. The challenge for us as an
+operator of energy storage systems is
+using those systems in a manner that's
+reliable and that can uh you know
+deliver power to the data center or
+whatever end load you may have. You know
+again we do this for EV fast chargings
+every single day um in a very high
+reliable fashion so that the power is
+there when the user needs it. So, uh, is
+it because these kinds of installations,
+we're talking multimemegawatt
+installations, is it reasonable to say
+that customers can save a substantial
+amount of money right out of the gate?
+&gt;&gt; A shocking amount of money. Yeah. So,
+there's a a lot to unpack about how the
+utility prices electricity, but the two
+simple ideas are they charge you for the
+electricity itself, the the actual
+electrons. You know, imagine a single
+electron going into a single uh part of
+a battery inside your iPhone. That
+single electron has a cost. And then
+they charge you for the wires, all of
+the switch gear, the the the
+infrastructure itself. That's a separate
+cost structure. Both of those get rolled
+up into your energy bill. Um and if
+you're a data center, you're paying a
+lot for the infrastructure because it's
+so big. And so what we can do with this
+solution is we simply because we're
+moving power from point A to point B
+from the morning till the evening we're
+actually able to alleviate the cost of
+the power infrastructure in a really
+meaningful way and that's uh beneficial
+for everybody. Certainly data centers
+are under a lot of pressure to remove uh
+alleviate the strain that they place on
+the grid and and that's the price signal
+uh that helps them additionally save
+money and uh incentivize them to go and
+invest in solutions like the co-ower
+platform. So, what this means is as the
+grid adds more renewables, wind and
+solar, which are intermittent,
+this could be one of the many little
+reservoirs that hold that surplus as it
+comes in. Um, I'm not going to change my
+my electricity consumption habits by
+very much. I guess I could wait until
+nighttime to dry my clothes. Certainly,
+I could schedule my car to charge at
+night, but I really don't use that much
+juice. Uh, but with data centers, uh,
+the thirst is inquenchable, and you've
+got, uh, potentially a lot of storage.
+And if it is clear that in 3 hours, uh,
+the the power rates are going to be
+significantly lower, you could choose to
+discharge at a greater rate. Your
+software manages that.
+&gt;&gt; Yeah. programmatically and autonomously
+actually. And we're looking at a variety
+of other price signals um from the
+electrical grid every single day. And
+the software system actually
+autonomously decides how to interact
+with the grid in that day against those
+price signals in order to optimize the
+cost structure for the data center which
+ultimately is designed to alleviate
+pressure on the grid and drive down
+price prices for for all rateayers. So
+that's a really I think important part
+of the software systems that we've
+developed for our EV charging business
+that we actually deploy all across the
+country already. Um we're taking that
+same software and applying it to just a
+larger load um with bigger batteries. Uh
+so for us you know in designing this
+product we we started from kind of the
+first principles perspective of what do
+we have that is really good from a
+company competency perspective our
+software systems. What? And then we
+asked ourselves the questions, what do
+we need to do to uplevel our capability
+set uh for this new larger load
+customer? And that involved kind of just
+upsizing everything. Bigger batteries,
+bigger switch gear, bigger transformers.
+Um, and in doing those two things, we
+were able to kind of quickly stand this
+new product up in a very logical and
+streamlined fashion and have now been
+developing a large array of customer
+demand for that. Now, uh, for those who
+don't know, uh, Quincy's been on the
+show a number of times. Uh, Quincy and
+others at Electric Era are former SpaceX
+engineers. They worked on a variety of
+different uh different parts of the
+project. And what they really got out of
+it was the SpaceX speed, the the problem
+solving, and that's why when you've got
+a competency like that, you want to lean
+into it. Uh, so that's the background on
+on that. I realize that not everyone has
+seen every video we've done. We've done
+a few. Uh, another question I had for
+you about these data centers, uh, is
+there time of use for them in terms of
+their demand, not the cost of the power,
+but do they have more do they run full
+throttle 24/7 or are some data centers,
+you know, catering to the US where
+they're running higher loads during the
+day?
+&gt;&gt; Yeah, that's a fantastic question and
+the answer is that it depends. There's
+some nuance here. So, when you see uh
+the word data center, you think of, you
+know, a kind of one-sizefits-all
+building that does the exact same thing
+as every other data center. But the
+truth is that they're all doing
+different types of workloads. They all
+have different infrastructure. And the
+way that the data center industry has
+been built out over the last 20 years
+has been to try to optimize the cost of
+running all that infrastructure for all
+of the workloads that are requested by
+these data centers. Now I mention that
+because it is kind of a leadin to where
+we decided to focus. Electric Air is not
+focused on alleviating the cost problems
+for large super uh factories, AI
+superactories uh mainly because they are
+kind of running full boore all day long
+and you really need like an on-site
+generation system like solar or natural
+gas or a nuclear power plant to
+ultimately alleviate uh the grid
+pressure in the way that we talked
+about. And that's because it's running
+full boore all the time. there isn't
+much time of use arbitrage that you can
+do. But for us in our focus on edge data
+centers which are smaller facilities
+that process real time low latency
+workloads uh think of an AI call center
+or a kiosk taking your order or a uh
+Whimo assisted fleet that's having
+inference running locally uh to help it
+drive. All of those are time-sensitive
+and actually have some sort of dural
+shape to them uh that matches the human
+circadian rhythm and the human daily
+activity schedule. And as you know,
+people are not awake typically at night.
+They're typically asleep and and that
+alleviates a lot of pressure on the grid
+and on these edge data centers during
+those times of the day. We're taking
+advantage of that time of use workload
+activity and leveraging energy storage
+systems to do the load shifting that we
+talked about earlier. So our focus is on
+the edge and helping those data centers
+ultimately alleviate a lot of their cost
+structure and uh strain on the
+electricity grid.
+&gt;&gt; So what I think I hear you saying is I
+probably shouldn't get one
+&gt;&gt; for you personally.
+Uh you can all Yeah, if you if you're
+interested in buying one of these uh let
+us know and um probably not a good fit
+though. Yeah,
+&gt;&gt; probably probably not right for my use
+case.
+&gt;&gt; Although you have Yeah, you have a lot
+of uh you know a lot of views and you
+know there is viewership happening
+during certain times of day. That's a
+good example, right? You probably have a
+lot of views happening during certain
+times of day and then views that are not
+happening in other times of the day.
+That's the exact kind of uh peak demand
+offsets that we are taking advantage of
+on just a much much larger scale with
+much more aggregated demand. Uh it's all
+of that getting added together.
+&gt;&gt; Now uh one thing I've heard about is
+that electricity is not as smooth as you
+might think. Uh it doesn't it doesn't
+have a beautiful laminer flow like you
+would get out of a out of a well
+engineered bit of uh water, you know,
+systems. Um, when the power comes into
+my house, if it's a little ragged, a
+little bumpy, uh, nothing in my house
+really cares. Uh, you can put a
+universal power supply between your
+computer and your wall that will smooth
+it out a little. Um, but with data
+centers, that's more important. Uh, how
+important is that?
+&gt;&gt; It's very important. And actually, it's
+important in the opposite opposite
+perspective that you than what you might
+imagine. In fact, it's AI data centers
+that potentially in the because of the
+way that they're using energy
+um that ultimately can cause what's
+called uh kind of power rippling on the
+local electricity grid. So, just like
+your example on the water from earlier,
+um there are kind of parameters within
+electricity that can change over time.
+One of them is voltage. Uh voltage is
+kind of like the pressure in water.
+Imagine if you had water pressure going
+hot and then off and then on and then
+off and then on and then off like a fire
+hose.
+&gt;&gt; That would
+&gt;&gt; Yeah, that would be equivalent to uh the
+voltage in the power going up and down
+and up and down. And that's called
+voltage flicker. Uh, a voltage flicker
+can occur as a result of AI data centers
+training where they're turning on a GPU
+and then turning off a GPU and then
+turning on a GPU and turning off a GPU.
+They have so many synchronous GPUs all
+activating together at the same time
+that if you don't smooth out that power
+usage before the grid sees it, it can
+actually cause the same voltage flicker
+behavior on the whole electrical service
+territory. So battery systems can be
+used as filters, electricity filters
+that actually smooth out that power
+impact on the electricity grid. This is
+another major use case that batteries
+are helping with in order to solve some
+of these AI load use problems um and in
+a manner that ultimately benefits every
+rateayer.
+&gt;&gt; So it's not just it is better for the
+data center, but it's also better for
+the entire everyone up to the substation
+level. uh and potentially even beyond.
+Uh because of course it didn't occur to
+me, but yeah, if it's rough going in,
+it'd be rough uh on both sides of the
+meter.
+&gt;&gt; That's right.
+&gt;&gt; Now, uh what's the actionable part of
+this video? Do we do we tell people if
+you have a data center, check out
+electric.te?
+I think um
+yeah, I think I think um when this video
+goes live, we will have that web page
+that I brought up earlier um on our
+website. So, you can go to
+electricair.te and you will have two
+options now to select from. If you're
+interested in our EV fast charging
+products, you'll click on that option.
+And if you're interested in our data
+center solutions and technologies and
+what our team is building of Xbasics
+engineers in the data center sector,
+click on that option. Um so you know for
+us these are kind of intertwined and and
+um problems and and as a result these
+are intertwined technologies and we
+actually share a lot of our uh kind of
+secret sauce from our EV charging
+product into the data center product. So
+I think over time you know these two
+things will become further and further
+intertwined from a technical perspective
+and there'll be a lot of interesting
+announcements as a result of that.
+&gt;&gt; Anything I'm forgetting to ask?
+&gt;&gt; Um no but I I just will add that uh you
+know batteries are just absolutely
+paramount for us to solve the future of
+the grid. There's hyperinmcy
+for load generation with renewables.
+There's hyper intermittency with
+consumption of electricity uh with
+things like data centers. That means you
+have kind of two mismatching
+intermittent supply demand curves and
+you need a buffer, an electrical buffer,
+a reservoir to dampen that all out. Um
+we as a country have about a terowatt of
+grid capacity. Our average consumption
+on it at is about 500 gigawatts.
+Batteries help ultimately use more of
+the grid capacity, boosting the average
+higher to the peak. And it's a
+foundational technology that we're going
+to need a whole lot more of. And I
+expect, you know, this as an industry
+will cause us to deploy teratt hours of
+energy storage over the next uh you
+know, dozen or so years. This is going
+to be a major major shift in how the
+grid works and I'm super excited to be
+participating. How are battery prices
+doing at the wholesale level, sell
+prices?
+&gt;&gt; Yeah, that's a great question. Um, you
+know, I think folks that are interested
+in that should kind of keep an eye on
+the lithium spot market price. Uh, if
+you go to I'll just share my screen.
+This is a really interesting look for
+folks. So, there's a bunch of commodity
+inputs obviously in battery cells. Um,
+there's a lot that goes into that. Uh
+but at a high level um lithium is a
+major cost driver right and right around
+what was that 2022 november lithium
+spiked a massive amount and then it fell
+off a cliff and then it went up a little
+bit and then it fell off a cliff and now
+it's kind of stabilizing. Um so but but
+I would say stabilizing and going up in
+a more sustainable fashion. I would say
+this is a leading indicator for what the
+price is at the battery cell and battery
+pack level. As a result of the dynamics
+playing out here and the massive amount
+of manufacturing that's been stood up,
+battery prices have gone down
+materially. When I first started
+building batterybacked power
+infrastructure,
+battery pack prices was about 200 or
+more dollars per kilowatt hour. Today
+you can buy packs at 70 to90 uh dollars
+per kilowatt hour. It's a massive
+reduction in cost approximate
+approximate numbers there. But that's
+the level of decrease that we've seen
+over the intervening years.
+&gt;&gt; Wow. And that's at the pack level, not
+the cell level.
+&gt;&gt; Yeah. Uh the $70 per kilowatt hour
+figure is more of a cell level number. I
+would say at the pack level um you
+always want to add about I don't know
+probably 20 to 30% more cost. So packs
+are getting substantially cheaper as
+well. And overall the whole industry is
+declining in its cost curve.
+&gt;&gt; Mhm. And we are seeing a lot more a at
+least in this hemisphere uh factories
+being built. That's still moving forward
+reasonably well.
+&gt;&gt; Yeah. Um I can't announce yet. Uh but
+actually you know we will have this
+announced in the uh the news when it
+comes out. Uh we we have selected as our
+uh vendor um LG Energy. are of course
+open to talking to other vendors and
+like all the other solutions like the
+mega pack but LG Energy as an example
+does produce in America and I think
+that's really good right you know like
+as a country we we want to have a lot of
+highpaying manufacturing jobs for one
+and then for two it is useful to have
+that technology here in America in case
+there's things like the uh kind of the
+uh you know Ukraine war popup you know
+we we want to have resilient um supply
+chains as we kind of all learned during
+co
+&gt;&gt; I'm of the opinion that energy
+independence is national security
+it just and forget about any kind of
+political tensions which is impossible
+but just having a supply chain
+disruption having a shipping disruption
+uh having a pandemic we saw all kinds of
+supply lines that we thought were very
+secure uh absolutely crumble uh under
+just the least amount of pressure. Uh so
+guys, uh in the comments, what did we
+miss? What do we misunderstand? Leave
+it. Leave it. I beg of you. Uh bunch of
+other great videos on the channel with
+Electric Eura Tech. You can uh look them
+up. You can just search them. Uh who
+knows? Maybe we'll put some in the
+description. Probably not. I don't know.
+Everybody else, you know, uh, like,
+subscribe, do what you do, and stay
+tuned, stay juicy, and I cannot wait to
+hear from you, clever robots, when next
+we
