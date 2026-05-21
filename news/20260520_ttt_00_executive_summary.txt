@@ -1,0 +1,94 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-20)
+Published:   2026-05-20 00:00 UTC
+Summarized:  2026-05-21 04:44:44 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.08859 (15354 in / 2835 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | 0 | +15 |
+| Houston | 6 | 0 | 0 | +4 |
+| Dallas | 5 | 0 | 0 | +3 |
+| **Total** | **39** | 0 | 0 | +22 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD launches in Lithuania; Greece and Ireland actively pursuing approval.
+- Chicago Robotaxi sightings confirmed — new city added to deployment map.
+- Tesla permit reveals Dallas 35,049 sq ft depot: 212 fleet parking spots, 24/7 ops.
+- Cybercab production: ~800 units/month; Las Vegas "Phase 2 Car Wash" permit filed.
+- California subsidy program: 1,200+ Tesla Semi applications, ~$350M potential revenue.
+- FSD 14.3 reportedly eliminated driver attention nag in testing.
+
+## Autonomous Driving
+
+- **Lithuania becomes second European FSD country.** Lithuania's Transport Safety Administration approved FSD (Supervised) via mutual recognition of the Dutch RDW certification — bypassing independent testing. The Netherlands was the first approval, on April 10, 2026, following 18+ months of RDW evaluation under UN Regulation 171 (EU Level 2 standard).
+
+- **Greece and Ireland advancing.** Greece's transport ministry announced a forthcoming bill granting the same type approval as the Dutch certification, which would make it the third European country. Ireland confirmed Tesla is actively engaging with national authorities including the NSAI.
+
+- **EU-wide approval faces meaningful obstacles.** The Dutch RDW is pursuing bloc-wide recognition through the European Commission's TCMV, but Sweden, Finland, Denmark, and Norway have raised objections over speed limit compliance and icy-road performance. Approval requires 55% of member states representing 65% of EU population; the next TCMV meetings are July and October 2026, putting Tesla's summer 2026 EU-wide target in doubt. Electrek estimates roughly half a dozen European countries could have FSD by fall 2026 even without bloc-wide approval.
+
+- **FSD 14.3 approaching unsupervised behavior in practice.** The 14.3 update reportedly reduced or eliminated the driver attention nag — tester Jeff reportedly could not trigger it. A parking garage looping bug was separately resolved in version 14.3.3, with tester Omar confirming successful rerouting.
+
+- **Li Auto's autonomous driving head called FSD the industry benchmark.** He stated the gap between Tesla and Chinese competitors is "still enormous" and that Chinese rivals only dare claim parity because FSD has not yet fully entered China — adding that once it does, "it'll be completely exposed." Li Auto's own team is described as still aiming to reach Tesla's level.
+
+- **Tesla China FSD hiring signals Q2–Q3 approval window.** Tesla is recruiting autonomous driving test technicians across nine Chinese cities — including Shanghai, Beijing, Shenzhen, Wuhan, Chengdu, and Chongqing — and urgently hiring data labelers and three FSD testing/validation specialists. Jo Bhakdi interpreted this as consistent with a Q2 or Q3 2026 approval window; Tesla's CFO has previously stated hope for Q3.
+
+## Robotaxi
+
+- **Chicago emerges as new Robotaxi city.** A fleet of unbadged Model Y robotaxis was spotted in Chicago's Avondale area, where Tesla has reportedly been based since late March. Two Cybercabs were also spotted, covering interstate, downtown, and side streets. A multi-vehicle fleet including ultra red and black variants was staged in a Chicago parking lot.
+
+- **Dallas depot permit confirmed: 35,049 sq ft, 212 fleet parking spaces, 24/7 ops.** City documents from Irving, TX — surfaced May 16 by Spencer (Scots Rule08) — describe the facility as for "storage, dispatch, service, and repair of an autonomous vehicle fleet." The site spans approximately 24 acres with 17 EV charging stations, provisions for cleaning and tire service, and round-the-clock maintenance. Approval is still pending.
+
+- **Las Vegas "Cybercab Phase 2 Car Wash" permit filed May 12.** The Clark County filing at 6170 Mohawk Street lists the project as "Tesla Center Cybercab Phase 2 Car Wash" — the Phase 2 designation implying a deliberate multi-phase scaling plan. The ~36,000 sq ft facility is approximately 15–20 minutes from the Strip. Herbert notes the Cybercab's driverless design makes automated cleaning a safety-critical prerequisite given Tesla's camera-dependent FSD system.
+
+- **Arizona private charging depots filed simultaneously.** Tesla submitted plans for 56 V4 Supercharger stalls in Chandler (South Roosevelt Ave) and a second site in Mesa (East Main St), both designated "private use only" — fleet infrastructure, not customer-facing. Stall count for Mesa not yet disclosed.
+
+- **Infrastructure math implies 700–1,400+ cars per metro at scale.** The Dallas depot's 212 idle parking spots, at a standard 15–30% idle fraction, implies 700 to over 1,400 cars in active service in that single market. Herbert frames the current constraint as production, not infrastructure: Cybercab output at Giga Texas is approximately 800 units/month (~200/week), and the depot buildout is explicitly running ahead of the fleet ramp.
+
+- **Capital commitment estimated in the hundreds of millions.** Herbert estimates a single purpose-built depot runs $150–$300/sq ft in construction costs alone; a V4 Supercharger stall runs "low six figures installed," putting 56 Chandler stalls at millions just in chargers. Across 33–38 cities with active operator job postings, total dedicated robotaxi infrastructure spend is estimated at hundreds of millions before counting vehicles.
+
+- **NHTSA safety record: 17 incidents, 7 attributed to Tesla.** Herbert cited the latest NHTSA data covering Tesla robotaxi incidents since June 2025: 17 total incidents, with 7 determined to be Tesla's fault — several from curb rashes, a couple from human teleoperator error. Herbert characterized this as evidence the safety dimension has "largely been resolved."
+
+- **Year-end fleet projections: 10,000–20,000 robotaxis.** Bhakdi projects a minimum of 10,000 Cybercabs produced by year-end 2026, with commercially operating robotaxis in the 10,000–20,000 range. Herbert's projection is 15,000 robotaxis across 30+ cities, with many cities reaching ~1,000 cars each. Bhakdi also expects Cybercab production run rate to hit thousands per month within approximately three months.
+
+## Electric Vehicles
+
+- **Tesla Semi: 1,200+ California subsidy applications, ~$350M in potential revenue.** California trucking firms have applied for state incentives to purchase more than 1,200 Tesla Semis — more applications than all other electric truck manufacturers combined since the program launched in 2019, per Sawyer Merritt. The NYT separately described the Semi as a "much-needed hit" with potential to disrupt traditional truck manufacturing.
+
+- **California announced $1 billion in electric truck rebates.** Oregon, Washington, New Jersey, and New York also have or are expected to have EV truck rebate programs. Tesla already has $350 million in Semi orders on the books per The Tesla Life/FutureAzA.
+
+- **Tesla Semi listed on European websites; 2027 launch at earliest.** The listing shows the standard range trim only: 550 km range, 1 kWh/km consumption, 40 tons GCW, three independent motors, MCS 3.2 charging. The standard range variant complies with European truck dimension regulations, and European heavy-truck charging infrastructure is described as more advanced than North America's.
+
+- **Canadian Model 3 acceleration spec revised a second time — now 6.2s.** Tesla launched the Shanghai-built Model 3 Premium RWD in Canada on May 1 at $39,490 CAD (~$29,000 USD) with a stated 4.2s 0-100 km/h spec. Within 48 hours it was revised to 5.2s; around May 19 it was revised again to 6.2s — matching European specs for the same LFP/3D7-motor variant. The 3D7 motor produces 194 kW and 340 Nm versus the prior Fremont-built model's 220 kW and 440 Nm. Electrek notes BYD is preparing to open 20 dealerships in Canada, framing the spec errors as a reputational liability at a critical competitive moment.
+
+## Market & Competition
+
+- **CATL Shenxing 3 charges 10–80% in 3 minutes 44 seconds at 15C.** Key enablers are an optimized SEI that doubles lithium-ion transmission and a graphite pillar modification that widens layer spacing under charge. Cell resistance is ~0.25 milliohms — roughly half a comparable LFP cell — with 90% capacity retention after 1,000 fast-charge cycles (~500,000+ miles). The Limiting Factor's Jordan Gizigy flags that CATL's 500 Wh/kg condensed matter claim applies only to the aviation variant; the automotive version achieves 350 Wh/kg, which is closer to existing liquid-electrolyte benchmarks (Panasonic 2170: 271 Wh/kg; Chinese 4680s: ~302 Wh/kg).
+
+- **CATL sodium-ion mass production delayed to Q4 2026.** CATL confirmed it has not yet mass-produced sodium-ion batteries; Naxtra production is planned for Q4 2026 after resolving cathode moisture-reactivity challenges. The widely anticipated self-forming sodium metal anode is not in the current Naxtra — it uses a conventional hard-carbon anode. A 60 GWh supply deal with Hyper Strong (~20 GWh/year through 2029) represents only ~2% of CATL's approaching 1 TWh/year output.
+
+- **Wave AI CEO: fewer than 10,000 robotaxis exist globally; only 15% of new cars have ADAS.** Alex Kendall framed the current market as early innings, predicting that within five years, automakers selling cars without self-driving will see demand "fall off a cliff."
+
+Notable quotes and data:
+- Li Auto AV head: *"The only reason they dare say [they've surpassed Tesla] is because Tesla FSD hasn't fully entered the Chinese market yet. Once it truly rolls out, it'll be completely exposed."*
+- Elon Musk: *"Probably 90% of all distance driven will be driven by the AI in a self-driving car"* within 10 years.
+- Alex Kendall (Wave AI CEO): *"In 5 years, if you're a manufacturer selling a car that doesn't have this, I think your demand is really going to fall off a cliff."*
+- CATL: *"For EVs priced above about 250,000 yuan, choosing LFP is a disguised downgrade."* (~$37,000 USD)
+- Irving, TX filing language: *"storage, dispatch, service, and repair of an autonomous vehicle fleet"*
+- Cybercab production: ~800 units/month (~200/week) at Giga Texas — current fleet scaling bottleneck
+- Dallas depot: 35,049 sq ft, 212 fleet parking spaces, 17 EV chargers, 24/7 maintenance, ~24 acres
+- Las Vegas permit filed May 12: "Tesla Center Cybercab Phase 2 Car Wash," ~36,000 sq ft
+- Chandler, AZ: 56 V4 Supercharger stalls, private use only
+- EU-wide FSD vote: next TCMV meetings July and October 2026; threshold is 55% of states + 65% of population
+- Tesla Semi: 1,200+ California subsidy applications; ~$350M potential revenue; $350M in orders already on books
+- CATL Shenxing 3: ~0.25 milliohm cell resistance; 1,000-cycle life at 90% capacity; 500,000+ mile estimate
