@@ -7491,5 +7491,65 @@
     "channel": "theteslaspace",
     "extractedAt": "2026-05-21T20:03:04.240Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cern Basher predicts 10,000+ robotaxis operational by end of 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 10000,
+    "context": "Year-end 2026 fleet size target cited by Cern Basher and corroborated by Jo Bhakdi and a third commentator referred to as 'Herbert'; represents the bull-case switch-flip deployment scenario",
+    "source": "20260521_jobhakdi_01_Will_Tesla_Robotaxi_Scale_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-21T21:04:03.506Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet stands at 39 vehicles as of 2026-05-09 per RobotaxiTracker.com (Austin 28, Dallas 5, Houston 6)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Current baseline for unsupervised driverless operations; used in the discussion as the starting point from which scaling must occur",
+    "source": "20260521_jobhakdi_01_Will_Tesla_Robotaxi_Scale_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-21T21:04:03.506Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet (all modes, including supervised) is 690 vehicles as of 2026-05-21 per RobotaxiTracker.com (Bay Area 573, Austin 104, Dallas 6, Houston 7)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 690,
+    "context": "Total operational fleet across all supervision modes; Bay Area dominates with 573 vehicles",
+    "source": "20260521_jobhakdi_01_Will_Tesla_Robotaxi_Scale_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-21T21:04:03.506Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi projects Cybercab production reaching approximately 1,000 units per month within the next 2 months (by ~July 2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 12000,
+    "context": "Implied annualized production rate of ~12,000/year if 1,000/month is achieved; used as a forcing function argument for near-term deployment",
+    "source": "20260521_jobhakdi_01_Will_Tesla_Robotaxi_Scale_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-21T21:04:03.506Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi's internal cash flow model identifies approximately 1,800–2,000 unsupervised robotaxis as the threshold for operational scalability and positive cash flow signal",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1800,
+    "context": "Jo Bhakdi's model-derived threshold where robotaxi economics become self-sustaining; also cited as a key operational validation milestone",
+    "source": "20260521_jobhakdi_01_Will_Tesla_Robotaxi_Scale_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-21T21:04:03.506Z",
+    "status": "pending"
   }
 ]
