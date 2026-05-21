@@ -7551,5 +7551,53 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-21T21:04:03.506Z",
     "status": "pending"
+  },
+  {
+    "fact": "First orbital compute satellites are designed around 100-kilowatt compute capacity, equivalent to approximately 250 chips at 400 watts each",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Describes the per-satellite compute unit design; relevant to modeling orbital data center build-out economics, though not a direct robotaxi DCF input",
+    "source": "20260521_cernbasher_01_Math_Behind_Elons_Trilliondollar_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-21T22:05:03.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Starlink satellite lifespan is approximately 4–5 years",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": 4.5,
+    "context": "Referenced as proxy for orbital compute satellite useful life; relevant to depreciation and replacement cadence in orbital data center economics",
+    "source": "20260521_cernbasher_01_Math_Behind_Elons_Trilliondollar_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-21T22:05:03.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cern Basher states that deploying 1 million Cybercabs would make producing 100,000 Model Ys largely irrelevant from a capital allocation standpoint",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000000,
+    "context": "Illustrative target fleet size used to argue Tesla's strategic pivot away from traditional vehicle production",
+    "source": "20260521_cernbasher_01_Math_Behind_Elons_Trilliondollar_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-21T22:05:03.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi call center scaling target: grow from 100 staff for 1,000 cars to approximately 300 staff for 1 million cars (non-linear scaling goal)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": 3333,
+    "context": "Hosts describe Tesla's operational efficiency target as roughly 1 operator per ~3,333 vehicles at scale, versus 1 per 10 at small scale; critical unit economics input",
+    "source": "20260521_cernbasher_01_Math_Behind_Elons_Trilliondollar_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-21T22:05:03.061Z",
+    "status": "pending"
   }
 ]
