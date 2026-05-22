@@ -7743,5 +7743,29 @@
     "channel": "electrek",
     "extractedAt": "2026-05-22T16:03:40.819Z",
     "status": "pending"
+  },
+  {
+    "fact": "Xpeng GX robotaxi retail price is $28,000 for a six-seater SUV",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 28000,
+    "context": "Competitive benchmark: Xpeng's robotaxi-capable SUV costs $28,000 retail — less than Waymo's estimated $30,000–$50,000 sensor upfit alone. Brian White estimates a Cybercab-sized Xpeng equivalent could be built for under $12,000.",
+    "source": "20260522_brighterwithherbert_02_Tesla_Finally_Has_Real_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T19:02:32.591Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Brian White estimates a Cybercab-sized vehicle built by Xpeng would cost under $12,000 to manufacture",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 12000,
+    "context": "Competitive floor estimate for small purpose-built robotaxi unit cost; relevant as a benchmark against Tesla Cybercab production cost assumptions.",
+    "source": "20260522_brighterwithherbert_02_Tesla_Finally_Has_Real_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T19:02:32.591Z",
+    "status": "pending"
   }
 ]
