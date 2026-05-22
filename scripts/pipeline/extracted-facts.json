@@ -7767,5 +7767,77 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-22T19:02:32.591Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab certified at 165 Wh per mile — most efficient EV ever tested, approximately 40% more efficient than the Model 3",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Direct energy consumption figure for Cybercab; critical input for per-mile operating cost in robotaxi DCF model. Lead engineer states this is 'only the starting point,' implying further improvement expected.",
+    "source": "20260522_electrified_01_Something_Big_Happening_At_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-22T21:03:36.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab efficiency equals 16.5 kWh per 100 miles, or over 6 miles per kWh",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Alternative expression of the same 165 Wh/mile figure, confirmed at Model S/X signature event by Lars.",
+    "source": "20260522_electrified_01_Something_Big_Happening_At_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-22T21:03:36.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dillon's personal target: ~30 Cybercabs in Austin by end of August 2026, ~10 each in Houston and Dallas",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 50,
+    "context": "Commentator's near-term aspirational fleet size estimate across three Texas cities; not a Tesla official figure. Underscores expectation that Cybercab scale-up will be slow in 2026.",
+    "source": "20260522_electrified_01_Something_Big_Happening_At_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-22T21:03:36.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Belgium FSD testing: over 2,000 km completed out of a required 5,000 km threshold; three Tesla vehicles currently in use for testing",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Regulatory milestone tracking for European FSD expansion; completion of the 5,000 km threshold is a prerequisite for potential Belgian approval.",
+    "source": "20260522_electrified_01_Something_Big_Happening_At_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-22T21:03:36.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Anthropic/SpaceX Colossus 1 compute deal: valued at approximately $15 billion per year (vs. prior expectations of ~$6 billion/year), contract runs through 2029; all of Colossus 1 dedicated to Anthropic",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 1,
+    "context": "Near-100% utilization of Colossus 1 under single-tenant Anthropic contract; significantly better economics than multi-tenant cloud model (~70% utilization for AWS); materially changes SpaceX profitability trajectory.",
+    "source": "20260522_electrified_01_Something_Big_Happening_At_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-22T21:03:36.085Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Lucid Air Pure efficiency: approximately 230 Wh per mile (second most efficient EV after Cybercab's 165 Wh/mile); Model 3 approximately 240 Wh per mile",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Competitive benchmarking confirms Cybercab's substantial efficiency advantage over all other EVs; lower energy cost per mile directly improves robotaxi unit economics vs. any competitor vehicle.",
+    "source": "20260522_electrified_01_Something_Big_Happening_At_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-22T21:03:36.085Z",
+    "status": "pending"
   }
 ]
