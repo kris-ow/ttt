@@ -7635,5 +7635,65 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-05-22T00:02:57.288Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla robotaxi is 1.81x safer than human drivers as of April 2026, per analysis of NHTSA incident data including curb rash events",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 1.81,
+    "context": "Safety multiplier vs. human baseline derived from 17 NHTSA-reported incidents since Austin launch in June 2025; panelists note this is understated because curb rash events are reportable for robotaxis but not human drivers",
+    "source": "20260522_brighterwithherbert_01_Three_Huge_Events_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T14:03:35.805Z",
+    "status": "pending"
+  },
+  {
+    "fact": "17 total NHTSA-reported robotaxi incidents since Austin launch in June 2025; approximately 7 attributed to Tesla fault",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 17,
+    "context": "53% of incidents classified as other-party fault, 41% as Tesla fault; all incidents occurred at approximately 4 mph or less — relevant to safety record underpinning regulatory expansion and fleet scaling",
+    "source": "20260522_brighterwithherbert_01_Three_Huge_Events_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T14:03:35.805Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet: 39 vehicles as of 2026-05-09 per RobotaxiTracker.com — Austin 28, Dallas 5, Houston 6",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Driverless-only subset of the total active fleet; fleet count has plateaued after a recent rapid increase from ~2 to ~40, with panelists attributing the pause to software quality gating",
+    "source": "20260522_brighterwithherbert_01_Three_Huge_Events_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T14:03:35.805Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet (all modes): 691 as of 2026-05-22 per RobotaxiTracker.com — Bay Area 574, Austin 104, Dallas 6, Houston 7",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 691,
+    "context": "Total operational fleet across all supervised and unsupervised modes; city-level breakdown shows Bay Area as dominant deployment by volume",
+    "source": "20260522_brighterwithherbert_01_Three_Huge_Events_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T14:03:35.805Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas–Fort Worth robotaxi depot: 212 remote fleet parking spaces, 64 building spaces, 17 EV charging stations, 24/7 operations",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Infrastructure build-out for fleet storage, service, and repair in Irving, Texas; represents early evidence of Tesla's capex commitment to robotaxi infrastructure scaling beyond Austin",
+    "source": "20260522_brighterwithherbert_01_Three_Huge_Events_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-22T14:03:35.805Z",
+    "status": "pending"
   }
 ]
