@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-21)
 Published:   2026-05-21 00:00 UTC
-Summarized:  2026-05-22 06:59:09 UTC
+Summarized:  2026-05-22 10:29:45 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.11748 (20730 in / 3686 out tokens)
+Cost:        $0.10880 (20730 in / 3107 out tokens)
 Sources:     10
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,81 +22,82 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- FSD Supervised approved in Lithuania; Europe subscription-only model starts today
-- FSD 14.3.3 out; Cern Basher predicts 10,000+ robotaxis by year-end 2026
-- Cybercab production ramping; steering wheel removal flagged as key deployment signal
-- SpaceX S-1: Terafab and Macrohard explicitly "very early stages" with no binding terms
-- Tesla Semi: 1,200 California subsidy applications filed — more than all rivals combined
-- Tesla solar gigafactory: $250M capex, 100 GW annual target, near Houston TX
+- FSD Supervised approved in Lithuania; Europe subscription-only shift begins today.
+- Cybercab spotted in Dallas first time; Houston unit now plated.
+- Cern Basher: 10,000+ robotaxis in service by end of 2026.
+- SpaceX S-1: Terafab and Macrohard both "very early stages," no binding terms.
+- Tesla solar gigafactory near Houston: $250M capex, 100 GW annual target.
+- FSD 14.3.3 shipping; Actually Smart Summon speed raised to 8 mph.
 
 ## Autonomous Driving
 
-- **Lithuania approved FSD Supervised on May 20, 2026**, making it the second European country after the Netherlands (approved April 11). Lithuania's Ministry of Transport stated: *"These technologies can already make a real contribution to safer and more comfortable driving. Our task is to ensure that regulation does not lag behind technological developments."*
-- **Tesla is ending one-time FSD purchases across Europe effective today, May 21**, shifting to subscription-only. Netherlands FSD Supervised has already accumulated 9.32 million miles across 39 days (~239,000 miles/day). Global cumulative FSD miles have now crossed 10.5 billion.
-- **Greece expects to be next**, with its Secretary General of Transport announcing intent to accept the Netherlands' type approval outright without waiting for an EU-wide vote. The hosts at brighterwithherbert expect Greece's approval in June 2026.
-- **Ireland FSD approval is actively underway**, per Brian White (FutureAzA). Tesla is proactively reaching out to individual EU member states with test vehicles and data rather than waiting for EU-wide action, suggesting more approvals are imminent.
-- **China FSD hiring is surging**, with urgent job listings for data labelers and local supervisors. Tesla's China data center has been operational for roughly two to three months. Broader China FSD approval is speculated for Q3 2026.
-- **FSD 14.3.3 is out** and described by Cern Basher as a meaningful improvement over 14.3.2. He believes the software will reach sufficient "convenience" quality — covering pickup/drop-off polish and parking lot edge cases — within one to two months, without waiting for a version 15 release. The robotaxi fleet is presumed to run one development build ahead of what consumer FSD owners receive.
-- **Actually Smart Summon maximum speed raised to 8 mph in FSD 14.3**, approximately 33% faster than the prior limit, per The Tesla Space. Tesla AI confirmed the change.
+- **Lithuania approves FSD Supervised; Tesla ends one-time FSD purchases in Europe.** Lithuania became the second EU country to approve FSD Supervised on May 20, activating the feature there 39 days after the Netherlands. Simultaneously, Tesla terminated one-time FSD purchases across Europe effective May 21, shifting to subscription-only monetization. Netherlands FSD usage has already reached 9.32 million miles across 39 days (~239,000 miles/day).
+
+- **Greece expects June approval; Ireland actively in process.** Greece's Secretary General of Transport stated Greece will accept the Netherlands' type approval outright, without waiting for an EU-wide vote, citing North American safety data showing "a very significant reduction in accidents." Ireland's approval process is actively underway. Per brighterwithherbert/Brian White, Tesla is proactively offering test vehicles and data to individual EU member states to accelerate national approvals.
+
+- **China FSD approval targeted for Q3 2026.** An urgent wave of FSD-related data labeler and supervisor job listings in China signals an accelerating local program. Tesla's China data center has been operational for roughly two to three months. Hosts assess broader China FSD approval is more likely Q3 2026 than sooner.
+
+- **FSD 14.3.3 described as a meaningful step; software leads robotaxi builds.** Per the Bhakdi/Cern Basher discussion, version 14.3.3 is a notable improvement over 14.3.2. Cern notes the software running on robotaxi vehicles is presumed to be one development build ahead of consumer FSD. Elon Musk is cited as having said safety for robotaxi operation is solved; remaining work is "convenience" — pickup/drop-off polish, parking lot behavior, passenger comfort edge cases. Cern believes sufficient convenience quality will be reached within one to two months without requiring a version 15 release.
+
+- **Actually Smart Summon max speed raised to 8 mph in FSD 14.3.** Tesla AI confirmed the ~33% speed increase. Per The Tesla Space, this makes the feature more practically usable in real parking lot conditions, which remain among the most complex low-speed autonomous environments.
 
 ## Robotaxi
 
-- **"Switch flip" deployment theory:** Cern Basher argues Tesla is deliberately accumulating software, production, and regulatory readiness for a large simultaneous deployment — not a linear month-by-month ramp. Cybercabs have been spotted testing in states without favorable robotaxi legislation, including Alaska, suggesting preparation for broad national rollout rather than incremental city expansion.
-- **Cybercab production as the primary timing signal:** Cern estimates hundreds of Cybercabs have been manufactured within the first month of production and projects output could reach thousands per month within three months. Jo Bhakdi states conviction that Cybercab manufacturing will reach ~1,000 units/month within two months. Both hosts agree Tesla would not sustain a production ramp of that scale without near-term deployment — the capital cost of parking finished vehicles indefinitely would be contrary to Tesla's operational discipline.
-- **Steering wheel removal identified as a near-certain deployment trigger:** Once Tesla stops manufacturing Cybercabs with steering wheels entirely, Cern views that as a strong signal that commercial driverless deployment is imminent. Current validation vehicles use interim steering wheels for testing.
-- **A production Cybercab in Houston has received a license plate** — interpreted by Brian White (brighterwithherbert) as a strong indicator of imminent operational use, since vehicles are not plated until close to deployment. A Cybercab was also spotted entering a service center in Dallas for the first time, and a separate unit was filmed charging at an Austin Supercharger with a Tesla employee present.
-- **New robotaxi maintenance hub permitted in Las Vegas**: ~35,000 sq ft, 17 DC fast chargers, 200+ parking spots. A similar facility exists in Dallas. The hosts estimate a 200-spot hub can support roughly 1,000 active vehicles in service, assuming ~20% of the fleet is off-road at any given time.
-- **Year-end 2026 target of 10,000+ robotaxis** is shared by Cern Basher, Jo Bhakdi, and Herbert. Cern assigns higher probability to Q4 for crossing 1,000 unsupervised vehicles, while Jo leans toward Q3 as the inflection point. Both agree that once 1,000 unsupervised units are operational, the jump to 10,000 would be primarily production-constrained, not software- or regulation-constrained.
-- **Cities expected to see some form of robotaxi rollout before year-end 2026**, per Cern: Miami, Tampa, Orlando, Las Vegas, and Phoenix, in addition to existing Texas markets. Initial deployments in new cities may start with only five or six vehicles, potentially still supervised.
-- **Infrastructure as a potential gating factor:** Whether Tesla requires dedicated cleaning and servicing hubs before scaling in each new city is an open question that could pace geographic expansion.
+- **Cybercab in Dallas for the first time; Houston unit carries a license plate.** A Cybercab was observed entering a service center in Dallas — the first public sighting in that city. Separately, a production Cybercab at the Houston robotaxi hub was photographed with a license plate. Per Brian White (brighterwithherbert), vehicles are not plated unless deployment is imminent.
+
+- **"Switch flip" thesis: Cern Basher targets 10,000+ robotaxis by year-end 2026.** Cern argues Tesla is accumulating simultaneous readiness across software, production, and regulatory positioning for a large-scale deployment event rather than a smooth linear ramp. He projects Cybercab output could reach thousands per month within three months, reasons Tesla would not sustain a production ramp while parking units indefinitely, and expects a sudden jump from hundreds to tens of thousands. Jo Bhakdi sees Q3 as the more likely inflection point for reaching ~1,000 unsupervised units; Cern assigns higher probability to Q4 for that milestone, but both converge on 10,000+ in service by year-end.
+
+- **Steering wheel removal identified as the clearest near-term deployment signal.** Cern Basher: once Tesla stops manufacturing Cybercabs with steering wheels, driverless commercial deployment is near-certain and imminent.
+
+- **Robotaxi hub permitted in Las Vegas: ~35,000 sq ft, 17 DC chargers, 200+ parking spots.** Per Brian White, a similar facility exists in Dallas. Host estimate: a 200-spot hub can support roughly 1,000 active vehicles in service. The hosts raise the open question of whether dedicated hub infrastructure must be operational in each city before Tesla is comfortable scaling there.
+
+- **Cities targeted for pre-year-end 2026 rollout: Miami, Tampa, Orlando, Las Vegas, Phoenix.** Per Bhakdi/Cern, initial deployments in new cities may begin with only five to six vehicles, potentially still supervised.
+
+- **Institutional investor threshold: 1,000 unsupervised robotaxis.** Jo Bhakdi frames triple-digit unsupervised counts as beginning to generate stock reactions, with 1,000+ making it "irrational for large capital to remain underweight Tesla." Cern raises the possibility of a 10–20% single-day stock surge driven by institutional positioning ahead of a public deployment announcement.
 
 ## Humanoid Bots
 
-- **Optimus chip supply was the catalyst for Terafab:** Per Phil Beisel (via cernbasher), conversations with Samsung's Taylor, Texas fab revealed it could only satisfy roughly half a year of the first three years of Optimus production chip requirements — an inability to secure external supply that directly triggered the decision to build Terafab in-house.
-- **Terafab and Macrohard have no binding terms per SpaceX S-1:** The filing describes both projects as "in the very early stages," with no financial terms, IP rights, milestones, or capex commitments finalized. The S-1 explicitly warns: *"Neither Tesla nor Intel are obligated to remain a part of the project, and we may not enter into any such definitive agreements."* This is a material disclosure contra the March 2026 announcement framing of a $25 billion committed facility.
+- **Terafab origin tied directly to Optimus chip supply failure.** Per the Cern Basher/Phil Beisel discussion, Elon approached both Samsung (Taylor, Texas fab) and TSMC about chip supply for Optimus and found Samsung's facility could satisfy only roughly half a year of the first three years of Optimus production plans. The inability to secure sufficient external supply is identified as the key catalyst for Elon deciding to build Terafab internally.
+
+- **SpaceX S-1 confirms Terafab is "very early stages" with no binding commitments.** The S-1 filing describes only "a general framework for future development," with all specific projects, timelines, milestones, and capex subject to separate future negotiations. The filing explicitly states "neither Tesla nor Intel are obligated to remain a part of the project." The same language applies to Macrohard, the joint agentic AI platform. Electrek's Lambert frames the announcements as narrative-building ahead of the IPO.
 
 ## Energy
 
-- **Tesla solar gigafactory sited in Bastrop County, Texas**, co-located with the Megapack gigafactory already under construction. The facility covers the full manufacturing stack: ingot growth, wafer slicing, cell production, and panel assembly. Tesla has earmarked $250 million in capex. Target: 100 GW of annual manufacturing capacity — nearly six times First Solar's 2027 projection of 17.7 GW, and roughly three times total US solar installations in all of 2023 (~32 GW).
-- **Tesla's lithium refinery in Corpus Christi is under ongoing investigation** after a drainage district discovered an unrecognized pipe discharging ~231,000 gallons of black wastewater per day. A February investigation found no heavy metals and no permit violations; independent testing found only trace hexavalent chromium (just above detection limits) and arsenic below drinking water standards. Tesla is currently in compliance with its permits, though monitoring for lithium itself was not required. The proposed solution is a filtration plant; no lawsuit has been filed.
-- **AI data center demand is causing severe transformer shortages**, per a Siemens employee post discussed by FutureAzA. Order sizes have grown from 20–30 MW to 200–500 MW. Margins have jumped from 4–6% to 20–23% (in some cases 40%). Large power transformer lead times have stretched from ~2.5 years to 3–5 years, with some equipment at 5–6 year backlogs. Approximately 50% of planned 2026 US data centers are reportedly facing delays or cancellations. The hosts attribute the prediction sequence — chips, then transformers, then energy as sequential binding constraints — to Elon Musk.
+- **Tesla solar gigafactory sited in Bastrop County, Texas; $250M capex, 100 GW annual target.** The facility is co-located with Tesla's Megapack gigafactory already under construction and will integrate the full stack: ingot growth, wafer slicing, cell production, and panel assembly. For context, First Solar projects 17.7 GW by 2027; total US solar installations in all of 2023 were ~32 GW. Brian White notes $250M is highly capital-efficient at this scale, with Tesla's captive demand (Superchargers, Megapack, AI data centers, residential) providing a structural customer base and domestic manufacturing eliminating tariff and shipping costs.
+
+- **Tesla lithium refinery in Corpus Christi discharging ~231,000 gallons/day of black wastewater.** An investigation concluded in February found no heavy metals and no permit violations; an independent test found only trace hexavalent chromium (just above detection limits) and arsenic below drinking water standards. Tesla is in full compliance with current permits, though the permit did not require monitoring for lithium. Long-term fix under discussion is a filtration plant; the drainage district is investigating further but has not filed suit.
 
 ## Electric Vehicles
 
-- **Tesla Semi has received 1,200+ California subsidy applications** — more than all other electric truck models combined since the state's incentive program launched in 2019. At $290,000 per long-range unit, that represents ~$350 million in potential revenue. California incentives of $120,000–$150,000 per unit could bring the landed cost to ~$140,000, at or below the upfront cost of a diesel semi.
-- **Tesla Semi priced at $290,000 long-range vs. $400,000+ for Daimler/Volvo equivalents.** Brian White notes $300,000 has historically been the economic threshold at which electric semis justify themselves for fleet operators; with diesel prices up ~50%, the break-even purchase price rises to $400,000–$450,000, making the Semi increasingly compelling. The NYT published a positive early review suggesting significant industry disruption potential.
-- **Tesla Semi 95% uptime** vs. 82–87% for typical diesel (best-case diesel: 92–95%), per a recent survey cited by Brian White. Brian projects a 50,000-unit/year run rate by 2028 at earliest, contingent on 4680 battery scaling (~30–40 GWh/year required); he would be "very surprised" if that rate is achieved by end of 2027.
-- **Tesla Semi ground-up engineering philosophy confirmed by program lead Dan Priestley** (via The Tesla Space): Tesla discarded all diesel-era design conventions and began from scratch, with aerodynamics as the central driver — roughly half of highway energy is spent on air resistance. The long-range Semi carries 822 kWh of usable capacity; the standard-range carries 548 kWh. The EPTO system delivers up to 25 kW continuously to power refrigerated trailers without a separate diesel refrigeration unit.
+- **California trucking firms have filed subsidy applications for 1,200+ Tesla Semi units** — more than all other electric truck models combined since the incentive program began in 2019. At $290,000 per long-range unit, that represents ~$350M in potential revenue. California's prior incentive structure ($120,000–$150,000 per vehicle) could bring the landed cost to ~$140,000 — at or below a comparable diesel semi's upfront price.
+
+- **Tesla Semi achieves 95% uptime vs. diesel's 82–87%.** The New York Times published a positive early review. Brian White projects a 50,000-unit/year run rate by 2028 (not 2027), contingent on 4680 cell production scaling to ~30–40 GWh annually.
+
+- **Tesla Semi ground-up engineering confirmed by program lead Dan Priestley.** Per The Tesla Space, Tesla discarded all diesel-era design conventions. Roughly half of highway energy goes to aerodynamics; this insight drove every design decision, yielding a unified battery/frame/drivetrain platform. Long-range version carries 822 kWh usable; standard-range 548 kWh. EPTO system delivers up to 25 kW continuously, eliminating separate diesel refrigeration units.
 
 ## Financials
 
-- **Tesla received ~$650 million from SpaceX/xAI entities in 2025**, per the SpaceX S-1. SpaceX purchased $144 million in goods and services from Tesla in 2025 (up from $4 million in 2024 — a 36x jump). xAI (absorbed by SpaceX in February 2026) purchased $506 million from Tesla in 2025 and $34 million in the first two months of 2026, primarily Megapack systems for xAI data centers. Tesla holds 18,990,195 SpaceX Class A shares (less than 1% ownership), converted from its $2 billion xAI investment.
-- **SpaceX IPO set for ~June 12, 2026**: rumored market cap $1.75–$2.25 trillion, offering size ~$75 billion, public float ~4.3%. Elon's lockup runs 366 days from IPO (until ~June–July 2027). First major selling window for large investors opens after Q2 earnings (~July 20–25, 2026). Alexandra Merz (brighterwithherbert) argues the governance structure — particularly the merger veto clause requiring independent Class B approval — is deliberately designed to facilitate a future SpaceX-Tesla merger of equals, which she estimates could push Tesla from ~$420 to ~$650 on announcement.
+- **Tesla received ~$650M from SpaceX/xAI entities in 2025.** SpaceX purchased $144M in goods and services from Tesla in 2025 (up from $4M in 2024, a 36x increase). xAI — absorbed by SpaceX in February 2026 — purchased $506M from Tesla in 2025 and another $34M in the first two months of 2026, primarily Megapack systems for xAI data centers. Tesla holds 18,990,195 SpaceX Class A shares (less than 1% ownership), converted from its $2 billion xAI investment.
 
 ## Market & Competition
 
-- **Starship V3 Flight 12 scrubbed on May 21** after repeated holds at T-minus 40 seconds due to issues with the quick disconnect arm. The flight was described as effectively a wet dress rehearsal. A new attempt was expected the following day. Starship V3 features 33 Raptor V3 engines generating 18 million pounds of thrust — over twice the Saturn V — along with a redesigned integrated hot stage, larger grid fins, and a clean-sheet ship propulsion system.
-- **Mercedes unveiled the production AMG GT 4-Door electric**, targeting Tesla Model S Plaid territory: 1,153 hp, 0–60 in 2.0 seconds, ~315 miles EPA range, 600 kW peak charging (10–80% in as low as 11 minutes). The car includes artificial exhaust sounds.
-- **BYD Seal noted as a pricing concern**: host Brian (FutureAzA) described driving one in Mexico and finding it "a very good car" at approximately one-third less than a comparable Tesla, calling the gap "concerning."
-- **Donut Labs battery claims have collapsed**: the company shipped only one unit (to itself) as of Q1 2026, missing its stated shipping target. Its own technology partner filed suit as a whistleblower alleging the claims are not real. The batteries being delivered do not meet stated specifications (claimed: 5-minute full charge, 100,000 cycles, ~400 Wh/kg, cheaper than lithium).
+- **SpaceX IPO: June 12, 2026; ~$75B offering; ~4.3% float; $1.75–$2.25T rumored market cap.** Elon holds 85.1% voting rights via Class B shares and faces a 366-day lockup (until ~June–July 2027). First major selling window for large investors opens after Q2 earnings (~July 20–25), allowing up to 20–30% of holdings. NASDAQ 100, FTSE Russell, and CRSP index buying estimated at ~$30B combined at IPO, constrained by the small float. S&P 500 eligibility decision on new 6-month rules expected June 8 — if approved, SpaceX could enter the S&P by December 2026 (estimated buying ~$77B at 20% float).
+
+- **Alexandra Merz's merger-of-equals thesis.** Her structural reading of SpaceX's Texas certificate of formation — particularly the dual-class merger approval requirement — suggests the governance architecture is designed to facilitate a future SpaceX/Tesla combination giving Elon ~52.5% combined voting control. She speculates a merger announcement could precede SpaceX's Q2 2026 earnings (~July 2026), with closing most likely Q2 2027. She models a Tesla share price move from ~$420 to ~$650 on announcement. Alexandra's stated position: she will not purchase SpaceX and will "sit on my Tesla."
+
+- **Starship V3 Flight 12 scrubbed at T-minus 40 seconds** due to repeated issues with the quick disconnect arm and ship pressures. Retry expected May 22. V3 features 33 Raptor V3 engines generating 18 million pounds of thrust (over twice Saturn V), a new hot stage adapter, 50%-larger grid fins, increased propellant volume, and new docking ports for ship-to-ship propellant transfer.
+
+- **BYD Seal described as "a very good car" ~one-third cheaper than comparable Tesla** by Brian of FutureAzA after driving one in Mexico — characterized as "concerning" from a competitive standpoint.
 
 Notable quotes and data:
-- FSD now active in ~10 countries; Lithuania approved May 20, 2026; Netherlands approved April 11, 2026
-- Netherlands FSD Supervised: 9.32 million miles over 39 days (~239,000 miles/day); global FSD cumulative: ~10.5 billion miles
-- Europe FSD one-time purchase ends May 21, 2026 — subscription-only going forward
+- Lithuania Ministry of Transport: "Our task is to ensure that regulation does not lag behind technological developments."
+- Cern Basher: "By the end of this year, I think we're looking in the 10,000 plus range of robo taxis."
+- Cern Basher: "The longer this period of it doesn't happen, the bigger, the more sudden it happens."
+- Jo Bhakdi: "If you would remove robo taxi and Optimus, [Tesla's valuation is] a huge problem."
+- SpaceX S-1: "Neither Tesla nor Intel are obligated to remain a part of the project, and we may not enter into any such definitive agreements."
+- Netherlands FSD Supervised: 9.32M miles in 39 days (~239,000 miles/day); global FSD cumulative: ~10.5 billion miles
+- Tesla Semi: $290,000 long-range; 95% uptime vs. 82–87% diesel; 822 kWh usable (LR), 548 kWh (SR)
 - FSD 14.3.3 described as meaningfully better than 14.3.2
-- Actually Smart Summon max speed: 8 mph (up ~33%) in FSD 14.3
-- Cern Basher: *"By the end of this year, I think we're looking in the 10,000 plus range of robo taxis."*
-- Jo Bhakdi: *"I think in the next 2 months or something we are getting to a thousand per month manufacturing [of Cybercabs]."*
-- Cern Basher: *"The longer this period of it doesn't happen, the bigger, the more sudden it happens."*
-- Jo Bhakdi: *"If you would remove robo taxi and Optimus, [Tesla's valuation is] a huge problem."*
-- Jo Bhakdi's conviction threshold: 1,000 unsupervised robotaxis = institutional investors can no longer be underweight Tesla
-- SpaceX S-1: *"Neither Tesla nor Intel are obligated to remain a part of the project."* / *"Certain of these projects, including Macrohard and Terafab, are in the very early stages."*
-- Tesla solar gigafactory: $250M capex, 100 GW target vs. First Solar's 2027 projection of 17.7 GW
-- Tesla Semi: $290,000 long-range; 822 kWh usable (LR) / 548 kWh (SR); 95% uptime; 1,200 CA subsidy applications
-- Brian White: 50,000 Semi/year run rate expected by 2028, not 2027; requires ~30–40 GWh of 4680 cells annually
-- SpaceX/xAI → Tesla revenue 2025: ~$650M total; SpaceX purchases up 36x YoY ($4M → $144M)
-- Tesla holds 18,990,195 SpaceX Class A shares (<1% ownership)
-- SpaceX IPO rumored June 12, 2026; market cap $1.75–$2.25T; float ~4.3%; Elon lockup 366 days
-- Alexandra Merz merger scenario: Tesla ~$420 today → ~$650 on announcement; Elon combined voting ~52.5% post-merger
-- Transformer lead times: 3–5 years (some equipment 5–6 years); ~50% of 2026 US data centers facing delays
+- Tesla solar gigafactory: $250M capex, 100 GW annual target — vs. First Solar's 17.7 GW 2027 projection and 32 GW total US 2023 installations
+- SpaceX/xAI → Tesla revenue: ~$650M in 2025; Tesla holds ~19M SpaceX Class A shares
+- Robotaxi hub (Las Vegas): ~35,000 sq ft, 17 DC chargers, 200+ spots; host estimate: supports ~1,000 active vehicles
