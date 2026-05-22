@@ -7695,5 +7695,53 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-22T14:03:35.805Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Cybercab EPA-certified efficiency: 165 Wh/mi — confirmed by VP of Vehicle Engineering Lars Moravy",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Official EPA-certified figure; directly drives energy cost per mile in robotaxi fleet economics modeling",
+    "source": "20260522_electrek_02_Tesla_Cybercab_Hate_It_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-22T16:03:40.819Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab energy cost per mile: ~$0.026 at average US electricity rate of $0.16/kWh",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.026,
+    "context": "Per-mile energy cost derived from 165 Wh/mi at $0.16/kWh; key operating cost input for robotaxi DCF",
+    "source": "20260522_electrek_02_Tesla_Cybercab_Hate_It_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-22T16:03:40.819Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Cybercab target unit price: $30,000",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 30000,
+    "context": "Tesla-stated target price; efficient powertrain cited as key to hitting this cost target",
+    "source": "20260522_electrek_02_Tesla_Cybercab_Hate_It_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-22T16:03:40.819Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's supervised robotaxi fleet crashes at roughly four times the rate of human drivers",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Safety metric cited as evidence that unsupervised autonomy is not ready to scale; material risk to robotaxi revenue projections",
+    "source": "20260522_electrek_02_Tesla_Cybercab_Hate_It_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-22T16:03:40.819Z",
+    "status": "pending"
   }
 ]
