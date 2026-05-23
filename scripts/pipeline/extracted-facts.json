@@ -7863,5 +7863,53 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-23T14:03:35.881Z",
     "status": "pending"
+  },
+  {
+    "fact": "Human driver accident baseline derived from NHTSA data: approximately 1 accident per 249,000 miles (including unreported crashes)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 249000,
+    "context": "Benchmark used to evaluate Tesla robotaxi safety performance; denominator for the 1.8x safety ratio",
+    "source": "20260523_brighterwithherbert_02_Tesla_Robotaxi_Is_Now_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-23T20:02:04.029Z",
+    "status": "pending"
+  },
+  {
+    "fact": "17 total incidents recorded for Tesla Austin robotaxi since launch on June 22, 2025",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 17,
+    "context": "Full incident count now available due to Tesla unredacting NHTSA crash narratives retroactively; covers approximately 10 months of operation",
+    "source": "20260523_brighterwithherbert_02_Tesla_Robotaxi_Is_Now_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-23T20:02:04.029Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Over 50% of Austin robotaxi fleet is now operating unsupervised (driverless), and the proportion is increasing",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Milestone toward fully monitor-free operation at scale, which is the stated final test of the safety thesis and the trigger for regulatory scaling",
+    "source": "20260523_brighterwithherbert_02_Tesla_Robotaxi_Is_Now_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-23T20:02:04.029Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo peer-reviewed study across 56+ million driverless miles: 91% fewer serious injury or worse crashes and 80% fewer injury-causing crashes vs. human drivers on same roads",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Cited in New York Times essay by Dr. Jonathan Slotkin and co-signing medical professionals as basis for calling AV expansion a public health imperative",
+    "source": "20260523_brighterwithherbert_02_Tesla_Robotaxi_Is_Now_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-23T20:02:04.029Z",
+    "status": "pending"
   }
 ]
