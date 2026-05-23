@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-22)
 Published:   2026-05-22 00:00 UTC
-Summarized:  2026-05-23 04:08:25 UTC
+Summarized:  2026-05-23 09:11:50 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.09112 (15667 in / 2941 out tokens)
+Cost:        $0.08771 (15667 in / 2714 out tokens)
 Sources:     9
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,77 +22,74 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- Cybercab EPA-certified at 165 Wh/mi — most efficient EV ever tested.
-- Irving, TX robotaxi depot: 212 storage stalls, 16 V4 Superchargers confirmed.
-- Tesla robotaxi 1.81× safer than human drivers per NHTSA data analysis.
+- Cybercab certified at 165 Wh/mi — most efficient EV ever tested.
+- Irving, TX robotaxi depot filed: 212 storage stalls, 16 V4 Superchargers.
+- Tesla robotaxi 1.81x safer than human drivers per NHTSA data analysis.
+- FSD v14.3 rolls out; dramatically reduced attention nag reported.
 - Optimus pilot production line footage surfaces at Fremont event.
-- Lithuania approves supervised FSD; Belgium 2,000 of 5,000 test-km complete.
-- Xpeng GX robotaxi enters mass production at $28,000 retail.
+- Xpeng GX robotaxi enters mass production; pilot ops target H2 2026.
 
 ## Robotaxi
-- **Irving, TX depot confirmed via permit filing.** The 35,000 sq ft facility in Irving (DFW area, near DFW airport) will include 212 vehicle storage stalls, 16 V4 Supercharger stalls, and 24/7 operations covering cleaning and tire replacement — mirroring a previously reported Las Vegas facility of comparable scale. The project requires a zoning variance; approval is expected within one to two months per Dillon Loomis.
 
-- **Cybercab fleet equipment spotted in Dallas and Houston.** Four Cybercabs in Dallas were observed with gold wheel caps and robotaxi front plates. All Cybercabs at the Houston hub have now been fitted with gold wheel caps and robotaxi decals. Removal of the steering wheel is expected to be the final step before these vehicles join the unsupervised fleet.
+- **Irving, TX depot confirmed via permit filing:** Tesla is remodeling a 35,000 sq ft warehouse in Irving (Dallas–Fort Worth) into a dedicated Cybercab/Robotaxi maintenance facility with 212 vehicle storage stalls, 16 V4 Supercharger stalls, and 24/7 cleaning and tire-replacement operations. The facility mirrors a previously reported Las Vegas hub in size and scope; the 212-stall capacity is far in excess of the current DFW deployment, signaling infrastructure buildout well ahead of fleet scale.
 
-- **Cybercab deployment expectations: slow initial ramp.** Loomis's near-term target is 5–15 Cybercabs over the next several weeks, with an aspirational goal of roughly 30 in Austin and ~10 each in Houston and Dallas by end of August 2026. Tesla's quarterly report implies launches in Phoenix, Miami, Orlando, Tampa, and Las Vegas within 38 days of May 22.
+- **Cybercabs spotted with fleet equipment in Dallas and Houston:** Four Cybercabs in Dallas were observed with gold wheel caps and robotaxi front plates. All Cybercabs at the Houston hub have now been fitted with gold wheel caps and robotaxi decals. Sources indicate steering wheel removal is likely the final step before these vehicles formally join the fleet.
 
-- **Possible Cybercab event teased.** At the Model S/X signature event in Fremont, Tesla executive Lars appeared to slip and say "we just started Cybercab production next week" before correcting to "a couple weeks ago," which Loomis flags as a potential hint at an imminent announcement.
+- **Imminent Cybercab deployment, but slow initial ramp expected:** Per Dillon Loomis (Electrified), initial Cybercab additions to the network could be imminent but scale will follow slowly — his personal target is approximately 30 Cybercabs in Austin by end of August 2026, plus roughly 10 each in Houston and Dallas. Tesla's quarterly report implies launches in Phoenix, Miami, Orlando, Tampa, and Las Vegas within 38 days of May 22.
 
-- **NHTSA incident data: Tesla robotaxi 1.81× safer than human drivers.** Analysis of 17 reported incidents since the Austin launch (June 2025) attributed 53% to other-party fault and 41% (~7 incidents) to Tesla. All Tesla-fault incidents occurred at approximately 4 mph or below, with categories including curb strikes, backing collisions, and sideswipes. Per Herbert Ong's panel, curb rash events are reportable for robotaxis but not for human drivers, suggesting the safety advantage is understated.
+- **NHTSA safety data: Tesla robotaxi 1.81x safer than human drivers:** Analysis of 17 NHTSA-reported incidents since the Austin launch (June 2025) found 53% were other-party fault and 41% Tesla's fault — approximately 7 Tesla-fault incidents, all at roughly 4 mph or less, including curb strikes, backing collisions, and sideswipes. Analyst "Reigns" calculated the 1.81x safety advantage as of April 2026. Jeff Lutz (brighterwithherbert) noted that curb rash events are reportable for robotaxis but not for human drivers, suggesting the true safety advantage is understated.
 
-- **Fleet expansion model: discrete step-ups, not a smooth ramp.** Jeff Lutz described Tesla's methodology as mathematically driven — additional unsupervised vehicles are added only when the total fleet failure rate remains within acceptable bounds after a software quality improvement, producing visible step-changes rather than a continuous curve.
+- **Fleet expansion model: discrete step-ups, not a smooth ramp:** Jeff Lutz described Tesla's expansion methodology as mathematically driven — additional unsupervised vehicles are added only when software quality allows the total fleet failure rate to remain within acceptable bounds, producing visible step-changes following software releases rather than a continuous ramp. The panel attributed the current plateau in the unsupervised fleet to this approach.
 
-- **Cybercab efficiency: 165 Wh/mi, best EPA-certified EV ever.** At $0.16/kWh average US electricity rates, energy cost is ~$0.026/mile versus ~$0.038/mile for a Model 3. The small sub-50 kWh pack also enables faster charging and lower per-vehicle battery cost. Tesla has stated a $30,000 unit price target. Lead engineer Eric called the 165 Wh/mi figure "only the starting point."
-
-- **Electrek flags autonomy concerns alongside the efficiency record.** The publication notes Tesla's supervised robotaxi fleet "currently crashes at roughly four times the rate of human drivers" and flags three senior Cybercab program leader departures since February 2026. The article treats the efficiency record as genuine but argues it is moot without solving unsupervised autonomy at scale. *Note: the 4× crash rate claim directly contradicts the NHTSA-derived 1.81× safety advantage reported by the brighterwithherbert panel; the two figures likely reflect different methodologies, time windows, or definitions — the discrepancy is unresolved across today's sources.*
+- **Cybercab fleet economics from 165 Wh/mi efficiency:** At $0.16/kWh average US electricity rates, Cybercab energy cost is approximately $0.026/mile versus ~$0.038/mile for Model 3 and ~$0.048/mile for Ioniq 5. The sub-50 kWh pack also enables faster charging and lower per-vehicle battery cost. Tesla's stated unit price target remains $30,000.
 
 ## Autonomous Driving
-- **Lithuania approves supervised FSD** — the second European country after the Netherlands (approved April 11, 2026). Greece has stated its intent to be next, likely June 2026; Belgium's two regions both expressed support; Sweden is still deliberating basic highway scenarios. The full EU member-state vote is expected in June or September 2026.
 
-- **Belgium FSD testing at 2,000 of 5,000 required km.** Tesla now has three cars completing the regulatory test threshold; Loomis characterizes legalization as a realistic near-term outcome if testing continues smoothly.
+- **FSD v14.3: dramatically reduced attention nag:** Version 14.3 began rolling out and all three brighterwithherbert panelists confirmed receipt. Larry Goldberg reported driving extended Texas distances while reading emails without receiving a nag. Jeff Lutz noted one new bug — the system routed to rear alleyways of shopping centers in over 50% of visits — but the panel's overall read is that v14.3 is a meaningful step toward unsupervised operation.
 
-- **FSD v14.3 rolling out with dramatically reduced attention nag.** All three panelists on brighterwithherbert confirmed receipt. Larry Goldberg reported inadvertently driving extended distances in Texas while reading emails without a nag. One noted bug: the system routes vehicles to park in rear alleyways of shopping centers in more than 50% of visits on the Model X build tested by Jeff Lutz.
+- **Lithuania approves supervised FSD; Belgium approaching threshold:** Lithuania became the second European country to approve supervised FSD after the Netherlands (April 11, 2026). Greece has stated intent to follow, likely June 2026; Belgium has cross-regional support and has now completed more than 2,000 of the required 5,000 test kilometers with three cars active. The full EU member-state vote is expected in June or September 2026.
 
-- **FSD China approval still pending; Q3 2026 target.** Tesla has not received full regulatory approval in China. Tesla China posted approximately six urgent AI-related job listings, which the brighterwithherbert panel interprets as preparation for a regulator-required data-capture phase. Tesla CFO stated on the most recent earnings call that Q3 2026 approval is expected.
+- **FSD China: Q3 2026 target, not yet approved:** Sawyer Merritt and Dillon Loomis both clarified that full FSD approval in China has not been granted. Tesla posted approximately six urgent China AI job listings, which the brighterwithherbert panel interprets as preparation for a required regulatory data-capture effort. Tesla CFO, per the most recent earnings call, expects approval in Q3 2026.
 
 ## Humanoid Bots
-- **Optimus pilot production line footage surfaced at Fremont event.** B-roll from the Model S/X signature event appeared to show the Optimus production line — reportedly designed for 1 million bots per year — in a state described by Loomis as further along than publicly indicated. No production rate or unit count data accompanied the footage. The clip drew among the highest social engagement of the day (~3K likes, 364 retweets per Sawyer Merritt).
 
-- **"Tesla Terafab" trademark filed May 19, 2026.** Tesla filed trademark applications for the wordmark "Tesla Terafab" and an accompanying logo. No use case was specified; the name suggests a large-scale manufacturing or fabrication initiative potentially tied to Cybercab or Optimus production.
+- **Optimus pilot production line footage surfaces:** During B-roll at Tesla's Model S/X signature event at Fremont, what appears to be the Optimus pilot production line — described as designed for 1 million bots per year — was briefly visible. Dillon Loomis noted the line appeared further along than public disclosures had suggested. Sawyer Merritt flagged the footage as among the highest-engagement Tesla posts of the day.
 
-## Market & Competition
-- **Xpeng GX robotaxi enters mass production.** The first mass-produced unit rolled off the line in Guangzhou, approximately six months after the vehicle's unveiling at Xpeng's AI Day in November 2025. The GX is a six-seat SUV featuring pure vision autonomy, steer-by-wire, full redundancy, and 3,000 TOPS of compute (four Turing chips). Retail price: $28,000. Pilot operations are targeted for the second half of 2026.
-
-- **Xpeng CEO acknowledges Tesla FSD is "well ahead."** Brian White (FutureAzA), who has personally tested Xpeng's system in China, reports Xpeng estimates it is approximately two years behind Tesla. The head of autonomous driving at Li Auto separately stated that Chinese competitors who claim to have surpassed Tesla FSD can only do so because Tesla hasn't fully launched in China — "once it truly rolls out, they'll be completely exposed."
-
-- **Xpeng's compute lead may reflect inefficiency, not capability.** At 3,000 TOPS versus Tesla HW4's ~500 TOPS, White speculates Xpeng is overbuilding headroom because it hasn't yet solved minimum-inference efficiency as Tesla has. Xpeng is offering supervised VLA free to all buyers to accelerate data collection, with the explicit belief that ~1 million vehicles on-road is required to achieve 90%+ reliability.
-
-- **Waymo pauses freeway rides nationwide; suspends service in four cities.** Waymo issued a software recall related to flood avoidance, then a Waymo vehicle still drove into a flood in Atlanta after the initial update. Full service is temporarily suspended in Atlanta, San Antonio, Dallas, and Houston as of May 22.
-
-- **Waymo sensor cost advantage for Xpeng.** White estimates Waymo's sensor upfit package costs approximately $50,000 per vehicle ($30,000 floor with optimization); the entire Xpeng GX costs $28,000. He speculates a Cybercab-sized Xpeng equivalent could be manufactured for as little as $12,000.
+- **"Terafab" trademark filed:** Tesla filed trademark applications for the wordmark "Tesla Terafab" and an accompanying logo on May 19, 2026. No details on intended use were disclosed; the name suggests a large-scale manufacturing branding initiative potentially linked to Cybercab or Optimus production.
 
 ## Electric Vehicles
-- **Model Y recall: 14,575 vehicles missing a weight certification label.** Affected vehicles were produced at Fremont between November 17, 2025 and April 21, 2026. Tesla estimates ~45% actually lack the label. The root cause is an automated vision-scanning tool that was "performing inconsistently." Fix requires physical label affixing at service centers; owner notices mailed July 17, 2026. No field incidents reported. Recall number: SB-26-19-002.
 
-- **Model Y reaches 100,000 registrations in Norway.** The first EV to hit that milestone in Norway, achieved in four years — approximately 1 in every 29 passenger cars on Norwegian roads is now a Model Y.
+- **Cybercab rated 165 Wh/mi — most efficient EV ever EPA-certified:** Tesla VP of Vehicle Engineering Lars Moravy confirmed the figure at the Model S/X signature event. The next closest competitor is the Lucid Air Pure at 230 Wh/mi (+28%), followed by Model 3 and Model Y at 240 Wh/mi. Lead Cybercab engineer Eric stated: *"That 165 Wh per mile is only the starting point."* The design enables the sub-50 kWh pack's claimed ~300-mile range.
 
-- **40 states have enacted extra EV registration fees; federal flat fee proposed.** The Build America 250 Act (Section 1129) would add a $130/year federal fee for EV owners and $35 for some plug-in hybrid owners, escalating $5 biennially to a cap of $150/$50. The bill is being developed ahead of the current transportation law's September 2026 expiration.
+- **Model Y recall — missing weight certification label:** Tesla is recalling 14,575 Model Ys (Fremont, November 17, 2025 – April 21, 2026) after an automated vision-scanning tool failed to confirm placement of the required weight certification label on the driver's side door jamb. Tesla estimates ~45% of affected vehicles actually lack the label. Fix requires a physical dealer visit; owner notices mailed July 17, 2026. No field incidents reported (Recall SB-26-19-002). Electrek noted the six-month detection gap as a process quality concern.
+
+- **Model Y hits 100,000 registrations in Norway:** The Model Y became the first EV to reach that milestone in Norway, achieving it in four years. Approximately 1 in every 29 Norwegian passenger cars is now a Model Y.
+
+## Market & Competition
+
+- **Xpeng GX robotaxi enters mass production; pilot ops target H2 2026:** Xpeng's first mass-produced robotaxi — based on the six-seat GX SUV, unveiled at AI Day in November 2025 — rolled off the Guangzhou production line. The vehicle is pure vision, steer-by-wire, fully redundant, and packs 3,000 TOPS across four in-house Turing chips (versus Tesla HW4's ~500 TOPS). Retail price: $28,000. Brian White (FutureAzA), who has toured Xpeng's facilities, noted the high compute figure likely reflects Xpeng compensating for efficiency gaps Tesla has already solved, not a genuine architectural advantage.
+
+- **Xpeng acknowledges Tesla's lead:** Xpeng's CEO personally tested Tesla FSD in Silicon Valley and publicly stated FSD is well ahead of their system, estimating a ~two-year gap. The head of autonomous driving at Li Auto added: *"The only reason that they dare say that is because Tesla FSD hasn't been fully entered the Chinese market yet. Once it truly rolls out, they'll be completely exposed."*
+
+- **Xpeng's GX costs less than Waymo's sensor kit alone:** Brian White estimated Waymo's sensor upfit at approximately $50,000 per vehicle (floor ~$30,000), versus the GX's $28,000 all-in retail price. White speculated a Cybercab-sized Xpeng equivalent could cost as little as $12,000 to manufacture.
+
+- **Waymo pauses freeway rides nationwide; suspends service in four cities:** Waymo paused all freeway rides across the US while completing a software update for flood avoidance, after a vehicle drove into a flood in Atlanta following an earlier patch that had not resolved the issue. Full service is temporarily suspended in Atlanta, San Antonio, Dallas, and Houston.
+
+- **Ford Energy's first major storage deal — built on CATL license:** Ford's energy division signed a 5-year agreement to supply up to 20 GWh of battery storage to EDF. Brian White noted the batteries are manufactured under a CATL license and expressed skepticism about Ford's ability to execute at scale, contrasting it with Tesla's vertically integrated Megapack operation at two facilities with a third under development.
 
 ## Energy
-- **Tesla Megapacks selected for Meta's Wyoming data center project.** Ampere and Meta are deploying 365 MW of solar and a 1,600 MWh battery installation in Wyoming to power Meta data centers; Tesla supplies the batteries. Loomis estimates ~400 Megapacks, and frames battery storage as an increasingly critical bottleneck for AI compute buildout given multi-year grid interconnection queues.
 
-- **Ford Energy signs 20 GWh deal with EDF — built on CATL license.** Ford's energy division signed a 5-year supply agreement for up to 20 GWh of battery storage capacity. White notes the batteries are manufactured under a CATL license, contrasting this with Tesla's vertically integrated Megapack approach and expressing skepticism about Ford's execution capability at scale.
+- **Tesla Megapacks for Meta/Wyoming data center project:** Ampere and Meta are expanding a clean energy partnership to supply Meta's Wyoming data centers with 365 MW of solar and 1,600 MWh of battery storage — approximately 400 Tesla Megapacks. Dillon Loomis framed the deal as one example of battery storage emerging as a critical grid bottleneck enabler for the AI compute buildout.
 
 Notable quotes and data:
-- Cybercab efficiency: **165 Wh/mi** EPA-certified (Lars Moravy, Tesla VP Engineering); energy cost ~$0.026/mile at $0.16/kWh
+- Cybercab: **165 Wh/mi** EPA-certified; ~$0.026/mile energy cost at $0.16/kWh; sub-50 kWh pack; ~300 mi claimed range; $30,000 target price
+- NHTSA robotaxi safety: **1.81x safer than human drivers** (April 2026); 17 total incidents since June 2025 launch; ~7 Tesla-fault, all at ~4 mph or less
+- Irving, TX depot: **35,000 sq ft**, **212 storage stalls**, **16 V4 Superchargers**, 24/7 ops
+- Belgium FSD testing: **2,000+ km completed** of required **5,000 km**
+- Xpeng GX: **$28,000** retail; **3,000 TOPS**; pilot robotaxi ops target **H2 2026**
+- Meta/Wyoming: **1,600 MWh** (~400 Megapacks), **365 MW** solar
+- Model Y recall: **14,575 vehicles** affected; ~**45%** estimated to actually lack the label; notices mailed **July 17, 2026**
+- Lars Moravy (Tesla VP Engineering) at Fremont event, on Cybercab efficiency: confirmed **165 Wh/mi**
 - Eric (lead Cybercab engineer): *"That 165 Wh per mile is only the starting point."*
-- Tesla robotaxi safety: **1.81× safer than human drivers** as of April 2026 (per "Reigns" analysis of NHTSA data, 17 total incidents since June 2025 Austin launch)
-- Electrek counter-claim: supervised robotaxi fleet crashes at **~4× the rate of human drivers** — methodology differs from NHTSA analysis above; discrepancy unresolved
-- Irving, TX depot: **35,000 sq ft**, **212 storage stalls**, **16 V4 Supercharger stalls**, 24/7 ops
-- Belgium FSD testing: **2,000+ km completed** of 5,000 km required threshold; 3 cars active
-- Xpeng GX retail price: **$28,000**; compute: **3,000 TOPS** (4× Turing chips) vs. Tesla HW4 ~500 TOPS
-- Li Auto autonomous driving head: *"The only reason they dare say [they've surpassed Tesla FSD] is because Tesla FSD hasn't been fully entered the Chinese market yet. Once it truly rolls out, they'll be completely exposed."*
-- Model Y Norway: **100,000 registrations** — first EV to reach that milestone; ~1 in 29 passenger cars
-- Meta/Wyoming: **1,600 MWh** battery (~400 Megapacks), **365 MW** solar
-- Proposed federal EV fee: **$130/year**, escalating to cap of **$150** by 2036; **40 states** already charging extra EV fees
-- Lars (Fremont event apparent slip): *"We just started Cybercab production next week. Or like a couple weeks ago, I guess."*
+- Li Auto autonomous driving head: *"Once it truly rolls out, they'll be completely exposed."*
+- Jeff Lutz on v14.3: *"It is a game changer — this feels like one meaningful step closer to unsupervised."*
