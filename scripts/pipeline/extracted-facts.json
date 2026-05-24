@@ -7935,5 +7935,41 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-24T19:02:35.411Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab production expected to reach 10,000–15,000 units by end of 2026, per Bhakdi's base-case model",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 12500,
+    "context": "Bhakdi uses this production volume as a forcing-function argument for robotaxi deployment scale; midpoint of stated 10,000–15,000 range. He also floats a higher scenario of 40,000–50,000 units.",
+    "source": "20260524_jobhakdi_01_Will_Tesla_Stock_Get_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-24T23:02:30.026Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi's bull case robotaxi fleet target is 15,000 vehicles by end of 2026, consistent with estimates from 'Cern' and 'Herbert'",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Bhakdi states that reaching 15,000 robotaxis by year-end would drive Tesla to a price materially above $490; this is the upside scenario, not his base case for the stock.",
+    "source": "20260524_jobhakdi_01_Will_Tesla_Stock_Get_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-24T23:02:30.026Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi's higher-end Cybercab production scenario for 2026 is 40,000–50,000 units",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 45000,
+    "context": "Bhakdi mentions this as a possible upper bound before settling on 10,000–20,000 as his working model range for deployment planning.",
+    "source": "20260524_jobhakdi_01_Will_Tesla_Stock_Get_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-24T23:02:30.026Z",
+    "status": "pending"
   }
 ]
