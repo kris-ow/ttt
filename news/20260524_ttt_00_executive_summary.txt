@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-24)
 Published:   2026-05-24 00:00 UTC
-Summarized:  2026-05-25 10:03:58 UTC
+Summarized:  2026-05-25 11:17:22 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.05900 (9838 in / 1966 out tokens)
+Cost:        $0.06362 (9838 in / 2274 out tokens)
 Sources:     5
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,68 +22,78 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- FSD European approvals accelerating; EU-wide vote expected June or September 2026.
-- Tesla FSD paid subscribers grew 170,000 last quarter; ~1.28 million active.
+- FSD European approvals cascading: Lithuania joins Netherlands; EU-wide vote June/September 2026.
+- FSD V14.3.3 yields for emergency vehicle; detects reversing car at intersection autonomously.
+- Netherlands + Lithuania FSD fleet logging ~2.5M km/day combined.
 - Optimus reveal expected late June–early July 2026 per Bhakdi.
-- SpaceX Anthropic deal: $1.25B/month through May 2029; Tesla parallel thesis highlighted.
-- FSD V14.3.3 yields for emergency vehicles; Europe hitting 2.5M km/day pace.
+- SpaceX Anthropic deal: $1.25B/month through May 2029 — "Elon Web Services" thesis direct Tesla read-across.
+- Tesla $490 prior ATH in play; Bhakdi's trigger is Iran/Hormuz resolution.
 
 ## Autonomous Driving
 
-- **European FSD approvals compounding rapidly.** The Netherlands approved supervised FSD after ~150,000 km of testing; Lithuania followed shortly after. Greece, Belgium (Flemish region planning 5,000 km of testing first), and Ireland are all in motion. Per FutureAzA, a broader EU member-state vote involving ~28 countries is expected June or September 2026 — and early approvers effectively create a "copy-paste" template for the rest.
+- **European FSD approvals accelerating via copy-paste effect.** The Netherlands, after ~150,000 km of testing over ~18 months, became the first EU country to approve supervised FSD. Lithuania followed shortly after. Per Case Roland, each new approval structurally lowers the barrier for subsequent countries — Greece, Belgium (Flemish region targeting 5,000 km of testing first), and Ireland are all actively progressing.
 
-- **FSD now live in ~10 regions globally.** Paid subscriber count grew 170,000 last quarter (per FutureAzA/Brian), with 1.28 million active subscribers total. Cumulative supervised miles stand at approximately 9–10 billion.
+- **EU-wide member-state vote expected June or September 2026.** Approximately 28 member states are involved. Tesla is actively engaging individual governments to facilitate approvals. FSD has now been approved in roughly 10 regions globally.
 
-- **European fleet data accumulating fast.** Sawyer Merritt reported that Tesla owners in the Netherlands and Lithuania collectively passed 15 million kilometers, with the subsequent 48-hour run rate implying roughly 2.5 million km/day from that cohort alone — a strong signal for fleet training data momentum in early European markets.
+- **FSD paid subscribers grew 170,000 last quarter**, per FutureAzA's Brian, with 1.28 million active subscribers total. Cumulative supervised miles stand at approximately 9–10 billion.
 
-- **FSD V14 behavioral improvements demonstrated.** Sawyer Merritt observed FSD V14.3.3 pulling well right to yield for an emergency vehicle, and a separate V14 trip where the system detected a car's reverse lights at an intersection and proactively backed up to create room — qualitative indicators of improving real-time reactive logic.
+- **Netherlands + Lithuania fleet logging ~2.5 million km/day.** Per Sawyer Merritt, those two markets collectively crossed 15 million cumulative kilometers two days prior; the 48-hour pace since implies that daily accumulation rate — a strong signal for fleet training data intake from early European markets.
+
+- **FSD V14.3.3 demonstrated two notable reactive behaviors.** Sawyer Merritt observed the system pulling well to the right to yield for an emergency vehicle, and separately, FSD V14 detecting a car's reverse lights after it overshot a stop line — then proactively backing up to make room. Anecdotal, but directly relevant to unsupervised deployment readiness.
+
+- **Vision-over-lidar thesis: classification, not just detection.** FutureAzA's Herbert and Brian argue Tesla's system identifies *what* an object is (a cow, a moose, a car beginning to turn) and responds preemptively, whereas lidar-based systems detect geometry without semantic understanding. Herbert cited a prior statement from Tesla AI that FSD can identify fog as fog and navigate through it — lidar sees only an opaque wall.
 
 ## Robotaxi
 
-- **Bhakdi's $490 thesis explicitly excludes robotaxi scaling** — he views $490 as Tesla's prior all-time high that the stock "belongs at" based on fundamentals alone. However, he flags that if the stock reaches $490 and robotaxi still isn't scaling, the position becomes vulnerable. Conversely, he states: "If we have 15,000 robotaxis end of the year, we will not be at $490 — we will be at a completely different number."
+- **Bhakdi's $490 target explicitly excludes robotaxi scaling** — that is upside, not base case. He states: "If we have 15,000 robotaxis end of the year, we will not be at $490. We will be at a completely different number." The $490 level simply represents Tesla's prior all-time high (December 16, 2025).
 
-- **Cybercab production as the forcing function.** Bhakdi argues 10,000–15,000 Cybercabs will be produced by end of 2026, with a higher scenario of 40,000–50,000 cited but not used as his base case. His logic: Tesla would not build that hardware volume to leave it idle. Cybercab parking infrastructure has been spotted under construction in Dallas and other cities.
+- **Cybercab production as deployment forcing function.** Bhakdi's working range is 10,000–20,000 Cybercabs produced by end of 2026, with a higher scenario of 40,000–50,000. His logic: Tesla would not invest the hardware capex and then leave vehicles idle. Cybercab parking infrastructure is reportedly under construction in Dallas and other cities.
 
-- **Austin unsupervised mix may be rising.** A viewer noted that Austin robotaxi counts appear to be declining; Bhakdi offered the interpretation that Tesla may be shifting the mix toward a higher proportion of unsupervised rides rather than maximizing total supervised volume — a quality-over-quantity transition, though he provided no fleet figures.
+- **Austin supervised count may be declining as unsupervised mix grows.** A commenter raised declining Austin robotaxi counts; Bhakdi's interpretation is that Tesla may be deliberately shifting toward a higher proportion of unsupervised rides rather than maximizing total supervised trips — a quality-over-quantity inflection.
 
-- **brighterwithherbert context:** The "physical AI platform" framing from SpaceX's S1 is applied directly to Tesla's robotaxi network — described as a ride-hailing cut-of-every-ride recurring revenue model analogous to AWS, with Austin driverless operations confirmed but flagged as limited to one city currently.
+- **brighterwithherbert confirms driverless robotaxi operational in Austin only** as of this reporting. The host identifies expansion to additional cities as the key next milestone to watch, with additional cities by 2027 as the scenario where the thesis "half works."
 
 ## Humanoid Bots
 
-- **Optimus reveal ~4–6 weeks out.** Bhakdi places a Tesla Optimus reveal in late June to early July 2026 and describes it as potentially "very big." He does not incorporate it into his base-case price target but treats it as an upside catalyst alongside robotaxi scaling. Specific production numbers are being withheld pending Pioneer Lands research publication.
+- **Optimus reveal expected in approximately 4–6 weeks**, per Bhakdi — implying late June to early July 2026. He describes it as potentially "very big" but does not incorporate it into his $490 base case. Specific production numbers will come via upcoming Pioneer Lands research.
 
-- **Optimus still in factory testing, not on production lines.** brighterwithherbert notes Tesla has provided no 2026 production number for Optimus, and the robot remains in internal testing — the recurring revenue thesis from robotics is still forward-looking, not yet in financial results.
-
-## Market & Competition
-
-- **SpaceX S1's "physical AI platform" playbook is the dominant narrative today.** The $1.25B/month Anthropic compute deal (through May 2029, ~$15B annualized run rate) anchors two separate brighterwithherbert pieces arguing that Elon Musk's cross-company strategy — build expensive physical infrastructure, rent it as recurring service revenue — is the template for Tesla's own autonomous driving, energy, and robotics businesses. The SpaceX filing is presented as the strongest real-world evidence yet that this playbook can work.
-
-- **Iran/Strait of Hormuz resolution as the key macro unlock for Tesla stock.** Bhakdi frames the Iran situation as the primary overhang that pulled Tesla back from $450 to $395. Weekend reports (Trump/CBS News; Iran's semi-official FARC agency) indicate negotiators are finalizing an agreement to reopen the Strait. Bhakdi's base case: a face-saving, low-enforcement nuclear deal plus Strait reopening removes the largest near-term macro headwind.
-
-- **Nvidia earnings cited as hard validation of AGI investment cycle.** Bhakdi notes PE ratios are declining even as profits expand across the market — the opposite of bubble conditions — and views Nvidia's results as confirming the AGI capex cycle is structural, not speculative.
-
-- **SpaceX IPO (~$75B, ~70% institutional) not a liquidity drain for Tesla.** Bhakdi dismisses rotation fears; argues SpaceX success correlates positively with Tesla via "merger fantasies," though he has reduced his 2026 merger probability and expects any combination more likely in 2027 or later.
+- **Optimus remains in factory testing; no 2026 production number has been given by Tesla.** brighterwithherbert notes explicitly that Optimus is not yet working on production lines — the recurring revenue story from robotics remains thesis, not financial results.
 
 ## Electric Vehicles
 
-- **Tesla is the #1 car overall (not just EV) in Colombia**, per FutureAzA. Tesla is also the leading import brand in both South Korea and Japan. Brian expects 2026 to be a stronger sales year than 2025.
+- **Tesla is the #1 car overall (not just EV) in Colombia**, per FutureAzA's Brian — described as a significant milestone. Tesla is also the leading import in both South Korea and Japan. Brian expects 2026 to be a stronger sales year than 2025.
+
+- **Tesla Semi meaningful earnings contribution modeled for 2027**, per Bhakdi, with possible Q4 2026 impact. No near-term contribution expected.
 
 ## Financials
 
-- **Tesla 2026 capex guidance: over $25 billion**, approximately 3x the prior year, with AI compute more than doubling in ~6 months per Q1 earnings (per brighterwithherbert). The framing: Tesla is deploying the same physical-AI-infrastructure playbook as SpaceX, and the thesis "works" only if that spend converts to service revenue.
+- **Tesla 2026 capex guidance: over $25 billion** (~3× prior year), with AI compute more than doubling in approximately 6 months, per Q1 earnings call. brighterwithherbert frames this as Tesla pursuing the same physical-AI-infrastructure playbook as SpaceX — thesis pays off only if spending converts to service revenue.
 
-- **Tesla Semi meaningful revenue contribution modeled for 2027**, with possible Q4 2026 impact, per Bhakdi. No near-term earnings contribution expected.
+- **Bhakdi's intrinsic value estimate for Tesla: $1,000 for 2026**, distinct from his near-term $490 stock price target. His stated stop-loss signal: "If Tesla gets to $680 and robotaxi isn't scaling, I would say sell it."
+
+## Market & Competition
+
+- **SpaceX S1 discloses $1.25B/month Anthropic compute deal through May 2029** — annualized ~$15B run rate, terminable on 90 days' notice. The structure mirrors AWS: SpaceX built Colossus to train Grok, then rented spare capacity to a competitor (Anthropic) — Anthropic's payments effectively fund the infrastructure training Elon's own AI. Brad Gerstner dubbed it "EWS — Elon Web Services."
+
+- **SpaceX stated TAM: $28.5 trillion**, of which $26.5 trillion is AI ($22.7T enterprise applications alone). China and Russia excluded. Longer-term vision includes orbital data centers — SpaceX has requested permission for up to 1 million satellites, with potential deployment as early as 2028.
+
+- **SpaceX FY financials per S1:** $18.7B revenue, $6.8B operating cash flow, $20B capex ($12.7B AI, $7.2B Starlink). Starlink: 10.3M subscribers across 164 countries, ~$11.4B in 2025 revenue, ~$4.4B operating income, ~50% YoY growth.
+
+- **brighterwithherbert draws direct Tesla read-across:** If Tesla's installed base (FSD subscriptions, robotaxi network, charging, insurance, energy) converts to recurring service revenue at scale, the SpaceX filing is "the strongest real-world evidence yet" the physical-AI-platform playbook works. Caveat: that recurring revenue has not yet shown up meaningfully on Tesla's income statement.
+
+- **Iran/Strait of Hormuz resolution as the decisive near-term macro catalyst**, per Bhakdi. Weekend reports indicate negotiators are finalizing a deal covering Strait reopening, partial asset unfreezing, and a face-saving nuclear framework. Bhakdi had assigned ~5% tail-risk to escalation three weeks prior; he now views the conflict as "de facto over." Combined with Nvidia earnings validating the AGI investment cycle, he sees the setup for a renewed NASDAQ and Tesla rally toward $490.
+
+- **SpaceX IPO (~$75B, ~70% institutional) not a liquidity risk for Tesla**, per Bhakdi. Positive correlation via "merger fantasies" outweighs any retail rotation. Bhakdi has reduced his probability of a SpaceX-Tesla merger in 2026, now viewing 2027 or later as more likely.
 
 Notable quotes and data:
 - Bhakdi: *"If we have 15,000 robotaxis end of the year, we will not be at $490. We will be at a completely different number."*
-- Bhakdi: *"Fair value [for Tesla] is $1,000 for this year"* (intrinsic value, not price target)
 - Bhakdi: *"If Tesla gets to $680 and robotaxi isn't scaling, I would say sell it."*
-- Elon Musk (SpaceX S1): *"SpaceX is offering AI compute as a service at significant scale... We are in discussions with other companies to do the same."*
-- Anthropic deal: $1.25B/month through May 2029; 90-day cancellation clause; Colossus + Colossus 2
-- Tesla FSD active subscribers: **1.28 million**; subscriber growth last quarter: **+170,000**
-- FSD European mileage run rate: **~2.5 million km/day** from Netherlands + Lithuania alone
-- EU member-state vote on FSD: expected **June or September 2026**, ~28 countries
-- Cybercab production range (Bhakdi base case): **10,000–15,000 units** by end of 2026
-- Optimus reveal: **~late June–early July 2026** (4–6 weeks from publish date)
-- Tesla prior all-time high: **$490** (December 16, 2025)
-- Tesla stock recent range: ran $350 → $450, pulled back to $395 on Iran + bond yield fears
+- Musk (SpaceX S1): *"SpaceX is offering AI compute as a service at significant scale... we are in discussions with other companies to do the same."*
+- Sawyer on FSD V14 reverse detection: *"sentience"*
+- FSD Europe: ~2.5M km/day accumulation rate from Netherlands + Lithuania cohort alone
+- Anthropic deal: $1.25B/month → ~$15B annualized; Gerstner's 2026 incremental estimate: $4–5B (capacity still ramping)
+- Tesla FSD subscribers: 1.28M active; +170,000 last quarter
+- Cybercab production range: 10,000–20,000 (working), 40,000–50,000 (bull case), per Bhakdi
+- Optimus reveal: ~4–6 weeks from May 24 (late June–early July 2026)
+- Tesla 2026 capex: >$25B; AI compute >2× in ~6 months
+- Tesla prior ATH: $490 on December 16, 2025
