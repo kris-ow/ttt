@@ -8019,5 +8019,17 @@
     "channel": "investingagainstthegrain",
     "extractedAt": "2026-05-26T02:02:39.871Z",
     "status": "pending"
+  },
+  {
+    "fact": "Approximately 1 million Tesla vehicles are currently paying a Full Self-Driving subscription, out of ~4–5 million FSD-capable vehicles in the fleet",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000000,
+    "context": "Represents the current paying FSD subscriber base; broader capable fleet is 4–5 million — key input for AI/autonomy revenue modeling",
+    "source": "20260526_brighterwithherbert_01_Tesla_And_Spacex_May_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-26T14:02:35.947Z",
+    "status": "pending"
   }
 ]
