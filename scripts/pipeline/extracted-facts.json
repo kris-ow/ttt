@@ -8055,5 +8055,65 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-26T16:03:38.648Z",
     "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi forecasts 10,000–20,000 Cybercabs deployed by end of 2026, with 15,000 as central estimate",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Jo Bhakdi's central case for end-of-2026 Cybercab fleet; he argues no conventional analyst has this on their forecast, implying massive underpricing of future cash flows",
+    "source": "20260526_brighterwithherbert_02_Tesla_Ferrari_And_Toyota_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-26T19:02:11.984Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi projects Cybercab fleet reaching millions before or around 2030 and tens of millions by end of 2030s",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Long-run fleet growth trajectory underpinning Jo Bhakdi's Tesla valuation; he argues conventional analysts project only 100,000–200,000 units around 2040",
+    "source": "20260526_brighterwithherbert_02_Tesla_Ferrari_And_Toyota_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-26T19:02:11.985Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi estimates Cybercab long-run COGS of approximately $10,000 at full production scale",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 10000,
+    "context": "Driven by economies of scale from concentrating on a single high-volume model; compared to commodity TV pricing dynamic",
+    "source": "20260526_brighterwithherbert_02_Tesla_Ferrari_And_Toyota_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-26T19:02:11.985Z",
+    "status": "pending"
+  },
+  {
+    "fact": "If Cybercab fleet reaches 15,000 in 2026, Jo Bhakdi projects 100,000+ units in 2027 with massive free cash flow impact",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 100000,
+    "context": "2027 fleet growth projection contingent on 2026 ramp achieving central case; used to argue market consensus is dramatically underestimating cash flows",
+    "source": "20260526_brighterwithherbert_02_Tesla_Ferrari_And_Toyota_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-26T19:02:11.985Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 completed 1,776 miles of a 3,700-mile coast-to-coast Canada trip with zero disengagements as of Day 3 (approximately May 23, 2026)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Real-world demonstration of FSD reliability over extended long-distance driving in Canada; no disengagements reported across 1,776 miles",
+    "source": "20260526_brighterwithherbert_02_Tesla_Ferrari_And_Toyota_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-26T19:02:11.985Z",
+    "status": "pending"
   }
 ]
