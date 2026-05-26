@@ -7995,5 +7995,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-25T19:08:05.507Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla unsupervised robotaxi fleet stands at approximately 39 vehicles as of 2026-05-09 per RobotaxiTracker.com (Austin 28, Dallas 5, Houston 6)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Current baseline for unsupervised (driverless) fleet; host speculates Tesla is preparing a sprint to 100–200 vehicles, which he calls 'market-making news'",
+    "source": "20260526_investingagainstthegrain_01_Tesla_Is_About_To_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-05-26T02:02:39.871Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host speculates Tesla could expand unsupervised robotaxi fleet from ~30–39 vehicles to 100–200 vehicles in a near-term sprint",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "No specific timeline given, but framed as an imminent catalyst; reaching 100–200 unsupervised vehicles described as 'market-making' and a competitive inflection point vs. Waymo",
+    "source": "20260526_investingagainstthegrain_01_Tesla_Is_About_To_summary.txt",
+    "channel": "investingagainstthegrain",
+    "extractedAt": "2026-05-26T02:02:39.871Z",
+    "status": "pending"
   }
 ]
