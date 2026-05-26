@@ -8031,5 +8031,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-26T14:02:35.947Z",
     "status": "pending"
+  },
+  {
+    "fact": "Bhakdi projects Cybercab production reaching thousands of units per month within one to two months (approximately June–July 2026)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Implies annualized Cybercab production potentially in the tens of thousands starting mid-2026; key fleet growth input",
+    "source": "20260526_jobhakdi_01_Why_Tesla_Stock_Could_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-26T16:03:38.648Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi expects multiple hundreds of unsupervised robotaxis to be operating by August 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Near-term unsupervised fleet size projection; materially above current RobotaxiTracker.com canonical figure of 39 unsupervised as of May 9, 2026",
+    "source": "20260526_jobhakdi_01_Why_Tesla_Stock_Could_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-26T16:03:38.648Z",
+    "status": "pending"
   }
 ]
