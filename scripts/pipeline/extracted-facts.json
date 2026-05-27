@@ -8139,5 +8139,29 @@
     "channel": "electrified",
     "extractedAt": "2026-05-27T00:05:06.039Z",
     "status": "pending"
+  },
+  {
+    "fact": "Netherlands FSD Supervised evaluation used 1.12 million miles of European driving data over 18+ months before approval",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 1120000,
+    "context": "This dataset formed the regulatory foundation accepted by Lithuania and likely Greece; directly relevant to safety validation benchmarks",
+    "source": "20260527_theteslaspace_01_Tesla_Reveals_Major_New_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-27T22:04:31.695Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD Supervised active: collision probability per km is up to 7x lower compared to manual driving, per Tesla Europe",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 7,
+    "context": "Key safety statistic cited in European regulatory context; a 7x improvement in collision probability supports regulatory adoption and insurance cost modeling",
+    "source": "20260527_theteslaspace_01_Tesla_Reveals_Major_New_summary.txt",
+    "channel": "theteslaspace",
+    "extractedAt": "2026-05-27T22:04:31.695Z",
+    "status": "pending"
   }
 ]
