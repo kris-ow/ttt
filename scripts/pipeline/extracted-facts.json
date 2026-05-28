@@ -8199,5 +8199,29 @@
     "channel": "electrified",
     "extractedAt": "2026-05-28T01:03:14.312Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Cybercab robotaxi estimated to generate approximately $25,000 per year in revenue per vehicle, versus approximately $4,000–$5,000 profit on a Model Y sale",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Hosts use this rough comparison to argue Cybercab fleet economics are 3–5x more valuable per unit than consumer vehicle sales; no per-mile figure given, only annual revenue estimate",
+    "source": "20260528_futureaza_01_Tesla_Just_Flipped_The_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-28T13:03:42.668Z",
+    "status": "pending"
+  },
+  {
+    "fact": "One Cybercab estimated to be equivalent to 3–5 consumer cars in annual revenue to Tesla; hosts settle on 3–4x accounting for peak-hour concentration",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Hosts debate the multiplier; Herbert's 3–4x estimate reflects utilization constraints due to concentration of driving hours, implying less-than-full-day utilization",
+    "source": "20260528_futureaza_01_Tesla_Just_Flipped_The_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-28T13:03:42.668Z",
+    "status": "pending"
   }
 ]
