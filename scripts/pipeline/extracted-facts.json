@@ -8163,5 +8163,41 @@
     "channel": "theteslaspace",
     "extractedAt": "2026-05-27T22:04:31.695Z",
     "status": "pending"
+  },
+  {
+    "fact": "Active Tesla robotaxi fleet per RobotaxiTracker.com: 696 total (Bay Area 579, Austin 104, Dallas 6, Houston 7) as of 2026-05-23",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 696,
+    "context": "Canonical fleet count from RobotaxiTracker.com; fleet growth has stalled since approximately May 9th",
+    "source": "20260528_electrified_01_Why_Teslas_Robotaxi_Rollout_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-28T01:03:14.312Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) Tesla robotaxi fleet per RobotaxiTracker.com: 39 total (Austin 28, Dallas 5, Houston 6) as of 2026-05-09",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Subset of total fleet operating without safety driver — key for true driverless unit economics",
+    "source": "20260528_electrified_01_Why_Teslas_Robotaxi_Rollout_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-28T01:03:14.312Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dillon Loomis expects approximately 30 Cybercabs in Austin and 10–15 each in Dallas and Houston to be deployed within the next few weeks",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Near-term fleet expansion estimate; meaningful for modeling near-term fleet growth trajectory",
+    "source": "20260528_electrified_01_Why_Teslas_Robotaxi_Rollout_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-05-28T01:03:14.312Z",
+    "status": "pending"
   }
 ]
