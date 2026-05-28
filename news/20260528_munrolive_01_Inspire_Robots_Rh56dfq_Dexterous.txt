@@ -1,0 +1,221 @@
+Channel:     munrolive
+Title:       Inspire Robots RH56DFQ: Dexterous Hand Demo
+URL:         https://www.youtube.com/watch?v=8GDVIAPAx3g
+Published:   2026-05-28 13:30 UTC
+Fetched:     2026-05-28 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hello, welcome to Monroe Live. My name
+is Mike Kasein. I'm a senior electrical
+engineer here at Monroe and Associates.
+And today we're actually going to talk
+about robot hands. Uh the humanoid
+robotic space is uh getting become
+pretty expensive and a lot of new
+companies are starting to show their
+product here. And when you think about
+humanoid robots, a lot of people think
+the complication in there might be in
+the uh the sensors or the main processor
+of the robots. But if you look at your
+hand, it's probably one of the most
+complex part of the robot. So that's why
+we are choosing to look at hands first
+to explore how they're being made, how
+what's the movements are and the
+specifications and all the companies
+involved in making these hands. So we'll
+step through how these hands work, uh
+what the features are, and kind of go
+through a demo of uh of how they work.
+So, what we have here is we have a hand
+made by Inspire Robotics. This actually
+is the Inspire RH56DFQ
+hand. It has six degrees of movement.
+Um, and so that means basically has
+moved six different ways.
+And so, this is the robot hand that
+we're actually going to tear down and
+take a look at how they're made it. So,
+before we get into that though, let's do
+a little explanation of what all that
+means. So, I have a really cheap 3D
+printed hand here. It's uh so ignore the
+quality, but there are a lot of
+different ways you can make these uh
+these fingers move, right? And so the
+simplest way is to put two uh basically
+ropes or cables or lig ligaments on your
+fingers and basically you just pull it
+back and forth and that makes that hand
+move. This is a really cheap way and
+probably not what you're going to find
+in the commercial version, but a lot of
+hobbyists will do it this way for price,
+but it's one way of doing it. uh to go
+off that same thing is you can put a
+spring in your finger on one side and
+they only have one hand that moves that
+finger and that creates that movement.
+Now we talk about the degrees of
+movement. What we're basically mean is
+how many time how many ways it can move.
+So a degree of movement one would be
+this. This can only move one way back
+and forth. That's one degree of
+movement. If I had a robot hand that
+could take the fingers and individually
+move it this way, that would be another
+degree of movement. So when I say six
+degrees of movement on this hand, it
+only means that these hands can only
+move six different ways. So it' be the
+five fingers and then the the thumb can
+articulate back and forth. If you look
+at this hand, it uh you can definitely
+move it when it's not actuated. So this
+this actually has an actuator in here
+that pushes this finger forward, causes
+it to curl, and that's how it moves. So,
+we'll do a little demo uh on the
+software to show you some movements and
+some features this this sand has. All
+right.
+All right. So, the software that comes
+with is a test software and they have
+some
+um preloaded commands and we'll run a
+couple through here. If we run it,
+I give you the okay sign.
+I can make it do.
+There is, I believe, a where it flicks
+the finger at you. I think it's not that
+one.
+One of these.
+And then we can do a fist.
+There's a fist.
+So, I can control these individually as
+well. Let me open this hand back up.
+And then I don't know if you want to
+view the software here, but we'll show
+you the sensors that we have. So, I turn
+this around.
+Let me close this.
+All right. So, there are some sensors on
+the hand. So, if I touch the finger, you
+can see that bar go up. So, it is
+detecting some input on the fingers. I
+can go all the way through and do this.
+There are some hands that will have
+tactile sensors on the fingers that will
+detect that movement, but this actually
+does a different way. There is no
+sensors on the finger. There is actually
+a pressure sensor on the bottom of the
+actuator that's detecting this movement.
+So, if I actually separated this from
+the actuator and do that movement, you
+won't see any movement at all. It has to
+be connected to the actuator for that
+sensor to happen.
+And then of course we control each
+individual finger
+through the software just by
+moving that up like that. And then I
+have my thumb that go back and forth
+and this can be hooked up to uh so these
+companies can make make these hands not
+necessarily the whole robot they make
+just the hands itself. I can buy this
+hand put it on other robots program it
+see Python and be able to use that
+robot. Uh, it has to be compatible with
+a robot, but they do sell these hands.
+This hand is actually around 10 grand.
+It is actually on the lower end of the
+hands. This is one of the cheaper
+versions you can buy. The more degrees
+of movement you have, the more expensive
+it becomes. I think there there's a hand
+called the Sharper Wave, which is around
+about probably about $100,000 that has
+like 26 degrees of movement. It has
+sensors in every finger, I believe. And
+has even has cameras in the fingers as
+well. Uh, and so that is probably one of
+the more expensive hands. All the way
+down to this one right here. We can take
+this cover off,
+normally screwed on, but I have it
+unscrewed.
+So, we can see like that off the
+actuators. So, how this works is very
+simple is these are linear microlinear
+actuators. And if I move,
+you can see it's just basically a piston
+that goes back and forth.
+That's all there is to it. They do have
+a spring in the top hand that keeps it
+from springing back. It's located from
+here to here. So, when this moves and it
+goes back, it just springs back. The
+sensor, the sensor down here at the
+bottom. That's what causes that hand to
+go up is when you press on it, you'll
+see it go up like there. That sensor is
+down here at the bottom. So, they kind
+of cheat. A lot of people think there is
+actually a sensor in the fingertips. It
+really is down at the bottom of the
+actuator.
+And then you have the same kind of
+actuators and thumb that we don't I
+can't take off yet, but in here as well.
+And they have one here to move it back
+and forth.
+And then in the hand itself, you can do
+it control it by the cable I have here.
+Or you can attach a robot and use it
+through uh the connections there. All
+right. So, when we took it apart, this
+fell off. This basically is a spacer
+that helps keep these U pressure sensors
+aligned. It just snaps in there like
+that. And you'll see that it keeps these
+pretty snug. All right. So, this hand is
+capable of, at least this model is
+capable of doing about four newtons on
+the fingers and six newtons on the
+thumb. Um, there are other models that
+will make that go up to, I think, six
+and 12 if I remember right, but this is
+the lower end of the hand, so the power,
+the gripping power is not as strong. Um,
+which means it can grip things, but it
+probably couldn't hold on very well if
+if somebody hits it. Um there are as you
+can see there are a lot of different
+companies making trying to make these
+hands. They are independent and you go
+buy this. This is the cheaper one. They
+decided to do this little miniature act
+micro actuator for this. Some will
+actually use gears. Some will use motors
+for each one of these joints to have
+individual movement. Uh I think I said
+already this has six degrees of
+movement. The more expensive hands can
+go up to 25 26 degrees of movement. If
+you look at your fingers or your hands,
+right? I can move my hands this way.
+This can't do that. So that's another
+degree of movement you would have to
+have to make this hand more look like
+your hand. Okay. So we will be taking
+this hand apart, tearing it down and
+doing a complete tear down of this hand.
+We also have plans of doing a robot a
+tear down. So we'll have more of these
+series coming along. Uh so stay tuned.
+More to come. Thank you.
