@@ -8259,5 +8259,53 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-28T14:03:38.100Z",
     "status": "pending"
+  },
+  {
+    "fact": "Elon Musk has publicly predicted robotaxi fares as low as 30 cents per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.3,
+    "context": "Randy Kirk cites Elon's prediction of ~$0.30/mile as the low end of robotaxi pricing, with a range discussed up to $1/mile; relevant to robotaxi unit economics modeling",
+    "source": "20260528_futureaza_02_Legacy_Auto_Still_Does_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-28T20:03:36.750Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Randy Kirk estimates robotaxi rides could range from $0.30 to $1.00 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Range of $0.30–$1.00/mile discussed as the likely consumer pricing band for autonomous robotaxi services, compared to Uber at ~$3/mile today",
+    "source": "20260528_futureaza_02_Legacy_Auto_Still_Does_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-28T20:03:36.750Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Uber pricing cited at approximately $3 per mile for typical trips as of mid-2026",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 3,
+    "context": "Randy Kirk's real-world Uber usage provides a current human-driven ride-hail benchmark against which robotaxi pricing ($0.30–$1.00/mile) is compared",
+    "source": "20260528_futureaza_02_Legacy_Auto_Still_Does_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-28T20:03:36.750Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Pony AI raised its robotaxi fleet target to 3,500 vehicles by end of 2026, up 500 from prior target",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3500,
+    "context": "Pony AI fleet target increase signals competitor scaling ambitions; useful benchmark for robotaxi fleet growth projections",
+    "source": "20260528_brighterwithherbert_02_Teslas_Rivals_Keep_Copying_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-28T20:03:36.760Z",
+    "status": "pending"
   }
 ]
