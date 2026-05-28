@@ -1,0 +1,39 @@
+Channel:     electrek
+Title:       Tesla’s own AI trainers don’t trust ‘Full Self-Driving’ or its safety stats, Reuters finds
+Published:   2026-05-28 13:33 UTC
+Summarized:  2026-05-28 14:03:38 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_017okWAfh4iFd7Fq3Ur3KJG2
+Cost:        $0.02307 (3498 in / 2377 out tokens)
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+A Reuters investigation, based on interviews with nine former Tesla data labelers, a former self-driving engineer, and 11 traffic-safety researchers, finds that Tesla's FSD safety statistics are methodologically flawed and that the company's own AI trainers overwhelmingly distrust the technology.
+
+## Autonomous Driving
+
+1. **Safety statistics inflated by a factor of three:** Tesla executives — including CEO Elon Musk, CFO Vaibhav Taneja, and Board Chair Robyn Denholm — have repeatedly claimed FSD is up to 10 times safer than human drivers, with Musk displaying a chart at a November shareholder meeting claiming "85% less crashes." Reuters found that Tesla compared airbag-deployment crashes in its own fleet against federal data that includes all crashes requiring a tow truck — a far less severe threshold. University of Michigan researcher Marco Benedetti performed the correct apples-to-apples comparison (airbag crashes vs. airbag crashes) and found the result dropped from "10x safer" to roughly three times farther between crashes. That figure itself remains unreliable due to the age gap between Tesla's fleet (4.1 years average) and the overall U.S. fleet (12.8 years). Ten of 11 traffic-safety researchers who reviewed the methodology told Reuters it amounted to misleading marketing.
+
+2. **Tesla's own data labelers don't trust FSD:** Seven of the nine former data labelers told Reuters they wouldn't trust FSD to drive them. One said he wouldn't ride in a Tesla robotaxi "if you fucking paid me." A veteran self-driving engineer who reviewed Tesla crash data for years called the company's safety claims "bullshit" and said: "Definitely, don't trust Elon on this." Labelers described routinely seeing FSD fail to yield to emergency vehicles, give motorcyclists adequate space, brake on freeway off-ramps, and avoid construction zones. A specialized "trauma team" in Palo Alto reviewed near-misses with pedestrians, including clips of FSD-piloted vehicles nearly hitting children and failing to recognize pedestrians in crosswalks. FSD was also reported regularly exceeding speed limits by 20–30 mph after Tesla introduced a "Mad Max" aggressive driving mode, with one reported instance of 60 mph in a 25-mph zone.
+
+3. **NHTSA scrutiny and legal exposure:** NHTSA currently has four active investigations into FSD and Autopilot, including a probe into dozens of cases where FSD ran red lights or turned into oncoming traffic, and a review of whether Tesla's 2023 Autopilot recall was sufficient. Tesla was also hit with a $243 million verdict after an Autopilot crash in Florida killed a 22-year-old woman. Despite Musk's November statement that Tesla would soon allow drivers to text while using FSD, the feature has not been enabled six months later; Tesla's own FSD website continues to state the system requires active driver supervision.
+
+## Robotaxi
+
+1. **Extensive pre-launch mapping contradicts Musk's "no HD maps" claim:** Reuters found that Tesla conducted weeks of intensive nightly testing and mapping at the Warner Bros. studio lot before the October 2024 Cybercab unveiling, and similarly mapped Austin's limited robotaxi zone extensively before its June 2025 launch — annotating curbs, traffic lights, road signs, and road markings. The Utah data-labeling staff doubled to approximately 300 workers in the six months before the Austin launch. This directly contradicts Musk's repeated claim that Tesla's approach does not require the "laborious local mapping" used by rivals like Waymo. One former employee described the Austin zone: "You can't get creative outside of that."
+
+2. **Unsupervised fleet remains very small:** Nearly a year after the Austin launch, Tesla still operates only about 20 unsupervised robotaxis there within a limited and carefully mapped zone. Some vehicles still carry human safety monitors in the front seat. The Reuters findings explain the scaling difficulty: the labor-intensive, zone-specific mapping and annotation process is extremely hard to replicate broadly.
+
+## Editorial Stance
+Author Fred Lambert states the Reuters findings confirm what Electrek has long documented — that Tesla's safety claims don't hold up — and calls the statistical methodology choice (using a metric that inflated safety claims 3x despite access to correct data) deliberate rather than accidental. Lambert also flags a new complacency risk: as FSD improves on HW4 hardware, drivers are becoming less attentive, making the remaining edge-case failures more dangerous, and argues Tesla is not doing enough to address this.
+
+Notable quotes and data:
+- "It's like saying: 'My jet airplane is faster than your World War II bomber.' Yeah, so, what's your point?" — Carnegie Mellon professor Phil Koopman
+- "Definitely, don't trust Elon on this." — former Tesla self-driving engineer
+- One labeler: he wouldn't ride in a Tesla robotaxi "if you fucking paid me"
+- Tesla fleet average age: 4.1 years vs. U.S. fleet average: 12.8 years
+- Safety claim inflation factor: ~3x, per University of Michigan researcher Marco Benedetti's corrected comparison
+- Austin unsupervised robotaxi count: ~20 vehicles, per Reuters
+- Utah labeling staff pre-Austin launch: ~300 workers (doubled in six months)
+- Tesla $243 million verdict in Florida Autopilot wrongful death case
+- NHTSA: 4 active FSD/Autopilot investigations currently open

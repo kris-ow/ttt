@@ -8223,5 +8223,41 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-28T13:03:42.668Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla's Austin unsupervised robotaxi fleet is approximately 20 vehicles nearly one year after the June 2025 launch, operating within a limited mapped zone",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 20,
+    "context": "Reuters figure for Austin unsupervised fleet; materially lower than RobotaxiTracker.com canonical figure of 39 unsupervised (Austin 28) — Reuters may be using a different count or snapshot date; signals severe scaling difficulty",
+    "source": "20260528_electrek_01_Teslas_Own_Ai_Trainers_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-05-28T14:03:38.089Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab certified efficiency: 165 Wh per mile, confirmed by Tesla VP of Vehicle Engineering Lars Morvy",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Lower energy consumption per mile directly reduces per-ride operating cost in robotaxi unit economics; this is the most efficient vehicle Tesla has ever made",
+    "source": "20260528_brighterwithherbert_01_Tesla_Just_Dropped_Huge_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-28T14:03:38.100Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla engineers told Brian White the Cybercab achieves 5.5 miles per kWh, which they described as what they are 'allowed to say,' implying actual efficiency is higher",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.182,
+    "context": "5.5 miles/kWh = ~182 Wh/mile; engineers implied real-world performance exceeds this figure, making 165 Wh/mile the certified floor",
+    "source": "20260528_brighterwithherbert_01_Tesla_Just_Dropped_Huge_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-28T14:03:38.100Z",
+    "status": "pending"
   }
 ]
