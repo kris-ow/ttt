@@ -8331,5 +8331,65 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-05-29T00:04:02.128Z",
     "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet in Austin approximately 27–28 vehicles out of ~52 total active in Austin per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 28,
+    "context": "Austin unsupervised subset; full Austin active fleet described as ~52; cited in discussion of when remaining supervised vehicles will be converted",
+    "source": "20260529_cernbasher_01_Tesla_Already_Solved_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-29T12:04:04.628Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet in Dallas approximately 5 vehicles per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 5,
+    "context": "Early Dallas unsupervised deployment; panel notes this is too small to draw conclusions",
+    "source": "20260529_cernbasher_01_Tesla_Already_Solved_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-29T12:04:04.628Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet in Houston approximately 6 vehicles per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 6,
+    "context": "Early Houston unsupervised deployment alongside Dallas; panel characterizes both as pilot-scale",
+    "source": "20260529_cernbasher_01_Tesla_Already_Solved_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-29T12:04:04.628Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi fare range cited as $0.30, $0.70, or $1.00 per mile — all described as economically viable per Ark Invest modeling",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Panel references Ark Invest analysis showing Tesla robotaxi generates strong returns across a wide range of per-mile fares; no single fare assumed as base case",
+    "source": "20260529_cernbasher_01_Tesla_Already_Solved_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-29T12:04:04.628Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla reportedly declining to use remote human backup operators (e.g., overseas call-center model used by Waymo) as a deliberate strategic choice",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "value": null,
+    "context": "Panel argues Tesla's goal is zero human remote intervention at scale, which is why edge-case resolution is taking longer but will yield a more scalable unit economics model",
+    "source": "20260529_cernbasher_01_Tesla_Already_Solved_The_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-05-29T12:04:04.628Z",
+    "status": "pending"
   }
 ]
