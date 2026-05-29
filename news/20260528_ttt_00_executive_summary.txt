@@ -1,0 +1,86 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-28)
+Published:   2026-05-28 00:00 UTC
+Summarized:  2026-05-29 04:43:50 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.10261 (18789 in / 3083 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | 0 | +13 |
+| Houston | 6 | 0 | 0 | +4 |
+| Dallas | 5 | 0 | 0 | +3 |
+| **Total** | **39** | 0 | 0 | +20 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Tesla must launch robotaxi service in 5 new cities within ~33 days.
+- Reuters: FSD safety claims inflated ~3x vs. correct apples-to-apples comparison.
+- Cybercabs spotted in Austin with Starlink Mini satellite dishes as backup connectivity.
+- Cybercab confirmed at 165 Wh/mile — most efficient Tesla vehicle ever.
+- Tesla Europe registrations: +46.5% YoY in April; third consecutive month of growth.
+- Optimus factory first steel structure erected; stated capacity 10M units/year.
+
+## Robotaxi
+- **June 30th hard deadline for five new cities.** Tesla's Q4 2024 earnings document — not a tweet, a compliance-reviewed IR filing — commits to robotaxi service in Las Vegas, Tampa, Orlando, Miami, and Phoenix by June 30th, 2026, approximately 33 days from today. Tesla AI safety operator hiring is simultaneously live across 15+ U.S. states, per a May 27th post flagged by Bhakdi, which he reads as a direct operational precursor to that expansion.
+- **Fleet growth has stalled since mid-May in all three Texas cities**, per RobotaxiTracker.com. A community photo shows 13 Cybercabs parked in Dallas appearing inactive. Houston depot activity — hazard lights on Model Ys, trunk parts being removed, non-robotaxi vehicles cleared from the lot — is interpreted by Dillon Loomis as "all hands on deck" pre-deployment preparation.
+- **~80% of rides over the past 7 days have been unsupervised**, per RobotaxiTracker.com, and 21 of the 26 active vehicles tracked over the past 30 days are running driverless.
+- **Cybercabs spotted with Starlink Mini units bolted to the rear hatch** in Austin. Brian White (FutureAzA) explains this as redundant backup connectivity — insulating the fleet from single-carrier dependency at scale and enabling invisible load-shifting of heavy data tasks like overnight OTA updates.
+- **Bhakdi estimates 200+ serially produced Cybercabs** are already deployed "in the wild," citing Joe Tegtmeyer drone footage from May 27th showing consistent Cybercab throughput at Giga Texas. Loomis's near-term personal expectation is ~30 Cybercabs in Austin and 10–15 each in Dallas and Houston.
+- **Reuters investigation directly contradicts Musk's "no HD maps" claim.** Tesla conducted weeks of intensive nightly mapping at the Warner Bros. lot before the October 2024 unveiling and mapped Austin's robotaxi zone extensively before its June 2025 launch — annotating curbs, lights, signs, and road markings. Utah labeling staff doubled to ~300 in the six months prior to Austin's launch. One former employee described the Austin zone: "You can't get creative outside of that."
+
+## Autonomous Driving
+- **Reuters: FSD safety statistics inflated ~3x by methodology.** Tesla compared airbag-deployment crashes in its own fleet against federal data covering all tow-truck crashes — a far less severe threshold. University of Michigan researcher Marco Benedetti's corrected apples-to-apples comparison drops the "10x safer" claim to roughly 3x farther between crashes. That figure is itself unreliable given Tesla's fleet average age of 4.1 years versus the U.S. fleet average of 12.8 years. Ten of 11 traffic-safety researchers who reviewed the methodology called it misleading marketing.
+- **Tesla's own former data labelers are damning.** Seven of nine told Reuters they wouldn't trust FSD to drive them. Labelers described routine failures: not yielding to emergency vehicles, not braking on freeway off-ramps, not recognizing pedestrians in crosswalks, and speeds of 60 mph in 25-mph zones after the "Mad Max" aggressive mode was introduced. A "trauma team" in Palo Alto reviewed near-misses with children.
+- **NHTSA has four active FSD/Autopilot investigations** currently open, including a probe into dozens of red-light violations and wrong-way turns. Tesla also faces a $243 million wrongful death verdict from a Florida Autopilot crash.
+- **FSD 14.3's most significant change is architectural**, per Loomis: a ground-up rewrite of the compiler and runtime. He cautions this is a foundational building block, not a polished release, and has personally observed some phantom braking. Separately, FutureAzA references an earlier version (13.3) as having meaningfully reduced driver attention nag frequency — one user reported driving over an hour without a prompt.
+- **Xpeng's CEO declared the company "absolutely adamant" they no longer need lidar** — a position taken since July 2024, after which lidar on Xpeng vehicles was deprecated and is now purely ornamental. Brian White cites Xpeng as the current end-to-end neural net leader in China, with Huawei's lidar-based platform still constrained by AI chip export restrictions.
+- **Waymo paused Atlanta service** after vehicles repeatedly drove into flooded roads, issuing a software recall. The hosts contrast this with Tesla's neural net reasoning approach to ambiguous road conditions.
+
+## Humanoid Bots
+- **First steel structure erected at the Optimus factory site**, per Joe Tegtmeyer, with second-phase land reclamation underway. The stated capacity at the construction site is 10 million units per year at Giga Texas.
+- **Munro Live demonstrated the Inspire Robotics RH56DFQ dexterous hand** ($10,000, 6 degrees of freedom, micro linear actuators, pressure sensing at actuator base rather than fingertips) as the first installment in a broader series. A full teardown and a separate full humanoid robot teardown are planned. The video underscores the mechanical complexity of robotic hands — the most capable commercially available unit shown costs $100,000 and features 26 degrees of movement with fingertip cameras.
+- **~80% probability assigned by Herbert** (brighterwithherbert) to China eventually permitting Tesla to sell Optimus and build a factory there, citing Tesla's FSD data-sequestration model as the regulatory blueprint.
+
+## Energy
+- **Tesla Oasis in Lost Hills, CA — 164 stalls, world's largest charging station** — peaked at 112 simultaneous cars on Memorial Day weekend. The station runs on solar and Megapacks with only an emergency grid connection, a design Brian White says avoided prohibitively expensive transmission line upgrades.
+- **Megapack 3 Belgium deployment: 180 units, 700 MWh capacity, $116M project value.** Belgian company Spy is installing them on a former power plant site; grid connection work begins November 2025, commissioning expected by end of 2027. This is one of the first large-scale Megapack 3 deployments in Europe.
+- **Volvo EV drivers will access 20,000+ Tesla Superchargers across 29 European countries** directly through the Volvo app starting Q4 2026.
+- **Tesla Superchargers now live in Colombia**, continuing Latin American network expansion.
+- **WeChat prepaid Supercharger access for non-Tesla EVs in China** removes the app requirement. Brian White projects ~$45M in annual incremental revenue from just two extra non-Tesla sessions per stall per day across 1,000 open stations averaging 10 stalls each.
+
+## Electric Vehicles
+- **Tesla Europe: +46.5% YoY in April 2026**, 10,654 units across EU, UK, and four other markets; EU-alone growth was +67%. This is the third consecutive month of year-over-year growth following +84% in March and +12% in February. France and Spain are reportedly at record highs. Year-to-date European sales are up ~45.8% vs. prior year.
+- **Cybercab confirmed at 165 Wh/mile** by Tesla VP of Vehicle Engineering Lars Morvy on the Ride the Lightning podcast — the most efficient Tesla vehicle ever produced. Brian White says engineers told him "5.5 miles per kWh is what we're allowed to say," implying real-world performance exceeds the certified figure.
+- **Next-gen Roadster confirmed for Giga Texas manufacture**, with alpha prototypes already in testing. A new test track is under construction at the site. Morvy described it as the first Tesla motor designed with a "pure performance mentality."
+- **BYD sold 101,000+ vehicles in EU/EFTA/UK** in the first four months of 2026, up ~144% YoY, exceeding Tesla's volume. Chery Auto grew +338% YoY in the same markets. EU full-BEV share now stands at 19.7%, up from 15.3% a year ago.
+- **Xiaomi YU7 Standard Edition launched at ~$33,000** — a direct Model Y competitor — while losing approximately $5,000 per unit, a structural loss that worsens with volume.
+- **GM and Samsung fully paused construction of their $3.5 billion "Synergy Cells" battery plant**, citing economic factors and the end of EV incentives. "Substantial completion" by end of 2027 means only finishing the building shell — no equipment will be installed. GM simultaneously invested $600M+ in transmission and V8 propulsion capacity.
+
+## Market & Competition
+- **SpaceX IPO filed May 20th, targeting ~$2.5 trillion valuation, NASDAQ listing June 12th.** Bhakdi calls it engineered to be a buy and expects secondary positive effects on Tesla through merger speculation and index-forced institutional buying. Dillon Loomis notes FTSE Russell fast-entry enhancements — qualifying IPOs join indices five days after listing — were largely put in place for SpaceX.
+- **Anthropic is paying SpaceX $1.255 billion/month through May 2029** (~$15B/year) for compute access, per the S-1 filing. SpaceX's AI segment lost $6.4 billion in 2025, but this contract alone could flip the company to profitability in 2026.
+- **Elon's real-world voting power at Tesla is ~11% today**, not the commonly cited ~20%, per Loomis's breakdown. The ~20% figure includes 303 million unexercised options without current voting rights. The exercise window (May 21–August 15) would push his stake to ~17.6%; full vesting of the 2025 award would ultimately reach ~28.1%.
+- **Stellantis announced a €60 billion plan for 29 new EVs by 2030**, nine priced under €30,000, with autonomous driving partner Wave AI launching a supervised system in 2028 — still lidar-based. Brian White gives Mercedes's concurrent plan to deploy point-to-point automated driving in German cities by end of 2026 roughly 10% odds of meeting the timeline.
+- **China issued 154,000 NEV license plate quotas exclusively for BEVs**, with the family eligibility score hitting a historic low. One analyst cited estimates Tesla could capture ~23,000 incremental sales at ~15% of the allocation — Model Y and Model 3 buyers match the target demographic precisely.
+
+Notable quotes and data:
+- **Reuters safety inflation:** ~3x, per University of Michigan's Marco Benedetti — corrected apples-to-apples (airbag vs. airbag) vs. Tesla's published "10x safer" claim
+- **Tesla fleet average age: 4.1 years** vs. U.S. fleet average: **12.8 years** — a confound that makes even the corrected figure unreliable
+- **Former Tesla self-driving engineer:** "Definitely, don't trust Elon on this."
+- **Former data labeler:** wouldn't ride in a Tesla robotaxi "if you fucking paid me"
+- **Lars Morvy (Tesla VP Engineering):** Cybercab certified at **165 Wh/mile**; engineers privately say **5.5 miles/kWh** is what they're "allowed to say"
+- **Cybercab revenue estimate:** ~$25,000/year per vehicle in a robotaxi fleet vs. ~$4,000–$5,000 profit on a Model Y sale (FutureAzA)
+- **Anthropic deal:** $1,255,000,000/month through May 2029 — disclosed in SpaceX S-1
+- **SpaceX cash burn:** ~$9 billion in Q1 2026 alone ($24B → $15B)
+- **GM total investment since 2025:** $6B+, predominantly ICE/transmission; Samsung battery plant $3.5B fully paused
+- **Brian White on Xpeng lidar:** "It's ornamental. It's decorative."
+- **Randy Kirk on robotaxi pricing:** "30 cents a mile as Elon predicts" at the low end; "massive by next year or the year following"
