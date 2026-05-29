@@ -8391,5 +8391,53 @@
     "channel": "cernbasher",
     "extractedAt": "2026-05-29T12:04:04.628Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla's modeled robotaxi cost per mile: $0.25, derived from first-principles build-up including charging infrastructure, electricity cost, depreciation, and cleaning",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.25,
+    "context": "Potter built this cost-side figure independently and was pleased it matched Tesla's public statements; this is a cost per mile figure, not necessarily the fare charged to passengers",
+    "source": "20260529_brighterwithherbert_01_Exclusive_Wall_Street_Star_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-29T21:04:02.819Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercab vehicle useful life assumed at 6 years with straight-line depreciation over that period",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": 6,
+    "context": "Identified by Potter as a significant driver of the modeled cost per mile; this is the Piper Sandler assumption in their DCF model",
+    "source": "20260529_brighterwithherbert_01_Exclusive_Wall_Street_Star_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-29T21:04:02.819Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Peak annual Cybercab production in Piper Sandler model: approximately 2 million units per year, reached in the mid-2030s",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 2000000,
+    "context": "Backed into from demand-side (city-level ridership) rather than assumed from production capacity; Potter notes this aligns with capacity figures Elon Musk has discussed",
+    "source": "20260529_brighterwithherbert_01_Exclusive_Wall_Street_Star_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-29T21:04:02.819Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Global active Tesla robotaxi fleet projected at 14–15 million vehicles by end of 2045 forecast period",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 14500000,
+    "context": "This is Piper Sandler's long-run modeled fleet size; Potter notes this reflects ride-hailing scope, not full transportation-as-a-service",
+    "source": "20260529_brighterwithherbert_01_Exclusive_Wall_Street_Star_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-29T21:04:02.819Z",
+    "status": "pending"
   }
 ]
