@@ -8319,5 +8319,17 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-28T21:03:04.412Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD active miles: ~26.7 million miles/day as of late May 2026, up from ~18.5 million miles/day in April 2026 (~44% increase in ~1 month), per Morgan Stanley",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 26700000,
+    "context": "Morgan Stanley tracks daily FSD mileage as a leading indicator of FSD adoption and subscriber engagement; the sharp acceleration suggests accelerating FSD uptake heading into Q2 2026",
+    "source": "20260529_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-29T00:04:02.128Z",
+    "status": "pending"
   }
 ]
