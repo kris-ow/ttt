@@ -8463,5 +8463,65 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-05-30T00:01:56.596Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla is planning a Cybercab/robotaxi maintenance facility in Irving, Texas (near Dallas), reported as the second such facility after one in Las Vegas",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Indicates Tesla is building out dedicated maintenance infrastructure for Cybercab fleet operations; no cost figure provided",
+    "source": "20260529_futureaza_02_Nissan_Alone_Loves_The_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-30T08:02:32.487Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active Tesla robotaxi fleet: 700 tracked units total (Bay Area, Austin, Dallas, Houston) per RobotaxiTracker.com as of 2026-05-29",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 700,
+    "context": "Canonical community-tracked fleet count; Bhakdi references this figure directly during the livestream",
+    "source": "20260529_jobhakdi_01_How_To_Prepare_For_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-30T08:02:32.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) Tesla robotaxi fleet: 39 units across Austin, Dallas, and Houston per RobotaxiTracker.com",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Subset of total fleet operating without a safety driver; Bhakdi cites this as the current unsupervised count",
+    "source": "20260529_jobhakdi_01_How_To_Prepare_For_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-30T08:02:32.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Estimated Cybercab daily production at Giga Texas: approximately 30–36 units visible in a single day's photos from Joe Tegtmeyer",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Bhakdi extrapolates ~1,000 Cybercabs per month at 30/day production rate; no annual figure explicitly stated",
+    "source": "20260529_jobhakdi_01_How_To_Prepare_For_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-30T08:02:32.499Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi projects 15,000 unsupervised Cybercabs deployed by end of 2026, referencing independent agreement from Cern Basher and Herbert",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 15000,
+    "context": "Year-end 2026 fleet target cited as the trigger for Tesla stock reaching $700+; described as a consensus between two independent analysts",
+    "source": "20260529_jobhakdi_01_How_To_Prepare_For_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-05-30T08:02:32.499Z",
+    "status": "pending"
   }
 ]
