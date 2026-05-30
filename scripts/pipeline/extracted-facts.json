@@ -8547,5 +8547,89 @@
     "channel": "futureaza",
     "extractedAt": "2026-05-30T19:03:30.126Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab certified at 165 Wh per mile, confirmed by Tesla VP of Vehicle Engineering Lars Morphy",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Canonical efficiency figure for the Cybercab platform; directly sets the energy cost input for robotaxi unit economics modeling",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
+  },
+  {
+    "fact": "At 100,000 miles/year duty cycle, 165 Wh/mile vs. 250 Wh/mile saves approximately 8,500 kWh per vehicle per year",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": 100000,
+    "context": "Host describes 100,000 miles/year as 'a reasonable robotaxi duty cycle' — key utilization input for annual revenue and cost modeling",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Energy cost savings of approximately $1,000 per Cybercab per year versus a 250 Wh/mile alternative at $0.12/kWh and 100,000 miles/year",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Quantifies per-vehicle annual energy cost advantage of Cybercab platform; at 1 million vehicles equals ~$1B/year in fleet operating cost savings",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Electricity rate used in host's energy cost calculation: $0.12 per kWh",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.12,
+    "context": "Assumed electricity price used to convert kWh savings into dollar savings; relevant for energy cost per mile DCF input",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Cybercabs staged at hubs in Houston, Dallas, and Austin simultaneously, fitted with gold wheel caps and robotaxi front plates as of late May 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Multi-city pre-positioning indicates fleet buildup ahead of commercial launch; specific unit counts per city not disclosed but described as 'multiplying'",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host projects real-world Cybercab energy consumption will be 10–20% higher than the certified 165 Wh/mile figure due to city driving, weather, and HVAC",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Suggests modelers apply a 10–20% haircut to the 165 Wh/mile certified figure for realistic fleet operating cost estimates",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
+  },
+  {
+    "fact": "On a hypothetical fleet of 1 million Cybercabs, energy efficiency advantage over a 250 Wh/mile vehicle strips approximately $1 billion per year from fleet operating costs",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000000,
+    "context": "Host's illustrative fleet size used to scale per-vehicle energy savings to system-level economics; not a disclosed Tesla target",
+    "source": "20260530_brighterwithherbert_02_Teslas_Robotaxi_Rollout_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-30T20:03:30.645Z",
+    "status": "pending"
   }
 ]
