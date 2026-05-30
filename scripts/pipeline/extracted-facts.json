@@ -8439,5 +8439,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-05-29T21:04:02.819Z",
     "status": "pending"
+  },
+  {
+    "fact": "First zero-intervention FSD Supervised drive across Canada completed: 3,760 miles (6,051 km)",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 3760,
+    "context": "Longest publicly documented zero-intervention FSD run; demonstrates capability at transcontinental scale, relevant to safety and reliability thesis for unsupervised autonomy",
+    "source": "20260530_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-30T00:01:56.596Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Cybercabs active in Dallas, Texas, consistent with RobotaxiTracker.com reporting 7 active Dallas Robotaxis as of 2026-05-29",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 7,
+    "context": "Dallas fleet remains small but operationally active; per RobotaxiTracker.com canonical data (total active fleet across all cities: 700)",
+    "source": "20260530_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-05-30T00:01:56.596Z",
+    "status": "pending"
   }
 ]
