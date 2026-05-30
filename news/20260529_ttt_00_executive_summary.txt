@@ -1,0 +1,90 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-05-29)
+Published:   2026-05-29 00:00 UTC
+Summarized:  2026-05-30 04:17:45 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.06727 (9957 in / 2493 out tokens)
+Sources:     5
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | 0 | +9 |
+| Houston | 6 | 0 | 0 | +3 |
+| Dallas | 5 | 0 | 0 | +2 |
+| **Total** | **39** | 0 | 0 | +14 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD daily miles hit 26.7M/day, up 44% from April per Morgan Stanley.
+- Piper Sandler's Potter: Tesla's 17 modeled businesses worth ~$400/share; Optimus is free.
+- Robotaxi cost per mile modeled at $0.25 from first principles by Potter.
+- Full Austin unsupervised conversion estimated within 10 days by one analyst.
+- Waymo launches public rides in new "Ojai" robotaxi vehicle in three cities.
+- Australia Limondale BESS: 144 Megapacks, $145M, activating now.
+
+## Autonomous Driving
+
+- **FSD daily miles surged to ~26.7M/day** from ~18.5M in April 2026 — a ~44% month-over-month increase per a new Morgan Stanley note tracking the metric as a proxy for subscriber growth and engagement. No subscriber count was attached, but the acceleration is a direct leading indicator of FSD monetization momentum and training data accumulation.
+- **Piper Sandler's Alex Potter prices FSD at $99/month and calls it "quasi-free."** Potter uses FSD daily and argues the subscription dramatically underprices the productivity value being delivered, drawing a parallel to Steve Ballmer dismissing the iPhone. He expects the price to rise substantially as capability becomes undeniable.
+- **FSD licensing to third-party OEMs modeled at ~$400B in revenue by 2045**, with the inflection point pushed to the mid-2030s. Potter argues Western OEMs are pursuing a "Franken-monster" consortium approach that will ultimately fail, and predicts a domino effect similar to Supercharger NACS adoption — the first OEM to announce FSD licensing could see a significant stock re-rating.
+- **One in three vehicles on Earth modeled on Tesla's platform by 2045** in Potter's DCF. He acknowledges the figure could be 20% or 40%, with geopolitical uncertainty the key variable.
+- **Remaining robotaxi blockers are operational, not safety-related.** Multiple analysts corroborate Musk's earnings-call statement: panelists on Cern Basher's show say they cannot recall the last safety intervention, with remaining issues being navigational preferences — e.g., which parking garage entrance to use, or failing to pull forward under cover in rain.
+- **FSD 14.3.3 meaningfully reduces driver nag**, per co-host Jeff Lutz on the Piper Sandler interview, who reports being able to read emails during drives on the current release.
+
+## Robotaxi
+
+- **Piper Sandler models robotaxi cost per mile at $0.25**, derived from first principles: charging infrastructure cost and output, cleaning, depreciation (6-year Cybercab life, straight-line), and wholesale electricity. Potter notes this aligns with Tesla's own stated targets.
+- **Robotaxi projected at ~45% of Tesla revenue and ~half of gross profit by 2045**, with new car sales becoming "basically a rounding error" in Potter's model. Peak Cybercab production of ~2M units/year is reached in the mid-2030s, with a global active fleet of 14–15M by 2045.
+- **Potter assumes a global robotaxi duopoly with Tesla at 50% share**, with a large Chinese platform as the implied counterpart. The model is built bottom-up from ~900 cities with populations over 500,000, estimating per-capita trips and Tesla's capture rate city by city.
+- **Full Austin unsupervised conversion could come within 10 days**, per one panelist on Cern Basher's show, with June as the outer bound. The thesis: with roughly half of Austin's ~52-vehicle fleet already running unsupervised, there is little logical reason to keep the remainder supervised — the panel floats an A/B safety-data collection rationale for the delay.
+- **Tesla is deliberately avoiding remote human backup operators**, unlike Waymo, which reportedly uses operators in the Philippines and the US to handle edge cases. The panel frames this as why Tesla's ramp is slower near-term but more defensible and scalable long-term.
+- **California's 500-plus supervised drivers were a learning exercise**, not a soft launch — the panel argues Tesla had zero prior experience running a ride-hail service and used that phase to build dispatch, app, and pickup/dropoff operational knowledge before going driverless.
+- **Waymo launched public rides in its new "Ojai" robotaxi** in San Francisco, Phoenix, and Los Angeles, initially free to select riders with expansion planned. New hardware entering the market underscores the competitive intensity as Tesla scales Cybercab.
+
+## Humanoid Bots
+
+- **Optimus is excluded from Piper Sandler's $400/share DCF** — not out of skepticism but because Potter says he cannot construct a credible bottom-up model for it. He explicitly agrees with Musk's "infinite money glitch" characterization and says the scope of disruption makes it unspreadsheetable. At ~$450/share, the market is effectively pricing Optimus for free relative to the modeled businesses.
+- **US national security risk flagged for Optimus manufacturing in China.** The panel notes China will likely demand Tesla build Optimus domestically, but US regulatory restrictions on exporting strategic humanoid AI systems represent a distinct and open risk — different in kind from EVs or software.
+- **Humanoid robot survivors will fit on "one or two hands"**, per Jeff Lutz, with Potter agreeing: the number of companies that can credibly combine a capable AI brain, manufacturable hardware, and cost-effective production at scale is extremely small.
+
+## Energy
+
+- **Limondale BESS in Australia is about to activate**: 144 Tesla Megapacks, valued at $145M, with an unusual asymmetric power profile — rated to charge at 100 MW and discharge at 50 MW. A notable single-project revenue event for Tesla's Energy division.
+- **Megapack production at Giga Berlin is unlikely**, per FutureAzA: the facility produces batteries but not LFP chemistry, which Megapacks require. Any Megapack manufacturing in Europe would need a separate dedicated facility.
+
+## Electric Vehicles
+
+- **Ford is targeting a $30,000 electric midsize truck** built on a new "UEV" universal platform, developed at a new EV Development Center in Long Beach, California. FutureAzA and Tesla Life note deep skepticism that $30,000 is achievable given inflation, given the F-150 Lightning was priced at $70,000–$80,000 before discontinuation.
+- **Ford's celebrated engineering "innovations" are Tesla's 2015–2020 playbook.** Ford's UEV platform, modular unicasting assembly, "the best part is no part" parts-reduction philosophy, in-house battery development, and a shift to 48V zonal wiring (cutting 4,000 feet of harness and 22 lbs of copper) are all strategies Tesla pioneered years earlier — which the hosts frame as inadvertent validation of Musk's original first-principles approach.
+- **Cybercab is in an active validation phase** with units spotted widely across the country, per the Cern Basher panel. One panelist cautions that even an initial symbolic deployment is still likely 3-plus months away and does not constitute a fleet ramp.
+
+## Market & Competition
+
+- **Potter: "You can't see second place with a telescope"** on Tesla's competitive moat in autonomous driving. He argues Tesla's integrated approach — hardware, software, data, cost structure — is fundamentally superior to any consortium-based competitor.
+- **SpaceX-Tesla merger: Piper Sandler expects it to eventually happen.** Potter says his baseline has always assumed Musk's companies would ultimately unify given shared mission and engineering cross-pollination. Alexandra Merz specifies a scenario: announcement ~August–September 2026, completion Q2–Q3 2027. Merger governance risks flagged — SpaceX's structure described as a "bunker" with Musk holding 50%+ voting control, potentially complicating FSD licensing deals and China operations.
+- **SpaceX/OpenAI/Anthropic IPO liquidity risk is real but overstated**, per Investing Against the Grain. The bear case: ~$200B in new supply forces selling of appreciated AI/semiconductor holdings. The counter: $8T+ in U.S. money market accounts represents dry powder that mitigates the squeeze. Recommended strategy is to wait for post-IPO flush or lock-up expiry rather than buying at launch.
+- **Rivian identified as the closest Western Tesla analog** by Potter, crediting their vertical integration and direct consumer model — but flagging their continued lidar reliance as a crutch and their lack of a massive purpose-built data-harvesting fleet as a structural disadvantage.
+
+Notable quotes and data:
+- Alex Potter: "You can't see second place with a telescope."
+- Potter on Optimus: "I don't think it's hyperbolic. The world is going to look fundamentally unrecognizable."
+- Potter on FSD pricing: "$99 a month is quasi-free... it's like Steve Ballmer saying 'why would you pay $1,000 for a phone.'"
+- Potter: "If I was allowed to own stocks I cover, Tesla would be the biggest holding and I'd hold it until I retire."
+- Piper Sandler DCF: ~$400/share (17 streams, 20-year horizon, excludes Optimus and distributed inference); TSLA trading ~$450s at time of publication
+- FSD daily miles: 26.7M/day (May 2026) vs. 18.5M/day (April 2026) — Morgan Stanley
+- Robotaxi cost per mile: $0.25 (Piper Sandler first-principles model)
+- Cybercab useful life assumption: 6 years, straight-line depreciation
+- Peak Cybercab production: ~2M units/year (mid-2030s)
+- Global robotaxi fleet by 2045: ~14–15M active vehicles
+- Robotaxi share of 2045 revenue: ~45%
+- FSD licensing revenue by 2045: ~$400B
+- Limondale BESS: 144 Megapacks, $145M, 100 MW charge / 50 MW discharge
+- Ford 48V wiring: removes 4,000 ft of harness, 22 lbs copper
+- Alexandra Merz merger timeline: announcement ~Aug–Sep 2026, close Q2–Q3 2027
