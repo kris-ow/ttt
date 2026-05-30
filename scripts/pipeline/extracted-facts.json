@@ -8523,5 +8523,29 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-30T08:02:32.499Z",
     "status": "pending"
+  },
+  {
+    "fact": "Five Tesla robotaxi incidents were reported in the period December 16 to January 15, forming the basis of a globally circulated 'four times worse than humans' safety claim.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 5,
+    "context": "Incident count used by media outlets to characterize Tesla robotaxi safety; hosts argue the characterization was misleading given the trivial nature of the incidents.",
+    "source": "20260530_futureaza_02_Real_Reason_Tesla_Gets_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-30T19:03:30.126Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk vowed to put hundreds of thousands of self-driving Teslas on US roads by end of 2026.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Musk's public commitment to large-scale robotaxi fleet deployment within 2026; hosts note this target is still technically achievable as of the video's publish date.",
+    "source": "20260530_futureaza_02_Real_Reason_Tesla_Gets_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-05-30T19:03:30.126Z",
+    "status": "pending"
   }
 ]
