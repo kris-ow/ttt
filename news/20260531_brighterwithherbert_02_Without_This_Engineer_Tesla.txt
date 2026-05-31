@@ -1,0 +1,628 @@
+Channel:     brighterwithherbert
+Title:       Without This Engineer Tesla Is Just Another Carmaker
+URL:         https://www.youtube.com/watch?v=uDCL8Wm7YBk
+Published:   2026-05-31 18:30 UTC
+Fetched:     2026-05-31 19:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Look, if you own Tesla and you can only
+learn one name inside Tesla besides
+Elon, the name is Ashok Elaswami. He's
+the vice president of AI software. He
+runs FSC and Roboaxi. He now runs
+Optimus and he's the lead engineer on
+the Tesla and XI joint project people
+are calling Macro hard or digital
+Optimus. So, four of the biggest things
+this company's doing all report up
+through this one guy. And Elon has said
+in public on record that without Ashoke
+and the team, Tesla would just be
+another car company looking for autonomy
+supplier that does not exist. So the
+reason I want to spend a full show on
+him is simple. Tesla as a car company is
+the part that's already priced in them.
+The trillions of dollars of upside
+everybody talks about robo taxi,
+humanoid robots, AI services on top of
+all of it. All of that runs on the AI
+stack Ashoke is building. So if you want
+to understand the Tesla bullcase in
+plain English, you have to understand
+the engineer running the stack. All
+right. So here's how I want to do this.
+First, I'll walk through who Ashoke
+actually is, the background, the hire,
+the resume, then what he runs at Tesla
+today. Then the big idea that he laid
+out in his own words in an article in
+October 2025 called the Tesla's approach
+to autonomy. Then the we'll talk about
+the latest robo taxi read straight from
+his earnings call comments. Then of
+course optimist and digital optimist.
+Then a post he dropped a couple days ago
+that I think tells us cybercap might
+soon be joining the robo taxi fleet.
+Then we'll talk about the honest risks
+and what it means for the stock. Okay.
+So who is Ashoka Swami? The short
+version Ashok is a robotics engineer
+from Chennai India. He got his
+bachelor's in electronics and
+communication engineering from college
+of engineering Gwendi in 2009 and he got
+his mers in robotics from Carnegie Melon
+in 2012. So he's got computer vision and
+machine learning specialty. Before
+Tesla, he worked at Waveco Vehicle
+Control Systems, then at Volkswagen's
+electronics research lab building driver
+assistance and computer vision. So he
+was already deep in the autonomy world
+before autopilot existed as a product.
+The Tesla story starts with one of the
+most famous recruiting posts Elon ever
+wrote. In 2014, Elon posted, and I'm
+quoting, "Engineers interested in
+working autonomous driving, please email
+autopilot@tes.com.
+team will report directly to me. Ashro
+answered that email. He became the first
+engineer hired onto the autopilot team
+in June 2014. Think about that for a
+second. The entire autopilot or FSD robo
+taxi and now Optimus. That line traces
+back to one inbound email to a team of
+zero 12 years ago. Pretty wild. From
+there, it was a straight climb. Senior
+engineer, then director of autopilot
+software in May 2019, then vice
+president of AI software in 2024. The
+work along the way is the resume. He
+built the first version of auto steer
+and traffic aware cruise control. He led
+the controversial move from radar to
+vision only which a lot of people called
+crazy at the time and is now the
+standard at Tesla. And he led the
+architecture shift to FSD version 12,
+the anttoed neural network that replaced
+what Elon described as hundreds of
+thousands of lines of handwritten C++
+code with a single learned model. That
+last one is the move that defines him.
+He took 300,000 plus lines of code and
+replaced it with a network trained on
+video. That single call is the reason
+FSD looks the way it looks in 2026. And
+it's the reason Optimus and Roboaxi can
+run on the same brain. And then there's
+the Elon line that says everything about
+how Tesla views him internally. Elon
+went on record praising Ashok and the AI
+team. His exact framing was that without
+them, Tesla would just be another car
+company looking for autonomy supplier
+that does not exist. So the CEO of the
+company is saying out loud that the AI
+org under Oshulk is the entire
+difference between Tesla and every other
+automaker on Earth. So the title says
+vice president of AI software, but the
+job is bigger than that. He's
+responsible for FSD, the supervised
+version that ships to customers and the
+unsupervised version running in the robo
+taxi fleet. On the Q3 2025 earnings
+call, he confirmed those two are
+basically the same model. His exact
+framing was that the majority of the
+algorithms and architecture is the same
+between what customers get and what robo
+taxi runs with only a few minor changes
+between them. That matters more than it
+sounds. It means every mile a customer
+drives in Austin or Phoenix or anywhere
+else feeds the same network that drives
+a robo taxi with nobody in the seat.
+Every customer is a trainer whether they
+know it or not. He also took over the
+Optimus program. the longtime leader of
+autopilot stepping up to the lead the
+humanoid robot effort and he's now the
+lead engineer for Macroheart the joint
+project between Tesla AI and XAI the
+internal name floating around for that
+work is Digital Optimus so when you
+sketch his org on a napkin you get FSD
+robo taxi optimus and digital optimist
+all pointing back to one desk there's a
+reason Elon let it consolidate like this
+four things are technically the same
+problem with different bodies wrapped
+around them and nobody has explained
+that better than Ashok did in his own
+words last October. So on October 24th,
+2025, Ashok wrote an article on X called
+Tesla's approach to autonomy. It's a
+condensed version of the talk he gave at
+the International Conference on Computer
+Vision, ICCV. And honestly, it's the
+clearest signal like a single
+explanation of how Tesla thinks about AI
+you'll find anywhere. So I want to go
+through what it's in it because every
+line of it has investor implications. He
+opens with the architecture. Tesla uses
+one endto-end neural network for
+self-driving. It eats pixels from the
+cameras, kinematic signals like vehicle
+speed, audio, maps, and navigation. And
+it outputs the control commands that
+drive the car. So, one network end to
+end. No separate perception module, no
+separate planner, no handwritten rules
+in between. Then he asks the question
+other companies don't like asking. Why
+end to end? He gives five reasons.
+Honestly, they're worth knowing by heart
+if you hold this stock. Start with this
+one. Codifying human values is
+incredibly difficult. It's easier to
+learn them from data. Translation, you
+can't write down be a good driver in
+code. You can show the network millions
+of examples of good driving and let it
+figure out the values from that data.
+Then there's the gradient point. The
+interface between perception,
+prediction, and planning is illdefined.
+In end to end, the gradients flow all
+the way from controls back to sensor
+inputs. So the whole network gets
+optimized together. What's the
+translation? Every part of the model
+gets to learn from every other part. no
+artificial walls. He also calls out
+scaling end to end handles the fat and
+long tail of real world robotics.
+Translation: The rare and weird edge
+cases that break rule-based systems are
+exactly the kind of thing this approach
+handles best. Then a hardware point,
+homogeneous compute with deterministic
+latency. What's the translation of that?
+One type of chip, predictable timing,
+way easier to run safely on a car. And
+the last one is the one I want to sit on
+for a second. He says end to end is on
+the correct side of scaling with respect
+to the bitter lesson. The bitter lesson
+is the famous rich Sutton argument in
+AI. The lesson is every time researchers
+try to bake their own cleverness into a
+model, scale beats them eventually. More
+compute plus more data plus a general
+learning method wins. Luck is telling
+you in plain English, Tesla is on the
+side of the equation that wins. Then he
+drops two examples that I love because
+they're concrete. Take the puddle one. A
+Tesla has to choose between driving over
+a large puddle or briefly entering the
+oncoming lane. Normally entering
+oncoming lanes is dangerous, but in this
+scene, the visibility is clear. No
+oncoming cars coming. A puddle's big.
+Human driver makes that trade in half a
+second. Ashk's point, you can't write
+that down in traditional code. Can only
+learn it from data. Calls these many
+trolley problems. And he says
+self-driving cars face them constantly.
+The other one is chickens and geese. One
+clip has chickens trying to cross the
+road. Another has geese just hanging
+out. Both look the same to a perception
+module. The intent is totally different
+though. He says soft intent like that is
+best communicated in an endto-end latent
+fashion. Basically, Narrow figures it
+out without anybody having to define
+what is wants to cross even means. Then
+he gets into the three hardest problems
+Tesla has had to solve. The first one he
+calls the curse of dimensionality. He
+breaks down what the network actually
+has to handle. So you got seven cameras,
+36 frames per second, 5 megapixel
+inputs, 30 seconds of history, plus
+navigation plus 100 Hz vehicle data plus
+48 kHz audio. He says when you tokenize
+all of that, you end up with around two
+billion input tokens. And the network
+has to compress two billion tokens down
+to two output tokens, the next steering
+angle and the next acceleration. That's
+the actual scale of the problem. The
+solution is the Niagara Falls of data
+you may have heard quoted before, but
+here he writes it down clean. The Tesla
+fleet produces the equivalent of 500
+years of driving every single day. Not
+all of it is useful. Tesla uses what he
+calls sophisticated data engine
+pipelines to curate the most
+interesting, diverse, and highquality
+samples. So, the fleet isn't just a
+sensor network. It's a curated training
+set refreshed every day. It gives a
+great example of what training on that
+data does. The Tesla breaks 5 seconds
+before what looks like a normal scene
+because it correctly predicts that a
+vehicle head is going to spin out in the
+drizzle, ricochet off a barrier, and
+come back into its lane. Most AI models
+can't reason about second order effects
+like that. His point, this one can. The
+second one is interpretability. The
+worry about endto-end models is if it
+does something weird, how do you debug
+it? Ashuk says in practice the model can
+produce intermediate interpretable
+tokens basically internal explanations
+the team can read. So he highlights one
+piece of tech here that's pure investor
+signal. Tesla's generative Gaussian
+splatting. Tesla's version runs in
+around 220 milliseconds. Standard 3D
+gaussing splatting takes tens of minutes
+and needs external inter initialization.
+Tesla version doesn't. It can model
+moving objects. It can be trained
+jointly with the endto-end model and it
+runs on production vehicle cameras. He
+also mentions almost in passing that a
+small version of the reasoning model is
+already running in FSE version 14.x.
+That's the kind of line investor should
+circle. The reasoning piece is already
+live on customer cars. The last one is
+evaluation. This is the one I think the
+market doesn't appreciate yet. He says
+evaluation is actually the hardest part
+of shipping self-driving. Openloop loss
+doesn't correlate to closed loop
+performance. So Tesla built a neural
+world simulator. The world simulator
+takes the current state of the world and
+the next action the policy wants to try
+and it generates the next state the
+video frames and all. It's causal
+meaning it responds correctly to control
+inputs. It produces output for all of
+the vehicle cameras and sensors. It runs
+at high resolution and high frame rate.
+He shows a 6-minute interactive rollout
+where a human can drive around inside
+the simulator and the network
+synthesizes all eight cameras at 24
+frames per second in real time. The
+detail stays photoreal across the whole
+six minutes. The use case is brutal in
+the best way. They take historical fleet
+failures and replay them against new
+driving models. They inject adversarial
+scenarios. And the key line, they use
+this for largecale reinforcement
+learning in closed loop to achieve
+superhuman performance. That's a direct
+quote. And here's the kicker for anyone
+trying to value Optimus. Now, Shock
+writes, and I'm quoting again, the same
+video generation models also work for
+Optimus robots navigating the Tesla
+Gigafactory. So, that sentence means
+Optimus is being trained inside the same
+simulator that trains the car on the
+same data engine using the same
+end-to-end stack. So, when you hear
+Ashok say one stack, multiple bodies,
+he's not handwaving. He wrote the
+engineering case down in October. The
+car and the robot share the data, the
+model, the simulator, and the training
+loop. He closes the article with this
+line. Tesla is the place to solve
+realworld robotics. The team is
+extremely talented, determined, and
+motivated, and we believe that this is
+the best place to work on AI in the
+entire planet currently. That's a
+recruiting pitch on the surface.
+Underneath, it's a statement of where he
+thinks the lead is. Now, let's get
+specific on Robo Taxi. The state of the
+network as of right now, Austin went
+fully unsupervised in early February
+2026, at least for some vehicles. No
+safety monitor in front seat, no
+occupant in driver seat at all. Dallas
+and Houston came online unsupervised in
+April. Tesla has said seven new cities
+are coming in the first half of 2026.
+The fleet itself is small, so around 43
+vehicles in unsupervised operation as
+I'm recording this, give or take. So the
+network is still in the proof of model
+phase, basically a demo big enough to
+validate the tech. Ashok's own forecast
+on the call. On Q2 2025, he reported
+more than 7,000 miles in Austin with no
+notable safety critical interventions.
+Q3 last year, he said the company would
+expand the Austin operating region by
+more than 10x. Then Q1 of 2026 came and
+he we got the clearest near-term roadmap
+he given us so far. He said FSE version
+15 will be a major upgrade over the 14.3
+build running on robo taxis today. He
+also said version 14 light is coming to
+hardware 3 vehicle soon with all the
+version 14 features that are on AI4 late
+June. The reason that matters is also
+right there Nicole. Elon was explicit
+that broad commercial expansion of robo
+taxis gated on V15 which he called a
+major architectural improvement that
+would improve the probability of safety
+significantly. So what's the
+translation? Ashok's team is the gate.
+The network expansion that the Tesla
+bulkase depends on is paced by his
+shipping schedule, not by manufacturing.
+There's a thing Ashok did over Christmas
+that I think tells you everything about
+where this is headed. He rode in a robo
+taxi himself with no monitor, no driver
+from the back seat on Christmas Eve. He
+posted a video calling it an amazing
+experience. Elon did the same. The vice
+president of AI rode his own product
+unsupervised and put his name on it
+publicly. He read his own safety data
+then put his face on the deployment.
+That's a tell. The honest piece on
+revenue. Elon said on Q1 that robo taxi
+revenue will not be material in 2026
+with meaningful contribution pushed into
+2027. So the network's real. The tech is
+shipping. Cities are expanding and the
+PLNL impact lags by 12 to 18 months.
+That's the actual shape of it. Okay. So
+now the piece that makes the whole thing
+10x bigger. Optimus is the human a
+robot. The Gen 3 prototype unveil looks
+like early Q3 2026 based on what's been
+signaled. So think late summer at the
+earliest, possibly later. Production of
+Fremont is targeted for late 2026,
+ramping toward a 1 million unit annual
+target over time. Elon's framing is that
+Optimus could become 80% of Tesla's
+total value. That last claim either
+makes you roll your eyes or it makes you
+lean in. The reason I lean in is the
+architecture Ashok wrote down in
+October. The same video generation
+models that train the car also work for
+Optimus walking the Gigafactory. The
+robot plugs into the same brain the car
+runs. Same perception, same prediction,
+same control. One model, two different
+bodies. That's a quiet line and it's the
+most important line for the bull case on
+Optimus. He's saying the network that
+knows how to drive a Model Y around a
+puddle in Austin already knows how to
+move a humanoid around a Tesla factory
+floor. Same fleet data, same data
+engine, same simulator, same antto
+model. Then there's digital optimist,
+the macro hard project. This is the part
+I think the market is still totally
+underwriting. Ashok is the lead engineer
+on a Tesla and XAI joint effort building
+digital agents, software workers, not
+just robots. The same neural foundation,
+the same fleet learning loop applied to
+knowledge work. So if you take Elon and
+Nash at their word, the same AI stack
+ends up running cars, factories,
+humanoid robots, and digital workers.
+That's the real Tesla 2030 picture
+they're pointing at. And the engineer
+doing the pointing is the one who
+already shipped endto-end FSD. And
+here's the reason I wanted to record the
+show this weekend specifically. Few days
+ago, Elon posted a 37se secondond video
+captioned, "Cybercap driving itself out
+of the Giga Texas factory." And Nasha
+quoted, "This is what I want you to see
+with this line. Soon it'll be driving
+itself into Austin City, reporting for
+duty." Sit with that for a second.
+Cybercap driving itself out of the
+factory. Soon driving itself into
+Austin, reporting for duty. Now, here's
+why I trust Ashok's timeline on this
+more than I trust Elon's on the same
+kind of post. Elon promises across a lot
+of businesses, Ashuk is the man directly
+responsible for whether the thing
+actually moves. He knows the version of
+FSE it's running. He knows the safety
+data. He knows whether the route is
+validated. So when Ashok says soon is
+real world weeks. What reporting for
+duty tells you is that the first cyber
+cap is joining the robo taxi fleet
+self-d delivered from the factory ready
+to enter service. That's the framing he
+chose. Reporting for duty. That changes
+the picture in three ways. First thing
+is this is the first time we've seen a
+cyberc cab leave the production line and
+parking itself. Soon Ashok says it will
+self-d deliver to the operating area.
+That's the unlock for fleet scale. Once
+cars can drive themselves to the
+deployment city, ramp becomes a
+manufacturing problem instead of a
+logistics problem. The second thing is
+it tells you version 14.3 is already
+trusted at least on private Tesla
+property. But at some point you're
+confident it can be trusted on real
+roads outside the unsupervised operating
+area. The factory to Austin Drive is
+well outside any geo fence. So either
+the route is whitelisted or the model is
+generalized beyond the current
+commercial zone. We'll find out. And the
+third, the Cyber Cab itself is the high
+margin project. Pedalf-free no steering
+wheel designed from scratch for
+unsupervised use. Getting Cyber Cab into
+the operating fleet is the gear shift
+from converting Model Y cars into robo
+taxis to running a purpose-built fleet.
+That's a lot of signal for a 13-word
+post. And the guy dropping the signal is
+the engineer record on the program. All
+right, now the honest part. There are
+real risks here. The first risk is the
+timeline. Elon has missed Robbo taxi
+dates before. Ashok himself told the AI
+or in November 2025 that 2026 will be
+the hardest year of your life. That's a
+man preparing his team for slippage and
+grind. So when you hear seven new cities
+in the first half of 2026, 1 million
+Optimus units a year, Cyber Cap
+pedalf-free production this spring,
+hedge the dates. On the other hand, the
+direction is real. Then there's fleet
+size. Around 43 unsupervised robo taxis
+on the road right now. Going from 43 to
+25,000 means hardware regulatory wins in
+7 plus cities. B15 shipping on time,
+incident free operation through all of
+it. Any one of those slipping pushes the
+curve out. And finally, competition is
+real. Whimo has been running
+unsupervised at scale for longer in some
+cities. Chinese players are moving fast
+on humanoids. The bet here is that
+Tesla's unified stack plus fleet data
+plus compute is a durable advantage. So
+where do I land? The direction Ashra has
+said is the right one. The dates will
+probably miss, but underwrite the
+direction. The calendar will sort itself
+out. So if you own Tesla today, here's
+the simplest way I think about it. You
+own a car company. That part you can
+value with traditional metrics. margins,
+deliveries, energy, storage, growth, the
+usual stuff. On top of that, you own a
+free option on the AI stack. Ashock
+runs. Net option pays off in three
+waves. The first wave is robo taxi. 2026
+is a network buildout year. 2027 is when
+the P&amp;L starts to show up. And Optimus
+late 2026 production start, real
+revenue, probably 2028 plus massive
+optionality on the upside. And the third
+wave is digital Optimus and AI services.
+Earliest material revenue probably 2027
+to 2028 depending on how macro
+hardships. Here's the mental model I'd
+use. Pay for the car company in wave 1
+with a credible discount today. Treat
+wave two and wave three as upside the
+company keeps reminding you it's
+actually building. The risk adapt model
+is the same risk that's been there for
+years. Either Elon adds another mandate
+that distracts the AI team, a regulator
+slows the network down in a city that
+matters, or V15 slips a couple of
+quarters. None of these break the
+thesis, but they do move the curve. So,
+five things to actually do or watch.
+One, I highly recommend you read
+Ashock's October 24th, 2025 article,
+Tesla's approach to autonomy on X. It's
+the clearest single explanation of the
+Tesla AI thesis. You'll get the better
+lesson line, the 500 years per day line,
+the world simulator line, all of it.
+Two, track V15 shipping date. Elon said,
+broad taxi expansion is gated on V15.
+The date V15 enters wide release is the
+single highest signal event between now
+and end of year for robo taxi scale.
+Three tracks cybercap into Austin after
+today's reporting for duty post. The
+first cyber cap self-d delivering into
+the operating fleet is the trigger
+event. Watch for the confirmation post
+within months four. Track the Optimus
+Gen 3 unveil window. Looks like late Q3
+at the earliest. The unveil quality the
+simulator footage Ashok shows will tell
+you how close production actually is.
+Five track macro hard updates. This is
+the most underpriced piece of the story
+right now. Nshokul is leading it. Any
+concrete product announcement out of
+macroard moves the AI services thesis
+from possible to real. So I'll close on
+a part that took me a while to see.
+Tesla as a company's really one bet. Now
+FSD, Robboaxi, Optimus, Digital Optimus.
+From the outside they look like four
+separate businesses, each with its own
+moonshot risk. From the inside, the way
+Ashok runs it, it's actually one stack
+with four bodies. He wrote the
+engineering case for that in October in
+his own words in plain English. The car,
+the simulator, the robot, the digital
+agent, they all share the same brain.
+And honestly, if you own Tesla and you
+are very lucky that Ashok Swami is on
+this team, read the October article,
+read today's post, watch the talks, the
+combination of Ashok, the AI team he's
+built, and Elon at the top is, in my
+opinion, the best possible group of
+people on the planet to make the
+impossible possible. That's why this
+company gets to keep doing things other
+companies can't. The engineering
+building it is Ashoka Swami. Started as
+the first autopilot hired 12 years ago.
+Now runs the entire AI footprint of the
+company. If you want a name to track
+other than Elon, that's the name. If
+this helped you understand the AI bet,
+please hit subscribe and so you don't
+miss the next milestone show. I'll see
+you on the next one.
