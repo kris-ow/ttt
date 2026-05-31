@@ -8643,5 +8643,41 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-05-30T21:03:32.540Z",
     "status": "pending"
+  },
+  {
+    "fact": "Unsupervised robotaxi fleet at time of recording: approximately 43 vehicles. Per RobotaxiTracker.com (2026-05-09), the unsupervised subset was 39; per RobotaxiTracker.com (2026-05-29), the active fleet across all modes was 700.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Current unsupervised fleet size is a key DCF input; still in proof-of-concept scale, far from commercial scale.",
+    "source": "20260531_brighterwithherbert_02_Without_This_Engineer_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-31T19:04:05.248Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Q2 2025 earnings: Ashok reported more than 7,000 miles driven in Austin robotaxi operations with no notable safety-critical interventions.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "7,000+ miles without safety-critical intervention is the most recent quantified safety benchmark for the unsupervised robotaxi fleet.",
+    "source": "20260531_brighterwithherbert_02_Without_This_Engineer_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-31T19:04:05.248Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Optimus Gen 3 prototype unveil is expected in early Q3 2026 (late summer) at the earliest. Production at Fremont is targeted for late 2026, ramping toward a 1 million unit annual target over time.",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Long-term Optimus production target; current production is pre-ramp as of mid-2026.",
+    "source": "20260531_brighterwithherbert_02_Without_This_Engineer_Tesla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-05-31T19:04:05.248Z",
+    "status": "pending"
   }
 ]
