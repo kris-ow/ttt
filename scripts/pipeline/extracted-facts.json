@@ -8907,5 +8907,77 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-01T20:04:38.026Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla supervised Full Self-Driving has surpassed 10 billion cumulative miles",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 10000000000,
+    "context": "Scale of FSD deployment is a key input for assessing safety record and readiness for unsupervised robotaxi operation",
+    "source": "20260601_futureaza_01_Cliff_Diving_Again_Gps_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-01T22:04:04.897Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD fleet is accumulating approximately 30 million miles per day",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 30000000,
+    "context": "Daily mileage rate reflects fleet utilization scale and pace of safety data accumulation",
+    "source": "20260601_futureaza_01_Cliff_Diving_Again_Gps_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-01T22:04:04.897Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo Zeekr robotaxi base vehicle costs approximately $35,000, doubled to ~$70,000 after 100% import tariff",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 70000,
+    "context": "Competitive cost benchmark for Waymo's Chinese-built robotaxi platform vs. projected Cybercab unit economics",
+    "source": "20260601_futureaza_01_Cliff_Diving_Again_Gps_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-01T22:04:04.897Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Host estimates Cybercab would need to cost approximately $12,000 to be cost-competitive with a tariff-adjusted Waymo Zeekr robotaxi",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 12000,
+    "context": "Host's implied target Cybercab unit cost for robotaxi fleet economics to be meaningfully superior to Waymo's platform",
+    "source": "20260601_futureaza_01_Cliff_Diving_Again_Gps_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-01T22:04:04.897Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Model 3 reached 360,000 miles; original battery replaced at 321,000 miles for approximately $5,000 using a reconditioned pack",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "Real-world data point suggesting Tesla vehicle longevity well beyond typical fleet replacement cycles, relevant to robotaxi asset life assumptions",
+    "source": "20260601_futureaza_01_Cliff_Diving_Again_Gps_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-01T22:04:04.897Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model Y at 111,000 miles with near-total DC fast charging history retains 90–92% of original range capacity",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "Battery degradation rate affects useful fleet life and residual value assumptions in robotaxi DCF models",
+    "source": "20260601_futureaza_01_Cliff_Diving_Again_Gps_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-01T22:04:04.897Z",
+    "status": "pending"
   }
 ]
