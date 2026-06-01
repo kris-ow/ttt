@@ -8871,5 +8871,41 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-06-01T18:03:34.448Z",
     "status": "pending"
+  },
+  {
+    "fact": "Active Tesla robotaxi fleet: approximately 700 total (per RobotaxiTracker.com as of late May 2026); Waymo fleet cited at approximately 3,700",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 700,
+    "context": "Current operational Tesla robotaxi fleet vs. Waymo's ~3,700, with Waymo having a ~6-year head start on driverless rides",
+    "source": "20260601_brighterwithherbert_02_Spacexs_S1_Just_Hinted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-01T20:04:38.026Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Canada coast-to-coast autonomous drive: 3,700 miles completed in 4 days and 21 hours using FSD v14.3 with zero disengagements",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Zero disengagements over 3,700 miles in a production vehicle; fourth coast-to-coast autonomous drive in 5 months, totaling 12,427 miles across all four trips",
+    "source": "20260601_brighterwithherbert_02_Spacexs_S1_Just_Hinted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-01T20:04:38.026Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Four coast-to-coast autonomous drives completed in the past 5 months totaling 12,427 miles: LA to Myrtle Beach, NY to LA (twice), Vancouver to Halifax",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Repeated zero-disengagement long-distance drives in unmodified production vehicles demonstrating FSD reliability at scale",
+    "source": "20260601_brighterwithherbert_02_Spacexs_S1_Just_Hinted_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-01T20:04:38.026Z",
+    "status": "pending"
   }
 ]
