@@ -1,0 +1,56 @@
+Channel:     brighterwithherbert
+Title:       Can Elon Musk Still Win The AI Race?
+Published:   2026-06-01 13:30 UTC
+Summarized:  2026-06-01 14:03:40 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01FaqmPzS4hSQLi5jvjp9Fdq
+Cost:        $0.04311 (11101 in / 3528 out tokens)
+Categories:  Autonomous Driving, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from the "brighterwithherbert" channel features host Herbert and guest Larry Goldberg, a serial entrepreneur and venture capital investor, discussing whether Elon Musk and xAI can still win the AI race against Anthropic and OpenAI. The central thesis is that despite xAI being only three years old — half the age of Anthropic and a quarter the age of OpenAI — Elon Musk's first-principles engineering approach, ownership of the world's largest supercomputers, and SpaceX's full-stack positioning across every layer of the AI infrastructure give him a credible path to overtake current leaders within the next three years. The conversation also covers the Anthropic compute-leasing arrangement, SpaceX's Starship V3 launch milestone, and the long-term vision of orbital AI data centers unlocking a $28.5 trillion total addressable market.
+
+## Market & Competition
+
+1. **Peter Diamandis's "duopoly" claim dismissed as premature:** The video opens with a recent post by Peter Diamandis suggesting the AI frontier is consolidating into a duopoly of Anthropic and OpenAI, with Meta out of the running and xAI dissolved into SpaceX. Larry Goldberg dismisses this as "very silly," arguing the race is so early that it resembles the opening of a 10,000-meter race where the early leaders rarely win. He explicitly states that neither Google nor Elon Musk should be counted out at this stage.
+
+2. **xAI's age relative to rivals as a key argument:** Elon Musk himself posted that xAI is only three years old — half the age of Anthropic and a quarter the age of OpenAI. He drew a parallel to SpaceX, which "achieved nothing of note after three years and was written off as dead after six years" despite three consecutive launch failures, yet ultimately succeeded. Musk's stated timeline: "Let's see where things stand three years from now," signaling confidence in catching and surpassing current leaders by then.
+
+3. **Colossus 2 running seven models simultaneously:** Musk posted that SpaceX AI's Colossus 2 supercomputer now has seven models in training simultaneously: two variants of one trillion parameters, two variants of 1.5 trillion parameters, a six trillion parameter model, and a ten trillion parameter model. Larry Goldberg emphasizes that Musk uniquely understands the "scaling laws" — the principle that without massive compute, you simply cannot do AI — and has built the infrastructure foundation first before building the application layer.
+
+4. **Proprietary AI training software potentially 10x faster than Google's Jax:** A major new development highlighted in the video is that SpaceX has almost finished writing version one of an in-house AI training stack written in the C programming language, designed to run on a cluster of 220,000 Nvidia GB300s with heavy use of pipeline parallelism to get close to bare metal performance. The claimed result is that for large AI training runs, this software could be over an order of magnitude — approximately 10 times — faster than Google's Jax framework. Larry describes this as "classic Elon mode" — going back to first principles and stripping away overhead. This software is confirmed to be used for Grok version 5.
+
+5. **Cursor partnership as the missing "harness" layer:** The video discusses xAI's partnership with Cursor, a leading AI coding tool, as a critical piece xAI had been missing. With access to the Colossus 2 supercomputer, Cursor's Composer 2.5 is described as "Pareto dominant" in coding per the Cursor benchmark after only a few weeks of supplemental training and reinforcement learning. The 1.5 trillion parameter version of Grok is described as likely becoming a much better base model than Kimi (a competing model) once Cursor transitions to using Grok.
+
+6. **SpaceX's full-stack AI positioning as the structural advantage:** Larry Goldberg argues that SpaceX's key differentiator is that it operates at every single layer of the AI stack — from launch, to Starlink connectivity, to compute infrastructure, to real-world AI applications — whereas competitors like Anthropic and OpenAI are focused primarily on the chatbot, agentic, and coding layers. He argues that providing AI at scale end-to-end is what will unlock the $28.5 trillion TAM, and that Anthropic's own compute throttling (which the host experienced personally, paying close to $2,000/month before having usage restricted) illustrates the ceiling competitors face without infrastructure ownership.
+
+7. **Anthropic compute lease: short-term, reversible arrangement:** Elon Musk clarified in a recent post that SpaceX has not committed to leasing Colossus to Anthropic forever. The arrangement is described as a 180-day lease with 90-day notice for mutual cancellation thereafter, and Musk noted the short-term structure was SpaceX's own request. He stated: "If compute gets super tight, we might need it back at some point." The video frames this as consistent with an "Elon Web Services" (EWS) strategy — building compute capacity for internal use but renting out excess capacity to generate revenue, analogous to how Amazon built AWS.
+
+8. **SpaceX TAM breakdown: AI is 93% of the $28.5 trillion opportunity:** Per ARK Invest's analysis cited in the video, Starship's key contribution is reducing the cost of reaching orbit by an order of magnitude, unlocking a $28.5 trillion total addressable market for SpaceX. Of that, 93% — approximately $26.5 trillion — is attributed to AI compute and platform. Within that AI TAM, enterprise AI consumption (applications, robots, cars, coding, enterprise intelligence) is described by Larry as the largest single segment, potentially $22 trillion or more. The video notes that SpaceX's share of any individual segment will be smaller the further up the stack one goes, but that even 10–20% of a multi-trillion TAM implies a company worth more than $10 trillion.
+
+9. **Orbital data centers as the long-term winning layer:** Both the host and Larry agree that space-based AI data centers — expected around 2028 — represent the layer where SpaceX will be completely unrivaled, since no other company has the launch capability to place them in orbit. Larry clarifies that orbital data centers are not a prerequisite for solving many AI science problems, but are necessary for providing AI at scale globally, which is the true unlock for the enterprise TAM.
+
+## Autonomous Driving
+
+1. **Real-world AI cited as area where Tesla/SpaceX ecosystem is already ahead:** Larry Goldberg specifically calls out "real world AI" — a category that encompasses Tesla's autonomous driving and Optimus robotics — as an area where Musk is already ahead of pure-play AI labs. While not discussed in depth, this framing positions Tesla's FSD and robotaxi programs as integral to the broader xAI/SpaceX AI thesis rather than separate ventures.
+
+## Market & Competition (SpaceX Launch)
+
+1. **Starship V3 launch deemed a "great success" on most critical metric:** The video covers the recent 12th Starship launch (described as occurring on a Friday shortly before the video was published). Larry calls it a "great success" rather than merely a success. The single most important milestone achieved was the heat shield on the ship surviving atmospheric reentry intact for the first time, enabling recovery and reuse. The ship was successfully brought down from near-Earth orbit and splashed into its targeted water landing zone. The booster was lost due to a separation anomaly on descent, which Larry characterizes as a solvable problem given SpaceX's track record.
+
+2. **Starship V3 payload capability dramatically increased:** Larry states that Starship V3 can carry more than four times the payload to orbit compared to the previous Starship version, driven not just by added engines but by each engine being individually more powerful and lighter than before. He describes V3 as a near-complete redesign with little design commonality with its predecessor despite outward visual similarity.
+
+3. **Orbit achievement timeline:** Larry predicts SpaceX will achieve full orbital flight within the current year (2026) or very early in 2027, calling it a potential "game over" moment for the launch industry. He estimates it will take two more launches to reach orbit, while noting some community members predict orbit on the very next launch.
+
+Notable quotes and data:
+- Elon Musk: "I just left SpaceX AI office at 2:45 in the morning. People were still going. I think we might be getting close to a significant breakthrough in training."
+- Elon Musk: "XAI is only 3 years old. That's half the age of Anthropic and a quarter the age of OpenAI. Let's see where things stand three years from now."
+- Elon Musk on Anthropic lease: "No, SpaceX has not committed to leasing Colossus for years… This is just a 180-day lease with 90-day notice to mutual cancellation thereafter. This short-term was our request… if compute gets super tight, we might need it back at some point."
+- Larry Goldberg: "Only Elon understands the scaling laws and the scaling laws are like the bitter lesson. If you don't have that compute, you can't do AI. It's as simple as that."
+- Larry Goldberg: "SpaceX is at every single layer of the stack… They are far broader in scope in the software and they're far broader in scope in the hardware… it's a done deal. In my head, it's a done deal. They're going to win this race."
+- Peter Neanderis (cited in video): "Elon doesn't need to run the best AI model. He needs to control the best hardware. Nvidia is the most valuable company on earth and their models aren't the most popular, but the hyperscaler play works."
+- $28.5 trillion: SpaceX total addressable market per ARK Invest analysis; 93% attributed to AI compute and platform (~$26.5 trillion)
+- Colossus 2: 7 models in simultaneous training (1T×2, 1.5T×2, 6T×1, 10T×1 parameters)
+- Proprietary training stack: ~220,000 Nvidia GB300s, claimed ~10x faster than Google's Jax for large training runs
+- Anthropic lease: 180-day term, 90-day mutual cancellation notice; John Tisman estimate: xAI spent $3–4B on Colossus 1, leasing to Anthropic for $45B over three years; Colossus 2 being built for ~$17B at one gigawatt capacity
+- Starship V3: >4x payload to orbit vs. prior version; heat shield reentry success achieved for first time
