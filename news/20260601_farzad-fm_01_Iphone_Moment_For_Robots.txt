@@ -1,0 +1,650 @@
+Channel:     farzad-fm
+Title:       The iPhone Moment for Robots Just Happened
+URL:         https://www.youtube.com/watch?v=ELkTfPuVI5Y
+Published:   2026-06-01 12:00 UTC
+Fetched:     2026-06-01 13:00 UTC
+
+────────────────────────────────────────────────────────────
+
+We had record production in March and
+we're going to try to 3x that by May. We
+want to be able to get to a million
+units a year. This is going to be a huge
+business. Three robots just work
+non-stop around the clock for days
+straight in a warehouse. Their names are
+Bob, Frank, and Gary. They work for a
+company called Figure AI. When this
+video was recorded, they were running a
+live public on camera mission inside a
+warehouse in California, sorting
+packages at human parody speed, swapping
+out for each other every time a battery
+runs low, and positioning the runtime
+counter on a giant screen so the entire
+internet can watch along with them. The
+current count, as I'm reading this, is
+well past 60 hours and rising every
+single minute that they've been working
+straight. They haven't stopped since.
+Now, this is easily one of the biggest
+deals and one of the most impressive
+demos in technology history. But the
+reality is is that after watching every
+failed demo, failed prototype, CES
+embarrassment, every time someone said,
+"This is the year." And it absolutely
+was not the year, including myself. For
+most of the last few years, humano
+robotics was a punchline, a science fair
+project. For example, Honda's Asimo
+robot walking down some stairs at half a
+mile an hour or Boston Dynamics doing
+parkour in a way that costs millions of
+dollars per flip because they're so
+expensive. These robots were never going
+to ship. And then remember the dancing
+guy in a bodysuit for Tesla. But I'm
+here to tell you that it's now
+different. We've reached a new age.
+What's happening with Bob, Frank, and
+Gary right now in that warehouse is the
+same kind of moment as June 29th, 2007.
+That was the day the original iPhone
+went on sale. And before that day, the
+cell phone wasn't that big of a deal.
+But after that day, it was the most
+important object in your life. It became
+your wallet, camera, map, your job, your
+dating life, your kids' childhoods. And
+what's interesting is that the hardware
+for the iPhone was actually there in
+2005, but the software wasn't. And the
+moment those two things converge into
+one usable product, the entire global
+economy reorganized itself around it. 20
+years later today, the iPhone created a
+$4 trillion a year market. Now, the same
+kind of inflection point that happened
+for that object in your pocket just
+happened for the human body. And the
+market it disrupts is not 4 trillion a
+year. It is 40 trillion a year. It's 10
+times bigger. $40 trillion. That's the
+total annual value of human physical
+labor on this planet. All the shifts in
+warehouses, harvest fields, every
+package that gets shipped, every patient
+in a hospital, every car bolted
+together, literally every dollar that
+gets paid every year to a human for
+moving their hands and feet through
+space, which is roughly a third of the
+entire global market is included here.
+This is the biggest market by far and
+it's about to get totally disrupted. So,
+let me walk you through exactly what
+changed, why this time is genuinely
+different from the last years of
+humanoid hype. Who actually wins? who
+actually loses and the part of this
+story that is not what you think it is.
+The reality is the doomer narrative is
+wrong. The whole, "Oh, robots are going
+to kill us all." It's not true. But the
+cheerleader narrative is also wrong.
+These objects are not going to magically
+create a utopia. The actual story is
+weirder and more interesting and
+arriving way faster than almost anyone
+is pricing in. To prove it to you, I
+have a Madic robot vacuum in our home
+that's powered by AI that we use every
+single day. And I'm not exaggerating
+when I say this. It is the most reliable
+robot vacuum we've ever owned. It uses a
+5 camera vision system powered by AI,
+which is the same approach Tesla uses
+with FSD using Pure Vision. And just
+like Tesla, it gets software updates
+that make it smarter over time,
+especially with the app, which is easily
+one of the most intuitive, easy to use
+apps I've ever used. And not only that,
+my wife has some of the highest cleaning
+standards that I've ever seen. And she
+doesn't hate this thing. If you knew my
+wife, you'd understand that's basically
+a five-star review on Amazon. Okay. Our
+dogs literally just sleep through it.
+Our kid can't stop from doing its job no
+matter how hard it tries. And it rarely,
+if ever, gets stuck. And after a full
+year of daily use in our household with
+a toddler and pets, Fernando, that's
+what we called our robot, is still going
+strong. And I'll repeat, this is the
+only robot vacuum that has actually
+lasted in our household. And I think it
+comes down to the AI powered vision
+system. It just navigates the world so
+much more confidently than anything else
+that we've tried. If you want to check
+it out, use my referral link in the
+description below and the comment
+section below. And thank you so much to
+Matic for sponsoring this video. All
+right, so here's where we have to start.
+There's three things that have come
+together for human or robots to stop
+being a joke. These are three S-curves
+that are bending at the same time,
+hitting at the same time for this
+project to actually work at scale. The
+first curve is the brain, specifically
+what the researchers call a VLA model.
+That stands for vision, language,
+action. This dude at NVIDIA called Jim
+Fan leads a project called Groot. And
+his description of what VLA does is the
+cleanest one I've heard. So, I'm going
+to explain it to you. It's a single
+neural network that takes raw pixels
+coming in from cameras plus a natural
+language instruction like go pick up
+that red tool plus the robot's own body
+state and it outputs continuous motor
+commands at hundreds of times per
+second. There's no programmer writing a
+script that says if the object is red
+then close the gripper at 30% force.
+It's just one network that takes the
+pixels in and the motors out. It's
+basically the same architecture that
+runs things like Chachi PT or Tesla
+self-driving technology applied to a
+human body like mine or yours that comes
+up with the actions on the fly based on
+what it sees and how it processes the
+data. That's the part that wasn't
+possible until basically the year before
+last. Because to train a model like
+that, you need an enormous amount of
+data showing a robot's senses connected
+to a robot's actions paired with
+language that describes what's
+happening. We didn't have anywhere near
+enough of that data. and compute until
+very recently. The reason we have it now
+is the second scurve which is the data
+flywheel. For example, Tesla has been
+collecting real world manipulation data
+inside their factories for 2 years now
+with their Optimus humanoid robot and
+for even longer with their fleet of 9
+million vehicles running their
+self-driving stack called FSD, which
+stands for full self-driving. On top of
+that, Nvidia released a synthetic data
+generator called Cosmos that runs world
+simulations on top of their gaming GPUs,
+producing millions of robot trajectories
+that look real enough to train on. So,
+the brain has food now. It didn't
+before, but now it does. And the third
+curve, the one that I think is generally
+the most underrated, is the body itself,
+which is powered by things like
+actuators. An actuator is the motor and
+gearbox package that lives at every
+joint in the robot. It's present at each
+elbow, your wrists, your knees, your
+fingers, your hips, basically your whole
+body. A full functioning humanoid needs
+at least 28 actuators, some way more. In
+2020, a high torque actuator for a hip
+or a knee costs $2 to $5,000 each at low
+volume. The whole actuator subsystem on
+a single robot could easily run you $50
+to $100,000, just the joints. But today,
+in 2026, that same actuator at low
+volume is running 500 to 2,000 bucks.
+And at Tesla's scale, once they hit
+their million units a year target or
+more, Morgan Stanley pencils them out at
+one to 300 bucks each, probably far
+less. That's an order of magnitude cost
+reduction in 6 years. So why does that
+matter? Because of China, specifically
+the Chinese electric vehicle supply
+chain. The same precision motor and gear
+manufacturers that have been cranking
+out parts for BYD and a thousand other
+Chinese EV makers, also make the perfect
+components for a humanoid joint. The
+supply chain is starting to commoditize.
+Unitri, a Chinese company, is selling a
+full humanoid for $13,500
+right now. That's the price of a used
+Honda Civic. Bank of America says the
+average humanoid material cost will drop
+from 35,000ish today to 13 to 17,000 by
+2035. ID Tech X says the average selling
+price falls from 115,000 to 37,000 over
+the next four years. And Tesla is
+working on Optimus to reach a $20,000
+price target by the time they hit 1
+million robots, which they are hoping
+they hit by 2030 or so. Okay, so you
+have the brain plus data plus the body
+all hitting the elbow of their S-curves
+in the same 18-month period. So what
+does that mean in plain English? It
+means that the pieces to make a humanoid
+robot are now available and there is
+about to be a lot of them everywhere all
+at once. But what most people are not
+seeing is that these robots are actually
+deployed already in various factories or
+warehouses. Figure three, the one with
+Bob, Frank, and Gary from the video
+earlier, is shipping into BMW's
+Spartanberg, South Carolina factory. The
+company says these robots are currently
+working the body shop. They're also
+working the sheet metal placement area
+and the weld inspection area.
+Electronics robot called Apollo is
+working at Mercedes plants and at Jabil
+electronic factories and at GXO
+logistics warehouses. Agility Robotics
+has a humanoid called Digit that just
+crossed 100,000 totes moved at a GXO
+facility in Flowery Branch, Georgia.
+Tesla Optimus is an internal pilots at
+Fremont in Giga, Texas with mass
+production starting this summer. Now,
+real quick, about 75% of you that watch
+my channel often are not subscribed. And
+the easiest way you can support is by
+hitting the subscribe button. It's
+completely free and goes a long way to
+support. Thank you so much. Now, let's
+look at the actual numbers and why this
+is such a big deal. Amazon's warehouse
+turnover rate, depending on how you
+measure it, runs somewhere between 100
+and 150% per year. That means that
+basically every person that gets hired
+at the beginning of the year is no
+longer there by the end of it. And then
+some. One in three new fulfillment hires
+quits within the first 90 days. And a
+New Jersey study a few years back
+clocked Amazon warehouse turnover at
+124% versus 72% for non- Amazon
+warehouses doing the same kind of work.
+You also have the trucking industry in
+the United States, which is short
+between 60 to 82,000 drivers climbing to
+a projected 160,000 by 2028. Annual
+driver turnover at large carriers is 90
+to 95%. 35% of new hires quit within the
+first 90 days. Now, are these the jobs
+that people are clinging to? Obviously
+not. These are jobs that human beings
+are running away from at a 90 plus%
+annual rate, either because they don't
+pay well enough or because it sucks or
+both. But the companies who deploy
+humanoids into these specific roles are
+not going to be laying anybody off or no
+one's going to quit because robots don't
+do either. All these jobs that are
+traditionally held by people that have
+high turnover will be filled entirely
+with humanoids. This is a guarantee. The
+numbers make too much sense. From a
+business perspective, it makes no sense
+to pay someone 40 to 60,000 per year or
+more with health care, benefits,
+training, and PTO when they are not able
+to work 24/7 and will not be there at
+the end of the year. You would choose a
+robot 100 out of 100 times if it can do
+that job. It's the biggest no-brainer of
+all time if you're a business owner.
+Now, let's go up to supply chain. What
+about the developed world more broadly?
+Manpower Group's 2026 survey says in
+Japan 84% of employers cannot find
+people to hire. In Germany, it's 83%. In
+Japan, the elder care sector has a job
+to applicant ratio of 3.9 to1. They're
+projecting a shortage of 570,000 care
+workers by 2040 just to maintain
+existing service levels for an existing
+aging population that is already 29%
+over 65 and 1 in5 over 75. Germany
+crossed a demographic threshold in 2026
+where more workers are retiring than
+entering the labor force. The country's
+industrial base is hemorrhaging skilled
+trades. What that means is a demographic
+deck was already stacked before the
+robots showed up. The reason humanoids
+are getting deployed to these specific
+sites first like BMW South Carolina or
+GXO Georgia or Amazon Wisconsin, Elder
+Care facilities in Tokyo, is not because
+the executives wanted to fire humans.
+It's because they could not find humans.
+The robots are being deployed into
+vacancies that were already vacancies.
+And these vacancies are created by
+demographic collapse. And a labor force
+that very rationally did not want to
+spend their one human life doing 11-hour
+overnight shifts, freaking pulling boxes
+off a conveyor belt at temperatures that
+range from 38 to 95° inside the same
+building. It's crazy. It's a job,
+right? The story you've been told is
+that these robots are stealing jobs from
+people who actively want those jobs. But
+the story actually unfolding today on
+the ground is the exact opposite. Robots
+are filling vacancies that almost nobody
+wanted in the first place. And those
+vacancies were already going to get
+created by the demographic transition no
+matter what. Now, if you fast forward,
+the story can change, and I'm going to
+cover that very shortly. Now, I want to
+introduce you to a guy named Brett
+Adcott. Brett is the founder and CEO of
+Figure AI. He's the one running those
+live streams with Bob, Frank, and Gary.
+on X on April 23rd in a Forbes interview
+he said the Bot Q factory that's figures
+manufacturing plant went from producing
+one robot per day to one robot per hour
+in about 4 months which is 24 time
+scaling in 120 days and that's truly
+super impressive any way you cut it. He
+says the plan for this calendar year is
+north of 12,000 robots and the long-term
+plan is a million robots per year. His
+estimate for the total addressable
+market is half of global GDP, roughly
+$50 trillion a year. Now, since May
+14th, they've been running their live
+stream on X, showing these robots
+actively working non-stop. The company
+says the robots are reasoning directly
+from camera pixels with end to- end
+neural network without tell operation
+unless something goes wrong, which it
+did a few times on the live stream. But
+honestly, it's a brilliant marketing
+play at the very least. And I highly
+recommend people check out the original
+live stream on X. We'll have links for
+that in the description below. Now, we
+get to layer three, which is what
+happens next. This is the part where
+people should actually be concerned
+about something bad happening because
+the threat is legitimate. The middle
+wave, call it starting around 2030 or
+so, is going to start hitting jobs that
+humans actually want and potentially
+need. Fast food prep, warehouse roles
+that aren't 100% turnover, light
+manufacturing, hotel housekeeping, big
+box retail stocking, construction
+laborers in framing, and rough work,
+agricultural harvesting at scale. These
+are not zero turnover. There's roughly 7
+million material mover jobs in the
+United States at a $30,000 median wage.
+2 million assembler jobs at 44,000.
+Another 2 million generator jobs at
+37,000. And if you combine all those
+kinds of roles, there's north of 10
+million Americans workers in the
+directly automatable physical labor
+category. That's before you count the
+equivalent jobs in Europe and Asia.
+That's where it stops being a
+demographic gap filling story and starts
+being a real hard potentially painful
+transition for real people in real
+places. Now there is a chance that the
+timeline collapses, the costs drop
+faster than anyone is modeling. The
+software generalizes faster than the
+academic researchers expect and you end
+up with all three waves arriving inside
+the same five-year window. In that
+scenario, even the shortage sectors get
+blown through. And the middle 60% of the
+workforce that I have talked about
+deeply in my book, abundance or
+collapse. The people who spend their
+working hours physically moving things
+on behalf of other people, that middle
+60% gets crushed inside of a decade. And
+honestly, I worry about that. I worry
+about the version where the cost curve
+runs faster than government competence
+does. And companies like Tesla and
+Figure end up making millions of robots
+per year within the next 5 years. And
+you end up with 20 million laid-off
+material handlers in 3 years. And a
+political response that let's be honest
+is going to be either too little, too
+late, or so badly designed that it makes
+things worse and can potentially turn
+super violent just like what happened
+with the lite movement. Now I have spent
+a lot of time saying that the people who
+learn to build alongside this technology
+are going to be fine and the people who
+refuse to even look at it are not. That
+is still true. But I think the window
+for ignoring this is just about to
+close. And now this brings us to layer
+four which is the systemic truth. The
+actual convergence here's the deal.
+Human or robots are not their own
+industry. They are the manufacturing end
+of a single system that also includes AI
+that also includes batteries. It
+includes vehicle production. It includes
+data centers and also includes
+manufacturing AI itself. For example,
+Tesla builds Optimus inside a factory
+that has already produced 2 million cars
+a year and runs on the same AI training
+infrastructure that runs FSD and also
+feeds SpaceX AI's model Grock. Figure
+builds Bob and Frank and Gary using the
+actuators from the same Chinese supply
+chain that builds your next electric car
+and your next residential battery.
+Nvidia's Cosmos generates training data
+for humanoids on the same GPUs that
+train large language models that drive
+customer service agents that automate
+the work that doesn't even need a body.
+So when I zoom out, I see a single
+vertically stacked digital and physical
+infrastructure flywheel that is rotating
+faster every quarter. And humanoids are
+just the part of that flywheel that has
+an actual face on it. Sometimes a very
+creepy one, let's be honest. The reason
+that flywheel is going to outpace every
+government's ability to manage the
+transition, is because there is no point
+at which you can stop it without giving
+up on AI or batteries or electric
+vehicles or domestic manufacturing
+capacity or your country's ability to
+compete with China. All of which are
+politically untouchable. Every factory,
+warehouse, fulfillment center, farm,
+hospital, kitchen, job site, they all
+get touched by one flywheel that is
+impossible to pause. This means that the
+iPhone moment for physical labor is
+happening. But the iPhone analogy is
+actually a little misleading in one
+critical way. When the iPhone shipped in
+2007, the labor displacement it caused
+was enormous, but it was indirect.
+travel agents, encyclopedia salesmen,
+map publishers, CD store clerks,
+photolab technicians, newspaper
+classified sales reps. The displacement
+happened, but it happened invisibly over
+a decade in places where the displaced
+workers couldn't easily organize a
+political response because every
+individual case looked like the internet
+is just doing what the internet does.
+But humanoid robots do not displace
+anyone invisibly. Bob, Frank, and Gary
+working a multi-day continuous shift in
+a warehouse is a visible event. It is on
+a live stream. Literally, they literally
+have names. They have name tags. Every
+single deployment is a visible event.
+And that is the part that I think is
+going to bend the politics of this
+faster than anyone is prepared for. The
+first wave fills demographic vacancies
+and the layoffs are minimal. But the
+headlines are not going to be about the
+math. The headlines are going to be a
+photograph of a humanoid at a
+workstation and a photograph of a person
+who used to work that workstation. And
+the political response is going to come
+whether or not the underlying job number
+is positive. The number of jobs for
+humans has to increase, not decrease.
+I'm telling you guys right now, this is
+inevitable. The headlines are far too
+easy to write. I literally just wrote
+like three of them. And the political
+movement is far too easy to catalyze.
+The economic story of humanoid robotics
+in the short and medium term is filling
+vacancies that nobody wanted, fixing
+demographic crises and creating entirely
+new categories of work that human beings
+genuinely will want to do in the
+millions and so many more that we can't
+even think about. I've had this idea of
+buying a fleet of self-driving Tesla
+robo vans, outfitting them as autonomous
+ice cream shops, and sticking a freaking
+Tesla human or robot in there and
+Optimus to serve neighborhoods all over
+where I live. Now, that's one use case
+of god knows how many. And what about
+tasks that humans never wanted in the
+first place? Radioactive cleanup, deep
+sea infrastructure repair, lunar
+construction, deep mining, hazardous
+chemical handling, all become
+economically viable at $2 per hour
+effective robot operating costs. The
+political story is going to be exactly
+the opposite. The political story is
+going to be a video clip of a humanoid
+working at a Walmart taken with a phone.
+It's going to go viral on Tik Tok and
+millions of people are going to freak
+out. The economics will not be the
+issue. The optics will be the issue and
+the most predictable thing in the world
+is that the political response to the
+optics will arrive before the political
+response to the economics. Which means
+the actual disruption is going to be in
+regulation, not labor. We're going to
+get bans, restrictions, and tariffs on
+imported humanoid components. We're
+going to have carveouts for unionized
+industries. The fight is going to be
+city versus city, state versus state,
+country versus country over who allows
+what kind of human deployment under what
+kind of values and rules. And the place
+that gets the balance right is going to
+capture a structural multi- trillion
+dollar productivity gain that the
+countries that screw it up are not going
+to be able to recover from this century
+and will be left massively behind. So
+what does this actually mean for you? If
+you are under the age of 35 in a
+developed country today, the labor
+market you graduate into or try to
+transition into in 3 years is not going
+to be the labor market you graduated
+into in 2019 or 2022. The middle 60% of
+the income distribution, call them
+roughly 200 million people or so across
+the US and more in Europe, is going to
+be navigating the most consequential 10
+years of labor market change since the
+early 1900s. The top 20% who can deploy
+capital into the AI and robotic flywheel
+will do better than they have ever done.
+The bottom 20% will get cheaper goods,
+cheaper services, cheaper basic needs,
+and a real shot at the kind of abundance
+economy that has been promised for a
+100red years and was never delivered.
+And the middle 60% is going to get
+crushed in the transition unless they
+position correctly because it is their
+labor that will be in direct competition
+with these AI systems, both physical and
+digital, especially with the existing
+jobs of today. And I'm sorry to say it,
+but I think it's true. The only way to
+truly position yourself on the winning
+side is by adopting AI, just like how
+the world adopted electricity or the
+steam engine and the internet and deploy
+it to bring value to the world in a way
+that closely aligns with your natural
+talents and what makes you get up in the
+morning. If you do that, you have a near
+certain chance of absolutely killing it
+in the AI age. I talk about this very
+deeply in my book, Abundance or
+Collapse. If you want to get more
+familiar with that concept, I'll have a
+link for that in the description in the
+comment section below. And if content
+creation was one of those things you've
+had in the back of your head that you've
+always wanted to do, I have the same
+tool that I use to make these videos
+available for everyone at farzza.ai,
+which has saved me at least 80% of the
+time that I would usually spend creating
+content while 10xing my views. If you're
+interested, use Farza 10 to get 10% off
+the tier that you choose. Thank you so
+much for watching. I hope this video was
+informative and helpful, and we'll see
+you on the next one. Take it easy,
+everybody. Bye bye.
