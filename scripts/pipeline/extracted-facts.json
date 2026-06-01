@@ -8823,5 +8823,53 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-06-01T13:03:09.006Z",
     "status": "pending"
+  },
+  {
+    "fact": "FSD v14 can travel approximately 2,000 miles between critical interventions, equating to roughly 30–40 hours of driving",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 2000,
+    "context": "Miles per critical intervention is a key safety metric for assessing FSD readiness for unsupervised deployment; this figure is cited as emerging data, not an official Tesla stat",
+    "source": "20260601_electrek_02_Tesla_Fsd_V14_Is_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-01T18:03:34.437Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi predicts 'multiple dozens' of unsupervised Cybercabs deployed across multiple cities in June 2026, representing first mini-scale launch",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Qualitative fleet size prediction for near-term unsupervised deployment; no precise number given beyond 'multiple dozens'",
+    "source": "20260601_jobhakdi_01_Why_Tesla_Slides_Claude_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-01T18:03:34.448Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi estimates Tesla has approximately 1,000 Cybercabs produced and deployed as of early June 2026, describing this as a critical mass threshold",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1000,
+    "context": "Rough total production/deployment estimate used to argue a launch announcement is imminent; not sourced from RobotaxiTracker.com",
+    "source": "20260601_jobhakdi_01_Why_Tesla_Slides_Claude_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-01T18:03:34.448Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Chat commenter reports Tesla launched with approximately 8 concurrent 24/7 Cybercabs and is now at 13–15 concurrent 24/7 vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "The '24/7' characterization implies continuous utilization for a small operational subset of the fleet; figures are unverified chat-sourced",
+    "source": "20260601_jobhakdi_01_Why_Tesla_Slides_Claude_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-01T18:03:34.448Z",
+    "status": "pending"
   }
 ]
