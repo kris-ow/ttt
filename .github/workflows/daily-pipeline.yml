@@ -10,6 +10,10 @@ on:
     - cron: '15 7 * * *'
     - cron: '15 10 * * *'
     - cron: '45 17 * * *'
+    # Monday-only early slot dedicated to the weekly brief. Off the :00/:15
+    # stampede so it actually fires near schedule, instead of the 3–4h delay
+    # the 07:15 slot saw on Mondays 2026-05-11/05-18/05-25.
+    - cron: '45 5 * * 1'
   push:
     # Fire as soon as Mac Mini pushes new transcripts. Bot's own _summary.txt
     # commits use GITHUB_TOKEN, which does NOT trigger workflows — so no loop.
@@ -66,7 +70,7 @@ jobs:
 
       # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
       # 00:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
-      # The 10:15 and 17:45 runs skip this step.
+      # The 10:15, 17:45, and Monday 05:45 runs skip this step.
       # Gate on github.event.schedule (the cron expression that triggered the run), not wall-clock
       # time — Actions cron is routinely delayed 3+ hours, which silently skipped the gate previously.
       - name: Build executive summary
@@ -76,13 +80,14 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/pipeline/exec-summary.js
 
-      # Step 2b: Build weekly brief on Monday 07:15 UTC only (covers Mon-Sun of prior week)
-      # Day-of-week is checked in-step rather than via cron because adding a separate
-      # `15 7 * * 1` cron would fire the workflow twice on Mondays at 07:15 UTC.
-      # workflow_dispatch always runs the weekly brief regardless of day.
+      # Step 2b: Build weekly brief on the Monday-only 05:45 UTC cron (covers Mon-Sun of prior week).
+      # Dedicated cron `45 5 * * 1` so the weekly fires fast without dragging the daily
+      # exec-summary 2nd pass off its 07:15 slot. The in-step day-of-week guard is now
+      # redundant for the scheduled trigger but kept so workflow_dispatch behaves the
+      # same way (only runs on Mondays unless dispatched manually on another day).
       - name: Build weekly brief
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 7 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '45 5 * * 1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -93,11 +98,11 @@ jobs:
           node scripts/pipeline/weekly-summary.js
 
       # Step 2c: Build the Reddit version of the weekly brief, immediately after.
-      # Same gating as the weekly brief (Monday 07:15 UTC OR workflow_dispatch).
+      # Same gating as the weekly brief (Monday 05:45 UTC OR workflow_dispatch).
       # Reformatter takes the latest news/*_weekly_brief_summary.txt as input.
       - name: Build Reddit weekly post
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 7 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '45 5 * * 1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
