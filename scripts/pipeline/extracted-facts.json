@@ -8979,5 +8979,65 @@
     "channel": "futureaza",
     "extractedAt": "2026-06-01T22:04:04.897Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla has 42 VINs officially registered for robotaxi service in Texas per the Texas Motor Carrier website",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 42,
+    "context": "Official state-registered count for Tesla robotaxi vehicles in Texas; materially lower than RobotaxiTracker.com canonical figure of 104 for Austin and 7 for Dallas, suggesting this reflects only formally certified vehicles, not all operational units",
+    "source": "20260601_electrified_01_Why_Elon_Just_Bought_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-01T23:04:30.977Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Houston Tesla robotaxi fleet dropped from 6 operational vehicles to 2, sustained for several weeks as of late May 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 2,
+    "context": "Significant fleet contraction in Houston signals operational issues or deliberate pullback; raises concern that April 2026 launches in Houston and Dallas were premature",
+    "source": "20260601_electrified_01_Why_Elon_Just_Bought_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-01T23:04:30.977Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is building a 51,000 sq ft facility in Grand Prairie, Texas (between Dallas and Fort Worth) designated for charging, cleaning, repair, and maintenance of Tesla-owned autonomous vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Confirms Tesla is investing in dedicated robotaxi infrastructure beyond existing service centers; facility is currently under construction",
+    "source": "20260601_electrified_01_Why_Elon_Just_Bought_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-01T23:04:30.977Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.2 completed a drive across all 48 contiguous US states plus DC — over 7,200 miles across 9 days — with FSD driving every mile",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Demonstrates long-distance supervised FSD capability with zero reported interventions over 7,200+ miles",
+    "source": "20260601_electrified_01_Why_Elon_Just_Bought_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-01T23:04:30.977Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3 completed a coast-to-coast drive across Canada — over 3,700 miles — with zero disengagements of any kind",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Zero disengagement over 3,700 miles is a notable safety/capability data point for FSD in challenging Canadian geography",
+    "source": "20260601_electrified_01_Why_Elon_Just_Bought_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-01T23:04:30.977Z",
+    "status": "pending"
   }
 ]
