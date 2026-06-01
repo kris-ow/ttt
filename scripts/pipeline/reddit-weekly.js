@@ -60,11 +60,12 @@ function delinkTrackerSource(body) {
 // Robotaxi tracker, so first link in the post; reads as editorial
 // provenance rather than a CTA. User position (2026-05-17): one mention
 // in the Brief heading is enough; the bottom footer was removed to avoid
-// double-mention.
+// double-mention. Extended 2026-06-01 to tell readers daily briefs also
+// exist on the site — gives a reason to click without adding a second link.
 function attributeBriefHeading(body) {
   return body.replace(
     /^## Brief$/m,
-    `## Brief from [theteslathesis.com](${TTT_URL})`
+    `## Brief from [theteslathesis.com](${TTT_URL}) — daily briefs also published every morning`
   );
 }
 
