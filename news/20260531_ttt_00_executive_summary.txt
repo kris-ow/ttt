@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-05-31)
 Published:   2026-05-31 00:00 UTC
-Summarized:  2026-06-01 05:16:43 UTC
+Summarized:  2026-06-01 07:46:25 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.08539 (12954 in / 3102 out tokens)
+Cost:        $0.08509 (12954 in / 3082 out tokens)
 Sources:     6
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,94 +22,90 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- Cybercab self-certifies Level 4 autonomy under new Texas law
-- Ashok Elswami's "soon" signals imminent Cybercab fleet entry into Austin
-- Giga Texas: all three production lines running simultaneously for first time in months
-- North Campus Optimus factory steel now rising; target 10M units/year
-- Robotaxi app adds pickup search by name/address in latest UX update
-- Tesla/SpaceX merger "change in control" clause would waive all operational milestones
+- Ashok Elswami's "reporting for duty" post signals imminent Cybercab fleet entry into Austin.
+- Tesla self-certified Cybercab as Level 4 autonomous under new Texas law.
+- Cybercab sightings reported in Pennsylvania on May 31.
+- Giga Texas: all three production lines (Model Y, Cybertruck, Cybercab) running simultaneously.
+- FSD V14 Light targeting Hardware 3 vehicles in late June 2026.
+- SpaceX/Tesla merger "change in control" clause would waive all operational milestones for Musk's pay.
 
 ## Robotaxi
 
-- **Texas Level 4 self-certification — underreported catalyst:** Tesla reportedly self-certified the Cybercab as Level 4 autonomous under a new Texas law, a development Jo Bhakdi flagged as having significant implications for commercial launch timing. He identified mid-June — around June 15th — as the highest-probability window yet for a launch or major announcement, citing the event's one-year anniversary and FIFA World Cup timing as converging signals.
+- **Texas Level 4 self-certification — underreported catalyst:** Tesla reportedly self-certified the Cybercab as Level 4 autonomous under a new Texas law, a development Jo Bhakdi flagged as potentially significant for commercial launch timing in June and described as underreported since its Friday announcement.
 
-- **Ashok's "reporting for duty" post read as a real-weeks signal:** Days before the video's publish date, Elon posted a Cybercab driving itself out of Giga Texas; Ashok quoted it and added "Soon it'll be driving itself into Austin City, reporting for duty." The brighterwithherbert analysis argues that because Ashok owns the FSD version, safety data, and route validation, his use of "soon" carries operational weight — not aspirational framing. The factory-to-Austin drive also implies either a whitelisted route or model generalization beyond the current commercial geo-fence.
+- **Ashok's "reporting for duty" post read as a weeks-not-months signal:** Elon posted a 37-second clip of a Cybercab driving itself out of Giga Texas; Ashok Elswami quoted it and added "Soon it'll be driving itself into Austin City, reporting for duty." The brighterwithherbert analysis argues that because Ashok controls the FSD version, safety data, and route validation, his use of "soon" implies real-world weeks. The post also implies V14.3 is already trusted on private Tesla property and that the factory-to-Austin route may be whitelisted or reflect model generalization beyond the current commercial geo-fence.
 
-- **Cybercab sightings now reaching Pennsylvania:** Fresh Cybercab testing footage from Pennsylvania dated May 31 was highlighted by Bhakdi, with driverless Cybercab sightings reported across multiple U.S. cities — a pattern he described as "climactic" buildup.
+- **Cybercab spotted driverlessly in Pennsylvania:** Fresh testing footage from Pennsylvania dated May 31 was circulated, with Bhakdi noting Cybercabs are now being observed driving driverlessly across multiple U.S. cities — a pattern he characterizes as "climactic" buildup toward deployment.
 
-- **Bhakdi's production estimate: ~1,000 units produced, 10,000 cumulative by June:** Bhakdi estimates Tesla is approaching 1,000 Cybercabs produced to date, projects crossing a 10,000-unit cumulative run rate in June, and expects ~2,000 units by July — the point at which he believes major manufacturing constraints resolve.
+- **Bhakdi estimates ~1,000 Cybercabs produced; projects 10,000 cumulative in June:** Jo Bhakdi estimates roughly 1,000 Cybercabs have been produced to date and projects cumulative output will cross 10,000 units in June, with approximately 2,000 units by July — a threshold he associates with resolution of major manufacturing constraints. These are Bhakdi's own estimates, not confirmed by Tesla.
 
-- **FSD V15 remains the gate for broad commercial expansion:** On Q1 2026 earnings, Elon was explicit that broad robotaxi network expansion is gated on FSD Version 15, described as a major architectural improvement significantly raising safety probability. V15 is a major upgrade over the V14.3 build currently running on robotaxis. Per brighterwithherbert, Ashok's shipping schedule — not manufacturing capacity — is the pacing constraint.
+- **June 15 flagged as highest-probability catalyst window:** Bhakdi cites the one-year anniversary of the robotaxi announcement, accumulating Cybercab sightings, and the FIFA World Cup mid-June timing as converging signals, identifying around June 15 as the most likely date for a launch or major announcement.
 
-- **Revenue timeline unchanged:** Elon confirmed on Q1 2026 that robotaxi revenue will not be material in 2026; meaningful P&L contribution is pushed to 2027.
+- **FSD V15 is the stated gate for broad commercial expansion:** Per Q1 2026 earnings, Elon explicitly tied broad robotaxi network expansion to V15, which he described as a major architectural improvement that would significantly raise safety probability. Ashok characterized V15 as a major upgrade over the V14.3 currently running on robotaxis. Robotaxi revenue is not expected to be material in 2026; meaningful P&L contribution is guided to 2027.
 
-- **Robotaxi app adds pickup search by name/address:** Tesla pushed a UX update enabling users to search for pickup spots by name or address — a friction-reduction improvement aimed at non-early-adopter users and relevant to fleet utilization as the service scales.
+- **Robotaxi app adds pickup search by name/address:** Tesla pushed a UX update enabling users to search pickup spots by name or address — a friction-reduction improvement Sawyer Merritt flagged as oriented toward less technically savvy users ahead of broader deployment.
 
 ## Autonomous Driving
 
-- **FSD V14.3 rolling out; V14 Light for HW3 targeted late June:** Joe Tegtmeyer received FSD V14.3 the morning of the Giga Texas drone session. Separately, Ashok confirmed on Q1 2026 earnings that V14 Light — carrying all V14 features currently on AI4 — is targeted for Hardware 3 vehicles by late June 2026.
+- **FSD V14.3 rolling out; V14 Light for HW3 targeted late June:** Joe Tegtmeyer confirmed receiving FSD V14.3 the morning of May 31. Per Ashok's Q1 2026 earnings commentary, V14 Light — delivering all V14 features to Hardware 3 vehicles — is targeted for late June 2026.
 
-- **Small reasoning model already running in FSD V14.x on customer cars:** Ashok noted almost in passing in his October 2025 ICCV article that a small version of Tesla's reasoning model is already live in FSD V14.x on customer vehicles — a detail brighterwithherbert flagged as worth circling for investors tracking the capability staircase.
+- **Reasoning model already running in FSD V14.x on customer cars:** Ashok noted in his October 2025 ICCV article — flagged by brighterwithherbert as worth circling — that a small version of Tesla's reasoning model is already running in FSD V14.x on production vehicles.
 
-- **Tesla's generative Gaussian splatting runs in ~220ms:** Versus tens of minutes for standard 3D Gaussian splatting, Tesla's version requires no external initialization, models moving objects, can be trained jointly with the end-to-end model, and runs on production vehicle cameras — a key enabler of the neural world simulator used for closed-loop RL training.
+- **Giga Texas on-site data center running at full cooling capacity:** Joe Tegtmeyer observed all six cooling fans on the southeast data center running simultaneously, which he connects to active FSD training workloads.
 
-- **Fleet data engine: equivalent of 500 years of driving produced every day:** Ashok's October 2025 article quantified the scale: seven cameras, 36 fps, 5-megapixel inputs, 30 seconds of history, plus navigation, 100 Hz vehicle data, and 48 kHz audio — approximately 2 billion input tokens compressed to 2 output tokens (steering angle and acceleration). Tesla curates this stream via sophisticated data engine pipelines.
+- **FSD edge-case capability: autonomous reversal on narrow mountain road:** A video shared by Sawyer Merritt showed FSD reversing autonomously down a narrow, rainy mountain road to yield to oncoming traffic — described as the farthest self-initiated reversal he has observed. Anecdotal but relevant to the safety and capability narrative underpinning regulatory confidence.
 
-- **FSD edge-case demo — autonomous reversal on narrow mountain road:** A video circulated showing FSD reversing down a narrow, rainy mountain road to yield to oncoming traffic before proceeding — described by Sawyer Merritt as the farthest he's seen FSD reverse autonomously. Anecdotal but relevant to the safety case underpinning regulatory confidence.
-
-- **Giga Texas on-site data center running all six cooling fans:** Joe Tegtmeyer observed all six cooling tower fans on the southeast corner of the main building operating simultaneously, which he connects to active FSD training workloads on the dedicated on-site data center.
+- **FSD real-world adoption reaching non-enthusiast demographics:** Sawyer Merritt shared his 75-year-old mother's active FSD usage data after three months with a 2026 Model Y (2,700 likes), alongside a separate user logging 73,240 miles on FSD Supervised since last November. Both data points reinforce FSD engagement across diverse user profiles, though no disengagement or intervention rate data accompanied either post.
 
 ## Humanoid Bots
 
-- **North Campus Optimus factory: first steel now erected, 10M units/year target:** The dedicated Optimus manufacturing facility north of Cortex 2 at Giga Texas has progressed from earthwork and footings to first steel erection, with beams and columns staged in an adjacent field. Phase 1 is on flat land currently under construction; Phase 2 reclaims an adjacent mining site to roughly double the footprint. When complete, the building will approach the length of Giga Texas itself. The target is at least 10 million Optimus units per year — versus the Fremont pilot line targeting ~1 million units per year.
+- **North Campus Optimus factory at Giga Texas now in steel erection phase:** The dedicated Optimus manufacturing facility north of Cortex 2 has progressed from earthwork and footings to first steel erection, with beams and columns being staged in an adjacent field. The target is at least 10 million units/year across two phases, with Phase 2 reclaiming an adjacent mining site to nearly double the footprint — bringing the building to roughly the same length as Giga Texas itself, though narrower.
 
-- **Cortex 2 data center ~50% live for Optimus training; full capacity targeted fall 2026:** Cortex 2 went partially operational in April 2026 per Q1 results. Temporary cooling units are augmenting permanent chillers while Phase 2 construction continues, with full capacity targeted around end of summer or fall 2026. Tesla has stated the facility is dedicated to Optimus robot training.
+- **Cortex 2 partially operational since April for Optimus training; full capacity targeted end of summer/fall 2026:** Tesla confirmed at Q1 earnings that Cortex 2 went partially operational in April 2026. Roughly half capacity is now live, augmented by temporary cooling units; full build-out is targeted for end of summer or fall 2026.
 
-- **Shared AI stack: same simulator trains both car and robot:** Ashok's October 2025 article stated explicitly that the same video generation models used to train FSD also work for Optimus robots navigating the Gigafactory. The neural world simulator — which generates photoreal camera feeds for all vehicle angles in response to control inputs — is being used for large-scale closed-loop reinforcement learning for both products.
+- **Shared AI stack between car and robot is Ashok's core architectural claim:** Ashok's October 2025 ICCV article states explicitly: "The same video generation models also work for Optimus robots navigating the Tesla Gigafactory." The neural world simulator, data engine, and reinforcement learning loop are described as common infrastructure across both programs, with Ashok now leading Optimus directly.
 
-- **Ashok now leads Optimus program:** Ashok Elswami took over the Optimus program from its prior lead and is now the lead engineer. The brighterwithherbert analysis frames FSD, robotaxi, Optimus, and Digital Optimus (Macrohard) as one unified AI stack with four different bodies — all under Ashok's architecture.
+- **Gen 3 Optimus prototype unveil signals point to early Q3 2026:** Based on signals discussed by brighterwithherbert, the Gen 3 Optimus prototype reveal looks like early Q3 2026 at the earliest. Production at Fremont is targeted for late 2026, ramping toward 1 million units/year. Real revenue from Optimus is framed as a 2028-or-later event.
 
-- **Gen 3 prototype unveil signals point to early Q3 2026; revenue probably 2028+:** Based on signals discussed, the Gen 3 Optimus prototype unveil looks like early Q3 2026 at the earliest. Fremont production is targeted for late 2026. Elon has framed Optimus as potentially becoming 80% of Tesla's total value; the brighterwithherbert host places real revenue at 2028 or later.
+- **Digital Optimus / "Macrohard" — AI software agents as the most underpriced thesis piece:** Ashok is lead engineer on a joint Tesla AI/xAI project building software-based digital agents — applying the same neural foundation and fleet learning loop to knowledge work. The brighterwithherbert framing: any concrete product announcement here moves the AI services thesis from possible to real.
 
 ## Energy
 
-- **~400 Megapacks planned across Giga Texas; ~130 installed at Cortex 2 today:** Joe Tegtmeyer's aerial survey counts approximately 130 Megapacks installed at Cortex 2, with ~18 recently delivered and partially staged. Two additional Megapack sites on the property total ~140 units, bringing the planned grand total to approximately 400 across the site when fully installed.
+- **~400 Megapacks planned across Giga Texas; ~130 installed at Cortex 2 today:** Joe Tegtmeyer estimates approximately 130 Megapacks currently installed at Cortex 2, with an additional ~18 recently delivered. Across all sites on the Giga Texas property, the total planned installation is approximately 400 Megapacks.
 
 ## Electric Vehicles
 
-- **All three Giga Texas production lines running simultaneously:** Model Y, Cybertruck, and Cybercab production lines are all live at the same time, with vehicles interspersed in output staging areas — a configuration not consistently seen over the prior six to eight months, per Joe Tegtmeyer.
+- **All three Giga Texas production lines running simultaneously for the first time in ~6–8 months:** Joe Tegtmeyer observed Model Y, Cybertruck, and Cybercab units interspersed in the output staging yard — confirmation that all lines are live concurrently, a milestone not consistently seen over the prior six to eight months.
 
-- **Lower-cost Cybertruck production underway; deliveries expected mid-to-late June 2026:** The lower-cost Cybertruck variant is in production with suppliers and lines brought up to meet what Tegtmeyer describes as "pretty big demand." Earliest customers are receiving VINs now.
+- **Lower-cost Cybertruck variant in production; deliveries expected mid-to-late June 2026:** Production has begun and the earliest customers are receiving VINs, with deliveries expected around mid-to-late June 2026. Joe Tegtmeyer describes demand as "pretty big."
 
-- **4680 cell capacity expanding aggressively:** Equipment previously staged in the racetrack storage yard has been moved into the factory as part of a significant 4680 production expansion — concrete slabs removed, new steel and cabinets installed. The 4680 is identified as critical for Optimus, Cybercab, Cybertruck, and the Tesla Semi (which requires ~10–11× the cells of a Model Y).
+- **4680 cell production capacity expanding aggressively:** Previously full storage yards near the racetrack have been largely cleared as equipment moves into the factory for a capacity expansion. The 4680 cell is identified as critical for Optimus, Cybercab, Cybertruck, and the Tesla Semi — the Semi alone requiring roughly 10–11× the cells of a Model Y.
 
 ## Financials
 
-- **Tesla/SpaceX merger "change in control" clause waives all operational milestones:** The 2025 performance-based pay agreement contains language stating that "the Operational Milestones shall be disregarded" in a merger or buyout scenario, leaving only market cap milestones. Targets that would be bypassed include 20 million vehicle deliveries, 10 million FSD subscriptions, 1 million Optimus bots, and 1 million commercial robotaxis. The Electrek piece is strongly opinionated and explicitly not a neutral financial analysis — flag accordingly.
+- **SpaceX/Tesla merger "change in control" clause waives all operational milestones for Musk's pay:** Per Electrek's analysis, the 2025 performance stock agreement contains language stating "the Operational Milestones shall be disregarded" upon a merger or buyout — meaning Tesla would not need to hit targets including 20 million vehicle deliveries, 10 million FSD subscriptions, 1 million Optimus bots, or 1 million commercial robotaxis for Musk to collect some or all of 12 tranches of stock. The article is explicitly opinion-editorial and characterizes the structure as deliberate wealth extraction; investors should read it as a flagged governance risk, not a neutral analysis.
 
-- **NASDAQ rule change cuts SpaceX post-IPO listing window from 1 year to 10 days:** The article argues this forces passive index funds to buy SpaceX at IPO valuations; SpaceX's prospectus reportedly permits a merger within the 180-day post-IPO lockup period.
+- **Tesla P/E at ~400; NASDAQ rule change compresses SpaceX listing window to 10 days:** Electrek notes Tesla is trading at approximately 400× earnings. A NASDAQ rule change reportedly reduces the post-IPO index inclusion waiting period from one year to ten days for SpaceX, which Electrek argues forces passive index funds to buy at peak valuation — with potential dilution implications for Tesla shareholders if an all-stock merger follows.
 
 ## Market & Competition
 
-- **SpaceX IPO June 12; Bhakdi skeptical above $1.75–2T valuation:** Bhakdi expects SpaceX shares to rise initially on index inclusion but warns of a prolonged gap before meaningful cash flow improvement — which he does not expect until late 2027 even in optimistic scenarios. He does not anticipate more than a ~5% Tesla dip tied to retail rebalancing out of Tesla into SpaceX.
+- **Joint SpaceX/Tesla chip fab at Giga Texas; production-ready estimated 2028:** South of Cortex 2, a joint advanced technology chip fabrication facility is in early development — soil testing completed approximately one month prior to May 31. The facility targets AI chip generations 5 and 6-plus for SpaceX data centers, serving as a development precursor to a larger volume "Terafab" planned for East Texas. Given current construction state, Joe Tegtmeyer estimates the Giga Texas fab will not be production-ready until 2028.
 
-- **SpaceX merger speculation: magnet effect or drag risk for Tesla:** Bhakdi argues a strong SpaceX IPO could pull Tesla's market cap upward via merger speculation; a weak post-IPO performance could pressure Tesla symmetrically.
-
-- **Joint SpaceX/Tesla chip fab breaking ground at Giga Texas; production-ready ~2028:** South of Cortex 2, soil testing completed approximately one month prior to the drone session for a joint advanced technology chip fabrication facility. It will develop and test AI chips (Gen 5 nearly complete; Gen 6 and beyond to follow) as a precursor to a larger "Terafab" planned for East Texas. Given current construction state, Tegtmeyer estimates the Giga Texas fab will not reach meaningful production until 2028.
+- **SpaceX IPO June 12 at estimated $1.75–$2T valuation; Bhakdi cautious medium-term:** Bhakdi is skeptical of buying SpaceX at IPO, warning of a prolonged gap between IPO and meaningful cash flow improvement — which he does not expect until late 2027 even in the most optimistic scenario. He estimates a minor Tesla dip of ~5% at most from retail rebalancing, while noting a strong SpaceX IPO could exert a merger-speculation "magnet effect" on Tesla's market cap.
 
 Notable quotes and data:
-- Ashok Elswami (quoting Elon's Cybercab post): "Soon it'll be driving itself into Austin City, reporting for duty."
-- Ashok's October 2025 ICCV article: "The same video generation models also work for Optimus robots navigating the Tesla Gigafactory."
-- Ashok on closed-loop RL goal: "superhuman performance."
-- Ashok to AI team, November 2025: "2026 will be the hardest year of your life."
-- Elon (per brighterwithherbert): "Without them, Tesla would just be another car company looking for an autonomy supplier that does not exist."
-- Jo Bhakdi: "I think the odds that this month [June 2026] is actually now… the highest they have ever been."
-- Change-in-control clause exact language: *"the Operational Milestones shall be disregarded"*
-- Bhakdi Cybercab production estimate: ~1,000 units to date; ~2,000 by July; 10,000-unit cumulative run rate crossed in June
-- Giga Texas Optimus factory target: ≥10M units/year (North Campus); ~1M units/year (Fremont pilot)
-- Cortex 2 Megapacks installed: ~130; total planned across Giga Texas: ~400
-- Tesla's Gaussian splatting: ~220ms vs. tens of minutes for standard implementations
-- Fleet data scale: ~500 years of driving produced per day; ~2B input tokens → 2 output tokens
-- FSD user Keith: 73,240 miles driven on FSD Supervised since last November (~400 miles/day)
-- Lower-cost Cybertruck deliveries: mid-to-late June 2026
-- SpaceX IPO expected valuation: $1.75–$2 trillion; IPO date ~June 12, 2026
+- Ashok Elswami: "Soon it'll be driving itself into Austin City, reporting for duty."
+- Ashok in his October 2025 ICCV article: "The same video generation models also work for Optimus robots navigating the Tesla Gigafactory."
+- Elon Musk (per brighterwithherbert): "Without them, Tesla would just be another car company looking for an autonomy supplier that does not exist."
+- Ashok to his AI team, November 2025: "2026 will be the hardest year of your life."
+- Tesla's fleet data engine produces the equivalent of **500 years of driving every single day.**
+- Tesla's generative Gaussian splatting runs in **~220 milliseconds** vs. tens of minutes for standard 3D Gaussian splatting.
+- V14 Light for HW3: targeted **late June 2026**; V15 is the gate for broad commercial robotaxi expansion.
+- Bhakdi's Cybercab production estimate: **~1,000 units** to date; **~10,000 cumulative** by end of June; **~2,000** by July.
+- North Campus Optimus factory target: **≥10 million units/year**; Fremont pilot target: **~1 million units/year.**
+- Cortex 2 partial operation: **April 2026**; full capacity target: **end of summer / fall 2026.**
+- Megapacks at Giga Texas: **~130 installed** at Cortex 2 today; **~400 total** planned across all sites.
+- Musk pay package change-in-control clause: *"the Operational Milestones shall be disregarded"* — **12 tranches**, operational milestones include 1 million commercial Robotaxis and 1 million Optimus bots.
+- SpaceX IPO expected **~June 12, 2026** at **$1.75–$2 trillion** estimated valuation.
+- Lower-cost Cybertruck deliveries: **mid-to-late June 2026.**
+- Joint SpaceX/Tesla chip fab at Giga Texas: production-ready estimate **2028.**
