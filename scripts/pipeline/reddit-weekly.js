@@ -56,17 +56,34 @@ function delinkTrackerSource(body) {
   );
 }
 
-// Adds TTT attribution into the Brief section heading. Sits below the
-// Robotaxi tracker, so first link in the post; reads as editorial
-// provenance rather than a CTA. User position (2026-05-17): one mention
-// in the Brief heading is enough; the bottom footer was removed to avoid
-// double-mention. Extended 2026-06-01 to tell readers daily briefs also
-// exist on the site — gives a reason to click without adding a second link.
+// Adds TTT attribution into the Brief section heading. As of 2026-06-01
+// the tracker is moved below the Brief (see reorderSections), so this is
+// the FIRST link in the post — top-of-fold position. Single mention rule
+// preserved (user position 2026-05-17): no bottom footer, no duplicate links.
+// Phrasing avoids time-zone language ("morning" was rejected as relative).
 function attributeBriefHeading(body) {
   return body.replace(
     /^## Brief$/m,
-    `## Brief from [theteslathesis.com](${TTT_URL}) — also publishes daily briefs`
+    `## Brief from [theteslathesis.com](${TTT_URL}) — see the site for daily briefs`
   );
+}
+
+// Moves the `## Unsupervised Robotaxi Fleet` block from the top of the body
+// to a position between the Brief bullets and the first category section.
+// Source brief lays out tracker → Brief → categories; Reddit post wants
+// Brief (TTT link top-of-fold) → tracker → categories so the link is the
+// first thing a reader sees and the tracker reads as supporting context.
+function reorderSections(body) {
+  // Source brief is CRLF on Windows pipelines, LF elsewhere — `\r?\n` keeps
+  // the transform robust to either.
+  const trackerRe = /^(## Unsupervised Robotaxi Fleet[\s\S]*?\r?\n)---\r?\n\r?\n(?=## Brief\b)/m;
+  const trackerMatch = body.match(trackerRe);
+  if (!trackerMatch) return body; // pattern shifted; leave body untouched
+  const trackerBlock = trackerMatch[1];
+  const withoutTracker = body.replace(trackerRe, '');
+  const briefEndRe = /(^## Brief[\s\S]*?\r?\n)---\r?\n\r?\n/m;
+  if (!briefEndRe.test(withoutTracker)) return body;
+  return withoutTracker.replace(briefEndRe, `$1---\n\n${trackerBlock}---\n\n`);
 }
 
 // ── Output ───────────────────────────────────────────────
@@ -79,7 +96,7 @@ function stripBriefTags(body) {
 
 function buildRedditPost(title, body) {
   const cleaned = stripBriefTags(
-    attributeBriefHeading(delinkTrackerSource(body))
+    attributeBriefHeading(reorderSections(delinkTrackerSource(body)))
   ).trimStart();
   return `${cleaned.trimEnd()}\n`;
 }
