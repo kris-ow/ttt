@@ -65,7 +65,7 @@ function delinkTrackerSource(body) {
 function attributeBriefHeading(body) {
   return body.replace(
     /^## Brief$/m,
-    `## Brief from [theteslathesis.com](${TTT_URL}) — daily briefs also published every morning`
+    `## Brief from [theteslathesis.com](${TTT_URL}) — also publishes daily briefs`
   );
 }
 
