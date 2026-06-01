@@ -8751,5 +8751,77 @@
     "channel": "cernbasher",
     "extractedAt": "2026-06-01T12:04:09.247Z",
     "status": "pending"
+  },
+  {
+    "fact": "Morgan Stanley projects humanoid actuator cost at $100–$300 each at Tesla's target scale of 1 million units per year",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": null,
+    "context": "Actuator subsystem cost is a major component of overall robot unit cost; at scale this represents an order-of-magnitude reduction from 2020 costs of $50,000–$100,000 for the actuator subsystem alone",
+    "source": "20260601_farzad-fm_01_Iphone_Moment_For_Robots_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-01T13:03:09.006Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Optimus price target is $20,000 per unit at 1 million units production volume, targeted for approximately 2030",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 20000,
+    "context": "Tesla's own stated price target for Optimus at scale; key input for any robotics business case or DCF model",
+    "source": "20260601_farzad-fm_01_Iphone_Moment_For_Robots_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-01T13:03:09.006Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Figure AI scaled production from 1 robot per day to 1 robot per hour in approximately 4 months (24x in 120 days), per CEO Brett Adcock on April 23rd",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "Production rate trajectory is directly relevant to fleet growth projections; at 1/hour = ~8,760 units/year annualized",
+    "source": "20260601_farzad-fm_01_Iphone_Moment_For_Robots_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-01T13:03:09.006Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Figure AI's production target for calendar year 2026 is north of 12,000 robots",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 12000,
+    "context": "Near-term fleet growth figure from the CEO; directly relevant to fleet size and revenue projections",
+    "source": "20260601_farzad-fm_01_Iphone_Moment_For_Robots_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-01T13:03:09.006Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Figure AI's long-term production goal is 1 million robots per year",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Long-term fleet growth target; matches Tesla's stated Optimus ambition and anchors TAM calculations",
+    "source": "20260601_farzad-fm_01_Iphone_Moment_For_Robots_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-01T13:03:09.006Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's stated goal is to reach 1 million Optimus units per year, targeting approximately 2030; Tesla recorded production in March 2026 with a goal to 3x that by May 2026",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Tesla's own production ramp targets for Optimus; mass production stated to begin summer 2026",
+    "source": "20260601_farzad-fm_01_Iphone_Moment_For_Robots_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-01T13:03:09.006Z",
+    "status": "pending"
   }
 ]
