@@ -8739,5 +8739,17 @@
     "channel": "investingagainstthegrain",
     "extractedAt": "2026-06-01T08:03:39.526Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi cost savings estimated at approximately 35 cents per mile versus conventional diesel trucking",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": 0.35,
+    "context": "Cited as the economic margin advantage per mile for fleet operators; relevant as a proxy cost-savings input for Semi unit economics modeling",
+    "source": "20260601_cernbasher_01_Tesla_Semi_Delay_Makes_summary.txt",
+    "channel": "cernbasher",
+    "extractedAt": "2026-06-01T12:04:09.247Z",
+    "status": "pending"
   }
 ]
