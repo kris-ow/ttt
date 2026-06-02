@@ -9039,5 +9039,77 @@
     "channel": "electrified",
     "extractedAt": "2026-06-01T23:04:30.977Z",
     "status": "pending"
+  },
+  {
+    "fact": "Waymo's current operational fleet is approximately 3,700 vehicles per recent SEC filing referenced in video",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3700,
+    "context": "Waymo total active fleet size as of filing date; useful for competitive benchmarking against Tesla robotaxi fleet",
+    "source": "20260602_brighterwithherbert_01_Three_Robotaxi_Leaders_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-02T14:19:48.047Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo Oho van projected cost is $75,000–$100,000 per vehicle after tariffs, per Barely AI estimate; compared to ~$200,000 for current Jaguar I-Pace fleet",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 87500,
+    "context": "Significant cost reduction for Waymo's next-gen fleet vehicle; midpoint ~$87,500 but Jeff Lus cautions actual landed cost may be higher if volume commitments not met",
+    "source": "20260602_brighterwithherbert_01_Three_Robotaxi_Leaders_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-02T14:19:48.047Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo Oho van target deployment: 100 vehicles currently operating, 1,000 on road by year-end 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000,
+    "context": "Waymo's near-term fleet growth target for new Oho van platform; low absolute volume raises unit economics concerns per Jeff Lus",
+    "source": "20260602_brighterwithherbert_01_Three_Robotaxi_Leaders_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-02T14:19:48.047Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo voluntary software recall covered approximately 3,800 fifth- and sixth-generation robotaxis for failure to avoid standing water and flooded roads",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Active safety issue requiring software recall across nearly entire Waymo fleet; relevant to safety record and regulatory risk",
+    "source": "20260602_brighterwithherbert_01_Three_Robotaxi_Leaders_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-02T14:19:48.047Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo Oho van built by Chinese automaker Zeekr, imported to US, retrofitted with sixth-gen hardware at Waymo's Arizona facility; cost estimate of $75,000–$100,000 includes tariff impact",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 87500,
+    "context": "Supply chain structure introduces tariff exposure and volume commitment risk that could push actual landed cost above quoted range per Jeff Lus analysis",
+    "source": "20260602_brighterwithherbert_01_Three_Robotaxi_Leaders_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-02T14:19:48.047Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jeff Lus estimates the Zeekr Oho van likely costs approximately $35,000–$40,000 to build in China before tariffs and US retrofitting",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": 37500,
+    "context": "Implied ex-factory China cost estimate from supply chain expert; difference between this and $75,000–$100,000 landed cost reflects tariffs and Arizona retrofitting",
+    "source": "20260602_brighterwithherbert_01_Three_Robotaxi_Leaders_Just_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-02T14:19:48.047Z",
+    "status": "pending"
   }
 ]

@@ -1,0 +1,29 @@
+Channel:     electrek
+Title:       Tesla patents camera wiper for self-driving — resulting in more doubts for FSD owners
+Published:   2026-06-02 13:51 UTC
+Summarized:  2026-06-02 14:19:48 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01GiRht7qFVa4CMxaj1Xugms
+Cost:        $0.01190 (2837 in / 1019 out tokens)
+Categories:  Autonomous Driving, Robotaxi, Electric Vehicles
+────────────────────────────────────────────────────────────
+
+Tesla has been granted a patent (US 12,636,684 B1, May 26) for a miniature "Lens Cleaning System" that integrates a fluid dispenser and curved mechanical wiper directly into the camera assembly — designed to keep cameras clear for autonomous driving without relying on a fixed cleaning schedule.
+
+## Autonomous Driving
+1. **Patent addresses a persistent FSD failure mode:** The system automatically monitors image quality from the camera feed itself and activates a cleaning sequence — spray plus wipe — only when degradation is detected. Tesla removed radar and ultrasonic sensors years ago, making a blocked camera effectively a blind spot for its vision-only FSD system. Tesla acknowledged the dirty-camera problem over a year ago, and with FSD v14 introduced targeted cleaning for front cameras on the new Model Y, but side and rear cameras remain unaddressed on consumer vehicles.
+
+## Robotaxi
+2. **Austin Robotaxi fleet already has camera washers; consumer vehicles do not:** Tesla's Austin Robotaxi fleet already uses external camera washer jets on fender repeater and B-pillar cameras — the repeater cameras have been redesigned with the turn signal light removed in favor of a washer nozzle. No production Model Y sold to consumers includes this hardware, and it is not retrofittable. The article notes this contradicts Tesla's repeated claim that its Robotaxi service uses "the same Model Y vehicles it sells to consumers." The new patent describes a potentially more integrated solution and may be critical for the Cybercab, which has begun production and must operate fully without human intervention.
+
+## Editorial Stance
+Electrek's Lambert argues that if camera cleaning is critical enough to deploy exclusively on Robotaxis, it is equally critical for any vehicle running FSD — calling the hardware gap "not a good look" and pressing Tesla to bring the technology to consumer vehicles rather than keeping it fleet-only.
+
+Notable quotes and data:
+- Patent number: US 12,636,684 B1, granted May 26
+- Patent title: "Lens Cleaning System"
+- Cleaning fluids supported: water, alcohol-based solutions, washer fluid, or lubricants
+- FSD v14 introduced targeted front-camera cleaning on the new Model Y; side and rear cameras remain unaddressed on consumer vehicles
+- Austin Robotaxi fleet has camera washers on fender repeater and B-pillar cameras; no consumer Model Y has equivalent hardware
+- Cybercab "has started production" per the article
+- "Tesla has made a significant point of saying its 'Robotaxi' service uses the same Model Y vehicles it sells to consumers"
