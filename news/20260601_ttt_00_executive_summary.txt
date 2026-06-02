@@ -1,0 +1,104 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-06-01)
+Published:   2026-06-01 00:00 UTC
+Summarized:  2026-06-02 05:01:34 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.12251 (23401 in / 3487 out tokens)
+Sources:     11
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | 0 | +8 |
+| Houston | 6 | 0 | 0 | +3 |
+| Dallas | 5 | 0 | 0 | +2 |
+| **Total** | **39** | 0 | 0 | +13 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- Texas authorizes Tesla driverless commercial ops; Cybercab self-drives out of Giga Texas
+- Morgan Stanley: FSD miles jump to 26.7M/day from 18.5M in April
+- Estonia becomes third EU country to approve supervised FSD; Belgium weeks away
+- FSD v14.3 completes Canada coast-to-coast: 3,700 miles, zero disengagements
+- Terafab: 3,100+ acres acquired in Texas; $55B initial capex, $119B total potential
+- BYD assumes uncapped crash liability for God's Eye — Tesla still places all liability on driver
+
+## Robotaxi
+
+- **Texas Level 4 self-certification official (effective May 28):** Tesla self-certified its robotaxi software as Level 4 under Texas's new driverless vehicle commercial operations law. The Motor Carrier registry shows 42 Tesla VINs registered, versus Waymo's 619 and AVID's 317. Per Electrified, this is procedurally a formality — no new capability added — but clears the legal path for commercial driverless deployment.
+
+- **Cybercab drives itself out of Giga Texas:** Elon Musk posted video of the first Cybercab exiting the factory unassisted — no steering wheel, self-parked in the lot. Ashok Elluswami stated "soon it will drive itself into Austin and report for duty." Joe Tegtmeyer documented Cybercabs making autonomous two-mile trips around the Giga Texas lot, with dozens lined up with hatch covers open and wheel covers staged for shipping.
+
+- **Cybercab testing expands to Pennsylvania:** Three Cybercabs were spotted at the Bridgeville Tesla showroom south of Pittsburgh — the first confirmed testing presence in the state, broadening the pre-deployment validation footprint beyond previously known locations.
+
+- **Houston and Dallas fleets contracting, not scaling:** On-the-ground reporters show Houston down from six operational robotaxis to two, a condition persisting for several weeks. Dallas showed "no rides available nearby" on two consecutive days. Per Electrified, Bhakdi predicts "multiple dozens" of unsupervised Cybercabs deployed across multiple cities in June, citing Tesla's Q4 earnings deck commitment to unlock multiple cities before H2 2026 — roughly 30 days remain on that clock. The World Cup opener in Dallas on June 14 is cited as a potential deployment catalyst.
+
+- **New city supervisor hiring underway:** Tesla has open listings for robotaxi fleet support supervisors in Palo Alto, Tampa, San Antonio, Orlando, San Francisco, and Miami. Three of those cities — Miami, Orlando, and Tampa — match Tesla's reported targets for robotaxi launch by end of June 2026. RobotaxiTracker's hiring watch list now shows 41 entries with 33 active AI safety operator listings.
+
+- **Dallas service infrastructure confirmed:** A court document reveals Tesla is building a 51,000 sq ft facility in Grand Prairie, Texas (between Dallas and Fort Worth) explicitly designated for charging, cleaning, repair, and maintenance of Tesla-owned autonomous vehicles — the first confirmed purpose-built robotaxi depot outside Austin.
+
+## Autonomous Driving
+
+- **Morgan Stanley: FSD daily miles surge to 26.7M:** Up from 18.5M miles/day in April, per a new Morgan Stanley research note. The bank flags FSD's ~90% gross margin as a meaningful profitability driver and cites increased hiring in northern metro areas for AI safety operators as a scale-up signal. Cumulative supervised FSD miles have surpassed 10 billion; the fleet now accumulates roughly 30 million miles per day per FutureAzA.
+
+- **Estonia approves supervised FSD — third EU country:** Effective May 29, joining the Netherlands and Lithuania. Belgium's Minister of Transport stated publicly that approval will follow "in the coming weeks" after completing the required 5,000 km of testing. Tesla is hiring vehicle operators in Slovenia and Austria, signaling those countries may be next. Per Jeff Lutz, the Netherlands approval created a regulatory template other EU member states can now leverage, and a cluster of European approvals throughout the summer is expected.
+
+- **Canada coast-to-coast: zero disengagements across 3,700 miles:** David Moss, Devin Olsen, and Scott completed what is described as the world's first fully autonomous coast-to-coast drive across Canada using FSD v14.3 — Horseshoe Bay, BC to Nova Scotia — in 4 days and 21 hours with zero disengagements including in parking situations. This is the fourth coast-to-coast autonomous drive in five months; the four trips total 12,427 miles across standard production vehicles with no special modifications. David Moss: "This is a bigger step change than AlphaGo or GPT as there's no special machine behind it."
+
+- **48-state FSD drive completed:** Joe Anderson drove through all 48 contiguous US states plus DC on FSD v14.3.2 — over 7,200 miles across 9 days — with FSD driving every mile. Tesla's official account congratulated him.
+
+- **FSD v14 complacency risk flagged by Electrek:** Electrek's Fred Lambert, who has tested every FSD version since launch, warns FSD v14 is creating a dangerous complacency dynamic — roughly 2,000 miles between critical interventions, while research shows drivers need 5–8 seconds to mentally reengage after a handover request. He cites Tesla's own marketing language ("your personal chauffeur," "gives back your freedom") and Musk's confirmation that texting is acceptable in some traffic contexts as actively amplifying the problem. He calls on Tesla to strengthen driver monitoring and stop promoting FSD as a driver substitute.
+
+- **Tesla Semi described as "robo trucking ready":** Dan Priestley is quoted as describing the Semi as autonomous-ready. Supervised platooning — one human-supervised lead driver with multiple Semis daisy-chained behind — is floated as a near-term bridge solution for an industry facing a projected 160,000-driver shortage by 2028.
+
+## Humanoid Bots
+
+- **Terafab land acquisition: 3,100+ acres in Grimes County, Texas:** Witt LLC — a purchasing entity sharing the physical address of XAI in Palo Alto, with XAI general counsel James Burnham signing — is acquiring over 3,100 acres at the Gibbons Creek Reservoir, roughly two hours from Giga Texas. A public hearing is scheduled June 3, 2026, with SpaceX listed as the property owner for the tax abatement session. The project is described as a "multi-phase next-gen vertically integrated semiconductor manufacturing and advanced computing fab facility." Initial phase capex: $55 billion; total potential investment: $119 billion.
+
+- **Figure AI's live warehouse demo framed as an inflection point:** Figure AI's three Figure 3 humanoid robots — Bob, Frank, and Gary — have been running a publicly live-streamed continuous warehouse mission since May 14, sorting packages at human-parity speed and autonomously swapping for battery charges via neural network from raw camera pixels with no teleoperation. The runtime counter had exceeded 60 hours at time of recording. Brett Adcock states Figure's Bot Q plant scaled from one robot per day to one robot per hour in approximately four months (24x in 120 days), with a 2026 target north of 12,000 robots.
+
+- **Actuator cost collapse enabling humanoid economics:** High-torque actuators cost $2,000–$5,000 each at low volume in 2020; they now run $500–$2,000. Morgan Stanley projects costs fall to $100–$300 each at Tesla's 1M unit/year scale, enabled by the Chinese EV supply chain. Tesla's Optimus price target is $20,000 at 1 million units (~2030). Unitree currently sells a full humanoid for $13,500.
+
+- **OpenAI Robotics now hiring for humanoid manufacturing:** Sam Altman announced OpenAI Robotics is hiring to program and manufacture robots, with near-term focus on skilled worker support and a long-term vision of a personal robot for everyone. Per Electrified, OpenAI issued an RFP in January 2026 seeking US humanoid manufacturing partners for actuators, gearboxes, and motors; partnerships are expected given the lack of in-house manufacturing capability.
+
+## Electric Vehicles
+
+- **European Tesla sales surge in May:** France +655% YoY, Denmark +136% (Model Y was Denmark's best-selling vehicle in May), Spain +113%, Portugal +350% YTD, Sweden +71%, Norway +29%. Jeff Lutz attributes the surge to new Model Y inventory availability, easing brand headwinds, high European gasoline prices, and FSD approval momentum. Giga Berlin is expanding output capacity.
+
+- **Tesla Semi enters commercial testing on Grapevine route:** Covenant completed a two-week real-world test of the Tesla Semi on the Grapevine — one of the most demanding routes in North America for grades, heat, and load management. The driver reported being "amazed" and described a level of confidence hard to match in a diesel truck. A formal summary from Covenant is forthcoming. First Semi came off the Nevada production line in April 2026, nine years after the 2017 announcement; one company has since ordered 340 units. Cost savings vs. diesel: ~35 cents per mile.
+
+- **Camouflaged Model Y L spotted at Fremont:** A longer-wheelbase Model Y believed to be the Model Y L was observed testing at Fremont. Jeff Lutz describes US launch as "imminent" and expected in H2 2026, requiring local supplier requalification despite the vehicle already being built in other markets.
+
+- **Canada Chinese EV quota:** Tesla has used ~12% (~2,910 vehicles, nearly all Model 3 from Giga Shanghai) of Canada's 24,500-vehicle allocation window running through August 31, 2026.
+
+## Market & Competition
+
+- **BYD assumes uncapped crash liability for God's Eye:** Announced May 28, BYD will cover all direct economic losses — repairs, third-party property damage, and personal injury — with no cap when God's Eye urban driving is active and used in compliance with regulations. Policy does not raise commercial insurance premiums and extends to subsequent owners upon OTA update to God's Eye 5.0. God's Eye B costs 12,000 yuan (~$1,770) as a one-time option. Tesla's FSD Supervised in China is 64,000 yuan (~$9,400) with the driver bearing all liability per the owner's manual. BYD's analogous parking guarantee in July 2025 lifted feature usage from 21% to 93%. BYD chairman Wang Chuanfu: "Taking on Level 3 and Level 4 liability early during the Level 2 stage demonstrates the company's absolute confidence in its own technology."
+
+- **SpaceX S-1 amended to include "future transactions" language ahead of June 12 IPO:** SpaceX filed an S-1 amendment adding language stating it "may issue a significant amount of equity in connection with future transactions" — plural, and new relative to the original S-1. Per Bert and Jeff Lutz, the Cursor deal was already known when the original S-1 dropped, making the new language suggestive of additional undisclosed strategic transactions, including a possible Tesla tie-up. Musk is locked up for 366 days on all SpaceX shares post-IPO; 5% of IPO shares are reserved for employees and associates with no lockup.
+
+- **xAI's Colossus 2 running seven models simultaneously:** Musk posted that Colossus 2 has seven models in simultaneous training: two variants at 1T parameters, two at 1.5T, one at 6T, and one at 10T. A proprietary in-house AI training stack written in C, targeting 220,000 Nvidia GB300s, is claimed to run approximately 10x faster than Google's Jax for large training runs and will be used for Grok 5. The Anthropic compute lease is a 180-day arrangement with 90-day mutual cancellation notice — "short-term was our request," per Musk.
+
+Notable quotes and data:
+- Morgan Stanley: FSD daily miles = **26.7M** (up from **18.5M** in April); FSD gross margin ~**90%**
+- Supervised FSD cumulative miles: **10 billion**; current accumulation rate: ~**30M miles/day**
+- Canada autonomous drive: **3,700 miles**, **4 days 21 hours**, FSD v14.3, **zero disengagements**; four coast-to-coast drives in 5 months totaling **12,427 miles**
+- 48-state drive: **7,200+ miles** on FSD v14.3.2, zero interventions
+- Terafab: **3,100+ acres**, Grimes County TX; **$55B** initial capex, **$119B** total potential
+- Tesla Semi cost savings: **~35 cents/mile** vs. diesel; first Nevada unit off line **April 2026**; one order of **340 units** placed
+- BYD God's Eye B: **12,000 yuan (~$1,770)** vs. Tesla Assisted Driving China: **64,000 yuan (~$9,400)**; BYD fleet: **3.15M** vehicles, up to **200M km/day** of driving data
+- Actuators: **$500–$2,000** (2026) → projected **$100–$300** at Tesla's 1M unit/year scale (Morgan Stanley)
+- Figure AI: **1 robot/day → 1 robot/hour** in ~4 months; 2026 target: **>12,000 robots**
+- Optimus price target: **$20,000** at 1M units (~2030)
+- SpaceX Colossus 2: **7 models** in simultaneous training (**1T×2, 1.5T×2, 6T, 10T** parameters); proprietary stack claimed ~**10x faster** than Google Jax
+- SpaceX Anthropic lease: **180-day** term, **90-day** mutual cancellation notice
+- France Tesla sales May 2026: **+655% YoY**; Denmark: **+136%** (Model Y best-selling vehicle); Model Y best-selling in Denmark
+- David Moss: "This is a bigger step change than AlphaGo or GPT as there's no special machine behind it."
+- Musk on texting with FSD active: "Depending on context of surrounding traffic, yes."
+- SpaceX IPO: **June 12, 2026**; Musk lockup: **366 days**
