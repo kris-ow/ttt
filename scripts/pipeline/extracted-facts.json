@@ -9111,5 +9111,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-02T14:19:48.047Z",
     "status": "pending"
+  },
+  {
+    "fact": "ArcBest averaged 1.55 kWh per mile over 4,494 miles across three weeks on typical dispatch lanes",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.55,
+    "context": "Real-world energy efficiency data from a structured fleet evaluation; relevant to Tesla Semi operating cost modeling",
+    "source": "20260602_electrek_02_Tesla_Semi_Tackles_The_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-02T16:17:37.500Z",
+    "status": "pending"
+  },
+  {
+    "fact": "DHL Supply Chain averaged 1.72 kWh per mile at full load over a 3,000-mile trial",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.72,
+    "context": "Full-load energy efficiency from a structured fleet evaluation; slightly higher than ArcBest due to full load conditions",
+    "source": "20260602_electrek_02_Tesla_Semi_Tackles_The_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-02T16:17:37.500Z",
+    "status": "pending"
   }
 ]
