@@ -9243,5 +9243,123 @@
     "channel": "electrek",
     "extractedAt": "2026-06-03T18:02:15.976Z",
     "status": "pending"
+  },
+  {
+    "fact": "Houston robotaxi fleet has reached at least 9 vehicles, including at least one Model Y",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 9,
+    "context": "Ground reporter Saddok confirmed vehicle number nine in Houston is a Model Y, indicating fleet additions beyond Cybercab are occurring",
+    "source": "20260603_electrified_01_Tesla_Deploys_Major_Unsupervised_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-03T19:04:13.724Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active robotaxi fleet per RobotaxiTracker.com: 704 total (Bay Area 584, Austin 104, Dallas 7, Houston 9) as of 2026-06-02",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 704,
+    "context": "Canonical fleet count from RobotaxiTracker.com; Houston number of 9 aligns with ground report in video",
+    "source": "20260603_electrified_01_Tesla_Deploys_Major_Unsupervised_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-03T19:04:13.724Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) robotaxi fleet per RobotaxiTracker.com: 39 total (Austin 28, Dallas 5, Houston 6) as of 2026-05-09",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Subset of active fleet operating without safety monitors; Austin full-geofence expansion announced in this video could meaningfully increase this number",
+    "source": "20260603_electrified_01_Tesla_Deploys_Major_Unsupervised_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-03T19:04:13.724Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Remote operations infrastructure identified as the primary bottleneck to rapid unsupervised fleet scaling in Austin",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "remote_ops_ratio",
+    "context": "Host explicitly states that if remote ops infrastructure is not ready to handle influx of vehicles, that would be the limiting factor — no specific ratio given",
+    "source": "20260603_electrified_01_Tesla_Deploys_Major_Unsupervised_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-03T19:04:13.724Z",
+    "status": "pending"
+  },
+  {
+    "fact": "81 total known Tesla Semi charging depot sites (operational, under construction, and planned) as of June 2026",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "context": "Infrastructure pipeline tracked on host's Tesla Semi dashboard; relevant to understanding charging network readiness for fleet scaling",
+    "source": "20260603_electrified_01_Tesla_Deploys_Major_Unsupervised_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-03T19:04:13.724Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Approximately 28 unsupervised robotaxi vehicles currently operating in Austin per the host's reference",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 28,
+    "context": "Host cites ~28 unsupervised robotaxis slated for Austin; aligns with RobotaxiTracker.com canonical figure of 28 unsupervised in Austin as of 2026-05-09",
+    "source": "20260603_brighterwithherbert_02_Tesla_Rolls_Out_Unsupervised_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-03T19:04:13.736Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total unsupervised robotaxi fleet per RobotaxiTracker.com: 39 vehicles (Austin 28, Dallas 5, Houston 6) as of 2026-05-09",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Canonical tracker data for unsupervised (driverless) subset of Tesla robotaxi fleet across all cities",
+    "source": "20260603_brighterwithherbert_02_Tesla_Rolls_Out_Unsupervised_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-03T19:04:13.736Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total active robotaxi fleet per RobotaxiTracker.com: 704 vehicles (Bay Area 584, Austin 104, Dallas 7, Houston 9) as of 2026-06-02",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 704,
+    "context": "Canonical tracker data for all operational Tesla robotaxi vehicles across all modes and cities",
+    "source": "20260603_brighterwithherbert_02_Tesla_Rolls_Out_Unsupervised_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-03T19:04:13.736Z",
+    "status": "pending"
+  },
+  {
+    "fact": "ARK Invest states FSD is already safer than human drivers based on current safety data",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Cathie Wood cited Tesla's published safety data as evidence the AI4 platform already crosses the threshold needed for robotaxi deployment without waiting for FSD version 15",
+    "source": "20260603_brighterwithherbert_02_Tesla_Rolls_Out_Unsupervised_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-03T19:04:13.736Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's last reported fleet size was approximately 3,000 cars",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "ARK Invest used this figure to contrast with Tesla's daily production capacity, emphasizing Tesla's manufacturing scale advantage for robotaxi fleet buildout",
+    "source": "20260603_brighterwithherbert_02_Tesla_Rolls_Out_Unsupervised_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-03T19:04:13.736Z",
+    "status": "pending"
   }
 ]
