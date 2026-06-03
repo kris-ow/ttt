@@ -9195,5 +9195,53 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-06-03T13:04:12.500Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla unsupervised Robotaxi fleet in Austin: ~20 active vehicles as of early June 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 20,
+    "context": "Fleet has declined from a peak of 25; directly constrains near-term revenue potential despite large geofence",
+    "source": "20260603_electrek_03_Tesla_Expands_Robotaxi_To_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-03T18:02:15.976Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Dallas unsupervised fleet: 3 vehicles; Houston unsupervised fleet: 6 vehicles — zero growth since April 2026 launch",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 9,
+    "context": "Combined Dallas + Houston fleet remains negligible with no growth trajectory",
+    "source": "20260603_electrek_03_Tesla_Expands_Robotaxi_To_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-03T18:02:15.976Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Total active Tesla Robotaxi fleet (all modes including supervised Bay Area) collapsed from 165 to 34 active vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 34,
+    "context": "Sharp decline in total active fleet signals operational or software issues affecting broader deployment",
+    "source": "20260603_electrek_03_Tesla_Expands_Robotaxi_To_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-03T18:02:15.976Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo operates approximately 3,000 robotaxis across US markets and completes over 500,000 paid trips per week",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3000,
+    "context": "Waymo benchmark illustrates scale gap; useful as competitive reference for robotaxi unit economics modeling",
+    "source": "20260603_electrek_03_Tesla_Expands_Robotaxi_To_summary.txt",
+    "channel": "electrek",
+    "extractedAt": "2026-06-03T18:02:15.976Z",
+    "status": "pending"
   }
 ]
