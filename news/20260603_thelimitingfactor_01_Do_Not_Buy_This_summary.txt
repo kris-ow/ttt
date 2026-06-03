@@ -1,0 +1,41 @@
+Channel:     thelimitingfactor
+Title:       Do Not Buy This Model Y?  4680 '8L' Battery Pack Investigated
+Published:   2026-06-03 14:58 UTC
+Summarized:  2026-06-03 16:03:44 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01PwdR9UzV2mL8bkBiCg5KP7
+Cost:        $0.03498 (7120 in / 3240 out tokens)
+Categories:  Electric Vehicles
+────────────────────────────────────────────────────────────
+
+This video by Jordan Giesige of The Limiting Factor investigates claims made by several outlets that the European Model Y equipped with the new 4680 "8L" battery pack charges extremely slowly and should not be purchased. After reviewing two sets of real-world charging test data, Jordan concludes that the 8L pack's charge rate is roughly in line with Tesla's other battery packs — slightly worse than the best 2170 packs, but well within acceptable limits — and that the alarming headlines appear to stem primarily from poor testing methodology rather than a fundamental flaw in the battery.
+
+## Electric Vehicles
+
+1. **Background and timeline of the 8L battery pack:** In January 2026, the X account Eivissa — known for sourcing battery information from European regulatory filings — reported that Tesla was introducing a European Model Y with a new battery pack coded YB8LR, which the Tesla community shortened to the "8L" battery pack. Tesla confirmed the launch of a new trim called the Standard Long Range Rear Wheel Drive Model Y within three days. At the Q4 2025 earnings call, Tesla confirmed they were beginning to use the 4680 cell in non-structural battery packs, and at the Q1 2026 earnings call they confirmed that Giga Berlin had launched a Model Y battery pack using their in-house 4680 cell. A key open question remains whether the specific 4680 cell used is the Generation 2 "Cybercell" (also used in the Cybertruck) or the newer, fully dry electrode version.
+
+2. **Two trim versions complicate the picture:** Jordan notes that there appear to be two versions of the Model Y equipped with the 8L battery pack. The original Standard Long Range Rear Wheel Drive trim was seemingly discontinued in early spring 2026 and replaced with a Premium Long Range Rear Wheel Drive trim, with the battery pack designation remaining the same but other aspects of the trim (such as the entertainment system) being upgraded. This matters because Tesla could theoretically change the 4680 cell version within the same pack designation, potentially affecting charging results, and because different WLTP range figures (ranging from 609 to 657 km depending on wheel and tire options) were listed during this period, adding to the confusion.
+
+3. **8L pack specifications and energy density comparison:** The 8L battery pack contains 828 cells — the same cell count as the original Gen 1 4680 pack produced in Austin and deployed in the Model Y in 2022. Usable energy capacity increased from 67.5 kWh (Gen 1) to 74 kWh, and total capacity from 71.6 kWh to 79 kWh. Pack weight decreased slightly from 452 kg to 447 kg. This yields a pack-level energy density improvement of roughly 11–12%, from 149 Wh/kg usable / 158 Wh/kg total (Gen 1) to 166 Wh/kg usable / 177 Wh/kg total (8L). For comparison, the best recently upgraded 2170 packs from Panasonic and LG Chem reach approximately 177 Wh/kg usable and 188 Wh/kg total, meaning the 8L pack is about 6% behind the best available packs on energy density and therefore range.
+
+4. **Cell-level energy density matches the Cybertruck's Cybercell:** With 828 cells and a total pack capacity of 79 kWh, each cell in the 8L pack works out to approximately 95.4 Wh. The cells measured in the Cybertruck came in at 95.2 Wh, which Jordan notes is effectively identical given variances in cells and testing conditions. This is one of two lines of evidence he uses to argue that the 8L pack uses the same Generation 2 Cybercell as the Cybertruck.
+
+5. **Elektro Ronny's charging tests and the methodology problem:** The most widely cited negative review came from a YouTube creator called Elektro Ronny, whose first test (posted February 24, 2026) recorded a peak charge rate of only 130 kW — roughly half the advertised 250 kW maximum. Jordan's view is that this result is best explained by the battery not being properly preconditioned before the test. A follow-up test Ronny posted about a week later used proper preconditioning but started at 31% state of charge rather than below 10%, meaning the peak charge rate window was missed. Despite this, the second test achieved 155 kW at 32% state of charge, which Jordan describes as much better than the first-generation 4680 pack, though not as strong as most Model 3 and Model Y vehicles.
+
+6. **Fabrizio (Lampi di Tesla) provides the definitive charging dataset:** Italian automotive content creator Fabrizio, who runs the YouTube and X accounts "Lampi di Tesla" and was an FSD beta tester, was given a press vehicle by Tesla Italy. He provided Jordan with full documentation including the vehicle registration confirming the YB8LR battery pack designation, the matching licence plate number, and the complete unedited charging video. Fabrizio drove the vehicle down to 7% state of charge with active preconditioning, then charged at a Supercharger starting at 8:22 PM on March 1st, 2026, with an ambient temperature of 13°C (55°F). The charging power quickly ramped to 250 kW at 7% state of charge and tapered to 63 kW by 82% state of charge.
+
+7. **C-rate comparison reveals the 8L pack and Cybertruck use the same cell:** Fabrizio normalized the charging curves of the 8L Model Y pack and the Cybertruck pack by c-rate (rather than absolute power) to account for the Cybertruck's much larger pack size. The two curves showed a "surprisingly similar fingerprint," which Jordan treats as strong evidence that both packs use the same 4680 cell — corroborating the energy density calculation. When plotted against other European Model Y battery packs (two LG 2170 packs and a CATL LFP pack), Fabrizio's properly preconditioned 8L result fell below the LG 2170 packs but was described by Jordan as within acceptable limits for most EV buyers.
+
+8. **Debunking the two main criticisms of the 8L charge rate:** Jordan addresses two recurring arguments that the 4680 should be performing better. First, he pushes back on the claim that Tesla is falling dangerously behind competitors on charging speed, arguing that this reflects the preferences of a small, vocal group rather than the priorities of most EV buyers, who weight factors like value for money, safety, charging network reliability, and connectivity more heavily. He also notes that Tesla's efficiency advantage means their vehicles still rank well on miles of range added per minute. Second, he disputes the claim that Tesla promised faster charging for the 4680 due to the tabless electrode design; he states the tabless electrode was introduced to allow the cell to be made larger while maintaining the same thermal and charging characteristics, and to reduce manufacturing costs — not to improve charge speed.
+
+Notable quotes and data:
+- Gen 1 4680 pack: 828 cells, 67.5 kWh usable / 71.6 kWh total, 452 kg, 149 Wh/kg usable / 158 Wh/kg total
+- 8L 4680 pack: 828 cells, 74 kWh usable / 79 kWh total, 447 kg, 166 Wh/kg usable / 177 Wh/kg total
+- Energy density improvement Gen 1 → 8L: roughly 11–12%
+- Best 2170 packs (Panasonic/LG Chem): ~177 Wh/kg usable / ~188 Wh/kg total; 8L is roughly 6% behind
+- Cell energy density: 8L pack cells ≈ 95.4 Wh each; Cybertruck cells measured at 95.2 Wh each
+- Elektro Ronny first test peak: 130 kW (likely no preconditioning)
+- Elektro Ronny second test: 155 kW at 32% state of charge (preconditioned but partial charge)
+- Fabrizio's test: ramped to 250 kW at 7% state of charge; 63 kW at 82%; ambient temp 13°C; March 1, 2026
+- WLTP range for 8L Model Y variants: 609–657 km depending on wheel/tire options
+- "It's not the fastest charging battery cell on the market, but it's a good all-around performer, and will improve because it's still only the 2nd version of Tesla's 4680 battery cell."
