@@ -9147,5 +9147,53 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-06-02T21:03:35.161Z",
     "status": "pending"
+  },
+  {
+    "fact": "Optimus projected to cost $1.50–$2.00 per hour to operate at scale, versus ~$46 per hour for an American worker",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "vehicle_unit_cost",
+    "value": null,
+    "context": "Hourly operating cost estimate for Optimus at scale; directly relevant to labor cost modeling and displacement economics, though not a unit purchase cost figure",
+    "source": "20260603_farzad-fm_01_Everyone_Told_Elon_This_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-03T13:04:12.500Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla targeting 1 million Optimus robots per year from Fremont factory",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 1000000,
+    "context": "Annual Optimus production target from Fremont; relevant to fleet growth projections for humanoid robot deployment",
+    "source": "20260603_farzad-fm_01_Everyone_Told_Elon_This_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-03T13:04:12.500Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla targeting 10 million Optimus robots per year from Giga Texas",
+    "category": "Humanoid Bots",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": 10000000,
+    "context": "Longer-term annual Optimus production target from Giga Texas; implies massive fleet scaling potential",
+    "source": "20260603_farzad-fm_01_Everyone_Told_Elon_This_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-03T13:04:12.500Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Austin robotaxi pilot fleet at launch in June 2025 was approximately 10 vehicles in South Austin",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 10,
+    "context": "Initial Tesla robotaxi fleet size at pilot launch; dramatically below Elon's prior forecast of half the US population having access by end of 2025",
+    "source": "20260603_farzad-fm_01_Everyone_Told_Elon_This_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-03T13:04:12.500Z",
+    "status": "pending"
   }
 ]
