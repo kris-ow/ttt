@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-06-03)
 Published:   2026-06-03 00:00 UTC
-Summarized:  2026-06-04 05:05:35 UTC
+Summarized:  2026-06-04 10:45:56 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.12046 (20565 in / 3918 out tokens)
+Cost:        $0.12816 (20565 in / 4431 out tokens)
 Sources:     12
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -23,90 +23,70 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 ## Brief
 
 - Unsupervised Robotaxi geofence expands to entire Austin metro area.
-- 30+ Cybercabs photographed staging in Dallas lot June 3.
-- Tesla retroactively made pre-2024 FSD purchase contracts inaccessible.
+- 30+ Cybercabs photographed staging in Dallas lot on June 3.
+- Tesla retroactively made pre-2024 FSD purchase contracts inaccessible during active litigation.
 - Optimus factory steel structure now standing at Giga Texas.
-- Tesla China May wholesale: 85,982 units, highest Giga Shanghai figure of 2026.
-- SpaceX IPO set for June 12 at $135/share, $1.75T implied valuation.
+- Tesla China May wholesale: 85,982 units, +39% YoY — highest Giga Shanghai figure of 2026.
+- SpaceX IPO set for June 12 at $135/share, implying $1.75T valuation.
 
 ## Robotaxi
-
-- **Full Austin geofence now covered by unsupervised Robotaxis.** Tesla's official Robotaxi X account confirmed unsupervised service now spans the entire Austin metro — expanded from a small South Austin sub-zone through several phases over the past year. Per electrified's Dillon Loomis, with the full geofence live, safety monitor positions in Austin may effectively be eliminated, and the only remaining scaling bottleneck is backend remote operations infrastructure.
-
-- **Electrek and brighterwithherbert disagree sharply on active fleet size.** Electrek (Fred Lambert) reports the unsupervised Austin fleet has declined from a peak of 25 vehicles in late April to approximately 20 active today, and that the total active fleet across all modes collapsed from 165 to just 34. BrighterWithHerbert references approximately 28 unsupervised vehicles slated for Austin. Per RobotaxiTracker.com, the unsupervised fleet stands at 39 total. Lambert characterizes the geofence expansion as a costless distraction from stagnant fleet counts; Loomis characterizes it as a genuine confidence signal preceding an imminent ramp.
-
-- **30+ Cybercabs photographed in Dallas staging lot.** Two photos circulated on June 3 showing first 26, then over 30, Cybercabs in a Dallas lot — a strong indicator of near-term expansion there. Separately, a ground reporter in Houston confirmed a Model Y added as vehicle nine in the Houston fleet, suggesting fleet additions are not limited to Cybercabs.
-
-- **FSD v15 cited as scaling prerequisite by Musk; ARK disagrees.** Electrek reports Musk has publicly tied aggressive fleet scaling to the FSD v15 software rewrite, pushing any meaningful ramp to late 2026 or early 2027. ARK Invest's Cathie Wood, quoted via brighterwithherbert, counters that FSD v14 already running in Austin and San Francisco is sufficient — AI4 hardware meets the bar, and current safety data shows Tesla FSD is already safer than human drivers.
-
-- **Scale gap vs. Waymo remains stark.** Waymo operates approximately 3,000 robotaxis across 11 US cities, completes over 500,000 paid trips per week across more than 1,400 square miles, and recently raised $16 billion to fund expansion including London and Tokyo. ARK's Wood noted Tesla can produce more vehicles than Waymo's entire fleet in a single day — underscoring manufacturing upside if software and regulatory hurdles clear.
+- **Full Austin geofence confirmed unsupervised.** Tesla's official Robotaxi X account confirmed unsupervised service now covers the entire Austin metro — expanded from a small South Austin sub-zone through several phases. Researcher Jesse Richards verified the boundary by hailing rides and mapping "route unavailable" responses. The expansion is a confidence signal, but per RobotaxiTracker.com the unsupervised Austin fleet remains at 28 vehicles covering potentially thousands of square miles.
+- **Conflicting fleet signals between sources.** Electrek (Fred Lambert) reports the unsupervised Austin fleet has shrunk to ~20 active vehicles from a peak of 25 in late April, and flags that the total active fleet (all modes) collapsed from 165 to 34. Electrified (Dillon Loomis) and BrighterWithHerbert characterize the program as approaching an inflection point. The discrepancy in fleet figures likely reflects timing differences in community tracking data; investors should monitor RobotaxiTracker.com for updates.
+- **Dallas staging accelerates.** A photo circulated June 3 showed 26 Cybercabs in a Dallas lot; a second image the same afternoon showed over 30 — a strong near-term expansion signal for the Dallas market. Per RobotaxiTracker.com, Dallas currently has 5 unsupervised vehicles operational.
+- **Houston adds a Model Y as vehicle nine.** Ground reporter Saddok confirmed a Model Y joined the Houston fleet, suggesting Tesla is supplementing Cybercabs with existing Model Y vehicles for fleet growth rather than waiting on Cybercab production ramp.
+- **Safety monitor roles may be eliminated in Austin.** With unsupervised coverage now spanning the full geofence, the remaining bottleneck to rapid fleet scaling is backend remote operations infrastructure — not safety monitors on the ground, per Electrified's analysis. Tesla may hold fleet size steady for one to two weeks to validate operations before scaling.
+- **FSD v14 sufficient; v15 not a prerequisite.** ARK Invest's Cathie Wood and Brian White (FutureAzA) both argue that FSD v14, currently deployed in Austin and San Francisco, combined with AI4 compute hardware, already meets the safety threshold for robotaxi operations. Electrek's Lambert notes Musk has cited FSD v15 as the scaling prerequisite, pushing any meaningful ramp to late 2026 or early 2027 — and flags a pattern of milestones passing without fleet growth.
+- **Cybercab as a credible commitment signal.** Brian White argues Cybercabs — unlike Model Y units that could be redirected to consumer sales — have no alternative use if the robotaxi network fails, making ongoing production and cross-country logistics a meaningful signal of program seriousness.
+- **Waymo scale gap remains substantial.** Waymo operates ~3,000 robotaxis, completes 500,000+ paid trips per week across 1,400+ square miles in 11 cities, and recently raised $16 billion for expansion to London and Tokyo. ARK Invest notes Tesla can produce more vehicles than Waymo's entire fleet in a single day — but current deployment does not yet reflect that manufacturing advantage.
 
 ## Autonomous Driving
-
-- **Tesla retroactively made pre-2024 FSD purchase contracts inaccessible.** Owner Oliver Abcarius discovered that his 2019 FSD purchase agreement (2018 Model 3) and his wife's 2020 Model Y agreement — both from the era when Tesla sold "Full Self-Driving Capability" without "supervised" language — now link to invalid pages. Every other document on both accounts opens normally. Electrek confirmed the pattern with multiple owners.
-
-- **Legal exposure context.** Tesla faces up to $14.5 billion in active litigation covering FSD false advertising, Autopilot crash liability, and securities fraud. A certified US class action covers statements from October 2016 to August 2024. A California administrative ruling found Tesla engaged in FSD false advertising. An arbitrator previously ordered a $10,600 refund to one FSD buyer. Electrek's Fred Lambert notes that making executed contracts inaccessible during active litigation raises the possibility of evidence spoliation, which courts can treat with adverse inferences or sanctions.
-
-- **Timeline of the FSD language shift.** Tesla sold "Full Self-Driving Capability" for up to $15,000 without "supervised" language from 2016 through early 2024. In March 2024 with FSD v12.3.3, Tesla formally renamed the product "Full Self-Driving (Supervised)." In April 2026, Musk confirmed HW3 vehicles (produced 2016–2023) cannot achieve unsupervised FSD due to hardware limitations, with no concrete retrofit plan.
-
-- **FSD 14.3 update rolling out — mostly bug fixes.** Per electrified, the new FSD 14.3 version is primarily bug fixes, with one highlighted improvement to driver monitoring sensitivity including better eye gaze tracking and eyewear handling. Tesla clarified the feature had actually shipped in a prior update and was simply not noted in those release notes. FSD 14 for HW4 vehicles in Australia is in final stages of local testing with no confirmed release date.
-
-- **FSD 14 already deployed in Las Vegas Loop commercially.** Per farzad-fm, the Boring Company is running Tesla FSD commercially in the Las Vegas Loop with paying customers today — cited as evidence the robotaxi use case has moved beyond pilot testing into revenue-generating deployment.
+- **Tesla retroactively made FSD purchase contracts inaccessible.** Electrek confirmed with multiple pre-2024 FSD owners — including Oliver Abcarius, who purchased FSD in 2019 for a 2018 Model 3 — that original purchase agreements now link to invalid pages. Every other document on the affected accounts opens normally. Tesla sold "Full Self-Driving Capability" without "supervised" language from 2016 through early 2024, renamed the product "Full Self-Driving (Supervised)" in March 2024 with FSD v12.3.3, and Musk confirmed in April 2026 that HW3 vehicles cannot achieve unsupervised FSD with no retrofit plan.
+- **Legal exposure context.** Tesla faces up to $14.5 billion in active litigation covering FSD false advertising, Autopilot crash liability, and securities fraud. The now-inaccessible contracts are central evidence. A California administrative ruling already found Tesla engaged in FSD false advertising; an arbitrator ordered a $10,600 refund to one FSD buyer. Electrek's Lambert raises the possibility of evidence spoliation, which courts can treat with adverse inferences or sanctions.
+- **FSD 14.3 update is bug-fix only.** A new FSD 14.3 release is rolling out but contains primarily bug fixes, including improved driver monitoring eye-gaze tracking and eyewear handling. No major capability changes. Tesla clarified the eye-tracking improvement had been released in a prior update and simply not highlighted.
+- **FSD 14 coming to Australia.** Tesla notified Australian HW4 owners that FSD 14 is in its final stages of local development and testing, with no confirmed release date.
+- **David Moss 13,000-mile unsupervised FSD road trip.** In January 2026, Moss drove coast-to-coast from Tacoma, Washington — including through Canada — without touching the steering wheel or pedals once, across varied weather and traffic. Multiple sources cite this as a high-signal real-world proof point for current FSD capability.
 
 ## Humanoid Bots
-
-- **Optimus factory construction begins at Giga Texas — steel structure standing.** Construction officially started this week on Tesla's dedicated Optimus manufacturing facility at Giga Texas. Drone footage by factory observer Joe Tegtmeyer shows the first steel structure now erected at the site. When complete, the building is expected to stretch nearly the full length of the main Giga Texas factory. Tesla's stated target remains approximately 10 million Optimus units per year from that facility (~27,000/day).
-
-- **Elon described Optimus as a "Von Neumann probe."** Per The Tesla Space, Musk posted on X: "Optimus will be the first Von Neumann machine capable of building civilization by itself on any viable planet" — a self-replicating machine concept from physicist John Von Neumann — explicitly linking the robot program to SpaceX's Mars settlement ambitions.
-
-- **Tesla granted mechanical eye lens-cleaning patent.** Tesla received a patent for a lens-cleaning system featuring a circular lens, eye-socket housing, tear-duct-positioned nozzle, and eyelid-shaped wiper blades — completing a full cleaning cycle in under one second. Since Optimus shares camera hardware with Tesla vehicles, The Tesla Space argues this system will be required for robots operating in uncontrolled real-world environments. Tesla has already been spotted testing camera cleaning systems on Cybercab prototypes.
-
-- **Jason Calcanis Optimus lab visit, January 2026.** Per farzad-fm, Calcanis visited Tesla's Optimus Lab around CES and posted: "I can tell you now, nobody will remember that Tesla ever made a car. They'll only remember the Optimus robot." Musk replied: "probably true."
+- **Optimus factory steel structure now standing at Giga Texas.** Construction on Tesla's dedicated Optimus manufacturing facility officially began this week; drone footage from Joe Tegtmeyer shows the first steel structure erected at the site. When complete, the building will stretch nearly the full length of the main Giga Texas factory. Tesla's stated target remains ~10 million units/year (~27,000/day).
+- **Elon Musk frames Optimus as a Von Neumann probe.** Musk posted on X: "Optimus will be the first Von Neumann machine capable of building civilization by itself on any viable planet" — positioning the robot as the core technology for SpaceX's Mars settlement ambitions, not merely a labor-cost play.
+- **Jason Calcanis Optimus Lab visit (January 2026).** After visiting Tesla's Optimus Lab, Calcanis posted: "Nobody will remember that Tesla ever made a car. They'll only remember the Optimus robot." Musk replied: "probably true." Multiple sources cited this exchange as a signal of internal confidence in Optimus's trajectory.
+- **Optimus labor economics at scale.** At scale, Optimus is projected to cost $1.50–$2.00/hour to operate vs. ~$46/hour for an American worker. Fremont factory is being converted from Model S/X production to Optimus manufacturing.
+- **Tesla lens-cleaning patent granted — direct Optimus and Cybercab application.** The patent covers a mechanical eye-mimicking system: circular lens resembling a pupil, tear-duct-positioned cleaning nozzle, eyelid-shaped wiper blades, completing a full clean cycle in under one second upon detecting image degradation. Since Optimus shares camera hardware with Tesla vehicles, and robotaxis cannot pull over to wipe lenses, The Tesla Space argues this patent is operationally critical for both programs. Tesla has already been spotted testing camera-cleaning systems on Cybercab prototypes.
 
 ## Electric Vehicles
-
-- **Tesla Australia May 2026: record 6,433 units, Model Y tops all-fuel sales chart.** Per Sawyer Merritt and electrified, Tesla's May figure surpassed the prior record of 6,017 set in March 2024. The Model Y became the first EV in history to lead Australia's overall new-vehicle sales chart across all fuel types. Year-to-date Australian sales are up 56%.
-
-- **Tesla China May wholesale: 85,982 units, highest Giga Shanghai figure of 2026.** Up 8.2% over April and up 39.4% year-over-year. Year-to-date through May, Tesla China is up 29.4% versus the same period last year — and this is before FSD receives broad approval in China.
-
-- **Tesla Germany and Japan posting exceptional year-over-year growth.** Germany: over 5,100 units in May, up 322% YoY; YTD exceeds 21,000, already 9% above full-year 2025 total. Japan: YTD registrations up 157% (8,100+ vs. 3,178 same period last year), despite overall foreign brand registrations in Japan down 6%.
-
-- **Norway: Tesla held 21.5% of all new car sales in May.** The Model Y alone represented 1 in every 5 new vehicles sold. Norway's overall EV market share reached 97.8% for the month.
-
-- **Cybertruck: used inventory sold out in ~one day; new order lead times extending.** Tesla listed used Cybertrucks starting at $66,200 (Foundation Series, 2,566 miles); the full inventory cleared within roughly 24 hours. New Premium AWD delivery estimates have pushed to September–October 2026, extending from August–September the prior week — implying a 4–5 month wait, attributed to Tesla prioritizing production of another vehicle.
-
-- **Cybertruck new sales remain weak; Kazakhstan purchase a marginal signal.** Cybertruck sales fell 48% in 2025 to approximately 20,000 units; Q1 2026 came in at just 3,519 units, with SpaceX accounting for 1,279 purchases over the past year. Kazakhstan's Ministry of Emergency Situations confirmed plans to expand its Cybertruck fleet following successful mountainous terrain rescue operations around Almaty. Electrek's Fred Lambert views the purchase as evidence of demand desperation rather than a reversal, and identifies the $60,000 AWD trim as the vehicle's "last hope."
-
-- **Camouflaged Model Y L spotted testing at Fremont.** New footage shows a camo-wrapped vehicle on the Fremont test track, theorized by FutureAzA's Brian White and Mark to be the three-row Model Y L. Elon previously said the vehicle "might" appear "at the end of '26, if at all," but White predicted a first-half 2026 US appearance. The Model Y L has driven record sales in markets where it has launched, including Australia.
-
-- **Model Y 4680 "8L" battery pack: charging alarm was overblown.** The Limiting Factor's Jordan Giesige reviewed two charging datasets and concluded the 8L pack (74 kWh usable, 166 Wh/kg) performs roughly in line with Tesla's other packs when properly preconditioned — achieving 250 kW at 7% state of charge in Fabrizio's definitive test. The alarming 130 kW headline came from an unpreconditioned test by Elektro Ronny. Cell-level energy density (~95.4 Wh) matches the Cybertruck's Cybercell, suggesting identical Gen 2 4680 cells. The 8L pack is approximately 6% behind the best available 2170 packs on energy density.
+- **Tesla Australia May record: 6,433 units, Model Y tops all-fuel-types sales chart.** Tesla's best-ever Australian month exceeded the prior record of 6,017 set in March 2024. The Model Y was the bestselling vehicle in Australia in May across all fuel types — the first EV ever to lead Australia's overall sales chart. YTD Australia sales are up 56% vs. last year.
+- **Tesla China May wholesale: 85,982 units, +39.4% YoY.** Highest Giga Shanghai figure of 2026; YTD China volume through May is up 29.4% vs. the same period last year and tracking ahead of both 2024 and 2025.
+- **Tesla Germany YTD already above full-year 2025.** May registrations: 5,100+, up 322% YoY. YTD 2026 Germany registrations exceed 21,000 — up 200% YoY and already 9% above Tesla's entire 2025 Germany total.
+- **Tesla Japan surging despite headwinds.** May YTD: 8,100+ registrations vs. 3,178 in the same period last year (+157%), even as overall foreign brand registrations in Japan are down 6%.
+- **Norway: Tesla claims 21.5% market share in May.** Model Y represented 1 in 5 new vehicles sold. Norway's overall EV share hit 97.8% — only 150 gas/diesel cars sold in the country all month.
+- **Cybertruck: used inventory sold out within one day; new lead times extend to Sept–Oct 2026.** Tesla listed used Cybertrucks starting at $66,200 (Foundation Series, 2,566 miles); the entire inventory cleared in roughly 24 hours. New Premium AWD delivery estimates have pushed from July–August to September–October 2026 over recent weeks, attributed to Tesla prioritizing production of another vehicle.
+- **Cybertruck demand remains structurally weak.** Sales fell 48% in 2025 to ~20,000 units vs. a 250,000-unit production target; Q1 2026 saw just 3,519 units sold, with SpaceX accounting for 1,279 purchases over the past year. Kazakhstan's Ministry of Emergency Situations confirmed additional Cybertruck purchases following successful Almaty rescue deployments — officials cited off-road mobility, V2L power, and quiet operation. Electrek's Lambert views government contracts as insufficient to reverse the demand trajectory and identifies the $60,000 AWD trim as the vehicle's last meaningful chance.
+- **Model Y L spotted on Fremont test track.** The Model Y L — currently driving Tesla's Australia momentum — was photographed on the Fremont test track. Brian White (FutureAzA) predicted a U.S. launch in H1 2026. A separately camouflaged vehicle at Fremont is theorized by FutureAzA hosts to be the same model. Kyle Connor (6'2") demonstrated he could sit in all three rows without adjusting any seats — resolving the legroom criticism of the current Model Y's third row.
+- **4680 "8L" battery pack charging fears overblown.** The Limiting Factor's Jordan Giesige reviewed two charging datasets and concludes the 8L pack's charge rate — properly preconditioned — ramps to 250 kW at 7% state of charge and is within acceptable range of Tesla's 2170 packs, roughly 6% behind the best available packs on energy density. Alarming headlines appear driven by Elektro Ronny's first test, which lacked preconditioning. Italian creator Fabrizio's verified dataset (March 1, 2026, 13°C ambient) provides the definitive result. Cell energy density (~95.4 Wh) matches the Cybertruck's Cybercell (~95.2 Wh), suggesting both packs use the same Generation 2 4680 cell.
 
 ## Market & Competition
-
-- **SpaceX IPO set for June 12 at $135/share, implying $1.75 trillion valuation.** Reuters reported approximately 555 million shares will be offered, raising $75 billion — over 50 times revenue. Musk responded to valuation questions with: "You shall see." He is subject to a lockup preventing share sales for more than one year post-IPO.
-
-- **Tesla/SpaceX merger thesis: serious internal discussions reported.** Per The Tesla Space, people familiar with the conversations say Musk has seriously discussed a merger with trusted colleagues and the idea is openly discussed inside Tesla. The SpaceX prospectus revealed $697 million in Tesla Megapack purchases and $131 million in Cybertruck purchases by SpaceX in 2024–2025, Tesla's $2 billion investment into XAI (which subsequently merged with SpaceX), and an Nvidia $500 million GPU order redirected from Tesla to XAI at Musk's personal request. Jo Bhakdi's theory, previewed via brighterwithherbert, holds that Tesla shareholders would receive a premium — roughly two-thirds of the combined entity — because SpaceX's prospectus reportedly authorized 36 billion shares.
-
-- **Institutional ownership surpasses retail in Tesla for first time.** Per Alexandra Merz (cited by brighterwithherbert): institutions now hold 47.8% of Tesla stock, Musk holds ~20%, and retail has fallen to 31.9%. Approximately 4,276 institutions have filed 13F forms. Largest holders include Vanguard, BlackRock, State Street, Geode Capital, Jane Street, and JP Morgan.
-
-- **Tesla Semi dominates California EV truck voucher applications.** California voucher data (January 2025–February 2026) shows Tesla Semi accounting for 965 of 1,067 total Class 8 tractor applications. Daimler and Volvo combined for fewer than 100. Per electrified's dashboard: 644 verified Semi orders across 9 confirmed customers, 48 trucks delivered (45 to Pepsi, 2 to WEV, 1 to DHL), 81 known charging depot sites.
-
-- **Nvidia RTX Spark announcement targets PC market reinvention.** Jensen Huang unveiled the N1X/RTX Spark chip: Blackwell RTX GPU with 6,144 CUDA cores, 1 petaflop AI performance, 20-core Grace CPU (MediaTek partnership), 128 GB unified memory, TSMC 3nm, 70 billion transistors. Jo Bhakdi argues this doubles the home computing TAM and will push average PC prices from ~$900 to $2,000+, with Nvidia capturing roughly half the incremental revenue. Developed in a ~3-year collaboration with Microsoft. Nvidia stock was trading around $226 on June 3; Bhakdi's 2026 price target is $300. (Bhakdi discloses Nvidia is his second-largest holding after Tesla.)
-
-- **Terafab semiconductor facility: 3,100+ acres filed in Grimes County, Texas.** Wit Tech LLC — sharing an address with XAI in Palo Alto — filed land acquisition deeds on May 28, 2026. Scope: $55–$119 billion, multi-phase vertically integrated semiconductor manufacturing and AI computing fabrication. Public hearing held June 3. Per farzad-fm, Terafab targets 100–200 billion custom AI chips per year; ~80% earmarked for space applications. Bhakdi estimates first chips within 3–4 years.
+- **SpaceX IPO set for June 12, 2026.** Target price $135/share, ~555 million shares offered, raising ~$75 billion at a $1.75 trillion valuation — over 50x revenue. Musk is subject to a lockup preventing share sales for more than one year post-IPO. When asked to justify the multiple, Musk said: "You shall see."
+- **Tesla/SpaceX merger thesis gaining internal traction.** Per The Tesla Space, people familiar with the conversations say Musk has seriously discussed a merger with trusted colleagues and the idea is openly discussed inside Tesla. The SpaceX prospectus revealed $697 million in Tesla Megapack purchases and $131 million in Cybertruck purchases in 2024–2025; Tesla invested $2 billion into XAI earlier in 2026 before XAI merged with SpaceX. Suppliers are reportedly treating the two companies as a single customer. Jo Bhakdi's merger theory: SpaceX's prospectus authorized 36 billion shares, far more than needed to acquire Tesla, with Tesla shareholders potentially receiving two-thirds of a combined entity.
+- **SpaceX IPO stock impact on Tesla — three scenarios.** Brian White (FutureAzA) outlines: (1) Tesla down, as investors rotate cash into SpaceX; (2) Tesla up 10–15% on a "halo effect" from SpaceX media coverage; (3) no change, with SpaceX optimism already priced in. White suggests rotation out of Tesla likely already occurred during its recent $420–$430 trading range.
+- **Institutions now hold 47.8% of Tesla stock.** Per Alexandra Merz: Elon Musk holds ~20%, retail has fallen to 31.9%. Approximately 4,276 institutional holders have filed 13F forms. Largest holders include Vanguard, BlackRock, State Street, Geode Capital, Jane Street, and JP Morgan. Brian White attributes the shift to credit rating improvements compelling index fund inclusion.
+- **Tesla Semi dominates California EV truck vouchers.** January 2025–February 2026 California data: Tesla Semi filed 965 of 1,067 total Class 8 tractor voucher applications. Daimler and Volvo combined for under 100. Tesla stated most 2026 Semi output is already allocated, implying production remains a handful of units per week. A new Semi tracker shows 644 verified orders across 9 customers; 48 trucks delivered to date (45 Pepsi, 2 WEV, 1 DHL).
+- **Tesla claims 10% of Canada's Chinese EV import quota.** Canada replaced its 100% punitive surtax with a quota system in January 2026; Tesla has claimed ~10% of the H1 2026 allocation. Giga Shanghai inventory is reportedly already on dedicated Tesla lots in Ottawa, Toronto, and Montreal. BYD and other Chinese EV brands are expected to open Canadian showrooms by end of 2026.
+- **Terafab semiconductor facility: 3,100+ acres acquired in Grimes County, Texas.** Wit Tech LLC — sharing a Palo Alto address with XAI — filed land acquisition deeds on May 28, 2026. Scope: $55–$119 billion, vertically integrated semiconductor manufacturing. Public hearing was June 3, 2026. Bhakdi estimates first chips in three to four years; Farzad's source targets 100–200 billion custom AI chips/year with ~80% earmarked for space applications.
+- **Nvidia RTX Spark chip targets PC market reinvention.** Jensen Huang unveiled the N1X/RTX Spark: Blackwell GPU, 6,144 CUDA cores, 1 petaflop AI performance, 20-core Grace CPU (MediaTek), 128 GB unified memory, TSMC 3nm, 70B transistors — developed over three years with Microsoft. Bhakdi (second-largest personal holding after Tesla) argues this doubles the PC TAM, pushes average system prices from ~$900 to $2,000+, and positions Nvidia to capture roughly half the incremental revenue. Nvidia stock was up ~6% Monday and trading around $226 at time of recording; Bhakdi's 2026 price target is $300.
 
 Notable quotes and data:
-- Oliver Abcarius: "It's crazy because there are zero issues opening any documents on both accounts except those that would have the FSD purchase details documented. Super fishy."
-- Tesla FSD litigation exposure: up to **$14.5 billion**; arbitrator-ordered refund: **$10,600**
-- Elon Musk: "Optimus will be the first Von Neumann machine capable of building civilization by itself on any viable planet."
+- "Institutions now hold 47.8% of Tesla stock. Elon is 20% and retail is now down to just 31.9%." — Alexandra Merz (via BrighterWithHerbert)
+- "Nobody will remember that Tesla ever made a car. They'll only remember the Optimus robot." — Jason Calcanis, after visiting Optimus Lab (Jan 2026); Musk replied: "probably true."
+- "Optimus will be the first Von Neumann machine capable of building civilization by itself on any viable planet." — Elon Musk on X
+- "You shall see." — Elon Musk, on justifying SpaceX's 50x revenue valuation
+- SpaceX IPO: June 12, 2026; $135/share; $1.75T valuation; $75B raised; Musk locked up 1+ year post-IPO
+- SpaceX prospectus: $697M Tesla Megapack purchases + $131M Cybertruck purchases (2024–2025)
+- Tesla invested $2B into XAI in 2026; XAI subsequently merged with SpaceX
+- FSD litigation exposure: up to $14.5 billion across active cases; arbitrator-ordered refund of $10,600 in one FSD breach-of-contract case
+- "It's crazy because there are zero issues opening any documents on both accounts except those that would have the FSD purchase details documented. Super fishy." — Oliver Abcarius
+- 8L 4680 pack: 74 kWh usable / 79 kWh total, 447 kg, 166 Wh/kg usable; preconditioned peak: 250 kW at 7% SOC (Fabrizio, March 1, 2026)
+- Tesla Semi: 965 of 1,067 California Class 8 voucher applications (Jan 2025–Feb 2026); 48 trucks delivered; 644 verified orders
+- Optimus operating cost at scale: ~$1.50–$2.00/hour vs. ~$46/hour for an American worker
+- Tesla China May: 85,982 wholesale units, +39.4% YoY; Australia May: 6,433 units (record); Germany YTD: 21,000+, already 9% above full-year 2025
+- Cybertruck Q1 2026: 3,519 units sold; SpaceX purchased 1,279 units in the past year
 - Lars Morvi on Model 3 Plaid: "I think about it all the time. I think about carbon sleeves, all the permanent magnets. I definitely think about it."
-- SpaceX IPO: **$135/share**, ~**555M shares**, **$1.75T** implied valuation, **$75B** raised, IPO date **June 12, 2026**
-- Elon on SpaceX valuation at 50x revenue: "You shall see."
-- Tesla China May wholesale: **85,982 units**, +39.4% YoY — highest Giga Shanghai figure of 2026
-- Tesla Australia May: **6,433 units** — all-time record; Model Y first EV to top Australia's all-fuel sales chart
-- Tesla Germany YTD: **21,000+** registrations, already **9% above full-year 2025** total
-- 8L 4680 pack: **74 kWh usable**, **166 Wh/kg**, peak charge **250 kW** at 7% SOC (properly preconditioned)
-- SpaceX purchased **$697M** in Tesla Megapacks and **$131M** in Cybertrucks per SpaceX prospectus (2024–2025)
-- Terafab land filing: **3,100+ acres**, Grimes County TX, May 28, 2026; facility scope **$55–$119B**
-- Optimus Giga Texas target: **~10M units/year** (~27,000/day)
-- Cybercab staging in Dallas: **30+** units photographed June 3, 2026
