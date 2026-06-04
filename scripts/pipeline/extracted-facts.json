@@ -9373,5 +9373,41 @@
     "channel": "theteslaspace",
     "extractedAt": "2026-06-03T20:02:48.028Z",
     "status": "pending"
+  },
+  {
+    "fact": "Active Tesla Robotaxi fleet: 704 total (Bay Area 584, Austin 104, Dallas 7, Houston 9) per RobotaxiTracker.com as of 2026-06-02",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 704,
+    "context": "Canonical fleet size figure for DCF modeling; city-level breakdown enables market-specific revenue modeling",
+    "source": "20260604_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-04T00:47:41.137Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) Tesla Robotaxi fleet: 39 vehicles (Austin 28, Dallas 5, Houston 6) per RobotaxiTracker.com as of 2026-05-09",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "Driverless subset is the key revenue-generating cohort for unit economics modeling; Austin geofence expansion may accelerate growth of this number",
+    "source": "20260604_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-04T00:47:41.137Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Lemonade's new Autonomous Car insurance program offers up to 50% discount for Tesla FSD (Supervised) users in Indiana, citing FSD as 'twice as safe'",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "insurance_cost",
+    "value": null,
+    "context": "Commercial insurance product explicitly pricing FSD at half the actuarial risk of conventional driving; implies insurance costs per mile for FSD/robotaxi vehicles could be ~50% lower than standard benchmarks — significant input for per-vehicle economics",
+    "source": "20260604_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-04T00:47:41.137Z",
+    "status": "pending"
   }
 ]
