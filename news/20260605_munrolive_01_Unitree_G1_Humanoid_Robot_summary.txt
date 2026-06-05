@@ -1,0 +1,35 @@
+Channel:     munrolive
+Title:       Unitree G1 Humanoid Robot: Overview & Upcoming Teardown
+Published:   2026-06-05 19:03 UTC
+Summarized:  2026-06-05 20:02:41 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01A1Yjj7W8BbSTC4qTogyPUe
+Cost:        $0.01574 (3711 in / 1356 out tokens)
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This video from Munro Live features Armen Fchnowski of Munro Associates introducing the Unitree G1 humanoid robot — specifically the base version — ahead of a planned full teardown series. The core argument is that humanoid robots share fundamental engineering DNA with electric vehicles (actuators, battery systems, thermal management, cost pressures), making Munro's 36 years of teardown and costing expertise directly applicable. The goal is to analyze the robot from first principles and identify opportunities for more cost-effective construction.
+
+## Humanoid Bots
+
+1. **Unitree G1 Base Specifications:** The Unitree G1 base model stands approximately 4'4" (132 cm) tall, weighs 35 kg (75 lbs), and has 23 degrees of freedom driven by visible actuators throughout the body. It has a walking speed of approximately 2 meters per second. The presenter notes its smaller stature is actually an advantage for software developers, as it reduces risk during development if the robot falls or steps on someone.
+
+2. **Battery and Power System:** The G1 is equipped with a 9,000 milliamp-hour battery running on approximately a 46–48 volt system, which translates to roughly half a kilowatt-hour of capacity. The battery is located in the chest of the robot. Munro notes the cells have not yet been removed for inspection and the cell chemistry/format will be revealed during the teardown.
+
+3. **Sensor Suite and Autonomy Features:** The robot's sensor suite is located at the top of the unit and includes a LiDAR sensor and RGB cameras. While the presenter was remotely controlling the robot during the demo, the G1 does include autonomous features — the LiDAR allows it to scan a room and be set on patrol routes. The base model shown has dummy hands, though Munro Associates has separately purchased Dexterous hands (a finger from one of those hands was shown on camera) for independent evaluation.
+
+4. **Balance and Stability Systems:** The G1 uses position encoders on all motors to track the full state of the robot at all times, combined with accelerometers and gyroscopes to calculate recovery from perturbations. The presenter demonstrated push-recovery capability live, noting the robot handles moderate pushes well but will fall if pushed too forcefully.
+
+5. **Humanoid Robots as "Reconfigured EVs" — Munro's Thesis:** The presenter frames humanoid robots as fundamentally similar to electric vehicles in terms of core engineering: both require actuators, battery systems, thermal management for actuators, and readiness for scale manufacturing under similar cost pressures. This framing positions Munro Associates — with 36 years of teardown and costing experience on EVs — as uniquely qualified to analyze humanoid robot cost structures. The teardown series will produce a full report and explore how these systems could be built more cost-effectively.
+
+6. **Broader Unitree G1 Capability Context:** The presenter notes that the same Unitree G1 platform (or closely related versions) is capable of backflips, acrobatics, and running, and reportedly participated in a humanoid robot marathon in Beijing. The base version being torn down is described as largely the same robot minus certain processor and hand configurations.
+
+Notable quotes and data:
+- Height: 132 cm (4'4"); Weight: 35 kg (75 lbs)
+- 23 degrees of freedom
+- Walking speed: ~2 meters per second
+- Battery: 9,000 mAh at ~46–48V ≈ ~0.5 kWh
+- "Humanoid robotics in some sense are reconfigured electric vehicles"
+- Munro Associates has 36 years of teardown and costing experience
+- Dexterous hands purchased separately from the G1 teardown unit
+- Cell chemistry inside the battery not yet identified — to be revealed in teardown
