@@ -1,0 +1,118 @@
+Channel:     munrolive
+Title:       Unitree G1 Humanoid Robot: Overview & Upcoming Teardown
+URL:         https://www.youtube.com/watch?v=udhR37iq0RU
+Published:   2026-06-05 19:03 UTC
+Fetched:     2026-06-05 20:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hello everyone. It's Armen Fchnowski
+with Monron Associates and today I'm
+bringing you a humanoid robot. This is a
+Unitary G1. Uh this is the base version
+of it. Uh it has about 23 degrees of
+freedom, right? So these are the
+actuators you see here that he can move
+with. It's about a half kilowatt hour
+battery in its chest, sensor suite in
+the top, lighter, uh RGB cameras.
+Um this model has dummy hands. Uh but we
+have also independently of this tear
+down uh purchased some Dexter's hands
+and this is a finger from uh one of
+those hands. Maybe you've seen this
+video on YouTube already. Walking speed
+of this model is about 2 meters per
+second. So you can kind of get a sense
+of the speed here. Kim walking around. I
+am remote controlling him right now for
+this demo, but he has some autonomous
+features as well. So with the LAR, you
+can scan the room, set them on patrols.
+Uh the other versions of this robot that
+are out there, you might have seen them.
+They do back flips, acrobatics, they
+run. This is largely the same except for
+the processor and uh the hands etc. But
+to summarize why we have this one here
+from a sort of broader perspective,
+humanoid robotics in some sense are uh
+reconfigured electric vehicles, right?
+So you have everything in in these guys
+that you find in an electric vehicle. So
+you have actuators, battery system, you
+have to keep the actuators cool, you
+have to be ready for scale
+manufacturing, you have to have you have
+the same or similar cost pressures. And
+so with that, we're uniquely suited with
+our 36 years of tear down and costing
+experience to take a good look at this
+and uh really learn how these uh
+function from sort of a first principles
+perspective. And then as we go through
+we will uh create a report and um also
+think about how could you construct
+these systems more cost effectively.
+Right? So um a little bit of overview of
+this guy. Uh like I said it's 23 degrees
+of freedom. This guy obviously a little
+bit shorter. I'm on the taller side.
+He's about 4'4,
+132 cm, 35 kg, 75 lb. Um, and actually,
+you know, that's nice for developers.
+It's a little bit easier to uh handle
+and, uh, also less risk if this is going
+to fall on your, you know, your foot
+steps on you or, you know, you have some
+type of glitch as you're developing your
+software systems. The battery in here is
+9,000 milliamp hours. Uh it's a 46
+48 uh volt system. So that translates
+about to half a kilowatt hour. Um if you
+think in EVs, right, that might be a
+little bit more um representative or for
+you to contextualize the battery in
+there. Um we haven't torn it off, so we
+don't know what kind of cells are in
+there yet. We'll find out for you. And
+um yeah, we'll move them around a little
+bit. Walking speed of this guy is of
+this version is about 2 m/s.
+If you go on YouTube, look up unit G1.
+This is the model that you see doing
+back flips, acrobatics, right? Running.
+I think it even participated uh in the
+uh Beijing humanoid
+um marathon. Uh certainly the larger
+version of this has all you probably
+have seen uh different people push
+different robots around and uh this guy
+can do it as well, right? So he has a
+pretty good balance in there uh built
+in, right? So if you give him a little
+push, not too hard, but about this he'll
+balance, right? So
+this robot has position sensors via
+encoders on all the motors. So he knows
+the state of the entire system at all
+times and also of course there's
+solometers
+uh gmeters
+on the on the robot and uh it calculates
+how to recover, right? So he does it
+pretty well. We have managed to push him
+too hard. Um he doesn't like it. he
+falls on his uh on his face or back or
+whatever, but uh if you just go like
+this, it works pretty well. And it's
+very fun. If you ever come across a
+robot, just give him a push. But yeah,
+it's a real humanoid robot that has all
+the core systems of um anything, you
+know, that that's leading the market.
+And we're tear down and we'll bring you
+a series and if you stay tuned, you will
+learn everything that's in there along
+with us. Thank you everyone and please
+like and subscribe.
