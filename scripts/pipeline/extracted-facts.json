@@ -9481,5 +9481,17 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-05T20:02:41.252Z",
     "status": "pending"
+  },
+  {
+    "fact": "Texas Motor Carrier website shows 51 registered VINs for Tesla's robotaxi service, up from 42 a few days prior",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 51,
+    "context": "Represents vehicles registered and eligible for deployment in Texas; not all necessarily active simultaneously. Nine new VINs added in a matter of days.",
+    "source": "20260605_electrified_01_Elon_Drops_3_New_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-05T23:02:32.568Z",
+    "status": "pending"
   }
 ]
