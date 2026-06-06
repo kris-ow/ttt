@@ -9493,5 +9493,77 @@
     "channel": "electrified",
     "extractedAt": "2026-06-05T23:02:32.568Z",
     "status": "pending"
+  },
+  {
+    "fact": "Robotaxi pricing engineer role covers dynamic and surge pricing with variables including base costs, taxes, government fees, tolls, market demand, regional variations, and location-specific factors",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Confirms Tesla is moving away from fixed pricing toward a market-based, AI-driven dynamic pricing model; no specific per-mile rate given",
+    "source": "20260606_brighterwithherbert_01_Tesla_Isnt_Testing_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T14:02:38.381Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Elon Musk previously stated a target Robotaxi fare of $0.50 to $2.00 per mile",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Cited by Cern as a known prior public statement by Musk; represents the low-end pricing aspiration for the service",
+    "source": "20260606_brighterwithherbert_01_Tesla_Isnt_Testing_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T14:02:38.381Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Robotaxi Senior Analyst Logistics role covers end-to-end final mile logistics for Robotaxi deliveries across North America including Canada and Mexico",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "North America scope (not just U.S.) signals broader-than-expected geographic fleet rollout plan",
+    "source": "20260606_brighterwithherbert_01_Tesla_Isnt_Testing_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T14:02:38.381Z",
+    "status": "pending"
+  },
+  {
+    "fact": "A 51,000 square foot facility near Grand Prairie, Texas (Dallas-Fort Worth) identified as a combined sales, service, delivery, collision, and Robotaxi cleaning facility",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "Physical infrastructure footprint for Robotaxi operations is being built out; facility size noted but cost not disclosed",
+    "source": "20260606_brighterwithherbert_01_Tesla_Isnt_Testing_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T14:02:38.381Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Code hardening role lists miles per intervention as the primary key success metric for Full Self-Driving",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Miles per intervention is the commercial-grade reliability benchmark Tesla is optimizing toward for Robotaxi scale deployment",
+    "source": "20260606_brighterwithherbert_01_Tesla_Isnt_Testing_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T14:02:38.381Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla's Robotaxi charging role includes creating an execution roadmap for charging automation, with wireless charging flagged as a potential direction",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "utilization",
+    "value": null,
+    "context": "Charging efficiency and automation directly impact vehicle utilization rates; a car at a charger is not generating revenue",
+    "source": "20260606_brighterwithherbert_01_Tesla_Isnt_Testing_Robotaxi_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T14:02:38.381Z",
+    "status": "pending"
   }
 ]
