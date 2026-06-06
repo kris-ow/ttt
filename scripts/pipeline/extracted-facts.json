@@ -9565,5 +9565,41 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-06T14:02:38.381Z",
     "status": "pending"
+  },
+  {
+    "fact": "Approximately 1.3 million vehicles worldwide already have FSD access, per Ashok Elluswami at CVPR conference, June 3, 2026",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 1300000,
+    "context": "Represents the addressable installed base for FSD software revenue across all approved markets; each new country approval unlocks a portion of this base immediately",
+    "source": "20260606_brighterwithherbert_02_Teslas_Biggest_Week_Wasnt_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T20:03:06.506Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD version 14.3.3 used in Vancouver-to-Halifax drive; 3,760 miles in just under 5 days with zero reported disengagements",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 3760,
+    "context": "Owner-reported, not audited; represents the longest publicly documented zero-disengagement FSD run; contextually relevant for safety narrative and regulatory momentum",
+    "source": "20260606_brighterwithherbert_02_Teslas_Biggest_Week_Wasnt_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T20:03:06.506Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla is building a 51,000-square-foot facility in Grand Prairie, Texas, permitted to charge, clean, and maintain autonomous vehicles — functioning as a robotaxi depot",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "infra_cost_per_vehicle",
+    "value": null,
+    "context": "First confirmed purpose-built robotaxi depot outside of the Bay Area/Austin footprint; host frames it as the physical infrastructure template for multi-city fleet scaling",
+    "source": "20260606_brighterwithherbert_02_Teslas_Biggest_Week_Wasnt_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-06T20:03:06.506Z",
+    "status": "pending"
   }
 ]
