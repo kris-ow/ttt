@@ -9613,5 +9613,17 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-06-07T00:01:24.868Z",
     "status": "pending"
+  },
+  {
+    "fact": "Mach 33 modeled Starlink IRR at approximately 172% per dollar invested in 2028 scenario",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "IRR figure used as internal capital allocation signal in model; not a WACC but reflects hurdle rate logic driving capital allocation decisions between Starlink and AI compute",
+    "source": "20260607_brighterwithherbert_01_Exclusive_Why_Spacex_Will_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-07T18:02:36.447Z",
+    "status": "pending"
   }
 ]
