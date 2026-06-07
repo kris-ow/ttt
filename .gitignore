@@ -22,6 +22,7 @@ __pycache__/
 !src/data/*.json
 !scripts/pipeline/costs.json
 !scripts/pipeline/state.json
+!scripts/pipeline/heartbeat.json
 !news/transcripts_url_index.json
 
 # Quarterly PDF source data (root-level only — don't match nested src/components/Data/ etc.)
