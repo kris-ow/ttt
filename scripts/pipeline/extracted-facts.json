@@ -9625,5 +9625,29 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-07T18:02:36.447Z",
     "status": "pending"
+  },
+  {
+    "fact": "Active unsupervised Cybercab fleet entering June 2026 referenced by viewer as approximately 30 vehicles",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 30,
+    "context": "Viewer comment acknowledged by Bhakdi; per RobotaxiTracker.com canonical data as of 2026-05-09, unsupervised fleet is 39 vehicles across Austin (28), Dallas (5), Houston (6)",
+    "source": "20260607_jobhakdi_01_Live_Will_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-07T23:02:35.270Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Near-term Tesla price range: $350 (downside) to $490 (upside) within approximately 10 days of June 7, 2026",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "Not a WACC figure — flagged in error; this is a near-term price target range, not a DCF input. Included as general fact instead.",
+    "source": "20260607_jobhakdi_01_Live_Will_Tesla_Stock_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-07T23:02:35.270Z",
+    "status": "pending"
   }
 ]
