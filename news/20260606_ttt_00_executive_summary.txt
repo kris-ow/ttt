@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-06-06)
 Published:   2026-06-06 00:00 UTC
-Summarized:  2026-06-07 04:56:49 UTC
+Summarized:  2026-06-07 10:10:21 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.08143 (11978 in / 3033 out tokens)
+Cost:        $0.08084 (11978 in / 2994 out tokens)
 Sources:     5
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,92 +22,85 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- Austin unsupervised robotaxi zone expands to cover entire metro as of June 3.
-- FSD approved in Estonia; ~1.3M vehicles globally now have access.
-- Tesla has 36 open Robotaxi job listings and ~208 Optimus openings.
-- Belgium FSD homologation clears 5,000 km testing threshold.
-- Model Y L spotted testing at Fremont; China price ~$47,000.
-- Digital Optimus emerging as standalone AI agent product competing with OpenAI and Anthropic.
-
-## Robotaxi
-
-- **Austin unsupervised zone now covers the entire metro.** On June 3, Tesla expanded its driverless operating boundary to include suburbs such as Pflugerville and Manor, I-35 corridors, Giga Texas, and Austin-Bergstrom International Airport. The prior boundary was ~245 square miles; the new coverage more than doubled that. This marks roughly the fifth boundary expansion since limited driverless rides began in January 2026.
-
-- **Expansion pace materially faster than Waymo.** Tesla went from a ~20-square-mile sliver a year ago to the entire Austin metro in under twelve months. The host of *brighterwithherbert* attributes this to Tesla expanding one general driving system rather than hand-mapping each neighborhood — each new zone gets easier to add, not harder.
-
-- **Six additional metro launches targeted before end of June 2026.** Community analysts and some commentators expect Tesla to copy the Austin playbook into six more cities this month. Speed of replication is framed as the key signal to watch.
-
-- **36 Robotaxi job postings reveal a fully commercial operational buildout.** Roles span 24/7 fleet operations (night-shift supervisors in Palo Alto), field incident response specialists in Austin, Dallas, and Houston (including on-site tire swaps), a Robotaxi Business Manager tasked with global commercial expansion, a dynamic pricing engineer building surge and demand-based algorithms, and a Senior Real Estate Manager securing support, parking, and storage locations nationally.
-
-- **Logistics role confirms North America-wide deployment scope** — explicitly including Canada and Mexico, not just the U.S. The ideal candidate has experience in auto transport, rail, or high-value freight.
-
-- **Grand Prairie, Texas facility confirmed as Robotaxi depot template.** The 51,000 sq ft facility near Dallas-Fort Worth, originally permitted as a sales/service/delivery center, was revised in city documents to also charge, clean, and maintain autonomous vehicles. Both *brighterwithherbert* and Herbert Ong's *Brilliant Advice* segment treat this physical real estate commitment as a more credible long-term signal than software announcements alone.
-
-- **Customer-owned Cybercab network integration still more than a year away**, per CFA Cern Basher (Brilliant Advice). None of the 36 Robotaxi job listings reference interfacing with customer-owned vehicles. Tesla is expected to establish its company-owned fleet at scale first, partly for quality control (e.g., verifying tires meet safety standards before a vehicle enters the network).
-
-- **Code hardening role makes miles per intervention the primary commercial metric.** A Senior Software Engineer listing states: *"The goal of Full Self-Driving isn't just to get it working — it's to make it more dependable than any human driver could ever be."* Herbert and Cern interpret this as confirmation that the software is functional and focus has shifted to reliability at scale.
+- Austin unsupervised robotaxi zone expands to cover the entire metro as of June 3.
+- Estonia becomes third EU country to approve FSD; 1.3M vehicles now have access globally.
+- Tesla posts 36 robotaxi and ~208 Optimus job listings spanning commercial, manufacturing, and AI functions.
+- Belgium completes required 5,000 km FSD public-road testing; file moves to formal homologation.
+- Model Y L spotted testing at Fremont — strongest signal yet of a North American launch.
+- SpaceX secures $2.17B/month annualized compute revenue run rate from Google and Anthropic deals.
 
 ## Autonomous Driving
 
-- **Estonia approved FSD supervised on May 29**, becoming the third EU country to greenlight it after Lithuania (earlier in May 2026) and the Netherlands. Tesla's official Europe account confirmed a rollout starting soon.
+- **Estonia approves FSD supervised, third EU country greenlit.** May 29 approval follows Lithuania (earlier May 2026) and the Netherlands. Ashok Elluswami confirmed at CVPR (June 3) that approximately 1.3 million vehicles worldwide now have FSD access; a slide shown at CVPR listed Germany, France, the UK, Italy, Spain, India, Japan, Turkey, Saudi Arabia, and Brazil among markets still pending — each representing a near-zero-marginal-cost revenue unlock when approved.
 
-- **~1.3 million vehicles worldwide now have FSD access**, per Ashok Elluswami at the CVPR conference in Denver on June 3. Elluswami also showed a slide of countries where approval remains pending — including Germany, France, the UK, Italy, Spain, India, Japan, Turkey, Saudi Arabia, and Brazil. Each pending approval represents near-zero marginal cost revenue upside once granted.
+- **FSD 14 Light for Hardware 3 still pending.** HW4 vehicles receive FSD the day a country approves; HW3 owners must wait for a lighter variant Tesla is targeting "later in the summer of 2026." Once it ships, it materially widens the addressable installed base across newly approved markets overnight.
 
-- **FSD 14 Light for Hardware 3 still not shipped.** Hardware 4 cars receive FSD the day a new country approves it; HW3 vehicles are awaiting a lighter FSD v14 build, which Tesla is targeting for later summer 2026. Landing this version would significantly widen the pool of eligible vehicles across newly approved markets overnight.
+- **Belgium clears 5,000 km public-road testing threshold.** Flemish Mobility Minister Annick De Ridder confirmed the test file has moved to her administration for formal homologation advice — a procedural step forward, though formal approval has not yet been granted.
 
-- **Belgium FSD homologation clears the 5,000 km public-road testing requirement.** Flemish Mobility Minister Annick De Ridder confirmed the test file has moved to her administration for formal homologation advice. Approval has not yet been granted, but this is a material procedural step.
+- **Vancouver-to-Halifax FSD drive: 3,760 miles, zero disengagements claimed.** Three owners completed the coast-to-coast Canada run in under five days on FSD 14.3.3, including autonomous Supercharger parking. Ashok publicly congratulated them. The drive was supervised with a driver present, and the zero-disengagement figure is owner-reported, not audited by Tesla.
 
-- **Coast-to-coast Canada FSD drive completed with zero claimed disengagements.** Three owners drove Vancouver to Halifax — 3,760 miles in just under five days — on FSD v14.3.3, including autonomous parking at Supercharger stops. Ashok Elluswami publicly congratulated them. The host of *brighterwithherbert* notes this was a supervised enthusiast drive and the zero-disengagement claim is self-reported, not audited.
+## Robotaxi
+
+- **Austin unsupervised zone expands to the entire metro effective June 3.** The new boundary encompasses Pflugerville, Manor, I-35, Giga Texas, and Austin-Bergstrom International Airport. Tesla's prior covered area was approximately 245 square miles; coverage more than doubled. This is roughly the fifth boundary expansion since driverless rides began in January 2026. Tesla did not publish exact new square mileage; third-party figures are estimates.
+
+- **Pace of expansion contrasts sharply with Waymo.** Tesla went from a ~20-square-mile zone last June to the entire Austin metro in under a year. Waymo expanded San Francisco and Phoenix block by block over years. The architectural distinction: Tesla is scaling one general driving system, not hand-mapping each neighborhood.
+
+- **51,000 sq ft Grand Prairie, Texas facility permitted for robotaxi operations.** City documents confirm Tesla revised plans for the Dallas-area site so it can charge, clean, and maintain autonomous vehicles — functioning as a robotaxi depot alongside its sales, service, and delivery role. Herbert and Cern Basher (Brilliant Advice) frame this as the physical infrastructure template for every city Tesla enters.
+
+- **Tesla's 36 open robotaxi job listings signal commercial-scale buildout.** Roles span 24/7 fleet operations (Palo Alto night-shift supervisor, fleet support specialists), field incident response specialists in Austin, Dallas, and Houston with physical duties including on-site wheel swaps, a Robotaxi Business Manager tasked with "global commercial expansion strategy," a Senior Real Estate Manager securing parking and storage sites (including a listing in Pennsylvania suggesting East Coast expansion), a Senior TPM for charging automation with a mandate to influence future hardware design, and full-stack engineers building dynamic and surge pricing algorithms with variables including base costs, taxes, tolls, and real-time market demand. A logistics role explicitly covers Canada and Mexico — not just the U.S.
+
+- **Customer-owned Cybercab network integration is more than a year away, per Cern Basher.** None of the 36 robotaxi listings reference interfacing with customer-owned vehicles, which Basher reads as a signal Tesla will establish its company-owned fleet at scale before onboarding personal Cybercabs — likely beyond the end of 2026 at the earliest.
 
 ## Humanoid Bots
 
-- **~208 Optimus job openings across 10 cities signal a full-scale robotics company buildout.** Top locations: Palo Alto (111), Fremont (44), Austin (17), Langley BC (10, actuators), Athens Greece (6). Additional postings in Reno, Houston, Dallas, Sparks NV, Sunnyvale, San Diego, and others.
+- **~208 open Optimus job listings across 10 cities.** Breakdown: Palo Alto 111, Fremont 44, Austin 17, Langley BC 10 (actuators), Athens Greece 6. Additional postings in Reno, Houston, Dallas, Sparks NV, Sunnyvale, San Diego, Littleton CO, Draper UT, Tempe AZ, and Henderson NV.
 
-- **65 manufacturing and industrialization roles are the single largest Optimus hiring category** — covering production line maintenance, process engineering, precision machining, general assembly, molding, power electronics, and supplier quality. Cern Basher frames this as the definitive signal: "You do not staff a 65-person manufacturing organization for a research project."
+- **65 manufacturing and industrialization roles are the largest single job category.** Postings cover production line maintenance, process engineering, precision machining, general assembly testing, molding, power electronics, and supplier quality. Basher's read: you do not staff a 65-person manufacturing organization for a research project — this is "the machine that makes the machine."
 
-- **Digital Optimus is emerging as a standalone AI agent software product.** Six of 17 AI/ML Optimus listings contain "Digital Optimus" in the title — including Reinforcement Learning Engineer and AI Engineer for Generalizability. Cern and Herbert describe it as a digital counterpart that can reason, learn, and operate computers, competing directly with Anthropic Claude and OpenAI's agentic AI products. They identify 2026–2027 as the key market window.
+- **"Engineering Technician Optimus Hand Repair" posting confirms hands are in active field use.** The role focuses on hands-on repair of the Optimus humanoid robot hand, which Basher interprets as evidence of real-world wear and tear beyond the development phase.
 
-- **"Engineering Technician Optimus Hand Repair" role confirms hands are deployed and wearing out in real-world use.** Cern treats the existence of a dedicated hand-repair technician role as evidence the Optimus hand has moved beyond development into active operational deployment.
+- **Digital Optimus emerges as a distinct software-AI-agent product.** 17 AI/ML/Digital Optimus listings include Reinforcement Learning Engineer, AI Engineer for Generalizability, and AI Infrastructure Engineer roles. Herbert and Basher position Digital Optimus as a software product that can scale faster than hardware, competing directly with Anthropic Claude and OpenAI's agentic AI — with 2026–2027 identified as the key market window.
 
-- **21 data collection listings include night-shift operators walking 7+ hours with 30 lbs of motion capture equipment.** Human operators in Austin, Houston, Dallas, Fremont, and other cities are generating physical training data for Optimus — a model analogous to what Chinese robotics companies are already doing at scale.
+- **21 data collection listings include a night-shift operator role requiring 7+ hours of walking with 30 lbs of motion capture equipment.** This confirms Tesla is generating Optimus training data via human operators wearing physical capture gear — a model already deployed at scale by Chinese robotics companies.
 
 ## Electric Vehicles
 
-- **Model Y L caught testing under camouflage at Fremont**, captured by drone. The stretched, three-row, six-seat captain's chair variant is on sale in China at ~$47,000. Fremont testing is the strongest indication yet of a North American launch; analyst estimates put US production start around September 2026. Pricing and range for the US market are unconfirmed.
+- **Model Y L spotted testing under camouflage at Fremont.** The stretched three-row variant — roughly six additional inches of wheelbase, six-seat captain's chair layout, on sale in China at ~$47,000 — has now been captured by drone on the Fremont test track, the strongest indication yet of a North American launch. Tesla has made no official US announcement; analysts estimate US production could begin around September 2026.
 
-- **US Model Y RWD ($39,990) and AWD ($41,990) now include all-black headliner and 16" center screen as standard** — a meaningful value add with no price increase, per Sawyer Merritt.
+- **Model Y US base spec upgraded at no price increase.** The $39,990 RWD and $41,990 AWD now include the all-black headliner and 16-inch center screen as standard equipment.
 
-- **Tesla introduced a "Coastal Blue" exterior exclusively for the base Model Y in Europe at €1,300.** This brings the Europe Model Y to four distinct blue variants. The exclusivity suggests targeted demand stimulus in a key market.
+- **Tesla modestly tightening US Model 3 incentives.** The 1-year free Supercharging promotion on Model 3 Premium ends June 15; Model 3 RWD lease rose from $299 to $329/month; Model Y AWD financing moved from 0% to 0.99% APR — suggesting improved demand or margin management heading into Q2 2026.
 
-- **Model 3 US incentives modestly tightened.** Free Supercharging on Model 3 Premium orders ends June 15; base Model 3 RWD lease price rose from $299 to $329/month; Model Y AWD financing rate moved from 0% to 0.99% APR. Sawyer Merritt reads this as demand or margin management heading into Q2.
+- **New "Coastal Blue" color launched exclusively for base Model Y in Europe at €1,300.** Brings total blue variants to four on the European Model Y.
 
-- **Cybercab casting design shifts to a skeletal structural frame**, eliminating large flat areas that add weight without structural contribution. Giga casting expert Luca Greco (FutureAzA) notes this approach is feasible specifically because the Cybercab is not a conventional consumer vehicle, and could not be directly applied to the Model Y.
+- **Tesla's Cybercab casting design has shifted to a skeletal structural frame.** Luca Greco (independent giga casting expert, FutureAzA) notes the latest Cybercab rear casting eliminates large flat areas that add weight without structural contribution — a design approach feasible specifically because the Cybercab is not a conventional consumer vehicle and is not applicable to the Model Y.
 
 ## Market & Competition
 
-- **Waymo's "Waymo One High" is a new vehicle, not a new city.** The *brighterwithherbert* host corrects a widespread misconception: it is a Zeekr-built minivan rebranded for US riders, now available to select San Francisco, LA, and Phoenix riders as of May 28. The vehicle carries 13 cameras, four lidar units, and six radar sensors — a fundamentally different (and more expensive) cost structure than Tesla's camera-only stack.
+- **Waymo's new vehicle is a cost-reduction move, not a new city.** "Waymo One High" is a rebadged Zeekr minivan from China — cheaper to build, more durable for fleet use — now available to select riders in SF, LA, and Phoenix as of May 28. The vehicle carries 13 cameras, four lidar units, and six radar sensors on top of an imported chassis. Tesla's camera-only, in-house-chip stack on an existing production line is structurally cheaper if the vision-only approach continues to hold.
 
-- **BYD became the first automaker globally to accept full crash liability for Level 2 city driving assist in China.** The host reads this as the same directional signal as Lemonade's FSD insurance pricing: parties financially exposed to crashes are growing more comfortable with assisted driving systems.
+- **BYD takes on crash liability for Level 2 city driving assist in China** — the first automaker in the world to promise full damage coverage for a customer crash while using its assisted driving mode. Framed as a demand-side confidence signal for the broader industry shift toward autonomous liability acceptance.
 
-- **Lemonade autonomous car insurance now operating in three states** (Arizona, Oregon, Indiana), charging ~50% less per mile driven on FSD. Co-founder Shai Wininger's stated rationale: FSD miles are approximately twice as safe as human-driven miles based on their pricing models.
+- **China giga casting adoption is overwhelming, with significant machine oversupply.** Virtually all Chinese OEMs are implementing giga casting; suppliers built excess capacity now sitting unused for at least five years. Greco notes Western OEMs could potentially acquire brand-new, unused Chinese machines at a discount. Dongfang is close to launching a full battery tray cast on a 16,000-ton machine in Wuhan — the largest known giga casting machine in existence.
 
-- **Anthropic raised $3 billion at a $965 billion valuation** (May 28) and filed confidentially to go public (June 1). Elon Musk is reportedly renting his Colossus 1 data center in Memphis to Anthropic because xAI's Grok hasn't captured comparable market traction — meaning a competitor is paying for compute Tesla's network helped build.
+- **Terafab: ~$55B compute facility in Grimes County, Texas, approved 4-1 on June 3.** Partners include SpaceX, Tesla, xAI, and Intel. Target: 1 terawatt of AI compute per year. Grimes County granted a 35-year property tax exemption worth over $2 billion to SpaceX. Tesla's role is as a customer and co-partner with a compute allocation earmarked for FSD chips and Optimus — not as project owner. Elon flagged Grimes County as a front-runner but not locked.
 
-- **Terafab — a ~$55 billion AI compute facility in Grimes County, Texas — cleared a key local vote.** Grimes County commissioners voted 4-1 on June 3 to grant a 35-year property tax exemption worth over $2 billion to SpaceX. Partners include SpaceX, Tesla, xAI, and Intel; the stated goal is 1 terawatt of AI compute per year. Tesla's role is as a customer and co-partner with a slice of compute earmarked for FSD chips and Optimus — not as owner or operator. Elon flagged that Grimes County is the front runner but not locked.
+- **SpaceX compute revenue run rate: $2.17B/month ($26B annualized).** A $920M/month Cloud Service Agreement with Google was announced, combining with a prior Anthropic deal. SpaceX is upsizing its Japan IPO by 25% to $2.5B. Morgan Stanley projects SpaceX revenue at $3.4 trillion by 2040; both Morgan Stanley and Goldman Sachs project ~$160B in SpaceX revenue by 2028. Not directly Tesla-relevant but material to Tesla investors tracking Elon's capital allocation and the broader AI compute buildout.
 
-- **Ferrari's CEO ruled out full autonomy**, explicitly stating driver engagement is core to the brand. The *brighterwithherbert* host frames legacy luxury brands ceding the autonomy space as a structural long-term tailwind for Tesla.
+- **US data center construction spending hit $50B annualized in March 2026** — up 34% year-over-year, up 437% since 2021, and now exceeding total US office construction ($46B, lowest since 2015). Bhakdi (jobhakdi) argues terrestrial physical constraints — land, energy, turbine scarcity — will redirect AI compute capital toward SpaceX's orbital platform, with Starship commercial readiness projected "more likely than not" by 2027.
 
 Notable quotes and data:
-- *"The goal of Full Self-Driving isn't just to get it working — it's to make it more dependable than any human driver could ever be."* — Tesla Code Hardening job listing
-- ~1.3 million vehicles globally have FSD access, per Ashok Elluswami at CVPR, June 3, 2026
-- FSD approved: Estonia (May 29), Lithuania (May 2026), Netherlands — three EU countries greenlit
-- FSD v14.3.3 used in Vancouver–Halifax drive; 3,760 miles, zero disengagements claimed (self-reported, not audited)
-- Austin unsupervised zone prior area: ~245 sq miles; coverage "more than doubled" after June 3 expansion
-- Optimus job listings by category: 65 manufacturing/quality, 21 data collection, 17 AI/ML/Digital Optimus, 17 hardware/robotics, 17 actuators/motors, 18 internships
-- Grand Prairie, TX facility: 51,000 sq ft, permitted for autonomous vehicle charging, cleaning, and maintenance
-- Cybercab giga casting: skeletal structural frame design, per Luca Greco (FutureAzA)
-- Giga casting break-even per Greco: ~10,000 castings/year; practical OEM fleet break-even: ~80,000–100,000/year
-- Lemonade FSD insurance: active in AZ, OR, IN; ~50% cheaper per mile on FSD vs. human-driven miles
-- Terafab: $55B project, 1 terawatt AI compute/year target, 35-year tax exemption >$2B, SpaceX/Tesla/xAI/Intel partners
-- Customer-owned Cybercab network integration: "more than a year away" — Cern Basher estimate
-- Dynamic pricing variables listed in Tesla job posting: base costs, taxes, government fees, tolls, market demand, regional variations, location-specific factors
+- **~1.3 million vehicles worldwide have FSD access** — Ashok Elluswami at CVPR, June 3, 2026
+- **Austin unsupervised zone: prior ~245 sq mi, "more than doubled" after June 3 expansion** — per Source 2
+- **36 Robotaxi job listings, ~208 Optimus listings** — per Tesla careers, via Herbert/Basher analysis
+- **Optimus manufacturing/quality/industrialization: 65 open roles** — largest single Optimus job category
+- **FSD 14 Light for HW3: targeting "later this summer 2026"** — not yet shipped
+- **Belgium FSD: 5,000 km public-road testing complete; file at homologation stage** — per Flemish Minister De Ridder
+- **Model Y L in China: ~$47,000; US production analyst estimate: ~September 2026**
+- **Grand Prairie facility: 51,000 sq ft, permitted for Robotaxi charging/cleaning/maintenance**
+- **Terafab: $55B project, 35-year tax exemption >$2B, 1 TW AI compute/year goal**
+- **SpaceX annualized compute revenue: $26B run rate** (Google $920M/month + prior Anthropic deal)
+- **US data center construction: $50B/month annualized, up 437% since 2021**
+- *"The goal of Full Self-Driving isn't just to get it working. It's to make it more dependable than any human driver could ever be."* — Tesla Code Hardening job listing, per Source 1
+- **Key FSD commercial metric per Tesla job posting: miles per intervention**
+- **Cern Basher estimate: customer-owned Cybercab network integration is more than a year away (beyond mid-2027)**
