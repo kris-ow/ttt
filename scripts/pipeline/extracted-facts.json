@@ -9649,5 +9649,65 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-06-07T23:02:35.270Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla's Nevada AV permit application seeks approval for up to 5,000 robotaxis during the first 12 months after the permit is granted, covering Clark County including Harry Reid International Airport and Henderson Executive Airport.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 5000,
+    "context": "First-year Nevada fleet target from official permit filing; materially larger than Waymo's entire current national fleet of ~3,700 vehicles, signaling aggressive near-term scaling intent.",
+    "source": "20260608_brighterwithherbert_02_Big_Investors_Are_Buying_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-08T20:03:02.704Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo's current nationwide robotaxi fleet is approximately 3,700 vehicles across the entire United States.",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3700,
+    "context": "Competitive benchmark cited by Jeff Lutz; Tesla's single-market Nevada permit request alone exceeds Waymo's total national fleet.",
+    "source": "20260608_brighterwithherbert_02_Big_Investors_Are_Buying_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-08T20:03:02.704Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Texas DMV data shows Tesla Robotaxi LLC now has 51 registered robotaxi vehicles in Texas as of early June 2026, up 4 from the prior count.",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 51,
+    "context": "Official Texas DMV registration data provides a ground-truth fleet count independent of community trackers; RobotaxiTracker.com is noted as potentially less current due to maintainer being hired by Tesla.",
+    "source": "20260608_brighterwithherbert_02_Big_Investors_Are_Buying_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-08T20:03:02.704Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Competing robotaxi vendors (implicitly Waymo) charge approximately $3–$10 per hour and are described as losing money per ride at those rates.",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fare_per_mile",
+    "value": null,
+    "context": "Jeff Lutz cited hourly fare range rather than per-mile pricing; suggests competitive fare floor and underscores Tesla's claimed unit economics advantage.",
+    "source": "20260608_brighterwithherbert_02_Big_Investors_Are_Buying_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-08T20:03:02.704Z",
+    "status": "pending"
+  },
+  {
+    "fact": "NHTSA data through approximately June 2026 (six months of Texas robotaxi operations) reportedly shows very few or possibly zero major accidents, with only minor incidents.",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Safety record cited as a key piece of evidence for Tesla's Nevada AV permit application; specific incident rate not quantified in the transcript.",
+    "source": "20260608_brighterwithherbert_02_Big_Investors_Are_Buying_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-08T20:03:02.704Z",
+    "status": "pending"
   }
 ]
