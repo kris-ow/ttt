@@ -9781,5 +9781,41 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-06-09T03:02:38.251Z",
     "status": "pending"
+  },
+  {
+    "fact": "Texas Motor Carrier website lists 59 Tesla VINs for robotaxi operations, up from ~40 approximately two weeks prior; all are currently Model Ys",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 59,
+    "context": "Represents the maximum deployable Texas fleet size at this moment, not all currently active or unsupervised; rapid growth from ~40 in ~2 weeks suggests accelerating expansion",
+    "source": "20260609_electrified_01_Tesla_Finally_Adding_More_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-09T23:03:00.942Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Supervised FSD in Netherlands (April 10 – June 5, 2026): 3.5x fewer collisions than manual driving, 3.4x safer on highways with 16.6 million km driven and zero collisions, 1.6x safer on non-highway roads with 7 million km and 3 collisions; total 23.6 million km covered",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Key real-world safety data supporting FSD regulatory expansion in Europe; zero highway collisions over 16.6M km is particularly notable",
+    "source": "20260609_electrified_01_Tesla_Finally_Adding_More_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-09T23:03:00.942Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Model 3 RWD achieved 393 miles real-world range vs. 363-mile EPA estimate (8.3% outperformance) and 21.7 kWh per 100 miles vs. 25 kWh EPA rating (13.2% more efficient), per Edmunds testing",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.217,
+    "context": "Real-world efficiency of 21.7 kWh/100 mi (0.217 kWh/mile) for Model 3 RWD provides a reference point for estimating energy cost per mile in robotaxi DCF models",
+    "source": "20260609_electrified_01_Tesla_Finally_Adding_More_summary.txt",
+    "channel": "electrified",
+    "extractedAt": "2026-06-09T23:03:00.942Z",
+    "status": "pending"
   }
 ]
