@@ -41,6 +41,12 @@ function splitHeaderAndBody(raw) {
   };
 }
 
+// Each transform returns the rewritten body, or null when its pattern did
+// not match (source brief format drifted). Null is collected as a warning
+// by buildRedditPost — the 2026-06-08 post shipped in the wrong layout
+// because reorderSections bailed silently, so transforms must never fail
+// quietly again.
+
 // Kept: the canonical Robotaxi tracker block (table). New.reddit and the
 // official mobile apps render markdown tables; old.reddit displays them
 // as raw pipes — acceptable cosmetic loss.
@@ -50,10 +56,9 @@ function splitHeaderAndBody(raw) {
 // the third-party site on Reddit. Plain text attribution `Source: Robotaxi
 // Tracker` keeps credit without the link.
 function delinkTrackerSource(body) {
-  return body.replace(
-    /^Source: \[RobotaxiTracker\.com\]\(https:\/\/robotaxitracker\.com\/?\)/m,
-    'Source: Robotaxi Tracker'
-  );
+  const re = /^Source: \[RobotaxiTracker\.com\]\(https:\/\/robotaxitracker\.com\/?\)/m;
+  if (!re.test(body)) return null;
+  return body.replace(re, 'Source: Robotaxi Tracker');
 }
 
 // Adds TTT attribution into the Brief section heading. As of 2026-06-01
@@ -62,8 +67,10 @@ function delinkTrackerSource(body) {
 // preserved (user position 2026-05-17): no bottom footer, no duplicate links.
 // Phrasing avoids time-zone language ("morning" was rejected as relative).
 function attributeBriefHeading(body) {
+  const re = /^## Brief$/m;
+  if (!re.test(body)) return null;
   return body.replace(
-    /^## Brief$/m,
+    re,
     `## Brief from [theteslathesis.com](${TTT_URL}) — see the site for daily briefs`
   );
 }
@@ -73,16 +80,18 @@ function attributeBriefHeading(body) {
 // Source brief lays out tracker → Brief → categories; Reddit post wants
 // Brief (TTT link top-of-fold) → tracker → categories so the link is the
 // first thing a reader sees and the tracker reads as supporting context.
+// Section `---` separators are guaranteed by normalizeSeparators() in
+// weekly-summary.js since 2026-06-09.
 function reorderSections(body) {
   // Source brief is CRLF on Windows pipelines, LF elsewhere — `\r?\n` keeps
   // the transform robust to either.
   const trackerRe = /^(## Unsupervised Robotaxi Fleet[\s\S]*?\r?\n)---\r?\n\r?\n(?=## Brief\b)/m;
   const trackerMatch = body.match(trackerRe);
-  if (!trackerMatch) return body; // pattern shifted; leave body untouched
+  if (!trackerMatch) return null;
   const trackerBlock = trackerMatch[1];
   const withoutTracker = body.replace(trackerRe, '');
   const briefEndRe = /(^## Brief[\s\S]*?\r?\n)---\r?\n\r?\n/m;
-  if (!briefEndRe.test(withoutTracker)) return body;
+  if (!briefEndRe.test(withoutTracker)) return null;
   return withoutTracker.replace(briefEndRe, `$1---\n\n${trackerBlock}---\n\n`);
 }
 
@@ -95,13 +104,25 @@ function stripBriefTags(body) {
 }
 
 function buildRedditPost(title, body) {
-  const cleaned = stripBriefTags(
-    attributeBriefHeading(reorderSections(delinkTrackerSource(body)))
-  ).trimStart();
-  return `${cleaned.trimEnd()}\n`;
+  const warnings = [];
+  let out = body;
+  for (const [name, transform] of [
+    ['delinkTrackerSource', delinkTrackerSource],
+    ['reorderSections', reorderSections],
+    ['attributeBriefHeading', attributeBriefHeading],
+  ]) {
+    const next = transform(out);
+    if (next === null) {
+      warnings.push(`${name} did not apply — source brief format drifted; post is in fallback layout, review before pasting`);
+    } else {
+      out = next;
+    }
+  }
+  const cleaned = stripBriefTags(out).trimStart();
+  return { post: `${cleaned.trimEnd()}\n`, warnings };
 }
 
-function writeRedditPost(targetDate, title, post, sourceFilename) {
+function writeRedditPost(targetDate, title, post, sourceFilename, warnings) {
   if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
   const filename = `${targetDate}.md`;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
@@ -111,6 +132,7 @@ function writeRedditPost(targetDate, title, post, sourceFilename) {
     `Generated:   ${now}`,
     `Source:      ${sourceFilename}`,
     `Mode:        deterministic-format (no LLM)`,
+    ...warnings.map(w => `!! WARNING:  ${w}`),
     '─'.repeat(60),
     '',
     `## Title`,
@@ -147,8 +169,12 @@ function main() {
     process.exit(1);
   }
 
-  const post = buildRedditPost(title, body);
-  writeRedditPost(targetDate, title, post, brief.filename);
+  const { post, warnings } = buildRedditPost(title, body);
+  for (const w of warnings) {
+    // ::warning:: surfaces as an annotation on the GitHub Actions run
+    console.error(`::warning::reddit-weekly: ${w}`);
+  }
+  writeRedditPost(targetDate, title, post, brief.filename, warnings);
 }
 
 main();

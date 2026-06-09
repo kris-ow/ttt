@@ -11,7 +11,9 @@ const urlIndex = fs.existsSync(urlIndexPath) ? JSON.parse(fs.readFileSync(urlInd
 const files = fs.readdirSync(newsDir).filter(f => f.endsWith('_summary.txt')).sort();
 
 const articles = files.map(filename => {
-  const content = fs.readFileSync(path.join(newsDir, filename), 'utf-8');
+  // Normalize CRLF so a regen on a Windows checkout (autocrlf) produces
+  // byte-identical news.json to the CI build reading LF files.
+  const content = fs.readFileSync(path.join(newsDir, filename), 'utf-8').replace(/\r\n/g, '\n');
   const lines = content.split('\n');
 
   // Parse header metadata

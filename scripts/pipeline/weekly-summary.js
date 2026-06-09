@@ -198,6 +198,24 @@ function parseResult(text) {
   return { brief: stripped };
 }
 
+// The prompt never asks for `---` separators between sections, so whether
+// the model emits them is formatting whim (2026-06-08 brief had none, all
+// prior briefs did). Downstream consumers key on them — reddit-weekly.js
+// locates section boundaries via `---`, and the site renders them as
+// dividers — so rebuild the body with exactly one separator between
+// `## ` sections regardless of what the model produced.
+function normalizeSeparators(brief) {
+  const out = [];
+  for (const line of brief.split('\n')) {
+    if (/^## /.test(line) && out.some(l => l.trim() !== '')) {
+      while (out.length && ['', '---'].includes(out[out.length - 1].trim())) out.pop();
+      out.push('', '---', '');
+    }
+    out.push(line);
+  }
+  return out.join('\n');
+}
+
 // ── File Writing ─────────────────────────────────────────
 
 function writeWeeklyBrief(targetDate, weekStart, weekEnd, parsed, { inputTokens, outputTokens, cost, sourceCount }) {
@@ -220,7 +238,7 @@ function writeWeeklyBrief(targetDate, weekStart, weekEnd, parsed, { inputTokens,
 
   const trackerTable = renderUnsupervisedTableWeekly(weekEnd);
 
-  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + trackerTable + parsed.brief + '\n');
+  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + trackerTable + normalizeSeparators(parsed.brief) + '\n');
   console.log(`  Written: ${filename}`);
   return filename;
 }
