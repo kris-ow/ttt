@@ -9709,5 +9709,53 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-08T20:03:02.704Z",
     "status": "pending"
+  },
+  {
+    "fact": "Active Tesla Robotaxi fleet: 719 total (Bay Area 597, Austin 104, Dallas 9, Houston 9) as of 2026-06-07",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 719,
+    "context": "Canonical fleet count from RobotaxiTracker.com; context for Cathie Wood's unsupervised ride post. City-level breakdown provides geographic deployment picture.",
+    "source": "20260609_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-09T00:03:29.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Unsupervised (driverless) Tesla Robotaxi fleet: 39 vehicles (Austin 28, Dallas 5, Houston 6) as of 2026-05-09",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 39,
+    "context": "The driverless subset is the most relevant for robotaxi unit economics modeling; Cathie Wood's ride was on this unsupervised service in Austin.",
+    "source": "20260609_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-09T00:03:29.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "2026 Tesla Model 3 RWD achieved 393 real-world miles on a full charge in Edmunds testing, 30 miles (8.3%) above its 363-mile EPA estimate — ranked most efficient EV currently in production by Edmunds",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Real-world range outperformance vs. EPA rating is relevant to energy cost per mile estimates in robotaxi DCF models; best-in-class efficiency reduces per-mile operating costs.",
+    "source": "20260609_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-09T00:03:29.061Z",
+    "status": "pending"
+  },
+  {
+    "fact": "iSeeCars study of 174 million+ vehicles found Tesla is twice as likely to reach 250,000 miles as Subaru, outranking Ford, Kia, Chevy, BMW, VW, Mazda, Mercedes, and Volvo",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "vehicle_useful_life",
+    "value": null,
+    "context": "Superior vehicle longevity directly supports longer useful life assumptions in robotaxi fleet DCF models, improving per-vehicle economics.",
+    "source": "20260609_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-09T00:03:29.061Z",
+    "status": "pending"
   }
 ]
