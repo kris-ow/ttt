@@ -9757,5 +9757,29 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-06-09T00:03:29.061Z",
     "status": "pending"
+  },
+  {
+    "fact": "Two to three dozen unsupervised Cybercabs operating publicly estimated to be sufficient catalyst to drive Tesla stock to $490",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 24,
+    "context": "Bhakdi's threshold estimate for minimum fleet size needed to trigger significant stock repricing to $490; 'multiple hundreds' needed to push through $600",
+    "source": "20260608_jobhakdi_01_Tesla_Stock_Surges_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-09T03:02:38.251Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Bhakdi's DCF model projects Tesla reaching $2,000 per share in the first half of 2029",
+    "category": "Financials",
+    "type": "dcf_input",
+    "field": "wacc",
+    "value": null,
+    "context": "Long-term Tesla valuation output from Bhakdi's internal model; specific WACC not disclosed but model referenced directly",
+    "source": "20260608_jobhakdi_01_Tesla_Stock_Surges_Back_summary.txt",
+    "channel": "jobhakdi",
+    "extractedAt": "2026-06-09T03:02:38.251Z",
+    "status": "pending"
   }
 ]
