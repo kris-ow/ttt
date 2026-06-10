@@ -9853,5 +9853,29 @@
     "channel": "jobhakdi",
     "extractedAt": "2026-06-10T01:02:34.841Z",
     "status": "pending"
+  },
+  {
+    "fact": "Solar-integrated EV trucks could theoretically yield up to 90 kWh/day but realistically around 55 kWh/day, covering approximately 30 miles",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": null,
+    "context": "Implied efficiency context for solar-equipped trucks; 55 kWh for ~30 miles implies roughly 1.8 kWh/mile, though this is for a specific solar use case, not a Tesla vehicle",
+    "source": "20260610_futureaza_01_Tesla_Semis_Biggest_Advantage_summary.txt",
+    "channel": "futureaza",
+    "extractedAt": "2026-06-10T13:03:41.396Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Tesla Semi energy consumption: 1.7 kWh per mile under real-world PepsiCo conditions, with 65% of miles at over 70,000 lbs load",
+    "category": "Electric Vehicles",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 1.7,
+    "context": "Real-world validated efficiency figure from PepsiCo's fleet operation in California; critical input for Tesla Semi operating cost modeling",
+    "source": "20260610_farzad-fm_01_Elons_New_Product_Will_summary.txt",
+    "channel": "farzad-fm",
+    "extractedAt": "2026-06-10T13:03:41.407Z",
+    "status": "pending"
   }
 ]
