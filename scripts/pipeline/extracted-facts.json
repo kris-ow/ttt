@@ -9877,5 +9877,89 @@
     "channel": "farzad-fm",
     "extractedAt": "2026-06-10T13:03:41.407Z",
     "status": "pending"
+  },
+  {
+    "fact": "Cybercab energy efficiency: 165 Wh/mile, equivalent to approximately 204 miles per gallon",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "kwh_per_mile",
+    "value": 0.165,
+    "context": "Directly comparable to Waymo I-Pace at 562 Wh/mile; Cybercab is 3.4x more efficient, improving per-mile operating cost in DCF models",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "59 Tesla robotaxi vehicles officially registered with the Texas DMV at SAE Level 4 autonomy as of approximately 2026-06-09, with 8 added in a single day",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 59,
+    "context": "Publicly verifiable fleet registration count; proxy for near-term supervised and unsupervised deployment scale in Texas",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised in the Netherlands over the last two months: 3.5x fewer collisions and over 3x safer than manual driving",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "First real-world European safety dataset for FSD supervised; supports regulatory approvals and underpins insurance cost assumptions",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "FSD supervised Netherlands data: 14.9x fewer automatic emergency braking events, 8.8x less harsh acceleration, 7.3x less harsh braking, 8x fewer hard swerves vs. manual driving",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": null,
+    "context": "Granular safety sub-metrics from Dutch roads; supports lower insurance cost assumptions in robotaxi DCF models",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Waymo U.S. fleet: approximately 3,700 vehicles",
+    "category": "Market & Competition",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 3700,
+    "context": "Current competitive benchmark fleet size; used by analysts to gauge when Tesla robotaxi fleet reaches parity",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jo Bhakdi estimates a minimum of 300–500 Cybercabs per city is needed for viable commercial robotaxi service to avoid excessive wait times and per-ride losses",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": null,
+    "context": "Sets a minimum density threshold for break-even commercial operations in a single city; relevant to launch timing and city-level revenue modeling",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Active Robotaxi fleet: 721 total per RobotaxiTracker.com as of 2026-06-09 (Bay Area 599, Austin 104, Dallas 9, Houston 9)",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 721,
+    "context": "Canonical community-tracked fleet count across all supervised and unsupervised modes; Texas DMV registration count of 59 represents a subset of Texas-only Level 4 registered vehicles",
+    "source": "20260610_brighterwithherbert_01_Tesla_Robotaxi_Just_Got_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-10T14:04:10.101Z",
+    "status": "pending"
   }
 ]
