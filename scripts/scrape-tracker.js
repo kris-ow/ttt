@@ -94,6 +94,10 @@ const SECTION_START = 'UNSUPERVISED FLEET';
 const CITIES_START = 'Use the toggle to compare against the full fleet';
 const CITY_LINE = /^[A-Z][A-Z .'-]+$/;
 const NUMBER_LINE = /^[\d,]+$/;
+// Rows in the city list that are NOT cities — e.g. "TEXAS DMV REGISTERED"
+// (statewide registration stat the site inserted 2026-06-11).
+const NON_CITY_ROW = /DMV|FLEET|TRACKED|TOTAL/i;
+const SECTION_END = /^(View Details|Wait Times)$/i;
 
 async function scrapeUnsupervised() {
   const { chromium } = await import('playwright');
@@ -103,16 +107,54 @@ async function scrapeUnsupervised() {
       userAgent: 'ttt-scraper (github.com/kris-ow/ttt)',
     });
     const page = await ctx.newPage();
+
+    const debug = process.argv.includes('--debug');
+
     await page.goto(HOME_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
 
-    await page.getByText(SECTION_START, { exact: false }).first().waitFor({ timeout: 30_000 });
-    await page.getByText(CITIES_START, { exact: false }).first().waitFor({ timeout: 30_000 });
+    // Sections mount lazily — scroll through the page to trigger them.
+    const scrollThrough = () => page.evaluate(async () => {
+      for (let y = 0; y <= document.body.scrollHeight; y += 600) {
+        window.scrollTo(0, y);
+        await new Promise(r => setTimeout(r, 250));
+      }
+    });
+
+    const waitForAnchors = async () => {
+      await page.getByText(SECTION_START, { exact: false }).first().waitFor({ timeout: 15_000 });
+      await page.getByText(CITIES_START, { exact: false }).first().waitFor({ timeout: 15_000 });
+    };
+
+    try {
+      await waitForAnchors();
+    } catch {
+      await scrollThrough();
+      try {
+        await waitForAnchors();
+      } catch (err) {
+        if (!debug) throw err;
+        console.log(`  [debug] anchors not on homepage after scroll — dumping, then trying ${DATA_URL}`);
+        const t = await page.evaluate(() => document.body.innerText);
+        t.split('\n').map(l => l.trim()).forEach((l, i) => { if (l) console.log(`  [debug] home ${i}: ${JSON.stringify(l)}`); });
+        await page.goto(DATA_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+        await page.waitForTimeout(5_000);
+        await scrollThrough();
+        const t2 = await page.evaluate(() => document.body.innerText);
+        t2.split('\n').map(l => l.trim()).forEach((l, i) => { if (l) console.log(`  [debug] data ${i}: ${JSON.stringify(l)}`); });
+      }
+    }
 
     const text = await page.evaluate(() => document.body.innerText);
 
     const lines = text.split('\n').map(l => l.trim());
 
     const headerIdx = lines.indexOf(SECTION_START);
+
+    if (debug) {
+      console.log(`  [debug] full innerText (${lines.length} lines, header at ${headerIdx}):`);
+      lines.forEach((l, i) => { if (l) console.log(`  [debug] ${i}: ${JSON.stringify(l)}`); });
+    }
+
     const total = headerIdx >= 0 && NUMBER_LINE.test(lines[headerIdx + 1])
       ? Number(lines[headerIdx + 1].replace(/,/g, ''))
       : null;
@@ -120,11 +162,19 @@ async function scrapeUnsupervised() {
     const citiesIdx = lines.indexOf(CITIES_START);
     const cities = [];
     if (citiesIdx >= 0) {
-      for (let i = citiesIdx + 1; i < lines.length - 1; i += 2) {
+      // Non-city rows (e.g. "TEXAS DMV REGISTERED" + its description) are
+      // mixed into the list, so skip lines that don't form a city/number
+      // pair instead of stopping at the first mismatch. Bounded window so
+      // we never wander into unrelated stats further down the page.
+      const limit = Math.min(lines.length - 1, citiesIdx + 20);
+      for (let i = citiesIdx + 1; i < limit; i++) {
         const name = lines[i];
+        if (SECTION_END.test(name)) break;
         const num = lines[i + 1];
-        if (!CITY_LINE.test(name) || !NUMBER_LINE.test(num)) break;
+        if (!CITY_LINE.test(name) || !NUMBER_LINE.test(num)) continue;
+        if (NON_CITY_ROW.test(name)) { i++; continue; }
         cities.push({ city: titleCase(name), unsupervised: Number(num.replace(/,/g, '')) });
+        i++;
       }
     }
 
