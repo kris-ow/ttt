@@ -9961,5 +9961,17 @@
     "channel": "brighterwithherbert",
     "extractedAt": "2026-06-10T14:04:10.101Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla FSD (Supervised) fleet has crossed 11 billion cumulative miles driven globally, up from 10 billion the prior month",
+    "category": "Autonomous Driving",
+    "type": "dcf_input",
+    "field": "safety_metrics",
+    "value": 11000000000,
+    "context": "Cumulative FSD miles are a key proxy for training data accumulation; pace of ~1 billion miles per 37 days is accelerating as European approvals expand the active FSD fleet",
+    "source": "20260611_sawyermerritt_01_xdaily_summary.txt",
+    "channel": "sawyermerritt",
+    "extractedAt": "2026-06-11T00:01:58.325Z",
+    "status": "pending"
   }
 ]
