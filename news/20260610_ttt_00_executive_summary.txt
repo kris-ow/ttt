@@ -1,0 +1,89 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-06-10)
+Published:   2026-06-10 00:00 UTC
+Summarized:  2026-06-11 04:59:15 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.07052 (10902 in / 2521 out tokens)
+Sources:     6
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Unsupervised Robotaxi Fleet
+
+| City | Now | 1D | 7D | 30D |
+|:-----|----:|---:|---:|----:|
+| Austin | 28 | 0 | 0 | 0 |
+| Houston | 6 | 0 | 0 | 0 |
+| Dallas | 5 | 0 | 0 | 0 |
+| **Total** | **39** | 0 | 0 | 0 |
+
+Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
+
+---
+
+## Brief
+
+- FSD approved in Denmark — fourth European country; Belgium signaling next.
+- Netherlands fleet: 16.6M highway km, zero collisions on FSD.
+- Texas DMV: 59 Tesla vehicles registered at SAE Level 4; 8 added in one day.
+- Arizona robotaxi rollout targets nine cities — far more than expected.
+- Tesla Semi mass production began April 2026 at Nevada factory.
+- U.S. EV sales: 85,000+ units in May 2026, best month since tax credits ended.
+
+## Autonomous Driving
+
+- **Denmark becomes fourth European FSD approval.** The Danish Road Traffic Authority concluded FSD Supervised "will contribute positively to road safety." Approved European markets now include the Netherlands, Denmark, Lithuania, and Estonia; Belgium has publicly signaled it is next. An EU-wide vote covering ~28 member states could occur by end of summer 2026, though individual countries can proceed independently regardless.
+
+- **Netherlands safety data: first European real-world FSD fleet report.** Tesla published two months of FSD Supervised performance data from the Dutch fleet. Headline metrics: 3.5x fewer collisions vs. baseline, 3.4x safer on highways with 16.6 million km accumulated and zero highway collisions, 14.9x fewer automatic emergency braking events, 8.8x less harsh acceleration, 7.3x less harsh braking, and 8x fewer hard swerves. Per Herbert and Jo Bhakdi, the data provides regulators across Europe with a replicable evidence template for faster approvals.
+
+- **U.S. Trade Representative Jamieson Greer scheduled to tour Fremont factory ~June 12.** The visit is framed around domestic production and onshoring — a positive optics signal for Tesla's standing with the current administration amid ongoing tariff and trade policy discussions.
+
+## Robotaxi
+
+- **Texas DMV: 59 Tesla vehicles registered at SAE Level 4 autonomy classification**, with 8 added in a single day per publicly accessible DMV data tracked by community monitor Spencer. This is a concrete, official registration signal — separate from RobotaxiTracker fleet counts — indicating accelerating formal classification of vehicles for driverless operation in Texas.
+
+- **Arizona expansion targets nine cities**, per an April 2026 Tesla first-responder interaction plan appendix listing planned SAE Level 4 operating areas. Most observers had anticipated only Phoenix and Tempe. Herbert described this as evidence the Arizona rollout will be considerably larger than publicly assumed.
+
+- **Cybercabs spotted in Houston fleet lot and Seattle/Bellevue area.** Drone footage over a Houston lot captured a mix of Model Y robotaxi vehicles and Cybercabs; separate sightings in Washington State are consistent with Tesla's previously announced Bellevue hiring activity. Both hosts interpret this as active multi-state FSD validation testing.
+
+- **Bhakdi: 300–500 Cybercabs per city is the minimum viable fleet density** for a credible commercial service. Austin users are currently experiencing ~20-minute wait times and frequent vehicle pullbacks, illustrating the density problem. Bhakdi argues Tesla will face pressure to launch at scale simultaneously rather than via a gradual drip — consistent with Cathie Wood's "all at once" framing.
+
+- **Cybercab manufacturing pace identified as the primary timing signal.** Bhakdi argues production ramp — not hiring or regulatory approvals — is the most reliable indicator of launch timing, because Tesla cannot allow thousands of built Cybercabs to sit idle. Wheel caps observed on Dallas-lot Cybercabs were cited as a detail inconsistent with pure testing, suggesting near-term operational deployment.
+
+## Market & Competition
+
+- **Cybercab is 3.4x more energy-efficient than Waymo's I-Pace.** Cybercab operates at 165 Wh/mile (~204 MPGe); Waymo I-Pace consumes 562 Wh/mile (~60 MPGe). Herbert argues this means Tesla needs roughly one-third as many vehicles as Waymo to deliver equivalent service coverage.
+
+- **Waymo acquired Apple's former Arizona proving ground for $220 million.** The 5,500-acre facility includes a 115-acre city course, a 35-acre vehicle dynamics area, a four-mile oval track, and a freeway course. Apple reportedly spent ~$10 billion on its canceled self-driving program. Bhakdi interprets the acquisition as a sign Waymo may be transitioning from LiDAR to a vision-only neural network stack and needs a private environment to train and validate that system — implying its current commercial fleet may not represent fully genuine unsupervised autonomy.
+
+- **Waymo reported loss: ~$100 per ride.** Bhakdi attributes this to labor-intensive remote monitoring, which he argues is structurally impossible at Tesla's scale given millions of privately owned vehicles operating in uncontrolled environments — framing Tesla's FSD as inherently more autonomous by architecture.
+
+- **SpaceX IPO priced at $135/share; Morningstar fair value estimate is $63/share** (53% discount). Bhakdi dismisses Morningstar's multiple-based approach and says his own DCF model implies SpaceX may be dramatically undervalued even at a ~$2 trillion IPO valuation. He projects the stock will be pumped initially before declining toward ~$1.5 trillion by December 2026, with the highest-risk window August 2026 through January 2027 due to absence of orbital AI satellite launches and S&P 500 inclusion delayed until June 2027.
+
+- **Terafab: joint Tesla/SpaceX chip manufacturing facility confirmed at ~100 million sq ft** — roughly 10x Giga Texas — targeting 1 terawatt of chip output per year, equivalent to approximately twice total U.S. annual electricity consumption. First publicly confirmed by Elon Musk. SpaceX's AI1 satellite was also unveiled: 70-meter deployed wingspan, 150 kW peak power, 120 kW sustained compute payload. Solar and AI satellite production buildings are already under construction; SpaceX targets "reasonable volume" by end of 2026.
+
+## Electric Vehicles
+
+- **Tesla Semi entered mass production in April 2026** at a new Nevada facility. Two variants: ~325-mile standard range and ~500-mile long range, both at 82,000 lb max legal weight. PepsiCo's real-world fleet data — ~50 trucks across California since December 2022, with 65% of miles at over 70,000 lbs — confirms 1.7 kWh/mile energy consumption. Megacharger delivers ~60% range in ~30 minutes.
+
+- **Tesla Semi's all-in cost advantage is material but driver wages remain the largest cost line.** At depot electricity rates, energy cost is ~25 cents/mile vs. ~80–90 cents/mile for diesel (at ~$5.60/gallon). Maintenance estimated at ~6 cents/mile vs. ~19–20 cents for diesel. However, per ATRI data, the all-in diesel trucking cost is $2.26/mile — of which driver wages and benefits account for ~$1.00/mile (~44%). Full cost disruption requires autonomous driving, not just electrification. Aurora and Kodiak are already running driverless trucks on specific Texas and Arizona highway routes; industry analysts project 30–50% of long-haul highway miles could be autonomous by 2030–2035.
+
+- **Tesla Semi is currently the only U.S. Class 8 electric semi priced below the ~$300,000 fleet break-even threshold**, per FutureAzA host Brian. Competitor Horizon Motors debuted a new Class 8 electric tractor at ACT Expo targeting dissatisfied Tesla Semi prospects, but disclosed no efficiency specs. California launched a $1 billion EV truck incentive program with rebates up to $120,000 per vehicle.
+
+- **U.S. EV sales: 85,000+ units in May 2026**, the strongest month since federal tax credits were eliminated at end of Q3 2025. Average EV transaction price: $54,532, down 4% YoY — the 11th consecutive month of YoY declines. Automakers averaged ~$7,600/vehicle in incentives (~14% of ATP), nearly double the broader industry average.
+
+- **Tesla holds ~50% of U.S. EV market share.** Average Tesla transaction price fell 1% from April and 3.4% YoY. Model 3 (ATP: $49,082) and Model Y (ATP: $51,537) represent 96% of Tesla's May sales. Tesla's pricing weight disproportionately pulls down industry-wide EV price averages.
+
+Notable quotes and data:
+- Netherlands FSD Supervised: 16.6M highway km, zero collisions; 3.5x fewer collisions overall; 14.9x fewer AEB events
+- Texas DMV Level 4 registrations: 59 vehicles (8 added in one day)
+- Cybercab: 165 Wh/mile; Waymo I-Pace: 562 Wh/mile; Cybercab 3.4x more efficient
+- Waymo: ~3,700 U.S. vehicles; ~$100/ride reported loss
+- Waymo acquires Apple's Arizona proving ground: $220M, 5,500 acres
+- Bhakdi minimum fleet density: 300–500 Cybercabs/city for viable commercial service
+- Bhakdi stock repricing framework: ~24 Cybercabs → ~10–15% gain toward $490; ~100 → next catalyst; 1,000–2,000 → actual repricing
+- Tesla Semi: 1.7 kWh/mile (PepsiCo real-world); ~25 cents/mile energy cost vs. ~80–90 cents diesel
+- ATRI all-in diesel cost: $2.26/mile; driver wages: ~$1.00/mile (~44%)
+- May 2026 U.S. EV sales: >85,000 units; avg ATP $54,532 (−4% YoY); Tesla ~50% share
+- Terafab: ~100M sq ft, 1 TW/year chip output target — first public Elon confirmation
+- SpaceX AI1 satellite: 70m wingspan, 150 kW peak, 120 kW sustained compute; Elon target: 1 GW in orbit by end-2027, 10 GW by 2028
+- Bhakdi: "For Tesla the most important thing is FSD — does it work? And if it does, everything's already... you can see the Cybercab, you can see the scaling."
