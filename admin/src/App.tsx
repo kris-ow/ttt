@@ -8,6 +8,7 @@ interface WatchlistDcf {
 }
 
 interface Watchlist {
+  dcf_enabled?: boolean
   dcf_inputs: WatchlistDcf[]
   interview_watch?: string[]
 }
@@ -130,6 +131,7 @@ function btnStyle(color: 'green' | 'red' | 'dim' | 'amber'): React.CSSProperties
 function ReviewQueue() {
   const [facts, setFacts] = useState<ExtractedFact[]>([])
   const [filter, setFilter] = useState<'all' | 'pending' | 'approved' | 'rejected'>('pending')
+  const [typeFilter, setTypeFilter] = useState<'all' | 'interview_mention' | 'dcf_input'>('interview_mention')
 
   const load = useCallback(async () => {
     const f = await api<ExtractedFact[]>('/facts')
@@ -145,12 +147,15 @@ function ReviewQueue() {
     await api('/facts', 'PUT', updated)
   }
 
-  const filtered = facts.filter(f => filter === 'all' || f.status === filter)
-  const pendingCount = facts.filter(f => f.status === 'pending').length
+  const filtered = facts.filter(f =>
+    (filter === 'all' || f.status === filter) &&
+    (typeFilter === 'all' || f.type === typeFilter)
+  )
+  const pendingCount = facts.filter(f => f.status === 'pending' && (typeFilter === 'all' || f.type === typeFilter)).length
 
   return (
     <div>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
         <span style={{ color: 'var(--green-dim)', fontSize: 12, fontWeight: 'bold' }}>
           EXTRACTED FACTS ({pendingCount} pending)
         </span>
@@ -162,6 +167,18 @@ function ReviewQueue() {
               borderColor: filter === f ? 'var(--green)' : 'var(--border)',
             }}>
               {f.toUpperCase()}
+            </button>
+          ))}
+        </div>
+        <div style={{ display: 'flex', gap: 4, alignItems: 'center' }}>
+          <span style={{ color: 'var(--text-dim)', fontSize: 11 }}>TYPE:</span>
+          {([['interview_mention', 'INTERVIEWS'], ['dcf_input', 'DCF'], ['all', 'ALL']] as const).map(([key, label]) => (
+            <button key={key} onClick={() => setTypeFilter(key)} style={{
+              ...btnStyle('dim'),
+              color: typeFilter === key ? 'var(--amber)' : 'var(--text-dim)',
+              borderColor: typeFilter === key ? 'var(--amber)' : 'var(--border)',
+            }}>
+              {label}
             </button>
           ))}
         </div>
@@ -288,6 +305,12 @@ function WatchlistEditor() {
       <div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
           <span style={{ color: 'var(--green-dim)', fontSize: 11, fontWeight: 'bold' }}>DCF INPUT PATTERNS</span>
+          <button
+            onClick={() => { setWatchlist({ ...watchlist, dcf_enabled: watchlist.dcf_enabled === false }); setDirty(true) }}
+            style={btnStyle(watchlist.dcf_enabled === false ? 'red' : 'green')}
+          >
+            {watchlist.dcf_enabled === false ? '[EXTRACTION: OFF]' : '[EXTRACTION: ON]'}
+          </button>
           <button onClick={addDcf} style={btnStyle('green')}>[ADD]</button>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>

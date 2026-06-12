@@ -129,17 +129,11 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
     .join('\n');
 
   // Load watchlist for targeted fact extraction
-  let watchlistDcf = '';
-  let watchlistInterviews = '';
-  if (fs.existsSync(WATCHLIST_FILE)) {
-    try {
-      const wl = JSON.parse(fs.readFileSync(WATCHLIST_FILE, 'utf-8'));
-      watchlistDcf = (wl.dcf_inputs || []).map(d => `- ${d.watch} → field: \`${d.field}\``).join('\n');
-      watchlistInterviews = (wl.interview_watch || []).map(p => `- ${p}`).join('\n');
-    } catch {
-      // Watchlist not available, proceed without
-    }
-  }
+  const wl = loadWatchlist();
+  const watchlistDcf = wl.dcf_enabled !== false
+    ? (wl.dcf_inputs || []).map(d => `- ${d.watch} → field: \`${d.field}\``).join('\n')
+    : '(DCF extraction is currently paused — do not emit dcf_input facts)';
+  const watchlistInterviews = (wl.interview_watch || []).map(p => `- ${p}`).join('\n');
 
   const pubDate = published ? published.split(' ')[0] : new Date().toISOString().split('T')[0];
   const year = pubDate.slice(0, 4);
@@ -341,6 +335,11 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
 
 // ── Fact Persistence ────────────────────────────────────
 
+function loadWatchlist() {
+  if (!fs.existsSync(WATCHLIST_FILE)) return {};
+  try { return JSON.parse(fs.readFileSync(WATCHLIST_FILE, 'utf-8')); } catch { return {}; }
+}
+
 // Five channels reacting to the same Dimon interview should produce one queue
 // item, not five. Two mentions are duplicates when the person matches and the
 // venues share a meaningful word, within a 14-day extraction window.
@@ -369,8 +368,9 @@ function saveExtractedFacts(keyFacts, transcript) {
     try { existing = JSON.parse(fs.readFileSync(EXTRACTED_FACTS_FILE, 'utf-8')); } catch { existing = []; }
   }
 
+  const dcfEnabled = loadWatchlist().dcf_enabled !== false;
   const newFacts = keyFacts
-    .filter(f => f.type === 'dcf_input' || (f.type === 'interview_mention' && f.person && f.venue))
+    .filter(f => (dcfEnabled && f.type === 'dcf_input') || (f.type === 'interview_mention' && f.person && f.venue))
     .filter(f => {
       if (f.type !== 'interview_mention') return true;
       if (isDuplicateInterviewMention(f, existing)) {
