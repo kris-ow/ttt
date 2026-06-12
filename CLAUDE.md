@@ -43,7 +43,7 @@ Transcript-driven summarization pipeline (transcripts pushed directly to repo by
 - `watchlist.json` — prompt watch patterns: `dcf_inputs` (DCF fact extraction) + `interview_watch` (persons whose new interviews/appearances get flagged as `interview_mention` facts; deduped by person+venue within 14 days in `run.js`)
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
-- `.github/workflows/daily-pipeline.yml` — triggered on `push` to `news/**.txt` (Mac Mini transcript arrival) plus 4x daily safety-net cron (00:15, 07:15, 10:15, 17:45 UTC) + a Monday-only 05:45 UTC cron for the weekly brief: summarize → exec summary (early cron runs only) → weekly brief (Monday early cron only) → commit → deploy (failure → auto-creates GitHub issue)
+- `.github/workflows/daily-pipeline.yml` — triggered on `push` to `news/**.txt` (Mac Mini transcript arrival) plus 4x daily safety-net cron (00:15, 07:15, 10:15, 17:45 UTC) + a Monday-only 05:45 UTC cron for the weekly brief: summarize → exec summary (early cron runs only) → weekly brief (Monday early cron only) → commit → deploy (failure → auto-creates GitHub issue). New `interview_mention` extractions also auto-create a GitHub issue (label `interview-lead`) prompting an admin-console review — user gets it by email via GitHub notifications
 - `.github/workflows/freshness-check.yml` — daily 12:00 UTC: alerts via GitHub issue if unsummarized transcripts remain
 
 Flow: Mac Mini yt-transcripts pushes to `news/` → `run.js` finds transcripts without `_summary.txt` → Claude Batch API → writes summaries → on 00:15/07:15 UTC runs, `exec-summary.js` aggregates the day into the Daily Tesla Brief pinned first in the feed

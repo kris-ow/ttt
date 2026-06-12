@@ -62,11 +62,45 @@ jobs:
 
       # Transcripts are pushed directly to repo by Mac Mini yt-transcripts
       # Step 1: Summarize new transcripts via Claude Batch API
+      - name: Count interview leads (before)
+        id: leads_before
+        run: echo "count=$(node -e "const fs=require('fs');let n=0;try{n=JSON.parse(fs.readFileSync('scripts/pipeline/extracted-facts.json','utf8')).filter(f=>f.type==='interview_mention').length}catch{};console.log(n)")" >> "$GITHUB_OUTPUT"
+
       - name: Run summary pipeline
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PIPELINE_MODE: ${{ inputs.mode || 'batch' }}
         run: node scripts/pipeline/run.js
+
+      # Notify via GitHub issue when this run extracted new interview_mention
+      # facts — they sit in the admin console review queue until approved.
+      # extracted-facts.json is append-only in CI, so slicing the mentions
+      # array at the before-count yields exactly this run's new leads.
+      - name: Notify on new interview leads
+        continue-on-error: true
+        uses: actions/github-script@v9
+        env:
+          LEADS_BEFORE: ${{ steps.leads_before.outputs.count }}
+        with:
+          script: |
+            const fs = require('fs');
+            let facts = [];
+            try { facts = JSON.parse(fs.readFileSync('scripts/pipeline/extracted-facts.json', 'utf8')); } catch {}
+            const mentions = facts.filter(f => f.type === 'interview_mention');
+            const fresh = mentions.slice(Number(process.env.LEADS_BEFORE || 0));
+            if (fresh.length === 0) { console.log('No new interview leads'); return; }
+            const list = fresh.map(f =>
+              `- **${f.person}** @ ${f.venue} (${f.approx_date || 'date unknown'}) — via ${f.channel}, \`${f.source}\`${f.context ? `\n  - ${f.context}` : ''}`
+            ).join('\n');
+            const persons = [...new Set(fresh.map(f => f.person))].join(', ');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Interview lead${fresh.length > 1 ? 's' : ''} awaiting review: ${persons}`,
+              body: `The pipeline extracted ${fresh.length} new interview mention${fresh.length > 1 ? 's' : ''}:\n\n${list}\n\n**Next step:** review in the admin console (\`cd admin && npm run dev\` → REVIEW QUEUE → approve/reject → [PUBLISH]). Approved leads land in \`data/interview-leads.json\` for resolution.\n\nClose this issue once reviewed.`,
+              labels: ['interview-lead'],
+            });
+            console.log(`Created issue for ${fresh.length} new lead(s)`);
 
       # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
       # 00:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
