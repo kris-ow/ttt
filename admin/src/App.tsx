@@ -9,14 +9,18 @@ interface WatchlistDcf {
 
 interface Watchlist {
   dcf_inputs: WatchlistDcf[]
+  interview_watch?: string[]
 }
 
 interface ExtractedFact {
   fact: string
   category: string
-  type: 'dcf_input' | 'general'
+  type: 'dcf_input' | 'interview_mention' | 'general'
   field?: string
   value?: number
+  person?: string
+  venue?: string
+  approx_date?: string
   context?: string
   source: string
   channel: string
@@ -177,11 +181,14 @@ function ReviewQueue() {
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ color: 'var(--text-bright)', fontSize: 12, marginBottom: 4 }}>{fact.fact}</div>
                     <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', fontSize: 11 }}>
-                      <span style={{ color: fact.type === 'dcf_input' ? 'var(--green-dim)' : 'var(--text-dim)' }}>
+                      <span style={{ color: fact.type === 'dcf_input' ? 'var(--green-dim)' : fact.type === 'interview_mention' ? 'var(--amber)' : 'var(--text-dim)' }}>
                         [{fact.type}]
                       </span>
                       {fact.field && <span style={{ color: 'var(--text-dim)' }}>field: {fact.field}</span>}
                       {fact.value != null && <span style={{ color: 'var(--text-dim)' }}>value: {fact.value}</span>}
+                      {fact.person && <span style={{ color: 'var(--text-dim)' }}>person: {fact.person}</span>}
+                      {fact.venue && <span style={{ color: 'var(--text-dim)' }}>venue: {fact.venue}</span>}
+                      {fact.approx_date && <span style={{ color: 'var(--text-dim)' }}>date: {fact.approx_date}</span>}
                       <span style={{ color: 'var(--text-dim)' }}>{fact.channel}</span>
                       <span style={{ color: 'var(--text-dim)' }}>{fact.source}</span>
                     </div>
@@ -224,10 +231,10 @@ function inputStyle(width?: number): React.CSSProperties {
 // ── Watchlist Editor ────────────────────────────────────
 
 function WatchlistEditor() {
-  const [watchlist, setWatchlist] = useState<Watchlist>({ dcf_inputs: [] })
+  const [watchlist, setWatchlist] = useState<Watchlist>({ dcf_inputs: [], interview_watch: [] })
   const [dirty, setDirty] = useState(false)
 
-  useEffect(() => { api<Watchlist>('/watchlist').then(setWatchlist) }, [])
+  useEffect(() => { api<Watchlist>('/watchlist').then(w => setWatchlist({ interview_watch: [], ...w })) }, [])
 
   const save = async () => {
     await api('/watchlist', 'PUT', watchlist)
@@ -249,6 +256,25 @@ function WatchlistEditor() {
 
   const addDcf = () => {
     setWatchlist({ ...watchlist, dcf_inputs: [...watchlist.dcf_inputs, { watch: '', field: '' }] })
+    setDirty(true)
+  }
+
+  const persons = watchlist.interview_watch || []
+
+  const updatePerson = (idx: number, value: string) => {
+    const next = [...persons]
+    next[idx] = value
+    setWatchlist({ ...watchlist, interview_watch: next })
+    setDirty(true)
+  }
+
+  const removePerson = (idx: number) => {
+    setWatchlist({ ...watchlist, interview_watch: persons.filter((_, i) => i !== idx) })
+    setDirty(true)
+  }
+
+  const addPerson = () => {
+    setWatchlist({ ...watchlist, interview_watch: [...persons, ''] })
     setDirty(true)
   }
 
@@ -280,6 +306,26 @@ function WatchlistEditor() {
                 style={inputStyle(160)}
               />
               <button onClick={() => removeDcf(i)} style={btnStyle('red')}>[X]</button>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ marginTop: 20 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+          <span style={{ color: 'var(--green-dim)', fontSize: 11, fontWeight: 'bold' }}>INTERVIEW WATCH (PERSONS)</span>
+          <button onClick={addPerson} style={btnStyle('green')}>[ADD]</button>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+          {persons.map((p, i) => (
+            <div key={i} style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+              <input
+                value={p}
+                onChange={e => updatePerson(i, e.target.value)}
+                placeholder="Person name (optionally with role)"
+                style={{ ...inputStyle(0), flex: 1 }}
+              />
+              <button onClick={() => removePerson(i)} style={btnStyle('red')}>[X]</button>
             </div>
           ))}
         </div>

@@ -130,10 +130,12 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
 
   // Load watchlist for targeted fact extraction
   let watchlistDcf = '';
+  let watchlistInterviews = '';
   if (fs.existsSync(WATCHLIST_FILE)) {
     try {
       const wl = JSON.parse(fs.readFileSync(WATCHLIST_FILE, 'utf-8'));
       watchlistDcf = (wl.dcf_inputs || []).map(d => `- ${d.watch} → field: \`${d.field}\``).join('\n');
+      watchlistInterviews = (wl.interview_watch || []).map(p => `- ${p}`).join('\n');
     } catch {
       // Watchlist not available, proceed without
     }
@@ -144,8 +146,10 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
 
   template = template.replace('{{CORRECTIONS}}', corrStr);
   template = template.replace('{{WATCHLIST_DCF}}', watchlistDcf);
+  template = template.replace('{{WATCHLIST_INTERVIEWS}}', watchlistInterviews);
   template = template.replace('{{YEAR}}', year);
-  template = template.replace('{{PUBLISH_DATE}}', pubDate);
+  // {{PUBLISH_DATE}} appears in both the Interview Mentions and Date Context sections
+  template = template.replaceAll('{{PUBLISH_DATE}}', pubDate);
   template = template.replace('{{CHANNEL}}', channel);
   template = template.replace('{{TITLE}}', title);
   template = template.replace('{{AUTHOR}}', author);
@@ -337,6 +341,26 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
 
 // ── Fact Persistence ────────────────────────────────────
 
+// Five channels reacting to the same Dimon interview should produce one queue
+// item, not five. Two mentions are duplicates when the person matches and the
+// venues share a meaningful word, within a 14-day extraction window.
+function venueTokens(venue) {
+  const STOP = new Set(['the', 'and', 'with', 'show', 'podcast', 'interview', 'event', 'summit', 'live']);
+  return String(venue || '').toLowerCase().split(/[^a-z0-9]+/).filter(t => t.length >= 4 && !STOP.has(t));
+}
+
+function isDuplicateInterviewMention(fact, existing) {
+  const cutoff = Date.now() - 14 * 24 * 3600 * 1000;
+  const tokens = new Set(venueTokens(fact.venue));
+  const person = String(fact.person || '').toLowerCase();
+  return existing.some(e =>
+    e.type === 'interview_mention' &&
+    new Date(e.extractedAt).getTime() > cutoff &&
+    String(e.person || '').toLowerCase() === person &&
+    venueTokens(e.venue).some(t => tokens.has(t))
+  );
+}
+
 function saveExtractedFacts(keyFacts, transcript) {
   if (!keyFacts || keyFacts.length === 0) return;
 
@@ -346,7 +370,15 @@ function saveExtractedFacts(keyFacts, transcript) {
   }
 
   const newFacts = keyFacts
-    .filter(f => f.type === 'dcf_input')
+    .filter(f => f.type === 'dcf_input' || (f.type === 'interview_mention' && f.person && f.venue))
+    .filter(f => {
+      if (f.type !== 'interview_mention') return true;
+      if (isDuplicateInterviewMention(f, existing)) {
+        console.log(`  Skipping duplicate interview mention: ${f.person} @ ${f.venue}`);
+        return false;
+      }
+      return true;
+    })
     .map(f => ({
       ...f,
       source: transcript.summaryFilename,

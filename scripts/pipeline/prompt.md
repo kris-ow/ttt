@@ -25,6 +25,12 @@ While summarizing, flag any facts matching these priorities in the `<key_facts>`
 Watch for specific numbers or estimates related to:
 {{WATCHLIST_DCF}}
 
+### Interview Mentions
+Watch for references to a NEW interview or public appearance (within ~2 weeks of {{PUBLISH_DATE}}) by any of these people:
+{{WATCHLIST_INTERVIEWS}}
+
+Flag only appearances OUTSIDE this content itself: podcasts, summit or conference panels, TV or print interviews, investor events. Do NOT flag: old or retrospective interviews, vague references with no identifiable venue or host ("Elon said recently"), Tesla earnings calls, or Tesla's own scripted events.
+
 ## Date Context
 
 The current year is {{YEAR}}. When the transcript uses relative timeframes — forward ("this year", "next year", "Q2", "next quarter") or backward ("last year", "last month", "X months ago", "yesterday", "last peak") — resolve them against the video's publish date ({{PUBLISH_DATE}}).
@@ -71,12 +77,15 @@ Notable quotes and data:
 [JSON array of objects. Each object has:
   "fact": concise factual statement with specific data,
   "category": one of the categories above,
-  "type": "dcf_input" if it matches a DCF Model Inputs watch item, or "general" otherwise,
+  "type": "dcf_input" if it matches a DCF Model Inputs watch item, "interview_mention" if it matches the Interview Mentions watch list, or "general" otherwise,
   "field": (only for dcf_input type) the DCF field name from the watch list,
   "value": (only for dcf_input type) the numeric value extracted, if applicable,
+  "person": (only for interview_mention type) who gave the interview,
+  "venue": (only for interview_mention type) the show, host, or event name,
+  "approx_date": (only for interview_mention type) the interview's date if stated or inferable, formatted YYYY-MM-DD, else "unknown",
   "context": briefly explain why this matters or what changed
 ]
-Only include facts with specific data points — skip vague or speculative statements.
+Only include facts with specific data points — skip vague or speculative statements. For interview_mention entries the person + identifiable venue IS the data point; no numeric value is required.
 </key_facts>
 
 ## Transcript

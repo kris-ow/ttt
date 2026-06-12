@@ -37,7 +37,8 @@ Transcript-driven summarization pipeline (transcripts pushed directly to repo by
 - `reddit-weekly.js` — deterministic formatter (no LLM) that converts the latest Weekly Brief into a copy-paste Reddit post (`data/reddit-weekly/YYYY-MM-DD.md`, target r/teslainvestorsclub). Reorders to Brief-first (TTT link top-of-fold), de-links the tracker source, single outbound link. Runs right after the weekly brief on the Monday cron. If a transform's pattern doesn't match (source format drift), it warns loudly: `!! WARNING` lines in the output file header + `::warning::` GitHub Actions annotation.
 - `prompt-weekly.md` — prompt for the Weekly Brief (Brief + category sections with editorial trim + Bear Case of the Week)
 - `config.js` — channels, corrections dictionary, categories, pricing
-- `prompt.md` — prompt template with placeholder slots
+- `prompt.md` — prompt template with placeholder slots (also `prompt-xdaily.md`, `prompt-article.md`)
+- `watchlist.json` — prompt watch patterns: `dcf_inputs` (DCF fact extraction) + `interview_watch` (persons whose new interviews/appearances get flagged as `interview_mention` facts; deduped by person+venue within 14 days in `run.js`)
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
 - `.github/workflows/daily-pipeline.yml` — triggered on `push` to `news/**.txt` (Mac Mini transcript arrival) plus 4x daily safety-net cron (00:15, 07:15, 10:15, 17:45 UTC) + a Monday-only 05:45 UTC cron for the weekly brief: summarize → exec summary (early cron runs only) → weekly brief (Monday early cron only) → commit → deploy (failure → auto-creates GitHub issue)
@@ -78,7 +79,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 - `scripts/fetch-merger-odds.js` — Polymarket merger-odds fetcher → `data/merger-odds.json` (manual for now)
 - `scripts/build-kb.js` — rebuild `knowledge-base.json` from quarterly metrics + composite trackers
 - `scripts/extract-quarterly.py` — manual quarterly-metrics extractor from shareholder PDFs
-- `admin/` — local-only Express + React console with two tabs: REVIEW QUEUE (approve/reject extracted `dcf_input` facts) and WATCHLIST (edit DCF input watch patterns). Approved facts auto-propagate to `dcf-robotaxi-facts.json`.
+- `admin/` — local-only Express + React console with two tabs: REVIEW QUEUE (approve/reject extracted `dcf_input` + `interview_mention` facts) and WATCHLIST (edit DCF input watch patterns + interview watch persons). Approved `dcf_input` facts auto-propagate to `dcf-robotaxi-facts.json`; approved `interview_mention` facts auto-propagate to `data/interview-leads.json` (status `to_resolve` — resolve to a URL, then fetch via Mac Mini; Interview Archive UI pending).
 - `.env` — VITE_STOCK_PROXY_URL (optional, defaults to wss://api.theteslathesis.com)
 - `the-tesla-thesis-40967df2aae1.json` — service account key (not in git)
 
@@ -109,11 +110,13 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 | DCF facts review | `admin/` console reviews `extracted-facts.json` → approved `dcf_input` facts auto-propagate to `src/data/dcf-robotaxi-facts.json` | Run locally as facts accumulate |
 | Merger odds | `scripts/fetch-merger-odds.js` → `data/merger-odds.json` (Polymarket Gamma API) | Manual until CI cron is wired (planned: fleet-scrape cadence) |
 | URL index gaps | `news/transcripts_url_index.json` | Some early transcripts (pre-URL-tracking) have no video URL |
+| Interview leads | approved `interview_mention` facts → `data/interview-leads.json` | Resolve lead to YouTube URL, fetch transcript via Mac Mini one-off mode (not yet built) |
 
 ### Not yet built
 | Content | Notes |
 |---|---|
 | EV / Optimus / Energy / AI compute DCF models | Planned — Robotaxi DCF is the template |
+| Interview Archive | Detection layer LIVE (interview_mention extraction → admin queue → interview-leads.json). Pending: Mac Mini one-off URL fetch, interview summary prompt, Archive UI section |
 
 ## Future / Known Limitations
 - Stock price via server-side proxy (api.theteslathesis.com) — needs dynamic DNS for ISP IP changes

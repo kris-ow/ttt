@@ -12,6 +12,35 @@ const ROOT = path.resolve('..');
 const WATCHLIST = path.join(ROOT, 'scripts/pipeline/watchlist.json');
 const EXTRACTED = path.join(ROOT, 'scripts/pipeline/extracted-facts.json');
 const DCF_FACTS = path.join(ROOT, 'src/data/dcf-robotaxi-facts.json');
+const INTERVIEW_LEADS = path.join(ROOT, 'data/interview-leads.json');
+
+// Approved interview_mention facts become resolution to-dos: find the
+// canonical video URL, then fetch the transcript via Mac Mini.
+function propagateInterviewLeads(newlyApproved) {
+  if (newlyApproved.length === 0) return;
+  const leads = readJSON(INTERVIEW_LEADS);
+  let added = 0;
+  for (const f of newlyApproved) {
+    const exists = leads.some(l => l.fact === f.fact);
+    if (!exists) {
+      leads.push({
+        person: f.person,
+        venue: f.venue,
+        approx_date: f.approx_date || 'unknown',
+        fact: f.fact,
+        context: f.context || '',
+        source: f.source,
+        channel: f.channel,
+        approvedAt: new Date().toISOString(),
+        status: 'to_resolve',
+        url: null,
+      });
+      added++;
+    }
+  }
+  if (added > 0) writeJSON(INTERVIEW_LEADS, leads);
+  return added;
+}
 
 function readJSON(filepath) {
   if (!fs.existsSync(filepath)) return [];
@@ -49,6 +78,11 @@ app.put('/api/facts', (req, res) => {
 
   writeJSON(EXTRACTED, req.body);
 
+  // Propagate newly approved interview_mention facts to interview-leads.json
+  propagateInterviewLeads(req.body.filter(
+    f => f.status === 'approved' && f.type === 'interview_mention' && !prevApproved.has(f.fact)
+  ));
+
   // Propagate newly approved dcf_input facts to dcf-robotaxi-facts.json
   const newlyApproved = req.body.filter(
     f => f.status === 'approved' && f.type === 'dcf_input' && f.field && !prevApproved.has(f.fact)
@@ -80,6 +114,7 @@ app.post('/api/publish', (req, res) => {
       'scripts/pipeline/watchlist.json',
       'scripts/pipeline/extracted-facts.json',
       'src/data/dcf-robotaxi-facts.json',
+      'data/interview-leads.json',
     ].filter(f => fs.existsSync(path.join(ROOT, f)));
 
     if (filesToAdd.length === 0) {
@@ -119,6 +154,11 @@ app.get('/api/status', (_req, res) => {
 // ── Startup sync: propagate any approved dcf_input facts missing from DCF file
 function syncApprovedFacts() {
   const facts = readJSON(EXTRACTED);
+
+  const approvedInterviews = facts.filter(f => f.status === 'approved' && f.type === 'interview_mention');
+  const leadsAdded = propagateInterviewLeads(approvedInterviews);
+  if (leadsAdded) console.log(`[sync] Propagated ${leadsAdded} interview lead(s) to interview-leads.json`);
+
   const approved = facts.filter(f => f.status === 'approved' && f.type === 'dcf_input' && f.field);
   if (approved.length === 0) return;
 
