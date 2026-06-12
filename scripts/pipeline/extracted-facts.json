@@ -10057,5 +10057,41 @@
     "channel": "sawyermerritt",
     "extractedAt": "2026-06-12T00:02:56.806Z",
     "status": "pending"
+  },
+  {
+    "fact": "Tesla applied for a Nevada autonomous vehicle network permit requesting up to 5,000 robotaxis during the first 12 months after the permit is granted, filed on or around June 9, 2026",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 5000,
+    "context": "First 12-month permitted fleet size in Nevada alone; panelists argue this is not an arbitrarily inflated number given regulatory risk of overstating, making it a credible near-term deployment signal",
+    "source": "20260611_brighterwithherbert_02_Will_Spcx_And_Tsla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-12T04:03:10.112Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jeff predicts major robotaxi deployments across multiple cities within the next two to six weeks (from June 11, 2026), with possible high-profile timing around FIFA World Cup events in U.S. cities",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "new_vehicles_per_year",
+    "value": null,
+    "context": "No specific annual vehicle figure given, but the Nevada permit for 5,000 in 12 months and Jeff's deployment prediction of 'tens of thousands' of Cybercabs between now and FSD v15 suggest a ramp trajectory; qualitative only",
+    "source": "20260611_brighterwithherbert_02_Will_Spcx_And_Tsla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-12T04:03:10.112Z",
+    "status": "pending"
+  },
+  {
+    "fact": "Jeff characterizes 69 unsupervised Cybercabs currently operating as a 'prototypy' phase, with Elon's true target being hundreds of thousands to eventually millions of vehicles to alter household transportation decisions",
+    "category": "Robotaxi",
+    "type": "dcf_input",
+    "field": "fleet_size",
+    "value": 69,
+    "context": "Current unsupervised fleet size as described by Jeff; aligns with RobotaxiTracker.com canonical unsupervised count of 39 as of 2026-05-09 — Jeff's figure of 69 is materially higher, suggesting it may reflect a more recent or broader count",
+    "source": "20260611_brighterwithherbert_02_Will_Spcx_And_Tsla_summary.txt",
+    "channel": "brighterwithherbert",
+    "extractedAt": "2026-06-12T04:03:10.112Z",
+    "status": "pending"
   }
 ]
