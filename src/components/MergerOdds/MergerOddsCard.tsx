@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { track } from '../../analytics'
 
 // In dev, Vite serves the project root, so the freshly fetched local file works
 // before it's ever pushed; in prod the card reads the committed copy on master.
@@ -86,7 +87,7 @@ export function MergerOddsCard({ className, bare }: { className?: string; bare?:
       {!data && !error && <div className="text-text-dim">LOADING...</div>}
       {data && market && (
         <>
-          <div className="text-xs text-text-bright">OFFICIAL ANNOUNCEMENT {market.label}</div>
+          <div className="text-xs text-text-bright">TSLA-SPACEX MERGER ANNOUNCED {market.label}</div>
           <div className="my-auto py-3">
             <div className="grid grid-cols-4 gap-2 text-xs text-text-dim pb-0.5">
               <span className="text-center">NOW</span>
@@ -111,6 +112,7 @@ export function MergerOddsCard({ className, bare }: { className?: string; bare?:
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green"
+                onClick={() => track('Source Link', { type: 'polymarket' })}
               >
                 POLYMARKET
               </a>

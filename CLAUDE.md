@@ -10,7 +10,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 
 ## Architecture
 - Everything lives in `src/App.tsx` — single-page, no routing
-- Two visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts + merger odds), TSLA_DATA (quarterly metrics). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
+- Three visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts + merger odds), INTERVIEWS (Interview Archive — primary-source summaries with tracked claims; also reachable via `#interviews`), TSLA_DATA (quarterly metrics). SUPPORT_TTT header button removed 2026-06-12 (clicks never converted to donations). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
 - Stock price: stock-proxy on Mac Mini (Finnhub upstream) → `wss://api.theteslathesis.com`
 - Stock chart: Lightweight Charts v5, embedded inline in StockWidget (no popup), Yahoo Finance via stock-proxy `/chart` endpoint
 - Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
@@ -21,7 +21,9 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 - Monospace font everywhere, green highlights on dark background
 - Full words always (OPEN, PREV CLOSE, HIGH, LOW) — never abbreviate
 - Stock price + robotaxi counts + merger odds only on Daily Feed tab
-- Popups use blurred semi-transparent overlay (bg-bg/60 backdrop-blur-md)
+- Popups use blurred semi-transparent overlay (bg-bg/60 backdrop-blur-md); popups reachable from multiple mount points render via createPortal to body
+- Amber (#ffb000) marks interview/primary-source content (feed teaser rows, admin queue badge); green stays for live/interactive
+- Feed teaser rows open the interview popup in place (never switch tabs from a feed click)
 
 ## Stock Price Logic
 - Pre-market: show last close (dimmed) immediately, switch to live when WebSocket delivers
@@ -72,6 +74,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 - `src/types.ts` — Article/NewsData types, CHANNEL_META
 - `src/index.css` — Tailwind v4 theme config
 - `scripts/build-news.js` — parse summaries into news.json
+- `scripts/build-interviews.js` — parse `interviews/*.txt` into `src/data/interviews.json` (INTERVIEWS tab); runs in `npm run build` before vite
 - `scripts/pipeline/` — automated summary pipeline (see above)
 - `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt` (gitignored — derived from tracked `costs.json`, regenerate locally)
 - `scripts/pipeline/latency-report.js` — `npm run latency [days=7]`: per-video YT-publish → summary latency report; writes baseline TSV to `data/latency/YYYY-MM-DD.tsv`
@@ -116,7 +119,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 | Content | Notes |
 |---|---|
 | EV / Optimus / Energy / AI compute DCF models | Planned — Robotaxi DCF is the template |
-| Interview Archive | Detection LIVE (interview_mention extraction → admin queue → interview-leads.json) + summarization LIVE (`interview-summary.js` + `prompt-interview.md` → `interviews/` dir with structured `<claims>` blocks; first entry 2026-06-08 Musk SpaceX update). Original-source attribution: X originals credited via `Original:`/`Mirror:` header. Pending: Mac Mini one-off URL fetch, Archive UI section, claims tracker |
+| Interview Archive | Detection LIVE (interview_mention extraction → admin queue → interview-leads.json) + summarization LIVE (`interview-summary.js` + `prompt-interview.md` → `interviews/` dir with structured `<claims>` blocks; first entry 2026-06-08 Musk SpaceX update) + UI LIVE (INTERVIEWS tab: list → detail popup with summary + TRACKED CLAIMS; amber `[INTERVIEW]` teaser row in Daily Feed on the `added` date opens the same popup in place). Original-source attribution: only the original (X) link is rendered; YouTube mirror is data-only fallback. Pending: Mac Mini one-off URL fetch, claims tracker (cross-interview) |
 
 ## Future / Known Limitations
 - Stock price via server-side proxy (api.theteslathesis.com) — needs dynamic DNS for ISP IP changes

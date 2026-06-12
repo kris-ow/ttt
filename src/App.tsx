@@ -10,17 +10,20 @@ import { StockWidget } from './components/Stock/StockWidget'
 import { useStockQuote } from './components/Stock/useStockQuote'
 import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
 import { MergerOddsCard } from './components/MergerOdds/MergerOddsCard'
+import { InterviewSection } from './components/Interviews/InterviewSection'
 
 const data = newsData as NewsData
 
 const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
+const INTERVIEWS_BADGE_UNTIL = new Date('2026-06-26T23:59:59Z')
 
 const MOBILE_TILE_TABS = ['stock', 'robotaxi', 'merger'] as const
 type MobileTileTab = (typeof MOBILE_TILE_TABS)[number]
 
-type Section = 'feed' | 'data' | 'valuations'
+type Section = 'feed' | 'interviews' | 'data' | 'valuations'
 const SECTION_LABELS: Record<Section, string> = {
   feed: 'Daily Feed',
+  interviews: 'Interviews',
   data: 'TSLA_DATA',
   valuations: 'Valuations',
 }
@@ -30,12 +33,19 @@ export default function App() {
     if (typeof window !== 'undefined' && window.location.hash === '#valuations') {
       return 'valuations'
     }
+    if (typeof window !== 'undefined' && window.location.hash === '#interviews') {
+      return 'interviews'
+    }
     return 'feed'
   })
   const [mountedTabs, setMountedTabs] = useState<Set<Section>>(() => new Set([activeSection]))
   const [dataSeen, setDataSeen] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false
     return window.localStorage.getItem('ttt-data-seen') === 'true'
+  })
+  const [interviewsSeen, setInterviewsSeen] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false
+    return window.localStorage.getItem('ttt-interviews-seen') === 'true'
   })
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
@@ -83,6 +93,13 @@ export default function App() {
       })
       track('Data View')
     }
+    if (key === 'interviews') {
+      setInterviewsSeen(prev => {
+        if (!prev) window.localStorage.setItem('ttt-interviews-seen', 'true')
+        return true
+      })
+      track('Interviews View')
+    }
     track('Tab Switch', { tab: SECTION_LABELS[key] })
   }, [])
 
@@ -126,6 +143,7 @@ export default function App() {
             <nav className="flex items-center gap-2 w-full sm:w-auto">
               {([
                 ['feed', 'DAILY_FEED'],
+                ['interviews', 'INTERVIEWS'],
                 ['data', 'TSLA_DATA'],
               ] as const).map(([key, label]) => (
                 <button
@@ -141,17 +159,11 @@ export default function App() {
                   {key === 'data' && !dataSeen && activeSection !== 'data' && new Date() < DATA_BADGE_UNTIL && (
                     <span className="ml-1 text-green text-[10px]">[NEW]</span>
                   )}
+                  {key === 'interviews' && !interviewsSeen && activeSection !== 'interviews' && new Date() < INTERVIEWS_BADGE_UNTIL && (
+                    <span className="ml-1 text-green text-[10px]">[NEW]</span>
+                  )}
                 </button>
               ))}
-              <a
-                href="https://buymeacoffee.com/theteslathesis"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => track('Support Click', { location: 'header' })}
-                className="flex-1 sm:flex-none sm:min-w-[120px] text-center px-3 py-1.5 text-xs font-bold whitespace-nowrap cursor-pointer border border-green text-green hover:bg-green hover:text-bg transition-colors"
-              >
-                SUPPORT_TTT
-              </a>
             </nav>
           </div>
         </div>
@@ -178,7 +190,7 @@ export default function App() {
               </div>
               <div className="flex flex-col sm:col-span-2 lg:col-span-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">TSLA-SPACEX MERGER ODDS</h3>
+                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">MERGER ODDS</h3>
                   <span className="flex-1 border-t border-dashed border-text-dim" />
                 </div>
                 <MergerOddsCard className="flex-1" />
@@ -256,6 +268,11 @@ export default function App() {
               </div>
             </div>
             <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
+          </div>
+        )}
+        {mountedTabs.has('interviews') && (
+          <div className={activeSection === 'interviews' ? '' : 'hidden'}>
+            <InterviewSection />
           </div>
         )}
         {mountedTabs.has('data') && (

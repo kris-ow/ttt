@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/build-news.js && tsc -b && vite build",
+    "build": "node scripts/build-news.js && node scripts/build-interviews.js && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "pipeline": "node scripts/pipeline/run.js",
     "build-news": "node scripts/build-news.js",
+    "build-interviews": "node scripts/build-interviews.js",
     "costs": "node scripts/pipeline/costs-report.js",
     "latency": "node scripts/pipeline/latency-report.js"
   },
