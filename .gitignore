@@ -37,6 +37,9 @@ __pycache__/
 /data/latency/*
 !/data/latency/*.tsv
 
+# Generated reports (regenerate via npm run costs)
+scripts/pipeline/costs-summary.txt
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

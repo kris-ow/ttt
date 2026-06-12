@@ -72,7 +72,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 - `src/index.css` — Tailwind v4 theme config
 - `scripts/build-news.js` — parse summaries into news.json
 - `scripts/pipeline/` — automated summary pipeline (see above)
-- `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt`
+- `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt` (gitignored — derived from tracked `costs.json`, regenerate locally)
 - `scripts/pipeline/latency-report.js` — `npm run latency [days=7]`: per-video YT-publish → summary latency report; writes baseline TSV to `data/latency/YYYY-MM-DD.tsv`
 - `scripts/scrape-tracker.js` — Robotaxi tracker scraper (fleet-scrape.yml)
 - `scripts/fetch-merger-odds.js` — Polymarket merger-odds fetcher → `data/merger-odds.json` (manual for now)
