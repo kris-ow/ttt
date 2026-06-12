@@ -110,13 +110,13 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 | DCF facts review | `admin/` console reviews `extracted-facts.json` → approved `dcf_input` facts auto-propagate to `src/data/dcf-robotaxi-facts.json` | Run locally as facts accumulate |
 | Merger odds | `scripts/fetch-merger-odds.js` → `data/merger-odds.json` (Polymarket Gamma API) | Manual until CI cron is wired (planned: fleet-scrape cadence) |
 | URL index gaps | `news/transcripts_url_index.json` | Some early transcripts (pre-URL-tracking) have no video URL |
-| Interview leads | approved `interview_mention` facts → `data/interview-leads.json` | Resolve lead to YouTube URL, fetch transcript via Mac Mini one-off mode (not yet built) |
+| Interview leads | approved `interview_mention` facts → `data/interview-leads.json` | Resolve lead to URL → fetch transcript (Mac Mini one-off mode not yet built; tracked-channel mirrors already land in `news/`) → `node scripts/pipeline/interview-summary.js <transcript> --person ... [--original-url ...]` writes `interviews/YYYYMMDD_<person>_<venue>_interview.txt` |
 
 ### Not yet built
 | Content | Notes |
 |---|---|
 | EV / Optimus / Energy / AI compute DCF models | Planned — Robotaxi DCF is the template |
-| Interview Archive | Detection layer LIVE (interview_mention extraction → admin queue → interview-leads.json). Pending: Mac Mini one-off URL fetch, interview summary prompt, Archive UI section |
+| Interview Archive | Detection LIVE (interview_mention extraction → admin queue → interview-leads.json) + summarization LIVE (`interview-summary.js` + `prompt-interview.md` → `interviews/` dir with structured `<claims>` blocks; first entry 2026-06-08 Musk SpaceX update). Original-source attribution: X originals credited via `Original:`/`Mirror:` header. Pending: Mac Mini one-off URL fetch, Archive UI section, claims tracker |
 
 ## Future / Known Limitations
 - Stock price via server-side proxy (api.theteslathesis.com) — needs dynamic DNS for ISP IP changes
