@@ -30,11 +30,16 @@ jobs:
       - name: Scrape tracker (operational + unsupervised)
         run: node scripts/scrape-tracker.js
 
+      # Polymarket outage shouldn't block tracker updates; card flags stale data after 24h.
+      - name: Fetch merger odds
+        run: node scripts/fetch-merger-odds.js
+        continue-on-error: true
+
       - name: Commit changes
         run: |
           git config user.name "TTT Pipeline Bot"
           git config user.email "pipeline@theteslathesis.com"
-          git add src/data/knowledge-base.json data/counts.json 2>/dev/null || true
+          git add src/data/knowledge-base.json data/counts.json data/merger-odds.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No tracker changes to commit"
           else

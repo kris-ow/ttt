@@ -9,10 +9,14 @@ import { DataSection } from './components/Data/DataSection'
 import { StockWidget } from './components/Stock/StockWidget'
 import { useStockQuote } from './components/Stock/useStockQuote'
 import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
+import { MergerOddsCard } from './components/MergerOdds/MergerOddsCard'
 
 const data = newsData as NewsData
 
 const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
+
+const MOBILE_TILE_TABS = ['stock', 'robotaxi', 'merger'] as const
+type MobileTileTab = (typeof MOBILE_TILE_TABS)[number]
 
 type Section = 'feed' | 'data' | 'valuations'
 const SECTION_LABELS: Record<Section, string> = {
@@ -36,7 +40,7 @@ export default function App() {
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
-  const [mobileStockTab, setMobileStockTab] = useState<'stock' | 'robotaxi'>('stock')
+  const [mobileStockTab, setMobileStockTab] = useState<MobileTileTab>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
   const swipeRef = useRef<HTMLDivElement>(null)
 
@@ -45,13 +49,13 @@ export default function App() {
     const { scrollLeft, clientWidth } = swipeRef.current
     if (clientWidth === 0) return
     const idx = Math.round(scrollLeft / clientWidth)
-    const next: 'stock' | 'robotaxi' = idx === 0 ? 'stock' : 'robotaxi'
+    const next = MOBILE_TILE_TABS[Math.min(Math.max(idx, 0), MOBILE_TILE_TABS.length - 1)]
     setMobileStockTab(prev => prev === next ? prev : next)
   }, [])
 
-  const scrollToMobileTab = useCallback((key: 'stock' | 'robotaxi') => {
+  const scrollToMobileTab = useCallback((key: MobileTileTab) => {
     if (!swipeRef.current) return
-    const idx = key === 'stock' ? 0 : 1
+    const idx = MOBILE_TILE_TABS.indexOf(key)
     swipeRef.current.scrollTo({ left: idx * swipeRef.current.clientWidth, behavior: 'smooth' })
   }, [])
   const channels = useMemo(() => {
@@ -157,7 +161,7 @@ export default function App() {
         {mountedTabs.has('feed') && (
           <div className={activeSection === 'feed' ? '' : 'hidden'}>
             {/* Desktop: side by side */}
-            <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
+            <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               <div className="flex flex-col">
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">NASDAQ:TSLA</h3>
@@ -172,12 +176,19 @@ export default function App() {
                 </div>
                 <RobotaxiCounts className="flex-1" />
               </div>
+              <div className="flex flex-col sm:col-span-2 lg:col-span-1">
+                <div className="flex items-center gap-2 mb-2">
+                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">TSLA-SPACEX MERGER ODDS</h3>
+                  <span className="flex-1 border-t border-dashed border-text-dim" />
+                </div>
+                <MergerOddsCard className="flex-1" />
+              </div>
             </div>
 
             {/* Mobile: tabbed + swipeable */}
             <div className="sm:hidden mb-6">
-              <div className="flex gap-1 mb-2">
-                {([['stock', 'NASDAQ:TSLA'], ['robotaxi', 'UNSUPERVISED ROBOTAXIS']] as const).map(([key, label]) => (
+              <div className="flex flex-wrap gap-1 mb-2">
+                {([['stock', 'NASDAQ:TSLA'], ['robotaxi', 'ROBOTAXIS'], ['merger', 'MERGER ODDS']] as const).map(([key, label]) => (
                   <button
                     key={key}
                     onClick={() => scrollToMobileTab(key)}
@@ -201,6 +212,9 @@ export default function App() {
                   </div>
                   <div className="snap-start shrink-0 w-full">
                     <RobotaxiCounts bare />
+                  </div>
+                  <div className="snap-start shrink-0 w-full">
+                    <MergerOddsCard bare className="h-full" />
                   </div>
                 </div>
               </div>

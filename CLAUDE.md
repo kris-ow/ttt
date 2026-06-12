@@ -10,7 +10,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 
 ## Architecture
 - Everything lives in `src/App.tsx` — single-page, no routing
-- Two visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts), TSLA_DATA (quarterly metrics). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
+- Two visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts + merger odds), TSLA_DATA (quarterly metrics). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
 - Stock price: stock-proxy on Mac Mini (Finnhub upstream) → `wss://api.theteslathesis.com`
 - Stock chart: Lightweight Charts v5, embedded inline in StockWidget (no popup), Yahoo Finance via stock-proxy `/chart` endpoint
 - Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
@@ -20,7 +20,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 - Sharp corners only, no rounded borders
 - Monospace font everywhere, green highlights on dark background
 - Full words always (OPEN, PREV CLOSE, HIGH, LOW) — never abbreviate
-- Stock price + robotaxi counts only on Daily Feed tab
+- Stock price + robotaxi counts + merger odds only on Daily Feed tab
 - Popups use blurred semi-transparent overlay (bg-bg/60 backdrop-blur-md)
 
 ## Stock Price Logic
@@ -56,6 +56,9 @@ Scrapes RobotaxiTracker.com via Playwright/Chromium and writes:
 - Triggers `scripts/build-kb.js` to rebuild metric/composite areas from `src/data/quarterly-metrics.json` when KB changes
 - `.github/workflows/fleet-scrape.yml` — 3x daily at 03:00, 11:00, 19:00 UTC
 
+## Merger Odds (`scripts/fetch-merger-odds.js`)
+Fetches SpaceX-Tesla merger announcement odds from Polymarket's public Gamma API (plain GET, no auth, no Playwright) and writes `data/merger-odds.json`. Rendered by `src/components/MergerOdds/MergerOddsCard.tsx` as the third Daily Feed tile (desktop: 3rd column at `lg`, full-width second row at `sm`; mobile: 3rd swipe panel). The JSON keeps all deadline markets, but the card shows only the farthest-deadline market with ≥$1k traded volume (currently Dec 31 2026): deadline line + single NOW/1D/7D/30D row; data marked stale after 24h. Currently run manually; CI cron wiring pending (planned: fleet-scrape cadence).
+
 ## Quarterly Metrics (`scripts/extract-quarterly.py`)
 Manual Python script run each quarter against Tesla shareholder deck PDFs in `data/quarterly/`. Produces `src/data/quarterly-metrics.json`, consumed by the TSLA_DATA tab and by `build-kb.js` metric-area construction.
 
@@ -72,6 +75,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 - `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt`
 - `scripts/pipeline/latency-report.js` — `npm run latency [days=7]`: per-video YT-publish → summary latency report; writes baseline TSV to `data/latency/YYYY-MM-DD.tsv`
 - `scripts/scrape-tracker.js` — Robotaxi tracker scraper (fleet-scrape.yml)
+- `scripts/fetch-merger-odds.js` — Polymarket merger-odds fetcher → `data/merger-odds.json` (manual for now)
 - `scripts/build-kb.js` — rebuild `knowledge-base.json` from quarterly metrics + composite trackers
 - `scripts/extract-quarterly.py` — manual quarterly-metrics extractor from shareholder PDFs
 - `admin/` — local-only Express + React console with two tabs: REVIEW QUEUE (approve/reject extracted `dcf_input` facts) and WATCHLIST (edit DCF input watch patterns). Approved facts auto-propagate to `dcf-robotaxi-facts.json`.
@@ -103,6 +107,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 |---|---|---|
 | Quarterly metrics | `scripts/extract-quarterly.py` reads `data/quarterly/*.pdf` → `src/data/quarterly-metrics.json` | Run quarterly when new shareholder deck releases |
 | DCF facts review | `admin/` console reviews `extracted-facts.json` → approved `dcf_input` facts auto-propagate to `src/data/dcf-robotaxi-facts.json` | Run locally as facts accumulate |
+| Merger odds | `scripts/fetch-merger-odds.js` → `data/merger-odds.json` (Polymarket Gamma API) | Manual until CI cron is wired (planned: fleet-scrape cadence) |
 | URL index gaps | `news/transcripts_url_index.json` | Some early transcripts (pre-URL-tracking) have no video URL |
 
 ### Not yet built
