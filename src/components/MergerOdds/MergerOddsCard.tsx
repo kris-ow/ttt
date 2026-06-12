@@ -20,6 +20,7 @@ type MarketEntry = {
 type MergerOdds = {
   fetched_at: string
   source: string
+  event_slug: string
   event_title: string
   markets: MarketEntry[]
 }
@@ -106,7 +107,7 @@ export function MergerOddsCard({ className, bare }: { className?: string; bare?:
             <span>
               by{' '}
               <a
-                href="https://polymarket.com/event/tesla-and-spacex-merger-officially-announced-by-june-30"
+                href={`https://polymarket.com/event/${data.event_slug}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green"
