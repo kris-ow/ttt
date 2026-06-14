@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-06-13)
 Published:   2026-06-13 00:00 UTC
-Summarized:  2026-06-14 05:06:28 UTC
+Summarized:  2026-06-14 10:31:40 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.05309 (8468 in / 1846 out tokens)
+Cost:        $0.05449 (8468 in / 1939 out tokens)
 Sources:     4
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -22,61 +22,66 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 
 ## Brief
 
-- Belgium and Denmark approve FSD Supervised; five European countries now cleared.
-- FSD Supervised crosses 11 billion cumulative miles — 1B miles every 37 days.
-- Piper Sandler's Alex Potter: "Tesla has solved the self-driving puzzle."
-- SpaceX IPO closes +19% at ~$161; Gwynne Shotwell flags Tesla-SpaceX synergies.
+- Belgium and Denmark approved FSD Supervised; five European countries now cleared.
+- FSD Supervised crosses 11 billion cumulative miles — up 1 billion in 37 days.
+- Piper Sandler: "Tesla has solved the self-driving puzzle."
+- SpaceX IPO closes at $161, +20%; Gwynne Shotwell flags Tesla-SpaceX merger synergies.
 - Tesla China May sales: 85,982 units, up 39% year-over-year.
-- Only 7 of 17 NHTSA robotaxi incidents attributed to Tesla fault since June 2025 launch.
+- 2026 Model 3 RWD delivers 393 real-world miles — most efficient EV Edmunds has tested.
 
 ## Autonomous Driving
 
-- **Belgium approves FSD Supervised nationwide; five European countries now cleared.** Belgium's Ministry of Transport of Flanders signed approval covering both Flemish and Belgian roads, days after Denmark's approval was announced. The five cleared markets — Belgium, Netherlands, Denmark, Lithuania, and Estonia — represent approximately 11% of European countries. Spain is cited as a likely next candidate.
+- **Five European countries now approved for FSD Supervised.** Belgium's Ministry of Transport of Flanders signed territory-wide approval this week, days after Denmark's approval was announced. Approved markets now: Belgium, Netherlands, Denmark, Lithuania, Estonia — roughly 11% of European countries. Brian White (FutureAzA) speculates Spain may be next.
 
-- **FSD Supervised crosses 11 billion cumulative miles globally.** Tesla's fleet reached the milestone roughly one month after crossing 10 billion, implying ~1 billion FSD miles every 37 days. The pace is accelerating as European markets open and the fleet grows.
+- **FSD Supervised crosses 11 billion cumulative miles globally**, up from 10 billion one month prior — approximately 1 billion miles every 37 days. The pace is accelerating as European approvals expand the addressable fleet.
 
-- **Denmark real-world data: FSD Supervised 3.5x safer than human drivers.** After four months of European road use, Danish data shows meaningfully fewer hard braking and hard turning events versus human baselines. Hosts argue this data should compel faster regulatory approvals across the continent.
+- **Denmark real-world data shows FSD Supervised 3.5x safer than human drivers** across hard-braking and hard-turn metrics, after four months of European road use. Per brighterwithherbert, the hosts argue this data should compel regulators to accelerate remaining European approvals.
 
-- **Piper Sandler's Alex Potter declares Tesla has achieved Level 4 autonomy in most conditions.** In a note published approximately June 11, Potter wrote that "Tesla has solved the self-driving puzzle" and FSD is "ready for dissemination beyond early adopters," citing a personal April drive from Missoula, Montana to Minneapolis as primary evidence.
+- **Piper Sandler's Alex Potter declared FSD achieves Level 4 autonomy in most conditions** in a note released approximately June 11. Potter cited a personal April drive from Missoula, Montana to Minneapolis as evidence, writing "there is no substitute for personal experience." He characterizes FSD as "ready for dissemination beyond early adopters."
 
-- **FSD V14 is the version being deployed in Denmark's new market rollout.** Tesla is distributing 30-day free trials of FSD Supervised V14 to Danish owners following regulatory clearance, per Sawyer Merritt. A "V14 light" port for Hardware 3 vehicles had been discussed for end of June 2026, but no update has emerged; the HW3/HW4 capability gap continues to widen.
+- **FSD V14 is the version being deployed in Denmark**, with Tesla distributing 30-day free trials to owners there following regulatory approval, per Sawyer Merritt.
 
-- **Cybertruck Smart Summon announced as coming soon.** Tesla's official Cybertruck account confirmed Smart Summon is imminent for the Cybertruck, with engineers citing rear-wheel steering and variable front steering as the technical challenges that extended development time.
+- **Hardware 3 vs. Hardware 4 capability gap continues to widen.** A "FSD V14 light" port for HW3 vehicles was discussed as potentially arriving by end of June 2026 — sourced to a prior Ashok Elluswamy statement — but no update has emerged, per Brian White.
+
+- **Cybertruck Smart Summon launching soon**, per Tesla's official Cybertruck account. Engineers cited rear-wheel steering and variable front steering as the technical hurdles that extended development. The hosts frame this as a direct analogy for why Cybercab also needs its own platform-specific dataset before mass unsupervised deployment.
 
 ## Robotaxi
 
-- **17 NHTSA-reported incidents since the June 2025 Austin launch; safety picture remains clean.** Only one incident involved a speed of 17 mph; the rest were fender benders. Only 7 of the 17 were attributed to Tesla fault, and 2 of those 7 involved human remote operators rather than the autonomous system. Hosts note NHTSA's "crash" classification includes events such as a tire touching a curb with no damage.
+- **~69 Cybercabs registered with Texas DMV** as of approximately June 11, up from 42 previously, growing at roughly 10 new registrations per day. Community photos show large clusters of parked Cybercabs in North Houston and Dallas lots. Per FutureAzA, the hosts interpret the buildup as vehicles ready to deploy pending additional supervised miles and regulatory confidence on the Cybercab form factor specifically.
 
-- **Texas DMV shows 69 Cybercabs registered, growing ~10/day.** The official verified count is 69 (up from 42 previously), per both FutureAzA and brighterwithherbert. Community photos show clusters of 20–30 Cybercabs sitting idle in Dallas and Houston lots, interpreted as vehicles staged and awaiting deployment authorization rather than supply constraints.
+- **NHTSA safety record since June 2025 launch: 17 reported incidents**, per FutureAzA. Only one involved a speed above walking pace (17 mph); the rest were fender benders. Only 7 were attributed to Tesla fault; 2 of those 7 involved human remote operators rather than the autonomous system. The hosts note NHTSA classifications include curb touches with no damage.
 
-- **Hosts argue Cybercab requires its own supervised dataset before mass unsupervised deployment.** Using Cybertruck Smart Summon's delayed launch as a direct analogy, the thesis is that Cybercab's unique form factor demands sufficient platform-specific FSD miles before Tesla will scale driverless operations — regardless of Model 3/Y performance.
-
-## Market & Competition
-
-- **SpaceX IPO closes first day at ~$161, up ~19–20%, market cap ~$2.1 trillion.** The offering raised approximately $86 billion including overallotment — described as roughly three times the size of Saudi Aramco's record IPO. SpaceX ranks seventh globally by market cap; Tesla is cited at tenth at $1.46 trillion. Elon Musk now owns two of the world's ten largest companies.
-
-- **Gwynne Shotwell publicly acknowledges Tesla-SpaceX synergies and potential merger.** In an interview on IPO day, SpaceX's President stated: "That might make Elon's life a little easier. There's no question that there are synergies between Tesla and SpaceX and our futures definitely there's a convergence of what we're all trying to achieve." No timeline or formal plan was mentioned, but the comment marks the first on-record senior SpaceX executive acknowledgment of the merger thesis.
-
-- **BMW unveiled an all-electric M3 confirmed for 2027 production.** Key specs: 800V architecture, 100 kWh battery, 400 kW peak charging, BMW M sixth-generation cylindrical cells, structural battery. Relevant to Tesla's competitive positioning in the premium performance EV segment.
-
-- **BYD China sales down ~30% year-to-date, eighth consecutive month of declines.** Competitive pressure from Geely, Xiaomi, Changan, and SAIC is cited. In April, the China top three were Geely, Xiaomi SU7, and Model Y; Model Y had ranked first the prior month.
+- **One host speculates Tesla deliberately paced the Cybercab rollout** to avoid a high-profile incident overshadowing the SpaceX IPO. With the IPO complete, he expects robotaxi news flow to accelerate — though he does not expect true mass-scale deployment until later in Q3 2026.
 
 ## Electric Vehicles
 
-- **Tesla China May 2026 sales: 85,982 units, up 39% year-over-year and 8% month-over-month.** At this pace, Giga Shanghai approaches ~1 million units annualized. Hosts note May is a stronger read on domestic demand than April, which is typically skewed toward export production.
+- **Tesla China May 2026 sales: 85,982 units** (Model 3 + Model Y combined), up 39% year-over-year and up 8% from April. Annualized, the pace approaches ~1 million units per year from Giga Shanghai. Tesla has added purchase incentives and charging benefits in China.
 
-- **2026 Model 3 RWD named most efficient EV in Edmunds real-world testing.** It traveled 393 miles on a full charge versus the EPA-rated 363 miles, and consumed 21.7 kWh per 100 miles — 13% better than EPA — the best figure Edmunds has recorded for any production EV. The review also flagged improved cabin finish quality.
+- **European Tesla sales Jan–May 2026 ran ~95,000 units ahead of Jan–May 2025**, per analyst Roland Percher's tracked subset. The hosts note the comparison is partially inflated by 2025 factory retooling shutdowns and prefer 2024 as the cleaner baseline.
 
-- **Tesla ranks sixth in iSeeCars long-term durability study of 174 million vehicles.** Tesla is twice as likely as Subaru to reach 250,000 miles. Hosts argue the ranking is understated due to fleet youth limiting sample size, and predict Tesla eventually ranks first as more vehicles accumulate high mileage.
+- **2026 Model 3 RWD achieved 393 real-world miles** in Edmunds testing — 30 miles (8.3%) beyond EPA rating — and consumed 21.7 kWh/100 miles, 13% better than EPA's 25 kWh figure. Edmunds calls it the most efficient EV it has tested. Cabin finish quality was also noted as improved.
+
+- **Tesla ranked sixth in iSeeCars long-term durability study** of 174 million vehicles — twice as likely to reach 250,000 miles as Subaru, and ranked above Mazda, Subaru, and Porsche. The hosts attribute the ranking to sample-size limits from Tesla's relative newness, predicting a future top-one finish as more high-mileage vehicles accumulate.
+
+- **BYD China sales have fallen ~30% year-to-date**, marking eight consecutive months of decline, per data highlighted by Michael Dunn. Geely, Xiaomi SU7, and Model Y were April's top three in China. Separately, Xiaomi is estimated to be losing ~$5,000 per vehicle sold.
+
+## Market & Competition
+
+- **SpaceX priced at $135 and closed its IPO day at $161 (+20%)**, reaching a market cap of ~$2.1 trillion — ranked seventh globally. Tesla was cited at ~$1.46 trillion, ranked tenth. The offering raised ~$86 billion including overallotment, described as roughly three times Saudi Aramco's prior record. Elon Musk now publicly owns two of the ten largest companies on Earth.
+
+- **SpaceX President Gwynne Shotwell commented on a potential Tesla-SpaceX merger**: "That might make Elon's life a little easier. There's no question that there are synergies between Tesla and SpaceX and our futures definitely there's a convergence of what we're all trying to a[chieve]..." No timeline or concrete plans were mentioned, per Sawyer Merritt.
+
+- **BMW unveiled the all-electric M3**, confirmed for production in 2027: 800V architecture, 100 kWh battery, 400 kW peak charging, sixth-generation cylindrical cells, structural battery. Relevant to Tesla's competitive position in premium performance EVs.
 
 Notable quotes and data:
 - Alex Potter, Piper Sandler: *"Tesla has solved the self-driving puzzle and FSD is ready for dissemination beyond early adopters."*
-- Gwynne Shotwell on merger: *"That might make Elon's life a little easier. There's no question that there are synergies between Tesla and SpaceX."*
-- FSD cumulative miles: **11 billion**, up 1 billion in ~37 days
-- Denmark safety data: **3.5x safer** than human drivers after 4 months
-- European FSD approvals: **5 countries**, ~11% of Europe
-- Texas DMV Cybercab registrations: **69 vehicles**, ~10/day growth rate
-- NHTSA robotaxi incidents since June 2025: **17 total; 7 Tesla fault; 2 of 7 involved human remote operators**
+- Gwynne Shotwell on Tesla-SpaceX merger: *"That might make Elon's life a little easier. There's no question that there are synergies between Tesla and SpaceX..."*
+- Belgium Ministry of Transport: *"Regarding the approval for FSD technology on both our Flemish and Belgian roads... I just signed the approval."*
+- FSD Supervised cumulative miles: **11 billion**, up 1 billion in ~37 days
+- Denmark FSD safety data: **3.5x safer than human drivers**
+- Texas Cybercab DMV registrations: **~69**, growing ~10/day
 - Tesla China May 2026: **85,982 units**, +39% YoY
-- Model 3 RWD real-world range: **393 miles**; efficiency: **21.7 kWh/100 miles**
-- SpaceX IPO close: **$160.95**, market cap **~$2.1 trillion**; raised **~$86 billion**
+- Model 3 RWD real-world range: **393 miles**; real-world efficiency: **21.7 kWh/100 miles**
+- NHTSA robotaxi incidents since June 2025: **17 total**, 7 Tesla-fault, 2 of those involving human remote operators
+- SpaceX IPO: priced **$135**, closed **$161**, market cap **~$2.1T**
+- Oppenheimer SpaceX price target: **$190** (~$2.5T implied)
