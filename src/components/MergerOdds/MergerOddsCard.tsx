@@ -35,7 +35,10 @@ function pickMarket(markets: MarketEntry[]): MarketEntry | null {
   return pool[pool.length - 1] ?? null
 }
 
-// Deltas are price moves in [0,1]; shown as percentage points.
+// Deltas are price moves in [0,1]; shown as percentage points. Distinguish two
+// cases: Polymarket omits the value (null) when there's no prior price to
+// compare against → show "—"; a numeric 0 means it compared and saw no change
+// → show "0".
 function fmtDelta(change: number | null): string {
   if (change == null) return '—'
   const pp = change * 100
