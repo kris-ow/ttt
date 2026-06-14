@@ -40,7 +40,7 @@ Transcript-driven summarization pipeline (transcripts pushed directly to repo by
 - `prompt-weekly.md` — prompt for the Weekly Brief (Brief + category sections with editorial trim + Bear Case of the Week)
 - `config.js` — channels, corrections dictionary, categories, pricing
 - `prompt.md` — prompt template with placeholder slots (also `prompt-xdaily.md`, `prompt-article.md`)
-- `watchlist.json` — prompt watch patterns: `dcf_inputs` (DCF fact extraction) + `interview_watch` (persons whose new interviews/appearances get flagged as `interview_mention` facts; deduped by person+venue within 14 days in `run.js`)
+- `watchlist.json` — prompt watch patterns: `dcf_inputs` (DCF fact extraction) + `interview_watch` (persons whose new interviews/appearances get flagged as `interview_mention` facts). `run.js` enforces the list deterministically before queueing: drops mentions for people not on `interview_watch` (LLM extraction drifts to off-list figures — SpaceX execs, analysts, rival CEOs), drops un-actionable vague venues ("unspecified"/"not named"), and dedupes by person+venue within 14 days
 - `state.json` — tracks processed files + pending batches
 - `costs.json` — LLM cost log (every API call tracked)
 - `.github/workflows/daily-pipeline.yml` — triggered on `push` to `news/**.txt` (Mac Mini transcript arrival) plus 4x daily safety-net cron (00:15, 07:15, 10:15, 17:45 UTC) + a Monday-only 05:45 UTC cron for the weekly brief: summarize → exec summary (early cron runs only) → weekly brief (Monday early cron only) → commit → deploy (failure → auto-creates GitHub issue). New `interview_mention` extractions also auto-create a GitHub issue (label `interview-lead`) prompting an admin-console review — user gets it by email via GitHub notifications

@@ -348,6 +348,35 @@ function venueTokens(venue) {
   return String(venue || '').toLowerCase().split(/[^a-z0-9]+/).filter(t => t.length >= 4 && !STOP.has(t));
 }
 
+// The interview_watch list is the whitelist of people worth a queue item.
+// LLM extraction drifts and tags any Tesla-adjacent figure (SpaceX execs,
+// sell-side analysts, rival-company CEOs); enforce the list deterministically.
+function cleanName(s) {
+  return String(s || '')
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, '')   // drop role parentheticals: "Vaibhav Taneja (Tesla CFO)"
+    .replace(/[^a-z\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function isWatchedPerson(person, watchlist) {
+  const p = cleanName(person);
+  if (!p) return false;
+  return (watchlist.interview_watch || []).some(w => {
+    const wn = cleanName(w);
+    return wn && (p.includes(wn) || wn.includes(p));
+  });
+}
+
+// A lead you can't name a venue for isn't actionable — you can't resolve
+// "unspecified interview" to a URL. Drop it rather than queue a dead end.
+function hasVagueVenue(venue) {
+  const v = String(venue || '').toLowerCase();
+  if (!v.trim()) return true;
+  return /\b(unspecified|unknown|unnamed|not named|not specified|not identified|no host|platform unspecified)\b/.test(v);
+}
+
 function isDuplicateInterviewMention(fact, existing) {
   const cutoff = Date.now() - 14 * 24 * 3600 * 1000;
   const tokens = new Set(venueTokens(fact.venue));
@@ -368,11 +397,20 @@ function saveExtractedFacts(keyFacts, transcript) {
     try { existing = JSON.parse(fs.readFileSync(EXTRACTED_FACTS_FILE, 'utf-8')); } catch { existing = []; }
   }
 
-  const dcfEnabled = loadWatchlist().dcf_enabled !== false;
+  const wl = loadWatchlist();
+  const dcfEnabled = wl.dcf_enabled !== false;
   const newFacts = keyFacts
     .filter(f => (dcfEnabled && f.type === 'dcf_input') || (f.type === 'interview_mention' && f.person && f.venue))
     .filter(f => {
       if (f.type !== 'interview_mention') return true;
+      if (!isWatchedPerson(f.person, wl)) {
+        console.log(`  Skipping off-watchlist interview mention: ${f.person}`);
+        return false;
+      }
+      if (hasVagueVenue(f.venue)) {
+        console.log(`  Skipping vague-venue interview mention: ${f.person} @ ${f.venue}`);
+        return false;
+      }
       if (isDuplicateInterviewMention(f, existing)) {
         console.log(`  Skipping duplicate interview mention: ${f.person} @ ${f.venue}`);
         return false;

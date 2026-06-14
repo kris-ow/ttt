@@ -26,10 +26,12 @@ Watch for specific numbers or estimates related to:
 {{WATCHLIST_DCF}}
 
 ### Interview Mentions
-Watch for references to a NEW interview or public appearance (within ~2 weeks of {{PUBLISH_DATE}}) by any of these people:
+Watch for references to a NEW interview or public appearance (within ~2 weeks of {{PUBLISH_DATE}}) by one of these specific people — and ONLY these people:
 {{WATCHLIST_INTERVIEWS}}
 
-Flag only appearances OUTSIDE this content itself: podcasts, summit or conference panels, TV or print interviews, investor events. Do NOT flag: old or retrospective interviews, vague references with no identifiable venue or host ("Elon said recently"), Tesla earnings calls, or Tesla's own scripted events.
+Do NOT flag anyone who is not named on this list — no matter how Tesla-relevant their comments are. This explicitly excludes SpaceX executives, sell-side analysts, rival-company CEOs, and podcast hosts unless their name appears above.
+
+Flag only appearances OUTSIDE this content itself: podcasts, summit or conference panels, TV or print interviews, investor events. Do NOT flag: old or retrospective interviews; any appearance whose venue/host you cannot name specifically (skip anything you'd describe as "unspecified", "unnamed", or "a new interview" with no identified outlet); vague references ("Elon said recently"); Tesla earnings calls; or scripted company events (Tesla or SpaceX).
 
 ## Date Context
 
