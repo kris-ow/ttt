@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-06-15)
 Published:   2026-06-15 00:00 UTC
-Summarized:  2026-06-16 05:34:19 UTC
+Summarized:  2026-06-16 12:22:30 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.12661 (19897 in / 4461 out tokens)
+Cost:        $0.11429 (19897 in / 3640 out tokens)
 Sources:     11
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -23,107 +23,94 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 ## Brief
 
 - Cybercab EPA-certified: 3,113 lbs, 219 HP, 47.6 kWh, ~293-mile range
-- 102 Cybercabs at Giga Texas outbound lot — record high
 - Reuters: Tesla presented misleading FSD safety data to European regulators
-- Lithuania approves FSD supervised; Greece expected in June
-- FSD 14.3.4 rolling out; Forbes calls 14.3 "more like Level 4 than past versions"
+- FSD 14.3.4 rolling out; early reviews call it meaningfully better than 14.3
+- 102 Cybercabs at Giga Texas outbound lot — record single-lot count
+- Lithuania approves FSD supervised; Greece and Belgium expected in June
 - SpaceX-Tesla merger odds: Dan Ives 80%, Kalshi ~52%
 
 ## Robotaxi
 
-- **102 Cybercabs at Giga Texas outbound lot — record.** Drone footage from Airwave/General Westside confirmed the count; Jeff Lutz (former Motorola/Google/Lenovo supply chain executive) interprets this as a production ramp transitioning from dozens toward hundreds, with fewer than two full months of production elapsed since the late-April start.
+- **Cybercab EPA certification complete.** Certificate of conformity issued May 26, 2026; Introduction into Commerce Date May 29, 2026. The Cybercab clears every federal emissions hurdle but has not received unsupervised autonomy approval — without which, per Electrek, it remains operationally purposeless.
 
-- **50 Cybercabs spotted in Dallas; 31 at Houston hub.** As of June 13, 19 of the Dallas units are fully badged with wheel caps, front plates, and decals attached — production-worthy signals that Lutz distinguishes from test-vehicle staging. The Houston hub count rose from ~20 just weeks prior.
+- **Full Cybercab specs confirmed via EPA filing.** Curb weight 3,113 lbs; 163 kW / 219 HP front-wheel-drive permanent magnet motor; 47.6 kWh battery (~680 lbs); unadjusted combined range 418.2 miles, yielding an estimated ~293 miles on the EPA-adjusted cycle; efficiency 165 Wh/mi (~7.8 mi/kWh in lab conditions). Wireless inductive charging is the primary charging method; regenerative braking is front-wheels only.
 
-- **Cybercabs spotted in Seattle, Mesa AZ, and Las Vegas.** Las Vegas is reportedly preparing dedicated robotaxi support infrastructure. The broad geographic distribution is cited as an indicator of operational deployment rather than localized testing. Per Joe Tegtmeyer, there may be over 1,000 Cybercabs now testing in the wild.
+- **Record 102 Cybercabs in Giga Texas outbound lot**, per drone footage from Airwave/General Westside — the highest single-lot count observed to date. Jeff Lutz (brighterwithherbert) interprets the staging at remote city locations — rather than near the factory — as a signal of growing confidence in both hardware and software readiness.
 
-- **New robotaxi depot discovered in Irving, Texas (DFW area).** A permit letter of intent revealed a facility with 212 remote fleet parking spaces, 64 building spaces (speculated to be individual automated-servicing bays), and 17 EV charging stations — closely mirroring a previously reported Las Vegas facility. Panelists on cernbasher note that fleet parking spaces at a depot don't cap fleet size; the depot is a service node potentially covering multiple cities.
+- **Cybercab inventory building across Texas and Nevada.** As of June 13, 31 Cybercabs were at the Houston robotaxi hub (up from ~20 a few weeks prior); 50 Cybercabs were spotted in Dallas with 19 described as fully badged and ready. Cybercabs were also reported in Seattle, Mesa AZ, and Las Vegas, where dedicated robotaxi support infrastructure is reportedly being prepared. Per Joe Tegtmeyer (cited by Electrified), more than 1,000 Cybercabs may now be testing in the wild; all observed units still carry steering wheels, suggesting supervised testing continues.
 
-- **NHTSA safety data: 18 total robotaxi incidents since Austin launch; Tesla at fault in 7.** The most recent incident (covering April 15–May 15) involved a robotaxi stopped at a red light that was rear-ended by a pickup truck — not Tesla's fault. Analyst "Reigns" (per cernbasher) assessed Tesla's robotaxi at **1.81x safer than human drivers** as of April 2026, with the trend improving since January. Tesla's rolling 3-month crash rate remains better than the human baseline. Note: minor incidents like curb scrapes are mandatory reportable events for robotaxi operators but are routinely unreported by human drivers, likely understating the true safety advantage.
+- **New Irving, Texas (DFW) robotaxi depot discovered** via a permit filing. The facility includes 212 remote fleet parking spaces, 64 building bays designed for automated servicing, and 17 EV charging stations — mirroring a previously reported Las Vegas facility. Per cernbasher, the depot's parking count is not a fleet cap; it is a regional service hub that could support a fleet many multiples its size.
 
-- **Texas DMV data: 69 vehicles registered for Austin robotaxi service** (per Loomis's tracker, pulling directly from the Texas DMV). This is an independent figure covering unsupervised-registered units; it is distinct from the broader active fleet figures in RobotaxiTracker.com.
+- **NHTSA safety update: 18 total incidents since Austin launch; Tesla at fault in 7.** The newest incident (April 15–May 15 reporting window) involved a robotaxi stopped at a red left-turn arrow that was rear-ended by a pickup truck — fully the other driver's fault. Per analyst "Reigns" (cited by cernbasher), Tesla's robotaxi is 1.81x safer than human drivers as of April 2026, a figure likely understated because minor incidents mandatory for robotaxi operators are routinely unreported by humans. Texas DMV data cited by Electrified shows 69 Tesla vehicles currently registered for Austin robotaxi service.
 
-- **One-year mark since Austin robotaxi launch (June 22, 2025).** As of today, unsupervised service remains in Austin, Dallas, and Houston with no Cybercab yet carrying a paying passenger — all paid rides to date are in Model Y. Herbert and Lutz both acknowledge slower-than-expected progress while pointing to accumulating Cybercab inventory as grounds for H2 2026 optimism.
-
-- **Jo Bhakdi identifies next two weeks as a "local probability maximum" for a major robotaxi announcement**, citing end-of-H1 2026 as a catalyst deadline and referencing Tesla's prior earnings-call guidance to add five more cities by end of H1. He warns he will reduce leverage if Tesla reaches $420–440 without a Cybercab catalyst.
+- **One-year anniversary of Austin robotaxi launch (June 22, 2025).** The brighterwithherbert host acknowledges that a full year has elapsed with the network still limited to Austin, Dallas, and Houston without widespread deployment — characterizing progress as slower than originally expected but pointing to accumulating Cybercab inventory and safety data as grounds for optimism in H2 2026 or 2027.
 
 ## Autonomous Driving
 
-- **Cybercab EPA-certified May 26, 2026; introduction into commerce May 29.** Full specs from the EPA filing: 3,113-lb curb weight, 163 kW (219 HP) AC 3-Phase Permanent Magnet motor, front-wheel drive, 47.6 kWh battery (326V / 146 Ah), ~154 Wh/kg specific energy. Unadjusted combined range: 418.2 miles; adjusted estimated range ~293 miles. Efficiency: 165 Wh/mi. GVWR: 3,730 lbs (~617 lbs payload). Primary charging: wireless inductive. Electrek notes the 3,113-lb weight is surprisingly heavy for a purpose-built two-seater and characterizes the vehicle as "purposeless" until unsupervised autonomy approval is granted.
+- **FSD 14.3.4 rolling out; described as a meaningful step up.** Jeff Lutz (brighterwithherbert) received it on both vehicles over the weekend and calls it "a bigger jump than just a dot release," citing smoother lane-keeping, more informed lane changes, reduced nag, improved end-of-ride behavior, and materially better parking. Jo Bhakdi describes it as a "huge leap" relative to 14.3.3. Early positive reviews are broad, though Electrified's Dillon Loomis suspects some users are still experiencing regressions in highway navigation.
 
-- **Reuters/Electrek: Tesla presented misleading FSD safety data to European regulators.** Tesla's November 2024 letter to RDW (Dutch road authority) cited its self-published FSD safety report; a follow-up slide deck emailed to Swedish regulators claimed FSD-equipped vehicles travel 7x farther between crashes than the average U.S. human driver and that FSD could have "saved 32,000 lives" and prevented 1.9 million injuries. Ten of 11 independent traffic-safety researchers called the methodology "misleading marketing." The "7x" figure compares FSD crash rates (airbag-deployment-triggered only) against a U.S. baseline that includes far less severe incidents — researchers say the true inflation factor is ~3x. The "32,000 lives" figure assumes every U.S. vehicle, including freight trucks and motorcycles, is replaced by an FSD Tesla. Norway's roads administration stated Tesla's figures are "self-produced," making it "difficult to find correlation with the authorities' accident statistics." The European Transport Safety Council has sent letters to nearly every non-approving EU member urging a hold until independent peer review is completed. Four countries — Netherlands, Lithuania, Belgium, and Denmark — have already granted national approval.
+- **FSD 14.3.3 called "ahead, way ahead" of all competitors** in the highest-engagement Tesla post of the day (2.3K likes), per Sawyer Merritt. A Forbes article by Brook Kthers testing a 2026 Model 3 in Los Angeles concluded FSD version 14.3 "feels more like a level four or driverless ADS than past versions" — the strongest third-party endorsement to date.
 
-- **Lithuania approved FSD supervised this week; Greece expected in June; Belgium both regions supportive.** The Netherlands approved April 11 (RDW), Belgium June 10. EU-wide approval requires representatives of 55% of member states covering 65% of the bloc's population. Sweden is still asking basic questions about highway capability. Per Herbert, 13 countries globally now have supervised FSD, 5 in Europe.
+- **Reuters: Tesla presented misleading FSD safety data to European regulators.** Documents obtained via public records requests show Tesla's November 2024 letter to RDW (Dutch road authority) cited its self-published safety report, and a subsequent slide sent to Swedish regulators claimed FSD could have "saved 32,000 lives" and prevented 1.9 million injuries. Ten of 11 independent traffic-safety researchers called the methodology "misleading marketing." The "7x safer" claim stems from comparing FSD crash rates (airbag-deployment trigger only) against a broader U.S. crash rate — a comparison independent researchers say inflates the margin by approximately 3x. Norway's roads administration stated Tesla's figures "are self-produced," making it "difficult to find correlation with the authorities' accident statistics."
 
-- **FSD 14.3.4 rolling out with broadly positive reception.** Jeff Lutz describes it as "a bigger jump than just a dot release," citing smoother lane-keeping, more informed lane changes, reduced nag, materially improved parking (more consistent single-attempt completion), and new destination-approach UI presenting the car as a chauffeur. Jo Bhakdi characterizes it as a "huge leap" relative to 14.3.3. Loomis shares clips of ongoing 14.3 issues — hard braking for a signaling school bus, driving onto a golf course, stopping mid-intersection, brake-stabbing from 44 mph to under 30 mph for a bird, and looping a parking garage repeatedly — and suspects some users still experience regressions on highway navigation.
+- **ETSC sent letters to transport ministers of nearly every EU member state** not yet approving FSD, urging a halt pending independent safety verification. Electrified's Loomis counters that RDW conducted more than 1.5 years of independent on-road and test-track evaluation and concluded FSD "makes a positive contribution to road safety." He also notes ETSC's corporate partners include Toyota Motor Europe and the German Road Safety Council — closely tied to Mercedes, BMW, and VW — flagging a potential conflict of interest.
 
-- **Forbes (Brook Kthers, testing a 2026 Model 3 Premium AWD in LA) declares FSD 14.3 "feels more like a Level 4 driverless ADS than past versions"** and states Tesla is "a headway ahead" of all other automakers pursuing advanced ADAS. GM Super Cruise and Ford Blue Cruise are described as more advanced than Toyota's basic lane-centering but far short of FSD.
+- **Lithuania approved FSD supervised this week**, following the Netherlands (April 11) and Belgium (June 10). Greece announced it wanted to be the second European country to approve but was beaten by Lithuania; it is now expected to approve in June 2026. Per cernbasher, the Netherlands is actively seeking EU-wide approval on Tesla's behalf. EU-wide approval requires representatives of 55% of member states covering 65% of the bloc's population to vote yes; a vote may occur in June or September 2026.
 
-- **FSD evasive action video goes viral.** FSD initiated evasive maneuvers in response to an oncoming out-of-control truck before the human driver or the car ahead reacted. A Tesla AI team member confirmed FSD responded at the frame level before the vehicle ahead. A separately attributed reaction time figure of 0.13 seconds was cited by Lutz (attributed to AI Driver and David Moss experiments).
+- **FSD China approval expected Q3 2026**, per Tesla's CFO on the most recent earnings call (cernbasher). Tesla has posted ~six urgent AI/data-labeling job listings across nine Chinese cities — interpreted by cernbasher as an imminent-approval signal. A video apparently leaked showing FSD operating in China, reportedly intended for Tesla's official Chinese page (Electrified). Online rumors suggest approval as early as June 19, though the brighterwithherbert host expects no earlier than Q3.
 
-- **NHTSA engineering analysis underway covering 3.2 million vehicles** for 80 identified FSD traffic violations including red-light runs and wrong-lane crossings — the final step before a potential recall. Separately, $20–$50 plastic doll heads sold on Chinese e-commerce platforms are being used to defeat Tesla's cabin camera driver-monitoring system. One driver reportedly completed a 30-minute highway trip at speed with zero safety alerts using a Dwayne Johnson figurine. Electrek's Lambert calls for liveness detection and gaze anti-spoofing and notes this is the second generation of monitoring-system circumvention (the first, steering-wheel weights, was shut down by NHTSA cease-and-desist).
+- **$20–$50 plastic doll heads sold on Chinese e-commerce platforms defeat Tesla's cabin camera monitoring**, allowing drivers to use Autopilot and FSD (Supervised) without paying attention. One Model 3 owner reportedly drove 30 minutes using a Dwayne Johnson figurine with zero safety alerts. NHTSA has separately identified 80 FSD traffic violations and upgraded its investigation to an engineering analysis covering 3.2 million vehicles — the final step before a potential recall (Electrek).
 
-- **FSD China approval expected Q3 2026 per Tesla CFO.** Tesla has rebranded FSD in China as "Tesla Assisted Driving." Rumors online point to approval as early as June 19 (before Dragon Boat Festival); cernbasher and Loomis both expect Q3 as the more realistic window. A leaked video showing FSD operating in China circulated; Loomis speculates Tesla is holding official publication until approval. Tesla has posted ~6 urgent China AI job listings, interpreted by cernbasher as a signal approval is approaching. FSD China price: ~64,010 RMB (~$9,400 USD), one-time purchase; over 2 million Teslas on Chinese roads.
-
-- **Elon Musk on unsupervised FSD for customer-owned vehicles: "probably in Q4"** (2026), with a gradual geographic rollout as each area is confirmed safe.
+- **Elon Musk, on unsupervised FSD for customer-owned vehicles:** *"I'm just guessing, but probably in the fourth quarter"* (2026), per Electrified. The brighterwithherbert host expresses skepticism about on-time delivery of this milestone.
 
 ## Humanoid Bots
 
-- **Optimus factory construction underway in Austin** with stated capacity target of 1 million robots/year for the first-generation line. Wall Street models citing ~50,000 units for 2026 are characterized by Herbert as analyst math, not company guidance.
+- **Optimus Gen 3 reveal targeted for Q3 2026**, possibly at the annual shareholder meeting, per brighterwithherbert. Leaked hand-design information points to approximately 50 actuators. The milestone is framed as the moment the million-unit factory thesis transitions from prototype bet to manufacturing bet.
 
-- **Optimus Gen 3 reveal targeted for Q3 2026**, potentially at the annual shareholder meeting. Leaked hand design points to ~50 actuators. Herbert argues a hands-capable Gen 3 demonstration would shift Optimus from a prototype bet to a manufacturing bet.
-
-- **Cortex 2.0 AI training cluster at 50% capacity in Q2 2026; full capacity targeted Q3.** Construction beginning on an advanced technology chip fab (Terafab project, launched Q1 2026).
+- **Cortex 2.0 AI training cluster** at 50% capacity in Q2 2026, full capacity targeted for Q3. Construction on an advanced technology chip fab (Terafab project, launched Q1 2026) is beginning — a stated 5-to-10-year build toward Tesla making its own AI chips at scale (brighterwithherbert).
 
 ## Energy
 
-- **Megapack sales have doubled over the past two years** with no signs of slowing, per FutureAzA, driven by unexpected data-center demand in addition to grid operators. Megapack 3 and a new product called Megablock — each delivering 5 MWh, 28% more than Megapack 2 in the same footprint — are set to begin production at a new Houston factory rated at 50 GWh/year capacity in late 2026.
+- **Megapack sales have doubled over the past two years** with no signs of slowing, driven by unexpected data-center demand in addition to grid operators, per FutureAzA. Megapack 3 and a new Megablock product — each delivering 5 MWh, 28% more than Megapack 2 in the same footprint — are set to begin production at a new Houston factory rated at 50 GWh/year capacity in late 2026 (brighterwithherbert).
 
-- **Solar surpassed coal in US electricity generation for the first time in May 2026**, supplying 12.8% of US electricity vs. coal's share — actual generation, not installed capacity, per Ember and the Solar Energy Industries Association.
+- **Solar surpassed coal in U.S. electricity generation for the first time in May 2026**, supplying 12.8% of U.S. electricity vs. coal's share, per data from Ember and the Solar Energy Industries Association (FutureAzA).
 
 ## Electric Vehicles
 
-- **Tesla Semi Megacharger prefab units filed:** Tesla will factory-complete most assembly — including high-voltage bus bars and concrete work — enabling on-site drop-in installation to reduce time and cost for broader Semi charging deployment.
+- **Next-gen Roadster** now pointed at August 2026 after missing April 1 and late-spring targets. Franz von Holzhausen stated days before the brighterwithherbert video that the Roadster is "coming very soon" and will "blow people away" — treated as more credible than prior schedule promises.
 
-- **Next-gen Roadster now pointed at August 2026.** Franz von Holzhausen stated days before Herbert's video that the Roadster is "coming very soon" and will "blow people away." Herbert treats this as more credible than prior schedule promises; the SpaceX thruster package is described as the remaining long pole.
+- **Tesla Semi Megacharger prefab units** will arrive at sites pre-assembled (including high-voltage bus bars and concrete work), then dropped into a slot and connected to the grid — reducing on-site installation time and cost, per Electrified.
 
-- **Tesla on track to cross 10 million cumulative deliveries in Q3 2026** — a brand milestone Herbert expects to coincide with peak robotaxi narrative momentum.
+- **Francis Energy commissioned 100 Tesla Supercharger stalls** across 17 Oklahoma sites via the Tesla Superchargers for Business program; upgraded sites are reporting 5x prior utilization, per Sawyer Merritt. Francis Energy is currently the #1 operator under this program.
 
 ## Financials
 
-- **Q2 2026 production and delivery report expected first week of July** — first data point on Cybercab ramp and fleet growth. Q2 earnings call in late July is flagged by Herbert as the event where robotaxi unit economics move from narrative to arithmetic.
+- **Q2 2026 production and delivery report** is due in the first week of July 2026 — the first data point on the Cybercab ramp and robotaxi fleet growth. The Q2 earnings call in late July is framed by brighterwithherbert as the moment the robotaxi story moves "from narrative to arithmetic."
 
-- **Tesla remains the only profitable pure-play EV manufacturer in the Western world**, per FutureAzA, who pushes back on "plummeting profits" media framing, characterizing the decline as a "small decrease." JP Morgan dramatically raised its Tesla price target after previously holding a target around $145; FutureAzA attributes the reversal to an analyst change rather than analytical insight.
+- **Tesla remains the only profitable pure-play EV manufacturer in the Western world**, per FutureAzA, though profits have experienced a "small decrease" — the host pushes back on media characterizations of "plummeting." JP Morgan dramatically raised its Tesla price target after previously holding near $145; FutureAzA attributes the reversal to an analyst change rather than analytical insight.
 
 ## Market & Competition
 
-- **SpaceX IPO priced at $135; trading ~$167–194 by Sunday/Monday.** Jo Bhakdi argues forced index-fund buying (Russell inclusion June 26, NASDAQ 100 inclusion July 6) and lockup mechanics (15–180 days) guarantee near-term upside but predicts a sharp correction to $80–$100 once buying pressure fades — calling it a long-term buying opportunity, not a current one. Gwen Shotwell acknowledged "a lot of synergies" with Tesla and that a merger "would make life easier on Elon." CNBC reported in May 2026, citing a Tesla employee, that the two companies are weighing a combination. Dan Ives puts merger odds at 80%; Kalshi at ~52% within one year. Analysts' combined valuation: ~$3.4 trillion. Bear case: national security review (SpaceX is a major defense contractor; Tesla has major China operations), SpaceX still posting losses, and multi-step board/shareholder approval processes on both sides.
+- **SpaceX IPO priced at $135, trading near $167–194** across Sunday after-hours and Monday session. Jo Bhakdi argues forced index buying (Russell inclusion June 26, NASDAQ 100 inclusion July 6) and lockup mechanics guarantee near-term upside — but predicts a sharp correction to $80–$100 once buying pressure fades and unlock windows open. Gwen Shotwell, SpaceX COO, said a Tesla-SpaceX merger "would make life easier on Elon" and acknowledged "a lot of synergies."
 
-- **Iran ceasefire announced Sunday evening.** NASDAQ rallied ~2.89%, S&P 500 ~1.61%, Dow Jones ~1.0%. Tesla trading ~$411 at time of Bhakdi's session; he targets $440 as resistance, $490 as next level, and $700–$800 by year-end as higher-probability outcome absent merger complications.
+- **SpaceX-Tesla merger odds: Dan Ives at 80%, Kalshi ~52% within one year.** CNBC reported in May 2026, citing a Tesla employee and others familiar with the talks, that the two companies are weighing a combination. Analysts running merger math are publishing a combined valuation of approximately $3.4 trillion. The SpaceX IPO is framed by brighterwithherbert as the structural enabler — a private SpaceX lacked the ticker and tape required for a Tesla board to present shareholders with a fairness opinion.
 
-- **Waymo acquired the former Apple self-driving proving ground near Wittman, Arizona — ~5,500 acres for $220 million**, recorded June 5, 2026. FutureAzA frames this as evidence Waymo remains committed and well-capitalized. FutureAzA also estimates Waymo costs ~$1/mile more to operate than Tesla's robotaxi due to hardware architecture — a structural unit-economics gap he characterizes as durable regardless of deployment timing.
+- **Rivian CEO RJ Scaringe** claims supervised point-to-point driving equivalent to FSD will roll out to all Gen 2 vehicles and R2 in 2026, unsupervised in 2027, with 50,000 robotaxi R2 units in paid service with Uber beginning 2028. The brighterwithherbert panel notes Rivian has not disclosed the compute infrastructure required to match Tesla's capabilities. One commenter (Genma, cited as working in legacy ADAS) notes Tesla required over 100,000 H100s running 24/7, years of feedback from more than 1 million FSD users, and over 10 billion supervised miles.
 
-- **Rivian CEO RJ Scaringe claims supervised point-to-point FSD equivalent coming to all Gen 2 vehicles and R2 later in 2026**, unsupervised in 2027, full driverless for robotaxi use cases thereafter — with 50,000 R2 robotaxis planned for 2028 in partnership with Uber. Lutz and Herbert are skeptical: Rivian has not disclosed the compute infrastructure (GPUs, training data, supervised miles) required to match Tesla's capability, and no independent testing of Rivian's system exists. A commenter identified as Genma (described as working in legacy automaker ADAS) noted Tesla required over 100,000 H100s running 24/7, years of feedback from over 1 million FSD users, and over 10 billion supervised miles.
+- **Li Auto CEO claims their Mach system** could match FSD version 14 by Q4 2026 — dual Mach M100 chips at 260 TOPS, with a claimed 50% improvement in imitation learning scale. The brighterwithherbert host characterizes all Chinese competitors as approximately two years behind Tesla.
 
-- **Li Auto CEO claims Mach model could be equivalent to FSD version 14 by Q4 2026**, citing dual Mach M100 chips at 260 TOPS and a claimed 50% improvement in imitation learning scale. Herbert characterizes all Chinese competitors — led by Xpeng, then Huawei, then Li Auto — as approximately two years behind Tesla.
+- **Waymo acquired the former Apple self-driving proving ground** near Wittman, Arizona — approximately 5,500 acres — for $220 million, recorded June 5, 2026 (FutureAzA).
 
-- **ETSC sent letters to nearly every non-approving EU member state** urging a hold on FSD recognition pending independent safety review. Loomis notes ETSC's corporate partners include Toyota Motor Europe and the German Road Safety Council (closely tied to Mercedes, BMW, and VW) and argues the campaign reflects competitive pressure rather than safety-first reasoning. RDW stated it tested FSD "for more than one and a half years on our test track and on public roads" and that FSD "makes a positive contribution to road safety."
-
-- **Several Chinese EV makers posted first profits:** Leap Motors full-year profit $78M (reversed from –$410M); NIO adjusted net profit $104M; Xpeng Q4 2025 net profit $55M (reversed from –$190M). BYD has outsold Tesla in Europe for multiple consecutive months.
+- **Iran ceasefire announced** on June 15, 2026. NASDAQ rallied ~2.89%, S&P 500 +1.61%, Dow Jones +1.0%. Tesla was trading near $411 at session time (Jo Bhakdi). Kevin Warsh speaks in his first FOMC appearance on Wednesday, June 18.
 
 Notable quotes and data:
-- Cybercab curb weight: 3,113 lbs; battery: 47.6 kWh; motor: 219 HP FWD; adjusted range: ~293 miles; efficiency: 165 Wh/mi; EPA certified May 26, commerce date May 29, 2026
-- FSD cumulative miles: 11 billion+; last 1 billion took 37 days; 4 billion+ on city streets; projected 17 billion+ by year-end 2026
-- Tesla robotaxi: 1.81x safer than human drivers as of April 2026 (analyst "Reigns," per cernbasher); 18 total NHTSA incidents, 7 Tesla at fault
-- Irving, TX depot: 212 remote fleet parking spaces, 64 building spaces, 17 EV chargers
-- FSD China one-time price: ~64,010 RMB (~$9,400); 2M+ Teslas on Chinese roads; every 10% attach rate ≈ ~$2B high-margin software revenue (Herbert's rough math)
-- Megapack 3: 5 MWh/unit, 28% more than Megapack 2; Houston factory: 50 GWh/year rated capacity
-- Optimus Gen 3 leaked hand design: ~50 actuators; factory target: 1M robots/year
-- Cortex 2.0: 50% capacity Q2, full capacity Q3 2026
-- SpaceX IPO: $135 price; ~$167–194 by Monday; Russell inclusion June 26; NASDAQ 100 July 6
-- Tesla: ~$411 at session time; Bhakdi year-end target $700–$800
-- Gwen Shotwell on merger: "a lot of synergies… would make life easier on Elon"
-- Norway on Tesla safety data: "self-produced… difficult to find correlation with the authorities' accident statistics" — Stein-Helge Mundal
-- RDW: "Using Tesla's FSD makes a positive contribution to road safety" — after 1.5+ years of independent testing
-- Elon Musk on unsupervised FSD for customer cars: "I'm just guessing, but probably in the fourth quarter"
-- Jo Bhakdi: "I think we have a local probability maximum in the next two weeks" for a robotaxi announcement
+- *"FSD V14.3.3 is getting harder and harder to distinguish from a driverless vehicle… Tesla is ahead. Way ahead."* — highest-engagement Tesla post of the day, per Sawyer Merritt
+- *"[Tesla's FSD] feels more like a level four or driverless ADS than past versions."* — Forbes, Brook Kthers
+- *"If a $30 toy can bypass your safety system, your safety system needs work."* — Fred Lambert, Electrek
+- *"I think we have a local probability maximum in the next two weeks"* for a robotaxi announcement — Jo Bhakdi
+- Tesla robotaxi: 1.81x safer than human drivers as of April 2026 (analyst "Reigns," per cernbasher)
+- Cybercab EPA range: 418.2 miles unadjusted combined; ~293 miles adjusted; 165 Wh/mi efficiency
+- FSD China one-time price: ~64,010 RMB (~$9,400 USD); 2M+ Teslas on Chinese roads; every 10% attach rate ≈ ~$2B high-margin software revenue (rough math, brighterwithherbert)
+- SpaceX-Tesla combined valuation per analyst merger math: ~$3.4 trillion
+- Waymo Arizona proving ground: $220M, ~5,500 acres, recorded June 5, 2026
+- Tesla year-end price target per Jo Bhakdi: $700–$800; current resistance at $440
