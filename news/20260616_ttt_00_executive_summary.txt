@@ -1,9 +1,9 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-06-16)
 Published:   2026-06-16 00:00 UTC
-Summarized:  2026-06-17 05:16:30 UTC
+Summarized:  2026-06-17 11:57:15 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.05579 (10613 in / 1597 out tokens)
+Cost:        $0.06515 (10613 in / 2221 out tokens)
 Sources:     6
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
@@ -23,43 +23,60 @@ Source: [RobotaxiTracker.com](https://robotaxitracker.com/)
 ## Brief
 
 - Record 102 Cybercabs spotted at Giga Texas outbound lot.
-- Cybercab EPA specs confirmed: 418-mile range, 3,113 lb curb weight.
-- Electrek: Tesla's unsupervised fleet shrank from 25-unit peak to 14 vehicles.
-- FSD v14.3.4 rolls out with same release notes as predecessor.
+- EPA filing confirms Cybercab specs: 418-mile range, 3,113 lb curb weight.
+- FSD v14.3.4 rolls out; incremental refinement, same release notes as prior build.
+- Electrek: Tesla's unsupervised robotaxi fleet contracted from 25-unit peak to 14.
 - Tesla Model Y L deliveries begin in India.
 
 ## Robotaxi
-- **Record Cybercab lot count at Giga Texas:** 102 Cybercabs were spotted at the Giga Texas outbound lot — a new record — and separately 55 Cybercabs were observed in Dallas, per Sawyer Merritt. The combination of factory-lot volume and regional logistics activity is the clearest on-the-ground production ramp signal to date.
-- **Cybercab clears EPA certification:** Tesla received an EPA certificate of conformity for the Cybercab, formally authorizing US market introduction. Per FutureAzA, Tesla also reportedly designed the Cybercab to meet FMVSS safety standards without requiring an NHTSA exemption or the associated 2,500-unit production cap — a significant regulatory runway for scaling.
-- **Fleet contraction, not expansion:** Per Electrek's Fred Lambert, the unsupervised Tesla robotaxi fleet peaked at 25 cumulative vehicles in late April 2026, then declined. Musk's original Austin target was 500 unsupervised vehicles by end of 2025, later revised to ~60; the current unsupervised count is 14. Lambert attributes the clean 18-incident NHTSA record (vs. ~697 for Waymo) entirely to low exposure rather than system superiority, and notes Tesla holds only 42 Texas driverless authorizations versus Waymo's 577.
-- **Musk cites FSD v15 rewrite as prerequisite for scale:** Any aggressive robotaxi ramp is now deferred to late 2026 or 2027, contingent on the v15 software overhaul, per Electrek's sourcing.
+
+- **Record Cybercab lot count at Giga Texas:** 102 Cybercabs were spotted at the outbound lot at Giga Texas — a new record — with 55 additional units observed in Dallas. Per Sawyer Merritt: "these things are really stacking up now." The combination of factory-lot and regional deployment signals represents the clearest on-the-ground evidence of a production ramp to date.
+
+- **Cybercab EPA filing discloses full specs:** Official EPA documents reveal front-wheel drive, ~48 kWh battery, 219 hp, 163 kW motor, 326V system voltage, 3,113 lb curb weight (lightest in Tesla's lineup), GVWR of 3,730 lbs, and an equivalent all-electric range of 418 miles. The lightweight design likely drives the unusually high range figure; these are government-sourced numbers with high credibility for unit economics modeling.
+
+- **Cybercab clears EPA certificate of conformity:** Tesla received an EPA certificate of conformity for the Cybercab, confirming federal emissions compliance for US market introduction. Per FutureAzA, Tesla reportedly designed the Cybercab to meet FMVSS safety standards without requiring an NHTSA exemption or the 2,500-unit production cap. Texas state AV operator permits are said to already be in place.
+
+- **Fleet contracting, not growing, per Electrek:** Electrek's Fred Lambert reports Texas's DMV database (updated under a law effective May 28) shows Tesla holds 42 driverless operation authorizations in Texas versus Waymo's 577 and Avride's 317. The active fleet visible in the past 7 days on RobotaxiTracker.com stands at just 31 vehicles total. The unsupervised fleet peaked at 25 in late April 2026 and has since declined to 14 — well short of Musk's original Austin target of 500 by end of 2025, later revised to ~60. Musk now cites the FSD v15 software rewrite as the prerequisite for aggressive scaling, pushing any real ramp to late 2026 or 2027.
+
+- **Lambert's editorial framing:** Lambert argues Tesla's clean NHTSA crash record (18 incidents since Austin launch vs. ~697 for Waymo) reflects minimal exposure rather than system superiority — Waymo runs ~3,000 vehicles and 500,000+ paid trips per week. He notes Tesla's 17 unredacted crash narratives are dominated by rear-endings and sideswipes by human drivers, consistent with Waymo's own pattern. The expanding geofence (now covering the full Austin metro) is characterized as a costless metric obscuring a shrinking operational fleet.
 
 ## Autonomous Driving
-- **FSD v14.3.4 rolls out:** A new incremental sub-version began rolling out with identical release notes to its predecessor, confirming continued iteration cadence but no major capability change.
-- **Waymo acquires 5,500-acre Arizona proving ground for $220M:** The site near Whitman includes a 115-acre city course, 35-acre vehicle dynamics area, a four-mile oval, and a dedicated freeway course, per FutureAzA. Waymo now holds testing infrastructure at three proving grounds across California, Ohio, and Arizona — alongside ~3,000 operational robotaxis completing 500,000+ paid trips per week and a $16B raise funding expansion to London and Tokyo.
 
-## Humanoid Bots
-- **Figure producing ~250 robots/month as of May 2026:** Scott Walter of Robo Strategy, speaking on brighterwithherbert, reports Figure is manufacturing roughly one robot every 30 minutes. Figure has locked the Figure 4 design and is pre-building "Bot Q" manufacturing infrastructure and supply chains so the next-generation launch does not restart from zero.
-- **CNC machining hits a production ceiling around 1,000 units:** Walter, following a visit to Munro & Associates, argues Chinese manufacturers relying on CNC machining from aluminum billets cannot scale an order of magnitude without transitioning to casting and stamping — a structural constraint on Chinese competitors that Figure has already addressed.
-- **Physical AI currently at GPT-3 equivalent; GPT-5 analog expected in 1–2 years:** Andrew Kang of Robo Strategy estimates the intelligence compression will be faster than LLMs because post-training techniques, RLHF analogs, and data infrastructure transfer directly from the language model world. Once that threshold is crossed, manufacturing becomes the binding constraint.
-- **"Language steering" and in-context learning emerging in 2026:** Kang highlights plain-language task instruction execution and one-shot in-context learning — where a robot is shown a task once and retains the instruction — as frontier capabilities beginning to appear in leading physical AI models now.
+- **FSD v14.3.4 rolling out:** A new sub-version, v14.3.4, began rollout with the same release notes as its predecessor — confirming continued iteration cadence but no major capability leap.
+
+- **Waymo acquires $220M Arizona proving ground:** Waymo purchased a 5,500-acre facility near Whitman, Arizona for $220 million, comprising a 115-acre city course, 35-acre vehicle dynamics area, four-mile oval, and dedicated freeway course. This expands Waymo's existing network (Castle, CA and Transportation Research Center, OH). FutureAzA's hosts interpret the investment as a signal that Waymo is not close to solving autonomy at scale.
 
 ## Electric Vehicles
-- **Tesla Model Y L deliveries begin in India:** First deliveries commenced, marking Tesla's entry into a major emerging market demand vector.
+
+- **Tesla Model Y L deliveries begin in India:** First deliveries of the Model Y L in India have commenced, opening a new demand vector in a large emerging market.
+
+## Humanoid Bots
+
+- **Figure AI producing ~250 robots/month as of May 2026:** Scott Walter of Robo Strategy, citing a recent visit to Munro & Associates, reports Figure was producing approximately one robot every 30 minutes (~250/month) as of last month. Figure has locked the Figure 4 design and is pre-building "Bot Q" manufacturing infrastructure so the next-generation launch does not restart from zero. Walter highlights Figure's use of casting over CNC machining from aluminum billets — a key differentiator from Chinese manufacturers, whose CNC-based approach hits a production ceiling around 1,000 units and cannot scale an order of magnitude without switching methods.
+
+- **Physical AI intelligence framed at GPT-3 equivalent today:** Andrew Kang of Robo Strategy estimates robots currently operate at roughly a GPT-3 level of physical intelligence — sometimes useful but unreliable. He argues the jump to GPT-5 equivalent for physical AI will compress to one to two years (vs. three-plus years for LLMs) because post-training techniques, RLHF analogs, and data infrastructure can transfer from the LLM world. Beyond that threshold, manufacturing capacity becomes the binding constraint.
+
+- **"Language steering" and in-context learning emerging in 2026:** Kang identifies plain-language task instruction execution ("put that cup in the dishwasher") and single-demonstration in-context learning as early capabilities now coming online in frontier physical AI models.
 
 ## Market & Competition
-- **Waymo expanding; Tesla fleet shrinking:** The competitive gap widened on June 16. Waymo operates across 11 US markets covering 1,400+ square miles with thousands of vehicles; Tesla's active fleet across all modes stands at 728 per RobotaxiTracker.com, with the unsupervised subset at 39 (per the May 9 data point).
-- **Chinese humanoid robots face structural US market barriers:** Kang argues Chinese robots are exposed to the same 100%-tariff and national security legislation risk as Chinese EVs, given the surveillance implications of devices that see and hear inside US homes and businesses. Bills moving through Congress would likely restrict Chinese humanoid deployment in the US, making the domestic market largely captive to American manufacturers.
-- **Robo Strategy (NASDAQ: BOT) launched May 2026** as a publicly traded fund giving retail investors access to private robotics companies — including Figure AI (now valued at $39B, up from $2.6B at Kang's initial entry) — at a 2.5% management fee with no carry. The fund announced a $2B at-the-market equity facility with Roth shortly after listing.
+
+- **SpaceX IPO closes above $2.5T market cap:** SpaceX raised a record $85.7 billion in its IPO (638,888,888 Class A shares), with the stock up 19.6% on its second day of trading. Ron Baron purchased $1 billion of IPO shares; Baron Capital's total SpaceX holdings now stand at $25 billion. SpaceX stock was up approximately 29% since IPO as of June 16, trading around $160.
+
+- **SpaceX acquires Cursor for $60 billion:** Per Jo Bhakdi, SpaceX completed the acquisition of Cursor — described as the leading agentic coding harness — for $60 billion, following a $10 billion call option Musk had previously purchased. Bhakdi argues this gives SpaceX a vertically integrated "holy trinity" in enterprise AI: harness (Cursor), frontier LLM (Grok), and compute (Colossus). SpaceX's own investor presentation cites a $22.7 trillion TAM in enterprise AI applications.
+
+- **Chinese EV makers turning profitable; BYD market cap context:** Several Chinese EV manufacturers — NIO, Xpeng, BYD, Xiaomi, Li Auto — have recently reported profitability, though FutureAzA notes BYD and Xiaomi are conglomerates where EV-specific margins are difficult to isolate (Xiaomi's auto unit remains loss-making). Separately, Robo Strategy's Andrew Kang notes BYD's market cap is roughly 5% of Tesla's despite higher vehicle volumes — illustrating how margin compression from intense domestic competition suppresses valuations of Chinese manufacturers.
+
+- **Robo Strategy (NASDAQ: BOT) launches with $2B equity facility:** Robo Strategy went public in May 2026 as a fund giving retail investors access to private robotics companies, charging 2.5% management fee with no carry. It announced a $2 billion at-the-market equity facility with Roth post-IPO. Portfolio highlights include Path Robotics (arc welding) and Standard Bots (first American-made industrial arms since Unimation in 1961). Figure AI — in which Kang invested $19 million at a $2.6 billion post-money valuation — is now valued at $39 billion.
 
 Notable quotes and data:
-- Cybercab EPA specs: front-wheel drive, ~48 kWh battery, 219 hp, 163 kW motor, 326V, 3,113 lb curb weight, 418-mile EAER
-- Tesla NHTSA ADS incidents since Austin launch: 18; Waymo: ~697 (gap explained by exposure, per Lambert)
-- Tesla Texas driverless authorizations: 42 vs. Waymo's 577
-- Unsupervised Tesla robotaxi fleet peaked at 25 (late April 2026), now 14
-- Figure AI production rate: ~250 robots/month (~1 every 30 minutes) as of May 2026
-- Figure AI valuation: $39B (vs. $2.6B at Kang's initial investment)
+- Cybercab specs (EPA official): ~48 kWh battery, 419 hp, 3,113 lb curb weight, 418-mile equivalent range, 326V system
+- Tesla NHTSA ADS incidents since Austin launch: 18; Waymo: ~697
+- Tesla Texas driverless authorizations: 42; Waymo: 577; Avride: 317
+- Unsupervised robotaxi fleet: peaked at 25 (late April 2026), now 14 per RobotaxiTracker.com
+- SpaceX IPO raise: $85.7 billion; day-two market cap: >$2.5 trillion; stock +29% since IPO at ~$160
+- SpaceX Cursor acquisition: $60 billion; prior call option: $10 billion; enterprise AI TAM cited by SpaceX: $22.7 trillion
+- Figure AI production: ~250 robots/month (~1 every 30 minutes) as of May 2026; current valuation: $39 billion
 - Humanoid robotics market estimate: $5 trillion by 2050
-- Waymo Arizona proving ground acquisition: $220M, 5,500 acres
+- Waymo Arizona proving ground: $220 million, 5,500 acres
 - Andrew Kang: "I think the top humanoid companies are going to be worth trillions if not tens of trillions in the future."
-- Fred Lambert: "The real test only comes when hundreds or thousands of driverless Teslas are on the road and crashes are measured against actual rides delivered."
+- Randy Kirk (FutureAzA): Tesla $500+/share by end of June 2026, conditioned on robotaxi fleet growth
