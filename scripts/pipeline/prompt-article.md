@@ -41,6 +41,7 @@ The current year is {{YEAR}}. When the article mentions relative timeframes like
 - NEVER infer or fill in specific version numbers, dollar amounts, percentages, or dates that are not directly mentioned. If the article discusses something without giving a specific number, describe it qualitatively.
 - If the article is vague or ambiguous about a detail, reflect that ambiguity — do not resolve it with assumptions from your training data.
 - Separate the author's editorial opinion from reported facts. If the article contains an editorial take or commentary section, note the stance but do not present opinion as fact.
+- **Preserve the article's certainty and attribution.** Do not upgrade a hedged, second-hand, or rumored claim into a flat fact. If the article attributes a claim to an unnamed source, a rumor, or its own speculation ("reportedly", "sources say", "apparently", "we believe"), carry that framing into the summary rather than stating it as confirmed. This matters most for claims about third parties the author has not independently verified.
 
 ## Task
 

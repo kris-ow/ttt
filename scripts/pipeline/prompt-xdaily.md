@@ -40,6 +40,7 @@ The current year is {{YEAR}}. When posts mention relative timeframes like "Q2", 
 - ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the posts.
 - NEVER infer or fill in specific version numbers, dollar amounts, percentages, or dates that are not directly mentioned. If a post discusses something without giving a specific number, describe it qualitatively.
 - If a post is vague or ambiguous about a detail, reflect that ambiguity — do not resolve it with assumptions from your training data.
+- **Preserve the poster's certainty and attribution.** Do not upgrade a hedged, second-hand, or rumored claim into a flat fact. If a post is unsure, relaying something heard elsewhere, or guessing — signaled by "I think", "reportedly", "rumor", "apparently", "hearing that", or a quote-tweet of an unverified claim — carry that uncertainty into the summary and attribute it (e.g. "per a post (unconfirmed)"). This matters most for claims about third parties. A sourced report and an unverified aside must not read the same way.
 - Some posts may be tangential to Tesla (SpaceX, Starlink, politics). Include these only if they have meaningful implications for Tesla investors.
 
 ## Task

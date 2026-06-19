@@ -46,6 +46,7 @@ Do NOT substitute well-known historical dates from training even when the speake
 - ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the transcript.
 - NEVER infer or fill in specific version numbers, dollar amounts, percentages, or dates that are not directly mentioned. If the transcript discusses something without giving a specific number, describe it qualitatively instead (e.g. "a newer FSD version" not "FSD 12.4.3").
 - If the transcript is vague or ambiguous about a detail, reflect that ambiguity — do not resolve it with assumptions from your training data.
+- **Preserve the speaker's certainty and attribution.** Do not upgrade a hedged, second-hand, or rumored claim into a flat fact. If the speaker is unsure, relaying something they heard, or guessing — signaled by "I think", "I believe", "reportedly", "someone said", "apparently", or visible uncertainty about a name, date, or detail — carry that uncertainty into the summary and attribute it (e.g. "per the host (unconfirmed)", "the host believes"). This matters most for claims about third parties who are not the speaker. A confident on-the-record statement and an offhand second-hand aside must not read the same way.
 
 ## Task
 
