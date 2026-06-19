@@ -344,11 +344,29 @@ function buildPriorAnchors(unsupervised) {
   return Object.keys(prior).length ? prior : undefined;
 }
 
+// Date the scraped total last *changed* (not last fetched). rotateHistory only
+// advances tracker.current.date when the total moves, so current.date IS the
+// last-change date. The frontend bases its staleness badge on this — fetched_at
+// stays fresh every run even when the upstream source is frozen.
+function lastChangeDate() {
+  try {
+    const kb = JSON.parse(fs.readFileSync(KB_FILE, 'utf-8'));
+    return kb?.Robotaxi?.areas
+      ?.find(a => a.id === 'fleet_deployment')
+      ?.sections?.find(s => s.id === 'unsupervised_count')
+      ?.current?.date || null;
+  } catch {
+    return null;
+  }
+}
+
 function writeCountsJson(unsupervised) {
   if (!unsupervised) return false;
   const prior = buildPriorAnchors(unsupervised);
+  const dataAsOf = lastChangeDate();
   const out = {
     fetched_at: new Date().toISOString(),
+    ...(dataAsOf ? { data_as_of: dataAsOf } : {}),
     source: HOME_URL,
     total_unsupervised: unsupervised.total_unsupervised,
     cities: unsupervised.cities,

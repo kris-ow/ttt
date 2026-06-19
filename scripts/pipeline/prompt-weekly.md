@@ -58,7 +58,7 @@ Required as a section unless the week was genuinely clean of bear signal.
 - If two daily briefs disagree on a number, note both and flag the disagreement.
 - Quote sparingly and only when a direct quote carries unique signal (e.g., Elon, an executive, an analyst).
 - Source attribution: where useful, mention the channel briefly in the prose ("per Bhakdi", "Munro Live reported"). Do not list channel names exhaustively.
-- A canonical "Unsupervised Robotaxi Fleet" table is added programmatically above your output. **Hard rule: no fleet count numbers anywhere in the Brief section.** Do not duplicate fleet count / per-city Robotaxi numbers / week-over-week vehicle deltas in your Brief or category sections — the reader already sees them in the table. Reference Robotaxi fleet only when there is qualitative context worth adding (a launch, a milestone, a quote). Phrases like "fleet up N vehicles on the week" or "now N unsupervised cars" belong in the table, never in prose.
+- **Hard rule: no unsupervised-fleet count numbers anywhere in the brief.** Do not state fleet count / per-city Robotaxi numbers / week-over-week vehicle deltas in your Brief or category sections. Those come from RobotaxiTracker.com, which has not updated since 2026-05-09, and the live site tile already surfaces them with a staleness indicator. Reference the Robotaxi fleet only when there is genuine qualitative news worth adding (a launch, a milestone, a quote). Phrases like "fleet up N vehicles on the week" or "now N unsupervised cars" must never appear.
 
 ## Style
 

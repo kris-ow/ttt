@@ -47,25 +47,17 @@ function splitHeaderAndBody(raw) {
 // because reorderSections bailed silently, so transforms must never fail
 // quietly again.
 
-// Kept: the canonical Robotaxi tracker block (table). New.reddit and the
-// official mobile apps render markdown tables; old.reddit displays them
-// as raw pipes — acceptable cosmetic loss.
-//
-// Removed: the `Source: [RobotaxiTracker.com](https://...)` markdown link.
-// User position (2026-05-11): outbound link risks being read as shilling
-// the third-party site on Reddit. Plain text attribution `Source: Robotaxi
-// Tracker` keeps credit without the link.
-function delinkTrackerSource(body) {
-  const re = /^Source: \[RobotaxiTracker\.com\]\(https:\/\/robotaxitracker\.com\/?\)/m;
-  if (!re.test(body)) return null;
-  return body.replace(re, 'Source: Robotaxi Tracker');
-}
+// The Robotaxi tracker table was removed from the weekly brief 2026-06-19
+// (RobotaxiTracker.com froze on 2026-05-09), so the tracker-keyed transforms
+// delinkTrackerSource and reorderSections are gone with it. The Brief now
+// leads the source body naturally, so attributeBriefHeading still puts the
+// TTT link top-of-fold without any reordering.
 
-// Adds TTT attribution into the Brief section heading. As of 2026-06-01
-// the tracker is moved below the Brief (see reorderSections), so this is
-// the FIRST link in the post — top-of-fold position. Single mention rule
-// preserved (user position 2026-05-17): no bottom footer, no duplicate links.
-// Phrasing avoids time-zone language ("morning" was rejected as relative).
+// Adds TTT attribution into the Brief section heading. The Brief is the first
+// section of the source body, so this is the FIRST link in the post —
+// top-of-fold position. Single mention rule preserved (user position
+// 2026-05-17): no bottom footer, no duplicate links. Phrasing avoids
+// time-zone language ("morning" was rejected as relative).
 function attributeBriefHeading(body) {
   const re = /^## Brief$/m;
   if (!re.test(body)) return null;
@@ -73,26 +65,6 @@ function attributeBriefHeading(body) {
     re,
     `## Brief from [theteslathesis.com](${TTT_URL}) — see the site for daily briefs`
   );
-}
-
-// Moves the `## Unsupervised Robotaxi Fleet` block from the top of the body
-// to a position between the Brief bullets and the first category section.
-// Source brief lays out tracker → Brief → categories; Reddit post wants
-// Brief (TTT link top-of-fold) → tracker → categories so the link is the
-// first thing a reader sees and the tracker reads as supporting context.
-// Section `---` separators are guaranteed by normalizeSeparators() in
-// weekly-summary.js since 2026-06-09.
-function reorderSections(body) {
-  // Source brief is CRLF on Windows pipelines, LF elsewhere — `\r?\n` keeps
-  // the transform robust to either.
-  const trackerRe = /^(## Unsupervised Robotaxi Fleet[\s\S]*?\r?\n)---\r?\n\r?\n(?=## Brief\b)/m;
-  const trackerMatch = body.match(trackerRe);
-  if (!trackerMatch) return null;
-  const trackerBlock = trackerMatch[1];
-  const withoutTracker = body.replace(trackerRe, '');
-  const briefEndRe = /(^## Brief[\s\S]*?\r?\n)---\r?\n\r?\n/m;
-  if (!briefEndRe.test(withoutTracker)) return null;
-  return withoutTracker.replace(briefEndRe, `$1---\n\n${trackerBlock}---\n\n`);
 }
 
 // ── Output ───────────────────────────────────────────────
@@ -107,8 +79,6 @@ function buildRedditPost(title, body) {
   const warnings = [];
   let out = body;
   for (const [name, transform] of [
-    ['delinkTrackerSource', delinkTrackerSource],
-    ['reorderSections', reorderSections],
     ['attributeBriefHeading', attributeBriefHeading],
   ]) {
     const next = transform(out);

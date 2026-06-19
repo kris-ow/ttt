@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { MODEL, PRICING_DIRECT } from './config.js';
-import { formatCanonicalTrackerBlock, renderUnsupervisedTable } from './kb-tracker.js';
+import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 
 // ── Configuration ────────────────────────────────────────
 
@@ -139,11 +139,11 @@ function writeExecutiveSummary(targetDate, parsed, { inputTokens, outputTokens, 
     body = parsed.brief;
   }
 
-  // Prepend deterministic unsupervised-fleet table from KB. Numbers are
-  // sourced from KB tracker history, not the LLM, so they cannot drift.
-  const trackerTable = renderUnsupervisedTable(targetDate);
-
-  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + trackerTable + body + '\n');
+  // The unsupervised-fleet table was removed 2026-06-19: RobotaxiTracker.com
+  // (the upstream source) stopped updating on 2026-05-09, so the table only
+  // restated frozen numbers every day. The live Daily Feed tile still shows
+  // the counts with an explicit staleness badge.
+  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + body + '\n');
   console.log(`  Written: ${filename}`);
   return filename;
 }

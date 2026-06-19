@@ -26,7 +26,7 @@ Use these category headers exactly, in this order, and only include categories t
 - If a category has only speculation or opinion (no concrete development), skip the category.
 - Quote sparingly and only when a direct quote carries unique signal.
 - Source attribution: where useful, mention the channel briefly in the prose (e.g. "per Herbert Ong", "Munro Live reported"). Do not list channel names exhaustively.
-- A canonical "Unsupervised Robotaxi Fleet" table is added programmatically above your output. Do not duplicate fleet count / per-city Robotaxi numbers in your Brief or category sections — the reader already sees them in the table. Reference Robotaxi fleet only when there is qualitative context worth adding (a launch, a milestone, a quote about it).
+- Do NOT report raw unsupervised-fleet counts or per-city Robotaxi numbers (e.g. "Austin 28, Houston 6", "39 unsupervised vehicles"). Those come from RobotaxiTracker.com, which has not updated since 2026-05-09, and the live site tile already surfaces them with a staleness indicator. Reference the Robotaxi fleet only when there is genuine qualitative news worth adding (a launch, a milestone, an executive quote) — never a bare count or week-over-week delta.
 
 ## Style
 

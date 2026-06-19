@@ -57,76 +57,10 @@ function logCost(entry) {
   console.log(`  Cost: $${entry.cost.toFixed(5)} (${entry.inputTokens} in / ${entry.outputTokens} out)`);
 }
 
-// ── Robotaxi Tracker (Now / 7D / 30D) ────────────────────
-
-// Mirrors kb-tracker.renderUnsupervisedTable but drops the 1D column — for a
-// weekly brief, day-over-day deltas are noise.
-
-function findValueByDate(tracker, date) {
-  const all = [...(tracker.history || [])];
-  if (tracker.current) all.push(tracker.current);
-  all.sort((a, b) => a.date.localeCompare(b.date));
-  for (let i = all.length - 1; i >= 0; i--) {
-    if (all[i].date <= date) return all[i];
-  }
-  return null;
-}
-
-function fmtDelta(now, then) {
-  if (now == null || then == null) return '—';
-  const d = now - then;
-  if (d === 0) return '0';
-  return d > 0 ? `+${d}` : String(d);
-}
-
-function renderUnsupervisedTableWeekly(weekEndDate) {
-  let kb;
-  try {
-    kb = JSON.parse(fs.readFileSync(KB_FILE, 'utf-8'));
-  } catch {
-    return '';
-  }
-
-  const tracker = kb?.Robotaxi?.areas
-    ?.find(a => a.id === 'fleet_deployment')
-    ?.sections?.find(s => s.id === 'unsupervised_count');
-  if (!tracker) return '';
-
-  const target = findValueByDate(tracker, weekEndDate) || tracker.current;
-  if (!target || !target.breakdown) return '';
-
-  const anchors = {
-    '7D': findValueByDate(tracker, dateAddDays(weekEndDate, -7)),
-    '30D': findValueByDate(tracker, dateAddDays(weekEndDate, -30)),
-  };
-
-  const cities = Object.keys(target.breakdown).sort(
-    (a, b) => (target.breakdown[b] || 0) - (target.breakdown[a] || 0)
-  );
-  const cityAt = (anchor, city) => anchor ? (anchor.breakdown?.[city] ?? 0) : null;
-
-  const rows = cities.map(city => {
-    const now = target.breakdown[city] ?? 0;
-    return `| ${city} | ${now} | ${fmtDelta(now, cityAt(anchors['7D'], city))} | ${fmtDelta(now, cityAt(anchors['30D'], city))} |`;
-  });
-
-  const totalRow = `| **Total** | **${target.total}** | ${fmtDelta(target.total, anchors['7D']?.total)} | ${fmtDelta(target.total, anchors['30D']?.total)} |`;
-
-  return [
-    '## Unsupervised Robotaxi Fleet',
-    '',
-    '| City | Now | 7D | 30D |',
-    '|:-----|----:|---:|----:|',
-    ...rows,
-    totalRow,
-    '',
-    'Source: [RobotaxiTracker.com](https://robotaxitracker.com/)',
-    '',
-    '---',
-    '',
-    '',
-  ].join('\n');
-}
+// The weekly `## Unsupervised Robotaxi Fleet` table was removed 2026-06-19.
+// RobotaxiTracker.com stopped updating on 2026-05-09, so the table only
+// restated frozen numbers every week. The live Daily Feed tile still surfaces
+// the counts with an explicit staleness badge.
 
 // ── Source Collection ────────────────────────────────────
 
@@ -236,9 +170,7 @@ function writeWeeklyBrief(targetDate, weekStart, weekEnd, parsed, { inputTokens,
     '',
   ];
 
-  const trackerTable = renderUnsupervisedTableWeekly(weekEnd);
-
-  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + trackerTable + normalizeSeparators(parsed.brief) + '\n');
+  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + normalizeSeparators(parsed.brief) + '\n');
   console.log(`  Written: ${filename}`);
   return filename;
 }

@@ -5,6 +5,7 @@ const COUNTS_URL = 'https://raw.githubusercontent.com/kris-ow/ttt/master/data/co
 type AnchorEntry = { date: string; total: number; breakdown?: Record<string, number> }
 type Counts = {
   fetched_at: string
+  data_as_of?: string
   source: string
   total_unsupervised: number
   cities: { city: string; unsupervised: number }[]
@@ -35,11 +36,25 @@ function priorCity(anchor: AnchorEntry | undefined, city: string): number | null
 
 const ROW_GRID = 'grid grid-cols-5 gap-2 items-baseline'
 
-function relativeAge(iso: string): { label: string; stale: boolean } {
+// Days the upstream source has been unchanged. We scrape 3x/day so fetched_at
+// is always fresh; the meaningful signal is data_as_of — the date the numbers
+// last moved (RobotaxiTracker.com froze on 2026-05-09). Flag stale once the
+// source has not moved in a week, which a genuinely active fleet would beat.
+const STALE_DAYS = 7
+
+function dataChangeAge(dateStr: string): { label: string; stale: boolean } {
+  const days = Math.floor((Date.now() - new Date(dateStr + 'T00:00:00Z').getTime()) / 86_400_000)
+  const stale = days >= STALE_DAYS
+  if (days < 1) return { label: 'today', stale }
+  if (days === 1) return { label: '1d ago', stale }
+  return { label: `${days}d ago`, stale }
+}
+
+// Fallback for legacy counts.json without data_as_of: age off fetch time.
+function fetchAge(iso: string): { label: string; stale: boolean } {
   const ageMs = Date.now() - new Date(iso).getTime()
   const hours = Math.floor(ageMs / 3_600_000)
   const days = Math.floor(hours / 24)
-  // Scrape runs 3x/day (every ~8h); flag stale if last update is older than 24h.
   const stale = hours > 24
   if (hours < 1) return { label: 'just now', stale }
   if (hours < 24) return { label: `${hours}h ago`, stale }
@@ -66,7 +81,9 @@ export function RobotaxiCounts({ className, bare }: { className?: string; bare?:
     ? [...data.cities].sort((a, b) => b.unsupervised - a.unsupervised)
     : []
 
-  const age = data ? relativeAge(data.fetched_at) : null
+  const age = data
+    ? (data.data_as_of ? dataChangeAge(data.data_as_of) : fetchAge(data.fetched_at))
+    : null
 
   return (
     <div className={`${bare ? '' : 'border border-border bg-surface '}p-3 text-xs${className ? ` ${className}` : ''}`}>
