@@ -1,81 +1,93 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-06-19)
 Published:   2026-06-19 00:00 UTC
-Summarized:  2026-06-20 04:41:23 UTC
+Summarized:  2026-06-20 10:13:38 UTC
 Model:       claude-sonnet-4-6 [direct]
-Cost:        $0.06232 (9499 in / 2255 out tokens)
-Sources:     4
+Cost:        $0.07588 (12384 in / 2582 out tokens)
+Sources:     5
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- Tesla receives SFO ride-hailing permits — Bay Area Robotaxi footprint extends to airport.
-- Elon: Grok voice control of car "in about 3 months."
-- FSD to remember parking preferences; destination parking now top intervention reason.
-- 102 Cybercabs staged at Albon lot near Giga Texas — record accumulation.
-- Elon exercises 304M options at $44/share; ownership reaches ~19.9%, locked to 2033.
-- Q2 delivery consensus 397K–420K; report expected July 2–3.
+- Cybercab EPA Certificate of Conformity confirmed; Texas commercial launch "~4 weeks away."
+- 102 Cybercabs staged at Giga Texas Albon lot — record accumulation.
+- Tesla receives SFO ride-hailing permits, extending Bay Area Robotaxi into major transit hub.
+- Elon: Grok voice control of FSD vehicle in "about 3 months."
+- Elon exercises 304M options at $44/share; ownership rises to ~19.9%, locked until 2033.
+- FSD approval rumor in Spain by end of June; Sweden blocking until speed-limit cap imposed.
 
 ## Robotaxi
 
-- **SFO ride-hailing permits approved.** Tesla received the necessary permits to operate ride-hailing at San Francisco International Airport — a concrete regulatory milestone extending the Bay Area Robotaxi footprint into a major high-traffic transit hub. No launch date was disclosed.
+- **Cybercab EPA Certificate of Conformity received.** The Cybercab has cleared the federal emissions compliance requirement — a prerequisite for commercial deployment and fare collection in the US. Randy Kirk (FutureAzA) confirmed the box is now checked.
 
-- **102 Cybercabs staged at Albon lot near Giga Texas.** Per Herbert, this is a record accumulation, up from earlier sightings of roughly 20, then 50 units. Jeff Lutz noted that in manufacturing, value-added steps (decals, branding, hubcaps) are only applied close to deployment — making the off-factory staging a bullish signal for imminent commercial readiness.
+- **102 Cybercabs staged at Giga Texas Albon lot — a record.** The count has grown rapidly from earlier sightings of 20, 30, then 50 units. Jeff Lutz noted that staging vehicles away from the factory and adding branding/service markings signals proximity to deployment, as rework costs rise with each value-added step. Cybercabs are also now exiting Giga Texas autonomously and parking themselves, per Joe Tegtmeyer's observation.
 
-- **Cybercabs now leaving Giga Texas autonomously.** Joe Tegtmeyer reportedly observed a Cybercab driving itself out of the factory and self-parking — described by the panel as a first. Separately, Cern Basher noted units are now exiting the factory with service branding already installed, indicating production intended for actual deployment rather than testing.
+- **Cybercabs spotted in New Zealand**, interpreted as right-hand-traffic and possibly cold-weather testing. Separately, units have been sighted in Las Vegas, Florida, and the Boston area, suggesting Tesla is pre-positioning across multiple target cities.
 
-- **Cybercabs spotted in New Zealand.** The panel interpreted the sightings as likely right-hand-traffic and possibly cold-weather testing — consistent with Tesla's prior use of New Zealand for vehicle validation.
+- **Tesla receives SFO ride-hailing permits.** Tesla has been granted permits to operate ride-hailing at San Francisco International Airport — a high-traffic, high-revenue venue. No launch date was given, but the permit is a concrete regulatory step extending the Bay Area footprint into a major transit hub.
 
-- **Q2 city expansion window still open.** Cern Basher noted Tesla had guided for additional city rollouts before end of Q2 (June 30, 2026), flagging Miami as a candidate. Jeff Lutz was skeptical of calendar-driven timing, and noted that the EPA certificate of conformity may be a regulatory gate before Tesla can charge customers for Cybercab rides.
+- **Texas commercial launch: "about four weeks away at the most,"** per Randy Kirk relaying an estimate attributed to Jeff Le. Randy cited Texas as already having permitting in place and not subject to the federal 2,500-vehicle cap, characterizing the remaining hold-up as likely a software-readiness issue. Active Robotaxi fleet stands at 732 per RobotaxiTracker.com (as of 2026-06-20).
 
-- **Robotaxi safety record.** Per Sawyer Merritt, every incident involving the Robotaxi fleet in recent months was caused by other human drivers — no at-fault incidents attributed to the autonomous system.
+- **Q2 city expansion still possible.** Cern Basher noted Tesla had indicated additional city rollouts before end of Q2 (June 30). Miami was floated as a candidate. Jeff Lutz was skeptical of calendar-driven timing, believing deployment will follow operational readiness criteria. The one-year anniversary of the first Robotaxi falls around June 22.
+
+- **Robotaxi safety record:** The only recent incidents involving Tesla's Robotaxi fleet have been caused by other drivers striking the autonomous vehicles — not autonomous-system faults, per Sawyer Merritt.
 
 ## Autonomous Driving
 
-- **FSD parking memory announced by Elon.** Upcoming FSD releases will remember individual parking preferences — home, office, school drop-off — allowing the car to navigate autonomously to the correct spot. Elon called destination parking "by far the biggest reason people now intervene with FSD," and described critical safety interventions as "extremely rare."
+- **Grok voice control of FSD arriving in "about 3 months."** Elon replied to a user request for conversational vehicle control — commands like "turn right here" or "drop us off here" — with a ~3-month timeline. Jeff Lutz noted this implies HW4 (AI4) can handle the task, contrary to earlier expectations requiring AI5, and flagged that cloud-based Grok latency must be resolved for real-time vehicle control.
 
-- **Grok voice control of FSD arriving in ~3 months.** Elon confirmed conversational Grok control of the vehicle — real-time commands such as "turn right here" or "park far away" — is roughly three months out. Jeff Lutz noted this implies existing HW4 processors can handle the workload, contrary to prior expectations that AI5 would be required; he flagged cloud-based latency as a problem Elon's timeline implicitly assumes will be resolved on-device.
+- **FSD parking memory announced by Elon.** Upcoming FSD releases will remember users' parking preferences, navigating autonomously to the correct spot at home, office, or school drop-off. Elon stated destination parking is "by far the biggest reason people now intervene with FSD" and that critical safety interventions are now "extremely rare." Guests noted memory storage on existing hardware may be a limiting factor, with a low-cost memory stick upgrade ($5–10 GB) discussed as a potential path.
 
-- **Memory as the next FSD frontier.** The panel discussed persistent memory enabling personalized route preferences, garage-specific navigation, and per-driver profiles. Larry Goldberg flagged that existing vehicles were not designed for large-scale persistent storage and suggested a low-cost memory stick upgrade (5–10 GB) as a likely future option.
+- **FSD approval rumor in Spain by end of June 2026,** per Randy Kirk citing a source he described as "very reliable" but unconfirmed. Randy advised treating it with caution.
 
-- **FSD safety claim: ~4 months without an at-fault incident.** Host Herbert stated FSD has had no at-fault incidents since February 2026 — flagged as unconfirmed by the panel.
+- **Sweden blocking FSD approval** unless Tesla removes the ability to exceed the speed limit. The panel found this unworkable in practice. Brian (FutureAzA) noted EU-level approval would ease but not override individual country restrictions.
+
+- **FSD operating in Australia** — driving on the left side of the road — with Joe (FutureAzA) describing the footage as impressive.
+
+- **FSD safety claim:** Host Herbert cited approximately four months without an at-fault FSD incident since February — flagged as unconfirmed.
 
 ## Humanoid Bots
 
-- **Optimus milestone cited as merger pre-condition.** Larry Goldberg argued that getting Optimus units "into the factory" by June 30, 2027 is a key valuation milestone that should precede any SpaceX-Tesla merger announcement, to allow proper price discovery for both companies.
+- **US Trade Representative Ambassador Greer toured Tesla Fremont,** viewing the production line and Optimus, per Joe (FutureAzA). The Texas Department of Transportation's executive director also visited to observe the Cybercab. The panel framed both visits as meaningful government recognition of Tesla as an American manufacturing leader.
 
 ## Electric Vehicles
 
-- **Q2 2026 delivery estimates converging above 400K.** Goldman Sachs and Wolf Research project ~420,000 units; Barclays at 418,000; consensus per Grok at 397,000–401,000. Bear analyst Gordon Johnson (GLJ Research) carries the highest estimate at 426,000 — noted as ironic by the panel. Delivery report expected July 2–3.
+- **Cybertruck Smart Summon live via V14 update** — described by the FutureAzA panel as one of the biggest Cybertruck updates since FSD itself rolled out. A $60,000 Cybertruck variant is also rolling out.
 
-- **Demand signals positive heading into quarter-end.** Jeff Lutz noted Tesla entered Q2 from a strong inventory position and that the absence of meaningful end-of-quarter discounting or incentives suggests healthy underlying demand across Europe, China, and rest of world.
+- **Q2 2026 delivery outlook:** Goldman Sachs and Wolf Research project ~420,000 units; Barclays at 418,000; consensus per Grok at 397,000–401,000. Randy Kirk (FutureAzA) sees a credible path to 475,000–525,000, with a max scenario of 575,000, and expects a positive surprise. Q2 delivery report expected around July 2–3.
 
-- **New Model Y "Coastal Blue" color launches in Europe.** Available exclusively on the base Model Y variant; minor product update signaling continued differentiation focus in the European market.
+- **EV tax credit removal framed as competitive advantage** for Tesla. Competitors relying on those credits now face higher effective prices, while Tesla's optimized cost structure insulates it, per the FutureAzA panel.
+
+- **New "Coastal Blue" Model Y color** launched in Europe on the base trim — minor product differentiation, limited investment significance.
 
 ## Financials
 
-- **Gross margins may surprise to the upside in Q2.** Jeff Lutz cited continued COGS outperformance and factory utilization-driven fixed-cost absorption. He expects elevated capex to pressure free cash flow but not operating margin. Tesla will also need to mark up its SpaceX equity stake on the balance sheet.
+- **Q2 gross margins may surprise to the upside,** per Jeff Lutz (brighterwithherbert). Tesla has been outperforming on COGS; factory utilization drives fixed-cost absorption. Elevated capex will pressure free cash flow but not operating margin.
 
-- **Energy business: large Q2 upside possible but uncertain.** Larry Goldberg flagged significant work-in-progress Megapack inventory carried into Q2; if it converts to revenue, it could be a "big number." Jeff Lutz noted Q1 energy came in ~40% below the ~14.5 GWh expectation due to interconnection queue timing, and recommended evaluating the segment on a trailing 12-month basis given its inherent lumpiness.
+- **Energy deployment: Q2 could be a "big number."** Tesla's Megapack manufacturing capacity is ~17 GWh/quarter; Q1 deployed only 8.8 GWh. Randy Kirk estimates Q2 deployment could range from 14 to 25 GWh depending on carryover timing — a potential major positive surprise. Jeff Lutz noted Q1 came in ~40% below the ~14.5 GWh consensus estimate and recommended evaluating energy on a trailing 12-month basis.
 
-- **Cybercab likely to appear as "other" in production reports initially.** The panel expects Tesla will break out Cybercab volumes as a separate line item once they reach roughly 5–10% of total production, and expressed hope Tesla will simultaneously begin reporting robotaxi ride miles and FSD adoption rates.
+- **SpaceX mark-to-market: ~$2B / ~$0.75/share potential Q2 boost.** Now that SpaceX is public, Tesla must mark its SpaceX stake to market each quarter. Randy Kirk cited this figure (sourced to a major financial publication he believed to be Fortune, unconfirmed) as a meaningful earnings contributor in Q2.
 
 ## Market & Competition
 
-- **Elon exercises 304M Tesla options; ownership ~19.9%, locked to 2033.** At an average strike price of $44/share, the exercise consolidates Elon's voting power significantly. Shares cannot be sold until 2033 — no equity was liquidated. The panel's consensus read is that this positions Elon for a potential SpaceX-Tesla merger vote, though all guests framed the analysis as probability assessment, not advocacy.
+- **Elon exercises 304M Tesla options at $44/share average,** bringing ownership to ~19.9%. Shares are locked up until 2033; no stock was sold. The panel's consensus read: consolidating voting power positions Elon for a potential SpaceX-Tesla merger or acquisition vote. Per Grok (flagged as unverified), Elon faced an August 15, 2026 exercise deadline — contradicting Gemini's answer that no deadline existed this year; the panel acknowledged the AI disagreement.
 
-- **SpaceX-Tesla merger timeline debate.** Larry Goldberg argued a formal merger cannot close before June 30, 2027, citing OG shareholder lockups expiring that date, months-long due diligence requirements, and the need for key milestones (robotaxi scale, Optimus factory) to enable proper price discovery. Jeff Lutz countered that Elon moves fast, synergies are undeniable — shared AI, GPU clusters, Terafab, solar — and that Elon's silence on rampant public speculation is itself a signal.
+- **Merger timeline debate.** Larry Goldberg argued a deal cannot close before June 30, 2027 — citing OG shareholder lockups, months of required due diligence, and better price discovery after key milestones (Robotaxi scale, Optimus factory). Jeff Lutz countered that Elon moves fast, synergies are undeniable (shared AI, GPU clusters, Terafab), and Elon's silence amid rampant speculation is itself a signal.
 
-- **SpaceX positioned as AI infrastructure giant, per Brian Wang.** In a separate interview, futurist Brian Wang argued SpaceX is transitioning from a launch/satellite company into a major AI compute rental business. He projected SpaceX revenue growing from ~$4.6B/quarter in Q1 2026 to ~$15B/quarter by Q4 2026, reaching ~$46B for full-year 2026, driven by Colossus compute rentals (Anthropic, Google), the Cursor acquisition (~$4B run rate), and Rubin chip deployments. Wang cited ~20% of Nvidia's Rubin allocation going to XAI/SpaceX (per Altimeter's Gerstner and Baker), with Rubin offering ~10x the inference compute of Blackwell. These projections are Wang's own; investors should weigh them accordingly.
+- **SpaceX stock at ~$185 at time of recording** (IPO'd at $135; estimated intraday high ~$200–$210). Brian Wang (nextbigfuture.com, via brighterwithherbert) projects SpaceX reaches ~$46B in full-year 2026 revenue, up from ~$18.7B in 2025, driven by AI data center rental. Wang argues SpaceX's terrestrial data center business alone justifies a ~$2T valuation floor today, rising to $5T+ by end of 2027, and draws comparisons to Broadcom and Nvidia's revenue/valuation profiles. (SpaceX coverage included for Tesla investor context on merger thesis and mark-to-market impact; TTT does not track SpaceX as a primary coverage subject.)
 
-- **Tesla stock at ~$400 amid broad market strength.** S&P 500 near 7,500 and NASDAQ above 26,000 (near all-time highs); Tesla is underperforming. Jeff Lutz attributed this to Tesla's long-duration earnings profile being sensitive to a perceived hawkish Fed pivot, plus potential liquidity rotation into SpaceX post-IPO.
+- **Unverified claim: xAI has ordered ~20–22% of Nvidia's total chip output,** per multiple unconfirmed sources cited across panels (Altimeter/BG2 podcast for the 20% Rubin figure; "Peter the Amandas"/Moonshots for the 22% total output claim).
 
 Notable quotes and data:
-- Elon Musk: "Destination parking is by far the biggest reason people now intervene with FSD." Critical safety interventions now "extremely rare."
-- Elon Musk: Grok voice control of the car "will be there in about 3 months or so."
-- 304M Tesla options exercised at avg. $44/share; Elon ownership ~19.9%; locked until 2033.
-- 102 Cybercabs at Albon lot near Giga Texas — record per Herbert.
-- Q2 delivery estimates: Goldman Sachs/Wolf ~420K; Barclays 418K; GLJ (Johnson) 426K; consensus 397K–401K. Report due ~July 2–3.
-- Q1 2026 energy: ~14.5 GWh expected; actual ~40% below (per Jeff Lutz).
-- SpaceX credit ratings: Moody's Baa1, S&P BBB — Moody's one notch above Tesla's Baa3.
-- Brian Wang projects SpaceX 2026 full-year revenue ~$46B; $5T+ valuation "fully justified" by Q1–Q2 2027.
+- Elon Musk (X): "Destination parking is by far the biggest reason people now intervene with FSD."
+- Elon Musk (X): Critical safety interventions are now "extremely rare."
+- Elon Musk (X reply): Grok vehicle control "will be there in about 3 months or so."
+- 304M options exercised at ~$44/share avg; Elon Tesla stake ~19.9%; lockup to 2033.
+- 102 Cybercabs at Albon lot (record); Cybercabs self-parking autonomously at Giga Texas exit.
+- Cybercab EPA Certificate of Conformity: confirmed received.
+- Active Robotaxi fleet: 732 per RobotaxiTracker.com (as of 2026-06-20).
+- Q2 deliveries: GS/Wolf ~420K, Barclays 418K, consensus 397K–401K, Randy Kirk bull case 475K–525K.
+- Q1 Megapack deployment: 8.8 GWh vs. ~14.5 GWh expected (~40% miss); Q2 range cited: 14–25 GWh.
+- SpaceX mark-to-market: ~$2B / ~$0.75/share estimated Q2 Tesla earnings contribution (unconfirmed source).
+- Tesla stock ~$400; SpaceX ~$185 at time of recording.
+- FSD Spain approval: unconfirmed rumor, end of June 2026. Sweden: blocked pending speed-limit cap.
