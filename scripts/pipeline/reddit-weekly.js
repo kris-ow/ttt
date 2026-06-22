@@ -63,7 +63,7 @@ function attributeBriefHeading(body) {
   if (!re.test(body)) return null;
   return body.replace(
     re,
-    `## Brief from [theteslathesis.com](${TTT_URL}) — see the site for daily briefs`
+    `## Brief from [theteslathesis.com](${TTT_URL}) — see the site for daily news summaries`
   );
 }
 
