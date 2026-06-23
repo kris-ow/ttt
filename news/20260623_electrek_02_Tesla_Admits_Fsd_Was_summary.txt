@@ -1,0 +1,31 @@
+Channel:     electrek
+Title:       Tesla admits FSD was on in fatal Texas crash, blames driver for ‘overriding’ it
+Published:   2026-06-23 15:04 UTC
+Summarized:  2026-06-23 19:18:21 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01AFKUSM8e2oR4r4jN9XfE5p
+Cost:        $0.01628 (3776 in / 1415 out tokens)
+Categories:  Autonomous Driving, Market & Competition
+────────────────────────────────────────────────────────────
+
+Tesla has confirmed that its Full Self-Driving system was engaged when a Model 3 driven by 44-year-old Michael Butler left a residential road in Katy, Texas, and killed 76-year-old Martha Avila Mantilla inside her home. Tesla attributes the crash to the driver "manually overriding" FSD by pressing the accelerator to 100%, reaching 73 mph in a residential area — but the article argues this framing sidesteps the deeper question of why the override happened.
+
+## Autonomous Driving
+1. **Tesla's account of the crash:** Tesla's Head of AI Ashok Elluswamy stated that vehicle data shows Butler pressed the accelerator to 100% while FSD was active, overriding the system. The car reached 73 mph, and the pedal remained floored after the vehicle struck the house. Driver Butler had told Harris County deputies the vehicle was on Autopilot at the time. Elon Musk had earlier posted that "FSD drives slowly through neighborhood streets and this was a high speed crash!" — a framing now contradicted by Tesla's own account placing FSD in the loop at the moment of impact.
+
+2. **The complacency argument:** The article contends that Tesla's "driver overrode it" defense does not constitute exoneration. The most plausible scenario, per the author, is that FSD did something unexpected, prompting an emergency intervention in which the driver — whose feet were not already over the pedals because the system was doing the driving — hit the accelerator instead of the brake. The article argues this "out-of-the-loop" failure mode is structurally created by Level 2 systems that condition drivers to disengage, making emergency takeovers harder to execute.
+
+3. **Florida precedent:** In August 2025, a Miami federal jury found Tesla 33% responsible for a 2019 Key Largo crash in which driver George McGee, on Autopilot, struck and killed Naibel Benavides Leon. The jury placed 67% of fault on McGee but still assigned Tesla partial liability, resulting in a $243 million judgment upheld by a federal judge in February 2026. The jury concluded Tesla's marketing and weak steering-torque-based driver monitoring fostered complacency — the same dynamic the author sees in the Katy crash.
+
+4. **Data credibility concerns:** Tesla is already under an NHTSA Engineering Analysis covering roughly 3.2 million vehicles and a separate probe into whether it properly reported Autopilot/FSD crashes. The article notes that in the Florida litigation, Tesla told plaintiffs crash data didn't exist until an independent researcher recovered a "collision snapshot" showing the system had detected the pedestrian. The article treats Tesla's public interpretation of its own logs with skepticism, and notes NHTSA has opened a Special Crash Investigation to independently pull the event data recorder and onboard logs.
+
+## Editorial Stance
+The author argues that Tesla's confirmation of FSD engagement is a bigger admission than the company's framing acknowledges, and that pinning the crash entirely on a "100% accelerator" input is "technically convenient and substantively hollow." The article calls for Tesla to take the complacency problem — its marketing, system naming, and easily-gamed driver monitoring — seriously, and withholds full judgment pending NHTSA's independent data readout.
+
+Notable quotes and data:
+- Ashok Elluswamy: driver "manually overrode self-driving by pressing the accelerator all the way to 100% of the accel pedal in this residential area"
+- Vehicle reached 73 mph with accelerator floored; pedal still pressed after striking the home
+- Elon Musk posted: "FSD drives slowly through neighborhood streets and this was a high speed crash!"
+- Florida verdict: $243 million judgment, Tesla held 33% liable, upheld by federal judge February 2026
+- NHTSA Engineering Analysis covers ~3.2 million vehicles; separate crash-reporting probe also ongoing
+- NHTSA has opened a Special Crash Investigation into the Katy crash
