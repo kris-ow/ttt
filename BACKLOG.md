@@ -1,8 +1,5 @@
 # Backlog
 
-## Infrastructure
-- [ ] **Change email address** from krzysztof@theteslathesis.com to kris@theteslathesis.com (Cloudflare email routing for theteslathesis.com; check anywhere the old address is published — site, GitHub, Plausible, BMC).
-
 ## Tooling / DX
 - [ ] **Latency report: livestream-aware lag.** `latency-report.js` measures from `published_utc`, but for livestreams/premieres that's the *scheduled start* — a 9h stream shows as 9h "lag" even when the transcript was fetched minutes after the VOD existed (Mac Mini diagnosis 2026-06-12: all 21 tail videos were streams/premieres). Also, RSS entries without timestamps synthesize `T00:00:00`, faking up to 24h of lag (electrified 05-26). Consider having yt-transcripts record stream-end / VOD-available time in the transcript header and measuring the fetch leg from that.
 - [ ] **SessionStart hook for `git pull`** — add a hook in `settings.json` (via `update-config` skill) so the harness auto-syncs the repo at session start. More reliable than relying on Claude reading the `feedback_git_pull` memory. Consider `git fetch` + a notice when behind (safer than `git pull` when local changes exist).

@@ -292,7 +292,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 text-center text-xs text-text-dim space-y-1">
           <div>[TTT] the tesla thesis // independent research // not financial advice // data may be delayed or inaccurate</div>
           <div>
-            <a href="mailto:krzysztof@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">krzysztof@theteslathesis.com</a>
+            <a href="mailto:kris@theteslathesis.com" className="text-text-dim hover:text-green transition-colors">kris@theteslathesis.com</a>
           </div>
         </div>
       </footer>
