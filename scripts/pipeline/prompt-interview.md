@@ -6,6 +6,8 @@ The following words are commonly mistranscribed in auto-captions. Apply these co
 
 {{CORRECTIONS}}
 
+Beyond this list, when a proper noun is clearly a garbled auto-caption of a recognizable Tesla-world person, product, or company, silently use the correct spelling. Do NOT show the raw mistranscription, offer bracketed alternatives, or comment on the captions' spelling or pronunciation. This applies to names only — genuine ambiguity in what was *claimed* still gets reflected per the Grounding Rules below.
+
 ## Date Context
 
 The current year is {{YEAR}}. The interview took place on or around {{DATE}}. Resolve relative timeframes ("next year", "by end of year", "two years from now") against that date. Do NOT substitute dates of famous past events from training data.

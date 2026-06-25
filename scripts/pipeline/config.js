@@ -87,6 +87,11 @@ export const CORRECTIONS = {
   'apollo mayo': 'Alpamayo',
   'Futureaza': 'FutureAzA',
   'futureaza': 'FutureAzA',
+  'Ashok Kawasami': 'Ashok Elluswamy',
+  'Ashra Kalaswami': 'Ashok Elluswamy',
+  'Ashok Elaswami': 'Ashok Elluswamy',
+  'Ashok Elaswamy': 'Ashok Elluswamy',
+  'Ashok Eluswamy': 'Ashok Elluswamy',
 };
 
 // Claude model for summarization
