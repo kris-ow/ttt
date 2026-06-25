@@ -47,6 +47,8 @@ jobs:
   pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 210 # 3.5 hours max (batch + up to 3 retries at 20min intervals)
+    outputs:
+      has_changes: ${{ steps.commit.outputs.has_changes }}
 
     steps:
       - uses: actions/checkout@v6
@@ -180,14 +182,29 @@ jobs:
         with:
           path: dist
 
-      - name: Deploy to GitHub Pages
-        if: steps.commit.outputs.has_changes == 'true'
+  # Deploy in a separate job that shares the repo-wide "pages" concurrency group
+  # with deploy-pages.yml, so the two never hit the Pages deployment API at the
+  # same time (that cross-workflow race caused the "in progress deployment" 400s).
+  # The artifact uploaded by the pipeline job above is run-scoped, so this job
+  # only needs to call deploy-pages.
+  deploy:
+    needs: pipeline
+    if: needs.pipeline.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
         uses: actions/deploy-pages@v5
 
   # Create a GitHub issue on pipeline failure
   notify-failure:
     runs-on: ubuntu-latest
-    needs: pipeline
+    needs: [pipeline, deploy]
     if: failure()
     steps:
       - name: Create failure issue

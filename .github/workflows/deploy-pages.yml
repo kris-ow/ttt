@@ -10,9 +10,13 @@ permissions:
   pages: write
   id-token: write
 
+# Share the repo-wide "pages" concurrency group with daily-pipeline.yml's deploy
+# job so the two never call the Pages deployment API at once (that race caused
+# repeated "due to in progress deployment" 400s). cancel-in-progress: false lets
+# an in-flight production deploy finish; GitHub auto-collapses intermediate queued runs.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
