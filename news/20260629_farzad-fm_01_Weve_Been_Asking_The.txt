@@ -1,0 +1,503 @@
+Channel:     farzad-fm
+Title:       We've Been Asking the Wrong Question About Nvidia
+URL:         https://www.youtube.com/watch?v=eUaUCA4bj3Q
+Published:   2026-06-29 15:15 UTC
+Fetched:     2026-06-29 16:00 UTC
+
+────────────────────────────────────────────────────────────
+
+I've spent a stupid amount of time
+lately trying to learn and actually
+understand the chip war that's happening
+underneath the entire AI boom, and what
+I found really surprised me because the
+story you've been told that there's this
+big race and everybody's gunning for
+Nvidia is basically wrong. Let me start
+by giving you the lay of the land.
+Nvidia, the company that makes the chips
+training almost every AI model on the
+planet, is the most valuable company in
+the history of the world. It blew
+straight past $5 trillion in 2026, and
+that's larger than the entire economy of
+most countries in one company selling
+what is basically a really specialized
+calculator for AI. That's objectively
+freaking insane. And here's what's wild.
+You think every other chip company on
+Earth will be throwing everything they
+have at knocking Nvidia off of that
+mountain, and some are. But the most
+interesting ones looked at that mountain
+and said, "No, thanks. We're not
+climbing that. We're going somewhere
+else entirely." So, that's the puzzle I
+want to crack in today's video. If you
+can't beat Nvidia, why are these
+companies worth billions, and more
+importantly, which one of these five is
+potentially falling into a trap? The
+reason this chip war even exists comes
+down to one idea. Intelligence has
+always been the scarce thing for
+humanity. For all of human history, the
+bottleneck on getting anything done was
+access to smart, capable thinking.
+That's what these chips are. They're
+factories for manufacturing intelligence
+at a scale that we've never had before.
+And if intelligence has always been the
+scarce thing, then the single most
+valuable move any normal person can make
+right now is to stop being a buyer of
+intelligence and start being someone who
+deploys it. The people who learn how to
+actually use these AI tools are going to
+do the equivalent of hiring a team of
+analysts for almost free. And that's
+exactly what Outskill does, the sponsor
+of this video. Outskill is a platform
+that teaches you how to actually put AI
+to work with real workflows. They run a
+two-day AI Mastermind at Claude AI
+Mastery Workshop where you go deep on
+Claude and more than 10 other AI tools,
+building custom agents, automating the
+boring parts of your job, making and
+editing images and videos, the whole
+thing. The idea is to automate your
+entire week of work and they make it
+completely free for my audience. For the
+first 1,000 people with a bonus stack
+worth over 5,100 bucks if you join and
+attend. Over 10 million people worldwide
+have already gone through it and rated
+it 4.9 out of five stars on Trustpilot
+and it's mainly because you're mentored
+by leaders from Microsoft, Google,
+Amazon, and Nvidia. The link is in the
+description and pinned in the comments
+section below. And if you sign up, you
+also get three free bonuses, a full AI
+prompt library and a 50 secret Claude
+codes that turn it into a god-tier tool,
+personalized AI toolkit builder. Make
+sure you use that link to grab a seat
+and thanks again to Outskill for
+sponsoring this video. So, let me back
+up and give you the one idea that makes
+this entire video make sense. There are
+two completely different jobs an AI chip
+can do. The first job is called
+training. Training is where you build
+the AI model in the first place. You
+take something like ChatGPT and before
+it can answer a single question, you
+have to feed it basically the entire
+internet. Every book, website, all the
+conversations humans have ever typed out
+and let it chew on all of that until it
+learns the patterns of human language.
+That process is brutal. It takes months.
+It takes tens of thousands of chips
+running flat out, burning enough
+electricity to power a small city. But
+you do it once. Think of it like writing
+a cookbook. Writing the recipes is slow,
+painful, expensive, and you sweat over
+every single detail, but when you're
+done, you're done. The book now exists.
+The second job is called inference.
+Inference is what happens every single
+time you actually use the AI. You type a
+question to the ChatGPT, you hit enter,
+and the model runs. That's inference.
+That's the AI cooking the dish from the
+cookbook. And just like a cookbook, you
+write the recipe once, but you cook the
+dish potentially a billion times. Every
+question that's typed in, image
+generated, line of code spat out,
+chatbot reply sent back, all day, all
+night, forever. That's inference. The
+recipe is a one-time cost, the cooking
+never, ever stops. So, why does that
+matter? Because where the money is
+invested in AI is actively moving. For
+years, the whole AI boom was about
+training. Everybody was racing to build
+the biggest, smartest model, throwing
+money at raw horsepower. That was
+Nvidia's home turf. But, as billions of
+people start actually using these things
+every day, the spending is shifting hard
+towards inference, towards the actual
+cooking, not the recipe writing. As of
+2026, inference is already roughly 2/3
+of all AI computing happening on this
+planet, and it's still climbing. Now,
+you're probably thinking, "Okay, so why
+doesn't somebody just build a better
+training chip than Nvidia and take the
+crown?" That's where you have to
+understand Nvidia's real weapon. It
+isn't the chip, it's a thing called
+CUDA. It stands for Compute Unified
+Device Architecture. It's the software
+layer that sits on top of Nvidia's chips
+and lets programmers actually use them.
+And Nvidia has been building CUDA since
+2006. That's roughly 18 years of work.
+In those 18 years, CUDA became the road
+network that the entire AI world drives
+on. Every AI engineer on Earth learned
+on CUDA. All the little secrets and
+tools and tricks everyone has figured
+out on this thing, it's all built for
+CUDA. It's taught in universities, it's
+baked into how people think. It's like
+how everyone knows how to use a PC or a
+Mac or even an iPhone. So, when a
+competitor shows up and says, "Hey, my
+chip is actually technically way, way
+faster and better." It doesn't matter
+because nobody knows how to drive on
+their roads. It's like inventing a
+better keyboard layout than the QWERTY
+keyboard. It exists and yours might be
+objectively better, but everybody on the
+planet already learned to type on
+QWERTY. So, good luck. To actually beat
+Nvidia head-on, you wouldn't just have
+to build a better chip, you'd have to
+rebuild 18 years of software and retrain
+every engineer alive. Almost every smart
+player has figured that out. Almost. One
+company looked at that 18-year wall and
+decided to start climbing it anyway.
+That company is AMD. I'll come back to
+them very shortly. But, this brings me
+to the one person in the story who knew
+Nvidia's weakness better than anyone
+because he saw it from the inside. In
+2016 in the world of Google, there was
+an engineer named Jonathan Ross. And
+Jonathan had already done something kind
+of legendary. He'd built Google's very
+first TPU. A TPU, a Tensor Processing
+Unit, is Google's own custom-built AI
+chip, the thing that lets Google run AI
+without leaning entirely on Nvidia. And
+the wild part is that he started it
+almost as a side project and it turned
+into hardware that now runs inside
+Google's data centers worldwide.
+Jonathan understood exactly where Nvidia
+was unbeatable, which was training, the
+recipe writing, and exactly where Nvidia
+was vulnerable. And in 2016, he walked
+out of Google and founded a company
+called Groq with a Q to attack that
+vulnerability directly. He wanted to
+build the fastest inference chip in the
+world, the chip that cooks the dish
+faster than anything Nvidia makes. That
+was his whole bet. Now, before we keep
+going, about 70% of you that watch this
+channel often aren't subscribed. And if
+you're enjoying this video, the easiest
+way to support is by clicking subscribe.
+It's completely free and it goes a long
+way. Thank you so much. All right, so
+the story everybody knows goes like
+this. Nvidia is the king and it isn't
+close. Let me show you just how not
+close it is. In the quarter that ended
+in April 2026, Nvidia's data center
+business, just the AI chip part, did
+about $75 billion in revenue in one
+quarter. That's up around 92% from the
+year before. Their gross margin is
+sitting near 75%,
+which means that for every dollar of
+chips they sell, about 75% is pure
+profit. Most hardware companies on Earth
+would freaking kill [snorts] for 30.
+Nvidia does it at 75 while selling out
+everything they make. Their current
+generation chip, called Blackwell, is
+shipping in volume and the next one,
+called Rubin, lands in the second half
+of 2026. It's pretty simple. There's
+Nvidia and then there is everybody else
+trying to climb their mountain. But
+here's the deal. These companies are not
+all racing up the same mountain. Most of
+them are on completely different
+mountains and exactly one of them looked
+at Nvidia's mountain, the tallest one,
+and started climbing it anyway.
+That company is AMD, like I mentioned
+earlier. AMD makes the same kind of
+general purpose chips. They're the only
+real number two in the entire AI chip
+world and they made a very simple bet.
+The way to beat Nvidia is to build a
+better, cheaper version of Nvidia's own
+product and just outmuscle them on price
+and performance. And their chips are
+genuinely good. In one big independent
+benchmark in 2026, AMD's top chip came
+within a few percent of Nvidia's best on
+exactly the kind of inference work
+that's becoming the whole game. Their
+next generation packs in more high-speed
+memory than Nvidia's current flagship
+even has, which matters a lot when
+you're running these giant models. On
+paper, AMD is right there. So, why isn't
+this a fair fight? One word, CUDA. AMD
+has spent years building its own version
+of it, a software stack called ROCm, and
+for a long time it was very rough. It
+was buggy and painful, but it has gotten
+dramatically better. So, AMD lives in
+this strange place where the hardware is
+almost there, but the software is the
+wall they keep slamming into. If
+Nvidia's mode even cracks, it cracks
+your first. And the day AMD starts
+taking real market share is the day we
+learn the king is finally beatable. So,
+that's AMD. Then there is Grok, Jonathan
+Ross's company. Grok is obsessed with
+one thing, speed of cooking. Their chip
+is called an LPU, a language processing
+unit, and it is stupid fast in
+inference. We're talking about of output
+with a time to first token, basically
+how long before the answering you of
+about 18 milliseconds. On a normal GPU
+setup in the cloud, that same weight can
+be 200 to 400 milliseconds. So, Grok is
+10, 15, 20 times faster at responding.
+They did this by putting the model's
+memory directly on the chip itself, this
+ultra-fast memory called SRAM, instead
+of constantly running towards slower
+memory to fetch things. Think of it like
+keeping the entire cookbook open flat on
+the counter in front of you with all the
+ingredients within arms length versus
+walking to the pantry and back for every
+single ingredient. That's the speed
+difference. But, that on-chip memory is
+tiny. Each Grok chip holds about 230
+megabytes. An Nvidia H100 holds 80
+gigabytes. So, to run one big AI model,
+Grok needs hundreds of chips wired
+together. It's blazing fast, but it's
+not cheap and simple to scale. It's
+actually quite the opposite. But, using
+a giant Nvidia GPU to do this kind of
+quick response work doesn't make much
+sense either. It's like booking a
+freight train to deliver one pizza. It's
+the wrong tool. That's the gap Groq
+drove straight into. Then, there is
+Cerebras. And these guys might actually
+be kind of insane. Every other chip
+company takes a big circle of silicon
+called a wafer and slices it up into
+hundreds of little chips. Cerebras said,
+"Nope, we're keeping the whole freaking
+thing." One chip the size of a dinner
+plate, 4 trillion transistors, 900,000
+cores. It is the largest computer chip
+ever built by a wide margin. Something
+like 57 times the size of a normal
+Nvidia GPU. It's freaking crazy. It's
+literally the size of a freaking dinner
+plate. So, why on earth would you do
+that? Because of something called the
+memory wall. When you spread a giant AI
+model across thousands of separate
+chips, they spend a ridiculous amount of
+time just talking to each other,
+shuffling data back and forth. But,
+Cerebras keeps it all on one massive
+slab. So, there's almost no shuffling.
+It's built for enormous models, training
+and inference at serious scale. Then,
+there's Tesla. Tesla makes its own AI
+chips, the Dojo project, and now a chip
+line in its current generation AI 4 with
+AI 5 and others coming quickly
+thereafter. But, Tesla does not sell
+these chips. They are building them to
+make their own cars drive themselves,
+their own Optimus robots think, and to
+power the upcoming orbital satellites
+from SpaceX. It's exactly like Apple
+building its own chips for its own Macs
+instead of buying them from Intel. You
+build your own brain for your own body.
+AI 5 had its tape out the moment a chip
+design is finalized and sent to be
+manufactured in April of 2026, and it
+ramps to real volume in 2027. So, now
+let's look at the whole picture.
+Nvidia's on the training mountain and
+expanding into the inference mountain
+with AMD grinding right up behind it.
+Grok went for the speed mountain.
+Cerebras is on the giant model mountain.
+Tesla's off building a freaking private
+mountain just for itself. Now watch
+happens when you remember the thing from
+earlier, that the money is moving from
+training to inference. From writing the
+cookbook to cooking the dish a billion
+times a day. The mountain everybody's
+been staring at, the training mountain,
+the recipe writing, that's becoming the
+smaller business. The action, the
+forever money is in the cooking. And the
+second you understand that, this entire
+war changes. It stops being a question
+of who has the most powerful chip. It
+becomes a question of who collects the
+toll every single time forever that an
+AI does anything for anyone. So we all
+need to stop asking who beats Nvidia and
+we need to start asking who owns
+inference. Now because Nvidia has
+focused so much on training, this is the
+strongest argument against Nvidia. Those
+beautiful 75% margins cannot last. As
+cooking, inference, becomes the main
+event, the giant cloud companies are
+building their own cheaper chips to do
+it. Google has its TPU. Amazon has a
+chip called Trainium. Microsoft has one
+called Maya. And every one of those is
+designed to do inference inside their
+own data centers without paying Nvidia's
+tax. Training is one business, inference
+is another, and inference is becoming
+the main one. That 2/3 share from
+earlier is still climbing towards 70,
+80%. That's the forever money. And the
+chain just feeds itself. More people use
+AI, which means more cooking, which
+means more demand that never turns off.
+And whoever collects the toll on all
+that cooking owns the majority of the
+cash flow of the entire AI age. And
+Nvidia knows this, which is why what
+they did next is absolutely
+brilliant. On Christmas Eve of 2025,
+Nvidia struck a deal worth about $20
+billion
+with who, you might ask? Remember that
+Jonathan story from earlier? Yep, that's
+right. They struck a deal with Groq.
+Now, Nvidia did not buy Groq outright.
+Instead, Nvidia paid roughly $20 billion
+for a perpetual, non-exclusive license
+to Groq's entire patent portfolio and
+its whole software stack. And in that
+same move, they hired Jonathan Ross
+himself, his president Sunny Madra, and
+somewhere around 80% of Groq's people.
+They didn't acquire the company. If you
+acquire the company, regulators show up
+and start asking antitrust questions
+about the most powerful chip maker on
+Earth swallowing its potential rival.
+So, instead, they licensed the
+technology and hired the humans. What a
+freaking move. So, if the scariest
+challenger to Nvidia just got absorbed,
+the real question stops being who pits
+Nvidia and becomes something much more
+useful. Which of these lanes is actually
+a place you can win, and which one is
+potentially a graveyard? The reality is
+that these companies are all fighting on
+completely different battlefields.
+Training versus inference versus
+building your own private brain. And
+knowing which lane each chip is actually
+in is the entire investing thesis.
+Here's how I think this landscape is
+going to shake out starting with Nvidia.
+I think Nvidia keeps the crown straight
+through this inference era, especially
+with the Rubin chip ramp in late 2026,
+and specially with them literally buying
+one of the best inference teams on the
+planet. But, one should worry about that
+margin squeeze. 70% margins with an
+increasingly competitive field feels
+unsustainable for the long term. But,
+it's tough to tell exactly when that
+rain will end. AI is booming. Now, AMD,
+I don't think AMD can topple Nvidia's
+dominant lead anytime soon, but AMD's
+odds of staying a strong distant number
+two, I'd say pretty good. They make real
+chips, they have real customers, and the
+whole industry desperately wants a
+second supplier, so it isn't 100%
+hostage to Nvidia's pricing. Watch for
+whether ROCm, their answer to CUDA,
+finally gets good enough that engineers
+reach for it. And whether the big cloud
+companies start buying AMD in real
+volume just to keep a backup alive. Now,
+Cerebras, a company that's much earlier
+in its history and just went public, is
+a very interesting story to follow. A
+big thing to watch is whether they
+actually execute that enormous OpenAI
+inference deal that they signed, one
+with a backlog reportedly worth tens of
+billions of dollars, and whether they
+win customers beyond the one or two
+they're leaning on right now. A huge
+thing to worry about is concentration.
+For years, most of the revenue traced
+back to one customer in the UAE, a group
+called G42. And now a huge chunk of the
+future is riding on OpenAI. This wafer
+scale is real impressive technology, but
+real technology with one or two
+customers is tough. If one of these
+whales swims away, the whole story
+changes overnight. Now, with Tesla and
+their in-house chips is another very
+interesting strategy. I would watch for
+the AI 5 production yields and timelines
+through 2027. And one should worry about
+Tesla's own history of missing deadlines
+over and over again. Elon, [laughter]
+oh no, yeah, he never misses timelines.
+No, he's perfect. This is the company
+that built Dojo and then disbanded the
+team, then brought them back. For a
+Tesla investor, the chip is a piece of
+the FSD Optimus and inference satellite
+thesis, not a standalone reason to own
+the stock, but if successful, it would
+give them an amazing position to
+maximize their margins since they would
+be controlling their entire cost
+structure. And lastly for Grok, they're
+basically Nvidia now. So, yeah, that's
+that. Thank you so much for watching. I
+hope this video was informative and
+helpful, and we'll see you on the next
+one. Take it easy everybody. Mwah.
+Bye-bye.
