@@ -10,7 +10,7 @@ Single-page Tesla intelligence dashboard with hacker/terminal aesthetic.
 
 ## Architecture
 - Everything lives in `src/App.tsx` — single-page, no routing
-- Three visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts + merger odds), INTERVIEWS (Interview Archive — primary-source summaries with tracked claims; also reachable via `#interviews`), TSLA_DATA (quarterly metrics). SUPPORT_TTT header button removed 2026-06-12 (clicks never converted to donations). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
+- Three visible tabs in the header nav: Daily Feed (news + stock + robotaxi counts + merger odds), INTERVIEWS (Interview Archive — primary-source summaries with tracked claims; also reachable via `#interviews`; each interview is deep-linkable at `/i/<slug>/` with its own OG preview card), TSLA_DATA (quarterly metrics). SUPPORT_TTT header button removed 2026-06-12 (clicks never converted to donations). Valuations section is built but hidden from the nav — reachable via the `#valuations` URL hash. Houses the live Robotaxi DCF; EV / Optimus / Energy / AI compute models planned.
 - Stock price: stock-proxy on Mac Mini (Finnhub upstream) → `wss://api.theteslathesis.com`
 - Stock chart: Lightweight Charts v5, embedded inline in StockWidget (no popup), Yahoo Finance via stock-proxy `/chart` endpoint
 - Content: Mac Mini yt-transcripts → git push → `scripts/build-news.js` → `src/data/news.json`
@@ -76,7 +76,9 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 - `src/types.ts` — Article/NewsData types, CHANNEL_META
 - `src/index.css` — Tailwind v4 theme config
 - `scripts/build-news.js` — parse summaries into news.json
-- `scripts/build-interviews.js` — parse `interviews/*.txt` into `src/data/interviews.json` (INTERVIEWS tab); runs in `npm run build` before vite
+- `scripts/build-interviews.js` — parse `interviews/*.txt` into `src/data/interviews.json` (INTERVIEWS tab); runs in `npm run build` before vite. Emits a stable unique `slug` (`<person>-<date>`) per interview = the `/i/<slug>/` deep-link key
+- `scripts/build-interview-pages.js` — runs in `npm run build` AFTER `vite build` (needs the built `dist/index.html` for hashed asset tags): clones it per interview into `dist/i/<slug>/index.html` with per-interview `<title>`/description/OG/Twitter tags + `NewsArticle` JSON-LD (shareable Reddit/X cards + Google-indexable pages), and emits `dist/sitemap.xml` + `dist/robots.txt`. Points `og:image` at `/og/<slug>.png` when that committed card exists, else the generic `og-image.png`
+- `scripts/build-og-images.js` — `npm run og-images`: renders a per-interview 1200×630 OG card (terminal aesthetic, person-centric) to `public/og/<slug>.png` via local Playwright Chromium. Local-only (NOT in `npm run build`); run + commit after adding an interview. Skips existing PNGs unless `--force`
 - `scripts/pipeline/` — automated summary pipeline (see above)
 - `scripts/pipeline/costs-report.js` — `npm run costs`: daily cost summary table → `costs-summary.txt` (gitignored — derived from tracked `costs.json`, regenerate locally)
 - `scripts/pipeline/latency-report.js` — `npm run latency [days=7]`: per-video YT-publish → summary latency report; writes baseline TSV to `data/latency/YYYY-MM-DD.tsv`
@@ -115,13 +117,13 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 | Quarterly metrics | `scripts/extract-quarterly.py` reads `data/quarterly/*.pdf` → `src/data/quarterly-metrics.json` | Run quarterly when new shareholder deck releases |
 | DCF facts review | `admin/` console reviews `extracted-facts.json` → approved `dcf_input` facts auto-propagate to `src/data/dcf-robotaxi-facts.json` | Run locally as facts accumulate |
 | URL index gaps | `news/transcripts_url_index.json` | Some early transcripts (pre-URL-tracking) have no video URL |
-| Interview leads | approved `interview_mention` facts → `data/interview-leads.json` | Resolve lead to URL → fetch transcript (Mac Mini one-off mode not yet built; tracked-channel mirrors already land in `news/`) → `node scripts/pipeline/interview-summary.js <transcript> --person ... [--original-url ...]` writes `interviews/YYYYMMDD_<person>_<venue>_interview.txt` |
+| Interview leads | approved `interview_mention` facts → `data/interview-leads.json` | Resolve lead to URL → fetch transcript (Mac Mini one-off mode not yet built; tracked-channel mirrors already land in `news/`) → `node scripts/pipeline/interview-summary.js <transcript> --person ... [--original-url ...]` writes `interviews/YYYYMMDD_<person>_<venue>_interview.txt`, then `npm run build-interviews && npm run og-images` (renders the `/i/<slug>/` OG card) and commit `interviews/`, `src/data/interviews.json`, `public/og/<slug>.png` |
 
 ### Not yet built
 | Content | Notes |
 |---|---|
 | EV / Optimus / Energy / AI compute DCF models | Planned — Robotaxi DCF is the template |
-| Interview Archive | Detection LIVE (interview_mention extraction → admin queue → interview-leads.json) + summarization LIVE (`interview-summary.js` + `prompt-interview.md` → `interviews/` dir with structured `<claims>` blocks; first entry 2026-06-08 Musk SpaceX update) + UI LIVE (INTERVIEWS tab: list → detail popup with summary + TRACKED CLAIMS; amber `[INTERVIEW]` teaser row in Daily Feed on the `added` date opens the same popup in place). Original-source attribution: only the original (X) link is rendered; YouTube mirror is data-only fallback. Pending: Mac Mini one-off URL fetch, claims tracker (cross-interview) |
+| Interview Archive | Detection LIVE (interview_mention extraction → admin queue → interview-leads.json) + summarization LIVE (`interview-summary.js` + `prompt-interview.md` → `interviews/` dir with structured `<claims>` blocks; first entry 2026-06-08 Musk SpaceX update) + UI LIVE (INTERVIEWS tab: list → detail popup with summary + TRACKED CLAIMS; amber `[INTERVIEW]` teaser row in Daily Feed on the `added` date opens the same popup in place) + DEEP LINKS LIVE (per-interview `/i/<slug>/` static shells with own title/description/OG + generated OG card + JSON-LD + sitemap.xml; app reads the path on load to open the popup, syncs URL on open/close/back — see `build-interview-pages.js`, `build-og-images.js`, `src/components/Interviews/interviewRoute.ts`). Original-source attribution: only the original (X) link is rendered; YouTube mirror is data-only fallback. Pending: Mac Mini one-off URL fetch, claims tracker (cross-interview), body-text pre-render for full-text SEO |
 
 ## Future / Known Limitations
 - Stock price via server-side proxy (api.theteslathesis.com) — needs dynamic DNS for ISP IP changes

@@ -11,6 +11,7 @@
     "pipeline": "node scripts/pipeline/run.js",
     "build-news": "node scripts/build-news.js",
     "build-interviews": "node scripts/build-interviews.js",
+    "og-images": "node scripts/build-og-images.js",
     "costs": "node scripts/pipeline/costs-report.js",
     "latency": "node scripts/pipeline/latency-report.js"
   },

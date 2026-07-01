@@ -73,6 +73,9 @@ function buildShell(template, iv) {
   const ogTitle = `${name} on ${venue}`;
   const pageTitle = `${ogTitle} | The Tesla Thesis`;
   const desc = description(iv.summary) || `Primary-source interview summary and tracked claims from ${name}, on The Tesla Thesis.`;
+  // Per-interview OG card if it was rendered + committed (public/og → dist/og);
+  // otherwise the generic site card already in the template.
+  const image = fs.existsSync(path.join(DIST, 'og', `${iv.slug}.png`)) ? `${SITE}/og/${iv.slug}.png` : null;
 
   let html = template;
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(pageTitle)}</title>`);
@@ -85,6 +88,10 @@ function buildShell(template, iv) {
   html = setMetaContent(html, 'name="twitter:description"', desc);
   // og:type website → article for a content page
   html = html.replace(/(<meta property="og:type"[^>]*content=")[^"]*("[^>]*>)/, `$1article$2`);
+  if (image) {
+    html = setMetaContent(html, 'property="og:image"', image);
+    html = setMetaContent(html, 'name="twitter:image"', image);
+  }
 
   const ld = {
     '@context': 'https://schema.org',
