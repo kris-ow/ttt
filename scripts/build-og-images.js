@@ -73,8 +73,8 @@ function cardHtml(iv) {
   .role { color: ${C.textBright}; font-size: 30px; font-weight: 500; margin-top: 20px; }
   .meta { color: ${C.textDim}; font-size: 26px; margin-top: 14px; }
   .foot { display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid ${C.border}; padding-top: 24px; }
-  .foot .claims { color: ${C.greenDim}; font-size: 26px; font-weight: 700; letter-spacing: 1px; }
-  .foot .url { color: ${C.textDim}; font-size: 26px; }
+  .foot .claims { color: ${C.textDim}; font-size: 26px; }
+  .foot .cta { color: ${C.green}; font-size: 26px; font-weight: 700; letter-spacing: 1px; }
 </style></head>
 <body>
   <div class="head"><span class="brand">[TTT]</span> <span class="name">THE TESLA THESIS</span></div>
@@ -85,8 +85,8 @@ function cardHtml(iv) {
     <div class="meta">${esc(meta)}</div>
   </div>
   <div class="foot">
-    <span class="claims">${esc(claims)}</span>
-    <span class="url">theteslathesis.com</span>
+    <span class="claims">${esc([claims, 'theteslathesis.com'].filter(Boolean).join('  ·  '))}</span>
+    <span class="cta">READ THE FULL INTERVIEW →</span>
   </div>
 </body></html>`;
 }

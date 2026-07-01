@@ -35,8 +35,9 @@ function venueShort(venue) {
 }
 
 // First prose paragraph of the summary (the opening scene-setter), flattened to
-// a plain-text meta description of ~200 chars.
-function description(summary) {
+// plain text. Truncation happens per-target in buildShell (social vs SERP want
+// different lengths).
+function firstParagraph(summary) {
   const lines = summary.split('\n');
   const para = [];
   for (const line of lines) {
@@ -47,14 +48,17 @@ function description(summary) {
     }
     para.push(t);
   }
-  let text = para.join(' ')
-    .replace(/\*\*/g, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-  if (text.length > 200) {
-    text = text.slice(0, 200).replace(/\s+\S*$/, '') + '…';
-  }
-  return text;
+  return para.join(' ').replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+}
+
+// Truncate to <=max, preferring a sentence boundary, else a word boundary (with
+// an ellipsis). No trailing ellipsis when we land cleanly on a sentence end.
+function truncate(text, max) {
+  if (text.length <= max) return text;
+  const slice = text.slice(0, max);
+  const lastSentence = slice.lastIndexOf('. ');
+  if (lastSentence > max * 0.6) return slice.slice(0, lastSentence + 1);
+  return slice.replace(/\s+\S*$/, '').trim() + '…';
 }
 
 function setMetaContent(html, matchAttr, value) {
@@ -72,7 +76,10 @@ function buildShell(template, iv) {
   const url = `${SITE}/i/${iv.slug}/`;
   const ogTitle = `${name} on ${venue}`;
   const pageTitle = `${ogTitle} | The Tesla Thesis`;
-  const desc = description(iv.summary) || `Primary-source interview summary and tracked claims from ${name}, on The Tesla Thesis.`;
+  const para = firstParagraph(iv.summary) || `Primary-source interview summary and tracked claims from ${name}, on The Tesla Thesis.`;
+  // SERP meta descriptions read best at ~150-160; social cards truncate ~125.
+  const desc = truncate(para, 155);
+  const socialDesc = truncate(para, 120);
   // Per-interview OG card if it was rendered + committed (public/og → dist/og);
   // otherwise the generic site card already in the template.
   const image = fs.existsSync(path.join(DIST, 'og', `${iv.slug}.png`)) ? `${SITE}/og/${iv.slug}.png` : null;
@@ -82,10 +89,10 @@ function buildShell(template, iv) {
   html = html.replace(/(<link rel="canonical"[^>]*href=")[^"]*("[^>]*>)/, `$1${url}$2`);
   html = setMetaContent(html, 'name="description"', desc);
   html = setMetaContent(html, 'property="og:title"', ogTitle);
-  html = setMetaContent(html, 'property="og:description"', desc);
+  html = setMetaContent(html, 'property="og:description"', socialDesc);
   html = setMetaContent(html, 'property="og:url"', url);
   html = setMetaContent(html, 'name="twitter:title"', ogTitle);
-  html = setMetaContent(html, 'name="twitter:description"', desc);
+  html = setMetaContent(html, 'name="twitter:description"', socialDesc);
   // og:type website → article for a content page
   html = html.replace(/(<meta property="og:type"[^>]*content=")[^"]*("[^>]*>)/, `$1article$2`);
   if (image) {
