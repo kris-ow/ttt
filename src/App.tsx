@@ -17,6 +17,8 @@ const data = newsData as NewsData
 
 const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
 const INTERVIEWS_BADGE_UNTIL = new Date('2026-06-26T23:59:59Z')
+// Matches index.html <title>; restored when no interview popup is open.
+const DEFAULT_TITLE = 'The Tesla Thesis - Tesla Intelligence Dashboard'
 
 const MOBILE_TILE_TABS = ['stock', 'robotaxi', 'merger'] as const
 type MobileTileTab = (typeof MOBILE_TILE_TABS)[number]
@@ -158,6 +160,20 @@ export default function App() {
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
+
+  // Keep the tab title in sync with the open interview. The static /i/<slug>/
+  // shell ships a per-interview <title> (for shared links + SEO); the SPA must
+  // maintain it — otherwise it goes stale after the popup closes and never
+  // updates on in-app opens. Mirrors the shell's "<name> on <venue>" format.
+  useEffect(() => {
+    if (!routeInterview) {
+      document.title = DEFAULT_TITLE
+      return
+    }
+    const name = routeInterview.person.replace(/\s*\(.*\)\s*$/, '')
+    const venue = routeInterview.venue.split(/[(;]/)[0].trim()
+    document.title = `${name} on ${venue} | The Tesla Thesis`
+  }, [routeInterview])
 
   useEffect(() => {
     if (!showFilter) return
