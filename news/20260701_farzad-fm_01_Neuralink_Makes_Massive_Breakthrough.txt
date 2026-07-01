@@ -1,0 +1,133 @@
+Channel:     farzad-fm
+Title:       Neuralink Makes Massive Breakthrough In Brain-Chip Interface
+URL:         https://www.youtube.com/watch?v=a-EkkhqXTE8
+Published:   2026-07-01 00:47 UTC
+Fetched:     2026-07-01 01:00 UTC
+
+────────────────────────────────────────────────────────────
+
+This is a brain and this is a model of
+the skull. And that layer in between is
+the dura. From day one, we've been
+working towards making our surgery
+faster and less invasive. Preserving the
+dura instead of removing it is a massive
+leap in that direction.
+In May of 2026, as part of our ongoing
+clinical trials, we performed the very
+first transural neuralink surgery
+alongside Dr. Lozano at UHN in Toronto,
+Canada. It's the most cutting edge
+version of this surgery that we've yet
+performed.
+&gt;&gt; The dura is the outermost layer of the
+brain. It's right beneath the skull and
+it's this tough leather-like protective
+material that surrounds the brain. The
+standard Neurolink surgery thus far has
+involved opening the dura and removing a
+portion of that lining so that we can
+see the brain directly and insert
+electrodes into its surface. This new
+version of the surgery skips that step
+entirely and our robotic insertion
+device is able to insert electrode
+threads directly through the dura into
+the brain itself. This is an important
+step because it makes the surgery safer,
+less invasive, faster, and potentially
+allows us to scale the operation to a
+greater population.
+The primary engineering challenges have
+been how do you insert threads through
+the dura mechanically and then how do
+you see through the dura such that we
+can insert threads while avoiding
+vascule. The dura is a very tough
+leathery layer. Our original needle
+design was not able to reliably
+penetrate it. One of the things we did
+was increase the diameter of our needle
+just slightly to be able to put our
+electrodes through the dura. To get the
+robot ready to insert through dura, uh
+we had to develop a entirely new testing
+pipeline. Most important of which was
+having a way to simulate the human dura
+properties on benchtop. To do that, we
+had to develop a synthetic dural
+membrane where we would like
+characterize the thickness of the dura
+and the puncture force. Once we had
+these synthetic benchtop proxies, we
+would run hundreds of tus where we
+insert electrodes into the duro. What
+I'm showing here is about how much brain
+is exposed during our procedure, which
+is about the size of a quarter. And this
+is what the surgeon would typically see.
+The difference when the dura is still
+there and we don't cut it is the surgeon
+would see something like this. The
+obvious thing here is you can't see
+anything. The robot team had to develop
+a ton of new optics to be able to see
+the blood vessels and avoid them while
+inserting the threads. The moment we
+leave the dura intact, it actually
+blocks the vision of two things. One,
+blood vessels and two, the distance to
+the cortical surface. To overcome the
+first challenge, the blood vision of the
+blood vessels, we use ICG video
+andography. ICG is the dye that can be
+injected through vein and then used
+infrared light to see the blood vessels
+glowing right through the dura. So the
+robot could steer threads safely around
+them. Second, to know how deep, we used
+an optical system called optical
+coherence tomography to determine the
+distance of the cortical surface from
+the dural surface. This is the OCT
+portion of the robot. So you see the
+laser optics and the robot head module
+here. So the laser light goes through
+this optics and then delivered to the
+robot head through this fiber. The light
+coming back from the brain is coupled
+into this lens and then coupled into
+this fiber. So the light is delivered
+through this fiber optics again and then
+processed and then visualized as a 3D
+volume of the brain tomography.
+This is the brain proxy that we use to
+test our CT system. So it has multiple
+layers of membrane that mimics the human
+brain anatomy and the brain motion. On
+the screen what you're seeing is thin
+dural layer and SAS soft barnoid space
+under the dura and then the cortex. So
+as you see here the distance from the
+dural surface to the cortex is actively
+changing in the live human. OCT allows
+us to measure the distance from the top
+of the dura to the cortex with high
+accuracy. So we can insert our threads
+into the cortex with high procedure.
+Part of the mission in helping as many
+people as possible is being able to do
+as many surgeries as possible. And one
+way to do as many surgeries as possible
+is having robots do the procedure with
+clinical supervision. The step prior to
+automating surgery and bringing in
+robotics is thinking about what steps
+can you delete such that you don't even
+need a robot to do it. The transural
+procedure was our way of deleting the
+directtomy step completely to make the
+surgery faster, simpler, safer to be
+able to expand what's possible and to
+help even more people with unmet medical
+needs.
