@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react'
 import newsData from '../../data/news.json'
 import interviewsData from '../../data/interviews.json'
 import { type Article, type NewsData } from '../../types'
-import { InterviewDetail, type Interview } from '../Interviews/InterviewSection'
+import { type Interview } from '../Interviews/InterviewSection'
+import { useInterviewOpener } from '../Interviews/interviewRoute'
 import { formatDate, channelShort, biasTag } from './helpers'
 import { track } from '../../analytics'
 
@@ -15,7 +16,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
   selectedChannel: string | null
   onSelectArticle: (a: Article) => void
 }) {
-  const [selectedInterview, setSelectedInterview] = useState<Interview | null>(null)
+  const openInterview = useInterviewOpener()
   // Interview Archive entries surface in the feed as amber teaser rows on
   // the date TTT published the summary, linking to the INTERVIEWS tab.
   const interviewsByDate = useMemo(() => {
@@ -51,7 +52,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
               {dayInterviews.map(iv => (
                 <button
                   key={iv.id}
-                  onClick={() => { setSelectedInterview(iv); track('Interview Open', { person: iv.person.replace(/\s*\(.*\)\s*$/, ''), date: iv.date, location: 'feed' }) }}
+                  onClick={() => openInterview(iv, 'feed')}
                   className="w-full text-left border border-amber/50 bg-amber/5 hover:border-amber p-3 transition-colors cursor-pointer group"
                 >
                   <div className="flex items-start gap-x-3 text-xs overflow-hidden">
@@ -108,7 +109,6 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
           SHOW OLDER ({allDates.length - INITIAL_DAYS} more days)
         </button>
       )}
-      {selectedInterview && <InterviewDetail interview={selectedInterview} onClose={() => setSelectedInterview(null)} />}
     </div>
   )
 }

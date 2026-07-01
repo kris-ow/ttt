@@ -10,7 +10,8 @@ import { StockWidget } from './components/Stock/StockWidget'
 import { useStockQuote } from './components/Stock/useStockQuote'
 import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
 import { MergerOddsCard } from './components/MergerOdds/MergerOddsCard'
-import { InterviewSection } from './components/Interviews/InterviewSection'
+import { InterviewSection, InterviewDetail, type Interview } from './components/Interviews/InterviewSection'
+import { InterviewRouteContext, interviewFromPath, interviewPath, INTERVIEW_PATH_RE, type InterviewLocation } from './components/Interviews/interviewRoute'
 
 const data = newsData as NewsData
 
@@ -29,7 +30,13 @@ const SECTION_LABELS: Record<Section, string> = {
 }
 
 export default function App() {
+  // Resolve a /i/<slug>/ deep link once on load so the popup can open over the
+  // right tab (and the archive shows behind the blurred overlay).
+  const initialInterview = typeof window !== 'undefined'
+    ? interviewFromPath(window.location.pathname) ?? null
+    : null
   const [activeSection, setActiveSection] = useState<Section>(() => {
+    if (initialInterview) return 'interviews'
     if (typeof window !== 'undefined' && window.location.hash === '#valuations') {
       return 'valuations'
     }
@@ -38,6 +45,7 @@ export default function App() {
     }
     return 'feed'
   })
+  const [routeInterview, setRouteInterview] = useState<Interview | null>(initialInterview)
   const [mountedTabs, setMountedTabs] = useState<Set<Section>>(() => new Set([activeSection]))
   const [dataSeen, setDataSeen] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false
@@ -83,8 +91,9 @@ export default function App() {
   const handleTabSwitch = useCallback((key: Section) => {
     setActiveSection(key)
     setMountedTabs(prev => prev.has(key) ? prev : new Set([...prev, key]))
-    if (typeof window !== 'undefined' && window.location.hash) {
-      history.replaceState(null, '', window.location.pathname + window.location.search)
+    if (typeof window !== 'undefined' && (window.location.hash || INTERVIEW_PATH_RE.test(window.location.pathname))) {
+      const basePath = INTERVIEW_PATH_RE.test(window.location.pathname) ? '/' : window.location.pathname
+      history.replaceState(null, '', basePath + window.location.search)
     }
     if (key === 'data') {
       setDataSeen(prev => {
@@ -119,6 +128,37 @@ export default function App() {
     if (article) handleArticleOpen(article)
   }, [handleArticleOpen])
 
+  // Opening an interview (from the archive list or a feed teaser) pushes a
+  // shareable /i/<slug>/ URL; the popup itself is a portal overlay, so the
+  // underlying tab is left as-is.
+  const openInterview = useCallback((iv: Interview, location: InterviewLocation) => {
+    const path = interviewPath(iv.slug)
+    if (window.location.pathname !== path) {
+      history.pushState({ ttt: 'interview' }, '', path)
+    }
+    setRouteInterview(iv)
+    track('Interview Open', { person: iv.person.replace(/\s*\(.*\)\s*$/, ''), date: iv.date, location })
+  }, [])
+
+  const closeInterview = useCallback(() => {
+    // If we pushed an entry, pop it (keeps browser back/forward honest — the
+    // popstate handler clears routeInterview). On a direct deep-link load there
+    // is no in-app entry to pop, so just rewrite the URL to root.
+    if (window.history.state?.ttt === 'interview') {
+      history.back()
+    } else {
+      history.replaceState(null, '', '/' + window.location.search)
+      setRouteInterview(null)
+    }
+  }, [])
+
+  // Browser back/forward: URL is the source of truth for which interview is open.
+  useEffect(() => {
+    const onPop = () => setRouteInterview(interviewFromPath(window.location.pathname) ?? null)
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
+
   useEffect(() => {
     if (!showFilter) return
     const handleClick = (e: MouseEvent) => {
@@ -131,6 +171,7 @@ export default function App() {
   }, [showFilter])
 
   return (
+    <InterviewRouteContext.Provider value={openInterview}>
     <div className="min-h-screen flex flex-col">
       {/* ── Header ──────────────────────────────────── */}
       <header className="border-b border-border bg-surface sticky top-0 z-40">
@@ -301,6 +342,12 @@ export default function App() {
       {selectedArticle && (
         <ArticleDetail article={selectedArticle} onClose={() => setSelectedArticle(null)} />
       )}
+
+      {/* ── Interview overlay (deep-linkable /i/<slug>/) ─ */}
+      {routeInterview && (
+        <InterviewDetail interview={routeInterview} onClose={closeInterview} />
+      )}
     </div>
+    </InterviewRouteContext.Provider>
   )
 }

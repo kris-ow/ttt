@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import interviewsData from '../../data/interviews.json'
 import { renderInline } from '../Feed/helpers'
 import { track } from '../../analytics'
+import { useInterviewOpener } from './interviewRoute'
 
 interface Claim {
   claim: string
@@ -14,6 +15,7 @@ interface Claim {
 
 export interface Interview {
   id: string
+  slug: string
   person: string
   venue: string
   format: string
@@ -34,7 +36,7 @@ function personName(person: string): string {
 }
 
 export function InterviewSection() {
-  const [selected, setSelected] = useState<Interview | null>(null)
+  const openInterview = useInterviewOpener()
 
   return (
     <div>
@@ -47,7 +49,7 @@ export function InterviewSection() {
         {data.interviews.map(iv => (
           <button
             key={iv.id}
-            onClick={() => { setSelected(iv); track('Interview Open', { person: personName(iv.person), date: iv.date, location: 'archive' }) }}
+            onClick={() => openInterview(iv, 'archive')}
             className="w-full text-left border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 transition-colors cursor-pointer group"
           >
             <div className="flex items-start gap-x-3 text-xs overflow-hidden">
@@ -62,8 +64,6 @@ export function InterviewSection() {
           </button>
         ))}
       </div>
-
-      {selected && <InterviewDetail interview={selected} onClose={() => setSelected(null)} />}
     </div>
   )
 }

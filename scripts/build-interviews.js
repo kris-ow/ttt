@@ -8,6 +8,23 @@ import path from 'path';
 const IN_DIR = path.resolve('interviews');
 const OUT_FILE = path.resolve('src/data/interviews.json');
 
+// "Elon Musk (CEO, SpaceX / xAI)" → "elon-musk"
+function personSlug(person) {
+  return person
+    .replace(/\s*\(.*\)\s*$/, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// Public share slug: <person>-<date>, e.g. "lars-moravy-2026-06-30".
+// Drives the /i/<slug>/ deep-link URL (build-interview-pages.js) and the
+// in-app router; must be stable and unique across the archive.
+function interviewSlug(person, date) {
+  const d = (date && date !== 'unknown') ? date : 'undated';
+  return `${personSlug(person)}-${d}`;
+}
+
 function parseInterviewFile(filename) {
   const content = fs.readFileSync(path.join(IN_DIR, filename), 'utf-8');
   const lines = content.split('\n');
@@ -37,6 +54,7 @@ function parseInterviewFile(filename) {
 
   return {
     id: filename.replace(/\.txt$/, ''),
+    slug: interviewSlug(meta.person || 'unknown', meta.date || 'unknown'),
     person: meta.person || 'unknown',
     venue: meta.venue || 'unknown',
     format: meta.format || 'unknown',
@@ -59,6 +77,15 @@ const files = fs.existsSync(IN_DIR)
 const interviews = files
   .map(parseInterviewFile)
   .sort((a, b) => b.date.localeCompare(a.date) || a.person.localeCompare(b.person));
+
+// Guarantee slug uniqueness (same person same day → -2, -3, …). Stable order
+// is the sort above, so suffixes are deterministic across builds.
+const slugSeen = new Map();
+for (const iv of interviews) {
+  const n = (slugSeen.get(iv.slug) || 0) + 1;
+  slugSeen.set(iv.slug, n);
+  if (n > 1) iv.slug = `${iv.slug}-${n}`;
+}
 
 fs.writeFileSync(OUT_FILE, JSON.stringify({ generated: new Date().toISOString(), interviews }, null, 2) + '\n');
 console.log(`Wrote ${OUT_FILE}: ${interviews.length} interview(s)`);
