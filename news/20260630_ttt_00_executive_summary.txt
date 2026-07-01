@@ -1,0 +1,107 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-06-30)
+Published:   2026-06-30 00:00 UTC
+Summarized:  2026-07-01 04:54:45 UTC
+Model:       claude-sonnet-4-6 [direct]
+Cost:        $0.10752 (17130 in / 3742 out tokens)
+Sources:     8
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Lars Moravy teases major Giga Texas announcement for July 7, 2026.
+- Cybercab lines over 90% automated; ~150 units built per Moravy.
+- FSD V14 Lite rolling out to 3–4 million Hardware 3 vehicles.
+- Optimus line 1 installed at Fremont; 40 more lines to follow.
+- Cybercab first responder guide live; Houston launch rumored mid-to-late July.
+- Michael Burry shorts TSLA at $416.22; stock closed up 8.46% at $411.84.
+
+## Robotaxi
+
+- **Major announcement teased for July 7, 2026:** Lars Moravy twice referenced an imminent announcement tied to "scaling efforts" on the Giga Texas campus, declining to specify. Multiple sources flag the date as Tuesday, July 7.
+
+- **Cybercab production: ~150 units, automation ahead of schedule:** Moravy confirmed approximately 150 Cybercabs have been built, with the majority allocated to Autopilot training rather than commercial deployment. The burn-in track at Giga Texas has just started processing vehicles. Production lines are over 90% automated end-to-end — a figure Moravy called significant — and he said automation is running ahead of schedule. Community VIN analysis (per "Xander," cited by Herbert Ong) estimates as many as 850 units may have been produced; Moravy did not validate that higher figure.
+
+- **Cybercab first responder guide published — final pre-deployment hurdle cleared:** The Cybercab first responder guide is now live on the Texas Department of Public Safety website, and the Cybercab has been added to Texas's Connected Autonomous Vehicles First Responder Interaction Plans page. Per Dillon Loomis, this is the last major regulatory hurdle before Austin deployment. Key specs from the guide: 400V high-voltage battery, 48V low-voltage architecture, 10 airbags, active hood pedestrian protection (15–32 mph), exterior B-pillar microphones, infrared seat belt webbing, and no wireless charging hardware.
+
+- **Houston Cybercab launch rumored for mid-to-late July:** An unconfirmed rumor cited by Loomis (attributed to Kobe Pierce via a "very reputable source") suggests a Houston Cybercab launch in mid-to-late July, with a service area reportedly ~50% larger than Waymo's current Houston footprint and potentially covering NRG Stadium and George Bush Intercontinental Airport. Flagged as speculative.
+
+- **Large Cybercab staging lots visible in Houston, Dallas, and Phoenix — no deployment decals:** Per RobotaxiTracker.com, the active Tesla robotaxi fleet stands at 748 across all operational modes as of June 25. Separately, approximately 78 Cybercabs were observed in a Houston staging lot (per SE Robinson) and dozens more in Dallas — none carrying the Cybercab word mark decals that the first responder guide indicates are present on vehicles in active service, suggesting these are pre-positioned but not yet operationally cleared.
+
+- **Tesla missed its H1 2026 five-city robotaxi expansion target:** Tesla's Q4 2025 slide deck targeted Phoenix, Miami, Orlando, Tampa, and Las Vegas launches in H1 2026; the Q1 2026 deck downgraded this to "preparations underway." June 30 marks the end of H1 with none of those cities live. Loomis attributes the delay to Tesla internally waiting for V15 before expanding.
+
+- **Cybercab designed for unprecedented scale; Waymo model called "probably not efficient enough":** Moravy explained Cybercab was built on a clean sheet because Tesla expects to manufacture more of these than any vehicle it has ever made. He argued Waymo's approach of adding compute to an existing vehicle platform is "probably not efficient enough," while Tesla's vertically integrated stack — covering raw materials, compute, software, charging, and service — creates a cost-per-mile advantage analysts have not fully modeled.
+
+- **Waymo exits Uber in Phoenix; new autonomous Uber partner unnamed:** Waymo robotaxis are no longer available on Uber's app in Phoenix after nearly three years, with Waymo integrating those vehicles into its own app fleet. Uber announced a new unnamed autonomous partner in Phoenix is coming; speculation in the community points to Lucid/Mobileye (Nuro), given Lucid's Arizona manufacturing presence and existing Uber fleet commitments. Loomis is skeptical the new partner will be meaningfully operational in 2026.
+
+## Autonomous Driving
+
+- **FSD V14 Lite rolling out to HW3 — knowledge distillation from HW4:** Tesla began rolling out FSD V14 Lite to Hardware 3 early access customers, with broader rollout expected over the following weeks. The build uses knowledge distillation to transfer HW4 V14 capabilities to HW3's camera and compute configuration. New features include speed profiles, city road destination options, and the ability to start self-driving from park. Elon Musk noted HW3 has only ~15% of HW4's effective memory bandwidth, making the achievement technically difficult. Early reviews are described as very positive; HW3 never received V13, making this a generational leap for those vehicles.
+
+- **V14 Lite missing features:** The HW3 release omits MadMax speed profile, the FSD stats app, streak counters and celebrations, and the unified smart summon model. Automatic pull-over for emergency vehicles is listed as TBD.
+
+- **3–4 million HW3 vehicles represent a large incremental monetization opportunity:** Loomis estimates 3–4 million vehicles carry HW3 hardware, with fewer than 1% running V14 Lite at launch. He flagged this as a meaningful FSD subscription revenue opportunity and suggested Tesla may run a free 30-day trial to drive conversions once the rollout broadens.
+
+- **FSD responding to police hand signals:** A video shared by "DJ" showed a Tesla running FSD stop at a green light because an officer was directing traffic, then proceed after being waved through — with the car appearing to anticipate the signal slightly before it was given.
+
+- **"Full Self-Hearing" on the production line:** Moravy described Tesla vehicles now driving themselves autonomously from end-of-line to the logistics yard and through the bump, squeak, and rattle track, using onboard microphones to automatically document noise issues for production teams — a self-reinforcing AI quality feedback loop he called "full self-hearing."
+
+- **VW ends Bosch autonomous driving partnership after ~$1.7B invested:** German reporting citing internal sources indicates Volkswagen plans to end its automated driving partnership with Bosch, launched in 2022 through VW's Cariad software unit. Internal assessments reportedly found the technology not competitive; Tesla's FSD was cited as the benchmark. This follows VW announcing potential cuts of up to 100,000 jobs and closure of four German factories.
+
+## Humanoid Bots
+
+- **Optimus production line 1 installed and undergoing commissioning at Fremont:** Moravy confirmed the first Optimus production line has been delivered and installation has begun at the Fremont factory, where Model S and X production has ended. The automation equipment was built by Tesla's own automation groups in the Midwest and Germany. The line is modular — Moravy said it can be taken down, shipped, and brought back online in two to three days, with full commissioning in approximately one week.
+
+- **40 more lines to follow:** Moravy stated "we got 40 more to go," referring to the total Optimus production lines to be installed. The high count reflects the many subcomponent lines — actuators, limbs, torso, battery, and other subassemblies — in a tributary-to-final-assembly layout he compared to the Unboxed manufacturing philosophy.
+
+- **Tesla's three structural advantages in humanoid robotics:** Moravy enumerated: (1) scale manufacturing expertise, (2) proprietary high-power-density electric motors and actuators no competitor possesses, and (3) real-world AI implementation. He rejected the analogy to consumer electronics, arguing functional safety requirements, multi-axis mechanical complexity, and supply chain demands make Optimus far more analogous to vehicle manufacturing.
+
+- **"Limbic resonance" is the design mandate for Gen 1 Optimus:** Moravy said Elon Musk has been emphatic that the first generation must feel natural and non-threatening in human spaces before any other form factor is pursued. He acknowledged a non-humanoid R2-D2-style form will likely come eventually but must follow, not precede, success with the humanoid form.
+
+## Financials
+
+- **Q2 2026 delivery estimates diverge widely:** Wall Street consensus stands at 406,024 units per Tesla's own published figure; prediction markets imply ~450,000; FutureAzA host Randy's estimate is ~490,000 or higher, based on observed factory activity and an expected drawdown of the ~50,000-unit inventory overhang from Q1. Delivery report is expected Thursday, July 3, 2026.
+
+- **Moravy: Cybercab cost-per-mile figures will "blow minds" of analysts:** Moravy stated that published business outlooks from Ark and Wells Fargo do not accurately model Cybercab's operational cost efficiency, predicting real-world cost-per-mile figures will surprise materially to the upside when they emerge.
+
+- **Michael Burry discloses TSLA short at $416.22:** Burry entered a short position against Tesla on June 30 as part of a broader basket also including Nvidia, the iShares Semiconductor ETF (SOXX), Applied Materials, and Caterpillar — framed as a bet against an AI and semiconductor bubble. He did not disclose position size, options structure, or capital at risk. Tesla's prior session close was $379.71; Burry shorted into a ~10% intraday rally. Electrek's Fred Lambert calls shorting Tesla "super risky" despite agreeing on overvaluation, citing hype-driven price action and a potential SpaceX–Tesla merger narrative as ongoing catalysts.
+
+- **Tesla closes up 8.46% at $411.84:** FutureAzA attributes the move primarily to improving Q2 delivery expectations and macro catch-up buying (NASDAQ was up ~2.25%; Tesla's beta estimated at ~2x). SpaceX IPO rotation and merger speculation are flagged as secondary contributors. Randy's earlier $550 end-of-June price target — conditioned on meaningful robotaxi progress — was not met, which he acknowledged openly.
+
+## Electric Vehicles
+
+- **Giga Berlin expanding to 6,200 vehicles/week in July, then 7,500 from October:** Tesla executive André Thierig announced a two-stage production expansion at Giga Berlin: from 5,000 to 6,200 units/week beginning July (with 1,000 new hires), then to 7,500 units/week ramping from October (another 1,000 hires), for approximately 3,500 total additional employees in 2026. This is occurring while VW simultaneously closes four German factories.
+
+- **Model Y L spotted in California; US launch described as imminent:** A camouflaged Model Y L was observed in Palo Alto on 19- or 20-inch wheels. Herbert Ong and Jeff Lutz both expect the extended six-seat variant to outperform the standard Model Y in North America given American consumer preference for larger vehicles. Lutz suggested production could begin as soon as Q2 2026.
+
+- **Model Y global changeover described as historically fast:** Moravy characterized Tesla's simultaneous refresh across four factories — completed in approximately three to four weeks — as the largest automated product changeover at that scale since Ford's Model T to Model A transition, which took Ford six months.
+
+- **Tesla expands to Uruguay:** Tesla announced vehicle sales will begin in Uruguay. The market sees approximately 75,000 light vehicle sales per year, with BEVs at roughly 20% share (~13,500 annually) as of 2025, aided by favorable national EV policies.
+
+- **NHTSA closes power steering loss probe:** NHTSA closed its engineering analysis into Tesla over power steering loss after Tesla issued an OTA software recall in early 2025. Tesla stated the recall was not made in response to NHTSA's investigation.
+
+- **JD Power IQS: Tesla ranks number three:** Moravy noted Tesla achieved a number-three ranking in JD Power's Initial Quality Study, released approximately two days before the interview, attributing the improvement partly to AI-driven anomaly detection on production lines.
+
+## Market & Competition
+
+- **Grok 4.5 in private beta at SpaceX and Tesla; SpaceX AI acquires Cursor for $60B:** Per Jo Bhakdi, Elon Musk tweeted that Grok 4.5 — built on a 1.5 trillion parameter foundation model with Cursor training data — is now in private beta, being rolled out internally at SpaceX and Tesla. SpaceX AI acquired Cursor, characterized as the leading enterprise AI coding platform (customers include Stripe, Adobe, Nvidia, and OpenAI), for $60 billion. Bhakdi frames Cursor's enterprise training data footprint as the primary strategic asset, targeting what SpaceX internal documents reportedly describe as a $22 trillion enterprise AGI addressable market. Fully retrained new models are said to be planned for release to SpaceX monthly through 2026.
+
+- **Polestar exits the US market:** Polestar withdrew from the United States after a trade ruling ended the credit arrangement allowing it to import China-built vehicles offset by Volvo US plant exports. Jeff Lutz frames the exit as a final blow to a brand already failing on its own merits.
+
+- **Jeff Lutz: Tesla's autonomous driving lead is "half a decade, full decade kind of thing":** Former Fortune 100 supply chain executive Jeff Lutz, interviewed by Herbert Ong, argued Tesla's competitive lead in autonomous driving cannot be replicated in six months as some analysts suggest — it requires simultaneously mastering AI capability, manufacturing scale, and unit economics under one roof, a combination no competitor currently has.
+
+Notable quotes and data:
+- "In a week from Tuesday, there'll be some cool news about things happening on the campus of Texas… that's part of the scaling effort." — Lars Moravy (July 7, 2026)
+- "Lines [are] over 90% automated all in." — Lars Moravy
+- "We maybe made 150. I'll stick with that number." — Lars Moravy on Cybercab production
+- "I think the automation is ahead of schedule actually." — Lars Moravy
+- "We got 40 more [lines] to go." — Lars Moravy on Optimus at Fremont
+- "And finally I shorted Tesla (TSLA) at 416.22. Happy it jumped back to this level." — Michael Burry
+- TSLA close: $411.84, +8.46%; NASDAQ: +2.25%
+- Q2 2026 delivery consensus: 406,024; FutureAzA estimate: ~490,000+; report due July 3, 2026
+- Giga Berlin production trajectory: 5,000 → 6,200/week (July) → 7,500/week (October ramp)
+- HW3 estimated vehicle count: 3–4 million; fewer than 1% running V14 Lite at launch
+- Cybercab battery: 400V HV system, 48V LV architecture, 10 airbags, active pedestrian hood
+- SpaceX AI Cursor acquisition: $60 billion (per Bhakdi)
+- VW/Bosch autonomous driving investment written off: ~$1.7 billion
+- Uber stock: down ~18% on a 12-month basis, down ~8–10% year-to-date (per Jeff Lutz)
