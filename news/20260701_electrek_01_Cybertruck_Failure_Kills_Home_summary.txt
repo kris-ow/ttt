@@ -1,0 +1,34 @@
+Channel:     electrek
+Title:       Cybertruck failure kills home charging, and Tesla is avoiding a recall
+Published:   2026-07-01 13:51 UTC
+Summarized:  2026-07-01 14:03:42 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_01CWsaShDNda36NaFgUskqGH
+Cost:        $0.01752 (3710 in / 1594 out tokens)
+Categories:  Electric Vehicles
+────────────────────────────────────────────────────────────
+
+Electrek reports that a growing number of Cybertruck owners are experiencing failures of the Power Conversion System (PCS) — the unit handling AC charging and high-voltage to 48V conversion — leaving trucks unable to charge at home. Tesla is replacing units case-by-case without issuing a recall, and owners face multi-week backlogs for parts.
+
+## Electric Vehicles
+
+1. **What's failing and how:** The PCS combines the onboard AC charger and DC-DC converter into a single unit. Failure follows a consistent pattern: Level 2 charging degrades from 48A to 24A, then stops entirely, throwing an "AC Charging Unavailable" warning and MOSFET-related fault codes. Failures have occurred at mileages as low as under 10,000 miles and as high as 31,250 miles, with no clear mileage threshold. Some trucks have failed a second time after a full PCS replacement. Most affected trucks retain DC fast-charging capability, though some drop into a speed-limited Service Mode.
+
+2. **Scale of the problem:** A self-selected poll on the Cybertruck Owners Club (223 respondents) found 91 (40.8%) confirmed PCS failures replaced under warranty, 15 (6.7%) suspected failures, and 116 (52%) unaffected. The article acknowledges this over-represents the problem but notes ~100 confirmed replacements from a single forum is a meaningful signal. Some Tesla service advisors reportedly told owners that the majority of Cybertrucks contain the problematic PCS, though not all will necessarily fail. The fix involves a revised PCS (hardware revision G, part number 1777777-T2-G) and a new wiring harness, requiring removal of the tonneau cover, bed floor, and air suspension components — with the Terrestrial Armor package adding roughly eight hours of additional labor.
+
+3. **Pricing and warranty disparities:** In-warranty replacements (4-year/50,000-mile basic coverage) are free. Out-of-warranty repairs reportedly ran $5,000–$7,200 before Tesla reduced the price to ~$1,000 as a "goodwill" gesture. Tesla does not offer an Extended Service Agreement for the Cybertruck, and early 2024–2025 Foundation Series trucks — the most exposed — only carry the basic warranty. Tesla quietly added a new 7-year/70,000-mile propulsion warranty for 2026 Cybertrucks that explicitly covers the PCS, but it is not retroactive. By comparison, when Hyundai and Kia faced widespread failures of their analogous ICCU component, they extended warranties for affected vehicles.
+
+4. **Owner experience during the wait:** Replacement PCS units are on national backorder, with owners reporting lead times of 14+ days for appointments, repeatedly slipping pickup dates, and at least one owner on X marking "week 8" still waiting. Tesla has issued a firmware update keeping Supercharging active on affected trucks and is covering Supercharging costs until repairs are completed, which owners have confirmed receiving.
+
+## Editorial Stance
+Lambert argues Tesla's ~80% price reduction on out-of-warranty repairs is a de facto admission of a manufacturing defect, and that handling failures case-by-case — rather than issuing a recall — allows Tesla to suppress a public defect acknowledgment while working through its parts backlog. He contends early Cybertruck buyers deserve the same extended coverage now given to 2026 buyers, and draws an unfavorable contrast with Hyundai/Kia's response to a comparable failure.
+
+Notable quotes and data:
+- Poll: 91 of 223 respondents (40.8%) confirmed PCS failure and replacement under warranty
+- Out-of-warranty repair cost: reportedly $5,000–$7,200, reduced to ~$1,000 as "goodwill"
+- Failure mileages cited: under 10,000 miles, 11,994, 16,677, and 31,250 miles
+- Revised PCS part number: 1777777-T2-G (hardware revision G)
+- Terrestrial Armor package adds ~8 hours of additional labor
+- 2026 Cybertruck warranty: 7-year/70,000-mile propulsion coverage including PCS (not retroactive)
+- Prior related issue: Tesla recalled 2,000+ Cybertrucks in late 2024 for inverter replacements, also a MOSFET issue
+- Owner quote: PCS failure "would be equivalent of someone putting a locking gas cap that can't be removed on a gas vehicle. When you run out, you're done."
