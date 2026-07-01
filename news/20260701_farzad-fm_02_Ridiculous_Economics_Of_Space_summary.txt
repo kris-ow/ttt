@@ -1,0 +1,45 @@
+Channel:     farzad-fm
+Title:       The Ridiculous Economics of Space Internet
+Published:   2026-07-01 12:15 UTC
+Summarized:  2026-07-01 13:03:11 UTC
+Model:       claude-sonnet-4-6 [batch]
+Batch ID:    msgbatch_014pr5mn2xizGgN3bKUfijNC
+Cost:        $0.04164 (10610 in / 3430 out tokens)
+Categories:  Market & Competition
+────────────────────────────────────────────────────────────
+
+This video analyzes the economics behind SpaceX's June 2026 IPO — the largest in history at a $1.77 trillion valuation — and argues that a single metric, the cost of deploying internet bandwidth to orbit measured in dollars per megabit per second, is the master variable that determines whether the valuation is justified or absurd. The host walks through the bear case (Morningstar's DCF values SpaceX at roughly $780 billion, approximately half the IPO price), then builds the bull case around a 95% collapse in deployment costs enabled by Starship and next-generation satellites. The core thesis is that this cost curve has already proven itself once with Starlink and is now poised to unlock a second, larger business: orbital AI compute.
+
+## Market & Competition
+
+1. **SpaceX IPO — the largest in history:** In June 2026, SpaceX priced its IPO at $135 per share on the Nasdaq under the ticker SPCX, valuing the company at approximately $1.77 trillion and raising around $85 billion in proceeds — more than two and a half times the previous record set by Saudi Aramco's ~$29 billion raise in 2019. BlackRock reportedly sought at least $5 billion of the deal, and the company is being fast-tracked into major stock indices. Oppenheimer issued an outperform rating with a $190 price target, implying a ~$2.5 trillion valuation.
+
+2. **The bear case — Morningstar's DCF:** Morningstar ran a discounted cash flow analysis and arrived at a fair value of approximately $780 billion — roughly half the IPO valuation — suggesting the stock is priced at double what conventional financial modeling can support. Rob Maurer (First Principles Group) noted that at a ~$2 trillion valuation, SpaceX trades at approximately 107 times annual revenue, far above the 10–30x multiples typical even for high-growth tech companies. Elon Musk reportedly replied "interesting analysis" to Maurer's post on X.
+
+3. **Starlink as the core revenue engine:** SpaceX generated approximately $4.69 billion in revenue in Q1 2026, with roughly $3.26 billion (about 69%) coming from Starlink connectivity. At the time of the IPO filing, Starlink had approximately 10 million subscribers — a number that doubled in a single year — with projections of around 17 million by end of 2026. Subscribers pay roughly $80/month, and in May 2026 SpaceX raised prices by up to $10/month in some markets. The connectivity segment carries an adjusted EBITDA margin of approximately 63%. Research firm Quilty forecasts Starlink doing approximately $20 billion in revenue in 2026, ~$14 billion in EBITDA, and ~$8.1 billion in free cash flow.
+
+4. **The Falcon 9 baseline — $6.55 per Mbps to orbit:** The Falcon 9 carries approximately 17 tons to orbit at an internal cost of roughly $1,000 per kilogram, for a total launch cost of about $17 million. A batch of Starlink satellites on that launch delivers approximately 2,600 gigabits per second of bandwidth capacity, working out to roughly $6.55 per megabit per second deployed to orbit. The host notes this figure was already the cheapest in history before Starship, and the industry broadly assumed it was close to a physical floor.
+
+5. **The Starship multiplier — 30 cents per Mbps to orbit:** Starship carries approximately 100 tons to orbit — nearly six times the Falcon 9's payload — at a cost per kilogram targeted at under $185, versus roughly $1,000 for Falcon 9. A single Starship launch at approximately $18.5 million deploys around 60 Starlink V3 satellites, which carry approximately four times more bandwidth per kilogram than current V2 mini satellites. Those 60 satellites together deliver approximately 61,000 gigabits per second of capacity — more than 23 times what a Falcon 9 launch provides. The resulting cost works out to approximately $0.30 per megabit per second, a 95% reduction from the Falcon 9 baseline. The host compares this cost collapse to historical analogies: the Ford Model T, the fall of solar panel costs (~99% over decades), and Malcolm McLean's 1956 shipping container (cargo loading costs fell from $5.86/ton to ~$0.16/ton).
+
+6. **Orbital AI compute as the third condition:** In June 2026, just before the IPO, SpaceX unveiled the "AI One" satellite — a platform carrying the equivalent of a full rack of AI compute at 150 kilowatts of peak power, with a 70-meter wingspan wider than a Boeing 747. SpaceX has filed plans to eventually build up to 1 million of them in a new factory in Bastrop, Texas, with volume production targeted by end of 2027. The value proposition is that continuous solar power (~1,361 W/m²) and passive heat radiation into deep space make power and cooling — the two primary constraints on terrestrial AI data centers — essentially free in orbit. The host notes that the orbital compute business only becomes economical when launch costs fall below $500–$1,000 per kilogram; Starship is targeting under $185–$250/kg, making it the same cost curve that already unlocked Starlink. A startup called Star Cloud flew an actual Nvidia H100 chip in orbit in November 2025 and has a follow-up mission with 100 times the compute power planned before end of 2026; the company is valued at over $1 billion. The host also references Google as independently pursuing a similar orbital compute project.
+
+7. **The single-question investment framework:** The host distills the entire SpaceX bull thesis into one question: does Starship achieve and sustain sub-$250/kg launch costs? If yes, the bull case for both Starlink's margin expansion and orbital AI compute follows logically. If no or uncertain, the $1.7 trillion valuation has no spreadsheet support and should be treated as the bears argue. The host also argues that even for non-investors, the cost collapse will bring billions of currently unconnected people online and transform the broader space economy across energy, AI, and capital formation.
+
+Notable quotes and data:
+- SpaceX IPO price: $135/share; total valuation ~$1.77 trillion; proceeds raised ~$85 billion
+- Previous IPO record: Saudi Aramco, ~$29 billion (2019); SpaceX raised more than 2.5× that
+- Morningstar DCF fair value: ~$780 billion (~half the IPO price)
+- SpaceX price-to-revenue at ~$2T valuation: ~107× (vs. 10–30× for typical fast-growth tech)
+- Oppenheimer price target: $190/share (~$2.5 trillion implied valuation)
+- Q1 2026 SpaceX revenue: ~$4.69 billion; Starlink connectivity share: ~$3.26 billion (~69%)
+- Starlink subscribers at IPO filing: ~10 million (doubled in one year); projected ~17 million by end of 2026
+- Starlink monthly price: ~$80; raised by up to $10/month in some markets in May 2026
+- Starlink adjusted EBITDA margin: ~63%
+- Quilty forecasts (2026): ~$20B Starlink revenue, ~$14B EBITDA, ~$8.1B free cash flow
+- Falcon 9: ~17 tons to orbit, ~$1,000/kg internal cost, ~$17M per launch, ~2,600 Gbps capacity per launch → **~$6.55/Mbps deployed**
+- Starship: ~100 tons to orbit, target <$185/kg, ~$18.5M per launch, ~60 V3 satellites, ~61,000 Gbps capacity per launch → **~$0.30/Mbps deployed** (95% reduction)
+- One Starship launch = equivalent bandwidth of ~23 Falcon 9 launches
+- AI One satellite: 150 kW peak compute, 70-meter wingspan, factory in Bastrop TX, volume by end of 2027, filed for up to 1 million units
+- Star Cloud: flew Nvidia H100 in orbit November 2025; follow-up with 100× compute power planned before end of 2026; valued at >$1 billion
+- Orbital compute break-even launch cost: ~$500–$1,000/kg; Starship target: <$185–$250/kg
