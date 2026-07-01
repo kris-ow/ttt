@@ -50,7 +50,6 @@ function cardHtml(iv) {
   const { name, role } = splitPerson(iv.person);
   const venue = venueShort(iv.venue);
   const meta = [venue, iv.date && iv.date !== 'unknown' ? iv.date : null].filter(Boolean).join(' · ');
-  const claims = iv.claims?.length ? `${iv.claims.length} TRACKED CLAIM${iv.claims.length === 1 ? '' : 'S'}` : '';
 
   return `<!doctype html><html><head><meta charset="utf-8">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,9 +70,9 @@ function cardHtml(iv) {
   .tag { color: ${C.amber}; font-size: 26px; font-weight: 700; letter-spacing: 2px; margin-bottom: 18px; }
   .person { color: ${C.green}; font-size: 76px; font-weight: 700; line-height: 1.05; }
   .role { color: ${C.textBright}; font-size: 30px; font-weight: 500; margin-top: 20px; }
-  .meta { color: ${C.textDim}; font-size: 26px; margin-top: 14px; }
+  .meta { color: ${C.text}; font-size: 26px; margin-top: 14px; }
   .foot { display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid ${C.border}; padding-top: 24px; }
-  .foot .claims { color: ${C.textDim}; font-size: 26px; }
+  .foot .site { color: ${C.text}; font-size: 26px; }
   .foot .cta { color: ${C.green}; font-size: 26px; font-weight: 700; letter-spacing: 1px; }
 </style></head>
 <body>
@@ -85,7 +84,7 @@ function cardHtml(iv) {
     <div class="meta">${esc(meta)}</div>
   </div>
   <div class="foot">
-    <span class="claims">${esc([claims, 'theteslathesis.com'].filter(Boolean).join('  ·  '))}</span>
+    <span class="site">theteslathesis.com</span>
     <span class="cta">READ THE SUMMARY →</span>
   </div>
 </body></html>`;
