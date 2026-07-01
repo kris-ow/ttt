@@ -32,13 +32,15 @@ const SECTION_LABELS: Record<Section, string> = {
 }
 
 export default function App() {
-  // Resolve a /i/<slug>/ deep link once on load so the popup can open over the
-  // right tab (and the archive shows behind the blurred overlay).
+  // Resolve a /i/<slug>/ deep link once on load so the popup opens on arrival.
+  // The popup is a portal overlay, so the tab behind it stays the default Daily
+  // Feed — a cold visitor closing the popup lands on the site's richest page
+  // (live tiles + brief + feed) rather than the small interview list. Revisit
+  // once the Interview Archive is deep enough to be its own draw.
   const initialInterview = typeof window !== 'undefined'
     ? interviewFromPath(window.location.pathname) ?? null
     : null
   const [activeSection, setActiveSection] = useState<Section>(() => {
-    if (initialInterview) return 'interviews'
     if (typeof window !== 'undefined' && window.location.hash === '#valuations') {
       return 'valuations'
     }
