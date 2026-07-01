@@ -86,7 +86,7 @@ function cardHtml(iv) {
   </div>
   <div class="foot">
     <span class="claims">${esc([claims, 'theteslathesis.com'].filter(Boolean).join('  ·  '))}</span>
-    <span class="cta">READ THE FULL INTERVIEW →</span>
+    <span class="cta">READ THE SUMMARY →</span>
   </div>
 </body></html>`;
 }
