@@ -168,8 +168,15 @@ function seriesValue(metric: MetricDef, period: string | null | undefined): numb
   return metric.absolute ? Math.abs(raw) : raw
 }
 
+// Recent quarters shown by default in the expanded table; the rest sit behind
+// SHOW ALL (27 quarters back to 2019 drown out the recent trend).
+const RECENT_QUARTERS = 8
+
 function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string[] }) {
+  const [showAll, setShowAll] = useState(false)
   const periodsWithData = periods.filter(p => data.metrics[metric.key]?.[p] != null)
+  const visible = showAll ? periodsWithData : periodsWithData.slice(0, RECENT_QUARTERS)
+  const hidden = periodsWithData.length - visible.length
   return (
     <div className="border-t border-border bg-bg overflow-x-auto">
       <table className="w-full text-xs">
@@ -182,7 +189,7 @@ function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string
           </tr>
         </thead>
         <tbody>
-          {periodsWithData.map(p => {
+          {visible.map(p => {
             const val = seriesValue(metric, p)
             const qoq = computeChange(val, seriesValue(metric, previousQuarter(p)), metric.format)
             const yoy = computeChange(val, seriesValue(metric, yearAgoQuarter(p)), metric.format)
@@ -203,7 +210,27 @@ function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string
           })}
         </tbody>
       </table>
+      {hidden > 0 && (
+        <button
+          onClick={() => setShowAll(true)}
+          className="w-full px-3 py-2 text-xs text-green/70 hover:text-green hover:bg-surface-2 cursor-pointer transition-colors border-t border-border text-left"
+        >
+          SHOW ALL {periodsWithData.length} QUARTERS ({hidden} MORE)
+        </button>
+      )}
     </div>
+  )
+}
+
+// Inline delta with its period label, e.g. "-12.9% YoY" — value colored, label
+// always dim. NA renders as a dim em dash without the label (no data to frame).
+function InlineDelta({ change, label }: { change: ChangeResult; label: string }) {
+  if (change.kind === 'na') return <span className="text-text-dim whitespace-nowrap">—</span>
+  return (
+    <span className="whitespace-nowrap">
+      <span className={changeClass(change)}>{formatChange(change)}</span>
+      <span className="text-text-dim"> {label}</span>
+    </span>
   )
 }
 
@@ -215,17 +242,25 @@ function MetricRow({ metric, latestPeriod, periods, expanded, onToggle }: {
   onToggle: () => void
 }) {
   const latest = seriesValue(metric, latestPeriod)
+  const qoq = computeChange(latest, seriesValue(metric, previousQuarter(latestPeriod)), metric.format)
+  const yoy = computeChange(latest, seriesValue(metric, yearAgoQuarter(latestPeriod)), metric.format)
   return (
     <div className="border-b border-border last:border-0">
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between px-3 py-2 text-xs hover:bg-surface-2 cursor-pointer transition-colors text-left"
+        // Mobile: label on its own line, value + deltas right-aligned on a second
+        // line (full-words rule — labels are never shortened). Desktop: one line.
+        className="w-full flex flex-col sm:flex-row sm:items-center sm:justify-between gap-y-0.5 px-3 py-2 text-xs hover:bg-surface-2 cursor-pointer transition-colors text-left"
       >
         <span className="text-text">
           <span className="text-text-dim mr-2 inline-block w-3">{expanded ? '▾' : '▸'}</span>
           {metric.label}
         </span>
-        <span className="text-text-bright tabular-nums">{formatWithUnit(latest, metric.format)}</span>
+        <span className="flex items-baseline gap-x-3 tabular-nums self-end sm:self-auto">
+          <span className="text-text-bright">{formatWithUnit(latest, metric.format)}</span>
+          <InlineDelta change={qoq} label="QoQ" />
+          <InlineDelta change={yoy} label="YoY" />
+        </span>
       </button>
       {expanded && <ExpandedTable metric={metric} periods={periods} />}
     </div>
