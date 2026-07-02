@@ -172,50 +172,66 @@ function seriesValue(metric: MetricDef, period: string | null | undefined): numb
 // SHOW ALL (27 quarters back to 2019 drown out the recent trend).
 const RECENT_QUARTERS = 8
 
+// Shared column geometry for the expanded history so every cell aligns with
+// the collapsed sibling rows above/below: same px-3 gutter, same right-anchored
+// value column, same delta columns. On sm+ an invisible " QoQ"/" YoY" spacer
+// reserves the width the collapsed rows use for their labels, so the digits
+// line up exactly; on mobile the spacer is dropped so the row fits 360px.
+const HISTORY_ROW = 'flex items-baseline gap-x-3 sm:gap-x-6 px-3 py-2 text-xs tabular-nums'
+const COL_PERIOD = 'flex-1 pl-5 text-left whitespace-nowrap'
+const COL_VALUE = 'w-20 text-right whitespace-nowrap'
+const COL_DELTA = 'w-16 sm:w-24 text-right whitespace-nowrap'
+
+function DeltaSpacer({ label }: { label: string }) {
+  return <span className="hidden sm:inline invisible"> {label}</span>
+}
+
+function HistoryDelta({ change, label }: { change: ChangeResult; label: string }) {
+  return (
+    <span
+      className={COL_DELTA}
+      title={change.kind === 'nm' ? 'Not meaningful — base period was zero or negative' : undefined}
+    >
+      <span className={changeClass(change)}>{formatChange(change)}</span>
+      <DeltaSpacer label={label} />
+    </span>
+  )
+}
+
 function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string[] }) {
   const [showAll, setShowAll] = useState(false)
   const periodsWithData = periods.filter(p => data.metrics[metric.key]?.[p] != null)
   const visible = showAll ? periodsWithData : periodsWithData.slice(0, RECENT_QUARTERS)
   const hidden = periodsWithData.length - visible.length
+  const latestPeriod = periodsWithData[0]
   return (
-    <div className="border-t border-border bg-bg overflow-x-auto">
-      <table className="w-full text-xs">
-        <thead>
-          <tr className="border-b border-border">
-            <th className="text-text-dim font-bold px-3 py-2 text-left whitespace-nowrap">PERIOD</th>
-            <th className="text-text-dim font-bold px-3 py-2 text-right whitespace-nowrap">{VALUE_HEADER[metric.format]}</th>
-            <th className="text-text-dim font-bold px-3 py-2 text-right whitespace-nowrap">QoQ</th>
-            <th className="text-text-dim font-bold px-3 py-2 text-right whitespace-nowrap">YoY</th>
-          </tr>
-        </thead>
-        <tbody>
-          {visible.map(p => {
-            const val = seriesValue(metric, p)
-            const qoq = computeChange(val, seriesValue(metric, previousQuarter(p)), metric.format)
-            const yoy = computeChange(val, seriesValue(metric, yearAgoQuarter(p)), metric.format)
-            return (
-              <tr key={p} className="border-b border-border last:border-0">
-                <td className="text-text px-3 py-2 whitespace-nowrap">{periodLabel(p)}</td>
-                <td className="text-text-bright px-3 py-2 text-right tabular-nums whitespace-nowrap">{formatNumber(val, metric.format)}</td>
-                <td
-                  className={`px-3 py-2 text-right tabular-nums whitespace-nowrap ${changeClass(qoq)}`}
-                  title={qoq.kind === 'nm' ? 'Not meaningful — base period was zero or negative' : undefined}
-                >{formatChange(qoq)}</td>
-                <td
-                  className={`px-3 py-2 text-right tabular-nums whitespace-nowrap ${changeClass(yoy)}`}
-                  title={yoy.kind === 'nm' ? 'Not meaningful — base period was zero or negative' : undefined}
-                >{formatChange(yoy)}</td>
-              </tr>
-            )
-          })}
-        </tbody>
-      </table>
+    <div className="border-t border-border bg-bg">
+      <div className={`${HISTORY_ROW} border-b border-border text-text-dim font-bold`}>
+        <span className={COL_PERIOD}>PERIOD</span>
+        <span className={COL_VALUE}>{VALUE_HEADER[metric.format]}</span>
+        <span className={COL_DELTA}>QoQ<DeltaSpacer label="QoQ" /></span>
+        <span className={COL_DELTA}>YoY<DeltaSpacer label="YoY" /></span>
+      </div>
+      {visible.map(p => {
+        const val = seriesValue(metric, p)
+        const qoq = computeChange(val, seriesValue(metric, previousQuarter(p)), metric.format)
+        const yoy = computeChange(val, seriesValue(metric, yearAgoQuarter(p)), metric.format)
+        const isLatest = p === latestPeriod
+        return (
+          <div key={p} className={`${HISTORY_ROW} border-b border-border last:border-0`}>
+            <span className={`${COL_PERIOD} ${isLatest ? 'text-text-bright' : 'text-text'}`}>{periodLabel(p)}</span>
+            <span className={`${COL_VALUE} text-text-bright`}>{formatNumber(val, metric.format)}</span>
+            <HistoryDelta change={qoq} label="QoQ" />
+            <HistoryDelta change={yoy} label="YoY" />
+          </div>
+        )
+      })}
       {hidden > 0 && (
         <button
           onClick={() => setShowAll(true)}
           className="w-full px-3 py-2 text-xs text-green/70 hover:text-green hover:bg-surface-2 cursor-pointer transition-colors border-t border-border text-left"
         >
-          SHOW ALL {periodsWithData.length} QUARTERS ({hidden} MORE)
+          <span className="pl-5">SHOW ALL {periodsWithData.length} QUARTERS ({hidden} MORE)</span>
         </button>
       )}
     </div>
@@ -223,13 +239,19 @@ function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string
 }
 
 // Inline delta with its period label, e.g. "-12.9% YoY" — value colored, label
-// always dim. NA renders as a dim em dash without the label (no data to frame).
+// always dim. Fixed column width + right alignment so QoQ and YoY line up
+// vertically across all rows. NA renders as a dim em dash (no data to frame).
 function InlineDelta({ change, label }: { change: ChangeResult; label: string }) {
-  if (change.kind === 'na') return <span className="text-text-dim whitespace-nowrap">—</span>
   return (
-    <span className="whitespace-nowrap">
-      <span className={changeClass(change)}>{formatChange(change)}</span>
-      <span className="text-text-dim"> {label}</span>
+    <span className="w-24 text-right whitespace-nowrap">
+      {change.kind === 'na' ? (
+        <span className="text-text-dim">—</span>
+      ) : (
+        <>
+          <span className={changeClass(change)}>{formatChange(change)}</span>
+          <span className="text-text-dim"> {label}</span>
+        </>
+      )}
     </span>
   )
 }
@@ -256,11 +278,18 @@ function MetricRow({ metric, latestPeriod, periods, expanded, onToggle }: {
           <span className="text-text-dim mr-2 inline-block w-3">{expanded ? '▾' : '▸'}</span>
           {metric.label}
         </span>
-        <span className="flex items-baseline gap-x-3 tabular-nums self-end sm:self-auto">
-          <span className="text-text-bright">{formatWithUnit(latest, metric.format)}</span>
-          <InlineDelta change={qoq} label="QoQ" />
-          <InlineDelta change={yoy} label="YoY" />
-        </span>
+        {/* Fixed-width, right-aligned columns so value / QoQ / YoY each align
+            vertically across rows. Mobile: left-aligned, indented to the label
+            text (arrow w-3 + mr-2 = pl-5); desktop: block sits at the row end.
+            While expanded the history table's latest row carries these numbers
+            (period-labeled and column-aligned), so the block hides. */}
+        {!expanded && (
+          <span className="flex items-baseline gap-x-4 sm:gap-x-6 tabular-nums self-start pl-5 sm:self-auto sm:pl-0">
+            <span className="text-text-bright w-20 text-right whitespace-nowrap">{formatWithUnit(latest, metric.format)}</span>
+            <InlineDelta change={qoq} label="QoQ" />
+            <InlineDelta change={yoy} label="YoY" />
+          </span>
+        )}
       </button>
       {expanded && <ExpandedTable metric={metric} periods={periods} />}
     </div>
