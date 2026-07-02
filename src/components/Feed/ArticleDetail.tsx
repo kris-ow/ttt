@@ -129,7 +129,7 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
                         <thead>
                           <tr>
                             {headers.map((h, k) => (
-                              <th key={k} className={`text-green-dim font-bold py-1 px-2 border-b border-border bg-surface ${aligns[k] || 'text-left'}`}>{renderInline(h)}</th>
+                              <th key={k} className={`text-green-dim font-bold py-1 px-2 border-b border-border bg-surface sm:whitespace-nowrap ${aligns[k] || 'text-left'}`}>{renderInline(h)}</th>
                             ))}
                           </tr>
                         </thead>
