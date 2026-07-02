@@ -1,9 +1,13 @@
 #!/usr/bin/env node
-// Generate a static, crawlable HTML shell per interview so /i/<slug>/ URLs get
-// their own <title>/description/OG tags (rich Reddit & X preview cards + Google
-// indexing). Each shell is a clone of the built dist/index.html with the head
-// rewritten; it loads the same SPA bundle, which reads the path on boot and
-// opens the matching interview popup (see src/components/Interviews/interviewRoute.ts).
+// Generate static, crawlable HTML shells for the shareable deep-link pages so
+// each URL gets its own <title>/description/OG tags (rich Reddit & X preview
+// cards + Google indexing):
+//   /i/<slug>/  — one per interview (src/data/interviews.json)
+//   /w/<date>/  — one per Weekly Tesla Brief (type 'weekly' in src/data/news.json)
+// Each shell is a clone of the built dist/index.html with the head rewritten;
+// it loads the same SPA bundle, which reads the path on boot and opens the
+// matching popup (src/components/Interviews/interviewRoute.ts,
+// src/components/Feed/weeklyRoute.ts).
 //
 // MUST run AFTER `vite build` — it reads dist/index.html for the hashed asset
 // tags. Also emits dist/sitemap.xml and dist/robots.txt.
@@ -15,6 +19,7 @@ const SITE = 'https://theteslathesis.com';
 const DIST = path.resolve('dist');
 const TEMPLATE = path.join(DIST, 'index.html');
 const INTERVIEWS = path.resolve('src/data/interviews.json');
+const NEWS = path.resolve('src/data/news.json');
 
 function esc(s) {
   return String(s)
@@ -70,19 +75,60 @@ function setMetaContent(html, matchAttr, value) {
   return html.replace(re, `$1${esc(value)}$2`);
 }
 
-function buildShell(template, iv) {
+// Bullets of the leading "## Brief" section of a weekly-brief body, flattened
+// to plain text — the week's highlights, used as the page description.
+function briefBullets(body) {
+  const m = body.match(/## Brief\s*\n([\s\S]*?)(?:\n---|\n## )/);
+  if (!m) return [];
+  return m[1].split('\n')
+    .map(l => l.trim())
+    .filter(l => l.startsWith('- '))
+    .map(l => l.slice(2).replace(/\*\*/g, '').replace(/\s+/g, ' ').trim());
+}
+
+// Page descriptor for an interview: /i/<slug>/
+function interviewPage(iv) {
   const name = personName(iv.person);
   const venue = venueShort(iv.venue);
-  const url = `${SITE}/i/${iv.slug}/`;
   const ogTitle = `${name} on ${venue}`;
-  const pageTitle = `${ogTitle} | The Tesla Thesis`;
   const para = firstParagraph(iv.summary) || `Primary-source interview summary and tracked claims from ${name}, on The Tesla Thesis.`;
+  return {
+    url: `${SITE}/i/${iv.slug}/`,
+    dir: path.join(DIST, 'i', iv.slug),
+    ogTitle,
+    para,
+    ogImage: `${iv.slug}.png`,
+    date: iv.date,
+    author: { '@type': 'Person', name },
+    lastmod: (iv.added || iv.date || '').slice(0, 10),
+  };
+}
+
+// Page descriptor for a Weekly Tesla Brief: /w/<date>/
+function weeklyPage(article) {
+  const para = briefBullets(article.body).join(' ')
+    || 'The week in Tesla, distilled: robotaxi, autonomous driving, Optimus, energy and financials — from The Tesla Thesis.';
+  return {
+    url: `${SITE}/w/${article.date}/`,
+    dir: path.join(DIST, 'w', article.date),
+    ogTitle: article.title,
+    para,
+    ogImage: `weekly-${article.date}.png`,
+    date: article.date,
+    author: { '@type': 'Organization', name: 'The Tesla Thesis' },
+    lastmod: article.date,
+  };
+}
+
+function buildShell(template, page) {
+  const { url, ogTitle } = page;
+  const pageTitle = `${ogTitle} | The Tesla Thesis`;
   // SERP meta descriptions read best at ~150-160; social cards truncate ~125.
-  const desc = truncate(para, 155);
-  const socialDesc = truncate(para, 120);
-  // Per-interview OG card if it was rendered + committed (public/og → dist/og);
+  const desc = truncate(page.para, 155);
+  const socialDesc = truncate(page.para, 120);
+  // Per-page OG card if it was rendered + committed (public/og → dist/og);
   // otherwise the generic site card already in the template.
-  const image = fs.existsSync(path.join(DIST, 'og', `${iv.slug}.png`)) ? `${SITE}/og/${iv.slug}.png` : null;
+  const image = fs.existsSync(path.join(DIST, 'og', page.ogImage)) ? `${SITE}/og/${page.ogImage}` : null;
 
   let html = template;
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(pageTitle)}</title>`);
@@ -105,8 +151,8 @@ function buildShell(template, iv) {
     '@type': 'NewsArticle',
     headline: ogTitle,
     description: desc,
-    ...(iv.date && iv.date !== 'unknown' ? { datePublished: iv.date } : {}),
-    author: { '@type': 'Person', name },
+    ...(page.date && page.date !== 'unknown' ? { datePublished: page.date } : {}),
+    author: page.author,
     publisher: { '@type': 'Organization', name: 'The Tesla Thesis' },
     mainEntityOfPage: url,
   };
@@ -123,20 +169,25 @@ function main() {
   }
   const template = fs.readFileSync(TEMPLATE, 'utf-8');
   const { interviews } = JSON.parse(fs.readFileSync(INTERVIEWS, 'utf-8'));
+  const { articles } = JSON.parse(fs.readFileSync(NEWS, 'utf-8'));
+  const weeklies = articles.filter(a => a.type === 'weekly');
 
-  for (const iv of interviews) {
-    const dir = path.join(DIST, 'i', iv.slug);
-    fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'index.html'), buildShell(template, iv));
+  const pages = [
+    ...interviews.map(interviewPage),
+    ...weeklies.map(weeklyPage),
+  ];
+
+  for (const page of pages) {
+    fs.mkdirSync(page.dir, { recursive: true });
+    fs.writeFileSync(path.join(page.dir, 'index.html'), buildShell(template, page));
   }
 
-  // Sitemap: home + every interview page.
+  // Sitemap: home + every deep-link page.
   const urls = [
     `  <url><loc>${SITE}/</loc></url>`,
-    ...interviews.map(iv => {
-      const lastmod = (iv.added || iv.date || '').slice(0, 10);
-      const mod = /^\d{4}-\d{2}-\d{2}$/.test(lastmod) ? `<lastmod>${lastmod}</lastmod>` : '';
-      return `  <url><loc>${SITE}/i/${iv.slug}/</loc>${mod}</url>`;
+    ...pages.map(page => {
+      const mod = /^\d{4}-\d{2}-\d{2}$/.test(page.lastmod) ? `<lastmod>${page.lastmod}</lastmod>` : '';
+      return `  <url><loc>${page.url}</loc>${mod}</url>`;
     }),
   ];
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;
@@ -147,7 +198,7 @@ function main() {
     `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`
   );
 
-  console.log(`Wrote ${interviews.length} interview page(s) to dist/i/, sitemap.xml, robots.txt`);
+  console.log(`Wrote ${interviews.length} interview page(s) to dist/i/, ${weeklies.length} weekly brief page(s) to dist/w/, sitemap.xml, robots.txt`);
 }
 
 main();

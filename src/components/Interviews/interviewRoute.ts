@@ -5,7 +5,7 @@ import type { Interview } from './InterviewSection'
 const interviews = (interviewsData as { interviews: Interview[] }).interviews
 
 // Deep-link path for a single interview: /i/<slug>/  (see
-// scripts/build-interview-pages.js, which emits the matching static shell).
+// scripts/build-share-pages.js, which emits the matching static shell).
 export const INTERVIEW_PATH_RE = /^\/i\/([a-z0-9-]+)\/?$/
 
 export function interviewPath(slug: string): string {

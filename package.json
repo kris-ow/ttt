@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/build-news.js && node scripts/build-interviews.js && tsc -b && vite build && node scripts/build-interview-pages.js",
+    "build": "node scripts/build-news.js && node scripts/build-interviews.js && tsc -b && vite build && node scripts/build-share-pages.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "pipeline": "node scripts/pipeline/run.js",

@@ -18,7 +18,7 @@ function personSlug(person) {
 }
 
 // Public share slug: <person>-<date>, e.g. "lars-moravy-2026-06-30".
-// Drives the /i/<slug>/ deep-link URL (build-interview-pages.js) and the
+// Drives the /i/<slug>/ deep-link URL (build-share-pages.js) and the
 // in-app router; must be stable and unique across the archive.
 function interviewSlug(person, date) {
   const d = (date && date !== 'unknown') ? date : 'undated';

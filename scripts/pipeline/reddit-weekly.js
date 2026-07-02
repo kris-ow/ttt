@@ -67,6 +67,45 @@ function attributeBriefHeading(body) {
   );
 }
 
+// ── Link-embed variant (deep-link experiment, 2026-07-02) ─
+
+// /w/<date>/ deep link derived from the source filename's YYYYMMDD prefix.
+function deepLinkFromFilename(filename) {
+  const m = filename.match(/^(\d{4})(\d{2})(\d{2})_/);
+  if (!m) return null;
+  return `${TTT_URL}/w/${m[1]}-${m[2]}-${m[3]}/`;
+}
+
+// The "## Brief" section bullets — the week's highlights, reused verbatim as
+// the link post's contents list. Returns null on format drift (same loud-
+// warning contract as the transforms above).
+function extractBriefBullets(body) {
+  const m = body.match(/## Brief\s*\n([\s\S]*?)(?:\n---|\n## )/);
+  if (!m) return null;
+  const bullets = m[1].split('\n').map(l => l.trim()).filter(l => l.startsWith('- '));
+  return bullets.length > 0 ? bullets : null;
+}
+
+// Short post around the /w/<date>/ deep link: URL first (turn it into a card
+// with Reddit's "Link Embed" button), then the Brief bullets as a contents
+// list. Per the interview-post playbook: clean title, body carries the value.
+function buildLinkPost(body, deepLink) {
+  const warnings = [];
+  const bullets = extractBriefBullets(body);
+  if (!bullets) {
+    warnings.push('extractBriefBullets did not apply — no "## Brief" bullet section found; link-post variant has no contents list, review before pasting');
+  }
+  const post = [
+    deepLink,
+    '',
+    'This week:',
+    '',
+    ...(bullets || []),
+    '',
+  ].join('\n');
+  return { post, warnings };
+}
+
 // ── Output ───────────────────────────────────────────────
 
 // Defensive: weekly-summary.js sometimes leaves the LLM output wrapper
@@ -92,7 +131,7 @@ function buildRedditPost(title, body) {
   return { post: `${cleaned.trimEnd()}\n`, warnings };
 }
 
-function writeRedditPost(targetDate, title, post, sourceFilename, warnings) {
+function writeRedditPost(targetDate, title, linkPost, fullPost, sourceFilename, warnings) {
   if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
   const filename = `${targetDate}.md`;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
@@ -105,13 +144,31 @@ function writeRedditPost(targetDate, title, post, sourceFilename, warnings) {
     ...warnings.map(w => `!! WARNING:  ${w}`),
     '─'.repeat(60),
     '',
+    ...(linkPost ? [
+      `# VARIANT A — link-embed post (deep-link experiment)`,
+      `# Paste the URL line into the post body, select it, and click Reddit's`,
+      `# "Link Embed" button so it renders as the OG card.`,
+      '',
+      `## Title`,
+      '',
+      title,
+      '',
+      `## Body`,
+      '',
+      linkPost,
+      '',
+      '─'.repeat(60),
+      '',
+    ] : []),
+    `# VARIANT B — full-text post (pre-2026-07 format, fallback)`,
+    '',
     `## Title`,
     '',
     title,
     '',
     `## Body`,
     '',
-    post,
+    fullPost,
   ];
 
   const out = path.join(OUT_DIR, filename);
@@ -139,12 +196,23 @@ function main() {
     process.exit(1);
   }
 
-  const { post, warnings } = buildRedditPost(title, body);
+  const { post: fullPost, warnings } = buildRedditPost(title, body);
+
+  const deepLink = deepLinkFromFilename(brief.filename);
+  let linkPost = null;
+  if (deepLink) {
+    const linkResult = buildLinkPost(body, deepLink);
+    linkPost = linkResult.post;
+    warnings.push(...linkResult.warnings);
+  } else {
+    warnings.push('deepLinkFromFilename did not apply — no YYYYMMDD prefix in source filename; link-post variant skipped');
+  }
+
   for (const w of warnings) {
     // ::warning:: surfaces as an annotation on the GitHub Actions run
     console.error(`::warning::reddit-weekly: ${w}`);
   }
-  writeRedditPost(targetDate, title, post, brief.filename, warnings);
+  writeRedditPost(targetDate, title, linkPost, fullPost, brief.filename, warnings);
 }
 
 main();

@@ -12,6 +12,7 @@ import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
 import { MergerOddsCard } from './components/MergerOdds/MergerOddsCard'
 import { InterviewSection, InterviewDetail, type Interview } from './components/Interviews/InterviewSection'
 import { InterviewRouteContext, interviewFromPath, interviewPath, INTERVIEW_PATH_RE, type InterviewLocation } from './components/Interviews/interviewRoute'
+import { weeklyFromPath, weeklyPath, WEEKLY_PATH_RE } from './components/Feed/weeklyRoute'
 
 const data = newsData as NewsData
 
@@ -61,7 +62,11 @@ export default function App() {
   })
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
-  const [selectedArticle, setSelectedArticle] = useState<Article | null>(null)
+  // /w/<date>/ deep link: open the Weekly Brief popup on arrival, same pattern
+  // as the interview deep link above (popup over the default Daily Feed).
+  const [selectedArticle, setSelectedArticle] = useState<Article | null>(() =>
+    typeof window !== 'undefined' ? weeklyFromPath(window.location.pathname) ?? null : null
+  )
   const [mobileStockTab, setMobileStockTab] = useState<MobileTileTab>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
   const swipeRef = useRef<HTMLDivElement>(null)
@@ -95,8 +100,8 @@ export default function App() {
   const handleTabSwitch = useCallback((key: Section) => {
     setActiveSection(key)
     setMountedTabs(prev => prev.has(key) ? prev : new Set([...prev, key]))
-    if (typeof window !== 'undefined' && (window.location.hash || INTERVIEW_PATH_RE.test(window.location.pathname))) {
-      const basePath = INTERVIEW_PATH_RE.test(window.location.pathname) ? '/' : window.location.pathname
+    if (typeof window !== 'undefined' && (window.location.hash || INTERVIEW_PATH_RE.test(window.location.pathname) || WEEKLY_PATH_RE.test(window.location.pathname))) {
+      const basePath = INTERVIEW_PATH_RE.test(window.location.pathname) || WEEKLY_PATH_RE.test(window.location.pathname) ? '/' : window.location.pathname
       history.replaceState(null, '', basePath + window.location.search)
     }
     if (key === 'data') {
@@ -117,14 +122,34 @@ export default function App() {
   }, [])
 
   const handleArticleOpen = useCallback((article: Article) => {
+    // Weekly briefs are deep-linkable: opening one pushes its shareable
+    // /w/<date>/ URL (mirrors openInterview below).
+    if (article.type === 'weekly') {
+      const path = weeklyPath(article.date)
+      if (window.location.pathname !== path) {
+        history.pushState({ ttt: 'weekly' }, '', path)
+      }
+    }
     setSelectedArticle(article)
     track('Article Open', { channel: article.channel, title: article.title.slice(0, 80) })
     if (article.type === 'executive') {
       track('Exec Summary Open', { date: article.date })
     } else if (article.type === 'weekly') {
-      track('Weekly Brief Open', { date: article.date })
+      track('Weekly Brief Open', { date: article.date, location: 'feed' })
     }
   }, [])
+
+  const closeArticle = useCallback(() => {
+    // Weekly briefs own a /w/<date>/ URL entry — unwind it like closeInterview.
+    if (selectedArticle?.type === 'weekly' && WEEKLY_PATH_RE.test(window.location.pathname)) {
+      if (window.history.state?.ttt === 'weekly') {
+        history.back() // popstate handler clears selectedArticle
+        return
+      }
+      history.replaceState(null, '', '/' + window.location.search)
+    }
+    setSelectedArticle(null)
+  }, [selectedArticle])
 
   const openSourceById = useCallback((sourceFilename: string) => {
     const articleId = sourceFilename.replace('.txt', '')
@@ -156,26 +181,51 @@ export default function App() {
     }
   }, [])
 
-  // Browser back/forward: URL is the source of truth for which interview is open.
+  // Browser back/forward: URL is the source of truth for which interview /
+  // weekly brief is open. Non-weekly articles never push a URL, so they are
+  // deliberately left alone here.
   useEffect(() => {
-    const onPop = () => setRouteInterview(interviewFromPath(window.location.pathname) ?? null)
+    const onPop = () => {
+      setRouteInterview(interviewFromPath(window.location.pathname) ?? null)
+      const weekly = weeklyFromPath(window.location.pathname)
+      if (weekly) setSelectedArticle(weekly)
+      else setSelectedArticle(prev => (prev?.type === 'weekly' ? null : prev))
+    }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
   }, [])
 
-  // Keep the tab title in sync with the open interview. The static /i/<slug>/
-  // shell ships a per-interview <title> (for shared links + SEO); the SPA must
-  // maintain it — otherwise it goes stale after the popup closes and never
-  // updates on in-app opens. Mirrors the shell's "<name> on <venue>" format.
+  // Deep-link arrivals never pass through openInterview/handleArticleOpen, so
+  // their open events would be lost (135 untracked interview deep-link visits
+  // on 2026-07-01). Fire them once on mount, keyed off the landing URL.
   useEffect(() => {
-    if (!routeInterview) {
-      document.title = DEFAULT_TITLE
+    const iv = interviewFromPath(window.location.pathname)
+    if (iv) {
+      track('Interview Open', { person: iv.person.replace(/\s*\(.*\)\s*$/, ''), date: iv.date, location: 'deep-link' })
+    }
+    const weekly = weeklyFromPath(window.location.pathname)
+    if (weekly) {
+      track('Weekly Brief Open', { date: weekly.date, location: 'deep-link' })
+    }
+  }, [])
+
+  // Keep the tab title in sync with the open interview / weekly brief. The
+  // static /i/<slug>/ and /w/<date>/ shells ship a per-page <title> (for shared
+  // links + SEO); the SPA must maintain it — otherwise it goes stale after the
+  // popup closes and never updates on in-app opens. Mirrors the shell formats.
+  useEffect(() => {
+    if (routeInterview) {
+      const name = routeInterview.person.replace(/\s*\(.*\)\s*$/, '')
+      const venue = routeInterview.venue.split(/[(;]/)[0].trim()
+      document.title = `${name} on ${venue} | The Tesla Thesis`
       return
     }
-    const name = routeInterview.person.replace(/\s*\(.*\)\s*$/, '')
-    const venue = routeInterview.venue.split(/[(;]/)[0].trim()
-    document.title = `${name} on ${venue} | The Tesla Thesis`
-  }, [routeInterview])
+    if (selectedArticle?.type === 'weekly') {
+      document.title = `${selectedArticle.title} | The Tesla Thesis`
+      return
+    }
+    document.title = DEFAULT_TITLE
+  }, [routeInterview, selectedArticle])
 
   useEffect(() => {
     if (!showFilter) return
@@ -358,7 +408,7 @@ export default function App() {
 
       {/* ── Article overlay ─────────────────────────── */}
       {selectedArticle && (
-        <ArticleDetail article={selectedArticle} onClose={() => setSelectedArticle(null)} />
+        <ArticleDetail article={selectedArticle} onClose={closeArticle} />
       )}
 
       {/* ── Interview overlay (deep-linkable /i/<slug>/) ─ */}
