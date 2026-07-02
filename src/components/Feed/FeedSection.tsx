@@ -69,6 +69,9 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
                 const isExec = article.type === 'executive'
                 const isWeekly = article.type === 'weekly'
                 const isTtt = isExec || isWeekly
+                // Official Tesla releases (deliveries, earnings) reuse the amber
+                // primary-source treatment from interview teaser rows
+                const isTesla = article.channel === 'tesla'
                 return (
                   <button
                     key={article.id}
@@ -78,6 +81,8 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
                         ? 'border-green-muted bg-green-bg-2 hover:border-green-dim'
                         : isExec
                         ? 'border-green-deep bg-green-bg hover:bg-green-bg-2 hover:border-green-muted'
+                        : isTesla
+                        ? 'border-amber/50 bg-amber/5 hover:border-amber'
                         : 'border-border bg-surface hover:bg-surface-2 hover:border-border-light'
                     }`}
                   >
@@ -89,6 +94,8 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
                       <span className={`grow shrink-0 basis-[55%] transition-colors ${
                         isTtt
                           ? 'text-green-dim group-hover:text-green'
+                          : isTesla
+                          ? 'text-text-bright group-hover:text-amber'
                           : 'text-text-bright group-hover:text-green'
                       }`}>
                         {article.title}

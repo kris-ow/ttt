@@ -31,7 +31,8 @@ export const CHANNEL_META: Record<string, { name: string; platform: string; colo
   jobhakdi: { name: 'Jo Bhakdi', platform: 'YouTube', color: '#f59e0b', bias: 'BULL' },
   munrolive: { name: 'Munro Live', platform: 'YouTube', color: '#a3e635', bias: 'NEUTRAL' },
   sawyermerritt: { name: 'Sawyer Merritt', platform: 'X', color: '#6366f1', bias: 'LEAN BULL' },
-  tesla: { name: 'Tesla Official', platform: 'YouTube', color: '#e31937', bias: 'BULL' },
+  // No bias tag: official releases are the primary source, not commentary
+  tesla: { name: 'Tesla Official', platform: 'YouTube', color: '#e31937' },
   thelimitingfactor: { name: 'The Limiting Factor', platform: 'YouTube', color: '#14b8a6', bias: 'LEAN BULL' },
   theteslaspace: { name: 'The Tesla Space', platform: 'YouTube', color: '#0ea5e9', bias: 'BULL' },
   ttt: { name: 'The Tesla Thesis', platform: 'TTT', color: '#00ff41' },

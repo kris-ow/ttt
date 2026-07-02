@@ -34,7 +34,8 @@ export function channelShort(channel: string, sourceType: string) {
   const name = ch?.name || channel
   // NBSP glues prefix to first word so [TTT] never sits alone on a line; remaining spaces wrap normally.
   const label = `${prefix} ${name}`
-  if (channel === 'tesla') return <span className="text-white">{label}</span>
+  // Amber = primary-source, matching the interview teaser label
+  if (channel === 'tesla') return <span className="text-amber">{label}</span>
   return label
 }
 
