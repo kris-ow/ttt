@@ -70,10 +70,18 @@ function attributeBriefHeading(body) {
 // ── Link-embed variant (deep-link experiment, 2026-07-02) ─
 
 // /w/<date>/ deep link derived from the source filename's YYYYMMDD prefix.
-function deepLinkFromFilename(filename) {
+function briefDateFromFilename(filename) {
   const m = filename.match(/^(\d{4})(\d{2})(\d{2})_/);
-  if (!m) return null;
-  return `${TTT_URL}/w/${m[1]}-${m[2]}-${m[3]}/`;
+  return m ? `${m[1]}-${m[2]}-${m[3]}` : null;
+}
+
+// The link-embed card is rendered locally (npm run og-images) and committed —
+// the Monday CI run always predates it, so this reminder lands in the output
+// file header every week until the card is in the repo.
+function ogCardReminder(briefDate) {
+  const cardPath = path.resolve('public/og', `weekly-${briefDate}.png`);
+  if (fs.existsSync(cardPath)) return null;
+  return `OG card public/og/weekly-${briefDate}.png not in repo yet — before posting Variant A, run "npm run og-images", commit + push the PNG, wait for deploy (else the embed shows the generic site card)`;
 }
 
 // The "## Brief" section bullets — the week's highlights, reused verbatim as
@@ -131,7 +139,7 @@ function buildRedditPost(title, body) {
   return { post: `${cleaned.trimEnd()}\n`, warnings };
 }
 
-function writeRedditPost(targetDate, title, linkPost, fullPost, sourceFilename, warnings) {
+function writeRedditPost(targetDate, title, linkPost, fullPost, sourceFilename, warnings, todos) {
   if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
   const filename = `${targetDate}.md`;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
@@ -141,6 +149,7 @@ function writeRedditPost(targetDate, title, linkPost, fullPost, sourceFilename, 
     `Generated:   ${now}`,
     `Source:      ${sourceFilename}`,
     `Mode:        deterministic-format (no LLM)`,
+    ...todos.map(t => `>> TODO:     ${t}`),
     ...warnings.map(w => `!! WARNING:  ${w}`),
     '─'.repeat(60),
     '',
@@ -198,21 +207,27 @@ function main() {
 
   const { post: fullPost, warnings } = buildRedditPost(title, body);
 
-  const deepLink = deepLinkFromFilename(brief.filename);
+  const todos = [];
+  const briefDate = briefDateFromFilename(brief.filename);
   let linkPost = null;
-  if (deepLink) {
-    const linkResult = buildLinkPost(body, deepLink);
+  if (briefDate) {
+    const linkResult = buildLinkPost(body, `${TTT_URL}/w/${briefDate}/`);
     linkPost = linkResult.post;
     warnings.push(...linkResult.warnings);
+    const reminder = ogCardReminder(briefDate);
+    if (reminder) todos.push(reminder);
   } else {
-    warnings.push('deepLinkFromFilename did not apply — no YYYYMMDD prefix in source filename; link-post variant skipped');
+    warnings.push('briefDateFromFilename did not apply — no YYYYMMDD prefix in source filename; link-post variant skipped');
   }
 
   for (const w of warnings) {
     // ::warning:: surfaces as an annotation on the GitHub Actions run
     console.error(`::warning::reddit-weekly: ${w}`);
   }
-  writeRedditPost(targetDate, title, linkPost, fullPost, brief.filename, warnings);
+  for (const t of todos) {
+    console.error(`::notice::reddit-weekly: ${t}`);
+  }
+  writeRedditPost(targetDate, title, linkPost, fullPost, brief.filename, warnings, todos);
 }
 
 main();
