@@ -117,6 +117,7 @@ Per-business-line DCF valuation models. Robotaxi DCF is live with auto-propagati
 | Quarterly metrics | `scripts/extract-quarterly.py` reads `data/quarterly/*.pdf` → `src/data/quarterly-metrics.json` | Run quarterly when new shareholder deck releases |
 | DCF facts review | `admin/` console reviews `extracted-facts.json` → approved `dcf_input` facts auto-propagate to `src/data/dcf-robotaxi-facts.json` | Run locally as facts accumulate |
 | URL index gaps | `news/transcripts_url_index.json` | Some early transcripts (pre-URL-tracking) have no video URL |
+| Official Tesla releases (deliveries, earnings) | Hand-written `news/YYYYMMDD_tesla_NN_*_summary.txt` (channel `tesla` pins after the Daily Brief; `Author:` header → `[WEB]` tag + READ ORIGINAL ARTICLE link; `URL:` → the IR press release), then `node scripts/build-news.js` | When Tesla publishes (quarterly); pull numbers from the SEC 8-K exhibit — ir.tesla.com blocks direct fetches |
 | Interview leads | approved `interview_mention` facts → `data/interview-leads.json` | Resolve lead to URL → fetch transcript (Mac Mini one-off mode not yet built; tracked-channel mirrors already land in `news/`) → `node scripts/pipeline/interview-summary.js <transcript> --person ... [--original-url ...]` writes `interviews/YYYYMMDD_<person>_<venue>_interview.txt`, then `npm run build-interviews && npm run og-images` (renders the `/i/<slug>/` OG card) and commit `interviews/`, `src/data/interviews.json`, `public/og/<slug>.png` |
 
 ### Not yet built
