@@ -3,6 +3,17 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [master]
+    # Skip Mac Mini churn that never changes the built site: hourly heartbeat
+    # commits, pipeline state, and raw transcript pushes. The feed renders from
+    # src/data/news.json (committed + self-deployed by daily-pipeline.yml), and
+    # the robotaxi/merger tiles fetch data/*.json from raw.githubusercontent.com
+    # at runtime — none of these paths need a Pages deploy. Manual summary fixes
+    # still deploy because they land together with a regenerated news.json.
+    paths-ignore:
+      - 'scripts/pipeline/heartbeat.json'
+      - 'scripts/pipeline/state.json'
+      - 'scripts/pipeline/costs.json'
+      - 'news/**'
   workflow_dispatch:
 
 permissions:
