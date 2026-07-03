@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, PRICING, PRICING_DIRECT } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 
 const DIRECT_MODE = process.argv.includes('--direct') || process.env.PIPELINE_MODE === 'direct';
@@ -163,7 +163,8 @@ async function submitBatch(client, requests) {
       custom_id: req.id,
       params: {
         model: MODEL,
-        max_tokens: 8192,
+        max_tokens: 16000,
+        thinking: THINKING,
         messages: [{ role: 'user', content: req.prompt }],
       },
     })),
@@ -222,7 +223,8 @@ async function processDirectly(client, transcripts, state) {
 
         const msg = await client.messages.create({
           model: MODEL,
-          max_tokens: 8192,
+          max_tokens: 16000,
+          thinking: THINKING,
           messages: [{ role: 'user', content: prompt }],
         });
 

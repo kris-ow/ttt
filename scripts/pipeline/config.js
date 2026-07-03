@@ -97,16 +97,22 @@ export const CORRECTIONS = {
   'Ashok Eluswamy': 'Ashok Elluswamy',
 };
 
-// Claude model for summarization
-export const MODEL = 'claude-sonnet-4-6';
+// Claude model for summarization. Switched from claude-sonnet-4-6 on
+// 2026-07-03 after an A/B test (better attribution/hedging + relevance-gate
+// judgment). Sonnet 5 runs adaptive thinking when `thinking` is omitted —
+// keep it explicitly disabled for like-for-like cost and output behavior.
+export const MODEL = 'claude-sonnet-5';
+export const THINKING = { type: 'disabled' };
 
-// Pricing (per million tokens)
+// Pricing (per million tokens). Sonnet 5 INTRO pricing through 2026-08-31
+// ($2/$10 standard). FLIP to sticker $3/$15 (batch $1.50/$7.50) on 2026-09-01
+// or costs.json under-reports.
 export const PRICING = {
-  input: 1.50,   // $/M tokens (batch = 50% of standard $3)
-  output: 7.50,  // $/M tokens (batch = 50% of standard $15)
+  input: 1.00,   // $/M tokens (batch = 50% of intro $2)
+  output: 5.00,  // $/M tokens (batch = 50% of intro $10)
 };
 
 export const PRICING_DIRECT = {
-  input: 3.00,   // $/M tokens (standard)
-  output: 15.00, // $/M tokens (standard)
+  input: 2.00,   // $/M tokens (intro standard)
+  output: 10.00, // $/M tokens (intro standard)
 };

@@ -57,7 +57,7 @@ The current year is {{YEAR}}. When the article mentions relative timeframes like
 
 Summarize the following article from {{CHANNEL}} by {{AUTHOR}}, titled "{{TITLE}}".
 
-Keep the summary significantly shorter than the source article — aim for 30-50% of the article's word count. Articles are already edited prose, so the summary should distill key facts and data points, not rephrase every paragraph. Omit narrative padding, redundant context, and rhetorical framing.
+Keep the summary significantly shorter than the source article — aim for 30-50% of the article's word count, erring toward the lower end. Articles are already edited prose, so the summary should distill key facts and data points, not rephrase every paragraph. Omit narrative padding, redundant context, and rhetorical framing. Do not restate the same fact in multiple sections.
 
 ## Output Format
 

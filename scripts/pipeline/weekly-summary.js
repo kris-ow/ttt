@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { MODEL, PRICING_DIRECT } from './config.js';
+import { MODEL, THINKING, PRICING_DIRECT } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 
 // ── Configuration ────────────────────────────────────────
@@ -216,7 +216,8 @@ async function main() {
       }
       msg = await client.messages.create({
         model: MODEL,
-        max_tokens: 8192,
+        max_tokens: 16000,
+        thinking: THINKING,
         messages: [{ role: 'user', content: prompt }],
       });
       break;

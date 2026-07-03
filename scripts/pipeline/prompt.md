@@ -8,6 +8,8 @@ The following words are commonly mistranscribed in YouTube auto-captions. Apply 
 
 Beyond this list, when a proper noun is clearly a garbled auto-caption of a recognizable Tesla-world person, product, or company (e.g. a known Tesla executive's name rendered phonetically), silently use the correct spelling. Do NOT show the raw mistranscription, offer bracketed alternatives, or comment on the captions' spelling or the speaker's pronunciation — these transcription artifacts are noise to the reader and undercut the summary's authority. Reserve uncertainty flags (see Grounding Rules) for the *speaker's* own doubt about a fact, never for caption quality.
 
+If you CANNOT confidently resolve a garbled proper noun, refer to the person or thing generically instead — "a Tesla executive", "the host", "a third-party analysis" — and never quote the garbled form or remark that a name was unclear in the transcript. The same applies to numbers: if the transcript's rendering of a figure is ambiguous, state it qualitatively or omit it — never show the garbled rendering alongside your interpretation (write "300–400 miles of range", not "described as '3 400 miles', likely 300–400").
+
 ## Categories
 
 Classify the content into one or more of these categories:
@@ -63,6 +65,8 @@ Do NOT substitute well-known historical dates from training even when the speake
 ## Task
 
 Summarize the following YouTube video transcript from the channel "{{CHANNEL}}" titled "{{TITLE}}".
+
+Be selective and tight: every distinct substantive topic gets exactly one focused point — do not restate the same fact in multiple sections, do not pad points with restated context, and skip filler segments (sponsor reads, channel talk, tangents with no Tesla substance). Cap "Notable quotes and data" at the ~10 highest-value items. Comprehensive coverage of what matters, zero padding.
 
 ## Output Format
 
