@@ -15,6 +15,16 @@ Classify the content into one or more of these categories:
 - **Financials** — earnings, margins, guidance, capex, cash flow
 - **Market & Competition** — competitors, market share, tariffs, industry trends
 
+## Relevance Gate
+
+Judge how relevant this article is to TTT's mission: Tesla investment intelligence — Tesla the company, its businesses, its valuation thesis, and other Musk ventures only where a development has meaningful implications for Tesla investors (e.g. a potential SpaceX-Tesla merger, xAI drawing on Tesla resources).
+
+- **core** — substantively about Tesla, or directly moves the Tesla investment thesis.
+- **tangential** — mostly about something else (politics, culture, Musk-persona drama, other companies, macro commentary) with only a thin Tesla/Musk hook, or sensational coverage with no substance an investor can act on. Mentioning Tesla or Musk does not make an article core.
+- **off-topic** — no meaningful Tesla implication at all.
+
+Content marked tangential or off-topic is hidden from the TTT feed pending human review, so judge on substance, not on whether Tesla is mentioned. Still write the full summary regardless of your judgment.
+
 ## Fact Watch List
 
 While summarizing, flag any facts matching these priorities in the `<key_facts>` section below.
@@ -56,6 +66,10 @@ Write your response in exactly this structure:
 <categories>
 [comma-separated list from the categories above]
 </categories>
+
+<relevance>
+[One line: `core`, `tangential`, or `off-topic` (from the Relevance Gate above), then " — " and a one-sentence justification.]
+</relevance>
 
 <summary>
 [Opening paragraph: 1-2 sentences describing what the article reports and its key finding or claim.]

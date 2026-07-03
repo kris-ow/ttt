@@ -104,6 +104,50 @@ jobs:
             });
             console.log(`Created issue for ${fresh.length} new lead(s)`);
 
+      # Notify via GitHub issue when this run produced summaries classified
+      # tangential/off-topic — they are hidden from the feed and Daily Brief
+      # until reviewed in the admin console (MODERATION tab). New summaries
+      # are still untracked at this point (the commit step runs later), so
+      # git ls-files --others yields exactly this run's output.
+      - name: Notify on hidden (moderated) summaries
+        continue-on-error: true
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const fs = require('fs');
+            const cp = require('child_process');
+            const newFiles = cp.execSync('git ls-files --others --exclude-standard news', { encoding: 'utf8' })
+              .split('\n').filter(f => f.endsWith('_summary.txt'));
+            let moderation = { include: [], exclude: [] };
+            try { moderation = { include: [], exclude: [], ...JSON.parse(fs.readFileSync('data/moderation.json', 'utf8')) }; } catch {}
+            const hidden = [];
+            for (const file of newFiles) {
+              const name = file.replace(/^news\//, '');
+              if (moderation.include.includes(name) || moderation.exclude.includes(name)) continue;
+              const header = fs.readFileSync(file, 'utf8').split('─'.repeat(5))[0];
+              const meta = {};
+              for (const line of header.split('\n')) {
+                const m = line.match(/^(\w[\w\s]*?):\s+(.+)$/);
+                if (m) meta[m[1].trim().toLowerCase()] = m[2].trim();
+              }
+              if (/^(tangential|off-topic)\b/i.test(meta.relevance || '')) {
+                hidden.push({ name, title: meta.title || name, channel: meta.channel || meta.source || '?', relevance: meta.relevance });
+              }
+            }
+            if (hidden.length === 0) { console.log('No hidden summaries this run'); return; }
+            const list = hidden.map(h => `- **${h.title}** (${h.channel}) — ${h.relevance}\n  - \`${h.name}\``).join('\n');
+            try {
+              await github.rest.issues.createLabel({ owner: context.repo.owner, repo: context.repo.repo, name: 'moderation', color: 'FBCA04' });
+            } catch {}
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Content moderation: ${hidden.length} piece${hidden.length > 1 ? 's' : ''} hidden pending review`,
+              body: `The pipeline classified ${hidden.length} new summar${hidden.length > 1 ? 'ies' : 'y'} as tangential/off-topic and hid ${hidden.length > 1 ? 'them' : 'it'} from the feed:\n\n${list}\n\n**Next step:** review in the admin console (\`cd admin && npm run dev\` → MODERATION → SHOW IN FEED / KEEP HIDDEN → [PUBLISH]).\n\nClose this issue once reviewed.`,
+              labels: ['moderation'],
+            });
+            console.log(`Created issue for ${hidden.length} hidden piece(s)`);
+
       # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
       # 00:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
       # The 10:15, 17:45, and Monday 05:45 runs skip this step.

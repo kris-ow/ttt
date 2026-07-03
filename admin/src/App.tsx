@@ -29,7 +29,18 @@ interface ExtractedFact {
   status: 'pending' | 'approved' | 'rejected'
 }
 
-type Tab = 'review' | 'watchlist'
+interface ModerationItem {
+  filename: string
+  date: string
+  channel: string
+  title: string
+  relevance: string | null
+  hidden: boolean
+  status: 'pending' | 'included' | 'excluded'
+  body: string
+}
+
+type Tab = 'review' | 'moderation' | 'watchlist'
 
 // ── API helpers ─────────────────────────────────────────
 
@@ -80,7 +91,7 @@ export default function App() {
 
       {/* Tabs */}
       <div style={{ display: 'flex', gap: 4, marginBottom: 16 }}>
-        {([['review', 'REVIEW QUEUE'], ['watchlist', 'WATCHLIST']] as const).map(([key, label]) => (
+        {([['review', 'REVIEW QUEUE'], ['moderation', 'MODERATION'], ['watchlist', 'WATCHLIST']] as const).map(([key, label]) => (
           <button
             key={key}
             onClick={() => setTab(key)}
@@ -102,6 +113,7 @@ export default function App() {
 
       {/* Content */}
       {tab === 'review' && <ReviewQueue />}
+      {tab === 'moderation' && <ModerationQueue />}
       {tab === 'watchlist' && <WatchlistEditor />}
     </div>
   )
@@ -228,6 +240,108 @@ function ReviewQueue() {
               </div>
             )
           })}
+        </div>
+      )}
+    </div>
+  )
+}
+
+// ── Moderation Queue ────────────────────────────────────
+
+function ModerationQueue() {
+  const [items, setItems] = useState<ModerationItem[]>([])
+  const [filter, setFilter] = useState<'pending' | 'included' | 'excluded' | 'all'>('pending')
+  const [expanded, setExpanded] = useState<string | null>(null)
+  const [busy, setBusy] = useState<string | null>(null)
+
+  const load = useCallback(async () => {
+    const res = await api<{ ok: boolean; items?: ModerationItem[] }>('/moderation')
+    if (res.ok && res.items) setItems(res.items)
+  }, [])
+
+  useEffect(() => { load() }, [load])
+
+  const decide = async (filename: string, decision: 'include' | 'exclude' | 'pending') => {
+    setBusy(filename)
+    await api('/moderation/decide', 'POST', { filename, decision })
+    await load()
+    setBusy(null)
+  }
+
+  const filtered = items.filter(i => filter === 'all' || i.status === filter)
+  const pendingCount = items.filter(i => i.status === 'pending').length
+
+  return (
+    <div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
+        <span style={{ color: 'var(--green-dim)', fontSize: 12, fontWeight: 'bold' }}>
+          HIDDEN FROM FEED ({pendingCount} pending)
+        </span>
+        <div style={{ display: 'flex', gap: 4 }}>
+          {(['pending', 'included', 'excluded', 'all'] as const).map(f => (
+            <button key={f} onClick={() => setFilter(f)} style={{
+              ...btnStyle('dim'),
+              color: filter === f ? 'var(--green)' : 'var(--text-dim)',
+              borderColor: filter === f ? 'var(--green)' : 'var(--border)',
+            }}>
+              {f.toUpperCase()}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {filtered.length === 0 ? (
+        <div style={{ color: 'var(--text-dim)', fontSize: 12, padding: 20, textAlign: 'center', border: '1px solid var(--border)' }}>
+          {items.length === 0 ? 'Nothing flagged. Summaries classified tangential/off-topic will appear here.' : `No ${filter} items.`}
+        </div>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          {filtered.map(item => (
+            <div key={item.filename} style={{ border: '1px solid var(--border)', background: 'var(--surface)', padding: 12 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ color: 'var(--text-bright)', fontSize: 12, marginBottom: 4 }}>{item.title}</div>
+                  <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', fontSize: 11 }}>
+                    <span style={{ color: item.relevance?.startsWith('off-topic') ? 'var(--red)' : 'var(--amber)' }}>
+                      [{item.relevance || 'manual exclude'}]
+                    </span>
+                    <span style={{ color: 'var(--text-dim)' }}>{item.channel}</span>
+                    <span style={{ color: 'var(--text-dim)' }}>{item.date}</span>
+                  </div>
+                  <button
+                    onClick={() => setExpanded(expanded === item.filename ? null : item.filename)}
+                    style={{ ...btnStyle('dim'), marginTop: 6 }}
+                  >
+                    {expanded === item.filename ? '[HIDE SUMMARY]' : '[SHOW SUMMARY]'}
+                  </button>
+                  {expanded === item.filename && (
+                    <pre style={{
+                      color: 'var(--text-dim)', fontSize: 11, marginTop: 8, padding: 8,
+                      border: '1px solid var(--border)', background: 'var(--surface-2)',
+                      whiteSpace: 'pre-wrap', maxHeight: 320, overflowY: 'auto',
+                    }}>
+                      {item.body}
+                    </pre>
+                  )}
+                </div>
+                <div style={{ display: 'flex', gap: 4, flexShrink: 0, alignItems: 'center' }}>
+                  {item.status !== 'pending' && (
+                    <span style={{ fontSize: 11, color: item.status === 'included' ? 'var(--green-dim)' : 'var(--red)', fontWeight: 'bold' }}>
+                      {item.status.toUpperCase()}
+                    </span>
+                  )}
+                  {item.status === 'pending' ? (
+                    <>
+                      <button disabled={busy === item.filename} onClick={() => decide(item.filename, 'include')} style={btnStyle('green')}>[SHOW IN FEED]</button>
+                      <button disabled={busy === item.filename} onClick={() => decide(item.filename, 'exclude')} style={btnStyle('red')}>[KEEP HIDDEN]</button>
+                    </>
+                  ) : (
+                    <button disabled={busy === item.filename} onClick={() => decide(item.filename, 'pending')} style={btnStyle('dim')}>[UNDO]</button>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       )}
     </div>

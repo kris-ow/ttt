@@ -3,6 +3,7 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { MODEL, PRICING_DIRECT } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
+import { isHiddenSummary, loadModeration } from '../moderation.js';
 
 // ── Configuration ────────────────────────────────────────
 
@@ -51,6 +52,8 @@ function collectDailySummaries(targetDate) {
     .filter(f => !f.includes('_ttt_'))
     .sort();
 
+  const moderation = loadModeration();
+
   return sources.map(filename => {
     const content = fs.readFileSync(path.join(NEWS_DIR, filename), 'utf-8');
     const headerEnd = content.indexOf('─'.repeat(5));
@@ -68,8 +71,14 @@ function collectDailySummaries(targetDate) {
       channel: meta.channel || meta.source || filename.split('_')[1] || 'unknown',
       title: meta.title || filename,
       published: meta.published || '',
+      relevance: meta.relevance || null,
       body,
     };
+  }).filter(s => {
+    // Moderated-out summaries must not leak into the Daily Brief either.
+    const hidden = isHiddenSummary(s.filename, s.relevance, moderation);
+    if (hidden) console.log(`  Skipping (moderation): ${s.filename} (${s.relevance || 'manually excluded'})`);
+    return !hidden;
   });
 }
 

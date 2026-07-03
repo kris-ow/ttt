@@ -3,6 +3,7 @@ import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
+import { isHiddenSummary, loadModeration, relevanceLevel, saveModeration } from '../scripts/moderation.js';
 
 const app = express();
 app.use(cors());
@@ -13,6 +14,7 @@ const WATCHLIST = path.join(ROOT, 'scripts/pipeline/watchlist.json');
 const EXTRACTED = path.join(ROOT, 'scripts/pipeline/extracted-facts.json');
 const DCF_FACTS = path.join(ROOT, 'src/data/dcf-robotaxi-facts.json');
 const INTERVIEW_LEADS = path.join(ROOT, 'data/interview-leads.json');
+const NEWS_DIR = path.join(ROOT, 'news');
 
 // Approved interview_mention facts become resolution to-dos: find the
 // canonical video URL, then fetch the transcript via Mac Mini.
@@ -103,6 +105,79 @@ app.put('/api/facts', (req, res) => {
   res.json({ ok: true });
 });
 
+// ── Moderation (feed content review) ────────────────────
+
+// Review items = summaries the pipeline classified tangential/off-topic,
+// plus anything a human already decided on (include/exclude), so past
+// decisions stay visible and reversible.
+function collectModerationItems() {
+  const moderation = loadModeration();
+  const decided = new Set([...moderation.include, ...moderation.exclude]);
+  const files = fs.readdirSync(NEWS_DIR).filter(f => f.endsWith('_summary.txt')).sort().reverse();
+
+  const items = [];
+  for (const filename of files) {
+    const content = fs.readFileSync(path.join(NEWS_DIR, filename), 'utf-8').replace(/\r\n/g, '\n');
+    const headerEnd = content.indexOf('─'.repeat(5));
+    const header = headerEnd !== -1 ? content.slice(0, headerEnd) : '';
+    const body = headerEnd !== -1 ? content.slice(headerEnd).replace(/^─+\n+/, '').trim() : content;
+
+    const meta = {};
+    for (const line of header.split('\n')) {
+      const m = line.match(/^(\w[\w\s]*?):\s+(.+)$/);
+      if (m) meta[m[1].trim().toLowerCase()] = m[2].trim();
+    }
+
+    const level = relevanceLevel(meta.relevance);
+    const flagged = level === 'tangential' || level === 'off-topic';
+    if (!flagged && !decided.has(filename)) continue;
+
+    const dateMatch = filename.match(/^(\d{8})/);
+    items.push({
+      filename,
+      date: dateMatch ? `${dateMatch[1].slice(0, 4)}-${dateMatch[1].slice(4, 6)}-${dateMatch[1].slice(6, 8)}` : '',
+      channel: meta.channel || meta.source || filename.split('_')[1] || 'unknown',
+      title: meta.title || filename,
+      relevance: meta.relevance || null,
+      hidden: isHiddenSummary(filename, meta.relevance, moderation),
+      status: moderation.include.includes(filename) ? 'included'
+        : moderation.exclude.includes(filename) ? 'excluded'
+        : 'pending',
+      body,
+    });
+  }
+  return items;
+}
+
+app.get('/api/moderation', (_req, res) => {
+  try {
+    res.json({ ok: true, items: collectModerationItems() });
+  } catch (e) {
+    res.json({ ok: false, error: e.message });
+  }
+});
+
+// decision: 'include' (show in feed) | 'exclude' (keep hidden) | 'pending' (undo)
+app.post('/api/moderation/decide', (req, res) => {
+  const { filename, decision } = req.body;
+  if (!filename || !['include', 'exclude', 'pending'].includes(decision)) {
+    return res.json({ ok: false, error: 'filename and decision (include|exclude|pending) required' });
+  }
+  try {
+    const moderation = loadModeration();
+    moderation.include = moderation.include.filter(f => f !== filename);
+    moderation.exclude = moderation.exclude.filter(f => f !== filename);
+    if (decision !== 'pending') moderation[decision].push(filename);
+    saveModeration(moderation);
+
+    // Rebuild news.json so the decision is reflected in the feed on publish.
+    execSync('node scripts/build-news.js', { cwd: ROOT });
+    res.json({ ok: true });
+  } catch (e) {
+    res.json({ ok: false, error: e.message });
+  }
+});
+
 // ── Publish (git commit + push) ─────────────────────────
 
 app.post('/api/publish', (req, res) => {
@@ -115,6 +190,8 @@ app.post('/api/publish', (req, res) => {
       'scripts/pipeline/extracted-facts.json',
       'src/data/dcf-robotaxi-facts.json',
       'data/interview-leads.json',
+      'data/moderation.json',
+      'src/data/news.json',
     ].filter(f => fs.existsSync(path.join(ROOT, f)));
 
     if (filesToAdd.length === 0) {

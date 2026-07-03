@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { isHiddenSummary, loadModeration } from './moderation.js';
 
 const newsDir = path.resolve('news');
 const outFile = path.resolve('src/data/news.json');
@@ -9,6 +10,7 @@ const urlIndexPath = path.join(newsDir, 'transcripts_url_index.json');
 const urlIndex = fs.existsSync(urlIndexPath) ? JSON.parse(fs.readFileSync(urlIndexPath, 'utf-8')) : {};
 
 const files = fs.readdirSync(newsDir).filter(f => f.endsWith('_summary.txt')).sort();
+const moderation = loadModeration();
 
 const articles = files.map(filename => {
   // Normalize CRLF so a regen on a Windows checkout (autocrlf) produces
@@ -77,10 +79,17 @@ const articles = files.map(filename => {
     sourceType,
     source: meta.source || '',
     signal,
+    relevance: meta.relevance || null,
     videoUrl,
     body,
     ...(isWeekly ? { type: 'weekly' } : isExec ? { type: 'executive' } : {}),
   };
+}).filter(article => {
+  // Moderation gate: tangential/off-topic summaries (or manual excludes) stay
+  // in news/ but never reach the feed until approved in the admin console.
+  const hidden = isHiddenSummary(article.filename, article.relevance, moderation);
+  if (hidden) console.log(`Moderation: hiding ${article.filename} (${article.relevance || 'manually excluded'})`);
+  return !hidden;
 });
 
 // Deduplicate: same title + date = keep the one summarized latest

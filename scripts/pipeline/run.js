@@ -277,12 +277,22 @@ async function processDirectly(client, transcripts, state) {
 
 function parseResult(text) {
   const categoriesMatch = text.match(/<categories>\s*([\s\S]*?)\s*<\/categories>/);
+  const relevanceMatch = text.match(/<relevance>\s*([\s\S]*?)\s*<\/relevance>/);
   const summaryMatch = text.match(/<summary>\s*([\s\S]*?)\s*<\/summary>/);
   const factsMatch = text.match(/<key_facts>\s*([\s\S]*?)\s*<\/key_facts>/);
 
   const categories = categoriesMatch
     ? categoriesMatch[1].split(',').map(c => c.trim()).filter(Boolean)
     : [];
+
+  // "tangential — mostly a film-industry commentary..." → level + note.
+  // Absent or unparseable relevance means the summary stays visible.
+  let relevance = null;
+  if (relevanceMatch) {
+    const m = relevanceMatch[1].trim().match(/^(core|tangential|off-topic)\b\s*(?:[—–:-]+\s*)?([\s\S]*)$/i);
+    if (m) relevance = { level: m[1].toLowerCase(), note: m[2].trim().replace(/\s+/g, ' ') };
+    else console.log('  Warning: could not parse relevance block');
+  }
 
   const summary = summaryMatch ? summaryMatch[1].trim() : text;
 
@@ -295,7 +305,7 @@ function parseResult(text) {
     }
   }
 
-  return { categories, summary, keyFacts };
+  return { categories, relevance, summary, keyFacts };
 }
 
 // ── Summary File Writing ─────────────────────────────────
@@ -318,6 +328,12 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
   ];
   if (transcript.isXDaily) {
     headerLines.push(`Source:      X/@SawyerMerritt`);
+  }
+  if (result.relevance) {
+    headerLines.push(`Relevance:   ${result.relevance.level}${result.relevance.note ? ` — ${result.relevance.note}` : ''}`);
+    if (result.relevance.level !== 'core') {
+      console.log(`  Relevance: ${result.relevance.level} — hidden from feed pending review`);
+    }
   }
   headerLines.push(
     `Categories:  ${result.categories.join(', ')}`,
