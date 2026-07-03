@@ -54,7 +54,19 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - id: deployment
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      # The Pages API intermittently fails deployments server-side ("Deployment
+      # failed, try again later" — 2026-07-02/03 incident); a plain rerun minutes
+      # later succeeds. Since heartbeat deploys were path-filtered away, a failed
+      # deploy no longer self-heals within the hour, so retry once after a backoff.
+      - name: Wait before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 180
+      - id: deployment_retry
+        name: Retry deploy
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5

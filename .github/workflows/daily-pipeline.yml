@@ -240,9 +240,19 @@ jobs:
       cancel-in-progress: false
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - id: deployment
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+      # Same retry-once-after-backoff as deploy-pages.yml: the Pages API
+      # intermittently fails deployments server-side and a rerun succeeds.
+      - name: Wait before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 180
+      - id: deployment_retry
+        name: Retry deploy
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v5
 
   # Create a GitHub issue on pipeline failure
