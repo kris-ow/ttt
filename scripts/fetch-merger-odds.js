@@ -63,6 +63,19 @@ function priceAsOf(history, targetTs) {
   return null
 }
 
+// Downsample hourly history to one point per UTC day (that day's last price)
+// for the card's 30-day chart, ending with the current live price so the chart
+// agrees with the NOW figure. [t, p] pairs keep the committed JSON compact.
+function dailyHistory(history, currentYes) {
+  const byDay = new Map()
+  for (const pt of history) {
+    byDay.set(new Date(pt.t * 1000).toISOString().slice(0, 10), pt) // later points overwrite
+  }
+  const points = [...byDay.values()].map(pt => [pt.t, pt.p])
+  points.push([Math.floor(Date.now() / 1000), currentYes])
+  return points
+}
+
 // Per-window delta vs the current Yes price. null = no anchor (→ "—" on card);
 // a number (incl. exactly 0 for a genuinely flat window) = real change.
 function computeChanges(history, currentYes) {
@@ -98,9 +111,11 @@ async function main() {
     const yes = Number(prices[yesIdx])
 
     let change
+    let history30d = []
     try {
       const history = await fetchHistory(tokenIds[yesIdx])
       change = computeChanges(history, yes)
+      history30d = dailyHistory(history, yes)
     } catch (err) {
       // Degrade to Gamma's precomputed fields rather than emit all-null.
       console.warn(`  ! history fetch failed for ${m.endDateIso} (${err.message || err}); using Gamma precomputed deltas`)
@@ -118,6 +133,7 @@ async function main() {
       change,
       volume: Math.round(m.volumeNum || 0),
       liquidity: Math.round(m.liquidityNum || 0),
+      history: history30d,
     })
   }
 

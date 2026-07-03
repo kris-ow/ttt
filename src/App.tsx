@@ -8,7 +8,6 @@ import { ValuationSection } from './components/Valuation/ValuationSection'
 import { DataSection } from './components/Data/DataSection'
 import { StockWidget } from './components/Stock/StockWidget'
 import { useStockQuote } from './components/Stock/useStockQuote'
-import { RobotaxiCounts } from './components/Robotaxi/RobotaxiCounts'
 import { MergerOddsCard } from './components/MergerOdds/MergerOddsCard'
 import { InterviewSection, InterviewDetail, type Interview } from './components/Interviews/InterviewSection'
 import { InterviewRouteContext, interviewFromPath, interviewPath, INTERVIEW_PATH_RE, type InterviewLocation } from './components/Interviews/interviewRoute'
@@ -21,7 +20,9 @@ const INTERVIEWS_BADGE_UNTIL = new Date('2026-06-26T23:59:59Z')
 // Matches index.html <title>; restored when no interview popup is open.
 const DEFAULT_TITLE = 'The Tesla Thesis - Tesla Intelligence Dashboard'
 
-const MOBILE_TILE_TABS = ['stock', 'robotaxi', 'merger'] as const
+// 'robotaxi' tile hidden 2026-07-03: RobotaxiTracker.com frozen since 05-09,
+// the card only showed stale counts. Component kept; re-add here to restore.
+const MOBILE_TILE_TABS = ['stock', 'merger'] as const
 type MobileTileTab = (typeof MOBILE_TILE_TABS)[number]
 
 type Section = 'feed' | 'interviews' | 'data' | 'valuations'
@@ -282,7 +283,7 @@ export default function App() {
         {mountedTabs.has('feed') && (
           <div className={activeSection === 'feed' ? '' : 'hidden'}>
             {/* Desktop: side by side */}
-            <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
               <div className="flex flex-col">
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">NASDAQ:TSLA</h3>
@@ -291,13 +292,6 @@ export default function App() {
                 <StockWidget {...stockData} className="flex-1" />
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">UNSUPERVISED ROBOTAXIS</h3>
-                  <span className="flex-1 border-t border-dashed border-text-dim" />
-                </div>
-                <RobotaxiCounts className="flex-1" />
-              </div>
-              <div className="flex flex-col sm:col-span-2 lg:col-span-1">
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">MERGER ODDS</h3>
                   <span className="flex-1 border-t border-dashed border-text-dim" />
@@ -309,7 +303,7 @@ export default function App() {
             {/* Mobile: tabbed + swipeable */}
             <div className="sm:hidden mb-6">
               <div className="flex flex-wrap gap-1 mb-2">
-                {([['stock', 'NASDAQ:TSLA'], ['robotaxi', 'ROBOTAXIS'], ['merger', 'MERGER ODDS']] as const).map(([key, label]) => (
+                {([['stock', 'NASDAQ:TSLA'], ['merger', 'MERGER ODDS']] as const).map(([key, label]) => (
                   <button
                     key={key}
                     onClick={() => scrollToMobileTab(key)}
@@ -330,9 +324,6 @@ export default function App() {
                 >
                   <div className="snap-start shrink-0 w-full">
                     <StockWidget {...stockData} bare />
-                  </div>
-                  <div className="snap-start shrink-0 w-full">
-                    <RobotaxiCounts bare />
                   </div>
                   <div className="snap-start shrink-0 w-full">
                     <MergerOddsCard bare className="h-full" />

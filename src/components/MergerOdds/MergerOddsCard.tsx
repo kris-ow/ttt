@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { track } from '../../analytics'
+import { MergerOddsChart } from './MergerOddsChart'
 
 // In dev, Vite serves the project root, so the freshly fetched local file works
 // before it's ever pushed; in prod the card reads the committed copy on master.
@@ -17,6 +18,7 @@ type MarketEntry = {
   change: { '1d': number | null; '7d': number | null; '30d': number | null }
   volume: number
   liquidity: number
+  history?: [number, number][] // daily [unix seconds, yes price] over the last ~30d
 }
 type MergerOdds = {
   fetched_at: string
@@ -33,24 +35,6 @@ function pickMarket(markets: MarketEntry[]): MarketEntry | null {
   const liquid = markets.filter(m => m.volume >= LOW_VOLUME_USD)
   const pool = liquid.length > 0 ? liquid : markets
   return pool[pool.length - 1] ?? null
-}
-
-// Deltas are price moves in [0,1]; shown as percentage points. Distinguish two
-// cases: Polymarket omits the value (null) when there's no prior price to
-// compare against → show "—"; a numeric 0 means it compared and saw no change
-// → show "0".
-function fmtDelta(change: number | null): string {
-  if (change == null) return '—'
-  const pp = change * 100
-  if (pp === 0) return '0'
-  return pp > 0 ? `+${pp.toFixed(1)}` : pp.toFixed(1)
-}
-
-function deltaClass(change: number | null, dim: boolean): string {
-  if (change == null || dim) return 'text-text-dim'
-  if (change > 0) return 'text-green'
-  if (change < 0) return 'text-red'
-  return 'text-text-dim'
 }
 
 function relativeAge(iso: string): { label: string; stale: boolean } {
@@ -85,30 +69,18 @@ export function MergerOddsCard({ className, bare }: { className?: string; bare?:
   const dim = !!age?.stale
 
   return (
-    <div className={`${bare ? '' : 'border border-border bg-surface '}p-3 text-xs flex flex-col${className ? ` ${className}` : ''}`}>
+    // p-2 matches StockWidget so the two charts span the same width side by side
+    <div className={`${bare ? '' : 'border border-border bg-surface '}p-2 text-xs flex flex-col${className ? ` ${className}` : ''}`}>
       {error && <div className="text-text-dim">FAILED TO LOAD</div>}
       {!data && !error && <div className="text-text-dim">LOADING...</div>}
       {data && market && (
         <>
-          <div className="text-xs text-text-bright">TSLA-SPACEX MERGER ANNOUNCED {market.label}</div>
-          <div className="my-auto py-3">
-            <div className="grid grid-cols-4 gap-2 text-xs text-text-dim pb-0.5">
-              <span className="text-center">NOW</span>
-              <span className="text-center">1D</span>
-              <span className="text-center">7D</span>
-              <span className="text-center">30D</span>
-            </div>
-            <div className="grid grid-cols-4 gap-2 items-baseline py-1 text-base">
-              <span className={`text-center tabular-nums font-bold text-lg ${dim ? 'text-text-dim' : 'text-green'}`}>
-                {(market.yes * 100).toFixed(1)}%
-              </span>
-              <span className={`text-center tabular-nums ${deltaClass(market.change['1d'], dim)}`}>{fmtDelta(market.change['1d'])}</span>
-              <span className={`text-center tabular-nums ${deltaClass(market.change['7d'], dim)}`}>{fmtDelta(market.change['7d'])}</span>
-              <span className={`text-center tabular-nums ${deltaClass(market.change['30d'], dim)}`}>{fmtDelta(market.change['30d'])}</span>
-            </div>
-          </div>
-          <div className="text-text-dim text-[10px] pt-2 border-t border-border flex items-center justify-between gap-2">
-            <span>
+          {/* Attribution sits with the title (same row on desktop, next line on
+              the tighter mobile panel); the old footer row is gone to keep the
+              card short. Staleness only dims the current figure now. */}
+          <div className={bare ? '' : 'flex items-baseline justify-between gap-2'}>
+            <div className="text-xs text-text-bright">TSLA-SPACEX MERGER ANNOUNCED {market.label}</div>
+            <div className="text-[10px] text-text-dim whitespace-nowrap">
               by{' '}
               <a
                 href={`https://polymarket.com/event/${data.event_slug}`}
@@ -119,13 +91,24 @@ export function MergerOddsCard({ className, bare }: { className?: string; bare?:
               >
                 POLYMARKET
               </a>
-            </span>
-            {age && (
-              <span className={age.stale ? 'text-amber-500' : ''}>
-                {age.stale ? 'STALE · ' : ''}{age.label}
-              </span>
-            )}
+            </div>
           </div>
+          {/* Mobile skips the big current figure to keep the panel short — the
+              chart's axis label carries the live value there. */}
+          {!bare && (
+            <div className="py-2 flex items-baseline gap-2">
+              <span className={`tabular-nums font-bold text-lg ${dim ? 'text-text-dim' : 'text-green'}`}>
+                {(market.yes * 100).toFixed(1)}%
+              </span>
+              <span className="text-text-dim text-[10px]">NOW</span>
+            </div>
+          )}
+          {market.history && market.history.length >= 2 && (
+            <div className={`mt-auto${bare ? ' pt-2' : ''}`}>
+              <div className="text-[10px] text-text-dim pb-1">LAST 30 DAYS</div>
+              <MergerOddsChart history={market.history} />
+            </div>
+          )}
         </>
       )}
     </div>
