@@ -256,16 +256,21 @@ function InlineDelta({ change, label }: { change: ChangeResult; label: string })
   )
 }
 
-function MetricRow({ metric, latestPeriod, periods, expanded, onToggle }: {
+function MetricRow({ metric, sectionLatest, periods, expanded, onToggle }: {
   metric: MetricDef
-  latestPeriod: string
+  sectionLatest: string
   periods: string[]
   expanded: boolean
   onToggle: () => void
 }) {
-  const latest = seriesValue(metric, latestPeriod)
-  const qoq = computeChange(latest, seriesValue(metric, previousQuarter(latestPeriod)), metric.format)
-  const yoy = computeChange(latest, seriesValue(metric, yearAgoQuarter(latestPeriod)), metric.format)
+  // Each metric shows its own newest quarter with data: P&D-release figures
+  // (production/deliveries/storage) land ~3 weeks before the earnings deck
+  // fills in the financials, so quarters are partial in the interim. A dim
+  // period tag marks rows lagging their section's latest quarter.
+  const metricLatest = periods.find(p => data.metrics[metric.key]?.[p] != null) ?? null
+  const latest = seriesValue(metric, metricLatest)
+  const qoq = computeChange(latest, seriesValue(metric, metricLatest && previousQuarter(metricLatest)), metric.format)
+  const yoy = computeChange(latest, seriesValue(metric, metricLatest && yearAgoQuarter(metricLatest)), metric.format)
   return (
     <div className="border-b border-border last:border-0">
       <button
@@ -277,6 +282,9 @@ function MetricRow({ metric, latestPeriod, periods, expanded, onToggle }: {
         <span className="text-text">
           <span className="text-text-dim mr-2 inline-block w-3">{expanded ? '▾' : '▸'}</span>
           {metric.label}
+          {metricLatest && metricLatest !== sectionLatest && (
+            <span className="text-text-dim"> · {periodLabel(metricLatest)}</span>
+          )}
         </span>
         {/* Fixed-width, right-aligned columns so value / QoQ / YoY each align
             vertically across rows. Mobile: left-aligned, indented to the label
@@ -309,6 +317,10 @@ export function DataSection() {
 
   const periods = [...data.metadata.quarters].sort((a, b) => periodSortKey(b) - periodSortKey(a))
   const latestPeriod = periods[0]
+  // A section's "latest" is the newest quarter where any of its metrics has
+  // data — FINANCIALS stays on the prior quarter until the earnings deck.
+  const sectionLatest = (section: SectionDef) =>
+    periods.find(p => section.metrics.some(m => data.metrics[m.key]?.[p] != null)) ?? latestPeriod
 
   return (
     <div>
@@ -321,14 +333,14 @@ export function DataSection() {
           <h3 className="text-text-bright text-xs sm:text-sm font-bold mb-2 flex items-center gap-2">
             <span className="whitespace-nowrap">{section.title}</span>
             <span className="flex-1 border-t border-dashed border-text-dim" />
-            <span className="text-text-dim text-xs font-normal whitespace-nowrap">LATEST: {periodLabel(latestPeriod)}</span>
+            <span className="text-text-dim text-xs font-normal whitespace-nowrap">LATEST: {periodLabel(sectionLatest(section))}</span>
           </h3>
           <div className="border border-border bg-surface">
             {section.metrics.map(metric => (
               <MetricRow
                 key={metric.key}
                 metric={metric}
-                latestPeriod={latestPeriod}
+                sectionLatest={sectionLatest(section)}
                 periods={periods}
                 expanded={expanded.has(metric.key)}
                 onToggle={() => toggle(metric.key)}
