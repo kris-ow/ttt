@@ -1,53 +1,60 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-07-04)
 Published:   2026-07-04 00:00 UTC
-Summarized:  2026-07-05 04:19:16 UTC
+Summarized:  2026-07-05 09:46:09 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.04069 (11130 in / 1843 out tokens)
+Cost:        $0.04198 (11130 in / 1972 out tokens)
 Sources:     4
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- Tesla launches Unsupervised Robotaxi service in Miami
-- Musk stays silent on record Q2 deliveries, posts Optimus and Grok instead
-- Tesla stock fell ~8% on delivery day despite record beat
+- Robotaxi launches Unsupervised in Miami, third unsupervised city
+- Tesla Q2 deliveries hit 480,126, best Q2 ever
+- Musk stayed silent on delivery record, posted Optimus and Grok instead
+- Stock fell ~8% on delivery day despite the beat
+- Texas Model 3 driver charged with manslaughter in fatal crash
 - Michael Burry discloses Tesla short at $416
-- Texas Model 3 driver charged with manslaughter in fatal FSD-related crash
-- Fremont Model S/X line converted to Optimus production
 
 ## Robotaxi
-- Unsupervised Robotaxi service launched in Miami on 2026-07-03, with rides captured on video including operation in rain on day one. Unsupervised service now runs in Miami, Dallas and Houston, Austin runs a mix of unsupervised and safety-monitor rides, and Bay Area remains safety-monitor only.
-- Miami's fleet size is not yet reflected in RobotaxiTracker.com's canonical breakdown, which remains last-known at Active fleet 752 (Bay Area 620, Austin 105, Dallas 16, Houston 11).
-- Hardware 3 vehicles are broadly seen as excluded from Cybercab/robotaxi use; only Hardware 4 is viewed as a plausible candidate, and likely only in favorable weather/geography, per futureaza discussion.
-- Steering-wheel-less production Cybercabs began public road testing in Austin this week, per Sawyer Merritt's roundup.
+- Miami launched Unsupervised Model Y rides on 2026-07-03, including operation in rain on day one. Unsupervised service now spans Miami, Dallas, and Houston; Austin runs a mix of unsupervised and safety-monitor rides; Bay Area remains safety-monitor only. Miami's fleet size is not yet reflected in RobotaxiTracker.com's canonical breakdown.
+- Production Cybercabs (no steering wheel or pedals) began public road testing in Austin this week, part of a cluster of catalysts alongside V14 Lite's HW3 rollout and the delivery record.
+- Hardware 3 vehicles are broadly seen as excluded from Cybercab/robotaxi use; commentators argue only Hardware 4 is a plausible candidate, and likely only in favorable weather/geography.
 
 ## Autonomous Driving
-- V14 Lite began rolling out to HW3 owners this week; early results described as promising despite Hardware 3's memory-bandwidth limitations, per futureaza guest.
-- A Hardware 4 owner reported driving 598 of 600 highway miles on FSD with a single disengagement (a missed supercharger stop, not a driving failure), part of a personal 421-mile uninterrupted streak.
-- Highway-only unsupervised driving is viewed as a more tractable near-term outcome for Hardware 3 than full city-street autonomy, given the "straight-line" vs. "omnidirectional" complexity gap.
-- A Texas Model 3 driver was charged with manslaughter after a fatal house crash; officials cited May search history about making FSD "not aggressive enough" and said the accelerator was pressed to override the vehicle mid-turn.
-
-## Humanoid Bots
-- Musk posted July 1 photos walking the Optimus line in Fremont, now built on the former Model S/X line (last S/X built early May); Tesla's Lars Moravy said the line is modular and reconfigurable as hardware evolves.
-- Optimus V3 production design reveal and production start are both targeted for late July–August, per Musk's timeline; Fremont's eventual target is 1 million robots/year (explicitly a target, not current output).
-- Tesla's robotics and autonomy spend this year is reported above $25 billion, covering Fremont, a planned second Optimus factory at Giga Texas, Cybertruck ramp, and a chip fab. Musk has said next-gen AI chips will go to Optimus and training clusters before vehicles.
+- A Hardware 4 owner reported driving 598 of 600 highway/city miles on FSD with zero driving-related disengagements, part of a personal 421-mile uninterrupted streak.
+- Commentators argue Hardware 4 can already handle full unsupervised driving in most conditions, while Hardware 3 is fundamentally limited by camera/memory bandwidth and likely capped at supervised FSD or, at best, highway-only unsupervised operation.
+- A newly released lightweight "V14 Lite" build for Hardware 3 is reportedly showing promising early results despite the hardware ceiling.
+- Texas officials charged a Model 3 driver with manslaughter after a fatal house crash, citing May search history about making FSD "more aggressive" and stating the accelerator was pressed to override the car mid-turn.
 
 ## Electric Vehicles
-- Tesla delivered 480,126 vehicles in Q2, its best-ever Q2 and fourth-highest quarter overall, beating estimates by roughly 60,000–74,000 units (estimates vary by source).
-- Tesla China posted its strongest month of 2026, up 24% year-over-year, extending an eight-month growth streak.
-- Giga Berlin plans to raise weekly output toward 7,500 vehicles starting October, adding roughly 1,000 more jobs.
-- Model Y L production has begun at Giga Texas; second-row heated seats reportedly reach 104°F within 2 minutes at 5°F ambient.
-- Cumulative production (~9.861M) and deliveries (~9.721M) are approaching the 10-millionth vehicle milestone.
+- Tesla delivered 480,126 vehicles in Q2, up 25% and beating estimates by roughly 60,000–74,000 units — the best Q2 in company history and fourth-highest quarter ever.
+- China posted its strongest month of 2026, up 24% year-over-year, an eighth straight month of growth; Europe demand rebounded across France, Sweden, Denmark, and Spain on high fuel prices.
+- Giga Berlin plans to raise weekly output toward 7,500 vehicles starting October, adding roughly 1,000 jobs.
+- Model Y L (long-wheelbase) production has started at Giga Texas.
+- Competitors lagged sharply: Lucid delivered ~4,000 units and replaced its CFO amid ongoing losses; Rivian delivered ~12,000 (+14%) but raised guidance; Ford sold ~9,000 EVs, with Mach-E down 31% YoY and F-150 Lightning discontinued.
+
+## Financials
+- Tesla stock fell about 8% on delivery day despite the record quarter, after running up ~12% into the report — read as the market treating deliveries as no longer the key valuation driver.
+- Musk posted no acknowledgment of the delivery record, instead posting about Optimus production and Grok 4.5, which commentators read as a deliberate narrative shift toward robots/AI.
+- Tesla's robotics and autonomy spend this year is reported above $25 billion, covering the Fremont Optimus line, a planned second Optimus factory at Giga Texas, Cybertruck ramp, and a chip fab.
+
+## Humanoid Bots
+- Musk posted July 1 walking the Optimus production line in Fremont, now built on the former Model S/X line; Tesla's Lars Moravy said the line is modular and reconfigurable as Optimus hardware evolves.
+- Optimus V3's production design reveal and production start are both targeted for late July–August, with the robot reportedly already walking.
+- Musk said next-generation AI chips will go to Optimus and training clusters before vehicles, a reprioritization away from cars.
 
 ## Market & Competition
-- Michael Burry disclosed shorting Tesla at $416 on June 30, saying he was "happy it jumped back to this level"; he is also short Nvidia, Caterpillar, Applied Materials, and a semiconductor ETF, framing AI capex as a bubble. Position size undisclosed.
-- Tesla stock fell about 8% on delivery day despite the record quarter, after running up ~12% into the report — read by one host as the market having moved past deliveries as the key valuation driver.
-- Grok 4.5, built on a 1.5-trillion-parameter model, is in private beta at SpaceX and Tesla, with Musk saying early performance is "close to, perhaps exceeding" Anthropic's Opus (unverified, internal).
-- Lucid delivered ~4,000 vehicles (+20%, CFO replaced), Rivian ~12,000 (+14%, guidance raised), Ford ~9,000 EVs with Mach-E down 31% YoY and F-150 Lightning discontinued.
+- Michael Burry disclosed a Tesla short at $416 on June 30, alongside shorts on Nvidia, Caterpillar, Applied Materials, and a semiconductor ETF, framing AI capex as a bubble; position size undisclosed.
+- Grok 4.5, built on a 1.5T-parameter "V9" model, is in private beta at SpaceX and Tesla, with Musk saying internal evals show performance "close to, perhaps exceeding" Anthropic's Opus.
+- xAI has been folded into SpaceX; SpaceX reportedly bought ~$269 million of Tesla Megapacks this spring to power xAI data centers near Memphis.
+
+## Energy
+- Tesla deployed 13.5 GWh of storage in Q2, its second-highest quarter ever; trailing-12-month deployment hit a new high of 49 GWh, with cumulative lifetime deployment approaching 140 GWh.
 
 Notable quotes and data:
-- "This was the fourth highest quarterly delivery in Tesla's history... the highest second quarter delivery" — Cern Basher.
-- Musk posted no acknowledgment of the Q2 delivery record, instead posting about Optimus and Grok 4.5 in the surrounding days.
-- Burry: "happy it jumped back to this level" — on shorting Tesla at $416.
-- Guest FSD road trip: "It basically drove 100% of the miles from the driveway... 598 miles, and it did the entire thing."
+- Q2 deliveries: 480,126, up 25%, beating estimates by ~74,000 units (best Q2 ever).
+- Stock fell ~8% on delivery day after a ~12% pre-report run-up.
+- Burry: short Tesla at $416, "happy it jumped back to this level."
+- "It basically drove 100% of the miles from the driveway... 598 miles" — guest on a Hardware 4 road trip.
+- Robotaxi footprint now: Miami, Dallas, Houston (unsupervised); Austin (mixed); Bay Area (safety-monitor only).
