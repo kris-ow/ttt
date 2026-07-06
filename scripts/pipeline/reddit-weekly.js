@@ -103,65 +103,41 @@ function extractBriefBullets(body) {
 // net-0 votes), so Variant A pads with substance, not filler.
 const REDDIT_MIN_BODY_CHARS = 1000;
 
-// Category sections ("## <name>" + "- " bullets) from the brief body.
-// normalizeSeparators() in weekly-summary.js guarantees one "---" between
-// sections, and each bullet is a single line. Excludes the Brief section.
-function extractCategorySections(body) {
-  const sections = [];
-  for (const chunk of body.split(/\n---\n/)) {
-    const nameMatch = chunk.match(/^## (.+)$/m);
-    if (!nameMatch || nameMatch[1].trim() === 'Brief') continue;
-    const bullets = chunk.split('\n').map(l => l.trim()).filter(l => l.startsWith('- '));
-    if (bullets.length > 0) sections.push({ name: nameMatch[1].trim(), bullets });
-  }
-  return sections.length > 0 ? sections : null;
+// Expanded Brief bullets for the Reddit body, emitted by weekly-summary.js
+// (<reddit_bullets> block in the same LLM call) into a sidecar file next to
+// the brief. The site's Brief bullets stay short and glanceable; Reddit gets
+// the same bullets expanded past the 1000-char minimum — nothing else in the
+// body (user direction 2026-07-06: no detail sections, no closer line).
+function readRedditBullets(briefFilename) {
+  const sidecar = briefFilename.replace('_summary.txt', '_reddit_bullets.txt');
+  const p = path.join(NEWS_DIR, sidecar);
+  if (!fs.existsSync(p)) return null;
+  const bullets = fs.readFileSync(p, 'utf-8').replace(/\r\n/g, '\n')
+    .split('\n').map(l => l.trim()).filter(l => l.startsWith('- '));
+  return bullets.length > 0 ? bullets : null;
 }
 
 // Post around the /w/<date>/ deep link: URL first (turn it into a card with
-// Reddit's "Link Embed" button), then the Brief's headline bullets verbatim
-// (quick scan → click), topped up with category top-story bullets ONLY until
-// the body clears the sub's 1000-char minimum — it should read as a fast
-// contents list that funnels to the link, not a second copy of the brief
-// (user direction 2026-07-06: ~2000 chars is too long). The Bear Case section
-// is held back entirely and only name-dropped in the closer, as a hook.
-// Char counting excludes the URL line — the safest reading of what the sub
-// counts as "body text".
-function buildLinkPost(body, deepLink) {
+// Reddit's "Link Embed" button), then the expanded Brief bullets. Char
+// counting excludes the URL line — the safest reading of what the sub counts
+// as "body text".
+function buildLinkPost(body, deepLink, briefFilename) {
   const warnings = [];
-  const briefBullets = extractBriefBullets(body);
-  const sections = extractCategorySections(body) || [];
-  const bearSection = sections.find(s => /^bear case/i.test(s.name));
-  const listSections = sections.filter(s => s !== bearSection);
-
-  const lines = [];
-  if (briefBullets) {
-    lines.push('This week:', '', ...briefBullets);
-  } else {
-    warnings.push('extractBriefBullets did not apply — no "## Brief" bullet section found; link-post variant has category bullets only, review before pasting');
+  let bullets = readRedditBullets(briefFilename);
+  if (!bullets) {
+    warnings.push('expanded reddit-bullets sidecar not found (weekly-summary.js <reddit_bullets> output) — Variant A fell back to the short Brief bullets, expand manually before posting');
+    bullets = extractBriefBullets(body);
+    if (!bullets) {
+      warnings.push('extractBriefBullets did not apply either — no "## Brief" bullet section found; link-post variant has no contents list, review before pasting');
+      bullets = [];
+    }
   }
-
-  const itemCount = listSections.reduce((n, s) => n + s.bullets.length, 0);
-  const closer = listSections.length > 0
-    ? `Full brief at the link — ${itemCount} items across ${listSections.length} categories${bearSection ? ', plus the Bear Case of the Week' : ''}.`
-    : null;
-  if (!closer) {
-    warnings.push('extractCategorySections did not apply — no "## <category>" bullet sections found; no detail bullets or closer available, review before pasting');
+  const post = [deepLink, '', 'This week:', '', ...bullets, ''].join('\n');
+  const chars = post.replace(deepLink, '').trim().length;
+  if (chars < REDDIT_MIN_BODY_CHARS) {
+    warnings.push(`Variant A body is ${chars} chars (excl. link) — r/teslainvestorsclub requires >=${REDDIT_MIN_BODY_CHARS} when body text is present; pad manually before posting (or post the bare embed)`);
   }
-
-  const assemble = () => [deepLink, '', ...lines, ...(closer ? ['', closer] : []), ''].join('\n');
-  const countable = () => assemble().replace(deepLink, '').trim().length;
-
-  let added = 0;
-  for (const s of listSections) {
-    if (countable() >= REDDIT_MIN_BODY_CHARS) break;
-    if (added === 0) lines.push('', 'A few of the details:', '');
-    lines.push(`- **${s.name}:** ${s.bullets[0].replace(/^- /, '')}`);
-    added++;
-  }
-  if (countable() < REDDIT_MIN_BODY_CHARS) {
-    warnings.push(`Variant A body is ${countable()} chars (excl. link) — r/teslainvestorsclub requires >=${REDDIT_MIN_BODY_CHARS} when body text is present; pad manually before posting (or post the bare embed)`);
-  }
-  return { post: assemble(), warnings };
+  return { post, warnings };
 }
 
 // ── Output ───────────────────────────────────────────────
@@ -262,7 +238,7 @@ function main() {
   const briefDate = briefDateFromFilename(brief.filename);
   let linkPost = null;
   if (briefDate) {
-    const linkResult = buildLinkPost(body, `${TTT_URL}/w/${briefDate}/`);
+    const linkResult = buildLinkPost(body, `${TTT_URL}/w/${briefDate}/`, brief.filename);
     linkPost = linkResult.post;
     warnings.push(...linkResult.warnings);
     const reminder = ogCardReminder(briefDate);

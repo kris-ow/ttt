@@ -125,11 +125,17 @@ function buildPrompt(weekStart, weekEnd, dailyBriefs, prevWeeklyBriefs) {
 // truncated mid-response or omitted a tag, fall back to stripping any
 // orphan <brief> / </brief> lines from the raw output so the saved
 // file is never polluted with the wrapper tags.
+// The <reddit_bullets> block (expanded Brief bullets for the Reddit link
+// post, which needs >=1000 chars of body text) is extracted first and
+// removed, so it can never leak into the site-facing brief file.
 function parseResult(text) {
-  const briefMatch = text.match(/<brief>\s*([\s\S]*?)\s*<\/brief>/);
-  if (briefMatch) return { brief: briefMatch[1].trim() };
-  const stripped = text.replace(/^<\/?brief>\s*$/gm, '').trim();
-  return { brief: stripped };
+  const redditMatch = text.match(/<reddit_bullets>\s*([\s\S]*?)\s*<\/reddit_bullets>/);
+  const redditBullets = redditMatch ? redditMatch[1].trim() : null;
+  const rest = text.replace(/<reddit_bullets>[\s\S]*?(<\/reddit_bullets>|$)/, '');
+  const briefMatch = rest.match(/<brief>\s*([\s\S]*?)\s*<\/brief>/);
+  if (briefMatch) return { brief: briefMatch[1].trim(), redditBullets };
+  const stripped = rest.replace(/^<\/?(brief|reddit_bullets)>\s*$/gm, '').trim();
+  return { brief: stripped, redditBullets };
 }
 
 // The prompt never asks for `---` separators between sections, so whether
@@ -172,6 +178,16 @@ function writeWeeklyBrief(targetDate, weekStart, weekEnd, parsed, { inputTokens,
 
   fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + normalizeSeparators(parsed.brief) + '\n');
   console.log(`  Written: ${filename}`);
+
+  // Sidecar for reddit-weekly.js: expanded Brief bullets meeting Reddit's
+  // 1000-char body minimum. Not a _summary.txt, so build-news.js ignores it.
+  if (parsed.redditBullets) {
+    const redditFilename = `${slug(targetDate)}_ttt_99_weekly_brief_reddit_bullets.txt`;
+    fs.writeFileSync(path.join(NEWS_DIR, redditFilename), parsed.redditBullets + '\n');
+    console.log(`  Written: ${redditFilename}`);
+  } else {
+    console.error('::warning::weekly-summary: model omitted <reddit_bullets> — reddit-weekly.js will fall back to the short Brief bullets, below the 1000-char Reddit body minimum');
+  }
   return filename;
 }
 

@@ -126,6 +126,22 @@ If the week was genuinely quiet, write 2–3 short bullets saying so concretely.
 [Omit this section entirely only if the week was genuinely clean of bear signal. 3–5 items typical.]
 </brief>
 
+After the </brief> block, output a second block:
+
+<reddit_bullets>
+- [Expanded bullet 1.]
+- [Expanded bullet 2.]
+- [...]
+</reddit_bullets>
+
+These are the SAME Brief bullets you wrote above — same items, same order — expanded for a Reddit post that links to the brief. The subreddit requires at least 1,000 characters of body text, so:
+
+- Expand each Brief bullet with one or two of the most compelling specifics from its category write-up (a number, a name, a date, a qualifier).
+- Aim for ~150–190 characters per bullet; the bullets must total 1,050–1,400 characters combined. Count carefully — under 1,050 the post gets rejected, over ~1,500 it stops being a teaser.
+- Same facts only — nothing that is not already in the brief above. No new claims, no links, no hashtags.
+- Punchy newsy tone; em dashes and semicolons are fine here (unlike the Brief bullets).
+- Output ONLY the bullets inside the tags: no heading, no intro, no closing line.
+
 ## Previous Weekly Brief
 
 {{PREVIOUS_BRIEF}}
