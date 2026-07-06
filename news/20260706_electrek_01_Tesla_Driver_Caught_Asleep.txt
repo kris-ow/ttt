@@ -1,0 +1,60 @@
+Source:      electrek
+Title:       Tesla driver caught asleep at 100 km/h — how monitoring failed
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/06/tesla-driver-asleep-monitoring-gap/
+Published:   2026-07-06 14:03 UTC
+Fetched:     2026-07-06 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+A Tesla driver was filmed apparently fast asleep behind the wheel at about 100 km/h on British Columbia’s Trans-Canada Highway on Sunday, with two sleeping children in the car.
+
+The obvious question is how Tesla’s driver monitoring — the very system meant to catch this — let it happen. The answer is that the driver was wearing large sunglasses, and that one detail exposes a real gap in how Tesla watches its drivers.
+
+## What happened on Highway 1
+
+A family travelling between Golden and Revelstoke came across the Tesla on Highway 1 and started recording, according to a Castanet report. The witness, identified as Carleigh, said the driver was “fast asleep” and visibly slumped to the side while the car continued at roughly 100 km/h.
+
+The video was reposted to a regional Facebook group and picked up locally. Carleigh said she called the Revelstoke RCMP, who later told her they had the license plate and would track down the driver.
+
+ 
+ 
+ 
+
+There is an added legal wrinkle. Tesla’s “Full Self-Driving” (Supervised) is available in Canada, but B.C.’s Motor Vehicle Act prohibits operating a Level 3, 4, or 5 automated vehicle on public roads. FSD is a Level 2 system, the driver is legally responsible at all times, so nodding off behind it isn’t just dangerous, it’s illegal in the province regardless.
+
+## Why the monitoring didn’t stop it
+
+Tesla markets driver monitoring as the safeguard that keeps hands-off, eyes-off driving from happening. The system has two layers, and both have known holes.
+
+Since FSD v12.4 in 2024, Tesla’s primary monitor is the cabin camera mounted above the rearview mirror, which tracks a driver’s face and eyes for signs of attention. But Tesla’s own owner’s manual states the vision-based monitoring “will not be activated” when the camera is covered, when lighting is poor, when the driver isn’t looking forward, or when the driver is wearing sunglasses or a hat that covers their eyes.
+
+The driver in the video was wearing large sunglasses. That’s the problem: with the eyes hidden, the camera can’t confirm attention, so the system falls back to the older steering-wheel “nag” — periodic checks for torque on the wheel.
+
+Torque detection is a far weaker safeguard. It doesn’t confirm a driver is awake or looking at the road; it only confirms that some force is being applied to the wheel. A slumped body, a resting arm, or some nagging-defeating on the car’s steering can be enough to satisfy it.
+
+The car appears to be full of accessories, but it’s not clear if there’s a nag-defeating device on the wheel.
+
+Tesla does have a separate Driver Drowsiness Warning that uses the cabin camera to watch for eye closures, blink duration, yawning, and head position. It has the same fatal dependency: it needs to see the eyes. Sunglasses defeat it. In a further irony, a recent Tesla update (2025.32.3) responds to detected drowsiness by suggesting the driver turn on FSD — pushing more automation at exactly the moment a driver is least able to supervise it.
+
+## A system that’s easy to fool
+
+None of this is theoretical. We recently reported that Chinese Tesla drivers are defeating the cabin camera with $30 plastic doll heads mounted near the mirror — the camera sees a forward-facing “face,” classifies it as an alert driver, and lets FSD run unmonitored.
+
+If a cheap plastic head fools the system on purpose, a pair of sunglasses defeating it by accident is entirely consistent. The monitoring is designed to keep honest drivers honest, not to stop a driver determined, or drowsy enough, to check out.
+
+This matters more as the software gets more capable. FSD v14 is genuinely impressive on the road, which is precisely what lulls drivers into over-trusting it. The better the system performs, the more tempting it is to stop paying attention — while the monitoring meant to counter that instinct can be beaten by a $2 accessory from the gas station.
+
+Tesla still classifies the system as Level 2, and has spent the past year in court fighting rulings that it misled customers about its self-driving capabilities. The gap between the marketing and the legal reality is exactly where incidents like this one live.
+
+## Electrek’s Take
+
+As FSD gets better and more people feel overconfident in it, it builds complacency and creates situations like this one.
+
+I maintain that I think it is Tesla’s responsibility to do more to prevent this. 
+
+Its marketing involving “time saved” using FSD and being appropriate for people losing their eyesight contributes to drivers thinking that they can stop paying attention. Meanwhile, as Tesla makes clear every time there’s an accident involving FSD, it will take no responsibility.
+
+You can’t have both. While you can’t prevent dumb people from being dumb, if you put a product like this on the market, you have a responsibility to do everything you can to dumb proof this and not encourage misuse. 
+
+If you’re a Tesla owner, powering your EV with home solar is one of the smartest ways to lock in low fuel costs for the long haul. With electricity rates climbing nearly 10% last year, home solar protects you against future rate increases. And with lease and PPA options, you can go solar with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
