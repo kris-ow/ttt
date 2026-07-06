@@ -118,43 +118,50 @@ function extractCategorySections(body) {
 }
 
 // Post around the /w/<date>/ deep link: URL first (turn it into a card with
-// Reddit's "Link Embed" button), then each category section's FIRST bullet —
-// the top story per category. That reliably clears the sub's 1000-char body
-// minimum with real content while the remaining ~3/4 of the brief stays on
-// the site as the click-through payoff. The Bear Case section is held back
-// entirely and only name-dropped in the closer, as a hook.
+// Reddit's "Link Embed" button), then the Brief's headline bullets verbatim
+// (quick scan → click), topped up with category top-story bullets ONLY until
+// the body clears the sub's 1000-char minimum — it should read as a fast
+// contents list that funnels to the link, not a second copy of the brief
+// (user direction 2026-07-06: ~2000 chars is too long). The Bear Case section
+// is held back entirely and only name-dropped in the closer, as a hook.
+// Char counting excludes the URL line — the safest reading of what the sub
+// counts as "body text".
 function buildLinkPost(body, deepLink) {
   const warnings = [];
-  const sections = extractCategorySections(body);
-  let lines;
-  let closer;
-  if (sections) {
-    const bearSection = sections.find(s => /^bear case/i.test(s.name));
-    const listSections = sections.filter(s => s !== bearSection);
-    lines = listSections.map(s => `- **${s.name}:** ${s.bullets[0].replace(/^- /, '')}`);
-    const extraCount = sections.reduce((n, s) => n + s.bullets.length, 0) - lines.length;
-    closer = `The full brief (link above) covers ${extraCount} more items across these categories${bearSection ? ', plus the Bear Case of the Week' : ''}.`;
+  const briefBullets = extractBriefBullets(body);
+  const sections = extractCategorySections(body) || [];
+  const bearSection = sections.find(s => /^bear case/i.test(s.name));
+  const listSections = sections.filter(s => s !== bearSection);
+
+  const lines = [];
+  if (briefBullets) {
+    lines.push('This week:', '', ...briefBullets);
   } else {
-    warnings.push('extractCategorySections did not apply — no "## <category>" bullet sections found; link-post variant fell back to the short Brief bullets, review before pasting');
-    lines = extractBriefBullets(body) || [];
-    if (lines.length === 0) {
-      warnings.push('extractBriefBullets did not apply either — no "## Brief" bullet section found; link-post variant has no contents list, review before pasting');
-    }
-    closer = null;
+    warnings.push('extractBriefBullets did not apply — no "## Brief" bullet section found; link-post variant has category bullets only, review before pasting');
   }
-  const post = [
-    deepLink,
-    '',
-    'This week, by category:',
-    '',
-    ...lines,
-    ...(closer ? ['', closer] : []),
-    '',
-  ].join('\n');
-  if (post.trim().length < REDDIT_MIN_BODY_CHARS) {
-    warnings.push(`Variant A body is ${post.trim().length} chars — r/teslainvestorsclub requires >=${REDDIT_MIN_BODY_CHARS} when body text is present; pad with more brief content before posting (or post the bare embed)`);
+
+  const itemCount = listSections.reduce((n, s) => n + s.bullets.length, 0);
+  const closer = listSections.length > 0
+    ? `Full brief at the link — ${itemCount} items across ${listSections.length} categories${bearSection ? ', plus the Bear Case of the Week' : ''}.`
+    : null;
+  if (!closer) {
+    warnings.push('extractCategorySections did not apply — no "## <category>" bullet sections found; no detail bullets or closer available, review before pasting');
   }
-  return { post, warnings };
+
+  const assemble = () => [deepLink, '', ...lines, ...(closer ? ['', closer] : []), ''].join('\n');
+  const countable = () => assemble().replace(deepLink, '').trim().length;
+
+  let added = 0;
+  for (const s of listSections) {
+    if (countable() >= REDDIT_MIN_BODY_CHARS) break;
+    if (added === 0) lines.push('', 'A few of the details:', '');
+    lines.push(`- **${s.name}:** ${s.bullets[0].replace(/^- /, '')}`);
+    added++;
+  }
+  if (countable() < REDDIT_MIN_BODY_CHARS) {
+    warnings.push(`Variant A body is ${countable()} chars (excl. link) — r/teslainvestorsclub requires >=${REDDIT_MIN_BODY_CHARS} when body text is present; pad manually before posting (or post the bare embed)`);
+  }
+  return { post: assemble(), warnings };
 }
 
 // ── Output ───────────────────────────────────────────────
@@ -192,7 +199,7 @@ function writeRedditPost(targetDate, title, linkPost, fullPost, sourceFilename, 
     `Generated:   ${now}`,
     `Source:      ${sourceFilename}`,
     `Mode:        deterministic-format (no LLM)`,
-    ...(linkPost ? [`Variant A:   ${linkPost.trim().length} chars (r/teslainvestorsclub minimum: ${REDDIT_MIN_BODY_CHARS} when body text present)`] : []),
+    ...(linkPost ? [`Variant A:   ${linkPost.split('\n').slice(1).join('\n').trim().length} chars excl. link (r/teslainvestorsclub minimum: ${REDDIT_MIN_BODY_CHARS} when body text present)`] : []),
     ...todos.map(t => `>> TODO:     ${t}`),
     ...warnings.map(w => `!! WARNING:  ${w}`),
     '─'.repeat(60),
