@@ -1,0 +1,28 @@
+Channel:     electrek
+Title:       Tesla driver caught asleep at 100 km/h — how monitoring failed
+Published:   2026-07-06 14:03 UTC
+Summarized:  2026-07-06 15:05:36 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01MGCM5vK4fGdTTt32sccvrm
+Cost:        $0.01319 (4903 in / 1657 out tokens)
+Relevance:   core — the article directly examines gaps in Tesla's FSD/driver-monitoring safety systems, which bears on the autonomous driving thesis investors track.
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+An Electrek report describes a viral video showing a Tesla driver apparently asleep at ~100 km/h on B.C.'s Trans-Canada Highway with two children in the car, and uses the incident to explain how the driver's sunglasses defeated Tesla's camera-based driver monitoring.
+
+## Autonomous Driving
+1. **Incident details:** A witness ("Carleigh") filmed a Tesla driver slumped over and apparently asleep on Highway 1 between Golden and Revelstoke, B.C., on a Sunday; she reported it to Revelstoke RCMP, who said they had the license plate and would locate the driver. British Columbia's Motor Vehicle Act bars operating Level 3-5 automated vehicles on public roads, but since FSD is Level 2, the driver remains legally responsible regardless.
+
+2. **How monitoring failed:** Since FSD v12.4 (2024), Tesla's primary driver-attention check is a cabin camera tracking eyes/face; per Tesla's own owner's manual, this vision-based monitoring will not activate if the camera is covered, lighting is poor, the driver isn't facing forward, or the driver wears sunglasses or a hat covering the eyes. The driver in the video wore large sunglasses, so the system reverted to the weaker steering-wheel torque "nag," which only detects force on the wheel, not actual driver alertness. Tesla's separate Driver Drowsiness Warning has the same camera-dependency flaw and, per the article, a recent update (2025.32.3) responds to detected drowsiness by suggesting the driver enable FSD.
+
+3. **Broader pattern of monitoring gaps:** The article references Electrek's prior reporting that Chinese Tesla drivers have defeated the cabin camera using ~$30 plastic doll heads mounted near the mirror, tricking the system into classifying the "driver" as alert. It notes Tesla is still fighting court rulings over allegedly misleading claims about its self-driving capabilities.
+
+## Editorial Stance
+Electrek's Fred Lambert argues Tesla bears responsibility for building complacency through marketing (e.g., "time saved" messaging) while disclaiming liability for FSD-related accidents; he contends Tesla should do more to "dumb proof" the system and prevent misuse rather than relying solely on driver honesty.
+
+Notable quotes and data:
+- Witness described the driver as "fast asleep" while the vehicle traveled roughly 100 km/h.
+- Tesla owner's manual: camera-based monitoring "will not be activated" when driver wears sunglasses/hat covering eyes, camera is obstructed, lighting is poor, or driver isn't facing forward.
+- Reported use of ~$30 plastic doll heads by some Chinese Tesla drivers to spoof the cabin camera.
+- Referenced software update 2025.32.3 reportedly prompts drowsy drivers to activate FSD.
