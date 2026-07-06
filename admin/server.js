@@ -7,7 +7,11 @@ import { isHiddenSummary, loadModeration, relevanceLevel, saveModeration } from 
 
 const app = express();
 app.use(cors());
-app.use(express.json());
+// The review queue PUTs the entire extracted-facts.json array back (~0.5 MB
+// and growing, 855 facts as of 2026-07-06). Express's default 100 KB json
+// limit silently 413'd those saves once the file outgrew it — rejects
+// appeared to work but were never persisted.
+app.use(express.json({ limit: '20mb' }));
 
 const ROOT = path.resolve('..');
 const WATCHLIST = path.join(ROOT, 'scripts/pipeline/watchlist.json');

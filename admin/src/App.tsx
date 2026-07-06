@@ -48,6 +48,7 @@ async function api<T>(path: string, method = 'GET', body?: unknown): Promise<T> 
   const opts: RequestInit = { method, headers: { 'Content-Type': 'application/json' } }
   if (body) opts.body = JSON.stringify(body)
   const res = await fetch(`/api${path}`, opts)
+  if (!res.ok) throw new Error(`${method} /api${path} failed: HTTP ${res.status}`)
   return res.json()
 }
 
@@ -156,7 +157,14 @@ function ReviewQueue() {
     const updated = [...facts]
     updated[idx] = { ...updated[idx], status }
     setFacts(updated)
-    await api('/facts', 'PUT', updated)
+    try {
+      await api('/facts', 'PUT', updated)
+    } catch (e) {
+      // Optimistic update lied — reload the real state so the queue never
+      // shows a decision that wasn't persisted (silent-413 lesson, 2026-07-06).
+      alert(`Save failed — decision NOT persisted, reverting.\n${e instanceof Error ? e.message : e}`)
+      load()
+    }
   }
 
   const filtered = facts.filter(f =>
