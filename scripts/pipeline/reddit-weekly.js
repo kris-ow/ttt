@@ -18,7 +18,9 @@ function findLatestWeeklyBrief() {
   return {
     filename: latest,
     path: path.join(NEWS_DIR, latest),
-    content: fs.readFileSync(path.join(NEWS_DIR, latest), 'utf-8'),
+    // Normalize CRLF: Windows checkouts (core.autocrlf) would otherwise break
+    // the \n-keyed section splits below.
+    content: fs.readFileSync(path.join(NEWS_DIR, latest), 'utf-8').replace(/\r\n/g, '\n'),
   };
 }
 
@@ -84,9 +86,9 @@ function ogCardReminder(briefDate) {
   return `OG card public/og/weekly-${briefDate}.png not in repo yet — before posting Variant A, run "npm run og-images", commit + push the PNG, wait for deploy (else the embed shows the generic site card)`;
 }
 
-// The "## Brief" section bullets — the week's highlights, reused verbatim as
-// the link post's contents list. Returns null on format drift (same loud-
-// warning contract as the transforms above).
+// The "## Brief" section bullets — the week's highlights. Kept as the
+// fallback contents list when category-section parsing fails. Returns null
+// on format drift (same loud-warning contract as the transforms above).
 function extractBriefBullets(body) {
   const m = body.match(/## Brief\s*\n([\s\S]*?)(?:\n---|\n## )/);
   if (!m) return null;
@@ -94,23 +96,64 @@ function extractBriefBullets(body) {
   return bullets.length > 0 ? bullets : null;
 }
 
-// Short post around the /w/<date>/ deep link: URL first (turn it into a card
-// with Reddit's "Link Embed" button), then the Brief bullets as a contents
-// list. Per the interview-post playbook: clean title, body carries the value.
+// r/teslainvestorsclub allows bare link-embed posts, but once a post has body
+// TEXT the sub requires at least 1000 characters (rule discovered on the
+// 2026-07-06 post — the terse Brief bullets landed ~500 chars and were
+// rejected). Bare embeds are allowed but measured weak (07-01 interview test:
+// net-0 votes), so Variant A pads with substance, not filler.
+const REDDIT_MIN_BODY_CHARS = 1000;
+
+// Category sections ("## <name>" + "- " bullets) from the brief body.
+// normalizeSeparators() in weekly-summary.js guarantees one "---" between
+// sections, and each bullet is a single line. Excludes the Brief section.
+function extractCategorySections(body) {
+  const sections = [];
+  for (const chunk of body.split(/\n---\n/)) {
+    const nameMatch = chunk.match(/^## (.+)$/m);
+    if (!nameMatch || nameMatch[1].trim() === 'Brief') continue;
+    const bullets = chunk.split('\n').map(l => l.trim()).filter(l => l.startsWith('- '));
+    if (bullets.length > 0) sections.push({ name: nameMatch[1].trim(), bullets });
+  }
+  return sections.length > 0 ? sections : null;
+}
+
+// Post around the /w/<date>/ deep link: URL first (turn it into a card with
+// Reddit's "Link Embed" button), then each category section's FIRST bullet —
+// the top story per category. That reliably clears the sub's 1000-char body
+// minimum with real content while the remaining ~3/4 of the brief stays on
+// the site as the click-through payoff. The Bear Case section is held back
+// entirely and only name-dropped in the closer, as a hook.
 function buildLinkPost(body, deepLink) {
   const warnings = [];
-  const bullets = extractBriefBullets(body);
-  if (!bullets) {
-    warnings.push('extractBriefBullets did not apply — no "## Brief" bullet section found; link-post variant has no contents list, review before pasting');
+  const sections = extractCategorySections(body);
+  let lines;
+  let closer;
+  if (sections) {
+    const bearSection = sections.find(s => /^bear case/i.test(s.name));
+    const listSections = sections.filter(s => s !== bearSection);
+    lines = listSections.map(s => `- **${s.name}:** ${s.bullets[0].replace(/^- /, '')}`);
+    const extraCount = sections.reduce((n, s) => n + s.bullets.length, 0) - lines.length;
+    closer = `The full brief (link above) covers ${extraCount} more items across these categories${bearSection ? ', plus the Bear Case of the Week' : ''}.`;
+  } else {
+    warnings.push('extractCategorySections did not apply — no "## <category>" bullet sections found; link-post variant fell back to the short Brief bullets, review before pasting');
+    lines = extractBriefBullets(body) || [];
+    if (lines.length === 0) {
+      warnings.push('extractBriefBullets did not apply either — no "## Brief" bullet section found; link-post variant has no contents list, review before pasting');
+    }
+    closer = null;
   }
   const post = [
     deepLink,
     '',
-    'This week:',
+    'This week, by category:',
     '',
-    ...(bullets || []),
+    ...lines,
+    ...(closer ? ['', closer] : []),
     '',
   ].join('\n');
+  if (post.trim().length < REDDIT_MIN_BODY_CHARS) {
+    warnings.push(`Variant A body is ${post.trim().length} chars — r/teslainvestorsclub requires >=${REDDIT_MIN_BODY_CHARS} when body text is present; pad with more brief content before posting (or post the bare embed)`);
+  }
   return { post, warnings };
 }
 
@@ -149,6 +192,7 @@ function writeRedditPost(targetDate, title, linkPost, fullPost, sourceFilename, 
     `Generated:   ${now}`,
     `Source:      ${sourceFilename}`,
     `Mode:        deterministic-format (no LLM)`,
+    ...(linkPost ? [`Variant A:   ${linkPost.trim().length} chars (r/teslainvestorsclub minimum: ${REDDIT_MIN_BODY_CHARS} when body text present)`] : []),
     ...todos.map(t => `>> TODO:     ${t}`),
     ...warnings.map(w => `!! WARNING:  ${w}`),
     '─'.repeat(60),
