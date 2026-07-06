@@ -183,6 +183,14 @@ async function main() {
   const weekEnd = dateAddDays(targetDate, -1);
   console.log(`\n=== Building weekly brief for ${targetDate} (covers ${weekStart} – ${weekEnd}) ===`);
 
+  // Skip if this week's brief was already generated (e.g. Mac Mini dispatched
+  // the workflow at 05:45 and the delayed GitHub cron fires again hours later).
+  const outFile = `${slug(targetDate)}_ttt_99_weekly_brief_summary.txt`;
+  if (fs.existsSync(path.join(NEWS_DIR, outFile)) && !process.argv.includes('--force')) {
+    console.log(`${outFile} already exists — skipping (use --force to regenerate).`);
+    return;
+  }
+
   const dailyBriefs = collectDailyBriefs(weekStart);
   console.log(`Found ${dailyBriefs.length} daily brief(s) for the week`);
 

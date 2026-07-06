@@ -13,6 +13,9 @@ on:
     # Monday-only early slot dedicated to the weekly brief. Off the :00/:15
     # stampede so it actually fires near schedule, instead of the 3–4h delay
     # the 07:15 slot saw on Mondays 2026-05-11/05-18/05-25.
+    # Since 2026-07-06 this is a FALLBACK: the Mac Mini dispatches this workflow
+    # (mode=direct, skip_exec=true) at 05:45 UTC Mondays because Actions cron
+    # still lagged ~4h; weekly-summary.js skips if the week's brief already exists.
     - cron: '45 5 * * 1'
   push:
     # Fire as soon as Mac Mini pushes new transcripts. Bot's own _summary.txt
@@ -32,6 +35,11 @@ on:
         options:
           - batch
           - direct
+      skip_exec:
+        description: 'Skip the executive summary step (used by the Mac Mini Monday weekly-brief dispatch)'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -155,7 +163,7 @@ jobs:
       # time — Actions cron is routinely delayed 3+ hours, which silently skipped the gate previously.
       - name: Build executive summary
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '15 0 * * *' || github.event.schedule == '15 7 * * *'
+        if: (github.event_name == 'workflow_dispatch' && inputs.skip_exec != true) || github.event.schedule == '15 0 * * *' || github.event.schedule == '15 7 * * *'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/pipeline/exec-summary.js
