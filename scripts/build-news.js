@@ -69,12 +69,22 @@ const articles = files.map(filename => {
     }
   }
 
+  const title = (meta.title || filename).replace(/^Sawyer Merritt\s*[—–-]\s*/, '');
+
+  // Official Tesla releases are deep-linkable at /t/<slug>/ (see
+  // build-share-pages.js + src/components/Feed/teslaRoute.ts): slugified
+  // title minus the redundant leading "Tesla", e.g. "2025-impact-report".
+  const slug = channel === 'tesla'
+    ? title.replace(/^Tesla\s+/i, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60)
+    : undefined;
+
   return {
     id: filename.replace('.txt', ''),
     filename,
     date,
     channel,
-    title: (meta.title || filename).replace(/^Sawyer Merritt\s*[—–-]\s*/, ''),
+    title,
+    ...(slug ? { slug } : {}),
     published: meta.published || '',
     sourceType,
     source: meta.source || '',
@@ -104,6 +114,16 @@ for (const article of articles) {
 const uniqueArticles = [...deduped.values()];
 const removed = articles.length - uniqueArticles.length;
 if (removed > 0) console.log(`Deduplicated: removed ${removed} duplicate(s)`);
+
+// Guarantee /t/ slug uniqueness (same release title twice → -2, -3, …).
+// Input order is the filename sort above, so suffixes are deterministic.
+const slugSeen = new Map();
+for (const article of uniqueArticles) {
+  if (!article.slug) continue;
+  const n = (slugSeen.get(article.slug) || 0) + 1;
+  slugSeen.set(article.slug, n);
+  if (n > 1) article.slug = `${article.slug}-${n}`;
+}
 
 // Group by date, with tesla pinned first within each day
 const byDate = {};

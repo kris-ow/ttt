@@ -4,6 +4,8 @@ export interface Article {
   date: string
   channel: string
   title: string
+  // Official Tesla releases only: /t/<slug>/ deep-link key (build-news.js)
+  slug?: string
   published: string
   sourceType: 'x' | 'youtube' | 'article' | 'exec'
   source: string

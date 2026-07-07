@@ -12,6 +12,7 @@ import { MergerOddsCard } from './components/MergerOdds/MergerOddsCard'
 import { InterviewSection, InterviewDetail, type Interview } from './components/Interviews/InterviewSection'
 import { InterviewRouteContext, interviewFromPath, interviewPath, INTERVIEW_PATH_RE, type InterviewLocation } from './components/Interviews/interviewRoute'
 import { weeklyFromPath, weeklyPath, WEEKLY_PATH_RE } from './components/Feed/weeklyRoute'
+import { teslaFromPath, teslaPath, TESLA_PATH_RE } from './components/Feed/teslaRoute'
 
 const data = newsData as NewsData
 
@@ -63,10 +64,13 @@ export default function App() {
   })
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
-  // /w/<date>/ deep link: open the Weekly Brief popup on arrival, same pattern
-  // as the interview deep link above (popup over the default Daily Feed).
+  // /w/<date>/ and /t/<slug>/ deep links: open the Weekly Brief / official
+  // Tesla release popup on arrival, same pattern as the interview deep link
+  // above (popup over the default Daily Feed).
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(() =>
-    typeof window !== 'undefined' ? weeklyFromPath(window.location.pathname) ?? null : null
+    typeof window !== 'undefined'
+      ? weeklyFromPath(window.location.pathname) ?? teslaFromPath(window.location.pathname) ?? null
+      : null
   )
   const [mobileStockTab, setMobileStockTab] = useState<MobileTileTab>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
@@ -101,8 +105,8 @@ export default function App() {
   const handleTabSwitch = useCallback((key: Section) => {
     setActiveSection(key)
     setMountedTabs(prev => prev.has(key) ? prev : new Set([...prev, key]))
-    if (typeof window !== 'undefined' && (window.location.hash || INTERVIEW_PATH_RE.test(window.location.pathname) || WEEKLY_PATH_RE.test(window.location.pathname))) {
-      const basePath = INTERVIEW_PATH_RE.test(window.location.pathname) || WEEKLY_PATH_RE.test(window.location.pathname) ? '/' : window.location.pathname
+    if (typeof window !== 'undefined' && (window.location.hash || INTERVIEW_PATH_RE.test(window.location.pathname) || WEEKLY_PATH_RE.test(window.location.pathname) || TESLA_PATH_RE.test(window.location.pathname))) {
+      const basePath = INTERVIEW_PATH_RE.test(window.location.pathname) || WEEKLY_PATH_RE.test(window.location.pathname) || TESLA_PATH_RE.test(window.location.pathname) ? '/' : window.location.pathname
       history.replaceState(null, '', basePath + window.location.search)
     }
     if (key === 'data') {
@@ -123,12 +127,18 @@ export default function App() {
   }, [])
 
   const handleArticleOpen = useCallback((article: Article) => {
-    // Weekly briefs are deep-linkable: opening one pushes its shareable
-    // /w/<date>/ URL (mirrors openInterview below).
+    // Weekly briefs and official Tesla releases are deep-linkable: opening one
+    // pushes its shareable /w/<date>/ or /t/<slug>/ URL (mirrors openInterview
+    // below).
     if (article.type === 'weekly') {
       const path = weeklyPath(article.date)
       if (window.location.pathname !== path) {
         history.pushState({ ttt: 'weekly' }, '', path)
+      }
+    } else if (article.channel === 'tesla' && article.slug) {
+      const path = teslaPath(article.slug)
+      if (window.location.pathname !== path) {
+        history.pushState({ ttt: 'tesla' }, '', path)
       }
     }
     setSelectedArticle(article)
@@ -141,9 +151,12 @@ export default function App() {
   }, [])
 
   const closeArticle = useCallback(() => {
-    // Weekly briefs own a /w/<date>/ URL entry — unwind it like closeInterview.
-    if (selectedArticle?.type === 'weekly' && WEEKLY_PATH_RE.test(window.location.pathname)) {
-      if (window.history.state?.ttt === 'weekly') {
+    // Weekly briefs / official Tesla releases own a /w/ or /t/ URL entry —
+    // unwind it like closeInterview.
+    const isWeekly = selectedArticle?.type === 'weekly' && WEEKLY_PATH_RE.test(window.location.pathname)
+    const isTesla = selectedArticle?.channel === 'tesla' && TESLA_PATH_RE.test(window.location.pathname)
+    if (isWeekly || isTesla) {
+      if (window.history.state?.ttt === (isWeekly ? 'weekly' : 'tesla')) {
         history.back() // popstate handler clears selectedArticle
         return
       }
@@ -183,14 +196,14 @@ export default function App() {
   }, [])
 
   // Browser back/forward: URL is the source of truth for which interview /
-  // weekly brief is open. Non-weekly articles never push a URL, so they are
-  // deliberately left alone here.
+  // weekly brief / official Tesla release is open. Other articles never push
+  // a URL, so they are deliberately left alone here.
   useEffect(() => {
     const onPop = () => {
       setRouteInterview(interviewFromPath(window.location.pathname) ?? null)
-      const weekly = weeklyFromPath(window.location.pathname)
-      if (weekly) setSelectedArticle(weekly)
-      else setSelectedArticle(prev => (prev?.type === 'weekly' ? null : prev))
+      const routed = weeklyFromPath(window.location.pathname) ?? teslaFromPath(window.location.pathname)
+      if (routed) setSelectedArticle(routed)
+      else setSelectedArticle(prev => (prev?.type === 'weekly' || prev?.channel === 'tesla' ? null : prev))
     }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
@@ -208,6 +221,10 @@ export default function App() {
     if (weekly) {
       track('Weekly Brief Open', { date: weekly.date, location: 'deep-link' })
     }
+    const tesla = teslaFromPath(window.location.pathname)
+    if (tesla) {
+      track('Article Open', { channel: 'tesla', title: tesla.title.slice(0, 80), location: 'deep-link' })
+    }
   }, [])
 
   // Keep the tab title in sync with the open interview / weekly brief. The
@@ -221,7 +238,7 @@ export default function App() {
       document.title = `${name} on ${venue} | The Tesla Thesis`
       return
     }
-    if (selectedArticle?.type === 'weekly') {
+    if (selectedArticle?.type === 'weekly' || selectedArticle?.channel === 'tesla') {
       document.title = `${selectedArticle.title} | The Tesla Thesis`
       return
     }

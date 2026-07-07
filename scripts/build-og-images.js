@@ -4,6 +4,7 @@
 // instead of the generic site card:
 //   /i/<slug>/ → public/og/<slug>.png          (per interview)
 //   /w/<date>/ → public/og/weekly-<date>.png   (per Weekly Tesla Brief)
+//   /t/<slug>/ → public/og/tesla-<slug>.png    (per official Tesla release)
 //
 // Local-only (uses Playwright Chromium) — NOT part of `npm run build`. Run it
 // after adding an interview or when a new weekly brief lands, then commit:
@@ -79,6 +80,7 @@ function cardHtml(bodyHtml, cta) {
   .body > * { max-width: 620px; }
   .tag { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin-bottom: 18px; }
   .tag.interview { color: ${C.amber}; }
+  .tag.tesla { color: ${C.amber}; }
   .tag.weekly { color: ${C.green}; }
   .person { color: ${C.green}; font-size: 76px; font-weight: 700; line-height: 1.05; }
   .brief-title { color: ${C.green}; font-size: 56px; font-weight: 700; line-height: 1.1; }
@@ -135,6 +137,16 @@ function weeklyCardHtml(article) {
     ${sections.length ? `<div class="sections">${esc(sections.join(' · '))}</div>` : ''}`, 'READ THE BRIEF');
 }
 
+function teslaCardHtml(article) {
+  // "Tesla 2025 Impact Report" → drop the leading brand word; the amber tag
+  // already says Tesla and the title space is tight in the crop-safe zone.
+  const title = article.title.replace(/^Tesla\s+/i, '');
+  return cardHtml(`
+    <div class="tag tesla">[TESLA — PRIMARY SOURCE]</div>
+    <div class="brief-title">${esc(title)}</div>
+    <div class="meta">${esc(article.date)}</div>`, 'READ THE SUMMARY');
+}
+
 async function main() {
   const { interviews } = JSON.parse(fs.readFileSync(INTERVIEWS, 'utf-8'));
   const { articles } = JSON.parse(fs.readFileSync(NEWS, 'utf-8'));
@@ -144,6 +156,8 @@ async function main() {
     ...interviews.map(iv => ({ file: `${iv.slug}.png`, html: () => interviewCardHtml(iv) })),
     ...articles.filter(a => a.type === 'weekly')
       .map(a => ({ file: `weekly-${a.date}.png`, html: () => weeklyCardHtml(a) })),
+    ...articles.filter(a => a.channel === 'tesla' && a.slug)
+      .map(a => ({ file: `tesla-${a.slug}.png`, html: () => teslaCardHtml(a) })),
   ];
 
   const todo = cards.filter(c => FORCE || !fs.existsSync(path.join(OUT_DIR, c.file)));
