@@ -1,0 +1,59 @@
+Channel:     munrolive
+Title:       The Most Important Joint on a Humanoid Robot?
+URL:         https://www.youtube.com/watch?v=9zojC7PmCdA
+Published:   2026-07-08 18:00 UTC
+Fetched:     2026-07-08 19:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Now, when you come down to an ankle, if
+we think of our ankles or our wrist, we
+think of these things as being very
+small. They don't take up a whole lot of
+space. So, how do we make an ankle that
+doesn't have the actuator actually built
+in here like we do there? Otherwise,
+we're going to have a big swollen ankle.
+So, the trick is they are using an
+actuation strategy called RSU. That
+stands for rotary spherical universal.
+Explain exactly what that is. It's also
+a similar strategy we see in the Optimus
+robot, but in the Optimus they call it
+an SPU, spherical prismatic universal
+where prismatic basically means you're
+using a linear actuator rather than a
+rotary. So let's break this down. The
+first thing we form the ankle joint with
+this universal joint down there or
+sometimes called a cardon joint. And it
+has basically two pins that are
+concentric that go through each other
+that allow us to do the ankle pitching
+this way and then also the roll that
+way. And you notice we can get more
+movement in the pitch than we do
+actually in that roll. So this tie rod
+goes up to here and it's connected to
+one of these motors. So you'll see you
+have a little lever arm here that when
+you move on that will allow it to go
+back and forth. But you'll notice
+there's a second tie rod there as well.
+And they both have to move at the same
+time and they're each connected to a
+different motor. So if you were normally
+just articulating that way, everything
+stays in a plane and all my joints can
+be pins. The problem is when I do that,
+I can't. And now you have to put in
+what's known as a spherical or him joint
+right in there for that connection. So
+that's not a pin joint, that's actually
+a little sphere. Probably from that
+direction, you can see it a little bit
+better. And not only do you need a
+spherical uh joint right there, you need
+a spherical joint up here [snorts] and
+another one up there. So hence the
+rotary spherical universal.
