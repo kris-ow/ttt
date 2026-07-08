@@ -1,0 +1,21 @@
+Channel:     munrolive
+Title:       The Most Important Joint on a Humanoid Robot?
+Published:   2026-07-08 18:00 UTC
+Summarized:  2026-07-08 19:04:03 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01C5ih6S45W9qijwf3VCoybS
+Cost:        $0.00905 (5778 in / 654 out tokens)
+Relevance:   tangential — This is a generic engineering/mechanical design teardown of humanoid robot ankle actuation, mentioning Optimus only as one comparison point among others without discussing Tesla's business, strategy, or investment thesis.
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This video is a technical teardown segment explaining the "rotary spherical universal" (RSU) actuation mechanism used in a humanoid robot's ankle joint, with a brief comparison to Tesla's Optimus robot, which uses a similar but distinct design.
+
+## Humanoid Bots
+1. **Ankle actuation design explained (RSU vs SPU):** The host describes how humanoid robot ankles avoid housing bulky actuators directly at the joint by using a remote actuation strategy called RSU (rotary spherical universal), which relies on tie rods, motors, and spherical (rod-end) joints to transmit motion from motors mounted elsewhere down to a cardan-style universal joint at the ankle, enabling both pitch and roll movement.
+2. **Comparison to Tesla's Optimus:** The host notes that Optimus uses a related but distinct approach called SPU (spherical prismatic universal), where "prismatic" indicates the use of a linear actuator rather than a rotary one, distinguishing it from the RSU design being demonstrated on the robot under review.
+
+Notable quotes and data:
+- "The trick is they are using an actuation strategy called RSU... rotary spherical universal."
+- "It's also a similar strategy we see in the Optimus robot, but in the Optimus they call it an SPU, spherical prismatic universal, where prismatic basically means you're using a linear actuator rather than a rotary."
+- The ankle joint requires multiple spherical (rod-end) joints in addition to the central universal/cardan joint to allow motion outside a single plane.
