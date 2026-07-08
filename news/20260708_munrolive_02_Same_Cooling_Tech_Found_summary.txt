@@ -1,0 +1,20 @@
+Channel:     munrolive
+Title:       The Same Cooling Tech Found in Laptops
+Published:   2026-07-08 16:00 UTC
+Summarized:  2026-07-08 17:03:40 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01DdHWsDR6ZzFfJeUmeWAU12
+Cost:        $0.00829 (5374 in / 584 out tokens)
+Relevance:   core — the segment is a Munro Live teardown analysis of thermal management engineering inside a Tesla Optimus actuator/joint, which is directly part of the Tesla investment thesis around humanoid robot manufacturing.
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This short clip from Munro Live's teardown coverage examines the cooling system used in a high-duty-cycle joint (described as a knee) on what appears to be a Tesla Optimus actuator, explaining the heat pipe technology used to manage motor heat.
+
+## Humanoid Bots
+1. **Heat pipe cooling used in high-duty-cycle joints:** The analysts identify a heat pipe — a hollow copper component containing a refrigerant — installed in a high-duty-cycle joint (referenced as the knee). When the motor heats up, the refrigerant boils into a gas phase, moves along the pipe, and transfers heat into an adjacent aluminum structure, where it condenses back to liquid.
+2. **Efficient heat transfer with minimal temperature change:** The teardown team notes this phase-change process allows heat to move from the hot motor to the cooler surrounding material with effectively no change in temperature (no delta T), which they describe as a very efficient method of heat transfer — the same principle used in laptop cooling systems.
+
+Notable quotes and data:
+- "It's a heat pipe... inside the copper is hollow. There is a type of refrigerant that when the motor heats up, it boils and it turns into a gas phase and moves up here."
+- "You get heat transfer with no delta T... so you can very efficiently move heat from the hot thing to the cool thing."
