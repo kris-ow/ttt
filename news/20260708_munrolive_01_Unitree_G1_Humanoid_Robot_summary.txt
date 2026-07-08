@@ -1,0 +1,29 @@
+Channel:     munrolive
+Title:       Unitree G1 Humanoid Robot Teardown
+Published:   2026-07-08 14:00 UTC
+Summarized:  2026-07-08 15:03:12 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01PufREMoMbnFh6yHmLgzjeN
+Cost:        $0.02695 (18446 in / 1701 out tokens)
+Relevance:   tangential — This is a detailed engineering teardown of the Unitree G1 humanoid robot (a Tesla competitor's product), with only a brief comparative mention of Optimus's wrist actuator design and no Tesla financial or strategic implications discussed.
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This Munro Live video features Schaeffler engineers and a Munro Associates actuator specialist dissecting a Unitree G1 humanoid robot, examining its actuators, gearing, cooling systems, and structural design choices. The discussion is primarily an engineering deep-dive into a competitor humanoid platform, with Optimus referenced only briefly as a comparison point for wrist joint actuation design.
+
+## Humanoid Bots
+1. **Optimus wrist uses SPU actuation, analogous to G1's ankle RSU design:** Presenters explained that the Unitree G1's ankle uses a "rotary spherical universal" (RSU) actuation strategy — two rotary motors driving tie rods through spherical joints to move the ankle remotely and share torque. They noted Tesla's Optimus uses a similar concept in its wrist, called "SPU" (spherical prismatic universal), which substitutes a linear actuator for the rotary one but relies on the same spherical-joint kinematic principle.
+2. **Schaeffler's vertical integration strategy for humanoid actuators:** A Schaeffler executive (head of humanoids, North America) described the company's push into humanoid robotics, leveraging automotive-derived expertise in controllers, motors, gearboxes, bearings, sensors, and batteries. Schaeffler displayed rotary actuators using strain-wave gearing, quasi-direct-drive planetary designs, and linear actuators using ball screws and planetary roller screws, claiming coverage of "over 50%" of the componentry found in a humanoid robot.
+3. **Cost trajectory expectation for actuators at scale:** A Munro analyst suggested that applying automotive manufacturing approaches (as was done historically with ball screws for electric power steering) could bring humanoid actuator costs down from roughly $1,000 per unit to roughly $100 per unit at scale, citing a robot using around 24 actuators as the reference point.
+4. **G1 design shows heavy CNC-machined (billet) construction over castings:** Analysts observed that most of the G1's aluminum housings are CNC-machined from solid blocks rather than cast, attributing this to a "time to market" priority and the need for design flexibility during early-stage iteration, despite castings being more cost-effective at higher volumes.
+5. **Multiple cooling strategies observed, including heat-pipe technology from CPU cooling:** The teardown revealed the G1 uses anodized housings for passive heat dissipation, centrifugal fan-driven air cooling for hip actuators, and — in high-duty-cycle joints like the knees — a copper heat pipe using phase-change refrigerant, a technique borrowed from CPU/laptop cooling and described as a novel application to motor stators.
+6. **DC bus voltage instability required added capacitor filtering:** Because each of the G1's motors can act as both motor and generator, voltage on the shared DC bus fluctuates; Unitree added filtering capacitors near the actuators to smooth these ripples and improve motor controllability, though analysts noted this was implemented reactively rather than optimally packaged, suggesting future design iteration.
+7. **Trade-offs between strain-wave and planetary-gear actuators:** Panelists contrasted the G1's planetary-gear actuators (back-drivable, ~15:1 ratio per stage, used for agile control but with backlash) against strain-wave designs supplied by Schaeffler (near-zero backlash, high gear ratios around 100:1, lightweight and compact, but not back-drivable and prone to flex-spline damage under high impact).
+
+Notable quotes and data:
+- "There's a lot of value in humanoids that we can capture" — Schaeffler executive on the company's actuator/component portfolio covering over 50% of humanoid content.
+- Strain-wave gear actuators can achieve roughly 100:1 gear ratios; the G1's planetary gear sample shown was about 15:1.
+- Estimated potential actuator cost reduction from roughly $1,000 to roughly $100 per unit if automotive-style manufacturing scale is applied, referencing a robot with ~24 actuators.
+- Roller screw thread grinding time estimated at a few minutes up to 15–20 minutes per part depending on depth and precision required.
+- Optimus wrist actuation described as using an "SPU" (spherical prismatic universal) mechanism, paralleling the G1 ankle's "RSU" (rotary spherical universal) design.
+- Analysts noted the exposed cardan joint and grease in the G1 ankle mechanism would likely degrade quickly in real-world/production use (dust, sand ingress) and is not "ready for prime time."
