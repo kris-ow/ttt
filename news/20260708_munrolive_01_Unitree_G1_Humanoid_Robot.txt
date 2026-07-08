@@ -1,0 +1,1050 @@
+Channel:     munrolive
+Title:       Unitree G1 Humanoid Robot Teardown
+URL:         https://www.youtube.com/watch?v=OXuqGuTgXGU
+Published:   2026-07-08 14:00 UTC
+Fetched:     2026-07-08 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+[music]
+Hello everyone, it's Armen Fchenovski
+with Moon Associate.
+Today we're talking humanoid robotics
+with uh our friends from Sheffller. Al
+Mackey I think humanoid head of
+humanoids at Sheffller. Correct.
+&gt;&gt; In North America.
+&gt;&gt; In North America. Scott Walter old
+friend of the channel. Uh second time on
+uh you are your job description is R2-D2
+at
+&gt;&gt; correct
+&gt;&gt; at Robo Strategy Strategy. And the R2-D2
+comes from robotics research diligence
+director.
+&gt;&gt; How's that? That's That's not a bad job
+title.
+&gt;&gt; And I brought my socks today just to
+prove [laughter] it.
+&gt;&gt; There we little closeup of the socks.
+&gt;&gt; Yes.
+&gt;&gt; There we go.
+&gt;&gt; The R2-D2 socks. There we go. A first on
+Monroe Live, huh? [laughter]
+&gt;&gt; And Professor Paul, um, our actuator,
+&gt;&gt; who's the expert,
+&gt;&gt; not a professor.
+&gt;&gt; We'll call him that.
+&gt;&gt; So, um, yeah, let's, uh, let's begin.
+Maybe Al, uh, you brought another friend
+here.
+&gt;&gt; Sure.
+&gt;&gt; Sam.
+&gt;&gt; Sam. Everyone's dubbing him Sam.
+&gt;&gt; What is going on here?
+&gt;&gt; Uh so uh Sheffller is a I think is a
+known industry and automotive supplier.
+Uh a couple years ago we've decided that
+um with humanoids we see the market need
+because of labor shortage and many other
+reasons and we can use these in our uh
+manufacturing facilities. So uh our
+vertical integration including things we
+do in controllers, motors, gearboxes,
+bearings, sensors, batteries, you name
+it. Uh there's a lot of value in
+humanoids that we can capture. And here
+we have a couple of examples on display.
+It shows some rotary actuators that have
+strain wave actuators at the as the key
+transmission. We've got quasi direct
+drives with planetary gears. Uh some
+linear uh gearboxes and actuators
+including force sensors from ball screws
+to planetary roller screws and then even
+uh even small uh small ball screws. So
+very uh wide portfolio covers over 50%
+of of the content in a in a humanoid but
+we're actively working on optimizing
+these for the humanoid market and making
+sure they scale in a similar way that
+automotive technologies have in the past
+in the past.
+&gt;&gt; Yeah. Very interesting. Right. So you're
+optimizing for cost for function
+capability torque density. Right.
+Exactly. take all your expertise, right?
+All your manufacturing scale and try to
+&gt;&gt; optimize
+&gt;&gt; to make these robots more efficient.
+Right. So,
+&gt;&gt; exactly. And one of the key things is
+there's a lot of iterative development
+that's happening in humanoids right now.
+So, flexibility is needed, but one thing
+is we're making sure we're optimizing
+for performance, but we have our eye on
+scalability and cost and minimal capex
+uh for the future. Yeah. Yeah. Great
+setup.
+&gt;&gt; Some of these actuators that we have are
+based on strain wave gearing. Others are
+based on uh planetary gears. But this
+one specifically, I mean, you can tell
+lightweight is an absolute big problem.
+Thermal uh uh thermal efficiency as
+well. And you can see in terms of what
+Sheffller does internally here, anywhere
+from controllers, so PCBAs,
+gearboxes, in this case it's a hat style
+strain wave gear optimized for back
+drivability. Uh for the humanoid market,
+we have main bearings that are
+crossroller bearings.
+&gt;&gt; Mhm.
+&gt;&gt; As well as an input bearing for uh for
+the strain wave gear. And you can see
+that this actually has an ellipse to
+drive the to generate the wave for the
+strain wave. And then last but not
+least, a torque sensor. And typically
+high gear ratio actuators that to get
+that torque density we're talking about,
+you need torque sensor for the feedback.
+&gt;&gt; So for the viewers that might not be
+familiar with a string wave gear, it's
+actually probably best if you pause the
+video and just
+&gt;&gt; look it up.
+&gt;&gt; Yeah.
+&gt;&gt; Watch [laughter] a YouTube video. So you
+have this internal ellipse.
+&gt;&gt; Yes. that's deforming.
+Uh maybe
+I should be able to to show this.
+&gt;&gt; There are two main contact points that
+it's oblong. So the the inner driver is
+oblong and then you should be able to
+see uh the uh the gear part here is uh
+also taking the same shape and the
+number of teeth on the input is off by
+one compared to the circular spline
+here. And that's what generates the high
+high gear ratio.
+&gt;&gt; So you can get really high gear issues
+with that like 100 to one and higher.
+Right.
+&gt;&gt; With very little mass. Yeah.
+&gt;&gt; And then almost zero backlash.
+&gt;&gt; Almost zero backlash. And one more thing
+to and this is where optimizing for the
+humanoid industry is very different than
+optimizing for traditional robotics.
+Traditional robotics you typically have
+position control. Uh so stiffness is
+really important a lot more important
+than back driving or efficiency for
+humanoids. It's slightly a different
+problem to solve. So we have to adjust
+and do some fancy things with the gear
+geometry and the bearings to reduce
+noise because you don't want that to be
+audible to improve back driving and
+starting torque and improve efficiency
+also.
+&gt;&gt; And then uh some of your actuators also
+use
+gear boxes, right? We have some here.
+This is a much much bigger gear, but
+you'll see this here. It's a very
+typical architecture.
+&gt;&gt; You have uh typically a sungeear and the
+sungeear drives the planets and then the
+output of the first so this is a
+two-stage planetary gear. The output of
+the uh first stage is through the planet
+carrier and then the planet carrier is
+connected to the second sun.
+&gt;&gt; Then the second sun drives the second
+carrier and that's this the output. So
+you have two independent ratios,
+&gt;&gt; correct?
+&gt;&gt; They multiply,
+&gt;&gt; right? And uh so this one in particular
+is about 15 to1, right? So depending on
+what kind of ratio you need for your
+certain actuator, you have different
+options to go with.
+&gt;&gt; And uh so
+&gt;&gt; correct.
+&gt;&gt; What we're showing here specifically is
+from our unit tree tearown.
+&gt;&gt; Mhm. And and typ and typically the
+reason why you see this architecture
+that I so sun to planets to sun to to
+carrier is is to really minimize input
+inertia into the system and that gives
+you a lot more that's what allows one of
+the things that allows for agile control
+too.
+&gt;&gt; Yeah.
+&gt;&gt; Is the low low inertia.
+&gt;&gt; Okay. So, Eric, I don't know if you have
+panned across the table yet, but uh we
+have lots of parts, right? These are
+from a Unitry G1 that we've recently
+dissected here at Monroe. And uh what
+we've been doing earlier, Sheffller and
+Scott and and the Monroe guys went over
+and kind of brainstormed around and
+analyzed how this robot functions,
+right? So, maybe let's start with the
+actuator here since we're on the topic.
+Uh we'll take off the shuffler parts.
+&gt;&gt; And what I think it would be rather
+interesting to kind of compare the two
+here is that yeah the idea of the strain
+wave is you can get a really high gear
+ratio usually like a 100 to one very
+easily and you'll see that's very light
+and also very compact. But one of the
+things about it is that it's not back
+drivable because the gear ratio is so
+high. So we can put the input in and get
+an output but if we try to reverse it
+and turn the output it's very very
+difficult to go in the opposite
+direction. So for for joints like the
+knee or something that could take a high
+impact that could cause the flex plane
+here to break for example under impact
+&gt;&gt; because it's flexible
+&gt;&gt; because yeah and and it's not back
+drivable. So
+&gt;&gt; yeah it's not back drivable. Now you'll
+see that if you actually in the hand
+this feels a lot heavier than this and
+you notice we're going through two
+stages and we're only getting a 15 to1
+where here's we have 100 to one. So that
+really helps with torque density but
+this thing is easily back drivable. So,
+wherever the output is, I can do that or
+I can do the input. That's one of the
+huge advantages. This is typically what
+you would see what they put in what they
+call a QDD, which is a quasi direct
+drive. Um, it's basically just a way of
+saying it's like it's a low enough gear
+ratio that you do not you can measure
+the output torque from basically the
+input current. You don't actually need
+to have a torque cell out here to know
+what it is. And that torque transparency
+makes it a lot easier to control. not so
+easy with the strain wave without
+actually having to put a torque cell on
+there to get an idea what the output is.
+So those are the pros and cons of the
+two is like
+&gt;&gt; cost how light it is volutric
+&gt;&gt; space.
+&gt;&gt; Yeah. However, in this particular
+actuator, right, they are actually
+measuring
+&gt;&gt; uh not so much the torque of the output,
+&gt;&gt; the position to the output because this
+unfortunately has the disadvantage of
+having a little bit extra slop the uh
+&gt;&gt; backlash of the of the gears.
+&gt;&gt; Now, usually the strain waves or the
+harmonic drives are in industrial robots
+because they don't have that backlash
+which means we can control a position
+really really well whereas here we
+can't. And you got two stages. Each
+stage has its own. So that's only going
+to add up,
+&gt;&gt; right? There are strategies to get rid
+of backlash and planetary gears. You can
+split the gear, add a torsion spring,
+you can taper one of the one of the
+gears as well. There's multiple
+strategies you can you can implement.
+But then you add preload and then that
+starting torque really becomes tricky
+for for controls. So usually avoided.
+&gt;&gt; Yeah.
+&gt;&gt; And so that unitry decided to to go this
+direction.
+uh for their actuators and and they have
+the same actuator in different sizes at
+at each joint of the the robot. Um so
+they kind of scale this same technology
+for the hip, the knee, the elbows, the
+shoulders, all the the major joints are
+using this same kind of uh technology
+to planetary gear set. Um this is a
+style of motor that is um relatively low
+cost
+but not as torque dense as some of the
+uh permanent magnet synchronous motors
+that you see in industry. So um there's
+potential for some improvement there.
+Just you can see the amount of space
+there is in there uh where there could
+be copper. So the the winding resistance
+could end could be a little lower if
+they used a different winding
+technology.
+And then heat is a big problem. And so
+if you can reduce the winding
+resistance, you reduce the heat. The
+best way to handle heat is to not make
+it in the first place. It wouldn't be a
+a Monroe live video if we didn't
+complain about the number of fasteners.
+&gt;&gt; Yeah.
+&gt;&gt; They have. And this here again we see
+that for example the the rotor is
+attached with little screws
+&gt;&gt; and uh
+&gt;&gt; so this goes together as this.
+&gt;&gt; They worked really hard to reduce the
+weight of this thing by machining out
+parts and then they go and add little
+fasteners to to bolt it together
+&gt;&gt; which makes the assembly um quick and
+easy. Well, the assembly process
+is not as easy as it could be, but in
+terms of development time, it's it's
+quicker to to design a fastener than it
+is to design a snap fit or or some other
+type of
+method of connecting it. Um, and this is
+replaceable. It's it's repairable.
+So, there's some advantages. And clearly
+what we see all over this this robot was
+time to market was one of the the big
+driving forces in the engineering
+decisions that they made because you
+know you don't take something like this
+and and hog it out of a block of
+aluminum
+unless your plan is get get to market
+fast. You can kind of see the
+&gt;&gt; machining marks on it.
+&gt;&gt; The machining marks where things that
+you would normally expect to be a cast
+part instead are hogged out of solid
+blocks of aluminum
+um using a CNC method. Now, it's CNC is
+less expensive in China than it is
+elsewhere because of the capacity they
+have. But even so,
+if you do this anywhere in the world, a
+at at higher volumes, a casting would be
+much more cost-effective.
+But this allowed them to get the parts
+to get them the thing to market
+&gt;&gt; um much much faster because you don't
+have to wait for do all the development
+on the tooling,
+&gt;&gt; right,
+&gt;&gt; to get it in.
+&gt;&gt; Yeah. And and then also from a
+development perspective too, right?
+They're quickly iterating, making new
+parts, right? So, you're using CNC's.
+You finalize your design and you already
+know how to make it. All right. If it's
+doesn't break the bank or the business
+case completely, let's just keep making
+them like this, right? And and offer
+them to labs and consumer markets,
+right? Get them out in market space. Be
+first mover. And uh yeah, that's how you
+end up with basically all these silver
+components are CNC billet parts, right?
+That's quite striking to see.
+&gt;&gt; If I had to guess, it's like you said,
+time to market and also probably
+maintaining flexibility in the early
+stage of the development because if you
+might if you buy a a bunch of dyes to
+cast all this and you only intend to
+make 5,000 robots of this generation,
+&gt;&gt; might not be might be a necessary evil
+to start with uh with machine parts. And
+then you have a a complete production
+robot that you can start working on the
+software for and you can get the
+software development more mature and
+software is in these probably the the
+biggest lead time item.
+&gt;&gt; Yeah. While we're kind of on structure
+development and we talked about the
+actuators, should we spend a minute on
+the cooling strategies? I thought that
+was
+&gt;&gt; Yeah, they have several that we've
+already talked a little bit about. I'm
+just anodizing the outside of the
+&gt;&gt; the housing
+&gt;&gt; housing
+&gt;&gt; um as a part of it. But, you know,
+they're they are clamping every one of
+these motors in around the outside of
+the
+outside diameter of the motor. And that
+helps transmit heat into the aluminum
+parts and gives them the, you know, a
+little bit more thermal mass for a time
+constant. and uh conductive heat
+transfer. That's one of them. In the CA
+in the one the parts that have really
+high duty cycle like the knees
+um that we see that they put this in um
+this is a heat pipe. So it's a it's
+inside the copper is hollow. There is a
+a type of refrigerant that when the
+motor heats up, it boils and
+turns into a gas phase and moves up
+here. So it's it's clamped up against
+this and then it it transmits the heat
+into the aluminum but when it it
+condenses so it vaporizes here and
+condenses here and so you get heat
+transfer with no delta T. So with no um
+change in temperature.
+&gt;&gt; Y
+&gt;&gt; and so you can very efficiently move
+heat from the hot thing to the cool
+thing.
+Yeah, it's very interesting. The energy
+actually goes into the phase change,
+right? And then you go from the liquid
+to the gas. So that's where your energy,
+your heat goes from the actuator and
+then the gas travels up, condensates,
+goes back one phase and that releases
+the heat here, right? Right. So that
+heats up locally and then that just
+sinks into the aluminum which is
+relatively uh to what you um need to
+transport in terms of thermal energy
+massive and can then easily rad it away
+into the environment. Right. So very
+effective way to transfer heat.
+&gt;&gt; That's the I mean it's the same
+technology we use for cooling CPUs
+&gt;&gt; laptops. Y
+&gt;&gt; yeah. And so I love seeing
+adoption of technology from one one
+industry into another. You I I don't
+know of another case where the
+um the stator of a motor is being cooled
+using a heat pipe.
+&gt;&gt; Yeah, exactly. You only see that on
+CPUs, not on motors,
+&gt;&gt; right? Yeah. What you also see in
+laptops and CPUs, right, is air cooling.
+Everybody's familiar with that, right?
+So for uh the hip actuators here and
+these two specifically that uh move the
+leg forward and backwards, they have two
+fans in the back here right here. Uh
+centrifugal fans and uh they will blow
+air out of this hole into this again
+billet CNC machine parts. So from that
+hole to that hole and [snorts] then
+these heat fin looking structures that
+are machined in they they're air guides
+airflow guides and they guide the
+airflow
+180° along one side of the actuator
+cooling essentially from here to there
+and exits through this hole. There's
+also some diversion of the air that
+blows into the electronics in the front
+here to keep some of that cool. And uh
+so that's a relatively more common
+cooling strategy, just air cooling. This
+is what you hear when you are close up
+to the robot, right? The the the blower
+fan sound.
+&gt;&gt; It's coming in around like this, right?
+Because we can see the vent holes over
+here. So it's then coming up the torso.
+So most of it is coming out here but
+some is getting redirected to go through
+the body essentially and coming out
+these holes
+&gt;&gt; coming out there which means it will
+then kind of come up to here as well
+impinge a little bit.
+&gt;&gt; Um yeah somewhat but essentially it's
+pretty open to the atmosphere around
+this area.
+&gt;&gt; And the other thing is that uh this
+version is just a single axis on the
+tor. So they have another one with these
+what they call these kidney actuators
+where they have two up there along with
+this.
+&gt;&gt; It would be here.
+&gt;&gt; They're there. Uh yeah it would be there
+but they're not there. They're not
+there. Right. So that's the option you
+uh between the different versions of the
+G1.
+&gt;&gt; Yeah. Then Scott, maybe you can talk
+about this. Is this you tell me would
+this function similar to how they're
+actuating the ankle?
+&gt;&gt; Yes.
+&gt;&gt; Maybe you can talk about that for a
+moment.
+&gt;&gt; Yes. So um pretty much I mean the first
+thing to talk about the robots is they
+have joints and joints have to be
+actuated somehow. And what they've done
+is they actually have made the actuators
+and the joints the same thing. So you
+can do a remote actuation strategy where
+you have a hinge joint there and then
+the motor somewhere else and then a tie
+rod. They go ahead and move it or in
+this case the actuator is forming the
+knee joint or it's forming the different
+hip joints. We see it up here in the
+elbow and the shoulder and everywhere
+else. The problem with that is that the
+actuator has to be a hinge as well which
+is why you have those cross roller
+bearings as well. It has to handle a lot
+of that load and trying to figure that
+out. It also gets very bulky and at some
+point you want to make things as compact
+as possible and ideally you don't want
+to have what they call distal mass. Any
+mass that's at the end of your
+structure, it makes it harder to carry.
+The more you want to have as much of it
+as proximal as possible to try to pull
+it up.
+&gt;&gt; Now, when you come down to an ankle, if
+we think of our ankles or wrist, we
+think of these things as being very
+small. They don't take up a whole lot of
+space. So, how do we make an ankle that
+doesn't have the actuator actually built
+in here like we do there? Otherwise,
+you're going to have a big swollen
+ankle. Um, there are some robots like
+the Boston Dynamics Atlas is now trying
+to form them actually out of actuators.
+And you will see it's really big and
+bulky. So, the trick is they are using
+an actuation strategy called RSU. That
+stands for rotary spherical universal.
+Explain exactly what that is. It's also
+a similar strategy we see in the Optimus
+robot, but in the Optimus, they call it
+an SPU, spherical prismatic universal,
+where prismatic basically means you're
+using a linear actuator rather than a
+rotary. So, let's break this down. The
+first thing we form the ankle joint with
+this universal joint down there or
+sometimes called a cardon joint. And it
+has basically two pins that are
+concentric that go through each other
+that allow us to do the ankle pitching
+this way and then also the roll that
+way. And you notice we can get more
+movement in the pitch than we do
+actually in that roll. And you also
+notice that I this degree of freedom is
+locked out. I can't do it. So if you
+look at our own feet, we'll notice we
+can pitch our feet quite a bit that way.
+And we do a little bit of this. And the
+reason we do that is for balance. So
+that if we're we're out like this, we
+want to keep our feet flat to the floor
+and not angle that way. The other thing
+you'll notice is that while we can point
+her toes in any direction, that movement
+does not happen below the knee.
+&gt;&gt; No.
+&gt;&gt; Basically, your knee always points the
+same way. Yeah, we have a little bit of
+compliance that way, but for the most
+part, it's only two degrees of freedom.
+This locks it down. You only have two
+degrees of freedom. Now, how do you
+actuate that? Well, you do it remotely
+with this tie rod. So, this tie rod goes
+up to here and it's connected to one of
+these motors. So, you'll see you have a
+little lever arm here that when you move
+on that will allow it to go back and
+forth. But you'll notice there's a
+second tie rod there as well. And they
+both have to move at the same time. And
+they're each connected to a different
+motor. Now, that means it gives you
+torque sharing. So, that means you have
+two motors that can give you a lot more
+power in that direction, which means,
+hey, I can jump now because I have two
+motors doing that. But there's a little
+bit of movement this way. In order to
+accomplish that movement, you actually
+do differential movement of these tie
+rods. So you'll notice when I did this,
+one goes in the positive direction, one
+goes in the negative direction, and that
+gets kind of split that way. Now, as
+soon as you do this, the tie rod is
+going completely out of the plane. So if
+you were normally just articulating that
+way, everything stays in a plane, and
+all my joints can be pins. The problem
+is when I do that, I can't. And now you
+have to put in what's known as a
+spherical or him joint right in there
+for that connection. So that's not a pin
+joint. That's actually a little sphere.
+Probably from that direction you can see
+it a little bit better. And not only do
+you need a spherical uh joint right
+there, you need a spherical joint up
+here and another one up there. So hence
+the rotary spherical universal. That's
+where that comes from.
+&gt;&gt; There we go.
+&gt;&gt; Yeah,
+&gt;&gt; that makes sense.
+&gt;&gt; Yes. Now the danger of this is because
+it's a parallel mechanism, the basically
+the torque transparency is a little bit
+tricky. So normally we want to be able
+to read the motor torque so we can
+figure out from our RL policy how to
+walk. And if we really don't know what's
+happening down here, we're at bit of a
+loss. We don't want to put sensors down
+there. And because it's being shared,
+it's really hard to kind of split the
+two um signals out on what's actually
+coming from pitch resistance and what's
+coming from rolling resistance. So now
+you're seeing some designs that are
+trying to change that up. However, this
+RSU strategy you will also see in the
+Optimus wrist except it's using it with
+this the um uh linear. So that's it's an
+SPU and they also took the same thing
+and then built it right into here.
+&gt;&gt; Y
+&gt;&gt; now you have other strategies. You'll
+notice what's interesting. They
+articulate it from the front of the
+foot. You will see some robots where
+they say, "Well, rather than have them
+come down here, why not have the control
+rods come to the back?" I guess that's
+just a choice and where you want it to
+be. Um, you have another option is that
+you could take these motors and make
+them go 90 degrees this way because
+you'll notice both tie rods, if we take
+this thing off, we will see where they
+connect up there, they can get in each
+other's way depending upon where you are
+in the workspace. So, you have to pick
+and choose where you um attach them onto
+your motors so that you have the most
+movement. And the other problem, of
+course, you have is that your lever arm
+keeps changing and you can get down to a
+point of kind of a deadlock. So, pros
+and cons of being able to do it, but the
+main thing that motor mass goes from
+here up to there,
+&gt;&gt; move it up. And the other thing that
+scares me a little bit with this, this
+is I mean know the use case of this, is
+not used in production. You know, it's
+maybe lab work and that type of stuff.
+But you see this open cardon uh joint
+and the grease. If this worked for a
+long time in your living room sweeping
+dust and vacuuming or in a production
+setting, that's going to dry out, get
+sand in it, and uh
+&gt;&gt; the joint won't like that, right? So,
+&gt;&gt; um definitely not ready for prime time
+working in a production. The way it's I
+guess automotive, you would see, you
+know, the boot over this kind of like
+you see on a CV joint.
+&gt;&gt; Yes.
+&gt;&gt; Right. That that type of
+&gt;&gt; definitely do that. Yeah. Now, this is
+rather interesting. Yeah, with this uh
+we see this both here and up higher on
+the joint is a circuit board with a
+bunch of capacitors on it. And so this
+is connected to the DC line uh we call a
+DC bus that feeds all of the motors and
+all of the motors are kind of fed as a
+daisy chain back up to the battery. And
+since every motor
+can be both a motor and a generator,
+you end up with the the energy coming
+from the battery.
+You'd like it to be a nice constant
+voltage, but every time this thing
+generates a little bit,
+&gt;&gt; see the green light, right? It's
+generating
+&gt;&gt; Yeah. energy
+&gt;&gt; just by moving the the motor generates a
+little bit voltage. So the the DC
+voltage with all these motors in the
+string and motor each one doing its own
+thing sometimes motoring and sometimes
+generating your DC voltage is all over
+the place and you need to be able to
+control these things and your the torque
+you get from the motor depends on the
+voltage and so if the voltage is going
+all over the place it's really difficult
+to control precisely
+uh what each motor is doing and so they
+put in these capacitors along uh on the
+line to store some of the energy and
+help flatten out some smooth out the
+ripples. Um, these are performing a
+filtering capacity uh smooth out the
+ripples in the voltage waveform on the
+DC bus and makes all of the motors much
+more controllable.
+The way that they did it is they sort of
+packaged it in the locations where they
+fit.
+And so they're running extra cables and
+connectors to these things.
+It'll be interesting to see how Unitry
+does things on their next generation and
+if they are packaging these things in
+more optimal locations. Again, time to
+market, get it in in in production,
+start running it, run into the problems,
+and fix them
+&gt;&gt; and then feed that back into your next
+generation. That seems to be the the
+philosophy behind the design.
+&gt;&gt; And this and
+&gt;&gt; that fits right in. So
+&gt;&gt; it does. Yeah.
+&gt;&gt; Yeah. It's interesting how they package
+this, right?
+&gt;&gt; Yeah.
+&gt;&gt; So the the capacitors they go into the
+lightweing features, right? So you kind
+of have to push it back in.
+&gt;&gt; The capacitors get warm.
+&gt;&gt; They Yes. They they are both uh they're
+storing energy and they have a little
+bit of energy dissipation. So there's a
+little bit of heat that's that's
+produced and keeping them cool. The
+capacitors have a very narrow operating
+range that they like to be in and so
+keeping them cool is necessary.
+&gt;&gt; So that means it'll be conducted away.
+Yeah. They can wick it away from
+&gt;&gt; and and of course you know you you are
+trusting the fact that uh you're you're
+going to have some rest periods and some
+heavy work periods. And so the temp
+you're not going to have continuous high
+level of operation. uh so the capacitors
+have time to dissipate the heat and so
+again this kind of thing means that you
+you need to kind of build a virtual
+model in the computer of your whole
+system. So you need to work with a
+company that is able to
+um deliver create before they deliver
+the heart the hardware they will deliver
+to you the kind of virtual hardware that
+you can put into your model and then run
+the model and experience the model will
+show this this DC bus instability and
+how much then you'll be able to design
+how much capacitance you need to absorb
+it.
+Yeah, 100%. May quick comment. I mean
+the whole SIM to real gap is a big topic
+and delivering like we have the
+responsibility to deliver good digital
+assets of the gear train of the
+controller etc etc to enable these OEMs
+to do the simulations that you're saying
+and really do worthwhile or meaningful
+uh optimization before they even have
+their hands with the with hardware
+basically. Yeah, that's that's the key
+that otherwise um you're forced into
+&gt;&gt; hardware [clears throat] iteration which
+can take months instead of days.
+&gt;&gt; It's interesting with this unitry that
+you only see rotary actuators,
+&gt;&gt; right? So because a lot of companies are
+using as you know right you provide both
+rotary and linear actuators but um
+there's advantages for each
+&gt;&gt; um actually maybe with that uh can you
+talk compare and contrast some of the
+advantages and disadvantages of the
+different actuation strategies? Yeah,
+absolutely. I mean, um, yeah, this is a
+very interesting topic. Even, okay, even
+within rotary, you see there's strain
+wave gears and you see there's planetary
+gears. Even within linear, you see
+there's ball screw and planetary roller
+screws.
+&gt;&gt; Mhm.
+&gt;&gt; Even further within planetary roller
+screws, there are inverted and
+non-inverted planetary roller screws,
+right? So, uh, I give you a quick
+example. Um, if packaging is really
+really tight and the stroke that you
+have to actuate uh isn't excessive, you
+can use something uh like this uh with
+an inverted style either ball screw or
+planetary roller screw. Uh what inverted
+means is it means you uh rotate the nut,
+you have an anti-rotation feature and
+the spindle translates. Uh the benefit
+here is packaging because you uh glue
+the magnets directly on the on the nut
+of the inverted screw and then Yeah,
+exactly. That's that's the actuator
+configuration. We can we can pull that
+as well.
+&gt;&gt; Um but then then there's the other
+aspect is that normally
+&gt;&gt; Yeah.
+&gt;&gt; Oh no, that's ball screw. That's the
+ball. We have a roller screw down down
+there.
+&gt;&gt; Yeah, that one roller screw right here.
+What's interesting the roller screw is
+that you're talking about inverted is
+now the thread's on the inside rather
+than the outside. So if I'm putting a
+thread on the outside, that's really
+easy
+&gt;&gt; to manufacture.
+&gt;&gt; How do you put the thread on the inside,
+right?
+&gt;&gt; Well, you can for like the first couple
+millimeters and then as you start
+getting deeper and deeper, it gets
+really hard.
+&gt;&gt; Yeah, you have to you have to come in
+with a grinding uh wheel and do this all
+all the way.
+&gt;&gt; And how long does it take just to make
+that?
+&gt;&gt; Uh that's a great question. It depends
+on how good you are with design and
+grinding and how deep the the the depth
+is. So anywhere between from what I've
+seen anywhere between a few minutes to
+15 minutes per part to 20 minutes.
+&gt;&gt; It's a lot of processing time. That's
+cost.
+&gt;&gt; And then you got this piece here which
+is where we actually have the planetary
+roller screws.
+&gt;&gt; Think of ball screws and automotive for
+EPS for steering. Everything started as
+ball screws are these ground precision
+industry parts. Then automotive was
+interested in EPS. So now you see ways
+to roll the spindle, you optimize the
+grinding for the nut. Those exact same
+approaches have to be applied here as
+well to get to get the cost down. So
+that's
+&gt;&gt; yeah, I'm excited about seeing that
+happen because we're looking at, you
+know, thousand actuators right now
+&gt;&gt; and you have 24 of them in something
+like this. uh
+when we start applying that kind of
+automotive technology,
+then that likely is going to go from
+$1,000 per actuator to $100 per actuator
+on that scale as and because that's what
+we saw happen in in the automotive
+industry.
+&gt;&gt; And so I'm excited to see that kind of
+thing happen here. And it might not be
+applying automotive technologies
+necessarily, but the automotive approach
+to scale. Um, it might be different
+products, different level of precision
+that we eventually might need, but then
+approaching it with that same, you know,
+mentality for scale is is really
+important. Yes.
+&gt;&gt; Mhm.
+&gt;&gt; Absolutely. But back to the quickly to
+the different. So roller screws are
+really good for getting you a big uh uh
+packing a lot of punch and as compact of
+a pos of a package as possible. Uh ball
+screws give you some more efficiency. So
+it depends on the application which
+which way you go. And then typical uh
+non-inverted roller screws. This is
+where you have a very big stroke and
+this is where you spin the spindle and
+the nut translates. So it's the other
+way around. If you have a long stroke uh
+that you need to actuate, typically you
+end up going with a a traditional roller
+screw.
+&gt;&gt; Yeah. And so one thing that we discussed
+earlier that caught my eye is how you
+approach
+&gt;&gt; force sensing in these linear actuators,
+right? So
+&gt;&gt; often times you'd see
+&gt;&gt; strain gauge or you know PZO based
+approaches.
+&gt;&gt; You've looked to uh other technologies.
+What do you have there?
+&gt;&gt; Yeah. And I mean this is where our
+background in automotive helps. We uh we
+have these MEMS elements for pressure
+sensing and in diesel applications today
+uh lines that are optimized for millions
+of pieces a year. Uh but it's a pressure
+sensor but the concept is the same.
+Instead of dealing with pressure, you're
+dealing with a diaphragm and a force uh
+implemented the exact same way as you do
+for high volume production. And then
+that brings the cost significantly down
+from a typical load cell in an industry
+application to a commoditized uh
+pressure or force or torque sensor even.
+&gt;&gt; Yeah. So this might be multiple times
+less costly than other solutions.
+&gt;&gt; Exactly. But this is exactly the
+approach to take on every last component
+in the humanoid. So
+&gt;&gt; okay.
+&gt;&gt; Yeah. And Armen, I think maybe just to
+go ahead and wrap up, why did you choose
+rotary versus linear? Yeah.
+&gt;&gt; Now, if you look at it at the human
+body, everything we have is basically a
+rotary joint. Unless you're ET, you
+don't have anything that's translational
+at all. Okay? So, when you So, when you
+want to build it, you're saying, "Well,
+wait a minute. Since everything's
+rotary, why not just go ahead and put a
+rotary motor there?" Um, because if you
+are going to do linear, you're basically
+taking linear motion, trying to figure
+out how to turn it into rotational
+motion. And it gets even sillier because
+think about these linear actuators start
+out with something that rotates to try
+to create something which is a
+translation to now do it. Why would you
+then go ahead and do it? And a lot of it
+comes down to sort of the the strength
+to weight ratio you want to have. There
+are some things like maybe down in your
+knee where you need a lot of force on
+that load or in your elbow. The other
+thing is it just packages really well. I
+mean it's like I can fit a linear
+actuator in my forearm much better than
+I can put a really big rotary motor
+right here. So, a lot of it comes down
+to actuation strategies, packaging
+strategies, the amount of strength you
+want to have, and the cost you're
+willing to bear. The others that we've
+talked about is that if you put the
+actuator right here, it has to carry the
+load. So, maybe down at your knee, you
+want to put a hinge joint there. So,
+it's taking all of that load, the cross
+load, and then all your actuator has to
+do is apply a forward load and doesn't
+have to worry about anything that's off
+axis.
+&gt;&gt; So, these these are engineering
+decisions.
+&gt;&gt; Yeah. Um maybe to wrap up there's few
+engineering exercises as complex and
+multid-disciplinary as humanoids right
+so it's a very interesting space to
+watch that uh is really taken off now
+and uh after going through this uh it's
+very inspiring very interesting and uh
+it certainly seems like we're in for a
+lot of entrance uh into the space right
+so it'll be interesting to watch
+&gt;&gt; absolutely
+&gt;&gt; and then I think we see a really good
+example here of thinking about that. See
+the elbow joint there? That's a cantal
+lever, which means you have to design
+this to be able to take that loading
+without failing. But up here on the
+shoulder where they say, "Hey, you're
+taking even more of a load." You notice
+they've got kind of a Yolk there to be
+able to do it by pinning it on both
+sides.
+&gt;&gt; They didn't put it on this side here
+because probably adds mass. But again,
+you have to decide, is it going to be
+able to handle that? Are my cross bear
+cross bearings going to be able to
+handle that? Yeah, I know you have side
+forces on it, right?
+&gt;&gt; Oh, a lot. Absolutely. I mean, that's
+basically, you know, your ACL tear is
+because your knee decided to do
+something it's not supposed to do.
+&gt;&gt; Okay.
+Anything else? Any last comments?
+&gt;&gt; This is great.
+&gt;&gt; No. Okay.
+&gt;&gt; All right. Uh, with that, I think we'll
+wrap up. We'll call this a video and,
+uh, please tune back in. We'll have more
+of these. Uh, there's actually Dexter's
+hand torn down behind us. Uh, but we'll
+keep that for another video. Um, all
+right. Al, thank you.
+&gt;&gt; Scott, thanks. And Paul, right,
+&gt;&gt; so take care, guys.
