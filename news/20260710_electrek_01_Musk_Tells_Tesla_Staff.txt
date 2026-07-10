@@ -1,0 +1,46 @@
+Source:      electrek
+Title:       Musk tells Tesla staff to switch to Grok — a model he admits is worse
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/10/musk-tells-tesla-staff-switch-grok/
+Published:   2026-07-10 21:14 UTC
+Fetched:     2026-07-10 22:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Elon Musk told Tesla staff to move to using Grok, the AI model from his own xAI (now folded into SpaceX), according to a memo sent to employees on Friday.
+
+The push comes days after Tesla capped employee spending on third-party AI tools — and it lands even though Musk himself concedes Grok is not as good as its rivals.
+
+## What the memo says
+
+Musk told staff they should switch to Grok “when possible” given Grok 4.5’s lower token costs compared to competitors, according to the memo, first reported by The Information. He also asked engineers to email him directly with feedback on the model.
+
+The directive follows Tesla setting a $200 weekly limit on employees’ AI spending earlier this week. That cap applies to models from Anthropic, OpenAI, and Google — but pointedly exempts xAI’s Grok, the tool Musk is now telling staff to adopt.
+
+ 
+ 
+ 
+
+Tesla has been testing beta versions of Grok internally for months, and xAI product lead Andrew Milich has been working with Tesla staff to troubleshoot issues. Despite that effort, four people familiar with internal usage previously said that Tesla engineers broadly prefer Anthropic’s Claude for day-to-day development work.
+
+## Grok 4.5 ranks below OpenAI, Anthropic, and Google
+
+xAI released Grok 4.5 on Wednesday, jointly with Cursor, the coding startup SpaceX is acquiring in a deal valuing it at $60 billion. Musk pitched the model as “Opus-class.”
+
+The benchmark data tells a more modest story. On an aggregate multi-domain leaderboard, Grok 4.5 lands 9th overall at 76.3, behind multiple models from OpenAI (GPT-5.6 Sol, GPT-5.5, GPT-5.6 Terra, GPT-5.4), Anthropic (Claude Fable 5, Claude 4.8 Opus, Claude 4.7 Opus), and Google (Gemini 3.1 Pro). Its coding score of 68.6 is the lowest of any model on the board.
+
+The pattern repeats elsewhere. On LiveBench, the Grok family only just reached the bottom of the top tier — the same spot occupied by open Chinese models that cost a fraction of the price. On the neutral DeepSWE 1.1 coding benchmark, which measures resolving real GitHub issues, Grok 4.5 scored 53% versus 70% for Claude Fable 5.
+
+There was also a benchmark problem at launch. Cursor disclosed, in a footnote, that an earlier snapshot of its own codebase was accidentally included in Grok 4.5’s training data — the very codebase its in-house benchmark tests against. That metric was excluded from the published comparison and the data removed for future models, but it inflated one of Grok’s headline coding scores.
+
+Musk didn’t dispute the gap. “In fairness, Fable is definitely better than Grok 4.5, but most tasks don’t require Fable-level capability,” he wrote on X. Grok 4.5’s advantage is price: it runs at roughly $0.13 per task on the leaderboard above, versus $1.57 for Claude Fable 5.
+
+## Electrek’s Take
+
+Let’s be clear about what’s happening here. Tesla is not SpaceX, and it is not xAI, or SpaceXAI, or whatever Elon is calling his AI company this month. Tesla is a publicly traded company with its own shareholders and its own engineers. Those engineers shouldn’t have their tools capped and then be steered onto a worse product simply because their CEO happens to own the company that makes it. That’s the definition of self-dealing, and the $200 cap that conveniently exempts Grok makes the intent hard to miss.
+
+Now, I do get the underlying goal. AI coding tools are expensive, and reining in spending is reasonable. Grok 4.5 is genuinely cheaper. But it’s cheaper because it’s worse — that’s not a knock, it’s the trade-off Musk himself just described. The problem is he’s not letting engineers make that trade-off on the merits. He’s mandating it, because when Tesla staff were left to choose, they kept picking Claude.
+
+And if cost is really the concern, there’s a better answer than forcing everyone onto Grok: self-host. The open-weight field now delivers something like 90-95% of frontier capability at a fraction of the cost, and models like DeepSeek-V4 and GLM-5.2 are right there for the taking. Run them on hardware you already control and your marginal cost is power and amortized compute — no per-token bill to anyone, including your CEO’s other company. That would actually solve the spending problem. Telling engineers to use the boss’s underperforming model doesn’t — it just moves the money to a different Musk entity.
+
+If you’re managing rising energy costs at home the way Tesla is trying to manage its AI bill, home solar is one of the smartest ways to lock in low, predictable costs. With electricity rates climbing nearly 10% last year, home solar protects you against future rate increases. And with lease and PPA options, you can go solar with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
