@@ -1,0 +1,30 @@
+Channel:     electrek
+Title:       Musk tells Tesla staff to switch to Grok — a model he admits is worse
+Published:   2026-07-10 21:14 UTC
+Summarized:  2026-07-10 22:02:10 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01HC3Cb1aVkWLQ41V48faAWY
+Cost:        $0.01440 (4838 in / 1913 out tokens)
+Relevance:   tangential — the article is about xAI's Grok model and internal Tesla AI tool policy, with only a thin governance/self-dealing angle relevant to Tesla investors, and no impact on Tesla's core autonomy, vehicle, or energy business.
+Categories:  Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+Electrek reports that Elon Musk directed Tesla staff via memo to switch to xAI's Grok model "when possible" for cost reasons, days after Tesla capped employee spending on third-party AI tools — a cap that exempts Grok while applying to Anthropic, OpenAI, and Google models.
+
+## Market & Competition
+1. **Musk pushes Grok despite acknowledging it's inferior:** According to a memo first reported by The Information, Musk told Tesla staff to use Grok given Grok 4.5's lower token costs versus rivals, and asked engineers to email him feedback directly. Four people familiar with internal usage said Tesla engineers broadly prefer Anthropic's Claude for day-to-day development, despite months of internal Grok beta testing supported by xAI product lead Andrew Milich.
+
+2. **Tesla's new $200 weekly AI spending cap exempts Grok:** Tesla set a $200 weekly limit on employee AI tool spending this week, applying to Anthropic, OpenAI, and Google models but not xAI's Grok.
+
+3. **Grok 4.5 benchmarks below competitors:** Grok 4.5, released Wednesday jointly with Cursor (a coding startup SpaceX is acquiring in a deal valuing it at $60 billion), ranked 9th overall (76.3) on an aggregate multi-domain leaderboard, behind multiple OpenAI, Anthropic, and Google models, with the lowest coding score (68.6) on the board. On DeepSWE 1.1, it scored 53% versus 70% for Claude Fable 5. Cursor disclosed a footnote that an earlier snapshot of its own benchmark codebase was accidentally included in Grok 4.5's training data, inflating one headline coding score before being excluded from published comparisons.
+
+4. **Musk on price-performance tradeoff:** Musk wrote on X, "In fairness, Fable is definitely better than Grok 4.5, but most tasks don't require Fable-level capability." Grok 4.5 runs at roughly $0.13 per task on the referenced leaderboard versus $1.57 for Claude Fable 5.
+
+## Editorial Stance
+Fred Lambert argues Musk is engaging in self-dealing by capping Tesla engineers' AI tool spending while exempting his own company's inferior product, noting Tesla engineers preferred Claude when given free choice; he suggests self-hosting open-weight models would better solve Tesla's cost problem without funneling money to another Musk entity.
+
+Notable quotes and data:
+- "In fairness, Fable is definitely better than Grok 4.5, but most tasks don't require Fable-level capability." — Elon Musk on X
+- Tesla's AI spending cap: $200/week, applies to Anthropic, OpenAI, Google; exempts xAI's Grok
+- Grok 4.5 ranked 9th overall (76.3) on aggregate leaderboard; lowest coding score (68.6) among listed models
+- Grok 4.5 cost per task: ~$0.13 vs. Claude Fable 5's $1.57
