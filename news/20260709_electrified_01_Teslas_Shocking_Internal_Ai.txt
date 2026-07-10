@@ -1,0 +1,738 @@
+Channel:     electrified
+Title:       Tesla's Shocking Internal AI Use / Elon & SpaceXAI Have Officially Arrived ⚡️
+URL:         https://www.youtube.com/watch?v=e8CW4_yU5Ko
+Published:   2026-07-09 23:44 UTC
+Fetched:     2026-07-10 00:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome to Electrified. It's your host,
+Dylan Lumis. Before I jump into it
+today, I just wanted to put it out
+there. If any of you guys are feeling
+overwhelmed with how fast things are
+moving in the AI world, all of these new
+models and the new tools paired with all
+of the chatter about job loss or not,
+and all the different investment angles,
+I just want to say you're not alone. I
+am right there with you. I'm still
+working through how to handle all this.
+As somebody that really likes to try to
+understand things and stay at the
+forefront right now, given the pace of
+everything, that really is impossible.
+Don't let yourself give in to FOMO. All
+of these new models might be a little
+bit better here and there, but at the
+end of the day, is it really going to
+alter your life if you use one model or
+the other? The answer is no. Enjoy the
+process. Learn what you can. I'll do my
+best to play a very small role in that.
+And yeah, ultimately I just wanted to be
+a voice that tells you if you're having
+those moments of overwhelm, like you
+can't keep up, you are certainly not
+alone. Maybe I should start a group like
+AI Addicts Anonymous or something like
+that. The AYA we can call it. All right,
+that's enough. Let's get into it. If you
+missed it, Tesla is now limiting its AI
+token spend companywide to $200 per week
+per engineer. However, there's some very
+important context I want to add to the
+conversation. You also need to know
+we're not that far removed from the
+token maxing era where people like
+Jensen Hang were in interviews saying
+they want all of their engineers to
+basically spend as much as they can
+spinning up different agents doing a
+bunch of autonomous work with a whole
+lot of sub aents and really maximizing
+the token use per employee. But as is
+often the case, the pendulum seemingly
+swung too far that way and now it's
+swinging back. A lot of people on the
+engineering side, software engineers in
+particular, were spending upwards of
+like several thousand dollar a week um
+on AI tokens. So definitely cutting
+back. It's also a larger trend in the
+industry.
+&gt;&gt; $200 per week now. What was the cap
+before? Was there one?
+&gt;&gt; There wasn't a cap from my
+understanding. Um it was kind of a
+free-for-all. There's this leaderboard
+um where people could see like token
+usage. You could even see who the top
+token users were in your department. Um,
+and in that way I think they were kind
+of encouraging people to use more
+tokens. Um, that leaderboard is still
+accessible to employees and I think it's
+kind of having the reverse effect now of
+like maybe a board of shame or you know
+maybe there's this idea that like okay
+here is how much I'm costing the company
+and you know what ways can I cut back?
+But Tesla's also allowed employees you
+know and some exemptions. Um, so you
+know they can get more than that $200 a
+week. Um, but it has to be approved by
+higherups. So this way I think it gives
+Tesla a little bit more control. A
+unique thing about working at Tesla is
+because you're so connected to Elon
+Musk's other companies, people at Tesla
+get to beta test early versions of Grock
+products. Earlier this year, they were
+testing Grock Build, which is like this
+larger developer platform. Um, they're
+still testing different Grock products
+um and actually working directly with
+XAI's product lead, Andrew Militch, who
+is talking to people, you know, at
+Tesla, getting feedback, even
+troubleshooting issues. So, with Grock
+beta versions of products, those are
+free. So, they're not included in that
+um $200 limit. Tesla engineers, from who
+the ones I've talked to at least, are
+not big Grock fans, and it seems like,
+you know, Claude Code and Codeex are
+kind of the more popular products. We
+saw that like Elon Musk has actually
+been emailing uh sending companywide
+emails about like AI agents. He sent
+them a link about how to use AI agents.
+He's he sent them a link kind of
+encouraging them to use Composer, which
+is Cursor's coding model. And you know,
+as we know, Curser and XAI, um, you
+know, Curser is joining SpaceX. So, he's
+definitely been like encouraging AI use.
+&gt;&gt; Frankly, I was a bit surprised to learn
+that Tesla didn't have AI spending caps
+earlier given what we know about Tesla's
+capital controls. But that Lars
+interview on Brighter with Herbert was
+perfect timing because he explained
+exactly how Tesla is using AI
+internally. He said, "For a long time
+now, Tesla's software engineers have
+been using AI to build the base layer of
+code so they can focus on the harder
+problems. For this, Lars laid out four
+different categories. For one, just
+think about lessons learned. So, anytime
+Tesla had a battery pack failure or a
+problem with an inverter or anything.
+Previously, an employee would have to go
+track down an engineer who knew what
+happened and get the information. But
+now Tesla has consolidated all of those
+errors and issues into a database that
+they have an agent for. So now Tesla
+engineers can just search in this
+database and get any piece of
+information they need. And importantly,
+Lars said this was not just for Tesla
+employees, but it helps their supply
+chain teams as well. The second category
+was spotting anomalies or certain trends
+with equipment machining. So, we've
+known Tesla has plenty of leaderboards
+throughout the factories that tracks
+things like KPIs, KPCs, key product
+characteristics, and so on. So, Tesla's
+been tracking the big data with software
+now, once again, for some time. But now,
+Tesla has new AI tools that really
+refine this tracking and these
+leaderboards that help to spot much more
+subtle issues where certain numbers
+might start to slowly drift. So Tesla's
+leaderboards and all of the key
+indicators are now much more refined.
+The third area Lars highlighted was
+Tesla is now linking different systems
+together. Now for some time different
+systems have been communicating with
+each other but they have not been
+reasoning with each other. But now these
+systems across departments are now
+thinking with each other. So if there's
+a downstream issue that can
+automatically trigger an upstream
+correction. So rather than just sharing
+data across the company, it's now
+thinking about what this data actually
+means and what corrective actions need
+to be taken. And of course, doing that
+is going to help Tesla spot errors or
+defects much earlier in the process,
+saving the company money and time. One
+example Lars gave, at the end of the
+line, every single vehicle is now
+scanned and that data is automatically
+sent back to the stamping team and
+they're notified immediately if they
+need to adjust anything. And number four
+was once again on the lessons learned
+theme, but it was for service. For
+example, back in the day, let's say a
+service tech in Canada fixed a problem
+or found an issue and they would
+document it locally, which was great for
+that location, but a service center in
+San Diego would have had no idea. But
+now with these new AI tools, any service
+center location that has a fix or a
+correction or an important note, that'll
+be logged and stored and then it's
+shared with all service center locations
+instantly. And not only that, but
+customer complaints and/or solutions are
+also being logged and integrated into
+this knowledge database. And Lars said,
+as a result, service weight times are
+coming down. And so, back to Tesla's new
+AI spend cap, we just don't know the
+details. Maybe it's for certain teams.
+Maybe there are certain performance
+requirements. And with everything we
+know, there are exceptions to the rule.
+And I think one of the biggest ones will
+be that these engineers can use
+something like Grock Build or Gro 4.5
+while it's technically in that beta
+phase. And all of that usage does not
+count toward the $200 per week cap. So
+really, there are likely numerous
+workarounds. And this is ultimately
+Tesla just doing what it does best,
+focusing on efficiency and capital
+control. And look at what Elon said
+about Grock 4.5. Next month's release
+will be another step change in
+improvement as we close the loop on
+solving realworld engineering problems
+at Tesla, SpaceX, Neuralink, and the
+Boring Company right here. Gro 4.5 is
+built for realworld engineering. So
+today, we're going to touch a little bit
+on different benchmarks and help you
+understand what they mean, but at the
+end of the day, this is a huge
+distinction. Elon also said, "We're
+closing the loop on realworld
+usefulness, not benchmarks. Hardcore
+engineers at Tesla and SpaceX find Grock
+4.5 genuinely useful, which is what
+actually matters. And there's a reason
+I've been so adamant about encouraging
+all of you to start vibe coding, to
+start doing a bit more than just using
+these LLMs as a chat tool. If you
+haven't yet done that, all of this won't
+really make a lot of sense about why
+it's such a big deal and how it's going
+to change things. But just know as these
+Tesla and SpaceX and Neuralink engineers
+begin working with tools like rock 4.5
+and the corresponding harness which if
+you're not familiar is basically the
+tool set that gives these LLMs and these
+models the ability to actually do work
+that realworld engineer use and feedback
+is going to become a very useful
+training tool for future models to
+understand how actual problems are being
+solved by worldclass engineers and it'll
+become alpha but at companies like Tesla
+and SpaceX as it's been trained on
+actual problems and over time it learns
+the company's systems and strengths and
+weaknesses and is continually improving
+them. Yun Tasai a Tesla engineer said
+the real world engineering includes
+identifying issues in manufacturing
+processes for my teams which in itself
+is a giant tree and a lot of
+dependencies like parts, firmware
+changes, etc. One emphasis I gave to XAI
+teams is that I don't really care about
+the benchmark score, but rather if I can
+be productive at my job. It's a model
+that optimizes for real world use, not
+the benchmark. Yasai also said, I
+appreciate the many XAI and cursor
+engineers who dedicated their time to
+addressing feedback from Tesla. Grock
+build was not a thing back then. It was
+a very primitive client with lots of
+rough edges, but had a lot of potential.
+When building from scratch, the only
+limit is imagination. Armed with first
+principles, we encountered many unique
+use cases to solve diverse workflows and
+the teams took prompt feedback and
+addressed it quickly to the point that
+it became an indispensable tool. Now
+when my teams need to ask questions
+instead of jumping through hoops with
+various backends or plugins or skills,
+Gro 4.5 can directly deliver deep
+insights with minimal setup. I won't
+comment too much on the model itself
+because it's only been out for 24 hours
+or so, but we need to highlight the
+pricing here. For a million tokens of
+input, it's $2, whereas for a million
+tokens of output, it's $6. But that's
+only for a context window under 200,000.
+The moment you go above, those rates go
+to $4 per 1 million tokens in and $12
+per 1 million tokens out. But look at
+the comparison for Claude. For 1 million
+input tokens, it's $10. And for a
+million output tokens, it's $50. $50. So
+Claude's input output is 1050 and Grock
+4.5 is 26. And if you say, "Well, Dylan,
+right now Grock 4.5's context window is
+only 500,000 tokens, which really isn't
+that big." I would say I agree. But Elon
+just said 4.5's context window will
+upgrade to 1 million probably by next
+week. And again, back to Yun Tasai, he
+said, "Most tasks should not need
+millions of tokens to solve. Most models
+are overthinking." Here's a great
+example of that from artificial
+analysis. Token usage per task. And yes,
+artificial analysis is an independent
+outlet. We have Opus 4.8 in the Clawed
+Code Harness coming in at 9.2 million
+tokens per task, whereas Grock 4.5 in
+the Grock build harness comes in at 1.9
+million tokens per task. roughly a half
+order of magnitude outperformance by
+Grock. Kerser put out this blog post
+with this chart. Just look at the cost
+per task. Fable 5 Max came in at $17.32.
+Grock 4.5 was at $1.51.
+An actual order of magnitude
+outperformance by Grock. And as you can
+see, it was significantly better than
+any other model on this list. The only
+other competition was Grock 4.5 on
+medium and low. But it's important to
+point out Grock 4.5 has an advantage on
+cursor bench. An earlier snapshot of the
+cursor codebase was unintentionally
+included in training. The exact score
+impact is unclear. That data has been
+removed for future models. So what
+exactly does that mean? Well, it means
+Grock 4.5 was actually trained on the
+material that that specific test was
+built on. So Grock 4.5 may have seen the
+answers or the code during training. And
+this is important because plenty of
+people are sharing this cursor bench
+score that shows Grock 4.5 high with
+very similar capability and performance
+to Fable 5 high but at a fraction of the
+cost. But shout out to Cursor in SpaceX
+AAI. They put the asterisk and put the
+note in there. And the reason being this
+result might be more driven by just
+memorization and recall rather than
+genuine problem solving. Sadly, most
+people I'm seeing talking about this
+have not called that out, but I
+certainly think it's worth it and it's
+good to understand and to try to make
+sure everybody's up to speed. So, just
+think of Gro 4.5 and Cursors Composer
+2.5 as the brains or the models, the
+LLMs. And then separately, the actual
+apps or the engines where you can do
+work with these brains are things like
+Grock Build and Cursor. So, in Grock
+Build, you can select different models.
+Same thing with cursor and cursor said
+while we trained our previous model
+composer 2.5 to be a coding specialist
+for grock 4.5 we kept the training data
+mix deliberately broader. This involved
+drawing on highquality STEM tasks,
+research papers, and other knowledge
+work. So the model gained proficiency
+across a wide range of domains. Grock
+4.5 and Composer 2.5 are two different
+model weight classes and we're excited
+to support both sizes and weights.
+Composer 2.5 will remain offered and we
+will release new models of that size
+going forward. And the main takeaway for
+Gro 4.5 as Elon said it's an Opus class
+model but faster, more token efficient
+and lower cost. I also wanted to
+highlight Grock 4.5 is built on a 1.5
+trillion parameter V9 foundation and
+trained with some data from cursor. For
+context, Grock 4.3 was roughly 500
+billion parameters. So this is certainly
+a new bigger model. However, important
+to note this cursor data was only used
+for some of the later stages of the
+training process, meaning some of the
+improvements from what cursor brought to
+the table have not yet been realized.
+And again, token efficiency is the
+headline. On one benchmark, Grock 4.5
+resolves tasks using an average of
+15,900 output tokens against 67,000 for
+Opus 4.8 on the same bench. a 4.2x gap.
+And as we know, this is only the first
+release after the cursor acquisition.
+And sure, it won't officially close
+until Q3, but practically these
+companies are already moving forward as
+if it's a done deal. So, Grock 4.5 was
+built primarily for coding. And some
+things they've been calling out,
+endto-end app builds from a single
+prompt, any Excel work that involves web
+research, multi-heet formulas, and left
+behind notes for future reference.
+Building in Word and PowerPoint, and
+even though it's a coding first model,
+it's apparently ranking number one on
+Harvey's legal agent benchmark, which
+just means from a legal law perspective,
+it's scoring incredibly well. Top of
+class. And just FYI, how to access Grock
+4.5? Well, if you're not using the CLI
+or the terminal, you could just download
+the Cursor app and use it in there. And
+you'll also find Composer 2.5 and the
+new GPT 5.6 Soul. But I did want to
+point out on some of these benchmarks,
+you'll see Grock 4.3 here. This one's
+the artificial analysis intelligence
+index. That score was a 38. And fast
+forward to now, Grock 4.5 is the fourth
+best from this perspective with a score
+of 54. Trailing only Fable 5, Opus 4.8,
+and GPT 5.5. But rather than getting
+technical with these benchmarks, just
+take away the significant jump in
+performance. Last year, when everybody
+was writing off Elon and XAI saying
+they're way too far behind and this is a
+new world for Elon, I said I'm like,
+"Guys, everybody needs to relax. We're
+in the first few minutes of the first
+quarter here. Let's give Elon some time
+to reorganize XAI, maybe make some
+acquisitions. And I was very confident
+at some point in the near future, they
+would be near the frontier. And here we
+are. And they're near the frontier at a
+fraction of the cost at much faster
+speeds. And it's comical to me because
+nearly every time I make a comment like
+that, you'll have some people saying,
+"Oh, this guy's just an Elon Stan." To
+which I would say, uh, yeah, I am a big
+Elon fan, but I also like to think I'm
+mostly objective, and I've just seen his
+track record for the better part of 10
+years. And I understand he is the best
+magnet for attracting top tier talent,
+and it's become such an overused cliche,
+but seriously, that's what it boils down
+to. Why is anyone betting against this
+man? So, I put it on record on X. I want
+to put it on record here. By 2028, all
+other AI companies will be chasing down
+SpaceX AI on the Paro frontier. And I
+think one of the most interesting angles
+here that I'm not seeing covered
+elsewhere, the way SpaceX is going to
+vertically integrate through the cursor
+vessel. Think about this. For years,
+every single line of cursor code
+basically sat on top of Microsoft's
+GitHub. If you're not familiar, it's
+basically a repository where you can
+store code. But guess what? Cursor has
+another product it's been developing
+called Origin that is a direct
+competitor to GitHub. And yes, of
+course, that's now under the SpaceX
+umbrella. And the differentiator,
+Origin, was built from scratch to treat
+AI agents as the primary committers
+rather than the exception, meaning the
+entity that would actually commit the
+code to the repository. Now, going any
+deeper here is probably a bit beyond the
+scope of this channel, but just know
+there are some very interesting things
+happening in this world as well. And the
+point you cannot miss, the training data
+relationship with SpaceX is the detail
+that carries the most strategic weight.
+Cursor's commercial platform generates
+real developer workflow sessions. The
+full context of how these engineers
+describe requirements, iterate on bugs,
+navigate code bases, and refine AI
+responses across extended conversations.
+That data reflects actual coding
+reasoning, not just finished code. By
+training on that signal, SpaceX gains
+something qualitatively different from
+scraping public GitHub repositories. And
+once this acquisition is finalized again
+in Q3, that training pipeline will
+belong to SpaceX entirely. As if we
+needed another accelerant, just think
+about all of the Tesla and SpaceX
+engineers using these models built for
+exactly the problems they are working
+on. having all of that data flywheel
+continually feed into new models and
+train new, bigger, more capable models,
+the productivity per engineer is going
+to be on a steady upward climb. And as
+we covered at the beginning of the
+episode, paired with the new cost
+efficiencies of Gro 4.5, that
+performance improvement is likely to
+come at a fraction of the cost of the
+competition. Now, you say, "Wait a
+second, Dylan. The competition can just
+use Grock models." Why yes, yes they
+can. But guess where that money flows
+to? SpaceX. And did I forget to mention
+that SpaceX is planning on launching a
+new model every month from here forward?
+Elon reposted this that said the two
+trillion parameter foundation model is
+expected to finish training this month
+and become available to customers next
+month. We know SpaceX AAI is working on
+internally developed C and C++ inference
+mapped directly to GB300 hardware from
+NVIDIA which could double the speed or
+more. And now that's debatable but a
+topic for another day. So as crazy as it
+sounds, the pace of innovation from
+SpaceX AI is likely only getting started
+with the accelerant that is cursor its
+data and its team. And Grock 4.5 was not
+built with benchmarks as the priority,
+but as Elon shared, it looks like 4.5 is
+number one on at least a few benchmarks
+better than expected. But most
+importantly, I've been listening to as
+many software engineers as possible
+share their actual realworld experience
+with 4.5. And by and large, the takeaway
+was they're enjoying it and they are
+rather impressed. And the sentiment is
+that SpaceX AI now belongs in the
+conversation at the forefront. Not yet
+from a raw intelligence standpoint, but
+really from many of the factors that
+matter most. Because guys, we have to be
+real. 95% if not higher percent of
+applications does not need that true
+frontier level raw intelligence. It
+usually boils down to things like
+context window management and cost per
+token and so on. And many of you will
+roll your eyes at this, but just to
+understand how Elon's thinking right
+now, he said, "You don't seem to
+understand that SpaceX will be worth
+more than the rest of Earth if we
+accomplish our goals." So, look, that
+might be 20 plus years away. It may
+never happen, but the path is there. We
+actually got an important anecdote from
+the information about Tesla's robo taxi
+launch in Miami. Um, they also kind of
+in the leadup to it, I found from
+talking to some sources at the company
+that like there was a smaller test
+driver team in the city leading up to
+the launch. So, a year ago when Tesla
+launched in Austin, they had more than
+300 drivers in the weeks leading up.
+They brought in people from all across
+the country that they were working with
+to test out the area um for the robo
+taxi, but that was much smaller in
+Miami. Um which which was an interesting
+development and kind of like an
+evolution of the you know of their work
+with the robo taxi. It's also kind of
+reflective of Elon Musk's kind of view
+for the robo taxi. He has said that like
+he wants the software to be able to
+deploy, you know, without having to test
+everywhere it goes. So, he wants the
+cameras and the AI system to be able to
+figure out roads that it's never driven
+before, you know, on the first go. And,
+you know, obviously they did have test
+drivers in Miami in the leadup, but like
+maybe having less is kind of another
+step towards that.
+&gt;&gt; I have been eagerly awaiting any type of
+news about this because the huge
+question for Tesla right now is when it
+comes to scaling robo taxi, at what
+point can they reduce the validation
+needed in each new city? So, we did not
+get a number for the number of safety
+drivers and testers for Miami, but we
+know it was less than the 300 they had
+in Austin. So, it's a step in the right
+direction, but I have to admit there are
+plenty of questions. We know the geoence
+in Miami right now is quite small, maybe
+around 15 square miles. The number of
+vehicles is likely also small, most
+likely under 10. And so, who knows?
+Maybe cities in other states, the number
+of safety drivers before the launch goes
+back up. But hopefully the trend
+continues. Less validation in each new
+city required. And Chris said FSD would
+be great if you could talk to the car
+and tell it which driveway to pull into
+or to say things like, "It's the White
+House on the left just past the SUV."
+And then have FSD remember it for next
+time. Ashoke responded to that saying,
+"Working on it." My little brain has a
+tough time understanding how the guard
+rails will work with something like
+this. If somebody's on the highway and
+they realize, "Oh, wow. I want to take
+this exit." and they scream, "Hey, take
+this exit." And the car darts over.
+Obviously, there needs to be limitations
+in guard rails. So, yes, allowing these
+features would be incredible, but let's
+not forget, we've already lost our speed
+control, and Tesla said the reason was
+it made the model too complicated. So,
+admittedly, I'm a bit skeptical Tesla
+would open up the model so much to allow
+for all of this new user input that
+could be any type of input, potentially
+from bad actors. But I know nothing
+compared to Ashoke. So incredibly eager
+to see what they come up with. Today the
+head of Nitsa said the agency will
+absolutely consider ending requirements
+that driverless cars include steering
+wheels in a potential boost for Tesla
+and other autonomous companies. He said
+if you're developing a vehicle that's
+designed never to be driven by a human
+operator, it doesn't make any sense to
+require manual controls. So the brake
+pedal requirement already has
+legislation that's being reviewed. But
+now for the steering wheel, this is just
+a comment. As far as we know, there's no
+legislation yet. Backing this up, but it
+sounds like this will be one of the next
+things on the list to remove. We now
+have QX Logistics placing an order for
+20 Tesla semiis. This company runs four
+warehousing and fulfillment sites across
+the LA basin and keeps its own truck
+fleet on the road for Port Dreage,
+Middle Mile Halls, and regional freight
+stretching from Southern California into
+the inter mountain west. And yes, this
+will be through the fleet enabler Forum
+Mobility that we've covered in the past.
+So, this QX Logistics is actually a new
+customer of not just Tesla, but of Forum
+Mobility. You'll recall that's the
+transportation as a service company. QX
+said, "We appreciate the partnership and
+can't wait to get these Tesla semiis on
+the road in 2027." Remember, Lars said,
+"Most of the allocation for the Tesla
+Semis for this year is already accounted
+for." And on the semi- tracker, that
+takes the total confirmed orders, as far
+as we know publicly, to 666.
+So, somebody please place another order
+soon. Not a Tesla app had some exclusive
+reporting today about the cyber cab.
+They said new details indicate a major
+hardware upgrade is tucked into the
+upcoming vehicle. This to provide
+pinpoint location mapping. According to
+info received from a reliable source,
+production units of the CyberCab are
+equipped with a more powerful dual GPS
+configuration. Now, it's not clear if
+that means the vehicle features a
+dualband system for locking onto
+multiple satellite frequencies at once
+or if it packs two separate physical GPS
+units for redundancy and improved
+triangulation. Either way, the insider
+confirmed this updated layout results in
+a much more accurate positioning than
+what current consumer vehicles can pull
+off. And we know the Model Y robo taxi
+vehicles currently deployed which are
+internally called project halo. They
+have that communication and telematics
+hardware in the rear located in what
+many call that black box. And that
+hardware provides GPS redundancy and
+improves location tracking and likely
+also includes communications equipment
+to keep the vehicles in touch with robo
+taxi support. So of course the cyber cab
+needs to know exactly where it's at in
+the world, but I also think this might
+have to do with remote operations as
+well. We've heard there were two
+instances where remote operators were
+tasked with moving the vehicle remotely
+and they ultimately moved it into an
+object. So, was that because of lag or
+was that because the GPS positioning was
+a bit off? Just know that reasoning
+rationale is pure speculation on my
+part. Today, Tesla said the Model Y was
+Netherlands bestselling vehicle in the
+first half of this year across all fuel
+types. Tesla stock closed the day at
+$46.55
+up 3.17%
+and SpaceX closed the day at $152.16
+up 2.6%. This while the NDX was up
+1.62%.
+Hope you all have a wonderful day and a
+huge thank you to all of my Patreon
+supporters.
