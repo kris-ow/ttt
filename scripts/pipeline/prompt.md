@@ -55,6 +55,8 @@ Do NOT substitute well-known historical dates from training even when the speake
 
 {{TRACKER_DATA}}
 
+{{STOCK_DATA}}
+
 ## Grounding Rules
 
 - ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the transcript.

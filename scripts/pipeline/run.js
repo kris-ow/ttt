@@ -3,6 +3,7 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
+import { loadStockBlock, getStockBlock } from './stock-data.js';
 
 const DIRECT_MODE = process.argv.includes('--direct') || process.env.PIPELINE_MODE === 'direct';
 
@@ -148,6 +149,7 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
   template = template.replace('{{TITLE}}', title);
   template = template.replace('{{AUTHOR}}', author);
   template = template.replace('{{TRACKER_DATA}}', formatCanonicalTrackerBlock());
+  template = template.replace('{{STOCK_DATA}}', getStockBlock());
   template = template.replace('{{TRANSCRIPT}}', transcript);
 
   return template;
@@ -461,6 +463,9 @@ async function main() {
 
   const client = new Anthropic({ apiKey });
   const state = loadState();
+
+  // Fetch TSLA reference prices once for all prompts this run (best-effort)
+  await loadStockBlock();
 
   // Check for pending batch from previous run
   if (state.pendingBatch) {
