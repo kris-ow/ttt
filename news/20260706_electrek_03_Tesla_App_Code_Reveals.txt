@@ -1,0 +1,55 @@
+Source:      electrek
+Title:       Tesla app code reveals cabin camera will verify driver before FSD
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/06/tesla-cabin-camera-fsd-identity-check/
+Published:   2026-07-06 19:36 UTC
+Fetched:     2026-07-12 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Code buried in Tesla’s latest iOS app update points to a new feature that would use the in-car cabin camera to verify a driver’s identity before allowing “Full Self-Driving” to activate.
+
+If the system can’t confirm the person behind the wheel matches an authorized profile, it would block FSD and surface a failure message in the app.
+
+## What the code shows
+
+The findings come from a de-compile of Tesla app version 4.58.5, built June 27, published by the account @Tesla_App_iOS, which tracks new versions of the Tesla and Robotaxi apps.
+
+The relevant strings are fsdIdentityCheckFailedTitle and showFsdIdentityCheckFailedDialog. Together they describe a flow where the cabin camera performs a driver identity check, and — on a mismatch — refuses to engage FSD and throws an error dialog to the phone.
+
+ 
+ 
+ 
+
+The usual caveat applies: these are code strings, not a shipped feature. App code often precedes a public rollout by weeks or months, and some of it never ships. A live version would also require a corresponding vehicle firmware update, since the app is only half of the equation.
+
+## Tesla has been building toward this for years
+
+This wouldn’t come out of nowhere. Tesla first activated cabin-camera driver monitoring in 2021 and has steadily expanded what the camera watches for — attention, drowsiness, eye and head position.
+
+Since FSD v12.4 in 2024, the cabin camera above the rearview mirror has been the primary monitor, tracking a driver’s face and eyes for signs of attention rather than relying on steering-wheel torque.
+
+An identity check is a different job than an attention check, though. Attention monitoring asks whether a driver is watching the road. Identity verification asks whether this specific driver is allowed to turn the system on at all — a permission gate, not a safety nag.
+
+## Why Tesla would want it
+
+ 
+
+## Top comment by RipeBanana4475
+
+ 
+ - Liked by 17 people 
+ 
+ Little by little, the death of actually owning anything that you paid for is becoming a reality. 
+
+ 
+
+ View all comments
+ 
+ The most obvious use case is access control. FSD is now sold as a subscription rather than a one-time purchase, and tying activation to an authorized profile lets Tesla keep a paid feature locked to the account holder. That matters for rentals, shared and fleet vehicles, and for keeping teen or unauthorized drivers from switching on a driver-assistance system without permission.
+
+There’s also a Robotaxi angle. Tesla’s driverless ambitions lean heavily on the cabin camera, and matching the person in the seat to the person who booked the ride is exactly the kind of check a ride-hailing fleet needs.
+
+The catch is the hardware. Tesla’s cabin camera is a standard RGB sensor, not the infrared depth-mapping system Apple uses for Face ID. That makes it fine as an extra permission check but a weak biometric lock — and it inherits the same blind spots that already plague Tesla’s attention monitoring, which the owner’s manual admits is disabled in poor lighting, when the camera is covered, or when the driver wears sunglasses or a hat.
+
+If you’re a Tesla owner, powering your EV with home solar is one of the smartest ways to lock in low fuel costs. With electricity rates climbing nearly 10% last year, home solar protects you against future rate increases. And with lease and PPA options, you can go solar with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
