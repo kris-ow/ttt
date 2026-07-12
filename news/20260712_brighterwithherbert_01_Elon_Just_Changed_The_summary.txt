@@ -1,0 +1,30 @@
+Channel:     brighterwithherbert
+Title:       Elon Just Changed The AI Race Again
+Published:   2026-07-12 13:49 UTC
+Summarized:  2026-07-12 14:02:13 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01VKqQBdUYBjChsYBV7ob4QM
+Cost:        $0.02341 (12414 in / 2199 out tokens)
+Relevance:   tangential — the discussion centers on xAI's Grok 4.5 model, AI benchmarks, and pricing economics with only an indirect Tesla hook (Tesla engineers cited as users, and speculation about Musk's compute strategy).
+Categories:  Market & Competition, Financials
+────────────────────────────────────────────────────────────
+
+This episode of the Cern Show (hosted by Cern Basher, standing in for the regular host) features guest Larry discussing the launch of xAI's Grok 4.5 model, its benchmark performance, pricing, and token efficiency versus rivals like Claude Opus, GPT-5.5, and DeepSeek. Tesla's connection is limited to internal engineers reportedly using the tool and speculation about how Musk's compute strategy (including renting out data center capacity to Anthropic and Google) squares with xAI's ability to train a frontier model.
+
+## Market & Competition
+1. **Grok 4.5 launch and benchmarks:** Elon Musk announced the rollout of Grok 4.5, a new 1.5 trillion parameter model (three times the size of Grok 4.3), which Musk described as an "opus class model" that is faster, more token-efficient, and lower cost. Per a third-party review cited in the video, on the Artificial Analysis code index Grok 4.5 performs roughly neck-and-neck with GPT-5.5 and just below Claude Opus 4.5-class benchmarks, though the reviewer felt the claims were "a little bold" relative to hands-on experience.
+2. **Pricing undercuts rivals sharply:** Grok 4.5 is priced between roughly $2–$6 per million tokens (input/output), with a temporary 50% discount currently in effect (meaning normal pricing may be closer to double the discounted rate). Larry noted this is dramatically cheaper than Anthropic's Claude Opus and other models, comparing it to "the old days" of cheap compute, and questioned whether xAI can sustain this pricing long-term, drawing a parallel to Anthropic's early cheap-then-expensive trajectory.
+3. **Superior token efficiency vs. Claude and DeepSeek:** A comparison slide showed Grok 4.5 using under 2 million tokens per task in "Grok Build," versus about 79 million for Claude Code, and roughly 4.6 million for DeepSeek (Larry cited ~1.7 million for Grok 4.5 vs DeepSeek's figure). Larry argued this efficiency edge matters more than raw benchmark scores, potentially making Grok cheaper than open-source alternatives even at standard (non-discounted) pricing.
+4. **Roadmap: 2 trillion parameter model coming:** Musk stated the 1.5 trillion parameter foundation model will see near-daily refinements, and a new 2 trillion parameter model will finish training this month and become available to customers next month.
+5. **Contradicts recent "Musk gave up on frontier AI" narrative:** The host noted this launch contradicts a narrative from a few weeks prior suggesting Musk had abandoned building a frontier foundation model in favor of renting out xAI's data center capacity to Anthropic and Google; Larry flagged this as raising new questions about how xAI achieved this performance if it sold off compute capacity, saying he has questions for the upcoming earnings call.
+6. **Tesla and SpaceX engineers cited as real-world validators:** Musk's post stated that "hardcore engineers at Tesla and SpaceX find Grok 4.5 genuinely useful," and Tesla's Ashok Elluswamy posted that Grok Build has become "a regular workhorse for weeks" and an "indispensable tool," praising it for reducing reliance on multiple backends, plugins, and skills.
+
+Notable quotes and data:
+- "We're closing the loop on real world usefulness, not benchmarks. Hardcore engineers at Tesla and SpaceX find Grock 45 genuinely useful, which is actually what matters." — Elon Musk (per post read on air)
+- Grok 4.5: 1.5 trillion parameters, three times the size of Grok 4.3.
+- Pricing: $2–$6 per million tokens, with a 50% discount currently applied (implying ~$12 at non-discounted pricing per one exchange in the discussion).
+- Token usage per task: Grok 4.5 (Grok Build) under 2 million tokens vs. Claude Code ~79 million tokens; DeepSeek cited around 4.6 million.
+- "One day of heavy Grock 45 usage: 1% [of weekly limit]. One day of heavy fable 5 usage: 100% of your weekly limit." — user post cited on air.
+- Musk: the 2 trillion parameter model "will finish training this month and be available to customers next month."
+- Ashok Elluswamy (Tesla): Grok Build has become "an indispensable tool," eliminating the need to "jump through hoops with various backends or plugins or skills."
+- Larry (guest): "Anthropic was very cheap until it wasn't" — expressing skepticism that Grok's current pricing is sustainable long-term.
