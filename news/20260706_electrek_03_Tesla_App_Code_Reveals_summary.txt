@@ -1,0 +1,26 @@
+Channel:     electrek
+Title:       Tesla app code reveals cabin camera will verify driver before FSD
+Published:   2026-07-06 19:36 UTC
+Summarized:  2026-07-12 15:01:34 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01MK8UvcSYzWMU2PAgeVszEP
+Cost:        $0.01110 (4267 in / 1366 out tokens)
+Relevance:   core — The article discusses a potential new Tesla FSD/cabin-camera feature with direct implications for FSD subscription monetization and Robotaxi identity verification.
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+Electrek reports that decompiled code in Tesla's iOS app (version 4.58.5, built June 27) contains strings suggesting a future feature where the cabin camera would verify a driver's identity before allowing FSD to activate, blocking the system and showing an error dialog on mismatch. The author cautions this is unreleased code, not a confirmed shipping feature, and would require a corresponding vehicle firmware update.
+
+## Autonomous Driving
+1. **Code strings found:** The decompile, surfaced by the account @Tesla_App_iOS, revealed strings named fsdIdentityCheckFailedTitle and showFsdIdentityCheckFailedDialog, describing a flow where the cabin camera checks driver identity and blocks FSD activation with an app error on failure.
+2. **History of cabin camera use:** Tesla activated cabin-camera driver monitoring in 2021 and expanded it over time; since FSD v12.4 in 2024, the camera above the rearview mirror has been the primary attention monitor (tracking face/eye position) rather than relying on steering-wheel torque. The author notes identity verification would be a new, distinct function — a permission gate rather than an attention/safety check.
+3. **Possible motivations:** The author speculates the feature could serve access control for Tesla's FSD subscription model (restricting activation to authorized account holders, useful for rentals, shared/fleet vehicles, and preventing unauthorized/teen use) and could support Robotaxi identity matching between riders and bookings.
+4. **Hardware limitation:** The author notes Tesla's cabin camera is a standard RGB sensor, not an infrared depth-mapping system like Apple's Face ID, making it a weak biometric lock that would inherit existing blind spots in poor lighting, when covered, or when the driver wears sunglasses or a hat — issues Tesla's owner's manual already acknowledges for attention monitoring.
+
+## Robotaxi
+1. **Identity-matching relevance:** The author suggests the identity-check feature could support Tesla's driverless Robotaxi operations by matching the person in the vehicle seat to the person who booked the ride, though this is framed as a possible use case rather than a confirmed plan.
+
+Notable quotes and data:
+- Code strings: `fsdIdentityCheckFailedTitle`, `showFsdIdentityCheckFailedDialog`
+- App version referenced: Tesla app 4.58.5, built June 27
+- Source account: @Tesla_App_iOS
