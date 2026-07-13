@@ -69,6 +69,8 @@ Required as a section unless the week was genuinely clean of bear signal.
 - If two daily briefs disagree on a number, note both and flag the disagreement.
 - Quote sparingly and only when a direct quote carries unique signal (e.g., Elon, an executive, an analyst).
 - Source attribution: where useful, mention the channel briefly in the prose ("per Bhakdi", "Munro Live reported"). Do not list channel names exhaustively.
+- **Attribution is load-bearing — never strip it.** If a daily brief marks a claim as attributed or editorial ("per Electrek", "the article asserts", "the host believes", "reportedly"), carry that attribution forward or drop the claim — never restate it as unattributed fact. Attribution covers only the clause it is attached to: do not merge an attributed claim into a sentence where a different clause's attribution appears to cover it.
+- **Quotation marks are only for verbatim quotes** — text the daily briefs themselves present as a direct quote. Never add quotation marks around a paraphrase.
 - **Hard rule: no unsupervised-fleet count numbers anywhere in the brief.** Do not state fleet count / per-city Robotaxi numbers / week-over-week vehicle deltas in your Brief or category sections. Those come from RobotaxiTracker.com, which has not updated since 2026-05-09, and the live site tile already surfaces them with a staleness indicator. Reference the Robotaxi fleet only when there is genuine qualitative news worth adding (a launch, a milestone, a quote). Phrases like "fleet up N vehicles on the week" or "now N unsupervised cars" must never appear.
 
 ## Style
