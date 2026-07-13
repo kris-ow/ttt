@@ -1,0 +1,760 @@
+Channel:     futureaza
+Title:       Tesla Isn't Telling You Everything About Optimus
+URL:         https://www.youtube.com/watch?v=GfOo9c1PFkM
+Published:   2026-07-13 10:15 UTC
+Fetched:     2026-07-13 11:00 UTC
+
+────────────────────────────────────────────────────────────
+
+I go through these and I I've been
+guilty of this myself. I was like, "Oh
+my gosh, it's happening. It's gonna
+happen right now." I think that that um
+it's going to go more slowly than we
+think that yes, it will displace jobs
+and yes, it will dis be disruptive for
+individuals, but society, I think that
+what's going to happen is we are going
+to grow the pie. The labor market is
+going to get larger. There are going to
+be more things made for cheaper and
+higher quality. And I won't get into too
+much detail about this, but we went to
+visit a place where they were working on
+a project of floppy things that a robot
+was having to deal with. And they were
+having to use, it wasn't a humanoid that
+they were using, but they were using a
+robot arm with dextrous hands and a lot
+of brains, a lot of thinking involved in
+this. So, it turns out that it really
+the brain actually matters more than you
+think when it comes to this kind of
+stuff. It's not just the fact that you
+have very dextrous hands, but you have
+to have this guy up here that's behind
+them. that's able to go like, "Oh, it
+flopped this way right now, so when I
+put the blanket on, I'm going to do this
+kind of emotion instead." You know, that
+kind of a thing. So, yeah.
+If there's one thing fans can't get
+enough of, it's Optimus and discussions
+surrounding Optimus. And the haters,
+well, they love it, too. They can't help
+themselves. They're watching these. So,
+we're going to talk about them. We're
+going to talk about some lessons learned
+at summer meetup in a discussion with
+Dr. Know-it-all and Dr. Scott Walter.
+We're going to talk about tendons and
+hands and motors. Are they consumable?
+We're going to talk about uh whether
+there will be different configurations
+depending on the task. Fine motor, gross
+motor, who knows? Maybe it needs to be
+fireproof. Well, that's why I've got Dr.
+Knowit All here. We're going to have
+that discussion. We're going to do it
+right now. I'm Brian. Welcome to
+Futurazza.
+&gt;&gt; So, Dr. Knowit all. Uh, in case you
+didn't know this, you have a YouTube
+channel. Uh, with
+&gt;&gt; I do.
+&gt;&gt; What?
+&gt;&gt; You do? Oh my gosh. So, maybe you should
+make some Maybe you should make some
+good videos. Have you thought about
+that?
+&gt;&gt; Yeah.
+&gt;&gt; Yeah. But
+&gt;&gt; 96,900
+subscribers, guys. We got to push him
+over the lemmings cliff as it were. And
+he's also uh known to be on X. Uh, so
+you can follow him there, too. Dr. know
+it all 16 is the handle there. It's got
+that 16.
+&gt;&gt; It's not 69420 yet. I'm very upset with
+everybody. I told you all last week.
+&gt;&gt; Very upset. We just All we need is just
+another 300ish
+20ish. So get us get us there, won't
+you? Uh him get him there, won't you? So
+uh you had a recent uh video that you
+published from our discussion in
+Michigan. For some reason, the Q&amp;A that
+I moderated for you did not uh appear
+quite as it was meant to. The introdu I
+was in that video. I was supposed to be
+there.
+&gt;&gt; I caught you. I caught you because I
+lane my wife was recording and so I got
+her recording of the end with your
+questions. So, the audio kind of
+collapsed, but we did get your questions
+in there. And you were there. Pixar at
+&gt;&gt; I was there. So, the question I have is
+what was learned about robotics on that
+day? because you guys had a fantastic
+discussion.
+&gt;&gt; Yeah, it was really good. And Josh West
+was there too, of course. Uh I think
+wow, what was learned in a package? You
+stumped me with this question. I would I
+would say that the future
+that the slowly slowly then all at once.
+Was that Ernest Hemingway originally? It
+had a very negative context. I believe
+that they said, "How did you go broke?"
+And he said, "Slowly slowly then all at
+once." And Dr. Jim fan actually took
+that and kind of ran with it in a more
+positive context. But that that
+&gt;&gt; it's felt in fact Scott just posted
+either yesterday or today that he said
+that it feels like the progress in
+robotics has been glacial for decades.
+It's been very very very slow. But all
+of a sudden we're getting the critical
+mass of things together and all of a
+sudden it's going to happen really
+really quickly. I think that's I think
+that's where we are. So my question on
+that is and I agree with you. If you
+look at Honda's very cool Azimo robot,
+right?
+&gt;&gt; It's it's forever.
+&gt;&gt; It never went anywhere, right?
+&gt;&gt; If you and if you look at even Boston
+Dynamics in the pre-Otimus days, all
+that thing was designed to do was entice
+another fundraising round and it was
+very successful at that mission.
+&gt;&gt; Yeah. But when you look at what we've
+seen not just from Tesla, but from a
+hundred companies, they're doing demos.
+They're all doing kinds of uh real
+products that are actually out in the
+world. Uh what we're seeing is pretty
+amazing. Um is this a confluence of
+technologies that finally makes it
+possible? Is this a realization of how
+vast the addressable market is? What's
+driving it? Well, I'd say yes to both of
+those. Uh, if we go back to the uh the
+reason why something Whoops. like this
+didn't exist prior to 2007, it was
+simply because we did not have the
+technologies there at the time to be
+able to make it happen.
+&gt;&gt; So, we needed the confluence of
+technologies. With robotics, the
+confluence is significantly more
+challenging than a phone because you
+have to have the brains, you have to
+have the mobile compute capabilities,
+which is a hardware issue, but also the
+the software aspect. And people for the
+longest time were barking up the wrong
+tree and only relatively recently
+realized that neural networks were the
+way to go with all of this. Then you had
+to have gigantic data centers that can
+train them in a virtual world, blah blah
+blah blah blah. At the exact same time,
+you have to figure out how to build the
+uh actuators, the things that move it
+around. You have to figure out what
+materials you're going to make this out
+of. We did. Nobody knew, right? You
+know, I think the original Boston
+Dynamics um in fact, I know was a a
+diesel motor with a hydraulic uh
+hydraulic actuated rims. It was loud.
+Loud. There's a reason those demos do
+not have audio.
+&gt;&gt; Exactly. It's because you were not going
+to sneak up on the enemy with that
+thing. That is for damn sure. So, you
+know, so what is the correct way to do
+this? How do you actuate things? We're
+beginning to figure that stuff out.
+Things are starting to converge. Stuff
+is starting to look similar. I think the
+only real um a well, even that didn't
+have everything, but the agreement is
+basically the humanoid body shape. Uh
+but a lot of people still have wheels on
+their vehicles. Um a couple of years ago
+at CES robots.
+&gt;&gt; Yeah, sorry. It's on the vehicles. on
+the robots, right? A couple of years ago
+at CES, I actually saw one with a
+uniball underneath it. So, imagine like
+a bowling ball and the robot was
+balanced on which was really cool. Uh,
+but you know, but that did not seem to
+be the way that people went. But that
+was a cool idea. It was sort of like a
+trackpad, upside down trackpad if you
+remember those things.
+&gt;&gt; It's BB-8.
+&gt;&gt; Yeah, it's BB-8. Exactly. So, so anyway,
+so all of this stuff, you have to go in
+a lot of directions and explore a lot of
+possibilities before you start to figure
+out what the best answer is
+&gt;&gt; and we're still getting there. We
+haven't even gotten there yet.
+&gt;&gt; I can see all of that. So, a question I
+have because I've uh had extensive
+conversations with Dr. Scott Walter and
+other roboticists. One of the concerns
+that they've raised is uh not so much
+getting something to work once, getting
+the hands to work once, but getting them
+to work uh reliably over time as they
+wear out. Is it a possibility we'll see
+that the tendons or the actuators would
+be somewhat consumable in the early
+years?
+&gt;&gt; Yeah. So, um for folks that might not
+know, it's specifically the hands. This
+is the main area. But the the complexity
+is if you're going to fit like 20 motors
+in a hand, it's going to be like a
+boxing glove, right? Which is not very
+useful. You can't really manipulate
+objects very well. If you want to put
+all of that stuff in the forearm, which
+is where the human beings, we have them,
+then you have to have a complicated
+wrist structure and you have to have
+tendons that run up and down the
+&gt;&gt; And you're going to look like Popeye.
+And you're gonna look like Popeye. So
+everything in engineering is a
+trade-off, right? So there is no perfect
+solution. And at this point, some
+companies like 1X and Tesla, but we
+don't know exactly what their Gen 3 hand
+looks like. But at one point, they were
+all about the tendons, all about them
+tendons. Um, but while other companies
+have put actuators in the actual
+knuckles and stuff, and then you have to
+have teeny weeny little actuators. Um,
+so those things can fit in the hand
+decently well as well.
+We don't know which one is the right
+answer or if it's a hybrid of both of
+them potentially is the right answer. Uh
+there's trade-offs. There's positives
+and negatives on both. The tendon is
+kind of a beautiful biologically
+inspired solution and it's really cool.
+But the problem with that, if you've
+ever if if you ever like if you're of an
+age like we are, you probably had a
+10-speed bicycle when you were a kid and
+you let it sit indoors in the winter
+time and then you bring it out in the
+spring and all the gear changes didn't
+work properly anymore because that cable
+had stretched over the winter and and
+then you'd have to go and rea, you know,
+rettighten the cable and readjust all
+that stuff. Well, that's a problem
+because every time that these tendons
+are moving around, they're they're
+adjusting. there's stretching there, you
+know, there's compliance, things like
+that. And so, you have to be able to
+deal with that. And it's potentially
+like after a 100,000 compressions, which
+could happen relatively quickly by doing
+this kind of thing, that maybe you just
+have to replace them entirely, and that
+becomes a very expensive problem to
+have. Um, but maybe if you have little
+actuators in the knuckles doing this,
+then after 100,000 rotations, you have
+to replace those, too. So, right. So,
+right. Yeah. and and you can go through
+those numbers real quickly. So, I'm I'm
+wondering if those might just be
+consumables where uh per periodically a
+robot stops by your house to have a a
+little what appears to be a drug deal
+with another robot where he gets himself
+a new hand or two. Uh possible.
+&gt;&gt; Let's talk about variations on a model.
+I know people saying it it must ha it
+must be able to thread a needle and I
+say if it costs extra I don't want that
+I want one that can paint or dig a ditch
+or
+&gt;&gt; if you want one that does brain surgery
+and frankly if you want one that does
+all of the above maybe they make a
+variant for that charge six times as
+much and call it the uh Antarctica you
+know standby everything name
+&gt;&gt; I have a suggestion they can call it
+they can call it robot mythos There we
+go. And then the US government can shut
+them down. So it's perfect, right?
+Perfect.
+&gt;&gt; It's perfect. What's What could go
+wrong? But one that can do absolutely
+everything I don't need. I I know what
+my use case may maybe it's farmwork.
+Maybe it's you know maybe it is medicine
+or ultra fine detail painting or
+cleaning. Could we see, you know,
+Optimus uh V1 A for agriculture? And,
+you know, are we going to see that or do
+you think for the first year or years
+they'll all be oneizefits-all?
+I have a feeling for the first couple of
+years they'll be one sizefits-all
+because they're not going to be able to
+do a lot of things already, right?
+They're not going to be able to thread a
+needle on day one. They're not going to
+be able to probably fold clothes on day
+one, even though that's very
+disappointing to me. Um but but you know
+you don't they don't have to be able to
+do everything to start doing
+economically valuable work. Again we've
+seen a lot of what human beings do. We
+saw this with the figure robot
+demonstration. It was just like taking a
+package and flipping it so the barcode
+was up upright. I I mean that's a that
+that's that's not something that
+requires an incredible amount of
+dexterity
+&gt;&gt; with 95% accuracy.
+&gt;&gt; Yeah. Exactly. So I know. So anyway,
+that's it's it's the kind of thing where
+um Apologies about the dog. It's my
+kid's dog. Anyway, it's it's the kind of
+thing where at the beginning the robot
+can actually do what it needs to do um
+without having to be able to do
+everything. It just has to do something.
+And already we've seen this with the
+Chinese robots. They can't do jack
+squat. They've got like this for hands.
+And they sell great because they're
+publicity generators. People love those
+things. You put one of those at at a at
+a booth, you know, even if you're
+selling underwear or something, you put
+it at a booth and they're like, "Whoa,
+well, people are going to come over
+there and look at the humanoid robot."
+So,
+&gt;&gt; yes, they will. They are very good at
+attracting a crowd. You know, get rid of
+the models in the window of Abberrombie
+and Fitch and replace it with a robot.
+&gt;&gt; Dude, that'd be cool. They could move
+around.
+&gt;&gt; Yeah, it would because because surely
+you could put clothes on it without
+ruining them. Um, here's a use case, a
+couple of use cases I want to run by
+you. Here's what I really want Optimus
+for. Jobs that you and I can't or
+shouldn't do.
+&gt;&gt; Could we make one that's mildly
+fireresistant
+just with a beefed up cooling system?
+&gt;&gt; Yes. Uh I think I think you've hit upon
+the the major problem which is not the
+external part because you could always
+put uh
+&gt;&gt; Yeah, you could put cladding on it so
+it's protected but the heat rejection is
+going to be complicated in that sort of
+circumstance. Now, I we we did see this
+with the um what was it about six months
+ago when they did the half marathon in
+China with the robots and they they
+pumped them full of like dry ice and
+stuff. So, you could potentially put a
+you could put an expendable cooling
+system in them. So, imagine that you had
+some sort of freon or not freon because
+that's terribly toxic, but just water or
+something internal to it and rather than
+recirculating it, you just you rejected
+it into. Yeah.
+&gt;&gt; You're fighting a fire. Exactly. It
+&gt;&gt; exactly. There we go. You just It's like
+you're spraying water everywhere. But
+yeah,
+&gt;&gt; because for forest fires, if you could
+deploy thousands, 10,000 of them.
+&gt;&gt; Yeah.
+&gt;&gt; Oh, air drop them if you have to.
+&gt;&gt; Right.
+&gt;&gt; Uh, okay. Deep sea operations.
+&gt;&gt; Mhm.
+&gt;&gt; What better than not putting a human
+down there to weld? Put a versatile
+robot. We could uh biohazard cleanup,
+&gt;&gt; right? You don't even need to configure
+it for that,
+&gt;&gt; right?
+&gt;&gt; Yeah. You just have to clean it really
+well after it comes out. Yeah.
+&gt;&gt; Just lice all the heck out of it.
+&gt;&gt; Exactly. But I I think like I don't know
+if you've ever seen a video about the
+deep sea uh drillers and stuff. Like
+it's a couple of months. Your tour of
+duty is because you have to be in a
+pressurized container when you're not
+working. You can't decompress recompress
+and it takes days to decompress after
+you get done. Uh wow. I mean, that would
+be that would be a pretty cool job to be
+able to use a robot for that instead of
+a human.
+&gt;&gt; Yeah. And all you'd have to do is
+supervise because it's got the
+understanding of the task. Right.
+&gt;&gt; Um, I've had a number of people in the
+comments who don't get it, who are new
+to this topic, who look at it from the
+worldview of the world they live in
+where someone says, "If it can't, you
+know, one person said, "Look, I can
+already buy robots that can mow and
+vacuum and clean my house and it's only,
+you know, a few thousand dollars." I
+said,
+&gt;&gt; "There's no robot that can do all of
+those things,
+&gt;&gt; right?"
+&gt;&gt; They right. Well, I could buy a bunch of
+singleuse robots. Like, that's
+&gt;&gt; that's not the point. Um, can your
+Roomba teach you Spanish?
+&gt;&gt; Right.
+&gt;&gt; Because because Grock can teach you SP.
+Well, I've got a separate app. Oh my
+gosh. Do we need everything to be its
+own thing? We're trying to find a
+one-sizefits-all, right?
+&gt;&gt; And in a factory,
+&gt;&gt; there can be there are a lot of jobs
+that are ripe for this disruption. And
+I've had people also saying, "Well, but
+surely they would just replace the
+humans with additional single function
+robots,
+&gt;&gt; right?"
+&gt;&gt; No, if they could, they already would.
+They need to
+&gt;&gt; bring in the pallet, scan the inventory,
+shove the inventory, um, put it in a on
+a on a cart, roll it over to the actual
+assembly line, all of these things.
+I mean, if they could single-use robot
+an entire factory, they would. Elon
+famously proved
+time.
+&gt;&gt; I was actually just going to talk about
+that. Especially the uh
+&gt;&gt; the fireproof. Well, they tried to
+overautomate too quickly, which is now
+one of his rules, his five rules is
+don't automate at the beginning,
+automate at the end. But, and I didn't
+say that quite right, but anyway. But
+they famously the fireproof blanket that
+you have to put on top of the vehicle,
+which they eventually removed anyway
+because it wasn't necessary. It was only
+necessary for gas cars because it
+generates so much heat. But anyway, but
+they they thought they could get a robot
+that could do it, but it is squishy and
+soft and, you know, it can wrinkle and
+they spent a lot of time working on
+that. Wasted a lot of money and human
+beings had to do that job in the end
+anyway. Um, but that's where a humanoid
+robot would be ideal. That's that's a
+perfect use case for them
+&gt;&gt; because when a robot when a single-use
+robot grabs that insulation and just
+turns, it flops differently every time
+in the from the air resistance.
+&gt;&gt; There's a bunch of that. So Scott and I,
+while we were in uh Michigan, and I
+won't get into too much detail about
+this, but we went to visit a place where
+they were working on a project of floppy
+things that a robot was having to deal
+with. And they were having to use, it
+wasn't a humanoid that they were using,
+but they were using a robot arm with
+dextrous hands and a lot of brains, a
+lot of thinking involved in this. So it
+turns out that it really the brain
+actually matters more than you think
+when it comes to this kind of stuff.
+It's not just the fact that you have
+very dextrous hands, but you have to
+have this guy up here that's behind them
+that's able to go like, "Oh, it flopped
+this way right now. So when I put the
+blanket on, I'm going to do this kind of
+emotion instead." You know, that kind of
+a thing. So, yeah. So, there is a real
+The humans are good at a lot of really
+weird tasks. If I give you a a handful
+of coins, you put them in your pocket
+and I say, "Produce a dime. Please hand
+me a dime." But don't look. I'm
+confident you could grab a diner.
+&gt;&gt; I could. I don't think my kids could
+because they've never seen a dime.
+&gt;&gt; Nobody sees cash anymore. But yeah, but
+anyway. Yeah,
+&gt;&gt; but they it's they they still have the
+capability. They could learn that skill.
+&gt;&gt; Well, yes, I it would take
+&gt;&gt; robots. I don't need them to. If I said
+cuz I was thinking about this on a trip.
+I was I had already packed my bags and
+realized I need a pair of socks. I know
+where they are in my bag. I just reached
+down until I felt
+&gt;&gt; socks and pulled them out from the
+bottom. If I asked my optimist to do
+that, he would spend 20 minutes
+unpacking, select the socks, and then 15
+minutes repacking. I missed my flight.
+&gt;&gt; Yeah.
+&gt;&gt; So,
+&gt;&gt; uh in a second here, don't check out yet
+because we got the biggest part of the
+video coming up, which is the
+philosophical question of are these
+robots going to uh destroy the world and
+uh the economy along with it. Hey, do
+you know you are eligible uh for
+subscription? I I've decided that I'm
+gonna permit everyone to subscribe. Uh
+because that's how great I am. And you
+can go to John's channel, subscribe to
+you, it's I'm on half price today. It
+cost you half as much as normal to
+subscribe.
+&gt;&gt; That is great.
+&gt;&gt; That is amazing. What a bargain, guys.
+You're coming out ahead. You don't even
+need to use my coupon code. Uh and if
+you want to, but you can. I mean, I
+don't know. Just go to one of his videos
+and just type in coupon code futurasa in
+the comments. I think you'll find that
+hilarious.
+&gt;&gt; Uh, and you can, you know, support me if
+you like. I'm going to Nepal soon for
+the auto show and a fan viewer meetup
+and a bunch of other interviews. I'm
+going to Ethiopia at the end of the
+year. Uh, and there is in the comments a
+single uh a one-time donation button
+should you choose to help out. That
+would be amazing. You don't have to. So,
+here's a philosophical question.
+One Optimus or humanoid from any other
+brand for the haters out there. doesn't
+matter. One humanoid robot could replace
+two to four humans in the labor market.
+And while this would open the door to
+additional labor that wasn't being done
+before, you know, let the uh little old
+widow down at the end of the street who
+just doesn't get her yard work done
+because she can't afford it. That's not
+replacing a job. That's creating just a
+better yard for
+&gt;&gt; for that. We're gonna lose jobs, right?
+Like I've seen people say, "Well, right,
+but I'll just buy one and I'll rent it
+to my neighbors." Right. But your
+neighbors have one.
+&gt;&gt; Yeah.
+&gt;&gt; So, and especially if you bought two or
+three.
+&gt;&gt; Yeah.
+&gt;&gt; Now is you've replaced 18 jobs.
+&gt;&gt; So, how how does that work?
+&gt;&gt; What's going to happen?
+&gt;&gt; Well, we can go back to the beginning
+and we can talk about this slowly slowly
+then all at once. It's I go through
+these and I I've been guilty of this
+myself. I was like, "Oh my gosh, it's
+happening. it's going to happen right
+now. I think that that um it's going to
+go more slowly than we think. Uh part of
+that is just because of the way society
+works, things don't happen that fast in
+society, even if they should. We've got
+we've got these incredible large
+language models that can do amazing
+stuff already. And yet people are still
+hiring folks, right? So there's clearly
+it and there were companies that
+famously said like, "Oh, forget about
+hiring people. We're just going to use
+LLMs." And then they were like, "Oh,
+whoops. we made a boo boo and now we got
+to hire people back. So, so I think it's
+not going to happen as fast as people
+expect and as I expected a couple of
+years ago. So, that's one saving grace,
+thank goodness, because that will give
+us more time to adjust. The other one is
+that yes, it will displace jobs and yes,
+it will dis be disruptive for
+individuals, but society I think that
+what's going to happen is we are going
+to grow the pie. The labor market is
+going to get larger. There are going to
+be more things made for cheaper and
+higher quality
+&gt;&gt; and that is going to require people in
+some roles hopefully not in the dull,
+dirty and dangerous roles but in more
+interesting roles to interact with that
+to do service to talk to people about it
+uh you know contracts all of these
+things yes could be disrupted but I
+think that human beings will be involved
+in that and so my hope at this point is
+that we will compensate by growing the
+pie. Yes, we will have a contraction in
+labor for particular jobs that people do
+today, but hopefully they'll be able to
+get better at more more or better jobs
+in the future because they don't have to
+do the jobs they were doing today. So,
+that is the hopeful part. And I know and
+I know someone I talked with was saying,
+"Yeah, but think of all the, you know,
+food can be free because uh the the
+robots plant it and the robots harvest
+it and the robots deliver it." And I
+said, "Yeah, but we already have enough
+food. We have too much food and it ain't
+free."
+&gt;&gt; So, there's a disconnect in there. The
+last one I wanted to suggest,
+&gt;&gt; what do you think of this? Uh, a kind of
+a BOGO, like a charity BOGO. For
+everyone that's sold, we donate one for
+charitable purposes. We could have one
+walking around the ocean floor picking
+up trash. That would be an infinity job
+that's just kind of good for the world,
+but no human would ever do it. It'd be
+insane to do it. Uh,
+&gt;&gt; maybe something like that. I don't know.
+There's there's uh possibilities. I
+don't know what they are.
+&gt;&gt; Well, we could even start smaller than
+that. We could have they could they
+could clean up streets and things
+overnight. And I know there are jobs
+that sort of do that already, but they
+are not done well enough because you can
+still see garbage out on the side of
+roads and things like that. uh you know
+so that
+&gt;&gt; biohazard
+&gt;&gt; yeah biohazard
+&gt;&gt; make them pick up needles because I
+don't want a human doing that
+&gt;&gt; and they're not doing it
+&gt;&gt; right
+&gt;&gt; yeah so I think that there are
+&gt;&gt; it's a really really tough question
+we're trying to guess what the future is
+going to look like and of course we were
+going to be wrong because we always are
+but the best guess is that it's going to
+be worse than the optimistic view and
+better than the pessimistic Y
+&gt;&gt; let's just put it that's a pretty wide
+range right there. But there you go.
+&gt;&gt; So I my concern is the road to
+sustainable abundance is long and there
+ain't no bridge built yet that can get
+us across that chasm and the halves will
+have robots and the haveotss will have
+hunger
+&gt;&gt; and uh hunger is a great way to get
+yourself a revolution. Yep. And maybe
+maybe let's avoid that if we can. I
+don't know. just thinking out loud.
+&gt;&gt; Yeah. On my channel, I actually just did
+a video with Brian Wang from Next Big
+Future and he has created a proposal and
+his kind of specific impetus for it was
+if we don't treat the under 35s well,
+they're going to revolt and we will have
+a revolution and you know that will end
+society as we know it. Who knows what
+happens after that, but it's not a good
+thing in the short term. So, um
+&gt;&gt; they're they're they're getting they're
+not getting the short end of the stick.
+There ain't no stick. Yeah.
+&gt;&gt; Uh, in many cases, now of course that's
+not true for everyone, but skyhigh
+rents, sky-high tuitions, impossibly
+expensive healthare, uh,
+&gt;&gt; you've got to have a hope or you get
+very dangerous. A cornered animal is
+very dangerous.
+&gt;&gt; It's very dangerous. Yeah, exactly. So,
+anyway, you can put a link to that in
+the description if you want because I
+think people would find it interesting
+after this discussion.
+&gt;&gt; So, what are we getting too heavy over
+here? May, maybe.
+&gt;&gt; There we go. Uh, so guys, uh, what, uh,
+what do you think of that? What do you,
+what do you got to say? Are you in
+John's corner? And if so, take a step
+back.
+&gt;&gt; You're crowding me, man. You're crowding
+me. He gets scary when that happens. Uh,
+what do we miss? What do we
+misunderstand? Leave it in the comments
+below. Head over. Please push him over
+the 100,000 subscriber mark. We've got
+an experiment we wish to undertake where
+we determine what shifts at 100,000. We
+know it's something. Uh, but we'll find
+out. Everybody else, like, subscribe, do
+what you do, and stay tuned. Stay juicy.
+And I cannot wait to hear from you
+clever robots. Yes, I've been saying
+that since the beginning. Uh when
+something else serendipity happens,
