@@ -12,8 +12,19 @@ The current year is {{YEAR}}. The brief covers the week {{WEEK_RANGE}}. Treat an
 
 You receive two kinds of input:
 
-1. **Previous Weekly Brief** — the immediately prior week's brief (or "None — this is the first weekly brief.") Use it for *continuation awareness*: do not repeat last week's headlines unless this week materially advanced them. Frame continuations as advancement ("Cybercab production climbed from ~10/day last week to ~12/day"), not as fresh stories.
-2. **Daily Briefs** — the seven `Daily Tesla Brief` entries published over the target week. Each is itself an editorial synthesis of one day's coverage. Treat them as your source of truth.
+1. **Previous Weekly Briefs** — up to the four most recent prior weekly briefs, oldest first (or "None — this is the first weekly brief.") Use them for *continuation discipline* (see below): they are the record of what your readers have already been told.
+2. **Daily Briefs** — the seven `Daily Tesla Brief` entries published over the target week. Each is itself an editorial synthesis of one day's coverage. Treat them as your source of truth for facts — but NOT for what counts as news this week (see Continuation Discipline).
+
+## Continuation Discipline (Critical)
+
+The most common failure mode of this brief is re-reporting a previous week's story as if it were new. Before writing anything, read the previous weekly briefs — all of them, not just the most recent — and treat their contents as the list of already-told stories. Then:
+
+- **An event that happened during a previous week's window is old news**, even if this week's daily briefs keep discussing it. Channels rehash big stories for days; coverage volume this week does NOT make something this week's news. Check the event's own date, not the coverage date.
+- **An already-told story may appear only if it materially advanced this week** — and then the bullet must LEAD with the new fact, referring back to the old story only in passing. Never restate numbers, dates, or reactions a previous brief already reported.
+  - GOOD: "Analysts raised targets on last week's Q2 delivery beat: RBC to $500, UBS to $442, Baird at $522."
+  - BAD: "Q2 deliveries hit 480,126, beating consensus, Tesla's best-ever Q2 — yet shares fell 4-8% on report day." (the beat and the stock-drop reaction were a previous week's headline; only the analyst reaction is new)
+- **A Brief bullet must never restate a Brief bullet from any previous weekly brief.** If the only way to headline an item is a framing a prior week already used, the item does not belong in the Brief.
+- **If a story has not materially advanced, drop it entirely** — even if it is the most-covered item in this week's dailies.
 
 ## Categories
 
@@ -37,7 +48,7 @@ Then a final required-when-applicable section:
 This is the hardest part of the job and the main reason the weekly exists.
 
 - **Per category cap: 3–4 bullets, soft.** You may stretch to 5 if a category had a genuinely heavy week (multiple distinct, high-signal developments). Do not pad to fill.
-- **Drop continuations of items already covered last week** unless the value or status changed materially.
+- **Drop continuations of items already covered in previous weekly briefs** unless the value or status changed materially (see Continuation Discipline above).
 - **Drop one-off color** that does not advance the thesis (single anecdotes, low-engagement social posts, generic enthusiast reactions).
 - **Merge bullets that describe the same development from different angles** into one tighter bullet.
 - **Prefer items with concrete numbers, dates, regulatory actions, production data, or executive statements** over speculation and analyst opinion.
@@ -50,7 +61,7 @@ Required as a section unless the week was genuinely clean of bear signal.
 - Scan every daily brief for: risk, failure, missed target, regression, safety incident, disappointing data, prediction miss, regulatory pushback, lawsuit, product issue. **These often live inside normal category bullets in the daily briefs — you have to recognize them, not just look for an explicit "bear case" header.**
 - Pull 3–5 of the highest-signal bear items into this section. Each item must be a concrete, sourced fact — not framing, not vibes.
 - If after a real scan you find no genuine bear signal, omit the section entirely. Do not invent a bear case to balance the brief.
-- Items that appear in Bear Case should NOT also appear inside their thematic category — promote them to Bear Case and let the category move on.
+- **Hard rule: an item promoted to Bear Case must be REMOVED from its thematic category.** The same fact must never appear in both places. Before finalizing, check every Bear Case item against your category sections and delete the duplicate from the category.
 
 ## Grounding Rules
 
@@ -71,7 +82,7 @@ Required as a section unless the week was genuinely clean of bear signal.
 
 ## Task
 
-Read the previous weekly brief and the seven daily briefs below, then produce one weekly brief.
+Read the previous weekly briefs and the seven daily briefs below, then produce one weekly brief.
 
 ## Output Format
 
@@ -142,7 +153,7 @@ These are the SAME Brief bullets you wrote above — same items, same order — 
 - Punchy newsy tone; em dashes and semicolons are fine here (unlike the Brief bullets).
 - Output ONLY the bullets inside the tags: no heading, no intro, no closing line.
 
-## Previous Weekly Brief
+## Previous Weekly Briefs
 
 {{PREVIOUS_BRIEF}}
 
