@@ -1,0 +1,34 @@
+Channel:     thelimitingfactor
+Title:       SpaceX Data Center Growth: Big Revenues, But Big Spending (Colossus Update)
+Published:   2026-07-15 14:53 UTC
+Summarized:  2026-07-15 16:04:07 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01Fh9YQv39YmVpL11odd2AXc
+Cost:        $0.02282 (13237 in / 1916 out tokens)
+Relevance:   tangential — This video is entirely about SpaceX's data center (Colossus/GPU rental) business and cash flow dynamics, with no direct Tesla content beyond being from a Tesla-adjacent analyst; the platform's stated exception applies to SpaceX-Tesla merger or resource-sharing scenarios, neither of which is discussed here.
+Categories:  Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from analyst Jordan Giesige (The Limiting Factor) revisits a year-old forecast of SpaceX's Colossus data center buildout and evaluates recent claims that SpaceX could rent out hundreds of billions of dollars of compute, arguing that while data center rental revenue is real and growing fast, heavy capital spending likely means SpaceX won't be meaningfully cash flow positive for another year or two. There is no Tesla-specific content; the entire discussion concerns SpaceX's Colossus 1/2 sites, GPU rental deals, and financing.
+
+## Market & Competition
+1. **Colossus buildout tracked against prior forecast:** The host's year-ago prediction of three ~1GW buildings reaching 1 million GPUs partly held: Colossus 2 hit 1GW (~330,000 GPUs) between November 2025 and February 2026 as Elon Musk stated, and reportedly reached 1.5 GW by April 2026, but total GPUs delivered (550,000) lag the host's projected pace toward 1 million.
+2. **Total compute footprint:** Combining Colossus 1 (~230,000 older H-series GPUs, ~300MW) and Colossus 2 (~550,000 GPUs, ~1.5-1.7GW), SpaceX's Memphis sites total roughly 2 gigawatts of power capacity; Semi-Analysis reportedly estimates about 4GW of power generation installed or underway there, implying room to roughly double compute in the next 12-18 months.
+3. **Current GPU rental deals:** SpaceX has begun renting compute — 220,000 GPUs at Colossus 1 to Anthropic for $1.25 billion/month, 110,000 GPUs from Colossus 2 to Google for $920 million/month, and roughly $150 million/month worth of GPUs (estimated at 10-15,000 GPUs) to Reflection — totaling about $28 billion/year for 340,000 GPUs, roughly half of SpaceX's total GPU capacity.
+4. **Older GPUs rented first:** The host notes SpaceX has so far rented out its older H-series and early GB-series GPUs first, which may signal pricing and sequencing for future rentals of newer hardware.
+
+## Financials
+1. **Revenue vs. capex mismatch:** If SpaceX doubled compute to 4GW and continued renting roughly half, the host calculates potential rental revenue of about $72 billion/year, but citing Gavin Baker's estimate that 1GW of compute costs about $60 billion, building the additional 2GW would cost roughly $120 billion — dwarfing the projected revenue and supporting the host's view that SpaceX may not be seriously cash flow positive for another couple of years.
+2. **Other revenue streams considered:** Starlink is growing but likely insufficient alone to make SpaceX significantly cash flow positive near-term; SpaceX's AI coding tool Cursor (current run rate cited around $4 billion/year) is called the "real wild card" with potential for explosive growth, though competition from Anthropic (whose coding software run rate reportedly grew from ~$9 billion in late 2025 to a projected 100+ billion by end of 2026) could dilute Cursor's growth potential.
+3. **Financing concerns downplayed:** The host is not worried about SpaceX's ability to finance data center expansion, citing an $80+ billion capital raise (described as an IPO) and the possibility that even in a tight capital market, growth would only slow, not stop, given existing rental and Starlink cash flows.
+4. **Investment stance unchanged:** The host reiterates a wait-and-see position on SpaceX, saying he isn't ready to invest until its return potential over a 1-2 year horizon matches other portfolio holdings, or unless the stock price becomes deeply discounted.
+
+Notable quotes and data:
+- Colossus 2 reached 1GW (~330,000 GPUs) between Nov 2025-Feb 2026, and ~1.5GW by April 2026 per Elon Musk statements.
+- Colossus 1: ~230,000 older H-series GPUs, ~300MW; total Colossus 1+2 power draw ~2GW.
+- Rental deals: Anthropic $1.25B/month (220,000 GPUs, Colossus 1); Google $920M/month (110,000 GPUs, Colossus 2); Reflection ~$150M/month (est. 10-15,000 GPUs).
+- Total current rental run rate: ~$28 billion/year for 340,000 GPUs (~600MW of 2GW).
+- Semi-Analysis estimate: ~4GW of power generation installed/underway in Memphis.
+- Projected scenario: fully renting remaining ~440,000 GPUs could yield ~$72 billion/year, against an estimated $120 billion cost for 2GW of additional compute (per Gavin Baker's ~$60B/GW estimate).
+- Cursor's current annual run rate: ~$4 billion; Anthropic's coding software run rate reportedly ~$9 billion (late 2025) to a projected 100+ billion (end of 2026).
+- SpaceX capital raise cited: over $80 billion.
