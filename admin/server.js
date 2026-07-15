@@ -3,7 +3,7 @@ import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
-import { isHiddenSummary, loadModeration, relevanceLevel, saveModeration } from '../scripts/moderation.js';
+import { isExemptChannel, isHiddenSummary, loadModeration, relevanceLevel, saveModeration } from '../scripts/moderation.js';
 
 const app = express();
 app.use(cors());
@@ -121,6 +121,7 @@ function collectModerationItems() {
 
   const items = [];
   for (const filename of files) {
+    if (isExemptChannel(filename, moderation) && !decided.has(filename)) continue;
     const content = fs.readFileSync(path.join(NEWS_DIR, filename), 'utf-8').replace(/\r\n/g, '\n');
     const headerEnd = content.indexOf('─'.repeat(5));
     const header = headerEnd !== -1 ? content.slice(0, headerEnd) : '';

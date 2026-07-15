@@ -126,12 +126,13 @@ jobs:
             const cp = require('child_process');
             const newFiles = cp.execSync('git ls-files --others --exclude-standard news', { encoding: 'utf8' })
               .split('\n').filter(f => f.endsWith('_summary.txt'));
-            let moderation = { include: [], exclude: [] };
-            try { moderation = { include: [], exclude: [], ...JSON.parse(fs.readFileSync('data/moderation.json', 'utf8')) }; } catch {}
+            let moderation = { include: [], exclude: [], exempt_channels: [] };
+            try { moderation = { include: [], exclude: [], exempt_channels: [], ...JSON.parse(fs.readFileSync('data/moderation.json', 'utf8')) }; } catch {}
             const hidden = [];
             for (const file of newFiles) {
               const name = file.replace(/^news\//, '');
               if (moderation.include.includes(name) || moderation.exclude.includes(name)) continue;
+              if (moderation.exempt_channels.includes((name.match(/^\d{8}_([^_]+)_/) || [])[1])) continue;
               const header = fs.readFileSync(file, 'utf8').split('─'.repeat(5))[0];
               const meta = {};
               for (const line of header.split('\n')) {
