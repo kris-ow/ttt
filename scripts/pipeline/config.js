@@ -9,6 +9,11 @@ export const CATEGORIES = [
   'Electric Vehicles',
   'Financials',
   'Market & Competition',
+  'SpaceX — Starship',
+  'SpaceX — Starlink',
+  'SpaceX — Launch Business',
+  'SpaceX — AI & Compute',
+  'SpaceX — Corporate & Valuation',
 ];
 
 // Common transcript misspellings → correct terms
@@ -95,6 +100,17 @@ export const CORRECTIONS = {
   'Ashok Elaswami': 'Ashok Elluswamy',
   'Ashok Elaswamy': 'Ashok Elluswamy',
   'Ashok Eluswamy': 'Ashok Elluswamy',
+  'star ship': 'Starship',
+  'starship': 'Starship',
+  'star link': 'Starlink',
+  'starlink': 'Starlink',
+  'super heavy': 'Super Heavy',
+  'falcon nine': 'Falcon 9',
+  'raptor': 'Raptor',
+  'colossus': 'Colossus',
+  'Gwen Shotwell': 'Gwynne Shotwell',
+  'Gwynn Shotwell': 'Gwynne Shotwell',
+  'Gwen Shotwall': 'Gwynne Shotwell',
 };
 
 // Claude model for summarization. Switched from claude-sonnet-4-6 on

@@ -4,7 +4,7 @@ import interviewsData from '../../data/interviews.json'
 import { type Article, type NewsData } from '../../types'
 import { type Interview } from '../Interviews/InterviewSection'
 import { useInterviewOpener } from '../Interviews/interviewRoute'
-import { formatDate, channelShort, biasTag } from './helpers'
+import { formatDate, channelShort, biasTag, topicTag } from './helpers'
 import { track } from '../../analytics'
 
 const data = newsData as NewsData
@@ -99,6 +99,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
                           : 'text-text-bright group-hover:text-green'
                       }`}>
                         {article.title}
+                        {article.topic && <span className="ml-2 space-x-1 whitespace-nowrap">{topicTag(article.topic)}</span>}
                       </span>
                     </div>
                   </button>

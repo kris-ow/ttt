@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { type Article, CHANNEL_META } from '../../types'
-import { renderInline } from './helpers'
+import { renderInline, topicTag } from './helpers'
 import { track } from '../../analytics'
 
 export function ArticleDetail({ article, onClose }: { article: Article; onClose: () => void }) {
@@ -44,7 +44,10 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
           <div className="text-text-dim text-xs mb-2">
             [{article.sourceType === 'x' ? 'X/TWITTER' : article.sourceType === 'article' ? 'WEB' : article.sourceType === 'exec' ? 'TTT' : 'YOUTUBE'}] {channel?.name?.toUpperCase() || article.channel.toUpperCase()} // {article.date}
           </div>
-          <h2 className="text-green text-lg font-bold mb-4">{article.title}</h2>
+          <h2 className="text-green text-lg font-bold mb-4">
+            {article.title}
+            {article.topic && <span className="ml-2 space-x-1 whitespace-nowrap text-xs font-normal align-middle">{topicTag(article.topic)}</span>}
+          </h2>
           {(article.source || article.videoUrl) && (
             <div className="text-text-dim text-xs mb-4 flex items-center gap-3">
               {article.source && <span>src: {article.source}</span>}

@@ -1,4 +1,4 @@
-import { CHANNEL_META, type Bias } from '../../types'
+import { CHANNEL_META, type Article, type Bias } from '../../types'
 
 export function formatDate(dateStr: string) {
   const d = new Date(dateStr + 'T00:00:00')
@@ -51,4 +51,18 @@ export function biasTag(channel: string) {
   if (!ch?.bias) return null
   const cls = BIAS_STYLE[ch.bias]
   return <span className={cls}>[{ch.bias}]</span>
+}
+
+// Faded yellow for Tesla, SpaceX brand blue
+const TOPIC_STYLE = {
+  tesla: 'text-[#d0bd5c]',
+  spacex: 'text-[#4d9fff]',
+}
+
+export function topicTag(topic: Article['topic']) {
+  if (!topic) return null
+  const topics = topic === 'both' ? (['tesla', 'spacex'] as const) : ([topic] as const)
+  return topics.map(t => (
+    <span key={t} className={TOPIC_STYLE[t]}>[{t.toUpperCase()}]</span>
+  ))
 }

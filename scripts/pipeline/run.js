@@ -298,6 +298,16 @@ function parseResult(text) {
     else console.log('  Warning: could not parse relevance block');
   }
 
+  // "tesla" / "spacex" / "both". Absent or unparseable topic means no
+  // Topic header and no feed badge.
+  const topicMatch = text.match(/<topic>\s*([\s\S]*?)\s*<\/topic>/);
+  let topic = null;
+  if (topicMatch) {
+    const m = topicMatch[1].trim().match(/^(tesla|spacex|both)\b/i);
+    if (m) topic = m[1].toLowerCase();
+    else console.log('  Warning: could not parse topic block');
+  }
+
   const summary = summaryMatch ? summaryMatch[1].trim() : text;
 
   let keyFacts = [];
@@ -309,7 +319,7 @@ function parseResult(text) {
     }
   }
 
-  return { categories, relevance, summary, keyFacts };
+  return { categories, relevance, topic, summary, keyFacts };
 }
 
 // ── Summary File Writing ─────────────────────────────────
@@ -338,6 +348,9 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
     if (result.relevance.level !== 'core') {
       console.log(`  Relevance: ${result.relevance.level} — hidden from feed pending review`);
     }
+  }
+  if (result.topic) {
+    headerLines.push(`Topic:       ${result.topic}`);
   }
   headerLines.push(
     `Categories:  ${result.categories.join(', ')}`,

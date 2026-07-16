@@ -10,6 +10,9 @@ export interface Article {
   sourceType: 'x' | 'youtube' | 'article' | 'exec'
   source: string
   signal: string | null
+  // Which thesis the content concerns (summarizer Topic header);
+  // null on legacy summaries and TTT briefs — no badge
+  topic?: 'tesla' | 'spacex' | 'both' | null
   videoUrl: string | null
   body: string
   type?: 'executive' | 'weekly'
