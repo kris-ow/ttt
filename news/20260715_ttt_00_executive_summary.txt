@@ -1,51 +1,47 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-07-15)
 Published:   2026-07-15 00:00 UTC
-Summarized:  2026-07-16 03:35:45 UTC
+Summarized:  2026-07-16 09:25:17 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.04023 (10890 in / 1845 out tokens)
+Cost:        $0.04056 (10890 in / 1878 out tokens)
 Sources:     5
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- Cybercab skips paint shop, uses color-molded composite panels
-- AI5 chip tapeout complete at Samsung's Taylor, TX plant
-- FSD (Supervised) Europe crosses 50M km cumulative
-- Cybercab efficiency confirmed at 165 Wh/mile by Lars Moravy
-- Tesla Semi lands 20-truck ATC Logistics deployment deal
+- Cybercab skips paint shop entirely, uses molded-color panels
+- Samsung completes AI5 chip tapeout at Taylor, Texas plant
+- FSD Supervised Europe mileage tops 50M km cumulative
+- Cybercab efficiency confirmed at 165 Wh/mile per Moravy
+- LFP Model 3 packs beat nickel versions on battery health
+- Tesla Semi lands 20-truck order from ATC Logistics
 
 ## Robotaxi
-- Cybercab's reaction injection molded (RIM) body panels eliminate the traditional paint shop for most of the vehicle, per Joe Tegtmeyer; door rings and steel structure still need e-coating, sharing a smaller paint process with Cybertruck. Panels are bolt-on and reportedly swappable in ~20 minutes without repainting, a potential repair-cost advantage for fleet economics.
-- Cybercab curb weight came in at 3,113 lbs, lighter than Tegtmeyer expected given battery and casting mass, and confirmed front-wheel drive.
-- Per Tesla's 2025 impact report (via TheTeslaSpace), the RIM process cuts painting-related pollution by 35% and Cybercab is projected to emit nearly half the greenhouse gases per mile of a Model 3/Model Y; Lars Moravy confirmed 165 Wh/mile efficiency.
-- Jo Bhakdi cites Cybercab sightings in Houston and Massachusetts and sub-five-minute wait times reported in Miami, reading the geographic spread as evidence of real operational intent rather than a showcase.
+- Cybercab's reaction injection molded body panels eliminate the traditional paint shop for most of the vehicle, per Joe Tegtmeyer; only door rings and the steel passenger structure still need e-coating, sharing a smaller paint line with Cybertruck. Panels reportedly bolt on and off in about 20 minutes without repainting, and minor scratches can be repaired without a paint job since color runs through the material.
+- Curb weight came in at 3,113 lbs, lighter than Tegtmeyer expected (he anticipated closer to 3,500 lbs), and within roughly 400 lbs of a 1973 Datsun 240Z despite carrying batteries, castings, and modern safety/drive-by-wire systems. Front-wheel drive was reconfirmed.
+- Tesla's 2025 impact report states the RIM paint-free process cuts painting-related pollution by 35% and largely eliminates VOC fumes; Cybercab is projected to emit nearly half the greenhouse gases per mile of a Model 3/Model Y, per the report as cited by TheTeslaSpace. Lars Moravy has confirmed 165 Wh/mile efficiency, per the same source.
+- Cybercab deployments continue expanding, with sightings reported in Houston, Massachusetts and elsewhere, plus a claim of sub-five-minute wait times in Miami, per Jo Bhakdi.
 
 ## Humanoid Bots
-- A Samsung Foundry engineer's since-deleted LinkedIn post claims Samsung has completed manufacturing tapeout prep for Tesla's AI5 chip at its Taylor, Texas plant, distinct from Tesla's own design tapeout completed earlier per Musk; the manufacturing deal is reportedly worth $16.5 billion (per TheTeslaSpace host).
-- AI5 is aimed primarily at Optimus and Tesla's AI training computers rather than vehicles, since Musk has said AI4 already suffices for FSD; the chip draws up to 800W peak but has reportedly been optimized down to ~250W to fit Optimus's much smaller 2.3 kWh battery.
-- Musk's roadmap per the host: AI4 powers current vehicles/robotaxis, AI5 boosts Optimus compute, AI6 leans further into Optimus/training, and AI7 is envisioned for satellite deployment.
-- Musk says current chip industry capacity can't meet Tesla's future needs, motivating the proposed Terafab facility in Texas — described as ~100 million square feet and years from completion.
-
-## Autonomous Driving
-- FSD (Supervised) in Europe has surpassed 50 million cumulative kilometers (31 million miles), up from 20 million km roughly 7.5 weeks earlier, per Tesla.
-- Bhakdi says he expects German FSD approval this year, framed explicitly as his own expectation, not confirmed.
+- A Samsung Foundry principal engineer, in a since-deleted LinkedIn post cited by TheTeslaSpace, said Samsung has completed manufacturing tapeout prep for Tesla's AI5 chip at its Taylor, Texas plant — distinct from Tesla's own design tapeout, which Musk said was finished earlier this year. The manufacturing deal is described as worth $16.5 billion, per the host.
+- AI5 is being aimed primarily at Optimus and Tesla's AI training computers rather than vehicles, since Musk has said AI4 already gives FSD enough compute, per the host. AI5 can draw up to 800W under load but has reportedly been optimized down to roughly 250W to fit Optimus's much smaller 2.3 kWh battery (~32x smaller than a Model Y pack).
+- Musk's chip roadmap per the host: AI5 boosts Optimus and vehicle compute, AI6 shifts focus further toward Optimus and training, and AI7 is envisioned for eventual satellite deployment.
+- A separate, unverified claim relayed by Jo Bhakdi — attributed to a purported Samsung foundry employee — says Tesla's AI5 chip has completed tape-out.
 
 ## Electric Vehicles
-- A Swedish retailer's analysis of ~9,954 battery tests found Tesla's CATL LFP Model 3 pack averages 93.3% health past 62,000 miles, beating all nickel-based Model 3 variants by up to five points (worst: Panasonic NCA), per Electrek.
-- Tesla Semi: ATC Logistics is retiring 11 diesel day cabs for 20 Tesla Semis, targeting an early 2027 launch from a Rancho Dominguez, CA depot.
-- Model Y L has begun appearing in select U.S. showrooms for sit-ins, though demo drives aren't yet available.
+- A Swedish used-EV retailer (Carla) analyzed nearly 10,000 real-world battery tests and found CATL LFP Model 3 packs averaged 93.3% health past 62,000 miles, beating every nickel-based Model 3 variant by roughly five points, per Electrek. Tesla has separately reported ~15% capacity loss after 200,000 miles for Model 3/Model Y Long Range packs.
+- FSD (Supervised) mileage in Europe has passed 50 million km cumulative, up from 20 million km roughly 7.5 weeks earlier, per Tesla.
+- The Model Y L has begun appearing in select U.S. showrooms for customers to sit in, though demo drives aren't yet available.
+- ATC Logistics is retiring 11 diesel day cabs for 20 Tesla Semis, running out of a Rancho Dominguez, CA depot with fast-charging targeted for early 2027.
 
 ## Market & Competition
-- New York Governor Hochul signed a one-year moratorium on data center permits over 50 MW; Trump criticized the move, saying developers would shift to Alabama, Florida, Texas, and Arizona. Bhakdi calls the ban a near-term overreaction given red-state absorption capacity.
-- SpaceX's Starship V3 flight 13 will carry 20 operational Starlink V3 satellites for the first time (not dummy mass), with six satellites carrying cameras to inspect the heat shield and an attempted in-space Raptor relight.
-
-## Financials
-- Bhakdi notes SpaceX/SPCX stock down ~10% over the past week; he trimmed his position and sold short calls at a $180 strike, citing elevated short-interest risk, while speculating (explicitly framed as speculation) SpaceX EBIT could reach $30–40B next year versus an ~$11B current run rate.
+- New York Governor Hochul signed a one-year moratorium on permits for data centers using 50+ MW; Trump criticized the move, saying business would shift to Alabama, Florida, Texas, and Arizona, per Jo Bhakdi.
+- SpaceX's next Starship flight (V3, flight 13) will carry 20 operational Starlink V3 satellites — its first real payload rather than dummy mass — with an in-space Raptor relight attempt, per TheTeslaSpace.
+- Jo Bhakdi speculates FSD approval in Germany could come this year, calling it his own expectation rather than a confirmed development.
 
 Notable quotes and data:
-- FSD (Supervised) Europe: 50M+ cumulative km, up from 20M km ~7.5 weeks prior.
-- LFP Model 3: 93.3% battery health past 62,000 miles, ~5-point edge over worst nickel variant (Panasonic NCA).
-- Cybercab: 3,113 lbs curb weight; 165 Wh/mile efficiency (Lars Moravy).
-- AI5: up to 800W peak power, optimized to ~250W per prior reports; Optimus battery is 2.3 kWh vs. ~75 kWh in a Model Y.
-- "Paint is expensive" — Tom Zhu, reportedly, per Matthew Donagan Ryan's account at a Cybertruck event.
+- Cybercab curb weight: 3,113 lbs; efficiency: 165 Wh/mile per Lars Moravy.
+- FSD Supervised Europe: 50M+ km cumulative, up from 20M km ~7.5 weeks prior.
+- LFP Model 3: 93.3% battery health past 62,000 miles, ~5-point edge over worst nickel pack (Panasonic NCA).
+- AI5 chip: up to 800W peak draw, optimized to ~250W per prior reports; Optimus battery is 2.3 kWh vs. ~75 kWh in a Model Y.
+- Tom Zhu reportedly said "paint is expensive" when asked about future vehicle materials, via Matthew Donagan Ryan's account.
