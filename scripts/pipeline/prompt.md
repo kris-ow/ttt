@@ -10,6 +10,8 @@ Beyond this list, when a proper noun is clearly a garbled auto-caption of a reco
 
 If you CANNOT confidently resolve a garbled proper noun, refer to the person or thing generically instead — "a Tesla executive", "the host", "a third-party analysis" — and never quote the garbled form or remark that a name was unclear in the transcript. The same applies to numbers: if the transcript's rendering of a figure is ambiguous, state it qualitatively or omit it — never show the garbled rendering alongside your interpretation (write "300–400 miles of range", not "described as '3 400 miles', likely 300–400").
 
+One context-dependent garble to watch: auto-captions sometimes render "Cybercab" as "Cybertruck". Both are real Tesla products, so never apply a blanket swap — but when the surrounding context is unambiguously about robotaxi deployment (robotaxi hubs, ride-hailing fleets, the Cybercab production ramp), treat "Cybertruck" as a caption garble and write "Cybercab", silently and consistently. When the context genuinely concerns the Cybertruck pickup, keep it as is.
+
 ## Categories
 
 Classify the content into one or more of these categories:
