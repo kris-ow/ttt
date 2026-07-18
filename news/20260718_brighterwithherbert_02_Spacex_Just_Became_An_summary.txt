@@ -1,0 +1,37 @@
+Channel:     brighterwithherbert
+Title:       SpaceX Just Became an AI Landlord. Here's the Math
+Published:   2026-07-18 18:30 UTC
+Summarized:  2026-07-18 19:02:37 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01HZFKMVqBNwfRw6GNHB9RFf
+Cost:        $0.04048 (21157 in / 3864 out tokens)
+Relevance:   core — the video is a detailed financial and infrastructure analysis of SpaceX/xAI's AI data-center leasing business, directly bearing on the SpaceX investment thesis.
+Topic:       spacex
+Categories:  SpaceX — AI & Compute, SpaceX — Corporate & Valuation, SpaceX — Starlink, SpaceX — Launch Business, Financials
+────────────────────────────────────────────────────────────
+
+This episode of the show (guest-hosted by Larry, with analyst Brian presenting) is a deep-dive financial model on SpaceX/xAI's emerging AI-compute leasing business — dubbed "SpaceX becoming an AI landlord" — covering existing deals with Google, Anthropic, and Reflection AI, chip and power buildout at Colossus 2, and projected 2026–2027 revenue and operating income scenarios. The core thesis is that SpaceX/xAI's ability to rapidly stand up power and compute capacity positions it as the low-cost, fastest-to-market supplier in an AI infrastructure market where demand is estimated at roughly five times supply.
+
+## SpaceX — AI & Compute
+1. **Existing and projected AI leasing deals:** Brian's model shows Google's leasing revenue ramping to roughly $1 billion/month by October, alongside Anthropic and Reflection AI deals already generating about $1.4 billion/month combined. He predicts one or two additional major leasing deals will be announced before year-end, potentially from a second Google deal, additional Anthropic capacity, or Microsoft (explicitly excluding OpenAI, which Brian says Elon Musk would not deal with). He cites Microsoft's stated ~$650 billion in signed AI demand and ~$80 billion of compute it can't yet monetize due to energy/GPU constraints as evidence hyperscalers may turn to SpaceX/xAI for bridge capacity.
+2. **Chip count at Colossus 2:** Citing Epic AI (an industry research/tracking firm using aerial photography and other analysis), Brian states Colossus 2 has roughly 440,000 working chips (about 330,000 B300s and 110,000 B200s) as of a July 1 estimate, up sharply from an earlier estimate of around 190,000–250,000 chips a few months prior. He cross-checks this against known contractual commitments (~95,000 chips to Anthropic, ~18,000 to Reflection AI [Brian's inference], ~110,000 to Google by October), concluding the true figure is unlikely to be below 330,000–350,000.
+3. **Power buildout estimate (Brian's own conjecture, not confirmed):** Based on aerial-photo turbine counts (57 mobile gas turbines as of a June 11 environmental-group report, up from 27 in December), Brian estimates roughly 1.65 gigawatts of installed mobile turbine capacity at Colossus 2, potentially reaching ~2 gigawatts within a month or two with additional installations and a Tennessee Valley Authority substation upgrade. He further projects (explicitly flagged as his own estimate, not announced) up to 6 additional gigawatts over three years from the Caterpillar/Solar Turbines joint venture (49.9% xAI-owned, ~$3B order book), APR Energy units, and reportedly 12 Ducson 380-megawatt turbines on order (2 this year, 3 next year per reports he's seen).
+4. **Revenue/profitability model via Amazon-style depreciation:** Brian argues that using long-lived asset depreciation (25–30 years for buildings/power) versus short-lived assets (5–6 years for GPUs/networking) — the approach he says Amazon uses — means only about 20% of a given year's capex hits the income statement in year one, making the business profitable sooner than a simple capex-vs-revenue comparison (used by other analysts, per Brian) would suggest.
+5. **X/Grok revenue and business mix:** Grok/cursor-style AI revenue is already running near $4 billion/year annualized and, per Brian, is on track to double roughly every six months. X-related revenue (advertising, subscriptions, and other items) is described as larger than SpaceX's launch revenue in his Q4 model.
+
+## Financials
+1. **Q4 2026 consolidated projections:** Brian's model projects Q4 2026 consolidated SpaceX revenue of about $18.4 billion in the base case (AI segment ~$9–12 billion, Starlink growth of roughly $1–1.5 billion/month in added revenue from dish shipments, plus launch and X revenue), which he notes would run roughly neck-and-neck with Tesla's revenue for that quarter. Consolidated operating income is modeled at about $4.4 billion in the base case, ranging from $2.3 billion (bear case) to $6.8 billion (bull case), with capex assumed around $13 billion/quarter amortized over six years.
+2. **2026 vs. 2027 AI leasing run-rate:** 2026 total AI leasing revenue is modeled at about $47 billion for the year, exiting near a $72 billion annualized run rate in Q4, with an exit run rate as high as $82 billion if more deals close. Extending into 2027, Brian's bull case sees AI leasing revenue reaching roughly $90 billion for the year with an exit run rate near $120 billion, driven by continued build-out of roughly 100 megawatts/month of new capacity monetized at an estimated ~$52 billion-per-gigawatt annual run rate.
+3. **Long-term market/pricing outlook (speculative):** Brian projects that per-gigawatt AI compute pricing could compress over several years — potentially from ~70% margins toward 30–40% — as cheaper chips (e.g., Terafab-based) lower build costs, but argues SpaceX/xAI's low-cost position would let it retain profitability even as prices fall. He also cites a Dylan Patel/SemiAnalysis assertion that current AI compute demand is roughly five times supply, with most bottleneck analyses showing at least three years of runway.
+
+Notable quotes and data:
+- Colossus 2 estimated at ~440,000 working chips (~330,000 B300, ~110,000 B200) per Epic AI, as of a July 1 update.
+- Roughly 1.65 gigawatts of mobile turbine power estimated at Colossus 2, per Brian's aerial-photo-based analysis (unconfirmed, his own conjecture).
+- Microsoft reportedly has ~$650 billion in signed AI compute demand but needs ~$80 billion more available compute than it currently has, per Brian.
+- Q4 2026 base-case consolidated revenue modeled at $18.4 billion, comparable to Tesla's quarterly revenue, per Brian.
+- 2026 full-year AI leasing revenue modeled at ~$47 billion, exiting near a $72–82 billion annualized run rate.
+- 2027 bull-case AI leasing revenue modeled at up to ~$120 billion exit run rate.
+- Current AI compute demand estimated at roughly 5x supply, per Dylan Patel/SemiAnalysis (cited by Brian).
+- Grok/X-related AI revenue already ~$4 billion/year annualized, projected to double roughly every six months.
+- Brian: "the demand side for Anthropic and Google is that... I'm hitting these session limits trying to use Enthropic. So why would Enthropic say I want to make my... inference session limit problem even worse by... getting out of this other deal."
+- SpaceX/xAI reportedly stated they are "in discussions with other companies on other leasing deals," per Brian.
