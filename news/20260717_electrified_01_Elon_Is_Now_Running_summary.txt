@@ -1,0 +1,59 @@
+Channel:     electrified
+Title:       Elon Is Now Running a New Secret Mission (Accelerant) ⚡️
+Published:   2026-07-17 23:05 UTC
+Summarized:  2026-07-18 00:01:59 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01PYyaNwUSen82WTVE1tFFzQ
+Cost:        $0.03884 (13145 in / 5140 out tokens)
+Relevance:   core — The video covers substantive SpaceX (Starship test flight, V3/V5 Starlink hardware, orbital data center satellites, a major energy acquisition) and Tesla (Robotaxi fleet, FSD regulatory status, Supercharger expansion, lithium refining) developments that directly bear on both investment theses.
+Topic:       both
+Categories:  SpaceX — Starship, SpaceX — Starlink, SpaceX — AI & Compute, Robotaxi, Autonomous Driving, Electric Vehicles, Energy, Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+This episode of Electrified covers a scrubbed Starship test flight and its upcoming V3 Starlink payload, a new lower-cost/higher-efficiency Starlink V5 terminal, the scale implications of V3 satellites and AI1 orbital data center satellites, Elon Musk's personal acquisition of energy company APR Energy to address AI power bottlenecks, and a roundup of Tesla news spanning Robotaxi fleet growth, FSD regulatory developments in Germany, Supercharger expansion in Japan, an NTSB crash report, and lithium refining progress at Giga Texas.
+
+## SpaceX — Starship
+1. **Flight 13 scrub and engine issue:** Starship's 13th test flight scrubbed, with a new launch window targeted for July 20th at 6:45pm Eastern. Per Elon Musk, some engines did not start, triggering an automatic abort; two Raptor engines will be removed and replaced before the next attempt.
+2. **First V3 Starlink satellite deployment planned:** For the first time, Starship is planned to carry and deploy 20 V3 Starlink satellites on the test flight, which will attempt to extend solar arrays/antennas and connect to the broader constellation via laser links. These satellites are on a suborbital trajectory and expected to burn up on re-entry roughly 20 minutes after deployment; six carry cameras to scan Starship's heat shield during re-entry.
+
+## SpaceX — Starlink
+1. **V3 satellites represent an order-of-magnitude capacity leap:** Each V3 satellite is specified to offer roughly 1 terabit/second downlink and 160 gigabits/second uplink — described as an order of magnitude more capable than V2 downlink and roughly two orders of magnitude more capable on uplink. The host estimates that with up to 60 V3 satellites per Starship launch, cumulative Starlink capacity (currently around 450 terabits/second, built since 2019) could theoretically double in as few as ~7.5 launches — potentially compressing years of capacity growth into roughly a year once V3 begins operating later this year (per Musk's stated timeline).
+2. **New Starlink V5 terminal focuses on margin, not speed:** SpaceX's newly announced V5 terminal is lighter (2.4 lb vs. 6.4 lb for the 4X), draws less average power, has a smaller dish, and is rated for wind survivability up to 165 mph (vs. 110 mph for 4X). Stated download speed capability is roughly 375+ Mbps versus 475 Mbps for the 4X, though real-world speeds depend heavily on network and conditions; the host frames this as primarily a margin-improvement play for SpaceX via lower weight/footprint, plus a better user experience. V5 ships with an Ethernet cable and Router Mini instead of the previous Router 3.
+
+## SpaceX — AI & Compute
+1. **AI1 orbital data center satellite specs raised:** Elon Musk said SpaceX plans to begin flying AI1 orbital data center satellites next year, with the V1 peak power spec raised to 250 kW (battery-assisted), average power around 160 kW, and capability to handle an NVL72 Reuben rack — equivalent to roughly 72 advanced GPUs per satellite to start, per the host's estimate. This is described as a first version likely to see further changes before launch.
+
+## SpaceX — Corporate & Valuation
+1. **Elon Musk personally acquires APR Energy for AI power buildout:** Musk quietly acquired Jacksonville-based APR Energy, a mobile/modular power generation company that has powered projects in over 35 countries and can stand up gas-turbine power projects in 15–30 days; the deal has cleared early antitrust termination and is reported to be worth at least $1 billion. The host frames this as a move to bypass power interconnection queue delays for Colossus-scale AI compute, enabling faster buildout for in-house model training (e.g., Grok) or rentable compute capacity.
+
+## Robotaxi
+1. **Texas Robotaxi fleet grows to 175 registered vehicles:** Tesla's officially registered Texas Robotaxi fleet reached 175 vehicles, with 73 new vehicles registered in a single week — the largest weekly addition to date — all Model Ys; actual vehicles in active operation remains unknown. Separately, Waymo expanded its Austin geofence, though Tesla's geofence footprint remains larger.
+
+## Autonomous Driving
+1. **Germany FSD approval timeline pushed back:** A German state secretary said the decision on Tesla's Full Self-Driving type approval will come only after a Europe-wide vote under the TCMV framework, with the earliest possible vote in October this year — dampening earlier hope for an approval ahead of that vote. Germany's KBA regulator is expected to receive a Tesla vehicle this month for independent testing to inform its position.
+2. **NTSB report on home-crash incident:** The NTSB's report on a Tesla crash into a home found the driver manually overrode FSD by pressing the accelerator to 100%, with vehicle speed exceeding 70 mph at the time of the crash — indicating the crash was not attributable to FSD behavior.
+
+## Electric Vehicles
+1. **Tesla-7-Eleven Supercharger partnership in Japan:** Tesla partnered with 7-Eleven Japan, installing its 150th Japanese Supercharger site as the first under this new partnership; 7-Eleven becomes only the second convenience chain (after Family Mart in 2023) to host Tesla Superchargers in Japan, with plans for about 10 more sites by the end of its 2026 fiscal year.
+2. **Japan sales acceleration:** Tesla registered about 12,200 vehicles in Japan in the first half of 2026, up roughly 166% year-over-year, already surpassing full-year 2025 Japan sales.
+3. **New market entry — Latvia:** Tesla is entering Latvia, a small market (~25,000 passenger car sales/year, ~7% BEV adoption in 2025, under 2,000 BEVs sold in 2025).
+
+## Energy
+1. **Tesla lithium refinery in Texas fully ramped:** A third-party attendee at Tesla's lithium day 2026 reported the lithium refining facility is now complete and fully ramped, with materials being shipped to Giga Texas for 4680 cell production — expected to be a gradual margin tailwind and supply chain security benefit rather than an immediate financial impact.
+2. **Australia leads global distributed solar adoption:** Australia leads the world with 990 watts of solar per person, 40% of homes with rooftop solar, and nearly 5% with home batteries, attributed to two decades of supportive policy; in the US, roughly 9% of homes have rooftop solar and under 1% have batteries, with solar costing roughly 3x more (~$3/watt vs. under $1/watt) and batteries roughly 2x more (~$1,000/kWh vs. ~$500/kWh installed) than in Australia.
+
+## Financials
+1. **Tesla Semi Mega Charger expansion:** Tesla deployed a new six-stall Mega Charger station in Bloomington, California, part of a buildout prioritizing key Semi routes and depots; roughly two dozen more Mega Charger sites are shown as "coming soon" in Texas alone, with additional sites planned in Florida, Georgia, and California.
+2. **Stock closes:** TSLA closed at $380.84, down 2.61% on the day; SpaceX shares closed at $123.99, down 5.43%, falling below its $135 IPO price — a move the host says he expected and thinks could fall toward $100 before recovering (explicitly framed as speculation, not financial advice).
+
+Notable quotes and data:
+- Starship Flight 13: two Raptor engines being removed/replaced after an automatic abort caused by engines failing to start; new launch target July 20th, 6:45pm ET.
+- V3 Starlink satellite specs: ~1 terabit/second down, 160 Gbps up per satellite; current cumulative Starlink capacity ~450 terabits/second.
+- Host estimate: ~7.5 Starship launches (60 V3 satellites each) could double Starlink's cumulative capacity, versus ~6.5 years to reach the current 450 Tbps level.
+- AI1 satellite V1: 250 kW peak power (battery-assisted), ~160 kW average, supporting an NVL72 Reuben rack (~72 GPUs), per Elon Musk.
+- APR Energy acquisition: reported deal value of at least $1 billion; company has powered 35+ countries, delivered 50+ terawatt-hours, and can deploy projects in 15–30 days.
+- Starlink V5 terminal: 2.4 lb vs. 6.4 lb (4X); wind rating 165 mph vs. 110 mph (4X); download speed ~375+ Mbps vs. 475 Mbps (4X).
+- Texas Robotaxi fleet: 175 registered vehicles, with 73 added in one week (largest weekly add to date), all Model Y.
+- Japan: ~12,200 Tesla registrations in H1 2026, up ~166% YoY, already exceeding full-year 2025 sales.
+- Australia solar: 990 watts per person, 40% rooftop solar adoption, ~5% battery adoption; US: ~9% rooftop solar, <1% battery adoption.
+- TSLA closed $380.84 (down 2.61%); SpaceX shares closed $123.99 (down 5.43%), below its $135 IPO price.
