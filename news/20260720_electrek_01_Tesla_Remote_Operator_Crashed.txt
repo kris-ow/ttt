@@ -1,0 +1,76 @@
+Source:      electrek
+Title:       Tesla remote operator crashed a ‘Robotaxi’ in Houston, NHTSA data shows
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/20/tesla-robotaxi-remote-operator-crash-houston/
+Published:   2026-07-20 13:15 UTC
+Fetched:     2026-07-20 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla has filed four new “Robotaxi” crash reports with NHTSA, and the most revealing one involves a Tesla remote operator driving the vehicle into a tree stump in Houston.
+
+It’s the third crash Tesla has now reported involving a human operating the car remotely caused the collision — and the first one Tesla has formally coded as remote operation in its filing.
+
+## What the Houston filing says
+
+The incident, report 13781-15395, happened in May in Houston. According to Tesla’s own narrative, the Model Y “was stopped on a dead end residential road” when it needed help getting out.
+
+“While the ADS was being supported remotely out of the dead end road, the vehicle entered a grassy slope,” Tesla wrote. “As the remote assistance operator continued to recover the vehicle, they made contact with a hidden tree stump.”
+
+ 
+ 
+ 
+
+The damage was minor — property damage only, no injuries, no airbag deployment, no tow, and a pre-crash speed of 2 mph. Tesla listed the Driver/Operator Type as “Remote (Commercial / Test),” the first time it has done so in any of its 22 unique ADS incident reports.
+
+Every other Tesla report either leaves that field blank or lists an in-vehicle operator. Tesla is now telling the federal government, in a structured data field, that a person sitting somewhere else was driving the car when it crashed.
+
+## The third remote-operator crash
+
+The Houston crash follows two others that only became public when Tesla unredacted all 17 of its crash narratives in May.
+
+In July 2025, a safety monitor requested support because the ADS wouldn’t proceed forward. The teleoperator took control, accelerated, turned left, and drove the car up a curb into a metal fence at 8 mph. In January 2026, a safety monitor asked for navigational help, a teleoperator took over, and drove into a temporary construction barricade at 9 mph.
+
+All three follow the same pattern: the autonomous system gets stuck, a human takes over remotely, and the human crashes the car. Tesla doesn’t disclose how often remote operators intervene, so there’s no way to calculate a rate — but every remote intervention that has appeared in a crash report ended in a collision.
+
+That pattern is notable because Tesla’s main competitor draws the line differently. In a February 2026 letter to Senator Ed Markey, Waymo wrote that it “has not used remote driving or ‘tele-operations’ where a human performs the Dynamic Driving Task.” Its remote assistance agents don’t directly control, steer, or drive the vehicle — they provide guidance the Waymo Driver can accept or reject.
+
+Waymo does have one narrow exception, and it’s worth stating plainly because it describes almost exactly the Houston scenario. The same letter says a specially trained US-based event response agent can prompt a stuck vehicle to move forward at 2 mph at fixed steering angles to exit a travel lane. Waymo says that function “has never been used outside of training.”
+
+So both companies have a remote tool for getting a stuck car unstuck. Waymo built one it has never deployed on a public road, capped at fixed steering angles.
+
+## Two Austin crashes and the first Dallas one
+
+The other three reports in this batch of reporting from mid May to mid June:
+
+Austin, June, report 13781-15342: The Model Y stopped behind an SUV in a parking lot. The SUV reversed into the front of the Tesla. This is the only one of the four filed as a 5-Day report rather than a monthly, and the only one where the Tesla was towed. One passenger was aboard, belted. Worth noting: Tesla’s narrative says the Model Y “came to a stop,” but the structured data field in the same filing lists the Tesla’s pre-crash movement as “Backing.” Tesla’s own report contradicts itself on whether its car was reversing.
+
+Interestingly, it sounds like the robotaxi might have tried to avoid the backing vehicle.
+
+Dallas, May, report 13781-15399: The Tesla turned right into a parking lot entrance at 5 mph and drove into “a thin metal chain that was blocking the entrance.” No passenger. It’s the first crash Tesla has reported in Dallas — and it’s a repeat. In September 2025, an Austin Model Y made a turn into a parking lot entrance and hit a metal chain at 6 mph. Same object, same maneuver, eight months apart.
+
+Austin, May, report 13781-15400: The Tesla followed a construction truck through a section of street narrowed by parked cars, coded by Tesla as a work zone. The truck stopped abruptly, then reversed into the Tesla’s front right. No passenger.
+
+Two of the four were caused by the other party. 
+
+## The disclosure Tesla fought for a year
+
+None of this context existed publicly until three months ago. Tesla was the only ADS operator filing crash reports under NHTSA’s Standing General Order that redacted every narrative as confidential business information, while Waymo, Zoox, Avride, and May Mobility all filed detailed accounts. Tesla argued it would “suffer financial harm” if the data became public.
+
+The company reversed course in the May data dump. As we wrote at the time, the disclosure largely vindicated Tesla on the fault question — most of its crashes were rear-endings and sideswipes by inattentive human drivers, the same pattern Waymo reports.
+
+But the same disclosure is what makes this batch legible. Without the narratives, “Tesla ADS crashes into pole/tree at 2 mph in Houston” reads like a minor scrape. With them, it reads as a Tesla employee crashing a Tesla remotely, which highlights the complexity of using remote operators in autonomous driving operations. 
+
+The Houston number matters here. Per Robotaxi Tracker data cited in our June analysis of Tesla’s crash record, Tesla had just three active vehicles in Houston and seven in Dallas — cities that launched in April with tiny geofences and have barely moved since. Austin, with roughly 16 active cars, produced two crashes in this batch. Houston and Dallas produced one each off a fraction of the vehicles.
+
+## Electrek’s Take
+
+We’ve been consistent on this: the crash count alone never told the story, and we said repeatedly that we suspected most of these crashes weren’t Tesla’s fault. The unredacted data proved that. Credit where it’s due — Tesla stopping the redactions was the right call, and it made its own safety record look better, not worse.
+
+But the same transparency cuts the other way, and the Houston crash is where it bites. Tesla is running three cars in Houston. Three. And about a month after launching there, one of them had to be rescued from a dead-end street by a remote operator who then drove it into a tree stump. That’s not a story about impact severity — nothing was damaged beyond a bumper. It’s a story about how often these cars need a human to bail them out, and how badly that goes when it happens.
+
+Teleoperation is the part of the autonomy stack nobody wants to talk about. Waymo has been careful about where it draws the line — its remote staff advise rather than drive, and the one recovery tool it built for stuck vehicles is capped at 2 mph with fixed steering and, by its own account, has never been used on a public road. That caution exists because remote driving over a cellular link means latency, limited situational awareness, and no physical feel for the vehicle. Tesla’s filings show its operators taking the wheel instead. 
+
+It highlights why Tesla’s robotaxi has yet to use higher-speed routes without in-car supervision. There’s still a lot of work to do before Tesla’s unsupervised robotaxi and FSD can achieve scale. 
+
+If you’re a Tesla owner, powering your EV with home solar is one of the smartest ways to lock in low fuel costs. With electricity rates climbing nearly 10% last year, home solar protects you against future rate increases. And with lease and PPA options, you can go solar with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
