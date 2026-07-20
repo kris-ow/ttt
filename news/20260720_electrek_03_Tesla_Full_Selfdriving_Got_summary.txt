@@ -1,0 +1,29 @@
+Channel:     electrek
+Title:       Tesla ‘Full Self-Driving’ got me a speeding ticket, and Tesla killed the fix
+Published:   2026-07-20 20:01 UTC
+Summarized:  2026-07-20 21:01:38 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01HVg5GXbErgqypgJPfvLA17
+Cost:        $0.01348 (5789 in / 1539 out tokens)
+Relevance:   core — a first-hand account of an FSD behavior (speed handling) with direct implications for Tesla's autonomous driving feature design and safety perception.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek's Fred Lambert describes getting a speeding ticket while demoing Tesla FSD (Standard mode) to first-time riders, when the car drove 78 km/h in a 50 km/h zone (28 km/h over), and uses the incident to criticize Tesla's removal of a driver-adjustable speed offset in FSD v14.
+
+## Autonomous Driving
+1. **Speeding ticket during FSD demo:** The author was pulled over by police after FSD, in Standard mode, drove 78 km/h in a 50 km/h zone while he was showing the feature to two first-time passengers, less than two minutes after activating it. He states he accepts personal responsibility for the ticket since he remains liable while FSD is engaged.
+2. **Removed speed-offset control:** Prior to FSD v14 (released last October, i.e. 2025), Tesla allowed drivers to set a custom speed offset above the posted limit (e.g., the author used 15 km/h), which capped how fast FSD would drive. Since v14, this custom offset was replaced by five fixed driving profiles: Sloth, Chill, Standard, Hurry, and Mad Max, none of which let the driver choose a specific number.
+3. **Preset behavior described:** The author says Sloth drives under the limit, Chill and Standard are sometimes too slow, Hurry is too fast (contributing to his ticket), and Mad Max — which he says Tesla brought back specifically to ignore speed limits — he calls poorly designed. On highways, Standard mode reportedly cruises around 111 km/h, which he considers acceptable and unlikely to draw police attention.
+4. **Existing but unused feature:** The author claims Tesla already has a speed-limit feature built in but that it now functions only as a warning rather than a hard speed cap, and argues Tesla could add a toggle to let users choose between warning-only or hard-limit behavior.
+5. **Behavioral change reported:** As a result of this gap, the author says he has been using FSD less on non-highway roads, reserving it mainly for highway driving where speed profiles feel appropriately calibrated.
+
+## Editorial Stance
+The author (Electrek's Fred Lambert) argues that Tesla's removal of the custom speed-offset control was "a step backward dressed up as simplification," contending that judgment about how far over the speed limit to drive depends on road, conditions, and local enforcement — factors a fixed preset can't account for but a driver can. He calls for Tesla to restore the customizable speed-offset feature, arguing that if drivers remain legally responsible for FSD's actions, they should have the tools to control it.
+
+Notable quotes and data:
+- FSD (Standard mode) drove 78 km/h in a 50 km/h zone — 28 km/h over.
+- Author's stated Quebec norm: driving 10–20 km/h over the limit generally isn't ticketed; 28 over is "ticket territory."
+- FSD v14 released "last October" (2025), replacing custom speed offset with Sloth/Chill/Standard/Hurry/Mad Max presets.
+- On highways, Standard mode reportedly cruises at 111 km/h.
