@@ -1,0 +1,73 @@
+Source:      electrek
+Title:       NHTSA targets Tesla’s ‘Radar Saves Us’ document in FSD crash probe
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/21/nhtsa-tesla-radar-saves-us-document-fsd-probe/
+Published:   2026-07-21 20:37 UTC
+Fetched:     2026-07-21 21:00 UTC
+
+────────────────────────────────────────────────────────────
+
+NHTSA is now demanding a Tesla internal document titled “Radar Saves Us” as part of its investigation into “Full Self-Driving” crashes in low-visibility conditions.
+
+The request is buried in a new 24-part information demand sent to Tesla on July 2, and it points the probe straight at the decision that started all of this: Tesla removing radar from its cars.
+
+The letter, signed by Office of Defects Investigation Director Tanya Topka and addressed to Tesla field quality director Eddie Gates, is the formal information request inside EA26002, the Engineering Analysis NHTSA upgraded the FSD visibility probe into back in March. An Engineering Analysis is the last investigative step before the agency either closes a case or pushes for a recall.
+
+The investigation covers roughly 3.2 million Tesla vehicles that have ever run FSD in the US. It’s tied to nine crashes where FSD was engaged in reduced visibility, including one fatality and one injury. The conditions are always the same: sun glare, fog, and airborne dust degrading the cameras that FSD relies on entirely.
+
+ 
+ 
+ 
+
+Tesla has until August 12 to respond. Failure to answer fully carries civil penalties of up to $27,874 per day, capped near $139 million.
+
+## The ‘Radar Saves Us’ document
+
+Request No. 4 is the one that jumps off the page.
+
+NHTSA says Tesla submitted an internal document titled “Radar Saves Us” in response to the earlier preliminary investigation, PE24031-01. The agency now wants everything around it: all internal communications, technical documentation, test records, and any data the document was built from.
+
+Here’s how ODI describes why it wants the file:
+
+> 
+This document appears particularly relevant to related design changes to the degradation detection system and Tesla’s understanding of the limitations imposed by a vision-only OEDR system and how they relate to the reduced visibility conditions that the Subject Vehicles encountered in each of the nine (9) countable crashes.
+
+Read that again. The federal safety regulator is telling Tesla that it has an internal Tesla document, apparently called “Radar Saves Us,” that it believes goes to Tesla’s own understanding of the weaknesses of a camera-only system in exactly the conditions that produced these crashes.
+
+The name has never appeared in public before this letter. Tesla handed the document to NHTSA privately during the earlier phase of the investigation, and the agency is now formally pulling it into the record.
+
+## What else NHTSA is digging into
+
+The “Radar Saves Us” request is the headline, but the rest of the letter shows how broad this has become.
+
+Request No. 12 lists 15 specific Tesla and Elon Musk marketing statements and asks Tesla to confirm, one by one, whether each “implies a higher level of capability or automation than the system currently has.” The examples include Tesla claiming “FSD Supervised can drive in whiteout conditions,” Musk stating “Tesla FSD can operate in all conditions” over a video that itself admits FSD struggles in fog, rain, and direct sunlight, the “$99/month robotaxi” post, and videos of drivers dancing, making espresso, and pushing the seat back with the wheel out of reach. NHTSA is building a paper trail on the gap between how Tesla sells FSD and what it can actually do.
+
+Request No. 14 zeroes in on a 2024 change that switched the “FSD Degraded” alert from red to yellow and removed the audible chime. The agency wants every study and every internal justification for softening a warning that tells drivers the system can’t see.
+
+And several requests circle Tesla’s “Direct Photon-Count Capability,” a camera improvement Tesla touted on its Q1 2025 earnings call as a fix for glare, plus a “Vision Failsafe Ranker” and Tesla’s internal use of the word “regressions” as a performance metric. In plain terms, NHTSA is trying to reconstruct exactly how Tesla’s vision-only stack decides it can no longer see, and what it does about it.
+
+## Why this comes back to radar
+
+To understand why “Radar Saves Us” matters, you have to go back to May 2021. That’s when Tesla pulled the front-facing radar out of its cars and went camera-only, branding it “Tesla Vision.” Ultrasonic sensors followed in 2022.
+
+It wasn’t a consensus decision. Tesla engineers reportedly tried to talk Musk out of removing radar, warning that cameras blinded by rain or sun could cause crashes. Musk overruled them.
+
+I know what Musk actually thought about this, because he told me directly. In direct messages I published last year, Musk conceded the core technical point: “vision with high-resolution radar would be better than pure vision.” His justification for going camera-only anyway was that no such radar existed at the time, and that ordinary radar hurt more than it helped. “Vision has become so good that radar actually reduces signal/noise,” he wrote. “The probability of safety will be higher with pure vision than vision+radar, not lower.”
+
+I pushed back in that same exchange and pointed him to high-definition millimeter-wave radars that already existed. He didn’t respond to that part.
+
+The “no such radar exists” excuse doesn’t hold up now, and it hasn’t for years. High-resolution imaging radar is everywhere.
+
+## Electrek’s Take
+
+We don’t know what’s in the “Radar Saves Us” document. But the title alone tells you the shape of it, and you don’t need much imagination to see why NHTSA wants it badly enough to name it in a federal information request.
+
+An internal Tesla document called “Radar Saves Us” almost certainly contains Tesla’s own analysis showing that radar, or radar fused with vision, catches situations that cameras alone miss. If that analysis touches the exact failure mode in these nine crashes, cameras washed out by glare, fog, or dust, then NHTSA has something powerful: evidence that Tesla internally understood a camera-only system had a safety gap, understood a proven fix, and shipped the camera-only system to 3.2 million cars anyway. That’s the difference between a design choice and a defect the manufacturer knew about. It’s exactly what turns an Engineering Analysis into a recall.
+
+This is the through-line I’ve been reporting for years, now landing in a regulatory file. Musk privately admitted radar-plus-vision is safer. Engineers begged him to keep radar. Tesla removed it, marketed the camera-only system as able to handle “whiteout conditions” and “all conditions,” and softened the on-screen warning when the cameras go blind. People have died in the conditions the cameras can’t handle, including a pedestrian killed by a Tesla on FSD.
+
+Tesla has until August 12 to hand over the document and answer for the marketing. 
+
+As I have often stated, I have very little hope of NHTSA holding Tesla’s feet over the fire when it comes to FSD. However, I have to admit that this line of inquiry here is promising.
+
+If you’re driving an EV, powering it with home solar is one of the best ways to cut your running costs to nearly zero. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
