@@ -1,0 +1,60 @@
+Source:      electrek
+Title:       Tesla Autopilot and FSD crashes hit record 207 in a single month
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/22/tesla-adas-crashes-record-207-one-month/
+Published:   2026-07-22 17:02 UTC
+Fetched:     2026-07-22 18:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla reported 207 crashes involving its driver-assist systems in a single month — the most it has ever logged. The figure comes from Tesla’s own crash reports to the National Highway Traffic Safety Administration (NHTSA).
+
+The record month lands as Tesla pushes Full Self-Driving harder than ever, and as the company continues to redact nearly every detail of what actually happened in these crashes.
+
+## A new record, in Tesla’s own data
+
+The data comes from NHTSA’s Standing General Order (SGO), which requires automakers to report crashes where an advanced driver-assistance system (ADAS) was engaged within roughly 30 seconds of impact and the crash met a severity threshold — an airbag deployment, a tow-away, an injury, a fatality, or a struck pedestrian or cyclist.
+
+We merged NHTSA’s latest ADAS export with the full archive going back to 2019, deduplicated to the latest version of each report, and isolated Tesla’s Level 2 records — the Autopilot and FSD file for customer cars.
+
+ 
+ 
+ 
+
+The picture is unambiguous. Tesla logged 207 crashes in May 2026, the highest single-month total on record. That one month is larger than all of 2021 combined (157). Across the full file, Tesla now accounts for 3,763 unique driver-assist crashes — about 85% of the entire industry’s ADAS reports.
+
+The trend is not leveling off. It’s accelerating.
+
+2025 was the first year Tesla crossed 1,000 driver-assist crashes in the dataset, at 1,043. 2026 has already logged 826 in just six months — on pace to roughly double last year.
+
+On an apples-to-apples basis, comparing the same January-through-June window each year to control for the partial year, the counts run 180, 261, 269, 476, and now 826 — a 73% jump year-over-year, off an already much larger base.
+
+## More miles, but Tesla won’t show the rate
+
+There is an obvious caveat, and it’s an important one: raw crash counts rise with fleet size and miles driven. Tesla has sold more cars and more FSD subscriptions, and drivers are running the system on more roads than ever. More engaged miles will produce more crashes even if the technology is getting safer per mile.
+
+The problem is that no one outside Tesla can check the rate. Tesla does not publish verified, independently auditable miles-driven data for Autopilot and FSD, and its quarterly “safety report” has been criticized by its own AI trainers as misleading. It’s entirely possible the per-mile crash rate is falling. It’s also possible it isn’t. The raw record simply can’t tell us — and Tesla is the only party holding the denominator.
+
+## 99.9% of narratives are still redacted
+
+What Tesla does control, it blacks out.
+
+Tesla has redacted the narrative on 99.9% of its 3,763 crash reports — every single year since 2019 — citing confidential business information. The severity field tells the same story: the vast majority of crashes are logged as “Unknown,” because the underlying detail is telematics-sourced and the description is redacted. The software-version field is redacted too, which is why the public file can’t separate Autopilot crashes from FSD crashes at all, even though FSD’s rapid expansion and the recent removal of Autopilot on new cars make it the likely driver of the recent surge.
+
+For contrast, in the current export, GM, Ford, Honda, and Toyota redact essentially none of their narratives. Tesla is the only high-volume reporter that blacks out everything.
+
+This isn’t new behavior, and it isn’t a reaction to scrutiny. Tesla has argued to regulators that it would “suffer financial harm” if the data became public, and it’s under a separate NHTSA probe for how it reports these crashes in the first place.
+
+One more caveat that cuts the other way: because of reporting lag, the most recent months are undercounted, not overcounted. When we added this latest export, it revised the prior “final” May figure upward by 139 crashes. In other words, 207 is a floor, not a ceiling.
+
+## Electrek’s Take
+
+Let me be clear about something up front, because it matters: FSD is genuinely improving. I’ve tested v14 and I’ve been impressed — it’s the most capable Level 2 system you can buy in a consumer car today. This isn’t a case of the technology getting worse.
+
+But improvement is exactly what makes this dataset so concerning, and it’s why I keep coming back to the same word: complacency. As the system gets better, and as Tesla keeps marketing it as “Full Self-Driving” and promising imminent autonomy, drivers stop paying attention. I see it constantly now — people on their phones, gaming the driver-monitoring system, treating a Level 2 assist like a robotaxi. That combination doesn’t reduce crashes. The data says it produces record numbers of them.
+
+And here’s the tell. If FSD were actually ready to be unsupervised, Tesla would be scaling its robotaxi service aggressively and shipping unsupervised FSD to consumer cars, as it has promised for years. It’s doing neither. The robotaxi fleet is still a handful of vehicles, and consumer FSD remains firmly Level 2, with the driver legally responsible. Tesla admits the technology isn’t ready — not in its words, but in its actions.
+
+The record crash count doesn’t prove FSD is unsafe per mile; but it does prove that the number of crashes tied to these systems is climbing fast, that Tesla is the only automaker hiding what happened in nearly all of them, and that the marketing has run ahead of the technology. That gap needs to be addressed before it produces more than a data point.
+
+If you’re a Tesla owner, powering your EV with home solar is one of the smartest ways to lock in low fuel costs. With electricity rates climbing nearly 10% last year, home solar protects you against future rate increases. And with lease and PPA options, you can go solar with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
