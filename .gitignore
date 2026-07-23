@@ -52,3 +52,6 @@ scripts/pipeline/costs-summary.txt
 *.njsproj
 *.sln
 *.sw?
+
+# Quarterly shareholder deck PDFs (large binaries, source for extract-quarterly.py)
+data/quarterly/

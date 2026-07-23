@@ -75,7 +75,10 @@ const KB_SCHEMA = {
       { id: "operating_income", name: "Operating Income", type: "metric", metricKey: "operating_income", unit: "$M" },
       { id: "net_income", name: "Net Income (GAAP)", type: "metric", metricKey: "net_income_gaap", unit: "$M" },
       { id: "eps", name: "EPS (GAAP)", type: "metric", metricKey: "eps_gaap", unit: "$" },
-      { id: "ebitda", name: "Adjusted EBITDA", type: "metric", metricKey: "ebitda", unit: "$M" },
+      // NOTE: the `ebitda` series in quarterly-metrics.json actually holds the
+      // Adjusted EBITDA *margin* (extract-quarterly.py's "Adjusted EBITDA" label
+      // matches the margin row first); label it as such until the extractor is fixed.
+      { id: "ebitda", name: "Adjusted EBITDA Margin", type: "metric", metricKey: "ebitda", unit: "%" },
       { id: "operating_cash_flow", name: "Operating Cash Flow", type: "metric", metricKey: "operating_cash_flow", unit: "$M" },
       { id: "capex", name: "Capital Expenditures", type: "metric", metricKey: "capex", unit: "$M" },
       { id: "free_cash_flow", name: "Free Cash Flow", type: "metric", metricKey: "free_cash_flow", unit: "$M" },
