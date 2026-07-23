@@ -15,12 +15,17 @@ const MIN_DAILY_BRIEFS = 3; // need at least this many daily briefs to bother
 
 // ── Date Helpers ─────────────────────────────────────────
 
-// Default target date: today UTC. The target date is the publish day (Monday);
-// the week covered runs from (target - 7) to (target - 1) — Monday through Sunday.
+// Default target date: the current week's Monday (UTC). The target date is the
+// publish day (Monday); the week covered runs from (target - 7) to (target - 1)
+// — Monday through Sunday. Snapping to Monday keeps the already-exists guard
+// effective on non-Monday workflow dispatches (which run the weekly step too):
+// they resolve to the same Monday-dated file instead of minting a mid-week one.
 function getTargetDate() {
   const explicit = process.argv.find(a => a.startsWith('--date='));
   if (explicit) return explicit.slice('--date='.length);
-  return new Date().toISOString().slice(0, 10);
+  const d = new Date();
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7));
+  return d.toISOString().slice(0, 10);
 }
 
 function slug(dateStr) {
