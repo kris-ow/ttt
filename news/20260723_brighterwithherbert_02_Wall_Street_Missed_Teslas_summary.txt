@@ -1,0 +1,39 @@
+Channel:     brighterwithherbert
+Title:       Wall Street Missed Tesla's Biggest Announcement
+Published:   2026-07-23 13:30 UTC
+Summarized:  2026-07-23 14:02:08 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_013xH89DWQTY7GG4fmiqBKLu
+Cost:        $0.03388 (17011 in / 3373 out tokens)
+Relevance:   core — the video analyzes Tesla's earnings-call disclosures on robotaxi safety data, mileage growth, FSD subscription economics, and expansion strategy, all central to the Tesla investment thesis.
+Topic:       tesla
+Categories:  Robotaxi, Autonomous Driving, Electric Vehicles, Financials
+────────────────────────────────────────────────────────────
+
+The video reviews Tesla's earnings-call robotaxi and FSD update, with futurist blogger Brian Wang (Next Big Future) interpreting the data on mileage growth, version 15 rollout, and the company's shift away from a city-by-city expansion strategy. The host argues Wall Street undervalued these disclosures despite the stock selling off after the call.
+
+## Robotaxi
+1. **Safety record and mileage:** Tesla VP of AI Ashok Elluswamy said the Robotaxi fleet has driven 380,000 driverless miles across six cities and two states with zero notable incidents; the only incidents cited were other drivers hitting parked Robotaxis. Wang separately noted 38,000 of those miles came under an early version of FSD v15 over roughly two months, also with zero incidents.
+2. **Growth rate and scale versus Waymo:** Elon Musk and Ashok Elluswamy both stated Robotaxi miles are compounding more than 10% per week and forecast this holding through the rest of the year. Wang calculated that at 10%/week growth, reaching 10x current miles takes about six months and 100x takes about a year; he estimated Tesla's roughly 2 million-plus cumulative paid Robotaxi miles are about 1% of Waymo's cited 220 million miles, meaning Tesla would need roughly a year at this growth rate to reach Waymo's current scale, and argued vehicle count (not just mileage growth) is the real bottleneck since each robotaxi can only drive so many miles per day.
+3. **Coverage map:** Per Tesla's earnings deck, California robotaxi operations still use safety drivers; the fleet operates in Austin, Dallas, Houston, and (recently added) Miami, Orlando, and Tampa, with preparations underway for Phoenix and Las Vegas.
+4. **Shift from city-by-city to statewide rollout:** Ashok Elluswamy said Tesla expects to eventually roll out to new cities with no incremental setup time, reflecting a generalized FSD/Robotaxi stack rather than city-specific mapping. On the earnings call, Elluswamy, Vaibhav Taneja, and Musk explained multi-city testing is meant to validate the generalized stack and accumulate driving data across vehicle types (including retrofitted Cybercabs with steering wheels) before scaling; Musk added that thousands of Cybercabs are needed before wider city expansion; Lars Moravy noted the lack of a federal framework requires city-by-city regulatory learning for now. Wang interpreted this as pointing toward a coming statewide expansion (e.g., all of Texas or Florida) once FSD v15 and Cybercab production ramp align, potentially requiring thousands of Cybercabs per state — though he cautioned Tesla did not explicitly confirm this timeline.
+
+## Autonomous Driving
+1. **FSD v15 already deployed in the fleet:** Ashok Elluswamy said version 15 — described as a roughly 10x parameter increase enabling reasoning capability — is already running in the Robotaxi fleet, with seven features still being developed in parallel (including destination/parking memory). Wang inferred that a flattening in the cumulative paid-miles growth curve coincided with this v15 rollout, i.e., Tesla briefly slowed deployment to integrate the new software before resuming growth.
+2. **Destination/parking memory feature:** Musk has said the car will learn to remember favorite routes, drop-off points, and parking preferences at specific locations; the host cited a personal example (his car never reliably parking in his own driveway, and Robotaxi pickups/drop-offs requiring pedestrian crossings) as the kind of localized-learning problem this feature is meant to solve. Wang suggested this works because each robotaxi mostly operates within one city, allowing localized learning.
+3. **"March of nines" safety framing:** Musk repeated the "march of nines" safety-improvement framing on the call; Wang characterized this as largely a defensive explanation aimed at investors upset about slower-than-hoped robotaxi scaling, rather than new forward-looking guidance, and suggested the zero-incident 38,000-mile record on FSD v15 implies at least one order-of-magnitude ("one nine") safety improvement has already been achieved.
+
+## Electric Vehicles / Financials
+1. **FSD attach rate and subscription revenue:** Tesla said over half of new North American Tesla deliveries now include FSD, with active FSD subscriptions up 15% quarter-over-quarter to 1.48 million and $791 million in annual recurring revenue from self-driving. Wang noted this 55% North American attach rate compares to roughly 15-16% penetration across the full ~10 million-vehicle global fleet, and argued rollout of FSD to China, Europe, and Japan plus older hardware upgrades could push fleet-wide penetration toward 30-50% over the next few years, shifting Tesla's business increasingly toward high-margin recurring software revenue.
+
+Notable quotes and data:
+- "Tesla vice president of AI Ashok Elluswamy announced Robo Taxi has now driven 380,000 driverless miles with zero notable incidents." (host)
+- Robotaxi miles compounding "more than 10% every week," per Musk and Elluswamy, forecast to hold for the rest of the year.
+- Wang: at 10%/week growth, 10x scale takes ~25 weeks (~6 months); 100x takes ~49 weeks (~1 year).
+- Wang estimated Tesla's ~2 million-plus cumulative paid robotaxi miles are about 1% of Waymo's cited 220 million miles.
+- 38,000 miles driven under early FSD v15 with zero incidents, per Wang's interpretation of the earnings materials.
+- Active FSD subscriptions: 1.48 million, up 15% QoQ; $791 million in annual recurring revenue.
+- Over 55% of new North American Tesla deliveries now include FSD, versus ~15-16% penetration across the full existing fleet.
+- Wang: FSD subscription priced around $1,200/year, yielding roughly $600-700/year of profit per vehicle at scale.
+- Wang: reaching statewide rollout (e.g., Texas, Florida) could require thousands of Cybercabs per state.
+- Lars Moravy: lack of a federal regulatory framework requires city-by-city expansion for now.
