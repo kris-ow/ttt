@@ -1,0 +1,62 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-07-23)
+Published:   2026-07-23 00:00 UTC
+Summarized:  2026-07-24 03:43:08 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07086 (20947 in / 2897 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla stock falls 12-13% on Q2 earnings miss
+- Robotaxi miles up 380,000, "zero notable incidents"
+- FSD v15 already running in Robotaxi fleet
+- Musk hints at Tesla-SpaceX merger, no timeline given
+- Optimus production line now live at Fremont
+- HW3 upgrade plan still uncommitted, no timing
+
+## Financials
+- Q2 revenue hit a record $28.24 billion (up 26% YoY, beating the ~$27.6B estimate), but operating income fell 57% to $398 million (1.4% margin) and adjusted EPS came in at $0.33 vs. ~$0.53-0.55 expected. Free cash flow was negative $1.09 billion as capex jumped 142% to $5.79 billion.
+- GAAP net income of $1.1 billion included roughly $750 million from a mark-to-market gain on Tesla's SpaceX stake, per Electrek's Fred Lambert — a gain he says is likely to reverse next quarter given SpaceX's implied share price has fallen since the prior mark.
+- Tesla's cash balance declined only about $1 billion to roughly $39-40 billion despite the capex ramp, per Jo Bhakdi, who called Wall Street's ~$25B/~$21B capex estimates for this year/next too conservative.
+- Terafab (chip/memory fab) location and plans will be announced at a dedicated future event, not on the call; equipment orders have been placed for a development fab in Austin. Musk publicly thanked Micron for a multi-year memory supply deal at a "reasonable price."
+
+## Robotaxi
+- Tesla says the fleet has driven over 380,000 unsupervised miles across six cities with "zero notable incidents" (Tesla-defined term); Electrek contrasts this with Waymo, which it says logs comparable mileage in about a day. Paid cumulative robotaxi miles hit 2.4 million in Q2, up from ~1.7 million in Q1, with Musk and Elluswamy citing >10%/week compounding growth.
+- Electrek cites a Tesla chart showing paid Robotaxi miles roughly flat quarter-over-quarter at ~900,000 and the active unsupervised fleet shrinking to around 21 cars — a figure at odds with the cumulative-miles growth Tesla also reported.
+- Coverage now spans Austin, Dallas, Houston, plus newly added Miami, Orlando, and Tampa, with Phoenix and Las Vegas prep underway; California still requires safety drivers. Tesla confirmed it will not partner with Uber or Lyft, relying on its own app.
+- Cybercab production has begun at Giga Texas with installed capacity now listed above 125,000 units/year; engineering test drives on public roads and employee campus rides started this quarter. Estimates for cybercabs deployed by year-end range widely — Brian Wang sees ~20% odds of 20,000-40,000, one host estimates 10,000-15,000, and Jo Bhakdi says $1,000 TSLA this year (needing ~10,000-15,000 Cybercabs) now looks "increasingly unlikely."
+- San Antonio zoning approved a 56-stall Robotaxi charging facility for Tesla's private fleet, pending final city council vote.
+
+## Autonomous Driving
+- FSD v15 (~10x parameter increase, added reasoning) is already running in the Robotaxi fleet, with seven features including destination/parking memory still in development.
+- FSD subscriptions rose to 1.48 million (+15-56% depending on source's QoQ framing), the largest quarterly add in Tesla's history, generating ~$775-791 million in annual recurring revenue. North American attach rate on new deliveries hit a record 55%+, versus ~15-16% penetration across the full existing fleet.
+- Musk gave no firm commitment on Hardware 3 upgrades, telling an analyst it would "make sense" and be "financially sensible at some point" — without timing, method, or cost — and said any fix would likely come via a future AI chip generation rather than Hardware 4, with that chip going to Optimus first (Electrek).
+- France's Transportation Minister said FSD's "safety trade-offs are not yet sufficient" for authorization, stating explicitly it is "not a self-driving system."
+
+## Humanoid Bots
+- Tesla decommissioned Model S/X lines at Fremont to install first-generation Optimus production; Musk called it "stunning to see." Initial builds are headed to an "Optimus Academy" for training rather than customer sales.
+- Musk called Optimus scaling "the hardest product to scale that we've ever had at Tesla," citing an almost entirely new supply chain with no existing parts base to draw on, unlike EVs.
+- "Digital Optimus" — applying FSD's vision-based approach to computer/screen operation — is being built with SpaceX, using Grok as the task-directing model; the same FSD vision stack is being repurposed for both physical Optimus navigation and computer control.
+- Musk repeated: "No humanoid robots today can do generalized tasks without programming, but Optimus will be the first to do it" — a claim Electrek notes is unproven this quarter and shared by every competing humanoid robotics company's ambitions.
+
+## SpaceX — Corporate & Valuation
+- Musk acknowledged "more and more overlap" between Tesla and SpaceX, especially around Terafab, but said combining the companies "can't" be discussed on an earnings call and requires "the appropriate process."
+- Tesla's general counsel disclosed a framework agreement "deepening" the SpaceX relationship, covering future Terafab and Digital Optimus collaboration; SpaceX's S-1 showed Tesla's $2B xAI investment converted into 18.99 million SpaceX Class A shares (under 1% ownership), and SpaceX/xAI entities bought ~$650 million in goods/services from Tesla in 2025.
+- SpaceX's implied share price fell to around $111, down from ~$220 a few weeks earlier, per Jo Bhakdi, who is advising against buying SpaceX near-term despite long-term bullishness.
+- Speculation on merger timing is explicitly unconfirmed: Brian Wang guesses a possible SpaceX earnings announcement in early August, a Terafab event shortly after, and a shareholder vote around November; Electrek cites unnamed analysts putting merger odds at 80-90% by early 2027.
+
+## Market & Competition
+- Tesla shares fell over 12% (~$140 billion in market value); Jo Bhakdi frames this as part of a broad growth/AI stock repricing rather than Tesla-specific weakness, citing Google's ~7% drop despite an earnings beat (after raising capex guidance from ~$185B to ~$200B) and moves in Meta, Amazon, Nvidia, and Micron.
+- Farzad-FM argues Tesla's robotaxi buildout structurally threatens Uber by replacing recruited driver labor with manufactured labor, citing robotaxi cost targets of $0.20-0.40/mile versus Uber's >$2.80/mile average; Uber has reportedly lobbied in New Jersey to slow self-driving rollouts.
+- The 10-year Treasury yield rising above 4.7% is cited as a major macro headwind, with Bhakdi warning a move above 5% would be a "catastrophe" for markets.
+
+Notable quotes and data:
+- "If we injured even one person, it will be world headline news." — Musk, on Robotaxi safety constraints
+- Q2: revenue $28.24B (record, +26% YoY), EPS $0.33 vs. ~$0.53-0.55 est., FCF -$1.09B, operating margin 1.4% (down from 4.1%)
+- FSD subscriptions: 1.48M (+200,000 QoQ), ~$775-791M in annual recurring revenue
+- Robotaxi: 380,000+ unsupervised miles, "zero notable incidents"; 2.4M paid cumulative miles in Q2 vs. ~1.7M in Q1
+- Active Robotaxi fleet: 788 per RobotaxiTracker.com (Bay Area 643, Austin 106, Dallas 20, Houston 19), as of 2026-07-23
+- Electrek's competing figure: active unsupervised fleet down to ~21 cars, per Tesla's own earnings chart
+- Musk: "No humanoid robots today can do generalized tasks without programming, but Optimus will be the first to do it."
