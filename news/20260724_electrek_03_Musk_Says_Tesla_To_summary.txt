@@ -1,0 +1,26 @@
+Channel:     electrek
+Title:       Musk says Tesla to ‘open source’ Model S and X, but prior release makes us skeptical
+Published:   2026-07-24 23:38 UTC
+Summarized:  2026-07-25 00:01:56 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_014HfGwCwrMRViJMcx1kS2Bi
+Cost:        $0.01664 (5957 in / 2136 out tokens)
+Relevance:   tangential — the article is a critique of Tesla's PR/legal handling of a legacy-car documentation release, with minimal bearing on Tesla's forward-looking investment thesis (autonomy, robotaxi, Optimus, financials).
+Topic:       tesla
+Categories:  Electric Vehicles
+────────────────────────────────────────────────────────────
+
+Elon Musk says Tesla will "open source" the Model S and Model X using the Roadster's 2023 release as the template, but Electrek argues that prior release did not meet the actual definition of open source, casting doubt on what a new S/X release would amount to.
+
+## Electric Vehicles
+1. **What Tesla's 2023 Roadster "open source" release actually contained:** Musk posted in November 2023 that "all design & engineering of the original Tesla Roadster is now fully open source" and "whatever we have, you now have." The GitHub repo (teslamotors/roadster) contains only five CAN database files (~339 KB total) covering the Roadster 1.5/2.0 ESS and PEM buses, a 309 MB diagnostic software ISO, and two PDF quick-guides. The DBC files were committed in December 2022, nearly a year before Musk's announcement; the ISO and guides were added November 22, 2023; there have been no commits since. The repo has 1,100 stars and 300 forks. Additional material sits behind an account login on Tesla's service site under "Disclosed Research and Development Documents," covering Battery Monitoring Board, Vehicle Display System, HVAC Controller, Diagnostic Software, and Design Documents. Other listed materials (service manual, parts catalog, owner's manuals) were already public since 2020 under right-to-repair pressure.
+2. **Missing components and licensing gap:** The release excludes CAD files, mechanical drawings, bill of materials, firmware source (only compiled binaries are extractable from the diagnostic ISO), Power Electronics Module schematics, motor design, and pack design. Engineering firm Antmicro, which rebuilt the Roadster's electronics in simulation, found the board packages contain only Gerbers and pick-and-place manufacturing files, not PCB source, and had to reconstruct component footprints itself. The GitHub README cites Tesla's "Disclosed Research and Development Documents for Roadster" terms, which the article describes as a one-paragraph liability disclaimer (no warranties, disclaims genuine-part status) rather than a copyright or patent license — meaning it does not meet the Open Source Definition.
+3. **Implications for a Model S/X release:** Tesla ended Model S and Model X production in April 2026, after Musk canceled both models in January to free up production capacity for Optimus. The article notes the Roadster's release came over a decade after that car's production ended. It speculates that if Tesla follows the same approach for S/X, the release would likely include diagnostic software, some CAN databases, and Gerbers for minor boards — not Autopilot, the drive unit, or the battery pack. The article also notes both cars run Linux, and Tesla began publishing kernel/Buildroot source only in 2018 after the Software Freedom Conservancy flagged GPL violations; the Conservancy has said those disclosures remain incomplete, giving Tesla an opportunity to close that gap with a genuine S/X release.
+
+## Editorial Stance
+The author credits Tesla's Roadster documentation release as genuinely useful for independent repair shops and engineers (better than most automakers offer) but argues it is a documentation release, not open source, since it grants no actual usage rights. The author is skeptical Tesla's promised Model S/X release will differ, but argues a true open-source release of the S/X platform — including CAD, firmware source, and completed GPL compliance — would be a valuable and industry-first contribution, since no automaker has ever fully documented a mass-produced EV platform's drive unit and battery pack.
+
+Notable quotes and data:
+- Musk (Nov 2023): "all design & engineering of the original Tesla Roadster is now fully open source"; "Whatever we have, you now have."
+- Roadster GitHub repo: ~339 KB of CAN database files, a 309 MB diagnostic ISO, two PDF guides; 1,100 stars, 300 forks; no commits in roughly two and a half years.
+- Tesla ended Model S/Model X production in April 2026; Musk canceled both models in January 2026 to reallocate production capacity to Optimus.
