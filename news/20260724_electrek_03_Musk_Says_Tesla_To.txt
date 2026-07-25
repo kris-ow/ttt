@@ -1,0 +1,62 @@
+Source:      electrek
+Title:       Musk says Tesla to ‘open source’ Model S and X, but prior release makes us skeptical
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/07/24/tesla-open-source-model-s-x-roadster-release-audit/
+Published:   2026-07-24 23:38 UTC
+Fetched:     2026-07-25 00:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Elon Musk says Tesla plans to “open source” the Model S and Model X, and he’s pointing to the original Roadster as the template.
+
+The problem is Tesla’s Roadster release amounted to eight files on GitHub plus five document packages behind a login, with no open-source license attached to any of it.
+
+## What Tesla actually put out for the Roadster
+
+In November 2023, Musk posted that “all design & engineering of the original Tesla Roadster is now fully open source,” and added, “Whatever we have, you now have.” We covered the release at the time.
+
+The full inventory is short. The teslamotors/roadster repo holds five CAN database (.dbc) files covering the Roadster 1.5 and 2.0 ESS and PEM buses, about 339 KB in total, plus a 309 MB diagnostic software ISO and two PDF quick-guides. That’s everything, aside from a README and a .gitattributes file.
+
+ 
+ 
+ 
+
+The commit history is worth a look. The DBC files went up on December 2, 2022, nearly a year before Musk announced any of it. The ISO and guides landed on November 22, 2023. Nothing has been added since. Not a single commit in two and a half years, on a repo sitting at 1,100 stars and 300 forks.
+
+The rest lives on Tesla’s service site behind an account login, in a section labeled “Disclosed Research and Development Documents.” It contains five entries: Battery Monitoring Board, Vehicle Display System, HVAC Controller, Diagnostic Software, and Design Documents.
+
+Everything else on that Roadster page (service manual, parts catalog, owner’s manuals, theory of operation) was already public. Tesla started releasing service manuals and diagnostic tools for free back in 2020 under right-to-repair pressure. It gets counted as part of the open source release anyway.
+
+Now, Tesla CEO Elon Musk says that Model S and Model X are next:
+
+## No source code, no CAD, and no license
+
+While all of that stuff is appreciated, it doesn’t really amount to “open-sourcing.”
+
+What’s missing is most of a car. No CAD files. No mechanical drawings. No bill of materials. No firmware source, only compiled binaries you can dig out of the diagnostic ISO. No schematics for the Power Electronics Module, which is the inverter that actually makes the car move. No motor design. No pack design.
+
+Antmicro, the engineering firm that did the most serious work with the files when it rebuilt the Roadster’s electronics in simulation, found that the board packages contain Gerbers and pick-and-place files. Those are manufacturing outputs, not design files. The team ended up reconstructing component footprints itself because Tesla didn’t include the PCB source.
+
+Then there’s the licensing, and this is where “open source” really falls apart. The GitHub README says the materials are “released under the terms of Disclosed Research and Development Documents for Roadster.” Those terms are one paragraph on Tesla’s service site, and it’s a liability disclaimer rather than a license. Tesla says the information “isn’t manufacturer reference or repair and maintenance material,” provides no warranties, and notes that anything you build from it won’t be a genuine Tesla part.
+
+Nowhere does Tesla grant anyone the right to copy, modify, or redistribute. No copyright license. No patent grant. Tesla keeps all of it, which means that under the Open Source Definition, none of this qualifies as open source.
+
+## What that means for Model S and X
+
+Tesla ended Model S and Model X production in April, after Musk killed both cars in January to free up the line for Optimus. The Roadster got its open source moment more than a decade after production ended, as Tesla was winding down support for a low-volume legacy car. It will be interesting to see when or if Tesla follows through with Musk’s promise.
+
+If Tesla runs the Roadster playbook again, “open sourcing” the S and X means the diagnostic software, some CAN databases, Gerbers for a few minor boards, and that same disclaimer. Not Autopilot. Not the drive unit. Not the pack.
+
+There is one place Tesla could do something real. Both cars run Linux, and Tesla only started publishing kernel and Buildroot source in 2018 after the Software Freedom Conservancy called out its GPL violations. Conservancy has said ever since that those disclosures were never complete. A genuine S/X release would be the chance to finally close that out.
+
+## Electrek’s Take
+
+Better than nothing is a real category, and this belongs in it. The Roadster files genuinely helped people. Independent shops keep 18-year-old Roadsters alive, and the diagnostic ISO and CAN databases make that work a lot easier. Antmicro built a working simulation of the car’s electronics out of them. Almost no other automaker gives up even this much, and Tesla deserves credit for that.
+
+But it’s a documentation release, not open source, and Tesla should stop calling it that. Open source means a license that grants you rights. What Tesla published grants nothing at all. Musk’s “whatever we have, you now have” wasn’t close to true. Tesla still has the Roadster’s CAD files and its firmware source, and none of that came out.
+
+So we’re skeptical about this Model S and X promise. We’d love to be wrong. Actually open sourcing the S and X would be one of the most useful things Tesla has ever done for the industry: a real production EV platform, built and refined over 14 years, with a drive unit and a battery pack that shipped in volume, documented well enough that engineers and small manufacturers could actually learn from it. Nobody has published that. Ever.
+
+Tesla could be first, on a car it no longer sells, at almost zero cost. Put the files under an actual open license, include the CAD and the firmware source, and finish the GPL compliance while you’re in there. Do that and it’s a real contribution. Do the Roadster version again and it’s a press release.
+
+If you’re driving an EV, powering it with home solar is the closest thing there is to free fuel. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
