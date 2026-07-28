@@ -64,11 +64,11 @@
             "type": "tracker",
             "sourceNote": "Fleet counts sourced from robotaxitracker.com (community-reported, unverified) via YouTube commentary. Known to undercount — Tesla cited 500+ on Q4 earnings call when tracker showed ~474. No official Tesla fleet disclosures available.",
             "current": {
-              "date": "2026-07-27",
-              "total": 799,
+              "date": "2026-07-28",
+              "total": 808,
               "note": "robotaxitracker.com (community-reported, unverified)",
               "breakdown": {
-                "Bay Area": 643,
+                "Bay Area": 652,
                 "Austin": 116,
                 "Dallas": 21,
                 "Houston": 19
@@ -692,6 +692,17 @@
                   "Houston": 19
                 },
                 "note": "Bay Area: 643, Austin: 111, Dallas: 21, Houston: 19"
+              },
+              {
+                "date": "2026-07-27",
+                "total": 799,
+                "breakdown": {
+                  "Bay Area": 643,
+                  "Austin": 116,
+                  "Dallas": 21,
+                  "Houston": 19
+                },
+                "note": "Bay Area: 643, Austin: 116, Dallas: 21, Houston: 19"
               }
             ]
           },
@@ -1329,16 +1340,27 @@
                   "Houston": 6
                 },
                 "note": "Austin: 28, Dallas: 5, Houston: 6"
+              },
+              {
+                "date": "2026-07-27",
+                "total": 44,
+                "breakdown": {
+                  "Austin": 32,
+                  "Dallas": 6,
+                  "Houston": 6
+                },
+                "note": "Austin: 32, Dallas: 6, Houston: 6"
               }
             ],
             "current": {
-              "date": "2026-07-27",
-              "total": 44,
+              "date": "2026-07-28",
+              "total": 46,
               "note": "robotaxitracker.com (rendered DOM, community-reported)",
               "breakdown": {
                 "Austin": 32,
                 "Dallas": 6,
-                "Houston": 6
+                "Houston": 6,
+                "Tampa": 2
               },
               "sources": [
                 "robotaxitracker.com"
