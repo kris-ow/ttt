@@ -1,0 +1,480 @@
+Channel:     munrolive
+Title:       Inside the Inspire RH56DFQ Robotic Hand | Complete Teardown
+URL:         https://www.youtube.com/watch?v=nhOiGu9qqzY
+Published:   2026-07-28 14:58 UTC
+Fetched:     2026-07-28 16:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Hello and welcome to Monroe Live. I'm
+Mike Kasein. I'm here with Paul.
+&gt;&gt; I'm Paul Turbo.
+&gt;&gt; And today we are going to talk about the
+Inspire Robotics RH56 DFQ Dexrous hands.
+It's one of the cheapest hands, Dexrous
+hands you can get. And of course has
+Monroe style. We tear it apart.
+&gt;&gt; Yep. Yep. See anything? It looks like it
+has great engineering and we want to see
+what's inside and how it works.
+&gt;&gt; Yeah. So, the Dexter's hand that we have
+is has basically six degrees of uh
+freedom and what that means is every
+degree of movement is is a degree of
+freedom. So, this hand has six of them.
+Four fingers, one thumb and then a wrist
+that also moves. Those six degrees of
+freedom is operated by six actuators
+that control that hand. And uh the hand
+also is has a about a half a Newton of
+resolution. So, it aims a six degrees of
+movement. Basically, this hand, if you
+look at my hand, um, it can move, of
+course, this way. It cannot do this
+because it's all linked together. But it
+can touch this thumb, this thumb. It
+won't be able to touch this thumb. It
+doesn't have that degree of movement to
+get that far. There are hands out in the
+market that will do all of that. It also
+can't do movement like this. How this
+works is there's an actuator. It's like
+a plunger, and that plunger will push up
+onto the finger, cause it to curl. These
+are connected. So, the fingers curl on
+one movement. It is not connected.
+So I can move it here. This actuator is
+not connected. It just pushes. There's a
+spring as you see in this one right here
+that brings that finger back when the
+actuator goes away.
+&gt;&gt; So the it actuates unlike our hand which
+has a tendon which pulls things. This
+one has a push rod,
+a linear actuator that pushes on the
+back side in order to collapse the
+finger. And it collapses both
+uh joints so that it can't do just one
+joint. It has to do both together.
+&gt;&gt; Yep. It's pretty limited. I mean, I push
+on it. You can see it's just moving. I
+can't move this one independently. I can
+only move
+&gt;&gt; up and down. There is also no sensors up
+in the fingertips. There is a pressure
+sensor at the bottom of this uh
+actuator. And what that does is when you
+forces force on that finger, it detects
+that pressure sensor detects that
+movement or that pressure to tell how
+much force is pushing down on whatever
+object is claiming. So, it's a pretty
+simply designed uh finger or hand. Uh no
+motors up in the finger, no wires. It's
+just all driven by the actuators into
+the body.
+&gt;&gt; So, that keeps it relatively
+lightweight. And there are a lot of
+things you can do with a hand that can
+just grab and grip things and things
+that can do this or that and and grab um
+all together. So there's a lot of you I
+know activities that this type of hand
+could do it. The thumb can has two
+actuators. So it can go in this
+direction and in this direction
+&gt;&gt; it goes like this and the landing
+closes. And so and all of the actuators
+are similar kind of design
+&gt;&gt; and this is controlled by one uh SD
+micro processor that is a motor
+controller processor that's in the in
+the palm I think it's actually right
+here we can show this one little chip
+basically controls the six actuators but
+there is a circuit in the actuator that
+does so this basically sends the command
+to the motor as to what it has to do
+&gt;&gt; and then we'll talk about more on the
+actuator
+&gt;&gt; and so it will send a command and The
+command can be um apply a certain amount
+of force or it can be um go to a certain
+position because it has both a position
+sensor in each actuator and the force
+sensor in each actuator. So you can go
+to a position or go to a certain force
+um apply a certain force.
+&gt;&gt; Yeah. So the circuit boards are pretty
+simple. I mean you got the the driver
+and you got a power uh with the
+communication ports on there. That's all
+there is inside. Uh, so it is a pretty
+simple design, pretty I would say
+economically made design,
+at least for the electronics portions.
+So I think as far as it being a more
+inexpensive hand, it kind of fits that
+profile when we when we tore it apart.
+Um, the actuators are pretty similar
+except for this was the the wrist one,
+right? This is the one.
+&gt;&gt; Yeah. So obvious there isn't room for
+this long actuator for the wrist. And so
+they they just took the motor and the
+gearbox and they put them side by side.
+So motor and gearbox here so that to get
+a different form factor for the
+actuator, but they essentially do the
+same type of actuation.
+&gt;&gt; And that's here for this movement.
+&gt;&gt; Yeah.
+&gt;&gt; Right. Okay.
+&gt;&gt; All right. Um, and it has kind of like a
+a chassis, the the um the bone structure
+for the back of the hand is all this
+machined aluminum uh structure to and
+that gives it something for the actuator
+to push against that's going to be rigid
+enough to
+handle the forces.
+&gt;&gt; And I think this one has a cutaway so
+you can actually see
+&gt;&gt; Yeah, you can see the spring
+&gt;&gt; spring in there and how that works
+&gt;&gt; inside. So when this fun this this uh
+actuator pushes on it of course let go
+of the spring moves the arm back.
+&gt;&gt; So when you calibrate something like
+this you have to you calibrate the
+amount of force and then you subtract
+out the spring force. So zero would be
+what it takes to move the spring alone
+and then the 10 Newton meters new sorry
+10 newtons of force is something on top
+of after overcoming the spring.
+&gt;&gt; Yeah. And the pressure sensor is
+actually on the back of the actuator. So
+this is the pressure sensor down here.
+&gt;&gt; Yeah. A little different than most
+companies are doing it. This is a pretty
+slick way of uh getting that pressure
+sensing because if you if there's
+pressure at the tip of your finger that
+that moves all down all the way and is
+translated right back to the base of the
+actuator to sense what that pressure is.
+&gt;&gt; The one problem is if I have it
+disconnected like this though I have no
+more sensing up here because I have
+disconnected it from the actuator and
+now it won't detect anything.
+&gt;&gt; Yeah. So, it can't really it it can't
+tell how much force is being applied to
+raise the finger back up. Only the force
+for closing the the hand.
+&gt;&gt; Yeah. So, this gets stuck as it goes
+back there. It wouldn't know that. It's
+has no idea.
+&gt;&gt; Yeah.
+&gt;&gt; I thought it was an interesting design.
+I I'm just surprised that there was no
+when I first looked at this, I thought
+there was a sensor in the finger. When
+we saw the software, find out there's
+nothing. It's just all mechanical. So, I
+thought it was very interesting. And
+they use just a little bit of rubber on
+top of the plastic housing to give it a
+little bit of grip.
+&gt;&gt; Has to be a palm.
+&gt;&gt; So,
+let's talk about actuators.
+&gt;&gt; Yeah. Uh these actuators are just
+amazing. They're they're called micro
+linear actuators.
+you know, they're
+relatively small
+for uh you know,
+being able to deliver that much force.
+So, you got a motor in here and a gear
+box and then a uh
+uh power screw mechanism or a lead screw
+is what it's called uh to push out. And
+I'm going to show you what's going on
+inside this. So just question difference
+between this one and this one. They're
+really the same. It's just
+&gt;&gt; they're really essentially the same
+where the the in this one the motor is
+on this side and then there's a little
+different gear box to
+uh be able to actuate the lead screw.
+But essentially it's the same lead
+screw, same motor, but a little
+different gearbox to move so that it's
+not all in in line. In this one it's all
+in line. In this one it's side by side.
+&gt;&gt; That was the only difference. rest of
+these are pretty much the same.
+&gt;&gt; Yep.
+&gt;&gt; Okay.
+&gt;&gt; All right. It all starts with power
+coming in to the connector. So the the
+circuit board the controller sends a
+command to we need to actuate to a force
+or or position and so it will send power
+to the motor. And then the motor inside
+each one of these uh actuators is a
+little motor controller. And the scale
+of this, you know, my finger next to it
+is really tiny.
+So you have a motor controller and
+it it takes that command and it
+translates it into a current command.
+How much current do I need to get that
+much force? and it will command the
+motor. So then that will send current
+down the wire and the current will go to
+a brush holder. And I'm going to try to
+slide this over. So we get the brush
+holder. This is a regular brush DC
+motor.
+I shouldn't say regular. It's a uh it's
+a brush DC motor, but um it's what it's
+a so-called cordless
+brush DC motor. So it starts with the
+brushes. You have two brushes, positive
+and negative. Current comes into the
+brushes and it the brushes are touching
+a commutator. And the commutator is on
+the rotor.
+And this is the rotor. The rotor is
+nothing but the wires that are
+conducting the current. So the current
+comes in
+to the set to the end of this thing and
+then the commutator on the end
+distributes the current into say the
+windings along the top of the motor and
+then it goes into the end turns there
+and goes around to the other side of the
+motor and then goes back the other way.
+So you end up with a loop of current and
+as soon as you have a loop of current
+you've got an electromagnet
+and so you have an electromagnet that is
+forming in one direction magnet and then
+next to this on the inside of this is a
+a little neodymium magnet. So this is a
+round magnet that's um hollow on the
+center. The shaft goes down through the
+center of this and this part does not
+move. So the magnet doesn't move. So it
+produces it's a two- pole regular you
+know north south north and south pole
+magnet.
+It doesn't move. It's locked in place
+and the windings spin around it. And the
+way so that you have a stationary
+magnetic field and then you have uh an
+electromagnetic field that is in
+opposition to it. So the the stationary
+magnetic field might be going up from
+north to south and then the the
+electromagnetic field is to the side of
+that and then of course it wants to line
+up to so it produces torque to line up.
+But just before it lines up, the
+commutator and brushes switch the
+direction of the current so that it's
+back to the beginning again and it
+rotates like that. The nice thing about
+this because it has the the armature
+where the wires are, it has no steel, so
+it's very lightweight and can respond to
+a small torque very quickly, spin up
+quickly. Um, it also has no iron loss in
+the in the rotor. And so, uh, since
+there's no iron, no moving magnetic
+field in the steel, the magnetic field
+is always stationary in the steel. So,
+you don't get iron losses. So, it's a
+very efficient motor. And finally, since
+normally you'd have an iron in the in
+the rotor and with a bunch of teeth and
+slots to put the wires in, and that um
+produces little gaps in the iron, which
+produces cogging torque. So there's
+little spots where the magnetic field is
+large and little spots where it's not so
+large and that produces a torque pattern
+that's uneven. So this has none of that.
+it doesn't have any of the slots and so
+it doesn't have any cogging torque. Um
+there's still a little bit of torque
+ripple because it's a brush DC motor and
+every time you switch the current from
+one direction to the other to get the
+motor to continue to spin. There's a
+tiny pause because you can't just switch
+instantaneously.
+And so that produces a little bit of
+what's called commutation torque ripple.
+So it still has a little bit of torque
+ripple but not uh as much as you would
+have with a coging torque. So that the
+the thing that completes the magnetic
+circuit is
+the steel housing
+which you know we had to cut open in
+order to get all this out. Uh so that's
+why we have a a big hack in it. Um so we
+cut the housing open. This is just made
+of ordinary steel. And so the magnetic
+field goes from the rotor through those
+windings into the steel of the housing
+and then goes back around to the other
+side to uh complete the magnetic
+circuit. So that's how these little
+coreless brush DC motors work. Um, this
+thing is
+it's tiny and and actually they were
+invented originally to um be a little
+vibration device. So they were in phones
+and pagers. They've been around since
+the 1980s. They they make these
+literally in the billion.
+So there's it's a very lowcost motor.
+You can buy this type of motor retail
+for about a buck.
+&gt;&gt; But we think they're making these.
+They're not these are not. These these
+actuators are um all custom made.
+&gt;&gt; Yeah.
+&gt;&gt; But this motor itself was uh purchased
+part um that's made in very high volume.
+And so again, this is a relatively
+inexpensive uh way to do this kind of
+actuation. And so it starts with a
+relatively inexpensive motor.
+So then that the the torque comes out of
+the little bitty shaft on the coming out
+of the rotor. So the rotor again is this
+copper thing has a shaft going down the
+middle and that shaft spins
+and
+at the end of it um we put uh they put a
+a gear and so I'm going to move this
+over and see if we can see the gear.
+We got it in focus. This is the what's
+called the sungeear. So that's the gear
+that's on the um end of the shaft.
+So that gear
+interacts with these three planetary
+gears which and the three planetary
+gears are mounted on this um planetary
+gear carrier.
+And again, you know, just the size of
+this thing. Here's my finger. You know,
+it's just uh
+tiny. These are um these are
+manufactured by the way probably uh
+using an etching process or a laser
+process to cut uh these out of a sheet
+metal.
+And then all of those gears, the three
+gears, I'm going to go back uh to the
+ring gear. So all of them interact with
+the the ring gear. And uh so the ring
+gear is held in place in the housing
+which of course we had to cut in order
+to get this open. And so we cut into the
+ring gear. Um but there's 36 teeth on
+the ring gear and 12 teeth on the uh on
+the sungear. So you got about 2.4 to1
+ratio uh for the planetary gear set.
+There's two planetary gear sets backto
+back for 4.8 to1 ratio. And so the motor
+produces like a couple hundred million
+meters of torque uh with the up to two
+amps of current
+and that turns into about one newton
+meter of torque out of this tiny little
+motor.
+So we use that one newton meter of
+torque.
+This is the other planter gear set. And
+then the planter gear sets are used to
+drive this lead screw. And so the lead
+screw rotates. And I'm gonna try to spin
+this. Um, so that you can see that as
+you spin this, I don't know if you can
+see the uh
+threads coming out. So it moves
+in and out. And that applies that turns
+the rotational torque into a linear
+force.
+&gt;&gt; So this also has a position sensor built
+in. It does right on on the top of this.
+In fact, we can sort of see the the top
+of this that that where the position
+sensor is mounted. So, it it knows the
+position of that lead screw
+in addition to the force at the other at
+the other end. So with this mechanism,
+they're able to apply take a very, you
+know, two amps into a tiny little motor
+and turn that into um you can actually
+apply as much as 70 newtons of force
+with this type of actuator. The one that
+they are using here as tops out at about
+30. They did a trade-off because they
+wanted it to move reasonably quickly. um
+so they can simulate human movement. Um
+so this is just one approach though um
+you know that inspire is using to come
+up with a way to give uh an adequate
+hand
+&gt;&gt; that um does a lot of jobs but not every
+job and that's where we're seeing a lot
+of the industry is everyone's choosing
+different directions to go. There's
+simple um pinser type clamps. Yeah.
+&gt;&gt; Um, and then there's people who are
+trying the fullblown hand with every
+degree of freedom that you can put into
+a hand.
+&gt;&gt; The hand makes you the sharper hand is
+is really, right? I mean, and and
+there's a lot of ways to do this. They
+did it by linear motion. You could done
+this with with uh tendons or cables to
+pull it. Um, this is though by far one
+of the the less expensive hands on the
+market. Um, so it it is kind of shows,
+but it's very unique in how it does it,
+I think. Uh,
+&gt;&gt; and yet still quite precise.
+&gt;&gt; Yes. Uh,
+&gt;&gt; but if you want more individual movement
+where you want this finger to move
+separate from this one, now you have to
+do something different where you have to
+put a motor up here or some kind of
+other mechanism to get that to move. Um,
+it's every company's doing something a
+little different it looks like. And so
+we're still kind of like in the
+beginning stages of where this industry
+is going to go, I would think.
+&gt;&gt; Yeah, that's what it feels like. It's
+the wild west. Uh we're just getting
+started on um humanoid robots and this
+is a great starting point for people to
+get their uh get their feet wet with uh
+um robotics and and hands.
+&gt;&gt; Yeah, I agree.
+&gt;&gt; So, thanks a lot for joining us here on
+Monroe Live. Uh we'll be deep diving
+into more parts of the robot later.
