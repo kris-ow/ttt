@@ -1,0 +1,22 @@
+Channel:     munrolive
+Title:       How the Inspire RH56DFQ's Tiny Actuators Move Fingers
+Published:   2026-07-28 19:00 UTC
+Summarized:  2026-07-28 20:02:35 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01DYky38U7eFDeShgpTzVTA3
+Cost:        $0.01023 (7363 in / 573 out tokens)
+Relevance:   tangential — the video examines a third-party (Inspire) robotic hand's actuator design with no mention of Tesla, SpaceX, or Optimus, offering at most an implicit comparison point for humanoid robotics investors.
+Topic:       tesla
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This Munro Live segment is a hands-on teardown discussion of the Inspire RH56DFQ robotic hand, focused narrowly on how its finger actuators work mechanically. There is no mention of Tesla, Optimus, or any Tesla/SpaceX business implications in this excerpt.
+
+## Humanoid Bots
+1. **Push-rod actuation vs. tendon-driven design:** The Inspire hand uses linear "plunger" actuators that push on the back of each finger to curl it, contrasting with human hands (and some humanoid robot hands) that use pulling tendons; a spring returns the finger to its resting position once the actuator retracts.
+2. **Limited degrees of freedom per finger:** Because the actuator pushes on a connected linkage, some fingers curl both joints together as a single coupled movement rather than allowing independent joint-by-joint articulation; one finger demonstrated moves independently while its two joints still cannot be actuated separately from each other.
+
+Notable quotes and data:
+- "It just pushes. There's a spring... that brings that finger back when the actuator goes away."
+- "It has to do both [joints] together" — description of the coupled actuation limiting independent joint control.
+- "I can only move up and down" — noting the restricted range of motion for the independently-moving finger.
