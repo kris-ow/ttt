@@ -1,8 +1,8 @@
 {
-  "fetched_at": "2026-07-29T20:15:36.161Z",
-  "data_as_of": "2026-07-29",
+  "fetched_at": "2026-07-30T05:48:44.041Z",
+  "data_as_of": "2026-07-30",
   "source": "https://robotaxitracker.com/",
-  "total_unsupervised": 47,
+  "total_unsupervised": 48,
   "cities": [
     {
       "city": "Austin",
@@ -17,19 +17,23 @@
       "unsupervised": 6
     },
     {
+      "city": "Miami",
+      "unsupervised": 1
+    },
+    {
       "city": "Tampa",
       "unsupervised": 3
     }
   ],
   "prior": {
     "1d": {
-      "date": "2026-07-28",
-      "total": 46,
+      "date": "2026-07-29",
+      "total": 47,
       "breakdown": {
         "Austin": 32,
         "Dallas": 6,
         "Houston": 6,
-        "Tampa": 2
+        "Tampa": 3
       }
     },
     "7d": {
