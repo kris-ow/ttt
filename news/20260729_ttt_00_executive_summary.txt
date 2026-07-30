@@ -1,0 +1,67 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-07-29)
+Published:   2026-07-29 00:00 UTC
+Summarized:  2026-07-30 03:27:06 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07116 (21814 in / 2753 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Q2 miss wiped ~$140B in Tesla market value; capex guidance held at $25.5B
+- Musk won't deny Tesla-SpaceX merger, cites growing Terafab overlap
+- SpaceX engineering archive to train next Grok model, ITAR data excluded
+- Tesla signs two major solar/storage PPAs in Texas and Arizona
+- Houston FSD whistleblower lawsuit filed, called procedurally weak by one analyst
+- Tesla's first EU FSD safety dataset shows 5.2x fewer collisions
+
+## Autonomous Driving
+- Tesla published its first EU FSD safety dataset: 5.2x fewer collisions than manual driving across roughly 65 million km over four months in five countries, with zero collisions across 26 million highway miles. Sawyer Merritt's post cites additional metrics from the same release: 8.5x safer highway driving, 13.4x fewer automatic emergency braking events, and 9.2x less harsh acceleration.
+- A federal whistleblower lawsuit filed July 27 by former Tesla FSD testing manager Javier Madrono alleges Houston test-fleet staffing was scaled from 15 to 38 vehicles under his sole oversight, violating an internal "around 1-to-15" staffing guideline; one analysis (futureaza) argues the suit's "mandated ratio" framing is inconsistent with the internal messaging cited, the claim was filed well past Texas's 90-day whistleblower window, and is unlikely to succeed. Madrono now works at Nuro, a competing driverless-car company.
+- NHTSA denied a petition to investigate hidden manual door releases on the 2022 Model 3 after finding only one matching complaint, but the agency will draft a new federal safety standard on emergency door releases applying to all automakers.
+
+## Robotaxi
+- Active Robotaxi fleet reached 817 and unsupervised fleet 47 as of July 29, per RobotaxiTracker.com; a third-party license-plate tracker separately estimated around 55 unsupervised vehicles in Austin, an unverified independent figure one host flagged as higher than his own prior estimate of 30.
+- A Houston rider reported booking a ride after 8:00 p.m. for the first time, though service still ended at 8:30 p.m.
+- Jo Bhakdi called Morgan Stanley's forecast of 30,000 Cybercab-type vehicles by 2030 "nonsensical," arguing Tesla's economics mean scale-up jumps from thousands to hundreds of thousands within a month once unsupervised confidence is reached, making outcomes binary — near-zero or millions.
+- Musk on the earnings call softened robotaxi language to "grow as fast as possible without harm to anyone," which one host reads as more cautious than earlier full-US-coverage guidance.
+- Axios Charlotte reported 14 Cybercabs and 14 Model Ys with Texas plates in a Charlotte-area lot, suggesting out-of-state testing without an imminent launch.
+- Waymo is reportedly considering ending its Uber partnership over operational and commercial disputes; the partnership already ended in Phoenix.
+
+## Humanoid Bots
+- Nvidia CEO Jensen Huang called Optimus, Grok, and Tesla's self-driving "world class" and "revolutionary," predicting humanoid robots could become a multi-trillion-dollar industry; Musk called Huang "awesome" in response.
+- Musk reiterated Optimus production "will be extremely slow at first as everything is new," reinforcing a cautious near-term volume outlook.
+- Viral footage of Chinese Engine AI T800 humanoid robots fighting showed advanced autonomous fall recovery but likely human-operator-selected moves, underscoring how competitive Chinese humanoid hardware has become.
+- Figure's O2 logged roughly 1,200 operating hours at BMW's Spartanburg plant in 2025 moving 90,000+ parts, and its newer Helix system has demoed a 4-minute autonomous dishwasher-loading task — both company-published, unverified claims cited as a competitive benchmark for Optimus.
+
+## Energy
+- Tesla signed a PPA for the entire output of Zelestra's 140 MW AC Lumen solar farm in Texas, construction starting 2027, operational 2029.
+- Tesla signed a roughly 1 TWh/year PPA covering ~90% of ContourGlobal's Sterling Renewable Project in Arizona (450 MW AC solar, 1.4+ GWh storage), one of the largest solar-plus-storage corporate PPAs in US history, targeted for completion in 2028.
+
+## Electric Vehicles
+- Model Y delivery dates in Canada are showing late 2026 into 2027, with Canadian Model Y sales up nearly 80% in H1.
+- Tesla is in an emergency legal dispute with supplier Angstrom Automotive, which is refusing to ship roughly 700 finished Cybertruck/Model Y parts and reportedly demanding $250,000/week to keep its Troy, Texas plant running; a Tesla executive said on-hand inventory could run out within days.
+- Musk announced Tesla will fully open-source the design and software of the discontinued Model S and Model X.
+- Ford's Model e division lost $900 million in Q2 with a -89.6% EBIT margin, revenue down 58% YoY.
+
+## Financials
+- Tesla reported Q2 revenue of roughly $28 billion (+26%), but EPS of $0.33 missed the $0.53 estimate; operating margin was 1.4% and free cash flow turned negative, driving the stock down ~14% over two days.
+- FSD subscriptions reached 1.48 million, up 56%, with roughly 200,000 added in Q2 alone.
+- Tesla's latest SEC filing disclosed a $1.95 billion all-stock AI hardware acquisition, ~90% contingent on retention/performance milestones; speculation (unconfirmed by Tesla) points to Destiny AI, founded by former Dojo project leaders.
+
+## SpaceX — AI & Compute
+- Musk said SpaceX's engineering archive — over two decades of test data, manufacturing and materials science knowledge — will feed Grok's next major training run (Grok 4.7, ~2.1 trillion parameters), with ITAR-covered military/space data excluded.
+
+## SpaceX — Corporate & Valuation
+- Asked directly about a Tesla-SpaceX merger on the earnings call, Musk declined to deny it, citing growing overlap "especially with the Terafab," a shared chip fab estimated at ~$55B for phase one and up to ~$120B all-in.
+- Ron Baron detailed a ~$2 billion cumulative SpaceX investment across 27 transactions since 2017 now valued around $25 billion, plus $1 billion more at IPO, and projected SpaceX could eventually reach a $20–40 trillion valuation.
+- Ark Invest continued buying both SpaceX and Tesla shares as SpaceX stock sits roughly 50% below a prior high near $225.
+- In an Economist interview, Musk predicted AI could exceed combined human intelligence within about five years and repeated his 10-20% estimate of catastrophic AI risk.
+
+Notable quotes and data:
+- Q2: revenue ~$28B (+26%), EPS $0.33 vs. $0.53 est., operating margin 1.4%, negative FCF, $25.5B capex confirmed; stock lost ~$140B in market value.
+- EU FSD: 5.2x fewer collisions across ~65M km over four months; zero collisions across 26M highway miles.
+- Musk on merger question: "there's more and more overlap, especially with the Terafab... but obviously, we can't talk about combining companies... on earnings calls."
+- Musk on Optimus: "Optimus production will be extremely slow at first as everything is new. It's not like making a car."
+- Bhakdi: "Either we are at 100 Cybertrucks in 2030 because they failed, or we are at millions. You cannot be at 30,000."
