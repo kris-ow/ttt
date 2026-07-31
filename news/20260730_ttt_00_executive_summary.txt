@@ -1,84 +1,77 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-07-30)
 Published:   2026-07-30 00:00 UTC
-Summarized:  2026-07-31 03:49:07 UTC
+Summarized:  2026-07-31 09:51:33 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.07018 (17307 in / 3557 out tokens)
+Cost:        $0.06319 (17307 in / 2858 out tokens)
 Sources:     8
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- Starship Flight 13: booster landing burn failed, ship survived splashdown
-- SpaceX wins $1.6B Space Force launch contract
-- FAA proposes waiving 13 environmental laws for launch licensing
-- Q2 earnings: $28B record revenue, FCF beat, margins missed
-- Bhakdi pushes 15,000-Robotaxi target to March 2027
-- Tesla hits 10 millionth vehicle; Electrek flags stalled EV growth
-- Cybertruck production at risk from supplier tooling lawsuit
-
-## Financials
-- Q2 revenue hit a company record ~$28 billion, beating ~$26 billion consensus, with trailing-12-month revenue topping $100 billion for the first time and automotive revenue up 23% y/y, per futureaza (Herbert/Brian).
-- Free cash flow came in around negative $1 billion versus a feared negative $3 billion; cash on hand was $43.5 billion and capex ~$25 billion, per the same source.
-- Margins missed expectations, which hosts attribute largely to a sharp drop in ZEV/regulatory credit revenue after a CAFE standards change; they expect margin recovery toward 22%+ in Q3/Q4 as FSD subscription revenue scales.
-- Jo Bhakdi relayed a claim (his own, unverified) that only ~2 percentage points of Tesla's ~13%+ post-earnings stock decline is attributable to the actual financials, with the rest driven by a broader AI-sector selloff.
-- TSLA closed at $298.32, down 2.97% on 2026-07-29, amid Fed commentary on elevated inflation; SpaceX private shares fell 3.32% to an implied $112.55, per Electrified.
-
-## Electric Vehicles
-- Tesla built its 10 millionth vehicle, but Electrek's Fred Lambert argues this masks two straight years of delivery declines (1.81M in 2023, ~1.79M in 2024, 1,636,129 in 2025, down 9% y/y) and a "second growth wave" vehicle still absent since it was promised in Q1 2024.
-- Installed manufacturing capacity now exceeds 2.375 million units/year, but Tesla is on pace for only ~1.8 million in 2026 — over half a million units of unused capacity, per Electrek.
-- Elon Musk said Tesla will open-source the discontinued Model S/X design and software, mirroring the original Roadster; per futureaza's Brian, this is plausible for niche production (likely China) but unlikely to scale meaningfully.
-- Canadian Model Y delivery estimates have stretched into early 2027, attributed mainly to Giga Berlin (now the sole Canadian source) ramping capacity rather than pure demand, per futureaza.
-- Tesla filed an emergency lawsuit alleging a tooling dispute with Angstrom Automotive Group is blocking access to custom Cybertruck manufacturing equipment; the filing reportedly warns component inventory could run out within days and replacement tooling would take five to six months.
-- In a 70 mph real-world range test, Model Y beat its EPA estimate (310 mi actual vs. 306 mi rated), while Rivian R2 underperformed its EPA rating (253 mi actual vs. 330 mi rated), per Electrified.
-
-## Robotaxi
-- Bhakdi is pushing back his prior forecast of 15,000 Robotaxis by year-end to roughly March 2027 for "10,000 plus," though he still expects some inflection point before December, citing a slowing ramp.
-- Herbert (futureaza) argues the post-earnings stock drop reflects markets wrongly extrapolating Musk/Elluswamy's ~10%+ weekly growth commentary flatly, when Tesla's real strategy is to perfect a safer FSD version ("v15") before shifting from city-by-city to state-by-state scaling.
-- Software updates deepen Grok voice control (Spotify via glove box) and add route/parking memory features; silent turn-signal/hazard sounds in the cabin have sparked unconfirmed speculation about a new FSD version, per brighterwithherbert.
-- Lars Moravy reportedly said (relayed secondhand, ~3 weeks old) Tesla still doesn't know the ideal driverless ride experience and is studying it as volume grows.
+- Tesla builds 10 millionth vehicle; Electrek says growth stalled since 2023
+- FSD supervised: 5.2x safer than manual driving, 65M km, EU data
+- Cybertruck tooling lawsuit threatens production, inventory low "within days"
+- SpaceX Flight 13: booster landing burn fails, ship survives soft splashdown
+- SpaceX wins $1.6B Space Force contract for 18 Falcon 9 launches
+- Tesla Energy lands $225M Megapack order from Neoen in Australia
 
 ## Autonomous Driving
-- Tesla data shows FSD supervised was 5.2x safer than manual driving over 65 million km across five EU countries in the trailing four months; Musk said supervised FSD "unequivocally saves lives." France has signaled it won't yet approve, and EU-wide approval requires countries representing 65% of the population.
-- A Houston whistleblower lawsuit alleges a supervisor oversaw 38 FSD training vehicles alone; Brian (FutureAzA) disputes the framing (each car had a safety driver) and says the suit likely missed its 90-day filing window.
-- An unverified Reddit post shows a vehicle apparently drifting into a concrete barrier captioned "FSD14 light hits a wall"; origin and cause are unconfirmed, per Electrified.
-- Volvo discontinued lidar on the EX90/ES90, compensating Norwegian lidar-equipped owners €1,800 with no retrofit option; Musk said "I did try to warn them."
+- FSD supervised is 5.2x safer than manual driving across 65 million km in five EU countries over the trailing four months, per Tesla data; Musk said supervised FSD "unequivocally saves lives." France has signaled it won't yet vote to approve EU-wide, which requires countries representing 65% of the population.
+- Volvo discontinued lidar on the EX90/ES90, offering Norwegian buyers €1,800 compensation with no retrofit option; Musk said "I did try to warn them," reiterating his vision-only stance.
+- A whistleblower lawsuit alleges a supervisor at a Houston FSD training operations center oversaw 38 vehicles alone; futureaza's Brian disputes the framing (each car had a safety driver) and says the suit likely missed its filing window.
+- An unverified Reddit post shows a vehicle apparently drifting into a concrete barrier captioned "FSD14 light hits a wall" — origin and cause unconfirmed.
+
+## Robotaxi
+- Jo Bhakdi pushed back his 15,000-Robotaxi-by-year-end call to roughly March 2027 for "10,000 plus," citing a slowing ramp, though he still expects some inflection point before December.
+- futureaza's Herbert argues Tesla's stock drop reflected reset expectations on Robotaxi pace rather than financials, framing the current city-by-city phase as a precursor to a later state-by-state scaling jump once a safer FSD version (v15) is ready.
+- Software update 2026.26 deepens Grok integration (voice control of Spotify via glove box); new "memory" features let the car learn preferred routes/parking, with speculation this could extend to fleet-wide pickup/drop-off learning.
+- A robotaxi update silenced in-cabin turn-signal/hazard sounds, prompting unconfirmed speculation of a new FSD version.
 
 ## Humanoid Bots
-- Herbert (futureaza) expects Optimus to follow a "slow then sudden" trajectory like Robotaxi: a near-term hardware version used mainly for training data (possibly placed in employee homes), followed by a mass-production version he places in second-half 2027 targeting 10 million units/year once the factory ramps.
+- Herbert expects Optimus to follow Robotaxi's "slow then sudden" pattern: a near-term hardware version used mainly for training data collection, followed by a mass-production version (H2 2027 per his estimate) targeting 10 million units/year once the factory ramps.
 
-## Energy
-- Tesla signed a $225 million Megapack contract with Neoen in Australia — Neoen's 12th Tesla battery project, pushing their combined Tesla storage capacity past 2GW, per Sawyer Merritt.
-- Q2 energy deployment was 13.5 GWh, which futureaza's hosts call low in isolation but say reflects a large multi-year contracted backlog.
+## Financials
+- Q2 revenue hit a company record ~$28B (vs. ~$26B consensus), automotive revenue up 23% YoY, trailing-12-month revenue topped $100B for the first time.
+- Free cash flow came in near -$1B, better than a feared -$3B, against ~$25B capex and $43.5B cash on hand.
+- Margins missed on a sharp drop in ZEV credit revenue after a CAFE standards change; Herbert expects recovery toward 22%+ in Q3/Q4 as FSD subscriptions scale (~1.5M paid FSD users, ~45% subscription).
+- Per Bhakdi (relayed, unverified), only ~2 points of Tesla's stock decline is attributable to the actual financials, with the rest tied to a broader AI-sector selloff.
+
+## Electric Vehicles
+- Electrek: Tesla hit 10 million vehicles built, but deliveries fell from a 2023 peak of 1.81M to 1,636,129 in 2025 (-9% YoY), with installed capacity over 2.375M units far exceeding current output — a gap the article frames as demand-constrained, not supply-constrained.
+- Musk said Tesla will open-source the Model S/X design and software, mirroring the original Roadster approach.
+- Canadian Model Y delivery estimates now stretch into early 2027, attributed largely to Giga Berlin (Canada's sole supply source) still adding and training shifts rather than to demand.
+- Tesla's emergency lawsuit against Angstrom Automotive Group alleges blocked access to custom Cybertruck tooling, with remaining component inventory potentially running out within days and no alternate supplier able to produce the parts.
+- Real-world 70mph range test: Model Y beat its EPA estimate (310 vs. 306 miles); Rivian R2 badly missed its rating (253 vs. 330 miles).
 
 ## Market & Competition
-- Ford's EV unit lost $900 million in Q2 on ~$1 billion revenue (down 58% y/y) from reduced Mach-E output and Lightning discontinuation, even as Ford beat overall EPS estimates and raised full-year EBIT guidance to $10–11 billion; Ford plans a sub-$30,000 EV pickup with NACS and LFP in H2.
-- Waymo relaunched its Ohio UI with Google Gemini integration and resumed freeway routes in Phoenix after a construction-zone-related pause, per Electrified.
-- Mercedes unveiled the electric GLA (up to ~350 mi EPA, 800V, 320kW charging); Ferrari reportedly hit its 2026 Luce EV sales target (500 units, ~$320M) just two months post-unveil.
+- Ford's EV unit lost $900M in Q2 on revenue down 58% YoY, even as Ford beat overall EPS estimates and raised full-year EBIT guidance; Ford plans a sub-$30K NACS/LFP electric pickup for H2.
+- Mercedes unveiled the GLA EV (up to ~350 mi range, 800V, 320kW peak charging); Ferrari reportedly hit its 2026 Luce EV sales target after two months, ~500 units sold.
+- TSLA closed at $298.32, down 2.97%, alongside a broader AI-stock selloff that Bhakdi attributes to a forced hedge-fund liquidation rather than fundamentals.
 
 ## SpaceX — Starship
-- Flight 13's booster completed a full 33-engine boost-back but its landing burn relit only 8 of 13 engines, causing a hard splashdown; the ship itself made a soft Indian Ocean splashdown, kept transmitting, deployed 20 functional next-gen Starlink V3 satellites, and completed an in-space engine relight that had aborted on Flight 12.
-- Musk called the test successful, saying higher acceleration was used intentionally to test heat-shield tile retention; he confirmed SpaceX is recovering the floating S40 and said the splashdown was precise enough to have been caught by tower arms.
-- Across 13 flights in 39 months, average turnaround is 99 days; Flight 14 will attempt a tower catch of the ship and a booster water landing, with SpaceX aiming for its first orbital insertion attempt.
-- Musk reiterated a roughly 5–7 year timeline for people on Mars, with an uncrewed lander a few years sooner.
-- Third-party analysis (cited by Electrified, attributed to an analyst called Brett) estimates ship reuse could cut cost-per-kg-to-orbit ~45–58% versus expendable Starship/Falcon 9, potentially tripling 2031 SpaceX revenue/EBIT estimates.
+- Flight 13: booster completed a full 33-engine boost-back but only 8 of 13 landing-burn engines relit, causing a hard splashdown; the ship itself made a soft Indian Ocean landing, deployed 20 functional next-gen V3 Starlink satellites, and completed an in-space engine relight that had been aborted on Flight 12.
+- Musk said the flight intentionally used higher acceleration to test heat-shield tile retention and called the test successful; he confirmed a recovery ship is being sent for the floating S40 and said the splashdown was precise enough it would have been caught by tower arms.
+- Flight 14 will attempt a tower catch of the ship and an orbital insertion (vs. prior suborbital flights), with the booster again attempting a water landing.
+- Musk reiterated a Mars crewed-mission timeline of roughly 5–7 years, with an uncrewed lander a few years earlier.
 
 ## SpaceX — Launch Business
-- SpaceX won a $1.6 billion Space Force task order for 18 Falcon 9 launches from Vandenberg through end-2027, supporting missile detection and battlefield-data-relay satellites — the largest publicly announced task order under NSSL Phase 3 Lane One so far.
-- The FAA proposed waiving 13 environmental/historic-preservation statutes for commercial launch licensing (safety and national-security reviews unaffected); a 30-day comment period and likely litigation lie ahead.
+- SpaceX won a $1.6 billion Space Force task order for 18 Falcon 9 launches from Vandenberg through end of 2027, supporting missile detection and battlefield sensing — the largest publicly announced task order yet under NSSL Phase 3 Lane One.
+- The FAA proposed waiving requirements under 13 environmental/historic-preservation statutes for commercial launch licensing (safety and national-security reviews stay intact); a 30-day comment period and likely litigation lie ahead.
 
 ## SpaceX — Starlink
-- Flight 13 deployed 20 fully functional next-gen V3 satellites, with two-way RF/laser communication and telemetry confirmed before they burned up after ~20 minutes; SpaceX's own summary did not claim full integration into the operational constellation, per Electrified.
+- Flight 13 deployed 20 fully functional V3 satellites that exchanged two-way RF and laser communication and returned telemetry (including heat-shield imagery) before burning up after ~20 minutes — confirmed engineering communication only, not integration into the operational constellation.
 
 ## SpaceX — Corporate & Valuation
-- Bhakdi gave SpaceX a $65–75 per-share price target for December, arguing it would be undervalued even at $70 given potential Starlink-adjacent "Colossus" progress and tens of billions in incoming capital.
-- Bhakdi said Tesla's Terafab/Intel foundry deal was likely driven by Intel being the sole domestic option and financially desperate rather than technically superior, and doubts Tesla will succeed building its own memory (e.g., HBM).
+- Bhakdi set a SpaceX price target of $65–75 for December, arguing even $70 would undervalue the company if Starlink-adjacent "Colossus" progress and further capital raises materialize this year.
+
+## Energy
+- Tesla secured a $225 million Megapack contract with Neoen for a second-stage Australian battery storage project — Neoen's 12th Tesla project in the country, pushing combined capacity beyond 2GW.
 
 Notable quotes and data:
-- FSD supervised: 5.2x safer than manual driving over 65M km, 5 EU countries, trailing 4 months.
-- Q2 revenue ~$28B (record); TTM revenue tops $100B for first time; automotive revenue +23% y/y.
-- Tesla installed capacity: 2.375M+ units/year vs. ~1.8M pace for 2026 (Electrek).
-- SpaceX–Space Force: $1.6B, 18 Falcon 9 launches through end-2027.
-- Flight 13: booster boost-back 33/33 engines; landing burn 8/13; ship soft splashdown, 20 V3 Starlink sats deployed.
-- Musk: "People on Mars in roughly 5 to 7 years."
-- Bhakdi: pushing 15,000-Robotaxi target to ~March 2027 for "10,000 plus."
+- FSD supervised: 5.2x safer than manual driving over 65M km in 5 EU countries (trailing 4 months). Musk: supervised FSD "unequivocally saves lives."
+- Q2 revenue ~$28B vs. ~$26B consensus; FCF ~-$1B vs. feared -$3B; cash $43.5B; capex ~$25B.
+- 2025 deliveries: 1,636,129, down 9% YoY; installed capacity >2.375M units.
+- SpaceX Space Force contract: $1.6B for 18 Falcon 9 launches through end of 2027.
+- Flight 13 booster: all 33 engines fired on boost-back; only 8/13 relit for landing burn.
+- TSLA closed $298.32, down 2.97% on the day.
