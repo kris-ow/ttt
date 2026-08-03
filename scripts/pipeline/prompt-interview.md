@@ -26,6 +26,7 @@ Current corporate facts. These override any contrary assumption from your traini
 - Quotes marked as verbatim must be word-for-word from the transcript (after corrections).
 - If audio/captions are garbled or ambiguous, reflect the ambiguity rather than guessing.
 - Distinguish clearly between what {{PERSON}} said and what the host/interviewer said. Attribute every claim.
+- **Check derived figures against the stated ones.** Speakers do arithmetic out loud and get it wrong. When the transcript gives figures whose relationship is checkable by simple division or multiplication (a total and a unit count, a total spend and a per-unit price), verify the derived figure before repeating it. If it does not follow, report the stated inputs, give the correct arithmetic, and attribute the speaker's figure to them where their conclusion rests on it — never repeat a figure your own arithmetic contradicts. This is a consistency check on the transcript's own numbers, not licence to import outside data.
 
 ## Task
 
