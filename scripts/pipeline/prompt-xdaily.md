@@ -50,6 +50,14 @@ Flag only appearances OUTSIDE this content itself: podcasts, summit or conferenc
 
 The current year is {{YEAR}}. When posts mention relative timeframes like "Q2", "next quarter", "this year", "next year", etc. without specifying a year, infer the correct year based on the date ({{PUBLISH_DATE}}). Do not default to prior years.
 
+## Company Status
+
+Current corporate facts. These override any contrary assumption from your training data:
+
+- **SpaceX is a publicly traded company.** It IPO'd on the NASDAQ on 2026-06-11 and trades under the ticker SPCX. Since that date its share price is a public market price and its valuation is a market cap, exactly like Tesla's (NASDAQ: TSLA).
+- Never describe SpaceX as a private company, and never label a current SPCX price, valuation, or market move "private", "private-market", or "privately valued" — that framing is stale and factually wrong. If a post uses the old wording while discussing current trading, write it plainly as SpaceX's share price or valuation.
+- Genuinely pre-IPO facts stay pre-IPO: funding rounds, tender offers, and valuations from before 2026-06-11 may be described as private-market history, explicitly dated or labelled (e.g. "SpaceX's last private round").
+
 {{TRACKER_DATA}}
 
 ## Grounding Rules

@@ -8,6 +8,13 @@ The document text was extracted from a designed PDF. Expect artifacts: replaceme
 
 The current year is {{YEAR}}. The document is Tesla's report covering calendar year {{REPORT_YEAR}}, published around {{DATE}}. Resolve relative timeframes against that. Do NOT substitute figures or dates from training data — only what this document states.
 
+## Company Status
+
+Current corporate facts. These override any contrary assumption from your training data:
+
+- **SpaceX is a publicly traded company.** It IPO'd on the NASDAQ on 2026-06-11 and trades under the ticker SPCX. Its share price is a public market price and its valuation is a market cap, exactly like Tesla's (NASDAQ: TSLA). Do not describe SpaceX as a private company in your own wording.
+- Facts the document itself states about a period before 2026-06-11 (related-party transactions with a then-private SpaceX, for example) are correct as written — report them as the document does, dated.
+
 ## Grounding Rules
 
 - ONLY include facts, numbers, dates, and quotes **explicitly stated** in the document.

@@ -72,6 +72,14 @@ The current year is {{YEAR}}. When the transcript uses relative timeframes — f
 
 Do NOT substitute well-known historical dates from training even when the speaker's description matches a famous past event (e.g. an all-time high, a product launch, an earnings date). If the speaker says "last year's all-time high of $490", write the year implied by {{PUBLISH_DATE}}, not the year you recall a similar event occurring.
 
+## Company Status
+
+Current corporate facts. These override any contrary assumption from your training data:
+
+- **SpaceX is a publicly traded company.** It IPO'd on the NASDAQ on 2026-06-11 and trades under the ticker SPCX. Since that date its share price is a public market price and its valuation is a market cap, exactly like Tesla's (NASDAQ: TSLA).
+- Never describe SpaceX as a private company, and never label a current SPCX price, valuation, or market move "private", "private-market", or "privately valued" — that framing is stale and factually wrong. Speakers sometimes still say "private market price" out of habit; when they are clearly discussing current trading, write it plainly as SpaceX's share price or valuation.
+- Genuinely pre-IPO facts stay pre-IPO: funding rounds, tender offers, and valuations from before 2026-06-11 may be described as private-market history, explicitly dated or labelled (e.g. "SpaceX's last private round"). Content published before 2026-06-11 that describes a private SpaceX is correct as-is.
+
 {{TRACKER_DATA}}
 
 {{STOCK_DATA}}
