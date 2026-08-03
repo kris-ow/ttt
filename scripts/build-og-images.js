@@ -6,8 +6,10 @@
 //   /w/<date>/ → public/og/weekly-<date>.png   (per Weekly Tesla Brief)
 //   /t/<slug>/ → public/og/tesla-<slug>.png    (per official Tesla release)
 //
-// Local-only (uses Playwright Chromium) — NOT part of `npm run build`. Run it
-// after adding an interview or when a new weekly brief lands, then commit:
+// Uses Playwright Chromium — NOT part of `npm run build`. Weekly cards render
+// automatically in the Monday leg of daily-pipeline.yml (after the news.json
+// rebuild, before reddit-weekly.js). Interview and Tesla-release cards are still
+// rendered locally, alongside the content commit that adds them:
 //   npm run og-images                  # render missing cards
 //   git add public/og && git commit
 // Skips cards whose PNG already exists; pass --force to re-render all.

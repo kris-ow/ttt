@@ -77,9 +77,10 @@ function briefDateFromFilename(filename) {
   return m ? `${m[1]}-${m[2]}-${m[3]}` : null;
 }
 
-// The link-embed card is rendered locally (npm run og-images) and committed —
-// the Monday CI run always predates it, so this reminder lands in the output
-// file header every week until the card is in the repo.
+// Since 2026-08-03 the Monday pipeline renders the week's card itself, in the
+// step right before this one — so this reminder should normally never fire. It
+// stays as the failure signal: that render step is continue-on-error, and a
+// missing card means the embed would fall back to the generic site card.
 function ogCardReminder(briefDate) {
   const cardPath = path.resolve('public/og', `weekly-${briefDate}.png`);
   if (fs.existsSync(cardPath)) return null;
