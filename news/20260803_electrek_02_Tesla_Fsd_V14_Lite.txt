@@ -1,0 +1,67 @@
+Source:      electrek
+Title:       Tesla FSD v14 Lite tied to rising HW3 computer failures, owners report
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/08/03/tesla-fsd-v14-lite-hw3-computer-failures/
+Published:   2026-08-03 16:02 UTC
+Fetched:     2026-08-03 17:00 UTC
+
+────────────────────────────────────────────────────────────
+
+A growing number of Tesla owners running the new Full Self-Driving v14 “Lite” build on Hardware 3 (HW3) vehicles are reporting Autopilot computer overheating alerts — and, in some cases, outright computer failures.
+
+The reports have stacked up in the two weeks since Tesla pushed v14 Lite to wide release, and four owners have contacted Electrek directly about the same problem.
+
+## What FSD v14 Lite is doing to older hardware
+
+Tesla started rolling out FSD v14 Lite to HW3 cars in late June and pushed it to wide release with software version 2026.20.6.11 (FSD v14.3.6) on July 21.
+
+The build is a distilled version of the HW4 v14 model, squeezed down to run on the memory-constrained AI3 computer. That computer is the constraint: HW3 ships with 8GB of RAM and roughly one-eighth of HW4’s memory bandwidth, which is why Tesla was stuck running v12.6 on these cars for more than a year before the Lite build.
+
+ 
+ 
+ 
+
+Now that a heavier v14-derived model is running on that hardware, owners are reporting that the Autopilot computer is running hot.
+
+Several have posted service-mode screenshots showing the Autopilot ECU board triggering APP_w141_ECU_Thermal_Issue, the fault Tesla sets when the board climbs above 90°C. Multiple owners measured 96°C. On the road, the alert shows up as “red hands,” a forced FSD disengagement, and a selfDrivingUnavailable state until the computer cools down.
+
+HW3 ECU failures are nothing new, but Electrek has received several reports that owners have tried to running FSD v14 Lite over the last few weeks. 
+
+## From thermal alerts to a dead computer
+
+The more serious reports go beyond throttling. Some Tesla owners are reporting that the computer fully shuts down and needs to be replaced, according to Tesla Service.
+
+That is the scenario Tesla can least afford. The company is already on the hook to replace the self-driving computer in roughly 4 million cars or compensate their owners after admitting HW3 can’t deliver the unsupervised self-driving it was sold. Tesla still has no clear plan for those HW3 owners — and a software update that accelerates hardware failures would only deepen the liability.
+
+To be clear about what’s known and what isn’t: the APP_w141 thermal fault is not new. It’s a long-documented HW3 problem usually traced to the cooling loop — low coolant, air pockets in the Octovalve, or a clogged radiator — and it predates v14 Lite by years. Tesla has not confirmed that the software is causing hardware to fail.
+
+But the timing is hard to ignore. The alerts and failures are clustering around v14 Lite installs, the reports are increasing as the rollout goes wide, and the mechanism is plausible: a more demanding model drawing more from a computer that was already memory- and thermally-constrained. Owners are also reporting broader v14 Lite regressions, phantom braking, hesitation, and brake stuttering — that point to the same compute ceiling.
+
+## Electrek’s Take
+
+I don’t know what people expected. HW3 is now 7-year-old hardware.
+
+We flagged when v14 Lite launched that Tesla was asking a lot of a computer it has already admitted isn’t up to the job. This is the part nobody wanted to see: not just degraded driving behavior, but hardware stress.
+
+ 
+
+## Top comment by Doug T
+
+ 
+ - Liked by 2 people 
+ 
+ Impossible!
+
+Musk promised in Oct 2016 that all Teslas built that day forward were hardware ready for Level 5 driving
+
+ 
+
+ View all comments
+ 
+ I want to be careful here, because the data isn’t conclusive. Thermal alerts on HW3 have existed for years, and a lot of these cars are aging with tired cooling systems. Not every 96°C screenshot is v14 Lite’s fault. But I’ve now had four separate owners reach out about the same pattern within days of installing the update, and that’s on top of the public reports. When a known-marginal computer starts failing right after you push a heavier model onto it, “it’s just old cars” stops being a satisfying explanation.
+
+The stakes are unusually high because of the context. Tesla already owes a fix to millions of HW3 owners it sold on a self-driving promise the hardware can’t keep. If v14 Lite is quietly shortening the life of those computers, it turns a software rollout into a warranty and goodwill problem at massive scale. Tesla should be looking hard at the thermal data — and owners on HW3 seeing these alerts should check their coolant before assuming it’s benign. Is Tesla monitoring ECU temperatures across the v14 Lite fleet, and will it say so?
+
+Can you imagine a scenario where Tesla FSD 14 Lite accelerates the degradation of HW3 computers, which are increasingly coming off warranty, ahead of Tesla likely being forced to replace them or compensate owners through mounting lawsuits? 
+
+If you’re a Tesla owner, powering your EV with home solar is one of the smartest ways to lock in low fuel costs. With electricity rates climbing nearly 10% last year, home solar protects you against future rate increases. And with lease and PPA options, you can go solar with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
