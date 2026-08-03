@@ -2,8 +2,8 @@ import { useEffect, useRef } from 'react'
 import { createChart, AreaSeries, type LineData, ColorType } from 'lightweight-charts'
 
 // 30-day odds chart from the daily [t, p] history committed in
-// merger-odds.json. Same theme + crosshair as StockChartPanel so the two
-// Daily Feed charts read as one system.
+// merger-odds.json. Sole chart on the Daily Feed since the stock widget's
+// chart was dropped for the two-ticker TSLA/SPCX layout (2026-08-03).
 export function MergerOddsChart({ history }: { history: [number, number][] }) {
   const containerRef = useRef<HTMLDivElement>(null)
 

@@ -1,20 +1,40 @@
 export const STOCK_PROXY_URL = import.meta.env.VITE_STOCK_PROXY_URL || 'wss://api.theteslathesis.com'
 
-export interface StockState {
+// Tickers shown in the stock widget, in display order. The proxy multiplexes
+// them over one socket and tags each quote message with its symbol.
+export const SYMBOLS = ['TSLA', 'SPCX'] as const
+export type TickerSymbol = typeof SYMBOLS[number]
+
+export type MarketSession = 'PRE' | 'OPEN' | 'POST' | 'CLOSED'
+
+export interface TickerQuote {
   price: number | null
   prevClose: number | null
   open: number | null
   high: number | null
   low: number | null
-  lastUpdated: Date | null
   // Unix ms of the most recent real Finnhub WebSocket trade tick (from proxy).
   // Used to judge "live but stale" — e.g., pre-market with long gaps between trades.
   tradeAt: number | null
-  loading: boolean
-  error: string | null
-  session: 'PRE' | 'OPEN' | 'POST' | 'CLOSED'
   live: boolean
 }
+
+// Connection-level state; per-ticker figures live in `quotes`.
+export interface StockState {
+  quotes: Record<TickerSymbol, TickerQuote>
+  lastUpdated: Date | null
+  loading: boolean
+  error: string | null
+  session: MarketSession
+}
+
+export const EMPTY_QUOTE: TickerQuote = {
+  price: null, prevClose: null, open: null, high: null, low: null,
+  tradeAt: null, live: false,
+}
+
+export const emptyQuotes = (): Record<TickerSymbol, TickerQuote> =>
+  Object.fromEntries(SYMBOLS.map(s => [s, { ...EMPTY_QUOTE }])) as Record<TickerSymbol, TickerQuote>
 
 // Staleness helpers for the tradeAt field.
 // Proxy may send tradeAt in seconds (Finnhub native) or ms. Normalize to ms.
@@ -43,7 +63,7 @@ const NYSE_HOLIDAYS: string[] = [
   '2027-06-18', '2027-07-05', '2027-09-06', '2027-11-25', '2027-12-24',
 ]
 
-export function getMarketSession(): StockState['session'] {
+export function getMarketSession(): MarketSession {
   const now = new Date()
   const fmt = new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/New_York',
@@ -68,19 +88,9 @@ export function getMarketSession(): StockState['session'] {
   return 'CLOSED'
 }
 
-export const SESSION_LABELS: Record<StockState['session'], { label: string; cls: string }> = {
+export const SESSION_LABELS: Record<MarketSession, { label: string; cls: string }> = {
   PRE: { label: 'PRE-MARKET', cls: 'text-amber' },
   OPEN: { label: 'MARKET OPEN', cls: 'text-green' },
   POST: { label: 'AFTER-HOURS', cls: 'text-amber' },
   CLOSED: { label: 'MARKET CLOSED', cls: 'text-text-dim' },
 }
-
-export const RANGES = [
-  { label: '1D', range: '1d', interval: '5m' },
-  { label: '5D', range: '5d', interval: '15m' },
-  { label: '1M', range: '1mo', interval: '1d' },
-  { label: '3M', range: '3mo', interval: '1d' },
-  { label: '6M', range: '6mo', interval: '1d' },
-  { label: '1Y', range: '1y', interval: '1d' },
-  { label: '5Y', range: '5y', interval: '1wk' },
-] as const

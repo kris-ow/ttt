@@ -303,7 +303,7 @@ export default function App() {
             <div className="hidden sm:grid sm:grid-cols-2 gap-4 mb-6">
               <div className="flex flex-col">
                 <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">NASDAQ:TSLA</h3>
+                  <h3 className="text-text-bright text-sm font-bold whitespace-nowrap">STOCK PRICES</h3>
                   <span className="flex-1 border-t border-dashed border-text-dim" />
                 </div>
                 <StockWidget {...stockData} className="flex-1" />
@@ -320,7 +320,7 @@ export default function App() {
             {/* Mobile: tabbed + swipeable */}
             <div className="sm:hidden mb-6">
               <div className="flex flex-wrap gap-1 mb-2">
-                {([['stock', 'NASDAQ:TSLA'], ['merger', 'MERGER ODDS']] as const).map(([key, label]) => (
+                {([['stock', 'STOCK PRICES'], ['merger', 'MERGER ODDS']] as const).map(([key, label]) => (
                   <button
                     key={key}
                     onClick={() => scrollToMobileTab(key)}
