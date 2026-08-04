@@ -1,0 +1,37 @@
+Channel:     jobhakdi
+Title:       SpaceX Earnings PREVIEW: The ONLY Factor That Counts
+Published:   2026-08-04 13:26 UTC
+Summarized:  2026-08-04 16:02:44 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01YbYKXsQ6VqucoYG2qeztH3
+Cost:        $0.03731 (21777 in / 3106 out tokens)
+Relevance:   core — the video is a detailed pre-earnings analysis of SpaceX's AI/compute buildout, energy capacity constraints, and share-unlock mechanics, all directly bearing on SpaceX's valuation thesis.
+Topic:       spacex
+Categories:  SpaceX — AI & Compute, SpaceX — Corporate & Valuation, SpaceX — Starlink, Financials
+────────────────────────────────────────────────────────────
+
+The host previews SpaceX's first earnings report since its IPO, arguing that neither Starlink growth nor Starship/orbital-lift business will move the stock — the single decisive factor is the pace of Colossus terrestrial AI compute buildout, since compute already generated a surprise ~$26 billion annualized revenue run rate (via Anthropic and Google) on roughly one gigawatt of live capacity. He walks through a research brief modeling realistic vs. bullish energy/compute expansion scenarios, concludes that widely-circulated claims of 8 gigawatts by 2027 are "complete bogus," and estimates a more realistic 2.5–3 gigawatt buildout could still be worth roughly $100+ per share on a conservative earnings multiple — meaning the stock may be undervalued even after its recent decline, though he is holding off on a large position until he sees how the earnings call and upcoming share unlocks play out.
+
+## SpaceX — AI & Compute
+1. **Colossus revenue surprise sets the baseline:** SpaceX's terrestrial AI compute business (Colossus, in Memphis/South Haven and elsewhere) generated a surprise ~$26 billion/year revenue run rate through leasing compute to Anthropic and Google, on roughly 1 gigawatt of live capacity (~660,000 H100-equivalents) — already larger than SpaceX's Starlink or launch businesses combined, per the host.
+2. **Energy/permitting is the real bottleneck, not chips:** About 500 megawatts of the current ~1 gigawatt live capacity relies on 69 unpermitted temporary gas turbines; following a lawsuit and settlement, SpaceX must replace them with fully permitted equivalents by mid-2027 or risk losing roughly half its compute capacity, which would jeopardize the Anthropic/Google deals.
+3. **Texas expansion and the APR Energy acquisition:** SpaceX is scouting sites in Texas, where permitting is easier, to add capacity; it separately acquired APR Energy (previously ~850 MW, since expanded past 1.1 GW of leasable mobile turbine capacity) to bypass a multi-year turbine backlog — potentially adding another ~1 GW if Texas siting succeeds.
+4. **Host's realistic buildout scenarios:** The host's model projects 2026 base case of 1.6 GW live (bear case 1.3 GW, bull case 2 GW), and 2027 base case of roughly 2.5 GW (bear case ~2x current capacity, extreme bull case 4 GW) — explicitly rejecting circulating claims of 8 GW by 2027 as unrealistic given permitting and turbine-supply constraints.
+5. **EBIT and valuation implications:** At a 35% EBIT margin assumption, the base case implies roughly $3+ billion in additional compute EBIT in 2026 and about $20 billion in compute EBIT by 2027 (bull case ~$40 billion, roughly $6 billion EBIT per added gigawatt); at conservative multiples the host estimates the compute business alone could be worth $50–150 per share, with $100/share as a reasonable minimum — a large portion of potential upside from the current price.
+6. **Compute buildout also subsidizes Grok/xAI:** Because SpaceX reportedly retains roughly half of its compute cluster for internal use, the host estimates this implicitly subsidizes Grok and related AI training costs by roughly $40 billion a year in EBIT terms, potentially giving xAI a significant cost advantage.
+
+## SpaceX — Corporate & Valuation
+1. **Share unlock mechanics ahead of earnings:** An initial unlock of roughly 911 million shares (about 20% of locked shares) becomes eligible for sale on the second trading day after earnings regardless of share price; a separate tranche of about 455 million shares only unlocks early if the stock trades at or above $175. The host argues unlock-driven selling pressure is likely regardless of valuation, since many employee shareholders will be advised by wealth managers to diversify concentrated positions.
+2. **Host's trading stance:** The host says he is not making a large directional bet ahead of earnings but is selling short puts with a $100 strike, citing conviction that SpaceX's compute upside is real but uncertainty over near-term unlock-driven selling pressure and how the market will ultimately value the stock (somewhere between Nvidia- and Tesla-like multiples).
+
+Notable quotes and data:
+- "The only thing that matters just on a financial level for the next 12 to 18 months... is how much more are they going to build" (Colossus compute capacity) — the host's core thesis.
+- Current live compute capacity: ~1 gigawatt, supporting ~660,000 H100-equivalents.
+- Surprise compute revenue run rate: ~$26 billion/year via Anthropic and Google leasing.
+- ~500 MW of current capacity runs on 69 unpermitted temporary gas turbines that must be replaced by mid-2027 under a legal settlement.
+- APR Energy acquisition: ~850 MW at acquisition, since expanded past 1.1 GW of turbine leasing capacity.
+- Host's 2026 scenarios: bear 1.3 GW, base 1.6 GW, bull 2 GW live capacity.
+- Host's 2027 scenarios: base ~2.5 GW ($20B compute EBIT), bull case 4 GW ($40B EBIT) — explicitly rejecting an 8 GW claim as "complete bogus."
+- Estimated compute-driven share price contribution: roughly $50–150/share, host's conservative floor ~$100/share.
+- Share unlocks: ~911 million shares unlock regardless of price (~20% of locked shares); ~455 million more unlock early only if price is at/above $175.
+- Host's position: short puts at a $100 strike price, not a large directional trade.
