@@ -1,0 +1,72 @@
+Source:      electrek
+Title:       Waymo CEO explains why Tesla’s camera-only self-driving falls short
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/08/04/waymo-co-ceo-camera-only-self-driving-tesla/
+Published:   2026-08-04 15:31 UTC
+Fetched:     2026-08-04 16:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Waymo co-CEO Dmitri Dolgov laid out the clearest technical case yet for why cameras alone can’t take a self-driving system to full autonomy, arguing that “weak sensing” hits a safety ceiling long before it reaches superhuman performance.
+
+He never said the word Tesla. But camera-only is Tesla’s entire bet, and this was a direct shot at it.
+
+## The sensor debate, from someone with 220 million driverless miles
+
+Dolgov made the comments in a talk at Y Combinator’s Startup School, walking through the lessons Waymo has learned building its driver over close to two decades. He put the sensor question on the table plainly: “there’s been a long-standing debate about what kind of sensors do you actually need for autonomous driving.”
+
+His answer draws the line that camera-only advocates tend to skip right past. “Humans of course can drive with just eyes, so there’s that proof of existence,” he said. “If the goal were to just approximately match human performance or to build an assist product, that’s a very reasonable way to go.”
+
+ 
+ 
+ 
+
+Then the catch. If you’re targeting full autonomy and strongly superhuman performance, he said, “you find that weak sensing just leads to a safety curve that flattens out way too early.”
+
+That’s the whole argument in a couple of sentences. Cameras can match a human. They can power a driver-assist product. Dolgov’s point is that they top out below the bar a car has to clear to drive with nobody behind the wheel.
+
+Unless you do it for demonstration purposes in a geo-fenced area with limited speed and low availability to limit danger through less mileage.
+
+## Why Waymo runs cameras, lidar, and radar together
+
+Waymo uses three sensing types, and Dolgov spent real time on why. Cameras give you high resolution and color, but they’re passive, and they degrade in darkness and glare. Lidar directly measures the 3D structure of the world. Radar punches through fog, rain, and snow, and reads velocity directly with Doppler. Lidar and radar are active sensors, so they see just as well in pitch darkness or straight into a blinding sunset.
+
+This isn’t redundancy for its own sake. “These different sensing modalities, they’re not backups to each other,” Dolgov said. Each one runs its own encoder, and the data fuses into a single view of the world that he says is “vastly superior to what you get with any one sensor.”
+
+He backed it with cases where a camera goes blind. A dust storm in Phoenix, where the camera sees almost nothing while lidar cleanly picks out a pedestrian at the roadside. People hopping a concrete barrier onto a road at night. Kids chasing dogs across a pitch-black street with no headlights or streetlights on them. In each one, the camera feed is close to useless and the lidar view is clean.
+
+Then there’s the failure case camera-only can’t engineer its way around: something physically covering the lens. A single leaf on a sensor can bring a robot to a full stop, Dolgov said, before showing a Waymo that caught a tree branch its wipers couldn’t shake and used its other sensors to drive itself safely back to the depot.
+
+## The ‘nines’ problem
+
+Under the sensor argument sits a math argument, and it’s the part that should worry anyone extrapolating from a camera-only demo. Reliability lives on what Dolgov called an “exponential ladder of nines.” Tesla CEO Elon Musk calls it the “march of the nines.” Getting to 90% or 99% is the easy part. Every additional nine of reliability takes roughly ten times more effort than the one before it.
+
+So the trap is picking the technology with the fastest early ramp, the one that makes the best demo, projecting that steep slope forward, and then hitting a plateau “way before the performance that is required by your product.” A demo might need one nine. A driver-assist product needs a few. A car with kids in the back and nobody driving needs a whole stack of them.
+
+Dolgov also pushed back on the one knock that camera-only fans always reach for: cost. Waymo is on its sixth generation of hardware, and he said each generation has drastically cut the price. Betting against sensors like lidar on today’s prices, he warned, means betting on “a number that has a fairly short shelf life.”
+
+## Where Tesla fits
+
+Tesla is the loudest bet on the other side of this debate. It pulled radar from its cars in 2021 and dropped ultrasonic sensors in 2022, going all-in on cameras with “Tesla Vision.” Elon Musk has called lidar “a fool’s errand” and said anyone relying on it is “doomed.” Tesla’s robotaxi service, which launched in Austin in 2025, runs on cameras alone. We’ve covered the Tesla Vision versus lidar fight in depth before.
+
+So far the results line up with the exact ceiling Dolgov described. Tesla’s own robotaxi data shows a crash rate about three times worse than human drivers, even with a human safety monitor in the front seat. Musk has claimed FSD is safer than humans, release after release, and the data hasn’t backed him up yet, even after being heavily massaged by Tesla.
+
+Waymo is running the numbers Dolgov says camera-only can’t reach. Its latest safety report, based on 220 million rider-only miles, shows 94% fewer serious-injury crashes than human drivers would cause over the same distance, roughly 17 times better. Waymo is now serving around half a million paid trips a week across 15 US cities and is scaling toward a 1-million-weekly-rides target, even as Musk insists Waymo “never had a chance” against Tesla.
+
+Tesla recently confirmed it has accumulated 380,000 driverless miles over the past year since launching its robotaxi. Waymo’s driverless service does that in a day.
+
+## Electrek’s Take
+
+This is the most useful version of the lidar-versus-cameras argument I’ve seen, because Dolgov doesn’t pretend cameras are useless. He concedes the thing Tesla fans always lead with. Yes, humans drive with two eyes, and yes, cameras alone can build a genuinely good driver-assist product. That’s not the disagreement. The disagreement is whether “good enough to help a human drive” ever becomes “good enough to remove the human,” and his answer is no, because the sensing tops out before you get the last few nines.
+
+Now, Tesla would point to its active Robotaxi service as an example of “removing the human”, but Dolgov also said that camera-only is also good for a demo, and that’s basically what Tesla’s Robotaxi service is right now.
+
+Tesla just confirmed that unsupervised miles only added up to 380,000 miles to date. That’s basically a demo at low speeds in small geo-fenced areas in Texas. 
+
+The nines framing is the part Tesla investors should sit with. Tesla has spent years on the steep, easy part of the curve, where every FSD release looks a lot better than the last, and Musk keeps drawing that slope straight up to robotaxis. Dolgov is describing precisely why that line breaks: the early gains are cheap and the tail is brutal, and the tail is the entire safety problem once you’re driving millions of miles a week.
+
+The cost point matters too, because “lidar is too expensive” is the last technical leg the camera-only case has to stand on. Waymo’s on its sixth hardware generation and says cost is dropping fast. If sensors keep getting cheaper while camera-only keeps hitting the same wall, “cameras are the pragmatic choice” gets weaker every year.
+
+We are hearing that Waymo is close to having its entire package (car + Waymo sensor suite and driver) at around $60,000. At that point, the fact that you have a system that works at scale is way more important than a ~$20,000 cost advantage on the car. 
+
+If you’re relying on a car for your daily driving, powering it at home with solar can cut your fueling costs to almost nothing. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
