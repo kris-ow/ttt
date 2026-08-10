@@ -112,50 +112,74 @@ jobs:
             });
             console.log(`Created issue for ${fresh.length} new lead(s)`);
 
-      # Notify via GitHub issue when this run produced summaries classified
-      # tangential/off-topic — they are hidden from the feed and Daily Brief
-      # until reviewed in the admin console (MODERATION tab). New summaries
-      # are still untracked at this point (the commit step runs later), so
-      # git ls-files --others yields exactly this run's output.
-      - name: Notify on hidden (moderated) summaries
+      # Keep ONE rolling issue listing every summary currently hidden from the feed
+      # and Daily Brief as tangential/off-topic, awaiting review in the admin console
+      # (MODERATION tab). Rewritten in place each run, so it never sends notification
+      # mail — creating one issue per run was ~2/day and 93% of all repo mail (changed
+      # 2026-08-10). It reports the WHOLE standing queue, not just this run's additions,
+      # so items decided in the console drop off by themselves. New summaries are still
+      # untracked at this point (the commit step runs later) but are already on disk,
+      # so scanning news/ sees them.
+      - name: Update moderation queue issue
         continue-on-error: true
         uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
-            const cp = require('child_process');
-            const newFiles = cp.execSync('git ls-files --others --exclude-standard news', { encoding: 'utf8' })
-              .split('\n').filter(f => f.endsWith('_summary.txt'));
+            const { upsertRollingIssue, rollingFooter } = require(`${process.env.GITHUB_WORKSPACE}/scripts/rolling-issue.cjs`);
+
             let moderation = { include: [], exclude: [], exempt_channels: [] };
             try { moderation = { include: [], exclude: [], exempt_channels: [], ...JSON.parse(fs.readFileSync('data/moderation.json', 'utf8')) }; } catch {}
-            const hidden = [];
-            for (const file of newFiles) {
-              const name = file.replace(/^news\//, '');
+
+            const pending = [];
+            for (const name of fs.readdirSync('news').filter(f => f.endsWith('_summary.txt')).sort().reverse()) {
               if (moderation.include.includes(name) || moderation.exclude.includes(name)) continue;
               if (moderation.exempt_channels.includes((name.match(/^\d{8}_([^_]+)_/) || [])[1])) continue;
-              const header = fs.readFileSync(file, 'utf8').split('─'.repeat(5))[0];
+              // Strip CR: header lines are LF in CI but CRLF on a Windows checkout,
+              // and a trailing \r makes the `(.+)$` capture below fail to match.
+              const header = fs.readFileSync(`news/${name}`, 'utf8').replace(/\r\n/g, '\n').split('─'.repeat(5))[0];
               const meta = {};
               for (const line of header.split('\n')) {
                 const m = line.match(/^(\w[\w\s]*?):\s+(.+)$/);
                 if (m) meta[m[1].trim().toLowerCase()] = m[2].trim();
               }
               if (/^(tangential|off-topic)\b/i.test(meta.relevance || '')) {
-                hidden.push({ name, title: meta.title || name, channel: meta.channel || meta.source || '?', relevance: meta.relevance });
+                const d = name.slice(0, 8);
+                pending.push({
+                  name,
+                  date: `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`,
+                  title: meta.title || name,
+                  channel: meta.channel || meta.source || '?',
+                  relevance: meta.relevance,
+                });
               }
             }
-            if (hidden.length === 0) { console.log('No hidden summaries this run'); return; }
-            const list = hidden.map(h => `- **${h.title}** (${h.channel}) — ${h.relevance}\n  - \`${h.name}\``).join('\n');
-            try {
-              await github.rest.issues.createLabel({ owner: context.repo.owner, repo: context.repo.repo, name: 'moderation', color: 'FBCA04' });
-            } catch {}
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: `Content moderation: ${hidden.length} piece${hidden.length > 1 ? 's' : ''} hidden pending review`,
-              body: `The pipeline classified ${hidden.length} new summar${hidden.length > 1 ? 'ies' : 'y'} as tangential/off-topic and hid ${hidden.length > 1 ? 'them' : 'it'} from the feed:\n\n${list}\n\n**Next step:** review in the admin console (\`cd admin && npm run dev\` → MODERATION → SHOW IN FEED / KEEP HIDDEN → [PUBLISH]).\n\nClose this issue once reviewed.`,
-              labels: ['moderation'],
+
+            const review = '**Next step:** review in the admin console (`cd admin && npm run dev` → MODERATION → SHOW IN FEED / KEEP HIDDEN → [PUBLISH]). Decisions land in `data/moderation.json` and reviewed items disappear from this list on the next run.';
+            let body;
+            if (pending.length === 0) {
+              body = `**Queue empty** — no summaries are currently hidden pending review.${rollingFooter()}`;
+            } else {
+              // Cap the rendering; the issue body limit is 64KB and the count above is the real signal.
+              const CAP = 60;
+              const shown = pending.slice(0, CAP);
+              let list = '';
+              let lastDate = null;
+              for (const p of shown) {
+                if (p.date !== lastDate) { list += `\n### ${p.date}\n`; lastDate = p.date; }
+                list += `- **${p.title}** (${p.channel}) — ${p.relevance}\n  - \`${p.name}\`\n`;
+              }
+              const more = pending.length > CAP ? `\n_…and ${pending.length - CAP} older item(s) not listed._\n` : '';
+              body = `**${pending.length} piece${pending.length > 1 ? 's' : ''}** classified tangential/off-topic and hidden from the feed and Daily Brief, awaiting review.\n${list}${more}\n${review}${rollingFooter()}`;
+            }
+
+            const res = await upsertRollingIssue(github, context, {
+              label: 'moderation',
+              title: 'Content moderation queue',
+              body,
+              color: 'FBCA04',
             });
-            console.log(`Created issue for ${hidden.length} hidden piece(s)`);
+            console.log(`${res.created ? 'Created' : 'Updated'} moderation queue issue #${res.number} — ${pending.length} pending`);
 
       # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
       # 00:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
@@ -300,24 +324,28 @@ jobs:
     needs: [pipeline, deploy]
     if: failure()
     steps:
-      - name: Create failure issue
+      # Needed for the rolling-issue helper below.
+      - uses: actions/checkout@v6
+
+      # Log the failure into one rolling issue rather than opening a new one per
+      # failing run (silent body edit — see scripts/rolling-issue.cjs). The most
+      # recent 15 failures are kept so a repeating pattern is visible at a glance.
+      - name: Log pipeline failure
         uses: actions/github-script@v9
         with:
           script: |
-            const title = `Pipeline failure: ${new Date().toISOString().split('T')[0]}`;
-            // Don't create duplicate issues
-            const existing = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'pipeline-failure',
-              per_page: 5,
+            const { upsertRollingIssue, rollingFooter } = require(`${process.env.GITHUB_WORKSPACE}/scripts/rolling-issue.cjs`);
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const entry = `- ${new Date().toISOString()} — [run ${context.runId}](${runUrl})`;
+
+            const res = await upsertRollingIssue(github, context, {
+              label: 'pipeline-failure',
+              title: 'Daily pipeline: failure log',
+              color: 'D93F0B',
+              body: (existing) => {
+                const prior = (existing.match(/^- \d{4}-\d{2}-\d{2}T.*$/gm) || []).slice(0, 14);
+                const log = [entry, ...prior].join('\n');
+                return `The daily summary pipeline failed. Most recent failures (newest first):\n\n${log}\n\n**Check:** workflow logs at the run link. A failure here can mean transcripts went unsummarized — \`freshness-check.yml\` tracks that separately.${rollingFooter()}`;
+              },
             });
-            if (existing.data.some(i => i.title === title)) return;
-            await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title,
-              body: `The daily summary pipeline failed.\n\n**Run:** ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n**Time:** ${new Date().toISOString()}\n\nCheck the workflow logs for details.`,
-              labels: ['pipeline-failure'],
-            });
+            console.log(`${res.created ? 'Created' : 'Updated'} failure log issue #${res.number}`);
