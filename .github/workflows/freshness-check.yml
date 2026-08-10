@@ -26,6 +26,10 @@ jobs:
           stale_count=0
           for f in news/*.txt; do
             base="${f%.txt}"
+            # *_reddit_bullets.txt is a weekly-brief sidecar for reddit-weekly.js, not a
+            # transcript — it is never summarized by design (build-news.js ignores it too).
+            # Without this it reported one phantom gap per week from 2026-07-06 onward.
+            if [[ "$f" == *_reddit_bullets.txt ]]; then continue; fi
             if [[ "$f" != *_summary.txt ]] && [[ ! -f "${base}_summary.txt" ]]; then
               stale_files="$stale_files\n- \`$(basename $f)\`"
               stale_count=$((stale_count + 1))
