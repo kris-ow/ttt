@@ -1,0 +1,613 @@
+Channel:     farzad-fm
+Title:       The Problem With AI No One Understands
+URL:         https://www.youtube.com/watch?v=lF975rIln9s
+Published:   2026-08-11 12:59 UTC
+Fetched:     2026-08-11 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+There's a huge problem in the AI
+industry and it all comes down to speed.
+Right now, Chad GPT can take anywhere
+between 2 seconds and multiple hours to
+answer or execute [music] an action. But
+those answers or actions are rarely, if
+ever, life or death. They're usually
+everyday questions about something that
+you're wondering about, something that
+you're researching, some piece of
+software that you're trying to create,
+something along those lines. A slow
+answer is an annoyance in the worst case
+scenario. But imagine that same level of
+speed in a robot that's powered by AI,
+like today's self-driving cars, as an
+example. That self-driving car has to
+see, remember, predict, and act in real
+time under a strict power limit at the
+compute level due to the limited
+capacity of the batteries in
+self-driving cars. A 2-cond delay in a
+self-driving car that's avoiding a
+potential crash is the literal
+definition of life and death, and that's
+a huge problem. The reality is that the
+chips that are built for that job in
+physical AI making splitsecond decisions
+for everinccreasingly capable
+self-driving cars, humanoid robots,
+drones, and thousands of other
+applications across every AI powered
+robot doesn't exist yet. But that is
+about to change. And that change will be
+transformational in ways most people are
+completely oblivious to. No one outside
+of extremely technical circles has any
+idea what's going on. But this video
+will change that. The reality is that
+the AI that we know today that we all
+love and hate has been shaped by large
+language models which is a fancy name
+for AIs like Chachi, Claude, Grock,
+Gemini. I'll explain shortly why these
+systems are incapable of truly executing
+against life or death decisions. But the
+next wave, the one that will solve this
+huge problem, is trying to watch video,
+listen to audio, remember
+three-dimensional spaces, simulate
+physics, predict the consequences of an
+action, and then do all of that again in
+real time. These systems are called
+world models. And here's the thing,
+today's AI chips and systems can
+technically run them, but the real
+question is at what cost? And spoiler
+alert, it's at a very high cost. From a
+technical perspective, world models
+effectively move the bottleneck away
+from raw arithmetic, which is the
+horsepower that's needed to run today's
+AIS and more towards memory, data
+movement, real-time simulation, and
+power efficient computation inside the
+robots, which is a completely different
+way of executing AI. This is a
+fundamental change that will allow AI to
+move from chat bots to physical robots.
+I am going to explain all of that in
+detail because that change going from
+digital world that language models
+operate in today to the physical world
+that world models would bring is not
+only tens to potentially hundreds of
+times bigger and more valuable. It would
+literally change the fabric of
+everything we know, how we interact with
+the physical world and what it
+ultimately means to be human. And the
+crazy thing is that I'm already
+experiencing this new reality in my own
+home with my Madic robot, which is the
+sponsor of today's video. I have a Madic
+robot vacuum in our house that we use
+every single day, and it is easily the
+most reliable robot vacuum we've ever
+owned. It runs a five camera vision
+system powered by AI, which is the same
+pure vision approach Tesla uses for FSD.
+And just like a Tesla, it gets software
+updates that make it smarter over time.
+The app is easily one of the most
+intuitive apps I've ever used. Ours is
+named Roberto. He's great with the kids.
+And my wife, who has some of the highest
+cleaning standards I've ever seen in a
+human being, doesn't hate this thing. If
+you knew my wife, that's a 20,000 star
+review on Amazon. So, if you want to
+check it out, use my referral link in
+the description or the comment section
+below. And thank you so much to Maddic
+for sponsoring this video. Okay, let's
+get back to world models. First, we need
+to be clear about what a world model is
+by explaining how today's AI work. A
+large language model like chatbt, Grock,
+Gemini or Claude receives a sequence of
+tokens and predicts what should come
+next. Those tokens might be pieces of
+words or lines of code or numbers. The
+model can do insanely sophisticated
+things with that sequence like writing
+software or writing a book telling you
+about the latest in hemorrhoid creams,
+writing the script, but the basic job is
+still a prediction for the next word
+inside a stream of symbols. A world
+model has a significantly harder
+assignment. For example, let's picture a
+robot standing in a kitchen. And let's
+pretend that it sees a cup on the
+counter. Now, let's assume a person
+walks in front of that camera. So, the
+cup disappears for a second. The robot
+still needs to remember that the cup
+exists. It needs to know that the
+counter is solid, that the cup can fall,
+the person can move unpredictably, and
+its own arm will change the scene if it
+reaches forward. Then, the robot has to
+consider different actions. What happens
+if I move left? What happens if I grab
+the cup from this angle? What happens if
+the person steps back into my path while
+I'm doing all of that? The useful output
+is a prediction of how the world will
+change, followed by an action, followed
+by another observation. That loop may
+need to run dozens of times every second
+without losing track of what happened 5
+seconds or 5 minutes ago. That is a very
+different data problem. 1 minute of raw
+uncompressed 1080p color video at 30
+frames per second contains roughly 11
+gigabytes of data. But if you compare
+that to a minute of ordinary spoken text
+written down is usually less than 1
+kilobyte. That means that the video is
+10 million times larger in size. Now AI
+models do not process every video as raw
+pixels forever. They compress the
+information aggressively so that the
+system doesn't need to reprocess that
+much data all the time. But that
+comparison really highlights why this is
+such a tough problem to solve. The
+physical world produces ridiculous
+amounts of information before you even
+add audio, depth, touch, the robot's
+joint positions, or the actions it might
+take. And adding more compute is not the
+solution. You can't just keep adding
+chips to handle more things to process.
+It is far more complex than that. That's
+because an AI chip is a little bit like
+a city. Think of the arithmetic units
+where all the math is being done as the
+factories. Memory where the results are
+stored are the warehouses. The
+connections between them are the roads.
+So you can double the number of
+factories, but if every truck is stuck
+in traffic and the warehouse is full,
+production does not double. A lot of
+that very expensive machinery just sits
+there waiting for data. And that problem
+already exists with language models.
+Nvidia said in the technical description
+of Reuben, their newest chip, that the
+generation stage of modern AI inference,
+a fancy way of describing the
+computations that AIs do to give you an
+answer, is fundamentally constrained by
+the memory system. World models add
+another dimension to that pressure.
+Because time is now a hugely important
+variable in the real world. The model
+may need a memory of the room, a history
+of the motion, a representation of the
+objects, and several possible things
+that can happen in the future. It may
+also need to generate images or video
+repeatedly as it imagines what comes
+next. And the even more complicated
+thing is that world model does not
+describe one settled architecture or way
+of doing things with this technology.
+There's still a ton of debate on how to
+solve for this. For example, Google's
+DeepMind's Genie 3 is a generative world
+model. DeepMind says it can create an
+interactive 720p environment at 24
+frames per second while maintaining
+consistency for a few minutes. During
+the generation of each frame, the model
+has to consider a trajectory that keeps
+growing. If you return to a location
+after a minute, the system needs
+relevant information from that earlier
+visit while still responding to your new
+input in real time. That is a gigantic
+memory and compute problem. Now, Meta,
+Mark Zuckerberg's company, is
+approaching the same goal from a
+different direction. Its VJPA 2 model
+has 1.2 billion parameters and was
+trained using more than 1 million hours
+of video. Instead of trying to reproduce
+every pixel of the next frame, it
+predicts in a compressed representation
+called an embedding. Think of an
+embedding as the model's internal
+summary of what is important in the
+scene. For example, the cup hand motion
+and the relationship between them from
+the earlier scene can be represented
+without spending compute to redraw a
+potentially useless feature like the
+shine on the countertop as an example.
+Meta then used a relatively small amount
+of robot data, about 62 hours, to make
+those predictions respond to actions.
+The model could use its internal
+predictions to plan basic robot
+movements in environments and with
+objects it had not seen during training.
+That approach is incredibly interesting
+because it could be dramatically more
+efficient than generating a pixel
+perfect beautiful video of every
+possible future. And Nvidia's Cosmo 3
+tried it in a different way as well. It
+combines language, image, video, audio,
+and actions in one model using a mixture
+of prediction and diffusion. Diffusion
+is the process used by many image and
+video models to begin with noise and
+gradually refine it into a coherent
+result. So we already have at least
+three versions of this future. One model
+generates the visible world. One
+predicts a compact representation. One
+tries to connect many different types of
+information and actions inside a shared
+system. But guess what? They don't even
+agree on what the basic unit of
+intelligence should be, which is
+something that all AI systems require.
+Otherwise, you can't generate an action
+or an answer. is a unit of intelligence
+in a world model a pixel, a video token,
+objects, a persistent three-dimensional
+map. And that lack of decision is what's
+fundamentally at the source of why there
+is a huge problem in the AI industry.
+Because if you can't decide on the unit
+of intelligence, what should a chip be
+built to accelerate and optimize for?
+Which is ultimately what chips are
+designed to do? That disagreement is the
+reason the most important chip does not
+exist yet. Specializing a chip, in this
+case for world models, only pays off
+when the workload becomes predictable.
+But we are not there yet. We currently
+live in a world where GPUs, the same
+chips that do graphics, that also do AI,
+remain incredibly [snorts] valuable
+during this phase because they are
+flexible. They are good at the large
+matrix operations used by transformers,
+diffusion models, vision systems, and a
+lot of other pieces researchers are
+testing related to AI. A GPU is
+basically a jack of all trades, master
+of none, but for chips for AI. What that
+means is that the data centers being
+built today are not about to turn into
+useless warehouses. Those data centers
+are still going to train the world
+models. They will generate synthetic
+data. They will run simulations. They
+will help researchers discover which
+architecture actually works. But once a
+workload becomes large, stable, and
+repetitive, a purpose-built chip can
+remove hardware that the workload does
+not need and spend more of its power
+budget on the parts it uses constantly.
+That is when a general GPU can lose on
+cost, power or latency, even if it
+remains technically capable. And over
+the long term, that is the entire game.
+And we saw this happen inside the
+language model boom. Google built TPUs.
+Amazon built tranium and inferentia.
+Meta developed its own accelerators.
+Tesla designed inference chips for its
+vehicles. Broadcom now helps major AI
+companies create custom silicon. All of
+these companies are now hypers
+specializing chips to run their own
+LLMs, large language models, so that
+they can ultimately compete on cost and
+speed. World models create the same
+incentive and the final product may need
+two completely different kinds of
+computer. The first computer lives in
+the data center. It'll train the model
+on enormous video data sets, generate
+synthetic environments, and simulate
+millions of possible situations. It'll
+need huge memory capacity, huge
+bandwidth, extremely fast connections
+between chips, and enough flexibility to
+support architectures that keep
+changing. The second computer will live
+inside the machine itself. It may sit in
+a car, human robot, a factory robot, a
+drone, or a pair of glasses, or god
+knows what else. It needs to absorb
+streams from multiple sensors, update
+its internal model of the world, choose
+an action with predictable latency, and
+do it inside a strict power and heat
+limit. We can use Nvidia's current
+products to show how different those
+jobs already are. Reuben is a data
+center monster. It has 288 GB of HPM4,
+which means stacks of ultra fast memory
+placed extremely close to the processor.
+It moves up to 22 terabits per second
+and connects to other GPUs through an
+equally serious high-speed fabric. Just
+to put that in perspective, 22 TB is
+roughly 2,000 times the data in one full
+minute of the uncompressed 1080p video
+we discussed earlier, but processed
+every second. That's the training side.
+On the inference or on device side, like
+on a human or robot, drone, or
+self-driving car, we have Nvidia's
+Jetson Thor as an example. It has up to
+128 GB of regular low power memory, 273
+GB per second of bandwidth, connections
+for high-speed sensors, and a power
+range of 40 to 130 watts. That's
+significantly less memory and bandwidth
+because robots don't have unlimited
+power like data centers do. On top of
+that, robots have to move, run on
+battery, and avoid cooking itself. So
+the needs for those chips will be vastly
+different. So that's one model, but two
+completely different physical systems,
+very similar to LLMs today, which use
+different chips for training and for
+inference. So there really isn't a
+single chip that's missing. It's
+multiple. It's an entire system. Real
+quick, about 63% of you that watch my
+videos often aren't subscribed. And if
+you're enjoying this video, the easiest
+way to support this channel is by
+hitting the subscribe button. It's
+completely free and it goes a very long
+way. Thank you so much. And each one of
+these chips have to solve for very
+specific problems. Let's start with the
+training side, which needs much more
+memory near the compute. The jump from
+Nvidia Blackwell's 8 tab per second of
+memory bandwidth to Reubin's 22 TB per
+second is roughly 2.8 times in one
+generation. AMD's new MI455X, what a
+mouthful that is, has 432 GB of HBM4 and
+up to 23 terabytes per second of
+bandwidth. Google's Ironwood TPU
+connects thousands of chips while giving
+each one 192 GB of HBM and 7.4 tab per
+second. When you look at these product
+decisions from Nvidia, AMD, and Google,
+they appear to be telling us the same
+thing. Moving data is now one of the
+central constraints. Now, second, the
+system needs a way to preserve useful
+history without carrying every old piece
+of information forever. Picture yourself
+walking through a room. Do you remember
+every single detail in that room? Of
+course not. We remember that there is a
+table behind us, maybe a door to the
+left, and a person moving nearby. A good
+world model needs a compact state that
+can be updated rather than reconstructed
+from scratch. Microsoft researchers
+recently published a system called
+Mirage that does exactly that. It stores
+static parts of a scene as
+three-dimensional tokens and updates the
+memory as generation continues. The
+researchers report more than 10 times
+faster generation and 55 times less
+three-dimensional cache memory than the
+baselines they tested. So, a new memory
+architecture in software can erase an
+enormous amount of hardware demand. And
+third, the chip needs flexibility across
+different kinds of operations. A world
+model may combine transformers,
+convolutions, diffusions, state space
+models, threedimensional geometry, and
+classical control code. A lot of
+different very nerdy variables going to
+make it work. Some parts want dense
+math. Some want updates once in a while.
+Some need to move large blocks of data.
+Some need to react to one small change
+immediately. And then on the edge side,
+basically the machine that will execute
+the tasks using inference like a robot
+or car has an even tougher problem. I'll
+use the example from the very beginning
+to really drive this home. A chatbot can
+take 2 seconds to answer a problem.
+Nobody's going to die. But a car or
+robot cannot lose track of an object
+because the memory was too slow in
+processing data. The system needs
+consistent response time, low power use,
+sensor interfaces, safety checks, and
+enough local memory to keep functioning
+when the internet is slow or
+unavailable. If you want to get a good
+understanding of how this actually
+works, Tesla is a perfect place to look.
+They are actively solving for this with
+a self-driving AI stack called FSD or
+full self-driving for its cars. That
+software now enables the company to do
+coast to coast drives without any
+interventions for millions of customers
+in the United States. Tesla's public
+material says its inference hardware is
+designed around performance per watt.
+Highfrequency sensor data, memory
+latency, and distributing work across
+multiple processors. The company has
+also said developments of its AI5 and
+AI6 inference chips which will be used
+in the human robots and the AI compute
+satellites through a partnership with
+SpaceX called Terapab is progressing
+ahead of production planned for 2027 and
+2028. Now we do not know whether these
+chips will become the best world model
+processors, but we do know Tesla has an
+incentive to co-design the model, the
+chip, the cameras, the vehicle and the
+robot as one product. If physical AI
+becomes a dominant use of world models,
+that vertical integration could be an
+enormous advantage, which is something I
+explore very deeply in my new book,
+Master Plan: What Elon Musk is really
+building. This book helps people
+understand how the entire Musk ecosystem
+will change the world and how to best
+position for it. If you're interested,
+I'll leave links for that in the
+description and the comment section
+below. Now, what's super interesting is
+that some companies that barely appear
+in the AI conversation may capture a
+huge amount of the value because of this
+massive world model change. Samsung, SK,
+Highix, and Micron make high bandwidth
+memory that is crucial for these world
+model chips. Samsung began shipping HBM4
+in 2026 and is working with AMD on
+memory for the MI455X, which is AMD's
+latest chip for AI data centers. Micron
+is producing HBM4 for Nvidia's Reuben.
+SKH Highix says its HBM4 doubles
+bandwidth and improves power efficiency
+compared to the prior generation. So,
+you've got a lot of these companies
+working at this. And if the future of AI
+requires more memory per accelerator and
+more bandwidth per watt, these companies
+are selling the resource everybody is
+fighting over. Now, TSMC, short for
+Taiwan Semiconductor Manufacturing
+Company, which is easily the world's
+biggest manufacturer of chips, is just
+as important along with all of its
+peers. The processor and the memory have
+to be placed close together and
+connected through increasingly complex
+packaging. Not only that, but these
+companies like Broadcom, which is
+another AI infrastructure company that
+we mentioned earlier, could also win by
+helping large AI companies build their
+own accelerators once world model
+architectures become stable enough to
+specialize. And so from my perspective,
+and none of this is investment or
+financial advice, the companies standing
+to win fall into three groups. First,
+the full stack incumbents that can adapt
+before the decision on the best way to
+handle world models, which is companies
+like Nvidia. Second, the vertically
+integrated companies that own both the
+world model use case and the custom
+silicon. So, Google and Tesla being the
+clearest examples. And the memory
+manufacturing, packaging, and networking
+suppliers that get paid no matter which
+model architecture wins. So your TSMC's
+and other chipmaking companies that make
+actually good chips. There's also a
+fourth group I would keep on the watch
+list. These are the startups pursuing
+wafer scale chips, compute near memory,
+optical connections, or other unusual
+designs. Cerebras, for example, places
+an enormous amount of compute and onchip
+memory on one wafer size processor
+that's the size of a pizza box. that
+could become valuable if world models
+reward local memory and low
+communication overhead. The likeliest
+thing is that today's chips are the
+expensive laboratory where the world
+model architecture will be discovered.
+The specialized winner will likely come
+much later when researchers know which
+information must be remembered, which
+one can't be thrown away, and which
+operations repeat often enough to
+hardwire into a chip architecture. And
+so here are the things I would focus on
+to track the actual progress of this
+field. Watch the cost of generating 1
+second of a consistent interactive
+world. Watch how long a model can
+remember a place without its memory use
+exploding. Watch the power required for
+a robot to perceive, predict, and act in
+real time. Watch whether the model
+predicts pixels, compressed data,
+objects, or a persistent
+three-dimensional state. And most
+importantly, watch for a company showing
+the same model working across training,
+simulation, and the real machine. A
+beautiful generated video might be
+impressive, but a robot using an
+internal model to work for hours proves
+something much more valuable because
+world models could let robots practice
+inside synthetic environments before
+touching a real factory. Autonomous cars
+could test rare situations millions of
+times in a simulation. AI agents could
+predict the physical consequences of an
+action before committing to it. Games
+and entertainment could become
+interactive worlds generated
+continuously around the player. And this
+is the part I find difficult to fully
+wrap my head around if all this
+technical crap wasn't complicated
+enough. The economic scale becomes
+absurd when these models move into
+machines. self-driving cars that drive
+flawlessly for years at a time for a
+fraction of the cost than a human-driven
+one. Humano oro robots that can execute
+any task a human could, but far faster
+at much higher quality and at a fraction
+of the cost. And so many other examples.
+It may sometimes feel like we're
+reaching the end of AI's development if
+you follow this field closely, but the
+reality is that we're just getting
+started. Thank you so much for watching.
+I hope this video was informative and
+helpful, and we'll see you on the next
+one. Take it easy, everybody. Double
+kiss. Ready?
