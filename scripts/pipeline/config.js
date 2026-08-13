@@ -1,3 +1,37 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// ── Local secrets ────────────────────────────────────────
+// Load <repo>/.env so local runs pick up ANTHROPIC_API_KEY without it being
+// exported globally. It previously lived in ~/.zshrc, which meant every
+// interactive shell on the Mac Mini carried the key — including ones that
+// launch Claude Code, which then billed API credits instead of the
+// subscription. Every pipeline entrypoint imports this module, so loading it
+// here covers all of them.
+//
+// Existing environment variables always win, so GitHub Actions
+// (ANTHROPIC_API_KEY from secrets, no .env on the runner) is unaffected.
+function loadDotEnv() {
+  const here = path.dirname(fileURLToPath(import.meta.url));
+  const envPath = path.resolve(here, '../../.env'); // scripts/pipeline → repo root
+  let contents;
+  try {
+    contents = fs.readFileSync(envPath, 'utf-8');
+  } catch {
+    return; // no .env (CI, or a fresh clone) — rely on the real environment
+  }
+  for (const line of contents.split('\n')) {
+    const match = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$/);
+    if (!match) continue; // skips blanks and # comments
+    const key = match[1];
+    if (process.env[key] !== undefined) continue; // never clobber the real env
+    process.env[key] = match[2].trim().replace(/^(['"])(.*)\1$/, '$2');
+  }
+}
+
+loadDotEnv();
+
 // ── Pipeline Configuration ───────────────────────────────
 
 // Categories for classification (maps to Knowledge Base + valuation model inputs)
