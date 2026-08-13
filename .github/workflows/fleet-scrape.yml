@@ -27,8 +27,14 @@ jobs:
 
       - run: npx playwright install --with-deps chromium
 
+      # The robotaxi tile this feeds is hidden; the merger-odds card below is
+      # visible. A tracker outage must not skip the steps after it — that's how
+      # a 2026-08-10 selector drift froze the merger-odds card for 3 days. The
+      # run is still marked failed at the end so the breakage stays visible.
       - name: Scrape tracker (operational + unsupervised)
+        id: scrape
         run: node scripts/scrape-tracker.js
+        continue-on-error: true
 
       # Polymarket outage shouldn't block tracker updates; card flags stale data after 24h.
       - name: Fetch merger odds
@@ -45,7 +51,15 @@ jobs:
           else
             git commit -m "Fleet scrape: $(date -u +%Y-%m-%dT%H:%MZ)
 
-          Updated fleet_count + unsupervised_count from robotaxitracker.com"
+          Updated robotaxitracker.com counts and/or Polymarket merger odds"
             git pull --rebase
             git push
           fi
+
+      # Last, so a broken scraper still surfaces as a red run after the
+      # merger-odds fetch and commit have had their chance to run.
+      - name: Fail if tracker scrape failed
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "::error::Tracker scrape failed (see the scrape step). Merger odds and commit still ran."
+          exit 1
