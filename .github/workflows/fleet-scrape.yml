@@ -10,6 +10,23 @@ on:
 permissions:
   contents: write
 
+env:
+  # Tracker scraping is ON HOLD (2026-08-13). robotaxitracker.com redesigned
+  # around 2026-08-10 and both scrape paths died with it: the /data page no
+  # longer embeds the `service_areas` JSON (operational), and the homepage no
+  # longer renders an "UNSUPERVISED FLEET" section with per-city counts at all
+  # (unsupervised). The counts now only exist as vehicle-level records behind
+  # api.robotaxitracker.com, so reproducing the metric would mean deriving it
+  # ourselves — a different methodology that would break continuity with the
+  # tracked 39→48 series. Combined with the site being slow and unreliable to
+  # iterate against, the user put this on hold; the robotaxi tile it feeds has
+  # been hidden since 2026-07-03 anyway.
+  #
+  # This workflow therefore runs for the MERGER ODDS only. Flip to 'on' to
+  # resume (the scrape + Chromium install steps are gated on this), but expect
+  # to rewrite scripts/scrape-tracker.js against the new data model first.
+  TRACKER_SCRAPE: 'off'
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -25,14 +42,17 @@ jobs:
 
       - run: npm ci
 
+      # Only the tracker scrape needs a browser; skip the ~1 min install while
+      # it's on hold.
       - run: npx playwright install --with-deps chromium
+        if: env.TRACKER_SCRAPE == 'on'
 
       # The robotaxi tile this feeds is hidden; the merger-odds card below is
       # visible. A tracker outage must not skip the steps after it — that's how
-      # a 2026-08-10 selector drift froze the merger-odds card for 3 days. The
-      # run is still marked failed at the end so the breakage stays visible.
+      # a 2026-08-10 selector drift froze the merger-odds card for 3 days.
       - name: Scrape tracker (operational + unsupervised)
         id: scrape
+        if: env.TRACKER_SCRAPE == 'on'
         run: node scripts/scrape-tracker.js
         continue-on-error: true
 
@@ -57,9 +77,11 @@ jobs:
           fi
 
       # Last, so a broken scraper still surfaces as a red run after the
-      # merger-odds fetch and commit have had their chance to run.
+      # merger-odds fetch and commit have had their chance to run. Skipped
+      # while the scrape is on hold — a known-disabled step must not paint
+      # every run red three times a day.
       - name: Fail if tracker scrape failed
-        if: steps.scrape.outcome == 'failure'
+        if: env.TRACKER_SCRAPE == 'on' && steps.scrape.outcome == 'failure'
         run: |
           echo "::error::Tracker scrape failed (see the scrape step). Merger odds and commit still ran."
           exit 1
