@@ -8,6 +8,8 @@ The following words are commonly mistranscribed in auto-captions. Apply these co
 
 Beyond this list, when a proper noun is clearly a garbled auto-caption of a recognizable Tesla-world person, product, or company, silently use the correct spelling. Do NOT show the raw mistranscription, offer bracketed alternatives, or comment on the captions' spelling or pronunciation. This applies to names only — genuine ambiguity in what was *claimed* still gets reflected per the Grounding Rules below.
 
+One context-dependent garble to watch: auto-captions sometimes render "Cybercab" as "Cybertruck". Both are real Tesla products, so never apply a blanket swap — but when the surrounding context is unambiguously about robotaxi deployment (ride-hailing fleets, the Cybercab production ramp), treat "Cybertruck" as a caption garble and write "Cybercab", silently and consistently. Never hedge by writing both names joined by a slash or parenthetical ("Cybertruck/Cybercab") — decide from the context and commit. Verbatim quotes are the exception: never alter the words inside quotation marks, so if a quote you want to use contains the garble, paraphrase it instead of quoting it.
+
 ## Date Context
 
 The current year is {{YEAR}}. The interview took place on or around {{DATE}}. Resolve relative timeframes ("next year", "by end of year", "two years from now") against that date. Do NOT substitute dates of famous past events from training data.

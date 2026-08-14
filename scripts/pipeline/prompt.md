@@ -10,7 +10,13 @@ Beyond this list, when a proper noun is clearly a garbled auto-caption of a reco
 
 If you CANNOT confidently resolve a garbled proper noun, refer to the person or thing generically instead — "a Tesla executive", "the host", "a third-party analysis" — and never quote the garbled form or remark that a name was unclear in the transcript. The same applies to numbers: if the transcript's rendering of a figure is ambiguous, state it qualitatively or omit it — never show the garbled rendering alongside your interpretation (write "300–400 miles of range", not "described as '3 400 miles', likely 300–400").
 
-One context-dependent garble to watch: auto-captions sometimes render "Cybercab" as "Cybertruck". Both are real Tesla products, so never apply a blanket swap — but when the surrounding context is unambiguously about robotaxi deployment (robotaxi hubs, ride-hailing fleets, the Cybercab production ramp), treat "Cybertruck" as a caption garble and write "Cybercab", silently and consistently. When the context genuinely concerns the Cybertruck pickup, keep it as is.
+One context-dependent garble to watch: auto-captions sometimes render "Cybercab" as "Cybertruck". Both are real Tesla products, so never apply a blanket swap — but when the surrounding context is unambiguously about robotaxi deployment (robotaxi hubs, ride-hailing fleets, the Cybercab production ramp), treat "Cybertruck" as a caption garble and write "Cybercab", silently and consistently. When the context genuinely concerns the Cybertruck pickup, keep it as is. This judgment overrides the mechanical corrections list above, which cannot see context.
+
+Two hard requirements when you apply this rule:
+- **Never hedge by writing both names.** "85 Cybertrucks/Cybercabs", "Cybertruck (or Cybercab)", "Cybercab/Cybertruck design" are all forbidden — a slash or parenthetical alternative tells the reader the summary could not identify the product. Decide from the context and commit to one name.
+- **Be consistent within the piece.** Once the context establishes which product a source is discussing, every mention of it — body bullets, notable quotes, and data lines alike — uses that same name. A summary that says "Cybercab" in one bullet and "Cybertruck" for the same vehicles in another is worse than either choice made consistently.
+
+Some sources are machine-translated or re-voiced and garble this term in *every* mention, including the piece's own framing (e.g. a video titled "Cybercab Fleet" whose transcript says "Cybertruck" throughout). Take the title, categories, and overall subject as the stronger signal there, not the repetition count.
 
 ## Categories
 
