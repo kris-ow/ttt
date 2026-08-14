@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-14T11:49:33.840Z",
+  "fetched_at": "2026-08-14T19:50:03.248Z",
   "source": "polymarket.com",
   "event_slug": "tesla-and-spacex-merger-officially-announced-by-june-30",
   "event_title": "Tesla and SpaceX merger officially announced by...?",
@@ -7,14 +7,14 @@
     {
       "deadline": "2026-09-30",
       "label": "BY SEP 30 2026",
-      "yes": 0.0525,
+      "yes": 0.0605,
       "change": {
-        "1d": 0.0005,
-        "7d": 0.002,
-        "30d": -0.0525
+        "1d": 0.008,
+        "7d": 0.01,
+        "30d": -0.0395
       },
-      "volume": 318676,
-      "liquidity": 50578,
+      "volume": 325009,
+      "liquidity": 41360,
       "history": [
         [
           1784070005,
@@ -141,26 +141,26 @@
           0.054
         ],
         [
-          1786708150,
-          0.0525
+          1786736950,
+          0.0605
         ],
         [
-          1786708173,
-          0.0525
+          1786737002,
+          0.0605
         ]
       ]
     },
     {
       "deadline": "2026-12-31",
       "label": "BY DEC 31 2026",
-      "yes": 0.18,
+      "yes": 0.175,
       "change": {
-        "1d": 0.005,
-        "7d": 0.005,
-        "30d": -0.065
+        "1d": 0,
+        "7d": 0,
+        "30d": -0.07
       },
-      "volume": 124644,
-      "liquidity": 14213,
+      "volume": 127191,
+      "liquidity": 24857,
       "history": [
         [
           1784070006,
@@ -287,12 +287,100 @@
           0.175
         ],
         [
-          1786708151,
-          0.18
+          1786736951,
+          0.175
         ],
         [
-          1786708173,
-          0.18
+          1786737002,
+          0.175
+        ]
+      ]
+    },
+    {
+      "deadline": "2027-01-31",
+      "label": "BY JAN 31 2027",
+      "yes": 0.295,
+      "change": {
+        "1d": null,
+        "7d": null,
+        "30d": null
+      },
+      "volume": 289,
+      "liquidity": 65,
+      "history": [
+        [
+          1786736952,
+          0.315
+        ],
+        [
+          1786737002,
+          0.295
+        ]
+      ]
+    },
+    {
+      "deadline": "2027-02-28",
+      "label": "BY FEB 28 2027",
+      "yes": 0.405,
+      "change": {
+        "1d": null,
+        "7d": null,
+        "30d": null
+      },
+      "volume": 0,
+      "liquidity": 57,
+      "history": [
+        [
+          1786736952,
+          0.405
+        ],
+        [
+          1786737003,
+          0.405
+        ]
+      ]
+    },
+    {
+      "deadline": "2027-06-30",
+      "label": "BY JUN 30 2027",
+      "yes": 0.485,
+      "change": {
+        "1d": null,
+        "7d": null,
+        "30d": null
+      },
+      "volume": 0,
+      "liquidity": 59,
+      "history": [
+        [
+          1786736951,
+          0.485
+        ],
+        [
+          1786737003,
+          0.485
+        ]
+      ]
+    },
+    {
+      "deadline": "2027-12-31",
+      "label": "BY DEC 31 2027",
+      "yes": 0.52,
+      "change": {
+        "1d": null,
+        "7d": null,
+        "30d": null
+      },
+      "volume": 0,
+      "liquidity": 26,
+      "history": [
+        [
+          1786736951,
+          0.52
+        ],
+        [
+          1786737002,
+          0.52
         ]
       ]
     }
