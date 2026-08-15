@@ -1,65 +1,71 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-08-14)
 Published:   2026-08-14 00:00 UTC
-Summarized:  2026-08-15 01:49:08 UTC
+Summarized:  2026-08-15 07:41:18 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.04923 (11664 in / 2590 out tokens)
-Sources:     5
+Cost:        $0.05497 (14834 in / 2530 out tokens)
+Sources:     6
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- Terafab breaks ground: $16.8B joint Tesla/SpaceX capex commitment
-- Nevada grants Tesla AV permit capped at 10 vehicles
-- Sweden's IF Metall ends nearly 3-year Tesla strike
-- FSD disengagement-free streak hits ~25,000 miles
+- Terafab breaks ground, $16.8B combined Tesla/SpaceX capex commitment
+- Nevada grants Tesla AV permit, capped at 10 vehicles
+- Sweden's IF Metall ends nearly 3-year strike against Tesla
+- Cybertruck PCS warranty extended, reimbursements issued to owners
+- FSD driver logs 25,000 disengagement-free miles
 - SpaceX satellites redesigned for Nvidia Vera Rubin GPUs
-- Grok 4.7 due early September with SpaceX-specific training
 
 ## Robotaxi
-- Gary Black's thesis that Uber wins autonomous ride-hailing (via aggregator dominance) is rebutted by FutureAzA/Herbert, who argue Tesla's manufacturing scale beats fragmented AV-partner networks and that Uber's model breaks down once an operator owns enough vehicles.
-- Reported Waymo-Uber rift: executives on each side blame the other for incidents of Waymo vehicles stranded without routing, with Uber's mapping/logistics role in question.
-- Move, a Dubai-headquartered AV fleet-services company, raised $250M for cleaning/charging/depot services; it holds Waymo depot contracts and is reportedly in talks to buy Waymo vehicles, though Waymo appears unreceptive. Tesla is described as unique in building its own automated cleaning facilities (citing a ~36,000-sq-ft robotic center) rather than relying on third parties.
-- Nevada Transportation Authority granted Tesla an Autonomous Vehicle Network Company permit, capped at a maximum fleet of 10 fully autonomous vehicles within an approved Operational Design Domain.
+- Las Vegas/Clark County approves 10 robotaxis, initially limited to Strip-area rides; Waymo has also applied for a permit there.
+- Nevada Transportation Authority separately granted Tesla an Autonomous Vehicle Network Company permit, capped at a maximum fleet of 10 fully autonomous vehicles within an approved Operational Design Domain.
+- Houston robotaxi lot reportedly holds around 200 Model Ys and Cybercabs combined, per a Grok-sourced figure cited by hosts; testing also expanding in Sacramento and the Seattle region.
+- Gary Black's thesis that Uber will win robotaxi via aggregation was rebutted by FutureAzA/Brighter hosts, who argue Tesla's manufacturing scale beats fragmented AV-partner networks; they also flagged a reported Waymo–Uber rift over vehicle-routing failures.
+- Move, an AV fleet-services company, raised $250M for cleaning/charging/depot services and holds Waymo depot contracts; Tesla is described as building its own automated cleaning facilities instead.
 
 ## Autonomous Driving
-- A Tesla driver (David Moss) reportedly extended a disengagement-free FSD streak to roughly 25,000 miles in a Model 3, more than double a prior ~12,000-mile milestone; hosts say several other drivers have completed disengagement-free cross-country trips.
-- Waymo co-CEO Dmitri Dolgov said camera-only self-driving can only approximately match human performance and that LiDAR/radar are necessary for full autonomy; FutureAzA hosts dismissed this as self-interested messaging and noted no comparative safety data has been provided to support the claim.
-- A reported incident had two Waymo vehicles collide such that their LiDAR sensors made contact, per commentary characterizing LiDAR as bulky and power-hungry.
-- FSD cited as a purchase driver: a California Post reporter traded a Lincoln Navigator for a Model Y citing FSD; Paul Graham described his wife's reaction to Tesla self-driving as a "religious revelation."
-- A European-market FSD demo video shows the system yielding to traffic, cyclists, and scooters, part of an effort to win EU regulatory approval.
-
-## SpaceX — AI & Compute
-- Terafab, a joint Tesla-SpaceX compute project, began construction with an initial-phase capital commitment of $16.8B split between the companies; future expansion phases are expected to push total investment much higher (no figure given).
-- SpaceX plans to integrate Nvidia's next-generation Vera Rubin GPUs into satellites, upgrading satellite power capacity to 250 kW from 150 kW (a 67% increase) to match an Nvidia NVL72 rack's draw; Vera Rubin is estimated at 2-3x the productivity of Blackwell-generation B200 chips, with up to 5x more compute per satellite depending on counting method (per jobhakdi).
-- Grok 4.6 reportedly performs near Anthropic's and OpenAI's flagship models on several benchmarks at roughly an 85% cost discount, per investor Gavin Baker as cited by jobhakdi; it also leads GDPval, a benchmark measuring replacement of median human job performance across sectors.
-- Musk said (Aug. 12 post) Grok 4.7 will be "significantly better" than 4.6, ready in three to four weeks, now incorporating SpaceX proprietary engineering data, with monthly model updates going forward.
-- SpaceX launched Grokbot, a desktop agentic enterprise product built on Grok that can be assigned business roles and work autonomously across tools like LinkedIn, GitHub, and Slack.
-
-## SpaceX — Corporate & Valuation
-- SPCX shares rebounded from about $108 to about $140; one commentator (jobhakdi) sees $135 as a near-term selling ceiling and expects possible consolidation before a breakout.
+- A Tesla driver (David Moss) extended a disengagement-free FSD streak to roughly 25,000 miles in a Model 3, more than double a prior ~12,000-mile milestone.
+- Waymo co-CEO Dmitri Dolgov said camera-only autonomy can only approximate human performance and argued LiDAR/radar are necessary; FutureAzA hosts dismissed this as self-interested and noted no comparative accident data has been provided by Waymo.
+- FSD now visually detects and displays bus lanes, per an FSD-focused observer.
+- FSD take rate cited at 15.2%, up from 11% in 2024, per hosts discussing recurring-revenue implications.
+- A European-market FSD demo video showing yielding, cyclist stops, and scooter avoidance is reportedly part of an effort to win EU regulatory approval.
 
 ## Electric Vehicles
-- Tesla ranks first in US auto brand loyalty at 64.3% of owners buying another Tesla, per an S&P Global study cited on Brighter with Herbert, ahead of Ferrari, Toyota, Subaru, Honda, and Ford.
-- Model Y was Korea's top-selling model overall in July and top imported brand for six straight months, reportedly outselling Mercedes and BMW combined; also cited as Switzerland's best-selling EV.
-- Tesla states its batteries retain 80% capacity after 200,000 miles with ~1% annual degradation; US warranty covers repair/replacement (often remanufactured pack) for a minimum of 100,000 miles/8 years.
-- An MIT study cited on the show finds EVs cut lifecycle emissions 40-60% versus gas vehicles, with over 90% of Americans living where the average EV beats the most efficient gas car (59 mpg).
-
-## Energy
-- Tesla launched a Powerwall lease option in Texas bundled with Tesla Electric, offering whole-home backup from $35/month for two units, with a one-time $100 order fee and no installation cost.
+- Cybertruck PCS (power-conversion-system) warranty extended: 2026 models now 7yr/70,000 miles (up from 50,000); 2024–2025 models now 8yr/150,000 miles; Tesla reportedly reimbursing owners who previously paid for PCS failures out of pocket.
+- Model 3 long-range battery replacement price cut from ~$14,500 to ~$8,000; a cited analysis of ~31,000 used Tesla listings found only ~0.17% had lost more than 25% of original range.
+- Tesla tops US auto brand loyalty at 64.3% per an S&P Global study cited on brighterwithherbert, ahead of Ferrari, Toyota, Subaru, Honda, and Ford.
+- Cybertruck VIN count disputed: one creator reported VINs surpassing 100,000, but another host's independent research estimates actual production closer to 75,000–80,000 units.
+- Cybertruck parts shortage linked to Tesla's lawsuit against supplier Angstrom Automotive, which subsequently filed for bankruptcy after a court ordered equipment returned; trucks reportedly sitting in Giga Texas's east lot awaiting parts.
+- Tesla Semi: Nevada factory reportedly producing trucks weekly (full capacity target 50,000 units/year, not expected this year); freight carrier Bali Express completed a three-week Semi test.
 
 ## Market & Competition
-- Tesla Semi: freight carrier Bali Express completed a three-week test, calling electrification "a strategic commitment"; the Nevada Semi factory is reportedly building trucks weekly, with 4680 cell supply seen as the likely production bottleneck.
-- Cybertruck VIN count disputed: one creator reported VINs surpassing 100,000, but another's independent estimate puts actual production closer to 75,000-80,000 due to non-contiguous VIN blocks.
-- Tesla sued supplier Angstrom Automotive over Cybertruck parts equipment; a judge ordered equipment returned, but Angstrom then filed for bankruptcy, leaving Tesla unable to recover it, reportedly leaving trucks awaiting parts at Giga Texas.
-- Tesla is building a new 124-stall Supercharger station in San Francisco, described as one of the largest in the world.
-- Lucid unveiled the Gravity GT-S ($126,000, 373-mile range, 1,070 hp); Rivian unveiled 2027 model year R1S/R1T updates including optional heated captain's chairs.
+- Lucid unveiled the Gravity GT-S, from $126,000, 373-mile range, 1,070 hp, 0–60 in 3.1s.
+- Rivian unveiled 2027 model-year R1S/R1T with new features including optional heated fold-flat second-row captain's chairs.
+
+## Energy
+- Tesla launched a Powerwall lease option in Texas bundled with Tesla Electric, offering whole-home backup from $35/month for two units, plus a $100 order fee and no installation cost.
+- New 124-stall San Francisco Supercharger station, one of the largest in the world, described as standard-stall-only.
+
+## SpaceX — AI & Compute
+- SpaceX is redesigning satellites to house Nvidia Vera Rubin GPU racks, upgrading satellite power capacity to 250 kW from 150 kW (a 67% increase) to match an Nvidia NVL72 rack's draw.
+- Grok 4.6 reportedly performs near Anthropic's and OpenAI's top models on several benchmarks, with investor Gavin Baker cited as saying it matches Anthropic's flagship at roughly an 85% cost discount.
+- Grok now leads GDPval, a benchmark measuring model performance against median human workers across job verticals, per the host.
+- Elon Musk stated (Aug. 12 post) Grok 4.7 will be "significantly better" than 4.6, ready in three to four weeks, now incorporating SpaceX proprietary data in training; model updates to come monthly.
+- SpaceX launched Grokbot, a desktop agentic enterprise product that can be assigned business roles and log into work tools autonomously.
+
+## SpaceX — Starlink
+- Hosts on the Beat Podcast discussed Starlink V3 satellites potentially delivering ~100x more total bandwidth than V2, via ~10x more usable spectrum (from acquired Hughesnet spectrum) and ~10x higher per-satellite throughput.
+- Starlink connectivity is now reportedly fully integrated into production Cybercabs, enabling 4K streaming/recording and continued connectivity during power outages.
+
+## SpaceX — Corporate & Valuation
+- SPCX shares rebounded from around $108 to about $140; one host sees $135 as a near-term selling ceiling, expecting possible consolidation before a breakout.
+- Terafab, a joint Tesla-SpaceX compute project, officially began construction, with the initial phase requiring $16.8 billion in combined capital investment; future expansion phases are expected to push total investment higher, per Sawyer Merritt.
 
 Notable quotes and data:
-- Terafab initial phase: $16.8B combined Tesla/SpaceX capital commitment.
-- Nevada AV permit capped at 10 vehicles.
+- Terafab initial phase: $16.8B combined Tesla/SpaceX capital commitment (Sawyer Merritt).
+- Nevada AV Network Company permit: capped at 10 fully autonomous vehicles.
+- Cybertruck PCS warranty: 2026 models 7yr/70,000 mi; 2024–2025 models 8yr/150,000 mi.
 - FSD disengagement-free streak: ~25,000 miles (David Moss, Model 3).
-- SpaceX satellite power upgraded to 250 kW from 150 kW for Vera Rubin GPU racks.
-- Grok 4.6 matches Anthropic flagship at ~85% cost discount (Gavin Baker, per jobhakdi).
-- "I traded in my six-figure Lincoln Navigator black label edition for a Tesla Model Y. The biggest reason was full self-driving. Nothing else comes close." — California Post reporter John Fleshman
-- Tesla brand loyalty: 64.3% (S&P Global).
+- Grok 4.6 vs. Anthropic flagship: ~85% cheaper (80% input, 88% output tokens), per Gavin Baker as cited by host.
+- Satellite power upgrade: 150 kW → 250 kW (+67%) to support Nvidia NVL72 GPU racks.
+- Tesla brand loyalty: 64.3%, #1 in US per S&P Global study.
