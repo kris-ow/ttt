@@ -1,0 +1,33 @@
+Channel:     electrek
+Title:       Tesla FSD v14 swerved and try to drive me into a ditch for no reason
+Published:   2026-08-17 14:14 UTC
+Summarized:  2026-08-17 15:04:49 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01WBe8EnGLVMmwEBP981YTcS
+Cost:        $0.01542 (6081 in / 1868 out tokens)
+Relevance:   core — first-hand account of an FSD v14 near-miss with hard data on Tesla's crash-reporting record and Musk's unsupervised-FSD timeline directly bears on the autonomous driving investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek's Fred Lambert reports a near-miss where his Tesla running FSD (Supervised) v14.3.6 attempted to take a highway exit that his car had already passed, at 110 km/h, requiring him to disengage before the car drove into a ditch.
+
+## Autonomous Driving
+1. **The incident:** On Autoroute 55 in Quebec's Mauricie region, in dry, clear, low-traffic night conditions, the author's Tesla activated its turn signal and began pulling toward the shoulder to take exit 217 after the car had already passed the exit gantry. The car decelerated from 110 km/h to 102 km/h before the author took manual control; "Self-Driving" dropped off the display at that point. The author calls the conditions ideal for FSD (divided highway, no traffic, crisp markings) and says the system typically performs at its best in such scenarios.
+
+2. **Author's prior complacency warning:** The author references his own piece from roughly two and a half months earlier arguing that FSD v14's high reliability creates dangerous driver complacency, quoting his earlier line that a system working "almost perfectly" teaches drivers to stop paying attention while still failing unpredictably. He says the Sunday night incident demonstrated that exact risk, noting a couple thousand miles between critical interventions is impressive but also long enough to erode driver vigilance.
+
+3. **Tesla's v14.3.6 release notes:** According to the article, Tesla's release notes state the company upgraded the reinforcement learning stage of FSD neural network training, rewrote the AI compiler with MLIR for a 20% faster reaction time, and improved the car's response to system degradations to reduce "unnecessary disengagements." The author notes disengagement counts can drop both because the software improves and because drivers stop intervening, and says Tesla doesn't publish data letting outsiders distinguish the two.
+
+4. **Crash-reporting figures:** The article states Tesla reported a record 207 Autopilot and FSD crashes to NHTSA in a single month (unspecified month), and that narrative details were redacted on 99.9% of Tesla's 3,763 driver-assist crash reports filed since 2019.
+
+5. **Musk's unsupervised FSD timeline:** The article notes Musk continues to tell investors that unsupervised FSD will be widespread in the US by year-end, contrasted with Waymo's co-CEO's stated view that camera-only self-driving falls short of what a driverless system needs.
+
+## Editorial Stance
+The author calls FSD v14 "truly incredible" as a point-to-point driver-assist system but says it falls far short of the unsupervised self-driving it was originally sold as — calling that gap "probably the worst move Tesla has ever done." He argues the system's high performance breeds complacency, criticizes Musk for suggesting drivers can look at their phones while using it, and says Tesla needs to work harder to keep drivers attentive as the system improves, not less.
+
+Notable quotes and data:
+- FSD v14.3.6 speed during the erroneous exit maneuver: 110 → 109 → 107 → 104 → 102 km/h before "Self-Driving" disengaged.
+- "a couple thousand miles between critical interventions is genuinely impressive engineering. It's also exactly the interval that teaches your brain to stop scanning" (author's characterization).
+- Tesla reported a record 207 Autopilot/FSD crashes to NHTSA in one month; narrative redacted on 99.9% of 3,763 driver-assist crash reports since 2019.
+- Musk quote cited by author: "you can look at your phone now while using it."
