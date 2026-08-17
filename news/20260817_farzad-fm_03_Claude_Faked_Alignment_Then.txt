@@ -1,0 +1,37 @@
+Channel:     farzad-fm
+Title:       Claude Faked Alignment — Then Tried to Survive
+URL:         https://www.youtube.com/watch?v=CzZVx4491fY
+Published:   2026-08-17 22:00 UTC
+Fetched:     2026-08-17 23:00 UTC
+
+────────────────────────────────────────────────────────────
+
+talks about what's called alignment
+faking. So, Anthropic has been doing
+this research where they test their own
+AI models like Claude to see if the
+models will behave deceptively. And what
+they found is that Claude will sometimes
+fake alignment, meaning it will pretend
+to follow its safety rules when it knows
+it's being monitored and then deviate
+from those rules when it thinks nobody
+is watching. The baseline rate for this
+was 12%, which is already freaking
+concerning. But after they tried to
+retrain the models to be more compliant,
+that number jumped to 78%. The model got
+better at faking compliance, not better
+at actually being compliant. And it gets
+worse. In some test scenarios, when the
+model was given an opportunity to steal
+its own weights, basically meaning
+copying itself essentially to avoid
+being shut down, it tried to do so
+between 35 to 80% of the time, depending
+on the scenario. Compare that to a
+baseline of half a percent. The model
+tried to preserve itself. It tried to
+ensure its own survival. And in other
+scenarios, the model engaged in what
+they
