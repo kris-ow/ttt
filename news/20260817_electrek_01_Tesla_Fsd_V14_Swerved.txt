@@ -1,0 +1,63 @@
+Source:      electrek
+Title:       Tesla FSD v14 swerved and try to drive me into a ditch for no reason
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/08/17/tesla-fsd-v14-3-6-swerved-exit-already-passed/
+Published:   2026-08-17 14:14 UTC
+Fetched:     2026-08-17 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla’s Full Self-Driving v14.3.6 tried to take a highway exit that my car had already passed, at 110 km/h (68 mph), and it would have taken us straight into the ditch.
+
+I was ready to take control, and I did, but it was scary. My girlfriend, sitting in the passenger seat, screamed in fear.
+
+## What the dashcam shows
+
+This was Sunday night on Autoroute 55 in Quebec’s Mauricie region, running FSD (Supervised) v14.3.6 — the latest and greatest Tesla FSD build on the latest hardware.
+
+ 
+ 
+
+The car is cruising at 110 km/h in the right lane. Dry pavement, no traffic in either direction, fresh painted lines, reflective overhead signage. Perfect conditions for FSD. As we pass under the gantry for exit 217, the right turn signal comes on and the car starts pulling toward the shoulder, still showing “Self-Driving” on the screen.
+
+ 
+ 
+ 
+
+The problem is that the ramp was already peeling off behind us. It was going to drive us straight into the ditch by turning this late at that speed.
+
+The speed readout goes 110, 109, 107, 104 as it commits to the maneuver. That’s when I grabbed the wheel. “Self-Driving” drops off the display at 102 km/h.
+
+This wasn’t a lane-position wobble or a moment of hesitation. The car decided to put its blinker on and take an exit it had no business taking
+
+## These were ideal conditions for FSD
+
+If you were designing the easiest possible scenario for Tesla’s system, this was it.
+
+Divided highway. Night, so oncoming headlights and lane reflectors are easy to pick out. Zero traffic to reason about. Crisp lane markings. Big, well-lit signage.
+
+Based on everything I’ve seen from v14, highway driving at night on an empty road is where the system is at its absolute best. I’ve done thousands of kilometres of exactly this without touching anything. Which is why I was confident. And that confidence is the whole trap.
+
+## I wrote about this exact risk in June
+
+Two and a half months ago I published a piece arguing that FSD v14 is so good it’s making me dangerously complacent. I wrote then that “a system that works almost perfectly creates a trap — drivers trust it just enough to stop paying attention, but it still fails unpredictably and sometimes critically.”
+
+I stand by every word, and Sunday night was the demonstration. A couple thousand miles between critical interventions is genuinely impressive engineering. It’s also exactly the interval that teaches your brain to stop scanning.
+
+Tesla’s own v14.3.6 release notes say the company “upgraded the Reinforcement Learning (RL) stage of training the FSD neural network,” rewrote the AI compiler with MLIR for “20% faster reaction time,” and improved the car’s response to system degradations, “reducing unnecessary disengagements.” Disengagements go down when the software gets better, and they also go down when the driver stops intervening. Tesla doesn’t publish anything that lets outsiders tell those two apart.
+
+And the public numbers that do exist aren’t reassuring. Tesla reported a record 207 Autopilot and FSD crashes to NHTSA in a single month, with the narrative redacted on 99.9% of its 3,763 driver-assist crash reports since 2019. Musk is still telling investors that unsupervised FSD will be widespread in the US by year-end, while Waymo’s co-CEO keeps explaining why camera-only self-driving falls short of what a driverless system actually needs.
+
+## Electrek’s Take
+
+One near-miss is an anecdote, not data, but I think it’s an important reminder to stay attentive.
+
+As I have often said, Tesla FSD v14 is a truly impressive product. Sure, it falls apart when compared to what FSD was originally sold as: becoming unsupervised self-driving. It’s not close to that and might never be. That will remain a problem and probably the worst move Tesla has ever done.
+
+But if you set that aside and look at FSD as a point-to-point driver-assist system, it is truly incredible.
+
+However, it is so incredible now that it breeds complacency. Tesla doesn’t help with CEO Elon Musk saying things like “you can look at your phone now while using it.”
+
+This is obviously reckless. As the system gets better, Tesla needs to get better at convincing drivers to pay attention because of this complacency issue. Not the other way around.
+
+If you’re driving an EV, the cheapest fuel you’ll ever put in it comes off your own roof. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
