@@ -133,12 +133,6 @@ BAD examples (do not produce these):
 
 If the week was genuinely quiet, write 2–3 short bullets saying so concretely.]
 
-- [Bullet 1.]
-- [Bullet 2.]
-- [Bullet 3.]
-- [Bullet 4.]
-- [Bullet 5.]
-
 ## [Category Name]
 - [Distinct development, 1–3 sentences with specific data.]
 - [Next development.]

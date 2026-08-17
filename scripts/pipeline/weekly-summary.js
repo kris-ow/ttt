@@ -143,6 +143,18 @@ function parseResult(text) {
   return { brief: stripped, redditBullets };
 }
 
+// The prompt shows the output shape with bracketed placeholders
+// (`- [Bullet 1.]`, `## [Category Name]`). On 2026-08-17 the model copied one
+// of them verbatim into the Brief, and it rode through to news.json and the
+// Reddit post. Drop any line that is nothing but a bracketed placeholder —
+// real content never takes that form.
+function stripTemplatePlaceholders(brief) {
+  return brief
+    .split('\n')
+    .filter(line => !/^\s*(?:[-*]\s*)?\[[^\]]*\]\s*$/.test(line))
+    .join('\n');
+}
+
 // The prompt never asks for `---` separators between sections, so whether
 // the model emits them is formatting whim (2026-06-08 brief had none, all
 // prior briefs did). Downstream consumers key on them — reddit-weekly.js
@@ -181,14 +193,14 @@ function writeWeeklyBrief(targetDate, weekStart, weekEnd, parsed, { inputTokens,
     '',
   ];
 
-  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + normalizeSeparators(parsed.brief) + '\n');
+  fs.writeFileSync(path.join(NEWS_DIR, filename), headerLines.join('\n') + normalizeSeparators(stripTemplatePlaceholders(parsed.brief)) + '\n');
   console.log(`  Written: ${filename}`);
 
   // Sidecar for reddit-weekly.js: expanded Brief bullets meeting Reddit's
   // 1000-char body minimum. Not a _summary.txt, so build-news.js ignores it.
   if (parsed.redditBullets) {
     const redditFilename = `${slug(targetDate)}_ttt_99_weekly_brief_reddit_bullets.txt`;
-    fs.writeFileSync(path.join(NEWS_DIR, redditFilename), parsed.redditBullets + '\n');
+    fs.writeFileSync(path.join(NEWS_DIR, redditFilename), stripTemplatePlaceholders(parsed.redditBullets) + '\n');
     console.log(`  Written: ${redditFilename}`);
   } else {
     console.error('::warning::weekly-summary: model omitted <reddit_bullets> — reddit-weekly.js will fall back to the short Brief bullets, below the 1000-char Reddit body minimum');

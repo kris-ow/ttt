@@ -117,6 +117,17 @@ function parseResult(text) {
   return { brief: stripped };
 }
 
+// The prompt shows the output shape with bracketed placeholders
+// (`- [Bullet 1.]`, `## [Category Name]`). The weekly brief leaked one verbatim
+// on 2026-08-17; the daily prompt carries the same pattern, so guard it here
+// too. Real content never is a bare bracketed line.
+function stripTemplatePlaceholders(brief) {
+  return brief
+    .split('\n')
+    .filter(line => !/^\s*(?:[-*]\s*)?\[[^\]]*\]\s*$/.test(line))
+    .join('\n');
+}
+
 // ── File Writing ─────────────────────────────────────────
 
 function writeExecutiveSummary(targetDate, parsed, { inputTokens, outputTokens, cost, sourceCount, quietDay }) {
@@ -145,7 +156,7 @@ function writeExecutiveSummary(targetDate, parsed, { inputTokens, outputTokens, 
       '- No new material published in this 24h window.',
     ].join('\n');
   } else {
-    body = parsed.brief;
+    body = stripTemplatePlaceholders(parsed.brief);
   }
 
   // The unsupervised-fleet table was removed 2026-06-19: RobotaxiTracker.com
