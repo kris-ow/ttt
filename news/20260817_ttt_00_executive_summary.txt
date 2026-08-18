@@ -1,0 +1,71 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-08-17)
+Published:   2026-08-17 00:00 UTC
+Summarized:  2026-08-18 01:50:01 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.08151 (25383 in / 3074 out tokens)
+Sources:     11
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Nevada caps Tesla Robotaxi at 10 vehicles, not 5,000 requested
+- Unsupervised Robotaxi struck plastic bollards in Austin
+- Cybercab reportedly launching without steering wheel in Austin by month-end
+- Roadster unveiling reportedly imminent, cold-gas thruster hover demo rumored
+- Institutional Tesla ownership hits record high, retail near record low
+- FSD v14.3.6 nearly drove Electrek editor into a ditch at 110 km/h
+
+## Robotaxi
+- Nevada's Transportation Authority approved Tesla for just 10 fully autonomous vehicles in Las Vegas, capped at a limited geofence, 45 mph roads, no airport pickups — versus the 5,000-vehicle, county-wide permit Tesla requested. Zoox, by contrast, was approved for up to 100 vehicles and is already charging for rides on the Strip; Waymo and Uber's Aviari applications remain pending. Electrek estimates Tesla's entire national unsupervised fleet at roughly 20 vehicles.
+- An unsupervised Robotaxi drove through plastic bollards during a right turn in Austin over the weekend; no damage or injuries reported, but flagged by multiple sources as a scaling concern given fleet growth plans.
+- Cybercab reportedly set to launch without a steering wheel in Austin by end of August, per a report cited by Electrified — employee rides first, public rollout days later; Tesla has reportedly completed emergency-responder training for the vehicle.
+- Safety data through mid-July shows zero at-fault Robotaxi incidents in June and (partial) July; Tesla has logged only two at-fault incidents total since February, both described as minor.
+- Austin wait times reportedly improved to single-digit minutes at random times per one rider account; a new "edit trip" feature allows multi-stop rides without re-hailing.
+- Waymo received CPUC approval to expand across the Bay Area, LA, Sacramento and San Diego.
+
+## Autonomous Driving
+- Electrek's Fred Lambert reports his Tesla on FSD v14.3.6 activated a turn signal and pulled toward the shoulder to take an exit already passed, decelerating from 110 to 102 km/h before he disengaged — on a clear, low-traffic Quebec highway, conditions he calls ideal for the system. He argues FSD's high reliability breeds dangerous complacency and calls the unsupervised-driving promise gap "probably the worst move Tesla has ever done" (his characterization).
+- Tesla reported a record 207 Autopilot/FSD crashes to NHTSA in a single month, per Electrek; narrative details were redacted on 99.9% of 3,763 driver-assist crash reports filed since 2019.
+- Tesla's v14.3.6 release notes cite an upgraded reinforcement-learning training stage, an MLIR-rewritten AI compiler for 20% faster reaction time, and improved handling of system degradations to reduce unnecessary disengagements.
+- FSD adoption rate reportedly hit 55%, above Morgan Stanley analyst Andrew Percoco's expectations, who called it a bright spot for the robotaxi thesis.
+- Tesla's supervised FSD is active in 12–13 countries versus Waymo's three (US, UK, Japan); an EU regulatory vote (TCMV) expected in October could widen European rollout.
+
+## SpaceX — Corporate & Valuation
+- Elon Musk economically owns about 48% of SpaceX but controls over 80% of voting power via dual-class shares (Class A: 1 vote, Class B: 10 votes); five of SpaceX's nine board seats are elected solely by Class B holders, giving Musk board control even through dilution scenarios tied to a possible Tesla acquisition, per Electrified's analysis.
+- Argus upgraded SpaceX to buy with a $160 price target; Morgan Stanley's Adam Jonas reiterated a $300 base/$600 bull case, citing Cursor's growth (estimated $8B ARR by year end) as a bridge to the bull case.
+- Norway's sovereign wealth fund disclosed a $1.2B SpaceX stake (~0.5%); board member Antonio Gracias disclosed a 6.5% stake.
+- Deutsche Bank sees SpaceX's push toward a $100B annual revenue run rate by year end as achievable, with AI/cloud compute deals (Anthropic, Google) estimated at $45–50B.
+- SPCX closed at $146.23, up 4.45% on the day, versus a 0.17% decline in the Nasdaq-100.
+
+## Financials
+- Retail Tesla ownership estimates vary sharply across sources: ~15.8% (Alexandra/brighterwithherbert), ~15–20% (Electrified citing Alexandra Merz), ~25% (Electrified's own estimate), and 30–40% (unspecified larger publications) — sources disagree and none is treated as definitive.
+- BlackRock added $2.5B in Tesla last quarter ($90B total stake); Deutsche Bank added $622M ($4B stake); Société Générale's US arm added ~$4B; State Street added 2.76M shares (~$49B stake); Invesco added $7.4B in net inflows; Barclays resumed buying after three quarters of selling, adding ~1M shares (~$4.8B stake, hold rating, $370 target).
+- TSLA closed at $339.30, down for the day.
+
+## Electric Vehicles
+- Cybertruck production shows signs of restart after a parts-supplier dispute and order surge, per Joe Tegtmeyer's Giga Texas site visit, with a large number of built-but-incomplete units seen in a holding lot.
+- Tesla's South Korea sales topped 66,300 units through seven months, up ~150% YoY; Model Y was Korea's bestselling new car in July.
+- Seven Tesla models placed in the top 10 of the 2026 Kogod Made in America Auto Index; Cybertruck logged 65% US/Canada parts content versus 45% for the Ford F-150.
+- Vehicle-to-load enabled for all Model Y Premium trims in the US.
+
+## Humanoid Bots
+- Cortex 2, Tesla's Optimus/FSD training data center at Giga Texas, is nearing completion and will use ~260 Megapacks once fully built; it was exempted from a new Texas data-center construction pause due to its near-complete status.
+- A new four-floor robot-production building (~3,000 ft long, 1,000–1,100 ft wide) is under rapid steel construction adjacent to Cortex 2.
+- Hyundai's Atlas robot handed off the game ball at a World Cup match, a mix of pre-trained sequences and teleoperation per hosts assessing the demo; Atlas is described as far less complex than Optimus, Figure's robot, or 1X's Neo.
+
+## Energy
+- Tesla's Houston Megapack facility (Buildings 9 and 10) is expected to reach ~50 GWh/year capacity once ramped; hiring targets tied to tax abatements are 375 employees by end of 2026, 750 by end of 2027, 1,500 by end of 2028. Megapack 3 carries ~5 MWh capacity, up ~28% from Megapack 2.
+- New Megapack projects: a $115M, 112-unit Megapack 2XL system in Newcastle, Australia (online late 2027), and a $290M, 300 MW/1,200 MWh Arevon Energy facility now online in Poway, California.
+
+## SpaceX — AI & Compute
+- A joint SpaceX-Tesla chip fab ("east support facility") at Giga Texas is designed as a rapid-iteration design center feeding the larger Terafab ~130 miles east, producing chips for Optimus and SpaceX's terrestrial/orbital data centers, framed partly as a hedge against Taiwan-concentrated chip supply risk.
+- Nvidia is developing a GPU-collateralized financing structure with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR that could help fund SpaceX's planned "gigawatts" of terrestrial compute buildout; the structure is not yet operational.
+
+Notable quotes and data:
+- Nevada: Tesla approved for 10 Robotaxis vs. 5,000 requested; Zoox authorized for 100, running ~50.
+- FSD v14.3.6 incident: 110→102 km/h before manual disengagement, per Electrek.
+- Tesla reported a record 207 Autopilot/FSD crashes to NHTSA in one month; 99.9% of 3,763 crash reports since 2019 have redacted narratives.
+- TSLA $339.30 (down); SPCX $146.23 (+4.45%).
+- Musk: SpaceX ~48% economic ownership, >80% voting control.
+- "I highly respect Elon's judgment, [but] I don't highly respect his timelines." — Larry Goldberg
