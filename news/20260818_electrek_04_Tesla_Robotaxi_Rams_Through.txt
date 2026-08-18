@@ -1,0 +1,71 @@
+Source:      electrek
+Title:       Tesla ‘Robotaxi’ rams through bollards weeks after ‘impeccable’ claim
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/08/18/tesla-robotaxi-rams-through-bollards-austin/
+Published:   2026-08-18 17:04 UTC
+Fetched:     2026-08-18 18:00 UTC
+
+────────────────────────────────────────────────────────────
+
+A Tesla “Robotaxi” running with no safety monitor onboard drove straight through a row of bollards protecting a closed-off lane in Austin, then kept driving.
+
+The video surfaced Monday, less than a month after Tesla’s head of AI told investors the Robotaxi program has an “impeccable safety record” with “zero notable incidents.”
+
+While no one was hurt or in danger in this incident, it is worrying to see an unsupervised Tesla vehicle ram through clearly visible bollards with plenty of time to see them and think about going around them.
+
+## What the video shows
+
+The footage was posted to r/SelfDrivingCars by user bladerskb, one of a small handful of people who ride Tesla’s driverless service in Texas regularly and film it. It was shot from the front passenger seat.
+
+ 
+ 
+ 
+
+ 
+ 
+
+The Model Y had turned into a curb extension that’s closed to traffic. It’s a triangular pocket at an Austin intersection, sealed off with flexible plastic posts. Redditors used the Texas Orthopedics building visible in the frame to pin down the exact corner on Google Maps, and Street View shows those posts have been in place since at least February 2024.
+
+The car stops. It creeps forward, backs up, creeps forward again, sits there for a while, and then simply pushes through the posts with an audible thunk.
+
+“It hit em, it hit em,” the passenger says.
+
+Nobody was in the driver’s seat.
+
+## This isn’t the lidar argument
+
+What’s interesting here is the Robotaxi’s decision-making. 
+
+It is fairly clear that the car detected the bollards. It stopped for them. Several times.
+
+The failure is upstream of perception. Tesla doesn’t use the detailed prior maps Waymo relies on, so the car works out the road layout on the fly. It read a right-turn lane, committed to it, and then couldn’t work out how to reverse back out of its own mistake.
+
+That’s the part worth sitting with. Faced with an obstacle it had already detected and stopped for, the car’s answer was to drive through it.
+
+Tesla also runs remote assistance for exactly this kind of situation, and there’s no way to tell from the video whether an operator was involved. We reported in July that a Tesla remote operator crashed a Robotaxi into a tree stump in Houston while trying to get it out of a dead-end street, so it wouldn’t be the first time.
+
+## 380,000 miles and “zero notable incidents”
+
+On Tesla’s Q2 2026 earnings call on July 22, VP of AI Ashok Elluswamy told investors: “We have driven more than 380,000 miles of unsupervised robotaxi now across six cities in two different states. We have had zero notable incidents.”
+
+He called the program’s safety record “impeccable.”
+
+For scale, Waymo has logged more than 220 million rider-only miles and is running roughly 500,000 paid trips a week. Tesla’s entire cumulative unsupervised total is less than 0.2% of Waymo’s.
+
+And the Tesla fleet doing that driving is tiny. We reported in June that only 14 vehicles were operating unsupervised across all markets, down from a peak of 25. A clean record over that little exposure isn’t a safety result. It’s a sample size.
+
+Tesla has filed 22 automated driving system incident reports with NHTSA to date. Whether a driverless car knocking down public street infrastructure gets added to that list is Tesla’s call to make.
+
+Tesla is targeting the end of this month to put the Cybercab on Austin streets, a two-seater with no steering wheel and no pedals, running the same software.
+
+## Electrek’s Take
+
+The posts were plastic. Nobody got hurt. On its own, it’s not a signifcant crash, but what should worry people is the specific failure. 
+
+The car saw the obstacle. It stopped for the obstacle. It sat there. And then it decided the right move was to go through. You don’t fix that with a better sensor, because sensing wasn’t the problem.
+
+Now run the same logic against concrete bollards. Or a barricade at a street festival. Or a work zone with people behind the posts. The car can’t tell plastic from concrete.
+
+Tesla’s standing answer is scale: more miles, more data, the long tail gets shorter. Fine. Then drive the miles. 380,000 unsupervised miles across seven markets since January isn’t a scaling program, it’s a pilot, and it’s been shrinking rather than growing since spring. Tesla removed safety monitors in Austin back in January and the fleet is smaller now than it was then.
+
+Whatever happens with robotaxis, the EV in your driveway still needs electricity, and the cheapest place to get it is your own roof. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
