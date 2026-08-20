@@ -1,0 +1,17 @@
+name = "ttt-contact"
+main = "src/index.ts"
+compatibility_date = "2026-08-20"
+account_id = "bfa8c9a4c204450a1131cbd05b058d54"
+
+# Served from the account's workers.dev subdomain — no DNS change to the
+# grey-clouded theteslathesis.com apex.
+workers_dev = true
+
+# Reader messages land as issues in this PRIVATE repo. Not a secret.
+[vars]
+GITHUB_REPO = "kris-ow/ttt-inbox"
+
+# Rate-limit counters (hashed IP -> count), TTL-expired. Created 2026-08-20.
+[[kv_namespaces]]
+binding = "CONTACT_RL"
+id = "610b31ca67e94def808ae26487b766dc"

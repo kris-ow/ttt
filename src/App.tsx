@@ -13,6 +13,8 @@ import { InterviewSection, InterviewDetail, type Interview } from './components/
 import { InterviewRouteContext, interviewFromPath, interviewPath, INTERVIEW_PATH_RE, type InterviewLocation } from './components/Interviews/interviewRoute'
 import { weeklyFromPath, weeklyPath, WEEKLY_PATH_RE } from './components/Feed/weeklyRoute'
 import { teslaFromPath, teslaPath, TESLA_PATH_RE } from './components/Feed/teslaRoute'
+import { ContactButton } from './components/Contact/ContactButton'
+import { ContactPopup } from './components/Contact/ContactPopup'
 
 const data = newsData as NewsData
 
@@ -64,6 +66,7 @@ export default function App() {
   })
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
+  const [contactOpen, setContactOpen] = useState(false)
   // /w/<date>/ and /t/<slug>/ deep links: open the Weekly Brief / official
   // Tesla release popup on arrival, same pattern as the interview deep link
   // above (popup over the default Daily Feed).
@@ -263,11 +266,20 @@ export default function App() {
       <header className="border-b border-border bg-surface sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 py-3">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 justify-between">
               <span className="text-green font-bold text-xl">[TTT]</span>
               <span className="text-white text-xl font-bold">THE TESLA THESIS</span>
+              {/* Mobile: right-aligned in the title row. Desktop copy sits in the nav below. */}
+              <ContactButton
+                onClick={() => { setContactOpen(true); track('Contact Open', { location: 'header-mobile' }) }}
+                className="flex sm:hidden ml-auto"
+              />
             </div>
             <nav className="flex items-center gap-2 w-full sm:w-auto">
+              <ContactButton
+                onClick={() => { setContactOpen(true); track('Contact Open', { location: 'header-desktop' }) }}
+                className="hidden sm:flex"
+              />
               {([
                 ['feed', 'DAILY_FEED'],
                 ['interviews', 'INTERVIEWS'],
@@ -423,6 +435,9 @@ export default function App() {
       {routeInterview && (
         <InterviewDetail interview={routeInterview} onClose={closeInterview} />
       )}
+
+      {/* ── Contact overlay (single instance, both buttons open it) ─ */}
+      {contactOpen && <ContactPopup onClose={() => setContactOpen(false)} />}
     </div>
     </InterviewRouteContext.Provider>
   )
