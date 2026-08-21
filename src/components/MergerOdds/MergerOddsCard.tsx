@@ -10,6 +10,14 @@ const ODDS_URL = import.meta.env.DEV
 
 // Below this traded volume a market's price is noise, not signal.
 const LOW_VOLUME_USD = 1000
+// ...but an absolute floor alone cannot survive Polymarket opening a fresh
+// ladder of far-dated deadlines. On 2026-08-14 four 2027 markets appeared at
+// once, and the week-old Dec-2027 market ($8k volume, 8 days of history)
+// cleared the $1k bar and took the card away from the Dec-2026 market it had
+// tracked for months ($131k volume, full history). A market must now also hold
+// a meaningful share of the busiest market's volume, which scales with the
+// event instead of needing a hand-tuned number every time the ladder grows.
+const MIN_VOLUME_SHARE = 0.1
 
 type MarketEntry = {
   deadline: string
@@ -30,11 +38,26 @@ type MergerOdds = {
 
 // Show the farthest-deadline market that has real volume behind it, so the
 // card keeps working when Polymarket rolls new deadlines (markets are sorted
-// by deadline ascending in the JSON).
+// by deadline ascending in the JSON). A newly opened far-dated market has to
+// actually attract trading before it takes the card over — otherwise the
+// headline number swings to whatever thin market was listed most recently.
 function pickMarket(markets: MarketEntry[]): MarketEntry | null {
-  const liquid = markets.filter(m => m.volume >= LOW_VOLUME_USD)
+  if (markets.length === 0) return null
+  const busiest = Math.max(...markets.map(m => m.volume))
+  const floor = Math.max(LOW_VOLUME_USD, busiest * MIN_VOLUME_SHARE)
+  const liquid = markets.filter(m => m.volume >= floor)
   const pool = liquid.length > 0 ? liquid : markets
   return pool[pool.length - 1] ?? null
+}
+
+// The chart renders whatever history the market has, which is up to ~30 days
+// but is much shorter for a recently opened market. Label the span the data
+// actually covers rather than always claiming 30 days.
+function historySpanLabel(history: [number, number][]): string {
+  const first = history[0][0]
+  const last = history[history.length - 1][0]
+  const days = Math.min(30, Math.round((last - first) / 86_400))
+  return days <= 1 ? 'LAST 24 HOURS' : `LAST ${days} DAYS`
 }
 
 function relativeAge(iso: string): { label: string; stale: boolean } {
@@ -105,7 +128,7 @@ export function MergerOddsCard({ className, bare }: { className?: string; bare?:
           )}
           {market.history && market.history.length >= 2 && (
             <div className={`mt-auto${bare ? ' pt-2' : ''}`}>
-              <div className="text-[10px] text-text-dim pb-1">LAST 30 DAYS</div>
+              <div className="text-[10px] text-text-dim pb-1">{historySpanLabel(market.history)}</div>
               <MergerOddsChart history={market.history} />
             </div>
           )}
