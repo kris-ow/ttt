@@ -298,13 +298,15 @@ function parseResult(text) {
     else console.log('  Warning: could not parse relevance block');
   }
 
-  // "tesla" / "spacex" / "both". Absent or unparseable topic means no
-  // Topic header and no feed badge.
+  // "tesla" / "spacex" / "both" / "none". Absent, "none", or unparseable
+  // topic means no Topic header and no feed badge — "none" is the explicit
+  // way to say the content is about neither company, so it must not be
+  // forced into the least-wrong company tag (German politics tagged `tesla`).
   const topicMatch = text.match(/<topic>\s*([\s\S]*?)\s*<\/topic>/);
   let topic = null;
   if (topicMatch) {
-    const m = topicMatch[1].trim().match(/^(tesla|spacex|both)\b/i);
-    if (m) topic = m[1].toLowerCase();
+    const m = topicMatch[1].trim().match(/^(tesla|spacex|both|none)\b/i);
+    if (m) topic = m[1].toLowerCase() === 'none' ? null : m[1].toLowerCase();
     else console.log('  Warning: could not parse topic block');
   }
 
