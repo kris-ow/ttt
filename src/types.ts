@@ -12,7 +12,7 @@ export interface Article {
   signal: string | null
   // Which thesis the content concerns (summarizer Topic header);
   // null on legacy summaries and TTT briefs — no badge
-  topic?: 'tesla' | 'spacex' | 'both' | null
+  topic?: 'tesla' | 'spacex' | 'both' | 'none' | null
   videoUrl: string | null
   body: string
   type?: 'executive' | 'weekly'

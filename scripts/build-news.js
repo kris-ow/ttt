@@ -91,7 +91,7 @@ const articles = files.map(filename => {
     signal,
     relevance: meta.relevance || null,
     // Whitelisted so a garbled Topic header can't leak arbitrary strings into the UI
-    topic: ['tesla', 'spacex', 'both'].includes(meta.topic) ? meta.topic : null,
+    topic: ['tesla', 'spacex', 'both', 'none'].includes(meta.topic) ? meta.topic : null,
     videoUrl,
     body,
     ...(isWeekly ? { type: 'weekly' } : isExec ? { type: 'executive' } : {}),

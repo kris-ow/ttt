@@ -53,16 +53,25 @@ export function biasTag(channel: string) {
   return <span className={cls}>[{ch.bias}]</span>
 }
 
-// Faded yellow for Tesla, SpaceX brand blue
+// Faded yellow for Tesla, SpaceX brand blue. `none` is a demotion marker, not
+// an identity badge — it uses the theme's dim grey so it recedes instead of
+// competing with the two company colors.
 const TOPIC_STYLE = {
   tesla: 'text-[#d0bd5c]',
   spacex: 'text-[#4d9fff]',
+  none: 'text-text-dim',
+}
+
+const TOPIC_LABEL = {
+  tesla: 'TESLA',
+  spacex: 'SPACEX',
+  none: 'OFFTOPIC',
 }
 
 export function topicTag(topic: Article['topic']) {
   if (!topic) return null
   const topics = topic === 'both' ? (['tesla', 'spacex'] as const) : ([topic] as const)
   return topics.map(t => (
-    <span key={t} className={TOPIC_STYLE[t]}>[{t.toUpperCase()}]</span>
+    <span key={t} className={TOPIC_STYLE[t]}>[{TOPIC_LABEL[t]}]</span>
   ))
 }

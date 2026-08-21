@@ -53,7 +53,7 @@ Tag which company's thesis this content substantively concerns:
 - `tesla` — substantively about Tesla only
 - `spacex` — substantively about SpaceX only
 - `both` — substantive coverage of BOTH companies (e.g. merger news, or content with real material on each)
-- `none` — substantively about NEITHER company (e.g. domestic politics, macro commentary, an unrelated company). This is the correct tag whenever you judged the content off-topic, and often when you judged it tangential.
+- `none` — substantively about NEITHER company (e.g. domestic politics, macro commentary, an unrelated company). This is the correct tag whenever you judged the content off-topic, and often when you judged it tangential. It renders as a visible `[OFFTOPIC]` badge, so it is an honest label, not a way of hiding the piece.
 
 Judge on substance, like the Relevance Gate: a passing mention or analogy involving the other company does not make content `both`. Never force a company tag onto content that is not about that company — `none` exists precisely so you do not have to pick the least-wrong company.
 
