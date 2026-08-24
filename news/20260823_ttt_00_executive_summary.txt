@@ -1,65 +1,70 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-08-23)
 Published:   2026-08-23 00:00 UTC
-Summarized:  2026-08-24 01:57:00 UTC
+Summarized:  2026-08-24 08:03:04 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.05361 (14051 in / 2551 out tokens)
+Cost:        $0.05706 (14051 in / 2896 out tokens)
 Sources:     5
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
 - Cybercab commercial launch dated September 3rd in Austin
-- Nevada approves 5,000 Tesla robotaxis vs 1,000 for Waymo
-- Tesla files $10.1B solar plant application near Houston
-- SpaceX/Tesla Terafab chip commitment reaches ~$16.8B
-- xAI leases surplus Colossus compute to major tech firms
-- WSJ's Dan Neil calls FSD (Supervised) "amazing" after test
+- Nevada approves 5,000 Tesla robotaxis vs. 1,000 for Waymo
+- WSJ's Dan Neil: "FSD is amazing" after two-hour test
+- Tesla files $10.1B Fort Bend solar mega-plant, ops targeted Q1 2029
+- SpaceX/xAI leases surplus Colossus compute, reportedly ~1-year payback
+- Bastrop, TX build-out to exceed Giga Texas footprint, per drone tracker
 
 ## Robotaxi
-- Tesla has set September 3rd as the Cybercab commercial launch date in Austin, per Jo Bhakdi and corroborated by Sawyer Merritt's report of launch-event invites; Tesla's own confirmation gives no further detail on venue or format.
-- Nevada approved Tesla to deploy up to 5,000 Cybercabs/robotaxis versus only 1,000 approved for Waymo — Bhakdi calls this evidence Waymo "is dead in the water" as a scaling competitor, not a sign of a regulatory ceiling.
-- Waymo has reportedly cut its autonomy hardware cost from $120,000 to $20,000 (per Bhakdi), still implying a total per-vehicle cost near $55,000–$60,000 versus his roughly $1,000 estimate for Tesla's camera-based hardware; he expects Cybercab COGS below $20,000 by late 2027/mid-2028.
-- Bhakdi estimates 1,000–2,000 Cybercabs are already built and staged for deployment, and sets launch-day fleet expectations at ~15 (bear), ~50 (base), 100+ (bull) — saying 50 alone "is not going to save the stock."
-- A blind rider ("Mona," Federation of the Blind) testified the Cybercab would be "very beneficial" to the blind community, citing Braille signage she says no competitor offers.
-- Bhakdi flags 1,000+ unsupervised Cybercabs (possibly by mid-October, not guaranteed) as the trigger for a major stock repricing, assigning better-than-50% odds it happens sometime in 2026.
+- Tesla's Cybercab Launch Event is confirmed for September 3rd in Austin, per Tesla invites cited by Sawyer Merritt and Jo Bhakdi (who says the date only became concrete this week, after his earlier May prediction proved wrong).
+- Nevada approved Tesla for up to 5,000 Cybercabs versus only 1,000 for Waymo; Bhakdi calls this a scale gap rather than a regulatory ceiling and says Waymo is "dead in the water" as a competitor (his characterization).
+- Bhakdi estimates Waymo has cut per-vehicle hardware cost from $120,000 to $20,000 (plus ~$35,000 for the car itself, putting total cost near $55,000–$60,000), versus his estimate of roughly $1,000 for Tesla's camera-based hardware; he expects Cybercab COGS below $20,000 by end of 2027 or mid-2028.
+- Bhakdi estimates roughly 1,000–2,000 Cybercabs already built and staged for deployment, and sets a launch-day fleet range of ~15 (bear), ~50 (base), 100+ (bull) — saying 50 alone "is not going to save the stock."
+- Bhakdi flags 1,000 unsupervised Cybercabs as the key repricing trigger, floating mid-October as plausible timing (not guaranteed) and assigning better-than-50% odds it happens in 2026.
+- A Federation of the Blind member, "Mona," testified after riding the Cybercab this week that it would be "very beneficial" to blind riders, citing its Braille feature.
+- A Dallas rider reported a robotaxi fare roughly 50% cheaper than Uber, per a commenter cited by Bhakdi.
 
 ## Autonomous Driving
 - WSJ's Dan Neil gave a positive personal review of FSD (Supervised): "By the end of the second hour—I was bewitched. FSD is amazing," while noting he is "a sample group of one."
-- A viral post showed a 76-year-old owner demonstrating FSD (Supervised) to elderly friends (ages 95, 91, 74) in a 2026 Model Y, cited as favorable anecdotal reception.
+- A widely-shared post showed a 76-year-old demonstrating FSD (Supervised) to elderly friends (ages 95, 91, 74) in a 2026 Model Y, with riders impressed by its speed/slowdown handling — anecdotal, not data.
 
 ## Energy
-- Tesla filed a tax incentive application for "Project Crystal Sun," a $10.1 billion, ~3,500-acre vertically integrated solar manufacturing plant in Fort Bend County, Texas, targeting ~9,700 jobs, construction in 2026, and commercial operations by Q1 2029 (per brighterwithherbert).
-- SpaceX's separate Bastrop, Texas solar cell plant, under construction since March, will produce 5 GW of aerospace-grade solar cells per floor across two floors for satellites and orbital data centers.
+- Tesla filed a tax incentive application for a $10.1 billion, ~3,500-acre solar manufacturing plant ("Project Crystal Sun") in Fort Bend County, TX, targeting ~9,700 permanent jobs, full vertical integration from ingots to modules, construction in 2026 and commercial operations targeted Q1 2029.
+- SpaceX's separate Bastrop, TX solar cell plant (construction started March) targets two floors producing 5 GW each of aerospace-grade cells for satellites and orbital data centers — distinct from Tesla's terrestrial-focused Houston-area project.
 - SpaceX AI has spent $329 million on Megapacks so far this year, per futureaza.
-- Memphis compute site power draw is scaling from 1.5–2 GW currently toward a cited 5–10 GW figure from a recent earnings call — a level that would exceed Memphis's own record peak demand of 3.5 GW and rival New York City's draw, to be met via natural gas generation.
 
 ## SpaceX — AI & Compute
-- Tesla and SpaceX have committed $16.8 billion to build "Terafab," a chip fab in Grimes County, Texas on a retired coal plant site, targeting up to 100 million square feet, 1 million wafer starts/month, and 100–200 billion chips/year — combined with Crystal Sun, roughly $27 billion in committed capital before either project produces output.
-- xAI has reportedly overbuilt Colossus compute capacity and now leases surplus GPU capacity to major tech companies (including Google, per the hosts) at highly profitable rates; futureaza's Jordan Giesler estimated ~$72B/year potential revenue tied to ~440,000 GPUs across Colossus 1 and 2, with data centers paying for themselves in roughly a year under his cost model.
-- Colossus 2's actual satellite-imagery layout differs from prior predictions, with a third building apparently under construction for cooling/energy/battery infrastructure; Giesler is unsure whether the site will reach Musk's previously cited ~1 million GPU figure.
-- Analysts cited by Giesler expect the compute business to remain cash-flow negative until roughly 2030–2035, though he personally expects negative cash flow mainly for the next year or two; a new major compute site beyond Colossus 1/2 may need to be announced soon as land tightens.
-- SpaceX's Bastrop campus is undergoing a major expansion — separate from its existing Starlink terminal/circuit-board factory — to build "Star Mind" AI satellites using Nvidia GPUs for sun-synchronous orbit; Joe Tegtmeyer says the site's total production footprint will exceed Giga Texas combined.
+- xAI/SpaceX is reportedly leasing surplus Colossus compute to major tech companies (including, per the hosts, Google) at highly profitable rates; Jordan Giesler (The Limiting Factor) estimates Colossus capacity can be paid off in roughly a year, based on ~$50B/GW build cost against ~$50B/GW/year revenue — though he cautions this doesn't mean the buildout is self-funding given a 3–6 month capital-to-revenue lag.
+- A ~$72B/year revenue figure was discussed tied to ~440,000 GPUs across Colossus 1 and 2; Giesler says analysts expect the compute business to be cash-flow negative until roughly 2030–2035, though he personally expects negative cash flow mainly for the next year or two.
+- Satellite imagery shows Colossus 2's layout differs from Giesler's earlier prediction, with a third building apparently under construction for cooling/energy/battery infrastructure; unclear if the site will reach the ~1 million GPU figure Musk previously cited.
+- Memphis compute site currently draws 1.5–2 GW; a recent earnings call cited a 5–10 GW ambition — for comparison, Memphis's own record peak demand is 3.5 GW, meaning the site could out-draw the city itself.
+- Tesla and SpaceX committed $16.8 billion (announced March 21) to a "Terafab" chip facility in Grimes County, TX, targeting up to 100 million sq ft, 1 million wafer starts/month, and 100–200 billion chips/year — combined with Project Crystal Sun, roughly $27 billion in committed capital across the two projects before either is operational, per brighterwithherbert.
+
+## SpaceX — Starlink
+- SpaceX's Bastrop, TX campus is undergoing major new construction that drone photographer Joe Tegtmeyer says will give the site more total production capacity than Giga Texas combined; the existing plant already makes Starlink dishes/modems and is described as one of the largest circuit-board manufacturing operations in the country.
+- New construction is aimed at next-generation "Star Mind" AI satellites using Nvidia GPUs in sun-synchronous polar orbit for continuous solar power, sharing a "pancake" V3 chassis form factor with terrestrial AI data center racks to gain manufacturing/margin efficiencies.
 
 ## SpaceX — Starship
-- New Bastrop-built satellites are reportedly too large for Falcon 9 and require Starship launch, tying the facility's output directly to Starship's flight cadence.
-- The satellites share a "pancake" V3 Starlink chassis form factor with terrestrial AI data center racks, per Tegtmeyer, enabling common manufacturing and dispensing systems across space and ground-based compute products.
+- Tegtmeyer says the new Bastrop-built satellites are too large for Falcon 9 and must launch via Starship, directly tying Starship's success to this satellite/compute strategy.
 
 ## Financials
-- Bhakdi's updated internal model gives Tesla a 2026 fair value midpoint above $700, calling the stock materially undervalued at current levels (~$362, up from ~$300 a month ago).
-- xAI/SpaceX AI closed its $60 billion all-stock acquisition of Cursor on August 14 (announced June 16), described by brighterwithherbert as a purchase of Cursor's developer base and enterprise data rather than its technology.
+- Bhakdi's updated model puts Tesla fair value above $700 for 2026 and frames the current move from ~$300 to $362 as a "gap-close" rather than a new rally; his plan is to stay leveraged into $380, trim risk near $420 (a likely sell-the-news zone into the Cybercab event), and go "normal long" if shares drift toward $380–390 beforehand.
+- Bhakdi flags 10-year Treasury yields near 4.7% and sharply rising Japanese and German bond yields as a longer-term systemic risk, alongside Wednesday's PCE/GDP data and Nvidia earnings as near-term catalysts.
+- Cursor was acquired by xAI/SpaceX AI for $60 billion in an all-stock deal announced June 16 and closed August 14, framed by brighterwithherbert as a purchase of developer base/data rather than technology.
 
 ## Market & Competition
-- Bhakdi predicts many legacy automakers in Europe, the US, and Japan will not survive the next two years as robotaxi deployment accelerates, and expects self-driving to become industry-commoditized around 2031–2032, with Chinese makers like BYD and Xpeng eroding Tesla's hardware cost edge.
+- Bhakdi argues legacy automakers face existential risk from robotaxi deployment and predicts self-driving becomes broadly commoditized around 2031–2032, warning Tesla "will be in trouble" if it stays under a million deployed Cybercabs in the US/Europe by 2035.
+- Bhakdi assigns low probability to a Tesla-SpaceX merger in 2026, expecting 2027–2028 instead given SpaceX's ongoing price discovery post-IPO.
 
-## SpaceX — Corporate & Valuation
-- Bhakdi assigns low probability to a Tesla-SpaceX merger in 2026, calling it "complete insanity" given SpaceX's ongoing price discovery post-IPO, and estimates 2027–2028 as more likely timing.
+## Humanoid Bots
+- Bhakdi does not expect a public Optimus showcase until the product is ready for sale, which he believes will be 2027.
 
 Notable quotes and data:
-- "By the end of the second hour—I was bewitched. FSD is amazing." — Dan Neil, WSJ
-- Nevada: Tesla approved for 5,000 robotaxis vs. Waymo's 1,000
-- Project Crystal Sun: $10.1B, Fort Bend County TX, ~9,700 jobs, Q1 2029 target
-- Terafab: $16.8B commitment, Grimes County TX, up to 100M sq ft
-- xAI Colossus: ~440,000 GPUs across two sites, ~$72B/year potential leasing revenue cited by futureaza
-- SpaceX AI Megapack spend: $329 million YTD
-- Cybercab launch event: September 3, Austin
+- "By the end of the second hour—I was bewitched. FSD is amazing." — WSJ's Dan Neil
+- Nevada: 5,000 Cybercabs approved for Tesla vs. 1,000 for Waymo
+- Cybercab Launch Event: September 3rd, Austin, TX
+- Project Crystal Sun: $10.1B, Fort Bend County TX, ~9,700 jobs, ops targeted Q1 2029
+- Terafab: $16.8B commitment, target of >1 terawatt AI compute/year
+- SpaceX AI Megapack spend: $329 million year-to-date
+- Colossus compute economics: ~$50B/GW build cost vs. ~$50B/GW/year revenue, ~1-year payback per Giesler's model
