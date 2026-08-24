@@ -44,3 +44,45 @@ body {
 
 .swipe-container { scrollbar-width: none; -ms-overflow-style: none; }
 .swipe-container::-webkit-scrollbar { display: none; }
+
+/* Periodic shine sweep — the contact (envelope) button. The site's only inbound
+   channel otherwise renders at green/50, identical to an inactive nav tab, so it
+   reads as a tab that lost its label. The sweep occupies only the first ~18% of
+   the cycle and parks off-screen for the rest: an occasional glint, not a strobe.
+   Pauses on hover (the hover treatment takes over) and off under reduced motion. */
+@keyframes ttt-shine {
+  0%   { transform: translateX(-160%) skewX(-20deg); }
+  18%  { transform: translateX(260%) skewX(-20deg); }
+  100% { transform: translateX(260%) skewX(-20deg); }
+}
+
+@keyframes ttt-shine-glow {
+  0%, 18%, 100% { box-shadow: 0 0 0 rgba(0, 255, 65, 0); }
+  9%            { box-shadow: 0 0 8px rgba(0, 255, 65, 0.45); }
+}
+
+.shine-sweep {
+  position: relative;
+  overflow: hidden;
+  animation: ttt-shine-glow 5s ease-in-out infinite;
+}
+
+.shine-sweep::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.55), transparent);
+  animation: ttt-shine 5s ease-in-out infinite;
+}
+
+.shine-sweep:hover { animation: none; box-shadow: none; }
+.shine-sweep:hover::after { animation: none; opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .shine-sweep { animation: none; box-shadow: none; }
+  .shine-sweep::after { animation: none; opacity: 0; }
+}
