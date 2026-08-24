@@ -1,0 +1,29 @@
+Channel:     electrek
+Title:       Watch Tesla FSD v14 Lite drive over a giant log without stopping
+Published:   2026-08-24 14:45 UTC
+Summarized:  2026-08-24 15:02:42 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_012REKkZxTx8ZHDpzXNCN696
+Cost:        $0.01476 (6098 in / 1733 out tokens)
+Relevance:   core — the article reports a specific FSD v14 Lite safety failure on Hardware 3 vehicles, directly bearing on Tesla's autonomous driving thesis and the viability of its "full self-driving capable" sales claims.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+A Tesla owner posted dashcam footage showing his Hardware 3 vehicle, running FSD v14.1 Lite, drive straight over a log lying across a wet, foggy road at 32 mph without braking or swerving. The article, written by Electrek's Fred Lambert, uses the incident to argue that FSD v14 Lite has a pattern of problems on older hardware.
+
+## Autonomous Driving
+1. **The incident:** In an X video posted August 21 by user @donvarri, the car's "Self-Driving" visualization was active at 32 mph on a rural road when it ran over a log without braking or swerving. The owner said "Mine drove over a log in the road it def wouldn't have stopped," and confirmed the vehicle is Hardware 3 running the latest v14.1 Lite build. The video reportedly has over 800,000 views.
+
+2. **FSD v14 Lite background and reported issues:** FSD v14 Lite is described as a compressed version of the Hardware 4 v14 model adapted to run on HW3's AI3 computer (8GB RAM, roughly one-eighth the bandwidth of newer hardware), rolled out to HW3 cars starting in June. The article states owners have documented HW3 computers overheating under the load, triggering an "APP_w141_ECU_Thermal_Issue" fault above 90°C, with some temperatures reportedly reaching 96°C, sometimes causing forced disengagements ("red hands") or full computer shutdowns requiring replacement. Drivers have also reported phantom braking, hesitation, and brake stuttering. Tesla shipped v14.1 Lite partly to address the overheating, but the log incident occurred on that build.
+
+3. **HW3 capability question:** The article asserts that HW3 cannot deliver the unsupervised autonomy Tesla sold, and claims the company has admitted it has no clear plan to achieve that on this hardware, noting Tesla sold roughly 4 million cars as "full self-driving capable" for as much as $15,000.
+
+## Editorial Stance
+Lambert argues both the driver and the system share responsibility — the driver should have been watching, but the car should have stopped for an obstacle a human would have easily seen. He contends the incident reflects a design problem: Tesla is pushing more capable software onto hardware it has already acknowledged can't handle full autonomy, creating a system smooth enough to induce complacency but brittle enough to miss obvious obstacles. He speculates the vehicle may be totaled once the underbody is inspected, drawing a comparison to a past personal accident that cost roughly $15,000 in repairs, and questions what HW3 owners who paid for "autonomy" are actually getting.
+
+Notable quotes and data:
+- Owner: "2 things can be true I should have been paying attention but the car definitely should have stopped."
+- Critical commenter: "No, YOU allowed that to happen for the opportunity to post a video, by failing to properly supervise."
+- Owner says he has driven 70,000 miles in the car and considers it the best car he's ever owned.
+- Reported thermal fault threshold: over 90°C, with some units reportedly hitting 96°C.
