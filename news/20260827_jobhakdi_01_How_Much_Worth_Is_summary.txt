@@ -1,0 +1,37 @@
+Channel:     jobhakdi
+Title:       How Much Worth Is Tesla Robotaxi?
+Published:   2026-08-27 17:30 UTC
+Summarized:  2026-08-27 20:26:04 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01RXcWQiQsbtuyYQZbFu5NAV
+Cost:        $0.02519 (15489 in / 1940 out tokens)
+Relevance:   core — The video is a detailed valuation model of Tesla's robotaxi/Cybercab business and its impact on Tesla's share price, directly addressing the core Tesla investment thesis.
+Topic:       tesla
+Categories:  Robotaxi, Financials
+────────────────────────────────────────────────────────────
+
+The video walks through a downloadable DCF-based "robotaxi simulator" model (from pioneerlands.org) that estimates the standalone present value of Tesla's Cybercab/robotaxi division under a set of adjustable assumptions, concluding the division alone is worth far more than Tesla's current market cap. The host frames this as evidence that Tesla is deeply undervalued relative to its robotaxi trajectory, while stressing the model's assumptions are conservative and user-editable.
+
+## Robotaxi
+1. **Model inputs and base economics:** The model uses a base fare of $3 plus roughly $1 per mile (the host says a flat "$1 per mile" figure circulating online is inaccurate, and cites one report of $140 as a base rate), a 5-mile average ride length, 200 paid miles per robotaxi per day, 330 operating days per year, $0.65/mile cost of goods sold (59% gross margin), and a 200x P/E multiple applied to the division's earnings.
+2. **Fleet size assumptions and scenarios:** The host's base case assumes over 10,000 Cybercabs live by the end of this year, growing to 20,000 by end of Q1 next year, 30,000 by end of Q2, 45,000 by end of Q3, and 60,000 by end of 2027 (the underlying base model uses 50,000 for that final figure); he acknowledges these are his own estimates and says even if actual figures are lower (e.g., 2,000–5,000 by year-end), the model simply shifts the trajectory later by a quarter without changing the broader thesis. He also assumes a vehicle manufacturing cost starting near $30,000 currently, falling toward an assumed $16,000, and 30% annual fleet growth from 2031–2035 in the DCF's terminal years.
+3. **Earnings contribution to Tesla:** Under these assumptions, robotaxi's annualized after-tax earnings run rate reaches roughly $1.12 billion by Q2 2027, equal to about 7% of Tesla's 2025 total earnings at 10,000 vehicles, rising to about 19% within a quarter and nearly 100% of 2025 earnings by end of 2027.
+4. **Share price impact and forward-looking valuation:** The host argues that because markets are forward-looking, the model should apply projected earnings roughly one year ahead when adding value to the share price — under this approach, the robotaxi division's projected contribution (using a live-updating current share price) implies a price around $421, which he says would represent all-time highs, plausible by year-end or Q1 2027.
+5. **Standalone DCF valuation of robotaxi:** The model's full 10-year discounted cash flow (2026–2035), plus a terminal value based on a 30x multiple on 2035 net income discounted back to present, with a 20% probability-of-failure discount applied, yields a present value of $440 per share for the robotaxi division alone (undiscounted for risk, this figure would be $548). The host states this implies robotaxi alone is worth about 125% more than Tesla's entire current market value, before counting Optimus, Energy, or Terafab.
+6. **Long-term fleet size assumption:** In an alternative scenario shown in the model, the host arrives at roughly 3 million robotaxis deployed by 2035, which he personally believes is conservative and expects actual deployment to exceed.
+
+## Financials
+1. **Valuation model methodology (Damodaran-referenced discount rate):** The DCF uses a 9% discount rate (with the host also citing a range near 10–15%), a 17.5% effective tax rate, and 3.1 billion diluted shares outstanding; the discount rate is described as consistent with figures from NYU valuation expert Aswath Damodaran.
+2. **Current TSLA share price and drawdown context:** The video opens citing Tesla's share price near $353 (per the video's live reference), noting the stock is down about 22% year-to-date and down an estimated 25–30% from an all-time high the host places around $485, reached roughly December 18 of the prior year.
+
+Notable quotes and data:
+- "The real present value of Robo Taxi is $440... 125% more than the entire company is right now."
+- Base fare assumption: $3 + $1/mile (host calls this conservative; cites unverified reports of a $140 base rate in one case).
+- Cybercab manufacturing cost assumed at $16,000 long-term (currently closer to $30,000 per the host).
+- Robotaxi COGS assumption: $0.65/mile, yielding a 59% gross margin.
+- P/E multiple applied to robotaxi earnings: 200x (terminal-value multiple: 30x 2035 net income).
+- Fleet growth assumptions: 10,000+ Cybercabs by end of this year → 20,000 (Q1 next year) → 30,000 (Q2) → 45,000 (Q3) → 60,000 (end of 2027).
+- Annualized robotaxi earnings run rate reaches ~$1.12 billion by Q2 2027, ~19% of Tesla's 2025 total earnings.
+- Risk-of-failure discount applied: 20% (undiscounted terminal DCF value: $548 vs. $440 after discount).
+- Diluted share count used: 3.1 billion; discount rate: 9%; tax rate: 17.5%.
+- Long-term scenario: ~3 million robotaxis deployed globally by 2035 in the model's own example run.
