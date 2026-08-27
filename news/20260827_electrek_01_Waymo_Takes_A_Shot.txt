@@ -1,0 +1,59 @@
+Source:      electrek
+Title:       Waymo takes a shot at Tesla’s self-driving: it’s a ‘false summit’
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/08/27/waymo-tesla-self-driving-false-summit/
+Published:   2026-08-27 13:49 UTC
+Fetched:     2026-08-27 14:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Waymo published a list of “10 AI lessons” from driving more than 200 million fully autonomous miles, and several of them read as a direct rebuke of Tesla’s self-driving strategy — without ever naming Tesla.
+
+The sharpest: trying to turn a driver-assist system into full autonomy is a “false summit,” according to Waymo. That’s exactly what Tesla is attempting with Full Self-Driving.
+
+## What Waymo actually said
+
+The post, published Tuesday by Waymo’s head of AI foundations, Srikanth Thirumalai, frames all 10 lessons around safety and the company’s 200-million-mile record in fully driverless operation.
+
+Lesson 10 is the one aimed squarely at the L2-to-L4 playbook:
+
+ 
+ 
+ 
+
+> 
+Simply improving a driver-assist system (L2) for full autonomy is a false summit. True L4 maturity can only be safely achieved by a purpose-built system, validated on closed courses and hardened by the uncompromising experience of driving without a human in the car.
+
+Waymo’s argument is that neither billions of simulated miles nor millions of “supervised” human-present miles can replicate what a system learns once it operates with no human backup. That’s a pointed contrast with Tesla, which trains FSD on data from a fleet of customer cars whose drivers remain legally responsible for the vehicle.
+
+## Cameras alone and the ‘black box’
+
+Two other lessons land in Tesla’s lap.
+
+Lesson 1 states plainly that cameras alone can’t deliver safe, full-scale autonomy, and that Waymo combines cameras, lidar, and radar for redundancy. Tesla runs a camera-only “Tesla Vision” stack — a bet Waymo’s co-CEO already picked apart earlier this month when he explained why camera-only self-driving falls short.
+
+Lesson 4 warns against pure end-to-end neural networks that convert raw camera input directly into steering commands: “You can’t build trust with a black box.” Tesla has spent the last two years selling exactly that end-to-end approach as the core of FSD v14 and v15.
+
+However, the approach often results in a two-step-forward, one-step-back situation with every new update.
+
+## The widening gap behind the jab
+
+The confidence has numbers behind it. Waymo is now serving more than 500,000 paid, fully driverless rides every week across its US markets, and it has set a target of one million by the end of the year.
+
+Tesla, by comparison, still runs a small “Robotaxi” service that launched in Austin with human safety monitors in the car, and by some counts its fleet has shrunk rather than grown. CEO Elon Musk has promised “unsupervised” FSD would be widespread by year-end — a target he has moved repeatedly.
+
+A year into the program, Tesla confirmed last month that it has driven only 380,000 unsupervised miles – something Waymo does in a day.
+
+## Electrek’s Take
+
+Waymo didn’t name Tesla, but it didn’t have to. Every one of these “lessons” maps onto a specific Tesla decision: camera-only sensing, an end-to-end black box, and, most pointedly, the belief that you can incrementally upgrade a consumer driver-assist product into a robotaxi.
+
+The “false summit” line is the interesting one and should ring true to anyone following Tesla’s effort closely. CEO Elon Musk has declared victory so many times when it comes to solving autonomy and each time, it was indeed a false summit.
+
+Waymo is arguing that the hardest part of autonomy, the long tail of weird, dangerous edge cases, only reveals itself when there’s no human to catch the mistakes. Tesla’s approach assumes it can climb to that summit gradually, learning from millions of Teslas whose drivers are still doing the catching. Waymo is telling the market that path doesn’t reach the real peak; it just gets you to a ledge that looks like one.
+
+Is Waymo right? I don’t know. But it is certainly ahead of Tesla and scaling much faster. Its sensor fusion approach appears much more robust than Tesla’s vision-only.
+
+Now, Tesla fans would argue that none of that matters because Tesla is on the verge of achieving generalization and would quickly overtake Waymo, if that’s the case. But there’s no clear evidence that’s happening.
+
+ If you’ve been thinking about solar, the best way to size it right is to compare a few competing quotes. To find a trusted, reliable solar installer near you that offers competitive pricing, check out EnergySage, a free service that makes it easy for you to go solar. It has hundreds of pre-vetted installers compete for your business, ensuring you get high-quality solutions and save 20 to 30% compared to going it alone. Plus, it’s free to use and you won’t get sales calls until you select an installer and share your phone number with them. And if you don’t have the cash upfront, many installers offer $0-down solar leases and power purchase agreements (PPAs) so you can go solar for no money down. Your personalized solar quotes are easy to compare online and you’ll get access to unbiased Energy Advisers to help you every step of the way. Get your free quotes here.
