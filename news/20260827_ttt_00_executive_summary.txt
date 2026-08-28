@@ -1,0 +1,54 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-08-27)
+Published:   2026-08-27 00:00 UTC
+Summarized:  2026-08-28 11:22:18 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.06154 (20104 in / 2133 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FSD 14.3.8 rolls out with new Grok voice model (ThinkFast 2.0)
+- FSD 14.3.7 nearly hits train at crossing, third 2026 incident
+- Waymo calls Tesla's autonomy approach a "false summit"
+- Cybertruck H1 US registrations fall to 8,400 from 12,800
+- Tesla Semi: Einride (500 units) and WattEV (370 units) place major orders
+- SpaceX leads OpenAI and Anthropic in live AI compute per Brian Wang analysis
+
+## Autonomous Driving
+- Tesla's summer update bundles FSD 14.3.8 with Grok ThinkFast 2.0, a speech-to-speech voice model that executes multiple simultaneous in-car commands; full command suite limited to Ryzen-chip vehicles.
+- A Tesla running the newest FSD 14.3.7 build nearly drove into an oncoming train at a crossing this week; driver Lei Xing braked manually. Electrek says this is at least the third documented railroad-crossing failure in 2026, and NHTSA's FSD probe (following 58 crashes) now covers ~2.9 million vehicles.
+- Waymo published "10 AI lessons" that, without naming Tesla, argue upgrading driver-assist to full autonomy is a "false summit," camera-only sensing can't deliver safe L4, and end-to-end neural nets are an untrustworthy "black box" — widely read (per Electrek) as aimed at Tesla's approach. Waymo cites 200M+ autonomous miles and 500,000+ weekly driverless rides vs. Tesla's reported 380,000 unsupervised miles in a year.
+- Tesla China denied rumors it was withdrawing FSD development or vacating its Shanghai data center, saying operations are normal and hiring is accelerating; it reported the rumors to police.
+
+## Robotaxi
+- Tesla extended Robotaxi hours to 6 a.m.–10 p.m. across all six active cities and said its unsupervised fleet is "much bigger" than before, without disclosing a number.
+- Ahead of the Cybercab event, one analyst (per futureaza) now expects a cautious launch — as few as ~10 vehicles initially, scaling to "hundreds" within a month or two, and roughly 1,000 by year-end, down from a prior 10,000–15,000 estimate following a disappointing earnings call.
+- Nevada approved up to 5,000 statewide robotaxis, but Tesla executives reportedly indicated they'd be satisfied with ~2,500 there by mid-next-year — a figure one analyst calls optimistic even for Vegas/Reno alone.
+- A DCF model (pioneerlands.org, via jobhakdi) values Tesla's robotaxi division alone at $440/share standalone present value — about 125% above Tesla's current market cap — using assumptions of 10,000+ Cybercabs by year-end scaling to 60,000 by end-2027; the host stresses these are editable, conservative assumptions.
+- ~30 Cybercabs have reportedly been spotted stationed in Las Vegas.
+
+## Electric Vehicles
+- Cybertruck US registrations fell to 8,400 in H1 this year from 12,800 in H1 last year against 125,000-unit annual capacity, per S&P Global data — a trend suggesting Cybertruck may settle as a low-volume halo vehicle.
+- Tesla raised Cybertruck prices $5,000 on both dual-motor and Premium AWD trims (now $75,000 and $85,000); entry-level delivery estimates slipped into 2027.
+- Tesla Semi's dedicated Sparks, Nevada factory (1.7M sq ft, from a $3.6B expansion) has been producing trucks since April; Tesla calls it "commissioning," with 2026 build estimates ranging widely from 5,000–15,000 units. Einride ordered 500 Semis (~$125M) and WattEV ordered 370 (~$100M) — the two largest electric truck orders on record.
+
+## Humanoid Bots
+- Skild (valued $14B) announced a technique achieving 66% per-step task success from single video demonstrations vs. 9% for text-prompted commands, though the host notes compounding this across a 10-step task implies only ~1.6% full-task success; Skild has not yet tested it on an actual humanoid.
+- Figure disclosed its "Index" data initiative: 264,000 app downloads, 16M+ videos uploaded, $15M paid to data contributors, and a commitment to spend over $1B on data/compute in the next year.
+- Time-lapse footage (per jobhakdi) shows continued Optimus factory construction since March 2026, which the host frames as quiet capacity-building despite fading public attention.
+
+## SpaceX — AI & Compute
+- SpaceX currently has more live AI compute (~1.3GW per Brian Wang's slides) than OpenAI (~1.7GW) or Anthropic (~1.4GW) depending on methodology, with figures varying by source; Colossus 2 is targeted at roughly 990,000 GPUs.
+- Anthropic reportedly pays SpaceX about $1.25B/month for compute, with SpaceX able to charge $30–50M per megawatt/year for fast-turnaround capacity.
+- Wang's model projects SpaceX scaling from under 2GW now to roughly 10GW by end of 2027, requiring installation rates to grow roughly 10x.
+
+## SpaceX — Starlink
+- SpaceX switched its Starlink referral program to $100 cash payouts (paid to a linked bank account) in markets where available, replacing the prior service-credit model.
+
+Notable quotes and data:
+- Waymo: "Simply improving a driver-assist system (L2) for full autonomy is a false summit... You can't build trust with a black box."
+- Lei Xing on his FSD 14.3.7 near-miss: "Would have been ran over by the [train] had I not braked... the train horns were pretty loud."
+- Einride CEO Robert Falck on its 500-unit Semi order: "yet another proof point that we can execute at the scale our customers demand."
+- Robotaxi DCF model: "The real present value of Robo Taxi is $440... 125% more than the entire company is right now."
