@@ -1,0 +1,624 @@
+Channel:     farzad-fm
+Title:       No One Sees What SpaceX & NVIDIA Are Building
+URL:         https://www.youtube.com/watch?v=4VDAzWeC44k
+Published:   2026-08-28 14:20 UTC
+Fetched:     2026-08-28 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Very few people are getting their heads
+wrapped around what SpaceX and Nvidia
+are building together and it all started
+with a massive announcement during
+SpaceX's first-ever earnings call. On
+August 4th, Elon Musk, the CEO of
+SpaceX, said that the company had
+decided to build exclusively on Nvidia.
+He called the new Vera Rubin system
+Nvidia's latest compute hardware the
+best AI computer and said the company's
+now have a close partnership on many
+levels. SpaceX also announced that it is
+working with Nvidia to design the
+compute payload inside Starlink, its
+planned AI satellite. And Starlink will
+use an optimized version of Nvidia's
+Vera Rubin NVL-72
+computer. I think I got that right. It's
+freaking mouthful. But an NVL-72 is
+basically a giant AI computer built from
+dozens of GPUs and CPUs, memory chips,
+network switches, and the cooling
+hardware that all work together as one
+machine. SpaceX wants to rebuild that
+entire compute system as a satellite. He
+wants to put it on a rocket and then
+launch it into orbit. And Elon says the
+first launch should begin next year. So,
+SpaceX is making three commitments at
+once. Nvidia becomes the exclusive AI
+platform. Nvidia helps design the first
+orbital AI computer. And SpaceX then
+takes that same design and plans to
+deploy it on Earth and in space. This
+partnership goes far beyond Elon buying
+a pile of GPUs from Jensen, who's the
+CEO of Nvidia. Nvidia is helping define
+that entire system and SpaceX is helping
+define the place where that compute will
+live. Each company now needs the other
+one to make the entire system work. The
+question becomes how deep the
+partnership will really be over time.
+And spoiler alert, most people are
+massively underestimating it. Let me
+give you some data to back this up.
+SpaceX says it expects to finish this
+year with more than 2 gigawatts of AI
+compute. By the end of next year, Elon
+said the total could be closer to 10
+gigawatts. To put that in perspective, a
+gigawatt is the output of a large power
+plant. That means SpaceX wants to build
+10 large power plants worth of data
+centers to power their AI systems, which
+is about a third of the total AI compute
+available today. So, SpaceX alone next
+year wants to do 1/3 of the total AI
+compute that's going to be deployed in
+the United States. Even a fraction of
+that build requires an absurd amount of
+hardware. And it's not just GPUs. The
+complete system also needs memory, they
+need CPUs, networking chips, fiber,
+power electronics, packaging, cooling
+hardware, and once in space, you need
+satellite structures, launch capacity,
+and a global communications network to
+beam that intelligence back down to
+Earth. Nvidia primarily controls the
+core components of that system. Its GPUs
+do the math required for AI to work. Its
+networking moves data between the chips.
+Its CUDA software lets developers use
+the hardware. And with Vera Rubin,
+Nvidia is selling the entire AI factory
+as one coordinated system. SpaceX
+controls almost everything around that
+system. They build the rockets. They
+build the satellites. It operates
+Starlink's laser network. It builds
+giant compute clusters on Earth. It owns
+XAI and Grok. So, it has its own
+internal demand for compute through
+those AI models, which compete with
+ChatGPT and Claude. It can also sell
+compute to other AI companies by renting
+out their data centers to competitors.
+This is why the incentives fit so well.
+Jensen needs AI companies to keep
+building more capacity. Elon needs the
+best computers he can get in quantities
+that the current supply chain may
+struggle to provide. Jensen wants
+Nvidia's architecture to become the
+standard in orbit, and Elon wants to
+turn orbit into a new source of energy,
+cooling, and compute capacity. The
+better Nvidia's chips become, the more
+valuable SpaceX's orbital network
+becomes. The more orbital capacity
+SpaceX deploys, the more Nvidia systems
+it needs. More Nvidia systems create
+more compute, more compute creates more
+AI revenue and better models, and that
+revenue funds more satellites, more
+launches, and more chips. That loop can
+get very big very fast. But first, I
+want to introduce you to an extremely
+powerful tool that I have been using on
+a daily basis to do all my work called
+WhisperFlow, which is the sponsor of
+today's video. WhisperFlow, today's
+sponsor, is a voice-to-text tool that
+lets me just talk and it types out
+clean, finished text wherever my cursor
+already is on my computer with emails,
+notes, video transcripts, agentic
+harnesses, and literally anything else I
+want to use on my computer. It's
+especially useful when I use WhisperFlow
+for long sessions with Claude, Grok, or
+ChatGPT. There's no reason to type
+anymore. It's like the best production
+assistant that you can ever ask for. And
+it turns out that I talk significantly
+faster than I type, and my typing speed
+is already around 100 words per minute,
+not to brag. So, this is a huge
+productivity boost even for me as a fast
+typist. And it strips out all the ums
+and the filler, and it punctuates
+everything for me automatically. And
+they just released a new product called
+WhisperFlow Notetaker that takes the
+same awesome technology they use for
+dictation, and they apply it for
+note-taking in meetings. For example, my
+team's use StreamYard to do weekly
+calls, and all I have to do now is to
+turn on WhisperFlow Notetaker which will
+automatically come up when it detects
+that I'm in a meeting. And it
+automatically captures everything that's
+being said in the meeting.
+&gt;&gt; All right, so we we want to do an
+&gt;&gt; Uh what what's the agenda for today?
+Ideation?
+&gt;&gt; Yeah, ideation thing, but actually K put
+something together, um which is amazing.
+I don't know if you had a chance Did you
+have a chance to flick through that
+thing he posted? No, okay. Let's go for
+it then.
+&gt;&gt; Yep.
+&gt;&gt; Um I will share my screen.
+&gt;&gt; WhisperFlow Notetaker automatically
+detects who is speaking in a meeting and
+labels them so you don't get lost in the
+transcription trying to figure out who
+said what. And because it pulls names
+straight from your calendar invite and
+knows your terms. It gets the tricky
+names and words right, not speaker one
+and speaker two. Best part, no bot ever
+joins your call. The great thing about
+WhisperFlow dictation is that it runs
+across basically every app on Mac,
+Windows, on my phone, in over 100
+languages. While WhisperFlow note taker
+is only available on Mac as of now,
+however, the Windows version is
+currently on the way. And if you write
+and type and attend meetings all day
+like I do, it is the single easiest
+upgrade you'll make to your entire
+workflow. I strongly recommend you check
+them out. I literally use them every
+day. Their product is truly awesome. And
+if you're interested, use the link below
+and use promo code Farzad in the plans
+and billing settings to get unlimited
+meetings in note taker, which is Mac
+only as of now with the Windows version
+coming soon, and unlimited words for
+WhisperFlow dictation, which is
+available across all devices. And thank
+you so much to WhisperFlow for
+sponsoring this video. Now, Nvidia and
+SpaceX's partnership not only leads to a
+very big flywheel, it also changes the
+design of the chips themselves. A normal
+data center gives engineers a lot of
+freedom. You have the racks sitting on
+concrete floors, you have power arriving
+through the grid, you have pumps that
+move water through the cooling system.
+And then if a board fails or a rack
+fails or a chip fails, a technician can
+pull it out and replace it. Space
+removes every one of those assumptions.
+Every kilogram has to ride a rocket. The
+computer has to survive vibrations
+during launch. Radiation can flip bits
+or damage electronics. It's a freaking
+hellhole out there in space, okay? And
+then the heat from the chips cannot blow
+away into the air because guess what?
+There's no air in space. It has to leave
+through large radiators that glow the
+heat into space. The system needs giant
+solar arrays, and when a chip dies,
+nobody is driving a freaking repair
+truck to the freaking satellite, okay?
+It's like stranded. That means the
+Starlink compute system needs a
+different balance of performance, power,
+weight, heat, reliability, and with
+redundancy, that means you have to have
+backups throughout the network, so one
+dead chip or system does not take down
+the whole thing. In that respect, Nvidia
+will understand the compute
+architecture, and SpaceX will understand
+the environment. They have to design
+those tradeoffs together. This is one
+reason the official deal matters so
+much. Nvidia gets operating data from
+the hardest possible deployment of its
+hardware in space, and SpaceX gets
+direct access to the company that
+controls the leading AI platform. The
+feedback can move in both directions. A
+design that becomes lighter or simpler,
+better at cooling, and more reliable for
+orbit may also become cheaper and easier
+to deploy on Earth. Elon already said
+SpaceX plans to use the optimized
+Starlink design on the ground, so the
+satellites can become a test bed for a
+better terrestrial AI factory. And then
+the terrestrial AI factory can become a
+test bed for the satellite. Each version
+can improve the other one. But
+eventually, that loop runs into a
+physical wall. Where do all the chips
+come from? The demand curve for AI is so
+insane that projections for the amount
+of compute needed, aka chips, is orders
+of magnitude, 100 to 1,000 times more
+than is being produced today. But SpaceX
+seems to have a solution, and it's
+almost impossible without the Nvidia
+partnership. Let me explain. SpaceX said
+orbital AI at scale, which is where a
+bulk of AI chips will be over the next
+10 to 20 years, will require
+significantly more AI processors than it
+can currently access. SpaceX said that
+fab capacity, the amount that chip
+factories can produce, along with raw
+materials, and geopolitics, and natural
+disasters are all risks. And at that
+time, SpaceX pointed everyone directly
+to Terafab as the plan for adding
+internal chip capacity. In case you're
+not familiar, Terafab is a proposed chip
+manufacturing project between SpaceX and
+Tesla with Intel also expected to
+contribute to chip design and
+fabrication and packaging expertise. The
+long-term goal is 1 terawatt of compute
+hardware per year. That is 1,000
+gigawatts, which is roughly 20 times
+more compute capacity than 2026 from
+every company combined, but from a
+single company. SpaceX says the factory
+is meant to combine several jobs inside
+one closed loop. It would make the
+masks, which are the stencils used to
+print tiny circuits onto silicon. It
+would make the chips that do
+calculations, the chips that store data,
+and the advanced packages that connect
+those pieces together into one compute
+system. So, what this means is that
+SpaceX is standardizing the computer
+around Nvidia while building a factory
+meant to supply chips in massive
+amounts. And those two paths are heading
+towards each other. In that model,
+Taiwan Semiconductor Manufacturing
+Company, better known as TSMC, might
+still make the most advanced GPU chip.
+In case you're not familiar, TSMC is the
+world's leading company for
+manufacturing chips designed by other
+companies like Nvidia, AMD, and
+countless others. Under this scenario,
+Terafab would handle more of the system
+around it, at least for the time being,
+and that alone would shorten design
+cycles, add capacity, and move a
+meaningful piece of the supply chain
+into the United States. But, the next
+step could be a custom Nvidia design
+module made specifically for SpaceX.
+Nvidia owns the architecture and
+software. Terafab makes or packages the
+physical hardware, and SpaceX supplies
+the operating requirements and becomes
+the anchor customer. If Terafab proves
+that it can hit the required yield,
+meaning enough good chips come off each
+wafer to make the economics work, its
+role can grow. It could make a wider set
+of Nvidia parts, and over time, it could
+qualify as another manufacturing source
+for complete AI processors, which would
+mean that it would become a direct
+competitor versus TSMC. That's a
+reasonable way this whole thing could
+develop. It starts with packaging, then
+they get into custom parts, and more
+advanced manufacturing after the factory
+proves itself. Then, potentially,
+Terafactory becomes one of the places
+where Nvidia hardware is made. say that
+again. Terafactory becomes a supplier
+for Nvidia. I have been covering Elon's
+company since 2012, and the dude has a
+pretty consistent pattern. He starts as
+a customer of a critical supplier. He
+learns exactly where the bottleneck is,
+and then pulls more of that bottleneck
+inside his own system. This entire
+process is called vertical integration.
+SpaceX did it with the rocket engines,
+they did it with the flight computers,
+and the satellite manufacturing, and all
+the launch operations. Tesla did it with
+vehicle software, and charging, and
+batteries, and power electronics, and
+the AI computers that run in their cars.
+And Terafactory applies the same logic
+to the most difficult manufacturing
+industry on Earth, which is chip making.
+Now, the normal reaction is that
+semiconductor manufacturing is
+completely different. Making chips is
+objectively one of the most insane
+engineering feats that humans have
+figured out. Honestly, check out the
+videos on this channel and anywhere on
+YouTube. Just type in chip
+manufacturing, it's going to freaking
+melt your brain. And so, the reaction is
+correct. fab, which is a factory for the
+most advanced chips, takes years to
+build, costs tens of billions of
+dollars, depends on thousands of
+suppliers, and requires knowledge that
+is extremely hard to replicate. The
+factory also needs extreme ultraviolet
+lithography machines. These machines use
+a very short wavelength of light to
+print tiny circuit patterns onto
+silicon. Only one company, ASML in the
+Netherlands, makes those machines.
+They're among the most complex machines
+humans have ever built, and Terafab
+cannot summon hundreds of them by sheer
+force. There's less than 300 of these
+machines made in total with plans to
+build no more than 60 of them per year
+in the coming years. This is a gigantic
+bottleneck. But, the thing is Terafab
+does not need to replace TSMC to become
+extremely valuable. It needs to reduce
+the number of steps that depend on TSMC.
+And then they improve the iteration
+speed, they add packaging capacity, and
+become a second source for critical
+parts. In this ideal world where
+everyone wins, TSMC can remain the
+primary supplier, Nvidia can keep using
+Samsung and its other partners,
+including SpaceX, long term through
+Terafab, and Terafab can still reduce
+the massive bottlenecks while growing
+alongside the entire system. Now, real
+quick, if you're enjoying this video so
+far and you want to support this
+channel, the quickest and most impactful
+thing you can do is click and subscribe.
+It's completely free, and it goes a very
+long way. Thank you so much. Now, it's
+very important to note that Nvidia's own
+annual report explains why another
+source would be important. We have to
+remember that Nvidia is a fabless
+company. It designs chips, but doesn't
+own a factory that prints them into
+silicon. Its partners manufacture,
+assemble, test, and package the
+hardware. The supply chain is still
+mainly concentrated in Asia, primarily
+in Taiwan. TSMC and Samsung make the
+wafers, which are the thin silicon discs
+that later get cut into individual
+chips. SK Hynix, Micron, and Samsung
+supply the memory, and a network of
+other companies handle the assembly and
+the packaging. This model helped Nvidia
+move unbelievably fast because Jensen
+did not have to spend tens of billions
+of dollars building fabs. But, it also
+means Nvidia does not fully control how
+many chips get made, where they get
+made, or how quickly suppliers can add
+capacity. And the reality is that as of
+today, Taiwan sits near the center of
+the advanced chip industry. TSMC has
+earned that position through decades of
+execution, but the entire AI economy has
+become too important to depend so
+heavily on one geographic region,
+especially when a conflict across the
+Taiwan Strait would be the worst outcome
+of this risk, i.e. China. But there are
+many smaller things that could happen
+that would be super disruptive. An
+earthquake can stop production, let's
+say, or a water or power shortage can
+slow a fab down dramatically. Maybe they
+have a packaging constraint. Maybe
+export rules or tariffs can change which
+chips can move across which border. It's
+already happening. Literally, just look
+at China and how they've been prevented
+from buying chips from TSMC. Or demand
+can simply grow faster than suppliers
+expected, like what's happening today.
+So it becomes extremely obvious that
+localizing more production in the United
+States reduces that risk, but it does
+not create complete independence.
+Terafab will still need lithography
+tools from the Netherlands, from ASML,
+optics from Germany, materials from
+Japan, memory expertise from Korea and
+the United States, and a giant network
+of global suppliers. Modern chips are
+one of the most international products
+ever made. And the space side makes the
+redundancy even more valuable because
+orbital compute changes the scale of
+demand. SpaceX's long-term goal is to
+deploy up to 100 gigawatts of compute to
+orbit each year, which is at least twice
+the amount of global capacity that's
+being built every year right now. The
+company says early satellites could
+target around 100 kilowatts of compute
+per metric ton. Reaching the full goal
+would require thousands of launches per
+year and roughly 1 million metric tons
+sent to orbit annually. At that point,
+chip supply becomes as important as the
+fuel in the rocket. SpaceX cannot plan a
+giant orbital network around whatever
+GPUs happen to be available after every
+other customer gets served. Nvidia
+cannot plan for orbit to become a major
+compute market while depending on a
+supply chain designed only for today's
+terrestrial demand. Both companies need
+more capacity, tighter planning, and
+hardware designed around a shared road
+map. And this is where Nvidia's new
+capital strategy fits in. Nvidia
+recently signed memorandums of
+understanding with Apollo, BlackRock,
+Blackstone, Brookfield, Goldman Sachs,
+and KKR to create financing platforms
+that could mobilize more than $500
+billion
+for AI infrastructure over time. The
+goal is to make it easier for AI
+companies and infrastructure operators
+to finance Nvidia-based data centers. In
+short, Jensen Huang, the CEO of Nvidia,
+is trying to turn compute into a
+financiable asset. And this is extremely
+common in other major industries. For
+example, airlines do not always pay cash
+for every airplane. Power companies do
+not always pay cash for every power
+plant. Long-lived assets can be financed
+because lenders understand who will use
+them, what cash they can produce, and
+what the equipment is worth if the
+company using that asset goes bankrupt.
+So, if you use Spirit Airlines going
+under as an example, all those planes
+that they had, that Spirit owned and
+operated, don't suddenly become
+worthless. They can be bought and sold
+to other airlines to be used to carry
+people from point A to point B. Under
+this scenario, chips will be financed
+the same exact way. Just because a data
+center business goes out of business,
+doesn't mean people will stop using AI,
+especially as models get better, faster,
+and cheaper. Those chips will be used
+even more. The challenge is that AI
+infrastructure has been harder to
+finance that way. GPUs improve very
+quickly. Nobody knows exactly how fast
+an old system loses value. Many AI
+customers are young companies without
+decades of cash flow. The electric grid,
+land, buildings, cooling, and chips all
+have different owners and risks. But
+Nvidia is now helping put those pieces
+into a package that Wall Street can
+understand. Jensen gets more customers
+with access to capital, the financial
+firms get exposure to a new type of
+infrastructure, and the customers gets
+to compute without paying the full cost
+from its own cash on day one. It's like
+how people buy homes nowadays. Very,
+very few people can afford a home cash,
+but mortgages are about as safe of a
+lending instrument that exists because,
+guess what? Homes have a time of
+utility. People live in them. And SpaceX
+fits this model almost perfectly. It is
+a giant buyer of Nvidia system. It
+operates compute and sells access to
+that compute. It controls a global
+network that can distribute the output.
+It can eventually launch the hardware
+into an environment with literally
+constant solar energy, i.e., space. And
+it is also building Terran Fab to attack
+the chip supply problem directly. So,
+the relationship can deepen through
+several paths. Nvidia could invest in
+SpaceX or Terran Fab to commit to buying
+future capacity. It could prepay for
+packaging or manufacturing. It could
+help finance the equipment. It could
+license designs for a specific product.
+It could guarantee that a Terran Fab
+production line has demand beyond Elon's
+own companies. It's become clear that
+Nvidia is already showing that it wants
+a deeper role in the companies building
+on top of its platform. It invests in AI
+labs and infrastructure providers
+already. It helps customers secure
+chips. It helps them secure capital. It
+codesigns complete systems. Terran Fab
+gives Jensen a chance to extend that
+model in the opposite direction, down
+into the manufacturing. But, there is
+real tension here. Elon wants control.
+Jensen wants Nvidia to remain the
+standard. If SpaceX eventually builds a
+general-purpose AI processor that
+replaces Nvidia and asks developers to
+leave CUDA, which is Nvidia software
+system used to build and run AI, that
+relationship could become competitive
+very quickly. But, a hybrid approach
+fits both companies incentives. SpaceX
+and Tesla can design custom chips for
+jobs where cost, power, or space
+reliability matter more than having the
+fastest general AI platform. Nvidia can
+remain the leading system for training
+the largest new models and running those
+models for billions of users. Terafab
+can make some custom Elon chips and some
+Nvidia designed hardware. The factory
+gets volume from both. Nvidia gets more
+secure supply. SpaceX gets control
+without rebuilding the entire software
+world from scratch. That is the same
+reason Apple designs chips while TSMC
+manufactures them. Design,
+manufacturing, and software can sit in
+different companies while still forming
+one tightly connected system. The exact
+relationship between Nvidia and Terafab
+will move as each side proves what it
+can do. This exact convergence across
+SpaceX, xAI, Tesla, energy,
+manufacturing, and compute is the core
+idea in my new book, Master Plan, What
+Elon Musk is really building, which
+helps people understand just exactly
+what's going on and what the likeliest
+path is for these technologies in the
+next 5 to 20 years. I'll have a link for
+it in the description and the comment
+section below in case you're interested.
+Thank you so much for watching. I hope
+this video was informative and helpful
+and we'll see you on the next one. Take
+it easy, everybody.
+Bye-bye.
