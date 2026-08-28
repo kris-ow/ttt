@@ -1,0 +1,1423 @@
+Channel:     hansnelson
+Title:       EXCLUSIVE Interview w/ Top Palantir Architect
+URL:         https://www.youtube.com/watch?v=9eUUeTC6wnY
+Published:   2026-08-19 12:24 UTC
+Fetched:     2026-08-28 11:38 UTC
+
+────────────────────────────────────────────────────────────
+
+Am I subsidizing someone that's going to
+compete with me? The classic one is, you
+know, Walmart doesn't want to use AWS
+because AWS is competing with them. So
+essentially, if you have a bunch of MCP
+servers hooked into these different
+things like and you say this is my
+harness that hooks into all the
+different intelligence sources, it's
+actually pretty terrible. When we talk
+about a harness is it's the harness of
+your business, not of a tool, not of a
+technology. You need a business harness.
+And that really is what the ontology is.
+It's the business harness. You can only
+cut your way so far, but you have
+infinite growth possibilities. And the
+real question is, how can I make my best
+people do 10 times a hundred times more
+and more effective? That is an infinite
+sum game, right? And I think that's our
+view of it is how do we give them the
+iron man suit to essentially be the
+superhero? And it's like actually the
+humans with AI is net better. I think
+there was the whole Casparov chess match
+with Big Blue and others where actually
+the the humans with AI beat both big
+blue and the Grandmaster. I think net
+net though is we need more people, more
+manufacturing, more re-industrialization
+really is the defense of our way of life
+and everything is comes back to how do I
+enable people to build and do more with
+less resources.
+Well, today I have Chad Walquist with
+me. He is from Palunteer and he does a
+lot of amazing work with companies
+trying to figure out how do we digest AI
+inside of an enterprise context so that
+it does work that really actually brings
+new incremental value to that business.
+Um, not just cutting cost but actually
+providing additional leverage on the
+business as well. And there's so many
+different technical things that go into
+that. And Chad's an amazing resource at
+Palunteer that really understands these
+things deeply. And so I wanted to have
+him on today to kind of talk about the
+state of AI adoption in businesses and
+specifically to dig into some really
+interesting comments that Sham and Alex
+have made recently. And they mentioned
+the fact that they have been testing
+open models like Neotron from Nvidia
+inside of enterprise business use cases
+and they found specific applications
+where it actually outperformed you know
+some of your favorite name brand models
+like uh Anthropics Fable or you know the
+new GBT 5.6 Soul. Um, and so I wanted to
+dig into like how is that even possible
+that this openweight model trained by,
+you know, this tiny little company
+Nvidia could potentially
+um
+do this thing that, you know, it is like
+the reason that people pay so much for
+these anthropic tokens and these OpenAI
+tokens is because they expect it to
+create an ROI. And so how's like a free
+openw weight model provide better value?
+Where does that happen? When does that
+happen? And so I'll open up the floor to
+you Chad. Thanks for being with us
+today. And uh yeah, let's get smarter.
+&gt;&gt; Oh, thank thanks for having me Hans.
+Like I I think the it's a pretty good
+stage to set. There's a lot to unpack
+there which really comes back to kind of
+the overarching theme around like why
+did we get to uh you know why are we
+even talking about open wave models? Why
+are we talking about post- training and
+fine-tuning and reinforcement learning?
+um you know we've been doing this for a
+while and it's always been the frontier
+lab models get the latest model everyone
+gets excited we go deploy it right and
+it's that cycle and things have shifted
+and I think you know started a lot of
+that shift started when you know Dr.
+Karp started talking about kind of the
+sovereignty and what's happening with
+the labs and and intelligence and who
+owns that intelligence and and so we
+started we started in this conversation
+really from um you know Dr. Karp owning
+that that narrative about how do we talk
+about this? what's the important piece
+for companies? And this comes back from,
+you know, we're out in the field talking
+to customers and there's concerns about,
+you know, what's happening with my data,
+not just from like, hey, do I have zero
+data retention or not, right? And and
+sovereignty is a it comes back to am I
+subsidizing someone that's going to
+compete with me? Uh, right? You know, so
+the classic one is, you know, Walmart
+doesn't want to use AWS because AWS is
+competing with them. You know,
+similarly, if you're doing drug
+discovery, do you want to subsidize a
+company that's actively trying to roll
+out drug discovery and science? Um,
+right? So, there there's those angles to
+it, right? When you look at the
+incentives, it's more than just the
+contractual piece you have of these
+model providers. It's like what are the
+incentives that are driving them? Um,
+you know, where is the value being
+created? And so, when we think about it
+from that perspective, there's a lot
+more to unpack because it's also not
+just about model sovereignty. It's like
+the sovereignty of your business. And if
+we just unpack that for a real quick
+second of like what does that actually
+mean? Um if I like kind of my working
+model on what does sovereignty mean from
+I've been traveling across the country.
+We had a you know talking about this
+with with the sea suite across the
+Fortune 100. Um we had a sovereignty
+event at our office a couple weeks ago.
+We're planning another one. Like this
+topic actually you know came from the
+feedback loop of talking to these people
+like man like I am very concerned about
+this. So this doesn't just come from any
+like nowhere. It's I'm worried about the
+decision rights of my business.
+What happened?
+&gt;&gt; You mean that seuite leaders are, you
+know, paying attention to Sam and Daario
+and how they're acting, how they're
+behaving, and how they're competing with
+their customers and and they're actually
+having second thoughts about this
+shocking. [laughter]
+&gt;&gt; They're they're very they're you know,
+it comes back to not necessarily just
+about them. It's this is honestly like
+like the last 30 or 40 years of Silicon
+Valley. It has been, you know, hey, I'm
+go build your company on my database, on
+my software, on my ERP, on my whatever.
+And then I'm going to change the rules
+of the game after you're locked in and
+it's going to cost you hundreds of
+millions of dollars and business
+continuity interruptions to get out of
+my software. So, I essentially have a
+gun to your head and I can charge
+whatever I want. So this is when you
+know when we say that the cost goes up
+and the quality goes down that is what
+these seuite executives are used to for
+the last 30 plus years. This is not new.
+Um and so when we think about the model
+side you know everyone originally
+thought hey I can just swap this model
+for that model. I just it's just a drop
+down. I just change a line of code right
+and it's just flipping a bit. And it's
+not just flipping a bit. These are
+probabilistic systems that are highly
+complex that you're going to interweave
+and like run your business on.
+That's like running a a manufacturing
+plant and I don't like have control over
+the machines or how to repair them. I
+can't get spare parts, right? Like so
+when we say own the means of production
+like I'm truly concerned about how do I
+make sure that I have business
+continuity I can keep running when
+someone decides to put guard rails in
+that that change the way my model
+behaves and now my business can't
+operate like that alone okay let's just
+take the whole ZDR like data sovereignty
+piece out just that's a decision
+sovereignty that now I can't operate my
+business well how do I switch a model
+out in In practice, it's like, oh,
+prompts need to change. Like it actually
+the newer models get worse sometimes at
+new tasks. Actually, in a lot of
+enterprise tasks, the kind of the
+thinking models or the test time compute
+models, right? The reasoning models
+actually can perform worse on specific
+tasks because they're going to come up
+with different answers all the time,
+almost kind of overthinking things. And
+so, a lot of times people are like, I
+got to get this thing to work. I'm going
+to use the frontier model. I get it to
+production. And then you're like, "Oh,
+cow, that's really expensive." And two,
+like it's changing on me. Like everyone
+talks about
+&gt;&gt; introducing variability into, you know,
+something that you're hoping is going to
+be a lot more of a deterministic
+outcome.
+&gt;&gt; Exactly. And and and that so it's like
+you start to compound all these things.
+And I I put the like I would say the
+conversation I have I put into four
+categories. The first one is
+um you know I'm
+I'm worried about the um essentially the
+decision rights of my business and how I
+operate. And this comes back to not just
+what we were talking about before, but
+it's if I'm buying box software, I'm
+essentially like becoming like everybody
+else. I can configure a few bits here
+and there, but I'm essentially making
+myself more similar, not more different.
+I'm losing my competitive edge so that I
+can scale through software by being like
+everyone else. And so like the
+sovereignty from a business process
+standpoint like we're very antibbox
+software. This is why people don't
+understand what Palanteer does a lot of
+times is because we build malleable
+software that can scale and allow people
+scale. Sorry, my my cat is having fun
+over here. um and allow allow businesses
+to scale
+while still like owning that specific
+business process that made them
+successful. So, there's that. And then
+the second is really what we talked
+about before of like, hey, I don't want
+to subsidize my competitor um and
+someone that's going to come out here
+and actually compete with me, you know.
+And then like the third category is I
+can't afford for someone to change the
+rules on me. Changing the rules will
+affect that I can operate or not. And
+that's like that part I can't stress
+enough is it's you know yes there's the
+USG context of like I can't have someone
+determining what is lawful or what is
+right what is not um if I'm deploying or
+my life or my business depend on it
+right so that's one and then the fourth
+category I would say is price like I'm
+deploying the the if I putting a the
+latest frontier model out to an
+enterprise task a lot of times it's like
+putting a PhD on a factory floor to put
+stuff in a box And that's the other side
+is like do I really actually need PhD
+level intelligence for most of like you
+heard Sham talk about actually there's
+so much intelligence we haven't
+harnessed just in these N minus4 models.
+Uh right and so like those are the kind
+of things we look for. So which one of
+those I guess categories brings people
+to the table but then which one actually
+do you see providing the most value
+inside of people's enterprises today?
+&gt;&gt; So those are like those are the four
+different kind of categories of
+concerns. I would say the the the value
+proposition is how do I turn those
+tokens into decisions
+and those decisions need to be better. I
+need to make more and better decisions.
+So not just more and not just better. I
+need to make more and better um
+decisions across my enterprise and
+thinking it's global context. So it's
+like how do I you know there's a couple
+different ways you can do this whether
+it's doing better root cause analysis
+and I can do this across everything
+because I have infinite labor source of
+model agents that can go out there and
+like root cause and dig through my
+ontology in my business process like or
+I have I need to rebalance my inventory
+and every decision I make has
+essentially another knock-on effect and
+things are constantly changing. So, how
+do agents help me triage this in real
+time where I couldn't have enough people
+and my systems couldn't run fast enough
+maybe or lots of different reasons like
+can I automate my supply chain
+rebalancing using agents in real time
+because happens um and things
+change and like how do I how do I make
+it's like it's all of those things about
+how we not only like reduce cost but it
+comes back to like can I have an agent
+be essentially helping in integrated
+across all the business process. So if
+we think about it from a lean
+manufacturing standpoint, can I find the
+bottleneck in my business process and
+apply agents into that bottleneck that
+help scale and then I find the next
+bottleneck and the next bottleneck. Can
+I increase revenue through that? Right?
+So there's a lot of different ways that
+we can attack the problem from a value
+creation. But at the end of the day,
+it's about a decision being made. If you
+think about what a business is, it's
+just a bunch of decisions. It's people
+making decisions and and now we have
+people and agents. And so the more and
+better decisions I make, the more
+revenue, the more cost cutting, whatever
+it look, whatever you need in your
+business is what you're being able to to
+execute against. So that is a good place
+to bring it back to potentially you know
+what are the what's the distribution of
+use cases where you know the
+Neotron you know open source openweight
+models might be the right fit um versus
+you know having that PhD level
+intelligence
+um and yeah like why are the benchmarks
+so bad at basically giving you a map to
+where you should use what
+&gt;&gt; there well there's a there's a lot to
+unpack there so on the on the benchmark
+piece like these benchmarks are for you
+know taking MSAT and you know academic
+stuff and software benchmarks and you
+know there all these benchmarks out here
+and which they can be good proxies for
+things like that's not wrong um but in
+the enterprise space I have discrete
+tasks I need to do decisions I need to
+make. So, and you know, today I have
+humans that bring the reasoning
+component and deterministic tools. Um,
+and those humans use the deterministic
+tools and reason about what I should do
+and then they take action. What the way
+we think about our ontology is it is the
+data logic actions and security. It's
+the entire business model not just the
+data. And so that provides the back
+plane for us to really like drive on
+decisions. So when we think about it,
+it's like actually have the entire
+business process modeled in it works.
+Those LM don't know your business
+process. They were trained on the corpus
+of web and books and things, but
+hopefully and they shouldn't have your
+business's data in them. And you know,
+other USG context, they shouldn't have
+data about targeting or how to do other
+very like nuanced things. And so these
+models know nothing about those business
+processes or or those workflows. So when
+you put benchmarks against things,
+great. Now I need to apply them to a
+totally different bespoke domain,
+different vernacular, different all
+sorts of things like that are happening
+in humans heads in spreadsheets and
+emails and phone calls and so much of a
+business isn't even like encoded into
+traditional IT systems. So they don't
+those benchmarks don't represent what's
+actually happening. So when you apply
+them to business context like this,
+they're not great. Now the ontology acts
+as a grounding function in a bridge
+which is why we've been so successful in
+doing this. But if I have the ontology
+that maps that business process and I
+have general reasoning capabilities that
+know how to call deterministic tools
+like sources of logic, they know how to
+query the ontology. they can take
+actions what levers I can pull then that
+actually um with this you know the
+neatron model are they as good as fable
+on the benchmarks no but when I have
+these task specific things they're
+actually really good um and when we do
+some post training whether it be
+supervised fine-tuning or reinforcement
+learning they get really good really
+quick um and so now that's where we see
+actually in these different domains
+they're really good. Um, and we can get
+them really good even if they're like
+not great at one specific task with
+honestly very little post-training. They
+can get very good at a business process.
+And the thing about Palunteer is we
+capture that entire feedback loop and
+it's the customer's data. So we can then
+feed that into fine-tuning the
+customer's data into their own
+fine-tuning process create their own
+model. Right? So that that's the kind of
+the virtuous loop that we're looking.
+So, I don't know if you can share like
+general
+um characteristics of like what those
+types of business processes are, but I
+would assume that they're probably not
+the ones that are like squarely within
+the coding domain since, you know, most
+of these models that we're seeing right
+at the frontier. They're all kind of
+converging to focus on coding as the use
+case. There's lots of ability to do
+reinforcement learning on that. So like
+they're going to be really really good
+at those, but like you most enterprise
+business is not coding. You know, I
+don't know if the tech world realizes
+this, but um [clears throat] so how does
+that play into this?
+&gt;&gt; Well, if there's any signal um you know,
+since we started talking about this a
+few months ago, I think I put our first
+ad in the in the Wall Street Journal
+around protect your sovereignty about
+three or four months ago. Um and now in
+the last month there are multiple
+startups being funded for a billion
+dollars in funding you know in this
+exact loop that I'm talking about now
+even and everyone's talking about loops
+and these things. I'm like we've been
+doing this and deploying this like we
+actually launched our sovereign OS um
+AIOS last summer um where you could dep
+do all this stuff. So like we've been
+doing this for a while. So the cool
+thing about Poundier is like we have a
+lot of cycles of learning and so like
+where where do we deploy these things?
+um you know we've earned the trust of
+our customers about protecting their
+data, their sovereignty, how they
+they're they're working. So we have
+access to that entire loop to help the
+customers harness their data. So like
+the ways that these models kind of work
+and where we think about them is, you
+know, like one of the things we do a ton
+of is supply chain work. Um so unwinding
+supply chain and reasoning through this
+like well there's a lot of deterministic
+stuff that you need to go look at what
+your inventory level is, what your
+shipping length, right? And there's
+optimizers in there that do different
+parts of it, but it's like how do I
+reason across all of that domain? Um,
+they're really good at taking these
+loops because what do I do? I look at
+the data. I apply logic. I can take
+actions to get this outcome that I think
+I'm going to have and then I can
+actually measure what the actual outcome
+is. That entire loop is where all the
+business value is. That's essentially
+the alpha of a business. If I can make
+that loop better every time where I
+where there's a smaller difference
+between the intended outcome and the
+actual outcome and I can optimize
+essentially what everyone's saying hill
+climb I can hill climb towards better
+business outcomes that reinforcement
+loop is super valuable. So I I think
+like there's a lot of different domains
+there and then you you work on the USG
+side and I can't share a lot there but
+you can you can use your imagination
+about the type of workflows um that
+there is no corpus of data on in any of
+these models and so but there's a bunch
+of people that are experts that have 20
+30 years of expertise doing this now we
+with our with our Maven product we have
+Maven across you know the entire USG so
+you can imagine having that type of
+workflow So with this level of human
+expertise, there's a lot of data there
+that we can use to harness for these
+different fine-tuning um or post-
+training runs. And so um there's very
+very cool stuff happening there. And
+then and I posted about some of this
+about like airgapped environment like a
+shipping container dropped on a ship
+somewhere in the world with a bunch of
+B300s running our software and these
+models doing things like those are the
+kind of workflows that you know are
+super cool. Um, now not every customer
+needs that level of sovereignty that I
+need a container of GPUs on a ship in
+the middle of the ocean, right? Like not
+everybody needs that. And so this is
+like this is the whole thing here is
+it's not a one or zero. It's it's really
+a spectrum. How do you think about
+y'all's exposure to
+like all of those bespoke use cases and
+what does that do for, you know, the
+flywheel of Palunteer's own business and
+then the flywheel into the customer's
+business? Like I guess I I kind of take
+it back to Tesla and how they have this
+exposure to like so much real world
+driving data that even Whimo doesn't
+have just because they don't have as
+many cars covering as many roads
+capturing as many you know different
+edge cases and it seems like you know a
+company like Palanteer at least in the
+large enterprise space is going to be
+exposed to a much broader variety of,
+you know, enterprise edge cases than any
+other company that I'm aware of, you
+know, including Anthropic. Um, so yeah,
+just riff on that for
+&gt;&gt; Yeah. Well, just to to just to be clear
+because I so I longtime Tesla owner,
+love Tesla. Um, and yes, the amount of
+driving they have is a competitive edge.
+Um, but just to be clear on Palunteer,
+like we are not a data company. We the
+the data is the customer's data, not
+ours. Um, so as much as we have exposure
+to helping our customers through these
+use cases, it's the customer's data. So
+as far as um, you know, trying to bring
+all the data together and all the the
+hysteria of, you know, mass surveillance
+or this and that, which is complete
+Um, you know, like actually
+we're pro, you know, we have more
+privacy and civil liberty engineers than
+we have salespeople. Just to like put
+that in context about how serious we
+take that piece. Um but the access to
+problem spaces where we are signing up
+for outcomes not a technical deployment
+is a key part and that's the forward
+that's you know the true forward
+deployed engineering is a product
+strategy
+&gt;&gt; and so having that exposure
+&gt;&gt; to these unique problems like we were
+talking about you know GPUs running out
+wherever um you know that helps push the
+product in different ways like for
+example now you know that has shown us
+that hey we want to be able to bring in
+customers GPUs
+um into the fold into the secure
+environment inside of Palanteer without
+having to physically move them into
+whatever cloud provider. So how do I how
+do I securely um you know enable GPU
+access across different ways. So like
+those are things we're building a
+product that everybody gets. Um and so
+those are the kind of edge cases that
+we're seeing. Similarly um we're seeing
+because we've been putting things into
+production you know at mass scale. AIG
+is a public you know customer they've
+talked about this on their earnings
+call. They said you know Palunteer what
+we're doing is a 35% increase in their
+kar because of these agentic flows that
+they're building with hundreds of agents
+to do the the underwriting for example
+well that will help you understand that
+putting probabilistic systems in
+production at a mass mass scale has new
+problems or you know like how do the
+agent observability problems and as
+models are changing how do I swap them
+out how do I do cost optimization so
+like evolve comes out of that so Our
+product evolve helps you actually
+compare models, build evals, do prompt
+optimization, um like all of those
+things. Well, that product only existed
+because we did the hard thing, got it to
+production, and then tried to manage it
+like this is a lot of work. There should
+be a product that that needs to help our
+customers manage this. Um, and I think
+that, you know, the the ones I'm most
+excited about now in the model, you
+know, kind of the the post-training
+area is really around
+with that entire feedback loop, both of
+technical seeing the the the models
+running, the agents running, but also
+the business feedback loop. Um,
+our customers have so much enriched data
+when they have a workflow running in
+Palunteer because all of that is
+captured and it's theirs. And so we've
+built tool a tool called trace collector
+um which will actually collect those
+traces and then put them into a tool
+called regress that helps you curate
+that data to understand where these the
+good outcomes bad outcomes what you
+know. So essentially you can help uh
+curate it and then that can feed into
+the post-training runs whether that's
+through supervised fine tuning or
+reinforcement learning and then that
+model comes back into our evolve tool to
+help you evaluate your fine-tuned model.
+does that actually do better than the
+the the frontier lab other model you had
+and so that now we've created this
+entire feedback loop um and that came
+out of you know work that we were doing
+you know in a lot of different areas but
+now that's also exposed a new problem
+right so we talk about this like it's
+great but it also causes new problems so
+for example let's say I fine-tuned on a
+data set that had some sort of PII or
+sensitive information in it well if I
+give that model back out to do inference
+on could it be leaking PII information?
+So, which use cases can this model be
+used in and should the data have
+markings applied that's coming out of
+this to make sure that I don't I'm not
+leaking information. So, those problem
+sets don't happen until you've actually
+done that entire loop and you're like,
+"Oh crap, how do I do this?" So, you
+know, we're we're we're building and
+deploying tools to do exactly that. So
+we have a tool called pass that will
+actually help you understand what data
+went into these fine-tuning training so
+that you then can secure the inference
+and the data coming out of it with the
+appropriate markings to make sure you're
+not leaking data on that side. So those
+are the kind of things that for deployed
+engineers are doing that I would say
+we're a year ahead of everybody else on.
+&gt;&gt; Yeah. So, there's a couple things that
+you said there that I want to dig into.
+And one of them is, you know, how hard
+it is to get these probabilistic um
+intelligences to to do work that's, you
+know, valuable that you can rely on. Um
+and I think that's, you know, a huge
+topic of conversation in the industry.
+Um but before we go there, I want to dig
+in a little bit deeper on Yeah. like um
+what does an FDE do? because this is a
+term that you know y'all are the
+pioneers of what an FDE is and a lot of
+other people
+claim that they're doing forward
+deployed engineering and um so I think
+the perception of what a ford deployed
+engineer does and then what an actual
+forward deployed engineer at Palunteer
+does are two different things and that
+you know it kind of sits at the
+intersection of that um question about
+you know like you guys have
+problem solving
+skill that is you know it is improved by
+this massive exposure to enterprise edge
+cases. So even though you're not taking
+in their data like you do have, you
+know, data that is absorbed within the
+FTE process and the FDE organization on
+just how to solve the incremental
+enterprise challenge and yeah, so just
+talk about what FTEES actually are, what
+they actually do and um
+help help people get a better
+understanding of that because I think
+that it would help clarify a lot for
+people.
+&gt;&gt; Yeah, that's the the multi-billion
+dollar question, huh? As you know,
+everyone deploys, you know, some of
+these companies deploying, you know,
+more FTEEs, re rebranding, you know,
+existing employees as FDEEs overnight
+and having more FDES than we have in our
+entire company. Um, you know, it's wild
+to see. So, there's there's two takes
+I'll have here. You know, the spicy take
+is, you know, like I actually think it's
+a a Trojan horse to completely erode the
+revenue. Um and and and the reason I
+think that is because if if you're
+deploying forward if you're actually
+having Ford deployed engineers be your
+go to market strategy, you are just
+sparkling sales consultants, you know,
+kind of thing. And it's going to destroy
+your revenue because in order for for
+deployed engineer need to work to work,
+it has to be a product strategy that
+builds compounding leverage for you and
+your customers. And and the difference
+is
+um when we're signing up like when I go
+stand in front of someone, we're signing
+up for con for for the outcome. There is
+no price sheet for Palanteer. There is
+no rate card for for FDS. We sign up for
+an outcome a lot of times at risk. And
+so we're saying that we're not sure. I
+mean, some of our contracts are
+laughably short, like a page of like
+this is what we're going to do. we're
+going to drive this business outcome.
+Your team has been trying to solve it.
+You're not sure exactly where, how to
+solve it or what the problem even is.
+And so this comes back to do Dr. Karp
+and and Peter Teal's kind of, you know,
+analogy around we're French waiters. Um
+it's the sometimes we got to tell the
+customer that your idea is bad in order
+to have the good meal. You know, this is
+what you should have in order to enjoy
+your French dinner. Um, and in order to
+really get the best out of the product
+and the best out of our experience is
+like actually let us decomp the problem.
+Don't outsource the demp to a model. You
+actually have to go sit down with the
+people that are doing the work. You have
+to kind of feel the pain because it's
+very easy to say from here, oh well,
+just apply this software thing and it's
+going to magically fix things. And then
+as someone signs up word and then you
+deploy it, software company wins. The
+business might win, might not. And so
+the customer has assumed all the risk in
+that in that relationship. And this is
+where we should assume some of that risk
+by sitting down next to you doing this
+at risk. Like those are the kind of
+things when we sign up for outcome. The
+the FD to the product strategy is if the
+product isn't working to to solve a
+problem in the best or most efficient
+way, then we build the product not and
+then we build the customer solution in
+that product. So there's two different
+things. is I'm building a customer
+solution in a software product and then
+there's the product itself. FTEEs can do
+both. And so when I am needing to have
+some new feature to do something or a
+whole new thing and this is how all the
+product that Palanteer is built,
+they build it at the edge for a
+customer. Then they're like, they show
+their peers and they're like, "Oh wow,
+like you can deploy compute modules or
+you can do XYZ."
+And they go try that same thing and
+they're like, "Oh, wow. There's
+something here. Let's actually build a
+real product." And so everything is
+momentum based and they churn these
+ideas and concepts into the product.
+That's why we have things that sound
+weird, look weird or at different
+primitives than else is because they're
+literally built on what is needed, not
+at what is easy to sell. And that is the
+kind of the differential at the core
+level. And I think a lot of times the
+the right intent for the forward
+deployed engineering is like the other
+the other take that most people are
+think is customers don't know how to
+deploy AI. I need experts to go deploy
+AI for them because our customers are
+not smart enough. And I think that is
+the complete wrong. Actually the
+customers know their business better
+than anybody else. Um and the the
+difference here is they have to decomp
+problems in a better and different way.
+And that is really where kind of the I
+think a lot of the other FTE work is
+being lost is like we're just going to
+essentially deploy AI for them. And
+that's kind of the inverse.
+Yeah, I guess that's um I hadn't really
+thought about it in that way, but you
+could almost use a proxy measure of like
+how much time are your FDE spending with
+executives versus people doing the
+actual work and that's kind of a good
+&gt;&gt; proxy for is this actual for deployed
+engineering or you know is this for
+deployed sales or
+&gt;&gt; Yeah.
+&gt;&gt; Uh yeah. Well, so so the way I talk
+about the product like our products and
+our company a lot of times is it's
+probably it's like an easy football
+analogy for people to understand. Um
+most of the BI and analytics and data
+solutions are like if I was trying to
+win the football game by watching a
+scoreboard, I'm looking at KPIs and well
+based on that KPI, I might go change
+some other thing over here. Uh what you
+really need is the playbooks to help you
+make the call to win the game. And
+that's what Palunteers is. It's going to
+go down to each individual decision and
+how do I help the person at the edge
+that has all the knowledge, but their
+frame of view is very narrow, but
+they're very deep. How do I help them
+globally optimize their decisions so
+that they're making the best decision
+for them and the company as a whole? And
+how do I do that for everybody? because
+each incremental decision then will add
+up
+&gt;&gt; to me winning the game and the KPI and
+and so that's that is fundamentally like
+how we approach things differently. Um,
+and the Ford deployed engineer is the
+one that's going to go out there and and
+sit down next to the person in the plant
+or on the factory floor and understand
+why are they making this decision
+because they're probably the experts
+more so the executive
+&gt;&gt; and but they don't have the wide view
+that the executive has. And so this is
+really a width versus thing. And so now
+how do we bridge the two? and the four
+deployed engineers should bridge the two
+so that each person is making decisions
+to get the scoreboard, you know, to win
+the game.
+&gt;&gt; Yeah, absolutely. That's a really good
+framing. So, okay, now that we've solved
+all the world's problems on for deployed
+engineering, let's um come back to the
+probabilistic intelligence thing. And um
+I you know one of the
+podcasts that I was listening to
+recently was with um invest like the
+best with Patrick and he was
+interviewing Eric Visria and Eric said
+something about how you know the best
+founders today you know one of the
+things that they're really good at is
+just understanding like the jagged
+intelligence that each of these
+different models has and then taking
+that and figuring out Okay, what is the
+right jagged intelligence to apply to
+the right problem inside of a business
+use case? Um, but how do you
+actually get to then combining that
+with, you know, the the problem that
+Chimath likes to talk about where, you
+know, you've you've got a process and it
+needs to be reliable above a threshold
+of, you know, 95 or 99% and even, you
+know, an exceptional jagged intelligence
+that is probabilistic might struggle to
+meet those reliability goals. Um and so
+yeah, what is the solution to being able
+to rely on these agents to do work that
+is missionritical?
+&gt;&gt; Well, yeah, I mean our software is used
+in a lot of different contexts and very
+missionritical people's lives depend on
+it uh in a lot of cases and so um very
+much something we think about um very
+deeply like the
+there's a couple I think this is why Dr.
+Karp says chips and ontology and and
+LLMs are just commodity because they're
+reasoning capabilities. And so this
+comes back to um you know if we just
+look at commodities you know it's it's
+when the when the uh you know the
+intelligence is going up exponentially
+and the cost is going down exponentially
+that is a commodity. Um and now how do
+we harness it in the right way? And it's
+well everyone's like well I can use all
+the different models and and in
+Palunteer we're model agnostic. We don't
+have our own model. you can fine-tune
+your own model and the customer can
+bring their own care. Um because it's
+about orchestrating that intelligence to
+your point about the jagged
+intelligence. It's like how do I use the
+right intelligence in the right place at
+the right time. That is really the hard
+problem. Um and
+this comes back to a lot of the data and
+the business process is not exposed to
+those models either. So this is where
+the ontology acts as the digital twin of
+your business process essentially the
+harness of your business. Um you can
+access it with APIs, MCP, SDKs, you can
+do it in platform. Like it's completely
+open. Um that's the other thing that a
+lot of people miss out about Palanteer
+is like actually I I say we're an
+unwalled garden. Like we're probably one
+of the most open platforms at every
+level. Um you can store the data
+wherever you want in any format you
+want. You can use whatever compute you
+want because I don't care about
+consumption. I care about the outcomes.
+And so that enables us when we talk
+about the orchestrating intelligence to
+hook on to whatever you already have
+that's working. Hey, maybe you already
+have an optimizer for this process
+that's working for a bit of it. And
+you've got this other thing that's kind
+of working, but this middle part's not
+working. I need to orchestrate it all
+together today. It's glued together with
+humans. How do I use LMS to do the 80 or
+90% of the work? And how do I understand
+what that last 10% is that the people
+should be working on? That's strategic.
+It's root cause. it's things that are
+happening over and over again. I need to
+change policies or maybe change vendor
+contracts or those things. And so that
+really comes through is grounding it in
+the ontology in that actual business
+process. Um and then on top of that the
+next layer would be like okay whether
+it's in context learning using the
+ontology where we build principles on
+feedback loops or it's I need to
+fine-tune something like we talked about
+with open weight models. We two years
+ago, I mean, this is we've been doing
+this for a long time. Two years ago, we
+released a video showing XAI working
+with us actually building bespoke custom
+models for TWWG. There's a video out on
+YouTube. You can go see it to do exactly
+how do I have 99.9%
+accuracy on document processing when I'm
+doing uh due diligence for private
+equity. If I have one number off on this
+one thing, um maybe that could impact
+the whole deal and I made a bad
+decision. um I have to have that. And so
+like we worked with XAI and Palunteer
+and we actually used our feedback loop
+to create a custom version of Grock that
+was at that level of accuracy. And so we
+went through and talked about but like
+sometimes we go to that level of fine
+tune. Sometimes it's not. So it's this
+spectrum that maybe I I need the
+ontology, maybe I need better prompts,
+maybe I should use this model for this
+portion of the agent and this other
+model for another one. So like evolve
+our tool helps you decide which model
+which prompts what's optimizations which
+architectural changes should I store
+this thing in ontology. So I so the LM's
+not searching around to go find this
+other thing or try to do entity
+resolution like the answer is there just
+give it access to it and so evolve helps
+you optimize those things all the way
+back to then into the the fine-tuning
+process. Um, so it really comes back to
+you have to have a vertically integrated
+system that captures and can enable all
+of these things together and do it in a
+secure and safe way.
+&gt;&gt; There's a conversation around harnesses
+and that, you know, you need models plus
+harnesses and um, you know, it's just so
+funny having been, you know, a longtime
+Palunteer retail shareholder to hear
+other people, you know, encountering the
+same discoveries that y'all have
+encountered significantly later and then
+rebranding them as like this new thing.
+Oh, hey, like there's this problem and
+we're solving it. Um, and then but
+anyways, so talk about the conversation
+around harnesses, how that relates to
+ontology and you know what what
+difference does it make when the scope
+of your harness is fully encapsulating a
+problem versus
+narrowly encapsulating a subset of a
+problem.
+&gt;&gt; So I I I can use an example here um with
+MCP. So, I see people, everyone's got an
+MCP server now for their product. Great.
+Um, if I go use a co-pilot tool, you
+name it, whatever it is, whatever
+chatbot tool you want. I hook up 15 MCP
+servers from all my tools, right? And I
+say start asking it questions and doing
+things. It's actually kind of a terrible
+experience. And the part that's missing
+is the model of how my business actually
+operates. the data, the logic, the
+actions actually have to be modeled how
+all those things interact, not each
+things in isolation. So essentially, if
+you have a bunch of MCP servers hooked
+into these different things like and you
+say this is my harness that hooks into
+all the different intelligence um
+sources, it's actually pretty terrible.
+Um and so we've actually done this at
+many customers. I can't name the the
+customer here, but like we took where
+they had 15 different MCP servers from
+different products hooked into one chat
+tool. Um, and we took those 15 systems,
+modeled it into the ontology and exposed
+through one MCP server on top of the
+ontology. And the experience was night
+and day difference, speed, quality of
+answers, um, you know, grounding in the
+truth because it understood how to fit
+things together. But then it also gave
+me the ability to link the data, the
+logic, the actions to to action things,
+not just do rag and and pull in
+information. And so when you think about
+these agentic flows, you know, like the
+Grockbot, you know, I was playing around
+with that last night. Awesome. Great for
+personal stuff. And they're hooking into
+all these tools and they're trying to
+like ultimately take actions and do
+things for you. In the enterprise space,
+it's the same thing. Like how do I
+actually model that all out? Um, and so
+the the only way you can do this when we
+talk about a harness is it's the harness
+of your business, not of a tool, not of
+a technology. You need a business
+harness. Um, and that really is what the
+ontology is. It's the business harness.
+You know, some customers have 72
+different ERPs. 72 ERPs for their
+business, for one for one business,
+all with different dates, structures,
+everything. Imagine giving all of those
+like just hey give this to an LLM like
+how is that going to work? How how how
+do I actually take an action and oh yeah
+it needs to be audible traceable and I
+need to make sure that I have governance
+around it and it's secured. Um
+that's a real hard problem without the
+ontology and so that is where it is a
+harness of your business. The technology
+should come second. I can interchange
+LMS and intelligence as I need. Maybe I
+fine-tune a model because cost is out of
+control or I need speed or hey, I just
+need the guy in the the craftsman on the
+factory floor that knows how to assemble
+this part. I don't need a PhD. Why am I
+hosting inference for a PhD when I just
+need it to do this thing? And I think
+that's where people are going to see the
+difference of like I suspect that
+there's going to be a lot of companies
+that are going to have tens, hundreds,
+thousands, maybe tens of thousands of
+task specific models that they
+fine-tuned on their business process.
+And how do you orchestrate that and have
+agents get better over time because you
+create these feedback loops? Like that's
+the vision where I think these harnesses
+will essentially go is it's the entire
+feedback loop then not just the harness
+of your business process. that harness
+can be used for essentially capturing
+your alpha and training it and owning it
+inside of your platform and oh yeah you
+can take those models and deploy them
+wherever you want you can expose them to
+endpoints like that's the other thing
+when we talk about sovereignty is it's
+not sovereignty inside of Palunteer it's
+you should be able to take anything you
+put in palenteer out models data
+everything else um and so the
+sovereignty truly comes like when we
+talk about it it should be how do I own
+the decision rights right for my
+business, whether it's Palanteer or
+anybody else, um they shouldn't lock you
+in.
+&gt;&gt; Yeah. And I think that's one of the
+things that
+seems like a big difference between the
+way that Palunteer is operating and the
+way that, you know, the Frontier Labs
+would be operating. I don't know how,
+you know, it's TBD on what XAI is going
+to do. Um but at least with SAM and
+Dario and OpenAI and Enthropic and
+probably even Google to a certain extent
+you know the data of your business is
+something that they view as training
+data so that they can get smarter. Um
+and that kind of puts them in a con
+conflicting relationship with their
+clients. Whereas Palunteer like that's
+your customer's data you don't care
+about. you're not trying to extract any
+value to yourselves from that data. Um,
+and so you can have this collaborative
+relationship with your clients where it
+is a very win-win, you know, infinite
+game dynamic. Um, and so I think that's
+uh, you know, that's one of the reasons
+why
+I am so excited about the long-term
+future of Palunteer as a business is
+because I think that approach to working
+with enterprise is going to yield a lot
+more compounding results over the long
+term um, than spreading fear and uh,
+&gt;&gt; yeah, you know, it comes back it's like
+B, you know, this The other part is big
+enterprises can can you know use their
+leverage to make sure they have
+contractual ZDR or they can do other
+things to try to protect them on the
+spectrum right but it's the it's the
+hundred million the $500 million company
+and below that can't do that and but
+they want this intelligence to compete
+and so they're giving their alpha away
+to everybody. Um right and so that
+that's also the concern is maybe maybe
+the labs are not getting you know the
+big big companies data because they have
+ZDR in place etc but everybody else you
+know what is that look like and so that
+that's where it's like a fundamental
+principle for us like we operate on
+first principles like it it should be
+the customer's data and theirs alone we
+should not monetize it it comes back to
+&gt;&gt; you know the the whole era of social
+media and like if I'm not paying for the
+product or it's a reduced cost am I the
+Um, right. And I think we think about
+that at the the tokconomics piece of
+this as well.
+&gt;&gt; Yeah. So, why don't we wrap up on this
+question? Um, you know, there's still I
+think the narrative has started to crack
+somewhat on, you know, white collar,
+bloodbath, jobs are going away. Um, but
+as someone who has a lot of frontline
+experience in how this is impacting
+businesses across the world, you know,
+what are you guys seeing in terms of
+the need for humans to work inside of
+these businesses that are adopting
+ontology, they're adopting AIP, they're
+adopting Foundry, they're empowering
+their businesses, you know, they're able
+to multiply the decisions
+in both quality and quantity. Um, where
+does that leave the humans at the end of
+the day?
+&gt;&gt; Yeah, I we we're we're very much on the
+side of the the worker um here and and
+there's a couple kind of things I can
+say here. Um
+like one we we put our money where our
+mouth is. We we've we've trained over a
+thousand people through our American
+Tech Fellowship and we're expanding more
+and more of that. So, our American Tech
+Fellowship is for anybody, whether it be
+veterans, frontline workers, uh, office
+workers, anybody can sign up. Um, and
+we're putting on free training for them.
+I think it's over about 8 to 12 weeks.
+Um, and we teach them how to utilize AI
+for their jobs and they build real
+things for them, for themselves and
+their companies. Um, so we just actually
+had an event uh the American Builder
+Summit uh a couple weeks ago uh that
+Shawn was talking at as well and uh
+showed off kind of the work that these
+people on the front line are doing is
+actually um the kind of inverse you know
+as we're talking about the inverse of
+what the the the hysteria and that the
+news likes to put out. Um I think of
+cutting jobs as the goal is a like a
+very um short-term vision. It's like
+maybe in the short term I'll cut these
+jobs or I'll do this thing. You can only
+cut your way so far, but you have
+infinite growth possibilities and and
+and the real question is how can I make
+my best people do a 10 times 100 times
+more and more effective? How can they
+have be more strategic driving more and
+more revenue? That is an infinite sum
+game, right? And I think that's the our
+view of it is how do we give them the
+Iron Man suit to essentially be the
+superhero and and that's our goal out of
+the product is and and this is this goes
+back to the origins of Palunteer and
+like Sham gave a talk I think in like
+2010 at a TED talk it was on human
+computer symbiosis that is literally the
+basis is humans and AI working together
+to go do um
+actually it's the oneplus 1 equals 3
+piece of this right it's like actually
+humans with AI is net better I think
+there was the
+um Kasparov like chess match with big
+blue and others where actually the the
+humans with AI beat both big blue and
+the the grandmaster and so it's it's
+really the combination of those two
+things that we see as the the net
+benefit and so like we're doing that we
+also have our um different fellowships
+whether that be um you know high school
+um we just did our uh our Valley Forge
+grant for high schoolers so high
+schoolers can come build um for a summer
+they get I think a $10,000
+grant to come build. Um, some of them
+get job offers and come right here. More
+and more I'm seeing people that were
+going to MIT, Stanford, Cornell
+deferring or stopping going to these
+schools and coming and working at
+Palanteer because they see they have
+access to the problems, the learning and
+they can go accelerate things. So
+there's there's multiple levels to this
+whether it's the frontline worker, it's
+the high schooler, it's the you know the
+college grad or then I spend a lot of
+time also with executives helping them
+understand how to frame this, how to
+think about it in their company. Um
+there's a lot of dimensions to it. I
+think net net though is we need more
+people, more manufacturing, more re
+re-industrialization.
+um really is like the defense of our of
+our way of life and everything is comes
+back to how do I enable people to build
+and do more with less resources.
+&gt;&gt; Awesome. Well, this has been a great
+conversation, Chad. Thanks for spending
+the time with us today and I want to
+respect your time and be able to get you
+out of here. Um yeah, is there any last
+parting thoughts that you want to leave
+the audience with? I think the biggest
+thing is like, you know, do the homework
+yourself among what Palanteer does, what
+we don't do, but also like hit me up on
+on X. I'll answer questions on X. Um
+whether they're technical, business
+related, whatever it is. Um happy to
+engage with people and any in any of the
+open honest conversations. I think
+that's the the big thing you'll find
+about Palunteer is that we're very open
+and want to have the conversation if
+people are willing to ask or talk about
+it. And I think that's the big thing is
+uh you know like engage uh please with
+us on you know and happy to to have
+conversations.
+&gt;&gt; Excellent. Well, you've been just a
+tremendous uh resource for us today and
+I'm excited you know about the future of
+the company and what you're building and
+yeah the implications like you said for
+just the western way of life. It's
+important that we kind of get out of our
+own way and fix some of the foundational
+problems of how our society is working
+right now. And I think a big part of
+that is in enterprises. And uh so yeah,
+allowing work to feel more human uh
+allowing people to have the tools to get
+more done. Um and yeah, in a way that's
+unconstrained. You know, I I'm sure that
+the people who have deep narrow
+expertise
+feel really good when they can make a
+decision that actually is in broader
+service of the overall enterprise in a
+way, you know, that is informed by that
+thousand foot view. um that that you
+know knowing that when they go home at
+the end of the day that they made a
+significant positive impact on their
+business and then their clients and
+customers and everything
+&gt;&gt; and they get even a better feedback
+loop. So when they see that they're
+they're actually their creativity is
+unlocked because they're like oo what
+else could I do in my with my deep
+technical expertise that impacts even in
+a better way next time. And so it
+actually unlocks that human agency and
+creativity.
+&gt;&gt; Yes. And I think that's yeah one of the
+very underutilized
+um and underappreciated components of
+all of this is that we have yeah so much
+I think frontline
+creativity agency um and engagement you
+know it's just like that's a much better
+experience
+with how you spend 40 plus hours a week
+than you know I have I just do my part I
+have no idea what impact it has on
+anything else. And I get 10 things right
+and no one says a thing, I get one thing
+wrong. People are breathing down my
+neck. Um, and yeah, that's just uh a
+significantly improved experience. And
+then that, you know, has cascading
+effects when they feel better at work,
+they'll feel better at home. Uh they can
+be more engaged in their community. Um,
+just have a much better quality of life
+and a much better impact on all the
+people that are under their influence.
+So yeah, it's awesome what you guys do.
+Really appreciate it. Really appreciate
+you. Uh so I think we're going to leave
+it there. Thank you everyone for
+sticking with us and we will catch you
+later.
+&gt;&gt; Thanks.
