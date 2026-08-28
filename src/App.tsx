@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
-import { track } from './analytics'
+import { track, trackArticleOpen } from './analytics'
 import newsData from './data/news.json'
 import { type Article, type NewsData, CHANNEL_META } from './types'
 import { ArticleDetail } from './components/Feed/ArticleDetail'
@@ -145,7 +145,7 @@ export default function App() {
       }
     }
     setSelectedArticle(article)
-    track('Article Open', { channel: article.channel, title: article.title.slice(0, 80) })
+    trackArticleOpen(article.channel, { title: article.title.slice(0, 80) })
     if (article.type === 'executive') {
       track('Exec Summary Open', { date: article.date })
     } else if (article.type === 'weekly') {
@@ -226,7 +226,7 @@ export default function App() {
     }
     const tesla = teslaFromPath(window.location.pathname)
     if (tesla) {
-      track('Article Open', { channel: 'tesla', title: tesla.title.slice(0, 80), location: 'deep-link' })
+      trackArticleOpen('tesla', { title: tesla.title.slice(0, 80), location: 'deep-link' })
     }
   }, [])
 

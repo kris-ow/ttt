@@ -174,6 +174,26 @@ async function main() {
   const targetDate = getTargetDate();
   console.log(`\n=== Building executive summary for ${targetDate} ===`);
 
+  // The 07:15 UTC run passes --skip-if-exists so it only BACKFILLS a brief the
+  // 00:15 run failed to produce, instead of regenerating one that already exists.
+  // Halves the brief's cost (it was generated twice a day: 53 runs over 28 days
+  // in 2026-08) while keeping the availability guarantee the Weekly Brief needs —
+  // weekly-summary.js reads these files directly and silently skips the week if
+  // fewer than 3 exist. Plain removal of the 07:15 pass would have lost briefs
+  // twice in the week of 2026-08-24 alone: GitHub skipped the 00:15 slot outright
+  // on 08-27, and mis-attributed the delayed 08-28 run so the step never ran.
+  if (process.argv.includes('--skip-if-exists')) {
+    const existingPath = path.join(
+      NEWS_DIR,
+      `${dateToFilenameSlug(targetDate)}_ttt_00_executive_summary.txt`
+    );
+    if (fs.existsSync(existingPath)) {
+      console.log(`Brief already exists (${path.basename(existingPath)}) — skipping regeneration.`);
+      return;
+    }
+    console.log('No brief for target date yet — backfilling.');
+  }
+
   const sources = collectDailySummaries(targetDate);
   console.log(`Found ${sources.length} source summary file(s)`);
 

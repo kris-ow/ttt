@@ -97,6 +97,16 @@ const articles = files.map(filename => {
     ...(isWeekly ? { type: 'weekly' } : isExec ? { type: 'executive' } : {}),
   };
 }).filter(article => {
+  // Daily Tesla Briefs are no longer published to the feed (2026-08-28). They are
+  // still generated every day because weekly-summary.js builds the Weekly Brief
+  // ONLY from news/*_ttt_00_executive_summary.txt — the daily briefs compress a
+  // week of raw summaries ~8.5x (438KB -> 51KB), which is why the weekly costs
+  // ~$0.48/mo. They are now a pipeline intermediate, not reader-facing: opens had
+  // fallen to ~7% of visitors (25 in 2026-08, down from 78 in May).
+  // The files stay in news/; only feed visibility changes, so this is reversible
+  // by deleting this check. Weekly briefs (_ttt_99_) are unaffected.
+  if (article.filename.includes('_ttt_00_executive_summary')) return false;
+
   // Moderation gate: tangential/off-topic summaries (or manual excludes) stay
   // in news/ but never reach the feed until approved in the admin console.
   const hidden = isHiddenSummary(article.filename, article.relevance, moderation);

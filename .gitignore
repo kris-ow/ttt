@@ -55,3 +55,7 @@ scripts/pipeline/costs-summary.txt
 
 # Quarterly shareholder deck PDFs (large binaries, source for extract-quarterly.py)
 data/quarterly/
+
+# Wrangler local cache (created by any `npx wrangler` invocation)
+.wrangler/
+worker/**/.wrangler/

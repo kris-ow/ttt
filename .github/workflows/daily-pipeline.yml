@@ -181,9 +181,19 @@ jobs:
             });
             console.log(`${res.created ? 'Created' : 'Updated'} moderation queue issue #${res.number} — ${pending.length} pending`);
 
-      # Step 2: Build executive summary on the early UTC runs that feed the 6 AM CET reader
-      # 00:15 UTC generates the recap of yesterday; 07:15 UTC regenerates if late material arrived.
-      # The 10:15, 17:45, and Monday 05:45 runs skip this step.
+      # Step 2: Build the Daily Tesla Brief. Since 2026-08-28 this is a pipeline
+      # INTERMEDIATE, not reader-facing — build-news.js keeps it out of the feed, but
+      # weekly-summary.js builds the Weekly Brief only from these files, so it must
+      # keep running daily.
+      # 00:15 UTC generates the recap of yesterday. 07:15 UTC used to REGENERATE it to
+      # fold in late material; it now only BACKFILLS (--skip-if-exists) when the 00:15
+      # run produced nothing. That halves the brief's cost (~$3.53 -> ~$1.75/mo; it was
+      # running 53x over 28 days in 2026-08) while keeping the redundancy the weekly
+      # depends on — GitHub skipped the 00:15 slot entirely on 2026-08-27, and
+      # mis-attributed the delayed 08-28 run so this step never fired. Dropping 07:15
+      # outright would have lost two briefs in one week.
+      # The 10:15, 17:45, and Monday 05:45 runs skip this step. workflow_dispatch still
+      # forces a full regeneration.
       # Gate on github.event.schedule (the cron expression that triggered the run), not wall-clock
       # time — Actions cron is routinely delayed 3+ hours, which silently skipped the gate previously.
       - name: Build executive summary
@@ -191,7 +201,12 @@ jobs:
         if: (github.event_name == 'workflow_dispatch' && inputs.skip_exec != true) || github.event.schedule == '15 0 * * *' || github.event.schedule == '15 7 * * *'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node scripts/pipeline/exec-summary.js
+        run: |
+          if [ "${{ github.event.schedule }}" = "15 7 * * *" ]; then
+            node scripts/pipeline/exec-summary.js --skip-if-exists
+          else
+            node scripts/pipeline/exec-summary.js
+          fi
 
       # Step 2b: Build weekly brief on the Monday-only 05:45 UTC cron (covers Mon-Sun of prior week).
       # Dedicated cron `45 5 * * 1` so the weekly fires fast without dragging the daily
