@@ -1,0 +1,33 @@
+Channel:     farzad-fm
+Title:       No One Sees What SpaceX & NVIDIA Are Building
+Published:   2026-08-28 14:20 UTC
+Summarized:  2026-08-28 15:04:43 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_013B599GYa2jYVJfY3aTFVsn
+Cost:        $0.03154 (16344 in / 3040 out tokens)
+Relevance:   core — the video centers on SpaceX's exclusive Nvidia compute partnership, orbital AI compute plans, and the Terafab chip manufacturing venture, all directly bearing on the SpaceX investment thesis.
+Topic:       spacex
+Categories:  SpaceX — AI & Compute, SpaceX — Starlink, Market & Competition
+────────────────────────────────────────────────────────────
+
+This video argues that SpaceX and Nvidia are building a deeply intertwined AI compute strategy spanning orbital satellites, terrestrial data centers, and a new chip manufacturing venture (Terafab), and that most observers are underestimating how large and structurally important this partnership could become.
+
+## SpaceX — AI & Compute
+1. **Exclusive Nvidia partnership announced on SpaceX's first earnings call:** On August 4th, Elon Musk said SpaceX had decided to build exclusively on Nvidia, calling Nvidia's Vera Rubin system "the best AI computer" and describing a close multi-level partnership between the companies.
+2. **Starlink's planned AI satellite will use an optimized Vera Rubin NVL-72 computer:** SpaceX is working with Nvidia to design the compute payload for an AI satellite, adapting Nvidia's giant multi-GPU NVL-72 system for orbital deployment; Musk said the first launch should begin next year, per the host's reading of the announcement.
+3. **Aggressive compute buildout targets:** SpaceX expects to finish this year with more than 2 gigawatts of AI compute, with Musk saying the total could reach roughly 10 gigawatts by the end of next year — about a third of total AI compute available today, according to the host. SpaceX's stated long-term goal is deploying up to 100 gigawatts of compute to orbit annually, more than double current global build-out, requiring roughly 1 million metric tons launched to orbit per year at the company's cited target of about 100 kilowatts of compute per metric ton.
+4. **Space-specific chip design challenges:** Unlike terrestrial data centers, orbital compute must survive launch vibration and radiation, dissipate heat via radiators (no air cooling), run on solar power, and tolerate no physical repairs — requiring redundancy throughout the network. The host frames this as Nvidia and SpaceX co-designing tradeoffs, with lessons potentially flowing both ways between the orbital and terrestrial versions of the system.
+5. **Terafab: SpaceX/Tesla chip manufacturing venture:** SpaceX pointed to Terafab — a proposed chip manufacturing project involving SpaceX and Tesla, with Intel expected to contribute design, fabrication, and packaging expertise — as its plan to address AI processor supply constraints. The stated long-term goal is 1 terawatt (1,000 gigawatts) of compute hardware per year, which the host describes as roughly 20 times today's combined global AI compute capacity, produced by a single company. Terafab is envisioned to make masks, logic chips, memory chips, and advanced packaging in one closed loop.
+6. **Terafab's likely role relative to TSMC:** The host speculates Terafab will initially focus on packaging and system-level manufacturing rather than the most advanced GPU fabrication (which TSMC would retain), potentially evolving into a source for custom Nvidia-designed modules and eventually a broader manufacturing competitor to TSMC if it can prove yield — this is presented as the host's projected scenario, not a confirmed roadmap.
+7. **Supply chain concentration risk:** The host notes Nvidia is fabless and depends on TSMC/Samsung for wafers and SK Hynix/Micron/Samsung for memory, with advanced chip manufacturing concentrated in Taiwan; risks cited include geopolitical conflict, earthquakes, water/power shortages, and export restrictions (e.g., China's restricted access to TSMC chips), framing Terafab as a risk-diversification move rather than full independence, since it would still rely on ASML lithography tools, German optics, Japanese materials, and Korean/US memory expertise.
+8. **Nvidia's $500B+ financing platform:** Nvidia signed memorandums of understanding with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to create financing platforms that could mobilize more than $500 billion for AI infrastructure, aiming to make compute a financeable asset class analogous to aircraft or power-plant financing.
+9. **Potential deepening of the Nvidia-SpaceX relationship:** The host outlines possible paths including Nvidia investing in SpaceX or Terafab, prepaying for packaging/manufacturing, financing equipment, licensing designs, or guaranteeing demand for a Terafab production line — alongside a noted tension that Musk wants control while Nvidia wants to remain the compute standard, with a hybrid model (custom Elon-designed chips alongside Nvidia hardware, both made at Terafab) seen as the most likely compromise.
+
+Notable quotes and data:
+- "SpaceX had decided to build exclusively on Nvidia" — per Musk on SpaceX's first earnings call (Aug 4)
+- SpaceX: >2 gigawatts of AI compute by end of this year; Musk projects ~10 gigawatts by end of next year
+- Long-term SpaceX orbital compute goal: up to 100 gigawatts deployed per year, ~100 kilowatts per metric ton, ~1 million metric tons to orbit annually
+- Terafab long-term target: 1 terawatt (1,000 GW) of compute hardware per year, involving SpaceX, Tesla, and Intel
+- ASML: fewer than 300 EUV lithography machines built in total; planned production of no more than 60/year
+- Nvidia-linked financing MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR: could mobilize $500B+ for AI infrastructure
+- "It's a freaking hellhole out there in space, okay?" — host, on orbital deployment challenges
