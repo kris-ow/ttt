@@ -34,6 +34,23 @@ loadDotEnv();
 
 // ── Pipeline Configuration ───────────────────────────────
 
+// Channels dropped from coverage. Transcripts whose filename carries one of these
+// channel slugs are never summarized, so no API call is billed for them even if a
+// stale Mac Mini job keeps pushing them. The authoritative fix is removing the
+// channel from the Mac Mini's yt-transcripts config; this is the repo-side guard.
+//
+// munrolive (2026-08-28): last piece to clear the relevance gate was 2026-07-08.
+// Everything since is non-Tesla teardowns (power-tool batteries, third-party
+// robot hands) that get hidden anyway — $0.06 spent in 2026-08 for 0 published
+// articles. Its 31 existing articles stay in the feed; only the filter entry was
+// hidden (FILTER_HIDDEN_CHANNELS in src/App.tsx) and CHANNEL_META keeps its
+// display name so those articles still render correctly.
+//
+// KEEP IN SYNC with the skip list in .github/workflows/freshness-check.yml —
+// that job has its own bash loop and would otherwise report every skipped
+// transcript as a permanent phantom gap (the bug *_reddit_bullets.txt caused).
+export const RETIRED_CHANNELS = new Set(['munrolive']);
+
 // Categories for classification (maps to Knowledge Base + valuation model inputs)
 export const CATEGORIES = [
   'Autonomous Driving',

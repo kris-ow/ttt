@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 import { loadStockBlock, getStockBlock } from './stock-data.js';
 
@@ -55,6 +55,15 @@ function findUnsummarizedTranscripts() {
     // Check if a matching summary already exists
     const summaryName = file.replace('.txt', '_summary.txt');
     if (summaryFiles.has(summaryName)) continue;
+
+    // Dropped channels are never summarized, so a stale Mac Mini job pushing
+    // their transcripts costs nothing. Same filename convention build-news.js
+    // uses: YYYYMMDD_<channel>_...
+    const retiredMatch = file.match(/^\d{8}_([^_]+)/);
+    if (retiredMatch && RETIRED_CHANNELS.has(retiredMatch[1])) {
+      console.log(`  Skipping ${file}: channel '${retiredMatch[1]}' is retired`);
+      continue;
+    }
 
     // Parse the transcript file header
     const content = fs.readFileSync(path.join(NEWS_DIR, file), 'utf-8');

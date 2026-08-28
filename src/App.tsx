@@ -25,6 +25,16 @@ const DEFAULT_TITLE = 'The Tesla Thesis - Tesla Intelligence Dashboard'
 
 // 'robotaxi' tile hidden 2026-07-03: RobotaxiTracker.com frozen since 05-09,
 // the card only showed stale counts. Component kept; re-add here to restore.
+// Channels hidden from the feed's FILTER dropdown only — their existing articles
+// still appear under ALL, and nothing is deleted. The list is otherwise derived
+// from whatever channels are present in news.json, so a dead channel lingers in
+// the filter forever once it has published anything.
+// munrolive (2026-08-28): last article that cleared moderation was 2026-07-08;
+// everything since is non-Tesla teardowns (power-tool batteries, third-party
+// robot hands) that the relevance gate hides, so the entry led only to a stale
+// archive of 31 pieces.
+const FILTER_HIDDEN_CHANNELS = new Set(['munrolive'])
+
 const MOBILE_TILE_TABS = ['stock', 'merger'] as const
 type MobileTileTab = (typeof MOBILE_TILE_TABS)[number]
 
@@ -95,6 +105,7 @@ export default function App() {
   }, [])
   const channels = useMemo(() => {
     const unique = [...new Set(data.articles.map(a => a.channel))]
+      .filter(ch => !FILTER_HIDDEN_CHANNELS.has(ch))
     return unique.sort((a, b) => {
       if (a === 'tesla') return -1
       if (b === 'tesla') return 1

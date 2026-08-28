@@ -30,6 +30,12 @@ jobs:
             # transcript — it is never summarized by design (build-news.js ignores it too).
             # Without this it reported one phantom gap per week from 2026-07-06 onward.
             if [[ "$f" == *_reddit_bullets.txt ]]; then continue; fi
+            # Retired channels are deliberately never summarized (RETIRED_CHANNELS in
+            # scripts/pipeline/config.js — KEEP THIS LIST IN SYNC). Without the skip they
+            # would be reported as permanent gaps, the same phantom-gap bug as above.
+            case "$(basename "$f")" in
+              [0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_munrolive_*) continue ;;
+            esac
             if [[ "$f" != *_summary.txt ]] && [[ ! -f "${base}_summary.txt" ]]; then
               stale_files="$stale_files\n- \`$(basename $f)\`"
               stale_count=$((stale_count + 1))
