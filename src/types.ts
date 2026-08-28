@@ -32,6 +32,7 @@ export const CHANNEL_META: Record<string, { name: string; platform: string; colo
   electrified: { name: 'Dillon Loomis', platform: 'YouTube', color: '#06b6d4', bias: 'LEAN BULL' },
   'farzad-fm': { name: 'Farzad', platform: 'YouTube', color: '#ec4899', bias: 'BULL' },
   futureaza: { name: 'FutureAzA', platform: 'YouTube', color: '#3b82f6', bias: 'LEAN BULL' },
+  hansnelson: { name: 'Hans Nelson', platform: 'YouTube', color: '#d946ef', bias: 'LEAN BULL' },
   investingagainstthegrain: { name: 'Nick Gibbs', platform: 'YouTube', color: '#8b5cf6', bias: 'LEAN BULL' },
   jobhakdi: { name: 'Jo Bhakdi', platform: 'YouTube', color: '#f59e0b', bias: 'BULL' },
   munrolive: { name: 'Munro Live', platform: 'YouTube', color: '#a3e635', bias: 'NEUTRAL' },
