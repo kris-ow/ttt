@@ -1,0 +1,47 @@
+Channel:     electrified
+Title:       Tesla's "Final Boss" You've Never Heard Of / Starbase, LA by the Numbers ⚡️
+Published:   2026-08-28 22:56 UTC
+Summarized:  2026-08-29 00:07:01 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01EZ5DoEobj4kPrwsYbG3E6s
+Cost:        $0.03871 (17955 in / 4152 out tokens)
+Relevance:   core — The video is substantively about SpaceX's Starbase Louisiana site, Starlink capacity/constellation economics, and a detailed technical explanation of an FSD limitation, all directly bearing on the Tesla/SpaceX investment theses.
+Topic:       both
+Categories:  SpaceX — Starlink, SpaceX — Starship, Autonomous Driving, Robotaxi, Electric Vehicles
+────────────────────────────────────────────────────────────
+
+This episode of Electrified covers three main threads: an update on Tesla Semi/Robotaxi tracker data, a deep-dive analysis of what Starbase Louisiana means for Starlink's satellite capacity and launch cadence, and a technical explanation (via a segment from Dr. Know-it-all) of why Tesla's FSD struggles to detect thin horizontal objects like chains and railroad crossing bars.
+
+## Robotaxi
+1. **Texas Robotaxi fleet registrations climb:** Per the host's dummus.com tracker, Tesla now has 270 vehicles registered for Robotaxi in Texas, with 89 added in August alone, all still Model Y; the host expects Cybercabs to begin being added to the registered fleet in the coming weeks.
+
+## Electrified — Business Updates
+1. **Tesla Semi order tracker update:** The host's tracker shows 1,267 verified Tesla Semi orders. Citing a comment this week from an Einride executive, roughly 75 of a previously reported 500-unit order are expected to be delivered this year, with the remainder of that 500 now targeted for delivery by the end of next year — pulled forward from an earlier expectation that deliveries would run through 2028.
+
+## SpaceX — Starship
+1. **Starbase Louisiana's launch-site advantages:** Per Musk, Starbase Louisiana will eventually host over a dozen launch towers enabling more than 30 Starship flights per day, making it the largest launch site on Earth. The site (Pakan Island) sits roughly 30 miles from the nearest town and 50 miles from a major city — far more remote than Boca Chica (about 5 miles from South Padre Island, 15 miles from Brownsville) — reducing noise/disruption concerns as launch cadence scales.
+2. **Wide azimuth range and on-site methane production:** Louisiana's Gulf-facing location allows a wide range of launch azimuths (including a near-due-south ~190° polar-orbit trajectory), unlike Cape Canaveral or Boca Chica. The site is also near the Henry Hub gas hub, enabling on-site methane/LOX production versus Boca Chica's current trucked/barged fuel supply (with SpaceX's "Starpipe" as an interim fix there); the host notes that sustaining even 1,000 Starship flights/year would require roughly a million tons of methane and 3.5 million tons of liquid oxygen, necessitating industrial-scale gas infrastructure.
+3. **First-mover land advantage:** The host frames Starbase Louisiana as giving SpaceX a scarce, hard-to-replicate site (coastline, empty land, azimuth range, and gas access simultaneously), analogous to Tesla's early Supercharger network advantage, reinforcing the host's view of SpaceX's competitive dominance over the next five years (with the caveat that timelines will likely slip).
+4. **Falcon 9 Starlink launches from Florida reportedly ending:** The host cites a SpaceX-affiliated source saying a recent Falcon 9 mission from pad 40 was the last planned Falcon 9 Starlink launch from Florida, with future Florida Starlink missions shifting to Starship as Starship pads there near completion; the host flags active debate over whether this transition is premature, comparing it to Tesla's camera-only sensor transition.
+
+## SpaceX — Starlink
+1. **Current constellation capacity framed via downlink, not satellite count:** The host estimates the operational Starlink constellation at roughly 11,000 satellites and roughly 850 terabits/second of downlink capacity, translating to about 71 Mbps per subscriber if evenly distributed across roughly 12 million subscribers (with heavy caveats around weather, gateways, backhaul, and interference).
+2. **V3 satellites and Starship's capacity leap:** Each Starship launch can carry 60 Starlink V3 satellites, each with 1 terabit/second nameplate downlink — 60 Tbps per launch, versus roughly 3 Tbps per Falcon 9/V2 Mini launch, consistent with SpaceX's stated ~20x capacity gain per launch. SpaceX has said it needs on the order of 1,000 V3 satellites in orbit to meaningfully change constellation performance, targeted for operational status around Q2 next year.
+3. **Regulatory headroom is the binding constraint:** SpaceX is authorized for up to about 19,000 satellites combined under Gen 1 and Gen 2 approvals, with roughly 3,200 Gen 1 and 7,900 Gen 2 satellites currently operational; since Gen 1 is a sunset category, remaining growth room is about 7,100 satellites under the current 15,000 Gen 2 cap. New requests this year seek up to 100,000 (Gen 3, largely Starlink) and up to 1 million satellites (largely for Star Mind/orbital data centers), but both remain unapproved requests, not authorizations; new "Part 100" rules may speed review.
+4. **Scenario modeling of launch cadence vs. Starlink growth:** At 100 Starship flights/year (50% assumed Starlink share), the host calculates about 3,000 new V3 satellites and 3,000 Tbps added — 3.5x today's total constellation capacity in one year, still within current Gen 2 headroom. At 1,000 flights/year, that becomes 30,000 satellites/30,000 Tbps (35x today's capacity); at 5,000 flights/year, 150,000 satellites/150,000 Tbps (176x), a scale exceeding any current SpaceX authorization request. The host stresses these figures are illustrative, not a real growth path, and notes SpaceX would eventually need roughly 500 Starship flights/year just to replace de-orbiting satellites at constellation saturation.
+5. **Every Cybercab will include a Starlink unit:** The host reiterates that every Cybercab will have a built-in Starlink unit, though scaling Cybercab to millions of units will take years.
+
+## Autonomous Driving
+1. **Technical explanation for FSD's thin-horizontal-object blind spot:** Citing an explanation from a source identified as Dr. Know-it-all, the video details why convolutional neural networks used in FSD struggle to detect thin horizontal objects (chains, caution tape, railroad crossing bars, HOV lane bars): pooling/downsampling operations that compress pixel grids tend to preserve and even amplify vertical line signals but can eliminate horizontal line signals entirely if they fall between pooled rows. Additional factors compound the problem: stereo-camera parallax strongly signals vertical lines but not horizontal ones; a horizontal line at bumper height (potentially just millimeters thick) can fall between LIDAR/voxel resolution steps; horizontal road markings create clutter the network learns to ignore as false positives; and such objects are rare and likely under-labeled in training data. The source states this remains an open, unsolved problem even in academic research, not just in Tesla's implementation. The host adds that Grok was asked to research potential solutions and found none identified either in research or practice, and expresses hope that Tesla's next major FSD version release notes will reveal new technical approaches to this issue.
+
+Notable quotes and data:
+- Tesla Semi tracker: 1,267 verified orders; per an Einride executive, ~75 of 500 ordered units expected delivered this year, remainder targeted by end of next year (previously expected through 2028).
+- Texas Robotaxi registered fleet: 270 vehicles, +89 in August, all Model Y so far.
+- Starbase Louisiana: over a dozen planned launch towers, target of 30+ Starship flights/day; site ~30 miles from nearest town, ~50 miles from a major city.
+- Boca Chica comparison: ~5 miles from South Padre Island, ~15 miles from Brownsville.
+- Starlink current estimate: ~11,000 satellites, ~850 Tbps downlink capacity, ~12 million subscribers, ~71 Mbps/user (evenly distributed, hypothetical).
+- Each Starship launch: 60 V3 satellites × 1 Tbps = 60 Tbps added per launch, vs. ~3 Tbps per Falcon 9/V2 Mini launch (~20x per SpaceX).
+- SpaceX satellite authorization: ~19,000 total approved (Gen 1 + Gen 2); ~3,200 Gen 1 and ~7,900 Gen 2 operational; ~7,100 remaining headroom under the 15,000 Gen 2 cap; pending requests for 100,000 (Gen 3) and 1 million (Star Mind) satellites.
+- Scenario: 100 Starship flights/year (50 Starlink) → +3,000 V3 sats/+3,000 Tbps, ~3.5x current constellation capacity in one year.
+- "It's very difficult for the car to actually see that because a horizontal line does not provide the parallax effects that a vertical line does." — Dr. Know-it-all
+- TSLA closed at $348.75, down 1.71% on the day; SPCX closed at $141.50, up (percentage garbled in transcript, omitted) while the Nasdaq 100 was down 0.7%.
