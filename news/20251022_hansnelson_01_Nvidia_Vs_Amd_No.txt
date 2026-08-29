@@ -1,0 +1,1543 @@
+Channel:     hansnelson
+Title:       NVIDIA vs. AMD: No One Is Telling You This
+URL:         https://www.youtube.com/watch?v=qlsAwYAvbls
+Published:   2025-10-22 00:00 UTC
+Fetched:     2026-08-29 04:00 UTC
+
+────────────────────────────────────────────────────────────
+
+The world's GDP, I think, is something
+like $50 trillion, right? You add up all
+the productivity of all the countries in
+the world, you know, put together, I
+think, is about $50 trillion. And you
+just say 10% of that will get augmented
+by AI per year, that's a $5 trillion
+market. I mean, that's bananas, right?
+If you ever told me that a company, any
+company, would get a deal for 20 times
+their annual sales, right, of any
+product, I would be like, that is crazy.
+And then if you said, "Oh, but they only
+have four years to deliver it." I'd be
+like, "That's that's nuts." So the real
+answer is it's not Nvidia versus AMD at
+all. You shouldn't think about like one
+is good and one is bad. So these are all
+very skilled workers that are not about
+to get replaced by AI, right? Like we
+will always need plumbers, electricians,
+carpenters, general contractors, etc. If
+Jensen misses by 50%, he's got a $10
+trillion company. Oh, the market's still
+so insanely large. So it's like when you
+play those games, just cut the number in
+half. Would you still bet on it? So
+&gt;&gt; yeah, you're you're a linear machine in
+an exponential
+&gt;&gt; in an exponential world. Fantastic.
+&gt;&gt; All right, so today I have Alex from
+ticker symbol U with me and he is one of
+the biggest YouTubers in the AI hardware
+space and has been for a number of
+years. through a combination of good
+fortune and wise decisions about things
+to focus on in his life. He was very
+well positioned in artificial
+intelligence hardware technology here
+for basically the entire major runup in
+excitement around AI hardware that we've
+seen since chat GPT and uh the launch of
+that and the results that that has
+driven for Nvidia. And so he's actually
+made almost 900% returns since chat GPT
+launched in December of 2022. And I
+wanted to get him on today so that we
+can dive into one of the, you know, big
+hot button topics in AI hardware today.
+And that is Nvidia versus AMD. And so I
+want to turn the first question over to
+you, Alex. What is the highlevel
+overview of Nvidia versus AMD? like
+what's your 10,000 foot view on these
+two companies, the market they're going
+after and how investors who are thinking
+about where they want to allocate their
+money between these two names like what
+are the things that they need to be
+thinking about?
+&gt;&gt; Yeah. So, it's a very interesting
+question and I've gotten this answer
+wrong so many times like on my journey
+to like figure this out myself. So, let
+me give you the 10,000 view first, but
+then we should probably dive into some
+of the nuance, right? So the real answer
+is it's not Nvidia versus AMD at all.
+You shouldn't think about like one is
+good and one is bad. So if you're on
+camp Nvidia, AMD is not the enemy. If
+you're in camp AMD, Nvidia is not the
+enemy because the market is growing so
+fast that there's more than enough room
+for both of them. They will both be
+supply limited, not demand limited. And
+as soon as you're supply limited, you do
+not care about the competition, right?
+because you're not trying to race to the
+bottom on price for example to outsell.
+It's not like cars for example, right?
+Where you want to offer the discount
+that gets people to buy your car because
+then they won't buy your competitor's
+car, right? Um GPUs do not work like
+that right now, especially data center
+GPUs. Every chip that AMD will make will
+get sold. Every chip AMD Nvidia will
+make will get sold. So there there is in
+essence no competition between them. So,
+it sounds to me like you're saying
+there's not an AI bubble and uh yeah,
+I'm just curious like why is there so
+much demand and why is that demand
+outstripping the supply of GPUs right
+now?
+&gt;&gt; Yeah. So, I think it's for a wide
+variety of reasons. I think um the
+biggest reason is AI is going to be
+considered a general purpose technology
+if it's not already considered so. So
+when I say general purpose technology, I
+mean things like the internet, the
+printing press, the PC, the motor,
+right, the tractor, things that like
+transcend one genre of product and are
+largely useful everywhere, right? So
+that's the first thing. The reason that
+works is because AI can be infused
+everywhere, right? Not just consumer
+products, but also different enterprise
+pieces of software pretty much across
+the board, right? from genetics and
+biology to sort of you know insert any
+software category here. You can add an
+AI agent to help you do that job more
+productively, faster, cheaper, etc.
+Right? So, uh, I think the demand is
+there. A because it's o across a lot of
+different categories, but B because it
+turns out that we're going to be and
+we're going to use way more tokens per
+prompt than we originally were in 2022.
+So, if you remember earlier this year,
+um, a company called DeepSeek from China
+released a model called R1 and then R2
+and these were reasoning models. So now
+the instead of just like asking a
+question and it generating an answer,
+the model will actually spend time which
+means spending tokens thinking about its
+response, double-checking it answer,
+going deeper, breaking things down into
+step by step, maybe even calling other
+subm models and things like that. All of
+that costs tokens to do. So the number
+of tokens required to serve every prompt
+has gone up dramatically, if that makes
+sense.
+Absolutely. Um and one of the things
+that I think is you know somewhat
+confusing in this space is that we call
+CPUs like general purpose computing.
+&gt;&gt; Yep.
+&gt;&gt; And we call GPUs accelerated computing.
+&gt;&gt; Yes.
+&gt;&gt; And you know that kind of seems like it
+implies that accelerated computing is a
+more niche workload. It's a more niche
+use case that like you can only do it
+for specific things. Yep.
+&gt;&gt; And that certainly fits with the history
+of the field. Um, but one of the things
+that Jensen actually recognized in the
+early 2010s was he said that oh wow
+these deep neural networks that we can
+apply to crazy things like image
+recognition. It seems like those things
+are a universal function approximator.
+So like what is a universal function
+approximator and what's the relationship
+of that to actually the implication that
+accelerated computing is like you said
+at the beginning a general purpose
+technology that's actually maybe not
+even as large as the general technology
+of CPUs but even larger.
+&gt;&gt; Yeah. So let's let's like break this
+down into like a couple different
+questions, right? So
+a lot of problems cannot be parallelized
+right that's the fun that's the major
+difference between accelerated computing
+and serial computing which is the CPU
+right CPUs take instructions and process
+them one at a time serially right GPUs
+can take in instructions can take in a
+problem break it down into chunks solve
+those chunks in parallel recombine the
+answers the partial products and then
+output an answer, right? That only works
+for problems that can be chunked up and
+solved in parallel, right? So like
+matrix math problems are a great example
+because you can take each row, each
+column of a matrix, solve like a vector
+multiplication problem column by column,
+then recombine the columns in the right
+order at the end, and now you've just
+saved a lot of time depending on how
+many columns were in that matrix. Right?
+there's a whole class of problems that
+can't be parallelized like that, right?
+Maybe not math problems, but you know,
+certain logic problems, I don't know,
+like things where the order of the steps
+certainly matter. So, the reason we call
+CPUs general purpose computing is
+because they can compute anything. They
+can compute graphics, they can compute
+matrices, they can compute, you name it.
+The question is how fast, right? how
+much compute power how like how long
+will it take etc
+accelerated computing can only deal with
+problems that can be parallelized okay
+so now let's talk about the second part
+of your question if you have a universal
+function approximator which is just a
+fancy way of saying a set of tools that
+can solve a wide variety of problems
+like neural networks AI in general
+neural networks specifically but there
+are other like forms of you know AI
+algorithms besides neural networks that
+are interesting to get into like image
+generators don't work by neural networks
+anyway. So and those universal function
+approximators can be parallelized now
+you can have your cake you need it too.
+You can do anything a CPU can do where
+before you couldn't and you can
+accelerate it because uh you know neural
+networks for example are like the
+perfect matrix math problem to run on a
+GPU. I that was my research well before
+chat GPT came out was univers was using
+small neural networks to help accelerate
+different radars and different
+telescopes. So just realize AI and
+neural networks are much older than chat
+GPT in general. Um, so Jensen his one of
+his brilliant aha moments which has been
+shared across the scientific community
+and he's been actually really involved
+with like many other companies that use
+their accelerated computing is
+understanding that GPUs are not just for
+graphics. They're for any problem that
+can be like parallelized like this,
+right? which extends well beyond the
+initial function of just rendering
+graphics quickly which is an important
+and big matrix multiplication problem.
+It turns out that AI can do a lot AI
+uses a lot of that same like background
+math can be perfectly accelerated and
+can solve a wide variety of problems.
+And so the reason that I asked that
+question is because I think the the
+number of problems that can be solved
+and the size of the computers that are
+required to solve those problems is tied
+directly to like how big is the demand
+for AI overall. Is there an end in sight
+to this AI bubble you know speak that
+we're talking about now? um from what
+you're seeing like what types of
+problems that are big unsolved problems
+in corporate America in technology in
+healthcare like are there big problems
+that really just you know AI doesn't
+help with at all that would lead us to
+believe that there is you know a
+near-term end in sight to all of this.
+&gt;&gt; So it that that's an interesting
+question. I I haven't really framed it
+like that myself like hey what is a
+subset of problems that AI just won't
+solve but like let me give you a couple
+examples uh but tell you why that kind
+of doesn't matter for the purpose of the
+growth of AI right so plumbers
+electricians
+uh handymen carpenters right there's
+this whole class of um skilled trade so
+these are all very skilled workers that
+are not about to get replaced by AI
+right like we will always need plumbers,
+electricians, carpenters, general
+contractors, etc. Um, construction,
+everything in construction, which is a
+big part of like humanity's output. Um,
+I would say commercial driving, we're
+not really there yet. You know,
+obviously companies like Tesla and Whimo
+are getting much closer on
+non-commercial driving, you know, like
+passenger transportation. Um, but I
+think we're a long way from seeing like
+autonomous fleets of 18-wheelers on the
+road. You know what I mean? Um, and then
+so there I'm trying to say there's a
+whole class of jobs that are high value,
+high skill, not about to be replaced by
+AI, right? Those are some examples. But
+the market for jobs where AI will
+augment that job, not replace it, not do
+the job entirely, but augment somebody
+doing that job is infinitely bigger. So
+the world's GDP, I think, is something
+like $50 trillion, right? You add up all
+the productivity of all the countries in
+the world, you know, put together, I
+think it's about $50 trillion, and you
+just say 10% of that will get augmented
+by AI per year. That's a $5 trillion
+market. I mean, that's bananas, right?
+Like, if you're if you're going after a
+five trillion dollar market, you don't
+care about the problems you can't solve
+because the problems you can solve,
+that's like you're chasing that market
+forever, right? That's more than a human
+lifetime to build a company that will
+capture any meaningful percentage of
+that market. So, Nvidia, I think, does
+not need to worry about Nvidia, AMD, all
+the AI ecosystem doesn't need to worry
+about the problems they can't solve.
+There's $5 trillion of problems they
+can't, right?
+&gt;&gt; Yep. Yeah. Broadcom. Yeah.
+&gt;&gt; Totally. Yes.
+&gt;&gt; Yeah. Samsung. Yeah. So, so many other
+companies all kind of tied up in there
+with that as well.
+&gt;&gt; Yeah. Um well, here one of the things I
+want to do for the audience is I want to
+put this uh this chart up on screen
+which I think shows us a little bit.
+This is a a post from I don't even know
+how to say that Kobai letter.
+&gt;&gt; Kobayashi if I Yeah. uh Kobayashi that
+sounds more more correct but it says
+this is beyond insane AI compute demand
+is now growing and they say at over two
+times but they have terrible math it's
+actually 3.2 two times um the rate of
+Moore's law which is assuming that
+Moore's law is still holding up at two
+times every two years which is uh I
+think not necessarily a good assumption
+at this point in time.
+&gt;&gt; Um but it says yeah creating a massive
+shortage uh just to meet current demand
+there's $500 billion that must be
+invested in data centers per year until
+2030. And then they have this chart
+here. And so this is a chart of the I
+believe it's basically the sizes of the
+number of parameters in models um that
+are being trained
+is the
+&gt;&gt; is that what the dot size is? So the the
+y-axis there is like the compute total
+compute required to train it and the
+x-axis is just time. So yeah.
+&gt;&gt; Yeah. And I think that the flops
+required to train it is uh yeah a
+function of parameters.
+&gt;&gt; Sure.
+&gt;&gt; And yeah. So then and the second line is
+just Moore's law which is yeah the the
+two times growth every two years. And so
+it looks like we're creating more
+intense models to train four and a half
+like they every year the models get four
+and a half times more intense to train.
+And then Moore's law gives you 1.41
+times growth in computing power if you
+were just following Moore's law. But
+obviously
+&gt;&gt; thanks to Jensen Wong and Nvidia, you
+know, parallel computing is not
+necessarily bound by the constraints of
+Moore's law in the same way. Definitely
+when you factor in the extreme code
+design. So anyways, I wanted to show
+this as a an indication of why you know
+this like
+um four and a half times
+divided by 1.4 times is like a 3.2 two
+times.
+&gt;&gt; Yeah. Right.
+&gt;&gt; Every year shortfall of Moore's law
+compared to growth in the size of the
+models that we want to train which you
+know that compounds over time. So like
+three times one year, three times again
+the next year, three times again the
+year after that. Like you get into
+&gt;&gt; like a three times shortfall, a nine
+times a 27 times, an 81 times, right?
+Like Yep.
+&gt;&gt; It get the gap gets pretty big pretty
+fast, right?
+&gt;&gt; Yeah. Yeah. And so like in 2030s you're
+talking about hundreds of times, you
+know, two
+&gt;&gt; Yeah. a shortfall of hundreds of times
+the amount of demand that you have for
+training AI compute compared to the
+returns that you got based on Mo's law.
+And so yeah, like what's your reaction
+to that when uh you think about the
+overall AI market?
+&gt;&gt; Yeah, I mean I I think it's honestly
+been pretty obvious. the writing on the
+wall for Mo's law has been there for a
+long time. Um, like you just pointed
+out, you know, Moors law hasn't been at
+2x every two years for a long time now.
+It's closer to 1.4. Um, and just to be
+clear, like that doesn't mean Moors law
+is bad. It just means the era where um,
+transistor density and the amount of
+transistors you could pack on a single
+chip dominated the gains we got in
+compute is just over, right? Like that's
+just not where the gains are coming
+from. That's, you know, so when Intel
+says like Moors law is alive and well,
+you know, that sounds great and then
+they don't deliver their chips, right?
+So, you know, the companies that still
+believe Mors law is alive and well tend
+to have missed the runup and the product
+like haven't come out with a product to
+to meet the demand for AI scaling laws,
+right? So, that's pretty that's actually
+a good transition into like what's
+actually happening now. So, Moore's law
+is one scaling law. Um it it was
+actually a prediction by Gordon Moore
+that was like, "Hey, transistors seem to
+tend to double every year." So that's
+something the industry ended up shooting
+for, right? Transistors on a single chip
+every two years, excuse me. Um today AI
+has at least three scaling laws and it
+really depends how you break up AI and
+like you know the nuance you want to get
+into, but there's the scaling as a
+result of raising parameter counts,
+right? Just as an example, and getting
+more training data. So that's scaling
+with training, right? Bigger models tend
+to perform better. There's post-training
+scaling. So that's like using
+reinforcement learning to uh improve a
+model's output after it's trained. So
+that's like, you know, giving it better
+guard rails. That's like um giving it
+human feedback to like refine its
+outputs. That'd be like putting a
+satellite dish on a radar, right? It's
+like you're directing all of that all of
+those tokens a specific way. And as a
+result, you're getting a much more
+powerful output in the correct
+direction. Right? So that's post-
+training scaling. And then as of earlier
+this year, we have something called test
+time scaling, which is just a fancy way
+of saying inference is now able to be
+scaled with the number of tokens. So
+instead of oneshot answers where I give
+you a question, what is the temperature
+outside? And then you return the
+temperature outside, I can ask you like
+a deeper question like, hey, explain to
+me why water freezes at 32°. And then
+you'll sit there and you'll rack your
+head. You'll think about where to start
+to like give me the basic walkthrough.
+You'll break the problem down into step
+by step. You'll solve each step and then
+you'll bring it all back all together to
+give me like a final coherent answer
+that walked me through like maybe
+physics, maybe temperature, maybe the
+difference between Fahrenheit and
+Celsius, maybe what makes water such a
+special compound or whatever. You know
+what I mean? Like there's a whole bunch
+of stuff that goes into that. And that
+all happens in inference, right? So now
+it takes more tokens with the you can
+increase the number of tokens you're
+willing to spend on an answer and get a
+better output as a result. All three of
+those scaling laws, training, post-
+training, and inference multiply
+together, right? Because a better model
+that's better tuned and willing to spend
+more tokens on your your prompt to give
+you a better response is benefiting from
+all three of those scaling laws. So e
+even if they were all only as fast as
+Moore's law, that'd be 1.4* 4 * 1.4 *
+1.4 which I don't know if that gives you
+the 4.5 but you know like that's that's
+what's happening here is you're
+multiplying three scaling laws. So
+now that we've kind of got this framed
+as, you know, it's not really
+necessarily an either or between AMD
+versus Nvidia, that still begs the
+question for, you know, someone who's
+interested in investing in this space.
+If you have to allocate, you know, how
+much money do I want to if I'm putting
+new, you know, net new dollars
+&gt;&gt; Yeah. into an investment. How do you
+think about the two different companies
+when you're deciding on allocating
+between Nvidia today and you know like
+they obviously they have enjoyed a lot
+of growth up to this point. Their
+multiples are you know relatively low
+compared to the growth that they're
+seeing.
+&gt;&gt; Yeah.
+&gt;&gt; Um but there's a lot of growth. you
+know, they uh I think it was Brad
+Gersonner on the All-In podcast recently
+showed a little chart where, you know,
+in 2022 or 2023, both Nvidia and AMD
+were making like 23ish billion dollars a
+year of annual revenue. And today AMD is
+making about 33
+&gt;&gt; and of course Nvidia I think is like 220
+or something. So basically a 10x in
+revenue for Nvidia uh compared to
+&gt;&gt; AMD doing a one and a half times
+&gt;&gt; revenue over, you know, you know, it's
+one and a half times over a couple
+years. That's not bad under normal
+conditions for normal markets, but this
+is anything but normal conditions and
+anything but a normal market. Um, so
+like it seems like there should be
+potentially more upside for AMD if they
+really can offer great products in this
+market segment since they are behind the
+curve and maybe they're they're finally
+starting to be able to to get on the
+wave. Um, but yeah, like how do you how
+do you think about these two companies
+as as investments at this point in time?
+Um, and then I mean we can talk about
+maybe some of these things individually,
+but like there's ecosystem factors,
+there's management factors, you know,
+Lisa versus Jensen. Um, there's the pace
+of development that these different
+companies have. Totally.
+&gt;&gt; Um, then architectures, you've got AMD's
+chiplets versus Nvidia's much larger
+monolithic designs. Um, yeah. So we can
+start let's just start with the the high
+level of how you think about it and then
+we can kind of dig into some of those
+more nitty-gritty elements of the
+&gt;&gt; of the stack.
+&gt;&gt; So So you said something interesting
+that like I I want to pick on for a
+minute and I I'm not picking on you,
+right? But I do want to pick on this
+mindset that you know, okay, one company
+is performing very well, the other one
+is not relatively speaking at least,
+which means that second company has way
+more upside. So, if I I I'm not a big
+sports guy, so if I get this sports
+analogy wrong, I apologize. Like, I make
+spreadsheets for fun, if you know what
+I'm saying. Um, but if there's a
+football team that wins the Super Bowl
+every year and they're constantly being
+matched up against the 16th best
+football team, right? Like bracket of
+16, whatever, first versus last seed go
+together.
+Why are you betting on seed 16? You know
+what I mean? Like clearly the guy
+wearing all the Super Bowl rings is very
+good at football. He's probably the safe
+bet here, you know? So like when I hear
+AMD has increased their revenue by 50%.
+And Nvidia has increased their revenue
+by a,000%. And is still climbing by the
+way, right? Like they still have
+earnings calls where they're delivering
+double or close to triple digit year
+overyear revenue growth, right? Why?
+Like why? Where is the upside for AMD
+here? Like I just it just it's a smaller
+company so it has more room to grow to
+get to Nvidia's valuation. Like it seems
+to me that like people who say that
+again not picking on you specifically
+but people who say that that's more of a
+gut feel than like a real analysis.
+Small company lots of upside big company
+not much more room to grow. But like one
+thing I want to point out is I've been
+making videos on Nvidia for about like
+four years now right? And if you rewind
+the clock to where Nvidia was like
+300400 billion market cap, right? So
+just a little bit bigger than AMD is
+today. I got a lot of flack for saying
+this company's going to 10x, right? No
+one could. That's a $4 trillion
+valuation, right? And the reason I got a
+lot of flack is for exactly that
+argument. It's already so big. It's at
+all-time highs. No way it's getting
+bigger. When there's a competitor
+onetenth its size or half its size or
+whatever, it's going to eat its launch.
+same arguments, right? It turns out that
+Nvidia grew from $400 billion to 4.5
+trillion
+faster than AMD 10x, you know, being
+much smaller or whatever relative to its
+valuation today, which is still only
+around I want to say like three or 400
+billion even after this frankly
+comically massive OpenAI deal, right?
+So, I just want to separate current size
+from future growth because those two
+things
+almost have nothing like to do with each
+other if you like look back in time,
+right?
+&gt;&gt; Yeah, that's a great point. And um I
+mean so how much of the
+assumptions that a lot of investors have
+about potential future growth
+really stem from thinking about the
+market as a fixed pie that someone's
+getting share out of versus thinking
+about the market as something that is
+potentially at least in the for the
+purposes of the next five years uncapped
+upside.
+&gt;&gt; Yeah. Yeah. you I think you just hit the
+nail on the head like that is why Nvidia
+and AMD are not competing and what like
+AMD is going to do fine but again you
+you just talked about a chart where
+people expect AMD's revenue to you know
+grow at a moderate pace and I think that
+same chart actually had Nvidia's revenue
+like capping off you know kind of
+growing steady up until 2027 and then
+like being relatively flat after that
+which makes absolutely no sense to me
+but we'll see in a couple years right
+like one thing I like doing is whenever
+I see and sorry I'll answer your
+question in a second. One thing I like
+doing is whenever an analyst gives like
+a pretty um unintuitive prediction like
+that is I like to go back and look at
+their other predictions and just are
+they right? Like are they good at
+spotting the trend? You know, for
+example, Michael Bur really has like a
+history of um predicting things that are
+unlikely to happen, you know, so to
+speak, and then they happen and you're
+like, okay, there's like Michael Bur,
+there's something to this guy, at least
+in the areas of real estate and
+whatever, right? So, you know, the
+analysts who think that Nvidia
+is going to have flat revenue in 2027
+thought that for 2026, 2025, 2024, you
+know what I mean? Like, they're the same
+analysts who predict next year is the
+year that Nvidia's revenue flattens out,
+right? It's almost like the uh chart
+that is somewhat famous at least among
+the the Tesla community that Tony SA has
+that shows you know people's predictions
+of solar and you know it's clearly on
+this exponential curve and then every
+year it's just like oh it's going to be
+flat. Yeah.
+&gt;&gt; Yeah. This is where it's like dude like
+you're not even pretending to look at
+the line you're trying to predict right
+like exactly. So
+&gt;&gt; yeah, you're you're a linear machine in
+an exponential
+&gt;&gt; in an exponential world. Fantastic
+example. Like if when you edit this
+podcast, please put that chart in
+because like super duper relevant. Great
+call out, right? Sorry, what was the
+original question? Why are we what are
+we
+&gt;&gt; um we were talking Yeah. The I think the
+question was how much of the that
+mindset by investors is due to just
+thinking that the market is a fixed size
+and it's all about someone has to get
+share like this is classic Gary Black
+thinking, Wall Street thinking versus
+like this market is growing and anyone
+who can really produce competitive
+products like will will be able to do
+fine.
+&gt;&gt; Yeah. Um, and it's definitely that
+second one, right? So, like just imagine
+you're uh, you know, you and me are in a
+pie eating contest and we have one pie
+between us and it's like obviously
+whoever eats more pie wins. It's that
+simple, right? Like whoever can eat the,
+you know, you divide the pie into eight
+slices. So, if I can eat five, I just
+win. My only goal is to eat five because
+that means you can't eat more than
+three, right? Pizza, whatever, apple
+pie, pick your favorite pie. If we have
+that same context and that pie is
+growing faster than we can eat it, we're
+no longer in a contest to eat like to
+just eat pie. We're in a contest just to
+like eat as much pie as we can, right?
+Just like whoever fills their belly the
+most wins, right? That's what's
+happening in AI. It's not I'm just
+trying to eat five because that means
+you can only eat three. It's the pie is
+growing so fast, I need to figure out
+how to efficiently eat pie. Right? It's
+a silly example, but I'm trying to like
+come up with a visualization we can all
+understand regardless of our background.
+Right? You you're in a situation where
+you're not competing to with the guy to
+your left or to your right. You're
+playing an infinite game. You're you're
+only competing with your own pace
+because the market is growing much
+faster than you can turn through it,
+right? So I I I think that's all it
+comes down to is like that mindset shift
+of understanding that there is no Nvidia
+versus AMD. First of all, their ch like
+they're fundamentally different
+companies from the ground up. And AMD
+started as a CPU company. They bought
+ATI, right? Like their Radeon line of
+GPUs is a bot entity. And now it's
+great. Like I'm not saying Radeon GPUs
+are bad. Nvidia started with and will
+end with making parallelized
+computer chips. They've only ever made
+GPUs. They now make CPUs that support
+their GPUs in data centers. And I'm and
+I know they're like now co-working with
+Intel on making CPUs and all that, but
+like their pet project is CPUs. AMD's
+pet project is GPUs. You know what I
+mean? So, it's a fundamentally different
+like you're comparing apples and oranges
+from the ground up. So, let's let's dive
+a little deeper into the AMD versus
+Nvidia competition, right?
+The first thing that people need to
+really understand is when AMD
+outperforms Nvidia, it's for a very
+specific benchmark. And that doesn't
+make it bad. It doesn't make it wrong,
+but they're picking large language
+models, text to text, meaning text goes
+in, the the model only turns through
+text based outputs and text comes out,
+right? You know, answer my basic
+question, do a textbased search for me,
+etc. Nvidia's ecosystem and the way
+Nvidia thinks about generative AI in
+general is not text to text. It's all to
+all. Right? So text to video, video to
+text, text to rendered code, code to
+text, right? Like uh video to video,
+audio to audio, protein folding, you
+know, like whatever entity that has a
+structure, you should be able to input
+it. Oh, go ahead.
+&gt;&gt; Yeah. And also, you know, cross
+modality. So like text to audio, text to
+video, uh you know, video to driving
+controls and
+&gt;&gt; yeah, robotic controls and also like um
+you know multi-in multi out, right? Like
+here's a diagram and an explanation.
+Give me an outputed diagram with another
+explanation, right? So image and text to
+image and text, image and text to
+protein and text, right? So like you
+know, etc., etc. Like they're not
+optimizing for the same things. And they
+again because they're not competing,
+they don't have to. And this is where I
+got a lot of my early Nvidia versus AMD
+stuff wrong too is I'd be like, "Oh,
+Nvidia is just better." You know what I
+mean? CUDA is just better than Rock. The
+hard like that's it. We're we're done
+talking about it. When you're talking
+about an infinitely expanding pie, there
+are some slices that AMD is like AMD
+solution is perfect fit for. You know
+what I mean? Those are the slices AMD is
+going to eat. It's Ethernet-based data
+centers that are ecosystem agnostic that
+just want to serve a lot of textbased
+models very cheaply and roll into their
+bigger ecosystem. AMD is very very very
+well positioned for that and they're
+going to that's why they're doing well,
+right? Like like you said 50% revenue
+growth over the last couple years is
+like dude in a vacuum that's
+outstanding. It only starts to look bad
+when you compare them to Nvidia, right?
+Like AMD in isolation that's those are
+great returns man. Nvidia is, I think,
+solving a fundamentally different
+problem. They're chasing all three of
+these scaling laws I talked about
+earlier, training, post-training, and
+inference at the highest level. Meaning,
+multimodal models with billions and
+trillions of parameters dedicated not
+just to text, but audio, video,
+rendering, code, protein, you know, like
+multimodality,
+large, extremely large context models.
+And we can get into what all this jargon
+means if we care and whatever, right?
+&gt;&gt; Yeah. I want to a ask two questions.
+We'll start with the one on AMD and then
+we'll I want to move back to one of
+Nvidia's core competencies. So, you
+know, the one for AMD is the
+announcement of this big Open AI deal
+which you said uh was comical compared
+to like
+&gt;&gt; the the size of the deal compared to
+their current revenues in the segment is
+massive. So if you know a lot of if ifs
+you know if open AI can deliver if AMD
+can deliver like it's huge and we assume
+that you know it's not only going to be
+open AI that's going to be customers of
+the MI450 and you know
+&gt;&gt; rightally there's there's a big Meta
+deal where we know that Meta just
+announced a 1 gawatt data center. it's
+almost 100% guaranteed that at least a
+big slice of that 1 gawatt data center
+is going to be allocated to the MI450.
+Um, and Oracle obviously is going to be
+buying quite a few AMD GPUs. So, you
+know, it does look like there's
+potentially large growth on the horizon
+that is much much faster for Nvidia,
+especially relative or I mean for AMD,
+especially relative to the size of their
+current revenues. Sure. Um, so how are
+you thinking about that dynamic right
+now?
+&gt;&gt; Uh, yeah. I mean, if you asked me 6
+months ago if AMD if sorry, let's let's
+like level up this conversation for one
+second. If you ever told me that a
+company, any company would get a deal
+for 20 times their annual sales, right,
+of any product, I would be like, that is
+crazy. And then if you said, oh, but
+they only have four years to deliver it.
+I'd be like, that's that's nuts, right?
+So that's just to be clear, that's what
+happened with AMD and OpenAI, right?
+Delivering a gigawatt of GPUs every I
+think it's a 4 gawatt deal if I remember
+right or it's like
+&gt;&gt; six gigawatts total over
+&gt;&gt; one gone, right? Like
+&gt;&gt; Yes. And one gigawatt is the first
+milestone.
+&gt;&gt; Yeah. And they have like sort of like a
+yearish to deliver those GPUs. So,
+sorry, just to be clear, the way the
+deal actually works is OpenAI has to um
+deploy a gigawatt of AMD GPUs to reach
+their first milestone to get their first
+piece of equity from AMD, right?
+&gt;&gt; Yes.
+&gt;&gt; That implies AMD can deliver all those
+GPUs for OpenAI to deploy them in the
+first place is why I'm saying it that
+way, right?
+&gt;&gt; And it implies that OpenAI can spend
+basically $50 billion in order to deploy
+that first gigawatt,
+&gt;&gt; but they're at least getting the GPUs
+like up front and like, you know,
+they're getting the money back and
+equity from AMD and whatever, right?
+Like it's not that part of the deal
+that's interesting right now. Right now,
+it's like, okay, AMD sells about 200,000
+GPUs per year, data center GPUs. I
+actually did the math in a recent video
+on my channel. I double like it's around
+200,000 GPUs. So the first um
+performance milestone of this deal
+implies that AMD will deliver five times
+their annual sales of data center GPUs
+to OpenAI to deploy. Right? It's just
+like that's comically large. That's I'm
+not saying they can't do it. I'm just
+saying the deal is much more it's just
+so big relative to what they have been
+doing. It's a huge step function up in
+their deliveries, right? So, I mean, I
+don't feel bad for not seeing that
+coming. I did the math on what that
+would look like if Nvidia got a deal for
+20 times their annual GPU sales. It's
+120 gawatts of GPUs. That works out to
+about 70 million GPUs,
+which works out to roughly all of the
+compute on Earth in every data center
+ever put together right now. So, it's
+like, of course, I would have never
+thought, you know what I mean? Like,
+it's just it's it's comically large.
+like, you know, it doesn't mean AMD
+can't do it. I'm not saying AMD can't do
+it. I'm just saying it's a huge step
+function for like relative to what they
+have been doing.
+&gt;&gt; Well, and it makes you wonder because I
+did see a recent announcement from or a
+recent uh excerpt from TSMC that said,
+yes, demand for AI chips is much larger
+than even we expected this year, like
+just this year.
+&gt;&gt; Yeah. I mean, they just had their
+earnings and it's like, yeah, it's all
+AI all the time, right? like every
+everyone has pivoted all of their uh
+like supply for TSMC's chips for the
+like all of their production supply to
+AI. It's absolutely ridiculous.
+&gt;&gt; And so that brings me back to you know
+one of the one of the things about
+Nvidia as you mentioned is you know
+they're thinking about solving all of
+these problems that are really some of
+the hardest problems at the frontier of
+the field.
+&gt;&gt; Yeah. And part of that is the focus that
+they have as a company on creating new
+markets. Like we're going to solve a new
+problem that's ridiculously hard
+&gt;&gt; that has ridiculously large impact
+potentially. And once we do, then boom,
+that's a whole new market that's just
+going to
+&gt;&gt; want, you know, a whole new, you know, a
+whole new segment of demand for GPUs.
+Um, I has AMD ever created a market that
+did not exist?
+&gt;&gt; Uh, I mean, not to my knowledge. And I'm
+so I won't say that the answer is no.
+But I think you're keying in on one of
+the big differences between Nvidia and
+AMD is Nvidia is not afraid to bet on a
+zero billion dollar market. They're not
+afraid to say, "Hey, we'll accelerate
+this hard protein folding problem
+because maybe that unlocks a huge market
+in like gene discovery or drug discovery
+and medicine and all this kind of stuff
+that then we'll be the only accelerator
+for, right? We have this giant library.
+We have this hardware ecosystem. It sits
+on top of a giant developer ecosystem.
+So if we can grow this market from zero,
+&gt;&gt; all the researchers who are working on
+this problem use our
+&gt;&gt; Absolutely. So give the audience just a
+little bit of background on your
+personal experience with you know what
+is it like to live inside of the CUDA
+ecosystem as an academic researcher and
+you know what are the hurdles that other
+companies like AMD have trying to get
+you to switch away from CUDA and Nvidia
+cards in you know in a research field.
+&gt;&gt; Yeah. Yeah. I I mean the answer is going
+to be like a lot simpler than like I
+think most people think it is, right?
+It's like once you've built code that
+works, you're very hesitant to break it,
+especially if like other people rely on
+it. And so there's there's two phases,
+right?
+&gt;&gt; Can can you build code that works on AMD
+from the beginning or is that basically
+&gt;&gt; 100%. It Yeah. No, Rockom is Rockom's a
+great ecosystem again like what Let me
+ask you a quick question and then I
+promise I'll I'll answer your question.
+What kind of phone do you have?
+Well, I have an iPhone. So,
+&gt;&gt; why why do you have an iPhone?
+&gt;&gt; Yeah, it's all of the the classic
+answers. The ecos, you know. Yeah,
+&gt;&gt; I don't need my phone to have the best
+clock speed or the best camera. I just
+need my phone to work. In fact, I go
+about four years in between phones and I
+don't even know of a Google Pixel that
+will last you four years. So,
+&gt;&gt; yeah. And sorry again just just to like
+recap what you said because you know you
+took the words that I was going to say
+right out of my mouth is um it's not the
+hardware right it's honestly not even
+just like the iOS software itself it's
+the ecosystem the apps are better they
+run right out of the box you don't have
+to think there's almost no customization
+which is a good or a bad thing depending
+on who you are
+&gt;&gt; connects to my computer and my iPad and
+my watch and
+&gt;&gt; it just works right it just like end of
+the day I click a button and I get what
+I need done and I move on with my life
+right that's what operating on CUDA is
+like because when I'm trying to do
+something complicated, the first thing I
+see is like did somebody already build a
+solution to this problem, this hard
+acceleration problem, right? Like in my
+case, it was signal processing
+libraries, you know, that I needed to
+use with radars, blah blah blah. Guess
+what? Somebody has already accelerated,
+you know, different kinds of radars and
+like whatever we're trying to do on
+CUDA. So the first thing I do is I
+download all these pre-anned things and
+I go, "Okay, how do I need to change
+this to make it work for me?" But I'm
+not starting from scratch, right? That's
+what an ecosystem buys you on the front
+end. It's just the ability to be like,
+"Okay, what progress has been already
+made inside this ecosystem?" By the way,
+app developers for iPhone do the same
+thing. They're not starting their app
+from scratch. They're saying, "Okay, I
+need I need this app to tell time. How
+do other people do that? I need this app
+to like grab the phone's geoloccation.
+How do other people do that? What's the
+blah blah blah blah blah? Right? So like
+the first part of opening any project
+when you have a large ecosystem is
+simply what solutions can I already grab
+to get 50 60 70% of the way there and
+then innovate. Like the 30% I add is the
+value that I'm trying to create, right?
+Same thing on YouTube. We both make
+YouTube videos. I didn't learn how to do
+this from scratch. What did I do? I
+turned around and I watched a YouTube
+video. You know what I mean? Oh, I get
+that mic. Okay, I get that camera. Oh,
+okay. This is the software. I'm 50%
+done. Okay, now how do I make my videos?
+At least I'm not starting from scratch,
+right? Cuda is like that. So the the big
+thing that people need to understand is
+that's the front end. And then the back
+end is switching costs are much higher
+than like most people will ever like
+calculate because there's the cost of
+switching which is like selling all your
+Nvidia hardware, buying AMD's hardware,
+transitioning the code, but there is the
+morale cost of switching. There's the
+emotional cost of switching, which
+sounds funny to say, but if you've ever
+coded something seriously and somebody
+says, "Oh, that library that you rely
+on, it it no longer works. You have to
+start from scratch because now it's only
+supported by this other completely
+different language, other completely
+different whatever." You're like, "Oh,
+I'm I'm not maintaining this project
+anymore. I am done with this project."
+You take it off of your GitHub and you
+move on with your life. You're not
+transitioning it. Like, you know what I
+mean? Because starting from scratch
+after solving a problem is too painful,
+you know,
+&gt;&gt; especially Yeah. when you're you're you
+have to solve the problem that you
+solved except to like if you contributed
+40% of the solution before, now you've
+got to go 70% of the way there. So it's
+like double the work or more.
+&gt;&gt; Of course. Of Yeah. For forget if you're
+you work with a big team and a couple
+key people left and like you know the
+actual dynamics in in like a knowledge
+worker workplace which is like I didn't
+write this code, we wrote this code. I
+wrote this tiny function but you know
+when I was working on a radar it wasn't
+me right it was like a team of 12 15 18
+engineers I wrote like the tiny snippets
+that use AI here and like pipe in
+signals there but like a lot of smart
+PhDs that have come and gone have wrote
+other code that makes all that stuff
+work I'm not rewriting anything they
+wrote like if they're already gone you
+know so it's like multiply that problem
+by every field by every project by every
+company and that's why AMD is having
+such a hard time if you're comparing
+Rockom to CUDA, which we started this
+whole conversation saying that's not a
+good way to do it because there are real
+markets where Rockom is the answer. It's
+just those markets are much smaller,
+much more specific than the general CUDA
+market. And that's like one of the
+biggest advantages Nvidia has is like
+there's a reason we all have iPhones.
+There's a reason, right? It's the same
+reason most people use CUDA. Mhm. Well,
+and yeah, especially within the
+research, you know, so the use cases
+that you're talking about where AMD is
+exceptional and they win tend to be
+business use cases where someone has
+like a large workload that they need to
+run and they have high confidence that
+that specific workload can be optimized
+to run on AMD software and hardware. um
+like you don't typically see that at the
+bleeding edge of research and
+development for
+&gt;&gt; anything commercially or
+in research. Yeah. It's like, oh, we we
+got the prototype to work once.
+&gt;&gt; Somebody smarter than us will make it
+again for mass production, right? Like
+this is, by the way, something Elon Musk
+is incredible at is he's really good at
+like taking a prototype and saying,
+"Okay, how do we make a version of this
+that can be mass prodduced, right? And
+that is an unbelievably powerful and
+unbelievably rare skill." But that's the
+difference is like academia cares about
+solving a problem even if it's a little
+janky, right? Like you want to optimize
+it, especially if that's like the heart
+of the research. Like a lot of the
+papers I worked on and stuff like that
+were about making a janky process less
+janky. Like that's just the best way of
+putting it, right? But eventually it's
+like the next level of non-jankiness is
+actually production ready code. That's
+not what we do here. Kick that to a
+giant company. They'll build the real
+thing that makes it to the market, not
+us. You know what I mean? We build the
+first one, they build the 10 millionth
+one. Right. But it does create a lot of
+momentum when
+you're talking about generating these
+new markets and the markets come out of
+research and development and it's like
+all of the you know all of the mind
+share of all the people working on the
+project really is all locked inside of
+CUDA just because it is so easy for them
+to like everybody that they're working
+with is also developing on CUDA. Um and
+so yeah it's like
+&gt;&gt; whatever those I think that's one of the
+things that for investors
+&gt;&gt; you know training it is that linear
+thing training is Nvidia's market like
+Nvidia has training market on lockdown
+and so they're going to continue to have
+you know whatever high 90% share of
+training but training is not going to
+grow and there's not going to be any new
+markets that are going to invented that
+GPUs are excellent at and that CUDA is
+excellent for um and so therefore, you
+know, that's why you see the chart bend
+over and they're going to go into to
+flat revenue growth
+&gt;&gt; and also training and inference will
+never be one market, right? Like that
+that's also implied in that chart,
+right?
+&gt;&gt; It totally and um yeah, like I would
+just say that that fundamentally
+misunderstands
+Nvidia's entire
+company philosophy. Like Jensen is a
+student of Clayton Christensen and
+disruptive innovation and he knows
+like if you were to tell him today that
+Nvidia 5 years from now will primarily
+be a training compute company he would
+he's like oh well then Nvidia is dead
+&gt;&gt; like will have been disrupted
+&gt;&gt; for sure. And so like if we don't create
+new markets between now and then, if we
+don't drive incremental new demand for
+computing by solving incredibly hard
+problems, which you know, if you listen
+to the GTC conferences, he's already
+talking about what those next things are
+going to be. It's going to be robotics.
+It's going to be stuff in healthcare
+like drug discovery and u material
+science and all sorts of different
+things, fusion
+&gt;&gt; potentially like
+&gt;&gt; Yeah. then then he would assume that
+Nvidia will have gone bankrupt if they
+don't succeed at creating those new
+markets. And then when you hear Lisa and
+AMD, they're talking about hey like we
+just want to try and capture share in
+you know inference which is going to be
+big and growing um mostly and like we
+would like for our computers hopefully
+to be at least a viable option for some
+training.
+&gt;&gt; Yeah. Yeah. It's a like there's a really
+great TED talk. It's like got to be like
+15 years old now. But it's like if
+you've ever seen the TED talk by Simon
+Syninek, he's had like a couple really
+good ones, but the one I'm talking about
+I think is called the infinite game. So
+like he was talking about how Steve Jobs
+is playing the infinite game where it's
+like he's trying to create the best
+product for the most people, right? The
+iPhone, the iPad, like I think then it
+was just the iPhone, right? And
+Microsoft at the time with their
+Microsoft
+&gt;&gt; phone whatever
+the iPod versus the Zoom,
+&gt;&gt; right? Yeah, you're right. So, and like
+Steve Jobs only cared about one thing,
+making the best iPod. Everyone on the
+Zoom team, Zoom team cared about what
+the next iPod was, so they knew how to
+like incrementally improve on that,
+right? The Microsoft team was looking
+left and right, and Steve Jobs was only
+looking straight ahead. I think that's
+the difference between Nvidia and AMD
+today. And by the way, there's nothing
+wrong with either of those paradigms,
+right? Like, if you're going to treat it
+as a competition, you should know what
+your competitors are doing. But there's
+a reason that I think Nvidia wins and
+it's because they're not afraid to
+invest in those zer billion dollar
+markets to capture them when they're
+hundred billion dollar markets, right?
+Knowing that not every market will get
+there. But like the drug discovery and
+protein folding is not something people
+thought 5 years ago would be done with
+generative AI and now the only way to do
+it with generative AI broadly speaking
+95% market share or whatever is with
+CUDA, right? So, I think that's the
+smart way to play this game. And it's
+the only way you can play it when the
+pie is growing much faster than you can
+eat it is like you need to look at the
+horizon and be like, I need to
+fundamentally change my pie eating
+strategy because there's something
+unique and special about this moment in
+time, right? I can't look at what the
+other guy is eating. I have to just
+focus on grabbing the most pie I can
+while it's growing, you know?
+&gt;&gt; Agreed. I'm going to pin you down here
+at the end of the episode on like if you
+had $1,000 today. You know, what
+percentage are you allocating to AMD?
+What percentage are you allocating to
+Nvidia? But before we get to that
+question, I did want to maybe address a
+pattern matching thing that I see among
+investors that
+&gt;&gt; um you know, I think people say, okay,
+Lisa Sue, turn around AMD, incredible.
+um she basically
+&gt;&gt; was able to kill Intel and Intel was the
+biggest company in computing. And so
+therefore, because Lisa Sue was able to
+kill Intel, there's a good chance and it
+may be a chance worth taking that she
+can kill Nvidia and Jensen Wong. And I
+would caution investors if that is the
+underlying logic behind your investment
+thesis that uh Jensen Wong is founder
+CEO of Nvidia and he is still running
+Nvidia as a founder company
+when Lisa Sue finally killed Intel and I
+mean they are basically dead. Uh
+&gt;&gt; yeah sure I mean government bailouts why
+Yeah. Yeah. You've hit the bottom. Yes,
+when that happened, they were not a
+founder company. They were trapped at
+like the far ends of the innovators and
+what I just talked about earlier with
+with Jensen like the strategy of
+creating new markets
+and exploiting them. That is Jensen's
+solution to escaping the innovators
+dilemma problem. And Intel was like at
+the very tail end of being a dead and
+dying dinosaur when and so was AMD. That
+that was the like the reason that Bisau
+Sue was able to turn around AMD is
+because they were also that. And so like
+she managed to get them to escape from
+the innovator's dilemma trap at a time
+when Intel could not escape the
+innovator's dilemma trap. And so like
+that's how the structure of Lisa Sue's
+ability to, you know, gain quite a bit
+of market share against Intel in this
+much more fixed pi world of CPU
+computing which is not growing anywhere
+at the level that GPU computing is. Um,
+and so anyways, I wouldn't generalize
+her ability to be able to disrupt Intel
+to then being able to disrupt Nvidia.
+And and just to be clear, like Intel put
+itself in a position to be disrupted.
+Like Intel was the king. Uh Intel has
+like does two very incredibly difficult
+things. It started failing at one of
+them. So both AMD and Intel design
+chips, but Intel also builds their chips
+where AMD does not. Correct. So
+&gt;&gt; anymore they used to sold right before
+she took over I think or maybe I think
+that was before her tenure that they had
+sold Global Foundaries.
+&gt;&gt; Yeah. and and gone directly with TSMC.
+&gt;&gt; Yeah. So that I mean also a brilliant
+move, but like really what h the start
+of Intel's downfall was when they didn't
+invest in like the latest EUV
+technology. This is like more than a
+decade ago now. And they started losing
+big clients like Apple. Like Intel used
+to make all the chips in Apple's
+MacBooks I want to say and like I want
+to say in some of their iPhones. I I
+like can't remember now because it's
+like been a while since that happened.
+But like then they couldn't they just
+like couldn't deliver the chips on time
+and Apple went somewhere else. You know
+what I mean? So it's like it's not AMD
+killed Intel. It's Intel killed Intel
+and AMD filled the vacuum. So then if
+you frame it that way, it's like will
+Nvidia make a critical fatal mistake the
+same way that Intel did? That's the real
+question you're asking because AMD did
+not kill Intel. They just filled the
+void that Intel left. And and greatly
+so, by the way. Like they make great
+data center CPUs. Nobody's arguing that.
+I I don't see Jensen making any
+&gt;&gt; Yeah.
+&gt;&gt; fatal m like of course there's going to
+be missteps, bad investments, libraries
+that don't pay off, chips that don't get
+sold as blah blah blah blah blah. Like
+no, no one's saying Nvidia is flawless
+and won't make any mistakes, but making
+a fatal mistake where AMD can jump in, I
+I I would bet money. And probably to
+answer your next question or the
+question you asked previously, how much
+money would I bet even just going just
+by their market share today, you know,
+and adjusting for their growth or
+whatever, I would put $900 in Nvidia and
+maybe $100 in AMD, you know what I mean?
+because of what I just said. I do not
+see like Nvidia's risk management when
+technical risk management is so good and
+there is so diversified compared to what
+we spent this whole video talking about
+which is AMD is really only after one
+slice of the pie and if they don't win
+it that's it right like that's why their
+growth has only been you know low double
+digits year after year their data center
+revenue is not still not bigger than
+their gaming revenue right whereas
+Nvidia's I want to say 88% of their
+revenue comes from data centers and then
+you know so it's like which which
+company is more exposed to AI the
+company that makes 88% of their money
+from AI or the company that makes like
+30 or 40% of their money from AI you
+know so yeah and I mean if they do
+inflect upwards in that growth towards
+AI obviously it could be a great time to
+be on the you know on the wave for AMD
+But yeah, when you think about one of
+the things that I learned from a guy
+named Dave Lee who's, you know, really a
+big Tesla investor
+&gt;&gt; um was, you know, the size of the
+ambition of the the company that you're
+invested in really matters.
+&gt;&gt; And when you see, you know, Jensen's
+ambition for what it is that he's trying
+to create, it's obviously much larger
+than the ambition that AMD is really
+chasing. Um, and so, you know, if he can
+if he can execute on his vision, like if
+you if you said that both Jensen and
+Lisa executed extremely well on their
+vision for what the future can be, one
+of those futures is a much larger future
+than the other one.
+&gt;&gt; Yeah. You could also take the downside
+of that, like the same question, but
+just flip it. If both of them miss their
+vision by 50%.
+Which company would you bet on? Jensen
+all day, right? It's like if Lisa Sue
+misses her vision by 50% that's flat
+growth, right? If Jensen misses by 50%,
+he's got a 10 trillion dollar company.
+You know what I mean? So like if he's
+wrong by I actually did the math in
+another one of my videos. It's like
+let's just cut all like we don't trust
+Jensen, right? It was actually my
+reaction to the BG2 pod where he was on.
+It's like, okay, he's saying all these
+big numbers. Just first thing we do is
+we cut him in half because we don't
+trust him. Oh, the market's still so
+insanely large. Yeah. You know what I
+mean? So it's like when you play those
+games, just cut the number in half.
+Would you still bet on it? You know, so
+that that's how I think about these
+things. Well, like, you know, when the
+market gets so big, you can't really
+imagine like what is a 10 trillion
+dollar market? I don't know how to
+imagine that. So it's like, okay, scale
+it down and try to like picture it in
+units of Microsoft in units, you know,
+like things like that. And it's like,
+okay, what is like go from there, you
+know?
+&gt;&gt; Yep. So,
+&gt;&gt; well, I think that might be a a great
+place to wrap up here. Um, this was an
+awesome show. Thanks for coming on with
+me today and helping us get brighter.
+Um, yeah, there's a, you know, a lot of
+complicated issues and questions and you
+did a great job of explaining the
+reasoning behind it and I really
+thoroughly enjoyed this. So, hopefully
+the audience does as well. Um, obviously
+they can find you on YouTube at
+tickerolu.u. got links down in the
+description for that. Is there anywhere
+else that you'd like to direct viewers?
+&gt;&gt; Nope. I'm primarily on YouTube. I do a
+little bit on X, like I kind of copy and
+paste stuff over there, too. But
+definitely, you know, if you're
+interested in learning about AI and the
+chips that power it, check out my
+channel.
+&gt;&gt; Awesome. All right. Well, have a great
+day and uh we will catch everyone on the
+flip
