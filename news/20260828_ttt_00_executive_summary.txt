@@ -1,0 +1,75 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-08-28)
+Published:   2026-08-28 00:00 UTC
+Summarized:  2026-08-29 07:03:58 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07595 (21344 in / 3326 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla Cybercab launch event set for Sept 3 at Giga Texas
+- Tesla Megapack bookings top $9B in six weeks, ~43 GWh
+- SpaceX unveils Starbase Louisiana, ~$100B site, 30+ flights/day
+- SpaceX/Nvidia announce exclusive AI compute partnership
+- Texas Robotaxi registered fleet hits 270, +89 in August
+- Tesla Semi: Einride to take 75 units this year, 500 by end-2027
+
+## Robotaxi
+- Tesla's September 3rd Cybercab event at Giga Texas will be invite-only with a livestream expected; panelists anticipate a factory tour but are unsure whether ride-alongs or pricing details will be included, with one expecting only ~10 Cybercabs involved initially. Electrek's Fred Lambert predicts Tesla will announce a fleet figure "on the order of 1,000-plus" Cybercabs but argues Tesla has never run more than ~50 vehicles active in a week across all markets — a gap he expects to persist post-launch.
+- Texas Robotaxi registrations reached 270 vehicles (all Model Y so far), with 89 added in August alone, per the host's dummus.com tracker; Cybercabs are expected to begin appearing in registrations in coming weeks.
+- Tesla's robotaxi service reportedly now runs 6am–10pm across Austin, Dallas, Houston, Miami, Orlando, and Tampa, with the unsupervised fleet described by Tesla as "a lot bigger" and wait times reportedly down significantly — though no hard replacement figure was given for RobotaxiTracker.com's stale counts.
+- Driverless Cybercabs continue to be spotted in Austin, including navigating parking-lot/apartment-complex settings; a new RGB light bar (purple, green, orange) helps riders identify their vehicle at pickup.
+- A financial model (jobhakdi) projects Tesla hitting 10,000 robotaxis by year-end, with the annualized run rate reaching 7% of Tesla's 2025 corporate earnings at that point, rising to 19% within a quarter and nearly 100% by end-2027 — presented explicitly as the host's own speculative model.
+
+## Autonomous Driving
+- A new "summer update" is rolling out with Grok voice commands (climate, glove box, mirrors, wipers, self-driving app control) plus preferred-routes navigation; anecdotal parking-memory improvements were reported on a build referred to as v14.7, with full destination-parking memory expected in a future v15.
+- Electrek's Lambert cites Musk telling investors that "rigorous validation" — not vehicle supply — is the real constraint on scaling, pending an FSD rewrite; the piece also cites a claimed supervised-fleet crash rate roughly 4x the human rate (author's claim, unconfirmed).
+- A technical breakdown (via "Dr. Know-it-all") explains why FSD's neural nets struggle to detect thin horizontal objects like chains or railroad bars — a pooling/parallax limitation described as an open, unsolved problem even in academic research, not unique to Tesla.
+- Elon Musk has said Hardware 3 will "almost definitely" need a hardware upgrade for unsupervised FSD, raising unresolved questions about remedies for the roughly 300,000 owners who bought FSD outright; a fleet-wide retrofit is estimated to cost meaningfully more than $1,000/vehicle once labor is included.
+- A widely shared video showed FSD swerving to avoid a pedestrian who jumped in front of a Cybertruck at ~40 mph.
+
+## Humanoid Bots
+- Jason Calacanis (All-In podcast) claimed to have seen a newer Optimus demo he called better than China's recent "bot Olympics," describing Optimus hardware as ~1.5 generations ahead of competitors and its "brain" ~5 generations ahead, predicting a billion units within a decade — treated by panelists as a plausible but likely orchestrated claim, not independently verified.
+- Panelists noted global humanoid production estimated at ~400 units (2024) growing to ~12,000 this year (unspecified sourcing), still small-scale versus Tesla's ambitions; Giga Texas's Optimus factory building, under construction since March, could take another six to eight months to complete structurally.
+
+## Energy
+- Tesla booked more than $9 billion in new Megapack projects over the past six weeks, totaling 43+ GWh — comparable to the ~49 GWh delivered over the trailing 12 months, meaning near a year's worth of bookings in six weeks.
+
+## Electric Vehicles
+- Tesla raised prices on Cybertruck dual-motor and premium trims by ~5%; first-half Cybertruck sales were cited (unconfirmed, attributed to a poster) at just over 8,000 units, down roughly a quarter to a third year-over-year, amid debate over steel costs, tariffs, and possible reallocation toward Cybercab/Model Y L production.
+- Tesla's windshield-related subscription drops from $35 to $25/month effective October 1.
+
+## Financials
+- Speculative discussion (not confirmed Tesla plans) suggests a Hardware 3 retrofit could cost hundreds of millions across ~300,000 affected vehicles; a refund/buyback was deemed unlikely by the commentator given Tesla's capital priorities.
+
+## Market & Competition
+- Rivian's CFO departure shortly after the R2 launch was read by hosts as a possible warning sign amid ongoing cash-burn concerns.
+- An existing class-action lawsuit covers Hardware 1, 2, 2.5, and 3 Tesla vehicles alleging false advertising and unfulfilled FSD/robotaxi promises.
+
+## SpaceX — Starship
+- SpaceX and Louisiana Governor Jeff Landry announced Starbase Louisiana, a ~$100 billion, ~14,000-acre site with a dozen-plus planned launch towers enabling 30+ Starship flights/day — set to be the largest launch site on Earth, with Musk citing "north of 10,000" jobs. The site is far more remote than Boca Chica (~30 miles from the nearest town) and sits near the Henry Hub gas hub, enabling on-site methane/LOX production.
+- A Starship vehicle unexpectedly survived reentry and splashdown and is being recovered by barge, generating what hosts called extensive new data.
+- A source reports the last planned Falcon 9 Starlink launch from Florida has occurred, with future Florida Starlink missions shifting to Starship.
+
+## SpaceX — Starlink
+- SpaceX filed for a new Gen3 Starlink constellation of up to 100,000 satellites (~320–473 km altitude), separate from its earlier million-satellite filing; Musk said SpaceX will "need a bigger rocket."
+- Starlink is producing 170,000+ kits/week (~8.5M/year) from its Texas factory; business-aviation pricing roughly doubled (global unlimited $10K→$20K/month).
+- Current constellation estimated at ~11,000 satellites and ~850 Tbps downlink; each Starship launch can add 60 V3 satellites (60 Tbps) versus ~3 Tbps per Falcon 9 launch. SpaceX holds ~19,000 satellite authorizations total (Gen 1+2) with ~7,100 remaining headroom; pending Gen3 (100,000) and Star Mind (1 million) requests are unapproved.
+- Korean Air will introduce Starlink connectivity in early September, becoming the first Korean airline to offer the service.
+
+## SpaceX — AI & Compute
+- On SpaceX's August 4 earnings call, Musk said SpaceX will build exclusively on Nvidia, calling its Vera Rubin system "the best AI computer"; the two are co-designing an orbital AI satellite using an adapted Vera Rubin NVL-72 payload, targeting first launch next year.
+- SpaceX expects 2+ gigawatts of AI compute by year-end, with Musk projecting ~10 gigawatts by end of next year and a long-term goal of 100 gigawatts deployed to orbit annually.
+- Terafab — a proposed SpaceX/Tesla chip manufacturing venture with Intel contributing fabrication expertise — targets 1 terawatt of compute hardware per year long-term; Nvidia has signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR that could mobilize $500B+ for AI infrastructure financing.
+
+## SpaceX — Launch Business
+- Tesla Semi received a concrete commercial validation: Einride confirmed it will take delivery of 75 of its 500 ordered trucks by end of 2026, with the remaining 425 by end of 2027 — pulled forward from an earlier 2028 timeline.
+
+Notable quotes and data:
+- Megapack bookings: $9B+ in six weeks, 43+ GWh, versus ~49 GWh delivered over the trailing 12 months.
+- Starbase Louisiana: ~$100B project, ~14,000 acres, 30+ Starship flights/day planned; "north of 10,000... really exciting jobs" — Elon Musk.
+- SpaceX AI compute: >2 GW by year-end, ~10 GW targeted by end of next year, 100 GW/year long-term orbital goal.
+- TSLA closed $348.75 (-1.71%); SPCX closed $141.50, up on the day while Nasdaq 100 fell 0.7%.
+- Cybercab efficiency: 165 Wh/mile, per Electrek — Tesla's most efficient vehicle to date.
