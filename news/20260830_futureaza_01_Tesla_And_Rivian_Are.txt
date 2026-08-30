@@ -1,0 +1,858 @@
+Channel:     futureaza
+Title:       Tesla And Rivian Are Doing Something Nobody Else Is
+URL:         https://www.youtube.com/watch?v=ZYV5EV92PEY
+Published:   2026-08-30 12:00 UTC
+Fetched:     2026-08-30 13:00 UTC
+
+────────────────────────────────────────────────────────────
+
+When I walked into Rivian, met with the
+CEO, RJ, he had direct idea of what he
+wanted to do. He was saying, "I am going
+to build a large software architect
+organization. I'm going to build a large
+hardware organization. I'm going to go
+design. I want all this stuff designed
+in-house. I want full vertical
+integration of the stack, right?" Same
+thing what Musk has directed his teams
+to do. You know, there are people that
+over the years when I was at Rivian,
+different people that came from
+traditional auto would say, you know,
+the argument persisted, it would get its
+fingers in for a while while we were in
+the thick of trying to define it. And
+this this is very hard to do. So, what
+you need is you need this incredibly
+good leadership from at the top of the
+company to keep a consistent [music]
+line.
+&gt;&gt; Car software is really hard. Why? I
+mean, it's not just the user interface,
+it's also the underlying systems and
+getting them all to play nice with each
+other. There's a lot to understand about
+it when you consider that everyone kind
+of gets it wrong. Toyota has
+millions of cars sold every year
+&gt;&gt; [music]
+&gt;&gt; and still does a pretty lackluster job
+of integration. Why is it so difficult?
+Well, I figured I'd get an answer
+[music] or two. I have Phil joining me,
+and if you don't know who Phil is, he's
+got his own uh presence [music] on X
+where he does all kinds of great stuff,
+and I'll give him a more proper
+introduction momentarily. I'm Brian,
+welcome to Futuraza.
+&gt;&gt; [music]
+&gt;&gt; Hey, Brian.
+&gt;&gt; How are you, man? Good to
+&gt;&gt; doing great.
+&gt;&gt; Yeah, yeah, it's been a it's been a
+little while. Um so, you
+uh helped Rivian. You were, I don't
+know, one of the first employees. You
+were definitely among the first on the
+California side, and you worked
+thoroughly with uh
+basically a clean sheet to design what
+would become the R1T. When it comes to
+uh software,
+you'll notice that everybody really
+struggles with it. Rivian does awfully
+well,
+well enough that Volkswagen said, "Hey,
+can we copy off your paper?" That's
+quite a bonus to your reputation as a
+company there. But why is it so
+difficult?
+&gt;&gt; Mhm. Yeah, I have a lot to say about
+this.
+Yeah. Yeah, so I mean briefly I I joined
+Rivian in um
+2017, April 2017. I think I was about
+the 50th employee.
+Uh I was the second person hired in the
+state of California. Rivian has a huge
+presence in California. It you know,
+most of its
+outside of the factory in Normal,
+Illinois, California is the major
+employment center for corporate. Um
+the technology center's in Palo Alto,
+just down the street from our friends at
+Tesla. And um
+Yeah, so when we
+we decided or I hired there, I was hired
+I came out of Apple. So software guy at
+Apple.
+And uh you know,
+talked to RJ, CEO, and agreed that
+you know, he had a vision. The vision
+was to build a software-defined
+architecture, which has, you know, huge
+implications in terms of building that
+stack and and going deep.
+That means that you start with
+uh if you're going to do something
+that's like
+you're going to start
+raw clay with a software,
+that means you're going to have to
+define your entire electrical
+architecture around it
+and not take a traditional path. So to
+kind of give you a kind of a layout
+here, traditional automotive
+since I don't know, the '70s or
+whatever,
+has been built around
+uh supplier components and parts, and
+there's a lot of them.
+And there's little things that control
+doors and
+windows and, you know, basically you
+call them microcontrollers or ECUs.
+And for
+since the '70s, those things have
+existed on some form of a network called
+CAN,
+which I think it's called common area
+network. People think of it as car it's
+sort of a car network and it still
+exists today. It has its fingers in
+everything because some of these little
+teeny microcontrollers that I'm talking
+about like the ones that do the windows
+and stuff, they only respond to CAN
+messages. No one's going to ever change
+that at least not in the foreseeable
+future. So when when I went to Rivian,
+the I mean coming in as a software guy,
+we had to build also a hardware team
+because we needed to design
+uh higher end ECUs, more capable ECUs,
+things that are more like
+Mac uh motherboards, you know,
+uh that style like you know,
+full arm CPUs on there um
+running at high megahertz and and so
+forth.
+Some of them to just to drive the
+screens, others to do telematics, others
+to essentially control, be the kind of
+master controller of of the system.
+Modern vehicles like Tesla and Rivian
+are developed on an ethernet backbone,
+which is uh not CAN, at least not native
+and not at the physical layer. And what
+they do is they route they may route CAN
+messages on that wire,
+but it's ethernet, okay? So
+kind of let's come back to your question
+on why is it hard for
+traditional OEMs to do this? Well, first
+off,
+they're not software houses. They don't
+live
+and breathe software. They're not out of
+Silicon Valley. They don't hire people
+from software companies.
+Mostly what they do is they integrate
+supplier systems,
+you know? So
+a lot of cars that
+want to pretend that they have a
+software defined architecture really
+don't, right? What they have is they
+have uh sort of the most major
+electronic component of the system is
+the infotainment system.
+And it is a unit. It is a thing. And it
+interfaces with other things on the car
+through some kind of different different
+types of interfaces.
+But, you know, it wasn't built to
+control the car. It was really
+built to receive information and display
+information to to the driver. The
+information portion, and then there's
+the entertainment. That's why they call
+it infotainment.
+But see, at a company like Tesla and
+Rivian, the the approach is taken, let's
+go build a master controller. Let's hang
+displays off of that. Let's use that
+master controller to control all uh to
+to to to be on this network of the car
+to control all these little
+microcontrollers in the car that do all
+these little functions. And uh it's it's
+it's a different approach, you know?
+It's it's a it's a holistic That's why
+they call it software-defined
+architecture.
+It's kind of a holistic approach. It's
+like you start with the idea that you're
+going to do your own
+Like most of the software in the car is
+going to be your software. Like it's
+going to be Rivian software. It's going
+to be Tesla software. It's not going to
+be coming from a supplier.
+Now there is
+hundreds and hundreds of thousands of
+lines of software in all these little
+microcontrollers, [clears throat]
+but it's all, you know, people would
+consider it legacy stuff. And it was
+it's just stuff that the Rivians and the
+Teslas interface to. If that makes
+sense.
+So that's that's the principal stuff.
+&gt;&gt; So the getting a CAN message over
+Ethernet is like getting a PDF of a
+telegram. It still works. It's just
+maybe not taking full advantage of the
+of the latest.
+&gt;&gt; Yeah, I mean what's what's going on is
+um you know, technically that'd be
+called network encapsulation. So
+basically the idea is that you're taking
+There's nothing wrong with CAN. Let's
+start there. There's nothing wrong with
+CAN. I mean, as a network, it's fairly
+ancient. It is a bus-oriented network,
+which means things can hang off of it,
+right? I mean, think about what's going
+on here. You have all these little
+microcontrollers. And by the way, it's
+not one uniform network on the on the
+car. It is now with these Ethernets. But
+typically the way it works is there'll
+be some sort of pseudo master controller
+in these legacy systems, and they'll run
+a CAN bus out to say doors and windows.
+They'll run another CAN bus that runs by
+braking, accelerator pedal, steering.
+Right? They'll separate They'll They'll
+have multiple CAN networks within the
+car.
+I mean, could be a dozen, could be five,
+could be three. But it's not one unified
+network. Where on say Tesla and Rivian
+it is. They
+have Ethernet. In fact, Tesla does
+something called special we could talk
+about called Ether loop. Um
+Now, there's nothing wrong with CAN.
+Like the messaging, uh you know, it's
+kind of a little bit ugly. It's kind of
+a little bit old. It's kind of a little
+bit bit packed. It's like, you know,
+pretty
+terse, which is fine. But the the the
+basic problem is that
+&gt;&gt; [snorts]
+&gt;&gt; it isn't so much the messaging format of
+the thing itself.
+It's more about like what did you design
+around this? How did you design the
+stuff originally?
+And I think that's kind of where you get
+yourself in trouble with these old OEM
+style things is that they they just
+interfaced in a very old format. And um
+you know, tried to
+I don't know. It's like
+today I think if you look at some of
+these companies like the Toyotas of the
+world, their software is absolutely god
+awful. I mean, and by the way, it's
+never going to get better. Like it will
+not ever get better. Period. End of
+story. The only way it for it to get
+better is sort of as you um alluded to
+like say the Rivian VW relationship
+where
+a company like VW holistically says,
+"I'm going to take the software stack
+in-house and run this thing." I mean, uh
+Rivian does amazing software. I mean
+stuff I did, but also
+the new teams, I'm not at Rivian
+anymore. The new teams, they really do
+amazing software. They've hired
+you know, extremely
+really good first principles hardware
+and software designers, right? People
+who know how to build it literally like
+define the hardware layer, define the
+network layer, define the messaging
+layer on the
+build it all the way up. Build that
+whole stack all the way up. Okay? So
+like the entire
+everything you see in the UI is invented
+and designed by Rivian and same thing
+for Tesla. Right? That obviously is not
+going to be true of maybe outside of
+Lucid.
+Um
+I can't think of another
+automobile
+I don't know. You may maybe a few guys
+out there that are really kind of This
+has been called or redefined as the
+software defined architecture where
+software drives the vehicle. It's sort
+of like
+software's on first and
+these approaches are
+for automotive, they're completely
+novel. I mean in a way what what the
+Rivian is with the Tesla is it's sort of
+like an iPhone on wheels.
+I mean it's defined by its software. Um
+it's it's hardware is a slave to the
+software.
+Uh it is meant to be
+updated with over-the-air updates.
+Um I've always said that a good the sign
+of a amazingly good
+uh software defined architecture is if
+every ECU on that car can be updated by
+an over-the-air update. You know, you
+see these other guys that go, "Oh, well,
+you know, some piece of the system gets
+updated, but you know, you got to bring
+it into your dealer to have them update,
+you know, there's a service bulletin and
+you've got to update the uh I don't
+know, so-and-so controller, you know,
+the so-and-so footwell controller that
+takes care of 27 things on the car." If
+you hear that, you kind of know that
+they're not really
+you know, they don't they They have it
+all together.
+&gt;&gt; Yes, I had a opportunity to read a post
+from a Kia software designer, software
+engineer. And when Tesla introduced
+light show for the Model X, they said
+the unexecutive came in and said, "We
+want that. What's it going to take for
+us to do that on our Kia?" And they dug
+into it and said, "Okay, here's what
+it's going to be, $27 million and 3 to 5
+years."
+What? How? We don't own any of the
+parts. We don't control any of that
+stuff. It's you're asking it to
+uh you know,
+you're asking a very old dog to do a
+very new trick, and we're just not set
+up and we don't have any trainers that
+can do that. Uh so, it was
+pretty different. Now,
+uh we know what the benefits of this
+approach are. We can see them. Rivian
+and Tesla both have over-the-air updates
+that are
+pretty famously successful. Other
+manufacturers claim to have over-the-air
+updates, but theirs are once a year,
+maybe less than once a year, and some of
+them require you to go into the service
+center to do an over-the-air update. I
+think we may have skipped the important
+part there, Audi, but surely there's a
+trade-off. What's the trade-off? What
+are you What is a manufacturer losing by
+doing the hard thing? Is it just effort?
+&gt;&gt; Well, I mean, you've got to I mean,
+it starts with the philosophy at the
+company. I mean, you know, like
+when I walked into Rivian, met with the
+CEO, RJ, he had direct idea of what he
+wanted to do. He was saying, "I am going
+to build a large software architect
+organization. I'm going to build a large
+hardware organization.
+I'm going to go design
+I want all the stuff designed in-house.
+I want full vertical integration of the
+stack.
+All right? Same thing what Musk has
+directed his teams to do. You know,
+there are people that over the years,
+when I was at Rivian, different people
+that came from traditional auto which
+say, you know, the argument persisted,
+it would get its fingers in for a while
+while we were in the thick of trying to
+define it and this this is very hard to
+do. So, what you need is you need this
+incredibly good leadership from at the
+top of the company to keep because I can
+tell you that maybe one or two levels
+down at Rivian uh you get drift
+immediately. Like someone would say,
+"Oh, this looks hard. Let's go talk to
+Bosch or Continental about an
+infotainment system. Um why are we doing
+all this? It seems really like we're
+wasting our time. It's going to take
+What do you mean it's going to take a
+year to do this when we can buy it from
+them and they told us it's going to take
+a month." And we're saying, you know,
+okay because we're developing this thing
+in a fairly vertically integrated way,
+right? And and you need this sort of
+executive sponsorship you almost at the
+CEO level. I can't even imagine maybe
+Lars at at at at at Tesla would be
+capable uh organizationally of directing
+this and making this a mandate outside
+of of Musk, but I would tell you that
+this comes from the top in these
+companies and uh they have to maintain
+this line.
+They have to hold the line. It's almost
+like holding the line, you know, um
+there's if you're if you're somewhere in
+the organization at director, senior
+director so level,
+you know, you're constantly taking shots
+on "Oh, let's do it a different way. Oh,
+let's uh let's do it traditional auto."
+There was a time when people came over
+um
+great group of people by the way, you
+know,
+a whole group of people came from
+McLaren over to Rivian. Mhm. And they're
+responsible for a lot of the physical
+design aspects of the car, chassis, blah
+blah blah. Um
+and they did amazing stuff on that car.
+However, uh McLarens are, you know, you
+get a design house to design the beauty
+of the thing.
+You get you got people that are focused
+on
+uh chassis, engine, you know, the real
+physical.
+And then the rest of it is just uh
+snapped together from
+you know, from from suppliers.
+&gt;&gt; An afterthought.
+&gt;&gt; Yeah, I mean, it's not it's not in their
+DNA. It's not in their thinking to do it
+that way. They don't do it that way. So,
+you know, I remember
+great people, but I had to push back
+against constantly. You know, I mean,
+even things like, "Why do you want the
+screen so big?"
+Because we're going to put all sorts of
+stuff on it. Well, explain how you're
+going to use all of the screen.
+Cuz otherwise, we want to make it
+smaller.
+And it's like, how do you explain
+how you're going to use all of the
+screen when you have It's sort of a
+catch-22, right? You've got the ability
+to update software over time, and you
+because you're building a
+software-defined architecture, you have
+this really, really
+moldable thing over the course of the
+life of that vehicle. And yet, you're
+forced to defend how you're going to use
+the screen on day one because if you
+can't lay out the function and tell me
+why we need a 17-in and not a 14-in
+screen,
+then oh boy, I can't really defend that,
+right? Um
+It's hard, right? So, again, I think
+most of the companies that are
+successful here have started clean sheet
+because they haven't had
+I don't know, the way of doing it
+internally.
+And
+clean sheet usually
+is demanded by It's not just a division.
+It's not just usually a skunk works
+component or division. It's usually the
+company. It's usually the CEO.
+&gt;&gt; So, what I hear you saying is imagine if
+you walked into a bank and you said,
+"I'd like to open an account. Here's
+$5,000." And they said, "Great. We're
+going to put all of it in a CD uh
+6-month CD." You go, "No, no, no.
+Checking is fine. I need you to lay out
+what you're going to spend that money
+on." "I don't know, man, but I want to
+have that flexibility." Sorry, Phil. Uh
+we're going to put 80% of it in a CD.
+The other 20% maybe you can have for
+emergencies. That would create quite a
+penalty. Um I would say that uh
+I have had the opportunity to speak at
+some length with software people at
+Rivian. And they are very good about
+telling me absolutely nothing. But the
+point I wish to get across there is
+they're very smart people and I have
+absolute confidence that they know what
+they're doing and they've been able to
+give me insights on what the legacy guys
+do wrong, which is also very important.
+What I learned not uh not just from
+them, but from
+the companies that
+sell the parts is uh cuz I was talking
+with a trucking company in Michigan that
+is working on all sorts of digital
+mirrors and things like that. And
+they're the people who sell the systems.
+And so, of course, my question was, "Do
+you sell any systems to Tesla?" They go,
+"Hey, Tesla doesn't buy systems. Tesla
+buys parts. Tesla is the system."
+Cuz I cuz I asked, "Why if if you're
+buying the same parts Tesla's buying,
+why are Tesla's more reliable?" He said,
+"Because they're only buying the pieces,
+not the system."
+&gt;&gt; That's correct.
+&gt;&gt; Yeah. And this is
+Yeah. And this is apparently
+how they do it in China. China's
+auto industry's a lot younger. It's a
+lot more nimble. And by younger, I mean
+newer.
+Uh so, they've had fewer opportunities
+to develop bad habits and get stuck in
+legacy, you know, legacy systems. Legacy
+hell, to be honest.
+&gt;&gt; is. It is. It is.
+&gt;&gt; So so Yeah. So, I've got a big question
+for you. It is about what is phantom
+drain and how to address it. But first,
+I want to remind folks you are free to
+subscribe. This video is uh what I do. I
+enjoy doing this and I need to hit
+100,000 at some point. It's taking
+forever. Uh so, any help would be
+appreciated. If you're already
+subscribed, I appreciate you so much.
+So, on phantom drain, um
+I I once had an incident where my car
+did it. It was at the airport.
+Fortunately, I was able to email a key
+to a buddy of mine who just Now, it's on
+his app. He can see where it is. He went
+and moved it to the charger at the
+airport for me. Problem solved. The next
+update fixed it. I don't know what the
+issue was.
+Uh but whatever it was, they got it
+addressed. Some cars have
+substantially more phantom drain. Uh it
+certainly depends on the model. I know
+early Cybertrucks had some issues with
+it. Uh where if you plugged into level
+one charging, it would literally never
+catch up to the phantom drain on some of
+those foundation trucks.
+&gt;&gt; Yeah.
+&gt;&gt; That's That's a problem when charging
+time is infinity.
+&gt;&gt; That's right.
+&gt;&gt; But
+what causes it and what do manufacturers
+do to mitigate it?
+&gt;&gt; Well, you know, the more and more
+electronics we put in car I mean,
+cars are interesting because they're
+this myriad of ECUs, electronic control
+units. There's
+hundreds of them, you know, for the
+smallest of things, microcontrollers
+that are like I said, windows and doors,
+stuff that people don't think of.
+There's got to be a wire that goes to
+that thing. You know, normally, it's
+powered on the network and and most of
+those systems, you have to design a
+system that, you know, like if you take
+uh and okay. So, now with a more modern
+car like a Rivian or a Tesla,
+um you're going to develop these things
+that are powerhouse ECUs, like the big
+ones, right? Whether they're zonal,
+they're placed throughout the car,
+whether they're central, but you're
+going to have a few big ones. And those
+things are like uh you know, running a
+laptop effectively, right?
+So, these are high-wattage consumers uh
+as opposed to these little teeny door
+controllers and so forth. But but so,
+one problem you have is you got sort of
+bleed across the system. Like all little
+things using a little bit of power. And
+you got to have an amazingly good
+software system that knows what to shut
+down and when to shut it down. So, let
+me give you an example. Everybody
+expects their car to be connected to the
+to the network today, right? You open up
+your Tesla app, you open up your Rivian
+app, you expect instant information.
+Guess what? If you're going to expect
+that instant information off that car, a
+part of that car has to be awake.
+It has to be awake and and you know that
+you see with your Tesla, your Rivian
+car is asleep and you you know you
+update the app and this wake signal is
+sent. And by the way, you might want to
+know how that works. I'll tell you how
+it works. Essentially, your car
+is uh
+there's a small part of the electronics
+of the telematics
+control unit. That's the thing that
+talks to the world.
+And that small thing is in listen mode
+on usually on cellular, okay? It's like
+cellular the cellular sort of alive. And
+the cellular is woken can wake the
+system by receiving essentially a
+private SMS message.
+So, effectively what's happening is if
+you open up your Rivian app, you open up
+your Tesla app, you're 2,000 mi away,
+your car gets sent an SMS message from
+that their cloud
+uh their respective cloud
+and that causes the system to wake up
+and a certain number of controllers to
+come online.
+And now you have to decide, well, if you
+laid out your controllers in this crazy
+way and you want all that status
+information available in that
+application remotely, well, everybody's
+got to come awake
+to answer that question, right? Like,
+are your doors shut? Well, I don't know.
+You got to have the door controller
+alive, powered, to answer that question.
+How about the windows? You know, how
+about the you know, you can get down to
+very small So, you have to take your
+system, you have to design it in a way
+that
+you have to think of power states
+on your on on on if you're developing
+your own ECUs in house like a Rivian or
+a Tesla, you have to think of your power
+states. Like what's a low power state
+for my board? What's a higher power
+state? What's an operational power state
+like when I'm driving?
+Cuz when you're driving it's fine,
+right? But even when it's driving you
+don't want to be like over consuming
+power, right?
+And then you have to think about well,
+okay.
+I've got these power states, but what's
+causing the thing to bump up in these
+different power states? Um is it a
+function?
+Is it a remote function? Cuz that's when
+it gets really like I said, a remote
+function is you think, oh I just want to
+check the status of my car. Well, yeah,
+your car has to wake up and answer that
+question.
+&gt;&gt; Okay.
+&gt;&gt; So then if if let's just talk about just
+general bleed. If if the car is sort of
+power to its minimal state, well,
+software organization has to I mean the
+way I think about this it's not any
+different than what happens on iPhone. A
+new release for iPhone comes out and for
+the first month everybody complains
+about my battery just
+uh you know,
+my battery dissipates much quicker
+because new software's been introduced
+and they have to go back and kind of
+profile that and look at where the power
+drain you know, where software is alive,
+what it's doing, is it important to the
+function features and functions of the
+product. If it is,
+then I keep it alive, but can I
+set it up in such a way that it uses a
+minimal amount or is it absolutely
+critical? And this goes on and on and
+you see several iOS releases and finally
+the thing gets back to some nominal
+battery state that you have for the next
+11 months and then they rinse, wash,
+repeat the cycle.
+&gt;&gt; Mhm.
+&gt;&gt; This is very the same thing you know,
+when I think we probably put out Rivian
+software version one, you know, back in
+'21 when the first cars came out, I
+think it was probably uh
+a mess of power bleed. You know,
+probably I don't know what the number
+would be, but
+and and you know why? Because a lot of
+that stuff
+you think to yourself, well, I should
+get on that early in cycle,
+but you know what? A lot of people are
+just building software, they're not
+performance engineers,
+and they do stuff that you don't know
+system wide what happened. Like why did
+they you know, maybe some
+component in the system
+that you didn't expect was
+seems like it's minor, but it's driving
+something continuously, which is dry
+when I say driving something, I mean
+like the CPU's burning away, you know,
+[laughter] and you're thinking
+Wait a minute. How did this little
+function over here that almost does
+nothing all of a sudden
+suck down 2% of the of the power in 24
+hours. So,
+the bottom line is you've got to really,
+really pay attention to the problem, and
+you have to look at all these little
+places [snorts] where you know, it's
+like um it's like you have old pipes and
+there's little leaks, and you've got to
+kind of look through them, and you got
+to look around, and you got to say, you
+know what? Why are we draining a gallon
+an hour in this house? Where's that
+water going? Oh, there's a little leak
+in the toilet. You know, there's a
+little leak at this faucet outside.
+There's a little
+All those little things add up, and
+that's your drain, right? So, you got to
+cure those problems one by one,
+but first you got to find them.
+&gt;&gt; [laughter]
+&gt;&gt; Yeah.
+&gt;&gt; And sometimes hunting down the problems,
+you know, it's it's really hard. It's
+really hard.
+&gt;&gt; Okay. Uh and I've also heard of cars
+where
+uh if they have a physical key that is
+RFID, if their bedroom is too close to
+the garage, it'll be waking up all
+night,
+uh and that can cause a lot of drain,
+too. I don't know if that's something
+most manufacturers have found a way to
+mitigate yet. I feel like you know, I'm
+sure there's a way. I'm sure they're
+working on it.
+Uh
+&gt;&gt; The the macro problem is that your car
+is no longer just a closed box. It's on
+the network, whether that's Bluetooth,
+Wi-Fi, cellular, or all three all at
+once.
+And when you've got external things
+trying to communicate with the car,
+you're going to the car is going to be
+in use and that battery is going to be
+pulled down. So,
+&gt;&gt; Mhm.
+&gt;&gt; the reason that it doesn't happen as
+much on ICE vehicles is because
+I mean, in a sense,
+uh other than your 12-V, you don't
+really have this infinite supp- I mean,
+the way uh the way a Rivian or a a Tesla
+works is they have these 12-V batteries
+that are basically recharged through the
+high-voltage system, right? So, you're
+not when you're pulling power, you're
+not pulling it directly off the the the
+main battery.
+However, it is recharging those those
+12-V, right? And as a software system,
+you get that drain. But, I think
+old-style ICE cars almost uh assumed
+from an engineering point of view that
+they're kind of just shut down. They
+weren't doing anything. They were closed
+boxes. They weren't on anybody's
+network. So, those cars never really had
+a problem like sitting there draining
+their their 12-V uh
+except sometime, you know, little little
+minor things. But, these cars these cars
+being all software,
+you know, it's funny thing, Brian, it's
+like software guys
+uh software guys look pretty high up in
+the stack. They're not down at the
+hardware level, right? So, the more you
+have in a software organization where
+you're doing people up here in the
+application side,
+they're not necessarily down at this
+hardware level, so they don't see all
+that problem. And because you've got
+this mature
+organization, you have the iPhone
+problem. Just translate it onto the car.
+&gt;&gt; Mhm.
+&gt;&gt; [clears throat]
+&gt;&gt; And with more real estate for more chips
+that can draw more power.
+&gt;&gt; Yeah.
+&gt;&gt; Exactly.
+&gt;&gt; But, uh guys, what did we miss? What did
+we misunderstand? What should I have
+asked Phil?
+Uh we'll find out in the in them
+comments below. Definitely do that.
+Everybody else, you know, like,
+subscribe, do what you do. Stay tuned.
+And Juicy and I will have Phil back
+because I have a very big question about
+the value of simulation. No, not the one
+we're living in. That one's pretty
+valuable. But, in training AI systems,
+specifically cars and robots.
+Uh cannot wait to hear from you clever
+robots on the flippity-flop.
