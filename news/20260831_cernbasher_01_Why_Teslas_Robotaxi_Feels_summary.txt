@@ -1,0 +1,34 @@
+Channel:     cernbasher
+Title:       Why Tesla's Robotaxi Feels So Slow Right Now
+Published:   2026-08-31 12:00 UTC
+Summarized:  2026-08-31 13:04:15 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01MoP8eAGktpviRDDXoF3oib
+Cost:        $0.02410 (13061 in / 2208 out tokens)
+Relevance:   core — The discussion substantively analyzes Tesla's Robotaxi rollout pace, safety data strategy, cost economics, and customer experience challenges, all central to the robotaxi investment thesis.
+Topic:       tesla
+Categories:  Robotaxi, Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Two commentators discuss why Tesla's Robotaxi expansion appears slow, arguing it reflects a deliberate strategy of accumulating driving data cautiously before scaling, while also covering cost economics, customer experience friction points, and how society might judge robotaxi safety statistics once fleets scale.
+
+## Robotaxi
+1. **Slow rollout as deliberate data-gathering strategy:** One speaker argues Tesla is intentionally moving slowly and staying within geo-fenced areas and limited times of day so it can accumulate enough driving miles that any future accident can be contextualized statistically (e.g., "we've driven a million miles" rather than just a handful), rather than appearing to have caused a disproportionate incident too early.
+2. **13.6 billion supervised FSD miles seen as a foundation:** One speaker notes Tesla already has 13.6 billion supervised Full Self-Driving miles, arguing this dataset is valuable for Robotaxi even though it's supervised, since human drivers not intervening on the same roads provides comparable behavioral data.
+3. **Learning from human driving patterns:** Using an Austin intersection example, the speakers describe Robotaxi software potentially adapting to human lane-choice patterns (e.g., most drivers taking a particular lane) even without knowing the underlying reason, though one speaker suggests the system should ideally evaluate why humans behave that way.
+4. **Anticipating and avoiding others' mistakes and hazards:** A recurring theme is that Robotaxi/FSD doesn't just avoid causing accidents but proactively anticipates dangers — cited examples include avoiding children, pets, deer, and in Australia, kangaroos and wombats — which the speaker calls "astounding," while jokingly noting this could reduce roadkill enough to affect deer populations.
+5. **Defensive driving lowers cost per mile:** Avoiding accidents through defensive maneuvers (e.g., not tailgating trailers, merging away from on-ramps) is framed as a direct financial benefit — accident avoidance reduces vehicle downtime and repair costs, which can be expressed in cents-per-mile, a metric one speaker says applies to all Robotaxi/Cybercab economics.
+6. **Camera-based sensors cheaper to repair than Waymo's lidar/radar stack:** One speaker contrasts Waymo's protruding lidar/radar hardware, which is costly and time-consuming to repair when damaged, with Tesla's vision-only approach, claiming cameras can be swapped for roughly $25, keeping repair costs and downtime low.
+7. **Customer experience as a distinct risk factor:** Beyond crash safety, the speakers highlight non-safety risks tied to rider experience — cars stopping mid-street, confusion at airport pickup lanes, locked doors preventing entry, and drop-off location requests (e.g., wanting to be dropped closer to cover in the rain) — as issues that must be resolved before wider scaling, with one speaker noting Elon Musk has discussed this tradeoff between scaling speed and refining these experience issues on recent calls.
+8. **Safety reliability vs. experience reliability are distinct metrics:** One speaker distinguishes "safety reliability" (how often FSD encounters a collision-risk situation) from "experience reliability" (how often it does something frustrating, like poor parking placement), citing their own early Robotaxi ride where the car had to be chased into a parking lot blocks away — an issue they say no longer occurs today.
+9. **Framing future accident statistics against a human baseline:** The speakers anticipate headlines highlighting large cumulative Robotaxi accident or fatality counts as fleets scale, but argue the more relevant comparison is against the (much higher) number of deaths/accidents that would have occurred if humans had driven the same miles — with one speaker speculating Tesla could save on the order of 20,000 lives a year if it cut fatalities by half, while questioning what percentage improvement society and regulators would consider acceptable.
+
+Notable quotes and data:
+- "13.6 billion that we already have of supervised FSD miles is not for nothing."
+- "Everything about robo-taxi and cybercab can be expressed in cents per mile."
+- "25 bucks to replace those cameras" (Tesla vision hardware repair cost, per one speaker).
+- "The last 100 ft may be harder than the previous 10 miles" — on drop-off/pickup logistics as a customer-experience bottleneck.
+- "This is as bad as it's ever going to be. It will continually improve, and it may improve at a pace that is shockingly good."
+- Hypothetical: "A thousand people killed in Tesla Robotaxi accidents" headline vs. an estimated 10,000 expected under human driving for the same miles (speaker's illustrative framing, not a real reported figure).
+- Speaker speculation: Tesla saving "20,000 lives a year" if it prevents half of the roughly 40,000 annual U.S. road deaths (illustrative, not a factual claim).
+- One speaker paraphrases a third party's line: "Politicians are unsafe" — for blocking robotaxi expansion despite data suggesting it's safer than human driving.
