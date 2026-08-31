@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { isHiddenSummary, loadModeration } from './moderation.js';
+import { CATEGORIES } from './pipeline/config.js';
 
 const newsDir = path.resolve('news');
 const outFile = path.resolve('src/data/news.json');
@@ -69,6 +70,16 @@ const articles = files.map(filename => {
     }
   }
 
+  // Categories header -> whitelisted, canonically ordered array. Same guard as
+  // the Topic header below: the summarizer occasionally writes prose instead of
+  // categories ("None applicable", "Executive Summary" on the TTT briefs), and
+  // only the CATEGORIES list in pipeline/config.js may reach the UI. Ordering by
+  // that list rather than the model's output keeps the feed's category filter
+  // and the popup chips stable, and puts the SpaceX categories last (Tesla-led).
+  const categories = [...new Set(
+    (meta.categories || '').split(',').map(c => c.trim()).filter(c => CATEGORIES.includes(c))
+  )].sort((a, b) => CATEGORIES.indexOf(a) - CATEGORIES.indexOf(b));
+
   const title = (meta.title || filename).replace(/^Sawyer Merritt\s*[—–-]\s*/, '');
 
   // Official Tesla releases are deep-linkable at /t/<slug>/ (see
@@ -90,6 +101,7 @@ const articles = files.map(filename => {
     source: meta.source || '',
     signal,
     relevance: meta.relevance || null,
+    ...(categories.length ? { categories } : {}),
     // Whitelisted so a garbled Topic header can't leak arbitrary strings into the UI
     topic: ['tesla', 'spacex', 'both', 'none'].includes(meta.topic) ? meta.topic : null,
     videoUrl,
@@ -159,5 +171,8 @@ for (const date of Object.keys(byDate)) {
 }
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });
-fs.writeFileSync(outFile, JSON.stringify({ articles: uniqueArticles, byDate }, null, 2));
+// categoryOrder ships the canonical list to the client so the feed's category
+// filter has one source of truth (pipeline/config.js) instead of a second
+// hardcoded copy that would silently drift when a category is added.
+fs.writeFileSync(outFile, JSON.stringify({ articles: uniqueArticles, byDate, categoryOrder: CATEGORIES }, null, 2));
 console.log(`Built ${uniqueArticles.length} articles into ${outFile}`);

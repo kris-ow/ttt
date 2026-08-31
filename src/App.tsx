@@ -76,6 +76,8 @@ export default function App() {
   })
   const [selectedChannel, setSelectedChannel] = useState<string | null>(null)
   const [showFilter, setShowFilter] = useState(false)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
+  const [showCategoryFilter, setShowCategoryFilter] = useState(false)
   const [contactOpen, setContactOpen] = useState(false)
   // /w/<date>/ and /t/<slug>/ deep links: open the Weekly Brief / official
   // Tesla release popup on arrival, same pattern as the interview deep link
@@ -87,6 +89,7 @@ export default function App() {
   )
   const [mobileStockTab, setMobileStockTab] = useState<MobileTileTab>('stock')
   const filterRef = useRef<HTMLDivElement>(null)
+  const categoryFilterRef = useRef<HTMLDivElement>(null)
   const swipeRef = useRef<HTMLDivElement>(null)
 
   const handleSwipeScroll = useCallback(() => {
@@ -113,6 +116,21 @@ export default function App() {
       const nameB = (CHANNEL_META[b]?.name || b).toLowerCase()
       return nameA.localeCompare(nameB)
     })
+  }, [])
+  // Categories actually present in the feed, ordered by the canonical list
+  // build-news.js ships (Tesla categories first, SpaceX last). Derived from the
+  // data so a category with no articles never shows up as an empty filter.
+  const categories = useMemo(() => {
+    const order = data.categoryOrder ?? []
+    const present = new Set(data.articles.flatMap(a => a.categories ?? []))
+    return order.filter(c => present.has(c))
+  }, [])
+  // Single entry point for the category filter (header dropdown + the chips in
+  // the article popup) so the Plausible event fires once, wherever it came from.
+  const applyCategory = useCallback((category: string | null) => {
+    setSelectedCategory(category)
+    setShowCategoryFilter(false)
+    if (category) track('Category Filter', { category })
   }, [])
   const stockData = useStockQuote()
 
@@ -260,15 +278,15 @@ export default function App() {
   }, [routeInterview, selectedArticle])
 
   useEffect(() => {
-    if (!showFilter) return
+    if (!showFilter && !showCategoryFilter) return
     const handleClick = (e: MouseEvent) => {
-      if (filterRef.current && !filterRef.current.contains(e.target as Node)) {
-        setShowFilter(false)
-      }
+      const target = e.target as Node
+      if (filterRef.current && !filterRef.current.contains(target)) setShowFilter(false)
+      if (categoryFilterRef.current && !categoryFilterRef.current.contains(target)) setShowCategoryFilter(false)
     }
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
-  }, [showFilter])
+  }, [showFilter, showCategoryFilter])
 
   return (
     <InterviewRouteContext.Provider value={openInterview}>
@@ -372,42 +390,82 @@ export default function App() {
               </div>
             </div>
 
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center flex-wrap gap-x-4 gap-y-1 mb-4">
               <h3 className="text-text-bright text-xs sm:text-sm font-bold whitespace-nowrap">NEWS FEED</h3>
               <span className="flex-1 border-t border-dashed border-text-dim" />
-              <div ref={filterRef} className="relative">
-                <button
-                  onClick={() => setShowFilter(!showFilter)}
-                  className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
-                >
-                  FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
-                </button>
-                {showFilter && (
-                  <div className="absolute top-6 right-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
-                    <button
-                      onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
-                      className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
-                        !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
-                      }`}
-                    >
-                      ALL
-                    </button>
-                    {channels.map(ch => (
+              {/* Both selectors live in one right-aligned block that wraps as a
+                  unit. A long category name ("SPACEX — CORPORATE & VALUATION")
+                  pushes them onto their own line on mobile; keeping them flush
+                  right means the dropdowns, which hang off the button's right
+                  edge, always open inside the viewport. */}
+              <div className="flex flex-wrap items-start justify-end gap-x-4 gap-y-1 ml-auto min-w-0">
+                {/* Category filter: the summarizer's own coverage categories, so a
+                    reader can pull out just Robotaxi, or just SpaceX — Starship. */}
+                <div ref={categoryFilterRef} className="relative">
+                  <button
+                    onClick={() => { setShowCategoryFilter(!showCategoryFilter); setShowFilter(false) }}
+                    className="text-xs text-right cursor-pointer transition-colors text-text-dim hover:text-green"
+                  >
+                    CATEGORY: <span className="text-green font-bold">[{selectedCategory ? selectedCategory.toUpperCase() : 'ALL'}]</span>
+                  </button>
+                  {showCategoryFilter && (
+                    <div className="absolute top-full mt-1 right-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
                       <button
-                        key={ch}
-                        onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
+                        onClick={() => applyCategory(null)}
                         className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
-                          selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                          !selectedCategory ? 'text-green font-bold' : 'text-text-dim hover:text-green'
                         }`}
                       >
-                        {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
+                        ALL
                       </button>
-                    ))}
-                  </div>
-                )}
+                      {categories.map(cat => (
+                        <button
+                          key={cat}
+                          onClick={() => applyCategory(cat === selectedCategory ? null : cat)}
+                          className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
+                            selectedCategory === cat ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                          }`}
+                        >
+                          {cat.toUpperCase()}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div ref={filterRef} className="relative">
+                  <button
+                    onClick={() => { setShowFilter(!showFilter); setShowCategoryFilter(false) }}
+                    className="text-xs cursor-pointer transition-colors text-text-dim hover:text-green"
+                  >
+                    FILTER: <span className="text-green font-bold">[{selectedChannel ? (CHANNEL_META[selectedChannel]?.name || selectedChannel).toUpperCase() : 'ALL'}]</span>
+                  </button>
+                  {showFilter && (
+                    <div className="absolute top-full mt-1 right-0 z-30 border border-border bg-surface p-2 flex flex-col gap-1">
+                      <button
+                        onClick={() => { setSelectedChannel(null); setShowFilter(false) }}
+                        className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
+                          !selectedChannel ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                        }`}
+                      >
+                        ALL
+                      </button>
+                      {channels.map(ch => (
+                        <button
+                          key={ch}
+                          onClick={() => { setSelectedChannel(ch === selectedChannel ? null : ch); setShowFilter(false) }}
+                          className={`px-3 py-1.5 text-xs text-left whitespace-nowrap cursor-pointer transition-colors ${
+                            selectedChannel === ch ? 'text-green font-bold' : 'text-text-dim hover:text-green'
+                          }`}
+                        >
+                          {(CHANNEL_META[ch]?.name || ch).toUpperCase()}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
-            <FeedSection selectedChannel={selectedChannel} onSelectArticle={handleArticleOpen} />
+            <FeedSection selectedChannel={selectedChannel} selectedCategory={selectedCategory} onSelectArticle={handleArticleOpen} />
           </div>
         )}
         {mountedTabs.has('interviews') && (
@@ -439,7 +497,7 @@ export default function App() {
 
       {/* ── Article overlay ─────────────────────────── */}
       {selectedArticle && (
-        <ArticleDetail article={selectedArticle} onClose={closeArticle} />
+        <ArticleDetail article={selectedArticle} onClose={closeArticle} onSelectCategory={applyCategory} />
       )}
 
       {/* ── Interview overlay (deep-linkable /i/<slug>/) ─ */}

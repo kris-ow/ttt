@@ -12,8 +12,9 @@ const INITIAL_DAYS = 7
 
 const interviews = (interviewsData as { interviews: Interview[] }).interviews
 
-export function FeedSection({ selectedChannel, onSelectArticle }: {
+export function FeedSection({ selectedChannel, selectedCategory, onSelectArticle }: {
   selectedChannel: string | null
+  selectedCategory: string | null
   onSelectArticle: (a: Article) => void
 }) {
   const openInterview = useInterviewOpener()
@@ -31,15 +32,31 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
   const [showAll, setShowAll] = useState(false)
   const dates = showAll ? allDates : allDates.slice(0, INITIAL_DAYS)
 
+  // Channel and category filters combine, so an empty result is reachable
+  // (a SpaceX category + a channel that only covers Tesla, say).
+  const days = dates.map(date => ({
+    date,
+    articles: (data.byDate[date] || []).filter(
+      a => (!selectedChannel || a.channel === selectedChannel) &&
+           (!selectedCategory || a.categories?.includes(selectedCategory))
+    ),
+    // Interviews carry no categories, so either filter hides them
+    dayInterviews: selectedChannel || selectedCategory ? [] : (interviewsByDate[date] || []),
+  })).filter(d => d.articles.length > 0 || d.dayInterviews.length > 0)
+
+  const canShowOlder = !showAll && allDates.length > INITIAL_DAYS
+
   return (
     <div className="space-y-6">
-      {dates.map(date => {
-        const articles = (data.byDate[date] || []).filter(
-          a => !selectedChannel || a.channel === selectedChannel
-        )
-        const dayInterviews = selectedChannel ? [] : (interviewsByDate[date] || [])
-        if (articles.length === 0 && dayInterviews.length === 0) return null
-
+      {/* A narrow category (SpaceX — Launch Business, say) can have nothing in
+          the last 7 days, so the empty state sits above SHOW OLDER rather than
+          replacing it — otherwise the filter dead-ends. */}
+      {days.length === 0 && (
+        <div className="border border-border bg-surface p-6 text-center text-xs text-text-dim">
+          NO ARTICLES MATCH THIS FILTER{canShowOlder && <> IN THE LAST {INITIAL_DAYS} DAYS</>}
+        </div>
+      )}
+      {days.map(({ date, articles, dayInterviews }) => {
         return (
           <div key={date}>
             <div className="flex items-center gap-3 mb-3">
@@ -109,7 +126,7 @@ export function FeedSection({ selectedChannel, onSelectArticle }: {
           </div>
         )
       })}
-      {!showAll && allDates.length > INITIAL_DAYS && (
+      {canShowOlder && (
         <button
           onClick={() => { setShowAll(true); track('Show Older') }}
           className="w-full border border-border bg-surface hover:bg-surface-2 hover:border-border-light p-3 text-xs text-text-dim hover:text-green transition-colors cursor-pointer"

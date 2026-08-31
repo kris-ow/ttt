@@ -13,6 +13,10 @@ export interface Article {
   // Which thesis the content concerns (summarizer Topic header);
   // null on legacy summaries and TTT briefs — no badge
   topic?: 'tesla' | 'spacex' | 'both' | 'none' | null
+  // Coverage categories from the summarizer's Categories header, whitelisted and
+  // canonically ordered by build-news.js. Absent on legacy summaries written
+  // before the header existed, and on the TTT briefs (which span every category)
+  categories?: string[]
   videoUrl: string | null
   body: string
   type?: 'executive' | 'weekly'
@@ -21,6 +25,9 @@ export interface Article {
 export interface NewsData {
   articles: Article[]
   byDate: Record<string, Article[]>
+  // Canonical category list (CATEGORIES in scripts/pipeline/config.js), shipped
+  // by build-news.js so the feed filter orders categories without a second copy
+  categoryOrder?: string[]
 }
 
 export type Bias = 'BULL' | 'LEAN BULL' | 'NEUTRAL' | 'BEAR'

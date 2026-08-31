@@ -3,7 +3,11 @@ import { type Article, CHANNEL_META } from '../../types'
 import { renderInline, topicTag } from './helpers'
 import { track } from '../../analytics'
 
-export function ArticleDetail({ article, onClose }: { article: Article; onClose: () => void }) {
+export function ArticleDetail({ article, onClose, onSelectCategory }: {
+  article: Article
+  onClose: () => void
+  onSelectCategory?: (category: string) => void
+}) {
   const channel = CHANNEL_META[article.channel]
 
   useEffect(() => {
@@ -63,6 +67,22 @@ export function ArticleDetail({ article, onClose }: { article: Article; onClose:
                   [WATCH ON YOUTUBE]
                 </a>
               )}
+            </div>
+          )}
+
+          {/* Coverage categories (summarizer's Categories header). Clicking one
+              closes the popup and filters the feed down to that category. */}
+          {article.categories && article.categories.length > 0 && (
+            <div className="mb-4 flex flex-wrap gap-2">
+              {article.categories.map(category => (
+                <button
+                  key={category}
+                  onClick={() => { onSelectCategory?.(category); onClose() }}
+                  className="border border-green-deep px-2 py-0.5 text-[10px] text-green-dim hover:text-green hover:border-green-muted transition-colors cursor-pointer"
+                >
+                  {category.toUpperCase()}
+                </button>
+              ))}
             </div>
           )}
 
