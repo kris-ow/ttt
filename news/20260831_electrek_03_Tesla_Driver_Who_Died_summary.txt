@@ -1,0 +1,30 @@
+Channel:     electrek
+Title:       Tesla driver who died when his car stopped on highway was using FSD/Autopilot
+Published:   2026-08-31 18:54 UTC
+Summarized:  2026-08-31 19:02:03 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01LBwsNKzhP1eXmJEcAkbt6g
+Cost:        $0.01507 (6410 in / 1733 out tokens)
+Relevance:   core — the article concerns Tesla's Autopilot/FSD safety data and disclosure practices, directly bearing on the autonomous driving investment thesis and regulatory risk.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports on a fatal October 2025 crash on Florida's I-4, where a Tesla Model 3 stopped in a live highway lane was rear-ended by a semi, killing the 43-year-old driver; the article says Tesla's own NHTSA filing confirms a driver-assist system was engaged but the details remain redacted.
+
+## Autonomous Driving
+1. **Crash details:** Around 9:25 p.m. on October 6, 2025, a 2020 Tesla Model 3 was stopped in the center eastbound lane of I-4 near Lake Mary Boulevard in Seminole County, Florida. A semi tried to avoid it, clipped the Tesla, hit a guardrail and overturned; the Tesla was pushed into a second semi. The Model 3 driver, a 43-year-old Deltona man, died at the scene; both truck drivers were uninjured. Florida Highway Patrol said it could not explain why the car was stopped in the lane, and no news report mentioned Autopilot or FSD.
+
+2. **Tesla's NHTSA filing:** Electrek says it matched the crash to a redacted crash report Tesla submitted under NHTSA's Standing General Order, which requires reporting of crashes where a Level 2 driver-assist system was engaged within 30 seconds of impact. The filing lists the automation "Engagement Status" as "Verified Engaged," pre-crash movement as "Stopped," and speed as 0 mph, and indicates Tesla holds event-data-recorder and telematics data. The crash narrative, software version, and whether the road was within the system's approved operating area are redacted as confidential business information, so the report can't confirm whether Autopilot or FSD specifically was active.
+
+3. **How Electrek matched the report:** Unredacted fields in NHTSA's file — city, vehicle, month, and a UTC-logged incident time — align with FHP's reported time, location, vehicle, and outcome, leading Electrek to conclude it is the same crash. Electrek says it has asked FHP for information on the incident and whether Tesla shared its data with authorities.
+
+4. **Phantom braking raised as a possible factor:** The article notes Tesla's documented history of phantom braking (unnecessary hard braking for nonexistent obstacles), which has drawn an NHTSA investigation and a class-action lawsuit, and says Electrek has previously published footage of phantom braking causing an eight-car pileup. The article frames this as one possible explanation for the stopped car, alongside a driver medical event, but states only Tesla's data could distinguish between causes.
+
+## Editorial Stance
+Electrek's editorial section argues that Tesla, not the authors, is choosing to withhold data that could clarify a public-safety matter in a fatal crash; it states Tesla is "one of only a few automakers" to redact such crash data and the only one with massive ADAS deployment resulting in thousands of crashes, and argues this information should belong to the public and investigators rather than Tesla's legal department. The piece explicitly states it does not know that Tesla's driver-assist system caused the death.
+
+Notable quotes and data:
+- FHP: could not explain why the Tesla was stopped in the middle of I-4.
+- Tesla's NHTSA filing: automation "Verified Engaged," vehicle "Stopped," speed 0 mph.
+- Electrek: Tesla redacts crash narratives in "99.9% of its crash reports."
