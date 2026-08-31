@@ -1,0 +1,62 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-08-30)
+Published:   2026-08-30 00:00 UTC
+Summarized:  2026-08-31 05:32:53 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05614 (15879 in / 2438 out tokens)
+Sources:     6
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Cybercab commercial launch set for Austin, Thursday Sept 3
+- Dallas Robotaxi zone expands ~158% to ~80 sq mi
+- Starbase Louisiana: 14,000-acre Gulf Coast spaceport, $100B
+- Grok 4.6 beats OpenAI comparable on independent benchmark
+- SpaceX turbine-blade factory to speed AI datacenter power buildout
+- OpenAI cuts off Cursor/SpaceXAI over terms-of-service concerns
+
+## Robotaxi
+- Tesla's commercial Cybercab launch in Austin is targeted for Thursday, September 3rd, with expectations of expansion to Dallas and Houston, per Jo Bhakdi. Ashok Elluswamy posted August 29th that "the street won't be the same anymore," and Elon Musk replied "yes" when asked if Tesla is "about to flood Austin" — Bhakdi flags this as an open question rather than confirmed scale.
+- Tesla job postings across Austin (fleet supervisors, shift support specialists, process engineers, robotaxi operations advisors) signal a broad rollout beyond the current footprint, per Bhakdi.
+- Dallas Robotaxi service area expanded for the first time since its April launch — from roughly 31 to about 80 square miles, a 158% increase, adding downtown Dallas and areas to the west. All Dallas rides remain unsupervised (no safety driver), per Sawyer Merritt.
+- Unsupervised Cybercabs (no steering wheel or pedals) continue to be spotted in Austin, including one arriving at a restaurant, plus a separate sighting reported in Denver.
+- Jeff Lutz (former Motorola/Google/Lenovo supply-chain exec) estimates Cybercab cost at scale (300,000–500,000 units/year) will land below $20,000, citing Tesla's part-count reduction (~10,000 parts in a Model Y vs. ~30,000 in a Waymo I-Pace) as the core cost lever.
+- Bhakdi's model estimates the robotaxi/Cybercab segment alone is worth $440/share on a conservative present-value basis, above TSLA's ~$348 Friday close, before counting core auto, Optimus, or Terafab.
+
+## Autonomous Driving
+- Tesla's 2026.26 summer update lets Grok handle in-car controls (climate, calls, seat heaters, mirrors) via conversational commands, requiring the AMD infotainment processor.
+- Ashok Elluswamy confirmed Tesla is actively connecting Grok to FSD; Musk's June comment suggested Grok-based FSD voice control (chauffeur-style commands) is roughly three months out, landing around September.
+- An OpenAI VP reportedly said Level 5 autonomy is 5-10 years away; pushback online cited unsupervised Cybercabs already running in Austin and FSD V14 handling a high share of some owners' miles, per a poster's characterization.
+
+## Market & Competition
+- Grok 4.6 (released Aug 12) scored 61 on Artificial Analysis's intelligence index, ahead of OpenAI's comparable model and Kimi K3, at $2/million input tokens vs. $5 for OpenAI's model.
+- Grok 4.7, targeted for mid-September per Musk, is claimed (unverified) to "exceed all current models," reportedly ~2.1 trillion parameters; no third-party benchmarks exist yet.
+- OpenAI ended its partnership with Cursor following SpaceX's acquisition of it, citing inability to confirm SpaceX would honor its terms of service; OpenAI models reportedly serve only ~5% of Cursor's traffic, limiting practical impact per one poster.
+- September flagged as historically the market's weakest month, with Tuesday Sept 1st's Fed speech cited as a near-term risk window that could pressure TSLA independent of Cybercab news, per Bhakdi.
+
+## SpaceX — Starship
+- SpaceX unveiled Starbase Louisiana, a 14,000-acre Gulf Coast spaceport in Vermilion Parish, targeting over a dozen launch towers and 30+ Starship flights/day; construction starts next year, first launch targeted 2029. Stated investment: $100 billion.
+- Site includes 10 launch pads, a 7.6M+ sq ft "star factory," and spans 12+ miles; combined with the Terafab project in Texas, total investment approaches $200 billion per one analyst's estimate.
+- On-site propellant production (pipelines, oxygen plants) is designed to solve a logistics bottleneck — a third-party analysis found ~1,000 truckloads/day would otherwise be needed, which Musk called "mostly correct."
+- Louisiana's incentive deal: $820 million to the state over 25 years, 3,000 direct jobs (~8,100 total), average salary $92,600.
+- SpaceX now has 17 Starship pads under development system-wide.
+
+## SpaceX — AI & Compute
+- SpaceX is building a U.S. turbine-blade factory to accelerate natural-gas turbine deployment for its AI datacenters by up to 18 months, per Musk; long-term plan supplements this with solar from both SpaceX and Tesla.
+- Colossus (Memphis) runs at roughly 1 gigawatt today (~770,000 GPUs); Musk projects >2GW by year-end and near 10GW by end of next year, with spending plans cited as high as $500 billion — figures one host flagged as Musk's own projections, doubted on timeline.
+- SpaceX and Nvidia are designing the compute payload for Star Mind A1, first in a planned orbital AI-compute satellite constellation on Nvidia Vera Rubin GPUs; first flight targeted Q4 2027, real scale by 2028.
+
+## SpaceX — Starlink
+- SpaceX petitioned the FCC to deny U.S. market access to Viasat's Viasat-3 F2 satellite, citing "severe interference" risk and an unreached coordination agreement.
+
+## Electric Vehicles
+- Tesla and Rivian are the only automakers with fully vertically integrated, software-defined vehicle architecture, per former Rivian software engineer Phil Beisel — contrasted with legacy OEMs bolting supplier infotainment onto old CAN-bus systems. Volkswagen reportedly sought to license or copy Rivian's architecture.
+
+Notable quotes and data:
+- Ashok Elluswamy (Aug 29): "the street won't be the same anymore." Musk replied "yes" to "about to flood Austin."
+- TSLA closed at $348 Friday, down ~22% YTD, per Bhakdi.
+- Starbase Louisiana: $100B investment, 30+ flights/day target, first launch 2029.
+- Grok 4.6: intelligence index 61, $2/M tokens vs. $5 for OpenAI's comparable model.
+- Dallas Robotaxi zone: ~31 to ~80 sq mi (+158%).
+- Cybercab cost target: sub-$20,000 at scale, per Jeff Lutz.
