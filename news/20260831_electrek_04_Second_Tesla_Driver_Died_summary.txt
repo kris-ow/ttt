@@ -1,0 +1,28 @@
+Channel:     electrek
+Title:       A second Tesla driver died stopped on a freeway with Autopilot/Self-Driving on
+Published:   2026-08-31 20:40 UTC
+Summarized:  2026-08-31 21:02:44 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01NJzs7dhYYqJrLg2EiLAXAc
+Cost:        $0.01668 (6552 in / 2025 out tokens)
+Relevance:   core — the article presents specific NHTSA data on a second fatal crash involving Tesla's driver-assist system stopped in a live lane, directly bearing on Tesla's autonomous-driving safety record and regulatory exposure.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports on a second fatal Tesla crash where its own NHTSA filing data shows a driver-assist system was "Verified Engaged" while the car sat stopped in a live freeway lane before being rear-ended — matching a similar Florida case the outlet revealed the same day.
+
+## Autonomous Driving
+1. **Second matched crash with identical fingerprint:** In the early hours of October 31, 2025, a 2020 Tesla Model 3 was stopped at 0 mph in an eastbound lane of Loop 202 near Mesa, Arizona, when it was struck from behind by a Ford F-350 pickup; the Tesla driver died at the scene. Local outlets (Arizona's Family/KPHO-KTVK, 12News) and Arizona DPS reported the crash without identifying the car as a Tesla or mentioning any driver-assist system.
+
+2. **Tesla's NHTSA filing and redactions:** Electrek matched the crash to a Tesla report filed under NHTSA's Standing General Order, which requires reporting when a Level 2 driver-assist system is engaged within 30 seconds of impact. Tesla's filing identifies the vehicle as a 2020 Model 3, marks automation "Engagement Status" as "Verified Engaged," and lists pre-crash movement as "Stopped" at 0 mph in a freeway lane in clear weather. Tesla states it holds event-data-recorder, telematics, and video data, but redacted the crash narrative, software version, and whether the road was within the system's approved operating area, citing "confidential business information" — the same redaction Tesla applies, per the article, to 99.9% of its reports.
+
+3. **Pattern across two fatal crashes:** The article states this is the second fatal crash it has documented in October 2025 (one in Florida, one in Arizona) sharing the same signature: a 2020 Model 3 with driver-assist verified engaged, stopped at 0 mph in a live freeway lane, then rear-ended, with the driver killed. The author notes Tesla has a documented phantom-braking history (subject of an NHTSA investigation and a class-action suit) as one possible explanation, alongside a driver medical event, but says only Tesla's data can distinguish between them. Electrek says it identified the match using unredacted fields (city, vehicle, month, and a UTC incident time that converts to roughly 3 a.m. Arizona time) and has filed a public-records request with Arizona DPS for the crash report and to ask whether Tesla shared its data with investigators; Electrek also says it has contacted DPS to inform them Tesla's data confirms ADAS was active.
+
+## Editorial Stance
+The author states Electrek cannot confirm Tesla's driver-assist system caused either death, but argues two men dying in nearly identical circumstances weeks apart, both with Tesla-confirmed driver-assist engagement, constitutes a pattern the public and regulators are entitled to have explained rather than redacted. The author frames Tesla's redaction practice as improper given it holds the underlying EDR, telematics, and video data, and notes Tesla is already under NHTSA investigation over its crash-reporting practices.
+
+Notable quotes and data:
+- Crash 1 (this article): October 31, 2025, ~3 a.m., Loop 202 near Dobson Road, Mesa, AZ; 2020 Model 3 struck by a Ford F-350; driver killed.
+- Tesla's NHTSA report: "Verified Engaged" automation status; car "Stopped" at 0 mph; redacted fields = crash narrative, software version, operating-area status.
+- Article's characterization: Tesla redacts these three fields in "99.9%" of its SGO reports.
