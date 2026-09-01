@@ -1,0 +1,31 @@
+Channel:     electrek
+Title:       Tesla confirms Full Self-Driving was active in a crash that killed a mother of five
+Published:   2026-09-01 14:52 UTC
+Summarized:  2026-09-01 15:05:09 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01PEBECJykeiKnSgjqgsjCTH
+Cost:        $0.01454 (6299 in / 1649 out tokens)
+Relevance:   core — The article concerns Tesla's Full Self-Driving safety record and a fatal crash involving FSD, directly bearing on the autonomous driving thesis and regulatory/liability risk.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports that a Tesla Model Y's driver-assist system was "Verified Engaged" during a fatal March 25, 2026 crash in Batavia, Illinois that killed passenger Maggie Espinosa, a 37-year-old teacher and mother of five, based on Tesla's own filing to NHTSA — a fact not disclosed in police or media reports of the crash.
+
+## Autonomous Driving
+1. **Crash details:** Around 4:19 p.m. on March 25, 2026, a Tesla Model Y heading south on Randall Road attempted a left turn onto McKee Street and struck a Dodge pickup traveling straight with the right of way, per Batavia police; a Nissan SUV was also involved. Espinosa died from injuries; the Tesla's driver and two others were injured. No mention of Autopilot or FSD appeared in the public police account.
+
+2. **Tesla's NHTSA filing:** Under NHTSA's Standing General Order, Tesla reported the crash and marked automation "Engagement Status" as "Verified Engaged," listing the 2026 Model Y's pre-crash movement as "Making Left Turn" at 24 mph at an intersection, striking the front of the pickup. Tesla confirmed it holds the event-data recorder, telematics, and video, but redacted the crash narrative, software version, and whether the road was within the system's approved operating area as "confidential business information."
+
+3. **FSD vs. Autopilot inference:** Electrek argues that an unprotected left turn across oncoming traffic is a City-Streets maneuver that basic Autopilot (a highway lane-keeping system) cannot perform, making it likely — though not confirmed by Tesla — that "Full Self-Driving" was the active system, not basic Autopilot. The article does not claim FSD was at fault, only that Tesla is withholding data needed to determine responsibility.
+
+4. **Matching methodology and caveat:** Electrek matched the NHTSA report to this crash via unredacted details — location (Batavia), vehicle (2026 Model Y), left-turn-into-pickup mechanics, fatality, and month. It flags one discrepancy: Tesla's logged incident time (12:54 UTC) doesn't cleanly convert to the ~4:19 p.m. local time police reported, unlike other crashes previously matched in this investigation series, though all other identifying details align.
+
+5. **Investigation status:** Batavia PD told Electrek the crash "remains under investigation and is currently under review by the Kane County State's Attorney's Office." No charges have been filed.
+
+## Editorial Stance
+Electrek's Fred Lambert argues Tesla is effectively testing "beta" software on public roads without accountability, criticizing the company for releasing favorable data while hiding details of fatal crashes, and contends that a company marketing "self-driving" and encouraging phone use while driving should not be permitted to withhold data when its system is involved in a fatal crash.
+
+Notable quotes and data:
+- Espinosa, 37, was a former kindergarten teacher and mother of five, including 2-year-old twins; a GoFundMe for the family raised more than $100,000.
+- Tesla's NHTSA report logs the incident at 12:54 UTC, a time that doesn't cleanly match the ~4:19 p.m. local crash time reported by police.
