@@ -1,0 +1,38 @@
+Channel:     farzad-fm
+Title:       Forget NVIDIA. This is The New King of AI.
+Published:   2026-09-02 14:17 UTC
+Summarized:  2026-09-02 17:07:10 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_015QbmonGRNkjpG8zFuNyxXf
+Cost:        $0.03068 (14814 in / 3174 out tokens)
+Relevance:   core — the video substantively argues SpaceX's AI subsidiary, compute buildout, and orbital data center plans are central to the SpaceX (and partly Tesla) investment thesis.
+Topic:       both
+Categories:  SpaceX — AI & Compute, SpaceX — Starship, SpaceX — Corporate & Valuation, Humanoid Bots, Autonomous Driving
+────────────────────────────────────────────────────────────
+
+This video from farzad-fm argues that SpaceX, not Nvidia, will become the dominant force in AI, because it uniquely controls the full stack — models, agentic software, compute infrastructure, custom chips, rockets, and satellites — needed to build what the host calls an "intelligence factory." The thesis rests on five pillars: SpaceX AI's new Grok model and agent product, unusually fast data center construction, a long-term plan for orbital AI compute via Starship, a chip manufacturing venture (Terafab), and the Musk companies' shared engineering culture.
+
+## SpaceX — AI & Compute
+1. **Grok 4.6 reaches frontier performance at lower cost:** SpaceX's Grok 4.6 scored 61 on the Artificial Analysis Intelligence Index, on par with GPT 5.6 and one to two points behind Anthropic's Fable 5/Opus 5, while costing $2 per million input tokens and $6 per million output tokens versus $5 and $30 for the cheapest alternative (GPT 5.6). The host also states Grok 4.6 matched Fable-level results on long, multi-step tasks using about half as many turns and roughly a quarter of the input tokens of Opus 5 Max, and that it gained five points on the intelligence index in one month versus Grok 4.5 at the same price.
+2. **Grok Bot agentic harness and Cursor acquisition:** SpaceX AI launched Grok Bot, an agentic harness competing with OpenClaw, Hermes, Claude Code, and Codex, giving agents a persistent cloud computer, browser, terminal, file system, and memory to complete multi-step tasks autonomously. The host uses it personally for email triage, website maintenance, a trading portfolio, YouTube research, and content creation. SpaceX has also agreed to acquire Cursor, the agent/coding company, which the host says will feed real-world agent workflow data back into improving both the model and the harness.
+3. **Colossus data center build speed:** SpaceX AI says its first Colossus cluster came online in 122 days and a second cluster in 91 days, inside a converted old factory shell, with the two together providing about 1 gigawatt of compute — roughly five times faster than the ~2-year average data center build timeline cited by the host. SpaceX's latest quarterly earnings report reportedly states the company plans to 5x its deployed data center capacity by the end of 2027.
+4. **Tesla's Cortex compute buildout (Austin):** Tesla's Cortex 1 cluster has more than 100,000 H100-equivalent GPUs in production, and Cortex 2 has started running training workloads, ramping toward more than 130,000 H100 equivalents — cited as evidence of a shared in-house engineering culture across Musk's companies.
+
+## SpaceX — Starship
+1. **Orbital AI compute plan tied to Starship:** SpaceX's long-term plan calls for orbital AI compute satellites as early as 2028, with early satellites targeted at about 100 kilowatts of compute power and a long-term goal of 100 gigawatts of new orbital compute capacity per year — a figure the host estimates at roughly 2.5x the data center capacity being built in the U.S. in 2026. Achieving this would require thousands of Starship launches annually, larger solar arrays, radiation-tolerant chips, large radiators, and a satellite replacement/manufacturing system; the host stresses this is unproven and "extremely hard."
+
+## SpaceX — Corporate & Valuation
+1. **Terafab chip venture with Tesla and Intel:** SpaceX, Tesla, and Intel are working together on Terafab, a closed-loop chip facility combining design, logic and memory fabrication, and advanced packaging, aiming to manufacture multiple times the chip volume of current global capacity from one site — compared by the host to Giga Nevada's historical impact on battery manufacturing. Terafab is planned to produce two chip families: one for vehicles and Optimus robots, and one hardened for the radiation, power, and heat constraints of orbital compute.
+
+## Humanoid Bots / Autonomous Driving
+1. **Custom inference chips (AI5/AI6) and future roadmap:** Tesla has been developing custom inference chips for years, including for FSD's real-time camera/decision processing in vehicles; the company is working through AI 5 and AI 6 chips with targeted production in 2027 and 2028, and Elon Musk has described plans for further AI 7, AI 8, and AI 9 chip generations with a faster design cycle.
+
+Notable quotes and data:
+- Grok 4.6: 61 on the Artificial Analysis Intelligence Index; $2/$6 per million input/output tokens vs. $5/$30 for GPT 5.6 Soul.
+- Grok 4.6 vs. Opus 5 Max: roughly half the turns and about a quarter of the input tokens for Fable-level results on long multi-step tasks (per the host).
+- Colossus: first cluster online in 122 days, second in 91 days, ~1 gigawatt combined compute; average data center build time cited as ~2 years (~5x slower).
+- SpaceX plans to 5x deployed data center capacity by end of 2027 (per the host, citing SpaceX's latest quarterly earnings report).
+- Tesla Cortex 1: 100,000+ H100-equivalent GPUs in production; Cortex 2 ramping toward 130,000+ H100 equivalents.
+- Orbital compute roadmap: satellites as early as 2028, ~100 kW per early satellite, long-term goal of 100 GW/year of new orbital compute (~2.5x 2026 U.S. data center build, per the host).
+- Tesla AI5/AI6 chips targeted for production in 2027 and 2028; AI7–AI9 planned per Elon Musk.
+- Terafab: joint SpaceX/Tesla/Intel chip facility targeting multiple times current global chip manufacturing capacity from one site.
