@@ -1,0 +1,70 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-02)
+Published:   2026-09-02 00:00 UTC
+Summarized:  2026-09-03 04:22:26 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.08274 (23022 in / 3670 out tokens)
+Sources:     12
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla Cybercab commercial launch set for Sept 3, 4:45pm CT, Austin
+- 45 new Cybercabs registered to Austin fleet Aug 31, per Texas DMV
+- Tesla open-sources EU FSD safety data ahead of Oct 6 approval vote
+- FSD Supervised fleet crosses 14 billion cumulative miles
+- Waymo goes live with paid rides in Denver, San Diego, Tampa
+- SpaceX unveils 125,000-acre Starbase Louisiana, targets 2029 first launch
+
+## Robotaxi
+- Tesla's commercial Cybercab launch lands September 3rd in Austin, framed by multiple hosts as a historic inflection point regardless of day-one fleet size; possibly extending to additional Texas cities.
+- Texas DMV shows 45 new Cybercabs registered to Tesla's Austin robotaxi fleet on August 31 alone, alongside roughly 270 Model Y vehicles already on the state robotaxi roster. Cybercabs have been spotted driving driverless in downtown Austin, Austin's nightlife district, Tampa (25 units in a parking lot), and Chinatown in New York City.
+- Tesla VP Ashok Elluswamy posted footage saying "the streets won't be the same anymore"; asked on X if Tesla was about to flood Austin with Cybercabs, Musk replied "yes."
+- One commentator (Jo Bhakdi) puts 90% odds against a large day-one/day-two driverless deployment, arguing Tesla will validate app, drop-off, and payment operations before scaling, and sees slim odds of an upside stock surprise before Friday's close.
+- A separate host cites Texas VIN registrations reaching the low 200s for Cybercab and projects a production run rate over 2,000/month with 10,000 units produced by December — his own estimate, not a confirmed figure — plus an unverified ~500 units/week Austin production estimate.
+- Waymo began paid public rides in Denver, San Diego, and Tampa (Sept 1), bringing its total to 14 U.S. cities with a fleet still under 4,000 vehicles; Zoox expanded to Houston and San Diego. Hosts note Waymo has substantially more paid, unsupervised miles than Tesla's still-largely-supervised fleet.
+- Tesla's Robotaxi fleet was cited elsewhere at 175 vehicles with Miami added as a fifth market in July, though the host flagged that figure as likely outdated.
+
+## Autonomous Driving
+- Tesla released European FSD Supervised safety data ahead of an October 6 EU-wide approval vote: FSD is approved in five countries (Netherlands, Denmark, Belgium, Estonia, Lithuania), used by 70,000+ customers driving 1M+ km/day, showing 4x fewer crashes than manual driving across 100 million km. Separately, Sawyer Merritt reported ~1 million cumulative European test-fleet miles across 22 countries, with Germany (193,805 mi), Spain (166,936 mi), and Netherlands (157,723 mi) leading.
+- North America data (3 billion km, 2025) showed FSD Supervised cutting major crashes 45–69% by road type, up to 84% fewer AEB activations, ~99% fewer minor collisions, and a 98% success rate across 230,000 scenario tests in European cities.
+- FSD Supervised fleet passed 14 billion cumulative miles (5.4 billion in city driving); Tesla's safety hub reports 7x fewer major collisions than human drivers. The most recent billion-mile increment took just 28 days versus 3.5 years for the first billion.
+- Sweden's infrastructure minister Andreas Carlson rode an unsupervised-hands FSD demo and called it "very interesting, great fun," saying he wants his town to pilot future robotaxis.
+- U.S. Transportation Secretary Sean Duffy called for a single federal AV standard to replace the state-by-state patchwork, calling it the "biggest issue" for autonomous vehicles, and said he's questioning whether AVs need steering wheels or pedals at all; one host noted federal rules are typically minimums states could still exceed.
+- Separately, Hyperchange cited FSD subscribers near 1.48 million (~$1B recurring revenue) and a 55% FSD take rate among new North American Tesla buyers, with personal usage at 87% self-driven miles on newer AI4 hardware.
+
+## SpaceX — Starship
+- SpaceX unveiled Starbase Louisiana: a ~125,000-acre site near Pecan Island with five launch complexes (10 Starship towers), on-site propellant production, power generation, and deep-water shipping; Shotwell said it would likely get its own airport. Construction starts next year, targeting first launch in 2029, with 3,000+ jobs projected (Musk floats up to ~10,000 eventually).
+- Musk said the Louisiana site could eventually support 30+ Starship flights per day — over 10,000 annual launches from one facility, versus roughly 100 total annual orbital launches today across all companies at Florida's Space Coast — contingent on full reusability and rapid turnaround.
+- SpaceX flew its final Florida Falcon 9 Starlink mission, shifting future Florida Starlink launches to Starship.
+- A recap of 2024's Flight 4 highlighted the ship surviving severe flap fire damage during re-entry and still completing its landing burn, informing subsequent flights' deliberate heat-shield stress testing (varied tile types, intentional tile removal, harder re-entry angles).
+- SpaceX's orbital AI compute roadmap targets satellites as early as 2028 (~100kW each), with a long-term goal of 100 GW/year of new orbital compute capacity — requiring thousands of annual Starship launches; one host called this "extremely hard" and unproven.
+
+## SpaceX — AI & Compute
+- Musk said AI could add $20–30 trillion annually to the global economy, while citing an analyst consensus of a 15+ gigawatt AI power shortfall by 2027, driven by chip production growing 40–50%/year against non-China power supply growth of only 10–20%/year.
+- Musk said SpaceX is building its own natural gas turbines in-house to bypass a turbine-manufacturer bottleneck booked out to 2030, calling it "the only way" SpaceX turned on AI compute faster than rivals; he said Google and Anthropic are now leasing compute from SpaceX as a result.
+- SpaceX's Grok 4.6 scored 61 on the Artificial Analysis Intelligence Index — on par with GPT 5.6, just behind Anthropic's Opus 5 — at $2/$6 per million input/output tokens versus $5/$30 for GPT 5.6. SpaceX also launched Grok Bot, an agentic harness, and has agreed to acquire Cursor.
+- SpaceX's Colossus data centers came online in 122 and 91 days for its first two clusters (~1 gigawatt combined) — roughly 5x faster than the industry's ~2-year average build time; the company reportedly plans to 5x deployed data center capacity by end of 2027.
+- NVIDIA and SpaceX are collaborating on a space-ready compute rack targeted for completion Q4 2027, tied to a next-gen AI satellite effort.
+- Terafab — a closed-loop chip venture involving SpaceX, Tesla, and Intel — aims to manufacture multiple times current global chip capacity from one site, targeting two chip families: one for vehicles/Optimus, one hardened for orbital compute.
+
+## SpaceX — Launch Business / Starlink
+- A flywheel thesis circulating today: Starlink generates cash and launch demand, Starship lowers the cost of adding Starlink capacity, and AI is adding a new demand driver for "mass to orbit" — framed as SpaceX uniquely creating its own internal launch demand rather than depending on external customers.
+
+## Market & Competition
+- OpenAI is ending its partnership with Cursor (now SpaceX-owned), cutting off direct model access effective November 12, citing an alleged terms violation; Musk said he "couldn't care less." Cursor's CEO said OpenAI represents only ~5% of Cursor's traffic and that talks continue, while Anthropic said it will increase compute support for Cursor.
+- The Boring Company won approval to add 19 stations to the Vegas Loop, bringing total approved stations to 123.
+- A Wall Street debate played out over Tesla's price targets: Gary Black argues targets already reflect realistic autonomy market-share assumptions; a rival host counters that targets instead reflect optionality across Tesla's multiple business lines, citing reported institutional buying around September 1 (including a $4 billion Deutsche Bank purchase) as evidence of pre-positioning.
+- Uber is reportedly cutting 3,000 driver jobs, cited by one host as corroborating evidence of robotaxi impact on ride-hailing (per a New York Post report).
+
+## Electric Vehicles
+- Chinese Model Y L owners are reporting rear suspension collapse on social media, with a "finger test" and wheel-arch measurement (764–804mm normal; below 764mm qualifies for warranty replacement) circulating to check for the defect. Most affected units are from the first delivery batch (Sept–Oct 2025); Tesla China has not commented publicly. Electrek notes it's unclear if the US-market Model Y L (Texas-built, launched July) is affected, distinct from an existing NHTSA front-suspension probe and German inspection defect reports.
+- Model Y L Premium AWD received EPA range ratings of 332 miles (19") and 328 miles (20"); the Launch Series trim is reported nearly sold out for 2026 with deliveries slipping into early 2027.
+
+Notable quotes and data:
+- "The biggest problem we have is we need one federal standard... Let us set one standard." — Transportation Secretary Sean Duffy
+- FSD Supervised: 14 billion cumulative miles; 7x fewer major collisions than human drivers, per Tesla's safety hub.
+- "The streets won't be the same anymore." — Ashok Elluswamy; Musk, asked if Austin would be flooded with Cybercabs: "yes."
+- Starbase Louisiana: ~125,000 acres, 10 Starship towers, targeting 30+ flights/day versus ~100 annual launches today across all of Florida's Space Coast.
+- "Google and Anthropic and many other companies are actually leasing compute from SpaceX... by constructing our own power plants is the only way we were able to do it." — Elon Musk
+- "I couldn't care less." — Elon Musk, on OpenAI ending Cursor's model access.
