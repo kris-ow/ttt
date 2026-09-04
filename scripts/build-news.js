@@ -109,6 +109,20 @@ const articles = files.map(filename => {
     ...(isWeekly ? { type: 'weekly' } : isExec ? { type: 'executive' } : {}),
   };
 }).filter(article => {
+  // A summary whose date resolves to neither a YYYYMMDD_ filename prefix nor a
+  // parseable Published: header would land in a byDate[""] bucket, which sorts
+  // dead last in the feed (below the 7-day slice, so only reachable via SHOW
+  // OLDER) under a header reading literally "Invalid Date" — formatDate('')
+  // is new Date('T00:00:00'). run.js refuses to summarize an undated transcript,
+  // so this guards the other entry point: hand-written summaries (official Tesla
+  // releases, report-summary.js output). Skipping keeps a broken date off the
+  // site; the ::warning:: is what says so out loud, since a dropped article is
+  // otherwise indistinguishable from one that was never written.
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(article.date)) {
+    console.error(`::warning::build-news: ${article.filename} has no resolvable date (filename prefix or Published: header) — omitted from the feed.`);
+    return false;
+  }
+
   // Daily Tesla Briefs are no longer published to the feed (2026-08-28). They are
   // still generated every day because weekly-summary.js builds the Weekly Brief
   // ONLY from news/*_ttt_00_executive_summary.txt — the daily briefs compress a
