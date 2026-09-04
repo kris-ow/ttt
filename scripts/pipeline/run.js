@@ -56,6 +56,23 @@ function findUnsummarizedTranscripts() {
     const summaryName = file.replace('.txt', '_summary.txt');
     if (summaryFiles.has(summaryName)) continue;
 
+    // Every downstream guard keys on the YYYYMMDD_ prefix, so one missing prefix
+    // disables all of them at once: the RETIRED_CHANNELS check below stops firing,
+    // pubDate falls back to *today* (wrong date context and {{YEAR}} in the prompt),
+    // exec-summary.js's startsWith(date) filter never picks the piece up for the
+    // Daily Brief (so it never reaches the Weekly either), and build-news.js emits
+    // an empty date that the feed renders as a literal "Invalid Date" header.
+    // yt_transcripts writes `unknown` as the date when its own upload_date backfill
+    // fails, so this is reachable. Skip rather than guess a date: the file stays in
+    // news/ unsummarized, which freshness-check.yml reports as a real gap in the
+    // rolling "Content freshness" issue — a mis-filed transcript should surface,
+    // not get silently billed and then buried at the bottom of the feed.
+    if (!/^\d{8}_/.test(file)) {
+      console.log(`  Skipping ${file}: no YYYYMMDD_ date prefix`);
+      console.error(`::warning::run: ${file} has no YYYYMMDD_ date prefix — not summarized. Re-fetch it with a resolved upload date, or rename it if the date is known.`);
+      continue;
+    }
+
     // Dropped channels are never summarized, so a stale Mac Mini job pushing
     // their transcripts costs nothing. Same filename convention build-news.js
     // uses: YYYYMMDD_<channel>_...
