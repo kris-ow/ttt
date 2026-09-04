@@ -1,0 +1,28 @@
+Channel:     electrek
+Title:       Tesla Full Self-Driving can now take over manual driving to avoid a collision
+Published:   2026-09-04 13:56 UTC
+Summarized:  2026-09-04 14:04:18 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01FtSVhE9oP7RvknGTPuEsb6
+Cost:        $0.01221 (6114 in / 1220 out tokens)
+Relevance:   core — The article reports a substantive new safety capability in Tesla's FSD software, directly relevant to the autonomous driving thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Tesla is rolling out FSD Supervised v14.3.9, which adds a new active safety feature allowing the software to take steering control even during manual driving to avoid collisions that automatic braking alone can't prevent.
+
+## Autonomous Driving
+1. **New collision-avoidance feature in v14.3.9:** Tesla's AI team announced the update is starting to roll out, adding what it calls a new active safety feature set. FSD Supervised can now activate on the driver's behalf when an imminent collision is detected and Automatic Emergency Braking (AEB) may not be sufficient, taking directional control to steer around an obstacle rather than just braking.
+
+2. **Triggers beyond collision avoidance:** Tesla said the system may also engage if it detects the driver is heavily distracted or has accidentally disengaged FSD, meaning the feature can intervene in two distinct scenarios: an unavoidable-by-braking collision, or a driver who appears checked out or lost FSD engagement by accident.
+
+3. **Background operation during manual driving:** Previously, FSD only functioned when actively engaged by the driver. Part of the same v14 software stack Tesla has been rolling out since April now runs in the background during manual driving, ready to intervene. The article notes Tesla has not stated whether the feature can be disabled or how the system decides steering is safer than braking.
+
+## Editorial Stance
+The author (Fred Lambert) supports automatic collision avoidance in principle and notes other automakers have built similar evasive-maneuver systems, but is concerned this feature may not be optional — he wants control over whether FSD can take over steering during manual driving. He raises trust concerns given v14's documented history of swerving without cause and Autopilot's long-running phantom braking issues, warning that a high false-positive rate for a steering intervention (versus braking) carries greater risk and could cause the very crashes the feature is meant to prevent.
+
+Notable quotes and data:
+- Tesla: the feature "can now activate on your behalf when an imminent collision is detected and Automatic Emergency Braking (AEB) may not be enough."
+- Tesla: it "may also engage if we detect you're heavily distracted or have accidentally disengaged FSD."
+- Article notes prior documented cases of v14 "swerving toward a ditch for no reason" and Autopilot's "long-running phantom braking problem."
