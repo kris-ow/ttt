@@ -1,0 +1,66 @@
+Channel:     tesla
+Title:       Tesla Q1 2024 Financial Results and Q&A Webcast
+Published:   2024-04-23 00:00 UTC
+Summarized:  2026-09-05 10:08:45 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01VHzgzLydgNbFjB6SomZHr8
+Cost:        $0.05516 (29256 in / 5181 out tokens)
+Relevance:   core — This is Tesla's official Q1 2024 earnings call and Q&A, covering financial results, product roadmap, autonomy strategy, and executive commentary directly central to the Tesla investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+Tesla's Q1 2024 earnings call covers a seasonal revenue and margin decline, a major cost-cutting and headcount reduction announcement, an accelerated timeline for lower-cost vehicles, and extensive discussion of the FSD v12 rollout, Optimus, distributed inference compute, and battery/energy storage ramps. Elon Musk frames the company's value almost entirely around solving autonomy and scaling AI compute across the vehicle fleet, while CFO Vaibhav Taneja details margin and cash flow pressures and cost offsets.
+
+## Financials
+1. **Auto margins declined on seasonality and ramp costs:** Auto gross margin (excluding Cybertruck) fell from 18.9% to 18.5% quarter-over-quarter; pricing action impacts were largely offset by lower per-unit costs and new US auto-park feature revenue recognition. Excluding Cybertruck and Fremont Model 3 ramp costs, margins actually improved slightly, per Taneja.
+2. **Negative free cash flow of $2.5B:** Driven mainly by an inventory build (mismatch between builds and deliveries) and elevated capex including AI compute; Taneja said he expects the inventory build to reverse and free cash flow to return to positive in Q2.
+3. **Headcount cut by over 10%:** Framed as a "pruning" exercise to prepare for the next growth phase; expected annual run-rate savings well in excess of $1 billion. Musk and Taneja both said no significant capabilities are being sacrificed.
+4. **Model Y cost parity approaching between plants:** Normalized Model Y cost per vehicle in Austin and Berlin is now close to Fremont's, per Taneja.
+5. **Q1 headwinds seen as one-off:** Executives cited seasonality, macro pressure, factory disruptions (including an attack at a factory and Red Sea shipping attacks), Model 3/Cybertruck ramps, and an overcomplicated sales process (since simplified) as reasons Q1 was unusually weak; they expect Q2 to be "a lot better" and full-year 2024 deliveries to exceed 2023.
+
+## Electric Vehicles
+1. **Accelerated affordable vehicle timeline:** New, more affordable models will use aspects of both the next-gen platform and current platforms, built on existing production lines rather than requiring new factories; start of production pulled forward from second half of 2025 to early 2025 or possibly late 2024. Management said this approach could enable over 3 million vehicles of capacity once fully realized. Further detail promised for August 8th.
+2. **Demand initiatives:** Tesla cut the FSD subscription price to $99/month and launched a Model 3 lease special in the US at $299/month, alongside attractive financing in certain markets.
+3. **Cybertruck and 4680 ramp:** Cybertruck production hit roughly 1,000 units/week within 4–5 months of start of production; 4680 cell output rose about 18–20% quarter-over-quarter to over 1,000 units/week (~7 GWh/year), with a goal to beat supplier costs of nickel-based cells by year-end. Executives said 4680 investment also functioned as a hedge against a prior spike in battery cell prices, and that supplier cell prices have since become "dramatically more competitive."
+4. **Semi truck timeline:** Engineering is being finalized for cost-effective high-volume Semi production; factory construction has started in Reno, with first vehicles planned for late 2025 and external customer deliveries starting in 2026.
+5. **FSD licensing talks with a major automaker:** Tesla confirmed it is in conversations with one major legacy automaker about licensing FSD, and said it wouldn't be surprised to sign a deal (possibly more than one) this year, though integration into an OEM's actual vehicles would likely take about three years.
+
+## Autonomous Driving
+1. **FSD v12 rollout and mileage:** FSD v12 (end-to-end neural network based) has been pushed to all HW3+ vehicles with cameras in North America (~1.8 million vehicles); about half of eligible users are using it, a share Musk said is rising weekly. Over 300 billion miles have been driven cumulatively with FSD (supervised) since launch.
+2. **Safety validation process detailed by Ashok Elluswamy:** Tesla trains hundreds of neural network candidates weekly, replays them against millions of collected critical-event clips, runs closed-loop simulation, then tests with QA drivers across multiple cities before releasing to ~2,000 employees and finally external users, with live monitoring dashboards tracking critical events by severity.
+3. **Scaling laws inform future performance:** Elluswamy said Tesla has identified scaling gains across model size, training data volume, training compute, and architecture improvements, giving the team visibility into expected performance 3–4 months out; versions 12.4 and 12.5 were described as close to full neural-net retrains, comparable to new major versions.
+4. **Regulatory pathway:** Executives said other autonomous vehicle companies operating in markets like San Francisco and reportedly gaining approval in Los Angeles (unconfirmed by Tesla directly) are helping clear a regulatory path; Tesla believes broad approval will follow once statistically significant data shows autonomous cars are safer than human drivers, with Musk comparing the eventual normalization to elevators.
+5. **International FSD expansion:** Tesla plans to release supervised FSD in new markets pending regulatory approval, including China, with country-specific training to refine performance beyond the base capability, which executives said transfers reasonably well across markets already.
+
+## Robotaxi
+1. **Cybercab unveil set for August:** Tesla will showcase its purpose-built robotaxi (Cybercab) in August; Musk described the eventual robotaxi fleet model as a hybrid between Airbnb and Uber, where Tesla-owned cars and individually owned cars can be added to or removed from the fleet by owners, who can restrict use to friends, family, or five-star users.
+2. **Fleet growth trajectory:** Musk said the fleet is on a path from roughly 7 million to 9 million cars and eventually tens of millions before the end of the decade, with each vehicle's autonomy improving via a continuous feedback/training loop likened to Google Search's data flywheel.
+
+## Humanoid Bots
+1. **Optimus timeline:** Optimus can currently perform simple factory tasks in the lab; Musk said (as a guess) Tesla expects Optimus in limited production doing useful factory tasks before the end of this year, with possible external sales by the end of next year. He reiterated a belief that Optimus could ultimately be "more valuable than everything else combined" and that Tesla's inference efficiency gives it an edge in humanoid robotics.
+2. **Musk flags governance concerns around Optimus:** Musk said he would be more reticent about ceding control over Optimus than over vehicle autonomy, citing "Terminator level risk" from a highly capable humanoid robot, and linked this to his stated desire for greater voting control of Tesla.
+
+## Energy
+1. **Record energy margins and deployment growth:** Energy storage deployments (Megapack) hit an all-time high in Q1, with energy segment gross margin reaching a record 24.6%. Tesla expects 2024 storage deployments to grow at least 75% versus 2023, though deployments may be lumpy quarter to quarter.
+2. **Lathrop Megapack ramp:** The Lathrop factory's second general assembly line is commissioned, raising exit rate from an annualized 20 GWh at the start of the year to a targeted 40 GWh/year by year-end; order visibility runs 12–24 months ahead given long sales cycles for large projects.
+
+## Market & Competition
+1. **AI compute expansion:** Tesla said it is no longer training-compute constrained; roughly 35,000 H100 GPUs are installed and active for training, expected to reach about 85,000 by year-end. Training compute more than doubled sequentially in Q1.
+2. **Distributed inference / "AWS-like" compute vision:** Musk described a future where idle onboard compute across a large Tesla fleet (potentially referencing a scenario of around 100 million vehicles with roughly a kilowatt of usable compute each) could be aggregated into a very large distributed compute resource, drawing an analogy to how AWS became a major profit driver for Amazon; executives noted current use cases already include running batch AI workloads for third-party companies.
+3. **EV industry pullback seen as opportunity:** Musk and Taneja noted other automakers are pulling back from EVs toward plug-in hybrids, which Tesla views as the wrong strategy; this pullback is also increasing demand (and revenue) for regulatory credits Tesla sells, and reportedly reducing competing orders for battery cells, improving Tesla's supplier pricing.
+4. **Investor relations transition:** VP of Investor Relations Martin Viecha announced he is leaving Tesla after seven years, planning to stay a few more months before departing.
+
+Notable quotes and data:
+- "We now have over 300 billion miles that have been driven with FSD [supervised]." — Elon Musk
+- FSD v12 pushed to ~1.8 million HW3+ vehicles in North America; roughly half of eligible users engaging with it.
+- FSD subscription price cut to $99/month.
+- ~35,000 H100 GPUs active for training, expected to reach ~85,000 by end of 2024.
+- Auto gross margin (ex-Cybertruck): 18.9% → 18.5% QoQ.
+- Energy storage gross margin hit a record 24.6%; 2024 storage deployment growth guided at least 75% over 2023.
+- Negative free cash flow of $2.5 billion in Q1, attributed to inventory build and elevated capex.
+- Headcount reduced by over 10%, targeting annual run-rate savings "well in excess of $1 billion."
+- Cybertruck reached ~1,000 units/week roughly 4–5 months after SOP; 4680 cell output up 18–20% QoQ to over 1,000 units/week (~7 GWh/year).
+- Lathrop Megapack line ramping from 20 GWh/year exit rate to a targeted 40 GWh/year by year-end.
+- "I think there's a good chance we do sign a [FSD licensing] deal this year... maybe more than one." — Elon Musk
+- "If somebody doesn't believe Tesla's going to solve autonomy, I think they should not be an investor in the company." — Elon Musk
