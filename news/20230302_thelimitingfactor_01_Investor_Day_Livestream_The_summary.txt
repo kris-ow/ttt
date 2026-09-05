@@ -1,0 +1,59 @@
+Channel:     thelimitingfactor
+Title:       Investor Day Livestream // The Limiting Factor
+Published:   2023-03-02 00:00 UTC
+Summarized:  2026-09-05 08:08:59 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01Y859ZNidotH5kHpHktD7kZ
+Cost:        $0.11258 (85443 in / 5428 out tokens)
+Relevance:   core — this is a livestream reaction to and coverage of Tesla's Investor Day / Master Plan Part 3, directly addressing Tesla's manufacturing, energy, battery, and autonomy roadmap that underpins its investment thesis.
+Topic:       tesla
+Categories:  Electric Vehicles, Energy, Autonomous Driving, Robotaxi, Humanoid Bots, Financials, Market & Competition
+────────────────────────────────────────────────────────────
+
+This is a livestream from "The Limiting Factor" channel covering Tesla's Investor Day event, opening with the host's pre-show commentary (battery chemistry views, predictions recap, a guest appearance from Antonio of Munro Live) before airing and reacting to Tesla's Master Plan Part 3 presentation, which spans sustainable energy economics, vehicle manufacturing innovation, battery/cell production, energy storage, supply chain, and financials, followed by a Q&A with Elon Musk and Tesla executives.
+
+## Electric Vehicles
+1. **Next-gen platform and Mexico Gigafactory announced:** Tesla announced a new Gigafactory near Monterrey, Mexico, to build its next-generation vehicle platform, explicitly framed as supplemental to (not replacing) output at existing factories in California, Nevada, Texas, Berlin, and Shanghai. Elon Musk said the most profound architectural changes will be reserved for future vehicles rather than retooling existing Model Y lines, since taking factories offline is costly; the next-gen platform is described as encompassing multiple vehicle models/segments, not a single vehicle.
+2. **Cost reduction targets:** Tesla's CFO Zach Kirkhorn said the company cut 30% of cost out of Model 3 since reaching design capacity, and is targeting a further 50% cost reduction with the next-gen platform (matching the prior 50% reduction achieved going from the S/X platform to 3/Y). He also said non-GAAP opex fell 60% as a percent of revenue and 75% per delivered vehicle since 2018, and Tesla's SG&A per vehicle is estimated at 60–70% lower than traditional OEM-plus-dealer models.
+3. **Demand is affordability-constrained, not desire-constrained:** Musk stated demand for Tesla vehicles is effectively infinite in terms of desire to own, and the binding constraint is affordability; he said Tesla found that even small price changes produce large demand swings, and that building cars and their supply chains — not making them desirable — is "by far" the hardest part of scaling.
+4. **Manufacturing redesign (unboxed process):** Lars Moravy and Franz von Holzhausen described moving to an "unboxed" manufacturing strategy that builds vehicle sub-assemblies in parallel rather than a single sequential line, targeting >40% reduction in factory footprint, up to 50% cost reduction, 44% higher operator density, and 30% improvement in "space-time efficiency" versus the current process (illustrated on a Model Y for reference, not confirmed as the next-gen vehicle's design).
+5. **48-volt architecture and rare-earth-free motor:** Tesla is moving all future platforms (starting with Cybertruck) to a 48-volt low-voltage architecture, reducing current draw 4x and power loss 16x; Colin Campbell said Tesla's next drive unit uses a permanent-magnet motor with zero rare-earth materials and cut silicon carbide use by 75%, with drive unit cost reduced to about $1,000.
+
+## Energy
+1. **Master Plan Part 3 sustainability economics:** Elon Musk and Drew Baglino presented figures for a fully sustainable global energy economy: roughly 240 terawatt-hours of battery storage needed, about $10 trillion in cumulative manufacturing investment (their own internal calculation was closer to $6 trillion but presented at $10T), using less than 0.2% of Earth's land area, and requiring roughly half the total energy of the current fossil-fuel economy due to end-use efficiency gains.
+2. **Megapack and Tesla Electric plans:** Mike Snyder said Tesla has deployed over 16 gigawatt-hours of Megapack/Powerwall products across 50 countries, is targeting a 1 terawatt-hour annual production rate (25x current Lathrop capacity), and expects over 100 gigawatt-hours per year of Megapack demand in 2023, growing further in subsequent years. Tesla also announced plans to launch a Texas retail electricity plan this summer offering unlimited overnight home charging for $30/month to Tesla vehicle owners.
+3. **Heat pumps and industrial heat electrification:** Presenters detailed a five-part plan (grid repowering, EV transition, heat pump adoption, high-temp industrial heat/green hydrogen, and sustainable fuel for planes/boats), noting heat pumps currently serve only ~10% of building heating needs but offer a 3x reduction in energy needed to heat buildings versus fossil fuel heating.
+
+## Autonomous Driving
+1. **FSD architecture, data, and compute detailed by Ashok Elluswamy:** Tesla's VP of Autopilot/AI described a transition to multi-camera video neural networks with end-to-end perception and increasingly AI-based planning, an auto-labeling pipeline using fleet data and 3D reconstruction, and a compute stack including a 14,000-GPU training cluster (roughly 30% for auto-labeling, 70% for training) and a 30-petabyte video cache growing toward 200 petabytes, expected to scale further once Dojo is integrated.
+2. **FSD Beta usage and safety claim:** Roughly 400,000 customers in the US and Canada have supervised FSD Beta active, and Tesla stated FSD users are observed to be five to six times safer than the US national average (an internally stated comparison, not independently verified in the transcript).
+3. **Training compute scaling plans:** Musk said Tesla's neural net training compute is expected to increase by an order of magnitude by the end of this year and by another order of magnitude by the end of next year, via a combination of Nvidia hardware and Dojo.
+
+## Humanoid Bots
+1. **Optimus progress since AI Day:** Musk noted that at the prior AI Day event this version of Optimus did not walk at all, and by Investor Day it was walking, calling the rate of improvement significant. He said Tesla's real-world AI and custom-designed actuators (motor, gearbox, power electronics) — none of which had usable off-the-shelf equivalents — give Tesla an advantage, and speculated the ratio of humanoid robots to humans could exceed one-to-one, calling Optimus potentially worth more than Tesla's car business long-term.
+
+## Robotaxi
+1. **Autonomy's fleet utilization thesis:** Musk argued a passenger car is used only 10–12 hours per week today plus parking costs, while an autonomous car could be used 50–60 hours per week, calling the activation of fleet-wide autonomy potentially "the biggest asset value increase in history overnight." Next-gen platform vehicles are also expected to be developed in robotaxi variants with lower cost per mile than existing models.
+
+## Financials
+1. **Capex guidance context:** Kirkhorn said Tesla has spent about $28 billion cumulatively toward its Master Plan 3 goals so far, framing a $150–$275 billion range not as formal capex guidance but as an internal rough estimate to illustrate that reaching 20 million vehicles/year and 1 terawatt-hour of annual energy storage is achievable relative to expected cash generation.
+2. **Wafer/chip supply-chain scaling:** Tesla executives said at a ~2 million vehicle run rate, FSD-computer-equipped Tesla vehicles consume about 700,000 12-inch wafer equivalents (about half a percent of estimated global 135 million wafer capacity); at 20 million vehicles, even without part-count simplification, Tesla would need about 8 million wafers, still under five percent of an industry expected to scale to 200 million by then.
+3. **Cell production ramp:** Drew Baglino said dry battery electrode output is being scaled at roughly 1,000 units (battery packs) per week per quarter as an internal target, implying Tesla was producing about 1,000 packs per week by the end of the prior quarter with plans to keep adding roughly 1,000/week increments.
+
+## Market & Competition
+1. **China market share and geopolitics:** Tom Zhu said Tesla's China market share is growing strongly, with demand exceeding production capacity after a recent price adjustment, and downplayed geopolitical risk given local job creation, while acknowledging uncertainty ("no one knows") about US-China political tensions.
+2. **Total cost of ownership vs. Toyota Corolla:** Kirkhorn said a base Model 3 already has a lower cost-per-mile (accounting for financing, insurance, power, maintenance) than a Toyota Corolla in the US, and this gap is expected to widen further with the next-gen platform and robotaxi variants.
+
+Notable quotes and data:
+- "There is a clear path to a sustainable energy Earth... it doesn't require destroying natural habitats" — Elon Musk, opening Master Plan 3.
+- Sustainable economy target: 240 terawatt-hours of storage, ~$10 trillion investment, <0.2% of Earth's land area.
+- "The desire for people to own a Tesla is extremely high. The limiting factor is their ability to pay for a Tesla, not do they want a Tesla." — Elon Musk.
+- FSD Beta active for roughly 400,000 customers in the US/Canada; Tesla says FSD users are observed to be five to six times safer than the US national average (company-stated figure).
+- Tesla's neural net training compute cluster: 14,000 GPUs (~30% auto-labeling, ~70% training), 30 petabytes of video cache growing to 200 petabytes.
+- Drive unit cost reduced to about $1,000; next powertrain factory is 50% smaller than the current one at the same capacity.
+- New Gigafactory announced near Monterrey, Mexico, for the next-generation vehicle platform.
+- Megapack: over 16 GWh deployed across 50 countries; targeting 1 TWh/year production; Megapack demand estimated at over 100 GWh/year in 2023, growing further after.
+- New Texas retail electricity plan: $30/month for unlimited overnight home EV charging, launching this summer.
+- Non-GAAP opex down 60% as % of revenue and 75% per delivered vehicle since 2018; SG&A per vehicle estimated 60–70% lower than traditional auto industry.
+- Cumulative Master Plan 3 investment to date: about $28 billion.
+- Cell/battery pack production ramp target: roughly 1,000 units/week added per quarter (Drew Baglino).
