@@ -35,6 +35,7 @@ export type Bias = 'BULL' | 'LEAN BULL' | 'NEUTRAL' | 'BEAR'
 export const CHANNEL_META: Record<string, { name: string; platform: string; color: string; bias?: Bias }> = {
   brighterwithherbert: { name: 'Herbert Ong', platform: 'YouTube', color: '#ef4444', bias: 'BULL' },
   cernbasher: { name: 'Cern Basher', platform: 'YouTube', color: '#10b981', bias: 'BULL' },
+  davelee: { name: 'Dave Lee', platform: 'YouTube', color: '#fb7185', bias: 'LEAN BULL' },
   electrek: { name: 'Elektrek', platform: 'Web', color: '#f97316', bias: 'BEAR' },
   electrified: { name: 'Dillon Loomis', platform: 'YouTube', color: '#06b6d4', bias: 'LEAN BULL' },
   'farzad-fm': { name: 'Farzad', platform: 'YouTube', color: '#ec4899', bias: 'BULL' },
