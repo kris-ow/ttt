@@ -1,0 +1,34 @@
+Channel:     cernbasher
+Title:       The Part Of Robotaxi That Scale Makes Harder
+URL:         https://www.youtube.com/watch?v=yaDjNKiQHk8
+Published:   2026-09-07 12:00 UTC
+Summarized:  2026-09-07 15:14:07 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05104 (13505 in / 2403 out tokens)
+Relevance:   core — the entire discussion is about the liability, safety-data, and scaling challenges facing Tesla's FSD/Robotaxi rollout, directly bearing on the Robotaxi investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+This piece is a two-person discussion (framed around an article titled "When Safer Than Human Isn't Safe Enough: The Hidden Liability Economics of Tesla's Robotaxi") arguing that Tesla's core robotaxi challenge isn't just making FSD safer than a human driver, but managing the liability and evidentiary burden that comes with scaling an autonomous fleet — plus speculative upside from fleet-to-fleet communication once vehicles are networked via Starlink.
+
+## Autonomous Driving
+1. **Liability shifts from driver to Tesla as fleet scales:** The speakers argue that as FSD becomes autonomous, Tesla assumes the liability individual drivers currently bear, and that liability scales directly with fleet size — becoming a financial/actuarial question similar to airline safety economics (cost per crash, legal exposure, court system risk).
+2. **Crash patterns may look different under FSD:** One speaker notes that today's crashes are often caused by human factors (drowsiness, distraction, road rage, drunk driving) that FSD eliminates, but new failure modes could emerge from software encountering novel scenarios (e.g., unclear signage), suggesting infrastructure/municipal signage improvements could reduce certain edge cases more easily than pure software fixes.
+3. **Statistical bar for proving safety is high:** One speaker cites a 2024 national benchmark of roughly 0.03 expected fatalities per 2.5 million human-driven miles, arguing Tesla needs a large sample of unsupervised autonomous miles before it can statistically demonstrate FSD is safer than human driving to regulators and the public; supervised FSD miles (with human intervention) don't count toward this because interventions can mask or cause outcomes differently than pure autonomy.
+4. **Fleet-wide software fixes as a liability advantage:** A key argument is that unlike human drivers (who don't uniformly learn from each other's mistakes), Tesla can retrain its model on a discovered issue and push a fix to the entire fleet overnight — which the speaker argues could also strengthen Tesla's legal position by showing rapid remediation once a safety issue is identified.
+5. **Speaker's own FSD interventions are now preference-based:** One speaker says his own supervised-FSD interventions have shifted from necessity to personal preference (e.g., wanting a different turn or parking spot), and that in a robotaxi with no ability to intervene, such preferences wouldn't matter.
+
+## Robotaxi
+1. **Autonomous mile counts and scaling pace:** Tesla's total FSD miles (supervised) stood at roughly 13.6 billion as of the discussion. Separately, paid autonomous (robotaxi) miles were reported at 380,000 as of the late-July earnings call; one speaker speculates the figure could be around 600,000–700,000 by the time of this discussion, with Ashok Elluswamy having indicated double-digit percentage growth rates (exact rate unspecified).
+2. **Call to scale fleet size faster to gather safety data:** One speaker argues Tesla needs to move beyond a few hundred robotaxis and deploy at least several thousand vehicles (comparing to Waymo's scale) to accumulate autonomous miles quickly enough to statistically validate safety improvements — describing this as a "double-sided sword" where scaling produces the data needed to prove safety but also surfaces failure cases along the way.
+3. **Speculative fleet-communication feature via Starlink:** One speaker floats a hypothetical future capability where Starlink-connected Cybercabs could communicate real-time road hazards (e.g., debris, a stalled vehicle, oncoming-lane backups) to other Cybercabs approaching the same area, enabling near-real-time collective hazard avoidance — explicitly framed as a speculative "could be" scenario, not a confirmed Tesla feature.
+
+Notable quotes and data:
+- Total FSD (supervised) mile counter: 13.6 billion as of the discussion.
+- Tesla's paid autonomous miles: 380,000 reported at the late-July earnings call; speculated to be 600,000–700,000 by the time of this discussion (unconfirmed estimate).
+- Ashok Elluswamy reportedly indicated autonomous miles are growing at a double-digit percentage rate (exact figure not given).
+- Cited 2024 national benchmark: ~0.03 expected fatalities per 2.5 million human-driven miles.
+- "The beautiful thing about FSD is that you can take that data, you can retrain the model, and you can spread it overnight... and that problem's gone. Doesn't happen with humans."
+- One speaker's call: Tesla needs "at least" a few thousand robotaxis deployed — comparing scale to Waymo — to accumulate sufficient autonomous miles for safety validation.
+- ~30% of crashes cited (unclear whether referring to road rage or phone use) as caused by mobile phone use, per one speaker's aside.
