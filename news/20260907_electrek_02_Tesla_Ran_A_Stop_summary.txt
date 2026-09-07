@@ -1,0 +1,31 @@
+Channel:     electrek
+Title:       A Tesla ran a stop sign and killed a man, record confirms Full Self-Driving/Autopilot was on
+Published:   2026-09-07 18:41 UTC
+Summarized:  2026-09-07 19:03:39 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01Mz4z6nfGRNab24iXrG3P88
+Cost:        $0.01797 (7600 in / 2074 out tokens)
+Relevance:   core — the article directly examines Tesla's FSD/Autopilot safety record and its crash-reporting practices, a core input to the autonomous driving investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports that a Tesla Model 3 that ran a stop sign and fatally struck a Honda Civic driver in Buena Vista Township, New Jersey, in July 2025 had its driver-assist system "Verified Engaged" per Tesla's own NHTSA filing — a fact omitted from local police-based news coverage of the crash.
+
+## Autonomous Driving
+1. **Crash details and Tesla's federal report:** On July 6, 2025, a 2019 Tesla Model 3 failed to stop at a stop sign at County Route 671 and Chestnut Avenue and struck a Honda Civic driven by 82-year-old Stephen Field, who died of his injuries; the Tesla's driver and three passengers were hospitalized with moderate injuries. Local police reports made no mention of Autopilot or FSD. Tesla's NHTSA Standing General Order filing marks the automation "Engagement Status" as "Verified Engaged" and logs a fatality, but redacts the crash narrative, software version, and whether the road was within the system's approved operating area — redactions the article says Tesla applies to 99.9% of its reports.
+
+2. **FSD vs. Autopilot inference:** Because Tesla redacted the software version, the article cannot confirm whether Autopilot or "Full Self-Driving" was active. The author argues the stop-sign scenario points toward FSD, since reading and responding to stop signs is a City-Streets function that basic Autopilot (a highway lane-keeping system) does not perform — though the article notes it has documented cases of Autopilot being engaged on roads it wasn't designed for and failing to stop regardless.
+
+3. **The 4 mph data point and rolling-stop theory:** Tesla's report logs the Tesla's pre-crash speed at 4 mph, which the article says fits a rolling stop rather than a high-speed collision, and does not square cleanly with a fatal impact and airbag deployment — suggesting it may be a pre-crash snapshot rather than impact speed. The article draws a parallel to NHTSA's 2022 recall of roughly 54,000 Tesla vehicles over FSD rolling through stop signs instead of stopping, and separately floats — labeled explicitly as speculation — a theory from its earlier reporting on the Katy, Texas fatal FSD crash: that drivers using FSD in neighborhoods may rest a foot near the accelerator to hurry through stops, risking pedal misapplication.
+
+4. **Matching methodology:** Electrek says it matched the NHTSA record to this specific crash using unredacted details (location, state, vehicle type, fatality, month) and a timestamp within three minutes of the police-reported crash time, noting it was the only fatal Tesla crash in that township that month. Electrek states it has contacted New Jersey State Police for the crash report and vehicle data and asked whether investigators received Tesla's raw telemetry or only Tesla's interpretation of it.
+
+## Editorial Stance
+The author states the piece does not claim to know whether the driver-assist system caused the crash, which system was active, or what the 4 mph figure represents, but argues Tesla possesses the event-data recorder and telematics that would answer these questions and has instead redacted them as confidential business information. The author frames this as part of a pattern of Tesla marketing Level 2 systems as more capable than they are while concealing crash details, and notes Tesla is already under NHTSA investigation over its crash-reporting practices.
+
+Notable quotes and data:
+- Tesla's report: Engagement Status "Verified Engaged"; crash narrative, software version, and operating-area status redacted as "confidential business information."
+- Pre-crash speed logged by Tesla: 4 mph.
+- Incident time per Tesla: 22:54 UTC (6:54 p.m. local), vs. NJSP-reported time of 6:57 p.m.
+- Prior NHTSA action cited: ~54,000-vehicle recall in 2022 over FSD rolling through stop signs.
