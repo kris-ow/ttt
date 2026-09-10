@@ -1,0 +1,32 @@
+Channel:     electrek
+Title:       Tesla Autopilot was on in I-35 crash that killed its driver
+Published:   2026-09-10 19:18 UTC
+Summarized:  2026-09-10 20:04:11 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_019qDiPXNT5ogMALhTt8CsdX
+Cost:        $0.01627 (7291 in / 1795 out tokens)
+Relevance:   core — the article directly examines Tesla's Autopilot/FSD safety record and its crash-reporting practices, a core input to the autonomous driving thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports that a Tesla driver-assist system was engaged during a fatal April 2025 crash on Interstate 35 in Missouri, based on matching Tesla's redacted NHTSA crash filing to a publicly reported fatal wreck that local police described only as a car that "went off the road."
+
+## Autonomous Driving
+1. **The crash:** On April 14, 2025, around 3 p.m., a 2024 Tesla Model Y traveling south on I-35 near Pattonsburg, Missouri left the roadway and struck a guardrail, killing its 64-year-old female driver (from Raymore, Missouri), who was wearing a seatbelt. State troopers' public report did not mention Autopilot or FSD, describing it as an ordinary single-vehicle wreck.
+
+2. **Tesla's NHTSA filing:** Because a Level 2 driver-assist system was flagged as engaged within 30 seconds of impact, Tesla was required to file a crash report under NHTSA's Standing General Order. The filing lists the vehicle as a 2024 Model Y, pre-crash speed of 73 mph in a 70-mph zone, a fatality, and impact with a fixed object. Tesla redacted the crash narrative, the "operating domain" flag, and — beyond its usual redactions — the system, hardware, and software versions, all citing "confidential business information." This means it cannot be determined from the record whether basic Autopilot or "Full Self-Driving" was engaged.
+
+3. **Electrek's pattern claim:** Electrek states that, across Tesla's NHTSA driver-assist crash reports where pre-crash movement is disclosed, the single largest category is the car leaving its lane or the road, and characterizes this crash as fitting that pattern at highway speed with a fatal outcome.
+
+4. **Matching methodology:** Electrek says it matched the NHTSA filing to the public crash report via unredacted details — location (Pattonsburg/Daviess County, MO), state, vehicle type, fixed-object impact, fatality, month, and the investigating agency (Missouri State Highway Patrol) — plus a logged incident time (20:03 UTC, ~3 p.m. local) matching when troopers were on scene. Electrek says it is the only fatal Tesla crash on that stretch of I-35 that month, and has requested the crash report and vehicle data from Missouri State Highway Patrol, including whether investigators received Tesla's raw telemetry or only Tesla's interpretation of it.
+
+5. **Context on filing timing:** The article notes this report predates a "Verified Engaged" confirmation flag Tesla now attaches to newer filings, so the system's engagement here is not confirmed with that additional verification.
+
+## Editorial Stance
+Electrek's editorial section argues Tesla markets Level 2 driver-assist software (branded "Full Self-Driving") in ways that invite driver overtrust, and that Tesla's redaction of software version and crash-narrative fields — while it alone holds the EDR and telematics data — obscures whether its systems contributed to fatal crashes. The author states the article is being careful not to claim the engaged system caused the crash, since that cannot be established from the redacted record, and notes Tesla is already under NHTSA investigation over its crash-reporting practices.
+
+Notable quotes and data:
+- Pre-crash speed logged by Tesla: 73 mph in a 70 mph zone.
+- Crash time per Tesla telematics: 20:03 UTC (~3 p.m. local), matching trooper timeline.
+- Troopers' public description: the car "went off the road."
