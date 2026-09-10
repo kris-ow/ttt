@@ -1,0 +1,600 @@
+Channel:     electrified
+Title:       Why Tesla's Cybercab Is a Distraction ⚡️
+URL:         https://www.youtube.com/watch?v=Yvee7Z8yASc
+Published:   2026-09-09 23:03 UTC
+Fetched:     2026-09-10 00:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome back to Electrified. It's your
+host Dylan Lumis. If it's any
+consolation for you guys, last week
+having to sit on the sidelines
+effectively was quite painful for me.
+But sometimes in life, that's how the
+cookie crumbles, as they say. And I'm
+telling you, at some point in the
+future, I will be able to share my
+story. And I'm telling you, it'll be
+worth the wait. But for now, I just want
+to say two things. Number one, to
+everybody that was praying for me and
+thinking about us, I just wanted to say
+a heartfelt thank you. And two, just to
+give you something for now, this had to
+do with my biggest career swing to date.
+And ultimately, it's looking like it has
+been completely nuked by forces totally
+outside of my control. It is still an
+ongoing situation, but this was supposed
+to be a huge part of my life for the
+next few years, and now it's looking
+like it's going to be a zero. And so,
+naturally, my wife and I need to do a
+reset, handle the situation, and really
+figure out how we want to move forward.
+But the good news for everybody here,
+this really has encouraged me to do even
+better things with electrified moving
+forward. So I do have a renewed sense of
+focus and really appreciation for the
+community that we've all built together
+here. So with that out of the way, Cyber
+Cab as a distraction, what am I talking
+about? Well, when it comes to the Cyber
+Cab event, I'll touch on that toward the
+end of this video, but largely I do
+think that is also a distraction. There
+was plenty of drama around the event and
+really understandably so. But the real
+distraction is something else. Everybody
+is laser focused on the cyber cab and
+the hardware and the unboxed process.
+Really, all of the manufacturing and
+design genius that we've been covering
+here on this channel for the better part
+of 2 years. But here's the thing. Tesla
+could have the very lowest cost, most
+incredibly designed product ever. But if
+they don't have the proper software to
+control that vehicle in different cities
+at scale, then ultimately this hardware
+without a wheel and without pedals is
+useless. And so, while we know the Cyber
+Cab is incredible, nobody else will be
+able to compete with it from a cost
+perspective, and it deserves all of the
+praise it is finally getting from the
+general public, the real focus for us as
+investors needs to be all eyes on
+version 15. And no, this is not just me
+being dramatic, but on X, Mike was
+talking about how Tesla launched in
+Tampa and Orlando right before the Q2
+earnings call, as we covered on the
+channel. and over 1 month later and it's
+just a handful of cars in small
+geoences. Really more of a beta pilot
+type situation. But Chuck Cook responded
+to that saying, "Waiting on V15." And he
+said, "Every hard question I asked the
+leadership engineers at the Cyber Cab
+event was answered with, wait on V15."
+And look, at this point, I know some of
+you will be rolling your eyes because
+for years now, it's been the next
+release. Just wait for the next one. The
+breakthrough's coming with the next one.
+So from that perspective, I totally
+understand. But we also have to
+understand that at some point the
+engineers and the team and Elon, well,
+they're going to be right. So even
+Tesla's engineers right now are
+admitting that everything is hinging on
+V15, not the Cyber Cab hardware itself.
+And quickly from that perspective, I did
+want to follow up on Dr. Knowitall's
+video about the final boss potentially
+for Tesla's FSD recognizing those thin
+horizontal objects. If you're not sure
+what I'm talking about, just go back and
+rewatch my most recent video. And a
+quick aside, I shared this video earlier
+today of my Tesla Model 3 on 14.3.8
+recognizing this yellow chain link fence
+being approached from the front in a
+parking lot and FSD on its own
+recognized it, reversed, and then exited
+the parking lot through another exit.
+And as you'll see at this point, I was
+almost sure that I was going to have to
+disengage here as it started to creep
+forward a second time. I thought it
+would drive right through the chain, but
+it saw it, stopped, and then reversed
+all on its own. And two things, no, this
+does not mean that the chain thin
+horizontal problem has been solved.
+Absolutely not. This is one anecdote.
+And secondarily, this was approaching it
+directly head-on. It wasn't going along
+the side, and it wasn't trying to back
+up into it. However, I definitely wanted
+to share it because for me, past
+versions of FSD were not recognizing
+chains like this. And so, if you missed
+it, one of the main points Dr.
+know-it-all was making was that these
+convolutional neural networks still
+struggle with these thin horizontal
+objects. Now, I want to make it clear
+Elon did say that Tesla isn't using
+convolutional neural networks that much
+anymore. But that doesn't mean they're
+not using them at all. And so, as far as
+we know based on all public information,
+I think it's most likely Tesla is still
+using these CNN's in the vision aspect
+of self-driving. All you really need to
+know is that a CNN is just a program
+that's really good at spotting different
+patterns in an image. So it'll scan
+portions of an image and say that looks
+like a stop sign, that's likely a
+pedestrian, that's likely a car, and so
+on. And so here's a little visual that I
+oneshotted with Grockbot as a potential
+use case idea. But again, as far as we
+know, Tesla is still using something
+like this as the first filter on each
+camera. It's a cheap, fast way to be the
+eyes layer of the entire process. And so
+after the first pass of a CNN, you'll
+have a map of simple thing like edges or
+outlines, different spots and shapes.
+And then it'll do the same sliding
+window thing again on these maps. And
+it's at this point on the second pass
+when the detection can find certain
+combination like two edges that meet or
+a dark circle next to a light one. And
+this is where that pattern recognition
+comes into play. And a few more times
+and the network will be looking for
+things like ears, wheels, faces, and so
+on. And you'll see pooling in this
+diagram. That's where every now and then
+you'll shrink these maps so later layers
+can see a wider area of the original
+photo without needing bigger windows.
+So, we don't need to go beyond
+high-level stuff. just know Tesla is
+still likely using these CNN's as the
+beginning part of the FSD driving
+process. But we do know for sure Tesla
+is not nearly as reliant on CNN's as
+they once were. But the main point I
+wanted to make is that while this is a
+quite challenging problem, it's not one
+that's completely unsolved where all of
+the researchers and engineers are just
+throwing their hands up without answers.
+That is not the case. So, one thing
+Tesla could do is keep higher resolution
+from those images and the video instead
+of forcing all of the pixels through
+these aggressive shrinking processes.
+And yes, all of these solutions will
+have trade-offs and costs associated,
+but there are viable paths. And even Dr.
+Knowitall mentioned one himself, which
+has to do with the context windows. It
+would be giving FSD a better memory. And
+we know the Tesla team and Elon have all
+been talking about how memory is the
+current limiting factor for Tesla
+specific hardware and FSD right now. I
+could go on, but for now I just wanted
+to make it clear I don't have major
+concerns that this is some unsolvable
+problem like I think some were deducing
+from Dr. Knowitall's video. Again, he
+did an excellent job explaining it and I
+think he was spot on. But after having
+some time to research and look into it,
+I do think there are viable solutions
+out there. And I'm fairly confident with
+version 15 and a future DOT release,
+Tesla will have a solution figured out
+as part of these seven new technologies
+they've been touting with V15. And yes,
+the second we get any breadcrumbs of
+what exactly they've added in, we'll be
+sure to break it down. Now, for today's
+video, we're not going to go crazy. We
+will ease back into things as I get back
+into the swing of things myself. But
+Ethan McConna said he took 16 Cyber Cab
+rides after the event with no looping.
+It seems like whatever build they
+shipped with Cyber Cab launch improves
+pickup and drop off behavior. Now, no,
+that doesn't mean it's perfect. Some
+suggestions he still had, he wanted
+dynamic pickup wait time based on
+location, something Whimo has. For
+example, if Tesla continues to give the
+riders 7 minutes to get into the
+vehicle, sometimes the cyber cab is
+waiting for its riders in areas where
+it's blocking the road. So doing that on
+a busy street with cars behind you is
+certainly not ideal, but there wasn't a
+ton of P&amp;D coverage from the attendees
+of the event. So this was encouraging to
+hear. But for now, it's a fair open
+question. Is Cyber Cab using a more
+advanced version of V15, or is it the
+same V15 that's 40% or so done that
+we've seen on the Model Y? At this
+point, I'm just speculating, but it
+feels like Cyber Cab might have an even
+newer version. A quick look at the robo
+taxi tracker. Tesla now has 437 total
+vehicles registered in Texas and 49 of
+those are cyber cabs. And just so you
+know, for the Florida cities, I have 15
+for each city because we don't know the
+exact number. But as David Moss said
+this week responding to a post about the
+Florida cities, he said they have seven
+vehicles each and two active max at a
+time, one at night. So that 15 number is
+likely an upper limit. But that right
+there proves my point. The Florida
+cities are still pilots. And I did add
+the robo taxi hubs to the map. So if you
+click the hubs button here, they will
+populate on the map. As you can see,
+they're very close to current cities
+where Tesla's operating or plans to. And
+if you scroll down, you'll see a list of
+each individual hub. And the last thing
+I want to point out for today in the Z4
+section, you'll find a CyberC badge with
+how many days the Cyber Cabs have been
+active in the registry not officially
+giving rides, but the difference is only
+a few days. But the point I wanted to
+make, these Florida cities have now been
+operating for between 50 and 68 days.
+And so we're talking roughly 2 months
+for Tesla to have a handful of vehicles
+in these small geo fences. So until
+further notice, each new city launch,
+while it is exciting and important for
+Tesla to gather data, we need to be
+expecting a very slow roll out after the
+fact. Another important point I want to
+drive home, Tesla confirmed it has
+dynamic pricing for Roboaxi, which means
+the pricing will fluctuate based on
+supply and demand. So while it's great
+to see all of the pricing screenshots
+and the comparisons, those are only a
+snapshot in time. So to anybody out
+there trying to run the math on what
+Tesla's base rate is and the surge
+pricing, just know you're not really
+going to be able to come to an accurate
+conclusion because it's dynamic. And as
+you're about to see from this post from
+Abimmanu, in this case, the Cyber Cab
+was actually more expensive than the
+Model Y. Cyber Cab $17.32
+when the Model Y was $178.
+Now, yes, in the future, most of the
+time the Cyber Cab will be the more
+affordable option, but it's not a
+guarantee. Initially from the cyber cab
+event, people were getting quite excited
+about the form Tesla put out, trying to
+gauge the interest for people looking to
+help Tesla expand the robo taxi network.
+It was for anybody interested in cyber
+cab fleet vehicle purchasing, mobility
+hubs and infrastructure event
+collaboration or other. I think Sawyer
+said about 73,000 people clicked on the
+link and then Eric from Tesla, the lead
+cyber cab engineer, said they had tens
+of thousands of people actually fill out
+the form. But importantly, he later
+deleted that post. And I'm pretty
+confident the reason is because this
+type of thing right here is still a long
+ways away. So, just my opinion, but
+similar to Tesla launching in these
+Florida cities right before the Q2
+earnings and then keeping it a small
+deal for a while, I think it's going to
+be a similar thing here for the event.
+Tesla wanted things that the media and
+people like you and I could talk about,
+to get excited about. But guys, the
+amount of questions that would still
+need to be answered for anything like
+this to actually be viable is incredibly
+long. How about a price? What about
+insurance? Do I own the title or does
+Tesla? What states and cities could I
+operate a cyber cab in and when? What
+happens when the car tries to leave the
+operational domain? What are the
+requirements for upkeep of the vehicles?
+How clean do they need to be? How often
+do the tires need to be replaced? What's
+the revenue breakdown between Tesla and
+the owner? How about the entire
+liability question? As an operator, what
+all am I responsible for? In the event
+of a serious crash or an accident, am I
+responsible for talking to the police
+and lawyers, or is that something Tesla
+will do because it was their software
+driving the car? What if I decide I
+don't want to run a fleet anymore? Can I
+sell my cyber cabs to another approved
+operator? Do I have to sell them back to
+Tesla? What happens if I invest in a
+cyber cab fleet for my city, but then
+shortly after Tesla comes and floods my
+city with its own cyber cabs? I live in
+a snowy climate. Am I allowed to operate
+these cyber cabs in the snow? If so, how
+much? And if so, when? So, I could go on
+and on, but I think you get the picture.
+So, I'd be very surprised if we hear
+anything about this anytime this year.
+And of course, if we do, it would have
+to be limited to the current geoence
+cities. And so again, we'll talk about
+this a lot more in the future, like why
+Tesla would offer this at all if they
+can make so much money keeping the cars
+in house themselves. We'll talk about
+all of that, but for now, I think best
+case scenario would be something on a
+very small scale limited to Austin. If
+we see anything come to fruition from
+that form, we also have to acknowledge
+Tesla might be in a holding pattern
+right now while Nitsa completes its AQ,
+its audit query. This has been out there
+for a few days. I won't cover it in
+detail. Basically, we know Tesla
+self-certified the Cyber Cab. As we said
+all along, there's a chance that Nitsa
+will challenge that self-certification
+that Tesla did, and that's exactly what
+this is. It's not Nitsa saying, "Hey,
+something's wrong here." It's saying,
+"Hey, we're going to take a look and
+make sure nothing is wrong." So, for
+now, nothing has been determined. But
+this process could take months. And it's
+further complicated by the fact that we
+have some of these FMDSS in the midst of
+being changed right now. So, in Tesla's
+self-certification, was it relying on
+these changes that are not yet official
+when Tesla was making certain arguments
+that this doesn't apply to the cyber
+cab? And sadly, we have people
+perpetuating that 1,000 cyber cab number
+that was used for this query now saying,
+"See, Tesla's about to launch a thousand
+cyber cabs in Austin." But that's
+absolutely not the case. That is
+literally just a placeholder or an
+assumption for what Nitsa thinks the
+scale and scope of this investigation
+may be. That is not any indication of
+the amount of live cyber cabs Tesla has
+now or in the near future because
+remember legally Tesla can only have 49
+cyber cabs operating on all of Texas
+roads right now. But my point is, until
+this query is satisfied, Tesla likely
+won't want to scale Cyber Cabs to
+significant numbers, even if it could
+from a software perspective. So,
+obviously, they're not going to start
+selling CyberC by the thousands to fleet
+owners until this all gets settled.
+There's a lot of controversy about Cyber
+Cab doors right now. David Moss did some
+good testing with a banana and the
+passenger doors, and the first test it
+passed. So, if somebody gets an arm or a
+fist stuck in there, the door should
+recognize it and go back up. But the
+trunk test, not so successful. It
+crushed right through the banana, almost
+like it wasn't there at all. Another
+banana test closer to the bottom of the
+trunk. A little bit better. It did
+recognize it and go back up, but a
+little bit of damage was done. But
+again, up closer to the window and not
+great. And for a passenger door, he did
+a test with his fist and that one was a
+pass. Texas Tesla was doing some testing
+of the doors and in his videos, these
+cardboard boxes were not detected and
+the door knocked him right over. And I
+think his reaction of being hit by the
+Cyber Cab door in this video might be a
+bit dramatic. Still something to note.
+But of course, this will all get worked
+out and that's actually why I'm sharing
+this because he said Tesla reached out.
+A CyberCab software update is inbound
+soon. And a fun fact that Josh West
+pointed out, you can click the Cyber Cab
+door button to stop it at any point when
+it's opening or closing. As Joe Teter
+said, Cyber Cabs are now rolling off the
+production line for the first time with
+the Starlink module on the hatch in big
+numbers. He said this may show this has
+moved from the conceptual and testing
+phase to more of a production phase with
+the appropriate tooling and die changes
+rather than being retrofit. And
+remember, this is Starlink V5, so it's
+TBD if Cybercap passengers will get that
+Starlink hotspot for their personal
+devices. I just wanted to say it seems
+like some people think it's a foregone
+conclusion, but I wouldn't be so sure
+because remember, there are specific
+reasons Tesla itself will want that
+bandwidth. And like I said, just some
+little tidbits here for today. Kyle
+Connor did confirm that the Cyber Cab
+does not currently support AC charging.
+So for now, not a big deal. Of course,
+people won't be charging the Cyber Cap
+at home, but for now, the Cyber Cap is
+wholly reliant on the Supercharger
+network, which is another small reason I
+think fleet purchases are a ways away.
+And Tesla's still going through growing
+pains with the Cyber Cab. Josh West
+shared a video of him and his wife
+requesting a Cyber Cab. They waited
+about a half an hour only to learn that
+Tesla cancelled their cyber cab and
+ultimately they were forced to book
+another one and wait another 30 to 45
+minutes with no explanation given. There
+are still some software bugs Tesla needs
+to figure out. This screen was shared
+from David Moss one of his rides. It was
+more of an engineering type view that
+had the joystick to manually move the
+cyber cab. So again, likely just a bug.
+It could have already been fixed as far
+as we know. But I'm pointing these
+things out of course so everybody can be
+informed, but also I see people saying,
+"Well, if Tesla can have a few dozen of
+these cyber cavs, why can't they have a
+few hundred?" And it's because little
+things like this. You have three
+problems on 36 Cyber Cabs a day, and if
+you multiply that 10, then that's 30
+problems. As Elon said today, the degree
+to which CyberCab is optimized for the
+lowest possible cost per mile, fully
+loaded, is understood by very few. But
+again, I think the majority of us here
+understand this very well because we've
+been talking about this again for years.
+So, I hope none of you take this video
+as not being celebratory of this Cyber
+Cab launch because it was honestly
+incredible and a huge milestone, one
+we've waited for a long time. I'm just
+treating it as a window that I
+effectively missed for being absent last
+week. And Elon did say talking about the
+Cyber Cab hopefully soon in Europe, too.
+But I'm not going to hold my breath
+given that we're having challenges
+getting supervised FSD approved in many
+European countries. So again, I think
+we're likely looking at 2027 until we
+see any cyber cabs operating anywhere in
+Europe. And interestingly, the fire
+department in Austin, Texas said today
+that it has concerns about Tesla's cyber
+cab and how it could block city streets
+because it doesn't have traditional
+controls. So, the fire captain said
+Tesla has been training the fire
+department on the cyber cab and using
+the touchscreen on the dashboard, but he
+said the technology is unproven and he
+doesn't know how well it will work in
+the field if, for example, cyber cab is
+blocking a fire engine. He said, "I
+don't think it's the silver bullet to
+alleviating the concerns first
+responders have without having drivers
+controls." He said the touchscreen could
+fail in numerous situations like if they
+have gloved hands, sweat, dust, or the
+possibility of the screen being cracked
+or having a lack of power. And he said
+obviously it has some drawbacks. You
+need power to do it. It does have
+limitations on speed. And it does
+require a bit of I would say training or
+maybe some finesse to operate. But in
+fairness, it's worth pointing out that
+he also spent some time publicly
+criticizing Whimo. So, if this level of
+skepticism exists in Austin, one of the
+most autonomous forward cities, then we
+can be sure it's going to exist even at
+greater scale elsewhere. And it's not
+live yet, but in the app code, some
+folks found that Tesla might start
+offering robo taxis during service
+instead of loaner vehicles. Now, yes, of
+course, early days, this would only be
+available in cities where Tesla has robo
+taxi operations, but long-term this will
+be a great way to get service customers
+where they need to go. And when it comes
+to the CyberCap event, we know we really
+didn't get much new information. I think
+by far the biggest news was that Tesla's
+now over 1 million unsupervised miles.
+That was up from 380,000 back on the Q2
+call. And yes, when you run the math,
+that works out to about a 17%
+week-over-week growth rate, which was
+above Tesla's 10% guidance on the Q2
+call. And I know I give Whimo a hard
+time on this channel really because I
+don't see a viable path to
+sustainability for them, but they're
+currently well over 220 million
+unsupervised miles. Tesla just crossed 1
+million. So again, to everybody that
+wants and is expecting to see thousands
+of cyber cabs right now, we have to keep
+in mind Tesla's sample size is still
+very small. Growing quickly, sure, but
+it is still very small. Tesla Scope said
+FSD14.2
+light is now rolling out for the first
+time to hardware 3 vehicles in eligible
+regions. And simultaneously, FSD14.3.9
+is also rolling out to some hardware 4
+users. At this point, rather than
+yapping about the Cyber Cab event, I'll
+save that for a future video since it
+looks like this one might be long
+already. But for now, Tesla stock closed
+the day at $367.81,
+down.1%.
+And SpaceX closed at $14755,
+down 3.86%, all while the NDX was down.
+29%. I hope you all have a wonderful
+day, and a huge thank you to all of my
+Patreon supporters.
