@@ -1,0 +1,470 @@
+Channel:     farzad-fm
+Title:       NVIDIA's New Product Will Slash the Price of Everything
+URL:         https://www.youtube.com/watch?v=XGmAxtAHle4
+Published:   2026-09-10 14:46 UTC
+Fetched:     2026-09-10 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+On August 26, 2026, Nvidia had one of
+the best reports in the history of the
+stock market where they reported over
+100% revenue growth on a company that's
+already worth $5 trillion,
+which has never happened before in the
+history of capitalism. And it clearly
+points to one direction. The AI boom is
+just getting started and at its core is
+the collapsing price of generating
+intelligence while making the companies
+that generate that intelligence far more
+profitable. And this is tied directly to
+a line of products called Vera Rubin
+that everyone needs to get familiar
+with. This disruption that this product
+will cause to not just the entire AI
+market, but to the economy in general is
+very difficult to grasp. But once you
+watch this video, it'll become extremely
+clear and it is precisely why companies
+like SpaceX have chosen Nvidia
+exclusively for its future AI factories
+from giant systems on Earth to its first
+Starman computer in orbit. And if this
+works at the scale Nvidia is claiming, I
+think the most important output will not
+be the fastest chatbot or a cheaper chat
+experience in ChatGPT or Claude or
+whatever. It will be a collapse [music]
+in the cost of useful digital work
+because the economics of AI are changing
+in a very specific way. The first wave
+of generative AI, which we're all
+familiar with, was mostly prompt and
+response. So you ask a question to an AI
+and the model reads your prompt or your
+question and then it generates the
+answer and that's it. But an agent works
+very differently. An agent is an AI that
+can actually do a task. You might ask it
+to research a company or fix a software
+bug or negotiate with suppliers or run a
+marketing campaign. The agent makes a
+plan, it searches for information, it
+calls software tools, it writes and
+tests code, it checks its own work, and
+sometimes creates other agents to work
+in parallel. Every one of those steps
+can require another trip through the AI
+model. The agent also has to carry
+forward what it has already learned. So
+the amount of information it reads can
+grow through the task. In other words,
+it needs a really strong memory system
+to remember what it has to do. Anthropic
+says a normal agent in its full research
+system used about four times as many
+tokens as an ordinary chat, while its
+multi-agent system used about 15 times
+as many. Each of these tokens is just a
+small unit AI models use to read and
+write language. Literally every prompt
+or response or tool result or
+instruction and piece of saved context
+adds more tokens. This is why inference,
+the computation behind the generation of
+answers or actions in an AI system, is
+becoming such a big deal. Training is
+the expensive part of teaching the
+model. Inference is every moment after
+that when the trained model is being
+used. Training builds the brain,
+inference pays for every thought or
+answer and action that that brain
+performs. And these jobs in an agentic
+system can take literally hours to days
+to complete. So, the economic unit is
+changing and while the industry has
+spent years talking about cost per
+token, businesses will care about cost
+per completed task, how long the task
+took, and whether the result was good
+enough to use as the most important
+variables. And if you're a long-time
+investor, especially in companies like
+Tesla, these are the kind of variables
+you look for in a company and
+Rebellionaire, the sponsor of today's
+video, can help you on that journey.
+Bradford Ferguson and Matt Smith, who
+run Rebellionaire, are big-time retail
+investors in Tesla, just like many of
+you that are watching this video, who
+done tons of unique and insightful
+research around things like FSD or
+Optimus Bot or Tesla Energy and the
+entire Musk ecosystem, so they
+understand exactly where you're coming
+from. But they're also professionals and
+through Rebellionaire, they specialize
+in helping investors like you with big
+concentrated investments to protect
+yourself from downside risk while
+growing your share count over time using
+strategies like trimming and adding or
+covered calls. Not only that, but they
+can also help you create a money master
+plan from your financial first
+principles. If that sounds interesting
+to you and you've got a $2 million
+position in Tesla or more, you can head
+on over to rebellionaire.com/farzad
+using the link in the description or the
+comment section below to learn more
+about their services. And thanks again
+to our long-time sponsor Rebellionaire
+for sponsoring this video. Now, it's
+becoming clear that everything that we
+just talked about is the opening that
+Nvidia sees in the market. Once AI
+becomes intelligent enough for a job,
+the competition moves to a new set of
+questions. How quickly can it act? How
+many jobs can it handle at once? How
+reliable is it? And how little does each
+successful job cost? And their new
+product, Vera Rubin, is what was built
+to answer all of those questions. Vera
+is Nvidia's new central processor or
+CPU, and Rubin is a graphics processor
+or GPU that performs most of the math
+behind the artificial intelligence. Vera
+Rubin and VO72 is the full rack-size
+system that connects 72 Rubin GPUs so
+they can behave much more like one
+enormous computer. The easiest way to
+understand this machine is to understand
+what makes an agent slow and expensive.
+So, let me explain. In these Vera Rubin
+systems, the GPU does all the heavy
+lifting behind all the computations that
+AI requires, but the GPU is only one
+worker in a much larger factory. The CPU
+organizes the job. Memory holds the
+model and the growing history of the
+task. The network moves information
+between GPUs. Storage saves pieces of
+context that may be needed again. system
+removes the heat, and the power system
+has to feed the whole thing without
+failing regardless of what happens at
+the power level inside the data center
+itself that these units will be stored
+in. If any of those layers fall behind,
+the GPU just waits there for the job to
+finish going through that entire
+process. And every second that a GPU is
+waiting, the owner is paying for a
+machine that is not producing useful
+intelligence because it's consuming
+massive amounts of electricity to keep
+that system powered. Nvidia's answer is
+something it calls extreme code design.
+In plain English, every major part was
+designed around the behavior of modern
+reasoning models and agents instead of
+being purchased separately and connected
+later. Start with the Rubin GPU.
+According to Nvidia's published
+specifications, one Rubin GPU can
+perform up to five times as much low
+precision inference as Blackwell. Low
+precision means that the chip uses
+smaller numbers where the model can
+tolerate those smaller numbers. Smaller
+numbers obviously take less memory and
+less energy to move and calculate, so
+the system can do more AI work without
+increasing power in direct proportion.
+But raw math is not enough. Agents carry
+a lot of context, another way of saying
+memory. The model may need to reread its
+instructions, the conversation between
+it and the human multiple times, or a
+code base, results from tools, messages
+from other agents, or whatever. That
+makes memory bandwidth incredibly
+important. Think of memory capacity as
+the size of a workbench. Memory
+bandwidth is how quickly parts can move
+onto it and off of it. A giant workbench
+does not help much if the worker spends
+all day waiting for the next part.
+That's why Rubin, the GPU, uses a new
+generation of high bandwidth memory
+called HBM4. Nvidia says each GPU has up
+to 288 GB of this memory and can move as
+much as 22 TB of data every second. That
+is roughly 2.8 times the memory
+bandwidth of Blackwell from a previous
+generation. This means that a
+long-running agent can keep more of its
+growing context close to the processor
+and feed it fast enough that the math
+units that compute the AI can stay busy.
+Then there is the network inside the
+rack. Many of the largest AI models use
+something called mixture of experts
+design. So instead of activating an
+entire model for every token, the system
+sends different tokens to different
+specialized sections of the model. That
+saves compute, but it creates an
+enormous communication problem because
+those experts may live on different
+GPUs. Nvidia's NVLink 6 network gives
+each Rubin GPU 3.6 terabytes per second
+of two-way communication with the rest
+of the rack. All 72 GPUs can talk
+through one tightly connected system.
+And so, the network can even perform
+parts of the coordination work inside
+the switches, which is basically the
+routers of the information instead of
+sending everything back through the
+GPUs. That result leads to less waiting,
+less duplicate work, and more of the
+expensive hardware producing tokens.
+But, if you thought that was complex,
+check out what Vera, which is the CPU,
+has to manage. AI agents do a surprising
+amount of work outside of the GPU. They
+execute the code. They process data.
+They manage tools. They run simulations.
+They decide which job moves where. A
+traditional CPU can become the
+bottleneck around an extremely fast GPU.
+Vera has 88 cores designed by Nvidia and
+up to 1.2 terabytes per second of memory
+bandwidth. Nvidia says it completes a
+group of agent AI training and data
+processing tasks up to 1.8 times faster
+than the common Intel and AMD-style
+server processors. More importantly,
+Vera can share memory with Rubin through
+an extremely fast chip-to-chip link. So,
+the CPU and the GPU will spend less time
+copying data back and forth and more
+time working on the same job. This
+explains why SpaceX AI said it plans to
+use standalone Vera processors for the
+CPU-heavy work surrounding Grok's
+agents, which is Grok bots. So, Rubin,
+the GPU, is going to perform the giant
+model calculations, and then Vera, the
+CPU, manages the code, the tools, the
+data, and the simulations around those
+calculations while keeping the GPUs
+busy. And the rest of the rack attacks
+the costs that folks rarely ever pay
+attention to in this system. For
+example, BlueField processors handle
+networking, storage, security, and data
+center operations so that the main
+processors do not have to. A new context
+memory layer can save and reuse pieces
+of an agent's prior work instead of
+recalculating them. Liquid cooling pulls
+heat directly from the hardware.
+Nvidia's power controls smooth out
+sudden spikes and according to the
+company can let operators install up to
+40% more GPUs inside the same megawatt
+power limit in certain configurations.
+That's a massive increase in computation
+in the same footprint. Even the
+mechanical design matters. Nvidia says
+the compute trays have no cables or fans
+or liquid hoses that a technician has to
+attach inside the tray. And so that
+means the assembly time is going to drop
+from hours to about a minute. Parts can
+be swapped more quickly. A factory with
+tens of thousands of GPUs become easier
+to build and keep running. All of this
+results in Nvidia trying to keep every
+costly part of the AI factory working
+every second under a fixed limit of
+power, cooling, floor space, and time,
+which is ultimately where this entire
+space is going. How fast and how cheaply
+can you deliver high-quality
+intelligence to the customer, especially
+in an agentic setting? And that answer
+is starting to show up in the numbers.
+Nvidia tested Vera Rubin on Agent X,
+which is an open benchmark created by
+the independent chip research firm
+SemiAnalysis to execute the complex work
+agents actually do. The workload
+includes a long and growing context,
+tool calls, pauses, reuse memory, and
+sub-agents. On one huge model called
+DeepSeek-V4-Pro,
+Nvidia says Vera Rubin delivered up to
+30 times more agent throughput per
+megawatt than GB200 Blackwell. That
+means 30 times more agent work from the
+same fixed power budget, and Nvidia says
+the cost per million tokens was up to 35
+times lower, which is wild because on
+that historic August earnings call,
+Nvidia said its revenue opportunity has
+risen from roughly $18 billion per
+gigawatt of power with Hopper to 25
+billion with Blackwell to 40 billion
+with Vera Rubin. So, while Nvidia is
+lowering the cost of generating tokens,
+its revenue from selling that compute is
+projected to double relative to the
+chips from two generations ago. So,
+Nvidia is capturing more of each AI
+factory, but that factory also produces
+dramatically more intelligence from the
+same power. If useful output rises
+faster than the price of the equipment,
+the operator's cost per token falls
+while Nvidia's revenue per gigawatt
+rises. That means both sides, Nvidia and
+its customers, can win at the same time.
+Nvidia sells more valuable equipment,
+the customer gets a lower cost for each
+unit of useful work, then the lower cost
+creates new demand that did not make
+sense before as these agentic processes
+become more common and more useful. That
+is why Jensen Huang keeps repeating the
+mantra, "Compute is revenue." As you add
+more compute, your revenue goes up
+because each unit of compute is
+generating more and more useful
+intelligence now that the models have
+reached a capability threshold. Now, if
+you're enjoying this video so far, you
+want to support the channel, the
+quickest and most impactful thing you
+can do is click and subscribe. It's
+completely free and it goes a very long
+way. Thank you so much. Now, the reason
+why compute equals revenue is because
+inference costs are going to continue to
+plummet as chips and models get more
+efficient, which is going to increase
+the world's demand for compute. When the
+cost of one unit of intelligence falls,
+developers use more intelligence. They
+let an agent think longer. They give it
+more context. They run several agents
+instead of one. They ask it to check its
+own answer. They move from a weekly task
+to a daily task, and then from a daily
+task to continuous processes that never
+really stop. And we have seen this
+before. Computers got cheaper, and the
+world bought more computers. Internet
+bandwidth got cheaper, and the world
+moved from AOL to Netflix. A lower cost
+per token will not shrink Nvidia's
+market if demand grows faster than
+efficiency. It can make the total market
+much larger. This is ultimately what led
+to the announcement of the growing
+partnership between Amazon's AWS and
+Nvidia, where Nvidia said they plan to
+deploy 2 million additional Nvidia GPUs
+across Amazon's global infrastructure in
+2027 and 2028, including Blackwell
+Ultra, Rubin, and Rubin Ultra. That is
+coming from a cloud provider that also
+builds its own AI chips, by the way, in
+Amazon. AWS is keeping those in-house
+chips while expanding its Nvidia fleet
+at an extraordinary scale because
+customers want both. Nvidia also
+announced partnerships with six major
+investment firms that aim to mobilize
+more than $500 billion of outside
+capital for AI infrastructure over time.
+That's because, again, falling compute
+costs are not reducing the appetite to
+build. They are helping turn AI
+factories into a major new category of
+investment that large financial
+institutions want to fund. Economists
+call this the rebound effect. When each
+unit gets cheaper, total use can go up
+rather than down. So, you make
+intelligence cheaper, and the world
+discovers far more uses for
+intelligence. But even after me saying
+all of this is going to cause a huge
+boom in demand, it pales in comparison
+to what happens once intelligence
+crosses a useful threshold for a
+specific job across every model out
+there. If two products can both solve
+the problem, what wins? It's going to be
+the one that gives you the answer faster
+and does it at a lower cost. And that
+will change everything, starting with
+software. Today, software is expensive
+because people have to decide what to
+build. They have to write the code. They
+have to test it. They have to fix it.
+They have to secure it. They have to
+explain it. They have to sell it. They
+have to support it. AI agents can touch
+every single one of those steps. If the
+cost of those agents falls dramatically,
+a tiny team can build and operate
+products that once required a much
+larger company. Then it moves into
+things like research and law and
+accounting and medicine, engineering,
+logistics, education, customer service,
+product design, and through every nook
+and cranny of the digital economy. Every
+industry has work that consists of
+reading information, making a decision,
+and taking an action. And this is where
+cheap inference and intelligence can
+make such a huge impact. The price of
+intelligence falls first, then the
+price, speed, and quality of everything
+built with that intelligence follows
+quickly thereafter. And before you know
+it, you have a completely transformed
+economy that looks unrecognizable with
+Nvidia right at the center of that
+disruptive innovation. These are all
+topics that I cover extremely deeply in
+my book Abundance or Collapse, which
+helps people position themselves on the
+winning side of the upcoming AI
+disruption. I'll have links for that in
+the description and the comment section
+below. Now, YouTube has this new crazy
+algorithm where it knows exactly what
+video you would like to watch next based
+on AI and all of your viewing behavior.
+And the algorithm says that this video
+that's about to come up is the perfect
+video for you. Now, it's different for
+everyone that's watching right now, but
+check it out and my bet is you'll
+probably love it. Thank you so much for
+watching. I hope this video was
+informative and helpful, and we'll see
+you on the next one. Take it easy,
+everybody.
+Bye-bye.
