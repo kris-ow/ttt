@@ -1,0 +1,58 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-10)
+Published:   2026-09-10 00:00 UTC
+Summarized:  2026-09-11 04:38:52 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05616 (16025 in / 2411 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Cybercab DMV registrations hit 49, up from 45
+- FSD 14.3.9 adds Automatic Collision Evasion steering feature
+- Congressman gives DOT until Sept 30 on FSD sleeping-driver probe
+- Electrek ties fatal I-35 crash to engaged Autopilot, redacted filing
+- Cybertruck Powershare now backs up homes alongside Powerwall 3
+- Giga Berlin adding mandatory shifts to meet European demand
+
+## Robotaxi
+- Cybercab DMV registrations reached 49 in Texas, up from 45 a day earlier (per brighterwithherbert); separately, Tesla says "tens of thousands" filled out a Cybercab fleet-purchase interest form over five days, though this is top-of-funnel only with no pricing or conversion data disclosed.
+- Sample in-app pricing showed Cybercab quoted at $10 versus $17 for a Model Y on the same route (~40% cheaper), with hosts framing this as early evidence of Tesla's lower cost-per-mile advantage; Tesla's "unboxed" production process reportedly cuts cycle time to under 10 seconds versus 34 seconds for Model Y.
+- Cybercab program lead Eric Early said automated charging options are expected by year-end, with wireless charging not confirmed; he set vehicle lifespan at five years minimum with a target of 100,000–500,000 miles, versus the three-year assumption some forecasters use. Ashok Elluswamy acknowledged the ride is "certainly not there" yet on his own smoothness benchmark.
+- Gene Munster reportedly guessed Tesla could add roughly 300 Cybercabs to Austin over the next month — called "optimistic but not crazy" by one host given Tesla's apparent preference for a slow, low-scrutiny rollout.
+
+## Autonomous Driving
+- FSD 14.3.9 introduces Automatic Collision Evasion, which can steer around obstacles (not just brake) on controlled-access highways under 85 mph when no pedestrians or cyclists are detected; it requires both automatic emergency braking and FSD Supervised enabled and does not yet address pedestrian/cyclist scenarios.
+- Rep. Raja Krishnamoorthi sent DOT a letter demanding answers by September 30 after an NBC News investigation found 43 videos of apparently sleeping Tesla drivers (17 in 2026); the letter ties this to NHTSA's engineering analysis of ~3.2 million FSD-equipped vehicles, which has identified nine incidents (one fatality, one injury) in reduced-visibility conditions, and criticizes Tesla's in-cabin message "Drowsiness detected. Stay focused with FSD."
+- Electrek matched a redacted NHTSA crash filing to an April 2025 fatal I-35 crash in Missouri, finding a Tesla driver-assist system was flagged engaged within 30 seconds of impact; Tesla redacted the crash narrative and system/software version, so it cannot be determined whether Autopilot or FSD was active. Electrek notes the crash fits its identified pattern of lane/road departures as the largest category among disclosed Tesla driver-assist crashes.
+- EU-wide vote on FSD Supervised approval is set for October 6, requiring 65% population-weighted approval; six countries have already approved, Germany seen as less certain, and Musk has expressed confidence including reported contact with the French transportation ministry.
+- China FSD Supervised approval remains in a limited, older-software form due to only-recently-activated local training data centers, per secondhand engineer accounts relayed by a guest commentator; full approval has reportedly been "months away" for roughly a year and a half.
+
+## Electric Vehicles
+- Model Y has been the world's bestselling passenger vehicle three straight years (2023–2025) with over 4 million units sold, up nearly 20% year-over-year through July.
+- Giga Berlin is running mandatory extra shifts in September to meet European demand, currently producing ~6,500–7,000 vehicles/week with a target of 7,500/week by mid-October and takt time down to ~45 seconds (per Handelsblatt).
+- Tesla China August retail sales fell 12.4% year-over-year to 50,000 units, while exports rose ~38–39% to roughly 36,000; Tesla China also launched a cash incentive through September 30 (5,000 yuan off Model 3, 10,000 yuan off Model Y).
+
+## Energy
+- Cybertruck's Powershare can now provide home backup simultaneously with a Powerwall 3, delivering more than three days of combined backup power (equivalent to nine extra Powerwalls, per Tesla). The feature required coordinating two grid-forming devices and required grid-safety certifications, and arrives roughly a year later than Tesla's original "sometime in 2025" promise.
+
+## Market & Competition
+- Volkswagen is undergoing the largest layoffs in its history, attributed to low margins on its best-selling models. BYD posted its best-ever month in August with roughly 250,000 battery-electric vehicles sold, mostly exported, underscoring intensifying competition in China's EV market.
+
+## SpaceX — Corporate & Valuation
+- A commentator estimated roughly 20-25% of SpaceX employee shares will be sold automatically at unlock due to standard portfolio-diversification pressure, regardless of conviction in the stock; he cited insider reluctance to sell below the $135 IPO price as a potential near-term price ceiling.
+
+## SpaceX — AI & Compute
+- Grok is priced at $2/million input tokens and $6/million output tokens versus $5/$30 for GPT 5.6 (the cheapest cited rival), and Grok 4.6 reportedly matched top competitors on long multi-step tasks using about half the turns and roughly a quarter of the input tokens of Opus 5 Max.
+
+## SpaceX — Starlink
+- SpaceX unveiled the next-gen Starlink Router 4 with a Wi-Fi 7 chipset, support for up to 510 connected devices, and coverage up to 3,500 sq ft. Kazakhstan's transport ministry plans to expand Starlink to 124 passenger trains by late September, up from 59 currently equipped.
+
+Notable quotes and data:
+- "Drowsiness detected. Stay focused with FSD" — in-car Tesla message cited in Krishnamoorthi's DOT letter.
+- NHTSA's EA26002 covers ~3.2 million FSD-equipped Tesla vehicles; nine incidents identified (one fatality, one injury).
+- I-35 crash: Tesla logged 73 mph in a 70 mph zone; troopers' public report only said the car "went off the road."
+- EU FSD Supervised vote: October 6, requiring 65% population-weighted approval.
+- Giga Berlin: ~6,500–7,000 vehicles/week now, targeting 7,500/week by mid-October.
+- Grok pricing: $2/$6 per million tokens (input/output) vs. GPT 5.6's $5/$30.
