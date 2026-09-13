@@ -1,0 +1,60 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-12)
+Published:   2026-09-12 00:00 UTC
+Summarized:  2026-09-13 04:45:58 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05787 (15802 in / 2627 out tokens)
+Sources:     5
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+- Cybercab passes 1 million unsupervised miles at Sept 3 launch event
+- NHTSA opens Cybercab FMVSS certification audit query, TSLA fell ~6%
+- FSD approved in Slovenia, EU-wide vote expected around Oct 6
+- Tesla Semi unveiled for Europe, ~550 km range
+- Morgan Stanley: Semi autonomous trucking could earn $12K–18K/truck monthly
+- Unconfirmed report: Tesla ordered parts for ~5,000 Optimus units
+
+## Robotaxi
+- Tesla's robotaxi program hit 1 million unsupervised miles as of the September 3 Cybercab launch, up from 380,000 disclosed on the Q2 call — implying roughly 620,000 miles added in six weeks. Unsupervised operation now spans six cities (Austin, Dallas, Houston, Miami, Orlando, Tampa) with roughly 200 vehicles; Waymo separately announced 200 million autonomous miles the prior week.
+- Rider screenshots show Cybercab pricing 35–40% below Model Y and roughly half of Uber on identical Austin routes ($7.77 vs. $12 Model Y in one case), though high demand later pushed some Cybercab prices above Model Y with over an hour wait — a supply constraint, not a fixed discount, and Tesla has not published an official per-mile rate.
+- Texas DMV Cybercab registrations rose from 45 to 49 in days; total automated-vehicle registrations hit 432. Independent VIN-based estimates (Herbert, futureaza) suggest Tesla has built 2,000–3,000 Cybercabs nationwide, with perhaps 1,000 dedicated permanently to FSD validation rather than commercial service — his own estimate, not confirmed.
+- Cybercab spec sheet shows a 47.66 kWh pack and ~6.1 mi/kWh (Tesla's impact-report figure) versus ~4 mi/kWh for Model Y; Musk called the car "optimized for lowest possible cost per mile, fully loaded." ARK Invest projects ~25¢/mile at scale versus ~70¢/mile to own a car.
+- A financial-analyst deep dive (Cern Basher, via Herbert) argues Cybercab's design choices — two seats, no paint shop, front-wheel drive — target lifetime cost per mile over vehicle life rather than sticker price; his model shows fleet cost for 1 billion passenger miles could fall roughly 67% if vehicle life extends from 300,000 to 1 million miles.
+- Cybercab is touring Japan for public display (Tokyo, Osaka, Nagoya through late September) — a marketing push, not a deployment milestone.
+
+## Autonomous Driving
+- NHTSA opened an audit query into Tesla's Cybercab FMVSS self-certification process, covering an estimated population of 10,000 vehicles — a review of certification methodology, not a defect probe. TSLA dropped about 6% the following Friday.
+- FSD Supervised gained approval in Slovenia, the sixth EU country and first new approval in roughly three months; an EU-wide technical committee vote is expected around October 6, needing 15 countries covering 65% of the population. France, Sweden, and Germany have raised specific concerns.
+- FSD 14.3.9 began rolling out with active collision avoidance and wheel-grab intervention if a driver is distracted or disengaged; requires Hardware 4 and an active subscription, highway-only under 85 mph. Rollout was briefly paused Tuesday before resuming at small scale.
+- A separate guest (Doctor Know-It-All, via futureaza) cites Tesla's EU safety submission as showing FSD roughly four times safer than a human driver overall and about half the accident rate within the same vehicles — an unverified claim attributed to the guest, not confirmed Tesla data.
+
+## Financials
+- FSD take rate in North America reportedly rose from roughly 5–10% to around 50% since shifting to a $99/month subscription — a guest estimate (futureaza) citing roughly 170,000 new paid subscribers in one recent quarter and a similarly large number the next, though the host cautions Tesla hasn't disclosed a clean take-rate breakdown.
+- Morgan Stanley estimates Tesla's autonomous Semi trucking software could generate $12,000–$18,000 per truck monthly (at $0.85–$1.00/mile over ~18,000 miles), versus roughly $100/month for consumer FSD today; a fleet-wide revenue figure was referenced but not confirmed in the source.
+- Speculation (unconfirmed) floats tiered FSD pricing — cheaper supervised tiers alongside a premium for unsupervised driving — as a plausible future Tesla move, not an announced plan.
+
+## Electric Vehicles
+- Model Y remains the global sales leader, up 19.6% year-to-date through July per Focus2Move. Giga Berlin is running under 6,500 vehicles/week against a ~7,500/week mid-October target, adding three mandatory extra shifts.
+- China August retail sales were 50,000 units, down 12.4% year-over-year but up 84% from July; Tesla ranked fifth domestically. Tesla China announced $1,500–$5,000 discounts on in-inventory Model Y/3 through September 30.
+- Tesla launched the Model Y Performance in China starting at RMB 369,000 (~$55,000), deliveries beginning within two weeks.
+- Tesla unveiled the European Tesla Semi: ~550 km range, no side mirrors, 1.0 kWh/km consumption.
+
+## Energy
+- Tesla secured an approximately $800 million Megapack order from Zhero for 3 GWh of storage capacity in Italy.
+
+## Humanoid Bots
+- Chinese outlet GMN News reported, citing supply-chain sources, that Tesla placed parts orders in early September for about 5,000 Optimus units, with supplier guidance calling for 1,000/week in September ramping to 2,500/week by year-end — unconfirmed by Tesla, and the host stresses no 2026 production number has been officially given.
+- Tesla has open Palo Alto listings for a hand design engineer and a "mass manufacturable hand" program manager, reflecting hands as Optimus's current bottleneck.
+- Musk told the G20 innovation meeting (Sept 1) that AI could lift the global economy 20–30%, and projected "well over a billion humanoid robots in 10 years," later posting that AI and robots will more than double the global economy within a decade.
+
+## Market & Competition
+- T-Mobile's CFO said Starlink Mobile poses no competitive threat "from a wireless perspective," arguing satellite-to-phone signal is too weak — a competitor's stated position, not an independent assessment.
+
+Notable quotes and data:
+- "As a testament to safety, I'm happy to announce that we've achieved 1 million miles of unsupervised robotaxi operations as of this moment." — Ashok Elluswamy, Cybercab launch event
+- "The degree to which Cybercab is optimized for lowest possible cost per mile, fully loaded, is understood by very well." — Elon Musk
+- NHTSA Cybercab audit query: estimated population of 10,000 vehicles; TSLA fell ~6% the following Friday.
+- Rider-reported pricing: Model Y $12 vs. Cybercab $7.77 on one identical route.
+- Megapack order: ~$800M for 3 GWh (Zhero, Italy).
+- Morgan Stanley: Semi autonomous trucking could yield $12,000–$18,000/truck/month vs. ~$100/month for consumer FSD.
