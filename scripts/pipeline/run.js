@@ -516,12 +516,31 @@ async function main() {
 
     if (ageHours > 4) {
       console.log(`Pending batch ${state.pendingBatch.batchId} is ${ageHours.toFixed(1)}h old — clearing stuck state`);
-      // Try to cancel the batch (best-effort)
+      const stuckId = state.pendingBatch.batchId;
+      const stuckTranscripts = state.pendingBatch.transcripts || [];
+      // Cancel, then COLLECT whatever already finished before dropping the batch.
+      // Requests that succeeded are billed by Anthropic whether or not we read them,
+      // and results 404 until the batch reaches `ended` — so the drain has to come
+      // after the cancel settles, not before it. Skipping this silently discarded
+      // paid summaries on 2026-08-12, 08-27 and 09-02.
       try {
-        await client.messages.batches.cancel(state.pendingBatch.batchId);
+        await client.messages.batches.cancel(stuckId);
         console.log('  Batch cancel requested');
       } catch (e) {
         console.log(`  Could not cancel batch: ${e.message}`);
+      }
+      try {
+        const settled = await pollBatch(client, stuckId, 10 * 60 * 1000);
+        if (settled) {
+          console.log('  Draining any results that completed before the cancel');
+          const dropped = await writeBatchResults(client, stuckId, stuckTranscripts, state);
+          const saved = stuckTranscripts.length - dropped.length;
+          if (saved > 0) console.log(`  Recovered ${saved} completed summar${saved === 1 ? 'y' : 'ies'} from the cancelled batch`);
+        } else {
+          console.log('  Batch did not settle within 10m — abandoning without a drain');
+        }
+      } catch (e) {
+        console.log(`  Could not drain cancelled batch: ${e.message}`);
       }
       state.pendingBatch = null;
       saveState(state);
@@ -582,22 +601,11 @@ async function main() {
   await processPendingBatch(client, state);
 }
 
-async function processPendingBatch(client, state) {
-  const MAX_RETRIES = 3;
-  const RETRY_DELAY_MS = 20 * 60 * 1000; // 20 minutes
-
-  let { batchId, transcripts } = state.pendingBatch;
-  let attempt = state.pendingBatch.attempt || 1;
-
-  const batch = await pollBatch(client, batchId);
-  if (!batch) {
-    console.log('Batch not yet complete. Will retry on next run.');
-    saveState(state);
-    return;
-  }
-
-  // Process results
-  console.log(`\n=== Processing batch results (attempt ${attempt}/${MAX_RETRIES + 1}) ===`);
+// Write summaries for every succeeded request in an ENDED batch.
+// Returns the transcripts whose requests did not succeed.
+// Shared by the normal completion path and the stuck-batch guard, so a
+// cancelled batch still yields whatever Anthropic already finished and billed.
+async function writeBatchResults(client, batchId, transcripts, state) {
   const transcriptMap = new Map(transcripts.map(t => [t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64), t]));
   const failedTranscripts = [];
 
@@ -640,6 +648,27 @@ async function processPendingBatch(client, state) {
       failedTranscripts.push(transcript);
     }
   }
+
+  return failedTranscripts;
+}
+
+async function processPendingBatch(client, state) {
+  const MAX_RETRIES = 3;
+  const RETRY_DELAY_MS = 20 * 60 * 1000; // 20 minutes
+
+  let { batchId, transcripts } = state.pendingBatch;
+  let attempt = state.pendingBatch.attempt || 1;
+
+  const batch = await pollBatch(client, batchId);
+  if (!batch) {
+    console.log('Batch not yet complete. Will retry on next run.');
+    saveState(state);
+    return;
+  }
+
+  // Process results
+  console.log(`\n=== Processing batch results (attempt ${attempt}/${MAX_RETRIES + 1}) ===`);
+  const failedTranscripts = await writeBatchResults(client, batchId, transcripts, state);
 
   // Clear pending batch
   state.pendingBatch = null;
