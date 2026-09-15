@@ -1,0 +1,32 @@
+Channel:     electrek
+Title:       Tesla’s record month: 4 fatal Autopilot and Full Self-Driving crashes
+Published:   2026-09-15 14:05 UTC
+Summarized:  2026-09-15 15:22:45 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_019q8m6odwdM6rVW1sXW46zq
+Cost:        $0.01747 (7388 in / 2017 out tokens)
+Relevance:   core — Directly concerns Tesla's Autopilot/FSD safety record and regulatory reporting, a core input to the autonomous-driving investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+The article, part of an ongoing Electrek investigation, reports that Tesla filed a record 236 driver-assist crash reports to NHTSA in July 2026 (under a 2021 Standing General Order), including four fatal crashes in which Tesla's own telematics data confirmed Autopilot or FSD was "Verified Engaged" — none of which were publicly reported as involving the systems.
+
+## Autonomous Driving
+1. **Monthly crash reports hit a new high:** Tesla's NHTSA-reported driver-assist crash filings rose through 2026 — 135 in March, 207 in May, 209 in June, and 236 in July, the highest monthly total on record.
+
+2. **Four fatal crashes with redacted details:** Electrek matched Tesla's July NHTSA filings (each marked "Verified Engaged") to four real crashes: Upper Marlboro, MD (July 12, 3 deaths — motorcyclist Matthew Vowell, 47-year-old passenger Krystal Vowell, and Tesla rideshare passenger Adriana Maxwell, 22 — Tesla logs a 20 mph left turn); San Mateo, CA (July 15, driver killed, road departure/fixed-object strike at 52 mph); Ione, CA (July 22, driver Shelby Waldie, 25, killed, a 2-year-old hospitalized, in a 2026 Model Y at 54 mph after crossing into oncoming traffic — cause under CHP investigation); and Ashby, MN (July 20, I-94 work-zone collision, two deaths including Tesla driver Harold Ennulat, 73, at 50 mph — police account suggests the other vehicle may have been at fault). In each case, Tesla redacted the crash narrative, software version, and whether the road was within the system's approved operating area.
+
+3. **Undercounted fatalities in Tesla's own data:** Tesla's report format records only a single "highest injury severity" per crash, so the three deaths in the Upper Marlboro crash and two in the Ashby crash are each logged as one fatality — meaning, per the article, aggregate safety statistics built on this data undercount actual deaths.
+
+4. **Redaction pattern contrasts with GM:** The article states Tesla redacts the narrative field on 100% of its reports in the current file, while GM's comparable Super Cruise connected-fleet reporting redacts none. Tesla has told regulators it would "suffer financial harm" if narratives were made public, and is already under NHTSA investigation over its crash-reporting practices, according to the article.
+
+## Editorial Stance
+Electrek's authored take argues the redactions prevent the public from distinguishing crashes the driver-assist system caused from those it didn't, calling this a problem of Tesla's own making since it controls the data and reporting; the author explicitly cautions that a system being "engaged" within 30 seconds of a crash does not prove it caused the crash, and that redacted software-version fields make it impossible to separate Autopilot from FSD.
+
+Notable quotes and data:
+- July 2026: 236 Tesla driver-assist crash reports to NHTSA, a monthly record.
+- Monthly filings: March 135, May 207, June 209, July 236.
+- Four fatal July crashes (7 total deaths across them) all marked "Verified Engaged"; narrative, software version, and operating-area fields redacted in all four.
+- Tesla redacts narratives in 100% of reports in the current file vs. 0% for GM's Super Cruise, per the article.
+- Tesla reportedly told regulators disclosure would cause it "suffer financial harm."
