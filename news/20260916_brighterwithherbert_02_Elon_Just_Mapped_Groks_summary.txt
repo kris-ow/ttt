@@ -1,0 +1,40 @@
+Channel:     brighterwithherbert
+Title:       Elon Just Mapped Grok's Path to AGI
+Published:   2026-09-16 18:30 UTC
+Summarized:  2026-09-16 23:03:09 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01XFMdPv7tDCV7MwQKfCyLtX
+Cost:        $0.03604 (16564 in / 3896 out tokens)
+Relevance:   core — Grok's model roadmap directly affects the Tesla assistant/Optimus product and SpaceX's AI compute business, and the video also covers dated SpaceX Starship and Tesla Roadster milestones.
+Topic:       both
+Categories:  SpaceX — AI & Compute, SpaceX — Starship, Autonomous Driving, Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This video walks through a four-day string of Elon Musk posts (roughly Sept 12–15, 2026) grading Grok's model roadmap — Grok 4.7, 4.8, 4.9 and Grok 5 — plus a weekend AI-safety exchange with Anthropic's CEO, and two dated SpaceX/Tesla calendar items (a Roadster event and a Starship flight update). The host's core argument: Musk graded his own AI unusually honestly this week (Grok 4.7 landing merely on par with Anthropic's Opus 5.0, not ahead of the field as previously promised), and because Grok powers Tesla's in-car voice assistant and (to some extent) Optimus, this quality trajectory is now a live Tesla product question.
+
+## SpaceX — AI & Compute
+1. **Grok 4.7 graded only on par with Opus 5.0, not ahead of the field:** Responding to a fan claiming Grok 4.7 would match Anthropic's newer Claude Fable 5.1 and OpenAI's Astra, Musk corrected him, saying 4.7 should be "roughly on par with Opus 5.0, not 5.1," and that multimodal (image/video) performance still needs fixing. This is a step down from his August claim that 4.7 would "exceed all current models."
+2. **4.7 delayed past Musk's own 10-day target with an engineering explanation:** Musk said on September 2 that Grok 4.7 (2.1 trillion parameters) would ship in 10 days (around Sept 11-12); as of the video's Wednesday publish window it still had not shipped. Musk attributed the delay to reinforcement-learning issues — the model was penalized too heavily for response length, causing it to give up early on hard tasks and under-check its work — and separately said the 4.7 training run had mistakes only corrected mid-run, with data quality since improved for later models.
+3. **Grok 4.8 (2.5 trillion parameters) finishing training on a new C++ software stack:** Musk said Grok 4.8 would finish base training "this week" and begin reinforcement learning, built on a rebuilt internal C++ training stack (replacing the JAX-based system used for 4.7). The host notes a pattern (per an X user's analysis) where RL-start-to-release has historically taken 3–6 weeks, implying an October/early-November release for 4.8, and frames the rewrite as signaling that a much bigger model is coming next.
+4. **Grok 4.9 pegged as catching up to today's frontier models; Grok 5 targeted at AGI:** Musk said Grok 4.9 would be "probably Astra Fable class" (matching OpenAI's GPT-6/Astra and Anthropic's Claude Fable 5.1, both released in the first days of September). Asked directly if Grok 4.8 would approach AGI, Musk replied "that will be Grock 5" — Grok 5 is expected to run 6–10 trillion parameters on the Colossus 2 supercomputer and to train on roughly 25 years of SpaceX engineering records, which Musk says gives it an edge in engineering and physics. The host explicitly flags this as a loose, hedged claim ("we shall see," from a quick reply), not a delivery commitment.
+5. **A third-party benchmark shows Grok 4.6 competitive on cost/speed, not peak intelligence:** Per Artificial Analysis, Grok 4.6 (1.5 trillion parameters) scored 66 on their intelligence index versus 63 for Claude Opus 5 and 62 for Claude Fable 5 — about two points behind the best model — while, per Musk's own comparison, being far smaller in parameter count. On an agent test, Grok 4.6 reportedly completed tasks in about half the steps of Opus 5 (roughly 53 turns vs. 103) using around a quarter of the input tokens, aligning with Musk's August statement that "Fable 5 is smarter overall, but Grok is much faster and lower cost."
+6. **Weekend AI-safety exchange with Anthropic's CEO:** After Anthropic CEO Dario Amodei published an essay urging the industry to "pace the frontier" and offering outside evaluators access to Anthropic's systems, Musk publicly agreed ("Dario is right") and endorsed peer review of AI models by competitors as a starting point for oversight. The host notes the apparent tension between this stance and Musk simultaneously racing toward a 10-trillion-parameter AGI attempt, and flags TSLA and chip stocks both dipping about 2% on the Monday of this news cycle, which he attributes partly to "AI moving too fast" headlines.
+7. **Grok already embedded across Tesla and SpaceX products:** The video states Grok is the voice assistant in Tesla vehicles since the summer update, is used to some extent in Optimus, and handles Starlink customer support/sales calls (cited at "somewhere north of 15,000" calls per day).
+
+## SpaceX — Starship
+1. **Flight 14 catch attempt dropped; catch pushed to Flight 15:** Musk confirmed Ship 41 will not attempt a tower catch on flight 14 — the booster will splash down in the Gulf and the ship in the Indian Ocean — with the first ship catch now targeted for flight 15, at 50–60% odds per Musk. Flight 14 remains a genuine orbital attempt carrying roughly 20 working Starlink V3 satellites, now no earlier than September 22.
+
+## Electric Vehicles
+1. **Tesla Roadster event set for October 1:** Tesla posted a "go for launch" graphic pointing to an invite-only presentation on October 1 at 5:30pm Pacific in Waco, Texas (RSVP due the following night), with a render showing four rear plumes attributed to a SpaceX-supplied cold gas thruster package; Musk called it "out of this world."
+
+Notable quotes and data:
+- "Grock 4.7 should be roughly on par with Opus 5.0, No, not 5.1." — Elon Musk
+- "We need to fix multimodal performance." — Elon Musk, on Grok 4.7/4.8
+- Grok 4.7: 2.1 trillion parameters (up from Grok 4.6's 1.5 trillion); Grok 4.8: 2.5 trillion parameters; Grok 5: targeted 6–10 trillion parameters
+- Artificial Analysis intelligence index: Grok 4.6 scored 66, Claude Opus 5 scored 63, Claude Fable 5 scored 62
+- Grok 4.6 agent-task efficiency: ~53 turns vs. ~103 for Opus 5, using about a quarter of the input tokens
+- "That will be Grock 5." — Elon Musk, on which model might approach AGI
+- "Dario is right... Peer review of AI by competitors is the right way to start this off." — Elon Musk
+- TSLA and chip stocks both fell about 2% on the Monday following the AI-safety posts, per the host
+- Starlink handles "somewhere north of 15,000" support/sales calls per day via Grok voice, per the host
+- Flight 14 carries roughly 20 working Starlink V3 satellites, no earlier than September 22; ship-catch odds put at 50–60% for flight 15
