@@ -1,0 +1,692 @@
+Channel:     futureaza
+Title:       Tesla Optimus Has Something Other Robots Still Lack
+URL:         https://www.youtube.com/watch?v=dYS2tucM1gQ
+Published:   2026-09-20 17:30 UTC
+Fetched:     2026-09-20 18:00 UTC
+
+────────────────────────────────────────────────────────────
+
+So, I think what we're seeing right now
+is kind of a first attempt, a first
+wave. And my feeling is, and it could be
+the same companies that succeed on both
+of these waves, but we'll see a first
+wave that will go way up and then the
+tide will retract a little bit and
+people will say like, "Well, humanoid
+robots are useless." At which point,
+immediately after that, we will see a
+second wave happen, which will be
+substantially better, and people say
+like, "Oh, okay. These things are useful
+now. They can do good work as opposed to
+just being novel." The age of Optimus is
+almost here. We're seeing a lot of
+announcements in terms of production and
+we're seeing a lot of progress in terms
+of the second factory that will build
+them and we're seeing a lot of job
+postings even. But what is the holdup?
+Well, they have to build them. What will
+be the second holdup? The holdup before
+scaling. It may be points of failure.
+What are the potential points of
+failure? We know the hands are a big
+deal. We know that actuator reliability
+and the stretching of the robo tendons
+can be a cause. But what are we really
+concerned about? I'm going to have a
+quick chat with Dr. Knowitall to find
+out what we're really looking at, what
+it all means, and where we go from here.
+I'm Brian. Welcome to Futurasa.
+[singing and music]
+&gt;&gt; Now, John, do you know anything about
+robots? [laughter]
+&gt;&gt; I know a little bit about robots.
+&gt;&gt; It should be Doctor knows enough to be
+dangerous. That's That should be my
+name.
+&gt;&gt; Yeah, we've been saying that. We've been
+suggesting it for years.
+Now, the reality is John knows a lot
+about robotics, but with how much there
+is to know, I think even Dr. Scott
+Walter only knows a bit because there's
+just the field is vast and massive. Now,
+I would like to share this. Elon Musk
+says Optimus will ship to customers in
+27. Here's how much revenue that could
+actually generate. I'm not worried about
+the revenue side. It either works or it
+doesn't. And if it doesn't, there's no
+money. And if it does, it's infinite.
+&gt;&gt; Yeah. Exactly. If you go to the careers
+page, you'll see there the first the
+very first tab before FSD chips before
+neural nets, autonomy, algorithms, code
+foundations, all this. And this is just
+on the uh careers for AI and robotics.
+Number one is Tesla Optimus. And I don't
+know if you were aware of this, but
+there are a few job postings. Yeah, a
+lot. A lot. 342. And I don't know if
+this includes the ones for which they
+actively recruit people, but I've had a
+chance to meet some of these people.
+They're very good about not telling you
+secrets, but what they're less good
+about is hiding their optimism. They are
+bouncing out of their skin. They can't
+wait for the day they're allowed to
+share what they've been working on. And
+we haven't seen the developments over
+the last two years really. And a lot of
+people take that to mean there have been
+no developments, which is, you know,
+ridiculous. [laughter]
+Um
+&gt;&gt; Tesla is known for not making any
+progress quickly.
+&gt;&gt; Of course, of course not.
+&gt;&gt; So the so the question is on these
+robots,
+let's say they're out and we'll divide
+this into two parts. We'll start with
+the hardware because the software is
+&gt;&gt; a whole other thing. On the hardware
+side, what are we likely to see as
+points of failure?
+&gt;&gt; I think you identified uh them pretty
+clearly. The number one number one
+number one thing is going to be
+actuators. These are the motors that
+drive them. Um, actuator is just another
+name for a motor that has kind of a
+precise ability to move to different
+angles and things like that, you know.
+So, um, the reason why this is a
+particularly nasty problem is that as
+opposed to like the motor in your vacuum
+cleaner or something, there have been
+millions of those things made right
+around the world. So, people have had a
+lot of time to figure out what works,
+what doesn't work in a vacuum cleaner
+motor. With these, they're everybody at
+this point is customd designigning all
+of them because they just didn't exist
+prior to about 2022, 2023. I was just
+thinking about the fact that that Tesla
+kicked this all off in 2022 with a dude
+in a white suit dancing at AI day number
+two. And and I know robots had been
+built before that, but all of a sudden,
+everyone went like, "Wait, oh, if
+Tesla's in on this, we're going to do
+it, too." And it went crazy. It's that's
+four years ago. That's nuts to think
+that. Um, so anyway, so all of these
+actuators have been customdesigned
+inhouse by all these different companies
+in the last few years. And so nobody
+knows how is it going to wear over a
+million cycles. Uh, we don't know. Is it
+going to heat up? Is it going to break?
+Is it going to warp?
+&gt;&gt; A normal industrial use is 20,000 hours.
+And I've seen anywhere from 2,000 to
+20,000. But on the high end, 20,000,
+these actuators will not get 20,000
+hours of actual use. If it's
+intermittent use, maybe uh it kind of
+all depends what it's going to be doing.
+If you're using it for mail sorting,
+like we saw the figure demo do, that
+robot shouldn't wear out for a very long
+time. It's it's not even using its legs.
+Those are going to be factory fresh
+after a very long time.
+&gt;&gt; Well, I mean, they are using their legs
+to balance. So they are being used a
+little bit. But when you think about
+duty cycles, so there's a positive and a
+negative to that. The positive is that
+the duty cycle is let's say it can
+rotate to the maximum 360 degrees or
+270, right? So it's like one duty cycle.
+One duty cycle. Well, if it only rotates
+five degrees at a time like that because
+it's just balancing a little, how many
+of those is equivalent to duty cycle?
+Don't know. So you could be multiplying
+it by 10, 20, 50 because it's just
+working in a tiny little range that's
+nice and comfortable in it. I've talked
+to Scott Walter about this who knows a
+lot more than I do about it. He says the
+places you want to avoid are the
+extremes. So if we go back to the the
+robotic Olympics, the Chinese uh ones in
+Beijing, those robots don't last very
+long because they are utilizing the
+actuators at extreme angles to try to
+run super fast or jump or whatever. So
+they're overclocked.
+&gt;&gt; Yeah, they're over. Yeah, basically it's
+like the same thing as taking your Intel
+chip and, you know, cranking it up to
+four gigahertz as opposed to three. It's
+like, well, yeah, it's going to work,
+but it's also going to die soon. So, you
+know, so that's the the trade-off. And
+so, yes, absolutely on the good end of
+things. They're not going through full
+duty cycles. They're not being pushed to
+their maximum limits. So, that's going
+to increase the longevity of them. But
+then again, you go back to these guys
+are they're designing these things for
+the first time. So, it's going to take a
+while to dial in like maybe we need just
+a half a percent more of cadmium or
+something in the magnet to make it, you
+know, whatever. I don't know what those
+things are. That's the kind of stuff
+they have to discover through empirical
+evidence. So, they will they last as
+long as they will five years from now?
+No, absolutely not. Will they last long
+enough?
+&gt;&gt; That's the question. No. How long is
+long enough? A year? Six months? Two
+years? don't know
+&gt;&gt; and how easy is it to repair them once
+they're out of warranty.
+&gt;&gt; Yeah, that's the bigger thing really. Um
+&gt;&gt; that is big.
+&gt;&gt; Yeah.
+&gt;&gt; And uh I would say that right today we
+don't know what impresses me the most is
+how different the approach is every
+company is taking. I don't see a whole
+lot of copying going on. What I do see
+is benchmarking where a company will say
+we're not going to design it that way.
+We're not going to steal that design. I
+don't even like that design. Our guys
+are smarter than that. But we needed to
+have that capability at least. which is
+why we've seen runners now beating human
+speeds and uh running into walls in ways
+I've never seen a human do. It's
+amazing. [laughter]
+&gt;&gt; And breaking into pieces and sparking
+shadow. Oh, it's beautiful. I did see
+&gt;&gt; I was just thinking like you know what
+if what if human runners did that and we
+just like slammed into a wall after he
+It's like well that's Hussein Bolt got
+one race.
+&gt;&gt; Well that and that we were talking about
+use cycle in the Olympics many of them
+were single use. I would say that uh I
+will mention that someone did post a AI
+version of that robot race but with
+humans and they're running in the same
+way and then they crash and one of them
+sparks because you know humans it's what
+they do I think
+&gt;&gt; that's why number two on the hardware is
+you also mentioned is tendons uh and
+that is speaking of different companies
+doing different things
+&gt;&gt; some of them are like nope only direct
+driving you know if if you want your
+finger to bend. You're gonna put a
+little motor in there and it's gonna
+bend. Wow.
+&gt;&gt; Other companies putting a tendon like a
+human being. This is how we work. We
+have tendons down here that make our
+fingers move around primarily. So
+tendons like it's like biologically
+inspired. 1X who makes the Neo is very
+much into tendons. They're doing the
+whole body in tendons. Tesla has showed
+off a version of the hand that has
+tendons in it. Uh figure famously Brett
+Adcock is like, "We tried it. It was
+terrible, terrible idea. So, we
+abandoned it. There's a there's a
+practically religious wars about whether
+to use tendons or not. The the the
+advantage of tendons is especially in
+the hands, you can shrink the size of
+the hand down because you put all the
+actuators, the motors into the forearm
+like humans. Um, which is great.
+downside. If you've ever had a 10-speed
+bike, you you're you're probably of the
+right age where you had the ones and
+eventually, you know, the the cable
+would stretch and you're like, I can't
+switch it into 10th gear anymore or
+something, right? So, you have to go
+home and you have to pull the
+&gt;&gt; brakes would stretch
+&gt;&gt; and the brakes would stretch and they
+didn't work [laughter] anymore, right?
+So, that's I mean, that's the obvious
+downside. Now, of course, they make them
+out of Kevlar or something, so they're
+way better technology, but they still
+stretch.
+&gt;&gt; They still stretch.
+&gt;&gt; Yeah. and and and computers are really
+bad at not defined limits and maybe we
+could bridge into the software from
+that.
+&gt;&gt; Well, that will bridge into it. What I
+did want to say is if you guys enjoy
+these kinds of deep investigations, one
+thing you can do is uh head over to Dr.
+Notall's uh X account. You can follow
+him there. Uh but much more exciting
+than that, he's on the cusp of 100,000
+98.6,000
+and uh we do this every week. We're
+investigating. We're We're trying to get
+to the bottom of stuff. Uh that makes
+John, I guess, Columbbo. And uh and
+yeah. So, [laughter]
+isn't that great?
+&gt;&gt; I love that I have a little police
+badge. That's great. Brian, I got to
+start surprising you with these because
+these are great. [laughter]
+&gt;&gt; I Well, you see the pujo out the window.
+I asked for a Columbus theme.
+&gt;&gt; Uh hey, Optimus entered production at
+Fremont. Here's what changes for
+investors. So they're in production.
+They're not deployed, but they are real.
+And then for that matter, we've got Xiao
+beat Tesla with this humanoid robot
+milestone. They are actually deploying
+them is is my understanding. And the
+iron is what it's called is fantastic.
+This isn't the I mean I have seen this
+one, but the one they were showing off
+was the much more uh Well, that's the
+Tesla, but uh right. Let's see if
+they've got a picture of it. I don't
+Yeah, the original Iron looked like a
+girl in a in a suit,
+&gt;&gt; which is
+&gt;&gt; Yeah. I I said, "Hey, quick question.
+Why a girl?" And he goes, "We made a
+man. We made a child. No one said a
+word. All of a sudden, you throw boobs
+on it. Everyone loses their mind." I'm
+like, I'm not losing my mind. I'm not
+like entirely losing it,
+&gt;&gt; just a little bit. Uh but so uh let's
+talk about the software side because
+we've explored a bit about how the
+hardware can not function as intended.
+What about the software?
+So
+we can actually dial this back several
+decades. Um you know Boston Dynamics
+very famously has been working on
+humanoid robot form for a long time and
+dog shape as well and and they've
+deployed dog shape robots out there. The
+the issue with the software is that as
+opposed to a car, cars are just stable.
+Like you park your car, you could leave
+it for a month and it's not going
+anywhere unless you're on a really big
+hill. But it's it's stable. It's got
+four wheels. It's just going to sit
+there. If you take a a human like you,
+if you try to stand up for more than a
+couple hours, you're going to fall over,
+sir, because you're eventually going to
+get tired and you're just going to go.
+So, we are dynamically unstable
+entities. So that's number one problem
+is that you have to create something
+that can actually balance itself and
+that was an unsolved problem for decades
+and it's really we we forget about how
+recently that was solved. It it's really
+only very recently that it was solved in
+any kind of robust way. So that's number
+one but you can consider that kind of a
+solved problem. Now number two is whole
+body control. So again I'll take a car
+as a counter example. Ashock actually on
+my channel I just did a video that was
+very popular where he talks about how
+you have two billion input parameters
+two billion pixels of information the
+output is two you have what is the angle
+of the steering wheel how much is the
+brake accelerator pressed that's it so
+that's all you need for a car think
+about a human you how many output
+channels do you need at once well I
+don't know a robot might have 42 50
+actuators in its body more maybe four,
+maybe 60. All of those things, they're
+they're not independent from each other.
+If you move your body a little bit this
+way, in order not to fall over, a whole
+bunch of other crap has to happen at the
+same time. So, you're talking about a
+coupled equation with potentially 60 or
+more different variables in there.
+And people were trying to solve this
+through basically coding. If this, then
+this, if this, then this. Well, you know
+about how well that went. You've got two
+billion of these if then statements, and
+it's still falling over. you're like,
+whoa. So, the unlock that's happened
+with the software side, of course, is to
+go to neural networks and to go to very
+highlevel neural networks that can take
+in all of that information and produce a
+whole bunch of outputs at the same time.
+So, you it's that coupled equation
+thing. It's it's something that humans
+just were not able to do in our heads.
+We couldn't create that type of
+software. We just couldn't think of it.
+So what we do instead is we throw data
+at the at the neural network and the
+neural network figures it out. It goes
+like, "Oh, I'm figuring it out. What's
+the problem? I just said something
+that's a significant problem with
+humanoid robots that was a problem for
+cars but not so much for Tesla anymore."
+&gt;&gt; Right. So the the thing with software
+&gt;&gt; so yeah
+&gt;&gt; the thing with like unitry for example,
+unitry is commercialized. Unitry is
+going public or has gone public. It's
+around now.
+&gt;&gt; Yeah. And it's a great robot. It serves
+approximately one purpose.
+&gt;&gt; Yeah.
+&gt;&gt; And that purpose is novelty.
+&gt;&gt; And I had a chance to get up close and
+personal with it at the auto show in
+Nepal.
+&gt;&gt; But if you scan If you scan the And
+he'll come up. He let me shake his hand.
+I thought that was very bold and daring
+&gt;&gt; because I know how disastrous that can
+be in a hurry. [laughter]
+&gt;&gt; Exactly. But if you watch around the
+crowd, you will find a guy standing at
+the edge with a big fancy controller and
+he's got some macros he can press for
+like do a little dance or whatever it
+may be
+&gt;&gt; and a big red button probably too
+[laughter]
+&gt;&gt; probably. But what it doesn't have is
+the capacity to do anything in a
+commercial way in a useful. Now, if you
+buy one, you are able to code onto it,
+&gt;&gt; but that's a lot of work. The I'm sure
+the dev kit is pretty good, but I don't
+think it's going to be great. And
+&gt;&gt; I don't care how amazing of a robot you
+build. If the scarecrow got no brain, we
+got a problem.
+&gt;&gt; Yeah. Exactly. So how many companies do
+you think are even approaching this in a
+reasonable way?
+&gt;&gt; Well, that's a that's actually a fairly
+significant dividing line between China
+and Western companies including Europe.
+There's some good robotics companies in
+Europe and that is that China has been
+building robots and they've been like,
+"Hey, here's the hardware. Here's the
+actuators, you know, and actually this
+is great. Best of luck."
+&gt;&gt; Well, yeah, exactly. Here it is. It's a
+blank slate. Have at it. Uh, and it's
+got some basic functions like stand up
+and don't fall over and stuff like that.
+But, but like you said, you know, you
+kind of have macros. It's like shake
+hands, do this, do this, do a dance.
+Those kinds of things are are just
+they're just recorded actions. They're
+not anything that's that it's figuring
+out on its own. So, yeah, it's a
+scarecrow. It's a puppet. So, on the
+West, you notice that we don't have
+deployed robots all over the place in
+Western companies. But what they're
+doing is they're building the brains and
+the the body at the same time and
+they're using deep neural networks. But
+the issue of course is that like I was
+alluding to earlier is that data is a
+problem for these companies because as
+opposed to cars where you can just
+capture people and Tesla to their credit
+10 years ago was like we're just going
+to put cameras and crap in all these
+cars and record everything. We we don't
+have the equivalent of that in people.
+Uh now figure has started to do that I
+think. Uh what's the project called? I
+can't remember. It's it's a it's a
+project. Um geez I'll remember the name.
+It's not
+&gt;&gt; I know the one it's the one where people
+walk around doing the robot you know
+normal human movements [laughter] and
+&gt;&gt; well you just kind of walk around doing
+your own thing every day and it's index.
+That's what the name of it is. I I like
+I have the app downloaded. I'm waiting
+to get officially approved for it. But
+so basically you put on a helmet and I
+think some gloves and wash the dishes or
+stack the dishwasher or I don't know do
+whatever.
+&gt;&gt; That'd be convenient for me because I
+already wear a helmet. [laughter]
+&gt;&gt; So you don't bang your head into the
+wall, right?
+&gt;&gt; Yeah.
+&gt;&gt; Yeah. Doesn't everybody? So [laughter]
+yeah. So anyway, the the the big problem
+the the so the difference between coding
+it all yourself, which you can do with
+zero data because you just code it, and
+moving to neural networks is the neural
+networks give you the capability to
+actually do to interact with all of that
+crazy ass hardware and do all of that
+stuff at once, but you're trading off
+coding for insane amounts of data. And
+we don't have insane amounts of data.
+This is the reason why large language
+models got so smart so fast. They had
+access to the internet. It's like they
+Yeah. Did they steal it? Yeah, that's an
+ethical question. But they had access to
+it. And they sucked it all down and they
+said, "Okay, we trained on a ridiculous
+amount of data and now we're pretty darn
+smart." And we don't have the equivalent
+of that for robots. And that's the
+holding pattern right now software-
+wise. I had someone tell me the other
+day that I don't get it, that it can
+just watch videos and understand enough
+about the world that it doesn't need
+firsterson training. And I found that
+claim to be dubious. But I do not have
+the resources to dispute it.
+&gt;&gt; What do you think?
+&gt;&gt; It is the goal. Obviously, that would be
+that that would be the holy grail, the
+north star, whatever you want to call
+it. But no, they can't do that at this
+point. You have to have the this is like
+why index you wear like a little hat
+that has cameras. And so it's basically
+like looking like your eyes and it's got
+little gloves, I think, that do. So, you
+know, it's it has to be kind of embodied
+in you as if you were the robot. Or
+alternatively, you can wear the suit and
+manipulate the robot directly and it can
+learn. It's like, "Go over here, pick
+this up." And so, you know, the guy's
+over in the corner like reaching at the
+air trying to grab something that the
+robot's grabbing. So, yeah, it it that
+is the goal. That would be fantastic
+when that happens. And I think someday
+it will, but uh nope, not today. So,
+yeah, there's a lot of training left to
+be done. When companies tell me, "Oh,
+we've got FSD. We're going to have it
+done by some impossible time." I say,
+"Show me your data. Show me your
+compute." And they can't. And if you
+don't have the compute to show me, you
+don't have a chance. With uh with
+Optimus, we know where it's being
+trained. We know the training center is
+already running. And we know it's had
+training before, but now it's got an
+ocean of compute. Um that is still
+ramping. So, it looks like it will be a
+moat for some time. Uh, do you think the
+market is so vast that it'll be hard to
+tell the winners from losers for quite
+some time?
+&gt;&gt; I actually think there's going to be a
+kind of a this is total speculation, but
+I think there's going to be a two-layer
+thing. There's going to be the first to
+market folks and we'll we'll say like,
+"Oh, so and so is winning. They're
+definitely winning. This is definitely
+the company that's going to do it." And
+then we're going to see the followers.
+So they'll they'll be like an explosion
+and then a lot of them won't be quite as
+good or scalable as we thought they
+would be and then a second wave will
+come in of of companies that kind of
+like what Apple does. They're not the
+first to market with something. They
+wait until it's pretty good and then
+they're like, "Aha, now we're going to
+this and they and they come in and do a
+fantastic job and then people buy their
+thing as opposed to the the ones that
+were the kind of first attempt at it."
+So, I think what we're seeing right now
+is a kind of a first attempt, a first
+wave. And my feeling is, and it could be
+the same companies that succeed on both
+of these waves, but we'll see a first
+wave that will go way up and then the
+tide will retract a little bit and
+people will say like, "Boy, humanoid
+robots are useless." At which point,
+immediately after that, we will see a
+second wave happen, which will be
+substantially better and people will say
+like, "Oh, okay. These things are useful
+now. They can do good work as opposed to
+just being novel." And I guess this is
+actually my last question. And I promise
+this time uh but I will remind everyone
+to subscribe uh to help us solve the
+mysteries. Is that um how many functions
+does Optimus need for Gen One for it to
+be successful? Because I would argue 20
+to 30 is probably enough.
+&gt;&gt; Yeah. Yeah. If you think about factory
+work, which is where it's definitely
+going to be deployed first because Tesla
+can eat their own dog food. That's a
+fantastic way to learn quickly. You know
+what? If it's just like, okay, take a
+little thing out of this bin, put it in
+this bin. I'm sure there's a job
+somewhere in the Tesla factory of doing
+that. Or take this piece of sheet metal
+and move it over here. Or stick this
+over here after the adhesives on to make
+sure it dries in place. There's there's
+tasks like that. So, yeah, I mean, on
+the order of couple dozen of those kinds
+of tasks, and it can start off a third
+as fast as a human, and then hopefully
+it'll get to half as fast, then as fast,
+and then faster. uh it at that point it
+doesn't really matter. It's more about
+can it do the job and can we find out
+how many duty cycles it does before the
+hardware collapses and the thing falls
+over, you know, or when it mis mis
+misunderstands its battery capacity and
+it doesn't charge soon enough. Think,
+you know, work out those bugs, those
+sorts of things as it's doing the
+factory jobs before it's in the home,
+that's a different question. In order to
+not just be a novel thing, sure, right?
+If there's people who are going to spend
+$50,000 on something because it's cool.
+Uh but for it to actually do work that's
+worth 30 40 $50,000 a year, [laughter]
+right? It's it's going to be a while
+because the home is much more diverse
+and much more much more complicated
+quite frankly.
+&gt;&gt; Yeah, it really is. And the safety
+constraints in a home are vastly
+[clears throat]
+different. There are there is infinite
+variability between the dangers in any
+two given homes. Whether one has gas,
+whether one has only electric utilities,
+uh small children or pets or a candle
+for crying out loud. Uh there are a lot
+of unexpected hazards. A factory has
+OSHA and my house. I just checked. They
+don't come by and check nothing. Uh so
+my big hope for the future is that uh I
+will not be crushed during an earthquake
+because I swear everything is set up
+precisely for that purpose.
+&gt;&gt; So guys, what did we miss? What do we
+misunderstand? Leave it in them
+comments. Head over to John's channel,
+Dr. Knowit All knows it all. He is so
+close to 100K subscribers. We can get
+him there. Can't wait. We'll find out.
+Everyone else, stay tuned. Stay juicy.
+And I cannot wait to hear from you
+clever robots. perhaps even in the
+comments on his channel where I appear.
+Pretty cool stuff.
