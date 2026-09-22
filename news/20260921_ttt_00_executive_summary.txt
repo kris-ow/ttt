@@ -1,0 +1,59 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-21)
+Published:   2026-09-21 00:00 UTC
+Summarized:  2026-09-22 04:54:05 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05596 (15062 in / 2584 out tokens)
+Sources:     6
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+- Cybercab VIN registrations suggest production roughly doubled since late August
+- Czech Republic 7th EU country to pre-approve FSD ahead of Oct 6 vote
+- Sunrun/Tesla Powerwalls hit record 580 MW grid dispatch Sept 9
+- SpaceX files for 100,000-satellite Gen 3 Starlink with onboard AI compute
+- Cybercabs seen staging in Houston ahead of possible ride launch
+- SpaceX share unlock (~15% more float) expected September 24
+
+## Robotaxi
+- Texas VIN tracking shows 58 Cybercabs within a 448-vehicle registered fleet; host estimates the pace of new Cybercab VINs roughly tripled from ~100–150/week in August to 300+/week since August 31, though this is a host-derived estimate, not an official Tesla figure (per brighterwithherbert).
+- Supply-chain guest Jeff Lutz reads this as a deliberate "pulsed" ramp — batches with pauses for fixes and field data — rather than a full-rate launch, citing possible gating factors including software/regulatory limits, a Starlink-connectivity hardware changeover, and yield issues at low volume.
+- Houston's fleet appears to be growing, with a viewer photo and separate Sawyer Merritt sighting both showing a larger mix of Model Ys and Cybercabs staging there; no official launch timeline or fleet count was given.
+- A separate host (jobhakdi) estimates Tesla could have 3,000–4,000 Cybercabs manufactured and ready for deployment across Austin, Dallas, Houston, and San Antonio by this month or next, though his own Cybercab fleet tracker shows little visible scaling yet.
+- A cost-per-mile model (cernbasher) argues Tesla's Cybercab could reach roughly 45–55 cents/mile total cost versus Waymo's higher vehicle cost base ($120,000 vs. Tesla's $30,000), implying Tesla could price rides near $1/mile versus ~$2/mile for Waymo and ~$4/mile for Uber — a durable structural edge the analyst ties to factory-level design choices in charging, cleaning, tires, and insurance.
+
+## Autonomous Driving
+- Czech Republic became the seventh European country to pre-approve FSD Supervised (joining Netherlands, Lithuania, Estonia, Denmark, Belgium, Slovenia), bringing global approval to 15 countries; these seven represent only ~11.8% of the EU population threshold needed ahead of the October 6 EU-wide vote, with commentators reading the timing as a signal of confidence the vote will pass.
+- Ashok Elluswamy confirmed FSD version 15 is already running in Cybercabs, with roughly seven major improvement tracks outlined and about 40% merged as of a September 11 update; a "24/7 robotics" track is expected to merge next month or so (per jobhakdi, citing Grok-assisted research).
+- NHTSA has reportedly opened an audit into Cybercab's lack of a human-operable brake pedal; the host argues Tesla can't pass under current rules but expects the audit to run slowly enough that a NHTSA-proposed rule change (removing the brake-pedal requirement, proposed in June) could be adopted first, with news possibly landing around November–December — this is the host's own view, not an NHTSA statement.
+
+## SpaceX — Starlink
+- SpaceX's FCC filing for up to 100,000 Gen 3 Starlink satellites was accepted for review September 18, split across two very-low-Earth-orbit altitude groups.
+- Musk described Gen 3 satellites carrying 250 kW of power, ~10 terabits of connectivity each (path to 100+ terabits), and an onboard Nvidia Vera Rubin NVL72 computer — effectively doubling as orbital AI data centers, dubbed "Starmine."
+- The next-generation Starlink V5 terminal, offering up to 375 Mbps home speeds, is now in production, largely out of a Bastrop, Texas facility.
+- A V2 direct-to-phone network expansion for Australia was announced (Sept 17), promising 5G speeds and ~100x the bandwidth density of V1.
+
+## SpaceX — AI & Compute
+- A SpaceX CFO said the company is targeting 100 GW/year of orbital compute deployment by decade's end, up from an estimated sub-5 GW base today, a figure Musk affirmed on the record; for comparison, terrestrial compute buildouts next year are projected around 40 GW.
+- Grok 4.7 was released, described as SpaceX/xAI's strongest coding and knowledge model to date with lower cost-per-token than competitors, though Musk said it won't surpass all rival LLMs — that's expected at Grok 5.
+
+## Energy
+- Tesla and Sunrun dispatched a record 580 MW to California's grid on September 9 from a pooled fleet of 140,000+ home batteries (about 110,000 Tesla Powerwalls, contributing 517 MW), enough to power all of Sacramento County during peak hours; another 140+ MW was dispatched September 10 at Southern California Edison's request.
+- Sunrun CEO Mary Powell said the fleet is now operating at a scale larger than many peaker plants combined; a Brattle Group report projects up to $206 million in net California savings by 2028 from this model.
+
+## SpaceX — Corporate & Valuation
+- SpaceX's NASDAQ index weighting more than doubled to 2.62% as of Monday.
+- A SpaceX share unlock adding roughly 15% more float is expected September 24, which one host expects to cause a short-term price dip before resuming an uptrend.
+
+## Financials / Market & Competition
+- Tesla closed near $375, up ~3% on the day, broadly tracking a 2.26% NASDAQ rally rather than Tesla-specific news; one host frames $380 as a near-term "pull" level and argues a run to all-time highs depends on visible Cybercab fleet scaling.
+- Tesla's Model Y Long Range/extended-wheelbase variant is reportedly sold out in the U.S. for 2026.
+- Reports cited (unverified, attributed to "Tesla Chan") suggest Samsung's Texas foundry has begun prototype production of Tesla's AI5 chip, with mass production potentially starting by year-end or early next year; one guest cautioned prototype-stage production doesn't guarantee a near-term launch.
+- Musk was invited to a Trump-hosted White House state dinner with China's president, alongside other tech leaders; a joint letter from six U.S. auto associations calling for restrictions on Chinese automakers was also flagged as a possible discussion topic.
+
+Notable quotes and data:
+- Ron Baron: "The time to buy [Tesla] is now" — FSD adoption up 55% YoY with 1.4 million users, 55% of new buyers opting for self-driving.
+- Jeff Lutz: "Tesla is the number one selling vehicle in domestic China today with the Model Y" — would "not be toast" even under a Chinese-import ban.
+- Sunrun CEO Mary Powell: distributed home batteries are "operating at a scale larger than many peaker power plants combined."
+- SpaceX CFO (on Starship): calls it "such a catalyst" for orbital AI compute ambitions; targets 100 GW/year of orbital compute by decade's end.
+- Starship Flight 14 (~Sept 28) will reportedly be the first full six-orbit flight, deploying v3 Starlink satellites.
