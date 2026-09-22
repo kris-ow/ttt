@@ -1,0 +1,44 @@
+Source:      electrek
+Title:       Tesla Full Self-Driving bug falsely flags dirty cameras, demands service
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/09/22/tesla-fsd-v14-3-9-false-camera-service-alerts/
+Published:   2026-09-22 14:26 UTC
+Fetched:     2026-09-22 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla’s newest Full Self-Driving update, v14.3.9, is telling owners their cameras are dirty when they aren’t — and sending them to service to fix a problem that doesn’t exist.
+
+Tesla has confirmed the bug and is canceling the service appointments it triggered. A fix is expected in a coming update.
+
+## The alert owners are seeing
+
+Drivers who installed v14.3.9 started getting a message on the center screen: “Poor camera visibility detected. Interior windshield residue cleaning is required.”
+
+The cameras are clean. The alert fires anyway, often in bright sun or glare, with the software reading normal optical conditions as an obstructed forward camera.
+
+ 
+ 
+ 
+
+Tesla owner @CARN0N posted a screenshot of Tesla Support confirming the software fault and said Tesla is proactively canceling service visits that owners booked because of it. Owners on Reddit reported the same message on clean cars.
+
+## What triggered it, and what to do
+
+v14.3.9 (software builds 2026.27.5 and 2026.27.6) rolled out around September 12. It’s the same update that brought Automatic Collision Evasion to HW4 cars, letting FSD take over manual driving to avoid a crash.
+
+If you got the camera alert, don’t book a service appointment. Owners who already paid for a cleaning or inspection can contact Tesla Support for a refund.
+
+A follow-up build, v14.3.10, is expected to address the alerts. So far, its release notes are identical to v14.3.9’s, so there’s no confirmation of what changed.
+
+## Electrek’s Take
+
+Vision-only for the win. It’s a two-step forward, one-step back process.
+
+The newest build is so twitchy about camera visibility that it’s flagging perfectly clean lenses and shipping owners off to service. It looks a lot like Tesla turned up the sensitivity on visibility detection and overshot.
+
+A false “clean your camera” popup is an annoyance, not a danger. But it points at the real problem with a camera-only system: getting it to catch genuine degradation from sun, fog, and dust without crying wolf on a clean windshield is hard, and Tesla still hasn’t nailed it.
+
+Tesla is likely to run into a thousand more of these issues before it can actually achive unsupervised self-driving at scale, which require redundancy – something you can’t achieve if your only way to see, cameras, fail.
+
+If you’re driving an EV, the cheapest miles come from charging at home on your own solar. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
