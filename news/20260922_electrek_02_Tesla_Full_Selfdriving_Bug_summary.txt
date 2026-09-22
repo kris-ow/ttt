@@ -1,0 +1,28 @@
+Channel:     electrek
+Title:       Tesla Full Self-Driving bug falsely flags dirty cameras, demands service
+Published:   2026-09-22 14:26 UTC
+Summarized:  2026-09-22 15:41:57 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_015tYB92VxPfgFa79fQ6aaY1
+Cost:        $0.01297 (5986 in / 1397 out tokens)
+Relevance:   core — It reports a confirmed software bug in Tesla's FSD stack affecting owners and Tesla's response, directly relevant to the autonomous driving thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Tesla's FSD update v14.3.9 has a confirmed bug that falsely tells drivers their windshield/camera is dirty and needs cleaning, prompting unnecessary service appointments; Tesla is canceling those appointments and a fix is expected in a future update.
+
+## Autonomous Driving
+1. **False "dirty camera" alerts:** After installing FSD v14.3.9 (software builds 2026.27.5 and 2026.27.6, rolled out around September 12), some owners began seeing a center-screen message reading "Poor camera visibility detected. Interior windshield residue cleaning is required," despite clean cameras. The false alert reportedly triggers often in bright sun or glare conditions. Owner @CARN0N posted a screenshot showing Tesla Support confirming the software fault, and said Tesla is proactively canceling service visits booked because of the alert; other owners reported the same issue on Reddit.
+
+2. **Tesla's response and fix:** Tesla confirmed the bug and is canceling triggered service appointments; owners who already paid for a cleaning or inspection can contact Tesla Support for a refund. A follow-up build, v14.3.10, is expected to address the alerts, though its release notes are currently identical to v14.3.9's, so there's no confirmation of what specifically changed.
+
+3. **Related update context:** v14.3.9 is the same update that introduced Automatic Collision Evasion for HW4 vehicles, allowing FSD to take over manual driving to avoid a crash.
+
+## Editorial Stance
+Electrek's Fred Lambert argues the bug likely stems from Tesla over-tuning camera-visibility sensitivity, and while a false alert is a minor annoyance rather than a safety risk, it highlights the deeper challenge of a camera-only system reliably distinguishing real degradation (sun, fog, dust) from normal conditions. He suggests Tesla will hit many more such issues before achieving unsupervised self-driving at scale, since true redundancy is hard to achieve when cameras are the sole sensing modality.
+
+Notable quotes and data:
+- Alert text: "Poor camera visibility detected. Interior windshield residue cleaning is required."
+- Affected builds: v14.3.9 / software 2026.27.5 and 2026.27.6, released around September 12.
+- Fix expected in v14.3.10, release notes currently unchanged from v14.3.9.
