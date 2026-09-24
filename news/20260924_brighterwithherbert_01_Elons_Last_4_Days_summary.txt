@@ -1,0 +1,51 @@
+Channel:     brighterwithherbert
+Title:       Elon’s Last 4 Days Were Absolutely Loaded!
+Published:   2026-09-24 13:30 UTC
+Summarized:  2026-09-24 17:21:04 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01GAbSWL3CKmCUSphFY2HYLA
+Cost:        $0.04306 (18136 in / 4984 out tokens)
+Relevance:   core — The video substantively covers Grok's integration into Tesla's FSD/product stack, a new SpaceX NASA crew contract, Optimus supplier auditing, Robotaxi fleet data, Roadster reservations, and an upcoming Starship orbital launch — all directly bearing on the Tesla and SpaceX investment theses.
+Topic:       both
+Categories:  Autonomous Driving, Humanoid Bots, Robotaxi, SpaceX — Starship, SpaceX — Starlink, SpaceX — Launch Business, SpaceX — AI & Compute, Electric Vehicles, Market & Competition
+────────────────────────────────────────────────────────────
+
+The host reviews four days of Elon Musk posts and related company news, arguing that Grok 4.7's release, its adoption inside Tesla's engineering workflow, a new NASA crew contract, an Optimus supplier audit report, and an upcoming Starship orbital launch collectively show more substance than hype. The core thesis: Musk's own framing has become more modest and verifiable ("workhorse," "third place") while the underlying corporate developments — contracts, audits, hardware moving to the pad — are the more important signal for investors.
+
+## Autonomous Driving
+1. **Grok 4.7 released, ranks third in agent coding, not overall:** Grok 4.7 launched after roughly a 9-day delay from Musk's own estimates. On Artificial Analysis's updated benchmark, it scored 46 points overall (versus 51–53 for leading Anthropic/OpenAI models), placing around seventh in the general index, but fourth/described by Musk as "third place" specifically on the agentic coding test, behind two Anthropic models and one OpenAI model. Musk emphasized it costs about $2 per million input tokens and $6 per million output tokens — roughly 2.5x cheaper on input and 4x cheaper on output than Anthropic's flagship — calling it a strong choice for "daily work," a marked shift from his August claim that Grok 4.7 would "surpass all current models."
+2. **Grok now writing Tesla FSD/Cybertruck code via overnight agents:** A Tesla AI engineer (senior staff engineer on the FSD team) posted that many FSD and Cybertruck features he personally shipped were produced by "night agents" running on Grok 4.7 — giving the model a task at day's end and reviewing results in the morning. Musk amplified this, saying Grok 4.7 is "already doing real engineering work at Tesla." The engineer separately said he had previously used Grok to write parts of an earlier FSD version. Specific features affected were not named.
+3. **Grok connectors bring email/calendar/voice-ordering to the car:** Tesla's account announced that Grok in the car can now use "connectors" to manage email, calendar, and files hands-free; some Tesla-focused accounts reported Super Grok Heavy subscribers can now voice-order food (e.g., Starbucks) through the car via Grok. Tesla has not specified which FSD/software version or subscription tier is required.
+
+## Humanoid Bots
+1. **Bloomberg reports Tesla auditing Optimus suppliers in China, cites unconfirmed ramp figures:** Bloomberg reported Tesla sent a team to Ningbo, China to audit three Optimus suppliers — Tu Pow (actuators/chassis), Joyson (sensors), and Sanhua (thermal systems) — with an initial order around 5,000 units. The report described a production ramp reaching roughly 1,000 robots/week by late September and 2,000–2,500/week by year-end, with commercial sales targeted for the second half of 2027. The host notes this is Bloomberg's reporting, not Tesla confirmation, and an audit is not a purchase order; he flags China-based supply chain as a likely future political talking point.
+
+## Robotaxi
+1. **Houston Cybercab presence grows ahead of expected expansion:** A parking-lot video showed numerous Cybercabs (some test units with steering wheels, some without, some with Starlink receivers) in Houston. Per RobotaxiTracker.com-aligned figures cited in the video, about 420 Tesla vehicles are registered for self-driving service in Texas, with roughly 45 Cybercabs currently all based in Austin; Houston's operating zone (~21 sq mi) is much smaller than Austin's (~264 sq mi). The host cites a Tesla-focused commentator's belief that Cybercabs will reach Houston by year-end or sooner.
+
+## Electric Vehicles
+1. **Roadster reservations reopened ahead of October 1 reveal:** Tesla reopened Roadster reservations requiring $5,000 by credit card plus $45,000 via bank transfer within 10 days ($50,000 total) with no listed price or production date. A presentation is scheduled for October 1 in Waco, Texas, where Tesla says pricing, specs, and production plans will be revealed; the FAA has imposed restrictions on the nearby SpaceX McGregor facility until October 2, suggesting an engine demonstration may be planned.
+2. **New Tesla Semi factory opening in Sparks, Nevada:** Tesla is opening an invitation-only Semi factory event next to Giga Nevada, at a 1.7 million square foot facility designed for up to 50,000 trucks/year at full capacity. The new Semi version reportedly uses 48-volt electric power steering (like Cybertruck) and 4680 cells; Musk said in July that Autopilot for the truck is expected around year-end or early next year, a point the host says is driving a Morgan Stanley bull-case price target of $840 per Tesla share tied to autonomous trucking software.
+
+## Market & Competition
+1. **Boring Company tunnel proposal and merch stunt:** Musk described a Boring Company tunnel between Austin and San Antonio as a "predecessor" to hyperloop, targeting travel at over 200 mph to cut an roughly 2.5-hour trip to under 30 minutes over about 80 miles; no route, cost, or date was specified. The host notes Boring has proposed Texas tunnels since 2021 without digging any yet, but has reportedly raised about $3 billion this year at a nearly $23 billion valuation. Separately, Musk announced uranium-glass-containing Boring Company merchandise as a joke, referencing a past "Fireball" product that reportedly generated about $10 million in sales.
+
+## SpaceX — Launch Business
+1. **NASA adds three Crew Dragon missions worth ~$946M:** NASA awarded SpaceX three additional crewed missions (Crew 15, 16, 17) for about $946 million, bringing the total Dragon crew contract to roughly $5.9 billion across 17 flights through 2030. NASA attributed the award to continued delays in Boeing's Starliner achieving commercial crew rotations.
+
+## SpaceX — Starship
+1. **Next Starship flight targets first true orbital mission with operational Starlink payload:** Booster 21 was moved to the pad at Starbase, with Musk stating the launch (flight 15, roughly 7 days from the Monday post, i.e. around September 28) will carry 26 Starlink V3 satellites intended for "operational use" rather than testing. The mission plan includes reaching about 275 km altitude, six orbits, nearly 10 hours of flight, deployment of the satellites, and an ocean landing near Chile. The host notes each V3 satellite adds about a terabit per second of capacity, meaning the flight could add roughly 26 terabits to the network if successful — the first Starship flight carrying a revenue-relevant payload. The host also notes an earlier Starship launch (referred to as flight 514) has been postponed four times this month without official explanation, which he says is a mild concern.
+
+Notable quotes and data:
+- Grok 4.7 scores 46 points on Artificial Analysis's updated overall index (vs. 51–53 for leading models); ranks near fourth in agentic coding, prompting Musk's "third place" claim.
+- Grok 4.7 pricing: $2/million input tokens, $6/million output tokens — same as 4.6, roughly 2.5x–4x cheaper than Anthropic's flagship.
+- Musk: "Grok 4.7 puts SpaceX's AI in third place behind Anthropic and OpenAI in agent coding... it's a great choice for your daily work."
+- Musk (via retweet endorsement): "Grok will be the workhorse of the future agent era... And that's just Grok. Think about Grok bot... I don't know of anyone else who has a better agent model than Grok bot at this point."
+- Tesla AI engineer: "Many of the FSD and Cybertruck features that I personally released were made by my night agents."
+- NASA: three added Crew Dragon missions (Crew 15/16/17) for ~$946 million; total Dragon contract now ~$5.9 billion for 17 flights through 2030.
+- Bloomberg (unconfirmed by Tesla): Optimus production ramp reportedly targeting ~1,000/week by late September, 2,000–2,500/week by year-end, commercial sales in H2 2027.
+- RobotaxiTracker.com-aligned figures: ~420 Tesla vehicles registered for self-driving in Texas; ~45 Cybercabs, all in Austin.
+- Roadster reservation: $5,000 by card plus $45,000 by bank transfer within 10 days ($50,000 total); reveal event October 1 in Waco, Texas.
+- Tesla Semi factory in Sparks, Nevada: 1.7 million sq ft, designed for up to 50,000 trucks/year capacity.
+- Boring Company reportedly raised ~$3 billion this year at a nearly $23 billion valuation.
+- Next Starship flight: ~275 km altitude, six orbits, ~10 hours, 26 Starlink V3 satellites for operational use, landing near Chile.
