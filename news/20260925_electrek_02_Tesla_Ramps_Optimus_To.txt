@@ -1,0 +1,64 @@
+Source:      electrek
+Title:       Tesla ramps Optimus to hundreds a week, but the robots can’t generalize
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/09/25/tesla-optimus-production-ramp-hands-ai-generalization-problems/
+Published:   2026-09-25 14:45 UTC
+Fetched:     2026-09-25 15:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla is now building several hundred Optimus humanoid robots per week at Fremont, roughly 10 times its Q2 output, according to a new report. But the robots coming off the line still can’t handle generalized tasks – limiting their usefulness.
+
+The report also describes fragile hands, misaligned parts on the assembly line, and suppliers that can’t hold quality at volume. Those are the two problems that decide whether humanoid robots make money: generalization and reliability.
+
+## Hundreds of robots, mostly for Tesla
+
+The Information reported this morning (paywalled) that Tesla went from a few dozen Optimus units a week during small-batch testing in Q2 to several hundred a week in August. Managers are reportedly aiming for a continuous automated line capable of more than 1,000 robots a week by the end of the year, with an eventual target of about 20,000 a week.
+
+That line lives where the Model S and Model X used to be built. Tesla ended production of its two flagship vehicles in early May and converted the Fremont line to Optimus, pulling workers and engineers from S/X, and dozens more from Model Y, onto the robot program.
+
+ 
+ 
+ 
+
+So where are all these robots going? Mostly nowhere. According to the report, most units are used internally for testing, training, and data collection. The ones working inside Tesla’s factories are confined to tightly controlled, supervised areas, and they’re programmed for specific tasks rather than running as general-purpose machines.
+
+And the V3 robots Tesla is building now aren’t even the version it plans to commercialize. That one still has to pass stricter durability and reliability thresholds.
+
+## The hands are the hard part
+
+Musk has promised human-level dexterity for Optimus. Getting there at scale is proving painful.
+
+Per The Information, the hand and forearm contain over 100 screws and small components that workers still assemble by hand. Fixtures on several stations, including hands, joints, and electronics testing, can’t consistently line up parts that are far smaller and tighter-tolerance than anything on a car. The result is more robots needing rework after coming off the line.
+
+Durability is its own problem. Some of the hand’s touch sensors have had reliability issues, and Tesla’s fix is a replaceable “sensing glove” that it plans to add next year so it doesn’t have to swap the whole hand.
+
+Then there’s the supply chain. Tesla relies on outside suppliers, many in China, for motors and the precision gears that drive the joints. Some of them can make good parts in prototype quantities but struggle to keep quality consistent at higher volume.
+
+## Days to learn a basic task
+
+The bigger issue is the brain. Three people familiar with the system told The Information that Optimus’ AI can’t yet reliably handle a wide range of tasks, and that its behavior can be unpredictable in situations it hasn’t been trained on.
+
+Tesla is trying to build a library of basic movements the robot can recombine for new jobs. But it still reportedly takes several days for Optimus to learn even basic tasks.
+
+To feed the models, Tesla has over 500,000 hours of training data and wants to double that by year-end. It has moved much of its self-driving data annotation team to Optimus, hired dedicated data collectors wearing camera helmets and motion-capture suits, and set up training hubs in Colorado, Arizona, and Florida.
+
+The plan for customers follows the same logic. Tesla reportedly intends to lease, not sell, Optimus to a short list of companies whose factories and warehouses look like its own, so the robots have an easier time adapting, and to use data from those deployments to improve the AI. That’s the FSD playbook: ship the hardware, collect the fleet data, and promise the software will catch up.
+
+This is also a far cry from what Musk was saying last year. In January 2025, he said Tesla would build about 10,000 Optimus robots in 2025 and that “several thousand” would be doing useful work by year-end. A year later, he admitted that zero Optimus robots were doing useful work at Tesla. He also promised a V3 reveal by mid-2026. It’s late September, and that demo still hasn’t happened.
+
+And competitors aren’t waiting. XPeng started running an automated IRON humanoid production line in Guangzhou this month, targeting commercial sales in 2027.
+
+## Electrek’s Take
+
+We think humanoid robots will become a big new category of robots. But we also think they’ll be a small fraction of the overall robotics industry. For most jobs, a robot designed for that specific job, like a robotic arm on a line or a wheeled warehouse bot, will be several times more efficient than a robot shaped like a human. The humanoid’s only real advantage is that it can theoretically do anything in a space built for people.
+
+That advantage only exists if two things happen. First, the AI needs to generalize. A humanoid that has to be trained for days on each task and kept in a fenced-off area is just an expensive, less efficient specialized robot. Nobody has cracked generalization yet, and it’s extremely hard to predict when anyone will. Second, the robot needs to be reliable enough over years of use to pay for itself. Touch sensors failing and 100+ hand-assembled parts per arm aren’t a great start.
+
+Based on this report, Tesla has problems with both.
+
+But it wouldn’t be the first time Tesla made big product decisions based on AI breakthroughs that haven’t happened yet. In 2016, it started telling customers every car it built had the hardware for full self-driving. It has since admitted HW3 cars will need an upgrade, and “Full Self-Driving” still requires supervision nearly a decade later. Now Tesla has killed the Model S and Model X to build a robot whose AI can’t do what the product needs it to do.
+
+Maybe Tesla gets there. But the company is again betting its factory lines on a software timeline it can’t predict. How many times does that need to happen before investors start pricing it in?
+
+If you’re following the AI and robotics boom, you’ve probably noticed what it’s doing to electricity demand and rates. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
