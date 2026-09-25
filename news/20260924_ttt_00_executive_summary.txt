@@ -1,0 +1,68 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-24)
+Published:   2026-09-24 00:00 UTC
+Summarized:  2026-09-25 04:56:21 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.06734 (18575 in / 3019 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Starship flight 14 targets Sept 28, first fully orbital test
+- Flight carries 26 Starlink V3 satellites for operational use
+- Optimus V3 renders reportedly found in Tesla Android app files
+- Cybercab DMV registrations in Texas climb toward ~69
+- Tesla Semi factory opens in Sparks, Nevada, showcases fleet customers
+- Brussels study: Tesla FSD sped in 55% of 30 km/h zones
+
+## SpaceX — Starship
+- Booster 21 is on the pad at Starbase for flight 14 (~Sept 28), which will attempt six orbits over ~10 hours at roughly 275 km altitude — the first fully orbital Starship test, per Musk and multiple hosts. The mission will deploy 26 Starlink V3 satellites, deorbit, re-enter under real orbital energy loads, and land near Chile, putting the ~20,000-tile heat shield under its first true stress test.
+- One host frames this as carrying asymmetric upside if successful, given SpaceX's roughly $2 trillion valuation "has to deliver more"; another notes an earlier Starship launch has been postponed four times this month with no explanation given.
+
+## SpaceX — Corporate & Valuation
+- Share unlocks are scheduled for September 24 and October 9, bracketing the September 28 launch — a dynamic one host says could add selling pressure independent of the flight's outcome.
+
+## SpaceX — AI & Compute
+- SpaceX's long-term goal is up to 100 gigawatts of orbital compute per year — over twice current annual global data-center buildout — with chip supply framed as a constraint as critical as rocket fuel, requiring closer Nvidia-SpaceX supply coordination.
+- Orbital chips can't dissipate heat via convection (no air in space), forcing large radiators and solar arrays; with no repair access once in orbit, the architecture requires built-in redundancy since a failed chip is effectively stranded.
+- A dedicated AI-satellite buildout with Nvidia (referencing a "Vera Rubin" rack) is projected by one host to be ready by end of 2027; Starship reusability isn't strictly required for that timeline but would be a major economic bonus.
+
+## SpaceX — Launch Business
+- NASA awarded SpaceX three additional Crew Dragon missions (Crew 15, 16, 17) worth about $946 million, bringing the total Dragon crew contract to roughly $5.9 billion across 17 flights through 2030; NASA attributed the award to continued delays in Boeing's Starliner.
+
+## Humanoid Bots
+- Alleged Optimus V3 renders were found in Tesla's Android APK files, showing a thicker neck, streamlined torso, thicker forearms, and fully covered joints for home safety — though the host stresses this only confirms the assets exist in app code, not final production intent.
+- Bloomberg reported Tesla is auditing three Chinese Optimus suppliers (Tu Pow, Joyson, Sanhua) with an initial order around 5,000 units, citing unconfirmed figures of ~1,000 robots/week by late September ramping to 2,000–2,500/week by year-end, and commercial sales targeted for H2 2027 — not confirmed by Tesla.
+- A separate CNEV Post report names three additional Chinese suppliers (Tuoku Group, Senua Intelligent Controls, Joyce Electronics) under audit for joint modules, actuators, and structural parts.
+- Tesla's careers page lists 336 Optimus-related job postings; data collection is reportedly shifting from motion-capture suits to camera-based capture with haptic gloves and AI-generated task prompts.
+
+## Autonomous Driving
+- Johanna.be tested Tesla FSD (Supervised) in Brussels and found it exceeded the 30 km/h limit in 55% of tested zones (averaging 44 km/h) and the 20 km/h limit in 42% of residential shared streets, with the dashboard often showing an incorrect 50 km/h limit — raising concerns ahead of the EU's October 6 vote on bloc-wide FSD approval, which needs 15 countries representing 65% of the EU population.
+- Grok 4.7 launched, scoring 46 on Artificial Analysis's overall index (vs. 51–53 for leading models) but placing near fourth in agentic coding — Musk called it "third place." A Tesla FSD engineer said Grok 4.7 "night agents" are already writing shipped FSD and Cybertruck code; Musk said the model is "already doing real engineering work at Tesla."
+- Grok in-car is gaining agentic "connector" capabilities — managing email/calendar and, for high-tier subscribers, placing voice orders (Starbucks, AirPods) — with a Tesla engineer citing DoorDash, OpenTable, and Uber Eats as planned integrations, and hinting at Cybercab support.
+- Tesla began rolling out FSD V14 Lite to HW3 Model S/X owners in the U.S., extending the newer stack to legacy hardware.
+
+## Robotaxi
+- Tesla's Cybercab count registered with the Texas DMV reportedly rose from 27 to 69, with nine added in a single weekend — though registration precedes active deployment, and Houston's Cybercab presence is growing ahead of an expected expansion beyond Austin.
+- A robotaxi-tracking account said the first Cybercab was built using Tesla's in-house cathode material from its first Americas cathode plant, shortening the 4680 supply chain though not confirmed to resolve Tesla's stated battery-capacity constraint.
+
+## Electric Vehicles
+- Tesla's new Semi factory in Sparks, Nevada (1.7M sq ft, up to 50,000 trucks/year capacity) held its inauguration event; drone footage showed trucks branded for PepsiCo, US Foods, IMC Logistics, Einride, LTS, OK Produce, ABF, DHL, and WattEV. Tesla was also named primary supplier this week for ZET SCALE's 2,500-truck order backed by Microsoft and PepsiCo. Analysts still expect only 5,000–15,000 Semi deliveries this year against the plant's 50,000-unit capacity.
+- One analyst argues Semi will not scale near-term because it competes for constrained 4680 cells against the Model Y and Cybercab, earning 20–30% less profit per cell than Model Y and "massively less" than Cybercab.
+- Roadster reservations reopened ($50,000 total) ahead of an October 1 reveal event in Waco, Texas, with FAA restrictions on the nearby SpaceX McGregor facility until October 2 hinting at a possible engine demonstration.
+- Tesla crossed 100,000 cumulative vehicles sold in Denmark; Canada's CAA 2026 EV Circuit ranked Model 3 and Model Y near the top for efficiency, with Model 3 posting the lowest charging cost tested ($7.28 per 100 km).
+
+## Market & Competition
+- Mercedes-Benz signed a manufacturing deal to integrate Waymo's AI driver into future production vehicles, its third such autonomy partnership in nine months alongside Nvidia and Momenta; Waymo CEO Alex Kendall said the tech would reach Mercedes vehicles within about two years.
+- Waymo launched a Bay Area transit-rewards program refunding riders in "Waymo cash" when combined with public transit, plus leasing ~40 parking spaces at Caltrain stations.
+- Musk floated a Boring Company Austin–San Antonio tunnel targeting 200+ mph speeds; Boring has reportedly raised ~$3 billion this year at a nearly $23 billion valuation despite no confirmed digging yet.
+
+Notable quotes and data:
+- Musk: "Grok 4.7 puts SpaceX's AI in third place behind Anthropic and OpenAI in agent coding... it's a great choice for your daily work."
+- Tesla AI engineer: "Many of the FSD and Cybertruck features that I personally released were made by my night agents."
+- NASA Crew Dragon add-on: ~$946M for Crew 15/16/17; total contract ~$5.9B for 17 flights through 2030.
+- Johanna.be: FSD exceeded 30 km/h limits in 55% of tested Brussels zones, averaging 44 km/h; WHO data cited that a pedestrian hit at 44 km/h is ~6x more likely to die than at 30 km/h.
+- EU TCMV vote on bloc-wide FSD approval: October 6.
+- Starship flight 14: six orbits, ~10 hours, ~275 km altitude, 26 Starlink V3 satellites, landing near Chile.
+- SpaceX's stated long-term ambition: up to 100 gigawatts of orbital compute per year.
