@@ -1,0 +1,37 @@
+Channel:     electrek
+Title:       Tesla ramps Optimus to hundreds a week, but the robots can’t generalize
+Published:   2026-09-25 14:45 UTC
+Summarized:  2026-09-25 15:03:42 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01UnSWyxrKot828uRGxHpffw
+Cost:        $0.01990 (7139 in / 2552 out tokens)
+Relevance:   core — The article is substantively about Tesla's Optimus humanoid robot program, its production ramp, technical problems, and implications for the investment thesis.
+Topic:       tesla
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+Citing a report from The Information, Electrek reports Tesla has ramped Optimus production at Fremont to several hundred units per week, but says the robots still cannot generalize across tasks, undercutting their commercial usefulness.
+
+## Humanoid Bots
+1. **Production ramp:** According to The Information, Tesla went from a few dozen Optimus units a week in Q2 (small-batch testing) to several hundred a week in August, on the former Model S/X line at Fremont (S/X production ended in early May, with workers from that line and Model Y moved onto Optimus). Managers reportedly aim for a continuous automated line producing more than 1,000 robots a week by year-end, with an eventual target of about 20,000 a week.
+
+2. **Where the robots go:** The report says most current units are used internally for testing, training, and data collection; those working inside Tesla factories are confined to supervised, tightly controlled areas and programmed for specific tasks rather than operating as general-purpose machines. The current V3 version is not the one Tesla plans to commercialize, which must still pass stricter durability/reliability thresholds.
+
+3. **Hardware and assembly issues:** Per The Information, the hand and forearm contain over 100 screws and small components still assembled by hand; fixtures at several stations (hands, joints, electronics testing) reportedly struggle to consistently align tight-tolerance parts, causing rework. Some hand touch sensors have had reliability issues; Tesla's planned fix is a replaceable "sensing glove" to be added next year instead of swapping the whole hand. Outside suppliers, many in China, that make motors and precision gears reportedly struggle to maintain quality at higher volumes despite being able to produce good prototype-quantity parts.
+
+4. **AI/generalization gap:** Three people familiar with the system told The Information that Optimus' AI cannot yet reliably handle a wide range of tasks and behaves unpredictably in untrained situations; it reportedly takes several days for Optimus to learn even basic tasks. Tesla is building a library of basic movements for recombination into new tasks. It reportedly has over 500,000 hours of training data and wants to double that by year-end, has moved much of its self-driving data annotation team to Optimus, hired dedicated data collectors using camera helmets and motion-capture suits, and set up training hubs in Colorado, Arizona, and Florida.
+
+5. **Commercialization plan:** Tesla reportedly intends to lease (not sell) Optimus initially to a short list of companies with factories/warehouses similar to its own, to ease adaptation and gather deployment data to improve the AI — a strategy the article likens to Tesla's FSD approach of shipping hardware first and improving software later.
+
+6. **Timeline slippage and competition:** The article notes Musk said in January 2025 that Tesla would build about 10,000 Optimus robots in 2025 with "several thousand" doing useful work by year-end, but a year later admitted zero Optimus robots were doing useful work at Tesla; a promised V3 reveal by mid-2026 has not happened as of the article's late-September date. Separately, competitor XPeng reportedly started an automated humanoid (IRON) production line in Guangzhou this month, targeting commercial sales in 2027.
+
+## Editorial Stance
+The author (Fred Lambert) argues humanoid robots will become a significant robot category but a small share of the overall robotics industry, since task-specific robots are more efficient; humanoids' advantage only materializes if AI generalization and long-term reliability are solved, and the author says Tesla currently has problems with both. The author draws a parallel to Tesla's history of selling "Full Self-Driving" hardware years before the software matured, and questions whether Tesla is again betting factory capacity on an unproven AI timeline, asking when investors will start pricing in this risk.
+
+Notable quotes and data:
+- "several dozen" Optimus units/week in Q2 vs. "several hundred" per week in August (per The Information)
+- Target: 1,000+ robots/week by year-end; eventual goal ~20,000/week
+- Hand/forearm assembly: 100+ screws/components still hand-assembled
+- Training data: 500,000+ hours currently, target to double by year-end
+- Musk (Jan 2025): promised ~10,000 Optimus units built in 2025, "several thousand" doing useful work by year-end — later admitted zero were doing useful work a year later
+- Promised V3 reveal by mid-2026 has not occurred as of late September
