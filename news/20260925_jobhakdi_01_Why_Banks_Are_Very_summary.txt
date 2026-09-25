@@ -1,0 +1,38 @@
+Channel:     jobhakdi
+Title:       Why Banks Are VERY WRONG About SpaceX Compute Cost
+Published:   2026-09-25 15:55 UTC
+Summarized:  2026-09-25 22:26:59 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01Qd2d9oKsxzWxkMucVdks3X
+Cost:        $0.03272 (15988 in / 3347 out tokens)
+Relevance:   core — the video is a detailed analysis of SpaceX's orbital data center economics, a direct pillar of the SpaceX investment thesis around Starship-enabled compute.
+Topic:       spacex
+Categories:  SpaceX — AI & Compute, SpaceX — Starship, Financials
+────────────────────────────────────────────────────────────
+
+The video (from Jo Bhakdi's channel) argues that Wall Street bank estimates for the cost of building 1 gigawatt of orbital AI data center capacity are dramatically too high because they use current/near-term launch cost assumptions rather than modeling forward to when Starship is operational and flying at scale. Bhakdi presents a "Pioneer Alpha" cost model (available for download at pioneerance.org) that lands at roughly $60–68 billion per gigawatt by 2028, falling to around $43 billion by 2035, versus bank estimates of $160–180 billion.
+
+## SpaceX — AI & Compute
+1. **Bank estimates vs. Pioneer Alpha model:** Bhakdi cites Bank of America's figure of $160–180 billion per gigawatt for an orbital data center (vs. $40–60 billion terrestrial, with launch cost estimated at $50 billion), Wood Mackenzie's figure of $170 billion per gigawatt, Futurum's $72 billion (infrastructure only, excluding launch and compute), and BNP Paribas's figure of over $100 billion for launch alone — all of which he calls unrealistic. His own model arrives at roughly $68 billion per gigawatt all-in by 2028, declining to about $43 billion by 2035; he states his own conservative/bear-to-bull range as roughly $55–80 billion for 2028.
+2. **Where the bank estimates diverge — launch cost is the main driver:** Bhakdi says all sources roughly agree on the "light blue" compute chip costs (GPUs/CPUs), but differ sharply on launch costs and on "hardware" (non-chip satellite infrastructure — solar panels, radiators). His model assumes per-kilogram launch cost of $738 by 2028 (declining to $177 by 2035) versus the roughly $2,500/kg he attributes to Bank of America and $1,400/kg to Futurum, driven by Starship's ~150-ton payload capacity versus current rockets' ~20 tons.
+3. **Hardware/infrastructure cost basis:** He argues the non-chip satellite hardware (solar arrays, radiators) is well-understood and cheap because SpaceX already operates over 10,000 Starlink satellites with similar components; AI compute satellites (referred to as "Starmine") would use the same technology with larger solar arrays and radiators. Space-based solar panels are said to capture roughly 40% more energy per square foot than on Earth due to higher solar flux and 24-hour sun exposure in sun-synchronous orbit.
+4. **Model inputs and mass assumptions:** The model's base case assumes roughly 25,000 tons of mass must be launched to build 1 gigawatt of space compute (solar, radiators, GPUs, satellites, laser links, etc.), with annual mass-efficiency improvements of 2% (bear), 3% (base), or 5% (bull) per year. Space hardware cost (including compute) is assumed at $50 billion per gigawatt, roughly at parity with terrestrial buildout, of which he estimates roughly $31 billion is GPU cost on the terrestrial side.
+5. **Reusability and launch cadence assumptions:** The model conservatively assumes Starship is not reusable by 2028 (one-time use) and only becomes consistently reusable by 2035, with manufacturing runs of 10 Starships/boosters by 2028 rising to 100 by 2035 — both of which Bhakdi calls conservative inputs. Failure-risk assumptions (rocket loss rate) are also built into launch cost calculations, though Bhakdi flags some inconsistency in his own model's failure-risk inputs during the walkthrough.
+6. **Cost parity timeline vs. terrestrial:** Bhakdi projects space-based compute reaches cost parity with terrestrial data centers around 2029, becoming cheaper thereafter since terrestrial costs are not expected to decline while space costs continue falling with launch cost reductions and efficiency gains. He also cites non-cost advantages (no permitting, no regulatory oversight, immediate deployment) as making orbital compute attractive even before cost parity is reached.
+
+## SpaceX — Starship
+1. **Upcoming Starship flight 14:** Bhakdi states Starship's next flight (flight 14) is scheduled for September 28, describing it as designed to fly six times around Earth in orbit and deploy 26 Starlink V3 satellites, calling it a proof of concept for the broader orbital compute thesis.
+
+Notable quotes and data:
+- Bank of America: ~$160–180 billion per gigawatt for orbital data centers vs. $40–60 billion terrestrial, launch cost ~$50 billion (all figures per Bhakdi's characterization of the bank's report).
+- Wood Mackenzie: ~$170 billion per gigawatt orbital vs. ~$50 billion terrestrial (per Bhakdi, citing a "Tesla Larry" summary).
+- Futurum: ~$72 billion per gigawatt (infrastructure only, excludes launch and compute).
+- BNP Paribas: over $100 billion for launch alone per gigawatt — dismissed by Bhakdi as implausible.
+- Pioneer Alpha model: ~$68 billion per gigawatt all-in by 2028, declining to ~$43 billion by 2035.
+- Launch cost assumption: $738/kg by 2028, falling to $177/kg by 2035, vs. ~$2,500/kg (Bank of America) and ~$1,400/kg (Futurum).
+- Starship payload assumption: ~150 tons per launch vs. ~20 tons for current rockets.
+- Mass required per gigawatt of space compute: ~25,000 tons (base case).
+- Space hardware cost (including compute) assumed at $50 billion per gigawatt, roughly matching terrestrial GPU + infrastructure spend (~$31 billion of which is GPUs on the terrestrial side).
+- "There is no way in hell that you're anywhere close [to] 100 billion or 170 billion." — Bhakdi
+- Projected space/terrestrial cost parity timeline: around 2029.
+- Existing Starlink constellation cited as proof of concept: "over 10,000" satellites already in orbit with similar solar/radiator components.
