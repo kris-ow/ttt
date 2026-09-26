@@ -1,0 +1,61 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-25)
+Published:   2026-09-25 00:00 UTC
+Summarized:  2026-09-26 04:56:52 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.06445 (19252 in / 2595 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla Semi enters volume production at new Sparks, NV factory
+- Optimus output hits hundreds/week but still can't generalize
+- EU delays Tesla FSD-wide vote to December at earliest
+- Czech Republic becomes 7th EU market to approve FSD
+- Google to launch TPUs to orbit via SpaceX Oct 1
+- Starship Flight 14 targets Sept 28, carries 26 Starlink V3 sats
+
+## Electric Vehicles
+- Tesla's new Semi factory in Sparks, Nevada spans 1.7–1.8M sq ft with claimed capacity of 50,000 trucks/year; Tesla says the redesigned truck moves to in-house 4680 cells, a steel-caged rotor motor, bar-wound stator shared with Cybertruck, electric steering, and a Megamanifold thermal system shared with Cybercab.
+- Tesla claims over 500 real-world miles at 82,000 lbs fully loaded, fleet uptime above 98% in 2026, and a pilot fleet of just under 200 trucks logging 17.5 million miles.
+- Named customers DHL, PepsiCo, US Foods, ABF, Einride, IMC Logistics, and WattEV appeared at the launch event; the ZET SCALE alliance named Tesla primary supplier for 2,500 electric trucks, following Einride's 500-truck August order.
+- Electrek's Fred Lambert calls Semi the last Tesla program that still excites him, but frames 2027 deliveries of 5,000 units as the bar for a "real business" versus 1,500 looking oversized; official pricing remains unconfirmed since the event (previously reported ~$260K–$290K).
+
+## Humanoid Bots
+- Per The Information (via Electrek), Optimus production at Fremont's former Model S/X line ramped from dozens/week in Q2 to several hundred/week in August, with a target of 1,000+/week by year-end and an eventual goal of ~20,000/week.
+- The report says Optimus still cannot generalize across tasks, takes days to learn basics, and remains confined to supervised factory tasks; hand/forearm assembly still requires 100+ hand-fitted screws and components, and touch-sensor reliability issues are prompting a replaceable "sensing glove" fix next year.
+- Tesla reportedly plans to lease (not sell) Optimus initially to a short list of factory/warehouse customers, mirroring its FSD hardware-first strategy; training data has surpassed 500,000 hours with a goal to double by year-end.
+- Unverified reports (brighterwithherbert panel) point to possible Optimus Gen 3 images leaked via Tesla's Android app, Chinese supplier certification for up to 5,000 units, and an Optimus training program using camera-equipped employee gear at Giga Berlin — none confirmed.
+- Competitor XPeng reportedly started an automated humanoid (IRON) production line in Guangzhou this month, targeting 2027 commercial sales.
+
+## Autonomous Driving
+- EU's TCMV will not vote on EU-wide FSD approval at its October 6 meeting per the draft agenda; the panel does not meet again until December, marking a repeated slip from Tesla's prior October 6 target.
+- Czech Republic became the seventh EU market to approve FSD (Supervised); Ireland approval is in progress. Passage EU-wide still requires 15 of 27 states representing 65% of population — currently unreachable without Germany, France, Italy, or Spain, none of which have recognized the Dutch approval.
+- Sweden opposes approval unless Tesla removes the ability to set FSD above posted speed limits; France cites speeding/driver-attention concerns; a Brussels pedestrian safety group reportedly found FSD sped in 55% of tested 30 km/h segments in an already-approved country.
+
+## Robotaxi
+- Tesla posted Texas registrations of 420 Model Y and 69 Cybercab; panelists estimate total registered fleet (including Florida, Dallas, Houston) near 500 vehicles.
+- A panelist's growth math suggests sustaining ~17% week-over-week paid autonomous mile growth would require roughly 200–250 vehicles now, scaling to 15,000–18,000 by May — implying either a slowdown or a major near-term expansion.
+- Roughly 35 Cybercabs were spotted in Devon, Pennsylvania, outside Tesla's known operating cities — purpose unconfirmed, possibly staging or transport.
+- Separately, a two-person analysis (cernbasher) argues Tesla's fleet-ownership model enables predictive, network-wide dynamic pricing and vehicle pre-positioning that Uber's driver-owned model structurally cannot match.
+
+## SpaceX — AI & Compute
+- Google plans to launch TPUs to orbit via SpaceX around October 1, per a Sundar Pichai post cited by multiple sources — seen as evidence orbital compute demand is expanding beyond SpaceX's own needs to third parties like Google and Nvidia.
+- Jo Bhakdi's "Pioneer Alpha" model estimates orbital AI data center cost at ~$60–68 billion per gigawatt by 2028 (falling to ~$43 billion by 2035), well below bank estimates of $160–180 billion (Bank of America), $170 billion (Wood Mackenzie), and over $100 billion for launch alone (BNP Paribas) — driven mainly by differing launch-cost assumptions ($738/kg vs. ~$2,500/kg).
+- Bhakdi projects space-based compute reaches cost parity with terrestrial data centers around 2029, becoming cheaper thereafter.
+
+## SpaceX — Starship
+- Starship Flight 14 is scheduled for September 28 (per Bhakdi) or "next week" (per Sawyer Merritt), designed to orbit Earth six times and deploy 26 Starlink V3 satellites — a payload expected to meaningfully increase constellation capacity.
+
+## SpaceX — Starlink
+- Wells Fargo forecasts SpaceX reaching 47 million Starlink subscribers by 2028, with revenue growing from $19 billion (end-2026) to $30 billion (end-2027) and $51 billion (end-2028) — an analyst projection, not company-confirmed.
+- Starlink announced gigabit speeds for select seafaring users by December 2026, and signed Vietjet for free in-flight Wi-Fi on 120 aircraft initially, expanding fleet-wide over time.
+- Musk reportedly floated merging Gen 3 Starlink satellites with "Star Mind" into an all-purpose design; one panelist questioned technical feasibility given differing orbits and power needs.
+
+Notable quotes and data:
+- Tesla Semi: 50,000 trucks/year capacity, >98% fleet uptime, 500+ mile real-world range at 82,000 lbs, 60% charge in 25–30 min on Megacharger.
+- Optimus: several dozen/week (Q2) → several hundred/week (August) per The Information; Musk's Jan 2025 promise of 10,000 units built in 2025 with "several thousand" doing useful work was later admitted to be zero.
+- EU FSD approval needs 15/27 states + 65% population; only 7 countries (~12% of EU population) currently recognize it.
+- Bhakdi: "There is no way in hell that you're anywhere close [to] 100 billion or 170 billion" per gigawatt for orbital compute.
+- Wells Fargo: Starlink revenue projected at $19B (2026) → $51B (2028).
