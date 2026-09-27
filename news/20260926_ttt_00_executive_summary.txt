@@ -1,0 +1,71 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-26)
+Published:   2026-09-26 00:00 UTC
+Summarized:  2026-09-27 05:17:23 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07009 (17660 in / 3477 out tokens)
+Sources:     8
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+- Tesla Semi enters high-volume production, 50,000 trucks/year capacity
+- Z Scale orders 2,500 Semis, doubling US Class 8 EV truck fleet
+- Cybercab now bookable and live in Austin, no steering wheel
+- Texas Cybercab registrations near 489, up from 314 in August
+- Czech Republic becomes 7th European FSD market; EU vote slips to December
+- Colossus 2 hits gigawatt scale with Nvidia GB300s and Megapacks
+
+## Electric Vehicles
+- Tesla's new Nevada Semi factory (1.8M sq ft) opened Thursday with a livestream; Elon Musk appeared via recorded video from a White House dinner while Lars Moravy and Dan Priestley hosted. Deliveries began on stage to PepsiCo, DHL, and US Foods; actual current production rate wasn't disclosed against the 50,000/year designed capacity.
+- Semi specs: 500 miles fully loaded (82,000 lbs), 600+ miles at half load, using a new "Megamanifold"/megacollector heat pump shared with Cybertruck; fleet uptime cited above 98% year-to-date. Tesla targets 30+ Megacharger stations and 200+ charging points by year-end.
+- Z Scale (PepsiCo, Microsoft and other shippers) ordered 2,500 Semi tractors, which Tesla Semi's account says will double the entire US Class 8 electric truck fleet.
+- Roadster teaser dropped ahead of an October 1 reveal, showing a light bar and — per one image — part of the SpaceX logo, fueling unconfirmed speculation about a SpaceX-related component.
+
+## Robotaxi
+- Texas Cybercab/robotaxi registrations climbed from 314 (end of August) to roughly 489, including a single day adding 56 new Cybercabs — the largest single-day total to date, per Texas DMV data. Only a few hundred of the registered vehicles are believed to actually be carrying passengers.
+- Cybercab is now live and bookable via the robotaxi app within Austin's service area, dispatching a two-seater with no steering wheel or pedals and no driver able to intervene.
+- Tesla's recruitment account disclosed the Cybercab line is producing one powertrain (motor/gearbox) every 10 seconds — the first concrete production-rate figure shared, though it covers the power unit, not full vehicle assembly.
+- Tesla built its first Cybercab using nickel cathode produced locally at Gigafactory Texas, confirmed by Elon Musk — relevant to Tesla's stated 20–25 cent/mile Cybercab operating-cost target.
+- Herbert Ong argues the visible plateau in Texas fleet growth is a deliberate pause, not a bottleneck: he cites Tesla being self-certified (not bound by a 2,500-unit cap like Zoox) and says NHTSA documentation allows for around 3,000 vehicles. He projects FSD "version 15," expected in one to two months and adding a destination-memory feature, will unlock faster scaling, putting active robotaxis at roughly 1,000–2,000 by year-end (his own estimate, not Tesla's).
+- Houston parking lots are visibly filling with staged Cybercabs, interpreted as pre-launch buildout ahead of service expansion there.
+- JP Morgan (Rajat Gupta, neutral) projects ~$320B in Tesla robotaxi revenue by 2035, with ~$314B from Tesla-owned/operated fleet vehicles versus only ~$5B from third-party network cars.
+
+## Autonomous Driving
+- Czech Republic approved supervised FSD after months of evaluation, becoming the 7th European market and bringing Tesla's total approved markets to 15 worldwide (including Puerto Rico and limited China).
+- The EU-wide FSD vote has slipped from an original October 6 target to December 1 at the earliest, per an EU agenda; the seven approving countries so far represent only about 12% of EU population versus the 65% threshold needed.
+- NHTSA administrator Jonathan Morrison's recent remarks are described by Herbert Ong as supportive of Autopilot/robotaxis without a lidar mandate, requiring only demonstrated safety; NHTSA has reportedly repealed five of 22 human-driving-era regulations, with nine remaining. NHTSA's formal answers to 21 questions posed to Tesla are expected around October 1.
+- Belgium is raising concerns in an upcoming report about FSD's handling of speed regulation, based on one city and one FSD version from July — flagged as pending Tesla's response.
+
+## Humanoid Bots
+- Signed Optimus Gen 3 render files were found inside the Tesla Android app, showing fully enclosed joints, a solid torso, thicker forearms with thinner wrists, and matte black knees/shins replacing Gen 2's gold paint. Tesla has made no official comment.
+- Oppenheimer's Colin Rusch, after visiting Austin, is positive on Cybercab cost trajectory but expects limited Optimus revenue until 2029, versus Tesla's internal target of first commercial Optimus revenue by end of 2027.
+- Chinese media reports of Tesla auditing Optimus suppliers Tuolu, Sanhua, and Joyson remain unverified — two of three suppliers denied receiving such notices.
+
+## SpaceX — AI & Compute
+- Colossus 2 has reached gigawatt scale, described as the world's largest coherent supercomputer, built on Nvidia GB300 systems and including the first gigawatt-scale Megapack battery installation.
+- SpaceX's Colossus 2 buildout (Tennessee/Mississippi) will draw 3.3 GWh of Tesla Megapack storage — enough to power Memphis for two hours and billed as America's largest grid-connected battery installation. Separate posts describe 220,000 Nvidia GB300 GPUs (>$15B) coming online next week, with further ~$15B tranches possible in November and December.
+- Analysts show wildly divergent orbital-data-center cost estimates: Bank of America cites $160–180B per gigawatt versus $40–60B terrestrial; other cited figures range from $17B (Woodmac) to $72B (Futurum) to over $100B for launch alone (BNP Paribas). A commentator's own estimate (Pioneer Alpha) comes in around $68B per gigawatt all-in, calling the bank estimates "highly misleading."
+- Musk said Grok 4.7 puts SpaceX's AI in third (or fourth, by a separate measure) place behind Anthropic and OpenAI; Grok 4.8 was set to begin reinforcement training, with an October release framed by Musk as speculation.
+
+## SpaceX — Starship
+- Flight 14 is targeting Monday, September 28 (7:15 a.m. Central), pending FAA license, after full-stack and full refueling tests. It will carry 26 Starlink V3 satellites — the first orbital delivery of production-grade V3s — complete ~6 orbits, land the ship in the Pacific, and attempt a booster water landing without catch.
+
+## SpaceX — Starlink
+- SpaceX says a single Starship launch can carry up to 60 Starlink V3 satellites (each rated 1 terabit/sec downlink), adding roughly 20x the Starlink capacity of one Falcon 9 launch — value that accrues internally since SpaceX owns both rocket and network.
+- The FCC accepted (not approved) SpaceX's filing for up to 100,000 third-generation Starlink satellites in two very low orbits. Musk claimed per-satellite bandwidth near 10 terabits bidirectional versus the filing's 1-terabit target, with a path to 100+ terabits and a full Nvidia Vera Rubin/VL72 rack per satellite tied to a "Starmind" compute concept — figures from Musk's answer, not the filing, and unconfirmed.
+- Starlink V5 terminal is in production: 2.4 lbs (vs. 6.4 lbs for V4), half the power, up to 375 Mbps. A new Starlink Mobile V2 offers 100x the data density of V1; KDDI in Japan is the first Asian mobile partner, service expected around 2027.
+
+## Financials
+- Nasdaq 100 rebalancing lifted SpaceX's index weight from 1.3% to 2.82% on lock-up expirations, forcing an estimated $15–22 billion in index-fund buying.
+- Tesla Semi fuel-savings modeling (Cern Basher): roughly $65,000/year in savings at 100,000 miles/year, ranging $5,000–$95,000 across sensitivity scenarios; Morgan Stanley estimates an autonomous electric truck earns its owner ~$202,000/year versus ~$37,000/year for diesel.
+
+## Market & Competition
+- Morgan Stanley's Adam Jonas frames Tesla and SpaceX as sharing technology and infrastructure toward a joint mission, citing 71 Tesla mentions in SpaceX's IPO documents and ~$500M of Megapacks plus ~$130M of Cybertrucks purchased by SpaceX/xAI from Tesla last year; no confirmed merger, timeline, or exchange ratio exists.
+
+Notable quotes and data:
+- "We're producing one powertrain every 10 seconds" — Tesla recruitment account, on Cybercab.
+- "Made from nickel cathode produced locally at Gigafactory Texas" — Elon Musk.
+- Semi factory: 1.8M sq ft, 50,000 trucks/year designed capacity; Z Scale order of 2,500 tractors.
+- JP Morgan: ~$320B Tesla robotaxi revenue by 2035 ($314B Tesla-owned vs. $5B network).
+- Nasdaq 100 SpaceX weight: 1.3% → 2.82%, ~$15–22B forced buying.
+- Colossus 2: 3.3 GWh of Tesla Megapacks, enough to power Memphis for two hours; 220,000 Nvidia GB300 GPUs (>$15B) coming online next week.
