@@ -1,0 +1,56 @@
+Channel:     electrified
+Title:       A MONSTER Weekend for Tesla and SpaceX ⚡️
+Published:   2026-09-28 23:44 UTC
+Summarized:  2026-09-29 00:07:50 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01EaV222U3B9SA5CobsXE7Gj
+Cost:        $0.04282 (16494 in / 5266 out tokens)
+Relevance:   core — The video substantively covers Tesla's robotaxi fleet growth, FSD regulatory developments, Optimus production challenges, and a detailed technical debrief of SpaceX's Starship Flight 14, all central to both investment theses.
+Topic:       both
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, SpaceX — Starship, SpaceX — Starlink, Market & Competition, Electric Vehicles
+────────────────────────────────────────────────────────────
+
+This "electrified" video covers a Tesla FSD reactivation feature test, a detailed debrief of Starship's Flight 14 (first orbital insertion attempt), Tesla robotaxi fleet growth in Texas, an Elon Musk interview on Cybercab expansion and Grok, a rumor-category report on Optimus hand manufacturing difficulties, and regulatory delays for Tesla's FSD in the EU.
+
+## Autonomous Driving
+1. **New automatic collision-evasion feature demoed:** The host tested a new FSD reactivation feature that automatically re-engaged FSD after a manual brake tap disengagement, doing so right before the vehicle would have hit a curb in a corner — the host called it an impressive real-world demonstration.
+2. **EU FSD vote delayed to December:** There is no longer a plan for the EU (TCMV/TCMB) to vote on Tesla's supervised FSD at the October 6th meeting; the vote has been delayed, with the earliest possible decision now in December, following roughly a 25-minute discussion expected at the meeting. The Swedish Transportation Authority has recommended voting no unless Tesla removes the "speed offset" feature that allows FSD to exceed the set speed limit; France is separately conducting its own testing.
+
+## Robotaxi
+1. **Texas robotaxi/Cybercab fleet registrations climbing:** Tesla now has 546 total vehicles registered in Texas for the robotaxi network, with 126 identified as Cybercabs (23% of the registered fleet). September alone added 232 vehicles, nearly doubling the fleet. Cybercabs have only been registered for 29 days (since the first DMV registration), which the host views as ahead of his expectations; anecdotal reports suggest only 70–100 vehicles are actively operating on a given day.
+2. **New trunk auto-open feature and mixed service anecdotes:** A new robotaxi feature auto-opens the trunk at ride's end if it was opened before the ride began (only after the rider opens their door, per a Tesla-affiliated commenter). Separately, a rider account (Josh) described a ride where the robotaxi dropped passengers a few blocks from their destination and in-app support was unable to see or correct the discrepancy, denying a refund; the host notes pickup/drop-off and support handling still need work.
+3. **Musk says Cybercab expanding to more states, eyeing California by mid-2027:** In a new interview, Musk said Cybercab will soon operate commercially in Florida, Nevada, and other states, and probably by the middle of next year (mid-2027) it will operate commercially in California.
+
+## Humanoid Bots
+1. **Report claims Optimus hand assembly bottleneck and worker reluctance (unconfirmed):** A report from The Information — which the host places in the "rumor" category and is skeptical of — claims Optimus's tendon-driven hand (25 actuators per arm relocated to the forearm, submillimeter tolerances) is too mechanically intricate for current automotive-grade assembly equipment, causing rework, and that some Fremont/Austin workers are refusing to wear motion-capture suits to avoid training their robotic replacements. The host doubts the motion-capture-suit claim, noting Tesla has reportedly shifted largely to camera-only data collection.
+2. **Reported Optimus production ramp:** Per the same report, Optimus output rose roughly tenfold from a few dozen units/week in Q2 to several hundred units/week by August, with an end-of-year target of over 1,000 units/week and a longer-term ambition around 20,000 units/week (toward an eventual 1 million units/year from Fremont). The host calculates that ~200 units/week implies a roughly 10,000-unit annual run rate as of August, which he characterizes as bullish despite the reported assembly challenges. Early V3 units are reportedly being leased rather than sold to warehouse customers, with full commercial sales not expected before late 2027; a July FCC ban on imported foreign-made humanoid robots does not currently cover Tesla's component orders from Ningbo suppliers, though further restrictions may come.
+
+## SpaceX — Starship
+1. **Flight 14 reaches orbit for the first time, deploys 26 Starlink V3 satellites:** Starship's Flight 14 achieved SpaceX's first successful orbital insertion attempt and deployed 26 Starlink V3 satellites, all of which made contact via laser links, ground stations, and user terminals. The flight lasted about three hours versus a planned ~9 hours, and completed two Earth orbits instead of a planned six, with the flight control team cutting orbital duration short out of caution.
+2. **Engine anomalies affected booster and ship performance:** During ascent, one Raptor engine on the Super Heavy booster shut down early; the booster then relit 31 of 33 planned engines for boost-back, 11 of 13 for the high-thrust landing phase, before down-selecting to five and then three engines for splashdown — after which its flight termination system triggered post-landing-burn shutdown. On the ship, a single Raptor vacuum engine shut down early during ascent, requiring the remaining five engines to burn longer to reach a safe suborbital trajectory before a single engine performed the orbit-insertion burn; Ship 41 was lost (exploded on water contact) and will not be recovered, unlike Ship 40 on Flight 13.
+3. **Host expects no catch attempt on Flight 15:** Given the engine issues, the host does not expect SpaceX to attempt a catch of the booster or ship on Flight 15, predicting instead another orbital insertion attempt targeting more orbits and full engine reliability; he estimates the timeline for SpaceX to catch both booster and ship on the same flight is not until early 2027 at the earliest, which he sees as the real inflection point for launch cadence.
+4. **Cost-per-ton and launch cadence context:** Using third-party analysis, the host estimates Flight 14's ~52-ton payload at roughly $110 million per launch implies about $2.1 million per ton — already competitive with Falcon 9's estimated ~$2 million per ton (at ~$30M for 15 tons for internal use) despite Starship flying fully expendable and under half capacity. Historical gaps between Starship flights have run 63–66 days; Musk has said Starship could be flying hourly within 2–3 years. Flight 14 reached orbit 18 years to the day after Falcon 1's first flight.
+
+## SpaceX — Starlink
+1. **V3 satellites won't improve service until Q2 next year at the earliest:** Musk has said roughly a thousand V3 satellites need to be operational before customers see meaningful service improvements, and the host says newly deployed satellites specifically won't be active for the service for several more weeks; he pushed back on users claiming immediate speed improvements from this batch.
+2. **Musk reiterates Starlink IP traffic ambition:** Musk again said it is increasingly probable Starlink will carry a majority of Earth's IP traffic long-term, which the host frames as contingent on achieving low-cost rapid reusability for Starship.
+
+## Market & Competition
+1. **Grok's enterprise engineering edge discussed:** In the same interview, Musk reportedly acknowledged that Grok 4.7 may have been a letdown relative to expectations but emphasized it should excel at real-world engineering (contrasted with Anthropic's software-engineering focus); the host speculates Grok could gain an enterprise edge from training data drawn from Tesla and SpaceX engineers, though he expects the software use-case gap to narrow over time (e.g., with Grok 5).
+
+## Electrified/Financials
+1. **Roadster unveil rescheduled:** Tesla postponed its Roadster unveil event, originally planned this week, to October 15th, citing severe predicted weather since the event is outdoors.
+2. **Daily stock closes:** TSLA closed at $357.45, down 3.94% on the day; SpaceX (SPCX) closed at $145.47, down 2.16%, while the Nasdaq-100 was down 1.08%.
+
+Notable quotes and data:
+- Starship Flight 14: reached orbit for the first time, deployed 26 Starlink V3 satellites; flight lasted ~3 hours vs. a planned ~9 hours.
+- Booster: 1 of 33 Raptor engines failed on ascent; relit 31/33 for boost-back, 11/13 for high-thrust landing, down to 3 for splashdown; FTS triggered post-landing.
+- Ship 41 lost on water impact and will not be recovered (Marcus House, cited by host).
+- Estimated Flight 14 cost-per-ton (~$2.1M/ton) already in Falcon 9 territory (~$2M/ton), per third-party analysis cited by host.
+- Musk: Starship could be 2–3 years from hourly flights.
+- Musk: Cybercab to expand commercially to Florida, Nevada and other states soon; California targeted by roughly mid-2027.
+- Texas robotaxi registrations: 546 total vehicles, 126 Cybercabs (23% of fleet); +232 vehicles added in September alone.
+- Reported Optimus production: from a few dozen/week in Q2 to several hundred/week by August, targeting 1,000+/week by year-end and ~20,000/week long-term (per The Information, characterized by host as rumor-category).
+- EU FSD vote delayed from October 6th to no earlier than December; Swedish Transportation Authority recommends a "no" vote unless the speed-offset feature is removed.
+- Roadster unveil rescheduled from this week to October 15th due to weather.
+- TSLA closed $357.45 (-3.94%); SPCX closed $145.47 (-2.16%); Nasdaq-100 down 1.08%.
