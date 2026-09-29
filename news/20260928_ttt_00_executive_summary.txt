@@ -1,0 +1,59 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-09-28)
+Published:   2026-09-28 00:00 UTC
+Summarized:  2026-09-29 05:42:47 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.06880 (21950 in / 2490 out tokens)
+Sources:     11
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+- Starship reaches orbit for first time, deploys 26 Starlink V3 sats
+- Austin Cybercab fleet doubles in a week per Tesla app notification
+- Texas Cybercab registrations hit 126, total robotaxi fleet 546
+- EU delays FSD Supervised vote from Oct 6 to December
+- JPMorgan cuts Q3 delivery estimate to 482,000, TSLA falls ~3.9%
+- Musk: Cybercab commercial in California "probably" mid-2027
+
+## Robotaxi
+- Texas DMV Cybercab registrations jumped from 58 to 126 over the past week (+115%), with total Tesla robotaxi-registered vehicles in Texas topping 546 for the first time; September alone added 232 vehicles. Anecdotal reports suggest only 70–100 are actively operating on a given day.
+- Austin users received an in-app notification that the Cybercab fleet doubled; riders and commentators reported wait times falling from over an hour to roughly six minutes over the weekend, attributed to software/dispatch improvements rather than added headcount alone.
+- Musk told an interviewer (CGTN, per one source) that Cybercab already operates commercially in Texas, Florida, and Nevada, with more states to follow and California "probably by middle of next year" — a timeline one commentator called "a bit of a disappointment" versus earlier expectations.
+- New feature auto-opens the trunk at ride's end if it was opened pre-ride; separately, a rider reported being dropped several blocks from destination with in-app support unable to see or correct the issue or issue a refund — an example of support handling still lagging the fleet ramp.
+
+## Autonomous Driving
+- EU vote on Tesla's FSD Supervised approval delayed from October 6 to December at the earliest, per the published EU agenda; Musk's reaction was a one-word "sigh." Sweden's Transportation Authority has recommended a "no" vote unless Tesla removes the speed-offset feature allowing FSD to exceed posted limits; France is conducting separate testing.
+- A new FSD reactivation feature was demoed automatically re-engaging FSD after a manual brake-tap disengagement, intervening right before a curb strike in a corner — described by the reviewer as an impressive real-world catch.
+
+## Humanoid Bots
+- The Information (flagged by multiple hosts as unconfirmed/rumor-category) reported Optimus's tendon-driven hand — 25 actuators per arm, submillimeter tolerances — is straining automotive-grade assembly equipment, causing rework; some Fremont/Austin workers reportedly resist wearing motion-capture suits, a claim one host doubted given Tesla's shift to camera-only data collection.
+- Same report claims Optimus output rose roughly tenfold from a few dozen/week in Q2 to several hundred/week by August, targeting 1,000+/week by year-end; commercial sales not expected before late 2027, with early V3 units reportedly leased rather than sold.
+- Tesla is reportedly hiring Optimus data-collection operators outside its factories (Utah, Tampa, Arizona), a departure from earlier plans to train only inside gigafactories.
+
+## SpaceX — Starship
+- Starship's Flight 14 achieved SpaceX's first successful orbital insertion, deploying all 26 Starlink V3 satellites, which established two-way radio and laser contact. The flight lasted about 3 hours versus a planned ~9, completing roughly 2 of a planned 6 orbits, cut short out of caution.
+- One Raptor engine on the Super Heavy booster shut down early on ascent; the booster still relit 31 of 33 engines for boost-back and landed softly near Starbase, stepping down to 3 engines for splashdown before its flight termination system triggered. One Raptor Vacuum engine on the ship also shut down early, forcing mission control to briefly plan a suborbital-only fallback before reversing course and executing the orbital burn on the remaining engines; Ship 41 was lost on water impact and won't be recovered.
+- Flight 15 is targeted for October 19; commentators don't expect a catch attempt on that flight given the engine issues, projecting the first same-flight booster-and-ship catch isn't until early 2027. Musk reiterated Starship could be flying hourly within two to three years.
+
+## SpaceX — Starlink
+- The 26 deployed V3 satellites add roughly 1 terabit/sec of capacity each (~26 terabits total), with V3 offering ~10x the upload bandwidth, ~22x uplink, and ~8x throughput versus V2 Mini via new quad-band antennas. Musk has said roughly 1,000 V3 satellites need to be operational before customers see meaningful service improvements, expected around Q2 next year at the earliest.
+- Musk reiterated it's increasingly probable Starlink carries a majority of Earth's IP traffic long-term, contingent on achieving low-cost rapid Starship reusability.
+
+## SpaceX — AI & Compute
+- Musk detailed Colossus scale: Colossus 1 comprises 150,000 H100s, 50,000 H200s, and 30,000 GB200s; Colossus 2 comprises 110,000 GB200s and 440,000 GB300s, with another 220,000 GB300s going live next week, another 220,000 in November, and potentially another 220,000 by late December.
+- Responding to Ark Invest's Brett Winton projecting 40x compute growth by 2030, Musk said "if we are that low, I would be quite disappointed," implying he expects to beat that trajectory.
+
+## Financials
+- Wall Street Q3 delivery estimates span 421,758 (Cantor) to 482,000 (JPMorgan), a ~60,000-unit spread; median ~458,000 versus 497,099 delivered in Q3 2025, implying a year-over-year decline across every estimate. Estimates have trended down for two weeks on weak August US (-26% YoY) and China (-12.4% YoY) sales.
+- Tesla's Q2 2026 consensus (406,024) missed the actual 480,126 delivered by ~74,000 units, underscoring analysts' recent track record of large misses; Kalshi prediction markets landed closer to the actual figure and currently imply low-to-mid 470,000s for Q3.
+- Roadster unveil postponed from this week to October 15 due to forecast severe weather.
+
+## Market & Competition
+- BYD is building factories in Hungary and planning three more in Europe to localize production and sidestep EU tariffs, though a commentator noted BYD's European subsidies (~$300/car) are smaller than comparable US EV subsidies.
+
+Notable quotes and data:
+- Musk on Colossus: 220,000 more GB300s operational "next week," another 220,000 in November, another 220,000 "if we get lucky" by late December.
+- Musk on Cybercab: "probably by middle of next year" commercially in California; already commercial in Texas, Florida, Nevada.
+- Texas Cybercab registrations: 58 → 126 in about a week; total Texas robotaxi fleet 546.
+- TSLA closed $357.45 (-3.94%); SPCX closed $145.47 (-2.16%); Nasdaq-100 -1.08%.
+- EU FSD vote delayed to December; Musk's reaction: "sigh."
