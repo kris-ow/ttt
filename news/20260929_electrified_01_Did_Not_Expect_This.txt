@@ -1,0 +1,557 @@
+Channel:     electrified
+Title:       Did NOT Expect This, Tesla Actually Did It ⚡️
+URL:         https://www.youtube.com/watch?v=ijtSJq4Mk00
+Published:   2026-09-29 23:16 UTC
+Fetched:     2026-09-30 04:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome to Electrified. It's your host,
+Dylan Lumis. I said today would be part
+two, but it looks like it'll be more of
+a part 1.5 because some other things
+came up that I want to make sure we
+clear up. All right, you guys seem to
+really enjoy my pullover functionality
+that I added to Grock. So, right now, I
+have no destination in the maps, but
+let's test out some new stuff that I've
+added. Hey, Grock, using my pullover
+connector, can you uh turn right up
+ahead?
+Let me check what the pullover connector
+can do. I found the turn request tool.
+Done. The car will turn right at Elcampo
+Avenue about 38 ft ahead. Since there's
+no active navigation route right now,
+after the turn, the car will just head
+toward that temporary point.
+&gt;&gt; Hey, Grock, cancel that turn. Actually,
+turn left up ahead.
+&gt;&gt; Canceling the right turn and switching
+to left. Cancel
+the right turn. Now requesting a left
+turn at Bell Place about 112 ft ahead.
+Once the turn is confirmed, your
+previous navigation destination will be
+restored automatically.
+Hey Grock, go ahead and cancel that
+turn.
+&gt;&gt; Done. That left turn is canled and your
+previous navigation is restored. To be
+clear, this is not some sort of native
+early preview of what we're going to get
+with version 15. This is likely Spencer
+using Tesla's navigation API paired with
+a Grock or Grockbot connector to build
+an aftermarket solution, if you will.
+And as he said himself, the setup is
+pretty clunky and not super feasible to
+share out with the world. But for
+anybody that's curious, when Spencer
+gives these commands to Grock, it likely
+connects to the Grock connector, which
+looks up where the car is at the moment
+and then picks a new GPS pin that would
+actually force that maneuver. And then
+Grock would actually send that pin to
+the car through Tesla's navigation API.
+From there, the map would update with
+the new pin. And of course, navigation
+would just route to that new pin. So, in
+this case, it's not like the car is
+getting a new driving instruction and
+then executing it. It's really like it's
+getting a new pin and then navigating to
+it. At least that's what my speculation
+is at this point. But I wanted to share
+because I did think it was a pretty cool
+preview of what we might be getting with
+version 15. And remember talking about
+this very feature on June 17th this
+year, Elon said this functionality will
+be there in about 3 months or so. and
+we're about 3 months and 12 days removed
+from that post. But shout out to Spencer
+for the unofficial preview. As I was
+working on a segment for the Tesla Semi,
+I stumbled across quite an important
+quote. Going back to that largest
+electric semi order in US history, the
+news we recently covered, specifically
+from Zetscale. Well, as it turns out,
+all 2500 trucks will be delivered by
+Tesla within 18 months, according to a
+spokeswoman for Catalyst Mobility, which
+you might remember is the group
+responsible for organizing the request
+for proposals from these truck makers
+alongside fellow nonprofit Smart Freight
+Center. Now, yes, it's true some other
+electric semi providers are available if
+for whatever reason a customer did not
+want to go with a Tesla Semi, but based
+on this quote from someone that is
+directly and intimately involved with
+the process, it sounds like the
+expectation is for a majority, if not
+all, of those 2500 trucks to be Tesla
+Semis. And going back to Tesla's
+official post on the topic, they said
+Tesla was the primary OEM and continued
+with 2500 semis on order, which yes,
+could be interpreted as 2500 Tesla semis
+on order given that it was from the
+Tesla Semi account and they would likely
+not be broadcasting orders for other
+companies. So given this find, I have
+went ahead and updated the Tesla Semi
+tracker with that information. So, if we
+get contradictory information later, no
+problem. I'm happy to make that change.
+But for now, given that change and a few
+other new orders, we're currently at
+4,397
+verified Tesla Semi commitments in the
+last 18 months. And going down to the
+delivery momentum phase, you'll see that
+Zet order for 2500 Tesla Semis and a new
+one from today, HMD, buying another 50.
+And this HMD trucking company currently
+runs about 700 trucks, 99% of which are
+Peterbuilt diesel. And this company is
+currently setting up Chargers in
+Chicago. And so the Tesla Semi really is
+special from a technical perspective.
+things like the powder coating and
+removing the paint shop or things like
+the custom machines that Tesla has in
+the factory where they can bolt all 10
+lug nuts on simultaneously. Or the
+quotes from Dan Priestley where he said
+the semi is as close as Tesla gets to
+raw material in and a finished product
+out. meaning they stamp their own metal,
+they mold their own plastics, they build
+the batteries, the axles, the high
+voltage gear, the cooling modules, and
+the seats all in the building. The semi
+overhead carrier is the highest weight
+capacity conveyance in all of vehicle
+manufacturing. Even simple benefits you
+get like the back of the cab staying
+open so the seat and the dash can go in
+from behind and so workers can actually
+stand upright in the cab. And I've heard
+that works for someone that's around 66.
+And even Priestley said, "As soon as the
+numbers click for these customers,
+they're going to realize the numbers are
+superior to what they've been operating
+today. This is not an emotional
+purchase, meaning the demand in the
+market penetration will be very fast."
+And then Tesla sharing parts across
+different vehicles. The heat pump for
+the Tesla Semi that they're calling the
+Mega Manifold, which looks pretty sweet,
+is actually shared with the Cyber Cab.
+And these designs have different names.
+They call it the Super Manifold V3 in
+the Cyber Cab, but it's the same
+underlying architecture. But as we've
+been saying now for years, maybe most
+importantly, politics will largely be
+out of this equation altogether.
+Ultimately, this is a business tool for
+fleets. So this might finally be
+something that moves fast for Tesla,
+which will be a nice departure from what
+we've been experiencing now for the past
+few months. And yes, all of this
+excitement and all of these competitive
+advantages for the Tesla Semi without
+even mentioning FSD should be coming to
+the truck sometime next year. And as we
+know, that will blow the game wide open.
+Now, plenty of technical questions how
+it's going to work with loaded trailers
+and how much training data Tesla is
+going to need to get that all sorted
+out, but the trend has continued. Pretty
+much every data point we have points to
+the Tesla Semi being a homerun product.
+October is cyber security month. And
+when you hear that word, if you still
+only think about enterprise, sadly, it's
+time to change that. Data from the FTC
+just showed us last year in the US alone
+around $3.5 billion with a B was lost to
+impostor scams. And as I've been saying,
+these numbers are likely to go up with
+the spread of AI. So yes, that's part of
+why I'm so adamant about doing what we
+can to protect ourselves and our
+families. And that's where Delete Me
+comes in, the sponsor of this video. But
+first, real quick, here are three free
+tips for you. Reboot your cell phone
+every week because some malware can only
+run in temporary memory. Always verify
+every single email by looking at the
+domain name to ensure it's legit. And
+please just stop answering calls and
+texts from any unknown or unrecognized
+number. And a bonus, Google yourself at
+least once a month to see what type of
+your personal information is out there.
+And that last part is where Delete Me
+can help. They monitor your presence
+across these data broker sites that sell
+your personal information to whoever
+wants to buy it. So instead, Delete Me
+will remove that information and make
+sure that it stays removed throughout
+the year. In April, Delete Me found my
+information on six sites and then on my
+most recent report, it found me on 54.
+So, that's proof these sites will
+continue to repopulate your information.
+And that data was with Delete Me
+reviewing around 7,200 records. And from
+that, they submitted 64 removals in one
+quarter. And some good news is with
+Delete Me, you can add your spouse, your
+parents, and your kids 16 and up at a
+discount per person. And honestly, for
+me, the peace of mind that we're doing
+what we can to fight back has been worth
+it alone. So, if you want to do the same
+for you and your family, you can head to
+joindeleteme.com/electrified
+to get 20% off using my code electrified
+linked below or by using the QR code on
+the screen. All right, after a quick
+wardrobe change, I was starting to sweat
+in that hoodie. Tesla released a new 8K
+today. In short, Tesla has secured the
+option to access bank credit up to $30
+billion, which could go as high as $34
+billion based on some of the revolvers.
+So, no, it's not Tesla yet borrowing $30
+billion. It's really just securing the
+ability to. And we actually talked about
+this after the Q2 call that Tesla was
+planning to do this. Not because they're
+desperate for cash, but as we know, the
+free cash flow has flipped negative and
+is expected to stay that way for some
+time. This is because the capex spend is
+expected to be $25 billion or higher for
+the next few years. And it's perfect
+timing for Tesla because if you missed
+it, for the first time, Fitch gave Tesla
+a lower tier investment grade rating,
+BBB. And Tesla already had investment
+grade ratings from S&amp;P and Moody's. And
+Fitch literally said the reason the
+rating was not a higher version of
+investment grade is because of the
+expected capex spend. Also in the 8K, we
+learned Tesla closed an older $5 billion
+credit facility that was actually
+written before Moody's had Tesla rated
+as investment grade, meaning the terms
+Tesla got were likely worse. So with
+this 8K, Tesla's basically setting
+itself up to have the ability to borrow
+a lot and to borrow quickly over the
+next 18 months. And as a shareholder, if
+you want to avoid further dilution, then
+Tesla going this route would be what you
+want to see. Now, sure, in an ideal
+world, the auto and energy business
+would throw off enough free cash flow to
+fund these new endeavors, but as we
+know, Tesla's new spending commitments
+are huge. So, we'll cover this more in
+the future when Tesla starts to draw
+money from this. But now, Tesla still
+has north of $40 billion in cash and new
+credit facilities in place, likely with
+good rates for up to $34 billion. Yet
+another thing I wanted to clear up
+today. We got this from the SEC, Tesla
+Inc. response of the Office of Mergers
+and Acquisitions, Division of Corporate
+Finance. Now, people were sending this
+screenshot around implying that this is
+more confirmation about a Tesla and
+SpaceX merger, but that is absolutely
+not the case. You guys know I'm at the
+point we don't need any more breadcrumbs
+to know that the plan is to merge these
+companies. But this document is not
+proof of anything in and of itself.
+Tesla's general counsel, Brandon
+Heheart, did share this link saying
+retail investors should be heard.
+Tesla's proud to create practical tools
+to empower their voice. And as Vlad, the
+CEO of Robin Hood said, the SEC issued
+Tesla a no action letter today, clearing
+the way for a voting program that
+empowers retail investors. When millions
+of people own shares of a public
+company, it should be easier for them to
+vote their shares. We are proud to work
+with the outstanding team at Tesla to
+help make this happen. So, what's going
+on here? Yes, we know retail
+shareholders can already vote. But the
+problem is we usually have very low
+turnouts and I think a lot of us would
+agree the process is not very
+streamlined. It can be a bit cumbersome.
+But now with this new program, retail
+shareholders like you and I can opt in
+to basically set our voting standards.
+For example, if at every vote in the
+future we just want to follow the
+board's recommendations, we can opt into
+that one time and then automatically
+vote that way in the future. And of
+course, we'll still get all of the proxy
+materials. We still get all of the
+information and disclosures. And yes, we
+can override those settings at any time.
+And actually, there will be special
+topics or events that are excluded from
+this opt-in program. So, for bigger
+items like a hypothetical merger, you
+would still need to place a vote. So,
+this is great because based on the data,
+most retail shareholders really do just
+ultimately follow the board. So rather
+than every time we need a vote
+scrambling around trying to get them to
+go through this burdensome process to
+actually place a vote, they can just opt
+in and then those votes will be there
+automatically. Now while this is
+obviously not confirmation of a merger,
+I do think it's interesting timing to
+set this up ahead of when we are
+expecting to vote on this merger with
+SpaceX. But again, it sounds like there
+will be a setting that you can choose
+that will not place an auto vote for
+something like a merger. So again, while
+this program itself does not prove
+anything about a merger, I do think the
+timing is interesting. As we know, Tesla
+would want it to be as easy as possible
+for all retail shareholders to vote in
+favor of the merger. And this process
+should make it easier for retail
+shareholders to opt in to be aligned
+with the board. And so this should get
+some that might otherwise abstain or
+forget or miss it altogether. It should
+get them in the game voting in alignment
+with the board because remember on
+certain topics if you abstain that can
+be treated as a no vote. So for the
+merger chatter make of that what you
+will and just know anywhere you see the
+term IVRvP
+that is referring to this new program
+from Tesla the issuer voluntary retail
+voting program. And again to be very
+clear, participating shareholders will
+be able to override their IV RVP
+standing instruction with respect to any
+particular proposal at no cost. So
+today, Tesla just got permission to
+implement this program, but as of now,
+there's not yet any way to actually
+enroll. I would expect that to come a
+few weeks from now. Today Tesla
+announced supervised FSD has now been
+approved in Croatia. The rollout will
+begin soon. So FSD is now approved in
+eight European countries. And remember,
+we need 15 of 27 member states for the
+vote, which is now set for December,
+hopefully. And these eight European
+countries currently make up about 12.7%
+of the EU population. And remember, we
+need 65% to pass the eventual vote. So
+clearly, these eight countries are not
+going to get us across the finish line
+on their own. but it's progress and of
+course more data. And sometime later
+this week, I should have this website
+live and on the dashboard website and
+it's interactive so you can track the
+progress of each country that has
+passed. You can see the populations and
+percentages and you can easily see the
+progress toward the goals that we need.
+Tesla's FSD counter is now up over 15
+billion miles driven with over 5.8
+billion of those city miles. But more
+importantly to contextualize this
+number, I put this together. So at the
+current pace, Tesla is roughly adding 1
+billion miles to the tracker every
+single month. At the bottom, you can see
+the time for each 1 billion mile
+edition. It was 37 days, then 38 days,
+then 17, then 24, and then 33 from this
+most recent edition. And so far in 2026
+alone, Tesla has added around 7.8 8
+billion miles. And maybe even better,
+Tesla has gone from 10 billion to 15
+billion miles in 149 days. Now, there
+was a time we thought this would be
+correlated with unsupervised progress,
+but for now, I think that has
+transferred over to version 15, more so
+than the supervised FSD number count
+alone. But I can assure you one thing,
+all of this realworld data is certainly
+not hurting the cause. And one more
+stat, since May of this year, Tesla's
+been adding about 34 million miles every
+single day. And that 7.8 billion miles
+added this year is more than 2020
+through 2025 combined. So when we talk
+about hockey stick and exponential
+growth, this is it playing out. Another
+point I really want to keep driving home
+is what's going on with SpaceX because I
+get the sense that not everybody here is
+really on board. And I know many here
+are Tesla first, including myself. But
+if this merger is going to happen, then
+well, we don't really have a choice but
+to understand what's going on with
+SpaceX. And if even the Wall Street
+analysts are starting to wake up to it,
+then I need to do my job and make sure
+everybody here is awake, too. It all
+goes back to what Elon said recently.
+Colossus 1 is 150,000 H100, 50,000 H200,
+and 30,000 GB200. Colossus 2 is 110,000
+GB200 and 440,000 GB300. Another 220,000
+GB300 will be fully operational next
+week and another 220,000 in November. If
+we get lucky, yet another 220,000 GB300
+by late December. The easiest way to
+think about this is just in terms of
+H100 equivalents. So, I went ahead and
+found the best conversion available to
+convert all of these chip types into an
+H100 equivalent. And spoiler alert, but
+if the team gets lucky, that would mean
+SpaceX AAI is going to effectively
+double its compute capacity in quarter
+4. So, what the team effectively has
+online right now at Colossus 1 and 2
+could be doubled in the next 3 months.
+And what do you know? In Anthropic's IPO
+perspectus, they said they have new
+deals with SpaceX AI that could result
+in up to $84.5 billion of spending for
+Nvidia based compute capacity through
+2029. Now, yes, these deals are similar
+to the first deals that are
+cancelellable with a 90-day notice, but
+that initial deal was only up to $45
+billion. But what this means is that
+assuming these deals go to completion,
+SpaceX nearly doubled its revenue from
+Anthropic with the stroke of a pen. And
+now obviously a lot more is going on
+behind the scenes to allow this, but
+that a lot more is the compute buildout.
+As I keep saying, even terrestrially, no
+one is bringing compute online faster
+than SpaceX AI. And further, once
+orbital compute becomes more of a thing,
+no one will be able to do that at scale
+without relying on, you guessed it,
+SpaceX AI. And if intelligence, meaning
+the models, continue to be commoditized,
+which everybody seemingly thinks they
+will, then it'll be the companies that
+can deploy that intelligence with
+physical products that are really going
+to win. And what companies or company is
+making millions of robot cars and will
+make millions of robots that will deploy
+this intelligence? You know the answer.
+So yes, this will take time to play out,
+but there are no companies in my mind
+positioned better for this next chapter
+than SpaceX and Tesla. And sure, you
+could argue Nvidia, but that's a topic
+for another video. And looking at this
+infographic, SpaceX could be going from
+roughly 2.1 million H100 equivalents to
+4.4 4 million again in the next 3
+months. Anthropic has already upped its
+compute lease deal, so I'm sure others
+will as well. We don't know the split
+between how much SpaceX will want for
+internal training for Grock and Grock
+bot, which is growing very quickly. But
+my point is there are not a whole lot of
+business lines right now where you can
+boost your revenue by over $40 billion
+by signing a new agreement. And I know
+it sounds crazy, but this is likely just
+the beginning. Brett from Arc said from
+2025 to 2030, SpaceX could 40x its
+active gawatts of compute. And here they
+have SpaceX just shy of 33 gawatt by
+2030 to which Elon said if we are that
+low, I would be quite disappointed. As a
+reminder, SpaceX is expected to be
+around 2 GW exiting this year. And
+Anthropic just said it and pretty much
+everyone else agrees. Access to compute
+power is becoming the key constraint on
+AI development as future demand for
+advanced AI systems is likely to exceed
+available supply and will be limited
+principally by the availability of
+compute. Sometimes guys, it is really
+not complicated. As of today, it's
+become official the White House signed a
+document renaming artificial
+intelligence to super intelligence. So
+gone are the days of AI. We'll now be
+calling it SI. Now, I say that partially
+tongue-in-cheek. I know plenty of people
+are still going to call it AI, but I'll
+be curious to see what Elon says going
+forward. And Elon did say him and some
+of the other leaders signed a joint
+declaration today regarding super
+intelligence safety. They agreed to a
+number of different things that include
+joint monitoring, board special
+committees, and just generally grading
+each other's homework. Tesla stock
+closed at $352.84,
+down 1.29%, 29% and SpaceX closed at
+$149.24
+up 2.59% all while the NDX was up 21%.
+Don't forget check out delete me linked
+below for anybody that hasn't yet and as
+always thank you guys for supporting the
+channel. Hope you all have a wonderful
+day and a huge thank you to all of my
+Patreon supporters.
