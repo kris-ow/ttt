@@ -1,0 +1,47 @@
+Channel:     electrified
+Title:       Did NOT Expect This, Tesla Actually Did It ⚡️
+Published:   2026-09-29 23:16 UTC
+Summarized:  2026-09-30 05:55:37 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_0122zuTsakmNyTEc6jN21gLd
+Cost:        $0.04097 (15946 in / 5004 out tokens)
+Relevance:   core — the video covers Tesla Semi order momentum, FSD regulatory/mileage progress, Tesla's new credit facility and credit rating, a Tesla retail-voting program, and SpaceX's compute buildout and Anthropic deal, all directly bearing on the Tesla/SpaceX investment thesis.
+Topic:       both
+Categories:  Autonomous Driving, Robotaxi, Electrical Vehicles, Financials, Market & Competition, SpaceX — AI & Compute, SpaceX — Corporate & Valuation
+────────────────────────────────────────────────────────────
+
+This "electrified" episode (hosted by Dillon Loomis) covers a grab-bag of Tesla and SpaceX developments: an unofficial third-party demo of voice-controlled navigation via Grok, new details on Tesla Semi order volume, Tesla's new multi-billion-dollar credit facility and Fitch rating, a new SEC-cleared retail shareholder voting program, FSD's European regulatory progress and mileage milestones, and a deep dive into SpaceX's AI compute buildout (Colossus) and its expanded Anthropic deal.
+
+## Electric Vehicles
+1. **Tesla Semi order book grows, likely dominated by Tesla:** A spokeswoman for Catalyst Mobility (organizer of the RFP process referenced in the largest electric semi order in US history) said all 2,500 trucks from that order (previously reported as tied to Zetscale) will be delivered within 18 months; combined with Tesla's own post calling itself "the primary OEM" with "2500 semis on order," the host infers most or all of these will be Tesla Semis, though he notes it's not fully confirmed. Separately, trucking company HMD (currently ~700 trucks, ~99% Peterbilt diesel) placed an order for 50 more Tesla Semis and is installing Chargers in Chicago. The host's tracker now shows 4,397 verified Tesla Semi commitments over the last 18 months.
+2. **Tesla Semi manufacturing and demand case:** The host cites Tesla's in-house production approach for the Semi — self-stamped metal, molded plastics, in-house batteries/axles/high-voltage gear/cooling/seats — plus design details like powder coating, simultaneous 10-lug-nut bolting, and a shared heat pump/manifold architecture (Mega Manifold in Semi, "Super Manifold V3" in Cybercab). A Tesla executive (referred to by the host as Dan Priestley) is quoted saying the Semi is a non-emotional, ROI-driven fleet purchase that should see fast market penetration once customers run the numbers. FSD for the Semi is expected next year, with technical questions remaining around loaded-trailer performance and training data needs.
+
+## Autonomous Driving
+1. **FSD approved in Croatia; EU vote still pending:** Supervised FSD has been approved in Croatia, bringing the total to eight approved European countries, representing about 12.7% of EU population. The EU-wide vote (requiring 15 of 27 member states and 65% population support) is expected in December.
+2. **FSD mileage milestones:** Tesla's FSD counter has surpassed 15 billion total miles (5.8 billion of them city miles), adding roughly 1 billion miles per month recently (recent per-billion intervals: 37, 38, 17, 24, and 33 days). Tesla has added about 7.8–8 billion miles so far in 2026 alone — more than the combined 2020–2025 total — and went from 10 billion to 15 billion miles in 149 days, with roughly 34 million miles being added daily since May.
+3. **Unofficial navigation voice-control demo:** A third party (referred to by the host as Spencer) demonstrated a Grok-connector-based system letting a driver verbally command turns, which the connector executes by dropping a temporary navigation pin rather than issuing a native driving instruction. The host stresses this is not a native preview of a future FSD version, but an aftermarket build on Tesla's navigation API. He notes Elon Musk said on June 17 this year that similar functionality would arrive in about three months, a timeline now passed by about 12 days.
+
+## Financials
+1. **Tesla secures up to $34B in credit facilities:** Tesla filed an 8-K disclosing access to bank credit of up to $30 billion (potentially $34 billion with revolvers) — not a current draw, but an option to borrow. This follows Tesla's Q2 call comments about pursuing such facilities amid negative free cash flow (expected to persist) driven by capex guided at $25 billion or higher annually for the next few years. Tesla also closed an older $5 billion credit facility that predated its investment-grade rating from Moody's, implying worse terms than it could get today. Tesla holds over $40 billion in cash.
+2. **Fitch issues Tesla a lower-tier investment-grade rating:** Fitch rated Tesla BBB, an investment-grade tier below what S&P and Moody's had already assigned; Fitch attributed the lower rating specifically to Tesla's expected capex spend.
+
+## Market & Competition
+1. **New Tesla retail shareholder voting program (IVRVP):** The SEC issued Tesla a no-action letter clearing an "Issuer Voluntary Retail Voting Program" (IVRVP), letting retail shareholders opt in to automatically vote in line with board recommendations rather than manually voting each time; shareholders can override this at any time and certain major items (e.g., a hypothetical merger) would be excluded from auto-voting and require an active vote. Tesla general counsel Brandon Ehrhart and Robinhood CEO Vlad Tenev both publicly framed it as empowering retail investor turnout. The host stresses this is not confirmation of a Tesla–SpaceX merger vote but finds the timing notable given anticipated merger-related voting. No enrollment mechanism exists yet; the host expects one within a few weeks.
+
+## SpaceX — AI & Compute
+1. **SpaceX AI compute could roughly double in Q4:** Per Elon Musk's account (as relayed by the host), Colossus 1 currently runs 150,000 H100, 50,000 H200, and 30,000 GB200 chips, while Colossus 2 runs 110,000 GB200 and 440,000 GB300, with additional GB300 batches of 220,000 each expected to come online in the following week, in November, and — if timelines hold — by late December. Converting to H100-equivalents, the host estimates SpaceX AI's compute could roughly go from about 2.1 million to about 4.4 million H100-equivalents within about three months if all planned capacity lands on schedule. SpaceX is expected to exit this year around 2 GW of compute capacity.
+2. **Anthropic deal expansion:** Per Anthropic's IPO prospectus (as cited by the host), new deals with SpaceX AI could result in up to $84.5 billion in Nvidia-based compute spending through 2029, up from an initial deal reportedly worth up to $45 billion — both cancellable with 90-day notice. The host characterizes this as SpaceX nearly doubling its revenue from Anthropic.
+3. **Long-term compute growth projections:** A third-party analyst (Brett, from Arc) projected SpaceX could grow its active compute capacity roughly 40x from 2025 to 2030, reaching just under 33 GW by 2030; Elon Musk reportedly responded that he would be "quite disappointed" if that figure were accurate, implying he expects higher.
+4. **"AI" renamed "SI":** The host notes the White House signed a document renaming "artificial intelligence" to "super intelligence" (SI), and that Elon Musk and other industry leaders signed a joint declaration on superintelligence safety involving joint monitoring and board oversight commitments.
+
+Notable quotes and data:
+- "All 2500 trucks will be delivered by Tesla within 18 months" — per a Catalyst Mobility spokeswoman, per the host.
+- Tesla Semi tracker: 4,397 verified commitments over the last 18 months, including a new 50-truck order from HMD.
+- "The semi is as close as Tesla gets to raw material in and a finished product out" — quote attributed to Tesla executive Dan Priestley.
+- Tesla secured access to up to $30–34 billion in bank credit via a new 8-K filing; capex guided at $25B+/year for the next few years.
+- Fitch rated Tesla BBB (investment grade), citing expected capex as the reason it wasn't rated higher.
+- FSD approved in 8 EU countries (~12.7% of EU population); EU-wide vote expected in December, needing 15/27 states and 65% population support.
+- FSD mileage: 15+ billion total miles, 5.8 billion city miles; ~1 billion miles added per month; ~7.8–8 billion miles added in 2026 alone.
+- SpaceX AI compute could roughly double in Q4 (from ~2.1M to ~4.4M H100-equivalents), per the host's analysis of Elon Musk's Colossus figures.
+- Anthropic–SpaceX AI compute deal could reach up to $84.5 billion through 2029, up from an initial ~$45 billion deal, per Anthropic's IPO prospectus.
+- TSLA closed at $352.84 (down 1.29%); SPCX closed at $149.24 (up 2.59%).
