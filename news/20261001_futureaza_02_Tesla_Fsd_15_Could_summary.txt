@@ -1,0 +1,32 @@
+Channel:     futureaza
+Title:       Tesla FSD 15 Could Bring Major AI Upgrade
+Published:   2026-10-01 18:00 UTC
+Summarized:  2026-10-01 21:04:20 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01V3M3NSSLksmDWhyGmk1fmy
+Cost:        $0.02675 (16429 in / 2065 out tokens)
+Relevance:   core — The entire video is a speculative discussion of Tesla's upcoming FSD version 15, its model size, expected features, and implications for the robotaxi/Cybercab rollout.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+This futureaza video is a casual co-host discussion speculating on Tesla's upcoming FSD version 15, built around hints from Ashok Elluswamy that the release will include several new features, including a much larger neural-network model. The hosts focus heavily on parking/valet-style maneuvers (Banish, Smart Summon, parking mode) as the area most likely to see major improvement, while cautioning that Tesla has made similar "this version will solve everything" promises before.
+
+## Autonomous Driving
+1. **FSD v15 teased with a larger model and longer context window:** A Tesla executive (named in the transcript as Ashok Elluswamy) reportedly said version 15 will include seven new things, without detailing what they are. The hosts highlight one specific claim: v15 is expected to use a roughly 10-billion-parameter model, a significant increase over the current version, which they say should give the system a much longer "context window" — i.e., the ability to remember more of what happened recently while driving, rather than effectively losing short-term memory every few seconds as the current version does.
+2. **v14 considered mature, with limited further upside expected:** One host argues FSD version 14 has reached a ceiling and is unlikely to see major new features going forward, citing recurring complaints (e.g., from another commentator referred to as "Chris from Dirty Tesla") about persistent gaps like pothole avoidance that keep appearing as "coming soon."
+3. **Parking and last-100-feet maneuvering flagged as FSD's weakest area:** The hosts argue Tesla never built a dedicated "rideshare driver" mode to specifically capture parking-lot and curb behavior, so despite billions of miles of driving data, this use case was never specially targeted — making last-mile parking one of the hardest remaining problems. They discuss the inherent ambiguity of "correct" parking behavior (varying by driver preference, location, local norms) as a core challenge for any single learned behavior.
+4. **Smart Summon, Banish, and Parking Mode described as separate software stacks Tesla is trying to unify:** One host states these three features were built as distinct systems and Tesla is now working to merge them into a single capability; he argues that in an unattended/driverless future, there should be no separate "Banish" mode — a car should simply be told to go park on its own, robotaxi-style, after dropping off a passenger at the door.
+5. **Hosts urge drivers to stop intervening in non-safety-critical FSD decisions:** One host says many drivers who claim they "can't drive three miles" without disengaging actually have clean cameras and up-to-date software, and the issue is personal driving-style preference rather than software error; he recommends letting FSD proceed unless an intervention is safety-critical, noting that in unfamiliar areas the car often already drives better than he does, while in his home town his own "local knowledge" leads him to intervene more often.
+6. **Speculative hope that v15 raises FSD from "good driver" to "good local driver":** The hosts frame their hope for version 15 as the system gaining enough contextual/local awareness (described informally as "twice as smart") to avoid specific known mistakes — e.g., pulling into handicapped spots — rather than literally requiring a "five times smarter" model just because parameter count increased roughly fivefold.
+
+## Robotaxi
+1. **Early elements of v15 said to already be running in the Cybercab robotaxi fleet in Austin:** One host claims that elements of the upcoming version 15 software are already present in the Cybercab vehicles currently operating in Austin, which the hosts hope to ride during an upcoming visit to an "X Takeover" event.
+2. **Waymo's valet-style parking described as rigid/"on rails" compared to desired Tesla behavior:** A host relays an account (from a friend who saw it in San Francisco) of multiple Waymo vehicles independently parking in the same slightly crooked spot, arguing this suggests a scripted or narrow parking behavior rather than genuine judgment — contrasted with the more flexible, locally-adaptive parking behavior the hosts hope Tesla's FSD v15 will achieve.
+
+Notable quotes and data:
+- A Tesla executive reportedly said FSD version 15 will include seven new features, without detailing them (unconfirmed specifics).
+- FSD v15 is expected to use a model with roughly 10 billion parameters, up significantly from the current version, intended to extend how long the system "remembers" recent driving context.
+- Elements of version 15 are said to already be running in Cybercabs operating in Austin, per one host.
+- "If your cameras are clean and the software version is up to date, then the car can't drive three miles. It's you... It's not that the car drives badly. The thing is, she doesn't drive like you."
+- One host proposes Tesla should brand a truly unsupervised release as a distinct "Neo version" rather than another incremental "15," given past unfulfilled promises of imminent full autonomy.
