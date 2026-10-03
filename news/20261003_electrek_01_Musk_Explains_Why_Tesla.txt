@@ -1,0 +1,71 @@
+Source:      electrek
+Title:       Musk explains why Tesla Robotaxi is not running at night, and lidar is the answer
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/10/03/tesla-robotaxi-pets-night-musk-lidar/
+Published:   2026-10-03 14:36 UTC
+Fetched:     2026-10-03 15:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Elon Musk says the main thing holding back Tesla Robotaxi’s night hours is that the cars have a hard time seeing pets in the dark. His example was “grey kittens on grey tarmac.”
+
+That’s a low-light, low-contrast detection problem, which is the textbook weakness of cameras and the exact thing lidar and radar handle. Musk has spent years calling those sensors a “crutch” and a “fool’s errand.”
+
+## Robotaxi gets one more hour, and Musk explains why it’s only one
+
+Late Friday night, Tesla’s Robotaxi account announced that the Austin service is “now available until 11pm.” Until now, it shut down at 10 PM.
+
+Musk reposted the announcement and explained what’s keeping the cars off the road later than that:
+
+ 
+ 
+ 
+
+> 
+“The main thing we’re trying to solve is making sure that we don’t run over pets when they’re hard to see at night. Literally trying to avoid grey kittens on grey tarmac in the dark.”
+
+Some context on that extra hour. When Tesla launched Robotaxi in Austin in June 2025, the app took ride requests from 6 AM to midnight. Fifteen months later, the service closes an hour earlier than it did on day one.
+
+And it’s a small service. Tesla has barely scaled since launch, even with the addition of the Cybercabs last month.
+
+## Cameras need light and contrast. Lidar and radar don’t
+
+A camera is a passive sensor. It works with whatever light bounces off an object, and it picks that object out by how much it stands apart from the background. A grey animal on grey pavement at night gives it very little of either.
+
+Lidar is an active sensor. It fires its own laser pulses and times how long they take to come back, which gives the car a distance and a 3D shape for whatever is sitting on the road. It works the same at midnight as it does at noon, and it doesn’t need the kitten to be a different color than the asphalt. It needs the kitten to stick up from the road, and kittens, being 3D objects, tend to do that.
+
+Radar does a similar job with radio waves and adds speed. It’s weaker on something that small, but it keeps working in the fog, dust and glare that blind cameras.
+
+Every company running driverless cars at scale uses all three. Waymo’s sixth-generation system has 13 cameras, 4 lidars and 6 radars. In August, Waymo co-CEO Dmitri Dolgov showed kids chasing dogs across a pitch-black street, where the camera feed was close to useless and the lidar view was clean. Waymo’s roughly 4,000 driverless vehicles run 24 hours a day.
+
+Tesla went the other way. It removed radar from its cars in May 2021, dropped ultrasonic sensors in 2022, and has never shipped a car with lidar.
+
+## Musk’s record on lidar and night vision
+
+Musk in April 2019: “Lidar is a fool’s errand. Anyone relying on lidar is doomed.”
+
+In February 2022, he called lidar “a seductive local maximum” and said a general solution to self-driving “necessarily will require silicon neural nets & cameras.”
+
+In August 2025, he went further and claimed that “lidar and radar reduce safety due to sensor contention.”
+
+And in May of this year, he posted a “photon count reconstruction” image from Tesla’s cameras and wrote: “This is why Tesla FSD can see so well at night or through extreme glare.”
+
+That was five months ago, and now seeing at night is “the main thing” Tesla is trying to solve.
+
+He knew the trade-off all along. When Tesla was pulling radar in 2021, Musk told Electrek in direct messages that “vision with high-res radar would be better than pure vision.” And NHTSA is currently investigating 3.2 million Teslas over FSD crashes in low-visibility conditions, a probe in which it demanded an internal Tesla document titled “Radar Saves Us.”
+
+## Electrek’s Take
+
+Musk wrote that post like Tesla just found a new problem. It didn’t. Cameras losing dark, low-contrast objects at night is the oldest limitation in the book, and it’s why everyone else put lidar and radar on their cars. Ten years ago this month, Tesla said every car it built had the hardware for full self-driving. Its CEO is figuring out in October 2026 that grey things are hard to see in the dark.
+
+And Musk picked the cutest example available. The same physics applies to a tire tread on the highway or a kid in a black hoodie. Those are bigger and easier to spot, but nobody should want the safety margin to be “bigger than a kitten.”
+
+To be fair, no sensor suite gets this to zero. A Waymo ran over a bodega cat in San Francisco last October, and Waymo said it darted under the car as it pulled away. But Tesla is the only one whose CEO says the cars have trouble seeing the animal in the first place.
+
+The cost excuse is gone too. Rivian said this week that lidar now costs it “a few hundred dollars” per vehicle.
+
+What bothers us most is the part Musk skipped. The sun sets a little after 7 PM in Austin right now, so Tesla’s Robotaxis are already driving in the dark every night with a problem he says isn’t solved. And customer Teslas run “Full Self-Driving” on the same cameras at any hour, with no curfew.
+
+Tesla is now one update away from getting back to its launch-day midnight closing time. Waymo, with lidar and radar on every car, never closes. How many more one-hour updates before Tesla admits there’s a sensor for that?
+
+Charge your electric vehicle at home using rooftop solar panels. Find a reliable and competitively priced solar installer near you on EnergySage, for free. They have pre-vetted installers competing for your business, ensuring high-quality solutions and 20-30% savings. It’s free, with no sales calls until you choose an installer. Compare personalized solar quotes online and receive guidance from unbiased Energy Advisers. Get started here.
