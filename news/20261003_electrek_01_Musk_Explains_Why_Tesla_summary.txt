@@ -1,0 +1,37 @@
+Channel:     electrek
+Title:       Musk explains why Tesla Robotaxi is not running at night, and lidar is the answer
+Published:   2026-10-03 14:36 UTC
+Summarized:  2026-10-03 15:06:43 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01Wyu854NMprT2QhbFLZvBky
+Cost:        $0.01918 (6988 in / 2438 out tokens)
+Relevance:   core — The article is substantively about Tesla Robotaxi's operating hours, sensor strategy, and the safety/regulatory implications for Tesla's autonomous driving thesis.
+Topic:       tesla
+Categories:  Robotaxi, Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports that Tesla extended its Austin Robotaxi service from a 10 PM to an 11 PM close, and that Elon Musk attributed the lingering nighttime limitation to difficulty detecting low-contrast objects like "grey kittens on grey tarmac" in the dark — a camera-only sensor weakness that lidar and radar are designed to solve.
+
+## Robotaxi
+1. **Austin service hours extended, still short of launch-day coverage:** Tesla's Robotaxi account announced Austin rides are now available until 11 PM, up from a prior 10 PM cutoff; at launch in June 2025 the service ran from 6 AM to midnight, so hours remain reduced 15 months later. The article notes Tesla's fleet has barely scaled since launch even with the addition of Cybercabs last month.
+
+2. **Musk's stated reason — nighttime pet detection:** Musk said the "main thing" Tesla is trying to solve before extending hours further is avoiding running over hard-to-see pets at night, specifically citing grey kittens on grey pavement as a low-light, low-contrast detection challenge for camera-based vision.
+
+## Autonomous Driving
+1. **Camera vs. lidar/radar tradeoffs:** The article explains that cameras are passive sensors reliant on light and contrast, making dark, low-contrast objects hard to detect, while lidar (active laser-based distance/shape sensing) and radar (radio-wave based, adds speed detection, works in fog/dust/glare) do not depend on visual contrast. It states Waymo's sixth-generation system uses 13 cameras, 4 lidars, and 6 radars, and operates roughly 4,000 driverless vehicles 24 hours a day; Waymo co-CEO Dmitri Dolgov reportedly showed footage in August of children and dogs on a pitch-black street where camera feed was "close to useless" but lidar view remained clear.
+
+2. **Tesla's sensor history and Musk's past statements:** Tesla removed radar from its cars in May 2021, dropped ultrasonic sensors in 2022, and has never shipped a car with lidar. The article cites several past Musk statements dismissing lidar: calling it "a fool's errand" (April 2019), "a seductive local maximum" requiring vision/neural-net solutions (February 2022), and claiming lidar/radar "reduce safety due to sensor contention" (August 2025). In May 2026, Musk posted a "photon count reconstruction" camera image claiming it explains why Tesla FSD "can see so well at night or through extreme glare" — a claim the article contrasts with his current statement about nighttime detection being unsolved.
+
+3. **NHTSA investigation and internal document:** The article states NHTSA is investigating 3.2 million Teslas over FSD crashes in low-visibility conditions, and that the agency demanded an internal Tesla document titled "Radar Saves Us" as part of that probe. It also cites a direct message Musk reportedly sent Electrek in 2021 stating that "vision with high-res radar would be better than pure vision" at the time radar was being removed.
+
+## Editorial Stance
+Electrek's editorial section argues Musk is treating a well-known camera limitation as a newly discovered problem, criticizes him for citing the "cutest example" (kittens) rather than acknowledging the same risk applies to other hard-to-see objects like tire treads or people in dark clothing, and argues the cost rationale for skipping lidar is no longer valid, citing Rivian's statement this week that lidar now costs "a few hundred dollars" per vehicle. The author contrasts Tesla's curfewed, still-dark-hours robotaxi service with Waymo's 24-hour lidar/radar-equipped operation, and notes customer Teslas run FSD on the same camera-only sensors at any hour with no curfew. The author also mentions a Waymo vehicle struck a cat in San Francisco last October, noting no sensor suite eliminates such incidents entirely, but argues Tesla is unique in having its CEO publicly state the cars struggle to see the animal at all.
+
+Notable quotes and data:
+- Musk: "The main thing we're trying to solve is making sure that we don't run over pets when they're hard to see at night. Literally trying to avoid grey kittens on grey tarmac in the dark."
+- Musk (April 2019): "Lidar is a fool's errand. Anyone relying on lidar is doomed."
+- Musk (August 2025): lidar and radar "reduce safety due to sensor contention."
+- Musk (May 2026): "This is why Tesla FSD can see so well at night or through extreme glare."
+- Waymo sixth-gen sensor suite: 13 cameras, 4 lidars, 6 radars; ~4,000 driverless vehicles operating 24 hours.
+- NHTSA investigating 3.2 million Teslas over FSD low-visibility crashes; demanded internal document "Radar Saves Us."
+- Rivian: lidar now costs "a few hundred dollars" per vehicle (per Electrek's editorial reference).
