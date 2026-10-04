@@ -1,0 +1,23 @@
+Channel:     farzad-fm
+Title:       How AI Learned To Think
+Published:   2026-10-04 00:00 UTC
+Summarized:  2026-10-04 02:03:31 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01XBdMP94afYFnZephcN8c89
+Cost:        $0.01651 (12533 in / 796 out tokens)
+Relevance:   off-topic — This is a general explainer about AI training methods (reinforcement learning, verifiable rewards) using math, coding, and wedding-toast analogies, with no mention of Tesla, SpaceX, or any related business implication.
+Topic:       none
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+This video is a general-audience explainer on how large language models learn, contrasting imitation-based training (copying human-written text) with reinforcement learning using verifiable rewards (practicing against an automatic checker). It argues AI improves fastest on tasks with a cheap, automatic checker (math, code, chip design, paperwork) and improves slowly on "fuzzy" tasks judged only by people (like a wedding toast), producing a "jagged" skill frontier. It closes with an investment framing — asking which companies "own the checker" for valuable tasks — but never references Tesla, SpaceX, or any company in their orbit.
+
+No categories from the Tesla/SpaceX taxonomy are substantively covered; the content is about AI/ML training methodology in the abstract (OpenAI's o1 model, DeepMind's AlphaProof, a model called R1/R10, and the Allen Institute for AI's "RLVR" framework are discussed, none of which are Tesla- or SpaceX-related).
+
+Notable quotes and data:
+- OpenAI shipped "01 preview" in September and "01" in December (years for both tied to 2024 per the transcript).
+- A model called R10, trained only against a rule-based checker, raised its first-try score on the AIME math contest from 15.6% to 77.9%.
+- The training method behind the released R1 model is called GRPO (Group Relative Policy Optimization), where multiple answers to the same problem are compared against the group average.
+- DeepMind's AlphaProof produced Math Olympiad proofs at silver-medal level, written in a formal language that mechanically verifies each step.
+- OpenAI said its AI produced a computer-checked proof that the Navier–Stokes (fluid) equations can break down under one specially-designed external push; experts say it "looks technically correct" but the Clay Institute has not awarded a prize and a harder version of the question remains open.
+- The video's own research, script, voice clone, animation and edit were made by AI, per the creator.
