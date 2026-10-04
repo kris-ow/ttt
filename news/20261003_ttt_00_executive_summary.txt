@@ -1,0 +1,62 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-10-03)
+Published:   2026-10-03 00:00 UTC
+Summarized:  2026-10-04 05:50:53 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05049 (11297 in / 2790 out tokens)
+Sources:     5
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla Q3 deliveries: 486,532, beat estimates, best-ever without EV credit
+- Energy storage: 13.7 GWh in Q3, near-record, TTM hits 50.2 GWh
+- Texas Cybercab registrations surge to 169, up 43 in 18 hours
+- Starship reaches orbit, deploys 26 Starlink V3 satellites
+- Musk: Robotaxi nighttime limits tied to camera detection of pets in dark
+- Starlink Mini price cut to $149, a 75% drop from launch price
+
+## Electric Vehicles
+- Tesla delivered 486,532 vehicles in Q3 (vs. Wall Street estimates of 446,000–462,000) on production of 464,391 — the best delivery quarter ever without the federal EV credit, and third-highest overall. Tesla crossed 10 million cumulative vehicles produced/delivered sometime during the quarter, unpublicized by the company.
+- Tesla needs 311,000 Q4 deliveries to beat last year's total and 483,000 to set an all-time annual record; one poster asks whether Tesla can top 500,000 in a single quarter for the first time in Q4.
+- Days-of-supply fell to ~11 days; accounting for transport time, Basher (Brilliant Advice) estimates true underlying inventory is effectively negative, suggesting Tesla may be losing time-sensitive customers.
+- Model Y Premium AWD 0-60 improved to 4.3s (from 4.6s). All US/Puerto Rico/Mexico Model 3s now ship with a 16-inch center screen; Model 3 Premium AWD 0-60 improved to 3.8s, and Performance trim gained an all-black headliner, larger screen, range up to 316 miles (+2.3%), and ~3% more horsepower (528hp).
+- Competitors: Ford sold 6,047 EVs in Q3, down 80.2% YoY (F-150 Lightning discontinued). Rivian delivered 19,248 vehicles, up 46% YoY, beating estimates and reaffirming full-year guidance of 65,000–70,000.
+
+## Robotaxi
+- Texas DMV data shows 578 Robotaxi vehicles registered (420 Model Y, 158 Cybercab) per Basher's own tracking; a separate tracker cited by Sawyer Merritt shows Cybercab registrations climbing from 158 to 169 within an 18-hour window — registrations, not confirmed active deployments.
+- Ashok Elluswamy said cumulative paid autonomous miles reached roughly one million at the Cybercab launch event, up from 380,000 cited on the prior earnings call — Basher calculates this implies ~17% week-over-week growth, well above the ~10% assumed previously. He models Tesla would need roughly 1,400–1,500 vehicles by late November and ~3,000 by year-end to sustain that pace, explicitly framed as speculative ahead of the Q3 earnings call expected October 21.
+- Tesla extended Austin Robotaxi service to an 11 PM close (from 10 PM), still short of the 6 AM–midnight hours offered at June 2025 launch; Electrek notes the fleet has barely scaled since then even after adding Cybercabs last month.
+- Musk said the main unresolved issue before extending hours further is avoiding hitting hard-to-see pets at night, specifically citing "grey kittens on grey tarmac" as a low-contrast detection challenge for Tesla's camera-only system.
+
+## Autonomous Driving
+- Electrek contrasts Tesla's camera-only approach with lidar/radar: Waymo's 6th-gen suite (13 cameras, 4 lidar, 6 radar) runs ~4,000 driverless vehicles 24 hours a day, while Tesla has never shipped a car with lidar and removed radar in 2021 and ultrasonics in 2022.
+- NHTSA is investigating 3.2 million Teslas over FSD crashes in low-visibility conditions and demanded an internal Tesla document titled "Radar Saves Us," per Electrek.
+- Electrek's editorial argues Musk is treating a known camera limitation as newly discovered, notes Rivian said lidar now costs "a few hundred dollars" per vehicle, and points out customer Teslas run FSD on the same sensors at any hour with no curfew.
+- FSD is cited by multiple hosts as an accelerating demand driver, with social-media testimonials fueling non-linear interest independent of EV-vs-gas preference (Brilliant Advice/brighterwithherbert).
+
+## Energy
+- Tesla deployed 13.7 GWh of storage in Q3 — its second- or third-best quarter depending on source — with trailing-12-month deployment hitting a record 50.2 GWh and cumulative deployment surpassing 145 GWh.
+- Annual storage manufacturing capacity stands at ~66 GWh; a new Megapack facility near Houston is expected to add ~50 GWh/year once ramped, per Basher.
+- Supercharger network delivered 2.4 TWh of energy in Q3, a notable step-up attributed to fleet growth and rising non-Tesla EV usage.
+
+## SpaceX — Starship
+- Starship completed a successful orbital insertion burn, described as a milestone years in the making, ahead of opening its payload bay to deploy satellites.
+
+## SpaceX — Starlink
+- 26 Starlink V3 satellites were carried aboard the orbital Starship for deployment following payload door opening — described by one source as the first operational Starlink V3 satellites deployed from Starship.
+- SpaceX cut the US price of its Starlink Mini Kit to $149 ($12.41/month over 12 months), a 25% drop from $199 and 75% below the original $599 price; Roam plans run $55/month (100GB), $80/month (300GB), and an unlimited tier.
+
+## SpaceX — AI & Compute
+- At a Washington DC event, Musk said each 1% increase in US power usage (~5 GW) could drive roughly a 1% GDP increase, with 10 GW of added power yielding ~2% GDP growth; Jensen Huang reportedly corroborated, estimating each added gigawatt of AI power generates $50–60 billion in annual economic output.
+- A third-party projection cited by Basher has SpaceX compute growing from ~1.1 GW (end of 2025) to ~2.1 GW this year and ~67 GW by 2031 — roughly 40x growth; Musk reportedly said he'd be disappointed if actual figures came in this low. Applying the GDP framework, Basher estimates this buildout alone could add ~12% to GDP by 2031 — his own extrapolation, not a company-confirmed figure.
+- Terafab is reportedly planning two chip families — one for Earth-based vehicles and Optimus, one for orbital compute's radiation/power/heat constraints — with a proposed co-design loop linking model teams (citing Grok 4.6 and Tesla's FSD model), chip design, data-center power/cooling, and satellite solar/radiator teams.
+
+Notable quotes and data:
+- Q3 deliveries: 486,532 (vs. ~446,000–462,000 estimates); production 464,391.
+- Energy storage: 13.7 GWh in Q3; 50.2 GWh TTM (record); 145+ GWh cumulative.
+- Cybercab registrations in Texas: 158 → 169 within 18 hours (Sawyer Merritt); 578 total Robotaxi vehicles registered per Basher's tracking.
+- Paid autonomous miles: 380,000 (prior earnings call) → ~1 million (Cybercab launch event), implying ~17% week-over-week growth per Basher.
+- Musk: "The main thing we're trying to solve is making sure that we don't run over pets when they're hard to see at night. Literally trying to avoid grey kittens on grey tarmac in the dark."
+- NHTSA investigating 3.2 million Teslas over FSD low-visibility crashes; demanded internal document "Radar Saves Us."
+- Starlink Mini Kit: $149 ($12.41/month over 12 months), down from $199, 75% below original $599 price.
