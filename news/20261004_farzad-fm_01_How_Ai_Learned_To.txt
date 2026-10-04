@@ -1,0 +1,291 @@
+Channel:     farzad-fm
+Title:       How AI Learned To Think
+URL:         https://www.youtube.com/watch?v=diYHrGuvbu4
+Published:   2026-10-04 00:00 UTC
+Fetched:     2026-10-04 02:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Picture a wedding. The best man taps a
+glass with a fork and starts to read a
+toast an AI wrote. It's polite. Nobody
+laughs. Nobody cries. The bride smiles
+the way you smile at a nice email. Now,
+the strange part. In 2024, an AI wrote
+math proofs a computer checked line by
+line at silver medal level for the
+International Math Olympiad. A kid at
+that wedding can tell the toast was
+flat. No kid can check that proof.
+So, why is AI brilliant at proofs, flat
+at toasts? By the end, you'll know.
+Here's your job. Make a guess before I
+tell you. Is math just easier for a
+computer, or does a toast need a heart?
+Hold on to that guess. The answer is one
+simple idea. It explains why AI is
+superhuman in some places and clumsy in
+others. It also tells you which work and
+which companies feel it first. So start
+with how these machines learn to write
+at all. Now look at the keyboard on your
+phone. Type see you and it offers soon.
+It gets the next word from how other
+people type. A language model is that
+same trick grown enormous. It reads a
+huge pile of human writing and plays one
+game. Guess the next word. It guesses
+then compares its guess with the word a
+person actually wrote. Then it nudges
+itself a little closer over and over
+across more text than any person will
+ever read. That's what training on text
+means. The model learns to sound like
+the people who wrote the text. The name
+for this is imitation. Feed it enough
+recipes and it writes a recipe. Feed it
+enough math homework and it writes math
+homework. Mistakes included. Under
+imitation, math and toasts are the same
+job. Copy how people write proofs. copy
+how people write toasts. To a copy
+machine, both are just text. Imitation,
+plus some polish from human ratings,
+gave us the chat bots you already know.
+They write a fluent email in seconds.
+For everyday questions, that's enough.
+But imitation has a ceiling. Copy the
+best student in class perfectly, and
+you're exactly as good as that student,
+never better. And people write wrong
+answers online, too. The copy inherits
+all of it. There's a sneakier problem.
+Finished answers get published. The
+scratch paper with the wrong turns and
+the fixes mostly gets thrown away. The
+model learns what good answers look
+like. It copies the look of thinking.
+Ask it a hard problem nobody has worked
+through in writing and it can hand you
+something shaped like a proof. Neat and
+wrong.
+Imitation teaches the look. It does not
+teach the work. So to get past the best
+answer anyone ever wrote, the model has
+to stop copying and start practicing.
+Now the new trick, stop showing the
+model answers. Hand it a problem, let it
+try on its own, and tell it only one
+thing, right or wrong. Here's the
+picture to keep for the rest of this
+video. Math has an answer key. Nobody
+scores a wedding toast.
+Spend a summer alone with a stack of
+math problems. You check each one
+against the key. Wrong answers sting.
+Right answers stick. By August, you're
+better. And nobody had to teach you a
+thing. Spend the next summer writing
+toasts. You finish one, read it, and
+shrug. Was it good? Nobody scores a
+wedding toast, so all that practice
+barely moves you. Labs built the machine
+version of that summer. The main part is
+an automatic checker, a small program
+that marks each answer right or wrong in
+a blink. For a math problem, the checker
+compares the final number with the
+answer key. For code, it runs the
+program and sees if the tests pass. Then
+comes the loop. Attempt, check,
+reinforce. The model attempts a problem.
+The checker marks it. Whatever led to a
+right answer gets reinforced. Reinforced
+just means nudged. Next time, the model
+leans a little more toward that path.
+Run the loop day and night, and small
+nudges become skill. That loop has a
+name. Reinforcement learning means
+learning from a score instead of from
+examples. The score has a name, too. A
+verifiable reward is a score a machine
+can check by itself with no person in
+the room. Did the number match? Did the
+code run? Researchers at the Allen
+Institute for AI coined a name for the
+whole recipe. RLVR,
+reinforcement learning with verifiable
+rewards. But look at which attempts win.
+Think about which attempts win. A model
+that blurts out the final number is
+guessing. A model that writes each step
+can catch a slip before it ruins the
+answer. So longer, careful attempts
+score more often, and the checker
+rewards them. Over time, the model
+starts writing its own scratch paper. It
+checks its own steps. It backs up when
+something looks off and tries another
+route. That's what people mean when they
+say a model thinks. OpenAI shipped 01
+preview in September 2024, then 01 by
+December 2024. It works before it
+answers. Then came a cleaner test. A
+model called R10 practiced against
+nothing but a rule-based checker. Nobody
+handtaught it to reason. It was tested
+on the AIM, a math contest. Its first
+try score rose from 15.6%
+to 77.9%.
+from mostly wrong to mostly right by
+practice against an answer key. One note
+that's R10 only. The released R1 got
+thousands of curated example solutions
+first. The training method behind it is
+called GRPO. The model answers the same
+problem several times and the answers
+that beat the group's average get
+reinforced. It races itself. That breaks
+the ceiling. It doesn't touch the toast.
+So, where does all this practice pay
+off? And where does it stall? Now, check
+your guess. Was math just easier? Did
+the toast need a heart? Here's the
+answer. AI thinks best where answers can
+be checked by a machine. Math has an
+answer key. So, a machine can practice
+math all night and every attempt gets
+scored. Nobody scores a wedding toast.
+So, practice on toasts moves the machine
+slowly because every score needs a
+person. It stays polite.
+So your first guess is halfright. Math
+is tidy for a machine. The bigger reason
+is the answer key. The second guess
+misses two. The toast loses for a planer
+reason. A kid can judge one toast just
+fine. But no kid can judge toasts all
+night without getting bored. Two kids
+will disagree about the same toast. A
+checker never gets bored and never
+changes its mind. Here's the cleanest
+checker of all. A proof can be written
+in a computer language that checks every
+step. If one step is wrong, the proof
+does not compile. The computer rejects
+it. Remember the Olympiad proofs from
+the start? Deep Mind's alpha proof wrote
+most of those proofs in a language like
+that, and every step pass the computer's
+check. In September, OpenAI said its AI
+produced a computer checked proof that
+the famous fluid equations can break
+down. only if you allow one
+speciallyesed push from outside. Experts
+say it looks technically correct, but
+the Clay Institute hasn't awarded the
+prize, and the harder version of the
+question is still open. Both proofs
+share one thing. In math, there's a
+referee that can't be fooled. A proof
+either compiles or it doesn't. A wedding
+toast has no compiler. So, the machine
+shines wherever a checker keeps score
+and improves slowly where nobody does.
+Now, here's the part I want you to sit
+with. The research for this video, the
+script, my voice cloned, the animation,
+and the edit were all made by AI. The
+idea and the analogy are mine. You've
+been listening to it this whole time.
+And a video like this has no answer key.
+The only score it gets is yours. Right
+now, you're the kid at the wedding. AI
+does fuzzy work, too. The kind with no
+answer key. It just improves there more
+slowly. So that gap has a shape. But
+that shape matters for your job and your
+money. Picture AI's skills as a mountain
+range. Tall peaks where a checker
+exists. Low ground right beside them
+where none does. The word for that shape
+is jagged. Jagged means brilliant at one
+task and clumsy at the task right beside
+it. AI is jagged by design. The checkers
+decide where the peaks go. Here's my bet
+on where the next peaks rise. Anything
+with a cheap automatic checker improves
+fastest. Cheap matters. A checker that
+runs in a blink lets the model practice
+all night. Software is the obvious one.
+Code passes its tests or fails them. And
+a computer can run those tests all day.
+Math written for a computer to check
+where a proof compiles or it doesn't.
+Chip design where a simulator shows
+whether a circuit works before anyone
+builds it. Paperwork checked against
+written rules where a form passes or
+gets flagged. Moving data between
+systems where every row lands in the
+right place or it doesn't. Fuzzy work
+improves slowly. Taste a hard talk with
+your teenager. Slowly is not never.
+There the score comes from people. One
+judgment at a time. Now think about
+people and jobs. Picture a tireless
+student who practices all night against
+a checker that never gets bored. Which
+work does that student reach first? The
+tireless student reaches the work that's
+easiest to grade first. Easy to grade
+beats easy to do. A junior coder's work
+gets graded by tests every hour. A
+wedding planner's work gets graded once
+by the mother of the bride. Guess which
+one meets the tireless student first.
+Now, the money side in plain words. The
+frontier of AI follows the frontier of
+what can be checked. In a gold rush, the
+people selling shovels get paid no
+matter who strikes gold. Investors call
+that picks and shovels. Here, the
+shovels are the checkers and the
+practice environments. A practice
+environment is a fake world where a
+model trains. Think of a fake codebase
+or a fake inbox with a checker built in.
+The better the fake world, the better
+the practice. For any company or job
+you're sizing up, ask two questions. Is
+there a checker? And who owns it? Here's
+the question I'd ask about any AI
+company. What do they own that no one
+else can get? A company sitting on years
+of graded work, like approved insurance
+claims, owns an answer key nobody else
+has. Whoever owns the checker decides
+who gets to practice. That tells you
+where the next peaks rise. Now, take one
+last look at the wedding. Now the best
+man folds the paper and sits down to
+polite applause. The cake rolls out. You
+can see that toast differently now. It
+was flat for the same reason the proofs
+got great. One kind of practice got
+scored, the other didn't. That flat
+toast is a map. It marks the exact spot
+where the checkers stop. On one side sit
+proofs and passing tests, and the
+tireless student already lives there.
+Every new checker someone builds moves
+that border. On the other side sit the
+toasts there. The score still comes from
+people like that kid at the wedding. One
+judgment at a time. You walked in
+wondering if that toast needed a heart.
+Now you know what it was missing. Thank
+you so much for watching. I hope this
+was informative and helpful and we'll
+see you on the next one. Take it easy,
+everybody. Bye-bye.
