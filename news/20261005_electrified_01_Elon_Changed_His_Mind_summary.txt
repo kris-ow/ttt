@@ -1,0 +1,49 @@
+Channel:     electrified
+Title:       Elon Changed His Mind, AGAIN ⚡️
+Published:   2026-10-05 23:38 UTC
+Summarized:  2026-10-06 06:05:07 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01UAfGRkqErAf3SuPwYL2Z7o
+Cost:        $0.04121 (16712 in / 4900 out tokens)
+Relevance:   core — The video covers substantive Tesla investment topics including AI5/AI6 chip memory specs and cost implications for Optimus, Q3 delivery/financial results, FSD adoption anecdotes, Robotaxi fleet data, and Energy segment output.
+Topic:       tesla
+Categories:  Humanoid Bots, Robotaxi, Autonomous Driving, Electric Vehicles, Financials, Energy, Market & Competition
+────────────────────────────────────────────────────────────
+
+This Electrified episode from host Dillon Loomis covers Tesla's reversal on AI5/AI6 chip memory specs and the resulting cost/volume implications for Optimus, Tesla's Q3 2026 delivery and energy results, growing anecdotal evidence of an FSD-driven demand "awakening," and a roundup of Robotaxi fleet, pricing, and edge-case developments in Austin and Dallas.
+
+## Humanoid Bots
+1. **AI5/AI6 memory spec increased, but still a net cost saving vs. original plan:** Elon Musk said Tesla "nudged AI5 up" to 96 GB of LP5 memory so Tesla isn't the only company using the minimum RAM version of LP5 (which would raise per-chip costs due to lack of mask/packaging amortization across other customers). This is still down from an earlier planned 144 GB (a 48 GB per-chip reduction), and AI6 was cut from a planned 216 GB of LP6 to 144 GB (a 72 GB reduction). Using current public LP5 die pricing (~$13/GB raw), the host estimates the AI5 change could save Tesla roughly $1,200–$1,500 per chip once packaging/certification costs are factored in (using a rough 2x-the-die-price estimate), though LP6 pricing isn't available yet to run similar numbers.
+2. **Volume impact framed as more significant than per-unit cost savings:** The host calculates that a fixed hypothetical memory allotment would yield about 50% more Optimus units under the reduced 96 GB spec versus the original 144 GB design (10.4 vs. 6.9 units per 1,000 GB allotment), arguing this volume unlock matters more than the dollar savings given current memory supply constraints, which the host expects to push prices up in the near term.
+3. **AI4.1 ("AI 4 Plus") confirmed as the next chip for customer vehicles, not AI5:** Per Elon Musk, AI4.1 will raise per-SoC RAM from 16 GB to 32 GB (implying ~64 GB on a two-SoC board) and deliver roughly a 10% increase in compute and memory bandwidth. The host notes Musk said in April that AI5 is designed for Optimus and Tesla's supercomputer clusters, and separately in March said AI5 is "primarily optimized" for AI edge compute in Optimus and robotaxi — which the host stresses does not necessarily mean customer-owned vehicles. With an estimated 5+ million AI4 vehicles already on the road, the host argues Tesla is highly incentivized to get unsupervised FSD working on AI4 rather than relying on retrofits.
+
+## Financials
+1. **Q3 2026 deliveries beat consensus:** Tesla delivered 486,532 vehicles in Q3, beating company consensus by over 24,500 units (a ~5% beat) — the company's third-best quarter ever and its best quarter without the EV tax credit in effect. The host believes Tesla has a real chance at 500,000 units in Q4 given FSD momentum and high gas prices, and notes only about 311,000 Q4 deliveries are needed for Tesla's first positive annual delivery growth year since 2023.
+2. **Production/delivery gap signals very low inventory:** Tesla delivered 22,100 more vehicles than it produced in Q3, which the host says points to critically low dealer/showroom inventory; he cites anecdotal conversations with Tesla employees confirming thin on-lot stock, with official days-of-supply figures expected at the earnings call.
+
+## Energy
+1. **Tesla Energy posts second-best quarter, but factory ramp still limiting output:** Tesla Energy deployed 13.7 GWh in Q3, the second-best quarter on record. However, as of Q2, Tesla's installed energy production capacity across all factories (including Powerwall) was only 66 GWh/year, implying Megapack production in Shanghai is still likely below 20 GWh/year. At full installed capacity, quarterly output would theoretically max out around 16.5 GWh, so the host views the segment as "on track" but capacity-constrained until the Shanghai and Houston megafactories ramp further.
+
+## Electric Vehicles
+1. **Cybertruck volume up but still below expectations:** The host estimates Cybertruck deliveries rose to roughly 8,000 units in Q3, up from an average of about 5,000/quarter previously, but this still annualizes to only around 32,000 units/year — well short of original expectations.
+2. **Anecdotal "FSD awakening" and viral endorsement:** Jason Oppenheim (of Selling Sunset) posted a viral video calling his Tesla's FSD "life-changing," denying he was paid by Tesla and pushing back on critics by noting a Model 3 capable of running FSD starts under $37,000. The host frames rising organic enthusiasm like this, combined with Tesla's 9% year-over-year delivery growth versus Ford's EV sales down 68% and GM's EV sales down 43% (both year-to-date, year-over-year), as evidence the sales strength is more about FSD than just gas prices.
+3. **Germany rebound driven by high gas prices and FSD approval progress:** German BEV sales rose 75% year-over-year in August, with gas prices around the equivalent of $10/gallon; one in four passenger cars sold in Germany Jan–Aug this year was a pure BEV. Tesla's German registrations more than tripled in September to over 12,500 — the highest monthly total since December 2022 — moving Tesla ahead of BYD for the year in that market. Over the first nine months of the year, Tesla registered over 44,800 vehicles in Germany, up 202% year-over-year (against a low prior-year comp, before FSD was approved there).
+
+## Robotaxi
+1. **Texas Robotaxi registrations and fleet activity rising:** Tesla has 589 vehicles registered for robotaxi in Texas, with 169 of those being Cybercabs (per a Cybercab spotter tracker the host says shouldn't be treated as official). Daily Cybercab sighting counts, mostly below 500/day through September, jumped to over 750 on October 3rd, which the host interprets as more Cybercabs becoming active as Tesla works to reduce wait times. Separately, one source estimated over 300 Cybercabs now operating in Dallas, with vehicles reportedly running with no one inside.
+2. **Per-ride economics vary sharply with demand:** A rider (David Moss) attempting to rely solely on Cybercab rides in Austin reported three rides totaling over $87 (~$3.75/mile) during the Austin City Limits festival weekend — a high-demand period where Tesla used dynamic pricing. Once that festival weekend ended, the same rider reported demand and pricing dropping closer to $2/mile, and said it was the first time he found a future without personal vehicle ownership believable.
+3. **Operational improvements and one notable stuck-in-loop incident:** Elon Musk said Robotaxi operating hours expanded from ending at 10pm to now running 6am–11pm, with Musk citing avoiding running over hard-to-see pets (e.g., gray kittens on dark tarmac) as a key safety focus. The same rider reported the service continued operating through a heavy storm in Austin without shutting down (a change from past behavior), though he also experienced a Cybercab stuck in a 14-minute pickup-lot loop requiring remote support intervention to restart FSD, and said pickup/drop-off handling is improved but still not ideal.
+4. **Edge case: Cybercab navigates a fully blocked road from utility work:** A separate clip showed a Cybercab repeatedly encountering a road fully blocked by a utility crew, looping around three times before successfully proceeding once workers cleared the cones — which the host says the utility crew probably shouldn't have fully blocked without a traffic path in the first place.
+5. **Robotaxi app now downloadable in several non-US countries:** Sawyer Merritt reported Tesla's robotaxi app is now available for download in the UK, Australia, Germany, Italy, Sweden, Singapore, and other countries — which the host believes is likely tied to visitors attending an upcoming XT takeover event in Austin being able to hail a Cybercab there, not an imminent global robotaxi launch.
+
+Notable quotes and data:
+- "We decided to nudge AI5 up a little bit to 96 GB as Tesla would otherwise be the only company using the minimum RAM version of LP5." — Elon Musk
+- Tesla Q3 2026 deliveries: 486,532 vehicles, beating consensus by 24,500+ units (~5% beat); third-best quarter ever.
+- Tesla Energy Q3: 13.7 GWh deployed (second-best quarter); installed capacity across all factories only 66 GWh/year as of Q2.
+- Cybertruck estimated at ~8,000 units in Q3, annualizing to ~32,000/year.
+- Ford EV sales down 68% YoY YTD; GM EV sales down 43% YoY YTD; Tesla deliveries up 9% YoY YTD.
+- Germany: Tesla registrations up 202% YoY over first 9 months (44,800+ vehicles); September alone over 12,500, surpassing BYD for the year.
+- "Got to give props to Tesla's robotaxi. There's been a bad storm and it's been pouring all day in Austin, and I haven't seen the service down once." — David Moss
+- Robotaxi operating hours now 6:00 a.m. to 11:00 p.m., per Elon Musk, up from a prior 10:00 p.m. cutoff.
+- Texas robotaxi registrations: 589 vehicles, including 169 Cybercabs, per a Cybercab spotter tracker.
+- TSLA closed at $378.73, up 2.2%; SpaceX (SPCX) closed at $17.19 (host said "$1719"), up 7.63%.
