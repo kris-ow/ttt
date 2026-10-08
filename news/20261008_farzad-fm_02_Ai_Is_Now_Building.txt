@@ -1,0 +1,265 @@
+Channel:     farzad-fm
+Title:       AI Is Now Building Better AI. Here's How the Loop Works.
+URL:         https://www.youtube.com/watch?v=YR6tTRjSSv8
+Published:   2026-10-08 20:21 UTC
+Fetched:     2026-10-08 21:00 UTC
+
+────────────────────────────────────────────────────────────
+
+What is recursive self-improvement? In
+plain words, it's AI that gets better at
+building better AI. And that one idea
+decides how fast the AI on your phone
+gets smarter and cheaper and how soon it
+shows up in things like new medicines.
+Back in March, Andre Karpathy, one of
+the founders of Open AI and the former
+head of AI at Tesla, showed what it
+looks like. He let an AI work alone on
+his own small AI project for about 2
+days. It tried about 700 changes by
+itself and kept about 20. Together,
+those changes made his AI learn about
+11% faster. 87 minutes after he posted
+[music] it, Elon Musk replied with five
+words. We are in the singularity. So,
+why would one small speed up get that
+reaction? Because when AI improves AI,
+every improvement brings the next one
+sooner. There's so much talk about AI
+being scary. I want to show you what
+this loop is and how it works because
+that's way more interesting than the
+hype or the doom. So, let's start with
+what those words actually mean.
+Normally, technology only gets better
+when people make it better. And AI has
+worked that way, too. Recursive
+self-improvement is when the AI starts
+doing part of that improving itself. It
+writes better code, the instructions
+that tell a computer what to do, or it
+finds better ways for AI to learn. And
+then the improved AI is even better at
+improving AI. Recursive just means the
+loop feeds back into itself. And the
+idea goes back to 1965.
+That year, mathematician J Good wrote
+that a machine smarter than us could
+design even better machines that would
+then unquestionably be an intelligence
+explosion. For about 60 years, that was
+an idea on paper. Now it's showing up in
+actual numbers. The best way to picture
+this is compound interest. It's like a
+savings account. [music] Let's say you
+put $100 in an account that pays 10% a
+year. In year two, you earn $11 instead
+of 10 because now you're earning
+interest on your interest. That's normal
+progress with humans improving AI at a
+set pace. Now, think about a weird
+account where the interest rate itself
+goes up every year from 10% to 20 to 30.
+After 3 years, the normal account has
+about $133.
+The weird one has about $172 and the gap
+keeps growing from there. That weird
+account is recursive self-improvement
+because the thing being improved is also
+the thing doing the improving. And
+that's what makes AI different from
+electricity or the combustion engine.
+Both of them changed the world, but
+neither one ever got better on its own.
+AI can make itself better. So what's
+coming is bigger than both of them
+combined. Now let's ask the question,
+how does a machine know whether its own
+change is any good. It uses a judge.
+First, the AI tries something like a
+move in a game or a change to some code.
+Then an automatic judge scores it by
+checking whether it won the game or
+whether the code ran faster. Then the AI
+keeps the winners and tries again
+millions of times. The faster the judge,
+the faster the whole loop spins. The
+cleanest picture of this is Deep Mind's
+Alph Go Zero from 2017. It learned the
+board game Go knowing only the rules by
+playing against itself 4.9 million
+times. After 3 days, it beat the version
+of Alph Go that had beaten world
+champion Lisa Doll 100 games to zero.
+Karpathy's experiment is the same loop
+pointed at AI itself. Training is the
+long process where an AI learns from
+examples and his AI kept trying changes
+to how his project trains. The judge was
+basically a stopwatch. To me, this is
+the moment we went from humans tuning
+the AI to AI tuning the AI. And Carpathy
+said, and I quote, "All LLM frontier
+labs will do this. It's the final boss
+battle." He's saying, "Every major AI
+lab is going to run this loop on its own
+AI. Any goal you can measure can be
+handed to a swarm of AIs as long as you
+have a quick way to test it. So, let's
+look at where this loop is already
+running inside the biggest AI companies.
+Google built an AI called Alpha Evolve
+that runs that same loop. Gemini, the AI
+behind Google's chatbot, suggests
+changes to code. An automatic checker
+scores every version and the best ones
+get kept and improved again. Then,
+Google pointed it at Gemini itself.
+Alpha Evolve sped up one piece of the
+code that trains Gemini by 23%. And that
+cut Gemini's total training time by 1%.
+And Gemini is the exact AI that Alpha
+Evolve runs on. So the AI made its own
+engine run better. 1% sounds tiny. But
+remember the savings account. That 1% is
+a deposit the next version gets to build
+on. At Anthropic, the company behind
+Claude, more than 80% of the code it
+adds to its own software is now written
+by Claude. Before early 2025, that
+number was in the low single digits. So,
+in about 15 months, the AI went from
+writing almost none of its company's
+code to writing most of it. And OpenAI
+says that last month, it hit its goal of
+an automated AI research intern. That's
+an AI that can carry out research tasks
+under human direction, including tasks
+that would take a skilled researcher a
+few days. The night they announced it, I
+posted, "We're totally in the
+singularity. Every week is insane." The
+singularity is the point where progress
+moves faster than people can keep up.
+So, the pieces of the loop are already
+here. Now, let's measure how fast all of
+this is moving. A research group called
+MER tests how long a task an AI can
+finish on its own, about half the time.
+They size each task by how long it takes
+a human expert. In early 2023, the best
+AI handled tasks that take a person
+about 4 minutes. By this spring, it was
+at least 16 hours, which is two full
+work days. So AI went from answering
+quick questions to handling a couple of
+days of work. And the speed up is
+speeding up. In March of 2025, MER said
+this number was doubling about every 7
+months. Since 2023, it's been doubling
+about every 4 months. That's the weird
+savings account where the interest rate
+itself keeps climbing. Most of us think
+in straight lines. So, this is the part
+people miss. A loop like this curves
+upward [music] and it curves faster
+every year. So, if this thing compounds
+that fast, why hasn't it exploded
+already? [music] Because the loop has
+breaks. And this is where my savings
+account comparison stops working. A bank
+pays your interest for free. But this
+loop has to pay for every single round.
+The first break is computing power
+because every new idea has to be tested
+on huge numbers of computers. [music]
+The second break is electricity. The
+International Energy Agency expects data
+centers, the giant buildings full of
+computers that run AI, to more than
+double their electricity use by 2030.
+The third break is the real world. An AI
+can come up with a new drug idea, but
+that drug still has to be tested in real
+cells and real people. As Anthropic put
+it, more intelligence can't learn what a
+drug does over decades of use. And the
+fourth break is the judge. The loop runs
+fastest where there's a quick automatic
+score, like code speed or a math answer,
+and people still choose which problems
+the AI works on. So, the speed up is
+real, but it hasn't gone vertical yet.
+This loop's biggest breaks are physical
+things [music] like chip factories and
+power plants. And that's why I look at
+AI, robots, and energy as one flywheel.
+A wheel that gets easier to spin the
+faster it goes. As robots and cheap
+energy take those brakes off, the loop
+spins faster and every turn makes the
+next one easier. Now, if you don't work
+in AI, why should you care? Because of
+what this does to the price of
+intelligence. Epoch AI, a group that
+tracks AI trends, found the same level
+of AI ability, has been getting about 13
+times cheaper every year since 2023.
+Epoch put it like this. It is like the
+sticker price on a new car falling from
+$50,000 to $69. So brain power that cost
+you a dollar last year cost you about $8
+this year. And cheap intelligence can be
+pointed at problems we've been stuck on
+for decades. Google Deep Mind's
+AlphaFold predicted the shape of
+virtually all 200 million proteins that
+scientists have identified. Proteins are
+the tiny machines doing the work inside
+your body. And knowing their shape helps
+scientists design medicines that fit
+them. Put the two together, you get a
+loop that keeps making AI smarter while
+the price keeps crashing. And my guess
+is that for you that means better
+medicines and cheaper energy showing up
+years sooner than anyone planned. So
+where does all of this lead? Sam Olman,
+the CEO of OpenAI, called this stage a
+laral version of recursive
+self-improvement. Laval means the baby
+stage, like a caterpillar before it
+becomes a butterfly. Dario Amade, the
+CEO of Anthropic, describes where it's
+heading as a country of geniuses in a
+data center. He means millions of AI
+copies, each smarter than a Nobel Prize
+winner, working way faster than any
+person. And his bet is that this
+squeezes the next 50 to 100 years of
+progress in biology into 5 to 10 years.
+As for me, I'm with Elon on this one.
+The loop has already started. My
+projection is that by the end of 2027,
+AI does about 80% of digital tasks at or
+above the level of the top 20% of
+people. And by 2030, the world looks
+dramatically different. The impossible
+becomes inevitable faster than critics
+expect, but slower than I thought. And
+recursive self-improvement is the reason
+it keeps beating the critics. So, think
+back to that Carpathy post. One AI
+working alone for two days made his AI
+learn about 11% faster. That was one
+person's small project. Now Google,
+Anthropic, and Open AI are running that
+same loop on the AI you use every day.
+So the next time the AI on your phone
+suddenly gets smarter and cheaper,
+that's the loop paying interest. Thank
+you so much for watching. I hope this
+was informative and helpful, and we'll
+see you on the next one. Take it easy,
+everybody. Bye-bye.
