@@ -1,0 +1,31 @@
+Channel:     farzad-fm
+Title:       AI Is Now Building Better AI. Here's How the Loop Works.
+Published:   2026-10-08 20:21 UTC
+Summarized:  2026-10-08 21:03:30 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01XeVwDqYLwfsSRfd9pq1iv4
+Cost:        $0.01960 (12256 in / 1469 out tokens)
+Relevance:   tangential — The video is a general explainer on AI recursive self-improvement across OpenAI, Google, and Anthropic, with only a passing mention of Elon Musk's reaction and Karpathy's Tesla background; it has no substantive Tesla or SpaceX business content.
+Topic:       none
+Categories:  Market & Competition
+────────────────────────────────────────────────────────────
+
+This video explains the concept of recursive self-improvement — AI systems that improve the AI that builds AI — using examples from Andrej Karpathy's personal experiment, DeepMind's AlphaGo Zero, and current practices at Google, Anthropic, and OpenAI. It argues the loop is already running inside major AI labs, accelerating rapidly but still bottlenecked by compute, electricity, real-world testing, and the availability of automated judges. Tesla and SpaceX are not substantively discussed; the sole connection is a brief mention that Karpathy previously headed AI at Tesla and that Elon Musk replied to Karpathy's post with "We are in the singularity."
+
+## Market & Competition
+1. **Karpathy's AI self-improvement experiment:** Andrej Karpathy (OpenAI co-founder, former Tesla AI lead) let an AI work alone on his personal AI project for about two days; it tried roughly 700 changes, kept about 20, and the combined changes made his AI learn about 11% faster. Elon Musk replied to the post 87 minutes later with "We are in the singularity."
+2. **Google, Anthropic, OpenAI running the loop internally:** Google's AlphaEvolve sped up one piece of the code training Gemini by 23%, cutting Gemini's total training time by 1%. At Anthropic, more than 80% of the code added to its own software is now written by Claude, up from low single digits before early 2025. OpenAI says it hit a goal last month of an automated "AI research intern" capable of multi-day research tasks under human direction.
+3. **Measured acceleration of AI task capability:** A research group (METR) found that in early 2023 the best AI could handle tasks taking a human about 4 minutes; by this spring it handled tasks taking about 16 hours. The doubling time for this capability shortened from about every 7 months (as of March 2025) to about every 4 months (since 2023).
+4. **Cost of AI intelligence falling sharply:** Epoch AI found that the same level of AI ability has gotten roughly 13 times cheaper every year since 2023, comparing it to a car's sticker price falling from $50,000 to $69.
+5. **Industry leaders' framing of where this leads:** Sam Altman (OpenAI CEO) called the current stage a "larval" version of recursive self-improvement. Dario Amodei (Anthropic CEO) describes the endpoint as "a country of geniuses in a data center," betting it could compress the next 50–100 years of biological progress into 5–10 years. The video's host projects that by the end of 2027 AI will perform about 80% of digital tasks at or above the level of the top 20% of people.
+
+Notable quotes and data:
+- Karpathy's AI: ~700 changes tried, ~20 kept, ~11% faster learning after a 2-day autonomous run.
+- Elon Musk's reply to Karpathy's post, 87 minutes later: "We are in the singularity."
+- Karpathy: "All LLM frontier labs will do this. It's the final boss battle."
+- AlphaEvolve sped up a Gemini training code component by 23%, cutting total Gemini training time by 1%.
+- Anthropic: Claude now writes over 80% of the code added to its own software, up from low single digits before early 2025.
+- METR: AI task-handling capability doubling time shortened from ~7 months (March 2025) to ~4 months (since 2023); best AI went from handling ~4-minute tasks (early 2023) to ~16-hour tasks (this spring).
+- Epoch AI: same AI capability level ~13x cheaper per year since 2023, likened to a car price falling from $50,000 to $69.
+- Dario Amodei's projection: next 50–100 years of biological progress compressed into 5–10 years via "a country of geniuses in a data center."
+- Host's projection: by end of 2027, AI does ~80% of digital tasks at or above the level of the top 20% of people.
