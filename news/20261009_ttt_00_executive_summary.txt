@@ -1,0 +1,65 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-10-09)
+Published:   2026-10-09 00:00 UTC
+Summarized:  2026-10-10 05:50:55 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05543 (13207 in / 2902 out tokens)
+Sources:     5
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FSD renamed "Tesla Assisted Driving" across Europe
+- Germany backs EU-wide FSD approval with 10% speed-limit cap
+- Slovakia set to become ninth EU country to approve FSD
+- SpaceX buys nationwide 800MHz spectrum from Grain Management
+- FCC approves 15,000 direct-to-phone satellites for SpaceX
+- Telecom stocks drop 5-8% on Starlink Mobile carrier threat
+- Musk awarded National Medal of Science by Trump
+
+## Autonomous Driving
+- **Tesla drops "Full Self-Driving" branding in Germany, switching to "Tesla Assisted Driving" (TAD)** following pressure from Germany's Federal Ministry of Transport, which called the FSD name misleading on October 6. Tesla offered the new name during September talks with Transport Minister Steffen Bilger.
+- **Speed-limit concession tied to the rebrand:** Germany and Tesla agreed the system can go up to 10% over posted limits (down from the Netherlands-approved 50% over), with Germany backing this position in the broader EU approval process; Tesla will need to modify FSD behavior to comply. Musk thanked Germany on X ("Danke schoen").
+- **Rebrand is largely cosmetic so far:** the new German page is a translated version of the US FSD page with the product name swapped, retaining the "drive almost anywhere" and "7x safer" claims; in the US, tesla.com/fsd still sells "Full Self-Driving (Supervised)" at $99/month. Electrek's Fred Lambert argues Tesla only made the change because a regulator demanded it, and asks why the US hasn't followed.
+- **EU-wide approval vote reportedly slipped to December at the earliest,** requiring 15 of 27 member states representing 65% of the EU population; France and Sweden have raised speeding-related concerns. Eight EU countries are currently listed as approved (Netherlands, Lithuania, Estonia, Denmark, Belgium, Slovenia, Czechia, Croatia); Germany is not yet on the list.
+- **Slovakia expected to become the ninth EU country to approve FSD "within days,"** per Transport Minister Jozef Raz, who cited data showing reduced accident rates.
+- Tesla's European sales reportedly rose sharply in September, which panelists attributed to fuel prices, local Berlin manufacturing, and potential EU restrictions on Chinese EV imports — not FSD approval, which hasn't happened yet.
+
+## Robotaxi
+- **Texas robotaxi fleet continues to scale**, with tracker data showing Cybercab count rising from 45 (Aug 31) to 169 and Model Y robotaxis growing from 269 to 420, for a combined 589 vehicles; a separate tracker figure this week showed a record 868 Cybercabs in Austin (670 reportedly driverless) plus roughly 300 more in Dallas.
+- Musk said robotaxis will operate until 11 p.m., with the main technical focus now on avoiding nighttime collisions with hard-to-see animals.
+- First-hand Cybercab rides in Austin were described by multiple riders as polished and mature — responsive app, confident low-latency navigation, no steering wheel or pedals — contrasted favorably against nearby Waymo vehicles described as more hesitant.
+- A separate post highlighted Tesla's vision-only robotaxis reportedly performing well at night in heavy rain, pushing back on prior skepticism about camera-only systems in adverse conditions.
+
+## SpaceX — Starlink
+- **SpaceX agreed October 8 to buy up to 14 MHz of paired nationwide 800 MHz spectrum from Grain Management** (price undisclosed), pending FCC approval (~180-day target review). This follows the FCC's October 6 approval of a 15,000-satellite direct-to-phone constellation offering more than 100x the bandwidth of SpaceX's current generation.
+- Musk called the spectrum deal "the last critical piece of the Spectrum puzzle needed for SpaceX to provide complete phone coverage in America," adding "Very big deal."
+- AT&T, Verizon, and T-Mobile shares fell roughly 5–8% in after-hours trading on the news. SpaceX pushed back on AT&T CEO John Stankey's claim that its service can't penetrate buildings, saying the new low-band spectrum improves indoor coverage; the carriers formed a joint venture October 1 to pool their own spectrum for satellite-to-phone service in response.
+- Deployment timeline implies roughly end-of-2027 for service launch, per Gwynne Shotwell's August comments (satellites launching "next year," service the year after); the host notes Musk-affiliated timelines are typically directionally correct but late.
+- SpaceX added an $100 cash referral program for new Starlink subscribers.
+- **American Airlines expanded its Starlink rollout to its entire mainland fleet of 1,030+ aircraft** (up from a previously announced 500), with installations starting early 2027; Delta and JetBlue have not yet announced adoption.
+
+## SpaceX — AI & Compute
+- **SpaceX's internal AI tool (Rockbot/Grok bot) will route queries to whichever model performs best for a given task** — including Claude Opus 5.5 and soon Midjourney — rather than exclusively using its own models, per statements attributed to Musk. Panelists read this as xAI prioritizing distribution over owning the top model while leveraging its compute position.
+- SpaceX is reportedly looking to raise $40 billion in debt for Nvidia chip purchases, atop prior IPO proceeds and existing debt, as part of a target of roughly 10 gigawatts of compute capacity next year requiring next-gen ("Vera Rubin") Nvidia chips expected in Q1/Q2.
+- Musk reportedly claimed SpaceX's valuation could eventually exceed world GDP (~$126 trillion) "by orders of magnitude" — characterized by panelists as a speculative, decade-plus-out claim, not a near-term target.
+
+## SpaceX — Corporate & Valuation
+- **Terafab will be independently owned and operated by Tesla/SpaceX, not TSMC,** per Musk, clarifying an earlier report of TSMC involvement; TSMC may lease capacity but nothing more. The facility is described as roughly 50x existing chip manufacturing capacity, with no formal partnership agreements confirmed signed yet.
+- Elon Musk received the National Medal of Science at a White House Science & Tech Innovation Summit; Trump called him an "industrial titan" and credited SpaceX with reducing NASA's reliance on foreign rockets and Tesla with producing the first commercially viable EVs with consumer self-driving technology.
+
+## Humanoid Bots
+- A newly published Tesla patent application describes a 3D tactile touch sensor for Optimus's hands, intended to detect touch, pressure, and force to improve grip and object manipulation.
+- Panelists discussed whether Optimus should wear context-branded clothing (e.g., hotel uniforms) to aid social acceptance, while cautioning that making the robot look too human risks an uncanny-valley effect.
+
+## Energy
+- Tesla's California Virtual Power Plant program has returned a cumulative 5 GWh to the grid across 10 major events in 2026, described as enough to power roughly 1.2 million US homes (unit basis — likely peak-demand window — not specified).
+- Tesla opened its first East Coast Semi Megacharger station, in Georgia, with 8 stalls each capable of up to 1.2 MW.
+
+Notable quotes and data:
+- "This is the last critical piece of the Spectrum puzzle needed for SpaceX to provide complete phone coverage in America." — Elon Musk, on the Grain Management spectrum deal.
+- Germany/Tesla speed concession: 10% over limit (vs. 50% over in the Netherlands).
+- EU approval requires 15 of 27 states (65% of population); vote reportedly slipped to December at earliest.
+- AT&T/Verizon/T-Mobile shares fell ~5–8% after-hours on SpaceX's spectrum news; combined carrier revenue ~$600B/year per Shotwell.
+- Echostar mid-band deal: ~$17B for 65 MHz (vs. ~5 MHz currently used by SpaceX).
+- American Airlines Starlink rollout: 1,030+ aircraft, up from 500.
