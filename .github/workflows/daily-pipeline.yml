@@ -40,6 +40,14 @@ on:
         required: false
         default: false
         type: boolean
+      # Added 2026-10-12: a dispatch otherwise always runs the weekly leg, so it
+      # could not be used to clear a summary backlog before missing Daily Briefs
+      # were backfilled (weekly-summary.js never rebuilds an existing brief).
+      skip_weekly:
+        description: 'Skip the weekly leg (weekly brief, OG cards, Reddit post) — summarize-only backfill runs'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -254,7 +262,7 @@ jobs:
       # same way (only runs on Mondays unless dispatched manually on another day).
       - name: Build weekly brief
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '45 5 * * 1'
+        if: (github.event_name == 'workflow_dispatch' && inputs.skip_weekly != true) || github.event.schedule == '45 5 * * 1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -283,12 +291,12 @@ jobs:
       # (which would open a pipeline-failure issue for a cosmetic asset).
       - name: Install Chromium for OG render
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '45 5 * * 1'
+        if: (github.event_name == 'workflow_dispatch' && inputs.skip_weekly != true) || github.event.schedule == '45 5 * * 1'
         run: npx playwright install --with-deps chromium
 
       - name: Render OG cards
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '45 5 * * 1'
+        if: (github.event_name == 'workflow_dispatch' && inputs.skip_weekly != true) || github.event.schedule == '45 5 * * 1'
         run: |
           if [ "$(date -u +%u)" != "1" ] && [ "${{ github.event_name }}" != "workflow_dispatch" ]; then
             echo "Not Monday (DOW=$(date -u +%u)) — skipping OG card render"
@@ -303,7 +311,7 @@ jobs:
       # Reformatter takes the latest news/*_weekly_brief_summary.txt as input.
       - name: Build Reddit weekly post
         continue-on-error: true
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '45 5 * * 1'
+        if: (github.event_name == 'workflow_dispatch' && inputs.skip_weekly != true) || github.event.schedule == '45 5 * * 1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
