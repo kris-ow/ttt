@@ -61,4 +61,23 @@ function rollingFooter(updatedAt = new Date()) {
   return `\n\n---\n*Rolling issue — the pipeline rewrites this body in place (no notification is sent) and keeps it current. Last updated ${updatedAt.toISOString()}. Leave it open; closing it just makes the next run open a fresh one.*`;
 }
 
-module.exports = { upsertRollingIssue, rollingFooter };
+/**
+ * Prepend one entry to the "Daily pipeline: failure log" rolling issue, keeping
+ * the newest 15. Shared by daily-pipeline.yml's notify-failure job and its
+ * stalled-deploy watchdog so the issue keeps one format. `entry` must start with
+ * `- <ISO timestamp>` — that is how prior entries are recognised on rewrite.
+ */
+async function logPipelineFailure(github, context, entry) {
+  return upsertRollingIssue(github, context, {
+    label: 'pipeline-failure',
+    title: 'Daily pipeline: failure log',
+    color: 'D93F0B',
+    body: (existing) => {
+      const prior = (existing.match(/^- \d{4}-\d{2}-\d{2}T.*$/gm) || []).slice(0, 14);
+      const log = [entry, ...prior].join('\n');
+      return `The daily summary pipeline failed or stalled. Most recent entries (newest first):\n\n${log}\n\n**Check:** workflow logs at the run link. A failure here can mean transcripts went unsummarized — \`freshness-check.yml\` tracks that separately. "Stalled deploy cancelled" entries were already cleared automatically; the next deploy ships everything committed since.${rollingFooter()}`;
+    },
+  });
+}
+
+module.exports = { upsertRollingIssue, rollingFooter, logPipelineFailure };

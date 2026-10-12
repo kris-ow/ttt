@@ -46,15 +46,21 @@ permissions:
   pages: write
   id-token: write
   issues: write
-
-concurrency:
-  group: pipeline
-  cancel-in-progress: false
+  actions: write # cancel stalled deploy runs (see "Cancel stalled deploys")
 
 jobs:
   pipeline:
     runs-on: ubuntu-latest
     timeout-minutes: 210 # 3.5 hours max (batch + up to 3 retries at 20min intervals)
+    # The lock is on this JOB, not the workflow (moved 2026-10-12). At workflow
+    # level it was held until the deploy job finished too, so a deploy stuck
+    # `waiting` on the github-pages environment stalled ALL summarization: every
+    # later run was cancelled with zero jobs (2026-10-06 ~16h, 2026-10-10 ~31h,
+    # the second one losing two Daily Briefs and the Monday weekly dispatch).
+    # Deploys serialize separately through the `pages` group on the deploy job.
+    concurrency:
+      group: pipeline
+      cancel-in-progress: false
     outputs:
       has_changes: ${{ steps.commit.outputs.has_changes }}
 
@@ -62,6 +68,39 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: master
+
+      # Self-heal a stalled Pages deploy. The deploy job sometimes sits `waiting` on
+      # the github-pages environment indefinitely with no reviewers or wait timer
+      # configured — a GitHub-side stall that timeout-minutes does not cover. With
+      # the job-level lock above it no longer blocks summarization, but it freezes
+      # the site and holds the `pages` queue (deploy-pages.yml included). A normal
+      # deploy takes under 5 min incl. the retry, so a run waiting over an hour is
+      # stuck. github-pages is the repo's only environment, so any `waiting` run is
+      # this case, from either workflow. Cancelling releases the queue and the next
+      # deploy ships everything committed since. Runs on every push/cron, so a
+      # stall is cleared within ~1h of the threshold.
+      - name: Cancel stalled deploys
+        continue-on-error: true
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { logPipelineFailure } = require(`${process.env.GITHUB_WORKSPACE}/scripts/rolling-issue.cjs`);
+            const STALL_HOURS = 1;
+            const { owner, repo } = context.repo;
+            const { data } = await github.rest.actions.listWorkflowRunsForRepo({ owner, repo, status: 'waiting', per_page: 20 });
+            for (const run of data.workflow_runs) {
+              if (run.id === context.runId) continue;
+              const jobs = await github.rest.actions.listJobsForWorkflowRun({ owner, repo, run_id: run.id });
+              const waitingJob = jobs.data.jobs.find(j => j.status === 'waiting');
+              const hours = (Date.now() - new Date(waitingJob?.created_at || run.updated_at)) / 3600000;
+              if (hours < STALL_HOURS) {
+                console.log(`Run ${run.id} (${run.name}) waiting ${hours.toFixed(1)}h — under threshold, leaving it`);
+                continue;
+              }
+              await github.rest.actions.cancelWorkflowRun({ owner, repo, run_id: run.id });
+              console.log(`Cancelled run ${run.id} (${run.name}) — waiting ${hours.toFixed(1)}h`);
+              await logPipelineFailure(github, context, `- ${new Date().toISOString()} — stalled deploy cancelled after ${hours.toFixed(1)}h waiting: [${run.name} run ${run.id}](${run.html_url})`);
+            }
 
       - uses: actions/setup-node@v6
         with:
@@ -344,23 +383,12 @@ jobs:
 
       # Log the failure into one rolling issue rather than opening a new one per
       # failing run (silent body edit — see scripts/rolling-issue.cjs). The most
-      # recent 15 failures are kept so a repeating pattern is visible at a glance.
+      # recent 15 entries are kept so a repeating pattern is visible at a glance.
       - name: Log pipeline failure
         uses: actions/github-script@v9
         with:
           script: |
-            const { upsertRollingIssue, rollingFooter } = require(`${process.env.GITHUB_WORKSPACE}/scripts/rolling-issue.cjs`);
+            const { logPipelineFailure } = require(`${process.env.GITHUB_WORKSPACE}/scripts/rolling-issue.cjs`);
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const entry = `- ${new Date().toISOString()} — [run ${context.runId}](${runUrl})`;
-
-            const res = await upsertRollingIssue(github, context, {
-              label: 'pipeline-failure',
-              title: 'Daily pipeline: failure log',
-              color: 'D93F0B',
-              body: (existing) => {
-                const prior = (existing.match(/^- \d{4}-\d{2}-\d{2}T.*$/gm) || []).slice(0, 14);
-                const log = [entry, ...prior].join('\n');
-                return `The daily summary pipeline failed. Most recent failures (newest first):\n\n${log}\n\n**Check:** workflow logs at the run link. A failure here can mean transcripts went unsummarized — \`freshness-check.yml\` tracks that separately.${rollingFooter()}`;
-              },
-            });
+            const res = await logPipelineFailure(github, context, `- ${new Date().toISOString()} — [run ${context.runId}](${runUrl})`);
             console.log(`${res.created ? 'Created' : 'Updated'} failure log issue #${res.number}`);
