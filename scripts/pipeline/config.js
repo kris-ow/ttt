@@ -162,6 +162,9 @@ export const CORRECTIONS = {
   'Gwen Shotwell': 'Gwynne Shotwell',
   'Gwynn Shotwell': 'Gwynne Shotwell',
   'Gwen Shotwall': 'Gwynne Shotwell',
+  'Koshi': 'Kalshi',
+  'Kelshi': 'Kalshi',
+  'True Social': 'Truth Social',
 };
 
 // Claude model for summarization. Switched from claude-sonnet-4-6 on
