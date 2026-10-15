@@ -1,0 +1,33 @@
+Channel:     electrek
+Title:       Tesla confirms Autopilot/FSD was ‘engaged’ when car crossed a median and killed a man
+Published:   2026-10-15 14:03 UTC
+Summarized:  2026-10-15 15:02:05 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01JXNqiwfvppEmzKNjWAHYFM
+Cost:        $0.01645 (7253 in / 1839 out tokens)
+Relevance:   core — the article concerns a fatal crash involving Tesla's Autopilot/FSD system and raises questions about Tesla's crash-reporting transparency, directly relevant to the autonomous driving investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports that Tesla's own federal crash filing confirms Autopilot or Full Self-Driving was "Verified Engaged" in an August 2026 New Jersey crash that killed a driver, a fact never disclosed in police or media reports, which described it simply as a driver losing control.
+
+## Autonomous Driving
+1. **Crash details:** On August 22, 2026, around 8:31 a.m., a Tesla traveling south on Route 55 in Vineland, NJ, left the road, crossed the grass median, hit a tree, and struck a northbound Chevrolet SUV head-on. The SUV's driver, 68-year-old Phillip Eastman, was killed; the Tesla driver and a passenger in the SUV were injured. New Jersey State Police did not mention any driver-assist system in their reporting of the crash.
+
+2. **Tesla's NHTSA filing:** Under NHTSA's Standing General Order requiring reports of Level 2 driver-assist crashes involving a fatality, Tesla filed a report identifying the vehicle as a 2021 Model Y with "Engagement Status" marked "Verified Engaged," meaning Tesla's telematics confirmed Autopilot or FSD was active. Tesla redacted the crash narrative, software version, and whether the road was within the system's approved operating area as confidential business information — redactions the article says Tesla applies to 99.9% of its reports.
+
+3. **Limits of what the data shows:** The article cautions that "engaged within 30 seconds of impact" is only the reporting trigger, not proof the system was steering at the time of the median crossing, and the driver may have been overriding it. The redacted software version means it's unknown whether this was basic Autopilot or FSD. Tesla's filing also logs a pre-crash speed of 37 mph, which the article says is more likely a single telematics snapshot than the actual speed the car left the road at, and the filing indicates Tesla holds only the car's telematics, not event-data-recorder or video evidence.
+
+4. **How the match was made:** Electrek says it had flagged this crash from news reports weeks earlier as lacking a corresponding NHTSA entry; a later NHTSA data release added it with the engagement flag. Unredacted details — location, state, vehicle model, fatality, month, and an incident time of 12:29 UTC (about 8:29 a.m. local) — align within two minutes of the police-reported 8:31 a.m. crash time, leading Electrek to conclude it is the same incident. Electrek says it has asked New Jersey State Police for the crash report and vehicle data, and whether investigators received Tesla's raw telemetry or only Tesla's interpretation of it.
+
+5. **Broader context:** The article notes Tesla is already under NHTSA investigation over how it reports these crashes, and frames this as part of an ongoing Electrek investigation matching reported crashes to Tesla's redacted NHTSA data.
+
+## Editorial Stance
+The author (Fred Lambert) argues Tesla markets its Level 2 system as "Full Self-Driving" and Musk continues promising unsupervised autonomy while Tesla redacts the records that would show how the system behaves in fatal crashes; he states the system's engagement doesn't prove it caused the crash but argues Tesla should release the full, unredacted account rather than treating crash details as trade secrets.
+
+Notable quotes and data:
+- NHTSA report lists vehicle as 2021 Model Y, Engagement Status "Verified Engaged"
+- Pre-crash speed logged by Tesla: 37 mph
+- Incident time per Tesla filing: 12:29 UTC (~8:29 a.m. local), vs. police-reported 8:31 a.m.
+- Article's claim that Tesla redacts crash narrative/software version in "99.9%" of its SGO reports
