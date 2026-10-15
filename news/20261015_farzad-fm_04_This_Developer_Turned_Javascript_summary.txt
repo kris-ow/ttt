@@ -1,0 +1,22 @@
+Channel:     farzad-fm
+Title:       This Developer Turned JavaScript Into a Neural Network
+Published:   2026-10-15 20:30 UTC
+Summarized:  2026-10-15 22:06:46 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01TpvVqtv1hFFegGA1cR8t97
+Cost:        $0.01314 (9788 in / 670 out tokens)
+Relevance:   off-topic — This covers a developer's independent AI/neural-network experiment (JavaScript-to-neural-net conversion) with no mention of or implication for Tesla or SpaceX.
+Topic:       none
+Categories:  Market & Competition
+────────────────────────────────────────────────────────────
+
+The video profiles a developer named Chang (project name "handwired") who built a technique for converting plain JavaScript code into a neural network with zero training, producing identical outputs to the original code while gaining the ability to be trained and updated live. This has no connection to Tesla, SpaceX, or their investment theses.
+
+## Market & Competition
+1. **Code-to-neural-network conversion technique:** Developer Chang's "handwired" project converts logical code structures (if/else statements, loops) into neural network components using paired "ramp" functions that mathematically replicate conditional logic, producing a network that returns the same outputs as the original code without any training process.
+2. **Demonstrated use cases:** The technique was shown searching 100,000 documents entirely via a neural net, and building a minimal operating system using roughly 9,900 weights across 130 layers, running in-browser without GPU acceleration and without any training.
+3. **Combining learned and coded behavior:** Chang's stated goal is to "unfreeze" the weights of a converted program so it can be trained live, and to eventually attach such a program to a small language model so the same network can generate creative output (e.g., writing text) while also executing exact, code-like logic — aiming to combine AI consistency with AI's capacity to learn.
+
+Notable quotes and data:
+- "With AI, the way I see it, consistency is the key. Today's models are smart, but they drift... Code never drifts, but it never learns anything new either." — developer commentary paraphrased/quoted in video
+- Demo figures: ~100,000 documents searched via one neural net; ~9,900 weights and 130 layers for a browser-based OS demo with zero training.
