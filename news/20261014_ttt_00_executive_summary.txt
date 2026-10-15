@@ -1,49 +1,65 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-10-14)
 Published:   2026-10-14 00:00 UTC
-Summarized:  2026-10-15 04:36:06 UTC
+Summarized:  2026-10-15 11:27:29 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.02931 (6994 in / 1532 out tokens)
-Sources:     2
+Cost:        $0.07515 (24474 in / 2620 out tokens)
+Sources:     17
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- Tesla Megapack order: $265M, 1 GWh from Taiwan's Apollo Power
-- Model Y was 37.2% of all US EV sales in Q3
-- Roadster unveil livestreamed Oct 15, 8:55 PM ET
-- Record 745 MW California VPP dispatch, Tesla ~80% of it
+- Austin Cybercab fleet hits 300+, up ~8x in a month
+- Roadster unveil pushed again, now Oct 15, 7:55pm CT
+- Tesla Megapack lands $265M Apollo Power order, 1 GWh
+- Model Y took 37.2% of Q3 EV market per Cox Automotive
 - SpaceX files for up to 456 Starship launches/year at Starbase
-- Cybercab spotted giving unsupervised rides in Austin
+- Starship Flight 15 targets first ship-catch in 4-6 weeks
 
 ## Robotaxi
-- A Cybercab was seen operating unsupervised in Austin, consistent with Tesla's ongoing driverless rollout there (per Sawyer Merritt digest).
-- GM CEO Mary Barra reiterated GM has no plans to enter robotaxi, targeting eyes-off driving by 2028 but betting customers prefer private ownership over ride-hailing — a direct contrast with Tesla's strategy.
+- Austin Cybercab fleet grew to over 300 vehicles roughly a month after its September 4 public launch, an ~8x jump from prototype-era numbers, per Tesla's robotaxi app and Ashok Elluswamy, who marked the Cybercab's two-year reveal anniversary noting cabs are "everywhere in Austin" and "soon in Dallas."
+- Dallas already runs driverless Model Y robotaxi rides, with Cybercabs reportedly queuing outside Tesla's Dallas hub and being tested driverless on public roads; no official Dallas Cybercab launch date yet.
+- One tracker (Pioneer Lens, cited by jobhakdi) shows fully autonomous Cybercab count rising from ~70-73 to 178 in a week with 319 registered in Texas — a materially different, independently-sourced figure from RobotaxiTracker.com's stale counts; host targets 1,000+ by year-end.
 
-## Energy
-- Tesla Powerwalls supplied roughly 80% of a record 745 MW California grid dispatch on October 6, part of a joint Tesla-Sunrun virtual power plant event; Tesla separately reported 85,000+ Powerwall owners delivered 600+ MW. Sunrun's combined figure (not broken out by company) also included 669 MW the prior day.
-- Output of ~7 kW per home exceeds the Powerwall 2's 5 kW rating, suggesting growing Powerwall 3 penetration or multi-battery homes, per Electrek's analysis.
-- Sunrun says it now has 120,000+ home batteries enrolled in California grid programs, and a Google-funded San Jose data-center VPP project with PG&E (involving Tesla and Everyday Electric) plans to enroll nearly 21,000 devices, with initial dispatches expected this month.
-- Tesla's new Bocanova 2 Megapack facility (built by Nightpeak Energy) came online in Brazoria County, Texas, as phase two following the 150 MW Bocanova 1.
+## Humanoid Bots
+- Tesla filed a patent for a 3D "soft adaptive array of tactile sensors" to give Optimus's hands a sense of touch, with flexible curved sensor "pixels" and hints at eventual full-body tactile skin; this is a patent application, not a confirmed product.
+- Musk has reportedly called the hand/forearm the hardest engineering problem in Optimus, with hand assembly cited (unconfirmed) as a production bottleneck; newest robot arm has 22 degrees of freedom, roughly double the prior design.
 
 ## Electric Vehicles
-- Tesla sold an estimated 99,037 Model Ys in Q3 2026, ~9x the next best-selling non-Tesla EV, per Cox Automotive. EVs made up 6.5% of all US new car sales in Q3, up 7.7% from Q2 — the first significant growth in about a year.
-- Tesla will launch vehicle sales in Oman starting 2027 and has already hired a first team in Muscat.
-- Tesla paused Model 3 Premium orders in Canada after exhausting its import quota; resumption expected once new quota is issued, likely March 2027.
+- Model Y sold an estimated 99,037 units in Q3 2026 (Cox Automotive), 37.2% of the entire EV market and ~9x the next best-selling non-Tesla EV; overall EVs hit ~6.5% of US new car sales, up 7.7% from Q2.
+- Tesla will launch vehicle sales in Oman starting 2027, already hiring in Muscat; Canada paused Model 3 Premium orders after exhausting its import quota, resumption expected ~March 2027.
+- Model 3 priced around $29,500 in Canada and Model Y at $38,000 in Australia (roughly $500 cheaper than in China), per hosts framing these as aggressive pushes into lower-price segments.
 
-## Financials
-- Tesla opened Q3 earnings call question submissions ahead of next week's call.
+## Energy
+- Tesla Powerwalls drove the bulk of a record 745 MW California grid dispatch on October 6 (per Sunrun); Tesla separately reported 85,000+ owners dispatching 600+ MW, about 80% of Sunrun's combined total — up from a 580 MW record a month earlier.
+- New Tesla Megapack order: ~$265M from Taiwan's Apollo Power for 1 GWh (260 Megapack 2XL units); Bocanova 2, a Nightpeak Energy Megapack facility near Houston, came online as phase two of a storage project.
+- Sunrun's Google-funded San Jose data-center VPP project plans to enroll ~21,000 devices with Tesla and Everyday Electric, with initial dispatches expected this month — part of the 16.8 GW data-center VPP plan announced in June.
 
 ## SpaceX — Starship
-- SpaceX filed for FAA approval to conduct up to 456 Starship launches and 912 landings per year from Starbase, a major jump from the current limit of 25 launches and 50 landings. The filing reportedly describes a phased approach, with Phase 1 covering up to 100 annual launches and 200 landings.
-- Starship test vehicle Ship 40 has returned to Starbase; no further detail given on its testing status or next steps.
+- SpaceX filed for FAA approval to conduct up to 456 Starship launches and 912 landings per year from Starbase, up from the current 25/50 limit, with a phased ramp starting at up to 100 annual launches.
+- Musk said Starship Flight 15, targeted for 4-6 weeks out, aims for the first full catch of both booster and ship in one flight, estimating 50-60% odds of catching the ship on the first try; he hopes to reuse the same booster and ship on Flight 16.
+- Ship 40 has returned to Starbase, with no detail given on next testing steps.
 
-## SpaceX — AI & Compute
-- SpaceX launched Grok Voice 3.0, which it calls the world's most intelligent speech-to-speech model with sub-one-second latency. SpaceX says Starlink call centers handle ~20,000 customer calls per day with it, ~70% resolved with no human involved, and about one in four sales calls converting. The model also reportedly handles millions of daily conversations inside Tesla vehicles.
-- Morgan Stanley analyst Adam Jonas argued in a new note that SpaceX's "Distributed Inference Cloud" is an underappreciated growth driver investors are largely ignoring — his own thesis rather than a confirmed SpaceX business line.
+## SpaceX — Starlink
+- SpaceX agreed October 8 to buy nationwide low-frequency spectrum (up to 14 MHz, 800 MHz band) from Grain Management, pending FCC approval and undisclosed price; Musk called it the final piece needed for complete US phone coverage, following the prior $17B EchoStar spectrum deal. Verizon dismissed the move as "just empty talk."
+- Starlink has grown from ~1 million subscribers (2022) to over 13 million across 160+ countries; in-flight Starlink now reaches 1,400+ aircraft on 40+ airlines, averaging ~150 Mbps per Ookla.
+- Grok Voice 3.0 launched across Starlink and Tesla; SpaceX says Starlink call centers handle ~20,000 calls/day via Grok Voice with ~70% resolved without a human and roughly 1-in-4 sales calls converting.
+
+## Financials
+- A Barclays note (unverified, flagged by a viewer) speculates Tesla and SpaceX could announce merger plans before a December 6 annual meeting deadline; jobhakdi says the market isn't pricing this at all and argues an announcement could push TSLA toward $500.
+- Market-wide AI selloff tied to CoreWeave credit stress (~$35B debt, bonds down >23% since June, CDS implying ~58-60% 5-year default odds) hit NASDAQ (-1.88%), Tesla (-2.15%) and SpaceX (-2.8%, down ~8-10% over five days) on the day.
+- Tesla earnings land around October 21; one host expects solid deliveries, margins, and FSD adoption but sees no major upside catalyst beyond possible Cybercab news.
+
+## SpaceX — Corporate & Valuation
+- Musk posted that he sees "a path" for SpaceX to be worth orders of magnitude more than Earth's current economy — potentially over a quadrillion dollars, or "over 1 petawatt per year" in energy terms — while explicitly stressing this reflects non-zero probability, not high confidence.
+- Morgan Stanley's Adam Jonas flagged SpaceX's "Distributed Inference Cloud" as an underappreciated growth driver investors are largely ignoring — an analyst thesis, not a confirmed business line.
+
+## Market & Competition
+- GM CEO Mary Barra reiterated no robotaxi ambitions, targeting eyes-off/hands-off driving by 2028 while emphasizing private ownership demand — a direct contrast to Tesla's robotaxi strategy.
+- Canada has opened its market to Chinese automakers (Geely, BYD, Li Auto), with hosts arguing Tesla will defend share via affordable pricing and its service/brand network.
 
 Notable quotes and data:
-- Tesla Megapack order: $265M, 260 Megapack 2XL units, 1 GWh (Apollo Power, Taiwan).
-- Record CA grid dispatch: 745 MW (Oct 6) per Sunrun, up from 580 MW a month earlier and 539 MW (the record from July 2025–Sept 2026).
-- Sunrun CEO Mary Powell: "customers are being compensated for helping strengthen grid reliability."
-- Model Y: 99,037 units sold in Q3 2026, 37.2% of entire US EV market (Cox Automotive).
+- Musk: "I see a path where SpaceX will cost orders of magnitude more than the current economy of Earth... over a thousand trillion now looks like a set of possible outcomes to me."
+- Ashok Elluswamy: "It's been 2 years since the presentation of the Cybercab... Now these cabs are everywhere in Austin. Soon in Dallas."
+- CoreWeave: ~$35B debt, $5.5B cash vs. $35-39B planned 2026 capex, 2032 bonds down >23% since June (per Bull Theory analysis).
+- Starship Flight 15: targeted 4-6 weeks out; Musk estimates 50-60% odds of catching the ship on first try.

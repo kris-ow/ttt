@@ -1,42 +1,61 @@
 Channel:     ttt
 Title:       Daily Tesla Brief (2026-10-13)
 Published:   2026-10-13 00:00 UTC
-Summarized:  2026-10-14 04:51:26 UTC
+Summarized:  2026-10-15 11:27:02 UTC
 Model:       claude-sonnet-5 [direct]
-Cost:        $0.02919 (7942 in / 1331 out tokens)
-Sources:     3
+Cost:        $0.08072 (27966 in / 2479 out tokens)
+Sources:     20
 Categories:  Executive Summary
 ────────────────────────────────────────────────────────────
 ## Brief
 
-- China: domestic Tesla sales down 12%, exports double YTD
-- Beijing to cut EV export VAT rebate April 2027, ~$600M/yr hit estimated
-- Canada pauses Model 3 Premium orders on import quota claim
-- Robotaxi: Dallas fleet additions, wait times "basically zero"
-- Grok AI assistant now live inside Cybercab rides
-
-## Electric Vehicles
-
-- Tesla's China domestic sales fell 11.9% YoY through September to 381,088 units, the lowest nine-month total in at least four years; Q3 retail dropped 16% to 142,133 units, underperforming the broader NEV market's ~10% Q3 decline (per Electrek, citing CPCA data).
-- Giga Shanghai exports more than doubled YTD to 361,972 vehicles, already exceeding full-year export totals for 2023–2025 combined years individually; Shanghai's Q3 wholesale volume (275,111 units) equaled 57% of Tesla's global Q3 deliveries, with domestic Chinese buyers just 29% of that total.
-- Tesla paused orders for its Shanghai-built Model 3 Premium (RWD and AWD, $39,490 CAD) in Canada, citing an exhausted import quota, with resumption expected March 2027; only the Performance AWD trim remains orderable. Canada's own quota tracker shows just 15,931 of 49,000 annual permits used as of October 9 — two-thirds remain unused — a discrepancy Electrek flags as unexplained, possibly tied to an undisclosed per-manufacturer set-aside.
-- Smart unveiled a new electric city car starting at €20,000 with up to 290 km WLTP range, a 35.8 kWh LFP battery, and 65 kW DC fast charging — a new low-cost European competitor.
-
-## Financials
-
-- China's VAT export rebate on NEVs drops from 13% to 9% on April 1, 2027. Electrek estimates this could cost Tesla roughly $600 million annually at current export volumes (~480,000 vehicles/year), based on an assumed ¥220,000 average export value per car — explicitly the outlet's own estimate, not a Tesla-reported figure.
-- China's NEV exports topped 4 million units in the first nine months of 2026, more than double last year, meaning the rebate cut pressures the broader industry, though Tesla is especially exposed since exports now account for roughly half of Giga Shanghai's production.
+- Tesla China domestic sales down 11.9% YTD; exports more than doubled
+- Canada pauses Shanghai Model 3 Premium orders on disputed "quota" claim
+- SpaceX plans double-catch attempt for Starship flight 15, before Thanksgiving
+- SpaceX requests launch cadence jump to 456/yr at Starbase
+- Digital Optimus now clears ~half of Diablo campaign by vision alone
+- NHTSA reviewing Tesla Robotaxi school-zone speeding petition
 
 ## Robotaxi
+- Tesla says it scaled to 300+ Cybercabs in Austin one month after launch, an 8x increase in 30 days (319 registered); Ashok Elluswamy said Cybercabs are now "everywhere" in the city, with Dallas launch expected soon.
+- A weekend X takeover showed Austin camera data with Cybercab sightings briefly exceeding Waymo's (21.6 vs 18.3 per 10,000 snapshots) during peak hours — Electrified's host calls this a limited anomaly, not a trend; on a normal day Waymo led (~3 vs ~1.57 per 10,000).
+- NHTSA is reportedly examining whether Tesla Robotaxis exceeded speed limits in school zones, a preliminary probe covering an estimated 1,000 vehicles; no decision yet on a full investigation.
+- Tesla faces a ~December 18 deadline to launch robotaxi service in Las Vegas under its 120-day permit window.
+- Unit economics remain contested: Morgan Stanley pegs Tesla's robotaxi cost near 81 cents/mile vs. ~$140/mile for Waymo's current system, while Goldman sees a 5–30 cents/mile Cybercab cost advantage at scale; a viral ~$1.25/mile margin estimate was flagged as unrealistic given Tesla's long-term target of roughly 20 cents/mile net margin.
 
-- Tesla added more Robotaxis to the Dallas fleet and Cybercab wait times are now "basically zero," per Sawyer Merritt, signaling expanding service availability; no new fleet totals were disclosed beyond RobotaxiTracker.com's stale baseline.
-- Grok's "Bot" assistant is now integrated into Cybercab rides, letting riders sign in once with sessions carrying over between trips; demonstrated use case included adding an item to an Amazon cart mid-ride.
+## Autonomous Driving
+- Tesla is quietly testing unannounced dynamic headlight leveling on some Model 3 and Cybertruck units, adjusting low-beam aim for pitch changes; described as early-stage and still gathering data.
+- V15 is partially live with only ~40% of planned features deployed; Elluswamy previously tied 24/7 robotaxi operations to the V15 rollout.
 
-## Market & Competition
+## Humanoid Bots
+- Elon Musk said Digital Optimus — a vision-only screen agent — can now complete roughly half of the Diablo campaign and is being trained on Counter-Strike and League of Legends, aiming to generalize skills toward browsers, spreadsheets and enterprise software, with eventual transfer to the physical Optimus robot.
 
-- Canada's EV import quota mechanics: a national cap of 49,000 Chinese-made EVs per year (growing to 70,000 by 2030), allocated first-come-first-served with no published per-manufacturer limit — raising questions about whether Tesla's claimed exhaustion reflects an undisclosed OEM-specific allocation.
+## Electric Vehicles
+- Tesla's China domestic sales fell 11.9% YTD to 381,088 units (lowest nine-month total in years); Giga Shanghai exports more than doubled to 361,972 units, now driving wholesale volume as Beijing prepares to cut the EV export VAT rebate from 13% to 9% on April 1, 2027 — an Electrek estimate (not Tesla-reported) pegs the cost at roughly $600M/year.
+- Tesla paused orders for the Shanghai-built Model 3 Premium in Canada, citing an exhausted import quota; Canada's official tracker shows two-thirds of the national quota unused, and Electrek calls Tesla's explanation questionable.
+- US EV average transaction price rose to $55,879 in September (+2.4% MoM, -3% YoY) as incentives shrank to an 11% discount rate, a 2026 low; Tesla's ATP rose 3.3% MoM to $54,345, roughly flat YoY, with Cybertruck averaging $98,109 across ~1,500 units sold.
+- Tesla Semi deliveries are underway with strong early reception, though one analyst cautioned published cost-per-mile figures understate true TCO; Tesla's US EV market share rose to 52% in Q3 from 41% a year earlier, despite the federal tax credit's expiry.
+
+## SpaceX — Starship
+- Musk said SpaceX now plans to attempt catching both ship and booster on flight 15, characterizing the prior flight 14 engine issue as a minor software glitch and estimating flight 15 could fly shortly before Thanksgiving; he wants flight 16 to reuse both stages entirely.
+- Ship 40 is now vertical at Starbase alongside three other Starships, intended to generate data on a flown ship's heat shield, Raptors and avionics.
+
+## SpaceX — Launch Business
+- SpaceX is seeking to raise Starbase's annual launch/landing limits from 25/50 to as many as 456 launches and 912 landings at full build-out; FAA/DOT public comment runs through November 30.
+
+## SpaceX — AI & Compute
+- SpaceX's largest compute/hosting deals were cited at a combined $41.2B/year (Anthropic ~$15B, a new December-starting customer ~$13.3B, Google plus Reflection AI ~$14.2B) — the stated inputs don't fully reconcile to the total as given; SpaceX's CFO reportedly guided to $100B in contracted annual revenue by year-end.
+- Musk detailed the Terafab chip-manufacturing project at Giga Texas, aiming for roughly 10 design iterations a year versus an industry norm he described as 2–3 years, while acknowledging he still has much to learn about chip manufacturing; a guest pushed back on both ends of that framing as overstated.
+- Morgan Stanley's Adam Jonas highlighted SpaceX's hybrid orbital-terrestrial "distributed inference cloud" combining Star Mind satellites and terrestrial data centers; Musk called the thesis "a very big deal."
+- Musk said effective coding AI requires large training datasets, citing this as the rationale behind SpaceX/xAI's Cursor acquisition, which also brought enterprise sales relationships.
+
+## SpaceX — Corporate & Valuation
+- A 13%-of-float SpaceX share unlock (328M shares) occurred around October 9, with another 11%-of-float unlock (328M shares) due October 24; SpaceX reports earnings November 3.
+- Musk confirmed phones launching in 2027–2028 will include chips supporting a new, higher-bandwidth Starlink mobile spectrum, which he called the "final important element" for full US phone coverage.
 
 Notable quotes and data:
-- Tesla's Canada order page: "Model 3 Premium orders paused after high demand exhausted Tesla's import quota... expected March 2027."
-- China Model 3 Premium wholesale export value assumption: ¥220,000/vehicle → ~¥8,800 ($1,235) rebate-cut cost per car (Electrek estimate).
-- Canada sub-$35,000 EV imports: 2,597 units in August, then 7 in September, 0 in October — despite 33,069 of 49,000 annual permits still unused.
+- "We're making interesting progress here. Digital Optimus can play about halfway through the Diablo campaign so far just by looking at the screen like a human." — Elon Musk
+- "The revenue growth was just crazy. Never seen anything like it." — Elon Musk, on SpaceX's computing revenue
+- Tesla: "1 month after launch, we've scaled to 300 plus Cybercabs serving Austin, an 8x increase in 30 days" (319 registered)
+- Tesla domestic China sales: 381,088 units through Sept 2026, -11.9% YoY; Shanghai exports: 361,972 units, more than double YoY
+- US EV ATP: $55,879 (Sept 2026, +2.4% MoM, -3% YoY); Tesla ATP: $54,345 (+3.3% MoM)
