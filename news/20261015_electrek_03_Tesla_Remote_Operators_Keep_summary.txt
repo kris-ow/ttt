@@ -1,0 +1,28 @@
+Channel:     electrek
+Title:       Tesla remote operators keep crashing its ‘Robotaxis,’ data shows
+Published:   2026-10-15 16:39 UTC
+Summarized:  2026-10-15 17:04:29 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_018t85QrSEUe4S6U48ySgQqR
+Cost:        $0.01571 (6515 in / 1839 out tokens)
+Relevance:   core — the article presents specific NHTSA crash-report data bearing directly on the safety and readiness of Tesla's Robotaxi/remote-operator stack, a central pillar of the Tesla thesis.
+Topic:       tesla
+Categories:  Robotaxi, Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek reports that two newly filed NHTSA crash reports show Tesla "Robotaxi" vehicles were under remote-operator control, not autonomous driving, at the time of the collisions — bringing the total number of known remote-takeover crashes in Tesla's robotaxi crash data to five, with all five ending in contact.
+
+## Autonomous Driving / Robotaxi
+1. **Two new crash filings in Dallas and Austin:** Per NHTSA's September Standing General Order data release, Tesla now has 36 unique "Robotaxi" incident reports, up from 22 when Electrek last reviewed the data in July. In Dallas (report 13781-16678), a driverless Model Y wedged between a concrete mixer truck and a parked SUV had a remote support operator take control and, while moving forward, make contact with the SUV at about 0.40 mph. In Austin (report 13781-16679), a remote operator in control of a Model Y driving through an alley hit a dumpster at about 1 mph. Both were property-damage-only with no passengers aboard, and both are coded by Tesla under Driver/Operator Type "Remote (Commercial / Test)" — the same code first used on a May Houston tree-stump crash.
+
+2. **Five-for-five remote-takeover crash record:** Including two earlier incidents disclosed after Tesla unredacted its crash narratives in May (a July 2025 Austin crash where a teleoperator drove a car up a curb into a metal fence at 8 mph, and a January 2026 Austin crash where a teleoperator drove into a construction barricade at 9 mph), the article counts five total remote-operator takeovers in Tesla's robotaxi crash data, and states all five have resulted in a collision. The article notes Tesla does not disclose how often remote operators intervene overall, so no intervention rate can be calculated from available data.
+
+3. **Waymo's contrasting teleoperation policy:** The article cites a February 2026 letter from Waymo to Senator Ed Markey stating Waymo "has not used remote driving or 'tele-operations' where a human performs the Dynamic Driving Task" — its remote staff only give guidance the Waymo Driver can accept or reject. Waymo's one exception is a trained-agent tool that can nudge a stuck vehicle forward at 2 mph with fixed steering angles, which Waymo says has never been used outside of training/testing, i.e., never deployed on public roads.
+
+## Editorial Stance
+Electrek's Fred Lambert argues the crash severity isn't the real story since Tesla robotaxis operate at low speeds anyway (incidents involved bumpers, a dumpster, and a tree stump at walking speed, with no injuries); the concerning pattern is how often these cars still need a human to intervene and how consistently those interventions end badly. He characterizes teleoperation — with its latency, limited view, and lack of physical feel for the vehicle — as "the quiet part of the autonomy stack that nobody wants to talk about."
+
+Notable quotes and data:
+- Tesla's robotaxi NHTSA incident reports: 36 total (up from 22 in July).
+- Five known remote-operator-controlled crashes to date; all five involved contact.
+- Waymo, in its February 2026 letter to Sen. Markey: has not used tele-operations performing the Dynamic Driving Task; its stuck-vehicle nudge tool caps at 2 mph and has reportedly never been used outside training.
