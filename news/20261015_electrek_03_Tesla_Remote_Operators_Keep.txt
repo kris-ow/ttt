@@ -1,0 +1,52 @@
+Source:      electrek
+Title:       Tesla remote operators keep crashing its ‘Robotaxis,’ data shows
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/10/15/tesla-remote-operators-crashing-robotaxis/
+Published:   2026-10-15 16:39 UTC
+Fetched:     2026-10-15 17:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla’s latest crash reports to federal regulators add two more “Robotaxi” crashes where a remote operator, not the car’s autonomous system, was driving when it hit something.
+
+That brings it to five in the data now. And every remote takeover that has shown up in a Tesla crash report has ended in a collision.
+
+## What the two new filings say
+
+Both crashes happened in August and landed in NHTSA’s September release of Standing General Order data. Tesla now has 36 unique “Robotaxi” incident reports on file, up from 22 when we last looked at this in July.
+
+In Dallas (report 13781-16678), a Model Y was stopped on a residential street, wedged between a concrete mixer truck on the right and a parked SUV on the left. “The remote support operator remotely took control and while moving forward, the vehicle made contact with the SUV at approximately 0.40MPH,” Tesla wrote. No passengers were aboard.
+
+ 
+ 
+ 
+
+In Austin (report 13781-16679), a remote operator “was in control” of a Model Y going straight through an alley, with a utility pole on one side and a dumpster on the other. It hit the dumpster at about 1 mph. Again, no passengers.
+
+Both are property-damage-only, both are at walking speed, and both carry Tesla’s structured code for Driver/Operator Type: “Remote (Commercial / Test).” That’s the same field Tesla first used on the Houston tree-stump crash in May. Three of the five are now formally coded as remote operation.
+
+## Five crashes, same script
+
+The other two show up only because Tesla unredacted its crash narratives in May. In July 2025 in Austin, a safety monitor couldn’t get the car to proceed, a teleoperator took over, accelerated, turned left, and drove it up a curb into a metal fence at 8 mph. In January 2026, again in Austin, a teleoperator took over for navigation help and drove into a construction barricade at 9 mph.
+
+Line them up and it’s one script. The autonomous system gets stuck or needs help, a human takes the car over remotely, and the human crashes it.
+
+Here’s the problem. Tesla doesn’t disclose how often remote operators intervene, so there’s no way to calculate a rate. But five remote takeovers have surfaced in the crash data, and all five ended in contact. Five for five.
+
+## Waymo draws the line somewhere else
+
+Tesla’s main robotaxi competitor handles this differently, and it said so on the record. In a February 2026 letter to Senator Ed Markey, Waymo wrote that it “has not used remote driving or ‘tele-operations’ where a human performs the Dynamic Driving Task.” Its remote staff give the Waymo Driver guidance it can accept or reject. They don’t steer.
+
+Waymo has one narrow exception, and it describes almost exactly these Tesla scenarios: a trained agent can nudge a stuck vehicle forward at 2 mph at fixed steering angles to clear a lane. Waymo says that tool has never been used outside of training.
+
+So both companies built a way to rescue a stuck car. Waymo capped its version at a crawl with fixed steering and, by its own account, has never deployed it on a public road.
+
+## Electrek’s Take
+
+We flagged this pattern in July with the Houston crash, and the data has added two more since. The severity still isn’t the story. Tesla’s robotaxis are already limited to surface streets at lower speeds, and it looks like speed is even more limited when remote operators take over. 
+
+Nobody’s been hurt, and we’re talking about bumpers, a dumpster, and a tree stump at walking speed.
+
+What it shows is how often these cars still need a person to bail them out, and how badly that goes when one does. Teleoperation is the quiet part of the autonomy stack that nobody wants to talk about. Driving a car over a cellular or satellite link means latency, a limited view, and no physical feel for the vehicle. 
+
+If you own an EV, or a robotaxi ends up in your driveway someday, powering it with home solar is one of the cheapest ways to cut your charging costs to almost nothing. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
