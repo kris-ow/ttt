@@ -1,0 +1,22 @@
+Channel:     farzad-fm
+Title:       Vera Rubin: 30x More Agent Throughput
+Published:   2026-10-11 17:04 UTC
+Summarized:  2026-10-15 06:14:51 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01GXyXZTEcbbBjQWC2EH6hSY
+Cost:        $0.01329 (9314 in / 795 out tokens)
+Relevance:   off-topic — This is a pure Nvidia hardware/benchmark story (Vera Rubin chip performance) with no mention of Tesla or SpaceX and no stated implication for either company's thesis.
+Topic:       none
+Categories:  Market & Competition
+────────────────────────────────────────────────────────────
+
+This video covers Nvidia's claims about its upcoming Vera Rubin chip architecture, based on results from SemiAnalysis's Agent X benchmark, and Nvidia's revenue-per-gigawatt projections across its chip generations. The content is entirely about Nvidia and AI infrastructure economics, with no connection to Tesla or SpaceX.
+
+## Market & Competition
+1. **Vera Rubin's agent-throughput claims:** Nvidia tested its Vera Rubin architecture on Agent X, an open benchmark from independent research firm SemiAnalysis designed to simulate real agentic AI workloads (long/growing context, tool calls, pauses, memory reuse, subagent work). On the DeepSeek V4 Pro model, Nvidia claims Vera Rubin delivered up to 30 times higher agent throughput per megawatt than GB300 Blackwell, meaning 30 times more agent work for the same fixed energy budget.
+2. **Cost-per-token and revenue-per-gigawatt claims:** Nvidia claims the cost of processing a million tokens on Vera Rubin was up to 35 times lower than on prior hardware. Separately, during its most recent earnings report, Nvidia stated potential revenue per gigawatt of capacity rose from about $18 billion with Hopper, to $25 billion with Blackwell, to $40 billion with Vera Rubin.
+
+Notable quotes and data:
+- Up to 30x higher agent throughput per megawatt for Vera Rubin vs. GB300 Blackwell, per Nvidia, on the DeepSeek V4 Pro model via the Agent X benchmark (SemiAnalysis).
+- Up to 35x lower cost per million tokens claimed for Vera Rubin, per Nvidia.
+- Nvidia-reported potential revenue per gigawatt of capacity: ~$18B (Hopper) → $25B (Blackwell) → $40B (Vera Rubin).
