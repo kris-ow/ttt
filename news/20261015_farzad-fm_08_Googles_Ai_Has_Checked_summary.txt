@@ -1,0 +1,26 @@
+Channel:     farzad-fm
+Title:       Google's AI Has Checked 16,000 Papers. Now Anyone Can Use It
+Published:   2026-10-15 22:51 UTC
+Summarized:  2026-10-15 23:09:31 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01VMEnQRpJAPvZKbEfVvVKXR
+Cost:        $0.01394 (9947 in / 799 out tokens)
+Relevance:   off-topic — The video is about a Google Research AI paper-review tool and has no mention of or implication for Tesla or SpaceX.
+Topic:       none
+Categories:  
+────────────────────────────────────────────────────────────
+
+This video covers Google Research's new "Deep Review" tool, an agentic AI system that reviews academic papers and other complex documents for technical accuracy, now opened to public access. The content has no connection to Tesla, SpaceX, or their investment theses.
+
+## Market & Competition
+1. **Google launches public AI paper-review agent:** Google Research released "Deep Review," an agentic AI system (not a chatbot) that checks technical details in complex documents such as research papers, design docs, legal, and financial documents. It has already provided private feedback on more than 16,000 research papers and is now available to the public with two free reviews per week on PDFs or plain text, with additional usage available via a Gemini API key; it runs on a Gemini model referred to as "Gemini 4 Argon," and Google says uploaded documents are not used to train its models.
+2. **Rising submission volume driving demand for review tools:** Per Google, three of the largest AI conferences received more than 74,000 paper submissions this year, up from under 25,000 three years prior, reflecting how AI has made writing cheaper while the pool of available human reviewers has not grown.
+3. **How the system avoids hallucination:** The tool works in four steps — splitting documents into logical sections, allocating more compute to dense sections like proofs, having specialized agents review each piece in parallel with full-document context, and a final agent that cross-checks sections and verifies claims against outside sources.
+4. **Pilot results:** In one conference pilot, Google says more than half of authors who received feedback from the tool ran brand new experiments as a result.
+
+Notable quotes and data:
+- "Every AI that writes is going to need an AI that checks it because writing got cheap and checking didn't" — host's projection.
+- Deep Review has given private feedback on 16,000+ research papers to date.
+- Three major AI conferences received 74,000+ submissions this year, versus under 25,000 three years ago.
+- More than half of authors in one conference pilot ran new experiments after receiving Deep Review feedback.
+- Free tier: two reviews per week on PDFs or plain text; more available with a Gemini API key.
