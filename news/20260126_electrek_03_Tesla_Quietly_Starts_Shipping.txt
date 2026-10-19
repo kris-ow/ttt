@@ -1,0 +1,129 @@
+Source:      electrek
+Title:       Tesla quietly starts shipping Model Y with new AI4.5 computer
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/01/26/tesla-quietly-starts-shipping-model-y-with-new-ai4-5-computer/
+Published:   2026-01-26 16:37 UTC
+Fetched:     2026-10-19 23:02 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla appears to be quietly rolling out a new version of its Full Self-Driving computer, with new Model Y owners discovering their vehicles are equipped with “Hardware 4.5”, or AI4.5 as it’s being labeled internally.
+
+The discovery comes from owners taking delivery of Fremont-built Model Y vehicles in late December and January, who found a computer labeled “AP4.5” or “AP45” in their cars. The sightings match a part number (2261336-02-A) that was previously spotted in Tesla’s Electronic Parts Catalog for a new FSD computer.
+
+As usual, Tesla made no announcement about the change.
+
+## The Discovery
+
+One of the first public confirmations came from Model Y owner @Eric5un on X, who shared details of a Fremont-built 2026 Model Y AWD Premium delivered this January. According to the owner, the vehicle includes a new front camera housing along with an Autopilot computer labeled “AP45.”
+
+ 
+ 
+ 
+
+The owner confirmed the part number by briefly pulling down the upper carpet liner below the Model Y’s glovebox – the same area where Tesla’s FSD computer is housed.
+
+Other owners quickly reported similar findings. 
+
+The sightings have caught the attention of the Tesla hacking community, particularly well-known firmware sleuth @greentheonly, who had first spotted an upcoming onboard computer update through Tesla’s software. Based on his analysis of Tesla’s firmware, the new HW4.5 computer may feature a three-SoC (System-on-Chip) design, a significant change from the dual-SoC architecture we’ve seen since Tesla’s HW4 computer first leaked back in February 2023.
+
+## What We Know About AI4.5
+
+If the three-chip architecture is confirmed, it would be a notable change from the current HW4/AI4 computer, which uses a dual-SoC design.
+
+Tesla’s FSD computers have historically used two identical chips processing data simultaneously for redundancy, if one fails, the other can take over. A third chip could serve several purposes:
+
+- More compute power: Larger neural networks could be split across more silicon
+
+- Enhanced redundancy: A third chip could provide additional safety validation
+
+- Bridge to AI5: Extra headroom as Tesla’s FSD models grow in complexity
+
+The move mirrors Tesla’s previous quiet jump from HW2.0 to HW2.5 years ago, which added a secondary processor and improved reliability without a major announcement. As we reported back in 2019, that was the era when Tesla was also offering free computer retrofits from HW2.5 to HW3 for FSD buyers, a program that seems like ancient history now given how Tesla has handled subsequent hardware transitions.
+
+Interestingly, several of the newly delivered vehicles with HW4.5 also include Tesla’s updated 16-inch center display, something Tesla released on new “premium” Model Ys as part of a small “2026 model year” update, and revised windshield camera housing. 
+
+## The AI5 Gap Problem
+
+The timing of AI4.5 is particularly interesting, and telling.
+
+Tesla has been hyping its next-generation AI5 chip for over a year. Musk originally promised it would be “applied to autos in the second half of 2025” and claimed it would deliver “10x” the power of current hardware.
+
+That timeline has slipped significantly. As we reported in November, Tesla delayed the AI5 chip to mid-2027, with only “a small number of units” arriving in late 2026. Just last week, Musk said AI5 design is “almost done”, six months after he said it was “finished.” I noted at the time how the semiconductor industry typically doesn’t see 9-month design cycles for major chips, so take Musk’s latest timelines with the usual grain of salt.
+
+Musk has described solving AI5 as “existential” to Tesla, noting that he’s “personally spent every Saturday for several months working on it.” For him, who runs 6 different companies, it’s a flex, but for most people it sounds strange that the CEO of a company would spend only a day a week on what they claim is a life-or-death product for a trillion-dollar company.
+
+He compared the chip’s performance to NVIDIA’s $30,000 H100 data center GPU, impressive specs for something that needs to fit behind a glovebox and run off a car’s low-voltage battery, but as usual, take everything Musk says with a grain of salt.
+
+Also, here’s the problem: there’s now a gap of at least 18 months between when Tesla needs more compute power and when AI5 will actually be ready in volume.
+
+AI4.5 appears to be Tesla’s answer to that gap. By introducing a slightly more capable iteration of current technology now, Tesla ensures that vehicles rolling off the line won’t be immediately obsolete when AI5 finally arrives.
+
+This isn’t the first time Tesla has created an intermediate hardware revision. Last year, we reported on a “MY Reloaded” computer that appeared to be an updated HW4 variant, which may or may not have something to do with this AI4.5 unit. Tesla’s naming conventions don’t exactly help here.
+
+## What This Means for Owners
+
+For those who recently bought or are considering a Tesla with AI4 hardware, the emergence of HW4.5 raises some uncomfortable questions.
+
+Musk has repeatedly stated that current-generation AI4 hardware will be capable of handling Unsupervised FSD once it’s ready.
+
+But Tesla said the same thing about HW3, and that wasn’t true. The doubts grow larger with every new iteration.
+
+The truth is that Tesla made those claims before knowing exactly what it takes to solve autonomy. Tesla’s neural networks are growing larger than anticipated. FSD v14 and the models powering it require more memory and compute than earlier versions. A three-SoC setup would allow Tesla to run larger, more intelligent neural networks that might otherwise strain the standard HW4 unit. As we noted in our comparison of Tesla’s AI4 vs. NVIDIA’s Drive Thor, Tesla switched from LPDDR4 to GDDR6 memory in HW4 specifically because memory bandwidth was the bottleneck, and AI5 is expected to have 5x the memory bandwidth of AI4.
+
+The memory situation with this 4.5 version is unclear.
+
+Tesla has long been vague about how HW3 vehicles need upgrades to access future FSD features. In fact, Musk finally admitted in January 2025 that Tesla would have to replace HW3 computers, a promise that, as of today, still has no concrete plan behind it.
+
+The emergence of HW4.5 raises new questions about whether HW4 vehicles might eventually face similar limitations.
+
+## Tesla’s Hardware History: A Pattern Emerges
+
+For context, Tesla has a long history of promising that its vehicles have “all the hardware necessary” for self-driving, only to introduce new hardware generations that outpace the old ones without ever delivering the promised unsupervised self-driving capability.
+
+In 2016, Tesla announced all its vehicles would have Full Self-Driving hardware. Since then, we’ve seen:
+
+- HW2 → HW2.5: Minor upgrade, Tesla offered retrofits
+
+- HW2.5 → HW3: Major upgrade, Tesla offered free retrofits for FSD buyers (we covered the rollout in 2019)
+
+- HW3 → HW4: Major upgrade, Tesla said no retrofits would be offered
+
+- HW4 → AI4.5: Appears to be happening now, no announcement
+
+- AI4.5 → AI5: Expected mid-2027
+
+Each generation has been more powerful, but Tesla has consistently struggled to deliver on its self-driving promises with the hardware available at the time. The company has faced multiple lawsuits and even changed the language on its website from “all cars have self-driving hardware” to “designed for autonomy.”
+
+As I’ve written extensively, Tesla has a significant liability problem brewing with millions of HW3 vehicles that were sold with promises of self-driving capability.
+
+## Electrek’s Take
+
+Once again, Tesla is making hardware changes without telling anyone. It’s a pattern we’ve seen repeatedly over the years: the company prefers to quietly roll out improvements rather than risk impacting sales of vehicles with older hardware.
+
+It used to be that people were waiting for Tesla’s new battery pack, and the company needed to be quiet about that in order to lower the impact on existing sales. It doesn’t feel like onboard computers have the same impact, as many people have serious doubts about Tesla delivering unsupervised autonomy regardless of the computer.
+
+ 
+
+## Top comment by Blake
+
+ 
+ - Liked by 19 people 
+ 
+ Remember folks, Elmo promised L5 (yes 5) on the HW2.0 computer, released in Q3 2016.
+
+ 
+
+ View all comments
+ 
+ Nonetheless, the existence of AI4.5 tells us two things:
+
+- Tesla’s software is outpacing its hardware. The neural networks powering FSD are growing in size and complexity faster than Tesla’s in-car computers can keep up. That’s actually a good sign for FSD development overall, but it creates headaches for deployment – headaches of Tesla’s own making considering it didn’t have to sell autonomy before it was solved.
+
+- AI5 is taking longer than expected. If AI5 were on track for its original 2025 timeline, there would be no need for a stopgap like AI4.5. The fact that Tesla felt compelled to develop an intermediate solution suggests the company knew AI5 delays were coming.
+
+How do you use this information? For those buying a new Tesla today, it’s worth noting that you might be getting AI4.5, or you might be getting the last of the AI4 units, as Tesla has been citing inventory. You better check before signing anything.
+
+The real question is whether HW4.5 vehicles can deliver on Tesla’s promise of unsupervised self-driving and what it means for HW4.
+
+At this point, after almost a decade of hardware upgrades and broken promises, I would strongly advise anyone buying a Tesla not to factor in future self-driving capability into their purchase decision. Buy a Tesla because you like the car as it is today. If FSD ever actually works, consider it a bonus.
