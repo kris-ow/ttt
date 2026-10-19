@@ -1,0 +1,28 @@
+Channel:     farzad-fm
+Title:       Why a Falling SpaceX Booster Waits Until the Last Moment
+Published:   2026-10-19 14:00 UTC
+Summarized:  2026-10-19 15:05:19 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01VU62WfHfS3TA8azRcgjJxw
+Cost:        $0.01629 (9927 in / 1272 out tokens)
+Relevance:   core — The video is a technical explainer of SpaceX's Falcon 9 booster landing physics ("hoverslam") and reusability, directly bearing on SpaceX's launch cost thesis.
+Topic:       spacex
+Categories:  SpaceX — Launch Business, SpaceX — Starship
+────────────────────────────────────────────────────────────
+
+This video is a technical explainer of how SpaceX's Falcon 9 booster lands propulsively despite being unable to hover, describing the "hoverslam" (suicide burn) maneuver and framing booster reusability as the core driver of cheaper launches. It also briefly contrasts this with Starship's booster, which the narrator says returns without using grid fins ("props").
+
+## SpaceX — Launch Business
+1. **Falcon 9's landing sequence explained:** The narrator walks through the full descent: after stage separation, the booster flips and fires a boostback burn toward the launch site, then falls tail-first; on reentry it fires again (entry burn) to slow down and shield itself from heating; grid fins (lattice rudders) then steer the booster toward its landing target.
+2. **The "hoverslam" maneuver:** Because even a single engine at minimum thrust produces more force than the weight of a near-empty booster, the rocket cannot hover — firing the landing engine too early causes it to stop and rise, too late causes it to crash. The onboard computer times the final landing burn so velocity reaches zero exactly as the legs touch down, a technique engineers call a "hoverslam." The narrator states this was first achieved on an orbital rocket in December 2015, and says it now happens several times a week and is "commonplace."
+3. **Reusability as the cost driver:** The narrator asserts that solving the landing problem — reusing the same booster ("accelerator") instead of building a new one for every flight — is, in his opinion, the primary reason launches have become cheap.
+
+## SpaceX — Starship
+1. **Starship's booster lands without grid fins:** The narrator notes that the Starship booster ("accelerator") "goes even further," landing without using grid fins, unlike Falcon 9 which still relies on them ("props") for guidance during descent.
+
+Notable quotes and data:
+- "In my opinion, this is the reason why launches have become cheap." — narrator, on booster reusability
+- Hoverslam first achieved on an orbital rocket in December 2015, per the narrator
+- "Today this happens several times a week. This has already become commonplace." — narrator, on Falcon 9 booster landings
+- "Even one engine, at minimum thrust, pushes harder than the weight of an almost empty booster" — core physical constraint explaining why Falcon 9 can't hover
+- The Falcon 9 booster is described as a "14-story pipe" guided by grid fins to its landing target
