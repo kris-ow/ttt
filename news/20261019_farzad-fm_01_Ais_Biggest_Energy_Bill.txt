@@ -1,0 +1,68 @@
+Channel:     farzad-fm
+Title:       AI's Biggest Energy Bill Isn't the Math
+URL:         https://www.youtube.com/watch?v=qjFl8teqJWQ
+Published:   2026-10-19 00:00 UTC
+Fetched:     2026-10-19 01:03 UTC
+
+────────────────────────────────────────────────────────────
+
+The biggest
+energy drain in AI isn't
+computation.  This is
+data movement.
+Adding two numbers
+on a chip is cheap, but
+getting a single
+number from DRAM, the memory that
+powers it, requires
+6,400 times more
+energy.  And when the Nvidia A100
+trains an
+image model, 60 to 84% of the
+processing power
+is spent
+moving data.
+What is left is used for calculation
+.  Why?
+Data is mostly
+transmitted as
+electricity over copper,
+and copper works like a
+garden hose.    The
+faster you push, the
+more signal
+is converted into
+heat.  Therefore, between
+machines, data
+is transferred into light
+through connectors.
+Nvidia's Jensen Huang
+counted six for
+each GPU.
+Because if we had a
+million GPUs,
+multiplied by six,
+right?  That would be one million
+six million
+30 watt transceivers,
+180 megawatts per
+transceiver.  They didn't
+do any
+calculations, they
+just moved
+the signals.
+Every watt spent
+shuffling
+numbers never goes
+into computing.  Therefore,
+the latest switches
+place the light
+directly on the chip housing
+, and according to Nvidia,
+the consumption of each
+connection drops from 30
+watts to about
+nine.  Because in AI, the
+most expensive part has
+never been
+the calculations.
