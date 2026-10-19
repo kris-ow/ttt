@@ -1,0 +1,122 @@
+Source:      electrek
+Title:       Tesla patents ‘clever math trick’ for HW3, but nothing points to delivering promised self-driving
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/01/21/tesla-patents-clever-math-trick-hw3-nothing-delivering-promised-self-driving/
+Published:   2026-01-21 20:47 UTC
+Fetched:     2026-10-19 23:03 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla has published a new patent that describes a way to squeeze more performance out of its aging HW3 self-driving computers. While the technology is interesting, nothing points to it actually enabling Tesla to deliver on its long-standing promise of unsupervised self-driving on HW3 vehicles.
+
+In 2016, Tesla announced that all vehicles produced thereafter would become capable of “Full Self-Driving” — at one point, CEO Elon Musk even specified “level 5 self-driving,” which means capable of driving anywhere, anytime, under any condition.
+
+We are approaching a decade since that promise, and it’s nowhere close to being fulfilled.
+
+In fact, it looks like Tesla is doing everything it can to not fulfill its promise to HW3 owners.
+
+ 
+ 
+ 
+
+## The patent
+
+The new patent (US20260017503A1), titled “Bit-Augmented Arithmetic Convolution,” describes a method to run higher-precision AI models on HW3’s 8-bit hardware through what Tesla calls “bit augmentation.”
+
+In simple terms, Tesla’s engineers figured out a way to split 16-bit numbers into two 8-bit pieces, process them separately through HW3’s existing neural network accelerators, and then stitch the results back together to emulate higher-precision calculations.
+
+It’s accompanied by two related filings: one addressing rotary positional encoding for transformer attention mechanisms (US20260017019A1), and another about packing more data through limited registers (US20260017051A1).
+
+The techniques are genuinely clever. Tesla’s AI team deserves credit for finding ways to extract more capability from constrained hardware.
+
+But here’s the problem: clever math tricks don’t change fundamental hardware limitations.
+
+## The limitations no one is talking about
+
+## Memory is the real bottleneck
+
+The patent addresses compute precision, but Tesla’s biggest problem with HW3 isn’t the bit-width of its multipliers — it’s memory.
+
+HW3 has 8 GB of RAM. FSD v13’s driving logic alone requires approximately 7.5 GB just for one node. That’s why HW3 vehicles are stuck on v12.6 while HW4 cars run v14.
+
+No amount of arithmetic tricks can create more memory. The patent doesn’t even attempt to address this.
+
+## Latency penalties
+
+Emulating 16-bit operations through multiple 8-bit passes isn’t free. The patent itself acknowledges the latency concern, stating that such operations can impose “latency so as to degrade a user experience” and that “for perception units of an autonomous driving system, the incurred latency can degrade or even render a system inoperable.”
+
+Tesla claims its approach mitigates this by using the MAC arrays themselves for the data splitting, but the fundamental reality remains: running multiple passes to emulate higher precision takes more time than native hardware. For a real-time safety system that needs to make split-second decisions, every millisecond matters.
+
+Of course, Tesla could, and likely will, avoid that by using the extra capacity on a smaller model rather than a slower one.
+
+## Camera resolution
+
+It’s also important to note that the actual compute power is not the only limitation of HW3 compared to Tesla’s newer vehicles.
+
+HW3 vehicles have 1.2-megapixel cameras. HW4 vehicles have 5-megapixel cameras with better low-light performance and dynamic range.
+
+Software can’t invent detail that was never captured. As we previously reported, Tesla’s own FSD v13.2 introduced processing camera feeds at full resolution for HW4, suggesting there is an advantage to higher-resolution cameras that HW3 owners will never have.
+
+## What this actually enables: V14 Lite
+
+Let’s be clear about what these patents are really for: they’re the technical foundation for the “V14 Lite” update Tesla promised would come to HW3 vehicles around Q2 2026.
+
+And that’s the crux of the issue.
+
+V14 Lite is a “lite” version of FSD v14. But FSD v14 itself is still a supervised driver-assistance system, it is not the unsupervised self-driving Tesla sold to customers.
+
+So what HW3 owners are getting is a watered-down version of something that was already not what they paid for.
+
+As I wrote in my review of FSD v14:
+
+> 
+“The obvious one is: it’s not what Tesla sold to customers, unsupervised self-driving, and I don’t see it becoming that any time soon.”
+
+V14 on HW4 requires constant driver supervision. V14 Lite on HW3 will require the same, except with fewer features, higher latency, and all the limitations of a now six-year-old hardware.
+
+## The promise vs. reality
+
+Musk admitted in January 2025 that HW3 won’t support unsupervised self-driving and that Tesla will need to replace the computers for FSD purchasers.
+
+That was a year ago. Tesla still has no public plan to make this happen.
+
+As we reported, HW4 can’t simply be retrofitted into HW3 vehicles, it uses different power requirements, camera connectors, and has a completely different form factor. Tesla would need to design an entirely new computer specifically for retrofits.
+
+Meanwhile, Tesla has even changed the language on its website from “all cars have self-driving hardware” to cars being “designed for autonomy”, a tacit admission that the original promise was wrong.
+
+## Electrek’s Take
+
+These patents represent interesting engineering work that will likely enable Tesla to squeeze a bit more life out of HW3 vehicles. They may make V14 Lite possible. They may improve certain edge cases.
+
+Don’t take it the wrong way, I know this is good. People like to label me as a “Tesla hater” simply because I’m not hailing this as a “breakthrough” that is going to make everything OK for HW3 owners like some of the usual Tesla boosters:
+
+ 
+
+## Top comment by Damon Ekstrom
+
+ 
+ - Liked by 12 people 
+ 
+ In simple terms, Tesla views this as a cheaper option than replacing every HW3 vehicle with updated hardware and cameras. I still don't see how this is a good thing, though. If you bought "FSD", then you bought into Elon's promise of not only stating that your car is an "appreciating asset", but that you'll have everything you need to achieve full autonomy. 
+
+While this is indeed a clever way to get more out of the aging hardware, it still doesn't resolve the problem. It's yet another band-aid for a wound that isn't healing.
+
+ 
+
+ View all comments
+ 
+ The problem has always been that we cannot simply report on Tesla’s FSD progress without comparing it to what Tesla sold to FSD customers: unsupervised self-driving.
+
+Millions of Tesla owners paid thousands of dollars, some up to $15,000, for a “Full Self-Driving” package on the explicit promise that their vehicles had “all the hardware necessary” for unsupervised autonomy.
+
+These patents don’t change the fact that:
+
+- HW3 doesn’t have enough memory for modern FSD models
+
+- HW3 cameras are 4x lower resolution than HW4
+
+- Tesla has no concrete plan to upgrade HW3 computers
+
+- Even with these tricks, HW3 will only get “lite” versions of already-supervised software
+
+These patents only point to Tesla having found a way to run a lesser version of its existing software that doesn’t enable unsupervised self-driving. It’s not a solution to Tesla’s problem. In fact, it only appears to serve as an excuse to delay the inevitable hardware retrofit or refund that Tesla will have to give to all HW3 owners.
