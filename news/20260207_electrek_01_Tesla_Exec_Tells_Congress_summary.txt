@@ -1,0 +1,29 @@
+Channel:     electrek
+Title:       Tesla exec tells Congress ‘no one has ever’ taken control of its vehicles — but that’s not true
+Published:   2026-02-07 00:31 UTC
+Summarized:  2026-10-19 23:06:14 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01CvFNPiQhYy2jyWNVFkLGCF
+Cost:        $0.01423 (6510 in / 1544 out tokens)
+Relevance:   core — Tesla's VP of Vehicle Engineering testified to Congress on autonomous vehicle safety/cybersecurity, directly bearing on the regulatory framework for Tesla's self-driving thesis.
+Topic:       tesla
+Categories:  Autonomous Driving, Market & Competition
+────────────────────────────────────────────────────────────
+
+Tesla VP of Vehicle Engineering Lars Moravy told a Senate Commerce Committee hearing on autonomous vehicles this week that no one has ever taken remote control of Tesla vehicles; the author disputes this using two documented historical hacking incidents.
+
+## Autonomous Driving
+1. **Moravy's Senate testimony:** During a Senate Commerce Committee hearing on autonomous vehicles, Moravy said Tesla's driving controls sit in a core-embedded central layer that cannot be accessed from outside the vehicle, and stated directly that no one has ever been able to take over control of Tesla's vehicles. He also mentioned Tesla's bug bounty program but did not specify that independent researchers had previously gained remote control of vehicles.
+
+2. **The 2017 "Mothership" hack:** Security researcher Jason Hughes (WK057) found a vulnerability chain giving him access to Tesla's central "Mothership" server, letting him authenticate as any vehicle using just a VIN and access location data and vehicle commands fleet-wide. He demonstrated this by remotely activating the Summon feature on a California Tesla from his home in North Carolina. Tesla awarded Hughes a $50,000 bug bounty — several times its then-standard maximum — and patched the flaw overnight. The article notes this occurred shortly before Elon Musk publicly warned at the National Governors Association about "fleet-wide hacks" as a top concern.
+
+3. **The 2016 Keen Security Lab hack:** Researchers at Tencent's Keen Security Lab remotely hacked a Tesla Model S from 12 miles away, gaining control of the vehicle's brakes by exploiting its CAN bus; Tesla patched the vulnerability within 10 days of notification.
+
+## Editorial Stance
+The author argues Moravy's "no one has ever" claim is factually false given the 2016 and 2017 incidents, though acknowledges both were white-hat disclosures with no known malicious real-world exploitation, and that Tesla has since significantly improved its security posture (larger bug bounties, expanded security team, participation in events like Pwn2Own). The author contends that precision matters because Moravy's testimony came amid Tesla's push for a federal autonomous-vehicle regulatory framework, where lawmakers' oversight decisions depend partly on the accuracy of safety/security claims.
+
+Notable quotes and data:
+- Moravy: "We have many layers of security in our system. Our driving controls are in a core-embedded central layer that cannot be accessed from outside the vehicle."
+- Moravy: "To answer your question on if anyone has been able to take over control of our vehicles, the answer is simply no."
+- Hughes received a $50,000 bug bounty for the 2017 Mothership vulnerability.
+- Keen Security Lab hacked a Model S's brakes from 12 miles away in 2016; Tesla patched it within 10 days.
