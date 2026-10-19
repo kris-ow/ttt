@@ -1,0 +1,68 @@
+Source:      electrek
+Title:       Tesla exec tells Congress ‘no one has ever’ taken control of its vehicles — but that’s not true
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/02/06/tesla-exec-tells-congress-no-one-has-ever-taken-control-vehicles-but-thats-not-true/
+Published:   2026-02-07 00:31 UTC
+Fetched:     2026-10-19 23:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla Vice President of Vehicle Engineering Lars Moravy told a Senate committee this week that no one has ever remotely taken control of Tesla vehicles. That claim doesn’t hold up to the facts of history.
+
+In fact, a single hacker once gained control of Tesla’s entire fleet.
+
+During a Senate Commerce Committee hearing on autonomous vehicles on Tuesday, Moravy was asked about cybersecurity concerns. His response was unequivocal:
+
+> 
+“We have many layers of security in our system. Our driving controls are in a core-embedded central layer that cannot be accessed from outside the vehicle.”
+
+When pressed further, Moravy stated:
+
+ 
+ 
+ 
+
+> 
+“To answer your question on if anyone has been able to take over control of our vehicles, the answer is simply no.”
+
+There’s just one problem: that’s not accurate.
+
+## The Big Tesla Hack
+
+To this day, after a decade of reporting at Electrek, The Big Tesla Hack is still one of the craziest stories I’ve ever written.
+
+In 2017, security researcher Jason Hughes (known as WK057 in the Tesla community) discovered a chain of vulnerabilities that gave him access to “Mothership”, Tesla’s central server used to communicate with its entire fleet.
+
+As we reported at the time, Hughes was able to authenticate as any vehicle in Tesla’s fleet using just a VIN number. He had access to location data, vehicle information, and critically, the ability to send commands to any Tesla on the road.
+
+To demonstrate the severity, Hughes asked Tesla’s head of software security, Aaron Sigel, to give him a VIN number of a nearby Tesla. Hughes then remotely activated the car’s Summon feature, moving a vehicle in California from his home in North Carolina.
+
+That was prior to Tesla having more autonomous driving capabilities, but if there were more features than “summon, he technically could have stolen a vehicle from hundreds, or even thousands of miles away.
+
+Tesla awarded Hughes a special $50,000 bug bounty for the discovery, several times higher than their maximum official reward at the time, and worked overnight to patch the vulnerability.
+
+This incident happened just months before CEO Elon Musk took the stage at the National Governors Association and warned about “fleet-wide hacks” as one of Tesla’s biggest concerns, even joking about hackers sending all Teslas to Rhode Island “as a prank.”
+
+Now we know why he was thinking about it.
+
+## Not the only time
+
+The 2017 Mothership hack wasn’t an isolated incident. In 2016, security researchers at Keen Security Lab (Tencent) successfully hacked a Tesla Model S from 12 miles away, gaining remote control of the vehicle’s brakes by exploiting the car’s Controller Area Network (CAN bus).
+
+Tesla patched that vulnerability within 10 days of being notified.
+
+## Electrek’s Take
+
+To be fair to Moravy, there’s important context here. 
+
+Both incidents were discovered by “white hat” security researchers who responsibly disclosed the vulnerabilities to Tesla rather than exploiting them maliciously. Tesla patched the issues quickly, and there’s no evidence that any bad actors have successfully taken remote control of Tesla vehicles “in the wild.”
+
+But Moravy didn’t say “no malicious actor has ever taken control.” He said “no one has ever been able to”, and that’s demonstrably false. He did mention Tesla’s bug bounty program after the statement above, but he didn’t specify that independent security researchers have, in fact, taken remote control of Tesla vehicles on multiple occasions.
+
+Luckily, I doubt Moravy was under oath during the testimony.
+
+And again, to be fair to Tesla, experts have told me that Tesla has significantly improved its security posture since 2017. The company increased its maximum bug bounty payout, expanded its security team, and now regularly participates in hacking competitions like Pwn2Own.
+
+Moravy’s testimony came during a hearing where Tesla and other companies are pushing Congress to establish a federal framework for autonomous vehicles. The credibility of safety and security claims matters when lawmakers are deciding how much oversight these systems need.
+
+Tesla’s cybersecurity has improved dramatically since 2017, and the company deserves credit for its bug bounty program and responsiveness to security researchers. But executives testifying before Congress should be precise about their company’s security history, especially when that history is already public record.
