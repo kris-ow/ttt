@@ -5,6 +5,7 @@
 //   /i/<slug>/ → public/og/<slug>.png          (per interview)
 //   /w/<date>/ → public/og/weekly-<date>.png   (per Weekly Tesla Brief)
 //   /t/<slug>/ → public/og/tesla-<slug>.png    (per official Tesla release)
+//   /t/spacex-<rest>/ → public/og/spacex-<rest>.png (per official SpaceX release)
 //
 // Uses Playwright Chromium — NOT part of `npm run build`. Weekly cards render
 // automatically in the Monday leg of daily-pipeline.yml (after the news.json
@@ -139,12 +140,22 @@ function weeklyCardHtml(article) {
     ${sections.length ? `<div class="sections">${esc(sections.join(' · '))}</div>` : ''}`, 'READ THE BRIEF');
 }
 
+// Card file for an official release. Tesla slugs are bare ("2025-impact-report"
+// → tesla-2025-impact-report.png); other official channels' slugs already
+// carry their prefix ("spacex-q3-…" → spacex-q3-….png). Same rule in
+// build-share-pages.js.
+function officialCardFile(article) {
+  return article.slug.startsWith(`${article.channel}-`) ? `${article.slug}.png` : `${article.channel}-${article.slug}.png`;
+}
+
 function teslaCardHtml(article) {
   // "Tesla 2025 Impact Report" → drop the leading brand word; the amber tag
-  // already says Tesla and the title space is tight in the crop-safe zone.
-  const title = article.title.replace(/^Tesla\s+/i, '');
+  // already says Tesla (or SpaceX) and the title space is tight in the
+  // crop-safe zone.
+  const brand = article.channel === 'spacex' ? 'SpaceX' : 'Tesla';
+  const title = article.title.replace(new RegExp(`^${brand}\\s+`, 'i'), '');
   return cardHtml(`
-    <div class="tag tesla">[TESLA — PRIMARY SOURCE]</div>
+    <div class="tag tesla">[${brand.toUpperCase()} — PRIMARY SOURCE]</div>
     <div class="brief-title">${esc(title)}</div>
     <div class="meta">${esc(article.date)}</div>`, 'READ THE SUMMARY');
 }
@@ -158,8 +169,9 @@ async function main() {
     ...interviews.map(iv => ({ file: `${iv.slug}.png`, html: () => interviewCardHtml(iv) })),
     ...articles.filter(a => a.type === 'weekly')
       .map(a => ({ file: `weekly-${a.date}.png`, html: () => weeklyCardHtml(a) })),
-    ...articles.filter(a => a.channel === 'tesla' && a.slug)
-      .map(a => ({ file: `tesla-${a.slug}.png`, html: () => teslaCardHtml(a) })),
+    // Only official releases carry a slug (build-news.js)
+    ...articles.filter(a => a.slug)
+      .map(a => ({ file: officialCardFile(a), html: () => teslaCardHtml(a) })),
   ];
 
   const todo = cards.filter(c => FORCE || !fs.existsSync(path.join(OUT_DIR, c.file)));

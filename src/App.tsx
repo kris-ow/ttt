@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { track, trackArticleOpen } from './analytics'
 import newsData from './data/news.json'
-import { type Article, type NewsData, CHANNEL_META } from './types'
+import { type Article, type NewsData, CHANNEL_META, isOfficialChannel } from './types'
 import { ArticleDetail } from './components/Feed/ArticleDetail'
 import { FeedSection } from './components/Feed/FeedSection'
 import { ValuationSection } from './components/Valuation/ValuationSection'
@@ -110,8 +110,10 @@ export default function App() {
     const unique = [...new Set(data.articles.map(a => a.channel))]
       .filter(ch => !FILTER_HIDDEN_CHANNELS.has(ch))
     return unique.sort((a, b) => {
+      // Official channels first, Tesla ahead of SpaceX
       if (a === 'tesla') return -1
       if (b === 'tesla') return 1
+      if (isOfficialChannel(a) !== isOfficialChannel(b)) return isOfficialChannel(a) ? -1 : 1
       const nameA = (CHANNEL_META[a]?.name || a).toLowerCase()
       const nameB = (CHANNEL_META[b]?.name || b).toLowerCase()
       return nameA.localeCompare(nameB)
@@ -159,15 +161,15 @@ export default function App() {
   }, [])
 
   const handleArticleOpen = useCallback((article: Article) => {
-    // Weekly briefs and official Tesla releases are deep-linkable: opening one
-    // pushes its shareable /w/<date>/ or /t/<slug>/ URL (mirrors openInterview
-    // below).
+    // Weekly briefs and official Tesla / SpaceX releases are deep-linkable:
+    // opening one pushes its shareable /w/<date>/ or /t/<slug>/ URL (mirrors
+    // openInterview below).
     if (article.type === 'weekly') {
       const path = weeklyPath(article.date)
       if (window.location.pathname !== path) {
         history.pushState({ ttt: 'weekly' }, '', path)
       }
-    } else if (article.channel === 'tesla' && article.slug) {
+    } else if (isOfficialChannel(article.channel) && article.slug) {
       const path = teslaPath(article.slug)
       if (window.location.pathname !== path) {
         history.pushState({ ttt: 'tesla' }, '', path)
@@ -183,10 +185,10 @@ export default function App() {
   }, [])
 
   const closeArticle = useCallback(() => {
-    // Weekly briefs / official Tesla releases own a /w/ or /t/ URL entry —
+    // Weekly briefs / official releases own a /w/ or /t/ URL entry —
     // unwind it like closeInterview.
     const isWeekly = selectedArticle?.type === 'weekly' && WEEKLY_PATH_RE.test(window.location.pathname)
-    const isTesla = selectedArticle?.channel === 'tesla' && TESLA_PATH_RE.test(window.location.pathname)
+    const isTesla = !!selectedArticle && isOfficialChannel(selectedArticle.channel) && TESLA_PATH_RE.test(window.location.pathname)
     if (isWeekly || isTesla) {
       if (window.history.state?.ttt === (isWeekly ? 'weekly' : 'tesla')) {
         history.back() // popstate handler clears selectedArticle
@@ -235,7 +237,7 @@ export default function App() {
       setRouteInterview(interviewFromPath(window.location.pathname) ?? null)
       const routed = weeklyFromPath(window.location.pathname) ?? teslaFromPath(window.location.pathname)
       if (routed) setSelectedArticle(routed)
-      else setSelectedArticle(prev => (prev?.type === 'weekly' || prev?.channel === 'tesla' ? null : prev))
+      else setSelectedArticle(prev => (prev?.type === 'weekly' || (prev && isOfficialChannel(prev.channel)) ? null : prev))
     }
     window.addEventListener('popstate', onPop)
     return () => window.removeEventListener('popstate', onPop)
@@ -255,7 +257,7 @@ export default function App() {
     }
     const tesla = teslaFromPath(window.location.pathname)
     if (tesla) {
-      trackArticleOpen('tesla', { title: tesla.title.slice(0, 80), location: 'deep-link' })
+      trackArticleOpen(tesla.channel, { title: tesla.title.slice(0, 80), location: 'deep-link' })
     }
   }, [])
 
@@ -270,7 +272,7 @@ export default function App() {
       document.title = `${name} on ${venue} | The Tesla Thesis`
       return
     }
-    if (selectedArticle?.type === 'weekly' || selectedArticle?.channel === 'tesla') {
+    if (selectedArticle?.type === 'weekly' || (selectedArticle && isOfficialChannel(selectedArticle.channel))) {
       document.title = `${selectedArticle.title} | The Tesla Thesis`
       return
     }

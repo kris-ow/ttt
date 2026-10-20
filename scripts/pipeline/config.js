@@ -51,6 +51,13 @@ loadDotEnv();
 // transcript as a permanent phantom gap (the bug *_reddit_bullets.txt caused).
 export const RETIRED_CHANNELS = new Set(['munrolive']);
 
+// Official primary-source channels: the companies' own releases (earnings
+// webcasts, P&D, impact reports). They get the amber feed frame, pin first
+// within their day, and are deep-linkable at /t/<slug>/ (build-news.js).
+// Value = brand word stripped from the title when building the slug.
+// KEEP IN SYNC with `official: true` in CHANNEL_META (src/types.ts).
+export const OFFICIAL_CHANNELS = { tesla: 'Tesla', spacex: 'SpaceX' };
+
 // Categories for classification (maps to Knowledge Base + valuation model inputs)
 export const CATEGORIES = [
   'Autonomous Driving',

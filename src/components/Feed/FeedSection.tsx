@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import newsData from '../../data/news.json'
 import interviewsData from '../../data/interviews.json'
-import { type Article, type NewsData } from '../../types'
+import { type Article, type NewsData, isOfficialChannel } from '../../types'
 import { type Interview } from '../Interviews/InterviewSection'
 import { useInterviewOpener } from '../Interviews/interviewRoute'
 import { formatDate, channelShort, biasTag, topicTag } from './helpers'
@@ -86,9 +86,9 @@ export function FeedSection({ selectedChannel, selectedCategory, onSelectArticle
                 const isExec = article.type === 'executive'
                 const isWeekly = article.type === 'weekly'
                 const isTtt = isExec || isWeekly
-                // Official Tesla releases (deliveries, earnings) reuse the amber
-                // primary-source treatment from interview teaser rows
-                const isTesla = article.channel === 'tesla'
+                // Official Tesla / SpaceX releases (deliveries, earnings) reuse
+                // the amber primary-source treatment from interview teaser rows
+                const isTesla = isOfficialChannel(article.channel)
                 return (
                   <button
                     key={article.id}

@@ -4,7 +4,7 @@
 // cards + Google indexing):
 //   /i/<slug>/  — one per interview (src/data/interviews.json)
 //   /w/<date>/  — one per Weekly Tesla Brief (type 'weekly' in src/data/news.json)
-//   /t/<slug>/  — one per official Tesla release (channel 'tesla' in news.json)
+//   /t/<slug>/  — one per official Tesla / SpaceX release (articles with a slug)
 // Each shell is a clone of the built dist/index.html with the head rewritten;
 // it loads the same SPA bundle, which reads the path on boot and opens the
 // matching popup (src/components/Interviews/interviewRoute.ts,
@@ -123,16 +123,18 @@ function weeklyPage(article) {
 
 // Page descriptor for an official Tesla release: /t/<slug>/
 function teslaPage(article) {
+  const org = article.channel === 'spacex' ? 'SpaceX' : 'Tesla';
   const para = firstParagraph(article.body)
-    || `Official Tesla publication, summarized for investors on The Tesla Thesis.`;
+    || `Official ${org} publication, summarized for investors on The Tesla Thesis.`;
   return {
     url: `${SITE}/t/${article.slug}/`,
     dir: path.join(DIST, 't', article.slug),
     ogTitle: article.title,
     para,
-    ogImage: `tesla-${article.slug}.png`,
+    // Same naming rule as officialCardFile() in build-og-images.js
+    ogImage: article.slug.startsWith(`${article.channel}-`) ? `${article.slug}.png` : `${article.channel}-${article.slug}.png`,
     date: article.date,
-    author: { '@type': 'Organization', name: 'Tesla' },
+    author: { '@type': 'Organization', name: org },
     lastmod: article.date,
   };
 }
@@ -188,7 +190,8 @@ function main() {
   const { interviews } = JSON.parse(fs.readFileSync(INTERVIEWS, 'utf-8'));
   const { articles } = JSON.parse(fs.readFileSync(NEWS, 'utf-8'));
   const weeklies = articles.filter(a => a.type === 'weekly');
-  const teslas = articles.filter(a => a.channel === 'tesla' && a.slug);
+  // Only official releases (Tesla, SpaceX) carry a slug (build-news.js)
+  const teslas = articles.filter(a => a.slug);
 
   const pages = [
     ...interviews.map(interviewPage),
@@ -217,7 +220,7 @@ function main() {
     `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`
   );
 
-  console.log(`Wrote ${interviews.length} interview page(s) to dist/i/, ${weeklies.length} weekly brief page(s) to dist/w/, ${teslas.length} Tesla release page(s) to dist/t/, sitemap.xml, robots.txt`);
+  console.log(`Wrote ${interviews.length} interview page(s) to dist/i/, ${weeklies.length} weekly brief page(s) to dist/w/, ${teslas.length} official release page(s) to dist/t/, sitemap.xml, robots.txt`);
 }
 
 main();

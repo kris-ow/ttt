@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { isHiddenSummary, loadModeration } from './moderation.js';
-import { CATEGORIES } from './pipeline/config.js';
+import { CATEGORIES, OFFICIAL_CHANNELS } from './pipeline/config.js';
 
 const newsDir = path.resolve('news');
 const outFile = path.resolve('src/data/news.json');
@@ -82,11 +82,16 @@ const articles = files.map(filename => {
 
   const title = (meta.title || filename).replace(/^Sawyer Merritt\s*[—–-]\s*/, '');
 
-  // Official Tesla releases are deep-linkable at /t/<slug>/ (see
+  // Official releases are deep-linkable at /t/<slug>/ (see
   // build-share-pages.js + src/components/Feed/teslaRoute.ts): slugified
-  // title minus the redundant leading "Tesla", e.g. "2025-impact-report".
-  const slug = channel === 'tesla'
-    ? title.replace(/^Tesla\s+/i, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60)
+  // title minus the redundant leading brand, e.g. "2025-impact-report".
+  // Tesla and SpaceX share the /t/ namespace and both publish "Q3 2026
+  // Financial Results", so non-Tesla slugs keep a channel prefix
+  // ("spacex-q3-2026-…"); Tesla slugs stay bare so existing links survive.
+  const brand = OFFICIAL_CHANNELS[channel];
+  const slug = brand
+    ? `${channel === 'tesla' ? '' : `${channel}-`}${title.replace(new RegExp(`^${brand}\\s+`, 'i'), '')}`
+        .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60)
     : undefined;
 
   return {
@@ -163,7 +168,7 @@ for (const article of uniqueArticles) {
   if (n > 1) article.slug = `${article.slug}-${n}`;
 }
 
-// Group by date, with tesla pinned first within each day
+// Group by date, with official releases pinned first within each day
 const byDate = {};
 for (const article of uniqueArticles) {
   if (!byDate[article.date]) byDate[article.date] = [];
@@ -177,10 +182,9 @@ for (const date of Object.keys(byDate)) {
     // Daily executive next
     if (a.type === 'executive' && b.type !== 'executive') return -1;
     if (b.type === 'executive' && a.type !== 'executive') return 1;
-    // Tesla official next
-    if (a.channel === 'tesla' && b.channel !== 'tesla') return -1;
-    if (b.channel === 'tesla' && a.channel !== 'tesla') return 1;
-    return 0;
+    // Official releases next (Tesla before SpaceX — the site is Tesla-led)
+    const rank = ch => ch === 'tesla' ? 0 : OFFICIAL_CHANNELS[ch] ? 1 : 2;
+    return rank(a.channel) - rank(b.channel);
   });
 }
 

@@ -1,4 +1,4 @@
-import { CHANNEL_META, type Article, type Bias } from '../../types'
+import { CHANNEL_META, isOfficialChannel, type Article, type Bias } from '../../types'
 
 export function formatDate(dateStr: string) {
   const d = new Date(dateStr + 'T00:00:00')
@@ -35,7 +35,7 @@ export function channelShort(channel: string, sourceType: string) {
   // NBSP glues prefix to first word so [TTT] never sits alone on a line; remaining spaces wrap normally.
   const label = `${prefix} ${name}`
   // Amber = primary-source, matching the interview teaser label
-  if (channel === 'tesla') return <span className="text-amber">{label}</span>
+  if (isOfficialChannel(channel)) return <span className="text-amber">{label}</span>
   return label
 }
 

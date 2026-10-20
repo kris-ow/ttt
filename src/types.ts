@@ -4,7 +4,7 @@ export interface Article {
   date: string
   channel: string
   title: string
-  // Official Tesla releases only: /t/<slug>/ deep-link key (build-news.js)
+  // Official releases (Tesla, SpaceX) only: /t/<slug>/ deep-link key (build-news.js)
   slug?: string
   published: string
   sourceType: 'x' | 'youtube' | 'article' | 'exec'
@@ -32,7 +32,10 @@ export interface NewsData {
 
 export type Bias = 'BULL' | 'LEAN BULL' | 'NEUTRAL' | 'BEAR'
 
-export const CHANNEL_META: Record<string, { name: string; platform: string; color: string; bias?: Bias }> = {
+// official: the company's own releases — amber primary-source frame, pinned
+// first, /t/<slug>/ deep link. KEEP IN SYNC with OFFICIAL_CHANNELS in
+// scripts/pipeline/config.js (which decides who gets a slug).
+export const CHANNEL_META: Record<string, { name: string; platform: string; color: string; bias?: Bias; official?: boolean }> = {
   brighterwithherbert: { name: 'Herbert Ong', platform: 'YouTube', color: '#ef4444', bias: 'BULL' },
   cernbasher: { name: 'Cern Basher', platform: 'YouTube', color: '#10b981', bias: 'BULL' },
   davelee: { name: 'Dave Lee', platform: 'YouTube', color: '#fb7185', bias: 'LEAN BULL' },
@@ -46,8 +49,13 @@ export const CHANNEL_META: Record<string, { name: string; platform: string; colo
   munrolive: { name: 'Munro Live', platform: 'YouTube', color: '#a3e635', bias: 'NEUTRAL' },
   sawyermerritt: { name: 'Sawyer Merritt', platform: 'X', color: '#6366f1', bias: 'LEAN BULL' },
   // No bias tag: official releases are the primary source, not commentary
-  tesla: { name: 'Tesla Official', platform: 'YouTube', color: '#e31937' },
+  spacex: { name: 'SpaceX Official', platform: 'Web', color: '#4d9fff', official: true },
+  tesla: { name: 'Tesla Official', platform: 'YouTube', color: '#e31937', official: true },
   thelimitingfactor: { name: 'The Limiting Factor', platform: 'YouTube', color: '#14b8a6', bias: 'LEAN BULL' },
   theteslaspace: { name: 'The Tesla Space', platform: 'YouTube', color: '#0ea5e9', bias: 'BULL' },
   ttt: { name: 'The Tesla Thesis', platform: 'TTT', color: '#00ff41' },
+}
+
+export function isOfficialChannel(channel: string): boolean {
+  return CHANNEL_META[channel]?.official === true
 }
