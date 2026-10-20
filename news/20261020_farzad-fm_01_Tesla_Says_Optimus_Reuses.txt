@@ -1,0 +1,131 @@
+Channel:     farzad-fm
+Title:       Tesla Says Optimus Reuses Vision From Millions of Cars
+URL:         https://www.youtube.com/watch?v=YDRYdxoqVc4
+Published:   2026-10-20 00:00 UTC
+Fetched:     2026-10-20 07:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Inside this
+robot is the
+car's brain.
+This is Optimus, a
+humanoid robot
+from Tesla.  This is how Elon
+Musk presented it
+the night Tesla
+first announced
+the robot.
+Um, but actually, if
+you think about what we're
+doing with cars right now
+, Tesla
+is probably the largest
+robotics
+company in the world, because
+our cars, as I
+said, are
+semi-autonomous
+robots on wheels.  And with the
+Full Self-Driving computer
+, which is essentially the
+inference engine in the
+car, which we'll of
+course continue to
+improve, and Dojo,
+and all of their
+neural networks
+that recognize the world and
+understand how to
+navigate it, it makes
+perfect sense
+to translate that into a
+humanoid form.
+So, Tesla took a robot
+on wheels and gave
+it legs.  But how does
+a brain that has learned
+to drive a car
+learn to pick up things?
+Let's start with the eyes.  Optimus
+sees through cameras in its
+head: no
+lidar, just video, just like
+in a car.  This video
+goes into a neural
+network, and Tesla
+sums it up in
+four words:
+video input,
+commands output.
+This is what it looks like.  And
+now—what's the difference?
+In a car, commands
+mean only
+a few things: steer
+left or right,
+accelerate or
+brake.  In a
+robot, this means
+every joint
+at the same time.  Each
+finger bends in
+three places.  Five
+fingers?  That's 15
+joints on one
+hand, plus the wrist.
+So, just the hand
+needs more
+control than the entire
+car.  And you don't
+want that hand to
+hit the child.  So,
+what actually moves these
+joints?  Actuators.    An
+actuator is a motor and
+gearbox built into the
+joint.  Think of it as a
+muscle.  Some
+rotate like
+a wheel, others
+push in a straight line
+like a piston.  Tesla
+develops its own and
+already builds millions of
+electric motors.
+The network then
+sends a command to
+each actuator,
+checks through
+the cameras what happened, and
+adjusts the actions.  See
+, move,
+check—again and
+again until the block is where it
+needs to be.  And this is the point that I
+think
+people miss.
+Optimus doesn't start from scratch
+.  Tesla says it
+has used
+vision insights from its
+cars.  So,
+he got his eyes
+from millions of cars.
+He has to learn to work with his hands,
+and
+both are extremely
+difficult.  But to
+me, it's the same
+stack, housed in a body
+with much greater
+computing
+power and
+complexity.
+Cars were just a
+warm-up.  So the
+next time
+you see
+Optimus moving, you'll
+know what's
+driving him.
