@@ -276,6 +276,19 @@ function ModerationQueue() {
     setBusy(null)
   }
 
+  // Two-click confirm: first click arms, second applies. Disarms on reload.
+  const [confirmBulk, setConfirmBulk] = useState(false)
+
+  const hideAllPending = async () => {
+    if (!confirmBulk) { setConfirmBulk(true); return }
+    const filenames = items.filter(i => i.status === 'pending').map(i => i.filename)
+    setBusy('__bulk__')
+    await api('/moderation/decide', 'POST', { filenames, decision: 'exclude' })
+    await load()
+    setBusy(null)
+    setConfirmBulk(false)
+  }
+
   const filtered = items.filter(i => filter === 'all' || i.status === filter)
   const pendingCount = items.filter(i => i.status === 'pending').length
 
@@ -296,6 +309,18 @@ function ModerationQueue() {
             </button>
           ))}
         </div>
+        {pendingCount > 0 && (
+          <button
+            disabled={busy === '__bulk__'}
+            onClick={hideAllPending}
+            onMouseLeave={() => setConfirmBulk(false)}
+            style={{ ...btnStyle('red'), marginLeft: 'auto' }}
+          >
+            {busy === '__bulk__' ? '[WORKING...]'
+              : confirmBulk ? `[CONFIRM: KEEP ${pendingCount} HIDDEN]`
+              : '[KEEP HIDDEN ALL REMAINING]'}
+          </button>
+        )}
       </div>
 
       {filtered.length === 0 ? (

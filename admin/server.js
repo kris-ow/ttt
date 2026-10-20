@@ -163,16 +163,20 @@ app.get('/api/moderation', (_req, res) => {
 });
 
 // decision: 'include' (show in feed) | 'exclude' (keep hidden) | 'pending' (undo)
+// Takes `filename` or `filenames` (bulk) — the list is explicit, so items
+// that arrived after the client loaded the queue are never swept up.
 app.post('/api/moderation/decide', (req, res) => {
-  const { filename, decision } = req.body;
-  if (!filename || !['include', 'exclude', 'pending'].includes(decision)) {
-    return res.json({ ok: false, error: 'filename and decision (include|exclude|pending) required' });
+  const { filename, filenames, decision } = req.body;
+  const targets = Array.isArray(filenames) ? filenames : filename ? [filename] : [];
+  if (targets.length === 0 || !['include', 'exclude', 'pending'].includes(decision)) {
+    return res.json({ ok: false, error: 'filename(s) and decision (include|exclude|pending) required' });
   }
   try {
     const moderation = loadModeration();
-    moderation.include = moderation.include.filter(f => f !== filename);
-    moderation.exclude = moderation.exclude.filter(f => f !== filename);
-    if (decision !== 'pending') moderation[decision].push(filename);
+    const targetSet = new Set(targets);
+    moderation.include = moderation.include.filter(f => !targetSet.has(f));
+    moderation.exclude = moderation.exclude.filter(f => !targetSet.has(f));
+    if (decision !== 'pending') moderation[decision].push(...targets);
     saveModeration(moderation);
 
     // Rebuild news.json so the decision is reflected in the feed on publish.
