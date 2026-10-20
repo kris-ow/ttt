@@ -1,0 +1,116 @@
+Channel:     farzad-fm
+Title:       Why Tesla Says It Ditched Hand-Written Code in FSD v12
+URL:         https://www.youtube.com/watch?v=oXvb-I0LN5w
+Published:   2026-10-20 14:00 UTC
+Fetched:     2026-10-20 15:01 UTC
+
+────────────────────────────────────────────────────────────
+
+No one programs AI
+to recognize a
+stop sign.  He learns
+this by making mistakes a
+million times.  So
+how can mistakes even
+teach a machine anything?    A
+neural network is
+layers of simple
+mathematical nodes,
+and each connection between
+them has a number
+called a weight.
+Think of it as a
+giant panel with
+volume controls, there are
+billions of them.  At the beginning,
+they are configured
+randomly, so
+the network works
+randomly.  Now you
+show her
+the image.  She
+makes a guess: a
+cat.  But it was a
+stop sign.  So you
+measure how
+wrong she was.  This
+number is called
+the loss.  A big
+mistake is a big
+loss.  But now
+you have a problem: one
+number says it all
+went wrong, and
+billions of regulators could be to blame
+.  Which
+ones should I spin?  This is the
+most interesting part.
+Using
+mathematical analysis,
+you work your way back
+through the network and, for
+each regulator
+, figure out which
+way to adjust it
+to reduce the loss.
+This is called
+error backpropagation.  Then you
+turn
+each knob up a little bit.  This is a
+gradient descent.
+One image, one
+tiny
+tweak that, by
+itself,
+does almost nothing.  But
+do this billions of
+times on millions of
+examples, and these
+random regulators
+turn into
+something that actually
+works.  Nobody
+wrote the rules.
+The rules are in the scales.  And this is
+not just some
+theory from the audience.
+Tesla says that in
+version 12 of the autopilot system,
+hundreds of thousands of lines of
+handwritten
+code have been replaced with neural
+networks.  And Elon
+demonstrated how
+it drives in real
+time.
+Well, again, there's no
+line of code that says
+"stop at the
+stop sign" or "wait for
+another car."
+This driving came about
+thanks to regulators
+set up in the same
+way.  Guess,
+measure the error,
+tweak, repeat.  This is the
+same basic idea behind
+Grok, behind
+Tesla's autopilot, behind
+Optimus.  The only real
+difference is scale.
+More data, more
+regulators, and much
+more
+computing
+power—that's why
+everyone is building
+giant AI
+clusters now.  And I think that's what the
+whole race is about, because better
+data and more
+computation gives you
+better tuning.
+None of these systems
+ever knew what a
+stop sign was.
