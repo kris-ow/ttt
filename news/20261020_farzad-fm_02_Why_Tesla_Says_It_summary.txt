@@ -1,0 +1,24 @@
+Channel:     farzad-fm
+Title:       Why Tesla Says It Ditched Hand-Written Code in FSD v12
+Published:   2026-10-20 14:00 UTC
+Summarized:  2026-10-20 15:04:12 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01VFg1qgg3sRLhXrL1RvA5NL
+Cost:        $0.01427 (10090 in / 837 out tokens)
+Relevance:   tangential — it's a general explainer of neural network training (backpropagation/gradient descent) that uses Tesla's FSD v12 as an illustrative example, without new facts about Tesla's actual performance, roadmap, or thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+This video is an educational explainer on how neural networks learn through trial and error — guessing, measuring error ("loss"), and adjusting internal weights via backpropagation and gradient descent. It uses Tesla's transition to a neural-network-based Full Self-Driving system as its central real-world example, framing the shift away from hand-written rules as evidence of this general AI training paradigm, and briefly extends the analogy to Grok and Optimus.
+
+## Autonomous Driving
+1. **Tesla's shift from hand-coded rules to neural nets in FSD v12:** The video states that Tesla says that in version 12 of its driving system, hundreds of thousands of lines of handwritten code were replaced with neural networks, and that Elon Musk demonstrated this driving behavior in real time. The narrator emphasizes there is no explicit line of code instructing the car to "stop at the stop sign" or "wait for another car" — the behavior instead emerges from a network of weighted connections trained by repeated exposure to examples, adjusted via backpropagation and gradient descent.
+2. **Same training paradigm extended to Grok and Optimus:** The narrator argues this is the same basic learning process (guess, measure error, adjust, repeat) underlying Grok and Optimus, with the only real differences being scale — more data, more parameters ("regulators," a mistranscription of "parameters"), and more computing power — which the narrator frames as the reason companies are building large AI compute clusters.
+
+Notable quotes and data:
+- "No one programs AI to recognize a stop sign. He learns this by making mistakes a million times."
+- "Tesla says that in version 12 of the autopilot system, hundreds of thousands of lines of handwritten code have been replaced with neural networks."
+- "There's no line of code that says 'stop at the stop sign' or 'wait for another car.'"
+- "This is the same basic idea behind Grok, behind Tesla's Autopilot, behind Optimus. The only real difference is scale."
+- "Better data and more computation gives you better tuning... None of these systems ever knew what a stop sign was."
