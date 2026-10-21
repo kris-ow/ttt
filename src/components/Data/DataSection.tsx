@@ -36,8 +36,6 @@ interface CompanyDef {
   sections: SectionDef[]
   source: string
   notes?: string[]
-  // Toggle color = the company's topic badge color in the feed.
-  color: string
 }
 
 const TESLA_SECTIONS: SectionDef[] = [
@@ -136,7 +134,6 @@ const COMPANIES: Record<CompanyKey, CompanyDef> = {
     data: teslaMetrics as MetricsData,
     sections: TESLA_SECTIONS,
     source: 'Tesla quarterly shareholder decks',
-    color: '#eeee55',
   },
   SPCX: {
     heading: 'QUARTERLY SPACEX DATA',
@@ -147,7 +144,6 @@ const COMPANIES: Record<CompanyKey, CompanyDef> = {
       'Q4 2025 is derived: full year 2025 (IPO prospectus) minus the first nine months.',
       'SI was reported as the AI segment until Q3 2026. It includes X advertising, and Cursor from August 14, 2026.',
     ],
-    color: '#4d9fff',
   },
 }
 
@@ -479,24 +475,20 @@ export function DataSection() {
   return (
     <div>
       <div className="flex gap-2 mb-6">
-        {COMPANY_KEYS.map(key => {
-          const { color } = COMPANIES[key]
-          const active = key === company
-          return (
-            <button
-              key={key}
-              onClick={() => select(key)}
-              style={active
-                ? { backgroundColor: color, borderColor: color }
-                : { borderColor: `${color}80`, color: `${color}b3` }}
-              className={`min-w-[80px] px-3 py-1.5 text-xs font-bold border cursor-pointer transition-opacity ${
-                active ? 'text-bg' : 'hover:opacity-100 opacity-90'
-              }`}
-            >
-              {key}
-            </button>
-          )
-        })}
+        {/* Same treatment as the header nav tabs. */}
+        {COMPANY_KEYS.map(key => (
+          <button
+            key={key}
+            onClick={() => select(key)}
+            className={`min-w-[80px] px-3 py-1.5 text-xs font-bold border cursor-pointer transition-colors ${
+              key === company
+                ? 'bg-green text-bg border-green'
+                : 'border-green/50 text-green/50 hover:border-green hover:text-green'
+            }`}
+          >
+            {key}
+          </button>
+        ))}
       </div>
       {/* Keyed so each company keeps no stale expanded rows from the other. */}
       <CompanyData key={company} company={COMPANIES[company]} />
