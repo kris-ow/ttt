@@ -18,7 +18,10 @@ import { ContactPopup } from './components/Contact/ContactPopup'
 
 const data = newsData as NewsData
 
-const DATA_BADGE_UNTIL = new Date('2026-04-28T23:59:59Z')
+// Relit 2026-10-21 for the SpaceX view: a new seen-key so visitors who
+// cleared the original April badge see it again.
+const DATA_BADGE_UNTIL = new Date('2026-11-04T23:59:59Z')
+const DATA_SEEN_KEY = 'ttt-data-seen-spcx'
 const INTERVIEWS_BADGE_UNTIL = new Date('2026-06-26T23:59:59Z')
 // Matches index.html <title>; restored when no interview popup is open.
 const DEFAULT_TITLE = 'The Tesla Thesis - Tesla Intelligence Dashboard'
@@ -68,7 +71,7 @@ export default function App() {
   const [mountedTabs, setMountedTabs] = useState<Set<Section>>(() => new Set([activeSection]))
   const [dataSeen, setDataSeen] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false
-    return window.localStorage.getItem('ttt-data-seen') === 'true'
+    return window.localStorage.getItem(DATA_SEEN_KEY) === 'true'
   })
   const [interviewsSeen, setInterviewsSeen] = useState<boolean>(() => {
     if (typeof window === 'undefined') return false
@@ -145,7 +148,7 @@ export default function App() {
     }
     if (key === 'data') {
       setDataSeen(prev => {
-        if (!prev) window.localStorage.setItem('ttt-data-seen', 'true')
+        if (!prev) window.localStorage.setItem(DATA_SEEN_KEY, 'true')
         return true
       })
       track('Data View')
@@ -326,8 +329,11 @@ export default function App() {
                   }`}
                 >
                   {label}
+                  {/* Same size as the label and full green against the tab's
+                      green/50, so it reads as part of the name (a 10px tag was
+                      too quiet to notice) */}
                   {key === 'data' && !dataSeen && activeSection !== 'data' && new Date() < DATA_BADGE_UNTIL && (
-                    <span className="ml-1 text-green text-[10px]">[NEW]</span>
+                    <span className="ml-1.5 text-green">[NEW]</span>
                   )}
                   {key === 'interviews' && !interviewsSeen && activeSection !== 'interviews' && new Date() < INTERVIEWS_BADGE_UNTIL && (
                     <span className="ml-1 text-green text-[10px]">[NEW]</span>
