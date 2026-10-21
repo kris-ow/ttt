@@ -1,7 +1,9 @@
 import { useState } from 'react'
-import quarterlyData from '../../data/quarterly-metrics.json'
+import { track } from '../../analytics'
+import teslaMetrics from '../../data/quarterly-metrics.json'
+import spacexMetrics from '../../data/spacex-metrics.json'
 
-type MetricFormat = 'usd_m' | 'pct' | 'int' | 'gwh' | 'mw' | 'mil' | 'usd' | 'days'
+type MetricFormat = 'usd_m' | 'pct' | 'int' | 'gwh' | 'mw' | 'mil' | 'usd' | 'days' | 'gw' | 'tons'
 
 interface MetricDef {
   key: string
@@ -10,6 +12,10 @@ interface MetricDef {
   // Display absolute value — used for capex, which is stored as a negative cash outflow
   // but conventionally shown as a positive spending figure.
   absolute?: boolean
+  // Overrides the format's default precision, so a figure is never shown more
+  // precisely than the source reports it (Starlink subscribers come to 0.1M,
+  // ARPU in whole dollars).
+  decimals?: number
 }
 
 interface SectionDef {
@@ -17,7 +23,24 @@ interface SectionDef {
   metrics: MetricDef[]
 }
 
-const SECTIONS: SectionDef[] = [
+interface MetricsData {
+  metadata: { quarters: string[] }
+  metrics: Record<string, Record<string, number | null>>
+}
+
+type CompanyKey = 'TSLA' | 'SPCX'
+
+interface CompanyDef {
+  heading: string
+  data: MetricsData
+  sections: SectionDef[]
+  source: string
+  notes?: string[]
+  // Toggle color = the company's topic badge color in the feed.
+  color: string
+}
+
+const TESLA_SECTIONS: SectionDef[] = [
   {
     title: 'FINANCIALS',
     metrics: [
@@ -58,6 +81,79 @@ const SECTIONS: SectionDef[] = [
   },
 ]
 
+// SpaceX reports three segments with the same four financial lines each, plus
+// the segment's own operating KPIs. No margins or free cash flow are reported,
+// so none are derived here.
+const SPACEX_SECTIONS: SectionDef[] = [
+  {
+    title: 'FINANCIALS',
+    metrics: [
+      { key: 'revenue_total', label: 'TOTAL REVENUE', format: 'usd_m' },
+      { key: 'operating_income', label: 'INCOME FROM OPERATIONS (GAAP)', format: 'usd_m' },
+      { key: 'net_income', label: 'NET INCOME (GAAP)', format: 'usd_m' },
+      { key: 'adjusted_ebitda', label: 'ADJUSTED EBITDA (NON-GAAP)', format: 'usd_m' },
+      { key: 'capex', label: 'CAPEX', format: 'usd_m' },
+      { key: 'cash_and_securities', label: 'CASH & MARKETABLE SECURITIES', format: 'usd_m' },
+    ],
+  },
+  {
+    title: 'SPACE',
+    metrics: [
+      { key: 'space_revenue', label: 'SPACE REVENUE', format: 'usd_m' },
+      { key: 'space_operating_income', label: 'INCOME FROM OPERATIONS', format: 'usd_m' },
+      { key: 'space_adjusted_ebitda', label: 'ADJUSTED EBITDA', format: 'usd_m' },
+      { key: 'space_capex', label: 'CAPEX', format: 'usd_m' },
+      { key: 'launches_total', label: 'LAUNCHES', format: 'int' },
+      { key: 'mass_to_orbit_t', label: 'MASS TO ORBIT', format: 'tons' },
+    ],
+  },
+  {
+    title: 'CONNECTIVITY',
+    metrics: [
+      { key: 'connectivity_revenue', label: 'CONNECTIVITY REVENUE', format: 'usd_m' },
+      { key: 'connectivity_operating_income', label: 'INCOME FROM OPERATIONS', format: 'usd_m' },
+      { key: 'connectivity_adjusted_ebitda', label: 'ADJUSTED EBITDA', format: 'usd_m' },
+      { key: 'connectivity_capex', label: 'CAPEX', format: 'usd_m' },
+      { key: 'starlink_consumer_subscribers_mil', label: 'STARLINK CONSUMER SUBSCRIBERS', format: 'mil', decimals: 1 },
+      { key: 'starlink_consumer_arpu', label: 'STARLINK CONSUMER ARPU (MONTHLY)', format: 'usd', decimals: 0 },
+    ],
+  },
+  {
+    title: 'SUPER INTELLIGENCE (SI)',
+    metrics: [
+      { key: 'si_revenue', label: 'SI REVENUE', format: 'usd_m' },
+      { key: 'si_operating_income', label: 'INCOME FROM OPERATIONS', format: 'usd_m' },
+      { key: 'si_adjusted_ebitda', label: 'ADJUSTED EBITDA', format: 'usd_m' },
+      { key: 'si_capex', label: 'CAPEX', format: 'usd_m' },
+      { key: 'nameplate_compute_gw', label: 'NAMEPLATE COMPUTE', format: 'gw' },
+    ],
+  },
+]
+
+const COMPANIES: Record<CompanyKey, CompanyDef> = {
+  TSLA: {
+    heading: 'QUARTERLY TESLA DATA',
+    data: teslaMetrics as MetricsData,
+    sections: TESLA_SECTIONS,
+    source: 'Tesla quarterly shareholder decks',
+    color: '#eeee55',
+  },
+  SPCX: {
+    heading: 'QUARTERLY SPACEX DATA',
+    data: spacexMetrics as MetricsData,
+    sections: SPACEX_SECTIONS,
+    source: 'SpaceX quarterly earnings releases and IPO prospectus (SEC filings)',
+    notes: [
+      'Q4 2025 is derived: full year 2025 (IPO prospectus) minus the first nine months.',
+      'SI was reported as the AI segment until Q3 2026. It includes X advertising, and Cursor from August 14, 2026.',
+    ],
+    color: '#4d9fff',
+  },
+}
+
+const COMPANY_KEYS: CompanyKey[] = ['TSLA', 'SPCX']
+const COMPANY_STORAGE_KEY = 'ttt-data-company'
+
 const VALUE_HEADER: Record<MetricFormat, string> = {
   usd_m: '$M',
   pct: '%',
@@ -67,11 +163,8 @@ const VALUE_HEADER: Record<MetricFormat, string> = {
   mil: 'M',
   usd: '$',
   days: 'DAYS',
-}
-
-const data = quarterlyData as {
-  metadata: { quarters: string[]; years: string[] }
-  metrics: Record<string, Record<string, number | null>>
+  gw: 'GW',
+  tons: 'TONS',
 }
 
 function periodSortKey(p: string): number {
@@ -126,30 +219,33 @@ function changeClass(c: ChangeResult): string {
   return 'text-text-dim'
 }
 
-function formatNumber(val: number | null | undefined, fmt: MetricFormat): string {
+function formatNumber(val: number | null | undefined, metric: MetricDef): string {
   if (val == null) return '—'
-  switch (fmt) {
+  const fixed = (d: number) => val.toFixed(metric.decimals ?? d)
+  switch (metric.format) {
     case 'usd_m': return Math.round(val).toLocaleString()
-    case 'pct': return val.toFixed(1)
+    case 'pct': return fixed(1)
     case 'int': return Math.round(val).toLocaleString()
-    case 'gwh': return val.toFixed(1)
+    case 'gwh': return fixed(1)
     case 'mw': return Math.round(val).toLocaleString()
-    case 'mil': return val.toFixed(2)
-    case 'usd': return val.toFixed(2)
+    case 'mil': return fixed(2)
+    case 'usd': return fixed(2)
     case 'days': return Math.round(val).toLocaleString()
+    case 'gw': return fixed(1)
+    case 'tons': return Math.round(val).toLocaleString()
   }
 }
 
-function formatWithUnit(val: number | null | undefined, fmt: MetricFormat): string {
+function formatWithUnit(val: number | null | undefined, metric: MetricDef): string {
   if (val == null) return '—'
-  if (fmt === 'usd_m') {
+  if (metric.format === 'usd_m') {
     const abs = Math.abs(val)
     const sign = val < 0 ? '-' : ''
     if (abs >= 1000) return `${sign}$${(abs / 1000).toFixed(1)}B`
     return `${sign}$${Math.round(abs).toLocaleString()}M`
   }
-  const num = formatNumber(val, fmt)
-  switch (fmt) {
+  const num = formatNumber(val, metric)
+  switch (metric.format) {
     case 'pct': return num + '%'
     case 'int': return num
     case 'gwh': return num + ' GWh'
@@ -157,11 +253,13 @@ function formatWithUnit(val: number | null | undefined, fmt: MetricFormat): stri
     case 'mil': return num + 'M'
     case 'usd': return '$' + num
     case 'days': return num + ' DAYS'
+    case 'gw': return num + ' GW'
+    case 'tons': return num + ' TONS'
   }
   return num
 }
 
-function seriesValue(metric: MetricDef, period: string | null | undefined): number | null | undefined {
+function seriesValue(data: MetricsData, metric: MetricDef, period: string | null | undefined): number | null | undefined {
   if (!period) return undefined
   const raw = data.metrics[metric.key]?.[period]
   if (raw == null) return raw
@@ -198,7 +296,7 @@ function HistoryDelta({ change, label }: { change: ChangeResult; label: string }
   )
 }
 
-function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string[] }) {
+function ExpandedTable({ data, metric, periods }: { data: MetricsData; metric: MetricDef; periods: string[] }) {
   const [showAll, setShowAll] = useState(false)
   const periodsWithData = periods.filter(p => data.metrics[metric.key]?.[p] != null)
   const visible = showAll ? periodsWithData : periodsWithData.slice(0, RECENT_QUARTERS)
@@ -213,14 +311,14 @@ function ExpandedTable({ metric, periods }: { metric: MetricDef; periods: string
         <span className={COL_DELTA}>YoY<DeltaSpacer label="YoY" /></span>
       </div>
       {visible.map(p => {
-        const val = seriesValue(metric, p)
-        const qoq = computeChange(val, seriesValue(metric, previousQuarter(p)), metric.format)
-        const yoy = computeChange(val, seriesValue(metric, yearAgoQuarter(p)), metric.format)
+        const val = seriesValue(data, metric, p)
+        const qoq = computeChange(val, seriesValue(data, metric, previousQuarter(p)), metric.format)
+        const yoy = computeChange(val, seriesValue(data, metric, yearAgoQuarter(p)), metric.format)
         const isLatest = p === latestPeriod
         return (
           <div key={p} className={`${HISTORY_ROW} border-b border-border last:border-0`}>
             <span className={`${COL_PERIOD} ${isLatest ? 'text-text-bright' : 'text-text'}`}>{periodLabel(p)}</span>
-            <span className={`${COL_VALUE} text-text-bright`}>{formatNumber(val, metric.format)}</span>
+            <span className={`${COL_VALUE} text-text-bright`}>{formatNumber(val, metric)}</span>
             <HistoryDelta change={qoq} label="QoQ" />
             <HistoryDelta change={yoy} label="YoY" />
           </div>
@@ -256,7 +354,8 @@ function InlineDelta({ change, label }: { change: ChangeResult; label: string })
   )
 }
 
-function MetricRow({ metric, sectionLatest, periods, expanded, onToggle }: {
+function MetricRow({ data, metric, sectionLatest, periods, expanded, onToggle }: {
+  data: MetricsData
   metric: MetricDef
   sectionLatest: string
   periods: string[]
@@ -268,9 +367,9 @@ function MetricRow({ metric, sectionLatest, periods, expanded, onToggle }: {
   // fills in the financials, so quarters are partial in the interim. A dim
   // period tag marks rows lagging their section's latest quarter.
   const metricLatest = periods.find(p => data.metrics[metric.key]?.[p] != null) ?? null
-  const latest = seriesValue(metric, metricLatest)
-  const qoq = computeChange(latest, seriesValue(metric, metricLatest && previousQuarter(metricLatest)), metric.format)
-  const yoy = computeChange(latest, seriesValue(metric, metricLatest && yearAgoQuarter(metricLatest)), metric.format)
+  const latest = seriesValue(data, metric, metricLatest)
+  const qoq = computeChange(latest, seriesValue(data, metric, metricLatest && previousQuarter(metricLatest)), metric.format)
+  const yoy = computeChange(latest, seriesValue(data, metric, metricLatest && yearAgoQuarter(metricLatest)), metric.format)
   return (
     <div className="border-b border-border last:border-0">
       <button
@@ -293,18 +392,19 @@ function MetricRow({ metric, sectionLatest, periods, expanded, onToggle }: {
             (period-labeled and column-aligned), so the block hides. */}
         {!expanded && (
           <span className="flex items-baseline gap-x-4 sm:gap-x-6 tabular-nums self-start pl-5 sm:self-auto sm:pl-0">
-            <span className="text-text-bright w-20 text-right whitespace-nowrap">{formatWithUnit(latest, metric.format)}</span>
+            <span className="text-text-bright w-20 text-right whitespace-nowrap">{formatWithUnit(latest, metric)}</span>
             <InlineDelta change={qoq} label="QoQ" />
             <InlineDelta change={yoy} label="YoY" />
           </span>
         )}
       </button>
-      {expanded && <ExpandedTable metric={metric} periods={periods} />}
+      {expanded && <ExpandedTable data={data} metric={metric} periods={periods} />}
     </div>
   )
 }
 
-export function DataSection() {
+function CompanyData({ company }: { company: CompanyDef }) {
+  const { data, sections } = company
   const [expanded, setExpanded] = useState<Set<string>>(new Set())
   const toggle = (key: string) => {
     setExpanded(prev => {
@@ -325,10 +425,10 @@ export function DataSection() {
   return (
     <div>
       <h2 className="text-text-bright text-base sm:text-lg font-bold mb-6 flex items-center gap-2">
-        <span className="whitespace-nowrap">QUARTERLY TESLA DATA</span>
+        <span className="whitespace-nowrap">{company.heading}</span>
         <span className="flex-1 border-t border-dashed border-text-dim" />
       </h2>
-      {SECTIONS.map(section => (
+      {sections.map(section => (
         <div key={section.title} className="mb-6">
           <h3 className="text-text-bright text-xs sm:text-sm font-bold mb-2 flex items-center gap-2">
             <span className="whitespace-nowrap">{section.title}</span>
@@ -339,6 +439,7 @@ export function DataSection() {
             {section.metrics.map(metric => (
               <MetricRow
                 key={metric.key}
+                data={data}
                 metric={metric}
                 sectionLatest={sectionLatest(section)}
                 periods={periods}
@@ -349,9 +450,56 @@ export function DataSection() {
           </div>
         </div>
       ))}
-      <div className="text-text-dim text-xs mt-4">
-        Source: Tesla quarterly shareholder decks. Latest data: {periodLabel(latestPeriod)}.
+      <div className="text-text-dim text-xs mt-4 space-y-1">
+        <div>Source: {company.source}. Latest data: {periodLabel(latestPeriod)}.</div>
+        {company.notes?.map(note => <div key={note}>{note}</div>)}
       </div>
+    </div>
+  )
+}
+
+function readStoredCompany(): CompanyKey {
+  try {
+    const stored = window.localStorage.getItem(COMPANY_STORAGE_KEY)
+    return stored === 'SPCX' ? 'SPCX' : 'TSLA'
+  } catch {
+    return 'TSLA'
+  }
+}
+
+export function DataSection() {
+  const [company, setCompany] = useState<CompanyKey>(readStoredCompany)
+  const select = (key: CompanyKey) => {
+    if (key === company) return
+    setCompany(key)
+    try { window.localStorage.setItem(COMPANY_STORAGE_KEY, key) } catch { /* private mode */ }
+    track('Data Company', { company: key })
+  }
+
+  return (
+    <div>
+      <div className="flex gap-2 mb-6">
+        {COMPANY_KEYS.map(key => {
+          const { color } = COMPANIES[key]
+          const active = key === company
+          return (
+            <button
+              key={key}
+              onClick={() => select(key)}
+              style={active
+                ? { backgroundColor: color, borderColor: color }
+                : { borderColor: `${color}80`, color: `${color}b3` }}
+              className={`min-w-[80px] px-3 py-1.5 text-xs font-bold border cursor-pointer transition-opacity ${
+                active ? 'text-bg' : 'hover:opacity-100 opacity-90'
+              }`}
+            >
+              {key}
+            </button>
+          )
+        })}
+      </div>
+      {/* Keyed so each company keeps no stale expanded rows from the other. */}
+      <CompanyData key={company} company={COMPANIES[company]} />
     </div>
   )
 }

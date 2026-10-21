@@ -53,11 +53,12 @@ export function biasTag(channel: string) {
   return <span className={cls}>[{ch.bias}]</span>
 }
 
-// Faded yellow for Tesla, SpaceX brand blue. `none` is a demotion marker, not
-// an identity badge — it uses the theme's dim grey so it recedes instead of
+// Lemon yellow for Tesla (pure-yellow hue, kept clear of the amber used for
+// official rows), SpaceX brand blue. `none` is a demotion marker, not an
+// identity badge — it uses the theme's dim grey so it recedes instead of
 // competing with the two company colors.
 const TOPIC_STYLE = {
-  tesla: 'text-[#d0bd5c]',
+  tesla: 'text-[#eeee55]',
   spacex: 'text-[#4d9fff]',
   none: 'text-text-dim',
 }

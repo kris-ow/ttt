@@ -314,7 +314,7 @@ export default function App() {
               {([
                 ['feed', 'DAILY_FEED'],
                 ['interviews', 'INTERVIEWS'],
-                ['data', 'TSLA_DATA'],
+                ['data', 'DATA'],
               ] as const).map(([key, label]) => (
                 <button
                   key={key}
