@@ -1,0 +1,44 @@
+Channel:     farzad-fm
+Title:       SpaceX Is Very Undervalued
+Published:   2026-10-21 21:29 UTC
+Summarized:  2026-10-21 22:06:31 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_019dMA6fZmCsTpw2WjYTVzVp
+Cost:        $0.03796 (14569 in / 4679 out tokens)
+Relevance:   core — The video is a detailed valuation analysis of SpaceX's financial results, earnings call commentary, AI/compute business model, and bear/bull cases, directly engaging the SpaceX investment thesis.
+Topic:       spacex
+Categories:  SpaceX — Corporate & Valuation, Financials, SpaceX — AI & Compute, SpaceX — Launch Business
+────────────────────────────────────────────────────────────
+
+This video argues SpaceX is undervalued based on its Q3 earnings report, an AI-compute "lessor cycle" business model (building and leasing computing capacity before deploying it to its own Grok/GrokBot AI agent), and a self-built valuation model — while acknowledging substantial bear-case risks around depreciation, customer concentration, debt, and unproven execution at scale.
+
+## Financials
+1. **Q3 results show a mixed picture:** SpaceX earned about $14.6 billion in Q3 and turned a profit that quarter, but lost about $413 million over the first nine months of 2026. At the time of the report, the market valued the company at about $2 trillion (enterprise value ~$1.96 trillion after adjusting for debt and cash), implying a revenue multiple of about $33 per dollar of annualized Q3 sales — versus roughly $10 for Microsoft and Nvidia on their expected sales.
+2. **CFO forecast vs. Elon's public figures:** The CFO's official forecast is $33–37 billion in revenue for one quarter (not the full year), implying an annualized pace of about $140 billion/year, with an internal target of $100 billion annualized by end of 2026. Separately, Elon posted on X that $1 trillion in SpaceX revenue in 2028 is "no longer impossible" — a claim the host notes did not come from the earnings call and wasn't incorporated into the CFO's forecast. Elon also stated on the earnings call that SpaceX's annual recurring revenue run-rate by end of 2027 could fall "somewhere between $500 billion and a trillion," a projection the CFO did not include in any formal forecast.
+3. **Capex is running well ahead of revenue:** In Q3, SpaceX spent about $19.6 billion in capital expenditures versus $14.6 billion earned. The host's model estimates building 10–20 gigawatts of compute in 2027 would cost $500 billion to $1 trillion, against roughly $90 billion in current cash and investments — less than a fifth of even the low end.
+4. **Valuation scenario modeling:** Using a self-built scoring model (explicitly caveated as not a company guideline), the host estimates: at a $500 billion run-rate and 13 gigawatts by end of 2027, SpaceX trades at ~27x 2027 earnings (near Microsoft's multiple); at $250 billion, ~52x (more expensive than Microsoft); at $1 trillion, ~13x (cheaper than Microsoft). In the base case, the model projects ~$127 billion in annual earnings, which at a 30x multiple (roughly matching Microsoft) implies a value of about $3.8 trillion — nearly double the valuation at the report date.
+5. **Debt and financing risk:** Debt and lease obligations total about $39 billion. The CFO's position is that short payback periods let new buildings self-finance, but the host flags this as a genuine risk given SpaceX's cash position is far from the trillion-dollar buildout envisioned in bull scenarios.
+
+## SpaceX — AI & Compute
+1. **The "lessor cycle" business model:** The host describes a three-step cycle: (1) SpaceX builds computing infrastructure and leases out a large portion of it, with the CFO saying new compute pays back construction costs in under a year (versus 15+ years for typical real estate) — Elon called a six-month payback "not impossible"; (2) SpaceX serves its own AI models cheaply to attract users to its agent products since tenants already cover building costs; (3) once a cluster is paid off, SpaceX redeploys it to Grok/GrokBot, where profitability kicks in. The CFO says compute rental prices are slightly above the $30–50 per watt per year range, with Elon noting short-term contracts are renewing at higher prices.
+2. **GrokBot user growth:** SpaceX President Gwynne Shotwell said GrokBot reached 800,000 paid users per week, more than doubling in one month — still under 0.2% of the roughly 550 million monthly users of X and Grok combined. The host predicts per-account usage could grow ~10x while account counts grow another 10–100x, though rising token volume doesn't translate 1:1 to revenue since per-token prices keep falling.
+3. **Compute capacity targets and two valuation paths:** SpaceX had about 1.7 gigawatts of compute at the end of Q3; Elon said he'd be surprised if it had fewer than 13 gigawatts by end of 2027. At $30–50/watt/year, 13 gigawatts implies roughly $390–650 billion/year (the host's own bridge calculation to Elon's range). But using SpaceX's actual Q3 computing revenue run-rate of about $16.5 billion per gigawatt, 13 gigawatts implies only about $215 billion/year — under half of Elon's lower bound — meaning higher per-watt pricing or stronger in-house Grok monetization would be needed to hit the $500B–$1T range.
+4. **Power and chip supply constraints:** Elon says power, not chips, is the biggest bottleneck; the main compute campus in the Memphis area runs at about 1 gigawatt against a 13–20 gigawatt target, and large gas turbines needed for that scale have had years-long backlogs. SpaceX is casting its own turbine blades, which Elon claims will accelerate power generation by 12–18 months versus alternatives. Nvidia's CFO reportedly says memory supply remains tight, and TSMC's chief says chip packaging demand still exceeds supply. Terafab, the chip plant SpaceX is building with Tesla, does not yet manufacture chips, and the host's own view (per his book) is that real scale won't arrive until 2030.
+
+## Market & Competition
+1. **Bear case from multiple analysts:** CFRA's Keith Schneider and Phillip Securities' Glenn Tam rate the stock a sell at $115 and $75 respectively, against a reported closing price around $148. Morningstar's Nicholas Owens values it at $63/share, and Aswath Damodaran values the whole company at about $1.3 trillion — all well below the ~$2 trillion market valuation at the report date.
+2. **Depreciation and price-war risks:** Jim Osman notes SpaceX's adjusted profit excludes about $2.5 billion in costs, a quarter of which relates to the AI business, and compares the situation to the 1990s telecom boom where demand was real but profitability wasn't. Separately, SemiAnalysis data cited shows annual rental rates for Nvidia H100 chips have risen sharply rather than falling, undercutting the "cheapest token producer wins" thesis the host had earlier floated.
+3. **Customer concentration risk:** Anthropic reportedly pays about $1.25 billion per month to SpaceX, with either side able to exit on 90 days' notice; in SpaceX's Q2 report, two customers accounted for nearly a fifth of revenue. Elon's response, per the host, is that there is multiples of demand available to re-rent capacity if needed — but the host still characterizes this as a real risk.
+
+Notable quotes and data:
+- "As strange as it may sound, $1 trillion in SpaceX revenue in 2028 is no longer impossible." — Elon Musk, posted on X after the earnings call
+- Q3 revenue: ~$14.6 billion (profitable quarter); 9-month 2026 net loss: ~$413 million
+- Market valuation at report date: ~$2 trillion; enterprise value ~$1.96 trillion (~$33 revenue multiple on Q3 pace)
+- CFO's quarterly revenue forecast: $33–37 billion (not annual)
+- GrokBot: 800,000 weekly paid users, more than doubled in one month (per Gwynne Shotwell)
+- Compute capacity: ~1.7 gigawatts at end of Q3; Elon targets 13+ gigawatts by end of 2027
+- Q3 computing revenue run-rate: ~$16.5 billion per gigawatt, implying ~$215B/year at 13 GW — about half of Elon's low-end target
+- Q3 capex: ~$19.6 billion vs. ~$14.6 billion earned
+- Debt and lease obligations: ~$39 billion; cash and investments: ~$90 billion
+- Analyst targets: CFRA ($115, sell), Phillip Securities ($75, sell), Morningstar ($63), Damodaran (~$1.3 trillion company value) vs. ~$148 reported close
+- Anthropic reportedly pays ~$1.25 billion/month to SpaceX, cancellable on 90 days' notice
