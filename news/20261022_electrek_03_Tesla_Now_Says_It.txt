@@ -1,0 +1,79 @@
+Source:      electrek
+Title:       Tesla now says it needs its own maps for FSD after years of dismissing maps
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/10/22/tesla-building-own-maps-fsd-after-mocking-maps/
+Published:   2026-10-22 20:03 UTC
+Fetched:     2026-10-22 21:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla says it’s building its own maps to fix some of the most common problems with its “Full Self-Driving” system, including reading speed limits, parking, and choosing routes. The company’s head of AI described the effort on Tesla’s Q3 2026 earnings call.
+
+It’s a notable shift for a company whose CEO spent years arguing that self-driving systems relying on maps are brittle. And it shows Tesla’s fleet is now doing the same job Waymo’s cars do: mapping the roads so the self-driving system knows what it can’t reliably figure out on its own.
+
+Tesla fans argue that Waymo’s approach differs because it creates HD maps with lidar, but ultimately both are creating their own maps; if your argument is that Tesla’s maps are less well-defined and needed for driving for different reasons than Waymo’s, you don’t really have an argument.
+
+## What Tesla said about maps
+
+The question came from Tesla’s shareholder Q&A. A retail investor wrote that mapping “continues to be a problem” for FSD, listing speed limits, parking and typical routes as the three biggest issues, and asked why Tesla relies on third-party maps instead of its own.
+
+ 
+ 
+ 
+
+Tesla’s VP of AI, Ashok Elluswamy, agreed that “we shouldn’t be depending on external people’s maps.” He said Tesla is building its own maps using a new AI-based mapping and navigation architecture, fed by what the fleet collectively learns, that will also learn individual drivers’ preferences and respond to voice commands.
+
+He said the technology will start handling the beginning and end of trips with FSD v15, and over the following months take over navigation, parking and destination handling.
+
+## Tesla’s history with maps
+
+Tesla has gone back and forth on this before.
+
+In 2015, when it launched Autopilot, Tesla told Fortune it had started building high-precision maps with “100 times the level of granularity” of standard navigation, using data from its customer cars.
+
+At its Autonomy Day in 2019, Elon Musk said Tesla had tried high-precision lane maps and realized it was “a huge mistake.” He called relying on them a “really bad idea” that makes a self-driving system “extremely brittle,” in the same presentation where he called lidar a “fool’s errand.” The message was clear: Waymo needed lidar and detailed maps, and Tesla would solve driving with cameras and AI alone, anywhere.
+
+Seven years later, Tesla is building a map layer from its own fleet to fix the things its vision system gets wrong.
+
+## It comes down to understanding the environment
+
+To be fair to Tesla, this isn’t an HD map in the sense Musk criticized. Tesla has always used navigation maps, and building its own instead of licensing them isn’t a contradiction on its own.
+
+But look at the problems Tesla is trying to fix. Speed limits, parking and routes are all about understanding the environment, and FSD still often fails at it, especially with speed limit signs.
+
+Last month, a Belgian road safety group found that FSD sped in 55% of the 30 km/h zones it tested in Brussels, averaging 44 km/h, partly because the car’s screen showed a 50 km/h limit in most of those zones. In the US, NHTSA is weighing an investigation into claims that Tesla Robotaxis speed through active school zones, covering about 1,000 Model Y and Cybercab vehicles.
+
+A speed limit sign is about as simple as road information gets. If an end-to-end vision system can’t reliably read and apply it, and the fix is a better map, then vision alone isn’t doing the job Tesla said it would.
+
+## Tesla’s fleet is now a mapping fleet
+
+That brings Tesla closer to Waymo than it would like to admit.
+
+Waymo maps a city by driving its sensor-equipped vehicles through it before launching service, and keeps those maps updated as its fleet drives. Tesla is now describing the same idea: its cars collect what they see, and that data feeds a Tesla-built map that helps every car drive better. The main difference is that Waymo’s cars have lidar on top.
+
+It also fits how Tesla’s Robotaxi service actually operates: city by city, inside small geofenced service areas, with Tesla handling the fleet operations. Tesla isn’t talking about centimeter-level HD maps today, but a fleet-built map that keeps getting more detailed could easily head that way.
+
+## Electrek’s Take
+
+There’s nothing wrong with using maps. Every serious self-driving program does, and a map built from millions of Tesla cars could be a real advantage. If it fixes FSD’s speed limit problems, that’s good news for everyone sharing the road with it.
+
+ 
+
+## Top comment by FSLA
+
+ 
+ - Liked by 2 people 
+ 
+ Just need to change the picture to be musk 2015 vs musk 2019, like the daily show did for candidate bush vs president bush.
+
+ 
+
+ View all comments
+ 
+ What’s wrong is the years of messaging that Tesla’s approach didn’t need any of this. Musk sold FSD as a general solution that would work anywhere through vision alone, while dismissing Waymo’s maps and lidar as crutches. Now Tesla is adding the map, it already operates in geofences, and the AI still can’t reliably read a 30 km/h sign in Brussels.
+
+Waymo built its maps and has been running a driverless service for years. Tesla is building its maps now and has pushed unsupervised FSD in customer cars to Q2 2027, and only inside its Robotaxi fleet. At what point do we admit that both companies are solving the same problem in very similar ways, and only one of them has lidar?
+
+We are a decade into Tesla’s self-driving effort and it is doing exactly what Musk used to say doesn’t count as a “true self-driving system”: geo-fenced areas using maps. 
+
+If you’re buying an EV, powering it with home solar can cut your fuel costs to nearly zero. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
