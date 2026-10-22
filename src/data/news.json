@@ -42141,6 +42141,43 @@
       "body": "This video explains why Tesla's upcoming AI5 chip intentionally omits certain components found in general-purpose AI chips, framing this as a deliberate design choice rather than a limitation. The core thesis: because Tesla's chip is built solely for inference on its own software (not training, and not third-party workloads), stripping out unnecessary blocks like the GPU and image signal processor reduces cost and power draw per chip — which matters enormously at the scale of millions of cars and robots.\n\n## Autonomous Driving\n1. **AI5 is an inference-focused successor to AI4:** AI5 is described as Tesla's next-generation AI chip for inference (real-time decision-making in vehicles), succeeding the AI4 computer used in current cars. The video distinguishes inference (running a trained network in real time) from training/learning (done on large data-center chips like Nvidia's).\n2. **Elon Musk's stated rationale for stripped-down design:** Musk is quoted explaining that AI5 was designed specifically for Tesla's own software, with \"unnecessary blocks\" removed — specifically calling out the removal of an outdated GPU and the image signal processor, on the reasoning that general-purpose chips carry components for any possible software workload, whereas Tesla only needs to run its own.\n\n## Humanoid Bots\n1. **Elon's shifted focus toward Optimus and data centers:** The video notes that Musk has said his primary focus is now on Optimus and Tesla's data centers, with AI5 relevant to both as an inference chip, though Tesla reportedly claims it represents a large leap in computing performance (no specific figures given).\n\n## Financials\n1. **Cost and power efficiency as the core design driver:** The video's framing — paraphrasing Musk — is that every chip component not used for Tesla's actual workload is \"silicon you paid for but aren't using,\" and that at the scale of millions of cars and robots, every watt and every dollar of chip cost matters. The speaker adds their own view that once AI capability reaches a sufficient threshold, cost and speed become the deciding factors, making a chip's value a function of lacking unneeded extras rather than maximizing features.\n\nNotable quotes and data:\n- \"We simply removed the outdated GPU because it is, in fact, a GPU. We also removed the image signal processor.\" — Elon Musk, on AI5 design choices\n- \"Every part that doesn't do these calculations is silicon that you paid for but aren't using.\" — paraphrased framing of Musk's reasoning\n- \"I think when AI gets good enough, cost and speed will be the main factors.\" — speaker's own view\n- AI5 is positioned as the successor to the AI4 computer currently used in Tesla vehicles."
     },
     {
+      "id": "20261022_farzad-fm_02_Analysts_Expected_Tesla_To_summary",
+      "filename": "20261022_farzad-fm_02_Analysts_Expected_Tesla_To_summary.txt",
+      "date": "2026-10-22",
+      "channel": "farzad-fm",
+      "title": "Analysts Expected Tesla to Burn $4.5B. Tesla Reported +$1.5B",
+      "published": "2026-10-22 00:51 UTC",
+      "sourceType": "youtube",
+      "source": "",
+      "signal": null,
+      "relevance": "core — The video analyzes Tesla's Q3 capex, operating cash flow, and free cash flow figures directly from earnings, which are central to the Tesla investment thesis.",
+      "categories": [
+        "Financials"
+      ],
+      "topic": "tesla",
+      "videoUrl": "https://www.youtube.com/watch?v=zn2QM-A3ePc",
+      "body": "This short video covers Tesla's third-quarter financial results, focusing on a surprise positive free cash flow figure driven by capital expenditures coming in lower than Wall Street expected, alongside earnings per share that beat forecasts.\n\n## Financials\n1. **Free cash flow surprise beats expectations:** Tesla reported positive free cash flow of $1.5 billion in the quarter, versus analyst expectations of negative $4.5 billion — a significant swing. The prior quarter's free cash flow had been negative $1.09 billion.\n2. **Capex came in as expected, driving the surprise:** Tesla's capital expenditures were about $4.7 billion, which the video states matched Wall Street's expectations. Operating cash flow was about $6.3 billion, and free cash flow (operations minus capex) is what produced the positive result; the video attributes part of the surprise to the capex forecast. (Note: the video also cites a $7.8 billion capex figure without clarifying how it relates to the $4.7 billion figure given for the quarter.)\n3. **EPS beats forecast, revenue/income mixed:** Adjusted earnings per share came in at $0.48, beating the forecast of $0.45. Operating profit was in line with forecasts, while overall income reportedly fell somewhat short of expectations.\n\nNotable quotes and data:\n- Free cash flow: +$1.5 billion actual vs. -$4.5 billion expected (analyst consensus per the video)\n- Prior quarter free cash flow: -$1.09 billion\n- Operating cash flow: ~$6.3 billion\n- Capital expenditures: ~$4.7 billion (video also separately cites $7.8 billion in capex without reconciling the two figures)\n- Adjusted EPS: $0.48 actual vs. $0.45 expected"
+    },
+    {
+      "id": "20261022_farzad-fm_03_Tesla_Says_Over_75_summary",
+      "filename": "20261022_farzad-fm_03_Tesla_Says_Over_75_summary.txt",
+      "date": "2026-10-22",
+      "channel": "farzad-fm",
+      "title": "Tesla Says Over 75% of New North American Deliveries Now Include FSD",
+      "published": "2026-10-22 01:20 UTC",
+      "sourceType": "youtube",
+      "source": "",
+      "signal": null,
+      "relevance": "core — the content reports directly on Tesla's FSD attach rate and subscriber growth, a central pillar of Tesla's autonomy investment thesis.",
+      "categories": [
+        "Autonomous Driving",
+        "Electric Vehicles"
+      ],
+      "topic": "tesla",
+      "videoUrl": "https://www.youtube.com/watch?v=ew9Gc3oNbFU",
+      "body": "This short update covers Tesla's latest Full Self-Driving adoption figures, including North American attach rates on new deliveries, global active subscription counts, and recent European regulatory approvals.\n\n## Autonomous Driving\n1. **FSD attach rate hits record in North America:** Tesla says over 75% of new North American deliveries now include the FSD supervised system, a record figure that rose by almost 20 percentage points in one quarter.\n2. **Active FSD subscriptions climb to 1.74 million:** Active FSD subscriptions reached 1.74 million, up from 1.48 million the prior quarter and 1.04 million a year earlier — a 67% year-over-year increase. The count includes one-time purchases and monthly subscriptions but excludes free trials.\n3. **FSD gains approval in four more European countries:** Since the end of the second quarter, FSD has received approval in Croatia, Slovenia, the Czech Republic, and Slovakia, bringing availability to nine EU countries with over 100,000 customers using it there.\n\nNotable quotes and data:\n- Over 75% of new North American Tesla deliveries now include FSD supervised, a record, up nearly 20 percentage points quarter-over-quarter.\n- Active FSD subscriptions: 1.74 million (up from 1.48 million last quarter, 1.04 million a year ago; +67% YoY).\n- FSD approved in Croatia, Slovenia, Czech Republic, and Slovakia since end of Q2; now live in nine EU countries with 100,000+ customers."
+    },
+    {
       "id": "20261022_sawyermerritt_01_xdaily_summary",
       "filename": "20261022_sawyermerritt_01_xdaily_summary.txt",
       "date": "2026-10-22",
@@ -84919,6 +84956,43 @@
         "topic": "tesla",
         "videoUrl": "https://www.youtube.com/watch?v=ZMu0vVySjo0",
         "body": "This video explains why Tesla's upcoming AI5 chip intentionally omits certain components found in general-purpose AI chips, framing this as a deliberate design choice rather than a limitation. The core thesis: because Tesla's chip is built solely for inference on its own software (not training, and not third-party workloads), stripping out unnecessary blocks like the GPU and image signal processor reduces cost and power draw per chip — which matters enormously at the scale of millions of cars and robots.\n\n## Autonomous Driving\n1. **AI5 is an inference-focused successor to AI4:** AI5 is described as Tesla's next-generation AI chip for inference (real-time decision-making in vehicles), succeeding the AI4 computer used in current cars. The video distinguishes inference (running a trained network in real time) from training/learning (done on large data-center chips like Nvidia's).\n2. **Elon Musk's stated rationale for stripped-down design:** Musk is quoted explaining that AI5 was designed specifically for Tesla's own software, with \"unnecessary blocks\" removed — specifically calling out the removal of an outdated GPU and the image signal processor, on the reasoning that general-purpose chips carry components for any possible software workload, whereas Tesla only needs to run its own.\n\n## Humanoid Bots\n1. **Elon's shifted focus toward Optimus and data centers:** The video notes that Musk has said his primary focus is now on Optimus and Tesla's data centers, with AI5 relevant to both as an inference chip, though Tesla reportedly claims it represents a large leap in computing performance (no specific figures given).\n\n## Financials\n1. **Cost and power efficiency as the core design driver:** The video's framing — paraphrasing Musk — is that every chip component not used for Tesla's actual workload is \"silicon you paid for but aren't using,\" and that at the scale of millions of cars and robots, every watt and every dollar of chip cost matters. The speaker adds their own view that once AI capability reaches a sufficient threshold, cost and speed become the deciding factors, making a chip's value a function of lacking unneeded extras rather than maximizing features.\n\nNotable quotes and data:\n- \"We simply removed the outdated GPU because it is, in fact, a GPU. We also removed the image signal processor.\" — Elon Musk, on AI5 design choices\n- \"Every part that doesn't do these calculations is silicon that you paid for but aren't using.\" — paraphrased framing of Musk's reasoning\n- \"I think when AI gets good enough, cost and speed will be the main factors.\" — speaker's own view\n- AI5 is positioned as the successor to the AI4 computer currently used in Tesla vehicles."
+      },
+      {
+        "id": "20261022_farzad-fm_02_Analysts_Expected_Tesla_To_summary",
+        "filename": "20261022_farzad-fm_02_Analysts_Expected_Tesla_To_summary.txt",
+        "date": "2026-10-22",
+        "channel": "farzad-fm",
+        "title": "Analysts Expected Tesla to Burn $4.5B. Tesla Reported +$1.5B",
+        "published": "2026-10-22 00:51 UTC",
+        "sourceType": "youtube",
+        "source": "",
+        "signal": null,
+        "relevance": "core — The video analyzes Tesla's Q3 capex, operating cash flow, and free cash flow figures directly from earnings, which are central to the Tesla investment thesis.",
+        "categories": [
+          "Financials"
+        ],
+        "topic": "tesla",
+        "videoUrl": "https://www.youtube.com/watch?v=zn2QM-A3ePc",
+        "body": "This short video covers Tesla's third-quarter financial results, focusing on a surprise positive free cash flow figure driven by capital expenditures coming in lower than Wall Street expected, alongside earnings per share that beat forecasts.\n\n## Financials\n1. **Free cash flow surprise beats expectations:** Tesla reported positive free cash flow of $1.5 billion in the quarter, versus analyst expectations of negative $4.5 billion — a significant swing. The prior quarter's free cash flow had been negative $1.09 billion.\n2. **Capex came in as expected, driving the surprise:** Tesla's capital expenditures were about $4.7 billion, which the video states matched Wall Street's expectations. Operating cash flow was about $6.3 billion, and free cash flow (operations minus capex) is what produced the positive result; the video attributes part of the surprise to the capex forecast. (Note: the video also cites a $7.8 billion capex figure without clarifying how it relates to the $4.7 billion figure given for the quarter.)\n3. **EPS beats forecast, revenue/income mixed:** Adjusted earnings per share came in at $0.48, beating the forecast of $0.45. Operating profit was in line with forecasts, while overall income reportedly fell somewhat short of expectations.\n\nNotable quotes and data:\n- Free cash flow: +$1.5 billion actual vs. -$4.5 billion expected (analyst consensus per the video)\n- Prior quarter free cash flow: -$1.09 billion\n- Operating cash flow: ~$6.3 billion\n- Capital expenditures: ~$4.7 billion (video also separately cites $7.8 billion in capex without reconciling the two figures)\n- Adjusted EPS: $0.48 actual vs. $0.45 expected"
+      },
+      {
+        "id": "20261022_farzad-fm_03_Tesla_Says_Over_75_summary",
+        "filename": "20261022_farzad-fm_03_Tesla_Says_Over_75_summary.txt",
+        "date": "2026-10-22",
+        "channel": "farzad-fm",
+        "title": "Tesla Says Over 75% of New North American Deliveries Now Include FSD",
+        "published": "2026-10-22 01:20 UTC",
+        "sourceType": "youtube",
+        "source": "",
+        "signal": null,
+        "relevance": "core — the content reports directly on Tesla's FSD attach rate and subscriber growth, a central pillar of Tesla's autonomy investment thesis.",
+        "categories": [
+          "Autonomous Driving",
+          "Electric Vehicles"
+        ],
+        "topic": "tesla",
+        "videoUrl": "https://www.youtube.com/watch?v=ew9Gc3oNbFU",
+        "body": "This short update covers Tesla's latest Full Self-Driving adoption figures, including North American attach rates on new deliveries, global active subscription counts, and recent European regulatory approvals.\n\n## Autonomous Driving\n1. **FSD attach rate hits record in North America:** Tesla says over 75% of new North American deliveries now include the FSD supervised system, a record figure that rose by almost 20 percentage points in one quarter.\n2. **Active FSD subscriptions climb to 1.74 million:** Active FSD subscriptions reached 1.74 million, up from 1.48 million the prior quarter and 1.04 million a year earlier — a 67% year-over-year increase. The count includes one-time purchases and monthly subscriptions but excludes free trials.\n3. **FSD gains approval in four more European countries:** Since the end of the second quarter, FSD has received approval in Croatia, Slovenia, the Czech Republic, and Slovakia, bringing availability to nine EU countries with over 100,000 customers using it there.\n\nNotable quotes and data:\n- Over 75% of new North American Tesla deliveries now include FSD supervised, a record, up nearly 20 percentage points quarter-over-quarter.\n- Active FSD subscriptions: 1.74 million (up from 1.48 million last quarter, 1.04 million a year ago; +67% YoY).\n- FSD approved in Croatia, Slovenia, Czech Republic, and Slovakia since end of Q2; now live in nine EU countries with 100,000+ customers."
       },
       {
         "id": "20261022_sawyermerritt_01_xdaily_summary",
