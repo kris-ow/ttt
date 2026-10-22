@@ -243,6 +243,17 @@ jobs:
       # forces a full regeneration.
       # Gate on github.event.schedule (the cron expression that triggered the run), not wall-clock
       # time — Actions cron is routinely delayed 3+ hours, which silently skipped the gate previously.
+      # Electrek Daily: one digest per day instead of one feed item per article
+      # (scripts/pipeline/electrek-daily.js, ELECTREK_DIGEST_FROM in config.js). Same
+      # gate and backfill rule as the executive summary, and it must run BEFORE it so
+      # the Daily Brief sees the day's Electrek coverage. Direct API, so no batch wait.
+      - name: Build Electrek daily digest
+        continue-on-error: true
+        if: (github.event_name == 'workflow_dispatch' && inputs.skip_exec != true) || github.event.schedule == '15 0 * * *' || github.event.schedule == '15 7 * * *'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/pipeline/electrek-daily.js --skip-if-exists
+
       - name: Build executive summary
         continue-on-error: true
         if: (github.event_name == 'workflow_dispatch' && inputs.skip_exec != true) || github.event.schedule == '15 0 * * *' || github.event.schedule == '15 7 * * *'

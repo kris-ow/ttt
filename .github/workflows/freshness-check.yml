@@ -36,6 +36,11 @@ jobs:
             case "$(basename "$f")" in
               [0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_munrolive_*) continue ;;
             esac
+            # Electrek articles from the digest cutover on are summarized once per day
+            # into YYYYMMDD_electrek_00_daily_summary.txt, never one by one
+            # (ELECTREK_DIGEST_FROM in scripts/pipeline/config.js — KEEP IN SYNC).
+            name="$(basename "$f")"
+            if [[ "$name" == [0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_electrek_* ]] && [[ "${name:0:8}" -ge 20261021 ]]; then continue; fi
             if [[ "$f" != *_summary.txt ]] && [[ ! -f "${base}_summary.txt" ]]; then
               stale_files="$stale_files\n- \`$(basename $f)\`"
               stale_count=$((stale_count + 1))

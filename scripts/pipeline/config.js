@@ -51,6 +51,17 @@ loadDotEnv();
 // transcript as a permanent phantom gap (the bug *_reddit_bullets.txt caused).
 export const RETIRED_CHANNELS = new Set(['munrolive']);
 
+// Electrek is published as one daily digest (electrek-daily.js →
+// YYYYMMDD_electrek_00_daily_summary.txt) instead of one feed item per article:
+// on news days it flooded the feed (7 articles on Q3 earnings day, 2026-10-21).
+// Article transcripts dated on or after this day are NOT summarized individually
+// by run.js; they stay in news/ as the digest's input. Earlier articles keep
+// their individual summaries.
+//
+// KEEP IN SYNC with the skip in .github/workflows/freshness-check.yml, for the
+// same phantom-gap reason as RETIRED_CHANNELS above.
+export const ELECTREK_DIGEST_FROM = '20261021';
+
 // Official primary-source channels: the companies' own releases (earnings
 // webcasts, P&D, impact reports). They get the amber feed frame, pin first
 // within their day, and are deep-linkable at /t/<slug>/ (build-news.js).

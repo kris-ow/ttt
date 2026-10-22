@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 import { loadStockBlock, getStockBlock } from './stock-data.js';
 
@@ -79,6 +79,13 @@ function findUnsummarizedTranscripts() {
     const retiredMatch = file.match(/^\d{8}_([^_]+)/);
     if (retiredMatch && RETIRED_CHANNELS.has(retiredMatch[1])) {
       console.log(`  Skipping ${file}: channel '${retiredMatch[1]}' is retired`);
+      continue;
+    }
+
+    // Electrek from the cutover on is summarized once per day by
+    // electrek-daily.js, not per article (see ELECTREK_DIGEST_FROM).
+    if (retiredMatch && retiredMatch[1] === 'electrek' && file.slice(0, 8) >= ELECTREK_DIGEST_FROM) {
+      console.log(`  Skipping ${file}: Electrek goes into the daily digest`);
       continue;
     }
 
