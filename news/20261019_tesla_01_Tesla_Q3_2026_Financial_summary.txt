@@ -1,0 +1,65 @@
+Channel:     tesla
+Title:       Tesla Q3 2026 Financial Results and Q&A Webcast
+Published:   2026-10-19 18:50 UTC
+Summarized:  2026-10-22 03:04:16 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01EUSELw2c6xzYZrjYJVdk5K
+Cost:        $0.05824 (27027 in / 6242 out tokens)
+Relevance:   core — this is Tesla's official Q3 2026 earnings call, covering financial results, robotaxi/FSD scaling, Optimus progress, energy margins, and capex guidance directly central to the Tesla investment thesis.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Energy, Electric Vehicles, Financials, SpaceX — AI & Compute
+────────────────────────────────────────────────────────────
+
+Tesla's Q3 2026 earnings call covers strong vehicle delivery and FSD attach-rate growth, rapid robotaxi mileage scaling in Austin, continued Optimus development delays tied to hand design and AI5 chip integration, improving energy and services margins, and capex guidance revised down for the year with new borrowing capacity secured for future growth. Management reiterated a long-term vision of Tesla dominating terrestrial transportation and humanoid robotics while declining to discuss a potential SpaceX merger.
+
+## Financials
+1. **Automotive and energy margins improve:** Automotive gross margin excluding credits rose sequentially from 16.3% to 18.1%, driven by a higher mix of APAC deliveries. Energy gross margin jumped from 20.4% to 33.1%, aided by tariff-related fund recognition and warranty true-downs from a vendor cost reimbursement agreement. Services and other margin hit an all-time high of 15.9%, up from 14.1%, on strength in supercharging and insurance.
+2. **Cash position and capex guidance:** Tesla ended the quarter with free cash flow over $1.5 billion and cash/investments over $45 billion. Full-year capex guidance was revised down to approximately $20 billion, funded primarily from operating cash flow. The company secured capacity to borrow up to $30 billion to support future capex growth but does not plan to draw on it this calendar year.
+3. **Net income items:** Net income was hit by a $142 million mark-to-market loss on Tesla's SpaceX holding, partially offset by a roughly $290 million Bitcoin mark-to-market gain.
+4. **Delivery and demand strength:** Tesla posted two consecutive quarters of vehicle deliveries over 480,000 and exited Q3 with its highest backlog in four years, with production (not demand) cited as the main constraint.
+5. **Capex trajectory going forward:** CFO Vaibhav Taneja said current capex impact from semiconductor capacity investments is not yet large, but expects it to become "meaningful" next year and reach the tens of billions by 2028 as robotaxi fleet, Optimus, solar manufacturing, AI compute, and the semiconductor fab all scale.
+
+## Autonomous Driving
+1. **FSD attach rate climbs:** Over 75% of North American deliveries in Q3 included a paid FSD subscription sign-up at delivery, about 20% higher than Q2, despite every car including a free trial month. FSD now has over 1.7 million paid customers globally, with more than 50% on subscriptions (vs. one-time purchase) for the first time.
+2. **FSD as the primary demand driver:** Elon Musk said FSD is now the biggest driver of vehicle demand, with no competitor offering comparable capability in any purchasable car; showroom customers are reportedly asking specifically for FSD test drives rather than specific models.
+3. **European and Chinese regulatory approval progress:** Tesla is now approved in many European countries and anticipates EU-wide approval possibly within a few months, with Musk saying he'd be surprised if it took longer than Q1. In China, Ashok Elluswamy said Tesla is working with regulators and has gotten FSD operating in certain cars, citing competitor CEOs who tested FSD in the US as impressed.
+4. **New AI-based mapping system:** Ashok Elluswamy said Tesla is building its own AI-based mapping and navigation system (not reliant on third-party maps), integrated with voice control and personalized/fleet-learned preferences; initial elements will roll out with the V15 software release, with full navigation/parking/destination handling expected within several months.
+5. **Customer FSD-unsupervised timeline:** Elluswamy said the same unsupervised software running in Cybercabs and robotaxi Model Ys will be released to customers as part of V15, with the first customer vehicles expected to join the robotaxi fleet around Q2 next year, pending geofence/fleet management integration.
+
+## Robotaxi
+1. **Austin fleet and mileage growth:** The Cybercab fleet in Austin has grown roughly 10x since launch about a month prior, with cumulative unsupervised miles up 8x in the quarter and weekly double-digit percentage growth throughout Q3. Management expects continued double-digit weekly growth for the foreseeable future with no near-term hurdles seen.
+2. **Expansion beyond Austin:** Dallas launch is planned for next month, with Elluswamy stating the same software will scale to many more cities alongside Model Y robotaxis; six cities are currently covered. Service hours are being progressively extended (from 6am–9pm toward near 24/7 by end of year) and expansion to highways/high speeds is planned, gated by safety validation rather than primarily regulatory limits for now.
+3. **Unit economics target:** Taneja said Tesla is not yet at its target of $0.30 per paid robotaxi mile but sees "a path" to get there through scaling operations and fleet management experience; profitability contribution is expected to become noticeable around Q2 2027 and a bigger factor by Q3/Q4 2027.
+4. **Cybercab production ramp:** Lars Moravy said the Cybercab has 50% fewer parts than any previous Tesla vehicle, and the factory is currently producing at the rate the robotaxi service needs rather than at maximum line capacity (listed at over 125,000 units/year). Customer purchase/ownership of Cybercabs is targeted to begin by the end of 2026, starting small, though the vast majority of the fleet will remain Tesla-owned as "transport as a service."
+5. **Pricing strategy and market ambition:** Musk said Tesla's robotaxi pricing is lower than ride-share competitors partly because Tesla has no driver cost and manufactures its own vehicles; he reiterated a goal of Tesla eventually handling "a majority of all passenger miles" in any country where it's allowed to operate freely, framing the broader goal as owning terrestrial transportation generally, not just ride-hailing.
+
+## Humanoid Bots
+1. **Optimus production status:** Tesla has started "early production" on a high-volume line in Fremont, with most of a planned million-unit-per-line setup already landed there; Musk expects it will take roughly a year or more to reach an annualized rate of 20,000 units/week, citing thousands of interdependent requirements across supply chain, design, AI, and durability.
+2. **Design bottleneck is the hand:** Engineers said the hand is the most challenging electromechanical component, more complex than locomotion actuators, with custom gears still being developed for durability; other electromechanical systems have largely converged to a working design.
+3. **AI5 chip integration timeline:** Musk said integrating Tesla's AI5 chip into Optimus — offering roughly an order of magnitude more compute than AI4 — is targeted for around April of next year and is expected to significantly boost capability given the far greater degrees of freedom a humanoid robot must handle versus a car.
+4. **Training approach and demo plans:** Training relies on bootstrapping via human demonstration followed by large-scale robot self-play (unlike cars, which have a large fleet generating training data), requiring on the order of 10,000–20,000 Optimus units for an "Optimus Academy" self-play program. Musk said Tesla may release an Optimus video within a month or two showing non-pre-programmed, AI-driven task performance (as opposed to deterministic demos).
+5. **Customer delivery timeline and initial use cases:** Musk expects Optimus issues (AI, electromechanical design, reliability/duration) to be resolved around the end of next year, which is when deliveries to companies outside Tesla would begin. Initial high-value use cases are expected to be dangerous, repetitive industrial tasks needed around the clock, before expanding to consumer/home use. Tesla has also started constructing a second Optimus factory in Austin in addition to Fremont.
+
+## Energy
+1. **Megapack demand and margins:** Tesla is "almost sold out" of Megapacks for 2027 amid strong demand, particularly from data centers, and expects gross margins to improve meaningfully as production ramps. Q3 energy storage deployments were 13.7 GWh, the second-best quarter on record. Tesla also began Megapack deliveries using in-house LFP battery cells in Q3.
+2. **Early-stage distributed compute product:** In response to an analyst question, an executive said it's "still early days" on a previously-alluded-to "megapod" distributed power/compute product, with more clarity expected around Q1 or Q2 next year.
+
+## Electric Vehicles
+1. **Model Y market leadership:** Based on preliminary data, Tesla believes the Model Y was the best-selling BEV in Europe and the best-selling passenger car in South Korea in Q3, with new delivery records also set in Australia, Japan, and Taiwan.
+2. **Factory production rates:** Lars Moravy said factories are operating at record rates this quarter, with strategic investments over the past year-plus now bearing fruit; Tesla is also expanding capacity, including permits filed to expand Giga Berlin and a new Semi factory started in Reno, as part of a goal to reach 5 million vehicles/year by approximately 2030.
+
+## SpaceX — AI & Compute
+1. **Terafab capital and timeline:** Musk said Terafab (the Austin-based chip research/fab project) will cost "tens of billions" of dollars through early 2028 and likely more than $100 billion long-term, with the split between SpaceX and Tesla funding still to be determined. Commissioning of machinery is planned for the first half of next year, with an aspirational first test chip around May/June, and volume production of a useful chip targeted around Q3 2028. Musk separately said on X that he expects the related facility to be among the most valuable buildings in the world, with economic value potentially placing it in the top 20 of countries.
+
+Notable quotes and data:
+- "I would be surprised if it takes longer than Q1" for EU-wide FSD approval — Elon Musk
+- Over 75% of North American Q3 deliveries included a paid FSD subscription sign-up at delivery, up ~20% from Q2; 1.7M+ paid FSD customers globally, >50% on subscription for the first time
+- Automotive gross margin ex-credits: 16.3% → 18.1% sequentially; Energy gross margin: 20.4% → 33.1%; Services margin: 14.1% → 15.9% (all-time high)
+- Free cash flow over $1.5B; cash and investments over $45B; capex guidance revised to ~$20B for the year; new borrowing capacity of up to $30B secured
+- Net income impacted by $142M SpaceX holding mark-to-market loss, offset by ~$290M Bitcoin mark-to-market gain
+- Austin Cybercab fleet grew ~10x in about a month since launch; cumulative unsupervised miles up 8x in Q3 with weekly double-digit growth
+- Energy storage deployments: 13.7 GWh in Q3, second-best quarter on record
+- "I think Tesla will end up doing a majority of all passenger miles on Earth in any country where it is allowed to operate freely." — Elon Musk
+- Optimus target: AI5 chip integration around April next year; customer deliveries outside Tesla expected toward end of next year; Optimus Academy self-play program targeting roughly 10,000–20,000 units
+- Terafab: "tens of billions" in capital through early 2028, "north of 100 billion" long-term
+- Robotaxi per-mile cost target: $0.30; not yet achieved but management sees "a path"; profitability contribution expected to be noticeable around Q2 2027 and significant by Q3/Q4 2027
