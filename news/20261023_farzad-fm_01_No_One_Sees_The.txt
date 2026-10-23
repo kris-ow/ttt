@@ -1,0 +1,1110 @@
+Channel:     farzad-fm
+Title:       No One Sees the Engineering Bet Behind Elon’s Plan
+URL:         https://www.youtube.com/watch?v=CQvV8W9TxcY
+Published:   2026-10-23 14:59 UTC
+Fetched:     2026-10-23 16:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Everyone wants to know
+when Optimus will do everything a
+human can do, but I think there
+'s a more useful
+question.  How much
+valuable work
+can Tesla do with a
+robot using
+equipment that it
+can actually
+build on a large
+scale?  Imagine a
+robot
+working a shift
+moving
+containers between two
+workstations, and
+nothing about that
+sounds particularly
+exciting, especially
+if you've worked in a
+warehouse or factory, but
+someone has to
+move those
+containers over and over again
+before the
+next person
+can complete their
+work that depends
+on that work.  If a
+robot can reliably
+perform this
+task, there's a real
+reason for its
+existence long before
+it can
+walk into a stranger's
+house and take care of
+absolutely everything,
+like laundry
+, dishes,
+dog walking, or anything else.
+This is the engineering
+problem behind
+this video.  You have a
+limited amount of
+equipment, a limited
+amount of energy, and a
+job to
+do.  Opportunity
+arises when you
+find a match between what a
+machine can
+reliably do and what
+people actually need.  Tesla
+describes Optimus as a
+general-
+purpose humanoid
+designed for
+dangerous,
+repetitive, or
+boring tasks.  And on
+its page
+dedicated to artificial
+intelligence, Tesla directly
+talks about
+efficient hardware
+for logical
+inference, that is, a
+computer that
+runs an already trained
+model.  So,
+efficiency is
+part of the ambition from the
+very beginning.  It
+determines how much of that
+ambition you can
+put into a physical
+machine.  One of the
+particularly important
+parts of this
+computer is its
+memory.  Memory is
+incredibly important here.
+The robot must
+understand where it
+is, where
+objects are,
+and what just happened.
+But buying more
+memory and
+getting more
+useful
+work are not the same
+thing.  What is really
+needed for this
+job?  Imagine
+if you reached
+for a cup.  The person
+does this without
+creating a
+spreadsheet of
+steps.  Namely, this
+change in situation
+must convert
+information from its
+sensors into movement.  She
+must assess where
+the cup is,
+reach out to it,
+and react when
+the situation changes.
+This gives her computer
+multiple tasks
+at once.  Part of
+the memory contains
+the model it
+works with.  Part
+contains information
+that is being processed
+right now.  The part
+may contain
+useful context from a
+previous stage of
+the task.  The exact
+location
+depends on the system.    A
+useful image
+is the desktop.    The
+workbench should be
+large enough
+for the tools and
+materials
+needed for the
+current job.  If
+it's too small,
+simply working faster
+won't solve the problem
+because something important won't
+fit.  But a
+much larger
+empty table
+doesn't automatically make you a
+better
+carpenter either.  And there is one more
+question.  How quickly
+can you move
+material onto this table
+and get
+results?  Optimus will
+one day take
+a lot of the work off of us, but there's
+one task that no
+robot
+can do for
+you yet.  And this is something that
+most of us
+constantly put off.  I take
+pretty good care
+of my health
+now, and since becoming a
+new father
+, I pay
+more attention to it
+than before.  And
+the most annoying
+part of
+health monitoring has
+nothing to do with
+health itself.  This is a
+hell of an
+administrative
+job.  It's about mustering up
+the energy to
+call the
+office, sitting on the line,
+finally getting through
+and finding out that the
+next vacancy
+will be in a month.
+Wow, what a waste of
+time.  And good luck
+finding a doctor who
+actually accepts your
+damn insurance.  And this is where
+today's sponsor
+Zocdoc comes to the rescue.  It is these difficulties that
+Zocdoc takes away from you.
+Zocdoc is free, and
+you can search and
+compare local
+doctors online,
+read real
+reviews from real
+patients,
+check detailed
+doctor profiles,
+view real
+appointment openings, and
+book an appointment with the
+doctor you need with just a few
+taps.  There are over
+150,000 physicians in over
+200 specialties in
+all 50 states of the
+United States.  And,
+keep in mind, often
+you can even
+get an appointment
+within 24-72 hours,
+sometimes even the same
+day.  I know you've been
+putting it off.  You know
+I've been putting it off.
+Your health matters
+, and it doesn't have to
+be complicated.
+Now finally
+cross this
+trick off your to-
+do list with Zocdoc
+at zocdoc.com/farzad.
+Links to this
+will be in the description and
+comments section
+below.  And a big
+thank you to Zocdoc for
+sponsoring this
+video.  Okay, now
+back to Optimus.
+This brings us to the
+difference between
+memory capacity and
+memory bandwidth.
+Volume is the amount of
+information you
+can hold.
+Throughput
+is how much you
+can move
+in a given amount of
+time.  Nvidia describes another
+useful
+distinction in
+robotic
+computing.
+Direct
+traffic control and
+higher-
+level planning can
+tolerate various
+delays.  Imagine the
+difference between
+maintaining
+balance while
+carrying a box
+and deciding
+which room to
+take it to.  Both are
+important, but
+one cannot wait
+while you consider the
+other.  Therefore, a robot-
+computer must
+organize its
+work and also
+store information
+.  I wouldn't judge a robot
+by one
+characteristic.
+More memory may
+give you room for
+more, but if
+the work is already coming in,
+can the computer
+use that
+information
+fast enough?  And can the entire
+robot turn it
+into a useful action?  You
+can see that these are
+separate options in
+real hardware
+.  Nvidia lists two
+Jetson Thor modules with
+different
+memory capacities.  One with 128 GB,
+and the other with 64. The
+published
+table indicates
+the same
+memory bandwidth for
+both.  However, this does not
+mean that the modules
+have the same
+performance.  They
+don't have any.  This shows
+why a capacity number alone
+can't
+tell you the whole
+story.  Suppose
+two computers
+can store
+the model needed for a
+particular task.
+Giving one of them
+more
+memory
+does not in itself prove that it
+will perform the task
+twice as fast.
+Conversely, if the model
+doesn't fit at all,
+maintaining the same
+bandwidth
+won't magically solve the
+problem
+.  These are different limits,
+and engineers need to
+know which one they are
+reaching.  Now, for
+Optimus, we will need
+workload measurements
+to
+evaluate a specific
+memory configuration.    The
+chip's announcement doesn't
+tell us about the
+robot's success rate at picking up a
+slippery object
+or recovering when
+someone moves a
+container.  These
+results are obtained
+from
+testing the entire
+machine.  But understanding
+this difference
+allows us to
+ask a much
+better question than whether the
+memory number has increased or decreased.  My goal is a
+useful ability on a
+large scale.
+If available memory
+supports more
+robots
+doing valuable
+work, this is a serious
+opportunity.  But a
+cheaper robot that
+constantly needs
+someone to
+rescue it hasn't solved the
+problem
+you're
+buying it to solve.  Here is an
+intentionally simplified
+example.  Imagine
+you have 960 units of a
+component to
+distribute, and each
+machine needs 96
+units.  You can
+equip 10 cars.
+If the redesign
+allows
+the same useful
+work to be done with 64 units
+per machine, this stock
+could equip 15.
+The actual memory
+comes in
+certain packages, and
+other parts,
+assembly
+power, and
+software may
+become the limitation.
+The example illustrates what
+happens when a
+scarce input
+resource is stretched
+further without losing
+the capabilities you need.  You have a
+choice.  Equip
+more machines,
+stock more
+spare parts, or
+reach an acceptable
+cost sooner.
+Each of these decisions
+can have implications
+for the client.  But if
+the redesign results in
+the robot not
+performing the task,
+the additional units do not
+create an advantage in the
+example.  This is why an
+engineering goal
+should include
+work performed.
+Component savings are
+valuable as they
+travel from the
+design spreadsheet to the production
+machine.  Ultimately, what
+matters is
+the number of correctly
+completed tasks
+you get from the
+resources you invest.
+You can't
+build a physical
+robot from a prediction.
+You need
+factual details.  So
+I see a practical
+reason to
+build useful
+capabilities around the
+resources you
+can obtain
+while
+continuing to develop
+more powerful
+hardware over time.  In
+its
+earnings comments dated
+September 30, 2026, Micron
+said it expects
+tougher demand
+for memory and storage
+in 2027 and 2028 than in
+2026.  She also
+described humanoid
+robotics as a
+potential source of
+demand growth.  This is a
+supplier forecast, not a
+measure of Tesla's specific
+supply position.  The thing is
+that the robot program
+is
+within a broader
+industrial system.
+Brilliant design
+still requires
+technological
+components.  More
+production space
+for one part does not
+instantly create
+more for every
+other part.  Imagine a
+restaurant that
+plans to open 10
+restaurants.  Every
+restaurant needs an
+oven.  You can
+design
+the most amazing menu
+in the world, but if you
+can only get
+five matching
+ovens, that menu won't
+open other
+restaurants.  You either
+find more
+supplies, change the
+design without spoiling the food,
+or change the
+deployment.
+Robotics is
+much more complex
+than ordering
+an oven, but the
+operational solution is
+familiar.  Supply
+changes what you
+can put into the world
+, and a design that makes better
+use of
+available supplies can
+be strategically
+important, even if
+it sounds less
+impressive in the headline.
+I keep
+coming back to the fact
+that complexity and
+value are different
+things.  The task can
+be repetitive and
+still be incredibly
+rewarding.  If a robot
+takes on a boring
+or dangerous
+job, I don't
+need it to
+do the most
+technically spectacular
+thing
+imaginable to understand
+why it's important.    Let's
+go back to the
+containers between the
+two
+workstations.
+Let's say a person
+regularly has to
+stop another
+task, pick up a
+container, and
+return it.
+The value of
+automating this
+movement includes
+the interruption it
+eliminates.  A person can
+stay with a job
+that actually
+requires their attention.
+Now change
+the task a little.  Containers
+are always in
+one designated
+area.  They have
+handles that the robot
+can grab onto.
+The route remains
+free.  The
+destination is easy
+to identify.  You
+have made the environment
+easier to work in without
+changing the value of
+container shipping
+.  This is a practical
+way to think about
+early deployment.
+Choose an important
+task, then
+decide what parts of
+the environment you can
+make
+predictable.
+The robot still
+has to
+deal with
+variation, but you
+don't intentionally
+create every
+possible difficulty for it on the
+first day.  That is why you should
+not
+ignore a seemingly simple
+job.
+Repetition can
+make it easier to define
+and measure
+work.  This does not make
+the work worthless.
+Businesses can learn a lot
+from a
+machine that
+consistently performs
+one task,
+as there is a clear
+“before” and “
+after” comparison.  At the same time, I would
+n't assume that something
+seems simple to us,
+therefore it's simple to a
+robot.  Making
+the bed, doing the dishes,
+and moving things
+around the house would be
+incredibly useful,
+but I'd like to
+see how the robot
+handles
+actual variation
+before deciding that a
+particular
+hardware configuration is sufficient
+.  The plate may be
+wet, the sheet
+may be folded over
+itself, the cup may be
+behind another cup.  These
+details change what the
+robot should
+perceive and how it
+should move.    A
+person's familiarity
+can hide
+the complexity of a task.
+So instead of
+saying that a smaller
+memory budget will definitely
+handle
+every homework
+assignment, start with a
+well-defined
+version of the assignment.  What
+objects?  What positions?
+What are the lighting conditions?
+What happens when the
+first attempt
+fails?  Let's consider
+loading dishes.
+Moving one
+known plate between
+two fixed
+positions is one
+test.
+Opening an unfamiliar
+dishwasher,
+identifying everything
+inside, and
+rearranging an
+overflowing basket
+is a much broader
+task.  Both
+can be described as
+dishwashing, but
+they require
+very
+different things from the system.  This is where a
+useful
+middle ground comes into play.  You don't
+need to solve
+every version of an action
+before any
+version has
+value, but you do
+need to describe what the
+robot can actually
+do.  This gives
+customers a way to
+use it successfully
+and gives engineers a
+clear next
+problem to
+solve.  Ambitions
+can remain
+broad, while the
+first task is
+specific.  I would start
+with repetitive
+work where success is
+easy to recognize.  You
+take an item, put
+it where it belongs, and
+do it consistently.
+Then make
+the task more difficult.  If you
+can expand
+the range of situations
+it can
+handle without
+making the machine
+impossible to
+assemble, that's a really
+interesting path for Optimus.
+Imagine you are
+developing this test
+with the person who
+usually does this
+job.  First,
+define what a
+successfully completed
+task looks like.  Then
+run the robot
+through common
+variations, such as
+slightly rotating
+an object, partially
+filling
+a container, or
+temporarily blocking a
+path.  You would count
+more than successful
+attempts.  You would
+consider how often a
+human intervenes,
+how long
+each task takes, and whether
+the machine can safely
+recover.  A robot
+that performs 90
+tasks with constant
+assistance
+is different from
+one that performs the
+same 90 tasks while
+the operator is doing
+something else.  The test
+should also last
+long enough to
+show whether
+the performance holds up.    A
+brief demonstration
+can
+demonstrate a
+promising
+ability.
+The operational
+record shows how
+often this capability
+withstands real-world
+use.  These
+measurements
+help
+answer
+questions about
+equipment because
+you can compare
+configurations for the same
+task.  Does the more
+expensive
+version really reduce
+the number of interventions
+or expand the useful
+work?  Does the
+more efficient version preserve the
+result?  You can
+stop
+arguing about
+which specification
+sounds better and
+start measuring what the
+customer gets.  This is a
+more constructive
+way to assess
+progress.  Suppose an
+operator has to
+intervene every time a
+container
+tips over
+.  Record this as a
+separate failure, rather than
+vaguely saying
+that the job requires
+more intelligence.  Does
+he not recognize
+the handle, choose the
+wrong grip,
+or lose
+track of where
+to place the load?  These are
+different problems.    A
+useful update
+is one that fixes a
+problem.
+Adding memory
+can help if the
+desired model or
+operating information does not
+fit.  Instead,
+better
+perception, a different
+grip, or a small
+change in container may help.
+Keeping
+the task and
+fault visible
+makes it harder to confuse a
+larger component with an
+actual
+improvement.  That's why
+I'm interested in
+value over time, not
+focusing on one
+component.  If a
+robot reliably
+creates a lot of
+value, paying
+more for the right
+equipment can be
+quite logical.
+The trade-off is
+whether this extra
+equipment will earn
+its place or
+prevent you
+from getting useful
+robots to more
+places.  Let's
+use another
+hypothetical situation
+.  Two robots can
+perform the same
+job.  One is
+cheaper, but
+often needs
+help.  The other one
+costs more and
+performs the task with
+fewer
+interruptions.  A cheaper
+purchase may ultimately
+cost more to
+operate.  Now
+imagine the opposite.    An
+expensive robot has
+power that the
+job never
+uses, while a
+cheaper one does the
+job just as
+reliably.  In this
+case, additional
+equipment may not
+improve
+the client's outcome.  Therefore,
+the comparison must
+take into account the time
+spent supervising,
+maintaining, and
+charging the machine,
+along with the useful
+work it
+performs.  You don't need to
+assume that a robot
+makes millions of
+dollars over its
+lifetime to prove this.
+You need a job, a
+baseline, and
+realistic
+cost accounting.  And there
+is a
+human aspect to this baseline.  If
+a task exposes
+someone to danger
+or constant physical
+strain,
+eliminating it may have
+implications that go beyond the
+narrow
+calculation of tasks
+per hour.  This reinforces
+the reason
+to carefully explore the
+possibilities.  This does not
+eliminate the need
+to prove that the
+robot itself can operate
+safely.  Now the
+next part
+is how you
+continue
+to improve
+the machine without losing the
+useful result
+you have already achieved
+.  The long-term
+opportunity still
+seems
+huge to me, but I
+think the path to it is
+to expand
+the amount of useful
+work a
+robot can do,
+one meaningful step at a
+time.  More memory
+can open up more
+possibilities.  Better
+memory usage
+may allow you
+to implement some of
+these features
+faster.  If you
+enjoyed this
+explanation,
+subscribe for
+further discussions
+on how these
+technologies can
+change the way we work.
+There are several
+ways to improve
+the computer side.
+The model can become more
+efficient.
+The
+software can
+consume less
+memory.
+Hardware can
+transfer
+information faster.
+Power can
+increase when
+a task truly
+benefits from having
+more
+information available
+.  Nvidia's documentation on
+edge
+computing gives
+one specific
+example.
+Reduced-precision formats
+can reduce the weight
+of the model and its working
+data with tradeoffs in
+accuracy that
+need to be evaluated.  This is a
+general engineering
+method, not proof
+that Tesla uses a
+particular implementation or
+that every
+robot task allows for the
+same changes.    An
+interesting possibility
+is that
+progress can
+come from
+combination.  Software
+makes better use of the machine,
+while later
+machines provide
+more space for
+software.  Neither
+side should
+stand still while the
+other develops.
+For the customer, the
+result may
+be a wider range of
+objects that the
+robot handles, fewer
+interventions, or a longer
+sequence that
+it can complete
+independently.  These are
+improvements that you
+can explain without a
+technical description, and
+they are a useful
+way to evaluate the
+next version
+by asking what new
+work has become
+possible and what
+previously awkward
+parts of the job have become
+easier.  Think of
+it as an extension of the
+job description.
+First, the machine
+processes one
+repetitive motion.
+Later, she
+tackles
+more
+variations and then
+combines several movements
+into a complete task.
+Each step should
+address the specific
+reason why
+the person had to
+intervene.  This gives
+the development program a
+specific direction.
+As for Optimus, I would
+take it back to the first
+useful job.  Where does
+having a more
+adaptive machine
+actually
+help anyone?  If we
+can clearly
+answer this
+question, then we have
+reason to worry
+about the engineering that
+makes it possible.
+Imagine a small
+business that
+wanted to
+automate a
+repetitive task
+, but couldn't
+justify a completely
+custom
+setup.  A machine
+that can learn
+a task, work with
+existing
+tools, and
+be reassigned to
+other useful work
+later could
+change that decision.
+This is a possible advantage of a
+more adaptive
+robot, but
+compare it
+fairly with the
+alternatives.  If a
+simple stationary
+machine already
+solves a task well,
+the humanoid should
+offer a
+reason for choosing it
+.  Flexibility may be the
+reason for this.  Working
+in spaces
+designed for
+people may be this
+reason.  Neither
+is an
+automatic
+win in every
+environment.    The
+biggest opportunity
+is that the
+robot's form and adaptability
+make useful
+work available without
+rebuilding the entire
+operation around
+it.  Then efficient
+on-board computing
+helps
+turn this
+flexible machine into something
+you can
+manufacture, power, and
+maintain.  This is how the
+issue of memory is
+connected to greater
+ambition.  Every
+engineering decision
+affects what
+tasks make sense,
+what customers can
+use the
+machine, and how many
+machines can be
+supported.  The effects
+reach the customer
+through the work the
+robot does, not
+through the number
+printed on the
+component.
+Think about what
+success would look like on
+this original
+workstation.
+Containers arrive
+when they are needed.
+The person using them
+no longer needs to constantly
+stop to
+pick up the next one.
+The machine handles
+common variations,
+asks for help
+when needed, and
+supports the overall
+process.  So the
+engineering bet
+I'm interested in is
+whether
+Tesla can turn
+the hardware it
+can create into
+more reliable and
+useful
+real-world work.
+Start with
+repetitive, boring,
+and dangerous
+tasks, improve
+capabilities,
+make it easy
+to scale, and
+keep
+expanding what
+people can actually
+use it for.  This is a
+path that I find
+fascinating.
+Thank you very much for watching.
+I hope this video
+was informative
+and useful, and
+I'll see you in the
+next one.  Don't
+overexert yourself,
+everyone.
