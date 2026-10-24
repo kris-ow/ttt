@@ -1,0 +1,37 @@
+Channel:     brighterwithherbert
+Title:       How to Actually Value Tesla Before Robotaxi Pays Off
+Published:   2026-10-24 13:30 UTC
+Summarized:  2026-10-24 14:04:00 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_01EtocQQMAgLSJ5PNBqgF4TR
+Cost:        $0.03606 (22621 in / 2687 out tokens)
+Relevance:   core — The entire video is a valuation-methodology discussion centered on Tesla's robotaxi and Optimus optionality, directly addressing the Tesla investment thesis.
+Topic:       tesla
+Categories:  Financials, Robotaxi, Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This episode features Cern Basher, a Chartered Financial Analyst and founder of the investment advisory firm Brilliant Advice, walking through a valuation framework for Tesla that moves beyond price-to-earnings multiples. Using discounted cash flow illustrations, Basher argues that Tesla's value rests on long-dated "call option" style growth opportunities — robotaxi, Optimus, and Terafab chip manufacturing — whose worth depends heavily on growth-rate assumptions and probability of success, not next year's earnings.
+
+## Financials
+1. **Why PE multiples mislead on growth stocks:** Basher argues forward PE only captures next year's earnings and is the wrong lens for a 25–30 year growth story; he builds up from a simple discounted-dollar example (a dollar paid once a year from now is worth 89 cents at a 12% discount rate) to show that extending a flat payment to 30 years or perpetuity barely changes value ($8.06 vs. $8.33), but changing the growth rate from 5% to 10% moves the implied value from $14.29 to $50 — a non-linear effect he says most PE-focused investors miss entirely.
+2. **Delay math — a one-year slip cuts value ~10-11%, but can be offset by a bigger opportunity:** In his illustrative model (not Tesla-specific figures), a growth opportunity paying out in year five at 50% annual growth is worth $625 today; delaying it a year drops that to $563 (test figures Basher gives at one point as 574/513, used interchangeably across the discussion), a roughly 10-11% reduction. However, if the delay also raises the confidence growth rate from 50% to 60%, the same opportunity's present value actually rises to $1,480–$1,530 — Basher's framework for interpreting Tesla's choice to delay driverless robotaxi for a safer, slower rollout rather than rushing a Mobileye-style retrofit to compete with Uber/Waymo.
+3. **Probability-weighting approach to valuing optionality:** Basher's suggested method: estimate per-unit profitability for a new business (e.g., per robotaxi, per Optimus unit), multiply by the number of units deployable, discount to present value, then apply a success probability and, where relevant, a market-share assumption (e.g., Tesla capturing only 50% of a market versus competitors taking the rest).
+4. **Reverse-engineering the market's implied probability:** Basher proposes taking Tesla's current market price and solving backward for what probability-of-success the market is implicitly assigning to each business line (robotaxi, Optimus), then asking whether one agrees with that implied probability — e.g., if the market price implies Optimus needs only roughly a 5% chance of hitting its targets, an investor who believes the odds are meaningfully higher than that sees an opportunity.
+5. **Option values are never negative, even for big-bet R&D:** Discussing Terafab — described as a joint venture involving Tesla and SpaceX partners for chip manufacturing — Basher rejects assigning it zero value even if failure risk is high; he argues call-option-style investments always carry positive value because valuation looks forward, not at sunk cost, and some in the market were reportedly ready to value Terafab at zero.
+
+## Robotaxi
+1. **Tesla's safety-first delay framed as value-additive, not value-destructive:** Basher frames Tesla's slower robotaxi rollout (versus a faster but less safe path, or simply licensing Mobileye-style tech to compete directly with Uber) as consistent with a strategy of maximizing long-term market position — aiming for a much lower cost-per-mile — even though such delays mechanically reduce near-term present value.
+2. **Disagreement over when robotaxi "counts" as proven is a matter of investor style, not right/wrong:** Basher says investors who demand proof via metrics like a large deployed robotaxi fleet before investing aren't wrong, but he personally believes value accrues continuously as milestones are hit (e.g., the shift from supervised to unsupervised operation), rather than being unlocked only at some discrete proof point.
+
+## Humanoid Bots
+1. **Optimus valuation should use the same option-pricing logic:** Basher criticizes investors and models (citing Ark Invest, which he says only added Optimus to its models about a week before this recording) for ignoring Optimus's value because it lacks current revenue, arguing instead that a probability-weighted, unit-economics approach should be applied just as with robotaxi.
+
+Notable quotes and data:
+- "Do yourself a favor and let go of the concept of PE" — Cern Basher's core message.
+- A flat $1/year for 30 years is worth $8.06 today at a 12% discount rate; extending to perpetuity only adds $0.27 more ($8.33).
+- 5% perpetual growth on a $1 payment → present value of $14.29 (implied PE of ~14); 10% growth → $50 (implied PE of ~50).
+- Illustrative new-business option (payout starting year 5, 50% growth) present value: $625; with a one-year delay: roughly $563 (also cited elsewhere in the discussion as 574→513); with growth raised to 60% after the delay: $1,480–$1,530.
+- A one-year delay in a large growth opportunity reduces its present value by approximately 10-11%, per Basher's model.
+- Basher: market price may imply Optimus needs only about a 5% probability of meeting its targets — investors who think the true odds are higher than that see a mispricing opportunity.
+- Basher: "It took Microsoft 14 years to reach a new high," used as a comparison for long stock-price stagnation periods, also citing Amazon post-dot-com.
+- Terafab described as a Tesla/SpaceX joint venture for chip manufacturing in competition with the Nvidia-style market; Basher says some observers assign it zero value, which he disputes.
