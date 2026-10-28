@@ -1,0 +1,31 @@
+Source:      electrek
+Title:       Electrek Daily Digest (2026-10-27)
+Author:      Electrek
+Published:   2026-10-27 15:43 UTC
+Summarized:  2026-10-28 05:39:55 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.03452 (8192 in / 1814 out tokens)
+Articles:    2
+Relevance:   core — Both included articles are substantively about Tesla's Robotaxi and FSD programs.
+Topic:       tesla
+Categories:  Robotaxi, Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek's Tesla coverage today centers on scrutiny of the company's autonomy claims and regulatory friction over FSD abroad.
+
+## Robotaxi
+1. **Musk's Waymo "victory" claim doesn't hold up nationally:** Elon Musk said Tesla's Robotaxi race against Waymo "was never a real contest" after Tesla's driverless fleet logged 438,000 miles in Austin in the week ending October 18 (up 30% week-over-week), edging Waymo's roughly 406,000 weekly average in Austin — but that Waymo figure is a Q2 average, since Waymo reports quarterly with a lag, per the Robotaxi Tracker chart cited by the article. Nationally, Waymo averaged 3.90 million rider-only miles per week in Q2 versus Tesla's best week of 558,000 miles, and Waymo's cumulative rider-only miles since 2020 total 271.3 million versus Tesla's 3.11 million since January 22, 2026. Austin accounts for 79% of Tesla's weekly driverless miles, per Robotaxi Tracker's count, driven by Tesla registering 463 Cybercabs in Texas (337 added in the last 30 days) — a deployment strategy Tesla's Ashok Elluswamy described on the Q3 call as wanting to "swarm Austin with Cybercabs everywhere." Elluswamy also said service remains constrained by software rather than regulators, with no highways, limited hours, and avoidance of at-grade rail crossings (the article cites a September rider report of a 10-minute trip turning into a 70-minute detour). Fred Lambert argues Musk's framing compares Tesla's best week to Waymo's stale data, and contends Tesla's geofenced, highway-free service is now the "highly specialized solution" Musk once said defined Waymo, while Waymo now drives on freeways in multiple cities. [Read on Electrek](https://electrek.co/2026/10/27/musk-robotaxi-victory-waymo-austin-miles/)
+
+## Autonomous Driving
+2. **Seoul police book 80 over illegal FSD unlock devices:** The Seoul Metropolitan Police Agency announced charges against 80 people for using aftermarket devices to activate Tesla "Full Self-Driving" on cars not approved to run it in South Korea, seizing 21 devices, per Electrek. Suspects allegedly imported modules from Europe and China or built their own (one using information found on GitHub), and face charges under Korea's Motor Vehicle Management Act carrying up to two years in prison or a fine up to roughly $15,000. Only US-built Model S, X and Cybertruck are exempt from Korean safety certification and can legally run FSD; Shanghai-built Model 3/Y cannot. Citing Carisyou Data Lab, the article reports 47,458 of 229,311 registered Teslas in Korea (20.7%) as of August were eligible, versus a May government figure cited from lawmaker Park Yong-gap showing only 4,292 of 180,684 (2.4%) eligible. Tesla has separately been remotely detecting and removing FSD from hacked cars since April. Fred Lambert argues Tesla created the jailbreak market by selling FSD in Korea (and previously under the "Full Self-Driving" name in Europe) without a regulatory path to legally enable it, and asks whether Tesla will refund affected Korean owners. [Read on Electrek](https://electrek.co/2026/10/27/tesla-fsd-south-korea-police-80-illegal-unlock-devices/)
+
+## Editorial Stance
+Electrek's Fred Lambert is openly critical of Tesla in both pieces, challenging Musk's robotaxi "victory" narrative as misleading on the national scale and framing Tesla's overseas FSD sales practices as having created the conditions for illegal workarounds.
+
+Notable quotes and data:
+- "It was never a real contest." — Elon Musk, per the Waymo comparison article
+- Tesla: 438,000 driverless miles in Austin (week ending Oct 18), up 30% week-over-week; Waymo averaged ~406,000 weekly miles in Austin in Q2 — per Robotaxi Tracker, cited in the article
+- Nationally: Waymo averaged 3.90 million rider-only miles/week in Q2 vs. Tesla's best week of 558,000 miles; Waymo's cumulative total is 271.3 million rider-only miles since 2020 vs. Tesla's 3.11 million since January 22, 2026
+- "swarm Austin with Cybercabs everywhere" — Ashok Elluswamy, Tesla head of AI software, on the Q3 earnings call
+- Seoul police booked 80 people and seized 21 illegal FSD unlock devices; penalties up to two years in prison or ~$15,000 fine
+- 47,458 of 229,311 Teslas in Korea (20.7%) were FSD-eligible as of August, per Carisyou Data Lab cited by Korea JoongAng Daily; a May government figure put eligibility at just 2.4%

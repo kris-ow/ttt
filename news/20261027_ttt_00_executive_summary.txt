@@ -1,0 +1,63 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-10-27)
+Published:   2026-10-27 00:00 UTC
+Summarized:  2026-10-28 05:40:23 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.06955 (20346 in / 2886 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla robotaxi overtakes Waymo on weekly Austin miles
+- Houston geofence expands ~10x overnight to 254 sq mi
+- Cybercab production outpacing deployment, says Lars Moravy
+- SpaceX $40B GPU financing from Apollo Global confirmed
+- Anthropic to pay SpaceX up to $120.5B for compute by 2029
+- Seoul police charge 80 over illegal FSD unlock devices
+
+## Robotaxi
+- Tesla's driverless fleet hit 438,000 miles in Austin for the week ending Oct 18, up 30% week-over-week, edging Waymo's Q2-average ~406,000 weekly miles in the same city — but Electrek notes Waymo's national rider-only miles (3.90M/week in Q2) still dwarf Tesla's best week (558,000), and Waymo's cumulative rider-only miles (271.3M since 2020) far exceed Tesla's 3.11M since January. Musk called the Austin race "never a real contest" and captioned the divergence chart "log curve in blue, exponential in red."
+- Tesla's combined Texas geofootprint (Austin 272, Houston 254, Dallas 81 sq mi) now roughly double Waymo's 307 sq mi, per Sawyer Merritt's figures; Houston's zone expanded roughly 10x in a single day, reportedly shaped like a Starship rocket.
+- Tesla registered 463 Cybercabs in Texas, with 337 added in the last 30 days (114 in the past week per Bhakdi's tracker); Ashok Elluswamy said on the Q3 call Tesla wants to "swarm Austin with Cybercabs everywhere," while service remains constrained by software — no highways, limited hours, at-grade rail crossings avoided.
+- Lars Moravy said Tesla "doesn't run the [Cybercab] line every day" because production is outpacing deployment absorption — "a bit of a race right now to see who can go faster" — indicating manufacturing is not the current bottleneck.
+- Large Cybercab staging lots spotted in Dallas (roughly 300 vehicles estimated across Dallas/Houston) ahead of a planned November Cybercab launch; vehicles remain unbadged for public service. NHTSA's audit response on Cybercab is due October 30.
+- Turo launched the first verified FSD-Supervised Tesla rental experience in the U.S. (effective Oct 28), with API-based verification of Tesla accounts; Turo cites 55% of Americans and 71% of Gen Z interested in self-driving travel tech.
+
+## Autonomous Driving
+- Tesla's FSD safety data update: supervised driving now averages 6 million miles between major collisions vs. 2 million with active safety only, 845,000 under fully manual Tesla driving, and 660,000 as the U.S. average — roughly 10x the manual rate. Cumulative FSD miles tracker rose to 16.7 billion, with ~50 million FSD miles logged daily (~316.8 million supervised miles/week, up 35% since July).
+- FSD subscriptions reached 1.74 million, up 260,000 (~15%) in Q3; new-vehicle attach rate is ~75% in the U.S. versus ~30% on the older AI4-hardware fleet.
+- Tesla FSD Supervised approved in Latvia, its 10th European country, joining Belgium, Netherlands, Denmark, Lithuania, Estonia, Slovenia, Czechia, and Croatia.
+- Seoul police charged 80 people and seized 21 aftermarket devices used to illegally activate FSD on Shanghai-built Teslas not certified for it in Korea; penalties run up to two years in prison or roughly $15,000. Electrek's Fred Lambert argues Tesla created the jailbreak market by selling FSD there without a legal activation path, and asks whether affected owners will be refunded.
+
+## SpaceX — Corporate & Valuation
+- SpaceX secured a $40 billion master finance lease with an entity managed by Apollo Global Management to fund next-generation GPUs — described by SpaceX as the largest GPU financing deal of its kind. Terms reportedly include rent equal to 5% of financed cost per tranche plus a fixed annual rate.
+- Anthropic's IPO filing disclosed commitments to pay SpaceX up to $120.5 billion for compute through 2029, with monthly payments reaching $3.1 billion; SpaceX is expected to deliver all contracted capacity by December 2026.
+- SPCX shares fell roughly 9–10% following an October 22 share-unlock event, which one commentator (Jo Bhakdi) attributed to forced selling as employees/early investors diversified — his own framing, not confirmed by SpaceX.
+- Merger-committee formation on both Tesla and SpaceX sides was reportedly confirmed by Musk, who is recused due to conflict of interest; Barclays' Tesla upgrade cited potential upside from a SpaceX merger among its catalysts.
+
+## SpaceX — AI & Compute
+- Musk reportedly said on SpaceX's earnings call that multi-billion-dollar data center buildouts are paying back in about a year, trending toward six months — a claim one commentator called the largest payback assertion he's aware of among hyperscalers.
+- Musk publicly stated SpaceX "isn't going to buy any new clouds," dismissing speculation he was talking down competitors to acquire them cheaply, amid his broader prediction of a shakeout among roughly 200 undercapitalized "neo-cloud" compute providers.
+
+## SpaceX — Starlink
+- easyJet will install Starlink across its A320/A320neo/A321neo fleet, with installs starting H1 2027 and completion by early 2028.
+- Verizon's CEO said Starlink Mobile's U.S. buildout would take 4–6 years and cost $300–500 billion; Musk countered it would take two to three years. SpaceX COO Gwynne Shotwell said the near-term priority is flying the Mobile V2 constellation through next year, targeting service launch in early 2028.
+- The CTIA (Verizon, AT&T, T-Mobile's trade group) asked the FCC to tighten satellite-to-device performance rules and remove TDD-ban exemptions — seen as pushback against Starlink's hybrid network plans.
+
+## Financials
+- Tesla shares rose over 4% on the day (closing near $374.60) in a two-day rally some commentators tied to merger speculation and Cybercab registration momentum; SpaceX closed near $148.58, up about 1.1%.
+- Canaccord's George Gianarikas pushed back on characterizations of Tesla's Q3 call as "subdued," calling it one of the most "unapologetically bullish" calls in recent memory.
+- 55 new Tesla Semi trucks were spotted in Nevada, cited as a sign of production progress.
+
+## Humanoid Bots
+- John Carmack reportedly said no current robot can perform fine-motor tasks like extracting a screwdriver or unscrewing tiny parts, echoing Musk's own comments on the difficulty of replicating human hand dexterity.
+- Musk listed extreme benchmark tasks (one-handed watch assembly, catching a 100 mph baseball blind, juggling flaming chainsaws on a unicycle) as "real benchmarks," though commentary cautioned these aren't necessarily the literal planned Optimus V3 demo, which Musk has said will show autonomous performance in a previously unseen environment.
+
+Notable quotes and data:
+- "It was never a real contest." — Elon Musk, on Tesla vs. Waymo in Austin
+- "swarm Austin with Cybercabs everywhere" — Ashok Elluswamy, Tesla head of AI software, Q3 call
+- Tesla: 438,000 driverless Austin miles/week (w/e Oct 18) vs. Waymo's Q2-average ~406,000; nationally Waymo still leads 3.90M vs. Tesla's 558,000 best week
+- FSD-supervised: 6M miles between major collisions vs. 845,000 manual Tesla / 660,000 U.S. average; 1,579 total major collisions logged
+- SpaceX: $40B Apollo GPU financing; Anthropic committed up to $120.5B for compute through 2029
+- Seoul: 80 charged, 21 illegal FSD unlock devices seized; up to 2 years prison or ~$15,000 fine
