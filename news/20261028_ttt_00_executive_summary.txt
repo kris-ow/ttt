@@ -1,0 +1,70 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-10-28)
+Published:   2026-10-28 00:00 UTC
+Summarized:  2026-10-29 05:46:11 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07190 (19396 in / 3311 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Cybercab Texas registrations hit ~970 combined fleet, overtaking Model Y
+- Tesla vs SpaceX merger talks confirmed active, not yet a done deal
+- Tesla Semi catches fire on I-880, no crash, shuts freeway 10 hours
+- SpaceX "SI" compute revenue hit $7.56B in Q3, up ~9x YoY
+- FSD safety data: 6.0M miles per major collision, ~9x US average
+- Flight 15 targets first full Starship catch, no earlier than Nov 8
+
+## Robotaxi
+- Texas DMV data shows Cybercab registrations at 544–546, surpassing Model Y's 507, with combined Tesla Texas robotaxi fleet approaching ~970–1,051 depending on count date. Growth has accelerated sharply: from ~45 vehicles on September 3 to 420 by October 23, more than 10x in under two months.
+- Tesla fielded more than 50 Cybercabs during Austin's F1 weekend (Oct 23–25), expanding its service area to cover Circuit of the Americas and extending hours to 1 a.m.; Sawyer Merritt called it the largest Tesla robotaxi gathering ever on public roads.
+- Musk said Cybercab rides launch in Dallas next month, with additional cities planned before year-end and Cybercabs in customers' hands by end of 2026.
+- Musk said Miami and Tampa robotaxi geofences will "very soon" expand to include beach areas.
+- Tesla's Austin driverless weekly miles (~438,000, rising) now exceed Waymo's (~406,000) per a RobotaxiTracker.com-sourced chart, though Waymo's figure lags on a reporting delay; Musk called the competition "never a real competition."
+- Tesla's Houston service area expanded roughly 10x overnight to ~254 km² (vs. Waymo's 49 km²), but Robotaxi Tracker founder Ethan McKanna found the app refuses pickups in parts of downtown inside the published zone, calling it "by far the most egregious 'fake' AV service area" he's seen.
+
+## SpaceX — Corporate & Valuation
+- Musk confirmed on SpaceX's Q3 call that Tesla and SpaceX have each formed special board committees to evaluate a merger, calling it "an odd kabuki dance" and stressing "I don't think we should assume that a merger is a certainty," while saying he personally favors it.
+- Combined valuation as of Oct 20 close: Tesla ~$1.48T, SpaceX ~$2.01T, implying ~$3.5T combined; SPCX rose ~8% post-earnings. Analysts Dan Ives (>80% within a year) and Gene Munster (95% within two years) offered merger-odds estimates, not confirmed outcomes.
+- A Tesla merger vote would need yes votes from 50% of all outstanding shares, with abstentions counting as no — the precedent being last November's xAI investment vote, which failed despite more yes than no votes due to abstentions. No merger proposal is on the ballot for Tesla's December 3 annual meeting.
+- Bank of America added SpaceX to its "US 1" best-ideas list.
+
+## SpaceX — AI & Compute
+- SpaceX's AI/compute division ("SI") generated ~$7.56B in Q3 revenue versus ~$813M a year earlier, roughly a ninefold increase; Musk said demand is high enough that "we could rent out our compute several times over if we said yes to everyone."
+- SpaceX closed a $40 billion GPU financing deal with an Apollo-led group — described as the largest GPU funding commitment in history — with chips arriving in H1 2027 and reported borrowing rates around 8%. Anthropic's IPO filing separately discloses up to $120.5B in SpaceX compute spend through 2029 (~$3B/month once fully delivered), with a 90-day cancellation window after initial terms.
+- Musk predicted "mass death" and consolidation among 200+ poorly capitalized "neo-cloud" GPU-rental firms, contrasting them with SpaceX's investment-grade status; CoreWeave bonds reportedly fell to ~15% yields on Oct 14, though CoreWeave's CEO called the bond sale "irrational."
+- Analyst Brian Wang projects SpaceX AI revenue could reach $300B+/year at high-end data-center completion (from a ~$100B run rate now), with a $600–$1,000 SPCX price target by end of next year — framed explicitly as his own bull-case estimate, not confirmed guidance. Musk said hitting 20 GW of compute next year is "extremely unlikely" but "no longer 0%."
+
+## SpaceX — Starship
+- Super Heavy Booster 22 completed a full-duration 33-engine static fire Oct 25 ahead of Flight 15, targeted no earlier than November 8 (Musk says before Thanksgiving) — the first attempt to catch both booster and ship for a full Starship recovery.
+- Ship 42 had its engines pulled before a planned static fire and was sent back for additional cold testing, possibly related to Flight 14's early engine shutdown (which Musk attributed to a software glitch, not a major concern).
+- Raptor 4 is targeted to deliver 300 tons of sea-level thrust versus Raptor 3's ~230 tons, per Musk.
+
+## SpaceX — Starlink
+- SpaceX is moving ~4,400 Gen 2 Starlink satellites (roughly half the operational fleet) from ~550 km to ~480 km altitude over 2026, per FCC approval and a SpaceX Starlink Engineering executive; the move is framed as cutting ballistic decay time at solar minimum by over 80% and enabling denser frequency reuse, with only a negligible latency benefit (~0.47ms round-trip).
+- Verizon's CEO said Starlink Mobile "cannot compete" with terrestrial carriers and would need 4–6 years and $300–500B to build comparable nationwide coverage; Musk countered it would take SpaceX "two or three years." AT&T and T-Mobile CEOs separately downplayed the threat, and all three carriers jointly petitioned the FCC to preserve rules slowing satellite competition.
+- United Airlines' CEO called Starlink "the biggest competitive advantage of all time," said Delta's pass on it "was a mistake," and said United is moving to full-fleet installation after demand exceeded an initial 65% target; easyJet also announced Starlink installation across its Airbus fleet starting next year. Starlink has 13.6 million paid subscribers; next-gen phone service remains targeted for early 2028, having already slipped from a prior late-2027 date.
+
+## Autonomous Driving
+- Tesla's latest safety report shows FSD (Supervised) at 6,006,200 miles per major collision versus a 660,164 U.S. average — roughly 9x safer by Tesla's own figures. Tesla's cumulative FSD miles tracker rose from ~16B to 16.7B, with the fleet now logging ~50 million miles/day and an 18.2 billion-mile annualized run rate, up 35% since July.
+
+## Humanoid Bots
+- Responding to John Carmack's critique that no robot today can replace batteries in a toy pumpkin, Musk raised the bar, describing a hypothetical Optimus assembling a Swiss watch one-handed while catching a 100 mph baseball — unclear if meant literally. Tesla executives reportedly said on the last earnings call that the hand remains Optimus's hardest engineering problem, with a demo video possible within one to two months.
+
+## Electric Vehicles
+- A Tesla Semi caught fire on I-880 in Hayward, CA Tuesday with no crash involved, shutting the freeway roughly 10 hours; cause is under investigation and Tesla hasn't commented. Electrek's Fred Lambert called it "a big data point" given Tesla's still-small Semi fleet.
+- Tesla confirmed Vietnam market entry, hiring for five roles and registering Tesla Motors Vietnam LLC with ~$3M in charter capital; it will compete against VinFast's dominant ~36% share while likely importing from Giga Shanghai.
+- Independent Semi-ramp observations (futureaza) estimate current production at roughly 10–20 units/week, with 4680 cells still being trucked from Texas to Nevada (~1,000 packs/week) and visible fairing-weld quality issues on production units — all described as unconfirmed, firsthand site observations rather than company data.
+
+## Market & Competition
+- Ford has produced over 5,000 aluminum "unicastings" for its $28,350 Fathom electric pickup (two per truck, replacing 146 parts), which Electrek frames as Ford catching up to — not surpassing — Tesla's gigacasting approach.
+
+Notable quotes and data:
+- "It was never a real competition." — Elon Musk, on Tesla vs. Waymo in Austin
+- "I don't think we should assume that a merger is a certainty." — Elon Musk
+- Combined Tesla + SpaceX valuation ~$3.5T as of Oct 20 close (Tesla ~$1.48T, SpaceX ~$2.01T)
+- SpaceX "SI" Q3 revenue: $7.56B, up from $813M a year earlier
+- Texas Cybercab/Model Y combined robotaxi registrations: ~970–1,051, up from ~45 in early September
+- FSD (Supervised): 6,006,200 miles per major collision vs. 660,164 U.S. average
+- "By far the most egregious 'fake' AV service area" — Ethan McKanna, on Tesla's Houston Robotaxi map
