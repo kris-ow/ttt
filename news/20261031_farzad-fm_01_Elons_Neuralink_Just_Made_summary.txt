@@ -1,0 +1,30 @@
+Channel:     farzad-fm
+Title:       Elon's Neuralink Just Made An Insane Breakthrough
+Published:   2026-10-31 19:28 UTC
+Summarized:  2026-10-31 20:04:14 UTC
+Model:       claude-sonnet-5 [batch]
+Batch ID:    msgbatch_015RB4XmqrymHML6PKcqjmBe
+Cost:        $0.02190 (14585 in / 1462 out tokens)
+Relevance:   tangential — this is entirely about Neuralink (Blindsight and the speech/Telepathy implant), a separate Musk company with no stated Tesla or SpaceX product, revenue, or thesis implication.
+Topic:       none
+Categories:  Humanoid Bots
+────────────────────────────────────────────────────────────
+
+This video covers Neuralink developments: the Blindsight visual-implant program and progress on speech decoding for ALS patients via the Telepathy device, plus speculation about linking implanted communication to AI agents. It contains no substantive discussion of Tesla or SpaceX and is included in TTT's scope only via the general Musk-ventures connection, which here does not rise to a material Tesla/SpaceX implication.
+
+## Humanoid Bots
+1. **Blindsight visual implant nears human trials:** Per the narrator relaying Elon Musk's update, Blindsight is engineering-complete and awaiting regulatory approval; it bypasses the eye and optic nerve entirely by sending camera-captured visual information wirelessly to an implant that stimulates the visual cortex, targeting people who have lost both eyes and optic nerves or were born blind with an intact visual cortex. In testing, a monkey looked toward the intended point at least two-thirds of the time when a specific brain area was stimulated. The first human-usable version is expected to provide only low, "Atari-like" resolution that would improve over time; human trials are the next step, with a Neuralink vision registry open for people to learn about trial start dates.
+2. **Speech implant trial shows strong early results in ALS patient:** Neuralink's voice trial uses a motor implant (N1) with 1,024 electrodes across 64 threads (averaging 16 recording points per thread) to decode attempted or imagined speech into text or a synthesized voice. One ALS participant, Terry, reached 75 words per minute in the first week (versus roughly 160 wpm for normal conversation) with a 5.8% word error rate (about one error per 17 words) using a 125,000-word dictionary; the median speaking speed across participants is cited as approximately 50 words per minute, said to be about six times faster than eye-tracking-based typing.
+3. **Decoder efficiency improving with usage data:** Neuralink has accumulated over 50,000 hours (more than 5 years cumulative) of implant usage data used to pre-train decoding software; some cursor-control decoders now remain usable for weeks instead of days, and calibration time for some users dropped from about 10 minutes per day to about 10 minutes per week.
+4. **Prototype features reduce friction and link to AI agents:** Engineers reportedly spent three days with a speech-trial participant (identified as a tester working with Neuralink) developing a prototype that detects the intent to start or stop speaking without a button press, and connected the generated voice directly into an iPhone call's microphone stream. In a hackathon demo, the same participant used imagined speech ("Hey, Neuralink" plus a task) to trigger a Grok-based AI agent, illustrating a potential brain-to-agent control pathway; the narrator frames Elon Musk's stated speed goal for Telepathy as eventually exceeding normal human speech or typing throughput within a few years.
+
+Notable quotes and data:
+- "75 words per minute in the first week" for one ALS participant, vs. ~160 wpm normal conversation speed.
+- Word error rate of 5.8% ("one mistake for every 17 words") using a 125,000-word dictionary.
+- Median participant speaking speed: ~50 words per minute, described as ~6x faster than eye-tracking typing.
+- N1 implant: 1,024 electrodes on 64 threads, averaging 16 recording points per thread.
+- Over 50,000 hours (5+ years cumulative) of implant usage data collected for decoder pre-training.
+- Calibration time reduced from ~10 minutes/day to ~10 minutes/week for some users.
+- Monkey test: animal looked toward the intended stimulation point "at least two-thirds of the time."
+- Elon Musk's stated engineering status on Blindsight: ready pending regulatory approval (per the narrator).
+- Elon Musk's speed goal for Telepathy: output throughput intended to exceed normal human speech/typing within a few years (per the narrator).
