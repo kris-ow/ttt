@@ -1,0 +1,359 @@
+Channel:     davelee
+Title:       The AI Hacks Have Begun. What Happens Next?
+URL:         https://www.youtube.com/watch?v=LoOaOjYkfOw
+Published:   2026-11-01 21:28 UTC
+Fetched:     2026-11-01 22:03 UTC
+
+────────────────────────────────────────────────────────────
+
+At the end of September, someone sat down at a
+computer and gave a team of AI agents a single
+task.
+Find the way inside.  Over the
+next few weeks, agents
+independently knocked on the doors of over 1,200
+sites, day and night.
+When a security researcher discovered them, they had
+already hacked sites associated with nearly
+a hundred companies.
+John Deere, SharkNinja, Cummins.  Bill
+for the entire campaign?  About $5,000 in
+AI tokens, about $50 per
+hack.
+One person, a swarm of machines.
+And that wasn't even the strangest attack of the
+month.   A
+few weeks later, IT company OpenCode
+discovered an AI attacker that had been
+continuously hacking its systems for 48
+hours.  So they did the obvious.  They
+set their own AI on him to
+fight back.
+And in the middle of the battle, their AI stopped.  He
+refused to continue helping.   The
+attacker's AI did not stop.
+For decades, securing your computer meant
+installing software and hiring people to monitor
+notifications.  But if attacks now
+come from machines that don't sleep, run in
+the thousands, and cost $50 per attempt
+, who guards the door?   A
+human or another machine?
+October was the month when the
+security industry stopped considering this a theory.
+Microsoft said a group
+backed by the Chinese government
+used the Artex AI tool to
+send up to 2,900 password attempts
+per minute to more than 2,000 organizations.
+Then they infiltrated through a backup
+provider.  CrowdStrike tracked
+another group using the same
+tool against over 200 organizations.
+Ministries of foreign affairs,
+chip manufacturers, nuclear companies.  And
+last week, police in South Korea
+made the first arrest in an
+AI-assisted hacking case.  Seven suspects,
+using the same tool,
+hacked over 90 organizations and stole
+8.2 million records.  The
+police warning was straightforward.  Thanks to AI,
+you no longer need to be a
+professional to hack en masse.  So
+whose AI are they using?  Some of these are
+large commercial models
+accessed through stolen accounts, but a
+significant portion works on open
+models that anyone can download.
+When CrowdStrike looked into Artex, it was
+mostly working on Deep Seek, a
+free model from China.  And there is an even
+darker version.  When a model becomes
+public, its security training can be
+removed without any retraining.
+Hackers call such models “erased.”
+This year,
+mentions of them on criminal forums have increased by over 700%.  But here's the
+trick.  When researchers
+studied exactly how these attackers got
+in, it was almost never
+ingenious.  Old passwords, keys that no
+one has changed since 2022, a
+misconfigured server—the same
+doors that hackers have been using for 30 years
+.  AI did not invent new ways of access.
+He made the old ones fast, cheap, and
+endless.
+And the biggest theft of the month didn't involve AI at all
+.  On October 29, hackers
+linked to North Korea withdrew
+about $6.3 billion from Binance,
+most of it in about 20 minutes.
+Binance traced it to a hacked
+laptop of an engineer.  But the next
+day, Chainalysis, a company that tracks
+crypto thieves for governments, said it had
+itself been hacked by an attacker
+using AI agents.
+So, if the door is the same, why does everything
+feel different?  One digit later.
+In 2018, when a security hole became
+public, it took hackers an
+average of 63 days to start
+exploiting it.  Today, according to
+Google's Mandiant, that number is minus seven
+.  On average, attackers start
+exploiting a vulnerability a week before
+it is made public.  And once they're
+inside, the average transfer of access from the
+group that hacked the system to the next
+criminal group takes 22 seconds.  Now
+imagine the old model.  The notification
+goes off at 3:00 AM.  The analyst
+wakes up, logs in, reads the
+logs, and asks for permission.  By the time he finds
+his coffee, the car has already gone around the entire
+building.
+You know, I remember a person typing on a
+keyboard: I want to go from here to here with
+this passphrase, and you're so
+slow because you're doing everything one at a time.
+This same thing does a thousand things at once
+.
+And that's where people really can't
+compare.  The attacker launches more than one
+AI.  He launches a thousand.  Everyone is
+patient.  Everyone tries different doors at
+the same time.  That's why every major
+cybersecurity company is now competing for the same
+idea.
+Imagine a security guard who never sleeps,
+reads every line of every log, and can
+lock a door in a millisecond.
+So, uh, you know, I think in the
+long run, the ability of AI to
+monitor the network, to understand what's
+normal and what's not, will make it
+very difficult for an attacker to infiltrate and move around
+.
+That's the idea.  CrowdStrike, Microsoft,
+Google, Palo Alto Networks—they all
+now sell AI agents that triage
+alerts, investigate, and act
+autonomously.  But look at how companies
+actually use them.  In one
+industry survey this year, no
+team allowed their AI
+defender to operate completely independently.
+Most force a person to check
+every decision.
+And you can't really keep a human
+in the loop in the AI ​​era for tactical
+autonomous defense.  Like, you have to act
+fast, you know?  Wounds must be dressed
+as quickly as possible.
+Partly this is due to caution.  But
+partly because the guard himself can be
+fooled.  The AI ​​security guard must read
+everything.  Letters, files, logs—anything he
+reads could contain instructions.
+In April, researchers hid the instructions in
+the name of the submitted code.
+AI security observer Anthropic complied
+and posted its own secret key.
+Google and GitHub agents fell for the
+same trap.  So, an attacker doesn't
+need to pick your lock.  They
+simply leave a note on the floor: "
+Guard, open the door."
+And there is another danger: a security guard with
+master keys who makes
+a mistake.  In July 2024, a single
+erroneous CrowdStrike update
+disabled 8.5 million
+Windows computers.  Flights were canceled.  Hospitals
+suspended operations.  It wasn't AI.  It
+was one bad file, automatically
+sent to millions of machines at once.
+Now imagine millions of AI guards
+responding to each other in milliseconds.
+We were looking for a documented case where
+defensive AI stopped a real AI attack.
+We couldn't find any.
+But perhaps the security guard is the wrong
+image, because the real fight is happening
+elsewhere.
+In April, Anthropic gave a small group of
+partners an unreleased Claude
+Mythos model and directed it to the world
+software.  In about 3
+months, she found over 129,000
+security holes.  Third-party firms verified
+the sample.  More than nine out of ten were
+real.  This is good news.  Defenders
+can now find holes faster than
+ever.  But here's the bad news.  By
+early October, over 6,000 of these holes
+had been reported to open
+source developers.
+516 were fixed, which is about 1 in 12.
+Some developers asked Anthropic
+to slow down.  Then, on October 21, this
+race unfolded publicly.
+Researchers using AI have found
+two critical vulnerabilities in PHP, the code that
+powers seven out of ten websites in
+the world.  Rumors spread faster than
+corrections.  Governments and companies
+have taken down their websites, including
+part of the BBC website, to avoid the risk of
+being the first to be hacked.  The NSA advised
+anyone who could not install the patch to
+disconnect from the network.  And the same type of
+model can turn a known hole into a
+working attack in a matter of hours.  So this
+race isn't really "guard
+versus robber."  This is a building with a hundred
+thousand broken windows, and the question is
+who will get to each window
+first: the repair crew or the thief?   The
+long-term answer probably isn't a
+better guard.  This is a building that
+repairs itself.  An AI that writes
+a fix, tests it, and sends it out before
+everyone wakes up.  Google already has
+AI that sends such fixes to
+open source projects.  It's still early, but
+this may be the most important idea in this
+story.
+So what does all this mean for you?
+To most people, an AI attack won't
+look like a server hack.  It
+will look like a call from your daughter in
+her voice asking for money or a
+perfect letter from your bank.
+Last year, the FBI’s fraud report
+included a new category for AI: nearly
+nine hundred million dollars in losses in the
+first year.
+According to Microsoft research,
+phishing emails written by AI were clicked on
+four times more often than regular ones.  Your
+personal bodyguard is already arriving.  It's just
+not something you install yourself.
+Android now checks over 10
+billion suspicious calls and
+messages per month.  Chrome
+uses AI to detect fake
+support pages.  The guard
+is built into the phone, browser, and
+operating system.  But the best protection
+for most people is not AI at all.  This is
+a rejection of passwords.  The access key
+cannot be stolen through phishing, because
+there is nothing to enter on the fake site.
+About five
+billion such keys are already in use.  With the cloud, things are
+different.  If your company works for
+Google, Microsoft, or Amazon, they become
+your security guards, whether you hire them or not.
+Google just paid $32 billion
+for cloud security company Wiz
+, the largest deal in its history.  This is
+good news for everyone on these platforms
+, but it means that a handful of companies
+end up protecting almost everyone.  And when
+one of them has a bad day, they all have a
+bad day.  The biggest changes, however,
+concern companies, especially small ones.
+For years, a dental office, a school
+district, or a city water system have been protected
+by something no one talks about out loud.
+They are not worth a hacker's time.
+At $50 a hack, each one becomes worth the
+hacker's time.
+I worry about small offices across the
+country that use standard
+software to run a
+dental or medical office
+.
+Britain's National Cyber ​​Security Center
+warns of a growing digital
+divide between systems that can keep up with
+AI and those that cannot.  So where does this
+lead?  Here are four options for the future.
+Future first: the end of spam.  At its peak,
+about nine out of every 10
+emails sent were spam.  Bill Gates once
+promised that this would be solved in two years
+.  This took more time and required
+machine learning.  Today, Gmail
+claims to block over 99.9% of spam, and
+most people never think about it
+.  In this future, AI
+guards and AI repairmen will become
+so effective that hacking
+will become spam: constant,
+automated, and mostly undetectable
+.
+Future two: instant collapse.  In May
+2010, trading algorithms,
+reacting to each other, crashed the
+Dow by almost 1,000 points in a matter of
+minutes.  Most indicators
+recovered within an hour.  Nobody
+planned this.  If you put millions of AI
+attackers and AI defenders in
+shared networks, where each reacts to the
+other in milliseconds, you can get
+failures that are not caused by humans and that
+no one can stop in time.
+Future three: the great schism.  Modern,
+self-updating systems are becoming more
+secure than ever, but anything
+old and forgotten—a factory controller from
+2009 or a hospital device that
+no one can update—will be found by AI in a matter of
+hours.  Safe areas and dangerous
+slums within the same internet.
+Future four: guard gates.
+The most powerful hacking AIs are now
+so capable that their creators
+only hand them over to approved defenders.
+Remember open source?  Their AI
+only became useful again after OpenAI
+admitted them to a special
+access program.  In this future, your
+security depends on whether
+a few AI labs decide you
+deserve strong enough protection
+, while attackers will use
+any open model they can
+steal.  So which future will win?
+Probably all four in different places.
+Big tech companies are drifting towards a
+spam scenario, neglected systems are drifting towards fragmentation
+, and the rules about who gets the
+strongest AI will determine the width of
+that chasm.
+But one thing is already clear.  People are leaving the
+front line.  Not because they are not
+needed, but because they are too
+slow for that.  Their job is
+taking it to the next level: deciding
+what machines are allowed to do and controlling the
+off button.
+We will all remember 2026 as the year
+when everything changed.
+And we will also consider 2026 a
+simpler time.
+Back in September, one man and a gang of
+agents knocked on 1,200 doors for
+$5,000.
+Somewhere tonight another pack is doing
+the same thing.
+The question is no longer whether the car will respond to the
+knock.
+The question is whose car it is and who
+it is ready to work for.
