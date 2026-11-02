@@ -1,0 +1,70 @@
+Source:      electrek
+Title:       Tesla Powerwall 3 now boosts heat pumps to store cheap solar as heat
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/11/02/tesla-powerwall-3-heat-pump-optimization-sg-ready/
+Published:   2026-11-02 20:30 UTC
+Fetched:     2026-11-02 21:03 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla has launched Heat Pump Optimization, a feature that lets the Powerwall 3 and three-phase Powerwall 3P tell a compatible heat pump when to run harder so a home can bank cheap or surplus solar energy as hot water.
+
+It’s live in Europe only. Tesla hasn’t said anything about bringing it to the US or Canada, and the hardware standard it relies on barely exists on this side of the Atlantic.
+
+## How Tesla’s Heat Pump Optimization works
+
+According to Tesla’s support page for the feature, the Powerwall watches electricity prices and solar production throughout the day and sends the heat pump one of two signals: run normally, or boost.
+
+When it’s told to boost, the heat pump heats water beyond what the home needs right now, typically into a domestic hot water or buffer tank. That stored heat then carries the house through the expensive hours, when the heat pump can run less.
+
+ 
+ 
+ 
+
+What triggers a boost depends on the Powerwall’s operating mode:
+
+- In Self-Powered mode, it boosts only when there’s surplus solar left after the home’s other loads are covered.
+
+- In Savings mode, it boosts when solar is available or when grid power hits its cheapest price, based on 24-hour tariff forecasts.
+
+Tesla Energy summed it up on X last week: “Heat Pump Optimization allows your Powerwall to boost heating when there’s surplus solar or energy is inexpensive.”
+
+## The SG-Ready catch
+
+There’s no cloud integration with heat pump brands here. It’s a wire.
+
+The feature runs on SG-Ready (Smart Grid Ready), a label the German Heat Pump Association (BWP) introduced back in 2012 with 17 manufacturers. It uses two relay contacts on the heat pump to signal four operating states, from a utility block to a forced switch-on. Tesla only uses the “normal” and “boosted” recommendations.
+
+Tesla’s requirements are pretty specific:
+
+- Powerwall 3 or Powerwall 3P on firmware 26.26 or later
+
+- An SG-Ready-certified heat pump with an accessible SG-2 contact, configured to accept external signals
+
+- Physical wiring between the Powerwall and the heat pump, installed and commissioned by a Tesla-certified installer
+
+- Tesla app version 4.59.1 or later
+
+And there are limits. The signals are only recommendations, so the heat pump’s own thermostat settings can override them. Tesla also notes each signal has to be held for at least 10 minutes to comply with SG-Ready, and the feature drops back to normal during a power outage so the Powerwall can prioritize backup loads.
+
+Oddly, there’s no on/off toggle in the Tesla app. Once it’s wired up, it’s on.
+
+## Why a hot water tank is a cheap battery
+
+The math is what makes this interesting. A 300-liter hot water tank heated an extra 30°C holds about 10.5 kWh of thermal energy. With a heat pump running at a COP of 3, that takes only around 3.5 kWh of electricity to store.
+
+So a tank most European heat pump homes already have can soak up a big chunk of midday solar without touching the lithium in the garage. That leaves the Powerwall’s 13.5 kWh free for the stuff that can’t be stored as heat.
+
+The market is there too. Germany sold 299,000 heating heat pumps in 2025, up 55% year-over-year according to BWP, and they made up nearly half of all new heating systems sold in the country for the first time.
+
+Tesla is also late to this. sonnen pushed a software update in 2023 that lets its sonnenBatterie run heat pumps off surplus solar, starting with NIBE units, and SG-Ready control has been a standard feature of German PV energy managers for years.
+
+It’s the latest Europe-first move for Tesla Energy after it launched the Powerwall 3P with a native three-phase inverter earlier this year, aimed squarely at Germany, Austria, and Switzerland. The company announced its 1 millionth Powerwall last year, and software like this is how it squeezes more value out of that installed base.
+
+## Electrek’s Take
+
+This is a smart, cheap feature, and it’s exactly the kind of thing that makes a home battery more valuable without adding a single cell.
+
+Heat is the biggest energy load in most homes in cold climates, and water is about the cheapest storage medium there is. Using a battery’s brain to time the heat pump around solar and tariffs makes a lot more sense than discharging lithium to run a compressor at 6 p.m.
+
+Home batteries are changing the economics of residential energy, and pairing them with solar (and smart loads like heat pumps) is the best way to get the most out of them. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
