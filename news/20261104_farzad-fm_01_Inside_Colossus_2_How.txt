@@ -1,0 +1,612 @@
+Channel:     farzad-fm
+Title:       Inside Colossus 2: How Elon Is Wiring 1.2 Million GPUs
+URL:         https://www.youtube.com/watch?v=NxtFCiMRycQ
+Published:   2026-11-04 13:00 UTC
+Fetched:     2026-11-04 14:01 UTC
+
+────────────────────────────────────────────────────────────
+
+SpaceX's Colossus 2 is one of the
+most important projects in the global
+economy, and Elon Musk's recent statements
+make it even more important.
+But buying a million chips doesn't mean
+that a million chips will do useful
+work.  If you use AI in your
+work, this gap affects the service
+you pay for.  What allows SpaceX
+to close this gap faster?  And how does this
+translate into profit?  Because the chip
+that is lying in the warehouse cannot
+answer your question.  He
+cannot train the model.  You have to run
+electricity to it, remove heat, and
+connect it to other computers that
+do the work.  And this is where it gets interesting
+.  What looks like a massive
+computer purchase is also a construction
+problem.  The coordinated work of all these
+components determines when the company
+can actually use what it has purchased.
+Now about the SpaceX part—there's a very
+straightforward explanation.  On February 2, 2026,
+SpaceX acquired xAI, the company behind
+Grok.  So the computers that support
+this AI business became part of SpaceX.  And
+Colossus 2 is an entire campus.  It is
+spread between Memphis, Tennessee,
+and Southhaven, Mississippi.  Within
+this large project, there are various
+buildings with different tasks.  How should we
+imagine such a campus?  It will be useful to
+think of it as a factory.  This
+comparison is appropriate because purchasing machines is
+only part of launching production.
+Graphics processors are machines that
+perform calculations.  Power and
+cooling keep these machines running
+.  The network allows them to delegate work to
+each other.  GPU is the name for the type of chips that
+perform this AI work.  Blackwell is the
+Nvidia chip family in this case.
+GB200 and GB300 are two versions that
+appear in Elon's calculations for
+buildings.
+What does the 1.2 million in
+the headline actually mean?  On October 31, 2026, Elon
+set a goal of about 1.2 million
+Blackwell chips in Colossus 2 by the end of
+2026.  His report on buildings
+explains how he implements this.  MacroHard
+, according to the report, had 110,000
+GB200 chips and 220,000 GB300 chips.
+This is a building with the words MacroHard on the roof.
+MacroHarder and MiniHard had 220,000
+GB300 chips each.  Elon described both as being
+set up for learning.  Training is the
+process of preparing an AI model by
+training it on data.  But how does the campus grow
+to that annual rate?  According to
+the schedule from October 31, the Gun Range facility
+was supposed to be operational by the end of November 2026
+.  He gets the same configuration
+for training.  And Spam was planned for
+December 2026 with approximately 200,000
+GB300 chips configured for inference
+.  Inference is what happens when a
+trained model does the work for you.
+You ask a question, and computers
+run a model to provide an answer
+.  "Spam" is, by the way, a very apt name
+.  Elon said that this building used to
+store Hormel products.  The "shooting range
+" was the shooting range of the local police
+station.  These names say something about the
+approach itself.  Existing facilities become parts of the
+AI ​​campus.
+But the tasks inside these buildings are
+different.  Training develops a model.
+Inference implements it into work.  These
+tasks place different demands on the
+hardware surrounding the chips.
+So adding a building means defining
+its purpose and then preparing the necessary
+systems.
+Getting the machines to the premises is just the
+beginning.
+The most expensive part starts when the chips
+arrive but cannot work.
+Let's say you paid for the computers.  They are
+already in place.  There is a client ready
+to use them.  But the connection to
+the power grid is not ready yet.  Every car
+expects the same thing, and buying
+another car won't change that.  This is a
+very real problem in the
+data center business.  In its
+2026 forecast, JLL estimated the average
+wait time for grid connectivity in
+key markets at over four years.
+Four years of waiting for connection.
+Think about what this means for a business
+trying to launch a new
+generation of computers.  So,
+Colossus' approach starts with finding ways to get
+useful capacity up and running before
+all the capital work is complete.  In
+2024, the original Colossus
+reused the shell of the Electrolux factory in
+Memphis.  Construction of Colossus 2
+began with the purchase of the warehouse in March
+2025.  What does reusing a
+building provide?  A shell that is already ready.  You
+can start setting it up for
+computers and systems that support them
+.  Then you need energy.  For
+the first Colossus, temporary gas
+turbines supplied electricity while the
+grid connection was being built.  By
+May 1, 2025, the first phase
+was already operating on 150 megawatts of grid
+energy.  The turbines allowed the computer
+to start working before a
+permanent connection was ready.  But electricity
+also needs to be available while the machines
+are running.  The same May
+2025 update reported 150 megawatts of
+Tesla Megapacks integrated into that first
+tier.  Megapacks are large batteries.
+They store electricity and supply
+it when needed.  The stated role was to
+help the system survive outages
+or events when
+consumption from the grid needed to be reduced.  What does each
+component do?  Turbines produce electricity
+.  Batteries provide an object with
+stored energy.  You need to think
+about both supply and what
+happens when it changes.
+Colossus 2 has its own
+power supply history.  The South Haven plant on
+Stanton Road feeds the project.  In its
+July 30, 2026 update, SpaceX
+described 69 temporary mobile turbines
+powering that facility in South Haven.  The
+same update described a permanent
+power plant under construction with 41
+turbines and a capacity of 1.2 gigawatts.
+This is 1200 MW.  According to SpaceX's schedule, all
+temporary turbines were to be dismantled
+by July 2027.  Now this
+replacement schedule is part of the construction.  The first
+energy source starts the work.   A
+permanent installation must support
+continuous operation.
+And this is physical equipment next to
+real communities.  On October 30, 2026, a
+federal judge allowed a
+lawsuit regarding the South
+Haven turbines to proceed under the Clean
+Air Act.  Energy supply also
+involves permitting processes and
+litigation.  But where does the heat go
+?  All these computing machines
+need a way to dissipate
+heat so they can keep
+running.  The Serve the Home tour from October
+2024 clearly shows this inside
+Colossus 1. The camera shows rows of
+computer racks and the
+liquid cooling equipment that supports them.
+Cooling is built into the very principle of
+operation of the machines.  On Colossus 2, construction
+images analyzed in September
+2025 showed large chiller units being
+added to the exterior of the building.  These are elements of a
+system that removes heat from
+computing equipment.  So, when
+can the computer start working?  When
+the electricity and cooling are ready
+to support it.  A completed building without
+suitable electricity forces
+equipment to idle.  Energy without
+adequate cooling leaves the rest of the
+work unfinished.  This explains
+why construction is much more complicated
+than simply unloading expensive boxes
+.  Then the chips have to work together.   A
+GPU that sits idle
+is expensive.  And while the
+AI ​​is training, it can wait for another
+GPU.  The calculations are distributed across
+many chips.  They do parts of
+the work, share the results, and
+use them for further
+learning.  Why does one slow connection
+affect other chips?  Think of a
+factory developing a new design.  Different
+teams test different details.  Before the
+next version is ready, the results
+need to come together.  The team that
+completed the work earlier still
+needs information from the others.  This is the
+part of the comparison that is suitable for
+learning.  The chips have a common task.  At
+points where they synchronize,
+slow transmission can delay the entire
+group.  What happens if you
+keep adding chips but don't
+give them enough bandwidth
+to share work?  You will create more
+anticipation.  The company paid for
+computing power, which
+spends part of its time waiting for information.
+That's why the network has such a direct impact
+on what a company gets from its
+equipment.  In his update dated
+October 31, 2026, Elon described the Macro Hard
+and Mini Hard with
+800 gigabits per second network cards.  These buildings
+are set up for learning.  A network card
+is hardware that sends
+and receives data.  But what does
+this card connect to?  You also
+need cables and switches.  The switch
+routes data to the computers that
+need it.  As the group grows, the entire path
+must support this work.  Elon gave a
+very specific example on September 25,
+2026.  He explained that the unusual steps of
+110,000 chips are due to the number of
+fiber optic cables that the
+central switch accommodates.  So even the size of
+the planned group of chips is tied to the
+physical network.  There is a limit to the equipment
+that connects the machines.  This is a useful way
+to understand why these projects grow in
+blocks.  And there is more than one type of connection.
+Nvidia's published Blackwell rack designs
+use copper cables
+to connect the chips inside the rack.
+Fiber optics are used in a larger
+network connecting groups of machines.  Short
+connections allow neighboring chips
+to exchange data quickly.  A wider network
+allows these groups to collaborate on a
+larger task.
+These are different distances and different parts of the
+system.  Now let's get back to Spam.  In
+an update on October 31, Elon said that the
+inference configuration will have a
+much simpler network and less than
+half the amount of fiber.  How does changing
+the task change the posting so much?
+Imagine a factory with a ready-made design.
+Separate production lines can now
+handle individual customer orders.
+One line doesn't need everyone else to
+finish their order before
+sending their own.  This is a useful comparison
+for independent copies of an AI model
+serving different people.  Your request
+goes to a group of chips that can
+fulfill it.  Another group is handling someone
+else's request.  These groups still
+need connections.  They need to accept
+requests, access data, and
+send responses.  But independent
+queries do not require the entire building to
+exchange learning updates before
+moving forward.  What if the entire model
+fits on one server?
+Nvidia's benchmark projects describe this
+setup for inference.  For this
+task, the separate network
+used to coordinate
+training between servers can be excluded
+.  Larger models may still
+require multiple groups of chips to interact
+during inference.  Design follows the
+task.  And Elon's specific choice for
+Spam is an inference room with such a reduced
+need for fiber.  So this changes what
+needs to be installed before the hall
+can do useful work.  This
+also changes the amount of network
+equipment needed for this
+task.  You see why
+workload planning and
+building planning belong in the same conversation.  For
+you, the result is an AI query that is
+processed by a system created to
+fulfill that particular query.  For
+the operator, this means less equipment spent
+on connections that are not needed for the selected task
+.  Remember that part about
+profits?  So, training rooms
+are getting a network for collaborative training
+.  Spam has a different configuration for
+serving users.  And launching this
+whole system earlier changes the
+economy.
+So, how fast is fast?  There are two
+very useful time indicators from the
+original Colossus.  On September 2,
+2024, Elon announced that 100,000 of his
+H100 training chips were now online.
+Construction took 122 days from start
+to finish.  It takes about 4 months
+to launch the first training
+cluster.  For comparison, Elon's goal for
+the end of 2026 for Colossus 2 is
+about 12 times more chips than
+originally planned.  Nvidia then provided another
+figure in October 2024.  19 days passed from the moment the
+first rack arrived at the site until
+the start of training.  Less than 3
+weeks to turn delivered
+racks into a system ready to start
+training.  Why is it worth focusing on
+this gap?  Because receiving
+delivery gives the buyer the equipment.
+Starting the training process means
+that the equipment can actually start
+doing the job for which it was
+purchased.  And the next project improved the
+construction time of the first cluster.  In its
+June 2026 prospectus, SpaceX
+estimated the time for the first
+Colossus 2 cluster to be 91 days, about 3 months
+.  But let's give the competition the
+strongest argument.  Other companies
+can buy Nvidia chips.  They can
+hire engineers.  They can spend
+serious money on buildings.  So where does the
+lasting advantage come from?  It comes
+from how quickly the entire system becomes
+usable and how much it
+costs to achieve this.  You can buy
+the same chip and still have a completely
+different amount of work to do before that chip
+can earn anything.  So, let's compare
+some real projects by calendar.
+Construction on the Stargate campus in Abilene
+began in the summer of 2024.  Its first
+phase was operational by September 2025.
+It took about 15-16 months.
+Microsoft's first operating building in
+Fairwater, Wisconsin, was completed in
+June 2026, just over
+2 years after plans were announced.  The
+Colossus approach uses an existing shell and
+supplies power to get started.
+This starting point helps explain the
+short terms.  The decision to
+build is part of the advantage.  Now,
+let's say two companies get chips of the
+same generation.  One is launching its
+installation while the other is still completing
+the construction of the site.  The first company
+can start training or serving
+customers during this gap.  That's the
+difference.  The technical characteristics of
+the chips may be identical.  The amount of
+useful work that these chips have done by a
+certain date can vary greatly.  What
+can the company do during this time of
+advantage?  Train a model you want
+to sell, or provide computing
+power to a client who needs it.  In
+any case, the installation has already started
+doing its job.  SpaceX made this
+conclusion in its June
+2026 prospectus.  It describes faster deployment
+as a way to deploy
+high-performance hardware faster and reduce
+the cost of creating AI.   The
+same prospectus cited the
+construction costs of Colossus 2 on a per-
+megawatt basis as significantly lower than
+industry benchmarks.  Therefore, the
+company's approach takes into account both the cost of creating
+capacity and the time required to
+use it.  It is this combination that is
+the most interesting.  Buying equipment is an investment
+.  Putting it into
+operation allows the company to
+benefit from these investments.  Let's call it
+time to start useful work.  This gives
+you a way to evaluate AI development.  How much
+time passes between allocating resources and
+getting a machine that actually does the
+work?  In a post dated October 31, 2026,
+Elon noted the successes of the SpaceX team and
+contractors in working on Colossus 2. At
+that time, the AI ​​division was already part of
+the same company that acquired it in
+February.  The June 2026 prospectus
+links speed to doing most of the
+work inside the company and a
+shared culture.  The business that
+needs these computers is also responsible
+for getting them ready for use.  If you
+like this video and want to
+support the channel, the quickest and
+most important thing you can do is
+click "subscribe."  It's completely
+free and helps development a lot.
+Thank you very much.  Now imagine a
+solvent customer on the other side
+.
+SpaceX could sell access to the
+computers themselves.  So, who has to win for
+this construction to be profitable?
+SpaceX can develop its own AI and
+provide computing power to
+someone else's AI business.  These are two ways to
+use this infrastructure.
+In May 2026, SpaceX entered into cloud
+agreements with Anthropic covering about
+325,000 Nvidia GPUs in Colossus 1 and
+Colossus 2. Anthropic agreed to pay
+$1.25 billion per month through
+May 2029 after reduced rates
+during the initial deployment.  The agreement
+allows either party to terminate
+it by giving 90 days' notice after the
+first 3 months.  What exactly is
+Anthropic buying?  Access to working capacity
+.  This agreement applies to cloud services.
+SpaceX must provide the
+computing service, and the customer
+pays a monthly fee for this
+availability.  This is how the factory analogy
+completely applies to business.  You
+own the machines and the systems that
+keep them running.  The customer
+pays for the use of production
+facilities without building the entire installation
+themselves.  So, at the stated monthly
+rate, 12 months of service
+costs $15 billion.  This
+translates the value of commissioning capacity
+into very specific numbers.
+This construction has an end customer.
+The time between the arrival of the equipment and its
+readiness for operation affects when
+this service can be sold, but doesn't
+supplying another AI company
+also help the competitor?  Yes, Anthropic gets
+access to computing power for its
+own business.  SpaceX gets a
+solvent customer for its
+infrastructure.  Both parties have a
+reason for making this deal.  This is what
+makes business more interesting than evaluating the
+entire project based solely on the effectiveness of
+one Grok release.  The customer can choose
+another AI provider and still
+use the computing power
+provided by SpaceX.  So where does this
+show up on the income statements?  For
+the quarter ended September 30,
+2026, SpaceX's superintelligence segment
+generated $7.56 billion in revenue.  This
+was the company's largest revenue segment
+that quarter.  It included cloud
+services and AI products along with advertising
+.  The solutions and infrastructure category
+brought in $7.022 billion.  Advertising
+generated $538 million.  So
+look at the size of these two categories
+.
+Over $7 billion came from
+solutions and infrastructure compared to
+just over half a billion from
+advertising.
+Computing services and AI products
+shape this revenue mix.  But how much does a
+company keep for itself after running the
+business?  Income is money that comes in.
+Operating profit shows what
+is left after operating expenses.
+Superintelligence brought in $431 million in
+operating profit in the same quarter
+.  SpaceX's communications segment, which includes
+Starlink, generated $2.367 billion in
+operating profit.  So, the AI ​​segment
+was the leader in revenue, and the
+communications segment was the leader in operating profit.  In that
+quarter, less than six dollars out of every
+hundred dollars in AI segment revenue
+remained as operating profit.  This
+gives you a much better way
+to look at the next object.  How much
+does it cost to provide services there?
+Customer payment is the starting point.  The work
+required to provide this service
+determines what is left to the business.  If
+you spend less on creating
+usable capacity, then less
+construction costs need to be recovered.  If
+the network supports the operation of chips, rather than
+waiting for them, more of the equipment's time
+is spent working.  And if you
+adapt the extraction building to the
+tasks it will actually perform,
+you will avoid installing equipment that is
+not needed for the job.  This is the business
+sense of separating training and
+inference.  And what does this encourage SpaceX to do
+?  Continue to improve the ways in which
+the service is created and operated.  Working computers are required for
+in-house model development and for cloud
+clients.
+This gives SpaceX a reason to continue
+improving the construction process.
+Because the next generation of chips
+brings the same problem again.  And the corresponding
+skill is doing all the work again
+.  A successful first installation gives
+the company a foundation for further development.
+The following installation should also
+work.  What is carried over when
+chips are changed?  Experience in
+building preparation, power supply setup, and
+computer commissioning.
+These are problems that the operator should have already
+solved.
+For someone who buys AI services, it's a
+matter of availability and price.
+The equipment behind your request
+must be paid for.  The company
+supplying it is interested in getting
+more out of this equipment.
+Now SpaceX has already
+committed to another batch of
+equipment.  On October 24, 2026, SpaceX
+signed a financial
+lease commitment for Nvidia Vera
+Rubin GPUs.  It covered about
+$40 in basic payments.
+The deal was expected to close by the end of 2026
+.  Deliveries were expected in the first half of
+2027.  Vera Rubin is the next
+generation of chips in this deal.  So,
+the funding paves the way for SpaceX
+to develop new vehicles.  And then comes the work of
+launching them.  This is where the experience of
+building Colossus comes in handy again.
+But why did they merge an AI company
+and a space company in the first place?
+One part of SpaceX's plan is to put
+computing into orbit.  On October 15, 2026,
+Elon announced that mass production of the
+Star computer, developed by SpaceX and
+Nvidia, is scheduled for 2027.  But
+what does it take to put a computer into
+orbit?  Computers still need
+power.  They need to get rid of the heat
+.  They need connections to get the results of their
+work to the user.  In August
+2026, Elon discussed
+heat dissipation in orbit as a design issue.
+So, SpaceX is working on a computing
+system around the chip in both locations.  On
+the ground—this is the expansion of Colossus in Memphis
+and Southaven.  In orbit is a system
+it is developing for its planned
+space computers.  So, above-ground
+construction is where the connection to
+profit is already concrete.  The agreement with
+Anthropic pays for the available computing
+services.  Retaining this customer means
+providing consistent service.  The business must continue
+to operate after
+the construction workers finish.  Now let's get back to those
+buildings.  A warehouse where food was stored, a land
+that was a shooting range, rows of computers
+that need electricity and cooling
+before they can do anything for you
+.  That's why it's worth understanding what
+Colossus 2 is. A useful AI service on your
+screen depends on someone
+making it all work.  SpaceX is building a
+business around doing it
+fast.  For the user of AI, the useful
+part begins when machines
+can handle the work they are
+asked to do.  That's when the factory starts to
+produce results.  YouTube has this
+crazy new algorithm that
+knows exactly what video you'll want to watch
+next, based on AI and all your
+viewing behavior.  And the algorithm
+says this video is perfect for you.  It's
+different for everyone watching it
+right now.  Watch this video,
+I'm sure you'll like it.
+Thank you very much for watching.  I hope this video
+was useful and interesting, see you in the
+next one.  Goodbye, friends.  Goodbye
+.
