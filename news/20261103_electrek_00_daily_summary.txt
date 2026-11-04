@@ -1,0 +1,31 @@
+Source:      electrek
+Title:       Electrek Daily Digest (2026-11-03)
+Author:      Electrek
+Published:   2026-11-03 17:55 UTC
+Summarized:  2026-11-04 06:17:56 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.03421 (7593 in / 1902 out tokens)
+Articles:    2
+Relevance:   core — Both included articles are substantively about Tesla's energy storage manufacturing/tariff exposure and its FSD/Assisted Driving regulatory status in Europe.
+Topic:       tesla
+Categories:  Energy, Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek's Tesla coverage today splits between a tariff/trade-policy story on Megapack manufacturing and a regulatory update on Tesla's driver-assistance software in Europe.
+
+## Energy
+1. **Megapack Texas plant gets foreign-trade zone status, but China tariffs still apply:** Fred Lambert reports that Tesla's Brookshire, Texas Megapack factory was approved as a foreign-trade zone (Subzone 84AM) by the FTZ Board, per a Federal Register notice, running for 14 months. Tesla's application, filed May 20, lists roughly 80 imported components (duty rates up to 6.5%) it wants under zone procedures, while finished Megapacks/Bento inverters carry duty rates from duty-free to 3.4%. The filing states parts subject to Section 301, 232, or 122 tariffs still pay those duties under "privileged foreign status," meaning Chinese LFP cells still incur the Section 301 tariff (which the article says rose from 7.5% to 25% on January 1, 2026) when a finished Megapack ships. Benefits, per the article: deferred duties aiding cash flow, no duty on direct exports from the zone, lower finished-product rates on non-targeted parts, and fewer customs filings. The approval mirrors earlier "limited basis" FTZ approvals Tesla received for its California Megapack/inverter plants and others granted to companies like Eastman Chemical and Qorvo in 2026. Lambert notes the 14-month window expires around when LG Energy Solution's Michigan LFP cell supply contract (reported at $4.3 billion) is expected to begin mass production in the second half of 2027, and recalls CFO Vaibhav Taneja's prior comment that tariffs would have an "outsized" impact on energy storage due to Tesla's reliance on Chinese LFP cells. [Read on Electrek](https://electrek.co/2026/11/03/tesla-megapack-texas-foreign-trade-zone-china-tariffs/)
+
+## Autonomous Driving
+2. **Tesla cuts driver-assistance speed margin in Europe from 50% to 10%, renames system:** Fred Lambert reports the Netherlands' RDW confirmed it approved a Tesla update capping the "speed margin" on its driver-assistance system at +10% over the posted limit (down from +50%, which the RDW's notice confirms was the original setting approved in April), and renaming "FSD Supervised" to Tesla Assisted Driving on HW4 vehicles. The margin now resets to 0% at each start, and the RDW says other unspecified speed-related functions are disabled by default. The RDW called the changes "several minor changes" with no adverse effects and notified the nine other member states that recognize its approval, bringing the total to 10 countries. The changes match conditions Germany set in October when it agreed to back EU-wide approval, which Lambert notes is due for a possible vote in December requiring 15 of 27 member states representing 65% of the EU population. The article recaps objections: Sweden asked for a complete ban on exceeding posted limits, a Brussels pedestrian safety group found speeding in 55% of tested 30 km/h segments, and France cited urban speeding in refusing to recognize the Dutch approval. In Electrek's Take, Lambert argues the cap alone doesn't fix Tesla's "biggest issue" — poor detection of actual speed limits — and calls the rename "past due," contrasting it with Tesla still marketing the same software as "Full Self-Driving (Supervised)" for $99/month in the US, which he argues is equally misleading there. He says the update likely secures Germany's vote but leaves open whether France, Italy, and Spain will accept a 10% margin or side with Sweden's stricter stance. [Read on Electrek](https://electrek.co/2026/11/03/tesla-assisted-driving-rdw-speed-cap-10-percent-europe/)
+
+## Editorial Stance
+Electrek's Fred Lambert takes a skeptical line on both stories: he frames Tesla's FTZ approval as easily misread as a tariff exemption and stresses it isn't one, and he criticizes Tesla's "Full Self-Driving" branding as misleading in the US even as European regulators force a rename and stricter speed limits abroad.
+
+Notable quotes and data:
+- "Privileged foreign status locks in a part's own classification and tariff treatment when it enters the zone" — Megapack FTZ article, describing why Chinese LFP cells still face Section 301 tariffs.
+- Brookshire Megapack 3 factory planned capacity: 50 GWh/year; FTZ approval period: 14 months — Megapack FTZ article.
+- Section 301 tariff on Chinese non-EV lithium-ion batteries rose from 7.5% to 25% on January 1, 2026 — Megapack FTZ article.
+- RDW: driver-assistance speed margin cut from +50% to +10% over posted limit, resets to 0% at each drive start — FSD speed cap article.
+- Brussels pedestrian safety group found the system speeding in 55% of tested 30 km/h segments — FSD speed cap article.
+- EU-wide vote requires 15 of 27 member states representing at least 65% of EU population, expected no earlier than December — FSD speed cap article.

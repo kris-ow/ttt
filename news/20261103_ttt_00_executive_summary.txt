@@ -1,0 +1,61 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-03)
+Published:   2026-11-03 00:00 UTC
+Summarized:  2026-11-04 06:18:22 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.06495 (17874 in / 2920 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Robotaxi launches in Fort Worth, 7th city live
+- FSD Supervised passes 17 billion cumulative miles
+- Netherlands caps Tesla speed margin at 10%, renames system
+- Japan to allow blanket approval of driverless vehicles
+- Tesla debuts rare-earth-free motor with Cybercab
+- SpaceX scaling Colossus 2 toward 1.2M Blackwell chips
+
+## Robotaxi
+- Tesla launched unsupervised Robotaxi service in Fort Worth on November 2 at 6 AM CT, covering a 143 square mile geofence — the first new city expansion in roughly three months. Unsupervised coverage now spans 7 cities (Austin, Houston, Fort Worth, Dallas, Miami, Orlando, Tampa), roughly 1% of the US population; one early ride video showed UI glitches including car icons colliding with road edges.
+- Per Tesla AI account data cited by futureaza, Tesla's Texas robotaxi footprint now covers more square miles than Waymo's and is near parity in vehicle count, a gap hosts expect to close within weeks.
+- Joe Bhakdi (Pioneer Lands) treats 1,000 Cybercabs as a near-term psychological milestone and 1,800–2,000 fully utilized Cybercabs as his model's inflection point — at which point he estimates the business hits ~5% of Tesla's free cash flow and earnings, a threshold he argues forces analyst re-pricing.
+- Bhakdi says Tesla is currently charging over $2/mile for robotaxi rides, well above the ~$1/mile his model assumes, and estimates each fully-utilized Cybercab generates earnings roughly equivalent to five Model Y sales per year.
+- A Tesla Cybercab self-certification filing to NHTSA (due ~October 30) withheld documents on one audit question under confidential treatment; Bhakdi believes Tesla is technically in violation of current rules but expects a parallel NHTSA rulemaking process to resolve the issue in Tesla's favor.
+- Separately, a Tesla vehicle engineering executive reportedly described Cybercab manufacturing as running smoothly and even throttled down, reinforcing the view that regulatory approval — not production capacity — is the binding constraint on scaling.
+
+## Autonomous Driving
+- FSD Supervised passed 17 billion cumulative miles; Tesla's updated live counter shows the fleet driving 1,000 miles every 1.8 seconds, annualizing to ~18.2 billion miles/year, up 35% since July 2026.
+- Japan's transport ministry plans to revise vehicle safety standards starting December to allow blanket approval of steering-wheel-free Level 4/5 vehicles, explicitly to support robotaxi mass production; discussion was slated for a ministry safety committee meeting on November 4.
+- Netherlands' RDW approved a renamed "Tesla Assisted Driving" system (formerly FSD Supervised) for Europe, cutting the speed margin over posted limits from +50% to +10%, resetting to 0% at every drive start; nine additional countries were notified, bringing total approvals to 10. Electrek's Fred Lambert argues the cap doesn't address Tesla's core problem of poor speed-limit detection and calls the US "Full Self-Driving" branding equally misleading.
+- Tesla asked the Australian Senate to allow driverless trials starting 2027 and pull forward AV legislation from 2029, citing 160 million km driven on FSD Supervised across Australia/New Zealand since September and government estimates of over A$10 billion in benefits and up to 800 lives saved annually at full adoption.
+- BMW demoed a navigation-guided highway-and-city driving assistant launching in Germany in 2027; in its own demo the driver had to retake control for a parked van, and BMW frames it as driver-assisted rather than autonomous. Bhakdi argues BMW remains roughly five years behind Tesla given the difficulty of closing reliability's "last nines."
+
+## SpaceX — AI & Compute
+- Musk disclosed two new Colossus 2 buildings nicknamed "Gun Range" (a former police shooting range, 220,000 GB300 chips for training, due end of November) and "Spam" (a former Hormel facility, 200,000 GB300 chips for inference, targeted for December).
+- Musk said Colossus 2 will reach about 1.2 million Nvidia Blackwell chips by year-end; separate breakdowns cited by commentators (attributed to Brian Wang) put combined capacity near 3.2 gigawatts, up from a prior ~2-gigawatt target.
+- Per a graph attributed to Epic AI, Colossus 2 (~1.1 million H100-equivalents) now leads OpenAI's Stargate Abilene (~1.02 million) as the world's most powerful AI data center.
+- Musk said SpaceX expects to deploy more compute power in space than on the ground per month by end of 2028, and plans to launch Starlink satellites carrying Nvidia GPUs via Starship in late 2027. Separately, Google's Project Suncatcher satellite ran an AI inference in orbit using four TPUs and transmitted a haiku back to Earth.
+- In a separately replayed clip, Musk said chip production will likely outpace the ability to power and energize large clusters by the end of this year, framing electricity, cooling, networking, and batteries — not chip supply — as the binding constraint on the AI buildout.
+
+## Financials
+- Sequoia's Shaun Maguire modeled SpaceX revenue growing from ~$51 billion this year to over $700 billion by 2028 (wide margin of error acknowledged; Sequoia is a SpaceX shareholder).
+- Milk Road's Karl Reedhead projected SpaceX could spend ~$470 billion in capex over the next five quarters, roughly double Amazon, Google, and Meta's combined per-company spend, with quarterly revenue reaching ~$122 billion by Q4 next year versus ~$14 billion in Q3. Musk responded that "our capital expenditure efficiency is vastly underestimated."
+- Bhakdi flagged a Morgan Stanley analysis describing the recent period as the worst stretch for momentum-stock fund flows in 30 years, worse than the dot-com crash, with SPCX swinging sharply (e.g., ~180 to 135, later ~210 to 100) amid broader AI/semiconductor sell-offs.
+
+## Energy
+- Tesla's Brookshire, Texas Megapack plant received foreign-trade zone status (Subzone 84AM) for 14 months, per Electrek. The designation defers duties and lowers rates on ~80 imported components, but Chinese LFP cells still face the Section 301 tariff (raised from 7.5% to 25% on January 1, 2026) once Megapacks ship — the FTZ status is not a tariff exemption.
+
+## Electric Vehicles
+- Tesla introduced a rare-earth-free electric motor alongside the Cybercab — 18% smaller and 25% lighter than other high-efficiency EV drive units, 219 hp, front-wheel drive, ~176 lbs, with a production goal of building a new motor at each station in under 10 seconds.
+- Tesla posted its best October on record in Norway (9.8% market share, registrations up 131% YoY), with Sweden up 248% and Denmark up 34% YoY.
+
+## SpaceX — Corporate & Valuation
+- Bhakdi cites Musk's confirmation on the SpaceX earnings call that merger conversations and committees are active on both company sides as an underappreciated catalyst behind Tesla's rally from ~$350 to $400+, estimating Tesla could receive a 30–40% valuation premium in a merger.
+
+Notable quotes and data:
+- FSD Supervised: 17 billion cumulative miles; fleet driving 1,000 miles every 1.8 seconds, annualizing to ~18.2B miles/year (up 35% since July 2026).
+- RDW speed margin cut: +50% to +10% over posted limit, resetting to 0% at each drive start; Brussels pedestrian safety group found speeding in 55% of tested 30 km/h segments.
+- Musk: "our capital expenditure efficiency is vastly underestimated."
+- Musk (replayed clip): chip production will likely "outpace the ability to turn chips on" by year-end.
+- Colossus 2 targeting ~1.2 million Blackwell chips by year-end; Gun Range and Spam buildings due end of November and December respectively.
