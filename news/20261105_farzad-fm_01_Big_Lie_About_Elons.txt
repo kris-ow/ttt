@@ -1,0 +1,796 @@
+Channel:     farzad-fm
+Title:       The Big Lie About Elon's Space Data Centers
+URL:         https://www.youtube.com/watch?v=QuhyFA2dt_s
+Published:   2026-11-05 14:58 UTC
+Fetched:     2026-11-05 16:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Recently, data centers
+have become the subject of heated debate.  One of
+the biggest ideas right now is to move them
+into space, because many people don't want to see
+them in their communities.  But there are increasingly
+voices that cooling data
+centers in space is physically impossible.
+However, Elon Musk claims that it is much
+simpler.
+In this video, we finally debunk the myth
+that it is impossible to cool data
+centers in space, because in fact, physics is
+on Elon's side.
+How can a giant supercomputer with artificial
+intelligence stay cool in the
+vacuum of space without air or water?   On
+November 2, 2026, a viral post on X
+attempted to discredit orbital data
+centers using basic
+kitchen science.  Ian Brosnan, a professor of
+artificial intelligence at Utrecht
+University, criticized Elon Musk
+for his comments about the ease of cooling
+equipment in space.  Brosnan wrote: “
+Everything is exactly the opposite.
+Vacuum is the best insulator.  "In space,
+heat can only be dissipated through
+radiation."  He concluded that
+orbital data centers will never
+appear in our lifetime.  At first
+glance, this objection sounds logical.
+Everyone used a vacuum flask
+to keep their coffee hot for hours.
+The thermos has a vacuum layer between the
+inner and outer walls.
+Since there is no air in this gap
+, nothing touches the inner bowl
+to take away heat.  Critics look at
+the thermos and rush to conclusions.
+Place a hot AI computer in the vacuum
+of space, and that vacuum will retain the heat
+until the chips melt.  This mistake
+is the "thermos trap."  It relies on
+ninth-grade physics and
+ignores the equations that describe heat transfer
+in space.  Does this make sense?  This doesn't make
+any sense.  Physicists and
+spacecraft engineers immediately jumped into the
+discussion.  Sean Maguire, a Sequoia partner
+with a PhD in physics from Caltech,
+noted that the real hurdle is
+getting the mass of Starship to launch.  When the equipment
+reaches orbit, Maguire noted, “your
+cooling system becomes passive.  It's
+simply conductive aluminum with an ammonia
+circuit, radiating heat according
+to the Stefan-Boltzmann law."  Then on
+November 3, 2026, Elon Musk responded by
+giving the numbers.  Musk wrote: "Yes, it's
+much easier to cool in space."
+He explained that about 1,300 watts per
+square meter is quite achievable for an
+aluminum radiator pointed
+away from the Sun.
+Why?  Because this panel mostly "
+sees" cosmic background radiation with a
+temperature of about 3 degrees above
+absolute zero.  Solar panels in
+orbit produce about 250 watts per
+square meter, so they require
+five times the area of ​​a radiator
+.  Musk summed up with a categorical
+conclusion.  "Most of the
+satellite's mass is solar panels."  Along with
+this answer, Dr. Philip Metzger,
+director of the Hawking Center at the University of
+Central Florida and co-founder of
+Swamp Works at NASA, debunked the
+thermos myth.  Metzger wrote: “A vacuum is certainly
+not the best possible insulator.  We
+fill vacuum containers with
+granular material, such as perlite,
+to stop radiative heat transfer between the
+inner and outer shells.
+At high temperatures, like in GPUs,
+Metzger added, “heat transfer through
+radiation increases at a gigantic
+rate.”  Musk answered in six words
+: "Yes, T to the fourth power grows
+very quickly."  Wait.  If a vacuum
+keeps coffee hot in a thermos, how
+can a metal wing in space dump
+1,300 watts per square meter?
+And why does the International Space Station
+need almost 7 tons of radiators to
+dissipate only 70 kW?
+This viral controversy raises the central
+question of this story: does the vacuum of space
+retain heat like a thermos, or does it release
+it into deep space?
+Why are tech companies spending
+billions to escape Earth's air
+and water, and how does cooling on Earth
+compare to space?  Step into a
+giant AI data center on
+Earth, such as the XAI
+Colossus supercluster in Memphis, Tennessee.  Inside
+the building, rows of liquid-cooled GPU racks hum
+, while outside,
+Tesla Megapack batteries and gas
+turbines operate.  Every watt of electricity that
+goes into an AI chip is converted into
+heat.   The
+AI ​​chip is a tiny electric
+heater the size of a postage stamp.   A
+single Nvidia H100 GPU consumes up to 700 watts
+.
+Put 72 modern AI processors in a single
+rack, and that cabinet will generate approximately 120
+kW of heat.
+That's enough heat from one rack to
+heat dozens of homes.
+On Earth, getting rid of this heat
+requires a huge chain of moving
+parts.  First, cooling plates are placed on the chips,
+which remove
+heat into pipes with a liquid coolant.
+This warm liquid then flows to chillers, where
+powerful compressors use additional
+electricity to push the heat
+out.  Finally, rows of cooling towers
+spray water through rotating
+fans, evaporating it into
+white clouds of steam.  Look at the hidden
+electricity tax that the Earth's
+atmosphere levies to operate this
+equipment.  According to a
+2025 Uptime Institute survey of 681 data
+centers, the average
+power usage effectiveness (PUE) is
+1.54.  For every 100 watts of electricity
+reaching the chips, the building spends
+an additional 54 watts on cooling and
+power supply.  Simply put,
+over a third of the electricity
+going into the average data center on Earth
+does not compute a single token.  She's
+just fighting the heat.  Even the
+best hyperscale buildings
+consume about 9% of their energy with a PUE of 1.1
+just on cooling and
+power systems.  And then the water bill comes
+.  A
+December 2024 report from the Lawrence Berkeley National Laboratory
+found that U.S.
+data centers directly
+consumed about 66 billion liters of water
+, or 17.4 billion gallons, in 2023.  That's more
+than triple the 21.2 billion
+liters, or 5.6 billion gallons,
+consumed in 2014.  At an average per-
+facility consumption of 0.36 liters, or one-tenth of a
+gallon per kilowatt-hour, a
+100-megawatt AI cluster would evaporate about 860,000
+liters, or 230,000 gallons, daily.
+Meanwhile, power plants generating
+energy for American data centers
+will consume nearly 800 billion
+liters, or 210 billion gallons, of
+indirect water in 2023.  So what happens when
+AI companies try to
+double this amount of energy and
+water consumption in American cities?  And
+how does this carry the cooling struggle
+into orbit?  The International Energy
+Agency reports that the world's data
+centers used about 415 terawatt-
+hours of electricity in 2024, which
+is about 1.5% of global
+consumption.  It is predicted that by
+2030, electricity consumption by
+data centers in the US will increase by 240
+terawatt-hours, or 130%.
+Locals see power lines and
+cooling towers.  They slam on the
+brakes.  In Memphis,
+chaos erupted at a city council meeting on October 6, 2026, when
+residents began speaking out against
+data center expansion, leading to a
+135-day pause two weeks later.  On
+July 14, 2026, New York Governor
+Katie Gokul signed Executive Order No. 62
+, the first statewide moratorium of its kind
+.  He suspended
+permits for new data
+centers with a capacity of 50 megawatts or more
+after requests for nearly 12 gigawatts
+overloaded New York's power grid.
+As of November 3, 2026,
+there were 527 local moratoriums in effect
+and another 173 under consideration in seven states, led by Michigan and Ohio.  On
+November 2, 2026, 13 Ohio cities
+put a question on the ballot to
+ban data centers, while a September
+NBC poll found that 69% of
+Americans oppose new
+local data centers.  In Virginia, the
+$100 billion Prince William Digital Gateway project on
+2,100 acres, or 850 hectares, collapsed
+after the developer withdrew its
+final appeal.  On Earth, cooling an
+AI data center requires
+active chillers and billions of gallons of
+water, which communities are now blocking through
+ballots.
+Escaping local water conflicts
+brings us back to the main issue.  How does
+a satellite dump megawatts of heat into a vacuum
+?  Let's start with three ways
+heat moves from a hot place to a cold place.
+The first way is through thermal conduction,
+direct contact, like holding a hot
+cast iron skillet.  The second method is
+convection, where moving air or water
+carries away heat, like when blowing on
+hot soup.  The third method is thermal
+radiation.  Every warm object
+converts its internal thermal
+energy into electromagnetic waves,
+mostly infrared light,
+emitting photons outward at the speed of
+light.  Critics who say that a vacuum is an
+insulator only think about
+thermal conduction and convection.  In the
+vacuum of space, there is no air to
+touch a satellite, and no wind to blow around it
+.  Thermal conductivity and
+convection outwards drop to zero.
+This is the basis of spacecraft engineering.   The
+Google Sun Catcher project team
+explained in September 2026: "
+There is no airflow in space. In a vacuum, heat
+can only be dissipated by
+radiators. Why do critics fall into the
+'thermos' trap and assume that
+the radiation is too weak to
+cool a computer? Consider how a
+vacuum thermos
+for coffee actually works. If the vacuum layer
+alone stopped all the heat, the inside walls of
+the thermos would not need a special
+coating. Instead, every vacuum
+thermos has the inside walls covered with a
+shiny silver mirror. Without this
+mirror layer, infrared light
+passes through the vacuum layer and
+cools your coffee. An example from Dr.
+Philip Metzger of NASA's Cryogenics Division
+makes it easy to imagine. Engineers
+store liquid nitrogen at a temperature of
+77 Kelvin, which is -196 ° C or
+-321 ° F, in a double-walled vacuum tank
+called a  dewar. Even at
+-321°F, 1 m² or 11 sq. ft. of dark
+surface emits about 2 watts of
+infrared light through a vacuum.
+So engineers filled the vacuum
+space with crushed volcanic rock
+—perlite—just to block those
+photons. Now, what happens to that
+infrared light when you
+heat the surface to the temperature of a
+GPU? And why does this equation
+put physics on Elon's side? The physical
+law governing radiative cooling
+is the Stefan-Boltzmann law. The
+radiated power is equal to the
+emissivity of the surface *
+Stefan-Boltzmann constant * surface area *
+absolute temperature in Kelvins raised to the
+fourth power. Simply put, the
+radiated heat does not increase directly
+proportionally to temperature. It
+scales as temperature *
+temperature * temperature * temperature. This is what
+Elon Musk meant when
+he wrote, "Yes, T to the fourth power
+increases extremely quickly."  "Increase the
+absolute Kelvin temperature of the heat sink by
+just 10% and the heat transfer
+increases by 46%. Increase the
+Kelvin temperature by 20% and the heat escaping
+from the panel more than doubles
+. Now compare the wall of the liquid
+nitrogen tank at 77 Kelvin to the heat sink panel
+at the
+GPU coolant temperature of 350 Kelvin
+, which is 77°C or 170°F. On the
+Kelvin scale, 350 Kelvin is about
+4.5 times warmer than 77 Kelvin.
+Multiply 4.5 by itself four times and
+the heat radiated increases by a factor of 430.
+One side of the dark panel, which
+radiated 2 W/m² at
+liquid nitrogen temperature, emits 851 W/m² at 77°
+C.
+So the cold thermos barely glows in the
+infrared, while  a
+hot graphics card heatsink shines like an
+infrared spotlight in the night of space.
+What in deep space is capturing
+that light? The
+cosmic microwave background
+radiation is 2.725
+Kelvin, or minus 270°C, returning
+only 3 millionths of a watt per
+square meter.
+Look at the moon for real-world
+proof. The
+moon has no atmosphere. NASA's
+Diviner instrument measured temperatures at the
+lunar equator dropping from about 390
+Kelvin, or 117°C, at noon to 95
+Kelvin, or minus 178°C, before
+sunrise. Meanwhile, in shadowed lunar
+craters, temperatures reach 25 Kelvin,
+or minus 248°C, solely due to
+heat radiation into outer space
+. The vacuum blocks only air currents,
+while infrared light travels freely through
+the void and scales proportionally to
+the fourth power of temperature,
+turning a warm radiator into a heat
+gun.
+Why does the International Space Station
+need such huge radiators for 70
+kilowatts, if cooling in space is so
+simple? On November 3, 2026,
+X user Tom Athos posted the most apt
+version of this criticism. Athos wrote, “The ISS
+needs 7,000 kg of radiators to
+dissipate just 70 kilowatts.”
+Meanwhile, a single rack of modern
+AI processors generates about 120
+kilowatts. Athos added that cooling a
+1 gigawatt orbital data center would
+require the equivalent of
+14,000 space station radiators.
+Hearing that number, 14,000 space stations
+, sounds like an absolute dead end.
+Watch this real-life NASA video from
+November 2012, where astronauts Suni
+Williams and Akihiko Hoshide are in
+outer space, and one of the
+station’s white radiator panels
+unfolds against the backdrop of Earth. NASA's
+External Active
+Thermal Control System manual shows that
+the station uses two
+pumped ammonia circuits, rated at
+35 kW each, or 70 kW total, across
+six main radiator units.
+Each main unit is an eight-panel
+folding wing measuring 23.3 m by 3.4 m and
+weighing 1,123 kg.
+All six wings provide 475 sq.
+m of radiator area weighing 6,736 kg to
+dissipate 70 kW.
+Divide 70,000 W by 475 sq.
+m, and those main
+station radiators dissipate only 147 W per sq.
+m at a weight of 96 kg per kW. Wait
+a minute. Why did Elon Musk claim that an
+aluminum radiator in space could
+dissipate 1,300 W per sq. m, almost
+nine times more heat than the
+International Space Station? Let's run
+the numbers by Stefan-Boltzmann's law.
+First, let's look at the temperature difference
+. The International Space Station is a
+human home in orbit. Astronauts
+live inside in light clothing at
+room temperature, so the
+cabin's cooling circuits must run
+cool. A 1997 NASA
+thermal design study of the station's radiators
+reported an average surface temperature of
+288.1 K, just 15°C or 59°F, with an
+emissivity of 0.90. There are no astronauts in the
+orbiting AI data center
+. The silicon GPU chips and
+liquid-cooled circuits operate
+at high temperatures, between 60 and 80°
+C or 140 and 176°F.
+Second, a flat radiator panel in
+space has two sides.
+Both the front and back surfaces emit
+infrared light into space at the same time.
+Critic Doug of Rock Doc Doug argued
+that a satellite at 80°C  or
+176°F radiates only 880 watts per
+square meter. Why? Because he
+only calculated one side of the panel and forgot
+about the back side. Substitute a double-sided
+panel with a coating with an
+emissivity of 0.90 into the Stefan-
+Boltzmann equation, where both sides face
+deep space at 2.725
+K. At 300 K, which is 27°C or 80
+°F, the panel radiates 414 watts per side,
+or 828 watts per square meter overall.
+At 330 K or 57°C, the double-sided
+heat dissipation reaches 1,213 watts per
+square meter.
+And at 336 K, which is 63°C or 145
+°F, this double-sided panel dissipates
+1,300 watts per square meter. In other
+words, Elon Musk's 1,300 watts per square meter
+is the exact
+Stefan-Boltzmann law for a
+double-sided radiator at  63°C, which
+is the normal temperature of a
+GPU cooler. Heat that panel to 350K, which
+is 77°C, and the two-sided
+heat dissipation reaches 1,534 watts per
+square meter, 10 times the
+station's. Third, the
+station's shuttle-era honeycomb panels weigh 14 kg
+per square meter, or 2.9 pounds per
+square foot.
+Star Cloud CEO Philip Johnston told Ars
+Technica in July 2026 that
+the station's radiators are, quote, "expensive and heavy, while
+2/3 of his team builds lightweight radiators
+." The space station's radiators
+only look massive because they
+operate at 15°C for astronauts,
+while a two-sided radiator at 63°C
+puts out 1,300 watts per square meter.
+Once the radiator starts putting out
+1,300 watts per square meter, how does its
+size relate to the solar
+array and how does it  remains in shadow?
+Let’s start with a clever point about
+surfaces, made on November 2, 2026, by
+Andrew Cote in response to Sean
+Maguire. Cote noted that the
+emissivity plus the reflectivity
+equals unity at a certain
+wavelength, writing that the worst possible
+radiator is a polished mirror. This is
+Kirchhoff’s law of thermal radiation
+. Bare polished aluminum acts like a
+mirror in the infrared,
+so it doesn’t radiate heat. When Elon
+Musk talks about an aluminum radiator, the
+aluminum is a lightweight conductive
+metal structure underneath, and the outer
+surface has a special optical coating
+, like NASA’s white Z-93 coating. Here’s the
+physics trick behind these
+spacecraft coatings. Sunlight
+comes from a star with a temperature of 5800
+K, so its energy peaks in
+visible light around 0.5 micrometers.  A
+warm radiator at 336 K emits
+thermal infrared radiation about 10
+micrometers long, which is 20 times longer in
+wavelength. Because sunlight
+and the radiator’s heat are at
+completely different wavelengths,
+the coating can be bright white in
+visible light and completely black in
+infrared at the same time. The
+Star Cloud thermal engineering note uses a
+coating that absorbs only 9% of incoming
+sunlight, while emitting 92% in the
+infrared. Even with
+selective coating,
+where the panel is pointed is critical. At an altitude of
+400 to 650 km, the radiator’s surface,
+pointing straight down at Earth, absorbs
+about 200 watts per square meter of
+planetary infrared heat.
+So how do engineers orient an orbital
+data center so that the solar panels
+remain in constant sunlight and the
+radiators see only the 3-kelvin
+darkness of deep space? Take a look at the
+orbit chosen for Google’s projects
+Project Sun Catcher and
+SpaceX's orbital data centers are in a sun-
+synchronous, dawn-sunset orbit.
+In this orbit, the satellite flies along the
+day-night line around the Earth,
+keeping the sun at its side almost 100% of the time.
+Google's Project Suncatcher research
+shows that a solar array in this
+orbit generates up to eight times more
+annual energy than a similar array in
+mid-latitudes on Earth. This constant
+sunlight also reduces the need for
+heavy batteries. Moreover, the flat
+solar wings face the sun, while the
+radiator wings are mounted at a
+90° angle with their edges facing the sun. Both flat
+sides of the radiator face directly into
+the cold,
+2,725 K, deep space. Now let's check the
+surface area ratios. The total solar
+irradiance in Earth orbit, as measured by
+NASA's TSIS-1 instrument on the space
+station, is 1,361 watts per square
+meter. With realistic
+solar panel efficiencies on the spacecraft in
+18.4%The solar panel generates 250 watts of
+electricity per square meter. Every watt of
+electricity that powers the AI ​​chips
+is converted into a watt of heat that
+the heat sink must dissipate.
+The solar panel collects 250 watts per
+square meter, while a shaded
+heat sink at 63°C throws off 1,300 watts per
+square meter.
+Divide 1,300 by 250 and you get 5.2
+. Simply put, 1 square meter
+of heat sink dissipates all the heat from over
+5 square meters of solar panels. A
+1 MW orbital data center would require 4,000
+square meters of solar panels—that’s a
+square with a side of 63 meters. The
+corresponding heat sink has an area of ​​only 770
+square meters—that’s a square with a side of
+just 28 meters.
+According to Stacloud’s conservative calculations
+for a temperature of 20°C, where one
+side in the sun receives 633 watts per
+square meter,  The radiator for 1 MW
+is 1,580 square meters.
+That's still much smaller than half a
+solar panel.
+And at 1 GW, the solar panel takes up 4
+square kilometers, while the radiator takes up
+0.77 square kilometers.
+Since the solar panel collects about
+250 watts per square meter, and the shaded
+radiator dissipates 1,300 watts per square
+meter, the cooling panel is five
+times smaller than the solar panel.
+Has anyone actually launched AI chips for
+data centers into orbit and
+cooled them in a vacuum, or is this just
+theoretical? As of
+November 2026, the satellites flying
+in orbit are
+kilowatt-scale pilot projects. Even so, they have already
+proven that AI chips for data centers
+can operate and be cooled in
+space. Let's start with Star Cloud 1. On
+November 2, 2025, a SpaceX Falcon
+9 rocket lifted off from Cape Canaveral.  Canaveral as part of the
+Bandwagon 4 mission. At the 73rd minute of
+the flight, a message was received.
+Star Cloud 1 separation confirmed
+. This 60 kg satellite carried the
+world's first Nvidia H100
+data center GPU to ever fly into
+space.
+Star Cloud co-founder Atif Ul-Tan
+noted on November 3, 2026 that Star
+Cloud 1 had completed its first in-orbit training run
+using Carpathia's Nano GPT
+and launched a Google
+Gemma model into space. It also processed
+Capella Space's radar imagery in
+orbit. On November 2, 2026,
+Star Cloud CEO Philip
+Johnston posted a video of the launch on X
+, writing, "Exactly a year ago today, we
+launched Star Cloud 1 into space."
+Johnston confirmed that Star Cloud 1
+is still operating after a full year
+in orbit as the only Nvidia H100 in
+space, with
+two 8-kilowatt satellites planned for launch in 2027.
+450 kg. Next, consider the
+Google Sun Catcher project. Google announced the
+Sun Catcher project on November 4, 2025
+, with a design paper by
+Blaise Aguera y Arcas, Travis Beal, and
+James Manica.
+Their reference cluster places 81
+satellites in a 1 km radius at an altitude of 650 km
+in a sun-synchronous orbit.
+To test its radiation resistance,
+Google tested its Trillium TPU
+v6e chip in a 67-megaelectronvolt proton
+beam at the University of California,
+Davis. The
+Trillium TPU survived a shielded 5-
+year radiation dose of 750 rads without
+any permanent failure.
+Its high-bandwidth memory
+showed only a
+2000 rads drop, nearly three times the
+5-year dose. In September 2026,
+Google filmed its team
+sealing a heat pipe and heat sink  Sun
+Catcher in a vacuum chamber on Earth to
+test heat transfer. On October 1, 2026, a
+1kW prototype of Google Planet Built satellite with four
+Trillium TPU chips was launched by SpaceX’s
+Transporter 18 mission from Vandenberg Air Force Base. On
+October 30, 2026, while flying over
+Svalbard, Norway, Google engineers
+sent the first request to Gemma 4 for these
+orbital TPU chips. The satellite returned
+the first AI haiku created by a
+TPU data center in orbit.
+The blue ball below {slash} data flows
+in quiet grace {slash} starlight
+powers my core.
+For more on how excess
+energy and computing are changing the global
+economy, read the book “Abundance
+or Collapse,” linked in the description
+below. With Star Cloud and Google
+proving that the H100 and TPU chips work in
+orbit, how big will the
+satellite constellations that
+China and the American giants are preparing? In  In China,
+Chengdu ADA Space launched 12
+satellites of its
+Three-Body computing cluster with the
+Zhejiang Laboratory in mid-
+2025, with a total capacity of 5
+petaflops. On October 14,
+2026, they added eight more satellites to their
+plan of 2,800 devices based on the
+Alibaba Quan 3 model in orbit. In the
+United States, Axiom Space
+launched two orbital data
+center nodes on January 11, 2026. Axiom
+confirmed the existence of laser links
+between them in October 2026. At the Italian
+Tech Week in October 2025, Jeff Bezos
+stated: "These giant clusters for
+learning are better built in space
+because we have solar energy 24/7."
+Bezos added: "We can surpass
+the cost of ground-based data centers in space
+in the next couple of decades."
+March 19, 2026  Blue Origin has filed a
+Sunrise application with the Federal
+Communications Commission for 51,600 satellites
+at altitudes ranging from 500 to 1,800 km.
+On January 30, 2026, SpaceX filed an
+application with the FCC for 1 million satellites at
+altitudes ranging from 500 to 2,000 km.
+SpaceX’s application states that launching 1
+million metric tons per year at
+100 kW per ton would add 100
+GW of AI computing power annually
+.
+In June 2026, in Bastrop, Elon Musk
+unveiled the AI ​​1 satellite design, which
+scales the Starlink V3 laser equipment
+to 120–175 kW of sustained computing
+power. Then, on September 28, 2026
+, the 14th Starship flight launched into orbit and
+deployed 26 operational Starlink
+V3 satellites. With Star Cloud’s H100 and
+Google’s Sun Catcher TPU chips already operating
+on  orbit, and SpaceX and Blue Origin
+are bidding for massive
+constellations, orbital computing
+has moved from theory to flight
+hardware.
+If the physics of cooling is on Elon's side,
+what's the difference between a
+1-kW satellite and a
+1-GW orbital supercomputer? Being honest about
+physics means separating real
+engineering hurdles from fictional
+laws of nature.
+First, while radiating heat from a
+wing into space is a passive process,
+transferring heat from a fingernail-sized chip
+to a 160-
+square-meter radiator wing requires a complex
+system of pipes.
+The heat is transferred from the chip to a
+cooling plate and then through
+two-phase heat pipes or
+ammonia circuits that are designed not to freeze or
+leak if a micrometeoroid hits
+the panel. On the International Space
+Station in September 2008, a
+radiator cladding sheet peeled off, causing
+ammonia to leak from  B circuit before
+the system could be refueled again in
+2025. Researcher Robert Graham noted on November 3,
+2026 that protecting the fluid
+lines on
+thousands of satellites from micrometeorites is a major engineering
+challenge. Second, no astronaut will
+fly to an altitude of 650 km to replace a
+faulty graphics processor.
+Meanwhile, AI chips are updated every 1-2
+years, while satellites fly for 5 years
+or more. Third, and most importantly,
+the cost of putting each kilogram into
+orbit. Sean Maguire wrote on November 2,
+2026: “Once you have
+the ability to cheaply deliver huge
+masses to space, it becomes really easy to cool things there
+.” In 2026, a
+special SpaceX Falcon 9 launch has a
+list price of about $74 million
+for the ability to put up to
+22,800 kg of payload into low
+Earth orbit.
+This is about  $3,000 per kilogram.
+And the cargo space costs
+about $6,500 per kilogram.
+At $3,000 per kilogram, launching
+thousands of tons of solar panels and radiators
+costs significantly more than paying for
+electricity on Earth. How much
+cheaper would Starship have to become for launching an
+AI data center into orbit to be more cost-effective
+than paying for electricity on Earth
+? The Google Suncatcher team
+ran this very learning curve calculation
+in a paper in November 2025.
+They found that once
+the cost of launching into low
+Earth orbit drops to $200
+per kilogram or less, the math
+changes. Google predicts hitting the
+$200 per kilogram threshold by the
+mid-2030s, while SpaceX
+is aiming for $100-200 per
+kilogram and below with a fully
+reusable Starship. At
+$200 per kilogram, the amortized
+cost of launching would break even.  with a
+data center on Earth paying only for
+electricity—about $570 to
+$3,000 per kilowatt per year. Think of
+it this way. At under $200 per
+kilogram, a rocket ticket to orbit
+costs about the same as your
+electricity bill, and orbital
+sunlight never fades. And that
+brings the whole story back to the coffee thermos
+from the beginning. A vacuum only holds heat
+when the walls are cold and
+mirror-like. Coat a double-sided
+aluminum heat sink to
+emit infrared radiation
+, heat it to 63°C with
+liquid-
+cooled GPUs, and shoot it into
+3K outer space. The
+fourth-degree temperature takes its toll,
+converting the excess heat into
+infrared light and dumping 1,300 watts
+per square meter into the universe without cooling
+towers or
+city water permits. Physics on the Side  Elon.
+The cooling of the orbital
+data center is passive and scales with
+temperature to the fourth power, so the
+future of space computing depends
+on the cost of launching Starship, not
+physics. YouTube has a crazy new
+algorithm that knows exactly what video you're going to
+want to watch next, based on
+artificial intelligence and your entire
+viewing history. And the algorithm says this video is
+perfect for you. It's different
+for everyone watching it right now.
+Watch this video, and I'm sure
+you'll enjoy it. Thank you so much
+for watching. I hope this video was
+informative and useful, and I'll see you in the
+next one. Bye everyone.
