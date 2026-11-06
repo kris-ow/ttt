@@ -15,6 +15,7 @@ import { weeklyFromPath, weeklyPath, WEEKLY_PATH_RE } from './components/Feed/we
 import { teslaFromPath, teslaPath, TESLA_PATH_RE } from './components/Feed/teslaRoute'
 import { ContactButton } from './components/Contact/ContactButton'
 import { ContactPopup } from './components/Contact/ContactPopup'
+import { InstallHint } from './components/Install/InstallHint'
 
 const data = newsData as NewsData
 
@@ -515,6 +516,9 @@ export default function App() {
 
       {/* ── Contact overlay (single instance, both buttons open it) ─ */}
       {contactOpen && <ContactPopup onClose={() => setContactOpen(false)} />}
+
+      {/* ── One-time "install as an app" hint (phones, returning visitors) ─ */}
+      <InstallHint blocked={!!selectedArticle || !!routeInterview || contactOpen} />
     </div>
     </InterviewRouteContext.Provider>
   )
