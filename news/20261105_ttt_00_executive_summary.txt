@@ -1,0 +1,72 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-05)
+Published:   2026-11-05 00:00 UTC
+Summarized:  2026-11-06 06:41:33 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07862 (23178 in / 3226 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla seeks full confidentiality on NHTSA Cybercab safety filing
+- Giga Texas reportedly adds night shift, doubling production capacity
+- AI-infrastructure selloff hits TSLA ~11%, SPCX ~9% on midterm fears
+- Tesla Germany registrations up 290% YoY in October
+- SpaceX/Qualcomm ink multi-year Starlink Mobile terrestrial 5G deal
+- Optimus hands/tendons and training data flagged as key bottlenecks
+
+## Robotaxi
+- Tesla filed its sworn NHTSA response on the Cybercab Special Order but requested the entire document sealed, leaving only a public first-responder guide visible; NHTSA had flagged possible non-compliance with FMVSS 135 (foot brakes), 108 (turn signals), and 111 (mirrors), and penalties for an incomplete answer can reach $139 million, per Electrek. Fred Lambert contrasts this with Zoox's and Waymo's public safety filings and notes roughly 1,000 Cybercabs remain in Austin service while the certification basis stays hidden.
+- Austin hiring for Cybercab closures work (doors/hatches) requires motion-capture gear, which two commentators (brighterwithherbert, Brian White) read as primarily Optimus training-data collection rather than a Cybercab output signal.
+- Joe Bhakdi says Texas Democrats could create regulatory friction for Cybercab post-midterms but argues it would be politically costly for them to target it directly.
+
+## Electric Vehicles
+- Giga Texas is reportedly shifting from one 10-hour day shift to 12-hour day/night shifts and may skip holiday shutdowns, per Joe Tegtmeyer; estimates of the added output range widely (~40,000 extra vehicles over two months per one host's rough math), and commentators attribute the extra capacity to Model Y/Y L demand, not Cybertruck or Cybercab.
+- Cybertruck program is described by journalist Brian White as winding down: most of the discounted ~$599-trim trucks promised for October remain undelivered, and the assembly line is less automated than expected given low volume.
+- Tesla launched its first FSD Supervised referral program: one free month of subscription (or $99 credit) per successful referral, capped at 12/year, US-only — read as margin-accretive but notably weaker than past incentives (up to $1,000 historically).
+- Tesla China October wholesale sales fell to just under 68,000 units (lowest since February) but YTD cumulative hit 810,900 units, up 21.4% YoY.
+- Tesla Germany registrations rose 290% YoY in October 2026; YTD registrations up 206% to 47,742 units.
+- Berlin Tesla Engineering Center opened, combining four engineering sites and 30 labs — Tesla's third such hub after Fremont and Shanghai.
+- Tesla is pressing Australia to allow public-road AV trials in 2027, two years ahead of the government's current timeline.
+
+## Humanoid Bots
+- Tesla is reportedly already producing early Optimus units on a converted Fremont Model S/X line, according to a FutureAzA guest, with the Texas plant intended for scale-up rather than initial production; production equipment there may not be installed until mid-2027.
+- Hands/tendons remain the toughest unsolved hardware problem, per sourced claims — Tesla's last public hand design (tendon-based) was shown two years ago, and it's unclear if Tesla followed Figure Robotics' reported move away from tendons.
+- Optimus's neural-network training is reportedly behind schedule — a data problem, not a compute shortage — consistent with reports of Tesla paying people to wear motion-capture suits for training data.
+- Tesla is building in-house carbide/PCD gear-cutting tools for Optimus production, a cost and supply-chain control move as gear manufacturing shifts from prototype to mass production, per new Austin job listings.
+- Eight additional Optimus-related job listings spotted across Fremont, Palo Alto, and Austin spanning assembly, QC, data collection, and fleet operations.
+- Speakers broadly agree the first ~10,000–20,000 Optimus units will stay internal to Tesla rather than ship to outside customers.
+
+## Market & Competition
+- A broad AI-infrastructure selloff hit stocks over two days on fears Democrats will slow data-center permitting after midterm wins; Tesla fell ~11%, SpaceX ~9%, with neoclouds (CoreWeave, Nebius) down 15-20%, per Joe Bhakdi, who calls the move overdone given federalism limits on near-term disruption and red-state permitting control.
+- Incoming Texas Governor Gina Hinojosa campaigned on halting data-center approvals, but one host argues a durable statewide moratorium requires legislation unlikely to pass with Republicans retaining the Texas Senate; Terafab is reportedly shielded, per a county judge ruling that it's a chip-manufacturing site, not a data center.
+- Tesla's Terafab/"Fab Lab" chip facility at Giga Texas is progressing rapidly, per flyover footage and a Korean supplier executive who called Tesla's response speed unmatched in the semiconductor industry; Musk said the Terafab project "is going well."
+- Elon Musk's 2026 midterm spending exceeded $445 million (Open Secrets) yet Democrats swept both chambers and flipped the Texas Senate seat; commentary frames this as a political headwind generating congressional scrutiny of Musk/Doge/Starshield starting January 2027, but argues no party has incentive to disrupt SpaceX or Tesla operations given their economic and national-security dependencies.
+
+## SpaceX — AI & Compute
+- SemiAnalysis (shared by Elon Musk) reportedly projects SpaceX's 2027 data-center capacity at around 13 gigawatts, comparable to Google's entire 1999–2026 buildout compressed into roughly 1.5 years — potentially the largest and fastest data-center buildout by any single company.
+- A new TCEQ filing shows SpaceX plans 35 gas turbines (~748 MW) near the Port of Brownsville on 444 acres; SpaceX has not officially labeled the site a data center.
+- Musk publicly defended orbital data-center cooling physics against an academic critique, citing ~1,300 W/m² achievable via radiators facing away from the sun; backed by Sequoia's Sean Maguire and NASA's Philip Metzger. The dominant conclusion across sources: orbital compute economics hinge on launch cost, not physics, with Google targeting a $200/kg breakeven and SpaceX targeting $100-200/kg via reusable Starship.
+- SpaceX/xAI reportedly generate substantial profit leasing surplus AI compute to firms like Anthropic, though no dollar figures were disclosed.
+
+## SpaceX — Starlink
+- SpaceX and Qualcomm announced a multi-year partnership to build Starlink Mobile's nationwide terrestrial 5G network using Qualcomm's Dragon Wing infrastructure (QR100 radios, QDU compute units), deploying tens of thousands of cellular sites starting in 2027; Musk called Qualcomm's technology "excellent."
+- The deal uses 64T/64R massive MIMO antennas brought down to the 2 GHz band, an innovation versus the industry-standard 32T/32R at 3.5GHz+.
+- This Qualcomm tie-up is additional to SpaceX's reported talks to lease up to 80,000 U.S. cell tower sites and doesn't preclude a potential Boost Mobile acquisition.
+
+## SpaceX — Corporate & Valuation
+- SpaceX's market cap fell to about $1.7 trillion during the selloff; Bhakdi argues that at his projected $400B+ revenue and $200B+ net income next year, that implies roughly 8x forward P/E, calling the stock undervalued, with potential moves to $200 then $400 next year by his own (non-guidance) projection.
+- Bhakdi flags Starbase Louisiana as SpaceX's single biggest politically exposed asset, though he views a targeted move against it as extreme and unlikely.
+
+## SpaceX — Starship
+- Bhakdi expects Starship to reach commercial readiness with some reusability within 6-12 months, short of "endless" reusability.
+
+Notable quotes and data:
+- Tesla's confidentiality filing to NHTSA: "The entirety of this file is confidential business information." (per Electrek)
+- NHTSA penalties for an incomplete Cybercab certification answer: up to $139 million.
+- TSLA closed $385.19 (-3.34%); SPCX closed $135.92 (-3.81%) on 2026-11-04 session cited by one source; Bhakdi's separate figures put the two-day move at TSLA -11%, SPCX -9%.
+- Tesla Germany: registrations +290% YoY in October; YTD +206% to 47,742 units.
+- SpaceX/Qualcomm Starlink Mobile deployment begins 2027, tens of thousands of cellular sites.
+- "I'd say the majority of the 599 base models have not been delivered" — Brian White on Cybertruck's discounted trim.
+- "I'm sure we're already getting them off the line right now. We just don't see them, but they do inside the company" — FutureAzA guest on Optimus at Fremont.
