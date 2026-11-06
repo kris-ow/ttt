@@ -1,0 +1,581 @@
+Channel:     farzad-fm
+Title:       Google Just Gave Robots A New Way To Learn
+URL:         https://www.youtube.com/watch?v=sUbukdpe_h4
+Published:   2026-11-06 00:00 UTC
+Fetched:     2026-11-06 22:02 UTC
+
+────────────────────────────────────────────────────────────
+
+Google has a robot that can open a
+trash can, and while it looks pretty
+cool, almost like something out of science fiction, the
+most interesting thing happens long before the
+lid opens.
+The robot gets a place to practice this
+movement, and it sounds incredibly mundane
+until you think about how we humans
+learn to do almost everything.  I watched
+my son learn to walk, climb
+stairs, and eat on his own—often very
+messy, but that's okay.  And every
+time he tries something, he gets a
+result, then he adjusts his actions and
+tries again, and again, and again.
+Now take this basic idea and give the
+machine a practice space that can be
+reproduced programmatically.  From this point on, you
+begin to solve one of the biggest
+problems in robotics.  Where does
+all this useful experience come from?  In its
+October 13 demonstration, Google showed
+how Gemini 4 Argon creates a simulated
+version of a pedal-powered tank.
+Boston Dynamics' Spot robot trained to balance
+on three legs and press a pedal, and
+then performed the task with a real
+tank.  This is a sequence worth
+understanding.  Observe a physical
+problem, create a place to
+rehearse it, and bring the result back into the
+real world.  The visible effect is small.
+The opportunity is to make learning the
+next step less dependent on
+someone manually setting up every part of
+the lesson.  Think about what you mean
+when you ask someone to throw away a can.
+You usually don't describe the lid, the pedal,
+the position of your feet, or the moment when you should
+let go of the object.
+You set a goal for them because they already have
+years of physical experience.  The robot
+needs these missed steps to
+turn them into actions that its body
+can actually perform.  Knowing what a
+tank is and being able to put an object in it
+are related tasks, but they are not the same thing
+.  The second forces every
+assumption to face the floor,
+the lid, and the robot's own weight.  This is
+why a robot's intelligence cannot be judged
+solely by how well it explains a
+task.  Imagine asking your
+assistant to describe how to make the bed.
+He can make a perfectly reasonable list.
+Straighten the sheets, pull up
+the bedspread, spread the pillows.  But a
+useful machine should find
+the sheet under the covers, hold it at the
+right angle, and notice when
+pulling one side has pulled the other
+.  Words bypass the work itself.  A physical
+learner needs experience of the work itself,
+including what changes when a
+seemingly intelligent movement does not produce the expected
+result.  Robotics has been working on this
+connection for many years.  Earlier
+research on Google RT-2 combined
+image and language knowledge with
+robot demonstrations to perform actions
+.
+This is important because general knowledge
+helps the machine understand an unfamiliar
+request, while physical examples teach it
+how to respond to that request.  A useful
+distinction is that it is one thing
+to recognize a situation, and another to be able to
+deal with it.  A system that "understands"
+what a cup is still needs
+a way to pick it up, turn it over, and put it
+somewhere without dropping it.  I think about it this way
+: work needs childhood, real
+childhood.  But we don't want to give
+everyone their own separate 20-
+year childhood to work on.  We only need
+useful learning elements.  So:
+practice, feedback,
+error correction, and improvement.  And then we
+want to share the experience we have gained with the
+entire robot fleet.  That's what
+really fascinates me.  When a machine performs a
+trick or, say, a backflip—that's interesting
+, but a system that simplifies the training of the
+next machine—is a completely different matter
+.
+Because the effort invested in one lesson now
+can be beneficial in the future.
+The most useful part of robotic
+training is what happens when the robot
+takes on the real work.  And for
+such a mundane task as cleaning
+the floor, I already have a robot at home.
+Matic, the sponsor of this video.  Matic is a
+robot vacuum cleaner with a wet
+cleaning function that we use every day.
+We named ours Roberto.  You can
+call yours whatever you want.  And what
+makes it especially interesting for our
+conversation is Matic Qs.  I can talk
+to my Matic.  I can say, "Hey,
+Matic, clean up the living room."  Or "
+Clean up the kitchen."  Or "Follow me."
+Or "Go to the trash can or the sink
+, or wash the kitchen floor—whatever."  I
+can just talk to him.  You can also
+point your finger at the dirt and say, "Hey
+, clean that up."  And he will just get
+to work.  This is a very practical way
+to interact with a robot, which is what we
+talked about in the video.  You noticed that
+something needed to be done, told the robot what you wanted
+, and it simply carried out the task.  You
+don't need to take out your phone or
+open the app every time.  This seems to be the "
+most urgent" problem of the modern
+world.  You don't have to
+use your phone anymore.  Just
+talk to this thing.  Matic
+uses a five-camera vision system
+for navigation, and receives
+software updates that add new features over time
+.  Qs is a great example of this.  And my
+wife, who has perhaps the highest standards of
+cleanliness of anyone I've ever known, doesn't
+hate this thing.  In fact, we
+are going to buy a second one.  We'll put
+one upstairs, the one we used
+downstairs, and for the first floor we just
+bought a brand new Madic Serene, which is
+much quieter than previous
+versions.  If you want to take a look,
+use my referral
+link in the description or in the pinned
+comment below.  And a big thank you to Madic for
+sponsoring this video.  Okay, now
+let's get back to how Google gives
+robots a place to train.  So,
+let's start with a place to practice.  MuJoCo, the
+physics modeling software used in the
+Google example, models moving bodies and the forces between
+them.  Its task is to calculate how
+parts move, push, and
+collide.  For our tank example
+, a useful virtual environment
+needs more than just the appearance of the
+lid.  A relationship is needed between
+pressing the pedal and moving the lid.
+Otherwise, the student trains against the image of the
+problem, not against the mechanics of that
+problem.  This is the difference between what
+looks convincing on video and what is
+useful for choosing a physical action.  Here's a
+simple way to visualize this value.
+Let's say you're teaching a machine to rearrange
+boxes in a closet.  In the physical training
+area, someone has to bring the boxes,
+put them in place, and prepare the stage
+after each attempt.  If the machine
+drops the box, the next attempt
+will start with it having to be
+picked up again.  In a simulated training
+area, resetting settings can be a
+software operation.  You can change the
+initial position of the box and
+try a different approach.  The point is to
+spend more effort on useful
+attempts, rather than constantly recreating
+the conditions for another attempt.  But useful
+attempts should teach the right lessons.
+If the simulated box slides more easily
+than the real thing, the movement that worked during
+training may fail near the
+closet.  Researchers call this difference the "
+reality gap."  One consistent
+approach is to vary the simulation conditions
+during training so that the student can deal
+with a range of possibilities.  Studies of
+random dynamics have demonstrated
+this principle using the example of a robotic
+arm pushing an object.  The practical idea is
+quite simple.  Don't teach a machine that the
+world will always behave exactly the same way it did
+in the first training room.
+For the example with the closet, this means that the lesson
+should take into account changes that do not
+change the very essence of the task.  The box
+can be a little to the left.  The content can
+make it harder.  The path to the closet may
+require a different angle of approach.  You want
+the machine to associate what it sees with
+effective action, not just repeat
+the same movement regardless of what's
+in front of it.  Practice becomes more valuable when
+it prepares the learner for things
+that might otherwise surprise them when
+performing the real task.  That's how
+I look at the data problem.  It's not
+just a question of whether we can
+collect a bunch of videos and do something with them
+.  Absolutely not.  The question is whether
+we can provide the work with the experience
+needed to do useful work
+.  You can watch someone
+make the bed a thousand times and still have difficulty the
+first time you try to do it yourself.  I
+want the learning process to encompass both
+successful attempts and failures, especially
+when it is the failures that teach us what to do
+differently.  That's when practice begins
+to turn into true mastery
+.  Now add to this practice a way
+to measure progress.  In reinforcement learning,
+the system chooses actions and
+learns based on feedback about the
+results.  Reward is a signal that
+helps distinguish better behavior from
+worse.  People's feedback can be
+part of this process.  This is not a name for
+every type of robot training.  For a
+simple task, the check might be
+whether the object has reached its goal.   A
+more useful check also considers whether
+the machine achieved this in an acceptable way
+.  Throwing everything else on the floor doesn't have to
+be a winning strategy for
+freeing up one shelf.  Here, the person
+setting the task still
+matters.  Imagine asking a robot
+to clean a room, judging it only
+by how few things are left on
+the floor.  He could satisfy such a
+poorly designed test by simply
+pushing everything out of sight.  You
+expected something different.  Toys in the box,
+clothes in their places, fragile items
+intact.  These nuances must somehow
+be incorporated into the learning process.  A helpful
+robot learns to perform your task,
+not just look for a shortcut through
+its incomplete description.  Best practices
+include better ways to recognize a
+good result.  There is also a difference
+between reaching the end once and being able to
+correct the situation along the way.
+Let's say the robot picked up the wrong corner of
+the sheet.  The rigid sequence
+will continue to drag, because that was the
+next instruction.  A more capable
+system notices the discrepancy and changes
+its actions.  This recovery is part of the
+skill.  In a normal home, someone
+might move a pillow, or fold
+the bedspread, or leave a sweater on the bed.
+The value lies in performing the same
+task despite these everyday changes, with
+less need for human intervention.  So
+, the path to a useful robot is not just a
+longer list of movements.
+This is a better connection between the goal, what the
+machine sees, and what it does
+next.  Think about the difference between the command
+to move the manipulator to a coordinate and
+the command to arrange clothes after washing.
+The second instruction requires many decisions
+that depend on previous
+results.  Did he take one item or
+two?  Is the drawer open?  Is there
+room inside?  The machine must keep
+the task in focus while the physical situation
+around it changes.  For me, the test
+I would really like to take is very
+mundane.  For example, when my son goes to
+bed, the house needs to be cleaned.  I would
+like to say, "Clean up here."  And for the
+robot to just take on it.  Just
+walk around the house autonomously and
+literally take care of everything: pick up
+toys, clean up the kitchen, put
+things in their places.  It would have given us
+so much time back.  And I think that's a
+much more useful way to evaluate this
+technology than asking if a
+robot can do one impressive move, a
+backflip or something like that.  Can he
+really finish the job?  Can
+you stop controlling every
+step and do something else?  This is exactly the kind of
+improvement that I and everyone
+else would feel.  This homework clearly outlines the
+learning problem.  The robot must
+recognize objects, decide what to
+put where, process them, and
+check the result.  Each part is
+connected to the next.  A toy that
+has disappeared behind a chair creates a new problem
+for observation.  A soft object that
+changes shape creates a
+processing problem.  A full storage box
+creates a decision-making problem.  These are
+reasons to make the practice richer,
+because a tidy display space can
+hide situations that turn a
+useful machine into just another thing
+the owner has to control.  And
+control changes the assessment of value.  Imagine
+spending half an hour next to a
+robot while it does work that you
+could finish yourself.  Even if his
+manipulators are doing the work, your
+attention is still occupied.  Now imagine
+giving the same task, checking the
+result at the end, and seeing that everything is
+done.  The time that the owner can actually
+reclaim is different.  That's why
+long-term competence weighs so much
+in this argument.  The unit of
+value is the useful work performed,
+including the human attention required along the
+way.  This also explains why the
+robot brain is more than just a model name
+.  He must interpret what is
+happening, remember enough about
+the task, and choose the next action in time so
+that the corps can execute it.  That's why
+chips, memory, and model
+matter.  A machine that loses track of what
+it is doing in the middle of a task
+only adds more work to its owner.  Better
+hardware matters when it
+provides better end-to-end
+functionality, not just impressive
+specs.  This is where
+memory becomes concrete.  Imagine a
+robot starting with cups on the table,
+taking one to the kitchen, and returning.
+It must remember the task
+while updating the state of what is
+left.  If someone moved another
+cup, the latest observations should
+change the plan of action.  Keeping your mind on the task at hand
+doesn't mean ignoring everything around you.   A
+useful combination is consistency in
+achieving the goal and flexibility in the next
+steps.  This allows long-term work
+to remain coordinated without constant
+guidance from a human.  The body must
+match this level of intelligence.
+Take the same task and give the machine a
+gripper that can't hold
+the box securely.  Better planning alone
+will not be enough to get the
+job done.  Give her a reliable grabber
+but a poor understanding of where the shelf is and
+you get the opposite problem.   A
+useful product is precisely their
+combination.  This is why training with a
+real-body model is so important.
+The system chooses actions through the hands, joints,
+and reach it will actually
+have, not through an imaginary machine capable
+of anything.  So, think about Michael
+Jordan, the greatest basketball player of
+all time.  Sorry, LeBron fans, it's
+just the truth.
+Imagine being able to copy everything he
+knew about basketball into your own brain
+.  Your body has to do it anyway,
+right?  Your strength, joints, and
+coordination are still of great
+importance.  With robots, however, we can
+create identical bodies and distribute
+software.  So, even if
+you can pull off incredible moves on the
+basketball court, you
+still won't have the body to do what
+Michael Jordan does.  This is the possibility
+I mean when I say that
+one robot's training can be
+useful for others.  You do the hard
+work of developing a useful skill, and
+you have a way to implement
+that work in other machines.  You don't
+start every lesson from scratch.
+Knowledge sharing between machines is already an active
+area of ​​research.  The Google Open
+X Embodiment project collected demonstrations of various
+robots and studied models trained on
+all of them.  The point of this story is that
+experience can be combined, instead of being
+kept isolated in a
+single machine learning story.  Identical
+equipment greatly simplifies the issue of
+transferring experience.  Different bodies create
+different handling problems.  A short
+arm and a long arm do not reach the same
+place with the same joint movement
+.  Sharing useful knowledge still
+requires translating it into actions that are
+appropriate for a specific machine.  For
+the future home robot fleet,
+imagine the advantage as a reusable lesson,
+not a magical download.  One
+development team is finding a better way
+to deal with the awkward box.  She
+tests changes, checks if
+other tasks work, and adds improvements to
+the software for compatible
+machines.  Owners benefit from not
+having to teach the robot
+this movement themselves.  This is an important difference from
+hiring a new person and starting their
+training from scratch.
+The cost of inventing a better method can be
+spread over many of its applications,
+but it is only worth sharing the experience if
+it is successful in real-world use.  So let
+'s get back to what exactly the owner
+wants from the robot.  The useful
+question is not how many virtual
+attempts were made overnight.  And whether the
+next version performs the task better
+when the conditions in the room change.  Can a
+car recover after a failed
+takeover?  Does it finish the job without
+leaving the owner with a new mess?  These are
+concrete results.  They link
+all that invisible practice to the reason
+why anyone would want a robot in the first place.   A
+useful comparison would keep the task
+the same, changing only the circumstances
+around it.  Give the two versions of
+the software the same
+mess, the same storage space,
+and the same chance to fix bugs
+.  Then count the tasks completed and
+the number of human interventions, instead of
+choosing the best moment for each
+launch.  This makes it easier to assess progress.  This
+also tells the developer whether
+the change improved the entire task, or simply made
+one movement smoother while creating a
+problem elsewhere.  If you
+like this video and want to
+support the channel, the fastest and
+most meaningful way to do so is to
+click the subscribe button.  It's completely
+free and helps us a lot.
+Thank you very much.  And that gives us a better way
+to understand progress.  A more sophisticated
+training system could reduce the amount of
+specialized work required to
+add another useful task.
+Let's say the robot is already moving
+boxes in a closet and you want it to be able to
+work with a different shape.  The expensive
+option for this change is to rebuild the entire
+solution.   A
+valuable option is to reuse the
+system's knowledge, work out the difference, and
+verify the result.  Over time, you
+will want more work to be based
+on previous work and fewer
+tasks to be treated as separate inventions
+.  Google also reported a
+tabletop experiment where additional
+simulation data increased the success rate of the real
+robot from 56% to 75%.  This is an improvement of 19
+percentage points in this estimate.  This
+makes the connection tangible.  An important
+result occurs outside the simulator
+.  This is a direction of development because
+creating more practice is
+only valuable when the end machine
+performs better.  The virtual world is a
+tool for improving the physical one.
+This gives learning efforts a purpose.
+And now this is the very important part.   Making
+everyday tasks easier changes what
+people spend their time on.  This is one of the
+questions I explore in “Abundance or
+Collapse,” one of my books, and if
+you want to delve deeper, the link is in the
+description and comments section below.  And the
+practical starting point here is actually
+very ordinary.  I don't need a robot
+to impress the internet.  I need
+him to take some of the work off me and do
+it well, over and over again.  Think about how
+you would organize a reusable
+training environment.  Leave the main
+cabinet and robot, but change the object and
+its initial position.  Now
+the developer can ask a specific
+question.  Did the new approach improve
+the work with the unfamiliar form?  If each
+test requires a completely different setup
+, such a comparison becomes more difficult.   A
+reusable scene allows you to keep
+some conditions unchanged while changing the one
+you want to explore.  This is valuable because a
+useful experiment should teach you not
+only whether something worked, but also why
+it worked.  And the training scene
+can be a shared working object.
+Imagine one developer improving
+the presentation of a box, and another improving the motion
+used to lift it.  They
+can compare their changes based on the same
+task.  When a
+physical attempt reveals a discrepancy,
+that conclusion can be directed somewhere.
+Improve the scene, improve the movement, or
+improve both.  The point of simulation
+is to make the next
+experiment more informative.  A beautiful
+virtual room is much less useful
+than a simpler one that helps correct a
+real mistake.  For a specific
+example, let's say a virtual robot
+lifts a box cleanly, but the real
+manipulator lets it slip.
+Now you have a focused question about the
+contact between them.  If the real box
+bends, compresses, or clings
+differently than the simulated one, you need
+to account for that difference before
+trusting the next rehearsal.  This is
+productive feedback.  A failed
+physical attempt helps you improve your
+training world, and an improved world
+helps you choose what to test next.
+That's why it becomes a question of the cost of
+learning the next skill.
+You have already created a body model, a way
+to describe the task, and a process for verifying the
+result.  The more of this useful
+work you can save, the less you will
+have to rebuild for the next
+task.  Now you can focus your
+efforts on what really makes a difference:
+an object, a movement, or a sequence.
+The improvement of such
+reuse is how a small
+demonstration can point to a more
+powerful learning process.  So when I
+look at this, I don't just see a robot
+opening a trash can, I see progress in the
+process of teaching a machine to do a
+job.  That's what's important to me.  Give
+him a useful way to practice,
+give him feedback that actually
+means something, and give him a body capable
+of performing what he has learned.  And you
+continue to improve this connection,
+and the question becomes: how much more of the
+everyday work around us can we
+hand off to machines?  This is the future I
+want: a robot that leaves the house cleaner
+and gives the people who live in it
+their time back.  Thank you very much for watching.
+I hope this video was informative
+and useful, see you in the next one.
+Goodbye, friends.  This.
