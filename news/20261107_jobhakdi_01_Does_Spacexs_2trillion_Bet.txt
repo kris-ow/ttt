@@ -1,0 +1,637 @@
+Channel:     jobhakdi
+Title:       Does SpaceX’s $2Trillion Bet have a Physics Problem?
+URL:         https://www.youtube.com/watch?v=3yjxPYnai0M
+Published:   2026-11-07 20:54 UTC
+Fetched:     2026-11-07 22:01 UTC
+
+────────────────────────────────────────────────────────────
+
+SpaceX's $2 trillion bet has a physics
+problem. He does some good math, but he
+makes a terrible mistake that can cost
+you a lot of money. The only thing that
+counts is, is it cheaper than on Earth?
+And that means in 2028 it becomes
+cheaper to build a gigawatt computer in
+space than on Earth. Does Joseph not
+know physics or does he simply not
+understand finance?
+A few months ago, SpaceX, the world's
+largest space company, had its IPO at
+over $2 trillion, and it was all the
+rage across the world. And everyone got
+very excited. Now, this is all about the
+promise that Elon Musk, who owns the
+majority of that company, is able to
+actually bring compute, the AI compute
+buildout into space and ignite a new age
+of abundance. Now, some people are
+critical about it. Some people doubt
+that this is even possible. And there
+was one video recently here that we want
+to discuss today with a commentary and
+then nail down what's actually going on.
+It is a astrophysics PhD Joseph Farah
+who has a great YouTube channel. You can
+check it out. And he got an amazing
+936,000
+views on his video where he says
+SpaceX's $2 trillion bet has a physics
+problem. And in my title, of course, I
+asked the question if that's actually
+true. And as we will see, it is not
+true. And we will debunk this entire
+thing and we will find out. Does Joseph
+not know physics or does he simply not
+understand finance? Maybe you can guess
+the answer, but we will get into the
+video. Now, the reason I'm even doing
+this is because one of our pioneers in
+Pioneer Land, Doug, wrote me this very
+nice email or wrote it to my team and
+ask, "I assume you have good access to
+Joe. It was to Alex. I'd really
+appreciate it if you could get his
+reaction to the following YouTube video
+and assertions. If you could run it by
+him and get back to me, I'm very
+grateful." For context, my background
+that is the pioneer here in Pioneer
+Lands, we have the best people. My
+background is engineering at MIT and a
+masters from Stanford. To me, the
+arguments seem to hold water and the
+contrary to Elon's representations. I
+know Elon is massively creative and puts
+off miracles, but physics is a hard
+master. Would love to know how Joe would
+respond privately rather than a video.
+Well, I will just do it publicly. Want
+to make sure we're not suffering from
+confirmation bias. Hey, to make videos
+like this is a lot of work. So, if you
+enjoy it and get some value out of it,
+please subscribe to the channel. It
+helps me to grow it and bring this
+content to more people. Thank you so
+much. Let's get back to the video. Thank
+you so much, Doug, uh, for for writing
+us that and sending the video. I found
+it very interesting because it is
+exactly what I find so fascinating about
+the world we live in that smart people
+like Joseph. Joseph is a smart astrophys
+physicist. He does some good math, but
+he makes a terrible mistake that can
+cost you a lot of money. And we will get
+into that. The difference between being
+an economist, being an engineer and
+being a scientist. These are three
+different things. And we in Pioneer
+Lands, we are a little bit scientists.
+We are much more engineers. And we are
+mostly economists because that's what
+counts in the end. It is the money. So
+let's get into it. I will show you some
+excerpts of the video just to get a feel
+for it. I make it very quick. So just so
+you get a feel for what Joseph is
+talking about. Uh he has different um
+sections in the video. He talks about
+two big things. Number one, you need
+solar energy. You need to build out
+these satellites with a big solar array.
+And he does the math. How much solar you
+actually need. I will show you some
+quick excerpts here from the video and
+then jump to the end of the video where
+Joseph does his summary. That's the most
+important thing. And then we can discuss
+that. Let's first watch what he says
+about the solar array. Just a little
+feel here. 10 5 / 10 2 and we're left
+with and remember this is a watts per
+meter square and we're left with uh
+about 10^ the 3 square meters. So what
+does that correspond to? That's roughly
+a basketball court in size. So in order
+to power one GPU rack, you need roughly
+a basketball court sized area of solar
+panels. Okay, what he is talking about
+here is 120 kilowatts, just FYI,
+is roughly what you need to power
+currently one NVL72 rack of Nvidia. That
+is a big fat rack, Nvidia rack. And that
+happens to be also the unit for Star
+Mine for the satellite. I will get into
+some details there because these Star
+Mind racks will have twice the compute
+roughly and actually use a little bit
+more energy and they are customdesigned.
+But I will get into the math in a
+second. Uh Joseph is directionally right
+here. For a conventional current rack of
+120 kilowatt, you need roughly 1,000
+square meters. 1,000 square meters,
+which is roughly a basketball court.
+He's right on that. Well, we will get
+into some details that Grock comments on
+that. So that was his first take on it
+and we will jump right into his second
+piece where he talks about the radiators
+and I just show you the end of it. So
+remember, I will show you everything on
+a beautiful sheet in a second on a
+Google sheet so we don't confuse the
+numbers. But let's go to the radiators
+and see what Joseph says about the
+radiators
+&gt;&gt; to a th00and watts per square meter. So
+if you want 100 kilowatts, you're going
+to need roughly uh the area you'll need
+for the solar panels is going to be, you
+know, a thousand square meters. We're
+working with factors of two here. But
+the point is that uh you're getting a
+lot more radiators uh sorry you're
+getting a lot few about within a factor
+an order of magnitude radiator area as a
+solar panel area. So whatever your
+estimate is for the solar panels you can
+basically just multiply by two and that
+gives you your total area that you're
+going to need approximately. Uh that's
+pretty interesting though. So, in order
+to cool one rack, you're going to need a
+100 square meters of radiator. That's a
+lot of area for one rack. And I want to
+give you an
+&gt;&gt; So, okay, he got a little that was a
+little confusing how he did it, but you
+heard it him in the end. He says you
+need roughly 100 square meters of
+radiators. He was a little confused. He
+first said a magnitude, which is
+correct. It's a magnitude down. You need
+a thousand solar panels, thousand square
+meter of solar panel, and you need a 100
+square meters of radiator. Okay,
+remember that he said in between double,
+but he it's a lot of numbers. It's easy
+to conflate some things, but he had it
+right in the end. 100 square meters. By
+the way, I'm not going to go into
+physics. You can watch his video. He
+does a great job explaining the physics.
+There's a Boltzman equation for how you
+actually calculate how much um space you
+need, how much uh surface you need to
+radiate out heat. In space, it's very
+cold, but there's no air. So, you can't
+do any kind of convection cooling. You
+need to radiate heat out. And there's a
+nice asymmetry in in the temperature
+because it's quite cold up there. So
+that's actually good for radiation for
+radiating this out. So that is basically
+what he's saying and I want to now give
+you the end summary and then we will
+discuss what mistake what deadly mistake
+Joseph made and also appreciate where he
+didn't make mistakes. So, let's watch
+what he has to say in the end of the
+video as a summary with his cute little
+dog.
+&gt;&gt; If someone tells you space data centers
+completely break the laws of physics, I
+think they're overselling it. But
+showing something is possible is a long
+way from showing it's cheaper than
+building it on Earth. The real radiators
+we've actually flown on the
+International Space Station perform
+worse than that ideal. A single rack of
+modern AI hardware puts out about as
+much heat as the space station's entire
+main cooling system was designed to
+handle. A gigawatt data center would
+need thousands and thousands of space
+stations worth of cooling. And to hit
+their own targets, SpaceX's planning
+numbers require entire satellites, solar
+panels, chips, radiators, structures,
+all of it to be much lighter for the
+power they handle than the space
+station's radiators are by themselves.
+The obvious response to all this is that
+the technology will get better, and I'm
+sure it will. But it's worth thinking
+about which improvements actually help
+where. Chips that do more computing per
+watt help data centers on Earth just as
+much as in space. Better cooling
+technology in general helps both too.
+The improvements that help space
+specifically are lighter radiators and
+cheaper launches. So the whole thing
+really comes down to a bet on rockets
+getting cheaper and radiators getting
+lighter. And meanwhile, the basic
+physics that makes cooling hard in space
+stays exactly the same. You can upgrade
+your rockets, but nobody gets to upgrade
+the Stefon Boltzman law. Now data
+centers on Earth have their own
+headaches. power lines, permits, and
+long waits to connect the grid. Those
+are slow and frustrating problems, and
+they're very real, but they're problems
+people can solve with paperwork and
+construction. Personally, I'd much
+rather deal with a permit office than
+with restrictive or possibly impossible
+thermodynamics.
+So, here you have it. That is Joseph's
+takeaway. And I want to make it very
+quick here, very quick this video
+because I think it is very important to
+understand what went wrong in his
+argument here. It's very easy what went
+wrong in this argument. We will go to
+the sheet while I'm talking. Well, we
+will stay maybe with him because we want
+to see uh what he is actually we want to
+keep Joseph in mind uh when we actually
+discuss this. Uh, Joseph committed one
+big mistake here and we will see in a
+second what I mean with this. Joseph is
+a physicist. He is a scientist. He
+outlined the entire physics
+approximately correctly. The physics he
+outlined was completely correct. We see
+that his solar panel efficiency is a
+little incorrect but not by a large
+margin. That's not his fault. He's not
+an engineer. He's not a solar panel
+expert. So, he got a little wrong how
+efficient the solar panels are. that but
+this cuts his uh square space uh
+requirement just in half. So he's
+directly okay with the radiators. He's
+spot on. It's exactly right. And so what
+is his problem? He said that Elon's and
+SpaceX's assumptions for this entire
+operation are hinging on rockets getting
+much cheaper and on this whole thing
+becoming more efficient. But he never
+explained why he's saying that. That is
+actually not true.
+He actually said it is much more
+expensive to build this in space than on
+Earth. But he never in his video
+outlined what the costs actually are.
+And that is one of the key fallacies
+that I see again and again why
+scientists tend to excuse me suck at
+this kind of stuff because scientists do
+not understand the fundamental first
+principle of reality. And that
+fundamental first principle of reality
+is money. No one cares if this is heavy.
+No one cares if it's 11,000 space
+stations you need to transport into
+orbit. The only thing that counts is is
+it cheaper than on Earth? Because at the
+millisecond where it's cheaper than on
+Earth, you can transport a quadrillion
+tons into orbit. It doesn't matter. The
+question is, is it cheaper to build it
+in orbit? So let's dive into a very
+short and concise model here that will
+show you exactly what the economics of
+this whole thing are. And maybe you
+thought when I when you saw the video
+that I'm going to attack his physics,
+but no, I'm going to not do that because
+his physics are correct. He is saying
+for a 120 kilowatt satellite, you need a
+thousand square meters of solar array.
+Okay, that's roughly you can you can
+look it up but well he actually says he
+actually says in the video it's seven
+tons roughly seven tons that's what he's
+saying. uh he's also talking about
+cooling right cooling is about one ton
+by the way if you have a 100 square
+meters so that's very easy to research 7
+tons he says which is a little incorrect
+and uh but it doesn't matter and one ton
+for cooling I then added myself the
+compute NVL rack that is roughly 1.5
+tons for a total of 9.5 tons okay and
+I'm actually very very like lenient here
+on the math as you'll see in a second I
+actually overestimated a little bit.
+Uh I'm then computing for Star Mind 240
+KOW and I double this whole thing
+because this is 120 kilow. This is this
+is very lenient of me because Starmine
+will actually have uh not twice the
+compute weight. It will have the same
+compute weight. So I I basically added
+1.5 tons here even though I don't need
+to. Okay. So, a StarMine satellite 19
+tons or the 120 kilowatt uh satellite
+9.5 tons. Okay, there you have it. Now,
+I did some research with Grock. Grock
+confirms that cooling is roughly 100
+square meters. So, we are one-on-one
+with Joseph here on the solar panels.
+Grock says this is not correct on two
+fronts. First of all, it's half the
+size. You don't need a thousand to get
+to that. It's new solar panels. It's the
+satellite solar panels they have
+improved. So he got the numbers a little
+wrong. I think it doesn't matter if you
+will see in a second. I will use both of
+these metrics to see what the economics
+actually would be. And you can tell this
+is just half the weight. The weight is
+also much lower says Grock then he
+assumes maybe he's looking at the ISS
+panels which are super old. Of course
+solar has done tremendous advancements.
+Of course, Joseph probably doesn't know
+the latest SpaceX technology, which is
+like 30 years ahead of the ISS because
+the ISS is from the 70s. So, it's not
+it's 50 years ahead. So, a lot of things
+have improved. So, seven tons become 1.7
+tons. You will see that doesn't make a
+big difference actually because compute
+adds up and so on and so forth. So, in
+the end, we are ending up with 9.5 tons
+versus 4.2 tons for one of these
+satellites. Okay. Now Starmind a Star
+satellite is twice the size. So we have
+19 tons versus 8 tons. When you
+extrapolate the whole thing to compute a
+gigawatt in space you need to multiply
+that accordingly. Right? Uh you can
+actually see here this is not very hard
+to do. If you actually divide here this
+number by 1 million kilowatts by this
+number then you see how many satellites
+you actually need. you need to get 4,166
+star satellites into space or twice the
+number to be more precise of the
+satellites he computed. I think he would
+agree with this math. That is very
+simple. So 8,300 of these satellites.
+Now Joseph does not discuss anything
+that I will discuss going further down
+from here which is the big flaw in his
+video. He talks about stocks. He talks
+about valuations, but he never mentions
+how he gets to the valuation of SpaceX,
+why he thinks it's overvalued, and he
+never actually provides a head-to-head
+comparison of the dollar cost of
+terrestrial data centers of 1 gawatt
+versus space. So the video is much to do
+about nothing if you can't deliver that
+clear math because in the end it is it
+comes down to the question is it cheaper
+to build this stuff in space or not. So
+here's what I'm going to do. Here's what
+I'm going to do. Efficient as we always
+are. I will just present to you the math
+and you can judge for yourself. Here is
+the key thing that you have to
+understand. What is the dollar cost per
+kilogram to orbit based on Starship? And
+Starship is already functional. You have
+seen that Starship has already delivered
+commercial satellites to space. So this
+thing works. 150 tons by the way per
+lift. So that gives you a first feel for
+what's going on. Joseph said, "This is
+all insane. Who can transport all that
+stuff? These are thousands of space
+stations of weight you would have to get
+into space for a gigawatt." And Joseph
+is completely right. Yes, you would have
+to deliver thousands of ISS space
+stations into space to get a gigawatt
+into space. What he doesn't understand
+is that this is actually not a problem
+anymore because of this number USD US
+dollars per kilogram. Let's make this
+even more clear here even though it's
+already there but just so you understand
+in 2027 that is next year the dollar
+cost per kilogram even with very limited
+reusability with no reusability of
+Starship only reusability of the booster
+will be around $500 per kilogram maybe
+that's cheaper than you thought because
+currently Falcon is at 2500 or $2,000
+depending no one knows exactly but 2,000
+to $2,500 per kilogram so five times
+more expensive. We bring down the cost
+for 1 kilogram to orbit up down to $500.
+By 2028, because of reusability, this is
+projected to go down to 300. And by
+2029, 2030 to $200. So, I'm now going to
+compute the cost of getting a gawatt
+space including everything using this
+formula. Okay, here comes the trick. We
+simply calculate these costs. And and
+here comes the stunning revelation.
+Even with $227 costs for a kilogram to
+orbit with a current Starship iteration,
+there is no optimization required. That
+thing flies. It's not commercial yet. It
+did the first commercial flight for
+commercial delivery of satellites, but
+it was still a test flight. they will
+have more test flight. But there is no
+one that doubts that next year we are
+getting to the $500 per kilogram cost.
+And how does this translate with his own
+numbers? With his own numbers, it gets
+to $40 billion per gigawatt. It cost you
+$40 billion of launch costs to get that
+stuff into orbit. And that's very
+lenient what I did here, by the way. So
+yeah, there's also manufacturing cost,
+but that's very marginal for these
+satellites.
+because it does not include compute. We
+will get to this in a second. So, it
+cost you 40 billion to get this stuff
+into orbit. But in 2028, it only cost
+you 24 billion. And in two in 2029,
+2030, maybe 2031, it cost you $16
+billion to get a gigawatt transported
+into orbit. And that includes
+installation everything because there's
+no installation. You just go to orbit
+and you release the satellites that
+self-organize. that is already be being
+done tens of thousands of times or
+thousands of times over 10,000 times
+with Starlink. The exact same technology
+in terms of connectivity and
+constellation. So there is no doubt here
+this technology exists.
+How does this compare? So first of all
+let's add the compute cost. The compute
+cost is roughly $20 billion per gawatt.
+That is currently the compute cost on
+Earth and will be very similar in space.
+It's coming down a little bit, but
+something like that. 20 billion is what
+the industry right now uses. And you're
+getting to $60 billion for a gigawatt in
+space, including the compute costs. My
+calculation here does not include the
+solar manufacturing cost and the
+radiator manufacturing cost, but that's
+a couple of billion. It's like marginal
+rounding errors. It then goes down to 44
+billion and then goes down to 36
+billion. Now, you might ask, Joe, I have
+no idea what that means. Is that good?
+Is that bad? Is it a catastrophe? Does
+it show that SpaceX is totally a dead
+business? Remember, we did not introduce
+any additional assumptions here. We
+accepted Joseph's physics. We accepted
+Joseph's calculation one to one right
+now. Well, let's scroll to the right
+side. And here you see the important
+data. That is the cost, the current
+cost, look it up, of a terrestrial 1
+gawatt data center. It is 30 billion in
+buildout
+without compute and it's $50 billion
+with compute. So if you want to build a
+data center in Texas or in Ohio or in
+China, it doesn't matter. With that
+level of compute in here, Nvidia, Vera,
+Ruben chips,
+it cost you $50 billion.
+And once you spend the 50 billion, you
+have to pay for lease, you have to pay
+for electricity, you have to pay for
+maintenance, which is a lot of money.
+That's a billion per year roughly that
+you don't have in space. And that adds
+up. That's 10 billion on top of it over
+10 years. Let's say 5 billion over five
+years because let's assume it only runs
+five years. So you're competing with a
+$50 billion buildout cost and even with
+PhDs Joseph's assumptions you're already
+getting below that number in 2028 here
+without any crazy assumption because
+everyone would agree to that who knows
+anything about Starship. This is a done
+deal. So even with Joseph's assumption
+we are getting to total costs here of 44
+billion versus 50 billion. That means in
+2028, in 2028, it becomes cheaper to
+build a gigawatt compute in space,
+including compute and everything, than
+on Earth. Let that sink in. You don't
+have permits. You don't have
+maintenance. You don't have ongoing
+costs. You can start immediately once
+you have your satellites manufactured
+and that's it. You just need to book a
+bunch of Starship flights. You can
+easily do the math by the way. If you
+have uh if you have uh where are the
+total tons here? If you have 79,000
+tons, right? You just divide that by the
+famous let's say 200. We'll get 200 very
+quickly. 200 tons. That is a Starship
+flight. And you need 395 flights. 395
+flights and you have your gigawatt in
+space. 395 flights and you pay an easy
+40 billion to SpaceX or maybe 24
+billion, right? In 2028. 24 billion you
+get 400 flights everyone is very happy
+and that is what Joseph forgot to do. If
+all his assumptions are right it still
+means that orbital compute will be $6
+billion cheaper in two years. Cheaper in
+two years in 18 months. Cheaper than
+building this on Earth. Not even
+accounting for the time delays, the
+permits and the ongoing costs. And now,
+guess what? I think Joseph is wrong, and
+I could prove that out, but I don't want
+to be that guy. He is wrong on the solar
+panel costs and size and weight. He's
+right on the physics, he's wrong on the
+material costs and the current state of
+technology, right on the radiators,
+wrong on solar, which makes us even
+cheaper because instead of paying 24
+billion, you might only pay 11 billion.
+And then with compute, you're dealing
+with a $31 billion buildout cost for a
+gigawatt in space compared to $50
+billion. This is with compute in space.
+You have a $20 billion potential
+advantage here. Or let's say, let's be
+conservative. Let's make it a $15
+billion advantage. It doesn't matter.
+Even if it's a $0 advantage is the same
+price everyone goes to space. So here
+we're dealing with tens of billions in
+advantages in space, not in the distant
+future, but on current technology. And
+by Q4 2027 that is in four quarters we
+will have actually the satellite
+prototype or the satellite not the
+prototype the commercial version from
+Nvidia and SpaceX co-designed NVL72 rack
+space and then we will see this happen
+and this is why the criticism that
+Joseph is leveling here is not thought
+through. Sorry Joseph, you're a smart
+guy. You're an astrophysicist. You got
+the physics right. You got the economics
+not wrong. You didn't even present it.
+You did not provide a head-to-head
+comparison of data center cost on Earth
+versus SpaceX. Once you understand
+launch costs, Starship situation, and
+you understand the cost of compute and
+the cost of building a data center, you
+see orbital compute is not just possible
+physically. It's not just attractive
+economically. It is inevitable to be
+launched at massive scale within the
+next 18 to 24 months. That is the reason
+why people are so bullish on SpaceX and
+why the best banks, the best analysts,
+Gavin Baker, Yansen Hang, Google, why
+everyone is betting on SpaceX because
+guess what? They also have physics PhDs
+and more importantly they have tons of
+engineers and they have some very smart
+finance guys and the entire industry
+knows the secret. Joseph is wrong with
+what he implies. right on physics, wrong
+on the economics.
+And that is why SpaceX is the most
+bullish buy on Earth. No pun intended. I
+hope this was interesting. No offense,
+Joseph. I think you did a great job on
+the physics and it was a great video.
+Thank you so much and see you very soon.
