@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM, CLI_SUMMARIES_ENABLED } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM, CLI_SUMMARIES_ENABLED, CLI_DAILY_CAP } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 import { loadStockBlock, getStockBlock } from './stock-data.js';
 import { completeViaCli } from './llm-cli.js';
@@ -600,6 +600,18 @@ async function runCliLocked() {
   console.log(`Found ${transcripts.length} transcript(s) needing summaries`);
   if (transcripts.length === 0) return;
 
+  // Daily cap protects the Pro quota shared with Alfred; overflow goes to the API path.
+  const usedToday = cliSummariesToday();
+  const allowed = Math.max(0, CLI_DAILY_CAP - usedToday);
+  if (allowed === 0) {
+    console.log(`Daily CLI cap reached (${usedToday}/${CLI_DAILY_CAP} today, UTC) - leaving transcripts for the API path.`);
+    return;
+  }
+  if (transcripts.length > allowed) {
+    console.log(`Daily CLI cap: ${usedToday}/${CLI_DAILY_CAP} used today, summarizing ${allowed}; the other ${transcripts.length - allowed} go to the API path.`);
+  }
+  const batch = transcripts.slice(0, allowed);
+
   // No silent quality loss: the API path gets the price table from the GitHub
   // runners, so if the Mac Mini cannot fetch it, let the API path do the work.
   await loadStockBlock();
@@ -609,7 +621,7 @@ async function runCliLocked() {
   }
 
   let done = 0;
-  for (const t of transcripts) {
+  for (const t of batch) {
     console.log(`\n  Processing: ${t.title}`);
     const prompt = buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily, isArticle: t.isArticle, author: t.author });
     try {
@@ -639,6 +651,14 @@ async function runCliLocked() {
     }
   }
   console.log(`\n=== CLI backend: ${done}/${transcripts.length} summarized, ${transcripts.length - done} left for the API path ===`);
+}
+
+function cliSummariesToday() {
+  if (!fs.existsSync(COSTS_CLI_FILE)) return 0;
+  let costs;
+  try { costs = JSON.parse(fs.readFileSync(COSTS_CLI_FILE, 'utf-8')); } catch { return 0; }
+  const today = new Date().toISOString().slice(0, 10);
+  return costs.filter(c => c.mode === 'cli' && typeof c.date === 'string' && c.date.startsWith(today)).length;
 }
 
 function logCliCost(entry) {

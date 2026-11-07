@@ -199,6 +199,12 @@ export const THINKING = { type: 'disabled' };
 // them exactly as before. Nothing on the Mac Mini needs to change to revert.
 export const CLI_SUMMARIES_ENABLED = true;
 
+// Max CLI summaries per UTC day (counted from costs-cli.json). The Claude Pro
+// quota is shared with Alfred, so a busy news day must not exhaust it: anything
+// over the cap is pushed raw and summarized by the API path as before. Added
+// 2026-11-07 at 15.
+export const CLI_DAILY_CAP = 15;
+
 // Pricing (per million tokens). Sonnet 5 INTRO pricing through 2026-08-31
 // ($2/$10 standard). FLIP to sticker $3/$15 (batch $1.50/$7.50) on 2026-09-01
 // or costs.json under-reports.
