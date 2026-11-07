@@ -107,12 +107,16 @@ function cardHtml(bodyHtml, cta) {
 function interviewCardHtml(iv) {
   const { name, role } = splitPerson(iv.person);
   const venue = venueShort(iv.venue);
-  const meta = [venue, iv.date && iv.date !== 'unknown' ? iv.date : null].filter(Boolean).join(' · ');
+  // The date is nowrap so a line break can never split it at a hyphen ("2026-11-" / "06").
+  const meta = [
+    venue ? esc(venue) : null,
+    iv.date && iv.date !== 'unknown' ? `<span style="white-space:nowrap">${esc(iv.date)}</span>` : null,
+  ].filter(Boolean).join(' · ');
   return cardHtml(`
     <div class="tag interview">[INTERVIEW]</div>
     <div class="person">${esc(name)}</div>
     ${role ? `<div class="role">${esc(role)}</div>` : ''}
-    <div class="meta">${esc(meta)}</div>`, 'READ THE SUMMARY');
+    <div class="meta">${meta}</div>`, 'READ THE SUMMARY');
 }
 
 // "Weekly Tesla Brief (Jun 22 – Jun 28, 2026)" → "Jun 22 – Jun 28, 2026"
