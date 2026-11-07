@@ -192,6 +192,13 @@ export const CORRECTIONS = {
 export const MODEL = 'claude-sonnet-5';
 export const THINKING = { type: 'disabled' };
 
+// Per-transcript summaries on the Mac Mini's Claude subscription (`claude -p`,
+// run.js with LLM_BACKEND=cli) instead of the metered API. Added 2026-11-07.
+// KILL SWITCH: set to false, commit, push. The Mac Mini's next run then summarizes
+// nothing and pushes transcripts raw, and the GitHub Actions API path summarizes
+// them exactly as before. Nothing on the Mac Mini needs to change to revert.
+export const CLI_SUMMARIES_ENABLED = true;
+
 // Pricing (per million tokens). Sonnet 5 INTRO pricing through 2026-08-31
 // ($2/$10 standard). FLIP to sticker $3/$15 (batch $1.50/$7.50) on 2026-09-01
 // or costs.json under-reports.

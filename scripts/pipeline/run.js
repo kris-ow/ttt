@@ -1,11 +1,25 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM, CLI_SUMMARIES_ENABLED } from './config.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 import { loadStockBlock, getStockBlock } from './stock-data.js';
+import { completeViaCli } from './llm-cli.js';
 
 const DIRECT_MODE = process.argv.includes('--direct') || process.env.PIPELINE_MODE === 'direct';
+
+// `api` (default, GitHub Actions): Batch or direct Messages API, as always.
+// `cli` (Mac Mini, since 2026-11-07): `claude -p` on the subscription, see runCli().
+const BACKEND = (process.argv.includes('--backend') ? process.argv[process.argv.indexOf('--backend') + 1] : process.env.LLM_BACKEND || 'api').toLowerCase();
+
+// The CLI backend never writes costs.json, state.json or extracted-facts.json.
+// Those are rewritten by the Actions bot on every run, so a second writer on the
+// Mac Mini would mean push conflicts. It writes only NEW files instead: its own
+// cost log (no other writer) and one facts file per summary in the inbox, which
+// the next Actions run merges into extracted-facts.json (ingestFactsInbox) so the
+// interview-lead issue still fires from Actions as before.
+const COSTS_CLI_FILE = path.resolve('scripts/pipeline/costs-cli.json');
+const FACTS_INBOX_DIR = path.resolve('scripts/pipeline/facts-inbox');
 
 const NEWS_DIR = path.resolve('news');
 const STATE_FILE = path.resolve('scripts/pipeline/state.json');
@@ -360,9 +374,9 @@ function parseResult(text) {
 
 // ── Summary File Writing ─────────────────────────────────
 
-function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens, { direct = false } = {}) {
+function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens, { direct = false, cli = false } = {}) {
   const pricing = direct ? PRICING_DIRECT : PRICING;
-  const cost = (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
+  const cost = cli ? 0 : (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
 
   const headerLines = [
@@ -372,9 +386,9 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
     ...(transcript.url ? [`URL:         ${transcript.url}`] : []),
     `Published:   ${transcript.published}`,
     `Summarized:  ${now}`,
-    `Model:       ${MODEL} [${direct ? 'direct' : 'batch'}]`,
+    `Model:       ${MODEL} [${cli ? 'cli' : direct ? 'direct' : 'batch'}]`,
     ...(batchId ? [`Batch ID:    ${batchId}`] : []),
-    `Cost:        $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens)`,
+    `Cost:        $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens${cli ? ', subscription' : ''})`,
   ];
   if (transcript.isXDaily) {
     headerLines.push(`Source:      X/@SawyerMerritt`);
@@ -458,17 +472,66 @@ function isDuplicateInterviewMention(fact, existing) {
   );
 }
 
+function loadExtractedFacts() {
+  if (!fs.existsSync(EXTRACTED_FACTS_FILE)) return [];
+  try { return JSON.parse(fs.readFileSync(EXTRACTED_FACTS_FILE, 'utf-8')); } catch { return []; }
+}
+
 function saveExtractedFacts(keyFacts, transcript) {
   if (!keyFacts || keyFacts.length === 0) return;
 
-  let existing = [];
-  if (fs.existsSync(EXTRACTED_FACTS_FILE)) {
-    try { existing = JSON.parse(fs.readFileSync(EXTRACTED_FACTS_FILE, 'utf-8')); } catch { existing = []; }
-  }
+  const existing = loadExtractedFacts();
+  const newFacts = screenFacts(keyFacts, transcript, existing);
+  if (newFacts.length === 0) return;
 
+  existing.push(...newFacts);
+  fs.writeFileSync(EXTRACTED_FACTS_FILE, JSON.stringify(existing, null, 2));
+  console.log(`  Saved ${newFacts.length} fact(s) to review queue`);
+}
+
+// CLI backend: screen now (watchlist, vague venue) but leave the duplicate check
+// to ingestion, which sees the real extracted-facts.json.
+function saveFactsToInbox(keyFacts, transcript) {
+  if (!keyFacts || keyFacts.length === 0) return;
+  const facts = screenFacts(keyFacts, transcript, []);
+  if (facts.length === 0) return;
+  fs.mkdirSync(FACTS_INBOX_DIR, { recursive: true });
+  fs.writeFileSync(path.join(FACTS_INBOX_DIR, transcript.summaryFilename.replace(/\.txt$/, '.json')), JSON.stringify(facts, null, 2));
+  console.log(`  Queued ${facts.length} fact(s) in facts-inbox/ for the next Actions run`);
+}
+
+// Actions (API backend): merge facts the Mac Mini queued, then delete the inbox
+// files. Runs inside the "Run summary pipeline" step, i.e. after the workflow's
+// before-count, so the interview-lead issue picks these up as this run's new leads.
+function ingestFactsInbox() {
+  if (!fs.existsSync(FACTS_INBOX_DIR)) return;
+  const files = fs.readdirSync(FACTS_INBOX_DIR).filter(f => f.endsWith('.json'));
+  if (files.length === 0) return;
+
+  const existing = loadExtractedFacts();
+  let added = 0;
+  for (const file of files) {
+    const full = path.join(FACTS_INBOX_DIR, file);
+    let facts = [];
+    try { facts = JSON.parse(fs.readFileSync(full, 'utf-8')); } catch { console.log(`  Warning: unreadable facts-inbox/${file}, discarded`); }
+    for (const f of facts) {
+      if (f.type === 'interview_mention' && isDuplicateInterviewMention(f, existing)) {
+        console.log(`  Skipping duplicate interview mention: ${f.person} @ ${f.venue}`);
+        continue;
+      }
+      existing.push(f);
+      added++;
+    }
+    fs.unlinkSync(full);
+  }
+  fs.writeFileSync(EXTRACTED_FACTS_FILE, JSON.stringify(existing, null, 2));
+  console.log(`Ingested ${added} fact(s) from ${files.length} facts-inbox file(s)`);
+}
+
+function screenFacts(keyFacts, transcript, existing) {
   const wl = loadWatchlist();
   const dcfEnabled = wl.dcf_enabled !== false;
-  const newFacts = keyFacts
+  return keyFacts
     .filter(f => (dcfEnabled && f.type === 'dcf_input') || (f.type === 'interview_mention' && f.person && f.venue))
     .filter(f => {
       if (f.type !== 'interview_mention') return true;
@@ -493,17 +556,115 @@ function saveExtractedFacts(keyFacts, transcript) {
       extractedAt: new Date().toISOString(),
       status: 'pending',
     }));
+}
 
-  if (newFacts.length === 0) return;
+// ── CLI backend (Mac Mini) ──────────────────────────────
 
-  existing.push(...newFacts);
-  fs.writeFileSync(EXTRACTED_FACTS_FILE, JSON.stringify(existing, null, 2));
-  console.log(`  Saved ${newFacts.length} fact(s) to review queue`);
+// Summarizes on the Claude subscription. Anything it does not finish (kill switch
+// off, no stock grounding, CLI error, usage limit) is simply left without a
+// summary: the Mac Mini pushes the transcript anyway, and the Actions API path
+// summarizes it exactly as before. So the CLI can only ever SAVE money; when it
+// fails the fallback is today's pipeline, never a gap.
+async function runCli() {
+  if (!CLI_SUMMARIES_ENABLED) {
+    console.log('CLI summaries are switched off (CLI_SUMMARIES_ENABLED in config.js) - leaving transcripts for the API path.');
+    return;
+  }
+
+  // Overlap guard: the hourly monitor and ad-hoc downloads can both call this on
+  // the Mac Mini, and two runs would summarize the same transcript twice. mkdir is
+  // atomic; a lock older than the worst-case run is a crashed run's leftover.
+  const LOCK_DIR = path.resolve('scripts/pipeline/.cli-lock');
+  try {
+    fs.mkdirSync(LOCK_DIR);
+  } catch {
+    const ageMin = (Date.now() - fs.statSync(LOCK_DIR).mtimeMs) / 60000;
+    if (ageMin < 90) {
+      console.log(`Another CLI run holds the lock (${ageMin.toFixed(0)}m old) - leaving this run's transcripts to it or the API path.`);
+      return;
+    }
+    console.log(`Removing stale CLI lock (${ageMin.toFixed(0)}m old)`);
+    fs.rmSync(LOCK_DIR, { recursive: true, force: true });
+    fs.mkdirSync(LOCK_DIR);
+  }
+  try {
+    await runCliLocked();
+  } finally {
+    fs.rmSync(LOCK_DIR, { recursive: true, force: true });
+  }
+}
+
+async function runCliLocked() {
+  console.log('\n=== Scanning for unsummarized transcripts (CLI backend) ===');
+  const transcripts = findUnsummarizedTranscripts();
+  console.log(`Found ${transcripts.length} transcript(s) needing summaries`);
+  if (transcripts.length === 0) return;
+
+  // No silent quality loss: the API path gets the price table from the GitHub
+  // runners, so if the Mac Mini cannot fetch it, let the API path do the work.
+  await loadStockBlock();
+  if (!getStockBlock()) {
+    console.log('Stock grounding unavailable from this machine - leaving transcripts for the API path.');
+    return;
+  }
+
+  let done = 0;
+  for (const t of transcripts) {
+    console.log(`\n  Processing: ${t.title}`);
+    const prompt = buildPrompt(t.channel, t.title, t.transcript, t.published, { isXDaily: t.isXDaily, isArticle: t.isArticle, author: t.author });
+    try {
+      const r = await completeViaCli(prompt, { model: MODEL });
+      const parsed = parseResult(r.text);
+      if (!/<summary>/.test(r.text)) throw new Error('response has no <summary> block');
+      writeSummaryFile(t, parsed, null, r.inputTokens, r.outputTokens, { cli: true });
+      saveFactsToInbox(parsed.keyFacts, t);
+      logCliCost({
+        date: new Date().toISOString(),
+        filename: t.filename,
+        title: t.title,
+        channel: t.channel,
+        mode: 'cli',
+        inputTokens: r.inputTokens,
+        outputTokens: r.outputTokens,
+        cost: 0,
+        apiEquivalentUsd: Number(r.listCostUsd.toFixed(6)),
+      });
+      done++;
+    } catch (err) {
+      console.log(`  CLI FAILED: ${err.message} - left for the API path`);
+      if (err.limit) {
+        console.log('  Subscription usage limit reached - stopping; the rest go to the API path.');
+        break;
+      }
+    }
+  }
+  console.log(`\n=== CLI backend: ${done}/${transcripts.length} summarized, ${transcripts.length - done} left for the API path ===`);
+}
+
+function logCliCost(entry) {
+  let costs = [];
+  if (fs.existsSync(COSTS_CLI_FILE)) {
+    try { costs = JSON.parse(fs.readFileSync(COSTS_CLI_FILE, 'utf-8')); } catch { costs = []; }
+  }
+  costs.push(entry);
+  fs.writeFileSync(COSTS_CLI_FILE, JSON.stringify(costs, null, 2));
+  console.log(`  Subscription call: ${entry.inputTokens} in / ${entry.outputTokens} out (API list price would be $${entry.apiEquivalentUsd.toFixed(4)})`);
 }
 
 // ── Main Pipeline ────────────────────────────────────────
 
 async function main() {
+  if (BACKEND === 'cli') {
+    await runCli();
+    return;
+  }
+  if (BACKEND !== 'api') {
+    console.error(`Unknown backend '${BACKEND}' (expected api or cli)`);
+    process.exit(1);
+  }
+
+  ingestFactsInbox();
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     console.error('ANTHROPIC_API_KEY environment variable is required');

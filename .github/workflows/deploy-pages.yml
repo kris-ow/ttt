@@ -13,6 +13,8 @@ on:
       - 'scripts/pipeline/heartbeat.json'
       - 'scripts/pipeline/state.json'
       - 'scripts/pipeline/costs.json'
+      - 'scripts/pipeline/costs-cli.json'
+      - 'scripts/pipeline/facts-inbox/**'
       - 'news/**'
   workflow_dispatch:
 

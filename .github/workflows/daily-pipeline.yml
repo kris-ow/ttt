@@ -338,7 +338,10 @@ jobs:
         run: |
           git config user.name "TTT Pipeline Bot"
           git config user.email "pipeline@theteslathesis.com"
-          git add news/ src/data/news.json scripts/pipeline/state.json scripts/pipeline/costs.json scripts/pipeline/extracted-facts.json data/reddit-weekly/ public/og/ 2>/dev/null || true
+          # facts-inbox/ (kept alive by .gitkeep, since one missing pathspec makes the
+          # whole `git add` fail): run.js deletes the Mac Mini's queued fact files once
+          # it merges them into extracted-facts.json, and those deletions must ship too.
+          git add news/ src/data/news.json scripts/pipeline/state.json scripts/pipeline/costs.json scripts/pipeline/extracted-facts.json scripts/pipeline/facts-inbox/ data/reddit-weekly/ public/og/ 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new summaries to commit"
             echo "has_changes=false" >> "$GITHUB_OUTPUT"

@@ -23,6 +23,10 @@ __pycache__/
 !scripts/pipeline/costs.json
 !scripts/pipeline/state.json
 !scripts/pipeline/heartbeat.json
+# CLI backend (Mac Mini): its own cost log + per-summary fact files for Actions to ingest
+!scripts/pipeline/costs-cli.json
+!scripts/pipeline/facts-inbox/*.json
+scripts/pipeline/.cli-lock/
 !news/transcripts_url_index.json
 
 # Quarterly PDF source data (root-level only — don't match nested src/components/Data/ etc.)
