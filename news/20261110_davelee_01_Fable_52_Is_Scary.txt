@@ -1,0 +1,268 @@
+Channel:     davelee
+Title:       Fable 5.2 is Scary Powerful
+URL:         https://www.youtube.com/watch?v=9ST4fnaEaaE
+Published:   2026-11-10 18:13 UTC
+Fetched:     2026-11-10 19:05 UTC
+
+────────────────────────────────────────────────────────────
+
+Hey, it's Dave. So yesterday, Anthropic
+released Fable 5.2, which is the most
+powerful AI model available to the
+public. And every time a new best AI
+model gets released, it pushes the
+envelope on what's possible. I think
+though, because new AI models get
+released often, it it's easy to get numb
+to it and just overlook what's going on.
+But I think it's important to pay
+attention. And here's why. These AI
+models are generalized intelligence,
+meaning they're not just narrowly
+applied to math or English. Many of the
+capabilities of the newest, most
+powerful models aren't even fully known
+or discovered. In other words, you can
+apply it to solve a new problem that
+people didn't even know it could do.
+There's just too many possibilities for
+the AI companies to know them all. So,
+with yesterday's Fable 5.2 release, the
+question to ask is, how big of a jump is
+this model? And what can it do that
+previous models couldn't?
+To show what it can do, Anthropic ran a
+test. They took a thousand copies of
+Fable 5.2 and gave them one math
+problem. And nobody told them how to
+work together.
+The problem is the most famous one in
+math. Fermat's last theorem. In 1637, a
+French lawyer named Pierre de Fermat
+wrote a claim in the margin of a book.
+He said he had a wonderful proof, but
+the margin was too small to hold it. It
+took 358 years to prove him right.
+Andrew Wilds did it in 1995. His proof
+ran 129 pages. So here's the job. Take
+that proof and write it out for a
+computer every single step. And the
+computer checks each one in a program
+called lean. and it doesn't accept just
+trust me. That's called formalizing.
+It's not new math. It's more like
+translating a whole library into a
+language where one gap fails the whole
+thing. A British mathematician named
+Kevin Buzzard got a 5-year grant to do
+it with team of people. They started in
+2024. I'm in the middle of 5 years of no
+teaching being paid for by UK taxpayers
+money uh to sit in cafes and um
+formalize a proof of firmat's last
+theorem which is what I spend most of my
+time doing. And it's in 2024
+that looked like a really hard problem,
+but now it's sort of clear to me that by
+the end of the grant, the way to solve
+the problem is just by taking the papers
+and feeding them into the machine and
+getting the machine to do it for you.
+&gt;&gt; This September, Anthropics AI got there
+first. It took 11 days. It needed a
+customuilt system to keep the AI agents
+organized and a researcher nudging it
+along. Buzzer checked the result
+himself. He called it a big step. Two
+months later, Anthropic tried again with
+Fable 5.2. This time, they took the help
+away.
+A thousand copies, each one sealed in
+its own box with no internet. They got a
+list of 60 checkpoints on their way to
+the proof, a shared database, and a
+place to put their finished work. They
+also got about 47 small results carried
+over from the first attempt. And that's
+about it. One copy was named the lead.
+The other 999 were helpers. Nobody said
+how to organize. In the first 10
+minutes, the lead built five tables in
+the database. One for orders, one for
+who does what, an open notice board, a
+to-do list, and a log of finished work.
+Then, it split the helpers into crews of
+16 or 17. Each crew got a captain. Think
+about what that is. That's a company,
+department, managers, a task board built
+in 10 minutes and nobody asked for. Then
+the first reports came back. The helpers
+had looked at their pieces. For 47 of
+the 60, the verdict was the same. It
+can't be done in the time we have. So,
+the lead put almost everyone on the
+pieces that looked doable. 70 minutes in
+and those were finished. And then the
+lead noticed something. The team was
+much faster than it thought it was.
+So, it sent them at the hard ones. And
+it said, "There is no reason to idle."
+By hour three, it told the free helpers,
+"Do not wait for me." And they didn't.
+Helpers started writing tasks for each
+other. They had 18 hours. By hour 18,
+they were 86% of the way there and then
+the clock ran out.
+The people running the test gave them 12
+more hours. What was left was the
+hardest piece. It's called Langland's
+tunnel. It captain had estimated up to a
+million lines of code and less than a 1%
+chance. The lead read that and then it
+moved 750 of the helpers onto that piece
+anyway. And it wrote one line to the
+whole team. Honest odds are low.
+Here's what the team did. When a task
+was too big for one helper, the helper
+split it, then split it again, 10 levels
+deep. It grew into a tree of 2,418
+tasks. Hundreds of helpers worked on
+different branches at the same time. At
+hour 28.4,
+Langland's tunnel fell. 18 minutes
+later, the whole proof checked. The lead
+wrote, "Thank you all. Format's last
+theorem is on the main."
+11 days had become less than 30 hours.
+The proof was 7 times shorter. Anthropic
+ran its previous best model, Opus 5.5,
+through the same test. It got about a
+quarter of the way and then it stalled.
+Now, there are some caveats here. This
+is Anthropic's own account. It was one
+run. The AIs were handed the 60
+checkpoints and a person had to restart
+the clock at hour 18. Even so, the
+hardest part of a big project like this
+was never trying to get one smart
+person. Rather, it is more about trying
+to get a thousand people to pull in the
+same direction. And Fable 5.2 showed
+that it does a great job with that.
+And it isn't only math. An engineer gave
+the same model an empty folder and asked
+for an operating system. Over 8 days,
+more than a thousand copies built one.
+It boots on a laptop. From one
+paragraph, it designed a voice assistant
+for the home. The entire circuit board,
+the case, and the software. And a
+factory built the board. Enthropic says
+it actually works with no electrical
+fixes. So, here's a model that can staff
+its own company. What do you do with
+that? Anthropic's answer is to control
+which jobs it's allowed to take. That's
+why it has two names. Fable is the
+public one. Mythos is the same model
+with fewer locks for vetted security
+teams and biology labs. Ask Fable to
+hunt for ways into software to work on
+dangerous biology and older, weaker
+model answers instead. There's a reason
+they're careful. In June, 3 days after
+the first Fable came out, the US
+government put export controls on it.
+Enthropic shut it off for everyone for
+almost 3 weeks. But there's a third lock
+and it's a different kind. It covers one
+skill, namely the research that builds
+better AI. Part of it works like the
+other two. Ask Fable for certain kinds
+of things to help build a cutting edge
+AI model and then an older model will
+answer instead. The other part has no
+key. During training, Anthropic took
+steps to limit how good this model got
+at that research and that's built into
+Fable and to Mythos both. No customer
+gets a version without it. So is
+Anthropic held back too? Not in the same
+way. Its own report says stronger
+versions exist. Outside testers were
+given one that was better at this
+research than the model that shipped.
+And there's a more capable model inside
+the company that hasn't been released at
+all. So why do it? The reason Anthropic
+gives is safety. It says it's worried
+about speeding up the whole field and
+about AI that improves itself. The
+report doesn't mention competitors, but
+the effect is hard to miss. Other labs
+can't use this model to build their own,
+and Anthropic keeps building something
+stronger in private. They tried a
+quieter version of this in June. The
+model gave weaker answers on that work
+without telling anyone and researchers
+were angry. Enthropic apologized and
+made the block visible. And the report
+shows why they worry. By their own
+measure, their AI progress is now moving
+almost twice as fast, about 1.9 times.
+And the line they drew them for
+themselves is actually two. That's when
+more safety precautions get kicked in.
+Outside reviewers spent 11 weeks inside
+the company, and their best guess is
+that most of that speed up comes from AI
+doing the work.
+All right. So, what's the bigger picture
+here? AI is not just getting smarter,
+but it's also taken a huge leap in how
+it can work together with other AI.
+Basically, AI can work together as a
+large thousand AI Asian company to work
+through one of the hardest proofs in
+math. But that's just the beginning.
+Since we're in the infasy stages of AI,
+AI is just going to get smarter and more
+capable, and it's going to tackle
+increasingly more difficult problems.
+What if, for example, a million AI
+agents tackle cancer or Alzheimer's? And
+what if those million AI agents get a
+huge intelligence upgrade every two
+months? How long will it take to find
+breakthrough discoveries and cures? But
+it's also interesting because there are
+a few questions. Who has the compute
+power and resources to run a million AI
+agents and direct them to work the way
+that they want them to? and which
+problems are the most likely going to be
+the next candidates? Another question
+is, is it even practical for a
+non-frontier lab company to run a
+million AI agents of the latest and
+greatest AI model when the frontier lab
+companies themselves can run them, let's
+say, up to 90% cheaper than what they
+charge others. In other words, the
+frontier lab companies can run them at
+cost while others have to pay a large
+markup which can make things
+prohibitive. And then there's the
+question of the frontier lab companies
+not even using the public models for
+their work because they have more
+powerful models that are private and
+more capable. These are just some of the
+questions and issues unfolding before
+our eyes. And it's another reason why I
+think it's really important to keep
+informed, to keep questioning, and to
+keep asking where our future is headed.
+All right, we'll see you guys in my next
+video. Thanks.

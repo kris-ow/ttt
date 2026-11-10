@@ -1,0 +1,27 @@
+Channel:     davelee
+Title:       Fable 5.2 is Scary Powerful
+URL:         https://www.youtube.com/watch?v=9ST4fnaEaaE
+Published:   2026-11-10 18:13 UTC
+Summarized:  2026-11-10 19:06:09 UTC
+Model:       claude-sonnet-5 [cli]
+Cost:        $0.00000 (13191 in / 1453 out tokens, subscription)
+Relevance:   tangential — the video is entirely about Anthropic's Fable 5.2 AI model and general AI capability progress, with no substantive discussion of Tesla or SpaceX business, products, or thesis.
+Topic:       none
+Categories:  Market & Competition
+────────────────────────────────────────────────────────────
+
+This video from channel "davelee" covers Anthropic's release of its Fable 5.2 AI model, focusing on a demonstration in which 1,000 copies of the model self-organized to formalize a machine-checkable proof of Fermat's Last Theorem, plus other capability demos (building an operating system, designing a working voice-assistant circuit board) and Anthropic's internal safeguards on the model's most powerful capabilities. The video contains no discussion of Tesla, SpaceX, or their investment theses — it is a general AI-industry piece, included here only because the channel sometimes covers Tesla-adjacent AI topics.
+
+## Market & Competition
+1. **Fable 5.2 formalizes a famous math proof via mass AI collaboration:** Anthropic had 1,000 isolated copies of Fable 5.2, with no internet access, self-organize (one "lead" copy assigning work to crews of helpers) to formalize Andrew Wiles's proof of Fermat's Last Theorem in the Lean verification system. The task was completed in under 30 hours (after an initial 18-hour window plus a 12-hour extension), versus 11 days for a prior attempt in September using the same model with researcher assistance, and versus 358 years since the theorem was originally conjectured in 1637. The resulting formal proof was reportedly 7 times shorter than the earlier version. Anthropic's previous model, Opus 5.5, only got about a quarter of the way through the same test before stalling, per Anthropic's own account (one run, with human-provided checkpoints and a human-restarted clock).
+2. **Other demonstrated capabilities:** Per the same Anthropic account, more than 1,000 copies of the model built a working operating system from an empty folder over 8 days, and the model designed a complete voice-assistant device (circuit board, case, and software) from a single paragraph prompt, with a factory-built board reported to work with no electrical fixes needed.
+3. **Anthropic restricts the model's own AI-research capability:** Fable 5.2 (public version) and Mythos (a less-restricted version for vetted security/biology teams) both have built-in limits — imposed during training — on the model's ability to assist with building better AI, a restriction Anthropic says has no "key" to unlock and applies even to internal use; outside testers were reportedly given a version better at this research than what shipped, and an even more capable unreleased internal model exists. Anthropic states the limitation is for safety reasons tied to concerns about AI self-improvement and accelerating the field; by its own measurement, AI progress is now moving roughly 1.9 times faster than its baseline, approaching a self-defined threshold of 2x that would trigger additional safety precautions.
+4. **Export-control history:** The video notes that in June, U.S. export controls were imposed on the first Fable model three days after its release, prompting Anthropic to disable it for all users for almost three weeks.
+
+Notable quotes and data:
+- "I'm in the middle of 5 years of no teaching... formalize a proof of Fermat's last theorem" — mathematician Kevin Buzzard, describing a 5-year grant (started 2024) to formalize the proof manually.
+- 1,000 isolated copies of Fable 5.2, no internet, given 60 checkpoints and ~47 prior partial results; proof completed in under 30 hours (after 18+12 hour windows).
+- "Langland's tunnel" sub-task: captain estimated up to a million lines of code needed and under 1% chance of success before 750 helpers were assigned and it was solved at hour 28.4.
+- Opus 5.5 (Anthropic's prior model) reached only ~25% completion on the same formalization test before stalling.
+- AI progress speed, per Anthropic's internal measure: ~1.9x baseline, against a self-set 2x threshold for added safety measures.
+- Outside reviewers spent 11 weeks inside Anthropic and estimated most of the measured speed-up comes from AI doing the work itself.
