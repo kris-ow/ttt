@@ -1,0 +1,522 @@
+Channel:     farzad-fm
+Title:       Why Tesla Is Building A School For Robots
+URL:         https://www.youtube.com/watch?v=DN65xc1AWAk
+Published:   2026-11-11 20:00 UTC
+Fetched:     2026-11-12 00:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla is building a school for robots.
+Yes.  I think this tells us something
+very important about Optimus.  Creating a
+robot is not something that happens only
+after solving AI problems in the “brain.”
+Building a robot is part of how you
+solve AI problems.  You need the
+machine to try, make mistakes, and provide
+information that will make the next attempt
+much better.  So as we look at the
+first robots coming off the assembly line, the question is not
+just how many Tesla can sell
+or manufacture, but how much these
+robots can teach the entire system.
+During Tesla's earnings conference on October 21,
+Elon spoke about the Optimus Academy and
+said that the company needs approximately
+10,000-20,000 robots to gain
+training experience.  Ashok described
+the process: starting with human examples,
+then letting Optimus practice in
+simulation and in the real world.  This
+changes the perspective on initial production.   A
+robot in a training center can
+help shape the capabilities
+needed by a future client.  He is
+doing useful development work before he is
+ready for useful work
+for the client.  Imagine a robot
+trying to make the bed.  The first
+attempt leaves the corner untucked.   The
+next one pulls the sheet too
+far.  Another one successfully fills the corner, but
+drops the pillow on the floor.  Each attempt
+gives the team a new problem to understand
+and a new opportunity to improve behavior.
+Making the bed sounds like one
+task because people have already learned all the little
+steps involved.  You find the
+edge of the sheet, decide where to stand,
+grab it without letting go of the fabric, pull with the
+right force, and notice the result.
+Then you change your next steps.
+The sheet moves when you
+touch it.  Part of it disappears under
+the mattress.  The fold changes the appearance of where the
+edge is.  And the robot must
+constantly connect what it sees with what
+its hands do.  A set of
+instructions can describe a goal.  The machine
+still needs a way to turn these
+instructions into actions that are consistent with its
+"body."  That's why a beautifully written
+explanation of how to make a bed
+won't, by itself, give you a robot that can
+do it.  Think about learning
+to catch a ball.  Someone may advise you to
+follow the ball and place your hands in
+its path.  This advice is useful, but it
+doesn't tell your muscles exactly what to do during your
+next throw.  You learn
+to estimate time through trial and error.  The robot
+has its own version of this problem.  Its
+cameras, joints, and hands determine what
+information it receives and what actions it can
+perform.  The experience gathered by this machine
+connects these two sides.  So, the value of
+the academy is not just in
+showing robots the correct answer.
+It gives them the opportunity to find the answer
+, feel the consequences, and improve.
+The physical machine becomes a way to ask
+the world questions.  If I do this, what
+will actually happen?  That's why I don't believe
+in the idea that you have to wait for perfect
+software and then
+build robots.  How are you going to
+get such software without practical experience
+?  Of course, progress can be made through
+examples and simulations, but ultimately the
+robot has to work with a real object
+in front of it.  I want Tesla to build
+cars that allow these lessons to be learned
+on a large scale.  Practice is
+not a distraction from the product.  Practice
+is how a product becomes useful.  Okay,
+most of us aren't going to build a
+robot training academy.  Maybe
+one of you will dare.  I don't, but
+we probably have an idea for a tool that would
+make life easier, and AI makes it
+much easier to implement such ideas.  This is where
+the sponsor of this video, bold.new, comes to the rescue
+.  Let's say you just want to get your
+house in order.  You can
+ask bold.new to create an app
+where you list tasks, assign them
+to someone, and see your plans for the week.  You
+describe it in simple language, and bold.new
+creates an application that you can
+work with in your browser.  Then you can
+continue: make certain tasks
+weekly, add a shopping list for what's
+over, or give everyone
+their own to-do list.  You can
+request these changes, test
+them, and continue to improve the system
+.  You take something that would otherwise
+just remain in your notes and turn it into
+something that can be actually experienced.  And
+you don't need to know programming to
+get started.  You are simply communicating with bold.new
+.  Go to bold.new and try it yourself
+.  And if you're ready to create what you've
+been putting off, head over to the
+subscriptions section and use the code Farzad to
+get a free 30-day pro
+account.  So, bold.new and the code Farzad—
+for a full month of using the pro
+version.  A huge thank you to bold.new for
+sponsoring this video.  Here's a simple
+way to visualize this cycle.  Start with a model
+that has learned something through
+demonstrations.  Give the task a try in a
+controlled training area.
+Write down what he sees, what he does, and what
+happens.  Evaluate the result.
+Use this experience to
+improve the model.  Then test the
+updated model on new attempts.
+Reinforcement learning is one
+way to achieve such improvement.  Actions
+are evaluated through a reward signal, and
+learning directs behavior toward better
+outcomes.  People's feedback can
+help determine or evaluate these
+results.  Some results can also
+be checked automatically.  The important question
+is whether the system becomes better at
+doing real work, rather than just
+making movements that look convincing
+on video.  For example, suppose
+the task is to place an
+empty cup on a shelf.  You can
+reward the robot for bringing
+the cup to the shelf, but that will also encourage
+the cup, balanced on the edge, to
+fall.  You may reward
+speed and eventually encourage a sudden
+movement that will damage the cup.  So a
+good learning task requires a
+better definition of success.  The cup
+is in its designated place, it
+stands there, and the movement was controlled.
+This is where much of the
+real work is concentrated.  It is not enough
+to simply collect video recordings of the robot's movements.
+You need to know which attempts were successful
+, which were unsuccessful, and what failure suggests
+for change.  Otherwise, you are collecting activity,
+not learning experience.  And someone has to
+prepare the next attempt.  If the robot
+is learning to place cups, they need to be
+turned back every time.  If the task
+involves spilling something, the training
+area must be reset to its original
+state.  This work determines how much
+useful practice you can actually
+get from machines.  So, scaling
+the academy also means creating an
+effective learning environment.
+Clear tasks, useful measurements,
+sensible resets and enough
+variability to constantly uncover
+new problems.  This support work
+transforms a set of robots into a place where
+learning can take place continuously.
+Now give this system more
+physical robots to train.  You can run
+different versions of a task simultaneously, instead of
+waiting for one machine
+to complete each attempt.  One can
+train with a wide cup, another with a
+narrow one, and still another with a shelf at a different
+height.  You can also repeat
+complex cases enough times
+to understand them.  This is
+the appeal of a large educational
+robot fleet.  This creates more opportunities
+to gain useful experience.  But the word "
+useful" has a meaning.  A thousand repetitions of an
+easy case will not automatically teach a robot a
+difficult case.  The park
+needs a training program: tasks
+that identify weaknesses that need to be
+fixed, and tests that will show whether the
+new model has actually fixed them.  What
+fascinates me is that you're not trying
+to train 10,000 completely separate "
+brains" from scratch.  You try to take
+useful experience from all these machines and
+turn it into better
+software.  Then, compatible robots
+can benefit from this
+improvement.  This is a completely different way of
+scaling skills.  The number of robots
+matters, but what really matters
+is how quickly the entire system can
+turn a complex endeavor into a skill
+that will work elsewhere.   The
+trained model can be copied to
+multiple robots.  This does not mean that every
+car will instantly handle every
+situation.  This means that useful knowledge
+can be transferred through shared
+software, rather than being limited to the
+expertise of a single machine.  Imagine a learning
+cell where there is a problem with a slippery
+object.  The team collects examples,
+improves the appropriate behavior, and
+tests it on a broader set of tasks.
+If the update works,
+other compatible robots can get it.  The next
+worker won't have to open the same
+problem from scratch.  Extensive testing is
+important because correcting one grip
+should not worsen another.  The improvement
+should maintain the robot's ability
+to perform tasks it already knew.   This is where
+manufacturing begins to influence
+software development.  If
+learning machines are difficult to build,
+unreliable, or constantly different
+from one another, it becomes harder to gather
+comparable experience.  The manipulator, which
+changes every week, also changes what the
+model has to control.  A more stable
+machine gives the team a more stable
+platform to learn from.  And the experience
+gained during training can be
+used to improve the
+design of equipment.  If a robot
+consistently fails to hold an object,
+the answer may be better control, a
+different fingertip, or a combination of
+both.  Controlling this cycle means
+that hardware and software teams
+can work on the same
+problem together.  The plant provides a
+training class, and the class helps
+explain what exactly the plant should build
+next.  Tesla's quarterly report
+says that Optimus production
+has begun on large lines in Fremont
+, with California in the initial
+ramp-up phase.  It is also noted
+that equipment and the production process
+will constantly change.  This is a useful
+starting point for this argument.
+Production has begun, while
+training and improvement continue.
+The first machines don't have to be the final
+version of the product to move development
+forward.  They just have to be of sufficient
+quality to provide relevant
+experience.  A robot that constantly breaks down is a bad
+student.  A robot whose behavior
+cannot be measured is a failed
+experiment.  Therefore, reliable
+practice time is valuable in itself.  This gives
+the team a better chance of making a meaningful
+comparison between yesterday's behavior and
+today's.  And that's why I keep
+coming back to things like cleaning
+the house or making the bed.  They are easy
+for us to understand, but they are difficult
+tests for the machine.  You can't
+adjust the whole world to one movement.
+Things are constantly out of place
+.  Something will definitely tip over.
+The task changes while you are
+doing it.  A useful robot should
+continue to work despite this.
+It is this kind of intelligence that interests me, because it is what gives
+people their time back.
+Imagine a robot carrying a towel and dropping
+it.  The original task was to put away the
+clean towels, and the towel is now on the floor
+.  A rigid sequence of actions can
+lead to walking to the closet empty-
+handed.  A useful system should notice a
+change in the situation, decide what to do, and
+get back to work.  This recovery
+may be more informative than another
+perfect lift of the subject.  It shows
+whether the machine understands the task
+well enough to cope with the obstacle.
+The curriculum may intentionally
+include situations such as: objects
+slipping out, half-open drawers,
+clutter blocking the path.  The goal is to make
+the machine better at doing useful
+work when the world stops conforming to
+its original design.  Here's a visual way
+to understand why this is important.  Suppose
+a job consists of 20 steps, and
+each step succeeds 19 times out of 20. If
+the outcomes of these steps were independent,
+the chance of completing all 20 without error would
+be only about 36%.  The 95%
+success rate of steps suddenly looks
+completely different when the customer needs
+all the work done.  In real-world
+tasks, errors interact, making
+recovery even more important.  A robot that
+can recognize and correct a small
+error can still complete the task
+.  So improving a product is not
+just about increasing the rating in one go.  It's a
+combination of movements into work that withstands the
+normal chaos of everyday life.  School
+also requires an exam, which is different
+from a practice sheet.  If the robot is
+only successful with the same items in the
+same location, you haven't learned
+how widely the skill transfers.
+Move the basket, change the towel, give
+him a room he hasn't trained in.
+Keep the task clear and
+see if he can still
+complete it.  This turns the evaluation into
+something the viewer can follow.
+You check whether the machine has learned the job
+, whether it has learned a specific pattern, and this also
+gives developers more accurate information.  If
+he copes with the new towel but
+fails when the basket is moved, the
+next training session can focus on
+what is actually broken.  I would really
+like to see Optimus livestreaming at home
+for a few days
+, maybe someday on my channel: how
+he cleans, makes the bed, does laundry,
+cleans the kitchen, washes the dishes.  Let people
+see everything, including the moments when things
+go wrong.  How is it restored?  How
+often does someone have to intervene?  This is
+my test.  If it can consistently
+do such useful work, people won't
+need long explanations as to why they need
+such a device.  They will just watch
+the video, go to the Tesla website, and
+click “buy” again, and again, and
+again, until they spend all their money.  Musk
+said he wants to show
+Optimus's unprogrammed behavior on video within one to two
+months.  Farzad's proposed
+multi-day live broadcast would go even
+further.  It would show how
+functionality is maintained over time.
+This is a completely different question than whether a
+robot can perform an impressive
+task once.  A useful demonstration should clearly
+show the tasks, time spent, and
+human assistance.  Charging and
+scheduled breaks can be displayed as
+usual.  The most interesting thing is what
+happens during operation: does the
+robot notice mistakes, does it repeat them, and whether the
+observer should become its
+constant supervisor.
+The viewer should see what the machine did on
+its own and what was made possible by
+support.  It is in this difference that
+the value of the product lies.
+If someone has to stand next to the
+robot the entire time, then the robot has only changed the
+movement, but has not freed the person.  If a person
+can give a task and return with a
+finished result, everything changes.
+Consider putting things away
+while you make dinner.  The benefit is not in
+watching the machine imitate your
+hands.  The benefit is that both things are
+done.  This can be assessed in a very
+practical way.  How much
+human attention did the work require and what useful
+work was completed?  These questions
+connect developments to
+the client's everyday life.  They indicate
+what exactly the robot should learn.  If you
+like this video and want to
+support the channel, the fastest and
+most effective way is to click the
+subscribe button.  It's completely free and
+helps development a lot.  Thank you very much.  And
+when we talk about where to first
+use these robots, I would
+focus on the work that we
+need more of, but that people are
+reluctant to do.  Garbage collection is a
+great example.  Maintenance
+and repair of things—another one.  I want this to
+increase the amount of important work
+we can do, not reduce the entire
+discussion to replacing people.  Start with
+real needs, train the machine
+to meet them, and let the value of that
+work justify the next step.
+Take controlled
+waste management for example.  A useful first
+task could be moving
+closed containers between two
+designated locations.  You can define
+the route, load and conditions.  Then
+the training will have a clear goal.  Can
+the robot reliably lift the container?  Can
+it move without crashing into anything?
+Can it put the load where the
+next person or machine needs it?
+When he can't complete the work,
+can he safely stop and ask
+for help?  This task is smaller than
+cleaning an entire city, but its
+value is easier to measure.  A repetitive
+useful task creates a starting point
+for expanding the robot's responsibilities.  This is how
+a curriculum can stay
+connected to the work someone actually
+needs to do.  This connection between
+machine creation and machine learning is
+part of a larger picture that I explore
+in my book, The Master Plan: What
+Elon Musk Is Really Building.  If you
+want to dive deeper into how these
+pieces fit together, the link is in the description
+and comments section below.  And the economy
+must take into account the entire scheme of work.
+Buying a car is just one part.
+Someone also has to keep it running,
+handle exceptions, and maintain it.
+Imagine two versions of the same robot
+performing the same task.
+One requires frequent intervention.  The other
+does most of the work and asks
+for help only in unusual situations
+.  Even at the same purchase price, these are
+very different products for the person managing
+the work.  Better learning can reduce
+the attention span required to complete a single
+task.  More reliable equipment can
+reduce the time lost to repairs.  That's why
+the academy and the factory are part of the same
+story.  They improve different
+parts of the same useful working
+hour.  So the final exam of the academy
+is not whether the robot looks
+more human.  And whether a robot can
+take on more responsibility for a
+useful task.  This means better
+performance in different situations, less
+intervention and reliable equipment during
+operation.  According to Musk, external
+deliveries of Optimus are expected around
+the end of 2027.  The path to this
+product goes through this
+learning process.  A training park can identify
+problems at an early stage, before they
+become a daily burden for the client, and
+the results can guide the next
+stage of training: which task to practice
+, which error to reproduce, which technical
+problem to fix.  The Academy gives the team a
+place to turn broad ambitions into
+concrete improvements.  Imagine that your
+first homework assignment is to lay out
+clean towels.  The owner should be
+able to show the work where the
+towels should be and explain what he
+wants.  They don't need to become a
+robotics engineer to make this happen.  Therefore,
+academia must create more than
+just a fixed response to one
+situation.  She needs a behavior that
+can use instructions and
+adapt to the situation that arises.
+The robot brings acquired skills.  The person
+provides local details.  This is a useful
+division of labor.  Each new home should
+benefit from the experience
+gained before the robot arrived, instead of having to
+go through the entire learning process all over again
+.  A robot that made a mistake with a
+bed sheet in the training room
+still helps create a robot that will
+flawlessly make a bed in someone's
+home.  That is why this academy is worth
+paying attention to.  It gives failures a
+productive place in the development process.
+Instead of waiting for
+ready-made physical intelligence to emerge, Tesla
+is creating machines that help gain the
+necessary experience.  And the benefit for humans is
+quite obvious.
+When a robot can reliably perform the
+required work, a human no longer
+has to waste time on it or
+control every movement.
+This is the real graduation.  Useful
+work is done while a person
+is going about their life.  Thank you very much for
+watching.  I hope this video was
+informative and useful, see you in the
+next one.  Goodbye, friend.
