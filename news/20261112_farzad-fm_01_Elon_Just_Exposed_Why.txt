@@ -1,0 +1,927 @@
+Channel:     farzad-fm
+Title:       Elon Just Exposed Why Chip Manufacturing Is So Slow
+URL:         https://www.youtube.com/watch?v=3jLYT6SANR8
+Published:   2026-11-12 17:01 UTC
+Fetched:     2026-11-12 18:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Elon just made a comment about why chip
+manufacturing is so difficult. But it's
+not about what you think. It's about the
+amount of time that chips sit there
+doing nothing. And apparently Elon has a
+solution for this. You know, like just
+one example like like right now the
+amount of time that a wafer in a chip
+app spends simply being transported and
+waiting uh is more than half the time.
+So more than half of what a chip is
+doing in a chip pad is nothing. It's
+it's either being moved around or or
+waiting for a machine. So
+uh
+and and I think I think there's
+basically a lot of a lot of potential
+for improvement in chip fabrication. Why
+don't these people do it themselves?
+If they're if they have plants just sit
+with chips half the time just not
+moving, what's to stop them from
+improving their own systems?
+&gt;&gt; Well, no. Actually, if you if you visit
+a chap a fab, you'll see that the the
+the f the the wafers are moving a lot.
+They're zipping all over the place. Um
+and and waiting, but but but the the
+amount of time that that atoms are being
+changed on the wafer in a way that is
+useful is is is less than half the time.
+Um, and I'd say sometimes it's maybe 20%
+of the time that that that something
+useful is happening to the atoms on that
+wafer. Um, the the the reason that
+they're that that they don't want to try
+something adventurous or or with with
+chip ads is that these things cost a
+tremendous amount of capital and and and
+if if they have a recipe that works,
+they just they simply don't want to risk
+u something new. So the the it generally
+the preference in the chip industry is
+to repeat uh what they did last time
+with minor changes and and not uh take
+any risks.
+&gt;&gt; So why do silicon wafers spend most of
+their lives inside a factory sitting
+still instead of becoming chips? And can
+Elon Musk's Texas fab plan actually
+break that bottleneck? Every
+conversation about artificial
+intelligence and humanoid robots
+eventually hits the exact same wall. The
+world cannot make advanced microchips
+fast enough. Whenever people picture why
+chipm is so slow, they usually imagine a
+laser etching billions of microscopic
+transistors onto silicon one tiny line
+at a time. That picture misses the real
+bottleneck. Before going any further,
+one distinction needs to be crystal
+clear so two completely different ideas
+never get mixed up. Workin progress wait
+time inside a chip fab where an
+unfinished silicon disc sits in a queue
+or rides on a track between factory
+machines is completely different from a
+finished chip or a GPU sitting idle
+inside a data center server rack. Data
+center utilization is about software and
+networking after the chip is sold. What
+Elon pointed out at the Baron Investment
+Conference happens months earlier inside
+the clean room where the chip is born.
+Anyone who has watched a modern car
+factory operate in Fremont or Austin
+knows the obsession with continuous
+flow. Raw steel and aluminum come in one
+side, robots weld the body, and a
+finished vehicle drives off the line in
+a matter of hours. Now, step inside a
+leading edge semiconductor factory known
+as a fab. Instead of hours, turning a
+blank disc of silicon into an advanced
+logic chip takes more than 100 days.
+Across the industry, wafer fabrication
+runs about 12 weeks on average, and
+stretches up to 20 weeks for advanced
+processes, followed by another 6 weeks
+to slice, test, and package the finished
+processor. And that raises the obvious
+question. If the smartest engineers on
+Earth run these buildings, why do they
+let billion dollar silicon sit in boxes
+for months? [music] Trade reporting from
+February 2026 on leading edge logic and
+high bandwidth memory lines found that
+wafers spend more than 70% of that cycle
+waiting inside sealed plastic carriers.
+Standard benchmarks from Fab Time and
+Infocon show typical FABs take 3.5 to
+five times longer to move a wafer out
+the door than the actual recipe time
+inside the machines. At five times the
+raw recipe time, active processing is
+only 20% of the calendar. To picture
+what is sitting in line, start with the
+physical object. Every chip begins as a
+thin mirror smooth disc of pure silicon
+called a wafer nearly 12 in across,
+roughly the size of a medium pizza.
+Because a single speck of dust can ruin
+dozens of chips on that disc, human
+hands never touch the wafers on a modern
+line. Instead, 25 wafers slide into a
+sealed airtight plastic box called a
+FUP, which stands for front opening
+unified pod. Once loaded, that pod
+weighs about 22 lbs, right around the
+weight of a packed carry-on bag and
+rides a robotic railway hanging from the
+clean room ceiling. The real slowdown in
+chipm is not how fast a laser flashes on
+silicon, which means finding the lost
+time requires following one sealed pod
+through the maze above the clean room
+floor.
+To see why a wafer spends up to 80% of
+its life doing nothing, look up at the
+ceiling of a modern chip fab and watch
+where that 22lb pod actually goes. In a
+car plant, the assembly line runs in a
+straight line from station A to station
+Z because you only paint the car once
+and bolt the wheels on once. A microchip
+cannot be built in a straight line. A
+modern processor is a three-dimensional
+skyscraper of circuits stacked more than
+90 microscopic layers high requiring up
+to 1,000 separate process steps.
+Building each floor of that skyscraper
+follows an eightstep loop. A machine
+washes the wafer clean. A chamber
+deposits an ultra thin film and a coder
+spins light sensitive photoresist across
+the surface. Next, a lithography scanner
+projects the circuit blueprint using
+extreme ultraviolet light. An etching
+tool carves away the exposed material
+and an impl dopen atoms into the
+silicon. Finally, a chemical mechanical
+polisher grinds the wafer dead flat and
+a metrology tool measures the layer for
+defects. Once those eight steps finish
+one layer, the wafer loops right back to
+the exact same cleaning, lithography,
+etching, and polishing bays to build the
+next layer on top. Engineers call this
+re-entrant flow. Instead of a straight
+highway, the factory is a giant
+roundabout where the same pod visits the
+same toolbays 90 times in a row. To move
+those pods around the loop, fabs hang an
+automated superighway from the ceiling
+called OHT or overhead hoist transport.
+Clean room automation leader Dauku notes
+that the largest rail networks exceed
+124 mi of overhead track with more than
+10,000 robotic cars running at once.
+Inside a single Intel FAB, over 1,000
+overhead robots cruise across the
+ceiling at about 8 mph, a brisk jogging
+pace, [music] while a single processor
+travels more than 1.2 mi indoors before
+it is finished. Hold on to that picture
+of pods zipping across the ceiling.
+Because the strangest part of the
+waiting room trap is that riding the
+rail is not even where the months
+disappear. Traveling 1.2 2 mi at jogging
+speed takes about 9 minutes of motion
+across an entire 3month build. Where do
+the other 80 days go? A study by Middle
+Sex Industries shows that the automated
+handling system owns the wafer for about
+2/3 of the entire cycle because the next
+machine is busy. When a pod arrives at a
+bay and every load port is full, the
+overhead car drops the pod into a tall
+nitrogen purged storage tower called a
+stalker. In a single large fab, stalkers
+process more than 40,000 pods a day,
+parking wafers on shelves in dry
+nitrogen until a tool opens up.
+Engineers measure this traffic jam with
+the X factor, which is total time in the
+factory divided by raw process time
+inside the tools. Take a chip whose raw
+recipe time is 20 days. At a worldclass
+X factor of 2, that wafer takes 40 days.
+At an ordinary X factor of four, it
+takes 80 [music] days, meaning 60 days
+are lost to cues and handling. At an X
+factor of five, the wafer sits in the
+building for 100 days to get 20 days of
+tool time. So why don't FAB managers
+simply start fewer wafers each week, so
+the lines disappear. The answer is a
+ruthless piece of factory math called
+Little's law paired with the price tag
+of the bottleneck machine. Intel
+describes its first high numerical
+aperture extreme ultraviolet scanner in
+Oregon built by ASML as a machine the
+size of a double-decker bus that weighs
+as much as a blue whale shipped across
+20 flatbed trucks and filling three
+vertical floors. When a single machine
+costs hundreds of millions of dollars,
+the cardinal sin of chipm is letting
+that scanner sit idle for 5 minutes
+waiting for the next box of wafers. In
+queuing math, the weight time in front
+of a one-of-a-kind tool is roughly 1 / 1
+minus the machine's utilization rate.
+Push that scanner above 85% utilization,
+and the waiting line shoots straight up
+like a wall, which is why McKenzie notes
+fabs balance operations around 65 to 85%
+of capacity. If a factory starts 5,000
+wafers a week on a 12-week cycle,
+Little's law dictates there must be
+60,000 wafers clogging the building at
+all times just to guarantee the whalesiz
+scanner never goes hungry. Chip makers
+intentionally pack their hallways with
+waiting wafers so their most expensive
+machines never sit idle, which sets up a
+massive financial trap the moment anyone
+proposes changing the factory layout.
+&gt;&gt; [music]
+&gt;&gt; If the waiting room trap wastes months
+on every batch of chips, why have
+industry giants like TSMC, Intel, and
+Samsung refuse to tear up the floor plan
+and fix it? Put yourself in the shoes of
+an executive running a commercial
+foundry. There are 60,000 wafers sitting
+in your clean room pipes, representing
+hundreds of millions of dollars in
+customer orders from Apple, Nvidia, and
+AMD. Every wafer is partway through a
+1,000step recipe. If an engineer changes
+how wafers move between tools and that
+change introduces a microscopic
+vibration or chemical defect, you do not
+find out that afternoon because the
+cycle takes 100 days. You find out 3
+months later that you turn 60,000 wafers
+into worthless shiny frisbes. That
+terror of poisoning a working line
+created the governing religion of the
+chip industry, a discipline Intel named
+copy. Exactly. Once a lab recipe
+produces working chips at high yield,
+nobody touches it. When you build a new
+factory, you copy the exact pipe
+lengths, chemical flows, ceiling rails,
+and tool layout from the last building,
+making only minor tweaks from one
+generation to the next. You can see the
+cost and sluggishness of that playbook
+in the live scoreboard of American chip
+factories as of November 2026. [music]
+Start with TSMC in Phoenix, Arizona.
+TSMC began with a $12 billion plan for
+one FAB in 2020 and expanded its cited
+Arizona commitments to about $265
+billion across a larger campus of fabs,
+packaging, and research. Its first
+Arizona fab has been making leading edge
+chips since late 2024. And CEO CC Wayi
+reported in November 2026 that the
+second FAB building is complete with
+tools moving in for volume production in
+the third quarter of 2027. TSMC states
+that building a fab in the United States
+costs several times the construction
+cost in Taiwan, while analysts estimate
+a 25 to 40% higher cost per wafer. And
+when every new factory costs tens of
+billions of dollars and takes half a
+decade to turn on, you can see why no
+incumbent executive will gamble a
+working line on a radical new way to
+move wafers. Look at Intel in New
+Albany, Ohio. In January 2022, Intel
+announced a $28 billion plan for its
+first two fabs, promising the first Ohio
+chips in 2025. Instead, the first FAB
+will not finish construction until 2030
+or run until 2030 to 2031. On October
+21, 2026, Intel was just installing the
+first major roof truss over its 600,000
+ft clean room site. Then look at Samsung
+in Taylor, Texas. Construction started
+in 2022 with operations targeted for
+late 2024. After a 2-year delay,
+equipment is finally inside the first
+plant at the end of 2026 with mass
+production ramping in 2027, including a
+$16.5 billion deal to supply Tesla's AI5
+and AI6 chips, where AI6 is planned for
+the second half of 2027. That clash of
+cultures broke into the open in October
+2026 when Tesla and SpaceX held talks
+with TSMC about their Texas chip plans.
+On TSMC's third quarter call on October
+15, CEO CC Wayi confirmed that TSMC sent
+teams to Texas and was in discussion
+with a customer building Terapab, but
+drew a hard line. If TSMC is involved,
+the fab has to be run by TSMC. 8 days
+earlier on October 7, 2026, Musk had
+already given his answer in a post on X,
+writing, "No, we will build and run the
+FAB. Let there be zero doubt about that.
+Maybe TSMC subleasases part of the
+Terraab if they want, but nothing more
+than that. Why refuse to hand the keys
+to the company that already knows how to
+run fabs? Because if TSMC runs the
+building, it brings the exact same copy
+exactly rulebook and the exact same
+100day stalker cues that created the
+bottleneck in the first place. Because
+existing foundaries cannot afford to use
+a 20 billion dollar production line as a
+laboratory, the only way to reinvent
+chip manufacturing is to build a
+separate factory designed specifically
+to fail fast. [music]
+So, how do you cut a chip development
+loop from a full year down to a single
+month without bankrupting the company on
+ruined wafers? At the Baron Investment
+Conference, Elon laid out the exact
+two-step architecture Tesla and SpaceX
+are using to attack the problem.
+&gt;&gt; So, we we're building a research lab in
+Texas, just in Austin, at the at
+Gigafactory, Texas. That research lab is
+going to try many different approaches
+to chip fabrication. Um and and many of
+those approaches won't work, but some of
+them I I'm sure will work. And then we
+will translate those improvements to the
+the terapab itself, the production
+tariff, which is um in uh Grimes County
+in Texas near Texas A&amp;M. Um and and
+that's that's that's where we'll scale
+up production um of our AI chips. the I
+think one of the things that's going to
+be interesting about the research lab in
+Austin is that I don't wonder if we will
+have the ability to make um uh a do do
+logic memory packaging and do the
+lithography
+uh uh so so that we can have we can
+design new chips
+and and in under one roof make the make
+the whole chip tested make the whole
+chip tested with a very fast iteration
+cycle.
+Um something that would normally take a
+year, I think we we we may be able to
+reduce to a month.
+Uh so
+for any given technology endeavor, the
+the pace of progress is determined by
+how many it how many iterations can you
+do and how much progress can you make
+between those iterations.
+Um so if if you can improve the speed of
+iteration and the and the and like how
+many iterations can you do per year or
+per unit time and the progress between
+each iteration in any given technology
+you will uh you will accelerate your
+progress at a rate far greater than
+anyone else. If if you are you know if
+you're able to iterate in order order of
+magnitude faster you as a first
+approximation will advance your
+technology in order of magnitude faster.
+Instead of trying to invent a new
+process inside a massive production
+plant Tesla is building a dedicated
+research fab first on the north campus
+of Gigafactory Texas in Austin. On
+Tesla's first quarter call in April
+2026, Musk and his team detailed at
+Austin Lab, an approximately $3 billion
+facility size for a few thousand wafer
+starts a month, partnering with Intel on
+its 14y process technology with
+equipment orders underway. By early
+November 2026, drone flights over
+Gigafactory Texas showed structural
+steel and roof sections rising on the
+building. In the traditional supply
+chain, creating one new AI chip is a
+global relay race. Engineers design the
+circuit in California. Photo masks come
+from a separate shop. The logic wafer
+spends over 100 days being etched in
+Taiwan. High bandwidth memory spends
+over 100 days being stacked in South
+Korea. And both wait in another line for
+advanced packaging before testing. One
+design turn easily eats a full year. In
+Austin, Musk's plan puts mask making,
+lithography, logic, memory, packaging,
+and testing under one single roof. Every
+step happens across the hall. If an idea
+fails on a line running a few thousand
+wafers a month, nobody loses 60,000
+commercial wafers. Shrinking a 12-month
+loop down to 1 month gives engineers 12
+shots on goal every year for every one
+shot a traditional chip team gets. If
+you're enjoying this video so far and
+want to support the channel, the
+quickest thing you can do is clicking
+subscribe. It's completely free and goes
+a very long way. Thanks so much. But
+putting every step under one roof is
+only half of the puzzle because Elon
+also floated a physics change for what
+happens to the wafer between the
+machines. A big slice of dead time
+happens inside the machine's front door.
+Remember that Elon pointed out useful
+atom changing time is sometimes only
+20%. Even after a pod docks at a tool,
+the robot arm has to pull the wafer out
+of clean room air, place it into a load
+lock chamber, pump all the air molecules
+out to create a deep vacuum, run the
+chemical step, and vent the air lock
+back up so the wafer can return to its
+pod. Across 1,000 steps, wafers spend
+days waiting for airlocks to pump down
+and vent. Late on November 6, 2026,
+right after the Baron interview, Musk
+posted an engineering proposal on X,
+writing, "If the wafer is transported in
+vacuum, then no pump down is required
+when it transfers to a machine that
+requires vacuum. This would greatly
+improve cycle time and yield." Now, give
+the semiconductor veterans objection a
+fair hearing because there is a real
+physics reason why fabs use sealed 25
+wafer pods instead of one giant vacuum
+tube connecting every machine. In a 1,00
+step fab, neighboring machines use
+mutually destructive chemicals. One
+chamber uses dopant gases. The next uses
+copper plating. Another uses plasma
+acids. And the extreme ultraviolet
+scanner next door has Zeiss mirrors so
+sensitive that a few stray molecules of
+hydrocarbon or metal vapor will cloud
+the optics and ruin a tool worth
+hundreds of millions of dollars. Sealed
+pods act like quarantine airlocks so one
+step never poisons the next. Building a
+shared vacuum transport line means
+solving molecular crosscontamination
+across hundreds of incompatible steps,
+something no operating fab has ever
+pulled off. And vacuum transport is not
+the only hard physical gate. Rejecting
+fake confidence, the idea that someone
+can say they will figure it out and a
+bottleneck magically dissolves is
+essential in chip hardware. Building
+extreme ultraviolet scanners from
+scratch would mean leapfrogging 5 to 10
+years of tin plasma physics, which is
+why Tesla is buying scanners from ASML
+and why Musk thanked ASML on October 20
+for pulling deliveries forward. Even if
+ASML scales from roughly 50 to 60 tools
+a year toward 100 machines a year by
+2030, scanner supply remains tight. And
+on the back end, advanced packaging led
+by TSMC's co-ass process at roughly
+130,000 wafers a month at the end of
+2026 is the gate every AI wafer must
+pass through unless a fab builds its own
+packaging line under that same roof. The
+Austin Research Lab gives Tesla a $3
+billion sandbox to test radical ideas
+like shared roof packaging and vacuum
+transfer without risking a giant
+factory. So only the breakthroughs that
+actually survive get copied to the main
+event 80 m away. [music]
+Once the Austin sandbox proves which
+shortcuts actually speed up a wafer,
+where does that recipe go? And why did
+Elon name the production plant after a
+unit of electrical power that rivals the
+entire United States grid? At the Baron
+conference, Elon explained why the giant
+production plant is called the Terapab
+and how its target compares to every
+other chip factory on the planet.
+So if you if you want to get to say a
+terowatt a year of chip production,
+which is our goal, that's the reason
+it's called the the Terapab, it's
+sometimes people when I say terap,
+there's, you know, three possible
+meanings to terap. is terror. T E R R O
+R, [laughter]
+which I think sometimes people like, why
+would you want a terror found? Um, oh,
+and then there's T E R R A, which just
+means Earth. Um, but it's actually T E R
+A, uh, as in teratt. Um, so, but
+arguably all three apply, so
+[laughter]
+it's terrifyingly large. Um so
+so so the rest of the world is making
+we'll make this year around 20 GW of AI
+chips maybe 25 um and then next year
+depending on who whose projections you
+believe it's maybe around 35 to 45 GW of
+of AI chips next year. Um and um
+but but if if you want to do a a
+terowatt that's now you need you need 30
+times what current global production
+will be roughly next year. Normally the
+chip industry measures a factory by how
+many wafers it starts per month. Elon is
+measuring the production terraab by how
+much electrical power all the AI chips
+coming out of that building in a single
+year would draw once switched on. One
+terowatt is 1,000 gawatt. The average
+electricity load of the entire United
+States sits right around 500 gawatt.
+That means Elon's annual chip production
+target for Terraab is roughly double the
+average continuous power load of the
+entire United States and about 30 times
+his projection of 35 to 45 gawatt for
+the rest of the world's AI chip output
+next year. Because a factory on that
+scale could never fit on the Gigafactory
+Texas land in Austin, Tesla and SpaceX
+split the project into two locations.
+The $3 billion research fab in Austin,
+and the production Terapab in Grimes
+County, Texas, near Gibbons Creek
+Reservoir, about 80 mi east of Austin.
+In August 2026, SpaceX and the state of
+Texas announced the Grimes County site
+with an initial commitment of $16.8 $8
+billion, at least 3,000 jobs, and a $30
+million state grant. The planned
+building footprint is 100 million square
+ft of floor space, which is about 3.6
+square miles under roof, sitting on a
+3,000 acre site. County incentive
+filings map out four expansion phases
+reaching a filed ceiling of about $119
+billion through 2036. While NIK reported
+in November 2026 that Terrafab buyers in
+Japan discussed a post2032 goal of 1
+million wafers a month split between
+700,000 memory wafers and more than
+300,000 logic wafers. If the project
+ever scaled to the full 1 terowatt
+ambition, Musk acknowledged Ron Baron's
+$1 trillion figure built in phases over
+time. While Bernstein analysts estimated
+reaching a literal terowatt of annual
+silicon would cost between 5 trillion
+and 13 trillion. Those numbers are
+staggering on paper which forces the
+practical question every investor and
+engineer is asking. How much of this
+giant factory is real hardware versus
+aspirational timeline? Remember the
+lesson from Tesla's past vehicle
+forecasts like the old 20 million car a
+year ambition that ran ahead of factory
+reality. Elon always aims at the
+ultimate end state and lets the middle
+steps stay messy. On Tesla's third
+quarter call on October 21, 2026, he
+gave his target dates for both the
+Austin research fab and the production
+terapab.
+&gt;&gt; Regarding the terapab, uh we the Austin
+based uh research fab is progressing
+quickly. uh we'll begin commissioning
+machinery in the first half of next year
+and um hopefully if things go well we'll
+make our first uh test chip just to see
+if we can make any chip at all around um
+May or June. Uh so that's that's a I
+think pretty exciting. Um and then um
+we're our aspiration is to be making uh
+some kind of useful chip at volume
+around Q3 of 2000 of 2028.
+So
+um and and and as I've said publicly on
+X the u the tariff I think will be the
+most valuable building in the world and
+and will probably have an economic value
+that's that will place it in the top 20
+of countries. So it's it's a an an epic
+project. Uh, and this will be an an
+incredibly important a asset if not a
+necessary asset in order to scale
+especially Optimus.
+&gt;&gt; At the Austin Research Fab, steel is
+going up. Most tool orders for the first
+line are placed. Machinery commissioning
+is planned for the first half of 2027
+and the internal target with wide error
+bars is a first functional test chip
+around May or June 2027. That test chip
+is an SRAMM, a basic memory circuit
+every FAB uses to verify that its line
+works. At the Grimes County site, no
+vertical construction had been confirmed
+by November 2026. Musk's aspiration for
+volume production at Gibbons Creek in
+the third or fourth quarter of 2028 is
+by his own description insanely fast by
+FAB standards. While Seapport analyst
+Jay Goldberg noted that equipment
+suppliers expect a first small batch in
+2028 and commercially meaningful output
+closer to 2030. Whether volume silicon
+arrives in late 2028 or slips toward
+2030, the reason SpaceX and Tesla are
+committing tens of billions of dollars
+to their own fabs comes down to two
+existential risks. National survival and
+the economics of owning the AI stack.
+[music]
+Why would a rocket company and a car
+company take on the hardest
+manufacturing challenge on Earth instead
+of just writing checks to Nvidia and
+TSMC like everyone else? Start with the
+geopolitical map Elon described at the
+Baron conference when asked why existing
+American fab projects are not enough.
+&gt;&gt; No one's doing this except for you. How
+come?
+&gt;&gt; Well, that's actually that's not quite
+accurate in that TSMC and Samsung are
+building fabs in the US. So TSMC is
+building um large collection of fabs in
+Arizona and some of them are I believe
+operational
+and Samsung has some operational fabs in
+Texas um and is is building or has built
+I should say a fab for for Tesla that
+will be dedicated to the uh uh AI5 and
+and AI6 uh chip designs that Tesla's
+done. So, but relative to what's being
+done in Asia, the amount of chip
+fabrication in the US is very small. And
+even if you take the best case
+assumptions of all the chip fabs that
+that have been announced that will be
+built in in America, that's still a tiny
+fraction perhaps on the order of 10%
+optimistically 10% of what's in Asia. So
+uh as I think most people know Taiwan
+does an incredible amount of heavy
+lifting on chip production. Uh TSMC is
+an amazing company u truly incredible
+that the sheer number of a variety of
+chips and the magnitude and the volume
+is incredible for that that TSMC does.
+Same thing for Samsung and and and I
+think Micron does does a great job too
+on memory side. So
+um but the but it's overwhelmingly built
+in Asia. Um
+the
+so so my my my [clears throat] concern
+really is that there is always like some
+geopolitical risk in that region. Um and
+I think that that risk may come to
+fruition at some point in which case uh
+if we don't have all the pieces
+necessary to build chips at scale in
+America then um we may not have any
+chips at all or very few the 10% number
+type of thing. As of November 2026, the
+only high-volume leading edge logic
+factory running in the United States is
+TSMC's first Arizona plant, making
+advanced logic chips since late 2024.
+Meanwhile, in the third quarter of 2026,
+79% of TSMC's wafer revenue came from
+its advanced logic generations, with its
+two newest leading edge nodes ramping in
+Taiwan. A November 2026 forecast by
+Trend Force analyst Chong Yin Ting
+projects that by 2027 the United States
+share of global advanced process
+capacity will rise to about 20%. China
+will sit around 10% and Taiwan will
+still hold about 50%. While TSMC is
+expected to keep more than 80% of its
+own capacity in Taiwan in 2027. Even
+under TSMC's long-term plan after its
+entire Arizona campus is built out,
+about 30% of TSMC's newest leading edge
+capacity would sit in Arizona and 70%
+would stay in Taiwan. Aligning the
+United States to a successful AI future
+requires building the full domestic
+stack on American soil so a single
+crisis in the Taiwan Strait does not
+switch off the economy. And even if
+geopolitics never disrupts a single
+cargo plane from Taiwan, renting someone
+else's chips creates a massive financial
+trap for anyone trying to deploy
+millions of robots. In the AI and device
+race, outsourcing your inference and
+silicon to third-party suppliers is the
+banana strategy. When a company relies
+on outside chip designers and rented
+cloud data centers, every layer in that
+chain takes a cut. a foundry margin, a
+packaging margin, a chip designer gross
+margin, and a cloud markup. Across the
+full token stack, there is an 80 to 90%
+margin arbitrage between renting
+intelligence from outside vendors and
+serving models from owned compute at
+cost. That is why XAI was merged into
+SpaceX before the March 2026 Terapab
+unveiling at Austin's Seahome power
+plant where Reuters and TechCrunch
+reported plans for two specialized fab
+lines, one for cars and Optimus robots
+and one for AI satellites because
+projected global chip output would meet
+only about 3% of their combined future
+needs. You cannot easily add 200 gawatts
+of new AI data centers to the United
+States ground every year. So the Musk
+architecture splits the compute load in
+two. Roughly 100 to 200 gawatt a year of
+chips stay on Earth inside vehicles,
+Optimus robots, and ground clusters
+using Nvidia, AMD, Samsung AI5 and AI6
+and Terapab silicon. While up to a
+terowatt a year of terapab chips fly to
+orbit aboard SpaceX satellites powered
+by solar energy in space. By 2040 to
+2050 a meaningful share of the world's
+data centers will sit in space with
+inference dominating the power split.
+For a deeper breakdown of how Tesla,
+SpaceX, and this entire industrial
+playbook fit together, check out the
+book Master Plan linked in the
+description. Now connect that vertical
+integration back to the waiting room
+trap inside the fab. When a company owns
+the AI model, the robot chassis, and a
+fast iterating fab with logic, memory,
+and packaging under one roof, engineers
+can co-design the chip, memory, and
+network on one unified board and spin a
+new hardware iteration every month
+instead of waiting a year in an outside
+foundry queue. Breaking the wafer
+waiting room trap and owning the compute
+stack at cost is not about hoarding
+silicon for its own sake. Because the
+real prize is what happens to everyday
+life when intelligence and physical
+labor become dirt cheap.
+If solving those 80 days of dead time
+inside a chip fab unlocks millions of
+lowcost robots and orbital
+supercomputers, what does that actually
+do to your job, your cost of living, and
+the economy you wake up in? Whenever
+people debate humanoid robots, they
+often argue over whether the AI brain or
+the physical robotic hand is the harder
+problem. The truth is that the brain and
+the hands are both extraordinarily
+difficult and neither ranks above the
+other. A pair of dextrous robotic hands
+is useless without a fast, low power
+neural network reading tactile sensors
+in real time. And the smartest AI model
+in the world cannot fold laundry, wire a
+house, or care for an aging parent
+without millions of physical bodies and
+custom inference chips to run them. That
+is why Elon called Terapab a necessary
+asset to scale Optimus on Tesla's
+October 21 call. You can stamp sheet
+metal and wind electric motors at
+automotive speed. But if memory,
+packaging, and logic wafers are stuck
+waiting 100 days in someone else's
+stalker queue, you cannot build tens of
+millions of robots. Once you break that
+silicon bottleneck, the economic engine
+follows the exact same formula every
+time. [music] Collapse fixed overhead,
+multiply the service area, and replace
+human labor with robot labor. Follow
+that math into a household budget. At
+million unit manufacturing scale, a
+purpose-built humanoid robot lands
+around 20,000 to $25,000,
+less than the price of an entry-level
+compact car. And when the custom chip
+inside that robot is iterated 12 times
+faster and built at cost without an 80%
+supplier markup, the cost of useful
+physical work plummets toward the cost
+of electricity and depreciation. To
+picture what becomes possible when both
+compute and robot labor are abundant,
+consider a proposal from the community
+that is impossible to stop thinking
+about. The Optimus Commune. Imagine
+taking about 500 acres of degraded,
+inexpensive land in Arizona or New
+Mexico and deploying fleets of
+autonomous robots, solar arrays, and
+cheap AI compute to build a next
+generation city from the ground up. Even
+for people who never moved to a new
+desert town, that collapse in overhead
+flows straight into the four biggest
+bills in human life. Far cheaper
+high-quality housing from automated
+buildouts, far cheaper medical
+diagnostics and treatments, far more
+effective and cheaper education, and far
+cheaper, safer autonomous
+transportation. And that brings the
+whole story back to the human question.
+In a world flooded with cheap chips and
+$20,000 robots, what happens to human
+work? Every time a generalpurpose
+technology arrives, fear spikes that
+human jobs will vanish forever. Yet,
+humanity lived through the steam engine,
+the railroad, electricity, the internal
+combustion engine, the computer, and the
+internet along with way more disruptions
+during those eras. Could you have
+pictured a YouTuber in 1920 or a
+software coder in 1800 or a longhaul
+truck driver in 1880? When the value
+generated by AI and robotics is broadly
+distributed across society rather than
+locked behind high price scarcity, jobs
+do not disappear. They change. Humans
+will still want things from other humans
+and humans will still need things from
+other humans. When intelligence and
+physical automation drive the cost of
+basic goods down, the natural talents
+and passions of each individual and the
+market demand for those specific human
+talents show up in far greater
+quantities, massively increasing the
+average happiness, well-being, and
+health of regular people. Look back at
+where this whole story started. a 12-in
+disc of silicon sitting inside a 22lb
+plastic box parked on a nitrogen shelf
+beneath the ceiling of a clean room
+doing absolutely nothing for 80 days out
+of 100 because no one wanted to risk
+changing the recipe. Whoever turns that
+dead waiting time into fast iteration
+controls the cost of intelligence, the
+supply of physical labor, and the speed
+at which abundance reaches everyone.
+YouTube has this new crazy algorithm
+where it knows exactly what video you
+would like to watch next based on AI and
+all of your viewing behavior. And the
+algorithm says that this video is the
+perfect video for you. It's different
+for everybody watching right now. Check
+this video out and I bet you might love
+it. Thank you so much for watching. I
+hope this video was informative and
+helpful and we'll see you on the next
+one. Take it easy everybody. How about
