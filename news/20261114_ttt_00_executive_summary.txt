@@ -1,0 +1,64 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-14)
+Published:   2026-11-14 00:00 UTC
+Summarized:  2026-11-15 06:28:17 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.07800 (23995 in / 3001 out tokens)
+Sources:     9
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla opens personal Cybercab orders at $29,990 plus $299/month
+- Subscription deal: no insurance, Tesla can reprice, geofence, or suspend
+- Starship flight 15 completes first-ever ship catch at Starbase
+- Booster diverted to water landing after low-fuel alarm, engine erosion
+- Cybertruck line winding down within ~8 months for Cybercab capacity
+- Nvidia's Jensen Huang resigns amid scandal; Musk lobbies for reinstatement
+
+## Robotaxi
+- Tesla began inviting select Austin customers on November 13-14 to buy a Cybercab for personal use: $29,990, $1,000 non-refundable deposit, mandatory $299/month "Autonomy Subscription" (first month included), December 2026 deliveries, geofence-only operation. Multiple hosts (Electrek, Herbert Ong, Farzad, Bhakdi, Sawyer Merritt) confirmed the terms independently.
+- The posted agreement states the car "will not operate without an active Autonomy Subscription." Tesla can reprice the subscription with one month's notice, expand/shrink/relocate the geofence at any time, suspend the vehicle after three "strikeouts," and remotely access, locate, or restrict it. Insurance, registration, parking, charging, and cleaning are explicitly excluded from the subscription, per the agreement.
+- The vehicle has no steering wheel or pedals, ships with ~250 miles already on the odometer, is capped at one per customer, bars commercial ride-hail/delivery use, and includes touchscreen manual controls limited to ~2 mph for low-speed maneuvering.
+- Independent tracker Koby Pierce found actual Robotaxi geofence coverage running 59%-78% of Tesla's advertised maps across six cities tested, with Austin at ~59% (Electrek).
+- NHTSA's audit into roughly 1,000 Cybercabs remains open; Tesla filed confidential responses October 30 with no ruling yet.
+- Tesla's Q3 2026 SEC filing showed unsupervised robotaxi miles grew eight-fold quarter-over-quarter to nearly 2 million; Tesla's live counter showed 5.15 million cumulative robotaxi miles across eight cities as of November 13 (Farzad).
+- Bhakdi argues the program is a deliberate volume play, letting Tesla sell Cybercabs to consumers on top of its own commercial fleet in the same metro — speculating a "4x" unit scenario for a city like Austin, though this is his own estimate, not a Tesla figure.
+- Electrek and other hosts noted Tesla's Ashok Elluswamy said customer Model Y vehicles could join the robotaxi network around Q2 2027.
+
+## SpaceX — Starship
+- Starship flight 15's ship (ship 42) was successfully caught by the Starbase tower after 14 orbits and a ~22.5-hour mission — SpaceX's first-ever catch of a Starship upper stage, following earlier booster catches.
+- The prior day's Super Heavy booster diverted to a safe water landing after a low-fuel alarm cut its boost-back burn early; posts attributed to Musk (unconfirmed by hosts) said the booster was burning copper and running oxygen-rich, and that losing the tower in an incident would cost SpaceX two to three months.
+- Re-entry hit speeds over 26,000 km/h with heat-shield temperatures around 2,600°F; the mission also deployed 26 Starlink V3 satellites, all reported healthy.
+- Musk reportedly discussed a Raptor 4 engine at ~500 tons thrust (vs. 250 tons for Raptor 3) that could raise Starship's LEO payload from ~100-150 tons toward 250+ tons, per Brian Wang's account.
+
+## SpaceX — AI & Compute
+- Musk said at the Baron Investment Conference that SpaceX will start launching orbital AI computers in Q3 2027 with major deployment in 2028-2029, with Nvidia co-designing hardware. A research report cited by Brian Wang claims SpaceX has ordered 6,000 space-ready racks for 2027 (~432,000 GPUs, ~$42-45B), roughly one gigawatt of compute.
+- SpaceX's terrestrial data-center buildout: one "mini hard" data center deployed in October, one in November, a possible third in December; a cited third-party estimate puts ~3.6 gigawatts under construction with up to 9 gigawatts more identified.
+- On SpaceX's August 4 earnings call, Musk said the company is building "exclusively on Nvidia," with SpaceX's agreement giving it "a very significant percentage" of Nvidia's GPUs next year; SpaceX reportedly raised $40 billion in debt to fund GPU purchases, with Colossus 2 in Memphis expecting ~1.2 million Blackwell chips by year-end and a new $50 billion, up-to-six-gigawatt Arizona campus announced this week.
+- Anthropic reportedly pays SpaceX ~$1.25 billion/month to lease Colossus 1; AI compute made up roughly half of SpaceX's revenue last quarter (~$7.6B of ~$14.6B), per Herbert Ong's account.
+
+## SpaceX — Corporate & Valuation
+- Nvidia's ~123 million SpaceX shares (from its xAI stake, converted after SpaceX's February acquisition of xAI) were worth ~$21 billion at end of June, ~$17 billion more recently, making Nvidia SpaceX's sixth-largest investor per Herbert Ong.
+- A cited Bloomberg report says Tesla-SpaceX merger talks are ongoing, with an announcement possibly as early as December; SpaceX's defense contracts and Tesla's China manufacturing business are flagged as key obstacles.
+- SpaceX carries no key-person life insurance on Musk, and per IPO filings only holders of Musk's share class can remove him as CEO or chairman.
+
+## Market & Competition
+- Nvidia CEO Jensen Huang resigned amid an affair scandal and an unresolved espionage allegation; Nvidia shares fell ~14% intraday before closing down ~4%. Analyst Dan Ives reportedly estimates Nvidia is worth 25-30% less without Huang. CFO Colette Kress is interim CEO.
+- Musk publicly lobbied for Huang's reinstatement, replying "it would be an honor" when asked if he'd hire Huang, and said he signed a petition calling for Huang's reinstatement.
+- United Airlines' CEO called in-flight WiFi the "No. 1 reason" people choose an airline, tying it to Starlink's onboard deal, and called Delta's choice of Amazon's LEO service "a mistake."
+
+## Electric Vehicles
+- Tesla raised Model Y RWD's U.S. range rating 8.5% to 348 miles (from 321) while holding price at $39,990. The $41,990 Model Y AWD trim was removed from the U.S. order page, and all Model Y Premium trims are sold out for 2026, with new orders pushed to Jan-March 2027 delivery.
+- Musk said Cybertruck demand exceeds production and Tesla plans to wind down the Cybertruck line in about 8 months, reallocating capacity to Cybercab, with a long-term Cybercab goal of at least 2 million units/year.
+
+## Humanoid Bots
+- Herbert Ong reported Tesla reduced memory in its upcoming AI6 chip for Optimus from 216GB to 144GB; Musk replied memory bandwidth was unchanged, which Ong reads as evidence of a real memory-chip supply constraint tied to TerraFab.
+- A futureaza guest relayed unconfirmed speculation (attributed to commentator Scott Walter) that Tesla could reveal as many as 5,000 Optimus robots simultaneously at a stadium-style event — explicitly flagged as speculation, not a Tesla statement.
+
+Notable quotes and data:
+- "Your Cybercab will not operate without an active Autonomy Subscription." — Tesla's posted agreement, per multiple sources.
+- "SpaceX could go to 500 billion to a trillion dollars of ARR by the end of 2027." — Musk, per Brian Wang's account of SpaceX's Q3 earnings call.
+- "I consider the Tesla stack to be the most advanced autonomous driving stack in the world." — Jensen Huang, reposted by Musk.
+- "It would be an honor." — Musk, on hiring Huang.
+- Starship flight 15: ship caught after 14 orbits, ~22.5-hour mission, re-entry over 26,000 km/h, heat shield ~2,600°F.
