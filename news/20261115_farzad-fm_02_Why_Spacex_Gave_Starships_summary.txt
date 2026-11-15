@@ -1,0 +1,38 @@
+Channel:     farzad-fm
+Title:       Why SpaceX Gave Starship's New Booster Only 3 Grid Fins
+URL:         https://www.youtube.com/watch?v=6OtiwhLZ2xM
+Published:   2026-11-15 16:31 UTC
+Summarized:  2026-11-15 17:06:31 UTC
+Model:       claude-sonnet-5 [cli]
+Cost:        $0.00000 (19904 in / 3505 out tokens, subscription)
+Relevance:   core — The video is a detailed technical breakdown of SpaceX's Starship Super Heavy booster redesign and Flight 15 test, directly bearing on the SpaceX reusability/cost thesis.
+Topic:       spacex
+Categories:  SpaceX — Starship
+────────────────────────────────────────────────────────────
+
+This video explains why SpaceX redesigned the Super Heavy booster's grid fins from four to three on the version 3 vehicle, and analyzes what happened during Flight 15's booster abort on November 13, 2026. The core thesis is that each change — fewer, larger, repositioned, and dual-purpose (steering-plus-catch) fins — reflects SpaceX's broader engineering philosophy of consolidating parts to enable rapid, daily-cadence reuse, and that Flight 15's aborted catch was a fuel-margin issue unrelated to the new fin design.
+
+## SpaceX — Starship
+1. **Four-fin design proved itself before being scrapped:** SpaceX's original Super Heavy used four symmetrical grid fins (following the Falcon 9 convention since 2015) and successfully completed three tower catches — on Flight 5 (October 13, 2024), Flight 7 (January 2025), and Flight 8 (March 2025) — before the design was abandoned for version 3.
+2. **Version 3 booster specs grew substantially:** The version 3 booster was stretched to 236 ft (from 232 ft), with propellant capacity increased to 8 million lb (from 7.5 million lb); a May 11, 2026 ground test loaded over 11 million lb of propellant across the combined booster and ship. The 33 Raptor 3 engines now generate 18.1 million lb of liftoff thrust (up from 16.7 million lb), with each engine producing 551,000 lb of thrust while shedding external heat shields and flanges to save about one ton of mass per engine.
+3. **Grid fins redesigned in five ways:** Per SpaceX's August 13, 2025 and May 12, 2026 posts, the three new fins are 50% larger and stronger, integrate catch points directly into the fins (eliminating separate catch pins), are positioned lower on the booster to reduce hot-staging heat exposure, have their actuator/shaft/support structure moved inside the main fuel tank wall, and are reclocked into a T-shaped layout (two fins at 3:00/9:00 for the chopstick catch arms, one at 6:00 acting as a rudder) rather than evenly spaced.
+4. **Steeper reentry angle explains fin reduction:** The larger fins let the booster descend at a higher angle of attack, exposing the belly to clean airflow while shielding the back of the booster in its own wind shadow — per a NASA spaceflight analyst's point relayed in the video, a fourth fin in that shadow would be aerodynamically starved anyway, making it dead weight.
+5. **Hot staging redesign eliminates disposable shield:** Earlier boosters (9 through 16) used a single-use steel shield ring at the top, discarded after separation. Version 3 replaces it with a permanent open lattice truss integrated into the booster, with the forward fuel tank dome protected only by internal tank pressure and a non-structural steel layer during the upper stage's six-engine hot-stage ignition.
+6. **Booster 22 underwent pre-flight catch testing:** On November 10, 2026, SpaceX rolled booster 22 — the first version 3 booster intended to return for a tower catch — to Pad 2 and performed a suspended squeeze test at catch height with the electric chopstick arms before propellant loading.
+7. **Flight 15 launched and the booster aborted its catch:** On November 13, 2026 at 4:47 p.m. Central, booster 22 and ship 42 launched from Starbase Pad 2 (407 ft stack). Hot staging occurred at 2:21 into flight; the booster survived and began boostback, relighting 32 of 33 planned engines, but then diverted offshore over the Gulf instead of returning to the tower.
+8. **Abort attributed to low fuel, not the new fins:** SpaceX's official Flight 15 recap and a company quality management director stated the boostback burn ended early due to a low fuel mass alarm, under investigation; the booster's guidance system autonomously detected it was not positioned safely for the catch and diverted to a controlled offshore landing burn before the flight termination system activated. A SpaceX spokesperson initially (and later retracted) attributed the diversion to a GNC issue on the Friday broadcast, clarifying Saturday that GNC performed correctly by triggering the abort.
+9. **Elon Musk's technical explanation on X:** Musk stated on X that the booster was slightly low on fuel, attributing it to slight engine underperformance during ascent causing a copper-fueled green flame (from regenerative cooling circuit depletion and oxygen-rich combustion) and noted this doesn't change SpaceX's timeline for high-volume reusable Starship flights; he said a fix is underway via Raptor version 3.2 and a software adjustment to cut off ascent about one second earlier.
+10. **Ship 42 achieved first-ever upper stage catch:** Despite the booster diversion, Starship's upper stage (ship 42) deployed 26 Starlink version 3 satellites, coasted over 20 hours, survived reentry, and was caught by the tower's chopstick arms for the first time on November 14, 2026 at 3:21 p.m. Central.
+11. **Musk floated further fin reduction:** On September 25, 2026, Musk posted on X that Super Heavy could eventually drop to two grid fins, using S-turn maneuvers during reentry for the third control axis, under his "best part is no part" philosophy.
+12. **Reusability economics context:** The video notes Falcon 9 has completed nearly 600 landings/reflights, with individual boosters passing 36 flights by mid-2026 and turnarounds under 30 days, cutting launch costs from roughly $4,500–$9,000/lb to about $1,200/lb. Starship version 3 targets a 60–80x cost cut to below $25/lb while carrying over 220,000 lb to orbit per flight, with a full mission designed to deploy around 60 next-generation Starlink v3 satellites at once.
+
+Notable quotes and data:
+- "The boostback burn ended early due to low fuel mass with the root cause under investigation." — SpaceX's official Flight 15 recap page
+- "Early indications are that the booster ended its boost back early due to a low fuel mass alarm. The team is still investigating the root cause on that." — SpaceX quality management director Kate Ty
+- "Booster was slightly low on fuel." — Elon Musk on X, November 14, 2026
+- Musk: the green flame was "caused by burning copper from depleting fuel in the regenerative cooling circuit and going oxygen-rich inside the main combustion chamber"; fix via "Raptor version 3.2" and a software change to cut ascent ~1 second earlier; "this booster loss does not change our timeline to reach high volume fully reusable Starship flights."
+- Version 3 booster: 236 ft tall, 8 million lb propellant capacity, 18.1 million lb liftoff thrust, 33 Raptor 3 engines at 551,000 lb thrust each.
+- Falcon 9: nearly 600 landings/reflights; individual boosters past 36 flights by mid-2026; turnaround under 30 days.
+- Starship version 3 cost target: below $25/lb, carrying 220,000+ lb to orbit, deploying ~60 Starlink v3 satellites per mission.
+- Ship 42 deployed 26 Starlink version 3 satellites and achieved the first tower catch of an upper stage on November 14, 2026.
+- Musk (September 25, 2026, on X): Super Heavy could eventually reduce to two grid fins, using S-turns for the third control axis — "best part is no part."
