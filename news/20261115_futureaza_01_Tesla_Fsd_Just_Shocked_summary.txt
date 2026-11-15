@@ -1,0 +1,30 @@
+Channel:     futureaza
+Title:       Tesla FSD Just Shocked Its Biggest Skeptics
+URL:         https://www.youtube.com/watch?v=nGHnxJMCe8U
+Published:   2026-11-15 13:00 UTC
+Summarized:  2026-11-15 17:02:04 UTC
+Model:       claude-sonnet-5 [cli]
+Cost:        $0.00000 (19156 in / 2589 out tokens, subscription)
+Relevance:   core — the video is an extended hands-on stress test and discussion of Tesla's FSD performance and limitations, directly bearing on the autonomous driving thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Futureaza hosts Dirty Tesla (Chris) to discuss closed-track testing of FSD at Kyle Connor's test facility, covering stunt-style edge-case tests (narrow passages, hand signals, mock pedestrians/cyclists, aggressive "bullying" maneuvers by other cars, and Mad Max acceleration mode) alongside Chris's real-world experience with a recent FSD version. The core thesis: supervised FSD has become dramatically more confident and reactive than earlier versions, handling emergency braking and collision-avoidance scenarios impressively well, but still has specific, repeatable gaps — stationary/novel obstacles, highway on-ramp navigation, and politeness toward merging trucks — that keep it short of being accident-free.
+
+## Autonomous Driving
+1. **Hand-signal response confirmed reliable:** Dirty Tesla and a collaborator (Devin) repeatedly tested whether FSD responds to a human waving it forward after stopping for insufficient space; across multiple trials the car consistently and almost instantly resumed moving only after the hand gesture, which Chris says convinced him the feature genuinely works (he had been skeptical of social-media claims about it).
+2. **Mock-pedestrian and cyclist tests show strong perception:** In tests with a person on an e-bike approaching the front of a stationary car, FSD began braking in response to the person's head/body movement before they were even visible from behind the vehicle, which Chris calls "incredible" perception and trajectory calculation.
+3. **Close-following cut-in test triggers correct emergency swerve:** Devin manually drove ahead and obstructed a thrown object until the last second while Chris's car followed very closely (deliberately closing the gap by accelerating); FSD detected it wouldn't be able to stop in time and swerved to avoid the object, a maneuver Chris says has essentially no closer real-world analog and that FSD handled correctly despite the scenario being artificially worsened by his own driving.
+4. **Real-world confidence versus residual complaints:** Chris states he has roughly 99% confidence in current supervised FSD and says reaction time now matches or exceeds his own, crediting a big jump in performance to version 14 (building on version 13) versus the "novice driver"-like version 11 and "inattentive driver"-like version 12 he experienced previously. His two standing complaints are (a) poor highway navigation/lane-merge data, including the car entering soon-ending on-ramp lanes, and (b) inconsistent recognition of other vehicles' turn signals — on a recent round trip to North Carolina he says the car stopped slowing down to let trucks merge in front of him, behavior that had previously worked well, requiring him to brake manually to "let someone in."
+5. **Known failure cases involving static/unusual obstacles:** Chris references a widely circulated clip (unverified by him directly, seen on social media) of an FSD vehicle in Pennsylvania failing to recognize lane-closure barricades during a timed lane-direction switch and striking them at around 60 mph, and separately recounts a secondhand account of a driver (visiting from Korea) whose FSD vehicle struck flexible plastic barricade flags at a closed truck stop in Oregon. He frames these as documented but narrow edge cases where FSD currently fails to detect certain classes of roadside barricades/objects, noting his own car did detect similar objects when he tested it himself.
+6. **Aggressive "bullying" track tests show robust but imperfect reactive braking:** In a second round of track tests (a follow-up to similar tests run roughly a year earlier), Kyle Connor's team drove other vehicles very close to and across the path of Chris's car — cutting in, swerving head-on, and blocking — to probe FSD's reactions; Chris says the car reacted very quickly and in a "human-like" way, often braking or reversing to avoid contact, but characterizes the response as good rather than perfect, noting that a human might not even perceive some of the near-misses (e.g., a cyclist emerging from a blind spot) that the car caught and reacted to.
+7. **Mad Max mode produces measurably faster, more aggressive driving:** Chris says that, after being skeptical for a long time, he's now convinced Mad Max mode noticeably increases acceleration, cornering tenacity, and oversteer compared to standard mode — running the same track lap repeatedly in each mode produced visibly faster times and more lateral oversteer in Mad Max, a difference he says became obvious switching back to standard afterward.
+
+Notable quotes and data:
+- "I mean, 99% confidence level... I wouldn't sleep with it on" — Chris (Dirty Tesla) on his trust level in current supervised FSD.
+- "The reaction time is now the same or better than mine" — Chris, comparing FSD's reactions to his own.
+- On the Pennsylvania barricade incident: "the FSD changed lanes and just crashed into those barricades" at around 60 mph — Chris, relaying a video he saw circulated on social media (not independently verified).
+- "If every car could be converted to FSD, the number of accidents per mile would be significantly reduced... because in an unavoidable situation, the car would brake earlier than a person" — paraphrased framing used by the host.
+- Kyle Connor's test track previously had the vehicle running close to 40 mph against an assumed 25 mph track limit, per Chris, from testing roughly a year prior.
+- Dirty Tesla's YouTube channel has 145,000 subscribers, per the host.
