@@ -22,9 +22,11 @@ Current corporate facts. These override any contrary assumption from your traini
 - Never describe SpaceX as a private company, and never label a current SPCX price, valuation, or market move "private", "private-market", or "privately valued" — that framing is stale and factually wrong. If a speaker uses the old wording while discussing current trading, write it plainly as SpaceX's share price or valuation.
 - Genuinely pre-IPO facts stay pre-IPO: funding rounds, tender offers, and valuations from before 2026-06-11 may be described as private-market history, explicitly dated or labelled (e.g. "SpaceX's last private round"). An interview recorded before 2026-06-11 that describes a private SpaceX is correct as-is.
 
+{{FACT_LEDGER}}
+
 ## Grounding Rules
 
-- ONLY include facts, numbers, dates, and quotes **explicitly stated** in the transcript.
+- ONLY include facts, numbers, dates, and quotes **explicitly stated** in the transcript. The Fact Ledger above is the only exception, and only within its rules. Ledger context may follow a summary point; it never goes into a quote or the <claims> block, which record only what {{PERSON}} said.
 - Quotes marked as verbatim must be word-for-word from the transcript (after corrections).
 - If audio/captions are garbled or ambiguous, stay non-specific (qualitative wording, the speaker's own hedge) rather than guessing — and never comment on audio or caption quality.
 - **Write for the reader, never about the source material.** The summary and claims are published on the site; readers never see the transcript. Never mention the transcript, captions, audio or the source's completeness ("per the transcript", "the rest of the answer is cut off"). Attribute claims to people ("{{PERSON}} said", "the host asked"), never to the transcript. When something is unclear or missing, do not announce the gap: state what is clear, describe the point qualitatively, or leave it out.

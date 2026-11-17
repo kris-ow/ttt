@@ -3,7 +3,7 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { CORRECTIONS, CATEGORIES, MODEL, THINKING, FALLBACK_MODEL, FALLBACK_THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM, CLI_SUMMARIES_ENABLED, CLI_DAILY_CAP } from './config.js';
 import { createMessage, textOf } from './llm-api.js';
-import { formatCanonicalTrackerBlock } from './kb-tracker.js';
+import { buildFactLedger } from './fact-ledger.js';
 import { loadStockBlock, getStockBlock } from './stock-data.js';
 import { completeViaCli } from './llm-cli.js';
 
@@ -196,7 +196,7 @@ function buildPrompt(channel, title, transcript, published, { isXDaily = false, 
   template = template.replace('{{CHANNEL}}', channel);
   template = template.replace('{{TITLE}}', title);
   template = template.replace('{{AUTHOR}}', author);
-  template = template.replace('{{TRACKER_DATA}}', formatCanonicalTrackerBlock());
+  template = template.replace('{{FACT_LEDGER}}', buildFactLedger({ asOf: pubDate }));
   template = template.replace('{{STOCK_DATA}}', getStockBlock());
   template = template.replace('{{TRANSCRIPT}}', transcript);
 

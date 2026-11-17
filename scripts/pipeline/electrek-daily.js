@@ -3,7 +3,7 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { MODEL, PRICING_DIRECT } from './config.js';
 import { createMessage, textOf } from './llm-api.js';
-import { formatCanonicalTrackerBlock } from './kb-tracker.js';
+import { buildFactLedger } from './fact-ledger.js';
 
 // Electrek Daily: one feed item per day instead of one per article.
 //
@@ -112,7 +112,7 @@ function buildPrompt(date, articles) {
   return fs.readFileSync(PROMPT_FILE, 'utf-8')
     .replace('{{YEAR}}', date.slice(0, 4))
     .replaceAll('{{PUBLISH_DATE}}', date)
-    .replace('{{TRACKER_DATA}}', formatCanonicalTrackerBlock())
+    .replace('{{FACT_LEDGER}}', buildFactLedger({ asOf: date }))
     .replace('{{ARTICLES}}', block);
 }
 

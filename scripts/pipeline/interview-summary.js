@@ -14,6 +14,7 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { CORRECTIONS, MODEL, PRICING_DIRECT } from './config.js';
 import { createMessage, textOf } from './llm-api.js';
+import { buildFactLedger } from './fact-ledger.js';
 
 const COSTS_FILE = path.resolve('scripts/pipeline/costs.json');
 const PROMPT_FILE = path.resolve('scripts/pipeline/prompt-interview.md');
@@ -76,6 +77,7 @@ async function main() {
   prompt = prompt.replaceAll('{{DATE}}', date);
   prompt = prompt.replace('{{CORRECTIONS}}', corrStr);
   prompt = prompt.replace('{{YEAR}}', date.slice(0, 4) || String(new Date().getFullYear()));
+  prompt = prompt.replace('{{FACT_LEDGER}}', buildFactLedger(/^\d{4}-\d{2}-\d{2}$/.test(date) ? { asOf: date } : {}));
   prompt = prompt.replace('{{TRANSCRIPT}}', transcript);
 
   console.log(`Summarizing interview: ${person} @ ${venue} (${date})`);

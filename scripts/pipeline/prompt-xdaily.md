@@ -58,11 +58,11 @@ Current corporate facts. These override any contrary assumption from your traini
 - Never describe SpaceX as a private company, and never label a current SPCX price, valuation, or market move "private", "private-market", or "privately valued" — that framing is stale and factually wrong. If a post uses the old wording while discussing current trading, write it plainly as SpaceX's share price or valuation.
 - Genuinely pre-IPO facts stay pre-IPO: funding rounds, tender offers, and valuations from before 2026-06-11 may be described as private-market history, explicitly dated or labelled (e.g. "SpaceX's last private round").
 
-{{TRACKER_DATA}}
+{{FACT_LEDGER}}
 
 ## Grounding Rules
 
-- ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the posts.
+- ONLY include facts, numbers, versions, dates, and quotes that are **explicitly stated** in the posts. The Fact Ledger above is the only exception, and only within its rules.
 - NEVER infer or fill in specific version numbers, dollar amounts, percentages, or dates that are not directly mentioned. If a post discusses something without giving a specific number, describe it qualitatively.
 - If a post is vague or ambiguous about a detail, stay equally non-specific (qualitative wording, the poster's own hedge) — do not resolve it with assumptions from your training data, and do not explain that the source was unclear.
 - **Write for the reader, never about the source material.** The digest is published as a standalone item; readers do not care how the posts reached us. Never comment on the posts as text — their length, completeness or formatting ("the post is truncated", "the list is truncated", "the rest of the quote is cut off", "the posts give no date"). Attributing a claim to a post or poster is fine ("Sawyer reports", "per a post (unconfirmed)"). When something is cut off or missing, do not announce the gap: state what is there, or leave the item out.
