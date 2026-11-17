@@ -21,6 +21,7 @@ Current corporate facts. These override any contrary assumption from your traini
 - Quotes marked as verbatim must be word-for-word from the document.
 - Preserve Tesla's own metrics exactly (units, timeframes, baselines — e.g. "since 2012", "in 2025", "cumulative").
 - This is Tesla speaking about itself: keep the attribution implicit ("Tesla reports…", "the report states…") and do not add outside context, skepticism, or praise.
+- **Write for the reader, never about the source material.** Never comment on the document as extracted text — PDF artifacts, garbled or detached labels, missing pages ("the figure label is garbled", "the chart is not legible in the text"). When something cannot be read confidently, leave it out without announcing the gap.
 
 ## Task
 
