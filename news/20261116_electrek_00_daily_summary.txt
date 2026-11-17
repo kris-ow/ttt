@@ -1,0 +1,37 @@
+Source:      electrek
+Title:       Electrek Daily Digest (2026-11-16)
+Author:      Electrek
+Published:   2026-11-16 21:41 UTC
+Summarized:  2026-11-17 07:53:51 UTC
+Model:       claude-sonnet-5 [direct]
+Cost:        $0.05685 (16169 in / 2451 out tokens)
+Articles:    5
+Relevance:   core — All five articles are substantively about Tesla's Autopilot/FSD safety record, Cybercab/Robotaxi crash data, and a major Giga Berlin Cybercab factory investment.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi
+────────────────────────────────────────────────────────────
+
+Electrek's Tesla coverage today centers on a deep investigation into fatal Autopilot/FSD crashes buried in NHTSA filings, alongside a major Cybercab factory announcement and a data-driven look at Cybercab crash patterns.
+
+## Autonomous Driving
+1. **El Dorado Hills fire crash killed three:** Fred Lambert reports a 2024 Tesla Model Y left Serrano Parkway in El Dorado Hills, California in September, hit a tree and caught fire, killing three of four occupants; a fourth survived with major injuries. Tesla's own NHTSA filing marks Autopilot/FSD as "Verified Engaged" at 74 mph, but redacts the narrative, software version, and operating-domain status as confidential; local coverage never mentioned a driver-assist system. Lambert notes Tesla listed the roadway type and what the car hit as "Unknown" despite police identifying a tree, and says this is the second triple-fatal crash in Tesla's latest filings with no public disclosure of driver-assist involvement, calling the redaction a failure to earn public trust. [Read on Electrek](https://electrek.co/2026/11/16/tesla-autopilot-fsd-fiery-crash-el-dorado-hills/)
+
+2. **Naples I-75 truck crash killed three, including a bystander:** Lambert reports a 2023 Tesla Model 3 hit an overturned box truck and a man who had stopped to help on I-75 near Naples, Florida in May, killing two passengers and the bystander; Tesla's NHTSA filing shows Autopilot/FSD "Verified Engaged" at 71 mph, filed as an urgent 5-Day report but not surfacing until September, over three months later. Police publicly attributed the crash to the truck being nearly invisible in the dark, with no mention of driver-assist. The same NHTSA release shows Tesla reported 264 driver-assist crashes in September 2026, a new monthly record, up from July's 236 and March's 135. Lambert draws a parallel to the 2016 Joshua Brown and 2019 Jeremy Banner fatal under-ride crashes and argues Tesla sealing the data protects the company, not the public. [Read on Electrek](https://electrek.co/2026/11/16/tesla-autopilot-fsd-overturned-truck-naples-i75/)
+
+3. **Naples pole rollover killed a passenger:** Lambert reports a 2025 Tesla Model X veered off Golden Gate Parkway in Naples, Florida in September, hit a traffic signal pole and rolled over, killing a 50-year-old passenger; the driver survived with non-life-threatening injuries. Tesla's NHTSA filing marks the system "Verified Engaged" at 39 mph and shows Tesla self-detected the crash via telematics and holds video and event-data-recorder footage, but redacted the narrative and software version. Lambert calls this the cleanest example of Tesla having full data on a fatal crash yet sharing nothing publicly, and notes it's the second fatal Naples case in this NHTSA release alongside the I-75 truck crash. [Read on Electrek](https://electrek.co/2026/11/16/tesla-autopilot-fsd-model-x-pole-rollover-naples/)
+
+## Robotaxi
+4. **Giga Berlin to build Cybercab, up to 1M/year:** Electrek reports Tesla confirmed a first €3 billion investment in a new production hall at Giga Berlin for up to 1 million Cybercabs annually, with the building application planned by year-end, groundbreaking in H1 2027, and production starting in 2029; plant manager André Thierig announced it, and an automation engineer said Elon Musk personally approved the project. Fred Lambert notes the EU caps driverless vehicle registrations at 1,500 per model per year, Tesla has no European approval for unsupervised driving, and Texas had only 463 registered Cybercabs as of late October — calling the €3B bet "extremely risky" given the Cybercab lacks a steering wheel and Robotaxi has never left its geofence. [Read on Electrek](https://electrek.co/2026/11/16/tesla-cybercab-giga-berlin-3-billion-1-million/)
+
+5. **Cybercab's 8 crashes expose a speed problem:** Lambert's data analysis finds the Cybercab has 8 NHTSA-filed crashes roughly two months after Austin public rides began: 4 in driverless Robotaxi mode (all under 5 mph, none Tesla's fault in two cases) and 4 with a test driver and Autopilot/FSD engaged, including one hitting a car at 53 mph on a Philadelphia highway where Tesla holds no automated-vehicle permit. Across 43 total Tesla Robotaxi ADS reports, the highest speed was 29 mph and the median 1 mph, versus a 53 mph median among 52 fatal Level 2 crashes in Tesla's broader dataset. Lambert argues Tesla's "zero injuries" Robotaxi safety claim (3,112,541 driverless miles, Jan 22–Oct 18) excludes the test fleet and that Tesla's low-speed, geofenced approach is prudent given highway-speed crash risk, but says this limits Robotaxi's usefulness and leaves the harder scaling challenge still ahead. [Read on Electrek](https://electrek.co/2026/11/16/tesla-cybercab-crashes-speed-problem/)
+
+## Editorial Stance
+Electrek's reporting today is pointedly critical of Tesla, framing its NHTSA crash redactions as a pattern of concealment that prioritizes the company's image over public and regulator trust, and casting the Giga Berlin Cybercab investment and robotaxi expansion as premature bets on unproven autonomy.
+
+Notable quotes and data:
+- Tesla reported 264 driver-assist crashes in September 2026, a new record, per Electrek's NHTSA-filing analysis (Naples I-75 article).
+- Master dataset: 4,669 Tesla driver-assist crash reports since 2019, 69 flagged fatal (Naples I-75 article).
+- Cybercab investment: €3 billion for a new Giga Berlin hall rated for up to 1 million vehicles/year, production targeted for 2029 (Giga Berlin article).
+- Texas had 463 registered Cybercabs as of late October (Giga Berlin article).
+- Cybercab crash data: highest Robotaxi (ADS) speed was 29 mph; median 1 mph across 43 reports; median speed among 52 fatal Level 2 crashes was 53 mph (Cybercab speed-problem article).
+- Trooper Kenn Watson, on the I-75 truck crash: the Tesla driver would have seen only the truck's underside, with "no lights, no reflectors, nothing warning them."
