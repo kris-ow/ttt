@@ -10,8 +10,9 @@
 //   - replaces Claude Code's default system prompt with a neutral one;
 //   - strips ANTHROPIC_API_KEY from the child env. If it were set, the CLI would
 //     bill the API key instead of the subscription, which defeats the point;
-//   - sets MAX_THINKING_TOKENS=0, matching THINKING (disabled) on the API path,
-//     so the two backends produce comparable output.
+//   - sets MAX_THINKING_TOKENS=0, matching THINKING (thinking off) on the API
+//     path, so the two backends produce comparable output. Verified on
+//     claude-sonnet-5-5 on 2026-11-17: 0 thinking tokens reported.
 // --bare would be simpler, but it refuses subscription (OAuth) auth.
 
 import { spawn } from 'child_process';

@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { MODEL, THINKING, PRICING_DIRECT } from './config.js';
+import { MODEL, PRICING_DIRECT } from './config.js';
+import { createMessage, textOf } from './llm-api.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 
 // ── Configuration ────────────────────────────────────────
@@ -255,12 +256,7 @@ async function main() {
         console.log(`  Retry ${attempt}/${MAX_RETRIES} after ${delay / 1000}s...`);
         await new Promise(r => setTimeout(r, delay));
       }
-      msg = await client.messages.create({
-        model: MODEL,
-        max_tokens: 16000,
-        thinking: THINKING,
-        messages: [{ role: 'user', content: prompt }],
-      });
+      msg = await createMessage(client, prompt);
       break;
     } catch (err) {
       const isRetryable = err.status === 429 || err.status === 529 || err.status === 424 || err.status === 503;
@@ -272,7 +268,7 @@ async function main() {
     }
   }
 
-  const text = msg.content.map(c => c.text).join('');
+  const text = textOf(msg);
   if (msg.stop_reason === 'max_tokens') {
     console.warn('  WARNING: response stopped at max_tokens — brief may be truncated and missing the closing </brief> tag.');
   }

@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { MODEL, THINKING, PRICING_DIRECT } from './config.js';
+import { MODEL, PRICING_DIRECT } from './config.js';
+import { createMessage, textOf } from './llm-api.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 
 // Electrek Daily: one feed item per day instead of one per article.
@@ -225,12 +226,7 @@ async function main() {
         console.log(`  Retry ${attempt}/${RETRY_DELAYS.length} after ${RETRY_DELAYS[attempt - 1] / 1000}s...`);
         await new Promise(r => setTimeout(r, RETRY_DELAYS[attempt - 1]));
       }
-      msg = await client.messages.create({
-        model: MODEL,
-        max_tokens: 16000,
-        thinking: THINKING,
-        messages: [{ role: 'user', content: prompt }],
-      });
+      msg = await createMessage(client, prompt);
       break;
     } catch (err) {
       const isRetryable = [424, 429, 503, 529].includes(err.status);
@@ -245,7 +241,7 @@ async function main() {
   if (msg.stop_reason === 'max_tokens') {
     console.warn('  WARNING: response stopped at max_tokens — digest may be truncated.');
   }
-  const text = msg.content.map(c => c.text).join('');
+  const text = textOf(msg);
   const parsed = parseResult(text);
   const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
   const cost = (inputTokens / 1_000_000) * PRICING_DIRECT.input + (outputTokens / 1_000_000) * PRICING_DIRECT.output;

@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, CATEGORIES, MODEL, THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM, CLI_SUMMARIES_ENABLED, CLI_DAILY_CAP } from './config.js';
+import { CORRECTIONS, CATEGORIES, MODEL, THINKING, FALLBACK_MODEL, FALLBACK_THINKING, PRICING, PRICING_DIRECT, RETIRED_CHANNELS, ELECTREK_DIGEST_FROM, CLI_SUMMARIES_ENABLED, CLI_DAILY_CAP } from './config.js';
+import { createMessage, textOf } from './llm-api.js';
 import { formatCanonicalTrackerBlock } from './kb-tracker.js';
 import { loadStockBlock, getStockBlock } from './stock-data.js';
 import { completeViaCli } from './llm-cli.js';
@@ -208,12 +209,15 @@ async function submitBatch(client, requests) {
   console.log(`\nSubmitting batch with ${requests.length} request(s)...`);
 
   const batch = await client.messages.batches.create({
+    // req.fallback: MODEL refused this item in an earlier batch (see
+    // writeBatchResults), so the retry goes to FALLBACK_MODEL with its own
+    // thinking setting - MODEL's THINKING is a 400 on any other model.
     requests: requests.map(req => ({
       custom_id: req.id,
       params: {
-        model: MODEL,
+        model: req.fallback ? FALLBACK_MODEL : MODEL,
         max_tokens: 16000,
-        thinking: THINKING,
+        thinking: req.fallback ? FALLBACK_THINKING : THINKING,
         messages: [{ role: 'user', content: req.prompt }],
       },
     })),
@@ -270,18 +274,13 @@ async function processDirectly(client, transcripts, state) {
           await new Promise(r => setTimeout(r, delay));
         }
 
-        const msg = await client.messages.create({
-          model: MODEL,
-          max_tokens: 16000,
-          thinking: THINKING,
-          messages: [{ role: 'user', content: prompt }],
-        });
+        const msg = await createMessage(client, prompt);
 
-        const text = msg.content.map(c => c.text).join('');
+        const text = textOf(msg);
         const parsed = parseResult(text);
         const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
 
-        writeSummaryFile(t, parsed, null, inputTokens, outputTokens, { direct: true });
+        writeSummaryFile(t, parsed, null, inputTokens, outputTokens, { direct: true, model: msg.model });
         saveExtractedFacts(parsed.keyFacts, t);
 
         const pricing = PRICING_DIRECT;
@@ -374,7 +373,9 @@ function parseResult(text) {
 
 // ── Summary File Writing ─────────────────────────────────
 
-function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens, { direct = false, cli = false } = {}) {
+// `model`: the model that actually served the summary (msg.model), which differs
+// from MODEL when a refusal sent the request to FALLBACK_MODEL.
+function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens, { direct = false, cli = false, model = MODEL } = {}) {
   const pricing = direct ? PRICING_DIRECT : PRICING;
   const cost = cli ? 0 : (inputTokens / 1_000_000) * pricing.input + (outputTokens / 1_000_000) * pricing.output;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
@@ -386,7 +387,7 @@ function writeSummaryFile(transcript, result, batchId, inputTokens, outputTokens
     ...(transcript.url ? [`URL:         ${transcript.url}`] : []),
     `Published:   ${transcript.published}`,
     `Summarized:  ${now}`,
-    `Model:       ${MODEL} [${cli ? 'cli' : direct ? 'direct' : 'batch'}]`,
+    `Model:       ${model} [${cli ? 'cli' : direct ? 'direct' : 'batch'}]`,
     ...(batchId ? [`Batch ID:    ${batchId}`] : []),
     `Cost:        $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens${cli ? ', subscription' : ''})`,
   ];
@@ -803,14 +804,21 @@ async function writeBatchResults(client, batchId, transcripts, state) {
 
     console.log(`\n  Processing: ${transcript.title}`);
 
-    if (result.result.type === 'succeeded') {
+    // A refusal is a "succeeded" result with no usable summary. Treat it as a
+    // failure so the retry batch re-sends it, flagged to go to FALLBACK_MODEL.
+    if (result.result.type === 'succeeded' && result.result.message.stop_reason === 'refusal') {
+      const category = result.result.message.stop_details?.category ?? 'unknown';
+      console.log(`  ${result.result.message.model} declined (refusal, category ${category}) - retry goes to ${FALLBACK_MODEL}`);
+      console.error(`::warning::${transcript.filename}: refused (category ${category}); retrying on ${FALLBACK_MODEL}`);
+      failedTranscripts.push({ ...transcript, refused: true });
+    } else if (result.result.type === 'succeeded') {
       const msg = result.result.message;
-      const text = msg.content.map(c => c.text).join('');
+      const text = textOf(msg);
       const parsed = parseResult(text);
       const inputTokens = msg.usage.input_tokens;
       const outputTokens = msg.usage.output_tokens;
 
-      writeSummaryFile(transcript, parsed, batchId, inputTokens, outputTokens);
+      writeSummaryFile(transcript, parsed, batchId, inputTokens, outputTokens, { model: msg.model });
       saveExtractedFacts(parsed.keyFacts, transcript);
 
       logCost({
@@ -882,6 +890,7 @@ async function processPendingBatch(client, state) {
       return {
         id: t.filename.replace('.txt', '').replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 64),
         prompt: buildPrompt(t.channel, t.title, transcript, t.published, { isXDaily, isArticle: t.isArticle, author: t.author }),
+        fallback: !!t.refused,
       };
     });
 

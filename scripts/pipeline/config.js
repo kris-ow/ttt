@@ -185,12 +185,21 @@ export const CORRECTIONS = {
   'True Social': 'Truth Social',
 };
 
-// Claude model for summarization. Switched from claude-sonnet-4-6 on
-// 2026-07-03 after an A/B test (better attribution/hedging + relevance-gate
-// judgment). Sonnet 5 runs adaptive thinking when `thinking` is omitted —
-// keep it explicitly disabled for like-for-like cost and output behavior.
-export const MODEL = 'claude-sonnet-5';
-export const THINKING = { type: 'disabled' };
+// Claude model for summarization. History: claude-sonnet-4-6 -> claude-sonnet-5
+// on 2026-07-03 (A/B: better attribution/hedging + relevance-gate judgment);
+// -> claude-sonnet-5-5 on 2026-11-17 (A/B on 5 transcripts, same price and
+// tokenizer). Thinking stays off for cost and like-for-like output. Sonnet 5.5
+// rejects { type: 'disabled' } with a 400; { type: 'between_tools' } is its
+// thinking-off setting (no thinking; we use no tools). It is a 400 on every
+// other model, so never send THINKING to FALLBACK_MODEL.
+export const MODEL = 'claude-sonnet-5-5';
+export const THINKING = { type: 'between_tools' };
+
+// Sonnet 5.5 can decline a request (stop_reason "refusal") in more categories
+// than Sonnet 5. A declined request is re-sent once to FALLBACK_MODEL: direct
+// scripts via llm-api.js createMessage(), batch items via the batch retry.
+export const FALLBACK_MODEL = 'claude-sonnet-5';
+export const FALLBACK_THINKING = { type: 'disabled' };
 
 // Per-transcript summaries on the Mac Mini's Claude subscription (`claude -p`,
 // run.js with LLM_BACKEND=cli) instead of the metered API. Added 2026-11-07.
@@ -205,9 +214,9 @@ export const CLI_SUMMARIES_ENABLED = true;
 // 2026-11-07 at 15.
 export const CLI_DAILY_CAP = 15;
 
-// Pricing (per million tokens). Sonnet 5 INTRO pricing through 2026-08-31
-// ($2/$10 standard). FLIP to sticker $3/$15 (batch $1.50/$7.50) on 2026-09-01
-// or costs.json under-reports.
+// Pricing (per million tokens). Sonnet 5.5 list price is $2/$10 standard,
+// batch half of that - the same rates the Sonnet 5 intro pricing had, so these
+// constants carry over unchanged. Also correct for FALLBACK_MODEL (Sonnet 5).
 export const PRICING = {
   input: 1.00,   // $/M tokens (batch = 50% of intro $2)
   output: 5.00,  // $/M tokens (batch = 50% of intro $10)

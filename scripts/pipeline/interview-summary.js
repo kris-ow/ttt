@@ -12,7 +12,8 @@
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
-import { CORRECTIONS, MODEL, THINKING, PRICING_DIRECT } from './config.js';
+import { CORRECTIONS, MODEL, PRICING_DIRECT } from './config.js';
+import { createMessage, textOf } from './llm-api.js';
 
 const COSTS_FILE = path.resolve('scripts/pipeline/costs.json');
 const PROMPT_FILE = path.resolve('scripts/pipeline/prompt-interview.md');
@@ -81,14 +82,9 @@ async function main() {
   console.log(`  Transcript: ${transcriptPath} (${transcript.length} chars)`);
 
   const client = new Anthropic({ apiKey });
-  const msg = await client.messages.create({
-    model: MODEL,
-    max_tokens: 16000,
-    thinking: THINKING,
-    messages: [{ role: 'user', content: prompt }],
-  });
+  const msg = await createMessage(client, prompt);
 
-  const text = msg.content.map(c => c.text).join('');
+  const text = textOf(msg);
   const metadataMatch = text.match(/<metadata>\s*([\s\S]*?)\s*<\/metadata>/);
   const summaryMatch = text.match(/<summary>\s*([\s\S]*?)\s*<\/summary>/);
   const claimsMatch = text.match(/<claims>\s*([\s\S]*?)\s*<\/claims>/);
