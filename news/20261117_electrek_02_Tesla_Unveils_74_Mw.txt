@@ -1,0 +1,64 @@
+Source:      electrek
+Title:       Tesla unveils 7.4 MW Powercore to take on ex-exec Baglino’s Heron Link
+Author:      Fred Lambert
+URL:         https://electrek.co/2026/11/17/tesla-powercore-solid-state-transformer-heron-link/
+Published:   2026-11-17 16:35 UTC
+Fetched:     2026-11-17 17:00 UTC
+
+────────────────────────────────────────────────────────────
+
+Tesla has unveiled Powercore, a solid-state medium-voltage transformer that also handles the inverter and breaker functions in a single unit. Tesla rates it at 7.4 MW (9 MVA) continuously at 34.5 kV, with grid-forming support up to 10 MVA of peak power.
+
+It’s made in America and scheduled to start operating in 2027. That’s the same year Heron Power, the startup founded by Tesla’s former top engineer Drew Baglino, plans to start volume production of its own solid-state transformer, the Heron Link.
+
+## Tesla’s transformer plan finally gets a name
+
+Tesla first said it would build its own transformers in September 2025, when it unveiled Megapack 3 and Megablock. Megablock connects four Megapack 3 units to a transformer and switchgear, but Tesla shared next to nothing about the transformer itself.
+
+Powercore is that missing piece. Tesla announced it today through its Tesla Megapack account on X:
+
+ 
+ 
+ 
+
+That’s the whole spec sheet for now. Tesla didn’t release efficiency figures, pricing, a factory location, or which Megapack products it will ship with. There’s no product page either. tesla.com/powercore currently returns a 404.
+
+The idea behind a solid-state transformer is simple enough. A typical solar or battery project uses low-voltage inverters to convert DC into AC, then a big oil-filled, iron-core transformer to step that up to grid voltage. A solid-state unit does both jobs with silicon carbide power electronics, which means less gear, a smaller footprint, and active control over voltage and frequency. That control is what “grid-forming” means: the unit can help hold the grid steady instead of just following it.
+
+And with lead times on conventional transformers stretching into years as data centers and renewable projects pile into interconnection queues, there’s real demand for an alternative.
+
+## Heron had a head start
+
+You can’t look at Powercore without thinking of Heron Power.
+
+Baglino spent 18 years at Tesla and finished as SVP of powertrain and energy, in charge of batteries, motors, power electronics, and energy products. He left in April 2024 and launched Heron Power in 2025 to build solid-state transformers.
+
+He brought a lot of Tesla’s power electronics talent with him. As we reported when Tesla first announced its transformer plans, Heron hired engineers who led power electronics design for Powerwall 3, the next-gen Megapack, and Superchargers, along with the person who ran Tesla’s power electronics controls team for charging and energy products.
+
+Since then, Heron has raised a $38 million Series A, a $140 million Series B led by Andreessen Horowitz and Breakthrough Energy Ventures, and a $60 million credit facility from J.P. Morgan and TriplePoint Capital. Former Tesla CFO Zach Kirkhorn sits on its board, and Tesla co-founder JB Straubel is an investor.
+
+It’s also building Heron Factory One, a 286,000-square-foot plant in Morgan Hill, California, designed to make 10,000 Heron Links a year. That’s over 40 GW of annual capacity, with commercial production planned for late 2027.
+
+And the customers are lining up. Vantage reserved more than 1 GW for its data centers, Intersect reserved 1.5 GW, LG Energy Solution Vertech is integrating Heron Link with its US-made battery systems, and RWE signed a pilot to install Heron Links at a Texas battery storage site in April 2027. Baglino says Heron has 50 GW of orders in the pipeline.
+
+## Powercore vs. Heron Link
+
+Here’s how the two compare based on what each company has disclosed:
+
+On paper, Powercore is the bigger box. At 7.4 MW continuous, it carries about 50% more power per unit than the 5 MW Heron Link. But per-unit size matters a lot less than cost per megawatt, efficiency, and uptime, and Tesla hasn’t shared any of those.
+
+Heron also has a product Tesla hasn’t talked about. Its data center version converts 34.5 kV AC straight to the 800 VDC rack architecture Nvidia is pushing, with built-in storage to smooth out GPU power swings. Data centers make up about a third of Heron’s business today.
+
+## Electrek’s Take
+
+This one is a little awkward for Tesla.
+
+A big chunk of the people who designed Tesla’s power electronics over the last decade now work at Heron, and the guy who ran the whole org is its CEO. Tesla’s energy business also lost its longtime leader, Mike Snyder, last month, according to the WSJ. 
+
+To be fair, Tesla still has plenty of power electronics expertise. Its silicon carbide inverters are in millions of cars and every Megapack. And it has something Heron doesn’t: a massive installed base and a sales channel. Tesla says it’s almost sold out of Megapacks for 2027, and bundling Powercore into Megablock is an easy upsell. Plenty of developers will take the one-stop shop.
+
+But Heron has published efficiency and availability numbers, named customers, a pilot site with an install date, and a factory under construction. Tesla has a tweet with a power rating. I wouldn’t be surprised if Heron is actually ahead here.
+
+But either way, the transformer shortage is big enough for both companies to sell everything they can build. 
+
+As data centers and new solar and battery projects pile onto the grid, utilities are scrambling for equipment and passing those costs on to ratepayers. With electricity rates up almost 10% last year and expected to keep climbing, going solar is one of the best ways to protect yourself against rising costs. And with lease and PPA options, you can do it with zero upfront cost and start saving immediately. If you want to find the best deal, check out EnergySage. It’s a free service with hundreds of pre-vetted installers competing for your business, so you save 20 to 30% compared to going it alone. No sales calls until you pick an installer. Get your free quotes here.
