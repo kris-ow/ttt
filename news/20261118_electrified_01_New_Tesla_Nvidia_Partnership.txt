@@ -1,0 +1,627 @@
+Channel:     electrified
+Title:       New Tesla & Nvidia Partnership / The Jensen Saga Continues ⚡️
+URL:         https://www.youtube.com/watch?v=CYSzdNKUrjo
+Published:   2026-11-18 01:04 UTC
+Fetched:     2026-11-18 02:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome to Electrified. It's your host
+Dylan Lumis. How about a quick walk down
+memory lane? April 2nd last year. As I
+said a few years ago, the AI scaling
+constraint will move from chips to
+voltage transformers to electricity
+generation. That is worrying for US
+leadership in AI long term. Talking
+about data centers, buildings are the
+easy part. It's the power, electrical
+equipment, networking, and cooling that
+are hard. August this year, the
+consensus estimate is around 15 gawatts
+of AI compute produced in 2027 can't be
+turned on in 2027. This is harder than
+just finding power as you also need to
+build out all of the transformers, the
+wiring, the liquid cooling, the massive
+chillers and complex networking. Which
+brings us to today Tesla Mega saying
+introducing Power Core, a solidstate
+medium voltage transformer, inverter,
+and breaker. It's reliable, safe, and
+secure. 7.4 4 megawatt and 9 megga volt
+amps continuously at 34.5 kov volts AC
+with grid forming support for 10
+megavolt amps of peak power made in
+America operating 2027 as Tesla called
+out in the video makes me block even
+better powers 800vt DC data centers
+which we will come back to accelerates
+1500 to 2,000 volt DC solar and enables
+fully offgrid data centers max from
+Tesla said transformers have barely
+changed since the 1980s. Copper coils in
+a tank of oil. Batteries, solar, and
+compute run on DC. The grid runs on AC.
+Bridging the two has meant inverters
+plus transformers. Power Core is a
+solidstate transformer, breaker, and
+inverter in one box. Finally, one
+conversion and about half the losses.
+Hats off to the Tesla Power electronics
+engineers. As Tesla said, new
+bottlenecks have emerged. batteries,
+data centers, and solar all run on DC,
+direct current, but the grid runs on
+high voltage alternating current AC.
+Today, every large battery, data center,
+and solar project bridges this gap with
+separate inverters and 100-year-old made
+to order medium voltage transformers. To
+build a world of amazing abundance, we
+need to build beyond the battery. Power
+Core more efficiently converts power in
+both directions between medium voltage
+AC and low voltage DC. combining the
+functions of a transformer, breaker, and
+inverter into one enclosure. Power Core
+has lower conversion losses and is built
+to scale through mass manufacturing.
+It's modular, so components can be
+serviced in the field without replacing
+the whole unit. It's safer with no
+flammable oil and a built-in medium
+voltage solidate breaker, clearing
+faults up to 1,000 times faster than a
+conventional breaker, and significantly
+reducing fault energy. Power Core is
+intelligent where a conventional
+transformer is passive and it replaces
+the equipment that so often holds
+projects back. And for all of my grid
+nerds out there, go ahead and pause the
+screen if you want to read the deep
+specs. But this one product will now
+serve many applications. Power Core
+enables battery energy storage, solar,
+and native 800vt DC data centers. The
+reason I said we'd come back to this
+because last year it was actually Nvidia
+that proposed this new architecture.
+specifically to handle the jump from
+today's 100 to 150 kW GPU racks toward 1
+megawatt class racks and beyond without
+copper space and conversion losses
+becoming hard limits. The problem
+traditional data centers mostly run on
+alternating current. So power from the
+grid is stepped down to that AC and part
+of that process is going through these
+transformers. Then at the rack, the
+stack of chips, the AC/DC power supplies
+convert it to a low voltage DC bus. Then
+further down to 12 VTs or even lower for
+the GPUs. However, as these GPU racks
+become even more powerful, requiring
+more power, this low voltage approach
+hits physical walls. You have big copper
+bus bars, power shelves eating most of
+the rack space, high current related
+losses and heat, and multiple conversion
+stages, which is where this new 800VT DC
+architecture comes in. It converts
+medium voltage AC to 800 volt DC one
+time and earlier in the chain. Then that
+high voltage DC is distributed via
+busways or cables and then it's stepped
+down near the GPUs. Nvidia has said this
+architecture results in 85% more power
+through the same conductor size, up to
+5% better end-to-end efficiency, far
+less rack space taken by power hardware,
+freeing it for more GPUs, up to around
+70% lower maintenance, and a path to
+around 30% lower total cost of
+ownership, and the ability to scale the
+same infrastructure from around 100 kW
+to 1 megawatt plus racks. So the real
+reason Tesla built power core to
+expedite the data center buildout and
+yes this is a futurep proofing of sorts
+because most data centers today are not
+yet implementing this 800vt DC
+structure. This is supposed to be
+scaling with Nvidia's Kyber or the
+Reuben Ultra starting in 2027. So in
+short, these new front tier level AI
+racks that can reach 1 megawatt and
+above, they would require so much copper
+doing it the old way that it would leave
+very little room for the actual GPUs.
+And what do we know? Elon told us SpaceX
+is already exclusive with Nvidia, the
+creator of this 800vt DC architecture
+idea for these frontier data centers.
+But as Tesla said, there will be
+multiple use cases. Today, a battery
+storage project converts energy twice.
+Inverters inside a mega pack turn
+battery DC into 480 volt AC. Then a
+transformer takes that to medium
+voltage. Power core converts directly
+from battery DC to medium voltage AC in
+one single stage and is close coupled
+with the mega pack. Both arrive
+preassembled, speeding up deployment,
+reducing risk and getting projects
+online faster. The previous architecture
+had two times the losses and now with
+fewer conversion steps now we get more
+energy out of the same batteries which
+means lower cost and higher site energy
+density. Paired with PowerHub the entire
+battery site is now standardized with no
+third-party equipment all backed by
+system level warranties guarantees and
+service from Tesla. And just to show you
+Tesla did confirm today most data center
+equipment takes around 450 volt AC
+input. They rely on medium voltage
+transformers and redundant equipment.
+But the industry is moving to this
+native 800vt DC data center structure.
+Power core gets there in one step from
+the medium voltage feeder straight to
+800 volt DC and less conversion loss
+enables more GPUs online with the same
+interconnected power. Tesla said, "We
+already have 10 gatt hours of Mega
+operating at data centers and we've
+built those learnings into Power Core.
+Pair it with Mega Packac directly on the
+DC bus for backup, load smoothing, and
+other applications. And here it is.
+We're collaborating with Nvidia on
+engineering efforts to enable 800vt DC
+power architectures in next-gen data
+centers. But wait, there's more. What
+about utility scale solar? Power Core
+connects the solar array directly to the
+grid at medium voltage. Utility scale
+solar projects need transformers and
+inverters. Transformer supply
+constraints are holding new plants back
+and inverter downtime is the leading
+cause of lost availability. Power Core
+works as a utility scale central
+photovoltaic inverter converting solar
+DC directly to medium voltage AC with
+less equipment. It supports both the
+1500vt DC systems in the field today and
+the emerging 2000vt DC systems. and the
+new blueprint for the future that this
+can help unlock. Putting data centers
+powered by the sun within reach. In many
+parts of the world, a 100 megawatt data
+center can be effectively powered with
+500 megawatts of solar and 1.7 gatt
+hours of batteries. With solar, mega and
+power core, the data center can run on
+800vt DC directly. Now, solar plus
+storage with power conversion and
+control from power core provides
+everything for the largest new loads in
+a generation to run on reliable,
+sustainable energy. Now, there's no need
+to wait years for an interconnection or
+to rely on fossil fuels to get compute
+online quickly and reliably. The future
+of energy is data centers powered by the
+sun. And Tesla did not tell us much
+about its commercial plans for this, but
+it does of course appear that they will
+sell this to customers. As Elon said,
+advanced solidstate transformers at
+scale from Tesla. But so far, what type
+of scale has not been announced, nor has
+pricing been announced. But the main
+takeaway for this product should not be
+revenue or profitability. It should be
+blowing up the current bottlenecks and
+creating this new blueprint for these
+data centers in the future. So yes,
+there's plenty of work ahead, but this
+should be a strong reminder that just
+because SpaceX is going to start
+launching data centers in space in the
+next few years, it does not mean that
+terrestrial data centers are just going
+to stop at that point. Obviously, and
+now with this information, and make sure
+you tell your network and your friends,
+anybody that might be upset about these
+data centers and rising electricity
+costs, make sure you tell them how hard
+Elon and Tesla are working to alleviate
+those problems. Now, as Omar said, this
+does appear to compete directly with
+Drew Bagino, former Tesla exec, and his
+new company, Heron Power, but Elon
+replied to that saying, "No, this has
+been planned for 3 plus years." And of
+course, once Tesla ramps up production,
+they will no longer be reliant on
+third-party suppliers. Much less
+hardware will be required. There will be
+a lot less cabling. That's actually
+quite a headache. And because of Tesla's
+direct integration, there will be much
+less work actually needed on site. And
+look at these numbers. Earlier this
+year, Wood McKenzie said generator
+stepup transformer lead times past 160
+weeks, a little over 3 years. And given
+that fact, transformer prices could rise
+another 4 to 10% over the next year.
+Wood McKenzie has also projected power
+transformer supply 40% short and
+generator stepup supply nearly 100%
+short of demand. So, yes, it's been a
+glaring bottleneck for years. It's only
+been getting worse. Tesla has all of the
+perfect talent and experience and
+manufacturing capability to do this.
+Frankly, it's a no-brainer. And on the
+recent call, Tesla told us they already
+recorded their biggest ever backlog for
+energy storage. And Elon said they're
+basically almost sold out of mega packs
+for all of 2027. But remember, Tesla
+doesn't get a lot of that revenue and
+thus profitability until those mega
+packs are actually connected to the grid
+and operating. And more often than not,
+the reason they're waiting, a shortage
+of transformers. And lastly, it's not
+just for SpaceX and Tesla, but think
+about all of the other companies
+building out these frontier data
+centers. Would they rather call a bunch
+of different companies for transformers
+and inverters and battery storage and in
+the future maybe even chips with
+Terapab? or would they rather just call
+one of the best companies to do it,
+Tesla, that offers everything in one?
+From the FTC's new data, the most common
+type of identity theft was actually
+dealing with credit cards. And most of
+the time, it's not somebody stealing one
+of your credit cards from your wallet.
+It's actually them opening up a new
+account in your name. And how do these
+data thieves do this? Well, this is
+direct from the Consumer Financial
+Protection Bureau. The data broker
+industry collects and sells detailed
+information about Americans personal
+lives and financial circumstances to
+anyone willing to pay. And they get your
+old addresses, phone numbers, your job
+information, your relatives, and so on.
+Which is just part of why I'm still
+encouraging you all to check out Delete
+Me, the sponsor of this video. Getting
+your personal information off of these
+people search sites significantly helps
+cut the risk. But the listings come back
+if you don't do something continually.
+And yes, Delete Me has you covered on
+both. Since 2023, Delete Me has reviewed
+over 92,000 records and removed 624
+exposures. And the latest report still
+found 101 pieces of my information
+across 19 different sites. So, Delete
+Meing these brokers and removing my
+information in an ongoing fashion has
+been invaluable. And Delete Me is an
+American company, which is very
+important to me. and personal data
+removal is the sole thing the entire
+company is built around. You can also
+add your spouse, your parents, your kids
+16 and up at a discount per person. So,
+if you'd like to support Electrified and
+protect the people you love, you can
+head to jointdeleteme.com/rified
+to get 20% off using my code electrified
+linked below or by using the QR code on
+the screen. Shifting to Mercedes and its
+announcement of its point-to-point
+autonomous driving system. I really was
+not going to cover this because I really
+think it's mostly a nothing burger for
+the next year or so, but there does seem
+to be some concern that maybe Tesla's
+lead in autonomy is not as big as we
+think. Just so you know, Mercedes is
+offering a new hands-free assist that
+lets drivers take their hands off the
+wheel on motorways, and it'll also now
+do lane changes automatically. These
+features will be coming to Germany and
+the US. Availability will vary by model
+and market with a gradual rollout across
+the Mercedes-Benz passenger car and van
+portfolio and existing owners will get
+the update OTAA. They said where system
+and operating conditions permit, drivers
+can take their hands off the wheel at
+certain speeds up to 80 mph, but yes,
+it's level two. The driver remains
+responsible. These new features are set
+to arrive in Germany by the end of this
+year, and the US will follow with a
+nationwide roll out of hands-free assist
+during 2027. But it's the point-to-point
+system Mercedes is talking about people
+are questioning, which yes, is supposed
+to handle urban or city traffic. Their
+system will use 27 components, including
+10 cameras, five radar sensors, and 12
+ultrasonic sensors, but no LAR, so props
+there. The point-to-point system will be
+available in Germany and the US in the
+first half of 2027 across all powertrain
+types. They'll also offer an early
+access program for select customers in
+Germany and the US. That is set to start
+December 2026 so they can do more
+testing and data gathering. But the US
+program for this pointto-oint will start
+in California only and it will include
+hands-free assist. So, yes, we're about
+to get a taste of what a legacy
+automaker can do with the Nvidia Alpamo
+toolkit.
+&gt;&gt; I'm going to get pulled over for drunk
+driving. I think I get confused because
+I don't know when it transitions from
+freeway to local because right now
+Mercedes is still running two separate
+systems. City Driving, which Mercedes
+calls MB Drive Assist Pro, is expected
+to launch in California in December
+2026, followed by the rest of the US in
+2027. It then sees a human directing the
+crosswalk.
+Oh, look at that. Was safe. Okay, I'm
+going to push on the accelerator there.
+Oh, okay. So, it's suspended.
+There we go. Okay, we're good. Okay, so
+now it's going to change lanes to exit
+the freeway.
+Need to exit
+couple more. Oh, I would have changed
+lanes there.
+Okay, it's going 46 miles per hour. Oh,
+this is so dangerous.
+&gt;&gt; Sit right here and keep
+&gt;&gt; go.
+&gt;&gt; I took over there. If I didn't take over
+there, it goes a little too slow. So, it
+needs to I think it needs to be more
+aggressive. Number one, I have my doubts
+this pointto-oint will be available
+broadly across the US next year. Time
+will tell. And two, even if it is, as
+I've said all along, it's going to look
+very easy for other companies to have
+demos or test runs where it seems like
+you're 98% of the way there and it works
+well in most scenarios. But it's that
+final 1 to 2%, the March of the 9, that
+none of these companies have a chance at
+solving anytime soon. Which is also why
+I believe these companies will be stuck
+in a local maxima for years to come. no
+matter how good things look at launch.
+And lastly, as we've learned over the
+past few years, Legacy Auto is notorious
+for promising one thing and then falling
+short when it comes to delivering. And
+truly, I want to see Mercedes succeed. I
+think it would be good for Tesla to have
+some competition. It'd obviously be
+great for consumers and the safety of
+the roads. I just know that it's not
+going to be as capable as FSD for a long
+time. Just a little cyber cab update
+today, but Tesla has added 200 more
+cyber cabs to the Texas registration as
+well as one Model Y, taking the total
+number of robo taxis in Texas to 1,57
+registered. Tesla's now at 773 cyber
+cabs and 734 Model Y's. Said another
+way, Tesla expanded the Cyber Cab fleet
+by 35% today alone, which yes, I think
+is a pretty good indication the Cyber
+Cab launch in Dallas is imminent. on the
+Jensen saga during Nvidia's earnings
+call today, which they blew out when it
+comes to financials, by the way. But the
+board said they do not intend to
+reinstate Jensen as CEO. The board also
+said they will not be accepting
+questions regarding Jensen on the call.
+And as Colette said, we talked to all of
+our suppliers and customers. It's
+business as usual. And as AIT added,
+they really are getting ready for a
+world after Jensen. and senior Nvidia
+employees have sent a letter to the
+company's board saying that a failure to
+reinstate Jensen could lead to the loss
+of irreplaceable talent. And the word is
+some employees are thinking about
+demonstrating or protesting in the days
+ahead. And now today, the SEC has opened
+an investigation into Nvidia, the focus
+of which includes whether the company's
+disclosures misled investors. And the
+Justice Department is also now
+reportedly leading multiple
+investigations into Alice Swang. And if
+you missed it, Jensen did break his
+silence. He posted on X today where he
+apologized. He said he did not live up
+to standards. He made serious mistakes
+in his personal life and created
+problems for the board he deeply
+regrets. But he said if the board of
+directors decides my return is in the
+best interest of our shareholders and
+everybody else, I would be honored to
+answer these calls to return as CEO. So
+clearly Jensen wants to come back.
+Shocker. But today we also learned that
+Nvidia is now hiring Hydrickch and
+struggles to find a new CEO. So listen
+to all of you Nvidia shareholders out
+there. I would be incredibly frustrated
+too just due to the lack of transparency
+from the board alone. But like I said, I
+think the main reason is because
+investigations are still ongoing. And as
+I said on day one, if they are so
+adamant about not bringing Jensen back
+despite all of this pressure, there has
+to be a lot more to the story we just
+haven't heard yet. So yeah, at this
+point it seems quite likely that Jensen
+is actually done at Nvidia, barring a
+major change. And now speculation will
+ramp up if he might team up with Elon at
+some point in the future. Personally, I
+would like to see how these
+investigations conclude. Yes, Jensen is
+a one-of-one talent, but again, if the
+board was that quick to cut him off, I'm
+guessing he did something a bit more
+severe than we know. So, could he be
+trusted to work with Elon and SpaceX and
+Tesla? At this point, I'm fine saying I
+don't know. I just I need more
+information. But as long as he didn't do
+something that would be unforgivable,
+which I'm not even sure exactly what
+that would be, I do believe in second
+chances and learning from our mistakes
+because his relationships and experience
+and leadership at SpaceX and Tesla would
+just be incredible. We'll see. It's
+going to be a pretty fun year, but
+clearly this story is far from over. We
+have some more government incompetence
+as it seems. Elon said free Starlinks
+for the FAA were offered to Secretary
+Duffy, but he said they were not needed.
+As it turns out, they were
+&gt;&gt; um I've I've worked well with Elon and
+he the Starlink was a great solution for
+some of our assets in in Alaska, but uh
+we sent uh Starlink in one of its prior
+iterations to our our tech lab and uh
+there was some issues that we had to to
+navigate and and we thought that the the
+best method is to have a a network
+that's uh that's that's based in the
+ground. Now, I think that what he's
+doing with Starlink and the speed is uh
+is remarkable, but um our airspace is
+very big. We have assets everywhere. Um
+and so uh again, we used him for
+different parts of the airspace.
+&gt;&gt; And Elon knowing what a blunder of a
+decision that was, shared that video
+with the face palm emoji. So listen,
+this is being politicized, but at the
+end of the day, I think it would have
+been wise for the secretary to take the
+free Starlink and implement it where you
+can while you build out this new
+groundbased infrastructure. Sure,
+Starlink probably wouldn't fix all of
+the problems the FAA has as a one-shot
+panacea, but if you want to do what's
+best for everybody out there and provide
+the best coverage you can, why wouldn't
+you take the free handout? When it comes
+to the side of the ship being scraped by
+the chopsticks, Elon said that part will
+be replaced with stainless steel wool
+for future flights. And Elon said, "Yes,
+it is a sort of material that survives
+entry and does not scrape off." Today,
+the news broke that Whimo's robo taxis
+are no longer allowed to operate on
+California freeways after the DMV
+restricted its vehicles after a few
+incidents, specifically after three
+Whimos entered an active construction
+closure and a separate incident
+involving California Highway Patrol.
+Whimo has complied and is preventing its
+robo taxis from accessing freeways in
+any of the markets it operates in,
+including those outside of California.
+Whimo currently has operations in 15 US
+cities. The DMV said it determined
+Whimo's driverless freeway operations
+pose an imminent hazard to public safety
+due to recurring incursions by its
+vehicles into active construction zones
+where construction workers, vehicles,
+and equipment are present despite a
+prior restriction and corrective actions
+implemented following similar incidents
+that occurred May 18th, 2026. The DMV
+said restrictions will remain in place
+until Whimo can demonstrate it can take
+effective corrective actions to address
+the deficiencies. As Tim Ferrris said, I
+love Whimo, but I had a terrifying ride.
+The Jaguar cars were smoother than any
+human, but his first trip in the Ohio
+actually scared him rather
+significantly. Jerky steering, constant
+braking for no reason, acceleration
+right up to red lights with sudden
+stops. I was bracing the entire time.
+And yesterday, unfortunately, there was
+a scary accident involving two Whimo
+vehicles, but investigations are still
+ongoing, and the early word is that the
+Whimo vehicles were not at fault in this
+incident. They were just sitting idle
+and the SUV drove right into them. But
+one where Whimo was at fault, stuck in
+between the railroad crossing arms with
+the train coming, having to back up
+right through the arm. At least it knew
+to back up to get out of the way, but
+certainly not ideal. So, I don't know,
+maybe Whimo should toss a couple more
+LAR sensors on there and see what
+happens. Tesla stock closed the day at
+$380.11,
+up.1%.
+And SpaceX closed at $141.70,
+up 3.16% all while the NDX was down.72%.
+Don't forget, check out delete me linked
+below for those interested. If you're
+paying attention, it seems more
+important than ever right now. Hope you
+all have a wonderful day and a huge
+thank you to all of my Patreon
+supporters.

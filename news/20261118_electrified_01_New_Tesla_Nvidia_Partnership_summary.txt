@@ -1,0 +1,48 @@
+Channel:     electrified
+Title:       New Tesla & Nvidia Partnership / The Jensen Saga Continues ⚡️
+URL:         https://www.youtube.com/watch?v=CYSzdNKUrjo
+Published:   2026-11-18 01:04 UTC
+Summarized:  2026-11-18 02:02:08 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0.00000 (22240 in / 5693 out tokens, subscription)
+Relevance:   core — The video centers on Tesla's new Power Core solid-state transformer for its energy and data-center thesis, plus Tesla's Cybercab fleet growth and competitor autonomy news.
+Topic:       tesla
+Categories:  Energy, SpaceX — AI & Compute, Autonomous Driving, Robotaxi, Market & Competition, SpaceX — Starlink, SpaceX — Starship
+────────────────────────────────────────────────────────────
+
+Host Dillon Loomis breaks down Tesla's launch of Power Core, a solid-state transformer, inverter and breaker in one unit, as a way to clear the power-equipment bottlenecks holding back AI data centers, solar and battery storage. He also covers Mercedes' new driver-assist rollout, a jump in Tesla's Cybercab registrations in Texas, Waymo's California freeway restriction, and the Nvidia/Jensen Huang saga. His view is that Tesla's integrated energy and power-electronics stack is a strategic advantage, and that legacy automakers remain far behind on autonomy.
+
+## Energy
+1. **Power Core launch:** Tesla introduced Power Core, a solid-state medium-voltage transformer, inverter and breaker in one enclosure. It is rated 7.4 MW and 9 MVA continuous at 34.5 kV AC, with grid-forming support for 10 MVA of peak power, made in America and operating in 2027. Tesla says it needs one conversion instead of two, cutting losses by about half. It is modular and field-serviceable, has no flammable oil, and its solid-state breaker clears faults up to 1,000 times faster than a conventional one. The host notes Tesla has not announced pricing or production scale, and says the point is to remove bottlenecks rather than add revenue.
+2. **Megapack integration:** Today a storage project converts energy twice, with inverters inside the Megapack and then a separate transformer. Power Core goes from battery DC to medium-voltage AC in one stage, close-coupled with the Megapack and shipped preassembled. Paired with PowerHub, Tesla says the whole site is standardized with no third-party equipment and covered by system-level warranties. Tesla says it already has 10 GWh of Megapack operating at data centers.
+3. **800V DC data centers:** Nvidia proposed the 800V DC architecture last year to support racks moving from 100–150 kW toward 1 MW and beyond. Nvidia has claimed 85% more power through the same conductor, up to 5% better end-to-end efficiency, up to about 70% lower maintenance, and a path to about 30% lower total cost of ownership. Power Core goes from the medium-voltage feeder straight to 800V DC, and Tesla says it is collaborating with Nvidia on engineering for these next-gen data centers. The host calls this future-proofing, since most data centers don't use 800V DC yet, and ties it to Nvidia's Kyber and Rubin Ultra racks starting in 2027. He recalls Elon Musk saying SpaceX is already exclusive with Nvidia.
+4. **Utility-scale solar:** Power Core can serve as a central PV inverter that connects solar directly to the grid at medium voltage. It supports both today's 1,500V DC and emerging 2,000V DC systems. Tesla says that in many parts of the world a 100 MW data center can be powered by 500 MW of solar and 1.7 GWh of batteries, avoiding long interconnection waits.
+5. **Competition and demand backdrop:** The host says Musk replied to a claim that Power Core competes with former Tesla executive Drew Baglino's Heron Power by saying it has been planned for 3+ years. He cites Wood Mackenzie data of generator step-up transformer lead times beyond 160 weeks, transformer prices possibly rising another 4–10% over the next year, and power transformer supply about 40% short of demand. Tesla recorded its biggest-ever energy storage backlog, and Musk said Tesla is almost sold out of Megapacks for all of 2027. The host adds that Tesla only books much of that revenue once Megapacks are grid-connected, often delayed by transformer shortages. He argues other frontier data-center builders could buy batteries, transformers and inverters, and eventually chips via Terafab, from one vendor.
+6. **Terrestrial data centers persist:** The host stresses that SpaceX launching data centers to space in the coming years doesn't mean terrestrial buildouts will stop.
+
+## Autonomous Driving
+1. **Mercedes hands-free and point-to-point:** Mercedes' Level 2 hands-free assist allows hands off the wheel up to 80 mph on motorways, with automatic lane changes. It arrives in Germany by end of 2026 and nationwide in the US during 2027. The point-to-point urban system uses 27 components (10 cameras, 5 radar, 12 ultrasonic) with no lidar, and is due in Germany and the US in the first half of 2027. An early-access program starts December 2026, with the US portion in California only. The host, who is skeptical, says the demo he showed had the car driving too slowly and needing intervention. He doubts a broad US rollout next year and says the final 1–2% ("march of the 9s") will keep rivals stuck in a local maxima. He believes FSD will stay far more capable for a long time, while still wanting Mercedes to succeed.
+
+## Robotaxi
+1. **Cybercab registrations jump:** Tesla added 200 Cybercabs and one Model Y to Texas registrations, taking the fleet to 773 Cybercabs and 734 Model Ys. By the host's math the Cybercab fleet grew 35% in a day, which he reads as a sign a Dallas Cybercab launch is imminent. (Registrations are not the same as vehicles in service.)
+2. **Waymo freeway restriction:** California's DMV restricted Waymo's driverless freeway operations after three vehicles entered an active construction closure and a separate California Highway Patrol incident. It cited recurring incursions into work zones despite earlier corrective actions after incidents on May 18, 2026. Waymo has stopped freeway access in all of its markets, which include 15 US cities. The host also cites a separate crash in which two idle Waymos were hit by an SUV, with early word that they were not at fault. He cites an incident in which a Waymo stopped between railroad crossing arms and had to back out through one.
+
+## Market & Competition
+1. **Nvidia leadership saga:** Nvidia's board said on its earnings call that it does not intend to reinstate Jensen Huang, and took no questions on him. The host says the company beat on financials. Senior employees sent a letter warning of talent loss, and the SEC has opened an investigation into whether disclosures misled investors. The Justice Department is reportedly leading multiple investigations. Huang apologized on X for serious personal mistakes and said he would be honored to return if the board decides it's best. Nvidia has hired Heidrick & Struggles to find a new CEO. The host thinks Huang is likely done at Nvidia barring a major change, and says he doesn't know whether Huang could be trusted to work with Musk, and wants more information first.
+
+## SpaceX — Starlink
+1. **FAA declined free Starlink:** Musk said free Starlink terminals were offered to Transportation Secretary Duffy and not needed. Duffy said Starlink worked well for assets in Alaska but had issues in an earlier iteration in the FAA tech lab, so the FAA prefers a ground-based network. Musk responded with a facepalm emoji. The host says the FAA should have taken the free offer while building out the ground network.
+
+## SpaceX — Starship
+1. **Chopstick scraping fix:** Musk said the part of the ship scraped by the tower chopsticks will be replaced with stainless steel wool on future flights, a material that survives entry and does not scrape off.
+
+Notable quotes and data:
+- Power Core: 7.4 MW / 9 MVA continuous at 34.5 kV AC, 10 MVA peak, operating 2027; about half the conversion losses.
+- Tesla has 10 GWh of Megapack operating at data centers, and Musk said it is almost sold out of Megapacks for 2027.
+- Wood Mackenzie: generator step-up transformer lead times beyond 160 weeks; power transformer supply about 40% short of demand.
+- Nvidia's 800V DC claims: 85% more power per conductor, up to 5% better efficiency, about 30% lower total cost of ownership.
+- A 100 MW data center can be powered by 500 MW of solar plus 1.7 GWh of batteries (Tesla).
+- Texas registrations: 773 Cybercabs and 734 Model Ys; Cybercab fleet up about 35% in one day.
+- Mercedes point-to-point: first half 2027 in Germany and the US; early access in California from December 2026; no lidar.
+- Waymo: freeway operations halted by the California DMV; operating in 15 US cities.
+- Market close: TSLA $380.11 (+0.1%), SPCX $141.70 (+3.16%), NDX down 0.72%.
