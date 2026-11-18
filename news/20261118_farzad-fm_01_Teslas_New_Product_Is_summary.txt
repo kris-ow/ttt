@@ -1,0 +1,42 @@
+Channel:     farzad-fm
+Title:       Tesla's New Product Is Actually Insane
+URL:         https://www.youtube.com/watch?v=ww6KAD8Gjjc
+Published:   2026-11-18 01:54 UTC
+Summarized:  2026-11-18 02:04:09 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0.00000 (24439 in / 4719 out tokens, subscription)
+Relevance:   core — Covers Tesla's Power Core solid-state transformer reveal and its implications for Tesla Energy's Megapack business, margins and AI data-center power.
+Topic:       tesla
+Categories:  Energy, Financials, SpaceX — AI & Compute
+────────────────────────────────────────────────────────────
+
+The video argues that grid hardware, specifically the medium-voltage transformer, is the hidden bottleneck on AI buildout. Tesla's newly unveiled Power Core, a solid-state transformer, inverter and breaker in one cabinet targeted for 2027, attacks that bottleneck and completes Tesla's Megapack and Mega Block stack. The host argues this deepens Tesla Energy's vertical integration. He also lists the execution risks and the competitors racing to the same product.
+
+## Energy
+1. **Power Core announcement:** Tesla's Megapack team posted a 79-second video introducing Power Core, "solidstate medium voltage transformer inverter and breaker," labelled "Made in America operating 2027." Elon Musk quote-posted "Advanced solidstate transformers at scale from Tesla." It combines three normally separate pieces of yard equipment in one factory-built cabinet rated above 7 MW continuous (9 MVA at about 35 kV AC), with grid-forming support up to 10 MVA peak.
+2. **Specs claimed in the reveal:** Peak efficiency is nearly 99%, with a warranty of up to 25 years and an operating range of -40°F to about 130°F. It connects to 10–35 kV AC lines and operates at 800–2,000 V on the DC side. The solid-state breaker clears faults in about 100 microseconds, which Tesla says is roughly 1,000 times faster than mechanical gear. It feeds 800 V DC data-center racks directly and supports solar fields up to 2,000 V.
+3. **Why transformers are a choke point:** The host cites US demand for large power transformers more than doubling since 2019, with a supply deficit of about 30% for large units and about 10% for distribution units. He puts import reliance at roughly 80% for large units. Lead times run past 2 years for large units and past 3 years for generator step-up units. He cites reports of waits up to 4 years, roughly double 2021, with prices up about 75% and medium-voltage switchgear taking nearly a year. GE Vernova's roughly $35M Louisiana expansion does not reach full capacity until 2028.
+4. **How solid-state works:** Silicon carbide semiconductors switch current thousands of times per second instead of at 60 Hz. That shrinks the magnetic core, and the same hardware can invert, regulate voltage and break faults. AJ Booth, Tesla's head of energy and charging, said in PV Magazine that Tesla has done 3 TW of power converters in-house and that Power Core scales that architecture to medium voltage.
+5. **Off-grid claim, with caveats:** Power Core is a converter, not a generator or storage. Running a data center off-grid in 2027 still needs on-site generation, such as gas turbines or solar paired with Megapacks. Grid-forming capability lets batteries, solar and generators form an island or buffer GPU load swings of hundreds of megawatts. Even orbital compute, the host notes, would struggle to beat 99% uptime in early generations.
+6. **Completing Megapack and Mega Block:** Standard Megapacks connect at 480 V AC, so customers had to source a separate transformer and switchgear. Mega Block (late 2025) bundles four units with a transformer and switchgear for 20 MWh. It delivers roughly 250 MWh per acre and cuts construction costs by up to 40%. Per PV Magazine, Power Core connects to Megapack on a DC bus and arrives preassembled. This lets Tesla capture the transformer margin in-house instead of depending on third parties.
+7. **Competitors:** Heron Power was founded by ex-Tesla executive Drew Baglino. It has a pilot with RWE Americas targeted for April 2027 and a Vantage deal for more than 1 GW. It also has a 1.5 GW capacity reservation from Intersect for projects starting in 2028, plus a Morgan Hill factory designed to scale past 40 GW a year from late 2027. Eaton bought Resilient Power Systems for about $85M and says its 2 MW solid-state unit was the first multi-megawatt unit to pass a new UL standard. GE Vernova plans to test a 5 MW unit with a customer ahead of potential 2027 orders. Others include Amperesand, DG Matrix and SolarEdge. Tesla's advantages are its larger single-cabinet rating, its converter experience and its captive Megapack customer base. It has not yet named an external Power Core buyer.
+8. **Execution risks:** All visuals are renders. Tesla has published no unit price, full data sheet or assembly location, saying only that it will be made in America with US and imported parts. Utilities may be cautious about a new solid-state breaker on medium-voltage feeders. Per PV Magazine, Tesla is still working with Nvidia to certify Power Core, though Megapack is already qualified under Nvidia's DSX ready reference design. The host also cites Tesla's history of late timelines.
+
+## Financials
+1. **Tesla Energy momentum:** The host says 2025 storage deployments grew nearly 50% to almost 47 GWh, and Tesla has reached 100 GWh of Megapacks in operation. Q3 2026 deployments were nearly 14 GWh, bringing the first three quarters to 36 GWh. Energy revenue was nearly $3B, with gross margin above 33%, helped in part by tariff refunds and warranty adjustments. The host says the shareholder deck reported the division's highest order rate and backlog. On the Q3 call Musk said Tesla is almost sold out of Megapacks for 2027 and expects gross margins on them to increase meaningfully. The new Brookshire, Texas Megafactory began production in Q3 2026 with 50 GWh/year capacity, using LFP cells from Tesla's Nevada facility.
+
+## SpaceX — AI & Compute
+1. **Colossus as behind-the-meter proving ground:** xAI's Memphis Colossus cluster doubled to 200,000 GPUs in about 3 months and has since scaled past half a million GPUs toward two gigawatts of demand. It combined on-site gas turbines, a partial grid connection and Tesla Megapacks. SemiAnalysis counts roughly 1,400 Megapacks and nearly 6 GWh of storage. The host cites Tesla filings showing xAI bought more than $400M of Megapacks in 2025 and SpaceX hundreds of millions more in H1 2026.
+2. **Vertical-integration playbook:** The host frames Power Core as the same Musk approach as the Nevada Gigafactory and the planned Terafab chip facility, which he describes as aimed at 2030. SpaceX's Q3 call put Terafab volume production at around Q3 2028.
+
+Notable quotes and data:
+- Tesla post: "Introducing Power Core, solidstate medium voltage transformer inverter and breaker." "Made in America operating 2027."
+- Musk: "Advanced solidstate transformers at scale from Tesla."
+- Power Core: more than 7 MW continuous, 9 MVA at about 35 kV AC, up to 10 MVA peak, nearly 99% peak efficiency, 25-year warranty.
+- Solid-state breaker clears faults in about 100 µs, roughly 1,000x faster than mechanical.
+- Transformer lead times of up to 4 years (about double 2021), prices up about 75%, US import reliance around 80% for large units.
+- Q3 2026: nearly 14 GWh deployed, 36 GWh across three quarters, energy gross margin above 33%.
+- Musk on the Q3 call: "almost sold out of all mega packs for 2027."
+- Mega Block: 20 MWh, about 250 MWh per acre, up to 40% lower construction cost.
+- Heron Power: 1 GW+ Vantage deal, 1.5 GW Intersect reservation, 40 GW/year factory target from late 2027.
+- Eaton cites 350+ GW of announced data-center projects against 50 GW installed.
