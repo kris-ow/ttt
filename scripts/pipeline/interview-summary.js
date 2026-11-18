@@ -4,16 +4,23 @@
 //
 // Usage:
 //   node scripts/pipeline/interview-summary.js <transcript-path> \
-//     --person "Elon Musk" [--venue "..."] [--date YYYY-MM-DD]
+//     --person "Elon Musk" [--venue "..."] [--date YYYY-MM-DD] [--backend cli]
 //
 // The transcript file uses the same header format the Mac Mini writes to
 // news/ (Channel/Title/URL/Published lines, then a ───── separator).
+//
+// --backend cli: run through the local Claude CLI subscription (llm-cli.js)
+// instead of the metered API. Nothing is billed, so nothing is written to
+// costs.json; costs-cli.json is left alone too (the Mac Mini appends to it on
+// every push, so a local write would conflict, and it feeds the daily CLI cap).
+// Tokens and the API-equivalent price go in the summary header instead.
 
 import fs from 'fs';
 import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 import { CORRECTIONS, MODEL, PRICING_DIRECT } from './config.js';
 import { createMessage, textOf } from './llm-api.js';
+import { completeViaCli } from './llm-cli.js';
 import { buildFactLedger } from './fact-ledger.js';
 
 const COSTS_FILE = path.resolve('scripts/pipeline/costs.json');
@@ -48,11 +55,12 @@ function parseTranscriptFile(filePath) {
 async function main() {
   const transcriptPath = process.argv[2];
   if (!transcriptPath || transcriptPath.startsWith('--')) {
-    console.error('Usage: node scripts/pipeline/interview-summary.js <transcript-path> --person "Name" [--venue "..."] [--date YYYY-MM-DD]');
+    console.error('Usage: node scripts/pipeline/interview-summary.js <transcript-path> --person "Name" [--venue "..."] [--date YYYY-MM-DD] [--backend cli]');
     process.exit(1);
   }
+  const useCli = arg('backend') === 'cli';
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
+  if (!useCli && !apiKey) {
     console.error('ANTHROPIC_API_KEY environment variable is required');
     process.exit(1);
   }
@@ -83,10 +91,23 @@ async function main() {
   console.log(`Summarizing interview: ${person} @ ${venue} (${date})`);
   console.log(`  Transcript: ${transcriptPath} (${transcript.length} chars)`);
 
-  const client = new Anthropic({ apiKey });
-  const msg = await createMessage(client, prompt);
+  let text, inputTokens, outputTokens, cost, costLine, servedModel;
+  if (useCli) {
+    const r = await completeViaCli(prompt, { model: MODEL });
+    ({ text, inputTokens, outputTokens } = r);
+    cost = 0;
+    servedModel = `${MODEL} [cli]`;
+    costLine = `$0 subscription (API equivalent $${r.listCostUsd.toFixed(5)}; ${inputTokens} in / ${outputTokens} out tokens)`;
+  } else {
+    const client = new Anthropic({ apiKey });
+    const msg = await createMessage(client, prompt);
+    text = textOf(msg);
+    ({ input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage);
+    cost = (inputTokens / 1_000_000) * PRICING_DIRECT.input + (outputTokens / 1_000_000) * PRICING_DIRECT.output;
+    servedModel = `${msg.model || MODEL} [direct]`;
+    costLine = `$${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens)`;
+  }
 
-  const text = textOf(msg);
   const metadataMatch = text.match(/<metadata>\s*([\s\S]*?)\s*<\/metadata>/);
   const summaryMatch = text.match(/<summary>\s*([\s\S]*?)\s*<\/summary>/);
   const claimsMatch = text.match(/<claims>\s*([\s\S]*?)\s*<\/claims>/);
@@ -96,8 +117,6 @@ async function main() {
   const summary = summaryMatch ? summaryMatch[1].trim() : text;
   const claimsRaw = claimsMatch ? claimsMatch[1].trim() : '[]';
 
-  const { input_tokens: inputTokens, output_tokens: outputTokens } = msg.usage;
-  const cost = (inputTokens / 1_000_000) * PRICING_DIRECT.input + (outputTokens / 1_000_000) * PRICING_DIRECT.output;
   const now = new Date().toISOString().replace('T', ' ').replace(/\.\d+Z/, ' UTC');
 
   const dateCompact = (llmMeta.interview_date && llmMeta.interview_date !== 'unknown' ? llmMeta.interview_date : date).replaceAll('-', '');
@@ -112,8 +131,8 @@ async function main() {
     ...(url ? [(original ? 'Mirror:' : 'URL:').padEnd(13) + url] : []),
     ...(meta.channel ? [`Via:         ${meta.channel} (${path.basename(transcriptPath)})`] : []),
     `Summarized:  ${now}`,
-    `Model:       ${MODEL} [direct]`,
-    `Cost:        $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out tokens)`,
+    `Model:       ${servedModel}`,
+    `Cost:        ${costLine}`,
     '─'.repeat(60),
     '',
     summary,
@@ -129,24 +148,26 @@ async function main() {
   const outPath = path.join(OUT_DIR, outName);
   fs.writeFileSync(outPath, out);
   console.log(`  Written: ${outPath}`);
-  console.log(`  Cost: $${cost.toFixed(5)} (${inputTokens} in / ${outputTokens} out)`);
+  console.log(`  Cost: ${costLine}`);
 
-  // Cost log (same ledger as the rest of the pipeline)
-  let costs = [];
-  if (fs.existsSync(COSTS_FILE)) {
-    try { costs = JSON.parse(fs.readFileSync(COSTS_FILE, 'utf-8')); } catch { costs = []; }
+  // Cost log (same ledger as the rest of the pipeline); billed calls only
+  if (!useCli) {
+    let costs = [];
+    if (fs.existsSync(COSTS_FILE)) {
+      try { costs = JSON.parse(fs.readFileSync(COSTS_FILE, 'utf-8')); } catch { costs = []; }
+    }
+    costs.push({
+      date: new Date().toISOString(),
+      filename: outName,
+      title: `Interview: ${person} @ ${llmMeta.venue || venue}`,
+      channel: meta.channel || 'interview',
+      mode: 'interview',
+      inputTokens,
+      outputTokens,
+      cost,
+    });
+    fs.writeFileSync(COSTS_FILE, JSON.stringify(costs, null, 2));
   }
-  costs.push({
-    date: new Date().toISOString(),
-    filename: outName,
-    title: `Interview: ${person} @ ${llmMeta.venue || venue}`,
-    channel: meta.channel || 'interview',
-    mode: 'interview',
-    inputTokens,
-    outputTokens,
-    cost,
-  });
-  fs.writeFileSync(COSTS_FILE, JSON.stringify(costs, null, 2));
 
   // Mark the matching lead summarized (matched by URL when present)
   if (url && fs.existsSync(LEADS_FILE)) {

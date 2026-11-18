@@ -1,6 +1,77 @@
 {
-  "generated": "2026-11-07T08:21:32.415Z",
+  "generated": "2026-11-18T08:51:44.592Z",
   "interviews": [
+    {
+      "id": "20261117_bret-johnsen_tomorrowx-summit_interview",
+      "slug": "bret-johnsen-2026-11-17",
+      "person": "Bret Johnsen (Chief Financial Officer, SpaceX)",
+      "venue": "TomorrowX Summit",
+      "format": "fireside chat",
+      "date": "2026-11-17",
+      "added": "2026-11-18",
+      "original": null,
+      "url": "https://www.youtube.com/watch?v=TO73egel05E",
+      "via": "iconnections (20261117_bret-johnsen_tomorrowx-summit.txt)",
+      "summary": "SpaceX CFO Bret Johnsen appeared on stage at the TomorrowX Summit in conversation with Gavin Baker, opening with a video of Starship Flight 15 and its ship catch. They covered what the catch means for reusability, the economics and timeline of orbital compute, SpaceX's terrestrial AI compute build-out and financing, demand and customer concentration, Grok and GrokBot, and Starlink direct-to-cell. The most newsworthy statements were Johnsen's orbital compute timeline (first satellites in 2027, ramp in 2028, meaningful gigawatts in 2029), his claim that SpaceX's compute cost is far below the industry's, and his claim of a payback period under one year on terrestrial hosting deals.\n\n## Starship Flight 15 and reusability\n1. **Why the catch matters:** Johnsen called the flight a critical milestone years in the making. SpaceX had brought back a first stage before but never a second stage, and he said nobody had ever brought back a second stage that had already delivered 26 orbital satellites. He described the ship coming back with plasma rolling off the vehicle, then flipping and dropping into the Mechazilla arms.\n2. **Cost implications:** He said full reusability opens new markets, especially orbital compute. He said it could bring another 10x improvement in cost per kilogram to space. He called it the \"holy grail of rocketry,\" where flying again costs only the fuel and a little operational expense. Ideally, over time, the same vehicle flies \"day after day after day, just like an aircraft.\"\n3. **Work remaining:** Johnsen relayed his engineers' reminder that \"we're not done yet.\" The next step is an operational cadence of bringing vehicles back and re-flying them regularly.\n\n## Orbital compute economics and timeline\n1. **Cost-effectiveness tipping point:** Johnsen said that within \"the next, I would say, year or two\" orbital compute reaches a tipping point of being more cost-effective than SpaceX's terrestrial approach. He said this depends mainly on a couple of second-stage flights. He framed the payoff as a path to massive clean-energy compute without regulatory or community concerns and without effects on anyone's power or water.\n2. **Cost per watt comparison:** Asked about the cost to build a gigawatt, Johnsen said SpaceX is already significantly cheaper than others. Averaging its first couple of gigawatts, he put SpaceX in the \"low to mid $30 per watt\" range, against roughly $50 to $60 for the rest of the world. He said terrestrial costs are likely to rise (power, labor, timing headwinds), while orbital costs should fall with volume, technology and silicon cost declines.\n3. **Cost split:** On Baker's illustrative $50 billion per gigawatt, Johnsen said the split for others is probably about 50-50 between chips and everything else. Chip and memory costs are the same for SpaceX as for everyone else. On that illustrative figure, that leaves about $25 billion per gigawatt for land, power, shell and cooling, and he said the economics \"flip\" once the cost of launch falls below it.\n4. **Why operating costs are zero in orbit:** He said there is no energy, cooling or land cost, so the main cost is getting the satellite to orbit. He said a V3 Starlink-style satellite could swap some communications componentry for GPUs, add solar and use a radiator that unfolds on the back. In a sun-synchronous orbit the panels always face the sun, which would let the battery shrink. He said SpaceX has already demonstrated most of the technology on Starlink (about 11,000 satellites flown, radiative cooling, shielding, laser interconnects).\n5. **Timeline:** Johnsen said SpaceX will fly its first orbital compute satellites in 2027, start ramping the constellation in 2028, and see meaningful gigawatt-scale volume in 2029.\n\n## Terrestrial compute, financing and demand\n1. **Power as the edge:** Johnsen credited Elon Musk with seeing a year ago that power would become the constraint. He said SpaceX spent the past year-plus building power generation capability and is now a go-to for companies that might be expected to have their own. He said that if SpaceX meets its guidance for next year, it could be \"one of, if not the largest player in AI infrastructure next year.\"\n2. **Vertical integration:** When a turbine supplier could deliver turbines but not blades and vanes for another 18 to 24 months, SpaceX took the problem in-house. It is building an investment casting house, drawing on its experience pouring metal for Raptor engines.\n3. **Financing and payback:** He said SpaceX has had less than a one-year payback, sometimes dramatically less, on its terrestrial hosting deals. He said the plan is to fund largely from operating cash flow, improved by customer deposits up front and extended vendor payment terms. SpaceX has only been hosting compute for others for about two quarters and has not yet pushed on this. He described debt pools already accessed: investment-grade bonds in June, and a $40 billion GPU financing facility with Apollo and Goldman Sachs whose public syndication began the day of the talk. He said \"a large portion will be just funded from the business itself.\" Baker suggested operating cash flow and EBITDA will diverge because of prepayments, and Johnsen agreed.\n4. **Demand:** Johnsen said SpaceX sees nothing but increased compute demand across the industry. He said it avoided big long-term contracts signed well in advance, so it can act more like a spot-market player and earn higher returns. He said it can stand up shell and power in months.\n5. **Customer concentration:** Baker noted that Anthropic, an important SpaceX partner, is talking about insourcing compute on its IPO roadshow, and asked what would happen if it could build all its own data centers overnight. Johnsen said there are no magic wands and many customers are knocking on SpaceX's door. He said Anthropic's growth projections would require adding a lot more compute, not just replacing it. He also said SpaceX is diversifying through its own software products and is deliberately signing short-term contracts that preserve flexibility.\n\n## Grok, GrokBot and Cursor\n1. **GrokBot:** Johnsen called GrokBot \"probably the best agentic AI solution out there\" and said the excitement is real. He said the team is working on cost and optimization as the product ramps. Baker suggested first-party revenue could approach $10 billion. Johnsen declined to confirm, saying \"That's just Gavin talking.\"\n2. **Cursor:** He said Cursor brought strong product, sales and distribution capabilities into the company, and that SpaceX is already seeing the benefit.\n3. **Next Grok models:** Asked about Grok 4.8 and 4.9, Johnsen said he did not want to scoop Musk and that \"soon\" is the right word.\n\n## Starlink and direct-to-cell\n1. **Broadband:** He said over 13 million people are now connected via Starlink and broadband might ramp to hundreds of millions, but reaching the other 3 billion people without connectivity takes the phone itself, which is what direct-to-cell is for.\n2. **Direct-to-cell plan:** SpaceX flew a 600-satellite first generation as a text-only proof of concept. Next-generation direct-to-cell satellites, a separate constellation from broadband, begin flying next year. The goal is true 5G-quality service from space to unmodified phones in the first half of 2028. SpaceX has bought mid-band spectrum from EchoStar and low-band spectrum announced recently, and is working with regulators and existing providers worldwide.\n3. **Network design:** Johnsen said SpaceX can backhaul to space rather than to fiber, so it does not need big macro towers. It may use small cells and a few towers in certain cities, relying on its own terrestrial capability.\n\n## Community impact and closing questions\n1. **Data center communities:** Johnsen said AI data center community benefits deserve better communication. He cited the Cochise, Arizona project, where he said utility and property tax bills will fall dramatically, money will flow to schools for decades, and thousands of jobs will be created. He also cited a desalination plant for Brownsville costing a couple hundred million dollars, plus new parks around Starbase and Boca Chica.\n2. **Answers to the three questions:** On AI's benefits today, he pointed to community impacts and productivity gains on his team, including his daughter-in-law's use of GrokBot. As a moment that made him glad to work at SpaceX, he recalled Gwynne Shotwell's visit when Starlink service was turned on for an Amazon community in Brazil that had never had connectivity. On the three-year view, he said Musk's \"future of abundance\" is likely more than three years out. In the meantime he pointed to building jobs and economic activity in the US and to new products and healthcare advances.\n3. **Communication pledge:** Johnsen agreed with Baker's suggestion to highlight these positive impacts at the start of every call, saying \"I think we're going to do a much better job on that.\"\n\nNotable quotes (verbatim):\n- Johnsen: \"It's like the holy grail of rocketry, where you're now able to fly with really just a little bit of incremental cost, right, for the fuel and a little bit of operational.\"\n- Johnsen: \"Well, we're going to fly our first orbital compute satellites next year, in 2027, and we'll start ramping that constellation in '28. And I think in '29, you're going to see meaningful volume in the gigawatts coming into the market from orbital compute.\"\n- Johnsen: \"I think if you'd kind of average our first couple of gigawatts, and just looked at our financials, you would see kind of in the low to mid $30 per watt, which is a lot different than the rest of the world, which is probably more in the $50 to $60.\"\n- Johnsen: \"But I think a large portion will be just funded from the business itself.\"\n- Johnsen: \"I don't think there are any magic wands.\"\n- Johnsen: \"we're going to fly those satellites next year, with the goal in the first half of '28 of turning on a true 5G-quality service from space to your cell phone.\"",
+      "claims": [
+        {
+          "claim": "Orbital compute becomes more cost-effective than SpaceX's terrestrial compute, depending mainly on a couple of second-stage flights",
+          "topic": "SpaceX orbital compute",
+          "timeframe": "in the next year or two",
+          "quote": "Very quickly here, in the next, I would say, year or two",
+          "novelty": "new"
+        },
+        {
+          "claim": "SpaceX flies its first orbital compute satellites in 2027, starts ramping the constellation in 2028, and delivers meaningful gigawatt-scale volume in 2029",
+          "topic": "SpaceX orbital compute",
+          "timeframe": "first satellites 2027; ramp 2028; meaningful volume 2029",
+          "quote": "Well, we're going to fly our first orbital compute satellites next year, in 2027, and we'll start ramping that constellation in '28. And I think in '29, you're going to see meaningful volume in the gigawatts coming into the market from orbital compute.",
+          "novelty": "repeat"
+        },
+        {
+          "claim": "Full reusability of Starship (ship catch) brings another 10x improvement in cost per kilogram to space",
+          "topic": "Starship",
+          "timeframe": "none stated",
+          "quote": "another 10x improvement as far as cost per kilogram to space with this vehicle, because it's now fully reusable.",
+          "novelty": "repeat"
+        },
+        {
+          "claim": "SpaceX could be one of, if not the, largest AI infrastructure players next year if it meets its guidance",
+          "topic": "SpaceX AI infrastructure",
+          "timeframe": "next year (2027)",
+          "quote": "if we march to the guidance that we've given for next year, to be one of, if not the largest player in AI infrastructure next year.",
+          "novelty": "new"
+        },
+        {
+          "claim": "A large portion of SpaceX's compute build-out will be funded from the business's own cash flows, helped by customer deposits and extended vendor payment terms",
+          "topic": "SpaceX financing",
+          "timeframe": "none stated",
+          "quote": "But I think a large portion will be just funded from the business itself.",
+          "novelty": "new"
+        },
+        {
+          "claim": "SpaceX flies next-generation direct-to-cell satellites next year and aims to turn on 5G-quality service to unmodified phones in the first half of 2028",
+          "topic": "Starlink direct-to-cell",
+          "timeframe": "satellites fly in 2027; service goal first half of 2028",
+          "quote": "we're going to fly those satellites next year, with the goal in the first half of '28 of turning on a true 5G-quality service from space to your cell phone.",
+          "novelty": "update"
+        },
+        {
+          "claim": "Next Grok model updates (Grok 4.8 / 4.9) are coming soon",
+          "topic": "Grok",
+          "timeframe": "\"soon\"",
+          "quote": "But soon is probably the right way to say it.",
+          "novelty": "new"
+        },
+        {
+          "claim": "SpaceX will do a much better job of highlighting its positive community and humanitarian impact in its communications",
+          "topic": "SpaceX communications",
+          "timeframe": "none stated",
+          "quote": "I think we're going to do a much better job on that.",
+          "novelty": "new"
+        }
+      ]
+    },
     {
       "id": "20261106_elon-musk_baron-investment-conference_interview",
       "slug": "elon-musk-2026-11-06",
