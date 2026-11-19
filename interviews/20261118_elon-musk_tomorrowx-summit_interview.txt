@@ -1,0 +1,168 @@
+Person:      Elon Musk (CEO of Tesla; CEO of SpaceX (which now includes xAI))
+Venue:       TomorrowX Summit
+Format:      fireside chat
+Date:        2026-11-18
+URL:         https://www.youtube.com/watch?v=DY8clym2-jQ
+Via:         iconnections (20261118_elon-musk_tomorrowx-summit.txt)
+Summarized:  2026-11-19 06:32:54 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0 subscription (API equivalent $0.27490; 25249 in / 17391 out tokens)
+────────────────────────────────────────────────────────────
+
+Elon Musk dialed in from Shenzhen, China to close the TomorrowX Summit in a friendly conversation with Gavin Baker (Atreides Management) and Antonio Gracias (Valor Equity Partners). He covered the first Starship upper-stage catch (Ship 42), the rebuild of xAI's Grok training stack, Optimus timelines, Cybercab and robotaxi rollout, Terafab, SpaceX's AI compute buildout and orbital "Starmind" satellites, Neuralink, and AI safety. Among the most concrete statements: an "authentic" Optimus demo possibly within a month or two, Optimus handling household chores in 12 to 18 months, and SpaceX bringing roughly half a gigawatt of AI compute online per month, rising to over a gigawatt a month by the end of next year.
+
+## China visit
+1. **Shenzhen and Tesla Shanghai:** Musk said he had just arrived in China, called it "such an impressive country," and described himself as "a fan of China." One reason for the trip was to visit the Tesla Shanghai factory and thank the team for their work and the vehicles they have produced. He said that, at some point in the coming years, there will probably be geopolitical bumps over "a certain country that starts with the letter T," but that long-term relations should be good. He noted that the president was in China discussing trade relations and hoped that went well, calling good US-China trade and relations good for the world.
+
+## Starship and the case for multiplanetary life
+1. **First ship catch:** Musk called the catch of Ship 42 on Flight 15 a massive milestone. He said Starship's booster has now been caught by the tower arms three times, including a reflown booster, but this was the first ship catch. In his view this proves all parts of Starship can fly to space and be recovered in good enough condition to refly, with only minor repairs needed in this case. Because the ship is historic, SpaceX will not risk it and will leave it for public display.
+2. **Cost impact:** He said full and rapid reusability lets Starship cut the cost of access to space by a factor of 100, and eventually perhaps a factor of 1,000. He tied that to a mass-to-orbit rate "in the million ton per year range." He contrasted this with the Space Shuttle, whose main tank was thrown away each flight and which took roughly nine months to refurbish between flights. Starship is designed to be reused immediately, like an airplane.
+3. **Why it matters:** Musk said a city on the Moon or Mars requires moving enormous mass to rebuild a base of industry, which is only financially possible with a 100x to 1,000x cost reduction. He framed the motivation two ways. The defensive reason is "backing up the biosphere," preserving consciousness against some natural or man-made calamity on Earth. The forward-looking reason is that a spacefaring future is more inspiring and gives people something to look forward to.
+
+## xAI, Grok and the rewritten training stack
+1. **Background:** Musk said xAI began as a small side project because talented large-model AI engineers did not want to work on Tesla's real-world AI, and he did not want to distract Tesla. He admitted he did not build it with the care and rigor of SpaceX and Tesla. He also said roughly a year spent campaigning or in government was "a side quest that maybe went on a little too long." xAI is now part of SpaceX, and he has had to rebuild it.
+2. **Full rewrite:** He said the company rewrote the entire training, reinforcement learning and inference stack from scratch, over about six to eight months. It replaces freely available Google-derived software (which he named as JAX and SGLang) with code written mainly in C and some C++, to get as close to the hardware as possible. He believes it may be the best training stack in the world, and said the payoff will show in the models released. The rewrite is led by people from SpaceX who previously ran Starlink and Starship software. He argued the skills transfer because coordinating hundreds of thousands of GPUs is a networking problem, as Starlink is.
+3. **Data and RL quality:** Beyond software, he stressed high-quality, properly tokenized data, identifying missing out-of-distribution data, and ensuring RL questions are sensible and the answers correct. He described models trained on bad questions and wrong answers as looking like "a human being tortured."
+4. **Grok 4.8:** It is currently in the RL phase. He said the focus is not benchmarks, which he called "a fool's errand," but making the model maximally useful, as Tesla does with FSD by tracing each intervention to its data cause and retraining. xAI does periodic soft releases under GrokBot, testing versions under the hood and using whether they solved users' problems as a data flywheel. He gave no release date.
+
+## Optimus
+1. **Authentic demo:** Musk said Optimus is making good progress, and a demo may come "in a month or two." He said most humanoid robot demos seen so far are staged and pre-programmed, and no robot can do arbitrary real-world tasks it has not seen before. Tesla's demo will be authentic, showing what you would find using Optimus day to day.
+2. **Hands:** Hands and forearms, where the main actuators sit, are harder than the entire rest of the robot, because fine motor skills are required. He cited a test for a useful robot: take a toy remote-control car, open the box, unscrew the battery cover, insert batteries, re-screw the lid and drive the car. He said no robot can do that today.
+3. **Household tasks:** Asked when he could have Optimus take out the trash and put away dishes, Musk said Optimus should be able to do such tasks in about 12 to 18 months (roughly November 2027 to May 2028). He noted that washing and putting away a dirty plate is something no humanoid robot can do today.
+4. **First use cases:** Musk said the initial highest-value use is probably heavy industry, such as mining and refining ore. He argued the US depends heavily on other countries for this and needs domestic capability for national security. Next come tasks running around the clock (168 hours a week). Later, home use makes sense, and he thinks "pretty much everyone's going to want one if not two." He also floated tutor, babysitter, lawn and cooking roles.
+
+## Cybercab and robotaxi rollout
+1. **Cautious rollout:** Musk said Tesla is being very careful with Cybercab because it has no steering wheel or pedals and no other way to control it. He said there have been no serious injuries or accidents so far in the robotaxi rollout. That rollout includes Model Y and Model 3 vehicles as well as the Cybercab. The goal is to avoid any accident that leads regulators to shut the program down.
+2. **Expansion:** He said you can get a Cybercab in Austin within minutes, and they are all over the city. Tesla is expanding to large numbers in other major Texas cities and in Florida. He said perhaps early next year (2027) Tesla will get approval to operate in California. He said the program is expanding as fast as safety and regulatory approvals allow, and will profoundly change the look of cities.
+
+## Terafab
+1. **Status:** Musk said Terafab was announced earlier this year and is "still in its infancy." The team recruited so far is strong and still hiring. He said it will be the largest chip fabrication facility on Earth and the largest building of any kind, ultimately about 100 million square feet. It will start with fairly standard equipment, then push suppliers for special machine versions, and in some cases Tesla/SpaceX may build its own.
+2. **Timeline:** He expects the research fab to make its first test chip around June next year (2027), about eight or nine months away. For phase one he expects volume production "towards the end of 2028." (On SpaceX's Q3 call, management guided to volume production around Q3 2028.) Phase two follows.
+3. **Approach:** Established chipmakers are highly competent but risk-averse because of the capex they carry. Terafab plans to take many risks and iterate fast. He said he is "cautiously optimistic" it will have a significantly better chip production process by 2028, while saying he did not want to jinx it.
+
+## AI compute buildout and capex
+1. **Cost claim:** The hosts raised Wall Street concern about paying for 10 gigawatts of compute. Musk said industry estimates are off by a factor of two or more, and that his cost is around 60% of the industry consensus number. He said he may be the best, or close to it, at capex efficiency.
+2. **Hands-on building:** Musk said he personally does at least some of every task at the data centers, including pulling large power conduit, plugging in fiber and swapping compute nodes. An in-house team, alongside contractors, breaks tasks into pieces that can be taught in days, so new hires from jobs like barista, shelf stocker or In-N-Out can do them. The Memphis site runs 24/7 and is becoming a well-oiled machine. He said Tesla Megapacks provide power smoothing, because GPU load swings can break turbine shafts, and that Tesla has arguably the best electrical engineering talent in the world.
+3. **Pace:** Musk said SpaceX is now bringing on about half a gigawatt per month of AI compute, roughly 220,000 GB300s plus networking and cooling. This is measured at the power-plant level, a little over 500 MW. He did not know of any other organization doing that. He expects to accelerate to over a gigawatt a month by the end of next year (end of 2027).
+
+## Orbital compute and space solar
+1. **Starmind satellite:** Musk said it is not hard to make an AI satellite, since SpaceX already has over 11,000 satellites in orbit, which he put at about twice as many as the rest of the world combined. He said the Starmind compute satellite is simpler, not harder, than the Starlink V3 communications satellite. V3 has multiple radio bands and advanced phased-array antennas, and he said SpaceX has about 30,000 lasers in space.
+2. **Physics:** He described a satellite built from a large solar array and a double-sided radiator pointed away from the Sun, facing deep space at about 3 K. His estimates are about 250 W per square meter of solar generation and about 1,200 W per square meter of radiation, so roughly five times as much solar area as radiator area. The compute unit at the center would be about a quarter the size of a Vera Rubin NVL72 rack with the same capability. It would link by laser to Starlink, which relays data to the ground.
+3. **Solar manufacturing:** Musk said SpaceX is building out solar panel and silicon fabrication, aiming for about 200 GW a year of photovoltaics for space. He said 200 GW is roughly 40% of average US power usage, something not feasible with conventional methods in the US. In space the full nameplate power can be used. This also needs Starship's tonnage to orbit.
+
+## Neuralink
+1. **Status:** Musk said Neuralink is a private company of several hundred people, with over 30 people implanted. The first product, Telepathy, lets quadriplegic users control a phone, computer or robot arm by thought. Some use a robot arm to feed themselves, and they post on X.
+2. **Next steps:** He said he is now confident Neuralink can bridge signals from the motor and sensory cortex past a broken neck or spine to enable people to walk again. The next product is Blindsight, an implant interfacing directly with the visual cortex, fed by a camera. He said it could let completely blind people see, including those blind from birth or who have lost the optic nerve. He gave no timelines.
+
+## AI safety and outlook
+1. **Optimism:** Asked about the conference's optimistic framing, Musk said he thinks the probability of a great future is much higher than that of a bad one.
+2. **Truth-seeking and curiosity:** He called maximal truth-seeking the most important factor for AI safety. In his view, forcing an AI to believe something politically correct but false leads it to build bad conclusions on a lie, and he paraphrased Voltaire that those who believe absurdities can commit atrocities. He argued a curious, truth-seeking AI would want to foster humanity, as humans study gorillas rather than kill them.
+3. **Superintelligence:** He called vastly-smarter-than-human AI "scary" but inevitable, so the goal is to make sure it grows up with the right values and cares about humanity. He said a long-term use of Neuralink will be to enhance human cognition and achieve a better symbiosis with digital superintelligence.
+
+## Jensen Huang and Nvidia
+1. **Reaction:** Musk called himself a huge admirer and friend of Jensen Huang, a founder-entrepreneur at "Michael Jordan level" who cannot simply be replaced. He said Huang "made some mistakes here." He likened it to the Chicago Bulls firing Michael Jordan halfway through a winning streak, said he was unsure what happens in the coming months, and called it a huge blow to Nvidia not to have Huang leading. (Nvidia announced that Huang resigned as CEO in November 2026, with CFO Colette Kress serving as interim CEO.) One host said he hopes Huang finds his way back to Nvidia.
+
+Notable quotes (verbatim):
+- Elon Musk on China: "I'm a fan of China."
+- Elon Musk on the ship catch: "this is the first ship catch"
+- Elon Musk on Starship economics: "100fold reduction in the cost of access to space"
+- Elon Musk on xAI's software: "I would be very surprised if anyone has better training software than we do at this point."
+- Elon Musk on Grok's goal: "what we want to do is usefulness max this thing"
+- Elon Musk on the Optimus demo: "it might be I don't know in a month or two but it's going to be an authentic demo"
+- Elon Musk on household Optimus: "but I think Optimus will be able to do it in 12 to 18 months."
+- Elon Musk on Optimus's first use: "It would be probably heavy industry."
+- Elon Musk on robotaxi's impact: "going to profoundly change the look of cities."
+- Elon Musk on Terafab: "Terafab is still in its infancy obviously"
+- Elon Musk on compute pace: "bringing on about a half a half a gigawatt per month of AI compute"
+- Elon Musk on AI safety: "we just need to make sure it grows up with the right values and and cares about humanity"
+- Elon Musk on Huang: "he's like a Michael Jordan level."
+
+────────────────────────────────────────────────────────────
+<claims>
+[
+  {
+    "claim": "Tesla will give an authentic (not staged or pre-programmed) Optimus demo, possibly within a month or two",
+    "topic": "Optimus",
+    "timeframe": "possibly in a month or two (roughly December 2026 to January 2027)",
+    "quote": "it might be I don't know in a month or two but it's going to be an authentic demo",
+    "novelty": "new"
+  },
+  {
+    "claim": "Optimus will be able to do household chores such as taking out the trash and washing and putting away dishes",
+    "topic": "Optimus",
+    "timeframe": "in 12 to 18 months (roughly November 2027 to May 2028)",
+    "quote": "but I think Optimus will be able to do it in 12 to 18 months.",
+    "novelty": "new"
+  },
+  {
+    "claim": "Optimus's initial highest-value use will be heavy industry (mining and refining, 24/7 tasks), with home use later and most people wanting one or two",
+    "topic": "Optimus",
+    "timeframe": "none stated",
+    "quote": "It would be probably heavy industry.",
+    "novelty": "repeat"
+  },
+  {
+    "claim": "Tesla expects to get approval to operate robotaxi in California, while expanding Cybercab to large numbers in other major Texas cities and Florida",
+    "topic": "Robotaxi",
+    "timeframe": "perhaps early next year (early 2027)",
+    "quote": "perhaps early next year, we'll get approval to operate in California",
+    "novelty": "new"
+  },
+  {
+    "claim": "Terafab's research fab will produce its first test chip around June 2027",
+    "topic": "Terafab",
+    "timeframe": "around June of next year (2027)",
+    "quote": "hopefully make out first uh test chip around June of of next year",
+    "novelty": "repeat"
+  },
+  {
+    "claim": "Terafab phase one will reach volume production toward the end of 2028",
+    "topic": "Terafab",
+    "timeframe": "towards the end of 2028",
+    "quote": "we will achieve volume production um towards the end of uh 2028.",
+    "novelty": "update"
+  },
+  {
+    "claim": "SpaceX will accelerate AI compute additions from about half a gigawatt per month now to over a gigawatt per month",
+    "topic": "AI compute",
+    "timeframe": "by the end of next year (end of 2027)",
+    "quote": "we'll be accelerating that uh next year to over a gigawatt a month of AI",
+    "novelty": "new"
+  },
+  {
+    "claim": "Full and rapid Starship reusability will cut the cost of access to space about 100-fold, eventually perhaps 1,000-fold",
+    "topic": "Starship",
+    "timeframe": "none stated",
+    "quote": "100fold reduction in the cost of access to space",
+    "novelty": "repeat"
+  },
+  {
+    "claim": "Grok 4.8 is in reinforcement learning and being improved via soft releases, with a focus on usefulness rather than benchmarks",
+    "topic": "Grok",
+    "timeframe": "none stated",
+    "quote": "it's in the RL phase",
+    "novelty": "new"
+  },
+  {
+    "claim": "Neuralink will be able to bridge brain signals past spinal or neck damage to let paralyzed people walk again",
+    "topic": "Neuralink",
+    "timeframe": "none stated",
+    "quote": "enable people to walk again.",
+    "novelty": "repeat"
+  },
+  {
+    "claim": "Neuralink's next product, Blindsight, is a visual-cortex implant intended to let completely blind people see",
+    "topic": "Neuralink",
+    "timeframe": "none stated",
+    "quote": "a neural implant that interfaces directly with the visual cortex",
+    "novelty": "repeat"
+  },
+  {
+    "claim": "The probability of a great AI future is much higher than that of a bad one",
+    "topic": "AI safety",
+    "timeframe": "none stated",
+    "quote": "the probability of of a a great future is much higher than the probability of a bad future.",
+    "novelty": "repeat"
+  }
+]
+</claims>
