@@ -1,0 +1,80 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-18)
+Published:   2026-11-18 00:00 UTC
+Summarized:  2026-11-19 07:22:48 UTC
+Model:       claude-sonnet-5-5 [direct]
+Cost:        $0.08963 (25341 in / 3895 out tokens)
+Sources:     11
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- Tesla plans $3.3B Cybercab plant at Giga Berlin
+- Tesla opens Cybercab pre-orders at $29,990
+- Tesla unveils Power Core solid-state transformer for 2027
+- Texas Cybercab registrations jump 200 to 773
+- Starship Flight 15 catches ship, loses booster
+- SpaceX details 6 GW Arizona compute campus
+
+## Robotaxi
+
+- **Cybercab personal ownership opens.** Tesla invited select customers to buy a Cybercab for $29,990 before taxes, with a $299/month autonomy subscription and a $1,000 deposit. Deliveries are expected in December in five Texas cities: Austin, Dallas, Houston, San Antonio and Fort Worth. Per hosts reviewing the contract, owners are limited to one car, no ridesharing or delivery use, no wrap or tint, and a reported $50,000 minimum penalty for reselling without Tesla's permission. Musk, replying to Marques Brownlee, said the monthly fee should match FSD plus connectivity at about $150, but Tesla has announced no change.
+- **Giga Berlin Cybercab plant.** Tesla announced a roughly $3.3B (about €3B) investment in an additional Giga Berlin facility for up to 1M Cybercabs per year. Construction is slated for H1 2027 and production for 2029, with the permit application due by end of 2026. Plant head Andre Thierig called it a "first investment." EU rules cap fully driverless registrations at 1,500 per year per vehicle type. The host notes Berlin-built cars exported outside the EU would not count against that cap, and treats 1M as a ceiling rather than a forecast.
+- **Texas registrations surge.** Per Sawyer Merritt citing the Texas DMV, Tesla registered a record 200 Cybercabs in one day, bringing the total to 773 alongside 734 Model Ys. Registrations are not vehicles in service. Merritt's post also pointed to new Cybercabs with Starlink mounted on the rear waiting in Dallas, and Tesla said on its October call that Dallas Cybercab service would launch in November.
+- **Expansion pace.** Per the Dirty Tesla guest on Futureaza, Tesla has registered cars nearly every other day for 2–3 weeks, enlarged geofences and added new areas, with Fort Worth and San Antonio said to launch the next morning. He recalled the Nevada permit (5,000 vehicles) carrying a December 18 launch deadline. Robotaxi Radar reported about 63 Cybercab test vehicles in Las Vegas, which the host could not verify.
+
+## Energy
+
+- **Power Core unveiled.** Tesla introduced Power Core, a solid-state medium-voltage transformer, inverter and breaker in one cabinet, labelled "Made in America operating 2027." It is rated 7.4 MW / 9 MVA continuous at about 34.5 kV AC with 10 MVA peak grid-forming support. Tesla says a single conversion stage roughly halves losses. Its solid-state breaker clears faults about 1,000 times faster than mechanical gear. It connects directly to 800V DC data-center racks and to 1,500V and 2,000V solar systems. Tesla says it is collaborating with Nvidia on engineering for next-gen data centers. No price, data sheet or factory location has been published, and the visuals are renders.
+- **Why it matters.** Per the hosts, large-transformer lead times run past 2 years (Wood Mackenzie puts generator step-up units beyond 160 weeks) and power transformer supply is roughly 40% short of demand. Power Core lets Tesla capture transformer margin in-house alongside Megapack and Mega Block. Competitors include Heron Power (founded by ex-Tesla executive Drew Baglino), Eaton and GE Vernova. Musk replied that Power Core has been planned for 3+ years.
+- **Demand backdrop.** Tesla says it has 10 GWh of Megapack operating at data centers. Musk said on the Q3 call that Tesla is almost sold out of Megapacks for 2027. Per Farzad, Q3 2026 deployments were nearly 14 GWh and energy gross margin was above 33%, aided in part by tariff refunds and warranty adjustments.
+- **SpaceX Arizona campus battery plan.** SpaceX's campus page lists up to 24 GWh of battery storage, which the host calls the largest in the US. He suggests Tesla could benefit, but SpaceX has not named a supplier.
+
+## Autonomous Driving
+
+- **Stricter FSD monitoring in Europe.** Per Electrek, Dutch regulator RDW approved an OTA update for Tesla Assisted Driving (FSD Supervised) on HW4 cars. It brings earlier attention warnings, a strike for inattention during a manoeuvre, and a hands-on-wheel requirement above 130 km/h. Ten other countries have adopted the approval, and an EU-wide TCMV vote is pending. Electrek argues Tesla tightens monitoring only where regulators force it and cites Musk's texting remarks on FSD v14.2.1 as evidence of looser US handling.
+- **Cybercab software.** Per the Dirty Tesla guest, Ashok Elluswamy indicated on X that Cybercab runs FSD v15, with about half of 12 planned features implemented before customer release.
+- **Federal friction.** Musk said free Starlink was offered to Transportation Secretary Duffy for the FAA and declined. The DOT did not confirm the offer, and the FAA says its outage originated in its own ground network. The host notes Duffy's department oversees NHTSA and that the SELF DRIVE Act cleared a House subcommittee 12–11 in February with no visible progress since.
+- **Mercedes.** Hands-free Level 2 (up to 80 mph) arrives in Germany by end of 2026 and the US in 2027. Its lidar-free point-to-point system is due in H1 2027 with California early access from December 2026.
+
+## Electric Vehicles
+
+- **Semi Megacharger buildout.** Per Electrek, Tesla opened its first Texas Semi Megacharger in Mesquite (8 stalls up to 1.2 MW each). The public network is now 7 sites and 44 stalls, against about 37 sites planned for 2026 per Tesla's Q4 2025 shareholder report. Electrek's math: roughly 10 sites by year-end at the current pace.
+- **Cybercab efficiency.** Per a Munro Live breakdown cited by Futureaza, Tesla could cut the Cybercab battery from 47.6 to 40 kWh, with curb weight falling from about 3,100 lb to under 3,000 lb. Tesla engineers told the host 5.5 miles/kWh.
+
+## Market & Competition
+
+- **Waymo barred from California freeways.** The California DMV ordered the halt on November 11, citing work-zone incursions on Highway 101 and a separate CHP-related incident on Highway 280. Waymo stopped freeway service in all markets and says none of the incidents caused injuries. It still reports over 500,000 trips per week across 15 US cities.
+- **Uber adds Zoox.** Per Bloomberg, Uber added Amazon's Zoox in Las Vegas, with Los Angeles in 2027. Zoox operates under a federal exemption capped at 2,500 vehicles.
+- **Nvidia turmoil.** Nvidia's board said it does not intend to reinstate Jensen Huang, and the SEC has opened an investigation. The Futureaza and Herbert hosts flag it, along with suspected cyberattacks, as elevated market risk. TSLA closed at $380.11 (+0.1%) and SPCX at $141.70 (+3.16%).
+- **Starlink rivals.** Delta's CEO said he expects more than one LEO product besides Starlink and called Viasat "not Starlink caliber but pretty darn close." Sawyer Merritt disputes this.
+
+## SpaceX — Starship
+
+- **Flight 15 caught the ship.** Ship 42 launched November 13, orbited 14 times, deployed 26 Starlink V3 satellites and was caught by the tower arms about 22.5 hours later, the first upper-stage catch. The booster was lost: its boostback burn ended early on a low fuel mass alarm that Musk attributed to slightly low engine power, and its flight termination system fired in the Gulf. Musk said the ship could probably be reflown after a few weeks of refurbishment.
+- **Morgan Stanley's Adam Jonas** noted "crickets after catch" in market reaction.
+- **Fixes and Florida.** Musk said the area scraped by the chopsticks will be replaced with stainless steel wool on future flights. SpaceX says the Pad 39A tower in Florida should be ready by the end of this month.
+
+## SpaceX — AI & Compute
+
+- **6 GW Arizona campus.** A SpaceX page describes a Cochise County campus of nine supercomputing buildings with up to 6 GW of power, starting construction in 2027. It cites $50B of regional investment, 1,000 permanent jobs and zero industrial water use (dry-cooled). It also promises $3.6B of grid upgrades transferred at no cost and a projected 10–40% bill cut for Sulphur Springs cooperative members. The host calls it about twice SpaceX's total compute at end-2026.
+- **Funding.** Per Sawyer Merritt, CFO Bret Johnsen said SpaceX can fund its compute buildout from internal cash flow, citing sub-one-year payback on terrestrial hosting deals.
+
+## SpaceX — Corporate & Valuation
+
+- **Q3 13F filings.** Nvidia added about 7.7M SpaceX shares to about 130M (nearly $20B), and Alphabet holds 555M shares (about $83B). Appaloosa raised its stake 17-fold to $557M. Altimeter opened a roughly $680M Tesla position and cut its SpaceX stake 41%, which the Herbert guest reads as positioning for a merger.
+- **Merger speculation.** The Herbert guest expects a merger next year and guesses a 20–40% premium. The Futureaza hosts cite Kalshi odds of about 61% for a Tesla–SpaceX merger by March 1.
+
+## Financials
+
+- **Duan Yongping adds to Tesla.** His firm H&H added 699,000 shares (+20%) in Q3, for about 4M shares worth $1.45B. State Street now holds over 3% of Tesla per a cited 13F report.
+
+Notable quotes and data:
+- Cybercab: $29,990 plus $299/month, $1,000 deposit, December deliveries.
+- Berlin: up to 1M Cybercabs/year, production from 2029, construction H1 2027.
+- Texas registrations: 773 Cybercabs, 734 Model Ys.
+- Power Core: 7.4 MW / 9 MVA, operating 2027.
+- Musk, per Electrek, on FSD v14.2.1 texting: "Depending on context of surrounding traffic, yes."
+- Dan Huot (SpaceX): "We caught Starship, and now everything changes."
+- Starship Flight 15: ship caught about 22.5 hours after launch, booster lost.
+- SpaceX Arizona: up to 6 GW and 24 GWh of batteries.
