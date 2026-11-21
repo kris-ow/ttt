@@ -1,0 +1,559 @@
+Channel:     futureaza
+Title:       Tesla May Have Found the Ultimate AI Shortcut
+URL:         https://www.youtube.com/watch?v=BjGaOzmp-xw
+Published:   2026-11-21 13:00 UTC
+Fetched:     2026-11-21 19:01 UTC
+
+────────────────────────────────────────────────────────────
+
+As for how this will work with Optimus,
+first of all, they definitely need
+fifth-generation AI processing power
+.  Fourth-generation AI
+won't do it.  Elon already said it.  This is
+because it is less about the input
+data, although it is more complex.  If
+you think about it, the streets and everything else are almost
+always the same.  You can go to
+another country and you might not be the
+best driver in the world, but you'll
+get by because, you know, generally speaking, a red
+light is a red light, a stop sign
+is a stop sign, and a road is just
+asphalt with a line in the middle, right?
+You may find yourself
+on the wrong side of the road in some countries, but overall it's pretty
+manageable.  But if
+you go into someone else's house, especially
+if someone says, "Hey, I'm going to turn off the lights
+," you'll constantly bump into everything
+.  So the world is much more complicated than
+roads.  They are designed to be very simple
+.  And the ordinary world is much more complicated.
+Tesla's vision-only approach
+has raised some concerns among
+industry engineers, but remember that
+most of them work for competing
+companies that typically use
+lidar.
+Not exclusively.  There are a few notable exceptions
+that have transitioned to working with
+visual data only with tremendous success
+, remaining leaders in their markets.
+But what is a vision-only approach,
+why is it important, and what are its practical
+benefits?
+Well, I decided to invite someone who
+understands AI, because he runs an AI
+company, to figure out what's
+going on with AI training and
+data labeling.
+And what remains from AI Day to this day?
+Which parts were successful?  Let's
+discuss this with Dr. Know-It-All.  I'm
+Brian.  Welcome to Future Casa.
+So, Dr. Know-It-All has his own
+account in X. He managed to get it.   Is
+n't that amazing?  Almost like
+they let anyone in there.
+Things are bad, man.
+Oh my God.
+And it's on YouTube.  I haven't updated this in a while
+, but you already have over
+100,000 followers.  Congratulations on this.  Very
+exciting things.
+Plus, I like that those live
+broadcasts are with you and him.  So
+...
+Yes.  I appreciate it.
+Last weekend was a lot of fun.  I
+had a lot of fun.
+We had a great time.  Thank you to everyone who
+was with us.  By the way, I'll say this now so
+we can get this sorted out.  You can
+subscribe.  This is free and
+available.
+So join our adventure.
+I think this is probably the best
+offer in these inflationary times, you know
+.
+You must, you must take this into account.
+That's right.
+You were at AI Day.
+It was.
+Yes.  You learned about space occupation networks
+.  You learned about
+data markup.
+Um, so the first question is: why
+get rid of LiDAR?
+And why didn't everyone else do it?
+So yeah, let's rewind a little bit
+.  Actually, AI Day, which was in 2022
+, it was AI Day two, um, is a good
+starting point.  So, Tesla, as you know, didn't
+start with LiDAR.  They created their
+cars, they had cameras, but at
+that time they also had radar and
+ultrasonic sensors.  If you remember,
+those little washers around the car that
+told you when you were parking if
+you were too close.  They are still everywhere on
+many other cars, on cars from many
+other manufacturers.  So in 2022, they
+just got to the point where Elon
+said: no more ultrasonic sensors
+, no more radar, because they caused
+problems with sensor data fusion.
+Andriy Karpaty, um, famously talked about
+how the team was like, oh my god, what should we
+do now?  Because he took away their crutches
+.  He said: just your vision, kid.  And they
+replied: we can't work only
+at dawn.  He said: well, then you made a mistake
+, you didn't create a good enough,
+reliable enough system.  About a
+year later, I think it was August the 23rd,
+if I remember correctly, there was a very, very
+famous shock when Elon was looking for
+Mark Zuckerberg's house because they were supposed to have a
+cage fight or some
+such nonsense.  But they've
+moved on to full autonomous driving,
+using only deep neural
+networks.  So one network, um, neural
+network—same basic idea.
+It's not the same, but the same basic idea
+as ChatGPT, Claude or any of the others
+, or even Grok.  It
+was used to drive
+the car instead of all these heuristics,
+instead of all these different sensors.  So
+it was actually from the beginning, back in
+2016, when they installed all
+the equipment on the car.  That was
+really Elon's bet, uh, and
+it was a pretty risky bet at the time: that you would
+n't need lidars, that you wouldn't eventually
+need radars or ultrasonic
+sensors or anything like that.  And even Sandy
+Monroe very famously stated, "No, you're going
+to need infrared
+, you're going to need other sensors to make
+this all work."  So, uh, this was a decade in the making
+, and it was a
+bold bet at the time, but it paid off
+.  As you said in the introduction, we have seen
+some other companies also successfully
+apply this methodology in their
+cars.
+Yes, Xiaopeng is one example.  They, uh
+, no, they, they were able to catch the
+trends.  I witnessed a conversation in
+the comments to my video where someone
+said, "Well, look, if there's any
+confusion with the sensors, then when in
+doubt, hit the brakes."
+And in response, they wrote to him: "Congratulations, you
+invented phantom braking."   Uh
+, so I understand.
+This is not
+welcome, you have now replaced this old
+system with a neural network with two
+cameras right here.
+It's like, wow.
+So yes.
+It's worth noting that, uh, we saw that
+AI Day where Tesla opened the curtain a little and
+showed some of the approaches they're
+using.
+They showed that they approach
+the intersection as a sentence in a large
+language model (LLM).  When you say
+the first word, you don't always know what the
+next one will be.  You have an assumption, but
+with each new word, it limits the amount of
+computation needed to solve the
+intersection situation.
+And interestingly, the same month after this
+event, George Hotz left comma AI.
+He stepped back from day-to-day
+management.  Argo AI announced
+its closure because all these companies
+have returned to their engineers, and I can't
+speak for comma, but in the case of
+Argo, you can guess pretty accurately.
+They went back to their engineers and
+said, "Okay, here's their approach."  "What
+are we doing and why is it better?"  And their
+engineers said:
+Well, I, I'll tell you, because—and this again is
+not from me, this is from Andriy
+Karpaty.  First steps: if you're thinking
+, "Oh, let's get to 80%
+ready quickly," well, use everything,
+just install everything on the machine in a row.
+I mean, you know, put 15 lidars in there
+, 20 cameras, a bunch of radars and all that stuff
+, and you get there very
+quickly because you know everything around
+you with 100% detail.  But the problem is
+that you can't get from that
+80% to 99.99 or whatever percentage
+you need.  So, you sacrifice
+quick results at the start
+.  This part is easier, and it feels like:
+look at the progress we've made.   In
+just one year, we went from
+nothing to having this thing drive
+most of the time.  The problem is,
+you can't get to the
+finish line from there.  You have effectively created a
+situation where you have no
+chance of getting through this last part.  And,
+you know, I tell my students this all the time
+when they're doing creative
+work.  I'm saying that the last 10–15%
+will take you twice or three times as long
+as the first 80–85%, and in this situation
+it feels even more acute.  It's not
+just 10, it's not even two or three
+times longer.  It's about 10, 15, 20 times
+longer because you created a situation where you
+backed yourself into a corner.  You just can't
+get out of there with that many
+sensors.
+Yes.
+I can draft an outline for a book or a screenplay,
+you know, in an hour.
+And then writing the first draft takes
+more than an hour.
+Yes.
+And then the journey from the first draft to the
+final version takes
+even more time.
+Yes, exactly.
+even more.  And, and
+it's even worse than
+that because, at least in those cases, you
+know you're on a path that will
+eventually lead to success.  You
+just have to keep doing it.
+The problem is that these guys thought,
+"Oh, this is the easiest prey."  Well, the problem
+was that they chose a poisonous
+tree, so that apple wouldn't feed them.
+It is poisonous.  That's the problem.
+We'll have another show in a few days where
+we'll talk about the turnaround, about getting rid
+of code stacks, about big changes.
+In this context, my question would be
+about data markup.
+We learned how it was done, how they
+automated it.
+Are we done with data markup?
+Never.
+In fact, it's getting harder,
+not easier.
+So what Tesla is doing right now, and they've
+actually told us this, although we
+don't get daily reports from them of course,
+they're working hard to
+focus more and more on these
+crazy cases, like, I don't know, a
+cow falling out of a truck bed or
+something, you know?
+It's something you can only see after
+traveling 500 million miles.  But it
+will happen.
+And so they have to not just constantly
+record everything people do in
+the car, the car itself has to be
+smart enough to understand, "Oh,
+that was something really strange."
+I should send this to the main
+server, because they don't need petabytes of
+footage of you driving down the highway on a
+sunny day when traffic is flowing smoothly.
+They are simply already full of such data.  They don't
+need any more of this.  They need all
+this weird, weird nonsense.
+Yes, and how to find it, how to
+filter it.
+Hard.  This is really difficult.
+Finding a needle in a haystack is exactly what
+we're talking about when it comes to
+these edge cases.
+I wonder why Waymo is having such a hard time doing
+some things on the highway.  They lack
+practice on the highway.
+They've avoided the highway for most of their
+existence, and now they've gone there, and we've
+seen them temporarily removed from a
+California highway because they were trying
+to get around a moving blockade.
+This is something I'm 100% sure my
+Tesla wouldn't do in FSD mode.
+You understand that at that time, given
+that it was in California, there were people
+driving with full
+autopilot on in their Tesla in the same
+situation, and it did well.  That is,
+this is not just a hypothesis.  Almost 100%
+guarantee that there were people whose full
+autopilot worked perfectly in the same
+situation where Waymo failed.  Yes.
+Yes.
+So it's all very upsetting for them.
+So, what of what we saw that day
+really scaled?  I mean,
+Dojo clearly didn't scale.  This did not
+happen.  Auto-tagging, space occupancy network
+.
+So what of this ultimately scaled?
+And how does this relate to Optimus' training?
+Yes.  Oho.  OK.  Many big questions
+.
+So, scaling—all of the things we saw
+in 2022 at AI Day 2 are no longer
+used in the real
+driving stack.
+If you turn on full autopilot, it
+doesn't use that.  But it's not in vain
+, because, firstly, data collection and markup
+is a separate thing, and they are always working to
+improve it, making it
+better and more efficient.
+Secondly, things like the
+space occupancy network, traffic lanes,
+lane change rules, how to move in the lanes and all that stuff
+, as you said, for example, different
+tokens.  What other examples are there?  So, all of these
+things actually became unit tests
+during training.
+So if you think about this huge
+neural network, they can isolate a
+part of it and ask, "Hey, what were you
+thinking when you did this?"
+And then they can compare that to a
+neural network that's trained to do
+just that, and it's running on a big
+server, so it doesn't need to be as
+efficient as the one in your car.  And it
+might say, "Here's the correct answer,"
+and the neural network might respond, "Oh
+, okay, I have to learn that, right?"
+They use things like
+space occupancy networks, lane grammars,
+and all that sort of thing to train the neural
+network to perform better.  So none of this
+is useless.  It wasn't a waste of
+time.   It's
+just that they moved away from all these
+modular pieces to one big
+monolithic stack.  And I actually thought
+everything was much more modular than it
+actually is.  These are things that have appeared
+relatively recently.  I've made a few videos
+about this in recent months, and it's fascinating
+because it's really one big process:
+you get photons from the cameras, and at the output is
+a command to turn, brake, or
+press the gas.  As for how this
+will work with Optimus, first of all, they
+definitely need the processing power of
+AI 5. AI 4 will not work for this.  Elon has
+already said this.
+This is because the case depends less on the
+input data, although it is more complex.
+If you think about the streets, they are almost
+always the same.  You can go to another
+country and you might not be the
+best driver in the world, but you'll do pretty
+well.  Because, you know, generally speaking, a red
+light is a red light, stop signs
+are stop signs, and a road is a big
+asphalt strip with a line in the middle,
+right?  You may
+find yourself on the wrong side of the road in some countries, but
+overall it's manageable.  But
+if you go into someone else's house,
+especially if someone says, "Hey, I'll
+turn off the lights," you're bound to get
+bruises all over the place.  So, the world is
+much more complicated than roads.  Roads
+are designed to be very simple.  Um, the
+ordinary world is much more complicated.  So that's the
+first thing, and the second thing is that the results of
+Optimus's work are much more complex than a
+car.  The car only has three exits
+.  This is braking, acceleration,
+steering.  That's all.  And also—avoid
+everything around.  The rule is basically this
+: don't touch anything.
+But with Optimus, it's different: you have to take this
+pen, sign it, fill
+the bottle with water, water the flowers, take some
+trinkets from the factory and bring them here
+.
+Anything is possible with him.  So the space for
+inputs and outputs is much larger.  That's why
+they need AI 5.
+And they also need a lot of training.
+And personally, I find this to be a more difficult
+aspect, because Tesla made a
+brilliant move for cars: they installed
+$2,000 worth of equipment starting in
+2015-2016, and have been
+collecting data continuously since then.
+We pay for the cars, provide them with data, and
+they learn.  But with Optimus, I won't
+wear a suit, I won't pay you
+$20,000 to wear a special suit every day
+and collect information about you.
+Ideally, that would be great for them, but
+it's not going to happen.  So there is a certain
+dilemma regarding the collection of such data.  This is another
+very important problem for a humanoid
+robot like Optimus.
+The funny thing is that just a couple of years ago, people didn't
+think that robots would set foot on Mars
+before humans.
+If you look at the prediction markets,
+let me zoom in a little bit.  Oh, that's
+not it.
+Here, on Kalshi, back in December of '24,
+it just wasn't on people's radars
+.
+20% chance that a robot will set foot on Mars
+before a human.
+Like, seriously?
+This is madness.  And these,
+you know, it's kind of pointless, because
+if you consider moving on wheels instead of
+walking, they've already done it.
+Well, is that true?
+They are better adapted to the lack of
+atmosphere than humans.  Although there is not exactly a
+lack of atmosphere.  It is simply
+so sparse that it can be considered
+almost nonexistent.
+50%.  This is madness.
+Barely, barely, just a little.
+What I saw funny and I'll probably
+share: on the main page
+they say how many copies of GTA 6 will be sold
+this year?
+Well, it won't be released on PC until the first
+quarter, so it's hard to say.  But this...
+I don't know.  There is something interesting here.  If you
+want to try your hand at the
+prediction market, the sponsor is Kalshi.  Here is a QR code that
+seems to let you deposit 25 and
+get 50 or 55 as a bonus.
+So this...I don't know.  If you think you
+know better than the market.
+So my question to you, John, is: why does
+everyone still believe so much in lidars?
+And I'm not talking about individual people.  People themselves don't
+know what they're talking about.
+How can a company...if lidar is a panacea
+, then why do we still have werewolves?
+But you know, companies using
+lidar still make very basic
+mistakes.  Often even more errors
+than those that rely on vision.  The
+Xiaopeng system, which is based solely on vision,
+neural networks, and data processing from
+photons to control commands, performs
+better in many situations than its “more
+sensor-rich” counterparts.
+Why, why such stubborn devotion to this
+?
+I think it's a sunk cost fallacy, to be honest
+.  So it's not just about the
+equipment.  Yes, you invested a lot of
+money in upgrading your Jaguar
+I-PACE or something, or your Zeekr
+001.
+You have this equipment—it's a sunk
+cost, but ultimately, you might as well
+not use it.
+I think the bigger problem is the sunk
+cost of software: your
+engineering team has been building this
+software castle for 10 years, but the problem is that
+it's not good enough.
+He cannot take this last step.
+And the problem is that, well, Tesla is very
+unique.
+At least twice, as far as I know, they
+threw away their entire autopilot
+system and started from scratch.
+And this, damn it, is a crazy
+act.
+But other companies are simply not ready to do that
+.  They say, "We've invested 5
+years and $3 billion in this
+software stack."  "We'll make it
+work."   You'd
+better.  make it work.   to
+work on it.  This...this is a mistake.  This is a
+sunk cost fallacy.  Like, we've
+already invested so much.  This should work.  It's
+like...no, it doesn't have to work
+, people.  You should probably throw everything away
+and start over.
+I got to take a ride in a Nio showroom
+in China to test out their autopilot
+.
+And that was a little over a year and a half
+ago.
+It was a long time ago, long enough ago
+that the results back then were not
+indicative of today's.
+That's right.
+But they wouldn't let us get behind the wheel
+.
+They followed a pre-planned
+route, and there were two critical
+interventions.
+And this, I mean, we're talking about a
+trip around the block, more or less, a
+very short trip.
+And that was their path.  It wasn't like the
+way, their driver, their, I mean
+, and we were, and we, we're going.  So when
+you know, it's pretty rough, they say,
+yeah, but it will be resolved by such and such a
+date.  And we're like: wow, how do you know?
+Because they kind of locked up the engineers and
+told them what they had to do.  I'm saying this wo
+n't work.  This is not how
+innovation works.
+If you don't have enough pieces, you won't
+be able to complete the puzzle in a locked room
+.
+Well, if you're trying to redesign
+Microsoft Word, yes, you can lock
+the engineers in a room and force them, because it's
+already a solved problem.  We already know it
+works.  The problem with autonomous
+driving is that you don't know if
+it works.
+Yes, you can't just say "work
+harder."
+Yes, work harder.  So guys,
+what did we miss?  What did we
+misunderstand?  Leave it in the comments
+below.  Visit John's channel.  I
+go there at least twice a week, sometimes
+three or four.
+Because if there are streams that need to
+be covered, we will cover them.  So it's a
+lot of fun.  Join us there too.
+And you know, like, subscribe,
+do what you do.  Stay
+connected, stay tuned, and I look forward to
+your feedback, smart work, maybe
+even in the comments there, because I read them.
+Yes.  Yes.
