@@ -1,0 +1,31 @@
+Channel:     electrified
+Title:       BREAKING: Tesla Drops New FSD Augmented Reality & Full V15 Release Notes ⚡️
+URL:         https://www.youtube.com/watch?v=OdQmirrAt9Y
+Published:   2026-11-21 21:06 UTC
+Summarized:  2026-11-21 23:05:29 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0.00000 (16931 in / 2119 out tokens, subscription)
+Relevance:   core — Covers Tesla's FSD V15 release, its release notes, and the new Reality View visualization, which bear directly on the autonomy thesis.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots
+────────────────────────────────────────────────────────────
+
+The video covers Tesla's release of FSD V15 to the first wave of customers, announced by Ashok Elluswamy, along with the full release notes and the new Tesla Reality View augmented reality visualization. The host's thesis is that V15 is a major step: a reworked end-to-end network, a claimed 25x improvement in critical intervention rate, and a visualization that shows and communicates what FSD intends to do.
+
+## Autonomous Driving
+1. **V15 rollout and headline gains:** Elluswamy said V15 is releasing to the first wave of customers, upgrading every part of the end-to-end driving network. Tesla claims 25 times better handling of safety-critical cases. The host expected a release within days to enable a wide release in December.
+2. **Shared vision encoder:** The release notes describe an upgraded vision encoder shared between FSD, robotaxi, and Optimus, trained on millions of internet videos for better generalization and data efficiency. Tesla says it improves the critical intervention rate by 25x.
+3. **Tesla Reality View (augmented reality):** V15 replaces all the explicit model signals with a single end-to-end visualization that uses less total compute. Previously, separate modules handled bounding boxes for vehicles and pedestrians, lane lines and road boundaries, traffic lights, signs and cones, and occupancy and predicted path. The host infers Tesla has moved from its prior engine to Unreal Engine, and that a single network generating the scene directly from camera inputs is likely why compute falls. Elluswamy called the lower compute use the crazier part and cited extreme compute efficiency optimization.
+4. **Visualization features:** The view renders puddles, chipped road paint, poles, signs, pedestrians, and the wider scene (ocean, clouds, mountains) from a virtual drone-style angle above and behind the car. Users can drag to change the angle or return to the 3D navigation map, and a quiet mode like the robotaxi's shows only destination, arrival time, speed, and upcoming turns. Blue arrows show intended turns and highway merges, and pins show intended parking spots, so the display communicates the car's intent. Elon Musk said you can tap any point on the visualization to make the car go there. The host says users will have some level of input to control what FSD plans.
+5. **Navigation and parking:** Navigation for the start and end of a trip now learns end to end from fleet route preferences, and later V15 releases will extend this to the whole route. Parking location selection uses personalized parking history, and the map shows multiple parking options at the destination. The host expects fewer parking-lot loop problems like one seen in a recent AI Driver video, but this is his expectation, not a tested result.
+6. **Perception and driving behavior:** Detection is improved for road signs, small animals, debris, chains, potholes, road details, and deep standing water, which the car now avoids. Speed handling is improved per driver profile, in school zones, and in inclement weather. FSD can now slow for speed cameras.
+7. **Driver monitoring, bike racks, auto shift:** Vision-based attention monitoring is available more often with hats and sunglasses, and is less strict in higher-speed driver profiles. Bike rack mode allows FSD with bike racks or similar hitch accessories. Auto shift is improved by unifying it with FSD-based gear predictions.
+
+Notable quotes and data:
+- Critical intervention rate improved 25x per the release notes; handling of safety-critical cases is 25 times better per Tesla.
+- Elluswamy on Reality View: it is "not just there because it looks cool, but it also communicates the intent of the car."
+- Musk: the Tesla AI computer rerenders reality with chevrons in the sky for turns like a video game, and you can tap any point to make your car go there.
+- Tesla's Lawson: "Reality View is probably the most fun I've ever had working on a project."
+- The vision encoder is shared across FSD, robotaxi, and Optimus.
+- Reality View is a single end-to-end network that uses less compute than the old visualizations.
+- Later V15 releases will extend fleet-learned navigation to the entire route.

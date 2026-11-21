@@ -1,0 +1,214 @@
+Channel:     electrified
+Title:       BREAKING: Tesla Drops New FSD Augmented Reality & Full V15 Release Notes ⚡️
+URL:         https://www.youtube.com/watch?v=OdQmirrAt9Y
+Published:   2026-11-21 21:06 UTC
+Fetched:     2026-11-21 23:05 UTC
+
+────────────────────────────────────────────────────────────
+
+Of course, after I upload this morning's
+video, shortly after, Tesla hits us with
+some more breaking news. Ashoke just
+said V15 is releasing to the first wave
+of customers today. And frankly, I'm not
+surprised because as I said this
+morning, it would have to be really in
+the next few days to enable a wide
+release in December. But Tesla said V15
+rolling out now upgrading every part of
+the end-to-end driving network. 25 times
+better handling of safety critical
+cases, which are already super rare for
+anybody that uses the software. Tesla
+added a live visualization of the drive
+that lets you see and control what FSD
+is planning to do. Again, see and
+control. So, we will have some level of
+input to control what FSD is planning to
+do. Navigation for the start and end of
+the trip now learns end to end from
+fleet route preferences. Later V15
+releases will expand this to the entire
+route. You should also notice better
+detection of signs, animals, debris,
+potholes, and standing water. Plus, more
+natural speed handling in school zones
+and inclement weather. Lastly, FSD can
+now slow for speed cameras and bike rack
+mode lets you enable FSD with bike racks
+or similar hitch accessories. And here
+are the full release notes. Upgraded
+vision encoder shared between FSD,
+Roboaxi, and Optimus, which is trained
+on millions of internet videos for
+improved generalization and data
+efficiency, improving the critical
+intervention rate by 25x. Introduced
+Tesla augmented reality, replacing all
+of the explicit model signals into a
+single end-to-end visualization using
+less total compute. Improved navigation
+by using an end-to-end learned model
+based on route preference data from the
+fleet. Improved parking location
+selection by using personalized parking
+history. And the map will now display
+multiple parking options at your
+destination. Improved driver monitoring
+by increasing vision-based attention
+monitoring availability with hats and
+sunglasses and decreasing strictness in
+higher speed driver profiles. Improved
+detection of road signs, small animals,
+road debris, and chains. Improved
+detection of potholes, road details, and
+avoidance of deep standing water.
+Improved speed handling for each driver
+profile, school zones, and speed limits,
+and inclement weather. Improved auto
+shift functionality by unifying with
+FSDbased gear predictions. Just have a
+look at this video.
+&gt;&gt; [snorts]
+&gt;&gt; I mean, just look at this visualization
+of this augmented reality Tesla has now
+implemented. You can actually see
+puddles on the road. You can see paint
+chipping off certain road markings. It's
+actually visualizing poles and the signs
+on the side of the street. I mean, it
+literally looks like GTA 6 very close to
+a real life video. And in this clip,
+it's visualizing not just the road and
+the pedestrians, but the entire scene.
+So, the ocean and the clouds and the
+mountains. And as shown here, you can
+drag around the screen to see different
+angles just like you can do with the
+current software in our cars now. But
+with V15, you'll get Tesla's new
+augmented reality of the scene in real
+time. And the way Tesla's done this is
+from the perspective as if there was a
+drone flying above and behind your car.
+And obviously there's not one, but the
+way Tesla has done this from a software
+perspective, stitching everything
+together, that's how it seems. Or you
+can go back to the 3D maps to have the
+navigation full screen. And just like in
+the robo taxi, we will also have a quiet
+mode where it just shows us our
+destination and the time of arrival
+along with minimal information like your
+current speed and upcoming turns. And
+look at this screenshot. It's almost
+like an actual video game where it has
+these blue arrows that are clearly
+indicating you're merging off the
+highway, which is part of this new
+augmented reality forecasting what the
+car is about to do. And as you can see,
+those same blue arrows do appear on the
+screen even for regular turns to signal
+what the car is about to do. Here's just
+a very quick shot where you can change
+the perspective, but again, it's like
+you have a full 360° view around your
+car. And as you can see, here's reality,
+a pedestrian crossing in front. And
+right in the augmented reality, same
+thing being rendered in real time with
+these graphics that are truly unreal. So
+think about this, guys. When passengers
+get in your car and see this, their
+minds are going to be blown because when
+I have people get in my car now with the
+visualizations we have on V14, they're
+always so impressed when they see all
+the cars at a light or in a parking lot.
+But now this is going to take that to an
+entirely new level. And looking at the
+clarity of this shot in the parking lot,
+if you just saw AI Driver's most recent
+video at the end of that when it was in
+that loop in the parking lot and it went
+by that one open spot, I would be very
+surprised if it had that same problem on
+V15 given this level of detail. And so
+going back to that line about Tesla's
+new reality view that has replaced all
+of the explicit model signals into a
+single end-to-end visualization, which
+by the way somehow uses less total
+compute. So before V15, these model
+outputs were things like the bounding
+boxes back in the old days that would
+track things like cars, trucks,
+pedestrians, cyclists, etc. Then a
+separate model would be things for the
+lane lines and the road boundaries and
+all of the markings on the road. Then a
+separate model would have covered things
+like traffic lights, signs, road cones,
+and any other objects on the road. Then
+another model would be for things like
+occupancy information and the predicted
+path of the vehicle. And so basically
+these model signals, as Tesla called
+them, would come from different modules.
+And in the past, Tesla told us the
+engine they used to do that was GDAU.
+And now with V15, it does seem as though
+they have upgraded to using Unreal
+Engine to create Tesla's new augmented
+reality that they're calling Tesla
+reality view, which again is a single
+end-to-end neural network that directly
+produces this unified visualization. So
+instead of running multiple specialized
+detectors and then compositing the
+results into one system like they were
+doing, this reality view will generate
+this coherent scene representation
+directly from the camera inputs and all
+of the signals in one shot, which is
+likely how it's doing it on less
+compute. And as Elon just said, with
+V15, the Tesla AI computer rerenders
+reality with chevrons in the sky for
+turns like a video game. But
+importantly, you can tap any point on
+the reality revisualizer to make your
+car go there. Ashoke said the crazier
+thing talking about the new FSD V15
+visualizations is that they use less
+compute than what these old
+visualizations required. He said extreme
+compute efficiency optimization. Ashoke
+also said V15 debuts Tesla reality view.
+The same end-to-end driving model also
+renders a realistic view of the world
+around the vehicle. It's not just there
+because it looks cool, but it also
+communicates the intent of the car. The
+arrows show the turns FSD intends to
+take, and the pins show its intent to
+park in a spot and so on. And it sounds
+like you'll be able to adjust all of
+this. Lawson from Tesla said, "15 is the
+culmination of countless late nights
+from our incredible team. Reality View
+is probably the most fun I've ever had
+working on a project. Can't wait for
+everyone to try it. And if you want the
+rest of the V15 updates we got earlier
+this morning, be sure to go check this
+video here. So, of course, we'll talk
+about this a lot more this week and
+beyond, but my OCD brain just had to get
+all of this new information out there as
+a continuation of this morning's video.
+So, I hope you all have a wonderful
+weekend and a huge thank you to all of
+my Patreon supporters. [music]
