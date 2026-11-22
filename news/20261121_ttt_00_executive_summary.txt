@@ -1,0 +1,75 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-21)
+Published:   2026-11-21 00:00 UTC
+Summarized:  2026-11-22 06:45:25 UTC
+Model:       claude-sonnet-5-5 [direct]
+Cost:        $0.06744 (17263 in / 3291 out tokens)
+Sources:     8
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FSD v15 begins rolling out to first-wave customers
+- Musk says FSD v15 goes wide in December
+- Italy becomes 12th European country to approve FSD
+- Musk promises real unscripted Optimus demo in "a month or two"
+- Tesla proposes $3.1B polysilicon plant near Corpus Christi
+- Apollo and Goldman price $44B GPU-backed SpaceX notes
+
+## Autonomous Driving
+- Tesla began rolling out FSD v15 to the first wave of customers, per Ashok Elluswamy. Release notes cite a shared vision encoder (FSD, robotaxi, Optimus) trained on millions of internet videos, which Tesla says improves critical intervention rate by 25x. Tesla did not publish the underlying figure, and Electrek flags the claim as hard to verify.
+- Musk said v15 goes to wide release in December as part of the holiday update, calling it the first version that deserves the name "Super." The host at Electrified expects early regressions given how different the architecture is.
+- New Tesla Reality View replaces separate visualization modules with a single end-to-end network that Tesla says uses less compute. Blue arrows show intended turns and merges, and pins show intended parking spots. Musk said you can tap any point to make the car go there.
+- Release notes also list better detection of road signs, small animals, debris, potholes and deep standing water, plus improved school-zone and weather speed handling. FSD can now slow for speed cameras, and Bike Rack Mode is added. Driver monitoring works more often with hats and sunglasses and is less strict in higher-speed driver profiles.
+- Navigation for trip starts and ends now learns from fleet route preferences, with later v15 releases extending this to the whole route. Parking selection uses personalized history.
+- Electrek cites a Johanna.be test in which FSD exceeded the limit in 55% of the 30 km/h zones it drove through, averaging 44 km/h. That test predates the v15 school-zone fix.
+- FSD (Supervised), branded Tesla Assisted Driving in Europe, was approved in Italy, the 12th European country, per Sawyer Merritt. He called EU-wide approval "only a matter of time," which is his opinion, not an announced decision.
+- Musk said supervised fine-tuning is "more like getting a haircut with a chainsaw than it is fine-tuning." He said both that and a system prompt being unnecessary are already true for Tesla AI.
+
+## Robotaxi
+- The host at Electrified says v15 should be the release that unlocks unsupervised FSD on customer cars, likely only within robotaxi geofences. Musk earlier suggested December with qualifiers, while the recent earnings call pointed to Q2 2027. HW3 will not be capable.
+- Tesla expanded the Dallas Robotaxi service area by 1% to 82 square miles, per Sawyer Merritt.
+- Marques Brownlee said he will honor the spirit of his 2024 Cybercab bet. He submitted a $1,000 non-refundable deposit and selected Austin.
+
+## Humanoid Bots
+- Speaking from Shenzhen at the TomorrowX Summit, Musk said humanoid demos people see are staged and programmed. He said Tesla will hold a real demo "maybe in, I don't know, a month or two," nearly the same window he gave on the October 21 earnings call.
+- Musk said Optimus should handle chores like trash and dishes in about 12–18 months. He said the first big job is heavy industry such as mining and ore processing, with home use later.
+- Optimus units at the October 2024 We, Robot event were reported by Bloomberg to be remotely controlled, and the Optimus handing out snacks at the Coral conference about 10 days ago was teleoperated, per the host. Figure CEO Brett Adcock said he hasn't seen anything special from Tesla in two or three years. The host discloses a fund tied to his other channel invests in Figure and Apptronik.
+- Humanoid Summit (December 1–2, San Mateo) says it is partnering with Tesla for Optimus viewing and guided FSD demo rides. A live demo there is possible but unconfirmed. Tesla's annual meeting follows December 3.
+- Aerial footage from Joe Tegtmeyer shows the Giga Texas Optimus factory at a little over 7 million sq ft by his estimate. Steel completion is targeted for end of March or April, roughly one year after construction began. Four large foundations are being poured, assumed to be for casting machines. Sawyer Merritt reads the build as using Giga Presses, which is his read, not a Tesla announcement.
+- The key gating item is power: Joe says the site has no industrial power yet, and an electrical distribution unit is under construction south and west of the building. He says structural completion does not mean production readiness.
+- Dr. Know-It-All argued Optimus needs AI5 and faces a harder data problem than cars, since no equivalent of Tesla's roughly $2,000 per-car hardware fleet exists for humanoids.
+
+## Energy
+- Tesla submitted plans for a $3.1B polysilicon refinery near Corpus Christi. China produces over 90% of polysilicon, and the plant is a proposal that has not been approved. Per Cern Basher, it would feed Crystal Sun, the roughly $10B solar factory Tesla began building near Houston.
+- Basher says Tesla and SpaceX each target 100 GW of annual solar capacity by 2028, which would need about 200,000 tons of polysilicon per year. Analyst Joe Hennessy estimates the $3.1B yields 30,000–40,000 tons per year, so Basher expects substantial later expansion.
+- Ernst & Young estimates the proposal's economic impact on Texas at $63.5B through 2065.
+
+## Financials
+- Tesla is seeking a 100% abatement from 2028 to 2030 and 50% from 2031 to 2040 under the Texas JEDI Act, saying the project is not economically viable without tax breaks. The deal also needs the governor's signature, likely after Jan. 19 when Governor-elect Gina Hinojosa takes office. Basher characterizes the structure as largely payments in lieu of taxes.
+- Per the host, Musk said most of the line for 1 million Optimus per year is already installed in Fremont. He has said Optimus will cost $20,000–$30,000 and be leased rather than sold. Tesla has given no 2026 or 2027 production target.
+
+## Electric Vehicles
+- Tesla opened Argentina orders for five Model 3 and Model Y versions imported from Gigafactory Shanghai. Prices run from $40,990 (Model 3 RWD) to $53,990 (Model 3 Performance), VAT included. First deliveries are expected March or April 2027. Argentina is Tesla's 4th South American market, and BYD already leads the country's EV market.
+- Musk joined the launch with President Milei by video, said "Sorry, I don't really know what I want to say," and the call ended about two minutes in. Electrek's Fred Lambert reads it as a sign Musk no longer cares about selling cars, citing the 8.6% drop in 2025 deliveries to 1.636 million.
+- A software update (2026.44 or newer) tightens the Cybertruck turning circle but applies only to model year 2027 trucks. Tesla gave no new figure, and the owner's manual listed about 43.5 ft before the update. Electrek notes Cybertruck production is slated to end by end of summer 2027, with only the $109,990 Cyberbeast sold.
+
+## SpaceX — AI & Compute
+- Apollo and Goldman Sachs priced $44B in senior and subordinated notes to fund SpaceX's purchase of Nvidia Vera Rubin chips and related equipment, per Sawyer Merritt. The banks call it the largest GPU-backed financing in history, and the deal was reportedly oversubscribed and upsized.
+- Cameron County voted 3–2 not to hold a hearing on SpaceX's tax-break request for its $24B AI data center. SpaceX had sought 10 years of 100% exemption and said it would invest elsewhere otherwise. Construction is proceeding around the clock per Basher, and the Starbase city vote is December 9.
+- Basher says Terafab needs far less silicon than solar but at higher purity (11N–12N for advanced chips versus 9N for solar). A Tesla or SpaceX announcement of 11N or 12N production would signal Terafab supply.
+
+## SpaceX — Launch Business
+- Philippine President Ferdinand Marcos Jr. said the country is trying to enter the launch-site business and is in talks with SpaceX. No agreement or timeline was stated.
+
+## SpaceX — Corporate & Valuation
+- Basher says supply-chain interdependence is another reason Musk wants to merge Tesla and SpaceX, arguing SpaceX would carry business risk if it lost control of Tesla.
+
+Notable quotes and data:
+- Musk: "the humanoid robot demonstrations that you see are staged and programmed. They are not real."
+- Musk: FSD v15 "will rerender reality in a mindbending way."
+- Musk (August): V14 maybe 2 to 3x better than human, "V15 has a shot at 10x."
+- Tesla polysilicon plant: $3.1B proposal. Crystal Sun: about $10B.
+- Argentina pricing: $40,990 to $53,990, deliveries March or April 2027.
+- SpaceX GPU-backed notes: $44B. Cameron County: 3–2 against a hearing on the $24B data center.
+- Dates: Humanoid Summit December 1–2, Tesla annual meeting December 3, Starbase vote December 9.
