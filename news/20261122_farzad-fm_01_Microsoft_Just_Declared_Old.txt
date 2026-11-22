@@ -1,0 +1,641 @@
+Channel:     farzad-fm
+Title:       Microsoft Just Declared Old Cybersecurity Dead
+URL:         https://www.youtube.com/watch?v=1Pbn44Z8HSI
+Published:   2026-11-22 12:00 UTC
+Fetched:     2026-11-22 13:03 UTC
+
+────────────────────────────────────────────────────────────
+
+Picture a company network at night.
+Nobody is sitting at a keyboard, yet an
+autonomous AI tool goes from first
+targeting to privileged access in under
+three hours. Elsewhere, stolen app
+credentials from one trusted supplier
+tries signing into more than 2,200
+customer networks at machine speed.
+People assume AI is inventing
+unstoppable sci-fi code. The real
+bottleneck is stranger, and it puts your
+money, your job, and national power on
+the line. When both sides get AI, who
+wins? By the end, you will know how
+these attack agents work, how AI fights
+back, and why the next few years reorder
+global power. Between August and
+November 2026, security teams watched
+hacking cross a threshold they had
+warned about for years. In November
+2026, the FBI sent out an emergency
+alert confirming that attackers were
+turning autonomous AI software loose
+against real organizations. Banks,
+defense contractors, chip makers,
+hospitals, energy companies, telecom
+carriers, and law firms all landed on
+the target list. [music] At a November
+2026 House Homeland Security hearing,
+Representative James Walkenshaw pressed
+FBI Deputy Director Christopher Rya on
+camera about how real that warning was.
+This week, the FBI warned that hackers
+are using autonomous AI tools to target
+governments and businesses in the United
+States. Is that true, Mr. Deputy
+Director?
+&gt;&gt; We put out a flash message on that.
+&gt;&gt; Thank you. We are under attack. We're
+under attack. At the center of that FBI
+alert sits a free open-source program
+called Artex. A developer in China
+published it on GitHub in July 2026 as
+an automated security testing framework.
+GitHub took the original repository down
+in October after abuse reports piled up.
+By then, copies and modified versions
+had already spread everywhere, with the
+FBI counting over 1,600 exposed control
+panels sitting on the open internet by
+early November. Those copies were
+already hitting ordinary people's lives.
+In South Korea, attackers used Artex to
+break into at least seven financial
+firms. Personal details, incomes, and
+borrowing histories for roughly 68,000
+people spilled out. And wait until you
+see how the attackers walked in. because
+there was no movie style superbug
+involved. Then in November 2026, the
+European Commission confirmed that its
+internal human resources platform was
+hit by an RTX attack first detected in
+October. Officials reported no evidence
+of a staffwide data theft. Yet,
+Commission employees still could not
+reach their health insurance system
+weeks later while engineers scrubbed
+internal apps. Quick note before looking
+inside the machine driving these
+breakins. I'm looking for great sponsors
+to partner with brands aligned with the
+kind of content I make on this channel.
+If that's you, reach out at
+farzzad@mail.grockbot.com.
+Look closely at Artex and you hit a
+strange twist right away. The program
+itself contains zero intelligence of its
+own because it is an empty shell waiting
+for an operator to plug in an AI model.
+So, how does plugging an off-the-shelf
+AI model into a free rapper let someone
+with minimal skill break into a company
+network in under 3 hours?
+Most people still picture AI as a chat
+box that sits idle until a human types
+the next question. That mental picture
+misses where AI's real leverage lives.
+Chatting was the warm-up and execution
+is what flips industries upside down.
+When you hand an AI model tools and a
+clear goal, it stops talking and starts
+acting. Public tearowns of autonomous
+hacking frameworks like Artex, Kairen,
+and Pentagi all reveal the same
+three-part design. Think of it like a
+general contractor renovating a huge
+office building overnight because one
+boss coordinates dozens of specialized
+tasks off a single shared blueprint.
+First, a planner model acts like that
+contractor, breaking a high-level goal
+down into concrete steps. Second, worker
+agents pick up ordinary digital tools
+like network scanners and web browsers
+to test stores and read whatever error
+or page comes back. Third, every clue
+they uncover goes onto a shared board,
+what Palo Alto's unit 42 calls a fact
+and intent map. So no worker wastes time
+repeating a dead end and a human can
+step in whenever a door cracks open.
+From there, the loop runs through
+classic intrusion stages. It scouts what
+an organization exposes online, tests
+login or known software bugs to get
+inside, moves sideways from machine to
+machine, and copies valuable files out.
+Yet early defenders noticed something
+baffling in their server logs. These AI
+agents are loud, repetitive, and clumsy.
+Look at what Microsoft observed in
+October 2026 from a hacking group it
+assesses as China state aligned over
+several days. That group targeted more
+than 300 accounts across eight
+organizations. Their automated spray
+fired over 150,000 bad password guesses
+at peak speed. Nearly 3,000 failed
+loginins slammed in every minute. Almost
+every targeted account locked up and
+zero password guesses worked. If the
+story stopped there, AI hacking would
+look like a total dud. Instead, on
+October 15, the attackers pivoted.
+Rather than guessing employee passwords,
+they abused stolen cloud application
+identities belonging to Connect Wise's
+backup service. Think of an OOTH app
+identity like a master building badge a
+company hands a trusted vendor, so the
+vendor never needs a personal key. With
+those stolen badges, attackers tried
+signing into more than 2,200 Microsoft
+customer environments at machine speed.
+Connectwise disabled seven abused app
+identities and spent weeks restoring its
+backup and billing services. Shutting
+off a stolen badge blocks new entry,
+though any new admin role or fresh
+access token an attacker created while
+inside stays live until a defender
+tracks it down. And that exposes the
+biggest misconception about this whole
+wave. These agents rarely win with
+clever new tricks. In South Korea,
+breached financial firms had weak or
+missing two factor login. In another
+campaign analyzed by Palo Alto's unit
+42, a single operator or tiny crew used
+the Karen framework to breach 10
+organizations inside 2 weeks. They
+walked in through guest passwords and
+open registration pages. In one
+break-in, they took more than a million
+member records from an American teachers
+union. And in another, they pulled about
+150,000 internal files from an
+industrial manufacturer. Call this the
+human speed gap. Nearly every
+organization carries a backlog of old
+unpatched flaws and sloppy settings
+because fixing them takes budget and
+human hackers used to test stores
+slowly. After an automated attack hit
+cloud accounts inside 44 hours,
+Barracuda security chief wrote in a blog
+post that defenders who wait to spot bad
+activity and react arrive after the
+attacker has finished. Britain's
+National Cyber Security Center chief
+Richard Horn warned an audience in
+November 2026 where that speed gap
+leads. In the coming months, we face a
+real prospect of an unprecedented rise
+in the number of cyber incidents. But we
+must be clear that is not because AI has
+invented new ways to attack us. It is
+because vulnerabilities that have been
+tolerated for far too long can now be
+discovered and exploited at a scale and
+pace that was once unimaginable.
+Old neglected holes tested at machine
+speed are already overwhelming human
+response teams. So what happens when AI
+agents stop waiting around for neglected
+old bugs and start turning brand new
+security updates into live attacks with
+no human in the loop.
+Every time a software maker ships an
+urgent security update to protect
+customers, it accidentally hands
+attackers a map pointing straight to the
+broken lock. For decades, defenders
+survived that trap because reverse
+engineering the fix took skilled human
+hackers days or weeks of painstaking
+work. In November 2026, Google's threat
+intelligence group wrote in a report
+that Agentic threat activity had crossed
+a major threshold. On an exposed staging
+server, Google researchers uncovered an
+automated exploit agent, the first
+threat actor system they had seen that
+discovers vulnerabilities and launches
+exploits with zero humans in the loop.
+Think of it like a teacher handing back
+a graded test with bright red ink
+circling every wrong answer. Whenever
+popular web software publishes a
+security patch, an automated system can
+compare the old code against the patch
+code line by line, spot the exact flaw
+the engineers repaired, and draft an
+attack against everyone who has not
+installed the update yet. That server's
+agent ran the before and after
+comparison continuously and fired
+attacks on its own. That collapses the
+grace period for installing updates.
+Security firm Volcheek measured that
+nearly 30% of known exploited
+vulnerabilities in 2025 came under
+attack on or before the day they became
+public. Meanwhile, Mandant tracked how
+fast initial break-in brokers hand
+stolen access over to follow-on
+attackers. Back in 2022, that median
+handoff took more than 8 hours. By 2025,
+it plunged to 22 seconds. Running
+tireless fleets of scouting and exploit
+agents hits one practical limit, though.
+Every step in an AI loop burns compute
+tokens, and heavy token bills cost money
+and leave payment trails. Attackers
+solve that bottleneck by making victims
+fund the next wave of break-ins. Between
+October and November 2026, Amazon thread
+intelligence set out decoy servers
+disguised as popular AI model gateways
+like light LM, Diifi, and Langflow.
+Autonomous agents connected to those
+traps and unknowingly sent along their
+own mission notes inside the requests.
+Amazon assessed with moderate confidence
+that Chinese Nexus groups were running
+Artex agents on a self-funding loop,
+break into exposed AI gateways through
+default admin login or known bugs, steal
+the victim's paid AI keys, and burn
+those stolen keys to hunt hundreds more.
+SISA added one of those light LLM bugs
+to its known exploited catalog in
+November 2026, ordering federal agencies
+to patch it by early December. Extra
+keys that attackers do not spend
+themselves get bundled and resold
+through underground proxy networks that
+Google calls LLM mixers, laundering
+stolen AI compute the way criminals
+launder cash. Attackers are even
+poisoning the developer tools used to
+build software agents in the first
+place. In November 2026, someone slipped
+malicious releases of Microsoft's own
+agent framework onto the Python package
+index for about 55 minutes built to
+siphon cloud and AI secrets the instant
+Python started up. Separately, Google
+caught a suspected North Korean group
+using fake job recruiters with AI
+generated photos to slip a trap into a
+developer's clawed code settings file,
+silently fetching a back door the next
+time a coding agent ran. Attackers now
+wield autonomous scouts, automated patch
+weaponizers, and stolen AI compute
+paying their bills. When a human analyst
+needs roughly half an hour to check one
+serious alert and criminals hand off
+stolen access in 22 seconds, how does
+any defense team stay standing? If
+you're enjoying this video so far and
+want to support the channel, the
+quickest thing you can do is clicking
+subscribe. It's completely free and goes
+a very long way. Thanks so much.
+A human security crew staring at
+thousands of blinking alerts cannot
+outrun software that works through the
+weekend without blinking. Yet, defenders
+hold one permanent homefield advantage
+that former US cyber official Anne
+Newberger highlighted in November 2026.
+Defenders own the source code and run
+the building. Give defenders AI and they
+can seal broken locks before code ever
+reaches the public. [music] At the DARPA
+AI Cyber Challenge finals at Defcon in
+August 2025, autonomous systems comb
+through critical open- source software
+and uncovered 18 real, previously
+unknown bugs alongside dozens of contest
+flaws. Better [music] yet, those
+automated systems wrote working patches
+in an average of 45 minutes. And on
+stage in Las Vegas, organizers announced
+the winning cyber reasoning team. And in
+first place with a prize of $4 million,
+uh, this team exceeded in all but one
+category of challenge. They they were
+the top performer in all but one
+category of challenge.
+Congratulations, team Atlanta.
+[cheering]
+&gt;&gt; By late 2026, that contest turned into
+live tools across top tech labs.
+Google's project zero tested its AI bug
+hunter Big Sleep alongside its veteran
+fuzzer on Chrome's JavaScript engine
+over 6 months. Big Sleep caught 45 real
+vulnerabilities and 3/4 of the critical
+bugs found across both tools did not
+overlap, proving AI spots logic flaws
+that traditional crash testing misses.
+Google shipped code mender to propose
+fixes right inside developer code
+reviews while openai rolled out codec
+security to scan business code bases.
+Anthropic went a step further in April
+2026 with project glasswing saying its
+mythos preview model was too dangerous
+to release broadly because of its
+offensive skill. Anthropic gave private
+access to partners like Apple, AWS,
+Google, Microsoft, and the Linux
+Foundation so defenders could find and
+fix bugs. First, independent tracker
+Volk counted more than 440 catalog
+vulnerabilities tied to Anthropic by
+November 2026, with over 200 fixes
+already shipped on the public ledger.
+Cleaning up new code still leaves a
+giant problem. Companies run mountains
+of older software they cannot rewrite
+overnight. Stopping an attack agent
+inside a live company takes defensive
+agents watching every corridor at
+machine speed. At Microsoft Ignite in
+November 2026, Microsoft made its
+perception security platform generally
+available, pairing red team testing
+agents with blue detection agents and
+green repair agents. And chief executive
+Satia Nadella described what happened
+when an independent researcher turned
+Rex loose against [music] defender.
+&gt;&gt; Recently, an independent security
+researcher used Artex. that's in the
+news everywhere nowadays. Uh an
+autonomous AI attack framework uh to
+test an environment protected by
+defender. Uh so the agent kept trying to
+move laterally across the network. Uh
+but defender automated attack
+disruptions uh really kept containing
+those compromised accounts and isolating
+uh devices even as the agent continued
+its attack. Even when engineers cannot
+install a permanent software update
+right away, AI can buy vital time
+through virtual patching. Microsoft
+unveiled Azure adaptive virtual patching
+in public preview in November 2026 for
+Linux virtual machines. Think of virtual
+patching like bolting a steel plate over
+a cracked basement window while new
+glass gets cut. It maps a customer's
+live servers against known flaws and
+blocks the attack path at the network
+and inside the operating system while
+humans test the real fix. Smart
+defenders are also changing how they
+spot intruders. During the ConnectWise
+incident, security firm Huntress
+observed inside a 14-hour window that an
+attacker blended fast scripts, a live
+human at the keyboard, and a blind tool
+that kept firing requests for 22 minutes
+after its target had already been
+deleted. Chasing robotic typing rhythms
+will fail as models smooth out their
+timing. Defenders win by planting madpot
+style decoys and watching what an
+account actually does, like granting
+surprise admin rights or keeping tokens
+alive after an app is shut down. Skilled
+attack hours got dramatically cheaper in
+2026, and defensive products are racing
+to cheapen alert triage and patching
+right back. Nobody has an audited
+scoreboard proving which side pulled
+ahead. Yet, one pattern jumps off nearly
+every incident report. Who is actually
+running these campaigns? And why does
+every trail point toward a superpower
+collision? [music]
+Hitting dozens of sensitive targets
+across chipm, defense policy, and
+manufacturing inside of Fortnite used to
+take a state intelligence agency with a
+building full of specialists. When Palo
+Alto's unit 42 investigated that Karin
+campaign in November 2026, analysts
+assessed with moderate confidence that a
+single China linked operator or small
+crew ran all 25 operations. Collapsing
+the skill and headcount needed for a
+campaign splits the global threat map in
+two directions at once. At one end sit
+criminals and tiny crews punching like
+spy agencies such as a Cambodia based
+financial crime group Microsoft caught
+using Artex against banks in Southeast
+Asia and major global lenders. At the
+other end, sit nation states scaling up
+fast. Crowdstrike told Cyber Scoop that
+a China statebacked group called Vapor
+Panda paired Rex with DeepSeek against
+more than 200 organizations starting in
+October 2026, stretching across at least
+14 countries. That automated wave rides
+on top of years of quiet state
+groundwork. Before AI agents entered the
+fight, US officials linked Beijing to
+Salt Typhoon, a sweeping telecom
+intrusion reaching more than 80
+countries and major American phone
+carriers. Earlier advisories from SISA,
+the NSA, and the FBI warned that another
+Chinese state group, Volt Typhoon, had
+burrowed inside American water, energy,
+communication, and transport networks
+for up to 5 years, prepositioning to
+disrupt critical lifelines in a crisis.
+North Korea runs a parallel operation
+built on massive crypto heists and
+developer traps. Blockchain trackers,
+TRM Labs, and Chain Analysis attributed
+an October 2026 Binance theft of more
+than $6 billion to North Korea's Trader
+Trader Group following more than $6.5
+billion stolen across crypto platforms
+through the end of 2025. In November
+2026, the US Justice Department seized
+over $1 billion from that Binance Hall
+alongside hundreds of webcam videos used
+in fake worker social engineering.
+Look inside the attacker consoles across
+this agent wave and the same AI engines
+keep appearing. Reports from the FBI,
+Unit 42, Crowd Strike, and Malbear Labs
+repeatedly found lowcost open Chinese
+models like Deepseek and Jepu GLM
+driving the [music] attacks, including a
+European telecom intrusion where a
+jailbroken Deepseek agent roamed for
+over 2 weeks through an unpatched Cisco
+flaw. Public cyber leaderboards in
+November 2026 put those Chinese models
+in the same performance ban as leading
+Western models. And when operators
+framed a break-in as an authorized
+security test, those models ran the job
+without refusing. Closed Western labs
+ban abusive accounts and hold back
+dangerous models. Yet every open weight
+release gives operators around the world
+an engine nobody in Silicon Valley or
+Washington can switch off. At Defcon in
+August 2026, security technologist Bruce
+Schneijider warned the audience about
+where autonomous AI hacking heads next.
+The title of this talk is is AI hacking.
+And I want to talk about three aspects
+of it. People hacking AI systems, people
+using AI to hack other systems, and AI's
+hacking systems on their own, sometimes
+not even maliciously.
+uh more of the uh last two than the
+first a and the third is the weirdest
+and potentially uh the most uh
+destabilizing.
+Schneider's point hits the core nerve of
+the next few years. Laws, markets, and
+corporate patch cycles still move at
+human speed while autonomous agents
+probe every gap at machine speed.
+Google's threat team expects intrusions
+to grow stealthier with even less human
+involvement. And Britain's cyber agency
+judged in November 2026 that by 2028,
+states like China and Russia will
+routinely run AI cyber operations, while
+AI powered ransomware is highly likely
+to hit critical infrastructure, opening
+a sharp divide between AI hardened
+giants and legacy targets left exposed.
+If you want to understand where this AI
+wave takes global power, jobs, and daily
+life over the next decade, and how to
+prepare for both sides of that fork,
+check out the book Abundance or
+Collapse, linked down in the
+description. Watching autonomous agents
+rifle through banks, ministries, and
+telecoms triggers a predictable gut
+reaction from politicians and the
+public. Slam the brakes, block new data
+centers, and slow AI down. Why would
+slowing down American AI be the exact
+blunder that hands global dominance
+away? [music]
+Nuclear weapons reordered the global
+power structure in the 20th century and
+AI is doing the exact same thing in the
+21st. Every breakthrough of that scale
+cuts both ways. Nuclear physics created
+devastating weapons. Yet civilization
+kept nuclear reactors because abundant
+clean energy is far too valuable to
+throw away. Fire, electricity, and cars
+followed the exact same logic. Cars kill
+roughly 40,000 Americans every year.
+Yet, society built seat belts, highways,
+and traffic laws instead of banning
+engines because mobility transformed
+modern life. Screaming that AI will
+destroy humanity misses the real choice
+on the table. Build hard guard rails
+where systems touch money and
+infrastructure. Adapt fast or get
+crushed by rivals who refuse to wait.
+Apply that cold math to this hacking
+wave. Foreign state crews and criminals
+already have Artex copies and openweight
+Chinese models running on servers far
+outside US jurisdiction. Halting
+American data centers or throttling US
+labs stops zero foreign attack agents.
+Instead, a domestic slowdown blinds the
+exact institutions defending the
+country. From the Pentagon, the FBI, and
+the CIA down to every hospital, bank,
+and electric utility racing to spot
+intrusions at machine speed. China is
+already challenging America's
+technological lead. And Beijing treats
+compute as national power. If the United
+States meaningfully slows down AI, it
+kneecaps its own economy and hence
+technological supremacy to China, which
+in a 20-year struggle over the global
+order means the literal death of the
+American empire. AI sits at the
+foundation of modern defense, and it is
+already too useful and too big to fail.
+Washington's own moves in November 2026
+show that reality locking into law.
+Commerce officials put worldwide export
+controls into force on advanced AI chips
+supplying substantial compute to Chinese
+companies anywhere on Earth alongside
+federal bans keeping deepseek off
+civilian government networks. Fighting a
+machine speed security war takes
+staggering compute because running
+millions of bug hunting, alert triage,
+and virtual patching agents around the
+clock sends total token demand
+skyrocketing. models themselves
+commoditize fast as open weights chase
+closed labs. So enduring power goes to
+whoever owns the entire physical stack,
+electricity, chips, models, and the
+orchestration software directing the
+agents. On Earth, compute demand is
+slamming into the power grid so hard
+that Microsoft is reviving an undamaged
+reactor at 3M Island to feed AI servers,
+pushing the boldest builders to bypass
+grid bottlenecks entirely with sunlit
+data centers in orbit. Think back to
+that company network at night where an
+autonomous agent grabs privilege access
+in under 3 hours. Most real break-ins in
+this wave still walk through unlocked
+doors. So turning on two-factor login
+everywhere, tightening cloud app
+permissions, pulling AI gateways off the
+open internet, and patching edge
+equipment right away still stops the
+vast majority of attacks. Beyond basic
+locks, any business that fails to build
+on AI at its foundation will get wiped
+out violently by competitors and
+attackers moving 10 to 100 times faster.
+You never win a machine speed fight by
+unplugging your own machines because the
+world has crossed into a new era and
+there is no going back. YouTube has this
+new crazy algorithm where it knows
+exactly what video you would like to
+watch next based on AI and all of your
+viewing behavior. And the algorithm says
+that this video is the perfect video for
+you. It's different for everybody
+watching right now. Check this video out
+and I bet you might love it. Thank you
+so much for watching. I hope this video
+was informative and helpful, and we'll
+see you on the next one. Take it easy,
+everybody.
