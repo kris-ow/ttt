@@ -1,0 +1,37 @@
+Channel:     brighterwithherbert
+Title:       Tesla FSD 15 Just Changed EVERYTHING!
+URL:         https://www.youtube.com/watch?v=sbHTbey3P0Q
+Published:   2026-11-22 19:00 UTC
+Summarized:  2026-11-23 00:01:48 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0.00000 (21457 in / 2722 out tokens, subscription)
+Relevance:   core — The video covers Tesla's FSD v15 release, its link to robotaxi unattended operation, and FSD subscription metrics, all central to the Tesla autonomy thesis.
+Topic:       tesla
+Categories:  Autonomous Driving, Robotaxi, Humanoid Bots, Electric Vehicles
+────────────────────────────────────────────────────────────
+
+The video walks through Tesla's FSD v15 rollout, which began on Saturday with the first wave of customers. It argues that v15 is Tesla's most important release yet because customer cars now run the same generation of software as the robotaxi fleet, setting up unattended operation for owners. It also covers the new Reality View interface, the claimed 25x safety improvement, and the v15 feature list.
+
+## Autonomous Driving
+1. **v15 rollout and the robotaxi link:** Tesla's X account said FSD v15 is rolling out and updates every part of the end-to-end network. Ashok Elluswamy called it the first time the car in your garage runs the same software generation as the robotaxis. First build 15.0.1 goes to AI4 cars, and owners in the US and Canada had it by Saturday afternoon. Elon Musk called it an incredible release with a completely new architecture that deserves the name "superintelligence", and said it reaches the bar for removing a human from the driver's seat.
+2. **25x critical intervention improvement:** Tesla says v15 improves the critical intervention rate by 25x, meaning dangerous-intervention moments should occur far less often. A Tesla Autopilot lead explained the gain is a fleet-wide measure that shows up over millions of miles, so a single first ride may feel much like v14. The host presents this as the kind of proof needed before removing humans from the loop. This is Tesla's own metric, not independently verified.
+3. **Why the jump happened:** The release notes cite an updated visual encoder shared by FSD, robotaxi, and Optimus, trained on millions of online videos for better generalization and data efficiency. The host also frames v15 as the larger model Musk said in April was delayed because the smaller model was improving so quickly. The host's theory is that one shared way of seeing the world means robotaxi driving hours and Optimus learning could improve all three products.
+4. **Reality View:** The same end-to-end network that drives the car renders a realistic view of the surroundings, which conveys the car's intent through turn arrows and parking markers. Elluswamy described it as pixels in, pixels out. Musk said it is real-time AI video generation with no game engine, running on half of one FSD AI accelerator. Elluswamy noted the new view uses less compute than the old visualization. Users can tap a point on the screen to set a drop-off or parking spot. The host argues this builds trust, which helps convert trials into subscriptions.
+5. **Fleet-sharing vision:** Robert Scoble posted that every Tesla could become a live camera for its city. Musk replied that Tesla cars will share traffic data and combine it with Grok's real-time feed on X to give optimal travel experiences, including alerts about what is happening at the destination.
+6. **Other v15 features:** Navigation for the start and end of trips is now learned from fleet route preferences, with later releases extending this to the whole route. Parking uses your history and shows multiple spots. The release notes list better pothole and deep-puddle handling, plus better detection of road signs, small animals, debris, and chains. Speed control in school zones and bad weather is improved. FSD slows for speed cameras and stops doing so at a camera if the driver cancels the slowdown twice. Further changes include a bike rack and trailer mode, a more tolerant driver-attention camera for hats and sunglasses, quieter turn signals, a quiet mode, and removal of the disengagement-reason pop-up. Musk said HOV lane and late lane-change issues should be fixed. One owner reported the car driving into his garage.
+
+## Robotaxi
+1. **24/7 operation on v15 technology:** Tesla's robotaxi account posted on November 12 that robotaxi now operates 24/7 in every city where it is present, which the host counts as eight cities. Musk noted that robotaxis work 168 hours a week. Elluswamy had said on September 4 that 24/7 would come sometime next month, enabled by the next update based on v15.
+2. **Path to unattended personal cars:** Per the host, Elluswamy said the personal-use Cybercab would operate unattended in the same geographies as robotaxis and could park in an owner's driveway. The host expects unattended mode in Model Y and Model 3 to start within robotaxi zones and then expand. On the third-quarter call, Elluswamy said the first customer cars could join the robotaxi fleet around the second quarter of next year. Musk told an Austin Uber driver that testing of sending a Model Y to work could begin next month if all goes well.
+
+## Electric Vehicles
+1. **FSD subscription metrics:** The host cites about 1.7 million active FSD subscriptions at the end of the third quarter, up 67% from a year earlier, and over 75% of North American deliveries with paid FSD, up from 55% a quarter earlier. He notes Musk's line that people buy FSD with the car as part of the package. The host argues that unattended capability could turn FSD into the reason to buy the car.
+
+Notable quotes and data:
+- Tesla claims a 25x improvement in critical intervention rate for v15.
+- Musk: v15 is "an incredible release" and a completely new architecture deserving the name "superintelligence".
+- Robotaxi operates 24/7 in all eight cities as of November 12; Musk noted 168 hours a week.
+- Reality View runs on half of one FSD AI accelerator, per Musk, and uses less compute than the old visualization, per Elluswamy.
+- First customer cars could join the robotaxi fleet around the second quarter of next year, per Elluswamy.
+- About 1.7M FSD subscriptions at the end of the third quarter, up 67% year over year; over 75% of North American deliveries with paid FSD, up from 55%.
+- Musk on Reality View: "pixels in, pixels out" is Elluswamy's description of the end-to-end rendering.
