@@ -1,0 +1,516 @@
+Channel:     farzad-fm
+Title:       Tesla Just Shocked The World
+URL:         https://www.youtube.com/watch?v=6NZOnR1RVAA
+Published:   2026-11-23 04:09 UTC
+Fetched:     2026-11-23 05:01 UTC
+
+────────────────────────────────────────────────────────────
+
+A Tesla driving down an ordinary street
+just started generating live
+photorealistic video of the entire world
+around it right on the dashboard. Even
+wilder, that live video takes less
+computing power than the blocky cartoon
+display it replaced. People saw the
+clips and compared it to a video game,
+and Elon Musk even posted on X comparing
+it to Grand Theft Auto. They are missing
+the real story. What just shipped in
+full self-driving version 15 connects
+straight to driverless fleets and
+Tesla's humanoid robot Optimus. On
+November 21, Tesla began rolling out
+version 15 to its first wave of customer
+cars, upgrading every part of its
+end-to-end driving network. Musk posted
+that the wide release arrives in
+December and called the new architecture
+a banger release. Before we pull back
+the curtain on how this AI works, watch
+what an owner actually sees on the
+center screen during a real drive. this
+first drive. Technically, this is my
+second drive, but as you can see, the
+new Tesla reality view visualizations
+look incredible.
+And little arrows pop up, floating
+arrows to indicate where the vehicle is
+going to turn based on the navigation.
+We're going to go on a quick highway
+drive. And you can still have your map
+view up, by the way. You can still split
+it. And then if you want to have map
+full view, first time ever by the way,
+it used to be that you could only have
+map on the
+&gt;&gt; Think about what happens to your brain
+when you sit in that seat and watch that
+screen. The realism of these graphics is
+going to inspire an insane feeling of
+safety because the driver will be ultra
+confident the car sees what they see.
+Safety is what earns a self-driving car
+its license, and comfort and trust are
+what actually keep people riding in it.
+When you can look over and verify that
+the car sees the exact same street you
+do, the tension in your shoulders drops.
+Quick note before we get into the engine
+behind those graphics. I'm looking for
+great sponsors to partner with. Brands
+align with the kind of content I make.
+If that's you, reach out at
+farzzadmail.grockbot.com.
+Now, here is why AI engineers stopped
+scrolling when they saw reality view.
+Generating smooth live video of the real
+world on a car computer from a few years
+ago should be brutal on hardware. Early
+on November 22, Elon Musk posted the
+exact architecture behind it. And once
+you see how it works, you realize how
+far physical AI has jumped. First, there
+is zero game engine inside the car. No
+pre-built three-dimensional maps and no
+handcoded polygons. Musk posted that
+Tesla has been running a near pixel
+perfect world model internally since
+last year to generate synthetic training
+data. Inside the car, Tesla runs a much
+smaller live version right alongside the
+driving brain. Both start from the exact
+same foundation called the universal
+vision encoder, which watches the
+cameras and builds a deep understanding
+of the street. Those features flow
+straight into a 3 billion parameter
+model that decides every turn, brake
+tap, and lane change. Then right off
+those same vision features, Tesla forks
+a separate diffusion model of roughly 1
+billion parameters. That is about a
+third the size of the driving model. And
+it takes the previous screen frame,
+strips away added noise, and outputs
+fresh live video on the fly. Musk posted
+that this entire video generator runs on
+just half of one accelerator engine on
+the car's computer. Tesla's AI lead,
+Ashock Eluswami, confirmed the new view
+uses less total compute than the old
+display. [music] Pause and think about
+what that efficiency actually means.
+Musk noted that the display lag is still
+a bit high right now, and Tesla already
+has a way to cut about a third of that
+delay by feeding fresher vision features
+deeper into the model. When a tiny
+leftover corner of an older car chip can
+watch raw video, model physical reality,
+and paint it back to you live, ask
+yourself what else that exact same
+architecture can run. That is where the
+wilder use cases open up. A neural
+network that reads a live stream of
+pixels and acts on them can drive a car
+through traffic, guide a humanoid robot
+across a factory floor, or watch a
+continuous real-time video stream of a
+computer screen to do desk work on your
+local chip while a cloud brain like
+Grock handles the hard judgment. Tesla
+has described its driving model,
+physical robot, and digital worker as
+one intelligence wearing three different
+suits. And the version 15 screen is live
+proof of how cleanly that shared vision
+sees the world. Now let's look at the
+driving itself because Tesla dropped a
+number with version 15 that made
+everyone stop and reread the post. Tesla
+posted that version 15 handles safety
+critical cases 25 times better. Its AI
+release notes tie that jump to the
+upgraded vision encoder, cutting the
+critical intervention rate by that same
+factor. When someone asked if they meant
+a smaller bump, Musk posted on X. No, we
+mean 25 times. Let's keep our feet on
+the ground about what shipped. The
+software reaching early owners right now
+is still FSD supervised. You still have
+to watch the road and the cabin camera
+still checks your attention even though
+it now works better with hats and
+sunglasses. Tesla has also not published
+the test miles or crash data behind that
+25 times figure. Watch Omar from Whole
+Mars Catalog react on his first version
+15 drive.
+&gt;&gt; The big thing they've mentioned is that
+this update is now 25 times safer. Now,
+just doing the first drive here, there's
+nothing that really makes you feel like
+it's 25 times safer. I mean, we're used
+to the car
+being very safe and going from start to
+finish with zero interventions,
+but that 25x improvement is what's going
+to make a difference between FSD
+supervised and FSD unsupervised where
+you don't have to pay attention. Omar
+nailed the exact problem every
+autonomous system has to clear. In my
+own daily driving since version 14,
+about 99% of my miles have been on FSD,
+and most times I step in it is just
+personal preference. Version 15 adds
+learn navigation for the start and end
+of trips with Tesla planning to expand
+that across the whole route later, plus
+sharper detection of potholes, debris,
+small animals, and standing water. Early
+driver Zach posted after his first night
+that he could pick street or driveway at
+home and choose lots at Costco and Home
+Depot. Though the car tried a handicap
+spot once, closing those rare misses is
+the entire bridge from supervised to
+driverless. That brings us to the big
+question every Tesla owner and every
+investor actually cares about right now.
+When do the millions of Teslas already
+parked in driveways stop needing a human
+supervisor behind the wheel? On Tesla's
+third quarter earnings call in October,
+Ashok Eluswami answered that exact
+question. and listen closely to how he
+tied the timeline straight to version
+15.
+&gt;&gt; When can we anticipate FSD unsupervised
+in customer cars? Ashoke, did you want
+to kick that off?
+&gt;&gt; Yeah, like I mentioned earlier, the
+software for cyber caps and model Y is
+the same like the uh and pretty soon
+we'll be able to release the same
+software as part of the V15 release to
+customers. Um so in
+the only additional requirement is make
+sure that you know for example the the
+customer model wise can be uh part of
+the geoences and the fleet management
+that Tesla has for it to be fully
+autonomous. We suspect somewhere around
+Q2 next year is when we can turn on some
+of the first customer vehicles to be
+part of the robot taxi fleet.
+Look at the real scale Tesla is building
+on right now. Tesla's third quarter
+update reports more than one and a half
+million active FSD subscribers. That
+grew about 2/3 in a single year, and
+more than 3/4 of new buyers in North
+America now take it. On the driverless
+side, Tesla launched unsupervised robo
+taxi rides in Austin in June 2025,
+expanded to Dallas, Houston, and Miami
+in 2026, and added driverless cyber cabs
+in Austin in September. By the end of
+September, the fleet reached nearly 2
+million cumulative unsupervised miles.
+That mileage jumped eight times in a
+single quarter. Europe is moving, too,
+with Italy just granting provisional
+approval for Tesla's supervised system,
+making it the first major European Union
+nation to clear it after 10 other
+countries. Back in the United States,
+Tesla just invited select customers to
+buy a personal cyber cab with no
+steering wheel and no pedals for nearly
+$30,000.
+The listed autonomy subscription came in
+at $299 a month, though Musk posted that
+fee is too high and should drop closer
+to just over $100. Tesla is the only
+automaker on Earth selling a car with no
+steering wheel and no pedals directly to
+the public. Then came the line that
+locks in the entire fleet thesis. On
+November 22, someone asked Musk when the
+next generation AI5 chip arrives in new
+cars. And he posted on X, "Carss will
+remain at AI4. That's enough to solve
+superhuman driving." Think about what
+that means for every owner already on
+the road. Once mass-cale robo taxi
+software clears the bar, and I expect
+that path runs through version 15,
+millions of AI4 Teslas sitting in
+driveways are a 50-minute software
+update away from waking up and turning
+into cash flowing assets. Pull the human
+driver out of a car and the cost of
+moving a person collapses. Compared to
+upwards of $2 a mile with a human ride
+share driver, long-term driverless costs
+fall under 40 cents a mile. Over time, I
+think that drops closer to 20 cents.
+Now, look at manufacturing. A thousand
+robo taxis in Austin sounds massive
+until you realize that is roughly 2 or 3
+hours of Tesla's Model Y factory output.
+Everyone watches city counts while the
+real scoreboard is self-driving cars
+built per week. Whimo is walking down a
+steep cost mountain while Tesla is
+climbing from an affordable camera car
+at mass scale. Nobody, Uber included,
+can compete with a company that owns the
+factory, the AI, and the network. In my
+view, Tesla's physical AI moat is the
+best by far, and Whimo does not survive
+into 2027. If you're enjoying this video
+so far and want to support the channel,
+the quickest thing you can do is
+clicking subscribe. It's completely free
+and goes a very long way. Thanks so
+much. Now, zoom out from Tesla for a
+second and ask the bigger question. Why
+are AI leaps suddenly landing this fast
+in both software and the physical world
+at the exact same time? For years,
+skeptics laughed at timelines and
+assumed self-driving cars and robots
+were permanently 5 years away. Today,
+every few months feels like an entire
+decade of progress. The first reason is
+that end-to-end neural networks replaced
+handcoded rules. Humans never learn to
+drive by memorizing 10 million lines of
+instructions. Hand-coded rules shatter
+the second a construction worker waves
+you around a wreck or snow buries the
+lane lines. An end-to-end neural net
+learns directly from video across
+millions of drivers at once. So an edge
+case one person meets once in a lifetime
+happens across Tesla's fleet hundreds of
+times every single day. Even bigger
+Tesla's version 15 notes say the new
+vision encoder was trained on millions
+of internet videos so it learned to see
+and think and that generalizes
+everywhere. The second reason is that
+compute and efficiency are compounding
+from both directions. On the training
+side, Tesla's third quarter update shows
+more than 200 megawatts of active cortex
+training clusters running in Texas right
+now. Tesla plans to reach 400 megawatts
+by the end of 2026 to train both vehicle
+and humanoid autonomy. On the inference
+side, version 15 just squeezed live
+video generation onto less compute than
+the old screen. Meanwhile, digital AI
+agents have already crossed into what I
+consider practical AGI for software and
+daily work. Physical AI had to push
+through Moravec paradox where things
+that are hard for humans turn out simple
+for AI and things that are effortless
+for a toddler are brutally hard for a
+machine. Physical AI is finally breaking
+through that wall and each generation
+learns faster than the last. Which
+brings us to the line in Tesla's version
+15 release notes that almost nobody
+spent enough time reading. Right in the
+official notes, Tesla states that the
+upgraded vision encoder is shared
+between FSD, Robo Taxi, and Optimus.
+Every breakthrough that helps a car read
+a chaotic street is upgrading the exact
+same visual brain going into Tesla's
+humanoid robot. On Tesla's October
+earnings call, Elon Musk explained why
+real physical AI separates Optimus from
+flashy demos and why Tesla's next chip
+is built for the robot.
+&gt;&gt; Well, you would have a lot of trouble.
+It it wouldn't work basically. So, I
+want to release a video that's where
+it's Optimus doing things that um that
+are not pre-programmed.
+Um, and and I think that's that that
+would be it's maybe a month or two for
+that um to to have a a demo that's you
+can believe what you see type of thing.
+Um
+and and then uh there's there's another
+milestone that's I think important we
+want to get to which is to uh integrate
+our the the Tesla AI5
+uh chip into Optimus which if if things
+go according to plan will be in
+approximately uh April of next year. Um
+and that that's a giant improvement in
+capability with an order of magnitude
+more um sort of more operations per
+second. Like it's an order of magnitude
+more compute AI5 versus AI4. Um and that
+will that will help Optimus a lot
+because the the degrees of freedom that
+a human robot has to deal with are far
+greater than what a car has to deal
+with. So it is a bit of a struggle to
+squeeze uh the you know everything
+needed to operate with all the degrees
+of freedom of optimus um and and and the
+wide range of tasks you know can you
+think of like a humanoid robot it's
+going to do like a thousand times more
+things than a car would do some very big
+number basically so so I think the
+additional compute of AI5 will will make
+a big difference um and that comes in in
+in hopefully in volume around April of
+next year um And uh and that's why I
+think like all the pieces like the the
+refinements in the electromechan.
+&gt;&gt; On November 22, Musk sharpened that
+hardware picture even further. He posted
+that AI5 brings roughly a dozen times
+the computing power of AI4 and confirmed
+that AI5 is heading straight into
+Optimus. Let's be completely clear about
+the engineering difficulty here. Both
+the visual intelligence and the dextrous
+humanoid hand are extremely difficult
+problems. Putting a robot inside a home
+means zero margin for error because you
+do not want this hand to smack a baby or
+a pet. That is why useful work starts in
+factories and warehouses on repetitive
+industrial jobs first while the shared
+model keeps absorbing the real world.
+And Optimus is already moving beyond lab
+prototypes. Tesla's third quarter update
+states that Optimus production began in
+Fremont on high volume lines turning out
+the company's first production quality
+bots. The filing lists the California
+line in early ramp and Texas under
+construction. On that same October
+earnings call, Musk laid out when he
+expects to start delivering Optimus to
+outside companies.
+&gt;&gt; Um reliability and and and and uh
+duration usage duration like the the
+usage life of the robot. I expect these
+I do expect these issues to be solved
+around the end of next year. Um, so that
+that's the time to to expect um when
+we're delivering Optimus to uh uh to
+companies outside of Tesla. Um
+and and I I remain convinced that
+Optimus will be the biggest product on
+Earth. Um
+and and humanoid humanoid robots.
+&gt;&gt; Run the numbers on what happens when the
+same intelligence driving a car drops
+into a humanoid body built at volume.
+Once production scales, I expect Optimus
+unit costs around $25,000.
+Operating labor drops toward about $2 an
+hour. A machine running around the clock
+does not need health insurance, life
+insurance, or human resources. $2 an
+hour for physical labor is the humanoid
+version of the 20 cent mile, and you can
+build as many of them as the factories
+can stamp out. So, where is all of this
+actually heading? I look at the AI
+transition as three economies. Most of
+today is human to human. Right now we
+are stepping into human to agent where
+you hail a driverless car, get a drone
+delivery or have a robot handle chores.
+[music] Next comes agent to agent where
+autonomous software and physical
+machines coordinate production, shipping
+and logistics at tiny cost. That is what
+I call abundance. I map out that entire
+shift in my book abundance or collapse
+linked in the description. Once a
+vehicle drives itself, it stops acting
+like a normal car and becomes a moving
+room on wheels that can carry
+passengers, freight, or cargo for
+pennies on the dollar. Think about what
+happens when cheap driverless transport
+and cheap humanoid labor hit the economy
+at the exact same time. Everything
+people build, ship, and buy gets
+radically cheaper, and that lifts the
+living floor for everybody. At the same
+time, we have to look straight at the
+disruption without blinking. FSD is the
+canary in the coal mine for human labor.
+There are roughly 3.5 million truck
+drivers in the United States alone, plus
+millions more in ride share, delivery,
+and transit, and physical AI hits those
+jobs in a matter of years. Real people
+lose livelihoods when digital agents and
+humanoids arrive together. I am honestly
+not sure what replacement job appears at
+that scale, and trying to lock people
+inside dying jobs through regulation
+helps nobody. Helping workers transition
+into the new economy is the real
+challenge ahead. Before we wrap up, keep
+your eyes open on the real execution
+hurdles, too. European safety groups
+like the European Transport Safety
+Council have pushed back against FSD
+approval over speed offset controls, and
+traffic safety researchers have
+challenged Tesla's crash reduction
+methodology. My own line in the sand is
+simple. If FSD stalls at 99% and never
+clears unsupervised driving at scale,
+the fleet wakeup thesis falls apart. If
+Optimus cannot do reliable unscripted
+work outside a demo, the labor thesis
+dies. Look at how the whole Musk
+ecosystem locks together. XAI is the
+brain, SpaceX is the vessel, and Tesla
+is the body where AI meets the physical
+world. Go back to that center screen in
+FSD version 15 one more time. People
+glance at it and see slick graphics.
+What you are actually watching is a
+small corner of a car computer
+understanding reality well enough to
+paint the world back to you live using
+the exact same vision backbone Tesla is
+putting into Optimus. One intelligence
+wearing three different suits. This is
+going to work. It works. It already
+works. And in my view, 2027 will be the
+year of physical AI. YouTube has this
+new crazy algorithm where it knows
+exactly what video you would like to
+watch next based on AI and all of your
+viewing behavior. And the algorithm says
+that this video is the perfect video for
+you. It's different for everybody
+watching right now. Check this video out
+and I bet you might love it. Thank you
+so much for watching. I hope this video
+was informative and helpful and we'll
+see you on the next one. Take it easy
+everybody.
