@@ -1,0 +1,78 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-23)
+Published:   2026-11-23 00:00 UTC
+Summarized:  2026-11-24 09:52:51 UTC
+Model:       claude-sonnet-5-5 [direct]
+Cost:        $0.06328 (16713 in / 2985 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FSD v15 reaches first customers, wide release due December
+- Tesla claims v15 is 25x better on safety-critical cases
+- Musk: cars stay on AI4, AI5 goes to Optimus
+- 200 Cybercabs registered in Texas in one day
+- SpaceX sells $32B of AI-chip debt above 8%
+- Five Grokbots now hold SpaceX accounting jobs
+
+## Autonomous Driving
+- FSD v15 began rolling out to a first wave of customers on Saturday. Musk said wide release comes next month, per Electrek, and December per Farzad. It remains FSD (Supervised).
+- Tesla claims v15 handles safety-critical cases 25 times better than v14, and Musk confirmed "No, we mean 25 times." Tesla has not published a baseline, test miles or crash data. Electrek notes the claim comes without a baseline, and one early reviewer said the first drive did not feel 25 times safer.
+- v15's Reality View is a live generative rendering of the car's surroundings. Musk says it runs on half of one AI4 accelerator and is a roughly 1B-parameter diffusion model alongside a 3B driving-action model. He admitted latency is "a bit high due to compute constraints." Sawyer Merritt called it "even more mind-blowing in person than how it appears online."
+- Early hands-on reports from Sawyer cover parking: the car pulled into his garage, handled multi-level garages and Superchargers, and the disengagement popup is gone. Reality View also enables click-to-go destination selection and detects potholes, standing water and debris.
+- Electrek's Fred Lambert argues v15 is AI4's last real shot at unsupervised driving. He says the 3B figure falls far short of the 10x model-size jump Tesla promised, and he questions chip-failure redundancy given SoC B appears to be in use. He will withhold conclusions until testing v15 himself.
+- On the Q3 call, Ashok Elluswamy said Tesla sees a "clear path to scaling to millions" of robotaxis. Remaining software work is 24/7 operation, higher highway speeds and better automated parking. He said v15's mapping-integrated approach will take over navigation, parking and destination handling over the next few months.
+- Musk says Tesla developed its own high-precision radar, then turned it off because "superhuman vision simply outclasses it."
+
+## Robotaxi
+- Tesla registered 200 Cybercabs to its Texas robotaxi fleet in a single day, per Futureaza, pushing the Texas total past 750.
+- Houston's robotaxi service area grew roughly tenfold, per the Cern Basher panel. A video showed a Cybercab driving an interstate in the rain.
+- Elluswamy said on the Q3 call that Tesla suspects around Q2 next year for the first customer vehicles to join the robotaxi fleet. Cybercab and Model Y share the same software, which reaches customers with v15.
+- The panel expects Cybercab sales to fleet owners of perhaps 10 or more units by year-end, operating inside the existing Austin geofence. Tesla has said it is working on selling Cybercabs to customers by the end of the year. The panel argues geofence operations (positioning, charging, cleaning) and autonomy software, not Cybercab production cost, are the binding constraints.
+- Tesla invited select customers to buy a Cybercab without steering wheel or pedals for nearly $30,000. The listed autonomy subscription is $299 a month, though Musk posted that this is too high and should fall to just over $100.
+- Per the Herbert/Lutz discussion, Dallas riders reportedly prefer Cybercab even against a 30% Waymo discount. Musk says Cybercab will win even at equal price.
+
+## Humanoid Bots
+- Tesla's v15 notes say the new visual encoder is shared across FSD, Robotaxi and Optimus. Musk says AI5, roughly 12x AI4's compute, goes to Optimus.
+- On the Q3 call, Musk said he expects AI5 integration into Optimus around April next year, with volume hopefully around then. He wants to release an Optimus video of non-pre-programmed tasks in a month or two. External deliveries are expected around the end of next year. Tesla's Q3 update says Optimus production began in Fremont, with Texas under construction.
+- Digital Optimus (Macrohard) has no launch date. The last update, October 10, showed it playing about halfway through the Diablo campaign from screen input alone. Business Insider reported the xAI side stalled after management changes while Tesla continued its work, per brighterwithherbert.
+
+## Electric Vehicles
+- Musk says cars will remain on AI4, which he says is enough to solve superhuman driving. AI4.5 would be a small gain, with memory reportedly cut from 32GB to 24GB for cost. Musk says rising memory prices have roughly doubled AI4's cost.
+- Musk hopes built-in Starlink reaches every Tesla model toward the end of 2027, excluding China. Cybercabs in Dallas already have it.
+- Cox Automotive data shows October US EV sales up only 3% year over year, per Futureaza. Global EV share of passenger sales hit a record 31%.
+
+## Energy
+- Tesla plans a $3.1B polysilicon refinery in Nueces County, Texas, to make ultra-high-purity polysilicon for high-efficiency solar cells, per Futureaza.
+- Tesla unveiled a solid-state power unit that combines transformer and inverter in one oil-free box, per Futureaza.
+
+## Market & Competition
+- The California DMV banned Waymo, per Futureaza, a story almost a week old.
+- Nvidia's board reinstated Jensen Huang as president, CEO and director, not chairman, citing input from senior US government levels that his return poses no national security risk.
+
+## SpaceX — AI & Compute
+- SpaceX sold $32B of AI-chip debt at yields topping 8% to buy more chips, structured to stay off the balance sheet, per Futureaza. Lenders reportedly aim to bar SpaceX from launching roughly $40B of the chips, since they could not repossess hardware in orbit.
+- SpaceX's accounting team says five Grokbots hold full-time jobs. Billing time fell from about 24 hours to minutes, and payment matching from 3-4 hours to about 30 minutes. SpaceX estimates it would otherwise need to more than double headcount. Refunds and credits still require a named person to sign.
+- Grokbot 1.0 launched November 11 as a shareable team product that can join meetings. SpaceX reportedly laid off about 60 people from the Grok Imagine team to focus on coding tools and agents.
+- Musk says SpaceX adds about half a gigawatt of AI compute per month and wants over 1 GW per month by the end of next year. He says Anthropic told him it will very likely keep leasing and wants significantly more, with about 10 gigawatts mentioned.
+- Google selected Blue Origin's New Glenn to launch Project Suncatcher AI computing satellites in 2029.
+
+## SpaceX — Starship
+- SpaceX caught a Starship for the first time, per Futureaza, yet SPCX shares were still down over the five-day window.
+- Morgan Stanley's Adam Jonas wrote after attending Starship Flight 15 that Starbase has transformed notably over recent months, per Sawyer Merritt.
+
+## SpaceX — Starlink
+- Verizon's CEO says SpaceX would need over $300B to compete in mobile service. The host of Futureaza disputes this, arguing SpaceX already has the bandwidth and only needs antennas it can launch.
+
+## SpaceX — Corporate & Valuation
+- Tesla's $2B January investment in xAI became SpaceX stock after the merger and is under 1% of SpaceX per the IPO filing. At the DealBook Summit, Musk said the companies don't need to be together but collaboration would probably be better. He said a merger requires shareholder votes that may or may not succeed, at least at Tesla.
+
+Notable quotes and data:
+- Musk on v15: "No, we mean 25 times." Tesla has not published a baseline.
+- Musk on AI4: "Cars will remain at AI4."
+- Elluswamy on the Q3 call: "We see a clear path to scaling to millions."
+- Electrek estimate: AI4 is roughly 100 to 150 TOPS across both chips, versus Waymo's custom chip rated above 1,000 TOPS.
+- Cortex training compute: more than 200 MW active, 400 MW planned by end of 2026.
+- Nearly 2 million cumulative unsupervised miles by end of September, up eight times in one quarter (per Farzad).
+- Texas Cybercab registrations: 200 in one day, past 750 total.

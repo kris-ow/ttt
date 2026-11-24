@@ -1,0 +1,28 @@
+Source:      electrek
+Title:       Electrek Daily Digest (2026-11-23)
+Author:      Electrek
+Published:   2026-11-23 16:00 UTC
+Summarized:  2026-11-24 09:52:34 UTC
+Model:       claude-sonnet-5-5 [direct]
+Cost:        $0.03514 (12023 in / 1109 out tokens)
+Articles:    1
+Relevance:   core — The single included article is substantively about Tesla's FSD v15 software and the compute limits of its AI4 hardware, central to the autonomous-driving thesis.
+Topic:       tesla
+Categories:  Autonomous Driving
+────────────────────────────────────────────────────────────
+
+Electrek's only Tesla-relevant piece today is Fred Lambert's analysis of FSD v15 and Elon Musk's weekend comments on X about how little AI4 compute headroom remains.
+
+## Autonomous Driving
+1. **FSD v15 and the AI4 compute ceiling:** Electrek reports that Musk, explaining v15's Reality View (a live rendering of the car's surroundings), said it runs on "half of one AI4 TRIP accelerator" and that only "half a TRIP out of three on SoC B" was left after a decoder was moved into SRAM. He described it as a roughly 1-billion-parameter diffusion model feeding off features also used by the 3B driving-action encoder, and admitted its latency is "a bit high due to compute constraints." Musk also said AI4.5 is a small performance gain, with RAM cut from 32GB to 24GB because memory is expensive, that AI4 now costs twice as much, and that AI5 is "going to Optimus" while "Cars will remain at AI4." Tesla began rolling v15 out Saturday, claiming "25x better handling of safety critical cases" without a baseline, and Musk said wide release comes "next month." Lambert argues v15 is AI4's last real shot at unsupervised driving and that the 3B figure falls far short of the 10x model-size jump Tesla promised. He also questions how a Level 4 system on AI4 would handle a chip failure given SoC B appears to be in active use, and says he won't draw conclusions from influencer clips until he tests v15 himself. [Read on Electrek](https://electrek.co/2026/11/23/tesla-fsd-v15-ai4-last-shot-compute-limit/)
+
+## Editorial Stance
+Electrek's view, as put by Fred Lambert, is skeptical: he sees AI4 owners as having no hardware fallback if v15 can't deliver unsupervised driving, compares the situation to HW3 owners' experience, and says driving performance, not visuals, is what matters.
+
+Notable quotes and data:
+- Musk, per Electrek: Reality View uses "half of one AI4 TRIP accelerator" and is roughly a 1-billion-parameter diffusion model; the driving-action encoder is 3B.
+- Musk, per Electrek: "AI4.5 is a relatively small performance improvement"; RAM reduced from 32GB to 24GB; AI4 "costs twice as much now."
+- Musk, per Electrek: "It's going to Optimus. Cars will remain at AI4."
+- Musk, per Electrek, on AI5: "roughly 12X more compute" and later "roughly an order of magnitude hardware performance improvement."
+- Tesla claimed "25x better handling of safety critical cases" for v15, per Electrek; Musk said wide release is "next month."
+- Electrek's own estimate: AI4 is roughly 100 to 150 TOPS across both chips, versus Waymo's custom chip rated at more than 1,000 TOPS.
