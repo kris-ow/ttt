@@ -1,0 +1,539 @@
+Channel:     futureaza
+Title:       FSD 15 Visualizations, Tesla AI4 and the Future of Optimus
+URL:         https://www.youtube.com/watch?v=SLeM9uL77VI
+Published:   2026-11-25 19:00 UTC
+Fetched:     2026-11-25 22:04 UTC
+
+────────────────────────────────────────────────────────────
+
+Even I keep thinking, oh, this is
+like Unreal Engine.  It's like a game engine
+where you apply textures to objects and
+stuff.  No, because that's exactly what the current
+version is.  You see, for example, a car.  Here's a
+sedan, here's a truck, and you know,
+a Cybertruck pulls up, it looks like a
+truck, and you're like: well, that's not quite
+it.  But that's not the case anymore.  It's really what
+you see around you, it's what you
+see on the screen.  This is just madness.
+This is absolutely crazy.  And congratulations to the
+Tesla team.  I mean, damn it.  This is
+just so cool.
+FSD version 15 is out, and the visualization is
+simply incredible.  She looks so
+good.  But the first thing my son wanted to know
+was: wait a minute, how much
+computing resources does this take up from FSD
+?  Will we need Iron 5, AI 5 for
+this to work properly?
+And the answer, it turns out, is probably no,
+so I had to invite my
+resident expert on all things
+related to chips, computers, etc., and
+how it all works together.
+Dr.  Know-it-all is visiting us.  If you
+haven't seen his work, you should
+check it out.  He's on X. He
+posts interesting and funny stuff there.
+And it's also on YouTube, where, unfortunately, there's
+this guy in the corner.
+You see.  I don't know if you can see it, but it's
+...oh, it's me.  OK.  Well, then it's a
+good deal.  You remain the winner
+.  Support him.  He has surpassed the
+100,000 subscriber mark.  He is doing a wonderful
+job.  It's a lot of fun.  So,
+getting down to business, you've seen
+the visualization.  She looks really
+good.  I had a video about this on
+Monday.
+Kyle Connor had a much better
+video of this on Monday.
+He turned on Mad Max mode,
+drove through Los Angeles, and tested the
+FSD as well as the visualization.
+The visualization looks fantastic,
+of course, but the car just skipped
+through the gaps.  She...I mean, it felt like
+she was trained in
+California on what I can
+only call Californian drivers.
+California drivers, yes.  And we are now,
+as you may notice, not in my
+usual place, but just outside of
+Washington, in Springfield,
+Virginia.  And the 14th version of the
+software here is simply amazing.
+It's absolutely amazing how well the
+car drives.
+And tomorrow we're going to New York, where we've
+already been when there was version 10.
+something from the FSD versions.
+And that wasn't the best idea.
+We used it for about five minutes
+and were like, "No."  So I heard it's completely
+different, and I just wish we had a 15th
+version because that would be cooler.  But the
+14th is doing a great
+job so far.  Visualization.  So yeah, do
+you have that Elon post that I sent, because
+there's a bunch of "geeky" text in there, and
+I think I can actually explain it.
+Well, when it comes to "geeky"
+text, the first thing we have to say is—
+subscribe.  These are real clothes that we
+wear, in a real environment.  I made
+them between shows because you can
+subscribe.  You can do it.
+This took a lot of effort, because Grok
+creates images completely differently than it did
+a week or two ago.
+He does what I can only call a
+bad job.  So, Elon posted this
+.  If anyone is interested, we have had a
+pixel model of the world since last year, which is
+critical for generating
+synthetic data.  We remember him
+saying about Unreal Engine that it would
+look like the real world.  And then no
+.  And we're like, "Well, I guess I don't know."
+Yes, it was back in 2022, but yes.
+Oh, really?  Oh my God.  Quite a lot, yes.
+redid everything ourselves.  So yes.   A
+much smaller version of this in cars is a
+conditional mean flow model
+based on the recent Tesla
+Universal Visual Encoder feature sequence
+, which are the same ones that
+plug into the 3 billion
+encoder model that produces actions while driving
+.  What?  What?
+Okay.  So yeah, there's a lot of stuff there, and then there's the
+on-board computers and stuff
+.  So I took a quick look at it yesterday, and
+since then I've had more time to think about it, so I
+think I understand it a little better.  So,
+they have one stack that rules them all.  The 15th
+version of the software, I
+believe, has about 10 billion
+parameters.  That was the last number
+we heard.  A lot of time has passed.  But
+even though it's one neural network stack, you
+can probably connect to the
+middle of it, after the 3 billionth part of the
+encoder model, which consists of 3
+billion parameters and essentially says, "
+What the hell is going on around me?"  It's like
+: here I have eight cameras.  They are
+working now.  Where the hell am I?  Yes
+?  This is important before you can
+decide on actions or anything like that
+.  At this point, they're obviously extracting
+that information and then a universal
+visual encoder, whether it's 2D or 3D or
+something.
+Either way, it runs a separate
+diffusion model with 1 billion parameters
+, which then renders everything it sees
+into a 3D world that can be rotated.  This
+looks real.  Oh, I just saw
+Chris Dirty Tesla.  He posted today
+, what the hell, because it recreated
+clouds, literally clouds that he saw.
+It was like... And I saw another video
+where a person was driving at night, and there
+were Christmas lights on a house, and it
+showed those lights on the visualization.  So
+I think a lot of people think, oh, it's like
+Google Maps.  They travel, take pictures
+and so on.  No, it's literally just
+creating these images right now.  It's just,
+your mind explodes when you think about
+how impressive it is.
+So it doesn't just take the view from the camera and
+overlay it as a texture on the object.
+It actually renders it.  It
+actually interprets and prints it, so to
+speak.   Uh
+, so.
+It's like a 2D model, right?  It says it
+'s a diffusion model with 1 billion
+parameters.  So, it creates
+an image just like your
+subscription image.  Interestingly, it's the same process
+.  It just uses actual
+real-world data, and you can rotate it and
+look at it, because it's a three-dimensional object,
+so it can change the vantage point and
+all that as you go.
+This is very frustrating.  Grok loves to create
+our follower images where he makes
+you look 10 years younger and me look 10
+years older.  And I don't like it
+.
+Me too.  Today it made me
+look like Jensen Huang, and I'm like: this is
+not what I want.  So.
+It's not what I'm aiming for, but okay.
+I know.  I thought, well, if I were worth
+as much as Jensen, I don't know.
+All this noise, he's in Berlin, but.   I'm
+not saying he's unattractive, I'm just
+saying I'm not him.  And I think it would be
+quite strange if I portrayed myself
+that way.
+So when we look at this, my question is
+: does it use the FSD chip or the
+infotainment system?
+If we go back to that.  If
+we go back to the thing itself.  Sorry.  We
+just got to this point.  So, it
+creates a video clip, eight frames at
+a speed of 36 frames per second.  So
+basically it's kind of like, I think what it
+does is it's just la-la-la-la-la.  She
+thinks, then creates eight images,
+then thinks some more and creates
+eight more.  Obviously, there is some delay at this stage
+.  In other words, if you
+turn it, it jerks a little.  Um, and
+Elon said they'd be
+working on it.  But here's the craziest
+part.  This is done by one half of the
+TRIP engine.  This is a kernel, it's not the real thing
+.  So inside the AI4 board, we'll have to
+delve a little deeper into the technical
+details.  The AI4 board itself has two cores, like the
+AI3 before it, but they duplicate each
+other in case one of them "
+throws" an error or something.  I think
+they're no longer purely backups, because
+they seem to be used for different
+things, like this one.
+But inside each of these cores are three
+TRIP engines.
+So, there are six of them in total.  And they had
+half of one left.  So this is 12,
+sorry, this is 1/12 of the computing
+power.  They had six such cores
+.  They have half left after
+they're done with everything they need, and
+they're like: hmm, you know what?  We could
+build a visualization engine based on this
+.  And so it operates at a
+frequency of 18 Hz, which is half the
+speed of the car itself, but
+that's okay, because who cares.  And it's
+divided into four cycles, blah blah
+blah.  And he says that the latency is high right now
+due to computational
+resource limitations, but we have ways to interleave the
+new UVE features together with the diffusion
+transformer to reduce latency
+by about 35%.  So, a lot of things, and
+if you scroll down below, he has
+some more about that.  There are a couple of comments below
+where you'll see that he's answering
+himself.  Yes, sorry.  I'm reading this because I
+think that's the best way to describe
+it.  This is about two or three comments
+below his original.
+It's in your sorting.  In mine, I
+scrolled lower because we have different
+priorities, so I'll just take your
+word for it.  Can you tell me what it
+says?
+After that, he says: after we
+moved our tiny encoder to
+SRAM, that is, to random access memory, we are
+left with only half of the TRIPs out of three
+on the SOCB.  So, again, two cores:
+the first one, SOCA, is used in full,
+and in SOCB they use two and a
+half of these TRIP engines.  In short, they had
+half of one left for this
+reality visualizer.  So we
+used the computing power
+in the best possible way.  Trip actually only works with
+eight-bit integers and has to
+perform Softmax in emulation mode in
+28 steps.  These are just details about it.
+And AI 5 is a huge improvement,
+about 12 times more
+computing power.
+This actually raises a pretty interesting
+question, as Elon insists that
+we don't need AI 5 for our cars
+.
+He says AI 4 is more than enough, and
+by all accounts, version 15 of the
+autopilot software
+looks absolutely incredible.  Version 14
+looks absolutely incredible.
+So he says we don't need it for
+cars, but it looks like we're going to
+need that level of computing for
+Optimus, for which we also need
+that visualization capability.
+And I think we can go back to the
+beginning of what Elon was talking about, which is the
+model that they had
+internally, a pixel-precise model.  So the
+reason they created it in the first place is because we
+started talking about it.  But the Unreal
+Engine, which I saw they
+were working on in 2022 at AI Day, they're
+like, from the side, you couldn't film it, but
+they're like: look, we're using
+Unreal Engine to create scenes where a
+moose can cross the road.  Do you remember this?
+Like there's a Cybertruck and a moose, and they
+showed it.  Well, anyway, it was not
+bad, but not perfect.  And what you need to
+do to trick your training
+engine.  So, Brian, you're driving and you come across
+-- you don't come across a moose, but you see a
+moose crossing the road in Los Angeles,
+and you're like, "Oh my God, this is an exceptional
+case."  And Tesla replies, "Yes, we
+agree with you on that."  You won't
+see this very often.  So they take
+your 15 seconds of interaction with this moose.
+They load this into their photo- or
+pixel-precise rendering engine and,
+using a bunch of Nvidia GPUs and everything
+they have, they turn it into
+100,000 or a million different versions to
+train the autopilot computer on it.
+But it has to be absolutely accurate before
+every camera sees it, because
+they need to train it.  They have to
+say, "Hey, this is what training is all about."
+This is where the need for pixel-
+accurate reproduction arose, but it required
+a lot of computing resources, not just the
+tiny bit of power of a
+laptop in your car.  And the amazing thing is
+that they were able to compress it to a size
+that can work in your car
+while it's on full autopilot.  This is
+just madness.
+SOC, system on chip—is a way to
+move computation directly to the
+chip so that nothing needs to be
+loaded.  It's just already there.
+Yes, it used to be the old way: separate CPU
+, separate GPU, RAM and everything
+else on different chips next to each other, but
+there was a big delay when transferring
+data between them.
+So now they're just putting everything together on
+one chip.
+Very cool thing.
+Do you think robo-taxis will appear in
+Georgia this year?   In
+2026?
+Yes.
+No.
+No.  Okay.  Well, okay.
+I don't see that...do you want
+to prove me wrong?
+No, but
+we have some guesses on Kalshi.   It states
+which states will offer
+at least I am right.  I see, for Georgia it's
+only 6%, so you see for yourself.
+I think this is a completely reasonable assumption.
+6%, but the idea is that a "yes" forecast would
+only cost 11 cents on the dollar.
+And the forecast is "no," if you're sure
+it won't happen—93 cents on the dollar.
+So it's interesting to watch.  This is all
+for fun.  Look, guys, I have
+bills to pay.  YouTube somehow
+pays less than half a cent per view
+.
+So I have to do something, and this is one
+way.
+Be mature, rational, and
+responsible.
+But if you want, you can go to
+kalshi.com/aza and deposit $25.  They'll
+add, I think, 50 or 55, something like that
+.  It's in the description below, and all you have to do is
+use these 25 for the prediction, and
+they will do it.  There are rules there.  You
+will see them if you choose to do so.
+You are not obligated.
+But when it comes to which states will do what
+, I think people in our
+community are insightful and hopefully
+know their vulnerabilities.
+Arizona sometimes rose to
+quite a high point, yes.  Yes.
+Yes.  Well, it was going up to 94, and now it's
+down again to 37-35.  So this is quite
+interesting to me, because I
+like to look at statistics all the time, and
+I'm just curious: what do people think about this
+?  So that's really cool.
+Yes.
+And I think it's very human to want
+to analyze things, and I think there's a
+certain wisdom in the masses, especially when an
+event is approaching.
+Just like that.  Just had to share
+this with you guys.  And just for fun,
+they didn't ask me, but something crazy is happening at E-ject right now
+, my friends.
+Every tenth purchase from today until
+the end of December gives you a month of FSD for free
+.
+Oho.
+So I don't know how they choose these
+people, but for every tenth person,
+I have a coupon.   I
+mean, this, uh, this is this one.
+Here he is.  So, now we've got that
+sorted out.
+Yes, so EVject discount and a one in
+ten chance of getting a month of FSD.
+Great product, by the way.  I
+use it.  My wife uses it all the time
+because she wants to feel
+protected on the supercharger, and I
+had to use it to do it in the beginning with the Cybertruck
+.
+to use certain, as it were,
+CCS charging or something like that.
+I use it at work.  When I
+park at work and want to charge my car
+, CCS charging with a regular adapter doesn't
+work, so I use EVject, and
+yes, it works great.
+Yes.
+So, here it is.
+So, with that in mind, regarding visualizations,
+I want to ask you, John, what do you think
+?  What is your opinion?
+I, I really have a hard time understanding this.
+I'll compare it to something.
+I've been doing 3D animation for about 35
+years, sort of.  And I remember when
+Jurassic Park came out, I
+thought, "Oh my God."  But then I,
+you know, I got better.  I wrote books.  I
+told myself, "I can do this."  I know how to
+do it.  I can compete in the major leagues.  And
+then Avatar came out, the original
+Avatar, I think, in 2009.  And the first
+opening shot, where there was a flight over the
+jungle and all that, I thought: "
+Forget it."  I can't do this anymore.
+And there was a part of me that, regarding
+visualization in cars up until this
+point with version 14, said: "I know how
+this works."  I understand everything.  You know, I
+can kind of compete mentally, I guess,
+or something.  When I saw version 15,
+I said to myself, "I can't do this anymore."  It's
+like something I can't do.  This is
+crazy stuff.
+There are things you see in art,
+sports, or whatever, and you say, "I could
+probably do that."
+Although in reality you definitely wouldn't be able to.
+I'm not saying you couldn't, but people
+often think that way.  But then you see what you're
+looking at and think, "I don't even
+know where to start."
+And this is exactly that moment.  It's just: "Wow.
+"  And so, I think people, and myself,
+keep thinking, "Oh, it's like Unreal
+Engine."  It's like a game engine where you
+put textures on objects and all
+that.  But no, because that's exactly what the current
+version is.  You see, for example, a car.  Here's a
+sedan, here's a truck, a Cybertruck pulls up
+, it looks like a truck,
+and you're like, "Well, that's not quite it."  But
+now that is no longer the case.  This is really what
+you see around you, what you see in reality
+.  This is just madness.  This is absolutely
+crazy.  Congratulations to the Tesla team.  Wow.
+Yes.
+And now my last question for
+today.  John, do you think
+this will make people buy it?
+Oh, that's interesting.  You know, I didn't even think
+about it because I'm just thrilled that
+it works and gets you around.
+And that's just wonderful.  But yesterday's
+video, Monday's video, I showed...
+sometime ago, on Monday, in short, in
+Sunday's video, I showed a few
+fragments.  One of them was from a
+Truth Tom subscriber, whom you may
+have met.
+He was showing how it works in his
+area.  One of the things he did was there was a
+fallen tree lying there.  He
+tried to go around it, backed up,
+took a wider radius and managed.
+Another thing he showed was entering a
+gated community and parking in the
+correct spot.
+These are huge achievements, but I don't think
+new buyers understand
+how important this is, but the visualization is
+easy to understand.
+This goes back to the fact that a picture is
+worth a thousand words.
+I think it's like when a person
+interacts with software for the first time, and Tesla says, "Here,
+hold on to the full autopilot demo
+."
+They get in, start driving, and are like,
+"You're crazy," that's what the salesman is, and all that other stuff
+.  They will simply be shocked.  So I
+think you're right.  This will cause
+people to have an instant emotional reaction,
+like "that's right," before they even
+start driving.  Or if they
+watch a YouTube video like ours, or
+some news on CNBC, or any other
+new show that shows it, they'll say,
+"This is crazy."  It can't be.   It's
+strange that this came out the same week as
+GTA VI, because there's this weird feeling that it
+looks similar.
+I haven't played GTA VI, but even if it
+were the same game as GTA IV, if it's
+presented well, many people will want to
+play it because it looks good.
+So, I think you're right.  You know, I didn't think about it
+because it wasn't my
+priority.  That's not what I was most
+concerned about, but I think you're right.  As
+for first impressions, it's a great way
+to make people say, "Oh my god, this is
+incredible."  Does it drive as
+good as it looks?  And then they
+will try.
+And in my case, it's a significant improvement
+over the video I already have.  When I
+put it in reverse, it just
+shows a video of someone driving into children
+, I don't even know what the video is about.
+Although it's cool because it looks exactly
+like my neighborhood.  So guys, what did we
+miss in the comments?  What did we
+misunderstand?  Write.  I
+beg you.  Everyone stay connected, stay
+on topic, and I'll be waiting to hear from you, smart
+robots, when I'm in Ethiopia, because of
+course I'll be there recording, doing my
+usual streams and all that, trying to
+survive, John.  Trying to survive.
+Thank you.
