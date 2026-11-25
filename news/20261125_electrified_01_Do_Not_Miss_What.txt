@@ -1,0 +1,720 @@
+Channel:     electrified
+Title:       Do NOT Miss What Elon Just Said About FSD V15 & Optimus ⚡️
+URL:         https://www.youtube.com/watch?v=15fJzQ_d82M
+Published:   2026-11-25 01:07 UTC
+Fetched:     2026-11-25 02:01 UTC
+
+────────────────────────────────────────────────────────────
+
+Welcome to Electrified. It's your host
+Dylan Lumis. Today is the day we are
+going to get a bit technical and walk
+through everything that Elon said really
+so that everybody can understand what
+will transfer over from FSD to Optimus
+and what won't. And my hope is that
+going forward, everybody will have a
+much better understanding of all of
+these terms and the lingo that Elon
+likes to use because as we walk further
+into our AI future, the more everybody
+can understand about these neural
+networks, I think the better we can all
+understand Tesla as a company and what
+its competitive advantages actually look
+like. So to start, Ashoke, Elon,
+everybody, us, we love to say it's all
+pixels in and controls out. But if
+someone were to ask you, well, what's a
+pixel? would you be able to answer that
+question? Or somebody comes up to you at
+your Thanksgiving get together and asks
+you, "Hey, what's the deal with that
+upgraded vision encoder that FSD,
+Roboaxi, and Optimus all now use?" And
+it's fascinating how all of this works
+because Tesla is taking those raw video
+feeds, those pixels, and effectively
+compressing them into a description of
+that scene and what's going on. And then
+they interpret that and actually
+generate this video feed output that is
+now Tesla's reality view. And at the
+computer level, all of that is just
+happening with numbers. So when you take
+one frame from a video feed from Tesla's
+cameras on the car, and when you break
+it down to the pixel level, all a pixel
+is is actually three numbers. And
+really, those three numbers just tell
+the computer how much red, green, and
+blue are in each pixel. So here's one
+frame from one camera's video feed, and
+step two will show us a 6x6 grid of 36
+individual pixels. And again, each pixel
+has three numbers representing the RGB
+values. So at the computer level, a
+pixel is just three different numbers.
+And when talking about cameras, you'll
+often hear the term megapixel, which
+just means 1 million pixels. So if you
+have a 5 megapixel camera and you have
+three numbers per pixel, that would be
+about 15 million numbers per frame per
+camera. So, as a sh has said in the
+past, when Tesla's counting these camera
+videos over a 30- secondond context
+window, as you'll hear it referred to,
+as you break each scene down and add in
+the map information and the motion or
+the kinematic data and the audio, we
+know Teslas have that external mic that
+can listen for emergency vehicles.
+Taking all of that, the total input
+would amount to somewhere in the
+neighborhood of 2 billion input tokens.
+And effectively what the neural network
+is doing is it's taking all of those
+input tokens and then it has to
+understand them, compress them and then
+output two tokens which we know as the
+output control for the vehicle which is
+steering and acceleration. And the first
+part of this compression and
+understanding process is done by the
+vision encoder. What Elon and Tesla are
+now calling the UVE the universal vision
+encoder. This is what actually reads
+those raw frames and outputs a much
+smaller set of numbers that are called
+features or latent features because in
+this case latent just means hidden. Thus
+hidden to the user you and I but the
+network itself the computers actually
+see it. But important early on to make
+the distinction the UVE has no role in
+actually making driving decisions. The
+UVE itself is only deciding what
+information the decisionmaking part of
+the neural network is actually fed. So
+the vision encoder is going to take all
+of those numbers from the pixels and
+then do multiplication and some math to
+actually transform those numbers into
+those features that are also called
+tokens. And it does that by multiplying
+by the encoder's weights or the brain
+that has been trained through all of the
+data. So in short, that's what these
+neural networks are. It's just a giant
+web where all of those nodes have
+different individual weights that are
+used in that multiplication. And the
+weights are actually determined by all
+of the training. So because over the
+years Tesla's vision encoder has seen so
+many scenes from these cameras and all
+of the Tesla vehicles, the weights are
+now very fine-tuned to be able to take
+those raw pixels and then feed it to the
+rest of the model or the policy. The
+policy is what determines the driving
+outcome or in the future optimist's
+decisionmaking and actions. That part of
+the network the outcome decision-making
+is called the policy. So the vision
+encoder step has its own weights that
+are multiplied by the pixel numbers to
+generate these features or the tokens
+that the remainder of the model can
+actually use because the later parts of
+the model have been trained to run on
+those features. So for my visual
+learners, step one, you have the pixels
+from the cameras and every individual
+pixel is just three different numbers.
+And then the vision encoder will take
+every scene or every frame and basically
+break it down into smaller squares. So
+each square has x number of individual
+pixels. Tesla hasn't really published
+that level of granular detail, but at
+this point, each square is converted
+into a different list of numbers that we
+call a token, which again just happens
+by multiplying these individual pixel
+numbers by the vision encoders model
+weights. And the real heavy lifting, if
+you will, for the vision encoder is when
+it compares these notes or compares
+these tokens that are generated in step
+two across each individual scene and
+across cameras and across time. So it
+can actually start to understand depth
+and motion and the process is
+continually updated as new pixels come
+in. So the output from this vision
+encoder is these latent features or the
+tokens which in short is just a summary
+of the scene, the lanes, the cars, the
+people, the distance, the speed. And
+again from the chip and software
+perspective, there's no image involved
+here. It is all just numbers. And then
+the outputs from the vision encoder are
+then fed to two different models. One is
+the driving model, which again would
+also be called the policy, which
+determines the driving output. the
+behavior and the same UVE features are
+also forked and fed to this reality view
+generator which is a different model
+that Elon has called a 1 billion
+parameter model that takes those numbers
+run some diffusion and then ultimately
+outputs the new Tesla reality
+visualization which is exactly why the
+driving behavior for Tesla's FSD does
+not have to wait for this visualization
+to make a driving decision which I think
+should be intuitively obvious because
+Tesla cannot have a half second or a
+second lag to make decisions. But I
+think it's important for everybody to
+know that the driving output is not in
+any way dependent on the reality
+visualization. The actual driving
+behavior is determined by the output of
+the vision encoder which is forked to
+two different models. So again the
+driving output does not have to wait for
+the reality visualization. And on that
+point, a quick warning because yes, with
+FSD V15, you can have the visualization
+on your screen even when you're driving
+in manual mode. So yes, you have to pay
+for FSD to actually have the
+visualization. But you don't need to
+have FSD engaged. But as you can see in
+this video, at this point, there is no
+vehicle shown in the visualization
+coming from the right. But if you look
+at Chuck's camera, there is literally a
+vehicle right there. So, as I drag to
+the next frame, you'll see that vehicle
+appears right here. So, it goes from not
+existing to showing up out of nowhere.
+So, given the time lag and the fact that
+these cameras can't magically see around
+corners, they're basically just guessing
+what exists for the spaces they can't
+actually see. So, just be aware of this.
+I would not be making any manual driving
+decisions based on the new reality
+visualization. And something tells me a
+lot of people will be reliant on this,
+especially in parking lots because now
+we have that 360 degree bird's eye view.
+So just be careful out there because
+relying on the visualization for manual
+driving decisions is probably not the
+best idea at this phase. But again,
+importantly, the FSD's driving decisions
+are not reliant on the visualization. So
+Tesla's vision encoder will take each
+frame and then cut that down into
+smaller squares that we call patches.
+Then it converts each patch into a list
+of numbers. Again, those latent features
+that we call tokens, which yes, is the
+same term that these LLMs use for pieces
+of text. And then the UVE lets these
+tokens basically compare notes with each
+other across different cameras and
+across different time frames to
+understand again the scenes and the
+motion. And then those features or
+tokens which are still really just
+different sets of numbers after the
+pixel numbers are multiplied by the
+vision encoder model weights. And those
+outputs are then forked to the diffusion
+model which creates the reality
+visualization and to the driving or the
+policy output model. And this upgraded
+vision encoder is also trained on
+millions of internet videos for improved
+generalization and data efficiency,
+improving the critical intervention rate
+by 25x. So improved generalization just
+means that the model can understand
+scenes even if that specific scene has
+never been in its training data. And of
+course, data efficiency just means that
+the model can learn faster with fewer
+actual training sets. And Ashoke shared
+this visualization at a talk he gave
+last year that I think is important to
+understand because again it's not really
+just pixels that are being fed into the
+models although everybody repeats that
+over and over. It's also the map and the
+navigation data, the motion and the
+kinematics and the audio from the
+external speaker. All of that
+information is fed into the neural
+network which ultimately yes produces
+the next action but it also has all of
+these side outcomes that they're called
+like panoptic segmentation the 3D
+occupancy 3D gossians and language and
+all of these side outputs are
+effectively ways to help Tesla's
+engineers understand and debug the
+neural network. Just think of panoptic
+segmentation as if it's labeling every
+pixel like that's the sky, that's a
+person, that's a car, and so on.
+Occupancy network basically just shows
+which parts of the scene are free and
+clear to drive through verse which ones
+are blocked. Gossians are just
+representations of the current scene
+that are basically created of blobs. And
+Tesla has implemented natural language
+into the process that all are a part of
+the reasoning of the model. As Elon
+said, we've had a pixel perfect world
+model since last year, which is critical
+for synthetic data generation. And the
+much smaller version of that in the car
+is a conditional mean flow model based
+on the recent sequence of Tesla's
+universal vision encoders features,
+which are the same ones that are plugged
+into the three billion parameter encoder
+model that produces the driving actions.
+So I think Elon is using the term
+encoder a bit loosely here but from his
+perspective yes up front there would be
+the universal vision encoder which we've
+been talking about and it does not
+control any of the driving output or
+behavior but its output the feature set
+is then fed into another encoder Elon's
+calling it which is really just a model
+again or the policy that determines the
+driving actions. Elon said, "We fork off
+from these UVE features, which hopefully
+now you understand a bit of what those
+are, and then run a separate 1 billion
+parameter diffusion model. This takes in
+the previous reality view generation
+with added noise and then dnoises it to
+the current visualization. So going back
+to this graphic, the driving model would
+be the 3 billion parameter model and the
+reality view generator would be the 1
+billion parameter model. Now, at this
+point, if you're not familiar with what
+a diffusion model is, to keep it super
+simple, let's say you take a clean image
+and then what they would do is actually
+add noise to that image. And from there,
+the model is actually trained to remove
+that noise one pass at a time. Sometimes
+it can be many, many passes to remove
+that noise to get it back to the
+original clean image. So, these
+diffusion models are trained in a way by
+removing noise from images to get to the
+final output. So usually the dnoising
+process in these diffusion models takes
+many many passes. But as Elon said last
+year, Tesla is using a singlestep
+diffusion for world model generation. So
+when Elon says the diffusion model takes
+in the previous reality view generation,
+meaning that prior frame, that's why it
+adds noise and then denoises it because
+that's the only way these diffusion
+models work. And rather than starting
+every frame from scratch with all of the
+noise, it'll start with the most recent
+reality visualization view and then add
+a bit of noise and then d noiseise from
+there. And that's a big part of how the
+continuity from one frame to the next is
+maintained because they're starting from
+the prior frame. So it's actually the
+diffusion model that is producing the
+small video chunk which Elon said eight
+images at 36 frames per second at the
+resolution of the UI screen. And that
+work is done by half of a trip engine as
+we called out in the recent video.
+That's like 8% of the neural accelerator
+capacity of AI4. And every UVE frame is
+at 18 hertz and is spread over four
+cycles. It's also important to point out
+that a world model is not the same thing
+as Tesla's new reality vision. By
+definition, a world model will actually
+change based on an action or an input in
+that scene. So think of a video game. As
+you interact with the scene, the scene
+changes. So, think of Tesla's new
+reality view as a lightweight descendant
+of Tesla's world model that is more
+predictive and generative because
+Tesla's reality view isn't actually
+predicting how the scene is going to
+change based on an action. It is just
+representing the current scene. So,
+that's a very important distinction to
+make. However, one of the main takeaways
+of this video should be that Tesla's
+UVE, the vision encoder, does indeed
+feed both the world model and the
+reality vision. So, the seeing and
+interpreting and understanding of the
+world, that first part of the process in
+the neural network is what's being
+shared between FSD, robo taxi, and
+Optimus and between the world models and
+the reality view. And we talked about
+the latency situation in yesterday's
+video, but what Elon means here when he
+says we have ways to interle newer UVE
+features, he's basically just saying
+Tesla has a way to take these newer UV
+features, meaning the most recent ones,
+and feed them to later parts of the
+network before that initial process is
+done. So loosely rather than waiting
+until the diffusion is done for that
+scene, they can feed in some of these
+fresher UVE features to ultimately cut a
+meaningful part of the latency. And at
+this point, I would like to point out
+there was a lot of speculation V15 was
+going to be the 10 times bigger
+parameter model, taking us somewhere to
+the 10 billion parameter number given
+that FSDV14 was supposed to be around 1
+billion parameters. And clearly in this
+post, Elon said that the driving
+outcome, the driving behavior, that
+policy is 3 billion parameters. And the
+diffusion model that actually creates
+the reality visualization is 1 billion
+parameters, which would take us to 4
+billion. But nowhere has Elon talked
+about the size of the UVE, which is that
+first part of the neural network. Now,
+from everything I've read, I cannot
+imagine that alone is a 6 billion
+parameter part of the model because
+usually based on what the rest of the
+industry is doing, the driving policy
+portion is the biggest. So, to me, it's
+still an open question how many
+parameters V15 actually is. Then Elon
+continued, after we moved our tiny
+decoder into SRAMM, we only have half a
+trip out of three on SOCB for this
+reality visualizer. So we spent the
+compute as best we could. So SOCB is
+just the second chip on the board
+because Tesla uses two for redundancy.
+And then we also need to understand that
+SRAMM is the faster memory that's built
+right on the chip which is contrasted
+with DRAM which is slower memory that's
+off the chip. So part of the reason
+Tesla has to be so hardware compute
+efficient is because they decided to
+move this decoder which is one of the
+last steps in the process of this 1
+billion parameter diffusion model that
+is actually responsible for creating the
+visualizations and the pixels you see on
+your Tesla car screen. Tesla moved that
+tiny decoder, that last part of the
+diffusion process onto the faster memory
+on the chip, which of course does help
+when it comes to latency. And remember,
+as we talked about yesterday, one of the
+main constraints right now is the
+bandwidth, meaning the speed at which
+these chips can read and write the data.
+So moving this tiny decoder from DRAM to
+SRAMM obviously helps to speed things
+up. And I don't want to go off on too
+many tangents and leave people confused,
+so I'm not going to dive into 8bit int
+or the soft max for this video, but I
+did want to mention Elon then said AI5
+is a gigantic improvement, roughly 12
+times more compute. I just wanted to
+highlight this statement is why people,
+understandably so, think there's still a
+good chance AI5 eventually makes it into
+Tesla vehicles. Because after Elon went
+into this deep dive on the technical
+details for FSD in the vehicles and the
+reality visualization, it's almost like
+he slipped up and just said AI5 is going
+to make this whole process so much
+easier. But as we covered yesterday, he
+did clearly say AI5 was only going to be
+an Optimus. the cars would stick with
+AI4 and 4.5. So, I will just say I would
+not be surprised if sometime late 2028
+or into 2029, we eventually start seeing
+AI5 in Tesla vehicles. But the reason
+Tesla can do things like the reality
+visualization is because of everything
+they've developed over the past decade
+plus. So, how can Tesla create this 360°
+bird's eye view when there's no camera
+back there? Well, step one is to create
+a 3D scene from flat pictures. And as we
+know, Tesla's been building networks
+that can turn its cameras into 3D for
+years. AI day 2021, Andre Carpathy was
+talking about the vector space, which he
+referred to as a three-dimensional
+representation of everything you need
+for driving. One year later, Phil Dwan
+introduced the occupancy network, which
+takes video streams of all eight cameras
+as input and produces a single unified
+volutric occupancy in vector space,
+predicting for every 3D location around
+the car whether something is there. And
+comically at the time, he said it was
+currently not shown in our customer-f
+facing visualization. But in a mic drop
+moment of his own this week, he said,
+"We've always wanted the UI to show the
+world through the eyes of the FSD model.
+We were just too busy solving the
+driving part first." And if you
+remember, Tesla had a patent granted on
+this very idea last year. Tesla was
+building 3D occupancy data around the
+vehicle using only the captured 2D
+visual data from the camera. And Tesla
+described displaying that output on a
+screen in the vehicle. And one year
+later, that's exactly what we're seeing.
+Some of you might remember 2023, the
+first glimpse of this we got was Tesla's
+highfidelity park assist. Ashoke said it
+replaced the 2D with a high-res 3D
+reconstruction of the Tesla's
+surroundings, which was an extension of
+their occupancy network. He said, "This
+allows us to represent arbitrary shapes
+in a smooth and computationally
+efficient way. The vehicles you see are
+not some fixed meshes, but the network's
+real-time prediction of the shape. And
+once the scene exists in 3D, a viewpoint
+is just a position and a direction. But
+part of the reason I'm sharing this
+portion is because AI day 2022 Ashoke
+said his personal bet for the future of
+computer vision was a network where
+images come in and then the network
+produces a consistent volutric
+representation of the scene that can
+then be differentiably rendered into any
+image that was observed. And last year,
+Ashoke was talking about Tesla's
+generative Gossian splatting, which is a
+3D scene built from the car's cameras in
+roughly 220 milliseconds that can be
+jointly trained with the end-to-end AI
+model. So, I know that's a decent amount
+of jargon, but the main takeaway is that
+all of these individual models like the
+Gaussian splats and these diffusion
+models and the encoder, they are all
+basically different phases or steps in
+the overarching singular neural network
+that Tesla has been training. now for
+years end to end which yes is pixels and
+all of the other factors in and controls
+out. So the Gaussian models and the
+diffusion models and the reality
+visualization they're not like something
+after the fact that's bolted on. They're
+not separate modules. They are literally
+part of the exact same network that is
+responsible for Tesla's driving behavior
+and that will ultimately also be
+responsible for Optimus behavior. So a
+lot of other companies are busy trying
+to patch together all of these different
+models for perception and planning and
+visualization. Whereas Tesla now just
+has one streamlined pipeline that all
+works in harmony together. So the same
+network that is driving or controlling
+Optimus along the way also just happens
+to be producing these visualizations and
+the world models and so on. So that is a
+real structural advantage that yes also
+happens to scale much easier as you have
+more unique data. But as I close this
+out, I do want to try to make it clear
+why Optimus is going to be so much
+harder despite all of the learnings
+Tesla already has. So simply put,
+Tesla's endto-end neural network has a
+front half that is the vision encoder
+for both FSD Roboaxi and for Optimus. We
+covered that front half turns the pixels
+into the features and then the back half
+of the model takes those features and
+turns them into outputs or actions. So
+yes, a car and a robot both have to see
+and understand the world, understand
+motion and how to interact with it. So
+what will transfer over to Optimus and
+what won't? We have it on good authority
+that the cameras will be shared, the
+vision encoder is going to be shared and
+the world simulator will all be shared
+across FSD and Optimus. But it's the
+outputs which is derived from the
+policies that are going to be
+meaningfully different. Again, FSD is
+really just steering and acceleration.
+Whereas Optimus, you have a whole lot
+more you need to control the legs, the
+hips, torso, arms, wrists, fingers. You
+have to add balance into the mix because
+standing still is really active control
+because it's almost like the humanoids
+are in a slight fall at all times. And
+vehicles spend their days avoiding
+contact, but Optimus is obviously going
+to have plenty of contact with the
+world, which brings grip force and
+pressure into the equation, which needs
+to be controlled. And as we've seen for
+FSD, Tesla had customers collecting the
+data, but that data collection flywheel
+does not exist for Optimus. Ashoke said
+this year, Optimus will use the same
+end-to-end strategy that drives FSD
+pixels in controls out. And last year,
+he said once the AI models for
+self-driving and Optimus Unifi, it's
+going to be fire. and Ashoke talking
+about Tesla's world simulator which is
+more for training think video games more
+long horizon tasks that can predict how
+the scene will change based on actions
+that is being used for both FSD and
+Optimus Ashoke said it can correctly
+generate the pixels for the action and
+it's the same neural network with just
+some more data added from Optimus so
+it's not so much that Tesla's reality
+visualization in the cars is now going
+to unlock all of these things for
+Optimus it's almost the inverse
+Because Tesla has already had this near
+pixel perfect world model for FSD and
+Optimus dating back to last year. That
+is the foundation that has enabled Tesla
+to do this reality vision. And Shoke
+said the same generated worlds can be
+used to perform largecale reinforcement
+learning in closed loop which is where a
+policy learns from the results of its
+own choices. And it's this world model
+that really helps Tesla expedite the
+process of choosing which model is best.
+And the easiest way for Tesla to do this
+is the open loop strategy they call it,
+which is where Tesla replays a recorded
+clip and they check whether the policy,
+which again is the brain that determines
+the driving behavior, if it would have
+done what the human driver did. But with
+the open loop, the weakness is that the
+recording never reacts. So if the policy
+would have breakd or changed lanes, the
+video still shows what happened after
+the human's choice. So nobody can
+actually see where the policy's own
+choice would have led, which is where
+the closed loop training comes in. The
+policy sees a frame and picks an action
+and then the simulator generates the
+result of that action. The policy sees
+the new frame and acts again and keeps
+that loop going, which is why they call
+it a closed loop. Each choice now has
+consequences. So Tesla can rerun a near
+crash or a rare construction zone many
+times and grade each new build on it
+before that policy is ever on a customer
+vehicle. And this world model will be a
+big deal for training Optimus. Ashoke
+has said as much. He said the same video
+generation models will also work for
+Optimus robots navigating the
+Gigafactory. And the closed loop will
+carry over. The robot's policy acts, the
+simulator shows the result, and the
+robot can be tested or trained without
+risking hardware or people. So
+obviously, Optimus will not be starting
+from zero when it comes to seeing the
+world, understanding the world, and how
+people and objects move in it. It will
+not start from zero when it comes to
+having this simulated practice world
+model. Tesla has plenty of experience
+when it comes to training these models
+at data center scale. And as we've seen,
+Tesla is excellent when it comes to
+quantizing software to fit on hardware
+and squeezing out as much compute
+efficiency as is possible. And all of
+these different processes have taken
+Tesla years on the vehicle side. So in
+short, the case for crossover here is
+going to be strongest when it comes to
+the seeing or perception, and it'll
+probably be weakest when it comes to the
+actual doing or the actions and the
+outputs. For the latter, of course, a
+lot of the training methods and the
+learnings will cross over, but the
+actual policy which determines the
+actions of Optimus will certainly need
+to be very different. And as we covered,
+it's going to be a lot more challenging
+than the car. At this point, it looks
+like this video is already going to be
+too long, so I'm going to cut it off
+here. We'll cover all of the news
+tomorrow before we head into
+Thanksgiving. But hopefully you guys
+learned at least something and you have
+a bit better understanding of some of
+these terms that we will likely hear
+about a lot more going forward. If it
+was helpful, let me know. If not, also
+let me know so I can try to do better
+for next time. But as always, guys,
+thank you for the support. Hope you all
+have a wonderful day and a huge thank
+you to all of my Patreon supporters.
