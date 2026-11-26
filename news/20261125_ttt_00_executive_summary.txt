@@ -1,0 +1,76 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-25)
+Published:   2026-11-25 00:00 UTC
+Summarized:  2026-11-26 08:14:59 UTC
+Model:       claude-sonnet-5-5 [direct]
+Cost:        $0.09215 (26774 in / 3860 out tokens)
+Sources:     10
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FSD v15 reaches first owners with Reality View
+- EU FSD vote slips to December 15
+- Tesla–SpaceX merger committees formed, FT reports
+- Musk says AI5 goes to Optimus, not cars
+- Anthropic report briefly rattles SPCX before green close
+- Tesla Semi fleet deliveries and Megachargers expand
+
+## Autonomous Driving
+- FSD v15 began reaching owners November 21, with a wider release promised for December. Tesla claims 25x better handling of critical safety cases, and Musk clarified that means 25 times, not 25%. Sawyer Merritt reports it is also rolling out to Model Ys without a front bumper camera. v15 is AI4-only, and Tesla has not said whether HW3 cars will get it.
+- Per Musk's technical post, v15 forks Universal Vision Encoder features into a roughly 3B-parameter driving policy and a separate roughly 1B-parameter diffusion model that renders the new Reality View. The visualizer runs on half of one TRIP engine, about 8% of AI4's accelerator capacity. Musk has called it "GTA IRL." Electrified's host notes the stated figures sum to 4B parameters and leave the encoder's size undisclosed.
+- The EU Technical Committee on Motor Vehicles will not vote on Tesla FSD on December 1 as planned. A Commission spokesperson told Reuters the new date is December 15, with no reason given. Approval needs at least 15 of 27 states representing at least 65% of EU population. Electrek counts the 12 countries recognizing the Dutch approval at roughly 29%, or about 47% with Germany. Per Reuters, an EU-level rejection would invalidate existing national approvals. Musk said on the Q3 call he'd be surprised if approval took past Q1 2027.
+- Italy approved FSD (Supervised), the 12th European country to do so, per Herbert and Jo Bhakdi.
+- Musk said cars stay on AI4, with a small AI4.5 update that cuts memory from 32GB to 24GB because RAM is expensive, per Herbert.
+- Bhakdi says Tesla is nearing a deployment tipping point, moving from dozens of Cybercabs to hundreds. He expects widespread European FSD deployment in 2027.
+
+## Robotaxi
+- Tesla's California robotaxi service still has a driver in the seat and runs no Cybercabs. Tesla has published a California addendum covering Model Y and Cybercab, describing SAE Level 4 operation across a significant portion of the Bay Area. The CPUC votes December 3, the same day as Tesla's annual meeting, on rules that would simplify service-area expansion, allow driverless programs to serve airports, and drop unneeded equipment requirements for purpose-built vehicles.
+- Bhakdi concedes his 10,000–20,000 Cybercabs by end of 2026 call is probably wrong but still sees 50,000+ in 2027. He calls 5,000+ built by year-end "guaranteed," up from about 2,500 known roughly four months ago.
+- Jo Bhakdi reports 587 Cybercabs registered with the Texas DMV, 283 of them added in one week. These are registrations, not confirmed deployments.
+- Robotaxi riders can now extend pickup wait time to up to 15 minutes, per Sawyer Merritt.
+- Lucid, Nuro and Uber began driverless testing with no safety driver in the Bay Area, with a public launch expected in Q1 2027.
+
+## Humanoid Bots
+- Musk said AI5, roughly 12x the compute of AI4, goes to Optimus first. Theteslaspace ties this to integration around April 2027. The host of Electrified would not be surprised to see AI5 in cars around late 2028 or 2029.
+- Electrek reports Tesla registered Tesla Machining Technologies Management SE, with €120,000 in capital, at EMAG's headquarters in Salach, Germany. Business Insider Germany says three people run it, including the head of HR at Grünheide. Stuttgarter Nachrichten reports about 220 EMAG employees will move to Tesla in a deal concerning humanoid robots. Neither company has confirmed. Electrek's Fred Lambert calls the paper trail consistent with Tesla's Optimus mass-production push.
+- Electrified's host says the vision encoder and world simulator are shared across FSD and Optimus, while Optimus's action policy (balance, grip, contact) is far harder than driving.
+
+## Electric Vehicles
+- Tesla Semi is moving into fleet deployment. HMD Trucking received 50 Semis about two months after its September order. Its published math puts a 400-mile day at $387 on diesel versus $84 on Semi. TCI Transportation took the first Semi delivered in Texas, and WattEV unveiled its first units at the Port of Oakland from a 370-truck order, per Theteslaspace. Sawyer Merritt describes a planned 300+ truck WattEV fleet. The sources disagree on WattEV's order size.
+- Tesla opened its first Texas Megacharger, an eight-stall site in Mesquite near Dallas. Megachargers deliver up to 1.2 MW and restore 60% range in about 30 minutes. Tesla expects 30+ US Megacharger stations by end of 2026.
+- FutureAzA's host expects Tesla to build over 1,000 Semis in 2026 but not reach a 50,000/year pace. The Semi cab has no sleeper.
+- Tesla's October Europe registrations rose 76% year over year, versus 56% for EVs overall and 3.4% for the total car market, per Bhakdi.
+- Cybertruck was the fastest-selling used truck in the US in October, averaging 39 days on market, per Sawyer Merritt.
+
+## SpaceX — AI & Compute
+- SPCX fell nearly 10% to about $114 intraday on a report, via a SemiAnalysis note, that Anthropic won't renew about 50,000 older Hopper GPUs and that SpaceX cut short-term Blackwell rental rates from about $15/hr to $10–12/hr. It closed up at $127.44. The host (Jo Bhakdi's channel) calls the report overblown. The 50,000 GPUs are about 15% of the roughly 325,000 in the deal and are the oldest chips. He cites a third-party tracker showing B200 rental down 7% over one month but up 51% over three.
+- Musk says Anthropic told him it wants 10 more GW, which Anthropic has not confirmed. Herbert notes Anthropic's prospectus shows up to $120.5B of commitments through 2029, about $3.1B a month at full capacity expected in December. Anthropic can exit on 90 days' notice once its commitment period ends in early 2027.
+- On November 20, Apollo and Goldman priced about $44B of notes to buy Nvidia Vera Rubin chips leased to SpaceX over about five years, with delivery from H1 2027. Herbert calls it the largest GPU financing to date. The top tranche reportedly yields about 8.26%.
+- Musk's November 21 post called 2027 a year of survival, with a lag between paying for compute and earning from it adding hundreds of billions in working capital.
+- Per the NYT, citing three people, Musk told employees SpaceX lags in AI and that renting compute is more profitable than using it in-house. Musk replied the paper "presents the obvious as news." Jefferies initiated at buy with 22.5 GW of compute and nearly $400B of AI revenue by 2029. SpaceX has issued no such guidance.
+- Nvidia reinstated Jensen Huang as CEO on November 23, and the stock jumped 31% to $165. Herbert reports it gave back about 7% on Tuesday. Hearings follow December 1 and 3. Herbert argues Musk needs Nvidia until Terafab reaches volume production, targeted for the end of 2028 with a first test chip around June 2027.
+- Bhakdi expects SpaceX at about 3 GW of compute and a roughly $150B revenue run rate around December. He calls Q4 earnings in January a key catalyst. He dismisses Cathie Wood's idea that robotaxi cash would fund orbital data centers.
+
+## SpaceX — Corporate & Valuation
+- The Financial Times reports both companies formed special committees to negotiate a merger valued at about $3.5T. SpaceX's members are Roelof Botha and Randy Glein. Tesla's are Robyn Denholm, Kathleen Wilson-Thompson and Jack Hartung. Advisors include Morgan Stanley, Goldman and Evercore. An announcement could come as early as December with a target close by end of 2026, though an insider says the parties are not yet close. Reuters could not immediately confirm. Tesla approval requires more than 50% of all outstanding shares.
+- Premium estimates diverge. Cathie Wood expects about 25%, the FT points closer to 10%, and a community calculation implies about 12%. Bhakdi expects at least 20%, ideally above 30%, capped near 50% by minority-shareholder litigation risk. He warns "If a Tesla costs $380 and you offer 20%, you will fail." The Jo Bhakdi channel host expects about 30%, around $500 per Tesla share.
+- Bhakdi says the merger vote would not occur at the December 3 annual meeting and would need a special meeting, possibly around February. On November 24 Tesla fell about 1% while SpaceX fell about 5%, which Bhakdi attributes to merger overhang. TSLA closed at $380.14 on November 25.
+- The last major SPCX lockup expiry, about 800M shares or 18% of float, comes December 8, per the Jo Bhakdi channel host.
+
+## SpaceX — Starlink
+- SpaceX agreed to forgo $738M in federal broadband subsidies and instead provide free Starlink hardware to eligible households. Per the NTIA, it will still serve the covered locations, per Sawyer Merritt.
+
+## SpaceX — Starship
+- Farzad's video argues the bell nozzle underpins Starship's cost thesis, with a fully reusable Starship targeting about $36,000 to launch a Tesla-sedan-weight payload versus roughly $27M less than a decade ago. The host says SpaceX has landed boosters nearly 600 times since December 2015 and targets 100+ Starship launches a year.
+
+Notable quotes and data:
+- EU FSD vote: December 15. Approval needs 15 of 27 states and 65% of EU population.
+- CPUC robotaxi rule vote and Tesla annual meeting: December 3. SPCX lockup expiry: December 8.
+- FSD v15: 25x better critical-case handling (Tesla). Reality View runs on about 8% of AI4 compute.
+- AI5: about 12x AI4 compute, going to Optimus first.
+- Merger: about $3.5T per FT, with premium estimates from about 10% to above 30%.
+- Anthropic: up to $120.5B of SpaceX compute commitments through 2029.
+- SPCX closed $127.44 after an intraday low near $114. TSLA closed $380.14.
+- HMD Trucking: $387 diesel versus $84 Semi per 400-mile day.
+- Tesla Europe October registrations: +76% year over year.
