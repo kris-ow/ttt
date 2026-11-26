@@ -1,0 +1,71 @@
+Channel:     electrified
+Title:       "Extraordinary" Outcome for SpaceX: Acceleration Incoming ⚡️
+URL:         https://www.youtube.com/watch?v=9PhoCQkOt_8
+Published:   2026-11-26 00:15 UTC
+Summarized:  2026-11-26 01:02:30 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0.00000 (19876 in / 7952 out tokens, subscription)
+Relevance:   core — The video is a Tesla and SpaceX news roundup led by the FCC's approval of SpaceX's million-satellite orbital compute constellation, with substantive robotaxi, FSD, merger and SpaceX corporate updates.
+Topic:       both
+Categories:  SpaceX — AI & Compute, SpaceX — Starship, SpaceX — Starlink, SpaceX — Corporate & Valuation, Financials, Robotaxi, Autonomous Driving, Electric Vehicles, Humanoid Bots, Market & Competition
+────────────────────────────────────────────────────────────
+
+Dillon Loomis's Thanksgiving-week roundup leads with what he calls an "extraordinary" FCC decision: full approval of SpaceX's request for 1 million Starmind orbital compute satellites, which he had expected to be only partially approved. He argues the regulatory path is now largely clear and the bottleneck shifts to making Starship rapidly reusable. He also covers SpaceX's Colossus 3 campus, its share pledge to American children, its declined broadband subsidies, merger chatter, Dallas robotaxi expansion and Cybercab fleet growth, FSD v15, and smaller Tesla items.
+
+## SpaceX — AI & Compute
+1. **FCC approves 1 million orbital data center satellites:** FCC Chairman Brendan Carr announced approval of SpaceX's request for 1 million Starmind satellites, described as the first US authorization of a constellation of data centers in space. Musk replied "much appreciated." SpaceX must deploy 100,000 operational satellites by November 2035 and the full constellation by November 2040, a 14-year runway. SpaceX proposed six orbits between 550 km and 1,000 km.
+   - **Debris rules:** The plan for satellites below 600 km already complies with FCC debris rules. The FCC denied a waiver that would have let satellites above 600 km be retired into Earth disposal orbits or heliocentric orbits, citing insufficient information. SpaceX must file again before deploying any satellite above 600 km, or any satellite not disposed of by atmospheric re-entry.
+   - **Policy basis:** The FCC relied on an October 2026 policy change concluding that space-based activities generally fall outside its National Environmental Policy Act obligations.
+   - **SpaceX commitments:** SpaceX said it will avoid the Ka band except for limited emergencies and rely mainly on optical links to Starlink. It also committed to low-altitude testing first, controlled de-orbiting, collision avoidance, re-entry steered over the ocean, and a design meant to burn up fully on re-entry.
+   - **Opposition:** About half a dozen organizations fought the approval.
+2. **Putting the 250 GW figure in context:** The widely circulated 250 GW figure is simply 250 kW per Starmind A1 satellite multiplied by 1 million satellites. Loomis cautions that 250 kW is a peak figure, and that Musk has said the average may be closer to 175 kW. He also expects later designs (A5 and beyond) to make up most of the constellation. For scale, he puts average continuous US electricity generation at about 518 GW, so a full constellation would equal roughly half of US output.
+3. **Colossus 3 in Arizona:** Musk confirmed the Cochise County, Arizona supercomputer will be named Colossus 3. The project involves:
+   - over $50B of investment;
+   - about 1,000 permanent jobs and up to 5,500 construction jobs;
+   - SpaceX paying for its own power plus $3.6B in grid upgrades.
+   Residential rates for SSVEC customers may fall by up to 40%.
+4. **Unconfirmed compute pricing rumors:** Loomis notes rumors that SpaceX may be cutting prices on some of its compute. Separate rumors say it may be marketing capacity freed up if Anthropic cancels part of its deal. He declines to treat either as substantive without firmer evidence.
+
+## SpaceX — Starship
+1. **Starship cadence is now the constraint:** Loomis assumes about 100 t to orbit per flight and about 3.3 t per A1 satellite. That gives roughly 30 satellites per flight, so about 33,000 flights for 1 million satellites. He stresses that 12 flights a year "is not going to get it done" and that rapid reusability is essential. Because Musk has said most of each satellite's mass is solar panels, Loomis argues SpaceX and Tesla both need in-house solar production at scale.
+2. **Louisiana coastal permit paused:** Louisiana halted a SpaceX coastal permit review over environmental concerns. Loomis says this affects only the coastline-development portion of the Starbase Louisiana project, not the whole project, and that SpaceX will need to supply more information.
+
+## SpaceX — Starlink
+1. **SpaceX turns down about $738M in broadband subsidies:** SpaceX declined roughly $738M from the Broadband Equity Access and Deployment program, largely to avoid its reporting requirements. It will instead provide Starlink service free to eligible locations. The NTIA called this a new model agreement that simplifies contracting, speeds service, and could save taxpayers hundreds of millions of dollars. Loomis presents it as a rebuttal to claims that SpaceX depends on government subsidies.
+
+## SpaceX — Corporate & Valuation
+1. **Share pledge to American children:** SpaceX said it is "committing one SpaceX share to millions of American children."
+   - **Scale:** Brad Gerstner says about 70 million children are eligible. Between SpaceX and Musk, that works out to two shares per child under 18, which Gerstner values at roughly $22B and calls possibly the largest gift in history.
+   - **Shotwell:** Loomis says Gwynne Shotwell has separately pledged 2 million shares.
+   - **Dilution:** Loomis estimates that issuing the roughly 70 million new shares at the ceiling would dilute holders by about 0.5%. As a former financial adviser, he considers that worth it for long-term ownership and engagement.
+
+## Financials
+1. **Tesla–SpaceX merger: speculation and fatigue:** The Financial Times reports five directors have been chosen for the negotiations. Loomis calls most current reporting "pure speculation," including the recurring expectation of an all-stock deal. He notes the "drum beat" still points to a possible offer before the end of 2026.
+
+## Robotaxi
+1. **Dallas geofence and the Texas fleet:** Tesla's Dallas geofence grew mostly northward, by about 69 sq mi (up about 83%) to 153 sq mi.
+   - **Coverage:** Tesla now covers about 1,373 sq mi across eight cities, versus Waymo's 1,900 sq mi across 15 cities.
+   - **Cybercab registrations:** Tesla has added 249 Cybercabs to its Texas fleet in November alone, bringing the Cybercab total to 822.
+   - **All robotaxis:** Including Model Ys, Tesla's Texas robotaxi count is 1,556, again ahead of Waymo's roughly 1,400 registered vehicles in Texas.
+2. **App features:** Riders can now extend the pickup wait in 2-minute increments. Strings found in the Tesla app point to scheduled rides coming soon, with an adjustable pickup window. Loomis calls scheduling an important feature for time-sensitive trips.
+
+## Autonomous Driving
+1. **FSD v15 and the EU vote date:** FSD v15 is reaching more users, including some Model Ys without the front bumper camera, which eases fears that those cars would be left out. Loomis has not yet seen it on models other than the Model Y. A new date of December 15 has been set for the EU-wide vote on Tesla's assisted driving.
+
+## Electric Vehicles
+1. **Cyberbeast price up again; charging expansion:** Tesla raised the price of the Cyberbeast, the only Cybertruck still available, by another $5,000. Tesla's charging team opened 1,027 stalls across 91 US sites in the past 56 days, about 18 new stalls a day. It also has 29 mobile stalls deployed for holiday travel and a waitlist pilot running at 300 locations.
+
+## Humanoid Bots
+1. **Possible EMA acquisition and the Optimus hand:** Early, thin reporting suggests Tesla may be acquiring German machine-tool maker EMA. EMA makes systems for precision metal parts such as the planetary gears used in humanoid-robot rotary actuators. Loomis also discussed a Tesla video frame showing forearm actuators and cabling through the wrist into an Optimus hand. He is unsure it reflects the current V3 design, but says the tweezer-level work points to why the production ramp is likely to be slow.
+
+Notable quotes and data:
+- FCC approves 1 million Starmind satellites: 100,000 due by November 2035, the full constellation by November 2040.
+- Musk on the approval: "much appreciated. This will be a great asset to America and the world."
+- Power per A1 satellite: 250 kW peak, about 175 kW average per Musk. The 250 GW constellation figure is about half of average US generation (about 518 GW).
+- Launch math: about 30 A1 satellites per 100-t Starship flight, so about 33,000 flights for 1 million satellites.
+- Colossus 3 (Cochise County, AZ): $50B+ investment, $3.6B grid upgrade, 1,000 permanent jobs, SSVEC residential rates down up to 40%.
+- SpaceX declined about $738M in BEAD subsidies in favor of free Starlink service.
+- Share pledge: about 70M eligible children; Gerstner values the combined SpaceX and Musk gift at about $22B; Loomis puts dilution at about 0.5%.
+- Dallas geofence: 153 sq mi (+69 sq mi); Tesla covers 1,373 sq mi in 8 cities vs Waymo's 1,900 sq mi in 15.
+- Texas fleet: 822 Cybercabs (+249 in November); 1,556 total robotaxis vs Waymo's about 1,400 registered.
+- EU-wide assisted-driving vote set for December 15.
