@@ -1,0 +1,71 @@
+Channel:     cernbasher
+Title:       Elon and Jensen Have a Much Bigger Plan
+URL:         https://www.youtube.com/watch?v=CKCBy5fmfnk
+Published:   2026-11-27 08:22 UTC
+Summarized:  2026-11-27 09:02:39 UTC
+Model:       claude-sonnet-5-5 [cli]
+Cost:        $0.00000 (62909 in / 10889 out tokens, subscription)
+Relevance:   core — Beyond the Nvidia leadership saga, the episode covers material SpaceX developments (the FCC's million-satellite orbital compute approval, Starlink's subsidy-free rural deal, Colossus 3, the Trump-account share gift) and Tesla developments (FSD v15 reality view, the EU FSD vote, Optimus supply chain, Dallas robotaxi expansion).
+Topic:       both
+Categories:  SpaceX — AI & Compute, SpaceX — Starlink, SpaceX — Corporate & Valuation, Autonomous Driving, Robotaxi, Humanoid Bots, Market & Competition
+────────────────────────────────────────────────────────────
+
+Cern Basher and Phil Beisel, recording on November 25, discuss Jensen Huang's return as Nvidia CEO and read Elon Musk's visit to Nvidia headquarters as a sign of a deeper SpaceX–Nvidia compute partnership. They then cover the FCC's approval of up to 1 million SpaceX AI data center satellites. The second half turns to FSD v15's new "reality view" visualization, which Beisel argues proves Tesla's vision stack perceives the world better than humans, along with Optimus supply-chain signals, the EU FSD vote, and SpaceX's share gift to children's Trump accounts.
+
+## Market & Competition
+1. **Jensen Huang reinstated after about 12 days:** Huang returned as Nvidia CEO on Monday, November 23, less than two weeks after his ouster. The hosts cite a Reuters report that the attorney general found no evidence Huang broke the law. Per the same report, no separate DOJ or counterintelligence investigation into him has been opened, and existing probes found no evidence he acted as a Chinese agent, though that conclusion remains subject to change. Per a CBS News account, President Trump decided on Friday, November 20, that he wanted Huang back, and he and Vance spent the weekend contacting Nvidia directors, who sought assurances on national-security and legal risk. The hosts say Huang admitted violating Nvidia's code of conduct. They also say US intelligence reportedly found no evidence China orchestrated the episode and is not certain the woman at its center was a spy. The interim CEO, Nvidia's CFO, drew criticism for a CNBC interview with Jim Cramer that the hosts believe was lawyer-scripted.
+2. **Beisel's "converging factions" theory:** Beisel argues the ouster was never really about the personal misconduct allegations. In his view, several parties who would benefit from Huang's removal converged without formal coordination: China hawks in the administration, Anthropic (which he says favors regulatory capture and opposes open-source models that Huang champions), and possibly board members who saw an opportunity. Basher believes the media attacks, including what he calls 10+ New York Times stories, looked coordinated. Hakeem Jeffries called the reinstatement indefensible and pledged a congressional investigation focused on Howard Lutnick and the Commerce Department, which Beisel dismisses as transparent politics.
+3. **Nvidia's CUDA moat and open source:** Beisel explains that Huang pushes open-source AI to broaden CUDA adoption among companies like Pfizer and Eli Lilly that cannot rebuild software frameworks themselves. Frontier labs, including Musk's, write their own low-level code and are less locked in.
+4. **Credit default swaps "flashing" crisis signals:** Basher mocks a chart comparing CDS spreads: Bear Stearns 176 heading into the financial crisis, Oracle 316, SpaceX 266, Nvidia 142. He says Nvidia's implied five-year default probability rose from about 3% in January to about 11% now, versus roughly 25% for Oracle, 34% for SoftBank and 67% for CoreWeave. He argues the market is overreacting on Nvidia. It holds about $54B in cash against $32B in debt, roughly $22B net cash (he cites $21B), and generates about $44B of quarterly free cash flow. In his view, the roughly half-trillion dollars of disclosed future commitments that worry the market are largely performance-contingent.
+
+## SpaceX — AI & Compute
+1. **Musk at Nvidia HQ the day Huang returned:** A photo shows Musk and two of his children beside Huang at Nvidia headquarters, with visitor-badged SpaceX employees nearby. A community note called it fake, but Beisel says Huang's outfit matches his return day. Beisel believes Musk was instrumental in persuading the administration to back Huang's return. He sees the visit as a working meeting, not a social call. He believes Nvidia is SpaceX's chip of choice for its terrestrial build-out and will be used in phase one of SpaceX's orbital compute satellites. In his account, SpaceX is building its own harness around raw Nvidia chips rather than buying standard racks, with the eye toward "Nvidia today, Terafab chips tomorrow."
+2. **Friends and eventual foes:** Beisel speculates Huang's pitch is for Nvidia to design silicon that SpaceX/Tesla manufacture at Terafab, possibly reducing reliance on TSMC. He notes the tension in this arrangement. If Musk is right that nearly 100% of compute moves to space, SpaceX becomes Nvidia's dominant customer. If SpaceX's in-house silicon matches Nvidia's, Nvidia "has the ultimate problem."
+3. **Scale of the ambition:** Beisel puts current global compute at 30–50 GW, while Basher estimates about 15 GW of actual compute, or about 30 GW measured as nameplate power. Both contrast this with Musk's talk of 100–1,000 GW in space. Beisel notes Terafab's terawatt name implies 1,000 GW per year, and that even one Terafab is not enough.
+4. **FCC approves up to 1 million AI data center satellites:** On November 25, the FCC under Brendan Carr approved up to 1 million SpaceX satellites for orbital AI compute, which the hosts call an unprecedented first. Deployment milestones require satellites to be operational by November of each target year: one satellite by 2033, 100,000 by 2035, 500,000 by 2038 and 1 million by 2040. Other license terms:
+   - Orbits between 500 and 1,000 km, with a final orbital debris mitigation plan required before deploying above 600 km.
+   - Optical laser links to Starlink for primary communications, with Ka-band for backup and emergencies.
+   - A 15-year license term and no further environmental review.
+   - Petitions from Amazon, Viasat and the American Astronomical Society denied.
+   - A waiver for non-atmospheric disposal, such as graveyard or heliocentric orbits, deferred. The hosts note this could eventually enable robotic repair or recycling of long-lived components like solar panels and radiators.
+5. **Satellite specs and economics:** SpaceX's website lists the AI1 satellite's compute payload at 175 kW average and 250 kW peak. A million satellites at peak would equal 250 GW, several times the hosts' estimate of today's global compute. Basher estimates the full constellation at roughly $3–4 trillion of investment. Beisel argues it is more capital-efficient than ground data centers because capacity can be added satellite by satellite, power is free, and Starlink provides the backhaul. He expects early use to be almost entirely inference, with training clusters coming later. Starlink Gen 1/Gen 2 satellites are licensed for 340–570 km and mostly fly at 460–485 km, so the compute layer would sit just above them.
+6. **Colossus 3 in Arizona:** The proposed Arizona campus will be called Colossus 3, even though a Starbase data center is already well under way. It is planned at about 6 GW and promises around 1,000 permanent local jobs. SpaceX would invest $3 billion in transmission lines to bring in solar generation rather than draw on a nearby power plant. Basher rates approval odds as pretty high, and Beisel calls it a "damn good plan" for a remote area.
+
+## SpaceX — Starlink
+1. **Declining $738M in broadband subsidies:** SpaceX is turning down $738 million in federal broadband (BEAD) subsidies and will instead connect rural homes at no taxpayer cost. The arrangement runs under a new NTIA agreement published November 23 that states can adopt. SpaceX commits to:
+   - Free equipment for new customers.
+   - Speeds of at least 100 Mbps down and 20 Mbps up.
+   - A low-cost plan for eligible households.
+   - 10 years of service.
+   - The same performance testing BEAD requires of all providers.
+
+   In return, it is freed from paperwork, financial audits and procurement rules. The constellation has about 11,000–11,100 satellites today. Beisel speculates the free rural terminals could double as micro cell tower infrastructure.
+
+## SpaceX — Corporate & Valuation
+1. **Shares for every child's Trump account:** SpaceX announced it will give one share to every active Trump account, and Musk will match it, so each child can receive two SpaceX shares. Gwynne Shotwell separately announced a personal gift of over 2 million SpaceX shares. Both hosts strongly endorse the move as building long-term investor literacy. Beisel says it gives children a stake in rockets, data centers and AI, and adds that Optimus would complete the set "after they merge."
+
+## Autonomous Driving
+1. **FSD v15 "reality view":** FSD v15 adds a generative visualization that reconstructs the scene from the AI's perception output. In heavy rain and fog, the display appears to subtract the weather, showing that what the car sees is not what the driver sees. Beisel explains the pipeline: camera photon counts feed the universal vision encoder, which produces a compact semantic object map. That map feeds both the planner, as before, and now a parallel generative path that renders the display. He argues this proves the vision system perceives the world as well as or better than humans, and in his view the case against lidar is settled; lidar was used only to calibrate the cameras. He stresses it does not prove the car makes the right decisions, which only safety data can show. He calls it ultimately an irony, since riders in a mature autonomous system will not need to watch, and voice will become the main interface.
+2. **Running on AI4, not AI5:** Per Basher, Musk said v15 does not need AI5 chips and can run on AI4 or 4.5, with AI5 going to Optimus for now. Beisel says v15 is a larger-parameter model, rumored to be 10x larger, which he could not confirm. He says it has run on robotaxi since August or earlier. In his account, it fits on four-year-old hardware through "maniacal" performance engineering, and he believes the team is now near the limit of the hardware. He expects AI5 to reach cars eventually, robotaxi first and then consumer cars, once yield and volume allow. He rules out the full v15 for Hardware 3, though a lighter, reduced-parameter version without the visualization is possible.
+3. **EU FSD vote delay shortened:** The EU postponed its FSD vote by only a few days this time, which Basher calls encouraging. Beisel says the vote does not need France, where officials object to foreign control of the technology. He expects Spain to be favorable and says one of Poland or Romania would suffice. Basher urges not holding one's breath. Beisel adds that it may not land on December 15 but that approval is inevitable, because member states with FSD will show markedly lower highway deaths.
+
+## Robotaxi
+1. **Dallas geofence widened:** Tesla expanded its Dallas robotaxi service area. The hosts joke it missed the chance for a themed shape like Houston's.
+
+## Humanoid Bots
+1. **Optimus shares FSD's vision encoder:** Beisel says the reality view is effectively Optimus's universal vision encoder at work, since the robot perceives the world the same way. Its planning problem is far harder, though: roughly 100 control outputs versus about three for a car (steering, acceleration, braking). He says this is why AI5 is reserved for Optimus, and he does not expect commercial Optimus until AI5 is in production.
+2. **Possible German actuator supply move (speculative):** A Tesla shelf company in Germany was renamed Tesla Machining Technologies Management SE. It is registered at the headquarters of EMAG, which builds production systems for humanoid robot gear parts, and Tesla Germany's sales chief became managing director on November 9. No deal has been announced. Beisel stresses that Optimus has almost no existing supply chain, so Tesla must build much of it itself.
+3. **Highest-value uses first:** Basher argues Optimus will flow first to the highest-value work, such as round-the-clock factory jobs, before household use. Beisel expects a slow manufacturing ramp and calls Optimus the most interesting product of the next five years.
+
+Notable quotes and data:
+- FCC milestones: 1 satellite by 2033, 100,000 by 2035, 500,000 by 2038, 1 million by 2040; 500–1,000 km altitude; 15-year license.
+- Musk on the approval: "Much appreciated. This will be a great asset to America and the world."
+- FCC statement read on air: "It promises to bring the human race closer to a Kardashev civilization, one that can harness the full power of the sun."
+- AI1 compute payload: 175 kW average, 250 kW peak; 1 million satellites at peak equals 250 GW.
+- Basher's estimate for the full constellation: roughly $3–4 trillion of investment.
+- Starlink: $738M in BEAD subsidies declined; at least 100/20 Mbps; 10 years of service.
+- Colossus 3 (Arizona): about 6 GW, $3B in transmission lines, about 1,000 permanent jobs.
+- CDS spreads: Oracle 316, SpaceX 266, Nvidia 142, versus Bear Stearns at 176.
+- Beisel: "Nvidia today, Terafab chips tomorrow."
+- Beisel: "the better autonomy gets, the less we need it."
+- Beisel: "the most interesting product coming out in the next 5 years will be Optimus. It'll blow our mind."
