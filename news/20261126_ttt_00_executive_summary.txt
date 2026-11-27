@@ -1,0 +1,83 @@
+Channel:     ttt
+Title:       Daily Tesla Brief (2026-11-26)
+Published:   2026-11-26 00:00 UTC
+Summarized:  2026-11-27 08:27:56 UTC
+Model:       claude-sonnet-5-5 [direct]
+Cost:        $0.07499 (18769 in / 3745 out tokens)
+Sources:     7
+Categories:  Executive Summary
+────────────────────────────────────────────────────────────
+## Brief
+
+- FCC approves 1 million Starmind orbital data center satellites
+- Cybercabs now 822 of 1,556 Texas robotaxi registrations
+- FSD v15 reaches customers, including some Model Ys without bumper camera
+- Dallas Robotaxi geofence grows 83% to about 150 sq mi
+- EU-wide assisted-driving vote reset to December 15
+- Tesla–SpaceX merger advisers named per Financial Times
+
+## Robotaxi
+- Texas DMV data show 49 more Cybercab registrations, bringing the total to 822 of 1,556 registered Tesla robotaxi vehicles in Texas, with Model Y flat at 734. Electrified counts 249 Cybercabs added in November alone. The hosts concede these are registrations, not active rides. Tesla's Texas count leads Waymo's, with Brighter with Herbert putting the margin at 151 and Electrified citing roughly 1,400 Waymo vehicles.
+- Tesla's Dallas geofence grew about 83%, from 82 to roughly 150 sq mi (Sawyer Merritt: 150; Electrified: 153). Across eight cities Tesla covers about 1,373–1,374 sq mi, versus Waymo's 1,900 sq mi across 15 cities per Electrified. Sawyer notes all listed areas run unsupervised service.
+- Cybercab V1.5 opened to riders in Dallas, with a new rear-hatch camera as the main visible change, per Joe Tegtmeyer on FutureAzA. The hosts say it detects items left in the trunk and helps with security.
+- The Robotaxi app is adding scheduled rides with an adjustable pickup window, per app strings decompiled by Tesla App Updates. Riders can already extend the pickup wait in 2-minute increments, per Electrified.
+- A community tracker, Tesla Yoda, counts 160 robotaxi job listings across 48 cities, with Michigan and Maryland newly added.
+- UBS values the US robotaxi business at about $80B, calling it deliberately conservative. Its model has 2030 network revenue at $2.4B versus a $36B consensus, and says the valuation is too low if the fleet exceeds about 125,000 vehicles by 2035.
+- Jo Bhakdi cites a third-party Cybercab counter at 582 units, up from 285 a week earlier. He projects about 2,000 by December 31 and keeps his call of 10,000 Cybercabs. His arithmetic is inconsistent: continued weekly doubling would give far more than 2,000, while his 2,000 target implies about 27% weekly growth.
+- Tesla robotaxis have logged 6 million unsupervised miles, now at 557,000 per week, per Brighter with Herbert.
+
+## Autonomous Driving
+- FSD v15 is reaching customers, including some Model Ys without a front bumper camera. Brian White cites roughly 850 recipients in the first day or two. Bhakdi says rollout began November 21 and is AI4 only.
+- Tesla says v15 handles safety-critical cases 25x better than v14, and Musk clarified this means 25x, not 25%. Bhakdi extrapolates to roughly 50x safer than human drivers. That is his inference, since Tesla's figure covers safety-critical case handling, not overall crash rates.
+- v15 release notes list end-to-end learned navigation at trip start and end, better detection of signs, animals, potholes and standing water, and improved school-zone and bad-weather speed handling. FSD can now slow for speed cameras, and a bike rack mode supports hitch accessories.
+- The new in-car visualization re-renders surroundings photorealistically with a movable drone-style camera, per Bhakdi. Sawyer Merritt flagged a 16-minute Reality View drive on v15 that drew strong engagement.
+- Cumulative supervised FSD miles reached 18 billion, up from about 6.5 billion a year ago, per Brighter with Herbert.
+- The EU-wide vote on supervised FSD is now set for December 15, per Electrified. It had slipped from December 1 and then December 7, reportedly per Spain's Ministry of Industry. Italy was the most recent country to approve individually.
+- California regulators have proposed rules to streamline service-area expansion, ease airport access and drop unnecessary equipment requirements for purpose-built autonomous vehicles. A vote is set for December 3. Tesla still operates with a human in the car in California and has not applied for unsupervised operation there.
+
+## SpaceX — AI & Compute
+- The FCC approved SpaceX's request for 1 million Starmind orbital data center satellites, which Chairman Brendan Carr called the first US authorization of a data-center constellation in space. SpaceX must deploy 100,000 operational satellites by November 2035 and the full constellation by November 2040.
+- The FCC denied a waiver for retiring satellites above 600 km into disposal or heliocentric orbits, citing insufficient information. SpaceX must refile before deploying any satellite above 600 km or any not disposed of by atmospheric re-entry. About half a dozen organizations opposed the approval.
+- SpaceX committed to avoid the Ka band except in limited emergencies and rely mainly on optical links to Starlink. It also committed to low-altitude testing first and controlled de-orbiting.
+- The widely cited 250 GW figure is 250 kW per A1 satellite times 1 million. Per Dillon Loomis, 250 kW is a peak figure, and Musk has said the average may be closer to 175 kW.
+- Musk confirmed the Cochise County, Arizona supercomputer will be named Colossus 3. The project involves over $50B of investment, about 1,000 permanent jobs, and SpaceX paying for its own power plus $3.6B in grid upgrades. Residential SSVEC rates may fall by up to 40%.
+
+## SpaceX — Corporate & Valuation
+- SpaceX will gift one share to every active Trump Account, with Musk matching. Sawyer Merritt tallies 142 million shares worth $18.1B going to about 70 million children, including 2 million from Gwynne Shotwell. That implies roughly $127 per share. Brad Gerstner values the SpaceX and Musk portion at about $22B. Loomis estimates about 0.5% dilution.
+- The Financial Times reported advisers for the Tesla–SpaceX talks: Morgan Stanley and Goldman Sachs for SpaceX, Evercore for Tesla. Loomis calls most merger reporting speculation, and Herbert stresses no final decision has been reached.
+- Herbert argues Musk's core motive is voting control, and doubts a reported $3.3T valuation (possibly $3.5T) that would imply only a 10–12% Tesla premium. He sees 20–30% potential, and Brian says many holders would vote no below $400. Approval needs 50% of outstanding Tesla shares, and Alexandra Merz estimates at least 70% of votes cast must be yes.
+- Herbert, in his own speculation, links Google board representative Don Harrison's departure from the SpaceX board to the deal's momentum. He ended unsure the two sides can agree on terms.
+
+## SpaceX — Starship
+- Loomis estimates about 30 A1 satellites per 100-t Starship flight, implying roughly 33,000 flights for 1 million satellites. His conclusion is that 12 flights a year will not suffice and rapid reusability is essential.
+- Louisiana halted a SpaceX coastal permit review over environmental concerns. Per Loomis, it affects only the coastline-development portion of the Starbase Louisiana project, and SpaceX must supply more information.
+
+## SpaceX — Starlink
+- SpaceX declined about $738M in BEAD broadband subsidies, largely to avoid reporting requirements, and will provide Starlink free to eligible locations. NTIA called it a new model agreement that could save taxpayers hundreds of millions of dollars.
+
+## Humanoid Bots
+- Cortex 2 at Giga Texas, which Tegtmeyer calls Optimus University, has gained roughly 25% more internal space and what looks like a third cooling system. A chip fab with unusual roof trusses is under construction nearby, and the site substation has doubled.
+- Early, thin reporting suggests Tesla may be acquiring German machine-tool maker EMA, which makes systems for precision parts such as planetary gears used in humanoid-robot actuators, per Loomis.
+
+## Electric Vehicles
+- Tesla raised the Cyberbeast price by $5,000 to $114,990, with estimated delivery March–June 2027, per Sawyer Merritt.
+- For Thanksgiving, Tesla deployed 29 temporary Supercharger stalls at four California and Arizona sites. It also opened 1,027 permanent US stalls across 91 sites in 56 days, about 18 a day. The virtual waitlist now runs at 300 sites, per Electrek. Paren data cited by Electrek show Tesla adding 1,287 US fast-charging ports in Q3, versus IONNA's 378 and Walmart's 344.
+- Tegtmeyer says Giga Texas is lengthening shifts amid heavy Model Y L orders and expects something substantial in 2027. He thinks Musk's remark that the Model Y L might be all Tesla makes is an exaggeration.
+
+## Energy
+- Over 400 Megapacks sit at three Giga Texas locations, per Tegtmeyer. About 30,000–35,000 roof solar panels are installed against an original goal of about 70,000.
+
+## Market & Competition
+- Brighter with Herbert's hosts dismissed the Lucid Gravity robotaxi demo with Nuro and Uber as costly and behind, citing its large sensor rack and the margin each of three companies needs.
+- XPeng has moved from an employee-only program to a public beta of driverless passenger rides, which the hosts consider probably the number-two player globally.
+- Waymo's Texas fleet comprises 881 Jaguar I-PACEs and 524 Zeekr minivans, per Brighter with Herbert.
+
+Notable quotes and data:
+- Cybercabs: 822 of 1,556 registered Tesla robotaxi vehicles in Texas; Model Y flat at 734.
+- UBS: about $80B US robotaxi valuation; 2030 network revenue $2.4B vs $36B consensus.
+- FCC: 100,000 Starmind satellites by November 2035, full constellation by November 2040.
+- Musk on FCC approval: "much appreciated. This will be a great asset to America and the world."
+- Share pledge: 142 million shares, $18.1B, about 70 million children (Sawyer Merritt).
+- Dallas geofence: about 150 sq mi, up 83%; eight-city total 1,374 sq mi.
+- EU assisted-driving vote: December 15. California AV rules vote: December 3.
+- Supervised FSD miles: 18 billion vs about 6.5 billion a year ago.
